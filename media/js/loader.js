@@ -17,4 +17,10 @@ $(function() {
             }
         },
     });
+    $('a.language').button().css({position: 'absolute', top: '1em', right: '1em'}).click(function () {
+        $('<ul>' +
+            '<li><a href="index.html">English</a></li>' +
+            '<li><a href="index.cs.html">Česky</a></li>' +
+            '</ul>').dialog({title: 'Choose language'});
+    });
 });
