@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2012-04-18 11:54+0300\n"
+"POT-Creation-Date: 2012-04-18 12:07+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,48 +31,54 @@ msgstr ""
 msgid "<a href=\"/\">Weblate - Web based translation</a>"
 msgstr ""
 
-#. type: Content of: <html><body><div><div><ul><li>
-#: index.html:33
-msgid "<a href=\"#about\">About</a>"
-msgstr ""
-
-#. type: Content of: <html><body><div><div><ul><li>
-#: index.html:34
-msgid "<a href=\"#download\">Download</a>"
+#.  Use current language name while translating 
+#. type: Content of: <html><body>
+#: index.html:29
+msgid "<a class=\"language\" href=\"#\">Language: English</a>"
 msgstr ""
 
 #. type: Content of: <html><body><div><div><ul><li>
 #: index.html:35
-msgid "<a href=\"#docs\">Docs</a>"
+msgid "<a href=\"#about\">About</a>"
 msgstr ""
 
 #. type: Content of: <html><body><div><div><ul><li>
 #: index.html:36
-msgid "<a href=\"#news\">News</a>"
+msgid "<a href=\"#download\">Download</a>"
 msgstr ""
 
 #. type: Content of: <html><body><div><div><ul><li>
 #: index.html:37
-msgid "<a href=\"#support\">Support</a>"
+msgid "<a href=\"#docs\">Docs</a>"
 msgstr ""
 
 #. type: Content of: <html><body><div><div><ul><li>
 #: index.html:38
-msgid "<a href=\"#contribute\">Contribute</a>"
+msgid "<a href=\"#news\">News</a>"
 msgstr ""
 
 #. type: Content of: <html><body><div><div><ul><li>
 #: index.html:39
+msgid "<a href=\"#support\">Support</a>"
+msgstr ""
+
+#. type: Content of: <html><body><div><div><ul><li>
+#: index.html:40
+msgid "<a href=\"#contribute\">Contribute</a>"
+msgstr ""
+
+#. type: Content of: <html><body><div><div><ul><li>
+#: index.html:41
 msgid "<a href=\"#demo\">Demo</a>"
 msgstr ""
 
 #. type: Content of: <html><body><div><div><div><h2>
-#: index.html:44
+#: index.html:46
 msgid "About"
 msgstr ""
 
 #. type: Content of: <html><body><div><div><div><p>
-#: index.html:46
+#: index.html:48
 msgid ""
 "Weblate is web based translation tool with tight Git integration. It "
 "features simple and clean user interface, propagation of translations across "
@@ -80,69 +86,69 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <html><body><div><div><div><p>
-#: index.html:51
+#: index.html:53
 msgid "List of features includes:"
 msgstr ""
 
 #. type: Content of: <html><body><div><div><div><ul><li>
-#: index.html:54
+#: index.html:56
 msgid "Easy web based translation"
 msgstr ""
 
 #. type: Content of: <html><body><div><div><div><ul><li>
-#: index.html:55
+#: index.html:57
 msgid "Propagation of translations across sub-projects (for different branches)"
 msgstr ""
 
 #. type: Content of: <html><body><div><div><div><ul><li>
-#: index.html:56
+#: index.html:58
 msgid "Tight git integration - every change is represented by Git commit"
 msgstr ""
 
 #. type: Content of: <html><body><div><div><div><ul><li>
-#: index.html:57
+#: index.html:59
 msgid "Usage of Django's admin interface"
 msgstr ""
 
 #. type: Content of: <html><body><div><div><div><ul><li>
-#: index.html:58
+#: index.html:60
 msgid "Upload and automatic merging of po files"
 msgstr ""
 
 #. type: Content of: <html><body><div><div><div><ul><li>
-#: index.html:59
+#: index.html:61
 msgid "Links to source files for context"
 msgstr ""
 
 #. type: Content of: <html><body><div><div><div><ul><li>
-#: index.html:60
+#: index.html:62
 msgid "Allows to use machine translation services"
 msgstr ""
 
 #. type: Content of: <html><body><div><div><div><ul><li>
-#: index.html:61
+#: index.html:63
 msgid "Message consistency checks"
 msgstr ""
 
 #. type: Content of: <html><body><div><div><div><ul><li>
-#: index.html:62
+#: index.html:64
 msgid "Tunable access control"
 msgstr ""
 
 #. type: Content of: <html><body><div><div><div><ul><li>
-#: index.html:63
+#: index.html:65
 msgid ""
 "Wide range of supported translation formats (Gettext, Qt, Java, Windows, "
 "Symbian and more)"
 msgstr ""
 
 #. type: Content of: <html><body><div><div><div><h2>
-#: index.html:68
+#: index.html:70
 msgid "Code"
 msgstr ""
 
 #. type: Content of: <html><body><div><div><div><p>
-#: index.html:71
+#: index.html:73
 msgid ""
 "Weblate is being developed on <a "
 "href=\"https://github.com/nijel/weblate\">Github</a>, you can fork it there "
@@ -150,18 +156,18 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <html><body><div><div><div><pre>
-#: index.html:76
+#: index.html:78
 #, no-wrap
 msgid "git clone git://github.com/nijel/weblate.git\n"
 msgstr ""
 
 #. type: Content of: <html><body><div><div><div><h2>
-#: index.html:79
+#: index.html:81
 msgid "Download"
 msgstr ""
 
 #. type: Content of: <html><body><div><div><div><p>
-#: index.html:82
+#: index.html:84
 msgid ""
 "The project currently does not provide any downloads, you are encouraged to "
 "use git (see above). However you can still <a "
@@ -170,56 +176,56 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <html><body><div><div><div><h2>
-#: index.html:90
+#: index.html:92
 msgid "Documentation"
 msgstr ""
 
 #. type: Content of: <html><body><div><div><div><p>
-#: index.html:93
+#: index.html:95
 msgid ""
 "Documentation is available in <code>docs</code> directory in the sources or "
 "online at <a href=\"http://weblate.readthedocs.org/\">Read the Docs</a>."
 msgstr ""
 
 #. type: Content of: <html><body><div><div><div><h2>
-#: index.html:97
+#: index.html:99
 msgid "References"
 msgstr ""
 
 #. type: Content of: <html><body><div><div><div><p>
-#: index.html:100
+#: index.html:102
 msgid ""
 "In case you use Weblate, please <a href=\"mailto:michal@cihar.com\">let me "
 "know</a> to add you to this list."
 msgstr ""
 
 #. type: Content of: <html><body><div><div><div><dl><dt>
-#: index.html:104
+#: index.html:106
 msgid "<a href=\"http://l10n.cihar.com/\">l10n.cihar.com</a>"
 msgstr ""
 
 #. type: Content of: <html><body><div><div><div><dl><dd>
-#: index.html:105
+#: index.html:107
 msgid "Translating phpMyAdmin, Gammu and Weblate itself."
 msgstr ""
 
 #. type: Content of: <html><body><div><div><div><dl><dt>
-#: index.html:106
+#: index.html:108
 msgid "<a href=\"http://l10n.unpythonic.net/\">Web-translation for LinuxCNC</a>"
 msgstr ""
 
 #. type: Content of: <html><body><div><div><div><dl><dd>
-#: index.html:107
+#: index.html:109
 msgid "LinuxCNC experimental web translation."
 msgstr ""
 
 #. type: Content of: <html><body><div><div><div><h2>
-#: index.html:110
+#: index.html:112
 msgid "Legal information"
 msgstr ""
 
 #. type: Content of: <html><body><div><div><div><p>
-#: index.html:113
+#: index.html:115
 msgid ""
 "Weblate was written by <a href=\"http://cihar.com/\">Michal Čihař</a> and is "
 "free software: you can redistribute it and/or modify it under the terms of "
@@ -228,12 +234,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <html><body><div><div><div><h2>
-#: index.html:122
+#: index.html:124
 msgid "News"
 msgstr ""
 
 #. type: Content of: <html><body><div><div><div><p>
-#: index.html:125
+#: index.html:127
 msgid ""
 "You can find latest information about this project in <a "
 "href=\"http://blog.cihar.com/archives/weblate/?utm_source=weblate\">Michal "
@@ -242,12 +248,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <html><body><div><div><div><h2>
-#: index.html:132
+#: index.html:134
 msgid "Try it out"
 msgstr ""
 
 #. type: Content of: <html><body><div><div><div><p>
-#: index.html:135
+#: index.html:137
 msgid ""
 "You can try how Weblate on our <a href=\"http://demo.weblate.org\">demo "
 "server</a>.  You can register there and work under your username or just use "
@@ -255,12 +261,12 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <html><body><div><div><div><h2>
-#: index.html:142
+#: index.html:144
 msgid "Bugs"
 msgstr ""
 
 #. type: Content of: <html><body><div><div><div><p>
-#: index.html:145
+#: index.html:147
 msgid ""
 "Have you found any issue with Weblate? Please report it to <a "
 "href=\"https://github.com/nijel/weblate/issues\">issue tracker on "
@@ -268,29 +274,29 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <html><body><div><div><div><h2>
-#: index.html:152
+#: index.html:154
 msgid "Translate"
 msgstr ""
 
 #. type: Content of: <html><body><div><div><div><p>
-#: index.html:155
+#: index.html:157
 msgid ""
 "You can translate Weblate using Weblate installation at <a "
 "href=\"https://l10n.cihar.com/projects/weblate/\">l10n.cihar.com</a>."
 msgstr ""
 
 #. type: Content of: <html><body><div><div><div><h2>
-#: index.html:159
+#: index.html:161
 msgid "Donate"
 msgstr ""
 
 #. type: Content of: <html><body><div><div><div><p>
-#: index.html:162
+#: index.html:164
 msgid "If you like Weblate you can support it's further development by donating."
 msgstr ""
 
 #. type: Content of: <html><body><div><div><div><form>
-#: index.html:166
+#: index.html:168
 msgid ""
 "<input type=\"hidden\" name=\"cmd\" value=\"_s-xclick\" /> <input "
 "type=\"hidden\" name=\"hosted_button_id\" value=\"AXN88S8GX5MQ4\" /> <input "
@@ -301,21 +307,21 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <html><body><ul><li>
-#: index.html:178
+#: index.html:180
 msgid "Copyright &copy; 2012 <a href=\"http://cihar.com/\">Michal Čihař</a>"
 msgstr ""
 
 #. type: Content of: <html><body><ul><li><a>
-#: index.html:179
+#: index.html:181
 msgid "<a href=\"http://flattr.com/thing/571085/Weblate\">"
 msgstr ""
 
 #. type: Attribute 'title' of: <html><body><ul><li><a><img>
-#: index.html:179 index.html:179
+#: index.html:181 index.html:181
 msgid "Flattr this"
 msgstr ""
 
 #. type: Content of: <html><body><ul><li>
-#: index.html:179
+#: index.html:181
 msgid "</a>"
 msgstr ""
