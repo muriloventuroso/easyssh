@@ -25,4 +25,6 @@ $(function() {
             '<li><a href="index.pl.html">Polski</a></li>' +
             '</ul>').dialog({title: 'Choose language'});
     });
+
+    $('#news-content').load('/export/weblate/');
 });
