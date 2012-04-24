@@ -21,6 +21,7 @@ $(function() {
         $('<ul>' +
             '<li><a href="index.html">English</a></li>' +
             '<li><a href="index.cs.html">Česky</a></li>' +
+            '<li><a href="index.fr.html">Français</a></li>' +
             '<li><a href="index.tr.html">Türkçe</a></li>' +
             '<li><a href="index.pl.html">Polski</a></li>' +
             '</ul>').dialog({title: 'Choose language'});
