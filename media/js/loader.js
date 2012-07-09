@@ -24,6 +24,7 @@ $(function() {
             '<li><a href="index.da.html">Dansk</a></li>' +
             '<li><a href="index.es.html">Español</a></li>' +
             '<li><a href="index.fr.html">Français</a></li>' +
+            '<li><a href="index.gl.html">Galego</a></li>' +
             '<li><a href="index.pl.html">Polski</a></li>' +
             '<li><a href="index.tr.html">Türkçe</a></li>' +
             '</ul>').dialog({title: 'Choose language'});
