@@ -27,6 +27,7 @@ $(function() {
             '<li><a href="index.gl.html">Galego</a></li>' +
             '<li><a href="index.pl.html">Polski</a></li>' +
             '<li><a href="index.tr.html">Türkçe</a></li>' +
+            '<li><a href="index.zh_CN.html">中文</a></li>' +
             '</ul>').dialog({title: 'Choose language'});
     });
 
