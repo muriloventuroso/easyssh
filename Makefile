@@ -23,9 +23,9 @@ PO4A_HTML_OPTS=-f xhtml
 all: sitemap.xml
 
 sitemap.xml: $(wildcard */*.html)
-
+	
 en/index.html:
-	@echo
+	@echo -n
 
 %/index.html: po/%.po
 	@echo 'TRANSLATE $@'
