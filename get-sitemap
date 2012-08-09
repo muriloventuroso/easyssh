@@ -1,0 +1,21 @@
+#!/usr/bin/python
+
+import sys
+import os
+import time
+
+print '<?xml version="1.0" encoding="UTF-8"?>'
+print '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+
+for filename in sys.argv[1:]:
+    lastmod = time.strftime('%Y-%m-%d', time.gmtime(os.path.getmtime(filename)))
+
+    print '<url>'
+    print '<loc>http://weblate.org/' + filename + '</loc>'
+    print '<lastmod>' + lastmod + '</lastmod>'
+    print '<changefreq>weekly</changefreq>'
+    print '<priority>1.0</priority>'
+    print '</url>'
+
+
+print '</urlset>'

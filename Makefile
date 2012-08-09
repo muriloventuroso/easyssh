@@ -22,7 +22,9 @@ PO4A_HTML_OPTS=-f xhtml
 
 all: sitemap.xml
 
-sitemap.xml: $(wildcard */*.html)
+sitemap.xml: $(wildcard */*.html) get-sitemap
+	@echo 'GEN $@'
+	@./get-sitemap */*.html > $@
 	
 en/index.html:
 	@echo -n
