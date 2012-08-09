@@ -60,7 +60,7 @@ function get_language() {
         if (valid_language($language) && ($qvalue > $best_qvalue)) {
             $preferred_language = $language;
             $best_qvalue = $qvalue;
-        } else if (in_array($language_prefix, $available_languages) && (($qvalue*0.9) > $best_qvalue)) {
+        } else if (valid_language($language_prefix) && (($qvalue*0.9) > $best_qvalue)) {
             $preferred_language = $language_prefix;
             $best_qvalue = $qvalue * 0.9;
         }
