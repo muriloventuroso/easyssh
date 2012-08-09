@@ -2,7 +2,7 @@
 # Makefile to build website
 
 # Languages which we translate
-LANGUAGES=cs pl tr fr sv es da gl pt_BR zh_TW zh_CN id
+LANGUAGES=cs pl tr fr sv es da gl pt_BR zh_TW zh_CN id el
 
 # directory where phpMyAdmin sources are placed
 PMA_DIR=../phpmyadmin
@@ -20,7 +20,7 @@ PO4A_PO_OPTS=--msgid-bugs-address weblate@lists.cihar.com \
 # Options for processing html files
 PO4A_HTML_OPTS=-f xhtml
 
-all: sitemap.xml
+all: sitemap.xml $(addsuffix /index.html, $(LANGUAGES))
 
 sitemap.xml: $(wildcard */*.html) get-sitemap
 	@echo 'GEN $@'
@@ -31,7 +31,7 @@ en/index.html:
 
 %/index.html: po/%.po
 	@echo 'TRANSLATE $@'
-	@po4a-translate $(PO4A_HTML_OPTS) -m en/index.html -p $< -l $@ ${PO4AOPTS} -k 0
+	@po4a-translate $(PO4A_HTML_OPTS) -m en/index.html -p $< -l $@ ${PO4AOPTS}
 
 .PRECIOUS: po/weblate-web.pot
 po/weblate-web.pot: en/index.html
@@ -40,6 +40,7 @@ po/weblate-web.pot: en/index.html
 		-m en/index.html \
 		-p $@
 
+.PRECIOUS: po/%.po
 po/%.po: po/weblate-web.pot
 	@set -e; \
 	if [ ! -f $@ ] ; then msginit -i $< -l $* --no-translator -o $@ ; fi
