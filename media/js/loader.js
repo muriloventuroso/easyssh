@@ -19,15 +19,15 @@ $(function() {
     });
     $('a.language').button().css({position: 'absolute', top: '1em', right: '1em'}).click(function () {
         $('<ul>' +
-            '<li><a href="index.html">English</a></li>' +
-            '<li><a href="index.cs.html">Česky</a></li>' +
-            '<li><a href="index.da.html">Dansk</a></li>' +
-            '<li><a href="index.es.html">Español</a></li>' +
-            '<li><a href="index.fr.html">Français</a></li>' +
-            '<li><a href="index.gl.html">Galego</a></li>' +
-            '<li><a href="index.pl.html">Polski</a></li>' +
-            '<li><a href="index.tr.html">Türkçe</a></li>' +
-            '<li><a href="index.zh_CN.html">中文</a></li>' +
+            '<li><a href="/index.php?lang=en">English</a></li>' +
+            '<li><a href="/index.php?lang=cs">Česky</a></li>' +
+            '<li><a href="/index.php?lang=da">Dansk</a></li>' +
+            '<li><a href="/index.php?lang=es">Español</a></li>' +
+            '<li><a href="/index.php?lang=fr">Français</a></li>' +
+            '<li><a href="/index.php?lang=gl">Galego</a></li>' +
+            '<li><a href="/index.php?lang=pl">Polski</a></li>' +
+            '<li><a href="/index.php?lang=tr">Türkçe</a></li>' +
+            '<li><a href="/index.php?lang=zh_CN">中文</a></li>' +
             '</ul>').dialog({title: 'Choose language'});
     });
 
