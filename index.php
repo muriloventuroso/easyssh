@@ -72,7 +72,7 @@ function get_language() {
 if (isset($_GET['lang']) && valid_language($_GET['lang'])) {
     /* Handle explicit language requests */
     $lang = $_GET['lang'];
-} elseif (isset($_COOKIE['lang']) && valid_langauge($_COOKIE['lang'])) {
+} elseif (isset($_COOKIE['lang']) && valid_language($_COOKIE['lang'])) {
     /* Cookie preset */
     $lang = $_COOKIE['lang'];
 } else {
