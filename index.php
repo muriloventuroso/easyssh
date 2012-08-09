@@ -73,7 +73,7 @@ function get_language() {
 /**
  * Set language cookie, expires in half year.
  */
-function set_langauge($lang) {
+function set_language($lang) {
     setcookie('weblate-lang', $lang, time() + 13824000, '/', false, false);
 }
 
