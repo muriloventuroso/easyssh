@@ -10,6 +10,7 @@ $available_languages = array(
     'en',
     'cs',
     'da',
+    'el',
     'es',
     'fr',
     'gl',
