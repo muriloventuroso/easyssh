@@ -31,7 +31,7 @@ en/index.html:
 
 %/index.html: po/%.po
 	@echo 'TRANSLATE $@'
-	@po4a-translate $(PO4A_HTML_OPTS) -m $*/index.html -p $< -l $@ ${PO4AOPTS} -k 0
+	@po4a-translate $(PO4A_HTML_OPTS) -m en/index.html -p $< -l $@ ${PO4AOPTS} -k 0
 
 .PRECIOUS: po/weblate-web.pot
 po/weblate-web.pot: en/index.html
