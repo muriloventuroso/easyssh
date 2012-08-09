@@ -70,19 +70,25 @@ function get_language() {
     return $preferred_language;
 }
 
+/**
+ * Set language cookie, expires in half year.
+ */
+function set_langauge($lang) {
+    setcookie('weblate-lang', $lang, time() + 13824000, '/', false, false);
+}
+
 if (isset($_GET['lang']) && valid_language($_GET['lang'])) {
     /* Handle explicit language requests */
     $lang = $_GET['lang'];
-} elseif (isset($_COOKIE['lang']) && valid_language($_COOKIE['lang'])) {
+    set_language($lang);
+} elseif (isset($_COOKIE['weblate-lang']) && valid_language($_COOKIE['weblate-lang'])) {
     /* Cookie preset */
-    $lang = $_COOKIE['lang'];
+    $lang = $_COOKIE['weblate-lang'];
+    set_language($lang);
 } else {
     /* Auto detection */
     $lang = get_language();
 }
-
-/* Set language cookie, expires in half year */
-setcookie('lang', $lang, time() + 13824000, '/', false, false);
 
 /* Target page */
 if (isset($_GET['target']) && in_array($_GET['target'], $target_pages)) {
