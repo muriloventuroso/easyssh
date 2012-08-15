@@ -20,7 +20,7 @@ $available_languages = array(
 );
 
 $target_pages = array(
-    'index.html',
+    '',
 );
 
 function valid_language($lang) {
@@ -94,7 +94,7 @@ if (isset($_GET['lang']) && valid_language($_GET['lang'])) {
 if (isset($_GET['target']) && in_array($_GET['target'], $target_pages)) {
     $target = $_GET['target'];
 } else {
-    $target = 'index.html';
+    $target = '';
 }
 
 /* Redirect to actual page */
