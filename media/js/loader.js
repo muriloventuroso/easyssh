@@ -26,8 +26,8 @@ $(function() {
             '<li><a href="/index.php?lang=el">Ελληνικά</a></li>' +
             '<li><a href="/index.php?lang=es">Español</a></li>' +
             '<li><a href="/index.php?lang=fr">Français</a></li>' +
-            '<li><a href="/index.php?lang=gl">Galego</a></li>' +
-            '<li><a href="/index.php?lang=pl">Polski</a></li>' +
+//            '<li><a href="/index.php?lang=gl">Galego</a></li>' +
+//            '<li><a href="/index.php?lang=pl">Polski</a></li>' +
             '<li><a href="/index.php?lang=tr">Türkçe</a></li>' +
             '<li><a href="/index.php?lang=zh_CN">中文</a></li>' +
             '</ul>').dialog({title: 'Choose language'});
