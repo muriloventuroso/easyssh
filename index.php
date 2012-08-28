@@ -4,36 +4,27 @@
  */
 
 /**
- * List of available languages, first one is default.
+ * Default language
  */
-$available_languages = array(
-    'en',
-    'cs',
-    'da',
-    'el',
-    'es',
-    'fr',
-    'zh_CN',
-);
+$default_language = 'en';
 
 $target_pages = array(
     '',
 );
 
 function valid_language($lang) {
-    global $available_languages;
-
-    return in_array($lang, $available_languages);
+    $lang = preg_replace('/[^a-zA-Z_-]/', '_', $lang);
+    return file_exists('./' . $lang . '/index.html');
 }
 
 /**
  * Detects language based on Accept-Language header.
  */
 function get_language() {
-    global $available_languages;
+    global $default_language;
 
     // Set default for the case no match is found.
-    $preferred_language = $available_languages[0];
+    $preferred_language = $default_language;
 
     // Was headerr present?
     if (!isset($_SERVER['HTTP_ACCEPT_LANGUAGE'])) {
