@@ -13,9 +13,6 @@ $available_languages = array(
     'el',
     'es',
     'fr',
-    'gl',
-    'pl',
-    'tr',
     'zh_CN',
 );
 
