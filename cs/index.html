@@ -28,7 +28,7 @@
 
     
     <!-- Use current language name while translating -->
-<a class="language" href="#">Jazyk: Čeština</a>
+<div class="language-select"><a class="language" href="#">Jazyk: Čeština</a></div>
 
 <div class="content">
 
@@ -61,7 +61,7 @@ podprojekty, kontrolu překladu nebo zobrazení odkazů na zdrojové soubory.
 <li>Propagace překladu mezi podprojekty (například pro různé větve)</li>
 <li>Těsná integrace gitu - každá změna je uložena jako commit Gitu</li>
 <li>Použití správcovského rozhraní Djanga</li>
-<li>Upload and automatic merging of translation files</li>
+<li>Nahrávání a automatické slučování překladových souborů</li>
 <li>Odkazy na zdrojové soubory pro informaci o kontextu</li>
 <li>Podporuje různé služby pro automatické překlady</li>
 <li>Kontroly zpráv při překládání</li>
@@ -185,8 +185,8 @@ serverem po jednu hodinu.
 
 <div id="screenshots">
 
-<a href="/screenshots/weblate-main.png" title="Hlavní stránka"><img src="/screenshots/small/weblate-main.png" alt="Main page"/></a> <a href="/screenshots/weblate-project.png" title="Přehled projektu"><img src="/screenshots/small/weblate-project.png" alt="Project overview"/></a> <a href="/screenshots/weblate-translating.png" title="Stránka s
-překladem"><img src="/screenshots/small/weblate-translating.png" alt="Translating page"/></a>
+<a href="/screenshots/weblate-main.png" title="Hlavní stránka"><img src="/screenshots/small/weblate-main.png" alt="Hlavní stránka"/></a> <a href="/screenshots/weblate-project.png" title="Přehled projektu"><img src="/screenshots/small/weblate-project.png" alt="Přehled projektu"/></a> <a href="/screenshots/weblate-translating.png" title="Stránka s
+překladem"><img src="/screenshots/small/weblate-translating.png" alt="Stránka s překladem"/></a>
 
 </div>
 
@@ -260,12 +260,13 @@ Pokud se vám Weblate líbí můžete jeho další rozvoj podpořit příspěvke
 </p>
 
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<div class="donate">
 <input type="hidden" name="cmd" value="_s-xclick" /> <input type="hidden"
 name="hosted_button_id" value="AXN88S8GX5MQ4" /> <input type="image"
 src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
-border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"
-/>
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+name="submit" alt="PayPal - The safer, easier way to pay online!" />
+<img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+</div>
 </form>
 
 </div>
@@ -276,13 +277,15 @@ border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"
 </div>
  <ul class="footer">
   <li>Copyright &copy; 2012 <a href="http://cs.cihar.com/">Michal Čihař</a></li>
-  <li><a href="http://flattr.com/thing/571085/Weblate"><img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Oflattrujte Weblate" title="Oflattrujte Weblate" border="0" /></a></li>
+  <li><a href="http://flattr.com/thing/571085/Weblate"><img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Oflattrujte Weblate" title="Oflattrujte Weblate" /></a></li>
   <li><form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<div class="donate">
 <input type="hidden" name="cmd" value="_s-xclick" /> <input type="hidden"
 name="hosted_button_id" value="Y4C8WM9U8R8MN" /> <input type="image"
-src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0"
+src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif"
 name="submit" alt="PayPal - The safer, easier way to pay online!" />
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+<img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+</div>
 </form></li>
  </ul>
 
