@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Weblate website\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2012-11-21 09:13+0100\n"
+"POT-Creation-Date: 2012-11-26 10:03+0100\n"
 "PO-Revision-Date: 2012-11-23 12:22+0200\n"
 "Last-Translator: shanyan baishui <Siramizu@gmail.com>\n"
-"Language-Team: Chinese (China) "
-"<http://l10n.cihar.com/projects/weblate/website/zh_CN/>\n"
+"Language-Team: Chinese (China) <http://l10n.cihar.com/projects/weblate/"
+"website/zh_CN/>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -100,7 +100,9 @@ msgid ""
 "Weblate is a web based translation tool with tight Git integration. It "
 "features simple and clean user interface, propagation of translations across "
 "subprojects, consistency checks and automatic linking to source files."
-msgstr "Weblate 是一个高度 Git 集成的在线翻译工具。它具有简洁清爽的用户界面，子项目间翻译同步、一致性检查以及自动链接到源文件等功能。"
+msgstr ""
+"Weblate 是一个高度 Git 集成的在线翻译工具。它具有简洁清爽的用户界面，子项目间"
+"翻译同步、一致性检查以及自动链接到源文件等功能。"
 
 #. type: Content of: <html><body><div><div><div><p>
 #: en/index.html:57
@@ -160,15 +162,16 @@ msgid ""
 "formats.html\">translation formats</a> (Gettext, Qt, Java, Windows, Symbian "
 "and more)"
 msgstr ""
-"大量<a href=\"http://weblate.readthedocs.org/en/latest/formats.html\">翻译格式</a>支持 "
-"(Gettext, Qt, Java, Windows, Symbian 以及更多)"
+"大量<a href=\"http://weblate.readthedocs.org/en/latest/formats.html\">翻译格"
+"式</a>支持 (Gettext, Qt, Java, Windows, Symbian 以及更多)"
 
 #. type: Content of: <html><body><div><div><div><p>
 #: en/index.html:73
 msgid ""
 "If you are using Git as version control system, Weblate is the right CAT "
 "(computer-assisted translation) tool for you."
-msgstr "如果您使用 Git 作为版本控制系统，Weblate 就是适合您的计算机辅助翻译工具。"
+msgstr ""
+"如果您使用 Git 作为版本控制系统，Weblate 就是适合您的计算机辅助翻译工具。"
 
 #. type: Content of: <html><body><div><div><div><h2>
 #: en/index.html:79
@@ -211,8 +214,9 @@ msgid ""
 "\">BitNami stack</a>, what allows you native installation on Windows, Linux "
 "or Mac OS X and provides virtual images for running Weblate."
 msgstr ""
-"您也可以到 <a href=\"http://bitnami.org/stack/weblate\">BitNami stack</a> 下载 "
-"Weblate 用于 Windows、Linux 和 Mac OS X 的安装程序或运行了 Weblate 的虚拟机。"
+"您也可以到 <a href=\"http://bitnami.org/stack/weblate\">BitNami stack</a> 下"
+"载 Weblate 用于 Windows、Linux 和 Mac OS X 的安装程序或运行了 Weblate 的虚拟"
+"机。"
 
 #. type: Content of: <html><body><div><div><div><h2>
 #: en/index.html:103 en/index.html:249
@@ -355,9 +359,9 @@ msgid ""
 "archives/weblate/index-rss.xml\"> <span class=\"ui-icon ui-icon-signal-diag"
 "\"></span> </a>"
 msgstr ""
-"<a class=\"rss ui-state-default ui-corner-all\" "
-"href=\"http://blog.cihar.com/archives/weblate/index-rss.xml\"> <span class"
-"=\"ui-icon ui-icon-signal-diag\"></span> </a>"
+"<a class=\"rss ui-state-default ui-corner-all\" href=\"http://blog.cihar.com/"
+"archives/weblate/index-rss.xml\"> <span class=\"ui-icon ui-icon-signal-diag"
+"\"></span> </a>"
 
 #. type: Content of: <html><body><div><div><div><h2>
 #: en/index.html:170
@@ -432,7 +436,7 @@ msgid "Translating page"
 msgstr "翻译页面"
 
 #. type: Content of: <html><body><ul><li>
-#: en/index.html:205 en/index.html:289
+#: en/index.html:205 en/index.html:297
 msgid "</a>"
 msgstr "</a>"
 
@@ -511,13 +515,29 @@ msgstr ""
 "您也可以联系 <a href=\"mailto:michal@cihar.com?subject=Weblate\">Michal "
 "Čihař</a>，Weblate 的作者。"
 
+#. type: Content of: <html><body><div><div><div><p>
+#: en/index.html:261
+#, fuzzy
+msgid ""
+"This website is stored on <a href=\"https://github.com/nijel/weblate-web"
+"\">Github</a> as well:"
+msgstr ""
+"Weblate 在 <a href=\"https://github.com/nijel/weblate\">Github</a> 上开发，您"
+"可以派生它或直接:"
+
+#. type: Content of: <html><body><div><div><div><pre>
+#: en/index.html:265
+#, fuzzy, no-wrap
+msgid "git clone git://github.com/nijel/weblate-web.git\n"
+msgstr "git clone git://github.com/nijel/weblate.git\n"
+
 #. type: Content of: <html><body><div><div><div><h2>
-#: en/index.html:260
+#: en/index.html:268
 msgid "Translate"
 msgstr "翻译"
 
 #. type: Content of: <html><body><div><div><div><p>
-#: en/index.html:263
+#: en/index.html:271
 msgid ""
 "You can translate Weblate using Weblate installation at <a href=\"https://"
 "l10n.cihar.com/engage/weblate/\">l10n.cihar.com</a>."
@@ -526,56 +546,56 @@ msgstr ""
 "a> 使用 Weblate 翻译 Weblate。"
 
 #. type: Content of: <html><body><div><div><div><h2>
-#: en/index.html:267
+#: en/index.html:275
 msgid "Donate"
 msgstr "捐助"
 
 #. type: Content of: <html><body><div><div><div><p>
-#: en/index.html:270
+#: en/index.html:278
 msgid ""
 "If you like Weblate you can support it's further development by donating."
 msgstr "如果您喜欢 Weblate 您可以捐助以支持它的开发。"
 
 #. type: Content of: <html><body><div><div><div><form><div>
-#: en/index.html:275
+#: en/index.html:283
 msgid ""
 "<input type=\"hidden\" name=\"cmd\" value=\"_s-xclick\" /> <input type="
 "\"hidden\" name=\"hosted_button_id\" value=\"AXN88S8GX5MQ4\" /> <input type="
 "\"image\" src=\"https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
 "\" name=\"submit\" alt=\"PayPal - The safer, easier way to pay online!\" />"
 msgstr ""
-"<input type=\"hidden\" name=\"cmd\" value=\"_s-xclick\" /> <input type=\"hidden\" "
-"name=\"hosted_button_id\" value=\"AXN88S8GX5MQ4\" /> <input type=\"image\" "
-"src=\"https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif\" "
-"name=\"submit\" alt=\"PayPal - 安全、方便的在线支付方式!\" />"
+"<input type=\"hidden\" name=\"cmd\" value=\"_s-xclick\" /> <input type="
+"\"hidden\" name=\"hosted_button_id\" value=\"AXN88S8GX5MQ4\" /> <input type="
+"\"image\" src=\"https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
+"\" name=\"submit\" alt=\"PayPal - 安全、方便的在线支付方式!\" />"
 
 #. type: Content of: <html><body><ul><li>
-#: en/index.html:288
+#: en/index.html:296
 msgid "Copyright &copy; 2012 <a href=\"http://cihar.com/\">Michal Čihař</a>"
 msgstr "版权所有 &copy; 2012 <a href=\"http://cihar.com/\">Michal Čihař</a>"
 
 #. type: Content of: <html><body><ul><li><a>
-#: en/index.html:289
+#: en/index.html:297
 msgid "<a href=\"http://flattr.com/thing/571085/Weblate\">"
 msgstr "<a href=\"http://flattr.com/thing/571085/Weblate\">"
 
 #. type: Attribute 'title' of: <html><body><ul><li><a><img>
-#: en/index.html:289
+#: en/index.html:297
 msgid "Flattr this"
 msgstr "Flattr this"
 
 #. type: Content of: <html><body><ul><li><form><div>
-#: en/index.html:292
+#: en/index.html:300
 msgid ""
 "<input type=\"hidden\" name=\"cmd\" value=\"_s-xclick\" /> <input type="
 "\"hidden\" name=\"hosted_button_id\" value=\"Y4C8WM9U8R8MN\" /> <input type="
 "\"image\" src=\"https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif"
 "\" name=\"submit\" alt=\"PayPal - The safer, easier way to pay online!\" />"
 msgstr ""
-"<input type=\"hidden\" name=\"cmd\" value=\"_s-xclick\" /> <input type=\"hidden\" "
-"name=\"hosted_button_id\" value=\"Y4C8WM9U8R8MN\" /> <input type=\"image\" "
-"src=\"https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif\" "
-"name=\"submit\" alt=\"PayPal - 安全、方便的在线支付方式!\" />"
+"<input type=\"hidden\" name=\"cmd\" value=\"_s-xclick\" /> <input type="
+"\"hidden\" name=\"hosted_button_id\" value=\"Y4C8WM9U8R8MN\" /> <input type="
+"\"image\" src=\"https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif"
+"\" name=\"submit\" alt=\"PayPal - 安全、方便的在线支付方式!\" />"
 
 #~ msgid "References"
 #~ msgstr "案例"
