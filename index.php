@@ -84,6 +84,17 @@ if (isset($_GET['target']) && in_array($_GET['target'], $target_pages)) {
 } else {
     $target = '';
 }
+$params = array();
+if (isset($_GET['utm_source'])) {
+    $params[] = 'utm_source=' .$_GET['utm_source'];
+}
+if (isset($_GET['utm_term'])) {
+    $params[] = 'utm_term=' .$_GET['utm_term'];
+}
+$params = implode('&', $params);
+if (strlen($params) > 0) {
+    $params = '?' . $params;
+}
 
 /* Redirect to actual page */
-header('Location: http://weblate.org/' . $lang . '/' . $target);
+header('Location: http://weblate.org/' . $lang . '/' . $target . $params);
