@@ -1,0 +1,353 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="pt-br">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="author" content="Michal Čihař" />
+  <meta name="copyright" content="Copyright &copy; 2012 Michal Čihař" />
+  <meta name="description" content="Weblate is a web based translation tool with tight Git intergration, consistency checks and support for wide range of translation formats." />
+  <meta name="keywords" content="weblate,git,translate,gettext,properties,adroid,po,mo,qts,internationalisation,cat" />
+
+  <title>Weblate - tradução na Web</title>
+
+  
+  <link rel="stylesheet" type="text/css" href="/media/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="/media/css/custom-theme/jquery-ui-1.8.18.custom.css" />
+  <link rel="alternate" type="application/rss+xml" href="http://blog.cihar.com/archives/weblate/index-rss.xml" title="Posts de Michal Čihař sobre o Weblate"/>
+  <script src="/media/js/jquery-1.7.1.min.js" type="text/javascript"></script>
+  <script src="/media/js/jquery-ui-1.8.18.custom.min.js" type="text/javascript"></script>
+  <script src="/media/js/loader.js" type="text/javascript"></script>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <meta name="robots" content="index, follow" />
+  
+ </head>
+
+ <body>
+    <h1 class="ui-state-default"><a href="/">Weblate - tradução na Web</a></h1>
+
+    
+    <!-- Use current language name while translating -->
+<div class="language-select"><a class="language" href="#">Idioma: Português</a></div>
+
+<div class="content">
+
+<div class="tabs">
+<ul>
+<li><a href="#about">Sobre</a></li>
+<li><a href="#download">Baixar</a></li>
+<li><a href="#docs">Documentos</a></li>
+<li><a href="#references">Referências</a></li>
+<li><a href="#news">Notícias</a></li>
+<li><a href="#support">Suporte</a></li>
+<li><a href="#contribute">Colaborar</a></li>
+<li><a href="#demo">Demostração</a></li>
+<li><a href="#screenshots">Capturas de tela</a></li>
+</ul>
+
+<div id="about">
+
+<h2>Sobre</h2>
+<p>
+Weblate é uma ferramenta de tradução baseada na web, com uma intensa
+integração com o Git. Ele possui uma interface limpa e simples, propagação
+de traduções em subprojetos, verificação de consistência e associação
+automática aos arquivos fontes.
+</p>
+
+<p>Lista de funcionalidades inclusas:</p>
+
+<ul>
+<li>Tradução fácil pela web</li>
+<li>Propagação de traduções através dos subprojetos (nas diferentes
+ramificações)</li>
+<li>Integração forte com o git - cada mudança é representada como uma publicação
+no Git</li>
+<li>Uso da interface de administração do Django</li>
+<li>Enviar e mescla automática dos arquivos de tradução</li>
+<li>Links para os arquivos fontes para contextualizar</li>
+<li>Permite usar serviços de traduções automáticas</li>
+<li>Verificação de consistência de mensagem</li>
+<li>Controle de acesso personalizável</li>
+<li>Ampla variedade de formatos de <a
+href="http://weblate.readthedocs.org/en/latest/formats.html">arquivos de
+tradução</a> (Gettext, Qt, Java, Windows, Symbian e outros)</li>
+</ul>
+
+<p>
+Se você está usando o GIT como sistema de controle de versão, o Weblate é a
+ferramenta CAT   (tradução assistida por computador) certa para você.
+</p>
+</div>
+
+<div id="download">
+
+<h2>Descarregar</h2>
+
+<p>
+Você pode baixar a última versão do <a
+href="https://github.com/nijel/weblate/downloads">Github</a>.
+</p>
+
+<p>
+Para usuários de openSUSE/SLES, existem pacotes binários disponíveis em <a
+href="http://software.opensuse.org/package/weblate/">openSUSE
+Buildservice</a>.
+</p>
+
+<p>
+No caso de que queira executar o Weblate na sua nuvem ou servidor virtual,
+pode baixar a amplicação baseada em openSUSE 12.2 em <a
+href="http://susestudio.com/a/F8yMYg/weblate">SUSE Studio Gallery</a>.
+</p>
+
+<p>
+O Weblate também está disponível como <a
+href="http://bitnami.org/stack/weblate">BitNami stack</a>, o qual permite a
+você uma instalação nativa no Windows, Linux ou Mac OSX e provê imagens
+virtuais para rodar o Weblate.
+</p>
+
+
+<h2>Código</h2>
+
+<p>
+O Weblate está sendo desenvolvido em <a
+href="https://github.com/nijel/weblate">Github</a>, e você pode copiá-lo ali
+mesmo ou simplesmente:
+</p>
+
+<pre>
+git clone git://github.com/nijel/weblate.git
+</pre>
+</div>
+
+<div id="docs">
+<h2>Documentação</h2>
+
+<p>
+A documentação está disponível no diretório <code>docs</code> nos fontes ou
+online em <a href="http://weblate.readthedocs.org/">Ler os documentos</a>.
+</p>
+
+<h2>Informações legais</h2>
+
+<p>
+O Weblate foi escrito por <a href="http://cihar.com/">Michal Čihař</a> como
+software livre: pode redistribuí-lo e/ou modificá-lo conforme os termos da
+licença pública geral GNU como a publicação da Free Software Foundation,
+tanto na versão 3 da licença, ou (ao seu critério) qualquer versão
+posterior.
+</p>
+</div>
+
+<div id="references">
+<p>
+Uma grande variedade de projetos utilizam o Weblate, alguns deles fizeram
+esta informação pública e você pode vê-los aqui:
+</p>
+
+<dl>
+<dt><a href="http://l10n.cihar.com/">l10n.cihar.com</a></dt>
+<dd>Tradução do phpMyAdmin, Gammu e do Weblate mesmo.</dd>
+<dt><a href="http://l10n.unpythonic.net/">Tradução web para LinuxCNC</a></dt>
+<dd>Tradução web experimental de LinuxCNC.</dd>
+<dt><a href="http://debian.weblate.org/">Weblate para Debian</a></dt>
+<dd>O servidor de tradução para projetos relacionados com o Debian, atualmente
+está sendo traduzido o <a href="http://debian-handbook.info/">The Debian
+Administrator's Handbook</a>.</dd>
+<dt><a href="http://translate.osmand.net/">Weblate para Osmand</a></dt>
+<dd>Tradução do <a href="http://www.osmand.net/">Osmand</a> (OSM Automated
+Navigation Directions).</dd>
+</dl>
+
+<p>
+No caso de usar Weblate, por favor,  <a href="mailto:michal@cihar.com">s
+permita saber</a> para adicionar você para esta lista.
+</p>
+</div>
+
+<div id="news">
+<h2>Notícias</h2>
+
+<p>
+Você pode encontrar as novidades sobre este projeto no <a
+href="http://blog.cihar.com/archives/weblate/?utm_source=weblate">Blog do
+Michal Čihař</a>. Você também pode acompanhar as notícias do Weblate no <a
+href="https://plus.google.com/106497926394648368509">Google+</a>.
+</p>
+
+<a class="rss ui-state-default ui-corner-all"
+href="http://blog.cihar.com/archives/weblate/index-rss.xml"> <span
+class="ui-icon ui-icon-signal-diag"></span> </a>
+
+<h2>Notícias recentes</h2>
+<div id="news-content"></div>
+</div>
+
+<div id="demo">
+<h2>Faça um teste</h2>
+
+<p>
+Você pode testar o Weblate em nosso <a
+href="http://demo.weblate.org">Servidor de demonstração server</a>. Você
+pode registrar lá e trabalhar com seu login ou somente usar a conta
+<code>demo</code> com a senha <code>demo</code>.
+</p>
+
+<h2>Appliances</h2>
+
+<p>
+Se você deseja testar mais profundamente, pode baixar o appliance no <a
+href="http://susestudio.com/a/F8yMYg/weblate">SUSE Studio Gallery</a> ou use
+o testdrive que permite você brincar com um servidor virtual por uma hora.
+</p>
+
+<p>
+O Weblate também está disponível como <a
+href="http://bitnami.org/stack/weblate">BitNami stack</a>, o qual permite a
+você uma instalação nativa no Windows, Linux ou Mac OSX e provê imagens
+virtuais para rodar o Weblate.
+</p>
+
+</div>
+
+<div id="screenshots">
+
+<a href="/screenshots/weblate-main.png" title="Página principal"><img src="/screenshots/small/weblate-main.png" alt="Página principal"/></a> <a href="/screenshots/weblate-project.png" title="Visão geral do
+projeto"><img src="/screenshots/small/weblate-project.png" alt="Visão geral do projeto"/></a> <a href="/screenshots/weblate-translating.png" title="Página de
+tradução"><img src="/screenshots/small/weblate-translating.png" alt="Página de tradução"/></a>
+
+</div>
+
+<div id="support">
+<h2>Requisição de funcionalidades ou erros</h2>
+
+<p>
+Encontrou algum problema no Weblate? Tem alguma ideia para melhorá-lo? Por
+favor, envie para o <a
+href="https://github.com/nijel/weblate/issues">sistema de rastreio no
+GitHub</a>.
+</p>
+
+<h2>Lista de discussão</h2>
+
+<p>
+Aqui está a lista de discussão do <a
+href="mailto:weblate@lists.cihar.com">weblate@lists.cihar.com</a> aonde você
+pode discutir várias coisas sobre o Weblate. Você pode <a
+href="https://lists.cihar.com/cgi-bin/mailman/listinfo/weblate">se
+inscrever</a> ou <a
+href="https://lists.cihar.com/pipermail/weblate/">navegar nos arquivos</a>.
+</p>
+
+<p>
+A lista de discussão também está disponível no <a
+href="http://dir.gmane.org/gmane.comp.web.weblate">Gmane</a> aonde você pode
+navegar nos arquivos ou usar uma interface NNTP.
+</p>
+
+<h2>IRC</h2>
+
+<p>
+Quando algumas das pessoas interessadas estão conectadas, você também pode
+encontrar ajuda no canal #weblate na rede <a
+href="http://freenode.net/">freenode</a>. Você também pode usar o  <a
+href="http://webchat.freenode.net?channels=weblate">webchat</a> aqui.
+</p>
+
+<h2>Contato</h2>
+
+<p>
+Você também pode contatar o <a
+href="mailto:michal@cihar.com?subject=Weblate">Michal Čihař</a>, o autor do
+Weblate.
+</p>
+</div>
+
+<div id="contribute">
+<h2>Código</h2>
+
+<p>
+O Weblate está sendo desenvolvido em <a
+href="https://github.com/nijel/weblate">Github</a>, e você pode copiá-lo ali
+mesmo ou simplesmente:
+</p>
+
+<pre>
+git clone git://github.com/nijel/weblate.git
+</pre>
+
+<p>
+Este portal é armazenado no <a
+href="https://github.com/nijel/weblate-web">Github</a> também:
+</p>
+
+<pre>
+git clone git://github.com/nijel/weblate-web.git
+</pre>
+
+<h2>Traduzir</h2>
+
+<p>
+Você pode traduzir o Weblate usando a instalação do Weblate em <a
+href="https://l10n.cihar.com/engage/weblate/">l10n.cihar.com</a>.
+</p>
+
+<h2>Doar</h2>
+
+<p>
+Se gostar do Weblate, pode ajudar no seu desenvolvimento futuro através de
+doações.
+</p>
+
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<div class="donate">
+<input type="hidden" name="cmd" value="_s-xclick" /> <input type="hidden"
+name="hosted_button_id" value="AXN88S8GX5MQ4" /> <input type="image"
+src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
+name="submit" alt="PayPal - O jeito seguro e fácil de pagamento online!" />
+<img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+</div>
+</form>
+
+</div>
+</div>
+
+
+<!-- tabs -->
+</div>
+ <ul class="footer">
+  <li>Copyright &copy; 2012 <a href="http://cihar.com/">Michal Čihař</a></li>
+  <li><a href="http://flattr.com/thing/571085/Weblate"><img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Envie ao Flattr" title="Envie ao Flattr" /></a></li>
+  <li><form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<div class="donate">
+<input type="hidden" name="cmd" value="_s-xclick" /> <input type="hidden"
+name="hosted_button_id" value="Y4C8WM9U8R8MN" /> <input type="image"
+src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif"
+name="submit" alt="PayPal - O jeito seguro e fácil de pagamento online!" />
+<img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+</div>
+</form></li>
+ </ul>
+
+<!-- Piwik -->
+<script type="text/javascript">
+
+<!--
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://stats.cihar.com/" : "http://stats.cihar.com/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+    var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 12);
+    piwikTracker.trackPageView();
+    piwikTracker.enableLinkTracking();
+} catch( err ) {}
+//-->
+</script><noscript><p><img src="http://stats.cihar.com/piwik.php?idsite=12" alt="" /></p></noscript>
+
+ <!-- End Piwik Tracking Code -->
+</body>
+</html>
