@@ -25,6 +25,7 @@ $(function() {
             '<li><a href="/index.php?lang=fr">Français</a></li>' +
             '<li><a href="/index.php?lang=el">Ελληνικά</a></li>' +
             '<li><a href="/index.php?lang=es">Español</a></li>' +
+            '<li><a href="/index.php?lang=ko">한국말</a></li>' +
 //            '<li><a href="/index.php?lang=gl">Galego</a></li>' +
 //            '<li><a href="/index.php?lang=pl">Polski</a></li>' +
             '<li><a href="/index.php?lang=pt_BR">Português brasileiro</a></li>' +
