@@ -2,7 +2,7 @@
 # Makefile to build website
 
 # Languages which we translate
-LANGUAGES=cs pl tr fr sv es da gl pt_BR zh_TW zh_CN id el ko
+LANGUAGES=cs pl tr fr sv es da gl pt_BR zh_TW zh_CN id el ko ru
 
 # directory where phpMyAdmin sources are placed
 PMA_DIR=../phpmyadmin
