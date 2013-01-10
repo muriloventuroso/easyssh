@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Weblate website VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2012-11-26 10:03+0100\n"
+"POT-Creation-Date: 2013-01-10 11:17+0100\n"
 "PO-Revision-Date: 2013-01-01 11:51+0200\n"
 "Last-Translator: Deokyun Yu <i@saintjr.com>\n"
 "Language-Team: Korean <http://l10n.cihar.com/projects/weblate/website/ko/>\n"
@@ -95,13 +95,15 @@ msgstr "소개"
 
 #. type: Content of: <html><body><div><div><div><p>
 #: en/index.html:52
+#, fuzzy
 msgid ""
 "Weblate is a web based translation tool with tight Git integration. It "
 "features simple and clean user interface, propagation of translations across "
-"subprojects, consistency checks and automatic linking to source files."
+"subprojects, quality checks and automatic linking to source files."
 msgstr ""
-"Weblate는 Git와 잘 연계된 웹 기반의 번역 도구입니다. 간결하고 깔끔한 사용자 인터페이스와 하위 프로젝트에 대한 번역 전파 및 "
-"일관성 검사 그리고 원본 파일에 대한 연결을 제공합니다."
+"Weblate는 Git와 잘 연계된 웹 기반의 번역 도구입니다. 간결하고 깔끔한 사용자 "
+"인터페이스와 하위 프로젝트에 대한 번역 전파 및 일관성 검사 그리고 원본 파일"
+"에 대한 연결을 제공합니다."
 
 #. type: Content of: <html><body><div><div><div><p>
 #: en/index.html:57
@@ -146,7 +148,8 @@ msgstr "기계 번역 서비스 사용이 가능함"
 
 #. type: Content of: <html><body><div><div><div><ul><li>
 #: en/index.html:67
-msgid "Message consistency checks"
+#, fuzzy
+msgid "Message quality checks"
 msgstr "문구의 일관성 검사"
 
 #. type: Content of: <html><body><div><div><div><ul><li>
@@ -161,15 +164,17 @@ msgid ""
 "formats.html\">translation formats</a> (Gettext, Qt, Java, Windows, Symbian "
 "and more)"
 msgstr ""
-"폭 넓은 <a href=\"http://weblate.readthedocs.org/en/latest/formats.html\">번역 "
-"포맷</a> 지원 (Gettext, Qt, Java, Windows, Symbian 등등)"
+"폭 넓은 <a href=\"http://weblate.readthedocs.org/en/latest/formats.html\">번"
+"역 포맷</a> 지원 (Gettext, Qt, Java, Windows, Symbian 등등)"
 
 #. type: Content of: <html><body><div><div><div><p>
 #: en/index.html:73
 msgid ""
 "If you are using Git as version control system, Weblate is the right CAT "
 "(computer-assisted translation) tool for you."
-msgstr "만약 Git를 버젼 제어 체계로 사용한다면, Weblate는 적절한 CAT (컴퓨터로 보조된 번역) 도구입니다."
+msgstr ""
+"만약 Git를 버젼 제어 체계로 사용한다면, Weblate는 적절한 CAT (컴퓨터로 보조"
+"된 번역) 도구입니다."
 
 #. type: Content of: <html><body><div><div><div><h2>
 #: en/index.html:79
@@ -182,8 +187,8 @@ msgid ""
 "You can download latest release on <a href=\"https://github.com/nijel/"
 "weblate/downloads\">Github</a>."
 msgstr ""
-"최종 배포판은 <a href=\"https://github.com/nijel/weblate/downloads\">Github</a>에서 "
-"다운로드 할 수 있습니다."
+"최종 배포판은 <a href=\"https://github.com/nijel/weblate/downloads\">Github</"
+"a>에서 다운로드 할 수 있습니다."
 
 #. type: Content of: <html><body><div><div><div><p>
 #: en/index.html:86
@@ -191,9 +196,8 @@ msgid ""
 "For openSUSE/SLES users, there are binary packages available in the <a href="
 "\"http://software.opensuse.org/package/weblate/\">openSUSE Buildservice</a>."
 msgstr ""
-"openSUSE/SLES 사용자들은, <a "
-"href=\"http://software.opensuse.org/package/weblate/\">openSUSE "
-"Buildservice</a>에서 바이너리 패키지를 구할수 있습니다."
+"openSUSE/SLES 사용자들은, <a href=\"http://software.opensuse.org/package/"
+"weblate/\">openSUSE Buildservice</a>에서 바이너리 패키지를 구할수 있습니다."
 
 #. type: Content of: <html><body><div><div><div><p>
 #: en/index.html:91
@@ -202,9 +206,9 @@ msgid ""
 "download appliance based on openSUSE 12.2 at <a href=\"http://susestudio.com/"
 "a/F8yMYg/weblate\">SUSE Studio Gallery</a>."
 msgstr ""
-"Weblate를 클라우드나 가상서버에서 실행하고자 하는 경우, openSUSE 12.2 기반의 어플라이언스를<a "
-"href=\"http://susestudio.com/a/F8yMYg/weblate\">SUSE Studio Gallery</a>에서 받을수 "
-"있습니다."
+"Weblate를 클라우드나 가상서버에서 실행하고자 하는 경우, openSUSE 12.2 기반의 "
+"어플라이언스를<a href=\"http://susestudio.com/a/F8yMYg/weblate\">SUSE Studio "
+"Gallery</a>에서 받을수 있습니다."
 
 #. type: Content of: <html><body><div><div><div><p>
 #: en/index.html:97 en/index.html:192
@@ -213,9 +217,9 @@ msgid ""
 "\">BitNami stack</a>, what allows you native installation on Windows, Linux "
 "or Mac OS X and provides virtual images for running Weblate."
 msgstr ""
-"Weblate는 <a href=\"http://bitnami.org/stack/weblate\">BitNami stack</a>으로서도 "
-"구할수 있으며, Windows, Linux or Mac OS X에서 직접 설치하거나, Weblate를 실행 가능한 가상 이미지 파일 "
-"형식으로 구할수 있습니다."
+"Weblate는 <a href=\"http://bitnami.org/stack/weblate\">BitNami stack</a>으로"
+"서도 구할수 있으며, Windows, Linux or Mac OS X에서 직접 설치하거나, Weblate"
+"를 실행 가능한 가상 이미지 파일 형식으로 구할수 있습니다."
 
 #. type: Content of: <html><body><div><div><div><h2>
 #: en/index.html:103 en/index.html:249
@@ -228,8 +232,8 @@ msgid ""
 "Weblate is being developed on <a href=\"https://github.com/nijel/weblate"
 "\">Github</a>, you can fork it there or just:"
 msgstr ""
-"Weblate는 <a href=\"https://github.com/nijel/weblate\">Github</a>에서 개발되고 있습니다, "
-"당신은 그 곳에서 포크하거나 아니면:"
+"Weblate는 <a href=\"https://github.com/nijel/weblate\">Github</a>에서 개발되"
+"고 있습니다, 당신은 그 곳에서 포크하거나 아니면:"
 
 #. type: Content of: <html><body><div><div><div><pre>
 #: en/index.html:111 en/index.html:257
@@ -248,8 +252,8 @@ msgid ""
 "Documentation is available in <code>docs</code> directory in the sources or "
 "online at <a href=\"http://weblate.readthedocs.org/\">Read the Docs</a>."
 msgstr ""
-"문서는 소스상의 <code>docs</code> 디렉터리나 온라인상의 <a "
-"href=\"http://weblate.readthedocs.org/\">Read the Docs</a>에서 찾을수 있습니다."
+"문서는 소스상의 <code>docs</code> 디렉터리나 온라인상의 <a href=\"http://"
+"weblate.readthedocs.org/\">Read the Docs</a>에서 찾을수 있습니다."
 
 #. type: Content of: <html><body><div><div><div><h2>
 #: en/index.html:123
@@ -264,16 +268,19 @@ msgid ""
 "the GNU General Public License as published by the Free Software Foundation, "
 "either version 3 of the License, or (at your option) any later version."
 msgstr ""
-"Weblate는 <a href=\"http://cihar.com/\">Michal Čihař</a>에 의해 작성되었고 자유 소프트웨어 "
-"입니다: 자유 소프트웨어 재단에 의해서 공표된 GNU 일반 공중 허가서 버전 3 또는 (귀하의 선택으로) 이후 버전의 조항에 따라 재배포 "
-"하거나 수정할 수 있습니다."
+"Weblate는 <a href=\"http://cihar.com/\">Michal Čihař</a>에 의해 작성되었고 자"
+"유 소프트웨어 입니다: 자유 소프트웨어 재단에 의해서 공표된 GNU 일반 공중 허가"
+"서 버전 3 또는 (귀하의 선택으로) 이후 버전의 조항에 따라 재배포 하거나 수정"
+"할 수 있습니다."
 
 #. type: Content of: <html><body><div><div><div><p>
 #: en/index.html:136
 msgid ""
 "Wide range of projects do use Weblate, some of them have made this "
 "information public and you can see them here:"
-msgstr "여러 분야의 프로젝트가 Weblate를 사용합니다. 그 중의 일부가 이 정보를 공개하고 있으며 여기에서 볼 수 있습니다:"
+msgstr ""
+"여러 분야의 프로젝트가 Weblate를 사용합니다. 그 중의 일부가 이 정보를 공개하"
+"고 있으며 여기에서 볼 수 있습니다:"
 
 #. type: Content of: <html><body><div><div><div><dl><dt>
 #: en/index.html:141
@@ -308,8 +315,8 @@ msgid ""
 "debian-handbook.info/\">The Debian Administrator's Handbook</a> is being "
 "translated there."
 msgstr ""
-"데비안과 연관된 번역 서버는 현재 <a href=\"http://debian-handbook.info/\">The Debian "
-"Administrator's Handbook</a>를 번역하고 있습니다."
+"데비안과 연관된 번역 서버는 현재 <a href=\"http://debian-handbook.info/"
+"\">The Debian Administrator's Handbook</a>를 번역하고 있습니다."
 
 #. type: Content of: <html><body><div><div><div><dl><dt>
 #: en/index.html:148
@@ -331,8 +338,8 @@ msgid ""
 "In case you use Weblate, please <a href=\"mailto:michal@cihar.com\">let me "
 "know</a> to add you to this list."
 msgstr ""
-"Weblate를 사용하는 경우, <a href=\"mailto:michal@cihar.com\">제게 알려주신다면</a> 이 목록에 추가 "
-"해드리겠습니다."
+"Weblate를 사용하는 경우, <a href=\"mailto:michal@cihar.com\">제게 알려주신다"
+"면</a> 이 목록에 추가 해드리겠습니다."
 
 #. type: Content of: <html><body><div><div><div><h2>
 #: en/index.html:158
@@ -347,11 +354,10 @@ msgid ""
 "You can also follow Weblate news on <a href=\"https://plus.google."
 "com/106497926394648368509\">Google+</a>."
 msgstr ""
-"이 프로젝트에 대한 가장 최근 정보는 <a "
-"href=\"http://blog.cihar.com/archives/weblate/?utm_source=weblate\">Michal "
-"Čihař의 블로그</a>에서 찾을 수 있습니다. 또한 <a "
-"href=\"https://plus.google.com/106497926394648368509\">Google+</a>의 Weblate "
-"news를 팔로우 하셔도 됩니다."
+"이 프로젝트에 대한 가장 최근 정보는 <a href=\"http://blog.cihar.com/archives/"
+"weblate/?utm_source=weblate\">Michal Čihař의 블로그</a>에서 찾을 수 있습니"
+"다. 또한 <a href=\"https://plus.google.com/106497926394648368509\">Google+</"
+"a>의 Weblate news를 팔로우 하셔도 됩니다."
 
 #. type: Content of: <html><body><div><div><div>
 #: en/index.html:166
@@ -360,9 +366,9 @@ msgid ""
 "archives/weblate/index-rss.xml\"> <span class=\"ui-icon ui-icon-signal-diag"
 "\"></span> </a>"
 msgstr ""
-"<a class=\"rss ui-state-default ui-corner-all\" "
-"href=\"http://blog.cihar.com/archives/weblate/index-rss.xml\"> <span class"
-"=\"ui-icon ui-icon-signal-diag\"></span> </a>"
+"<a class=\"rss ui-state-default ui-corner-all\" href=\"http://blog.cihar.com/"
+"archives/weblate/index-rss.xml\"> <span class=\"ui-icon ui-icon-signal-diag"
+"\"></span> </a>"
 
 #. type: Content of: <html><body><div><div><div><h2>
 #: en/index.html:170
@@ -381,8 +387,9 @@ msgid ""
 "server</a>.  You can register there and work under your username or just use "
 "<code>demo</code> account with <code>demo</code> password."
 msgstr ""
-"우리의 <a href=\"http://demo.weblate.org\">데모 서버</a>에서 Weblate를 시험해 볼 수 있습니다. 당신의 "
-"이름으로 새로운 계정을 만들거나 <code>demo</code>계정 <code>demo</code> 비밀번호를 이용하셔도 됩니다."
+"우리의 <a href=\"http://demo.weblate.org\">데모 서버</a>에서 Weblate를 시험"
+"해 볼 수 있습니다. 당신의 이름으로 새로운 계정을 만들거나 <code>demo</code>계"
+"정 <code>demo</code> 비밀번호를 이용하셔도 됩니다."
 
 #. type: Content of: <html><body><div><div><div><h2>
 #: en/index.html:183
@@ -397,9 +404,9 @@ msgid ""
 "a> or use testdrive there which allows you to play with virtual server for "
 "one hour."
 msgstr ""
-"만약 세부적으로 시험해보고자 할 경우 미리 준비된 어플라이언스를 <a "
-"href=\"http://susestudio.com/a/F8yMYg/weblate\">SUSE Studio Gallery</a>에서 다운로드 "
-"하거나 testdrive에서 제공하는 1시간용 가상 서버를 이용하십시오."
+"만약 세부적으로 시험해보고자 할 경우 미리 준비된 어플라이언스를 <a href="
+"\"http://susestudio.com/a/F8yMYg/weblate\">SUSE Studio Gallery</a>에서 다운로"
+"드 하거나 testdrive에서 제공하는 1시간용 가상 서버를 이용하십시오."
 
 #. type: Content of: <html><body><div><div><div><a>
 #: en/index.html:201
@@ -415,7 +422,9 @@ msgstr "메인 페이지"
 #: en/index.html:201
 msgid ""
 "</a> <a href=\"/screenshots/weblate-project.png\" title=\"Project overview\">"
-msgstr "</a> <a href=\"/screenshots/weblate-project.png\" title=\"프로젝트 총괄개요\">"
+msgstr ""
+"</a> <a href=\"/screenshots/weblate-project.png\" title=\"프로젝트 총괄개요"
+"\">"
 
 #. type: Attribute 'alt' of: <html><body><div><div><div><a><img>
 #: en/index.html:203
@@ -427,7 +436,9 @@ msgstr "프로젝트 총괄개요"
 msgid ""
 "</a> <a href=\"/screenshots/weblate-translating.png\" title=\"Translating "
 "page\">"
-msgstr "</a> <a href=\"/screenshots/weblate-translating.png\" title=\"번역중인 페이지\">"
+msgstr ""
+"</a> <a href=\"/screenshots/weblate-translating.png\" title=\"번역중인 페이지"
+"\">"
 
 #. type: Attribute 'alt' of: <html><body><div><div><div><a><img>
 #: en/index.html:205
@@ -451,9 +462,9 @@ msgid ""
 "Please report it to <a href=\"https://github.com/nijel/weblate/issues"
 "\">issue tracker on GitHub</a>."
 msgstr ""
-"Weblate와 관련된 문제가 있습니까? Weblate를 개선할 방법이 있습니까? <a "
-"href=\"https://github.com/nijel/weblate/issues\">GitHub의 issue tracker</a>에 "
-"알려주세요."
+"Weblate와 관련된 문제가 있습니까? Weblate를 개선할 방법이 있습니까? <a href="
+"\"https://github.com/nijel/weblate/issues\">GitHub의 issue tracker</a>에 알려"
+"주세요."
 
 #. type: Content of: <html><body><div><div><div><h2>
 #: en/index.html:218
@@ -469,11 +480,11 @@ msgid ""
 "weblate\">subscribe</a> or <a href=\"https://lists.cihar.com/pipermail/"
 "weblate/\">browse archives</a>."
 msgstr ""
-"Weblate에 대한 여러가지를 토의할수 있는 <a "
-"href=\"mailto:weblate@lists.cihar.com\">weblate@lists.cihar.com</a>라는 메일링 리스트가 "
-"있습니다. <a href=\"https://lists.cihar.com/cgi-"
-"bin/mailman/listinfo/weblate\">구독</a>하거나 <a "
-"href=\"https://lists.cihar.com/pipermail/weblate/\">기록을 살펴볼 수</a>있습니다."
+"Weblate에 대한 여러가지를 토의할수 있는 <a href=\"mailto:weblate@lists.cihar."
+"com\">weblate@lists.cihar.com</a>라는 메일링 리스트가 있습니다. <a href="
+"\"https://lists.cihar.com/cgi-bin/mailman/listinfo/weblate\">구독</a>하거나 "
+"<a href=\"https://lists.cihar.com/pipermail/weblate/\">기록을 살펴볼 수</a>있"
+"습니다."
 
 #. type: Content of: <html><body><div><div><div><p>
 #: en/index.html:228
@@ -482,8 +493,8 @@ msgid ""
 "comp.web.weblate\">Gmane</a> where you can browse archives or use NNTP "
 "interface."
 msgstr ""
-"메일링 리스트는 <a href=\"http://dir.gmane.org/gmane.comp.web.weblate\">Gmane</a>에서도 "
-"기록을 살펴보거나 NNTP 인터페이스를 통해 이용가능합니다."
+"메일링 리스트는 <a href=\"http://dir.gmane.org/gmane.comp.web.weblate"
+"\">Gmane</a>에서도 기록을 살펴보거나 NNTP 인터페이스를 통해 이용가능합니다."
 
 #. type: Content of: <html><body><div><div><div><h2>
 #: en/index.html:232
@@ -498,10 +509,10 @@ msgid ""
 "You can also use <a href=\"http://webchat.freenode.net?channels=weblate"
 "\">webchat</a> there."
 msgstr ""
-"관심있는 사람이 접속해 있는 경우, <a href=\"http://freenode.net/\">freenode</a> 네트웍의 "
-"#weblate 채널에서 도움을 얻을수 있습니다. <a "
-"href=\"http://webchat.freenode.net?channels=weblate\">webchat</a>을 이용해 접속할 수도 "
-"있습니다."
+"관심있는 사람이 접속해 있는 경우, <a href=\"http://freenode.net/\">freenode</"
+"a> 네트웍의 #weblate 채널에서 도움을 얻을수 있습니다. <a href=\"http://"
+"webchat.freenode.net?channels=weblate\">webchat</a>을 이용해 접속할 수도 있습"
+"니다."
 
 #. type: Content of: <html><body><div><div><div><h2>
 #: en/index.html:240
@@ -523,8 +534,8 @@ msgid ""
 "This website is stored on <a href=\"https://github.com/nijel/weblate-web"
 "\">Github</a> as well:"
 msgstr ""
-"물론 이 웹사이트는 <a href=\"https://github.com/nijel/weblate-web\">Github</a> 저장되어 "
-"있습니다:"
+"물론 이 웹사이트는 <a href=\"https://github.com/nijel/weblate-web\">Github</"
+"a> 저장되어 있습니다:"
 
 #. type: Content of: <html><body><div><div><div><pre>
 #: en/index.html:265
@@ -543,8 +554,8 @@ msgid ""
 "You can translate Weblate using Weblate installation at <a href=\"https://"
 "l10n.cihar.com/engage/weblate/\">l10n.cihar.com</a>."
 msgstr ""
-"<a href=\"https://l10n.cihar.com/engage/weblate/\">l10n.cihar.com</a>에 설치된 "
-"Weblate를 이용하여 Weblate를 번역할 수 있습니다."
+"<a href=\"https://l10n.cihar.com/engage/weblate/\">l10n.cihar.com</a>에 설치"
+"된 Weblate를 이용하여 Weblate를 번역할 수 있습니다."
 
 #. type: Content of: <html><body><div><div><div><h2>
 #: en/index.html:275
@@ -555,7 +566,8 @@ msgstr "기부하기"
 #: en/index.html:278
 msgid ""
 "If you like Weblate you can support it's further development by donating."
-msgstr "Weblate가 마음에 드신다면 기부하기를 통해 앞으로의 개발을 도와줄 수 있습니다."
+msgstr ""
+"Weblate가 마음에 드신다면 기부하기를 통해 앞으로의 개발을 도와줄 수 있습니다."
 
 #. type: Content of: <html><body><div><div><div><form><div>
 #: en/index.html:283
@@ -565,10 +577,10 @@ msgid ""
 "\"image\" src=\"https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
 "\" name=\"submit\" alt=\"PayPal - The safer, easier way to pay online!\" />"
 msgstr ""
-"<input type=\"hidden\" name=\"cmd\" value=\"_s-xclick\" /> <input type=\"hidden\" "
-"name=\"hosted_button_id\" value=\"AXN88S8GX5MQ4\" /> <input type=\"image\" "
-"src=\"https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif\" "
-"name=\"submit\" alt=\"PayPal - The safer, easier way to pay online!\" />"
+"<input type=\"hidden\" name=\"cmd\" value=\"_s-xclick\" /> <input type="
+"\"hidden\" name=\"hosted_button_id\" value=\"AXN88S8GX5MQ4\" /> <input type="
+"\"image\" src=\"https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
+"\" name=\"submit\" alt=\"PayPal - The safer, easier way to pay online!\" />"
 
 #. type: Content of: <html><body><ul><li>
 #: en/index.html:296
@@ -593,7 +605,7 @@ msgid ""
 "\"image\" src=\"https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif"
 "\" name=\"submit\" alt=\"PayPal - The safer, easier way to pay online!\" />"
 msgstr ""
-"<input type=\"hidden\" name=\"cmd\" value=\"_s-xclick\" /> <input type=\"hidden\" "
-"name=\"hosted_button_id\" value=\"Y4C8WM9U8R8MN\" /> <input type=\"image\" "
-"src=\"https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif\" "
-"name=\"submit\" alt=\"PayPal - The safer, easier way to pay online!\" />"
+"<input type=\"hidden\" name=\"cmd\" value=\"_s-xclick\" /> <input type="
+"\"hidden\" name=\"hosted_button_id\" value=\"Y4C8WM9U8R8MN\" /> <input type="
+"\"image\" src=\"https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif"
+"\" name=\"submit\" alt=\"PayPal - The safer, easier way to pay online!\" />"
