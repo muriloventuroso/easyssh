@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Weblate website\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-01-10 11:17+0100\n"
+"POT-Creation-Date: 2013-01-23 15:41+0100\n"
 "PO-Revision-Date: 2012-11-28 11:19+0200\n"
 "Last-Translator: shanyan baishui <Siramizu@gmail.com>\n"
 "Language-Team: Chinese (China) <http://l10n.cihar.com/projects/weblate/"
@@ -182,15 +182,35 @@ msgstr "下载"
 
 #. type: Content of: <html><body><div><div><div><p>
 #: en/index.html:82
-msgid ""
-"You can download latest release on <a href=\"https://github.com/nijel/"
-"weblate/downloads\">Github</a>."
+msgid "You can download latest release here:"
 msgstr ""
-"您可以到 <a href=\"https://github.com/nijel/weblate/downloads\">Github</a> 下"
-"载最新版本。"
+
+#. type: Content of: <html><body><div><div><div><ul><li>
+#: en/index.html:86
+#, fuzzy
+msgid ""
+"<a href=\"http://dl.cihar.com/weblate/weblate-1.4.tar.xz\">weblate-1.4.tar."
+"xz</a>"
+msgstr "<a href=\"http://l10n.cihar.com/\">l10n.cihar.com</a>"
+
+#. type: Content of: <html><body><div><div><div><ul><li>
+#: en/index.html:87
+#, fuzzy
+msgid ""
+"<a href=\"http://dl.cihar.com/weblate/weblate-1.4.tar.gz\">weblate-1.4.tar."
+"gz</a>"
+msgstr "<a href=\"http://debian.weblate.org/\">Weblate for Debian</a>"
+
+#. type: Content of: <html><body><div><div><div><ul><li>
+#: en/index.html:88
+#, fuzzy
+msgid ""
+"<a href=\"http://dl.cihar.com/weblate/weblate-1.4.tar.bz2\">weblate-1.4.tar."
+"bz2</a>"
+msgstr "<a href=\"http://debian.weblate.org/\">Weblate for Debian</a>"
 
 #. type: Content of: <html><body><div><div><div><p>
-#: en/index.html:86
+#: en/index.html:92
 msgid ""
 "For openSUSE/SLES users, there are binary packages available in the <a href="
 "\"http://software.opensuse.org/package/weblate/\">openSUSE Buildservice</a>."
@@ -199,7 +219,7 @@ msgstr ""
 "weblate/\">openSUSE 构建服务</a>下载二进制包。"
 
 #. type: Content of: <html><body><div><div><div><p>
-#: en/index.html:91
+#: en/index.html:97
 msgid ""
 "In case you want to run Weblate in your cloud or virtual server, you can "
 "download appliance based on openSUSE 12.2 at <a href=\"http://susestudio.com/"
@@ -210,7 +230,7 @@ msgstr ""
 "的套件。"
 
 #. type: Content of: <html><body><div><div><div><p>
-#: en/index.html:97 en/index.html:192
+#: en/index.html:103 en/index.html:198
 msgid ""
 "Weblate is also available as <a href=\"http://bitnami.org/stack/weblate"
 "\">BitNami stack</a>, that allows you native installation on Windows, Linux "
@@ -221,12 +241,12 @@ msgstr ""
 "机。"
 
 #. type: Content of: <html><body><div><div><div><h2>
-#: en/index.html:103 en/index.html:249
+#: en/index.html:109 en/index.html:255
 msgid "Code"
 msgstr "代码"
 
 #. type: Content of: <html><body><div><div><div><p>
-#: en/index.html:106 en/index.html:252
+#: en/index.html:112 en/index.html:258
 msgid ""
 "Weblate is being developed on <a href=\"https://github.com/nijel/weblate"
 "\">Github</a>, you can fork it there or just:"
@@ -235,18 +255,18 @@ msgstr ""
 "可以派生它或直接:"
 
 #. type: Content of: <html><body><div><div><div><pre>
-#: en/index.html:111 en/index.html:257
+#: en/index.html:117 en/index.html:263
 #, no-wrap
 msgid "git clone git://github.com/nijel/weblate.git\n"
 msgstr "git clone git://github.com/nijel/weblate.git\n"
 
 #. type: Content of: <html><body><div><div><div><h2>
-#: en/index.html:116
+#: en/index.html:122
 msgid "Documentation"
 msgstr "文档"
 
 #. type: Content of: <html><body><div><div><div><p>
-#: en/index.html:119
+#: en/index.html:125
 msgid ""
 "Documentation is available in <code>docs</code> directory in the sources or "
 "online at <a href=\"http://weblate.readthedocs.org/\">Read the Docs</a>."
@@ -255,12 +275,12 @@ msgstr ""
 "readthedocs.org/\">Read the Docs</a> 在线访问。"
 
 #. type: Content of: <html><body><div><div><div><h2>
-#: en/index.html:123
+#: en/index.html:129
 msgid "Legal information"
 msgstr "法律信息"
 
 #. type: Content of: <html><body><div><div><div><p>
-#: en/index.html:126
+#: en/index.html:132
 msgid ""
 "Weblate was written by <a href=\"http://cihar.com/\">Michal Čihař</a> and is "
 "free software: you can redistribute it and/or modify it under the terms of "
@@ -272,40 +292,40 @@ msgstr ""
 "用公共授权的条件下再发布和/或修改它。"
 
 #. type: Content of: <html><body><div><div><div><p>
-#: en/index.html:136
+#: en/index.html:142
 msgid ""
 "Wide range of projects do use Weblate, some of them have made this "
 "information public and you can see them here:"
 msgstr "许多项目正在使用 Weblate，您可以在这里看到部分公开的项目:"
 
 #. type: Content of: <html><body><div><div><div><dl><dt>
-#: en/index.html:141
+#: en/index.html:147
 msgid "<a href=\"http://l10n.cihar.com/\">l10n.cihar.com</a>"
 msgstr "<a href=\"http://l10n.cihar.com/\">l10n.cihar.com</a>"
 
 #. type: Content of: <html><body><div><div><div><dl><dd>
-#: en/index.html:142
+#: en/index.html:148
 msgid "Translating phpMyAdmin, Gammu and Weblate itself."
 msgstr "翻译 phpMyAdmin、Gammu 以及 Weblate 自己。"
 
 #. type: Content of: <html><body><div><div><div><dl><dt>
-#: en/index.html:143
+#: en/index.html:149
 msgid ""
 "<a href=\"http://l10n.unpythonic.net/\">Web-translation for LinuxCNC</a>"
 msgstr "<a href=\"http://l10n.unpythonic.net/\">LinuxCNC 在线翻译</a>"
 
 #. type: Content of: <html><body><div><div><div><dl><dd>
-#: en/index.html:144
+#: en/index.html:150
 msgid "LinuxCNC experimental web translation."
 msgstr "LinuxCNC 在线翻译（实验性的）。"
 
 #. type: Content of: <html><body><div><div><div><dl><dt>
-#: en/index.html:145
+#: en/index.html:151
 msgid "<a href=\"http://debian.weblate.org/\">Weblate for Debian</a>"
 msgstr "<a href=\"http://debian.weblate.org/\">Weblate for Debian</a>"
 
 #. type: Content of: <html><body><div><div><div><dl><dd>
-#: en/index.html:146
+#: en/index.html:152
 msgid ""
 "Translation server for Debian related projects, currently <a href=\"http://"
 "debian-handbook.info/\">The Debian Administrator's Handbook</a> is being "
@@ -315,12 +335,12 @@ msgstr ""
 "\">Debian 管理员手册</a>在此翻译。"
 
 #. type: Content of: <html><body><div><div><div><dl><dt>
-#: en/index.html:148
+#: en/index.html:154
 msgid "<a href=\"http://translate.osmand.net\">Weblate for Osmand</a>"
 msgstr "<a href=\"http://translate.osmand.net\">Weblate for Osmand</a>"
 
 #. type: Content of: <html><body><div><div><div><dl><dd>
-#: en/index.html:149
+#: en/index.html:155
 msgid ""
 "<a href=\"http://www.osmand.net/\">Osmand</a> (OSM Automated Navigation "
 "Directions) translation."
@@ -328,7 +348,7 @@ msgstr ""
 "<a href=\"http://www.osmand.net/\">Osmand</a> (开放街道地图导航) 翻译。"
 
 #. type: Content of: <html><body><div><div><div><p>
-#: en/index.html:153
+#: en/index.html:159
 msgid ""
 "In case you use Weblate, please <a href=\"mailto:michal@cihar.com\">let me "
 "know</a> to add you to this list."
@@ -337,12 +357,12 @@ msgstr ""
 "加入这个列表。"
 
 #. type: Content of: <html><body><div><div><div><h2>
-#: en/index.html:158
+#: en/index.html:164
 msgid "News"
 msgstr "新闻"
 
 #. type: Content of: <html><body><div><div><div><p>
-#: en/index.html:161
+#: en/index.html:167
 msgid ""
 "You can find latest information about this project in <a href=\"http://blog."
 "cihar.com/archives/weblate/?utm_source=weblate\">Michal Čihař's blog</a>.  "
@@ -355,7 +375,7 @@ msgstr ""
 "新闻。"
 
 #. type: Content of: <html><body><div><div><div>
-#: en/index.html:166
+#: en/index.html:172
 msgid ""
 "<a class=\"rss ui-state-default ui-corner-all\" href=\"http://blog.cihar.com/"
 "archives/weblate/index-rss.xml\"> <span class=\"ui-icon ui-icon-signal-diag"
@@ -366,17 +386,17 @@ msgstr ""
 "\"></span> </a>"
 
 #. type: Content of: <html><body><div><div><div><h2>
-#: en/index.html:170
+#: en/index.html:176
 msgid "Recent news"
 msgstr "最新新闻"
 
 #. type: Content of: <html><body><div><div><div><h2>
-#: en/index.html:175
+#: en/index.html:181
 msgid "Try it out"
 msgstr "试用"
 
 #. type: Content of: <html><body><div><div><div><p>
-#: en/index.html:178
+#: en/index.html:184
 msgid ""
 "You can try how Weblate on our <a href=\"http://demo.weblate.org\">demo "
 "server</a>.  You can register there and work under your username or just use "
@@ -387,12 +407,12 @@ msgstr ""
 "<code>demo</code> 密码登录。"
 
 #. type: Content of: <html><body><div><div><div><h2>
-#: en/index.html:183
+#: en/index.html:189
 msgid "Appliances"
 msgstr "套件"
 
 #. type: Content of: <html><body><div><div><div><p>
-#: en/index.html:186
+#: en/index.html:192
 msgid ""
 "If you want to test more deeply you can either download prepared appliance "
 "at <a href=\"http://susestudio.com/a/F8yMYg/weblate\">SUSE Studio Gallery</"
@@ -404,28 +424,28 @@ msgstr ""
 "器的使用。"
 
 #. type: Content of: <html><body><div><div><div><a>
-#: en/index.html:201
+#: en/index.html:207
 msgid "<a href=\"/screenshots/weblate-main.png\" title=\"Main page\">"
 msgstr "<a href=\"/screenshots/weblate-main.png\" title=\"主页\">"
 
 #. type: Attribute 'alt' of: <html><body><div><div><div><a><img>
-#: en/index.html:201
+#: en/index.html:207
 msgid "Main page"
 msgstr "主页"
 
 #. type: Content of: <html><body><div><div><div><a>
-#: en/index.html:201
+#: en/index.html:207
 msgid ""
 "</a> <a href=\"/screenshots/weblate-project.png\" title=\"Project overview\">"
 msgstr "</a> <a href=\"/screenshots/weblate-project.png\" title=\"项目概况\">"
 
 #. type: Attribute 'alt' of: <html><body><div><div><div><a><img>
-#: en/index.html:203
+#: en/index.html:209
 msgid "Project overview"
 msgstr "项目概况"
 
 #. type: Content of: <html><body><div><div><div><a>
-#: en/index.html:203
+#: en/index.html:209
 msgid ""
 "</a> <a href=\"/screenshots/weblate-translating.png\" title=\"Translating "
 "page\">"
@@ -433,22 +453,22 @@ msgstr ""
 "</a> <a href=\"/screenshots/weblate-translating.png\" title=\"翻译页面\">"
 
 #. type: Attribute 'alt' of: <html><body><div><div><div><a><img>
-#: en/index.html:205
+#: en/index.html:211
 msgid "Translating page"
 msgstr "翻译页面"
 
 #. type: Content of: <html><body><ul><li>
-#: en/index.html:205 en/index.html:297
+#: en/index.html:211 en/index.html:303
 msgid "</a>"
 msgstr "</a>"
 
 #. type: Content of: <html><body><div><div><div><h2>
-#: en/index.html:210
+#: en/index.html:216
 msgid "Bugs or feature requests"
 msgstr "报告缺陷或增加功能"
 
 #. type: Content of: <html><body><div><div><div><p>
-#: en/index.html:213
+#: en/index.html:219
 msgid ""
 "Have you found any issue with Weblate? Do you have idea how to improve it? "
 "Please report it to <a href=\"https://github.com/nijel/weblate/issues"
@@ -458,12 +478,12 @@ msgstr ""
 "com/nijel/weblate/issues\">GitHub 上的问题追踪器</a>报告。"
 
 #. type: Content of: <html><body><div><div><div><h2>
-#: en/index.html:218
+#: en/index.html:224
 msgid "Mailing list"
 msgstr "邮件列表"
 
 #. type: Content of: <html><body><div><div><div><p>
-#: en/index.html:221
+#: en/index.html:227
 msgid ""
 "There is a mailing list <a href=\"mailto:weblate@lists.cihar.com"
 "\">weblate@lists.cihar.com</a> where you can discuss various things about "
@@ -477,7 +497,7 @@ msgstr ""
 "com/pipermail/weblate/\">浏览存档</a>。"
 
 #. type: Content of: <html><body><div><div><div><p>
-#: en/index.html:228
+#: en/index.html:234
 msgid ""
 "The mailing list is also available on <a href=\"http://dir.gmane.org/gmane."
 "comp.web.weblate\">Gmane</a> where you can browse archives or use NNTP "
@@ -487,12 +507,12 @@ msgstr ""
 "浏览邮件列表的存档或使用 NNTP 。"
 
 #. type: Content of: <html><body><div><div><div><h2>
-#: en/index.html:232
+#: en/index.html:238
 msgid "IRC"
 msgstr "聊天室"
 
 #. type: Content of: <html><body><div><div><div><p>
-#: en/index.html:235
+#: en/index.html:241
 msgid ""
 "When some of interested people are online, you might also find help on "
 "#weblate channel on <a href=\"http://freenode.net/\">freenode</a> network. "
@@ -504,12 +524,12 @@ msgstr ""
 "channels=weblate\">网页</a>访问。"
 
 #. type: Content of: <html><body><div><div><div><h2>
-#: en/index.html:240
+#: en/index.html:246
 msgid "Contact"
 msgstr "联系"
 
 #. type: Content of: <html><body><div><div><div><p>
-#: en/index.html:243
+#: en/index.html:249
 msgid ""
 "You can also contact <a href=\"mailto:michal@cihar.com?subject=Weblate"
 "\">Michal Čihař</a>, who is author of Weblate."
@@ -518,7 +538,7 @@ msgstr ""
 "Čihař</a>，Weblate 的作者。"
 
 #. type: Content of: <html><body><div><div><div><p>
-#: en/index.html:261
+#: en/index.html:267
 msgid ""
 "This website is stored on <a href=\"https://github.com/nijel/weblate-web"
 "\">Github</a> as well:"
@@ -526,18 +546,18 @@ msgstr ""
 "本站也在 <a href=\"https://github.com/nijel/weblate-web\">Github</a> 上存放："
 
 #. type: Content of: <html><body><div><div><div><pre>
-#: en/index.html:265
+#: en/index.html:271
 #, no-wrap
 msgid "git clone git://github.com/nijel/weblate-web.git\n"
 msgstr "git clone git://github.com/nijel/weblate-web.git\n"
 
 #. type: Content of: <html><body><div><div><div><h2>
-#: en/index.html:268
+#: en/index.html:274
 msgid "Translate"
 msgstr "翻译"
 
 #. type: Content of: <html><body><div><div><div><p>
-#: en/index.html:271
+#: en/index.html:277
 msgid ""
 "You can translate Weblate using Weblate installation at <a href=\"https://"
 "l10n.cihar.com/engage/weblate/\">l10n.cihar.com</a>."
@@ -546,18 +566,18 @@ msgstr ""
 "a> 使用 Weblate 翻译 Weblate。"
 
 #. type: Content of: <html><body><div><div><div><h2>
-#: en/index.html:275
+#: en/index.html:281
 msgid "Donate"
 msgstr "捐助"
 
 #. type: Content of: <html><body><div><div><div><p>
-#: en/index.html:278
+#: en/index.html:284
 msgid ""
 "If you like Weblate you can support it's further development by donating."
 msgstr "如果您喜欢 Weblate 您可以捐助以支持它的开发。"
 
 #. type: Content of: <html><body><div><div><div><form><div>
-#: en/index.html:283
+#: en/index.html:289
 msgid ""
 "<input type=\"hidden\" name=\"cmd\" value=\"_s-xclick\" /> <input type="
 "\"hidden\" name=\"hosted_button_id\" value=\"AXN88S8GX5MQ4\" /> <input type="
@@ -570,22 +590,24 @@ msgstr ""
 "\" name=\"submit\" alt=\"PayPal - 安全、方便的在线支付方式!\" />"
 
 #. type: Content of: <html><body><ul><li>
-#: en/index.html:296
-msgid "Copyright &copy; 2012 - 2013 <a href=\"http://cihar.com/\">Michal Čihař</a>"
-msgstr "版权所有 &copy; 2012 - 2013 <a href=\"http://cihar.com/\">Michal Čihař</a>"
+#: en/index.html:302
+msgid ""
+"Copyright &copy; 2012 - 2013 <a href=\"http://cihar.com/\">Michal Čihař</a>"
+msgstr ""
+"版权所有 &copy; 2012 - 2013 <a href=\"http://cihar.com/\">Michal Čihař</a>"
 
 #. type: Content of: <html><body><ul><li><a>
-#: en/index.html:297
+#: en/index.html:303
 msgid "<a href=\"http://flattr.com/thing/571085/Weblate\">"
 msgstr "<a href=\"http://flattr.com/thing/571085/Weblate\">"
 
 #. type: Attribute 'title' of: <html><body><ul><li><a><img>
-#: en/index.html:297
+#: en/index.html:303
 msgid "Flattr this"
 msgstr "Flattr this"
 
 #. type: Content of: <html><body><ul><li><form><div>
-#: en/index.html:300
+#: en/index.html:306
 msgid ""
 "<input type=\"hidden\" name=\"cmd\" value=\"_s-xclick\" /> <input type="
 "\"hidden\" name=\"hosted_button_id\" value=\"Y4C8WM9U8R8MN\" /> <input type="
@@ -596,6 +618,13 @@ msgstr ""
 "\"hidden\" name=\"hosted_button_id\" value=\"Y4C8WM9U8R8MN\" /> <input type="
 "\"image\" src=\"https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif"
 "\" name=\"submit\" alt=\"PayPal - 安全、方便的在线支付方式!\" />"
+
+#~ msgid ""
+#~ "You can download latest release on <a href=\"https://github.com/nijel/"
+#~ "weblate/downloads\">Github</a>."
+#~ msgstr ""
+#~ "您可以到 <a href=\"https://github.com/nijel/weblate/downloads\">Github</"
+#~ "a> 下载最新版本。"
 
 #~ msgid "References"
 #~ msgstr "案例"
