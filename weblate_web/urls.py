@@ -29,6 +29,7 @@ urlpatterns = patterns('',
 
     url(r'^$', TemplateView.as_view(template_name="index.html"), name='home'),
     url(r'^features/$', TemplateView.as_view(template_name="features.html"), name='features'),
+    url(r'^try/$', TemplateView.as_view(template_name="try.html"), name='try'),
     url(r'^contribute/$', TemplateView.as_view(template_name="contribute.html"), name='contribute'),
     url(r'^support/$', TemplateView.as_view(template_name="support.html"), name='support'),
 
