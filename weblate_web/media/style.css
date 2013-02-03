@@ -32,10 +32,21 @@ nav a {
     text-align: center;
     font-weight: bolder;
 }
+.trailer img {
+    max-width: 38em;
+    border: 1em solid gray;
+    border-radius: 1em;
+    margin: 1em 0 1em 0;
+}
+.actions {
+    margin: 0;
+    padding: 0;
+}
 .actions a {
     background-color: #cc0000;
-    width: 40%;
-    margin: 0 3% 0 3%;
+    font-weight: bold;
+    width: 15em;
+    margin: 0 2em 0 2em;
     display: inline-block;
     color: #fff;
     text-decoration: none;
@@ -49,11 +60,15 @@ nav a {
 }
 .more a {
     display: inline-block;
+    width: 15em;
+    margin: 0 2em 0 2em;
 	background-color: #004276;
+    font-weight: bold;
     color: #fff;
     padding: .4em;
 	border-radius: .4em;
     text-decoration: none;
+    text-align: center;
 }
 .feature {
     display: block;
