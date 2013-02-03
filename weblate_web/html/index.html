@@ -1,21 +1,21 @@
 {% extends "base.html" %}
 {% load url from future %}
 {% load i18n %}
-{% block content %}
-<p id="headline">
+{% block headline %}
 Weblate is a free web based translation management system with a tight Git integration.
-</p>
+{% endblock %}
 
-
-<a href="" class="trailer">
-<img src="/media/background.png">
-</a>
+{% block content %}
 
 <div class="actions">
 <a href="">Try our demo</a>
 
 <a href="">Downloads</a>
 </div>
+
+<a href="" class="trailer">
+<img src="/media/background.png">
+</a>
 
 <div class="feature">
 <div class="picto">
