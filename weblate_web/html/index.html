@@ -1,8 +1,16 @@
 {% extends "base.html" %}
+{% load url from future %}
+{% load i18n %}
 {% block content %}
 <p id="headline">
 Weblate is a free web based translation management system with a tight Git integration.
 </p>
+
+<div class="actions">
+<a href="">Try on demo server</a>
+
+<a href="">Download the application</a>
+</div>
 
 <div class="feature">
 <div class="picto">
@@ -34,7 +42,7 @@ Weblate is a free web based translation management system with a tight Git integ
 <p>All your translators will be properly credited in the version control system.</p>
 </div>
 
-<div class="more"><a href="">See more features…</a></div>
+<div class="more"><a href="{% url 'features' %}">See more features…</a></div>
 
 <p>List of features includes:</p>
 
