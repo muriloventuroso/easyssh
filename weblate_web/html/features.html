@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% load url from future %}
+{% load i18n %}
+{% block title %}{% trans "Weblate features" %}{% endblock %}
+{% block header %}{% trans "Weblate features" %}{% endblock %}
+{% block headline %}{% trans "Weblate is a feature rich computer aided translation tool." %}{% endblock %}
+{% block content %}
+
+{% include "base-features.html" %}
+
+{% endblock %}
