@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load url from future %}
+{% load i18n %}
+{% load downloads %}
+{% block title %}{% trans "Download Weblate" %}{% endblock %}
+{% block header %}{% trans "Download Weblate" %}{% endblock %}
+{% block headline %}{% trans "Weblate is easy to deploy as an appliance." %}{% endblock %}
+{% block content %}
+
+<h2>Demo server</h2>
+
+{% downloadlink "weblate-1.4.tar.gz" %}
+
+<p>
+You can try how Weblate on our <a href="http://demo.weblate.org">demo server</a>.
+You can register there and work under your username or just use <code>demo</code> 
+account with <code>demo</code> password.
+</p>
+
+<h2>Appliances</h2>
+
+<p>
+If you want to test more deeply you can either download prepared appliance at
+<a href="http://susestudio.com/a/F8yMYg/weblate">SUSE Studio Gallery</a> or use
+testdrive there which allows you to play with virtual server for one hour.
+</p>
+
+<p>
+Weblate is also available as <a href="http://bitnami.org/stack/weblate">BitNami
+stack</a>, that allows you native installation on Windows, Linux or Mac OS X
+and provides virtual images for running Weblate.
+</p>
+
+{% endblock %}
+
+

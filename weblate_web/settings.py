@@ -162,6 +162,7 @@ TEMPLATE_DIRS = (
 
 INSTALLED_APPS = (
     'localeurl',
+    'weblate_web',
     'django.contrib.sessions',
     'django.contrib.staticfiles',
 )
@@ -194,3 +195,6 @@ LOGGING = {
         },
     }
 }
+
+FILES_PATH = '/home/nijel/work/weblate/'
+FILES_URL = 'http://dl.cihar.com/weblate/'
