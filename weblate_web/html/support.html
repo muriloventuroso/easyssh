@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% load url from future %}
+{% load i18n %}
+{% block title %}{% trans "Weblate support" %}{% endblock %}
+{% block header %}{% trans "Weblate support" %}{% endblock %}
+{% block headline %}{% trans "Weblate is a free software with community support." %}{% endblock %}
+{% block content %}
+
+<h2>Bugs or feature requests</h2>
+
+<p>
+Have you found any issue with Weblate? Do you have idea how to improve it?
+Please report it to <a href="https://github.com/nijel/weblate/issues">issue tracker
+on GitHub</a>.
+</p>
+
+<h2>Mailing list</h2>
+
+<p>
+There is a mailing list <a href="mailto:weblate@lists.cihar.com">weblate@lists.cihar.com</a>
+where you can discuss various things about Weblate. You can
+<a href="https://lists.cihar.com/cgi-bin/mailman/listinfo/weblate">subscribe</a> or
+<a href="https://lists.cihar.com/pipermail/weblate/">browse archives</a>.
+</p>
+
+<p>
+The mailing list is also available on <a href="http://dir.gmane.org/gmane.comp.web.weblate">Gmane</a>
+where you can browse archives or use NNTP interface.
+</p>
+
+<h2>IRC</h2>
+
+<p>
+When some of interested people are online, you might also find help on #weblate channel on
+<a href="http://freenode.net/">freenode</a> network. You can also use
+<a href="http://webchat.freenode.net?channels=weblate">webchat</a> there.
+</p>
+
+<h2>Contact</h2>
+
+<p>
+You can also contact <a href="mailto:michal@cihar.com?subject=Weblate">Michal Čihař</a>,
+who is author of Weblate.
+</p>
+
+{% endblock %}
