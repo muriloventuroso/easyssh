@@ -206,3 +206,97 @@ nav a {
 	height: 1.3em;
 	border-radius: 50%;
 }
+
+.lock {
+    margin-top: 0.8em;
+    border-radius: 0.3em;
+    box-shadow: inset 0.9em 0.8em 0 0 #004276,inset -0.9em 0.8em 0 0 #004276,inset 0em -0.4em 0 0 #004276;
+    font-size: 18px;
+    width: 2em;
+    height: 1.8em;
+    position: relative;
+
+}
+
+.lock::before {
+    left: 0.32em;
+    border-radius: 1em 1em 0 0;
+    top: -0.8em;
+    position: absolute;
+    width: 0.8em;
+    content: "";
+    height: 1.8em;
+    border: 0.3em solid #004276;
+    border-bottom: none;
+
+}
+
+.mail{
+	font-size:12px;
+	display:block;
+	position:relative;
+	border-top:1em solid transparent;
+	border-left:1.5em solid #004276;
+	border-right:1.5em solid #004276;
+	border-bottom:1em solid #004276;
+height:0;
+width:0;
+}
+.mail:before{
+    content: '';
+    top: -1.23em;
+    left: -1.5em;
+    display: block;
+    position: absolute;
+    border-top: 1em solid #004276;
+    border-left: 1.5em solid transparent;
+    border-right: 1.5em solid transparent;
+    border-bottom: 1em solid transparent;
+    font-size: 0.8em;
+}
+
+.cloud {
+	background-color: #004276;
+
+	background-image: -webkit-linear-gradient(hsla(0,0%,0%,0), hsla(0,0%,0%,.1));
+	background-image: -moz-linear-gradient(hsla(0,0%,0%,0), hsla(0,0%,0%,.1));
+	background-image: -o-linear-gradient(hsla(0,0%,0%,0), hsla(0,0%,0%,.1));
+	background-image: -ms-linear-gradient(hsla(0,0%,0%,0), hsla(0,0%,0%,.1));
+	background-image: linear-gradient(hsla(0,0%,0%,0), hsla(0,0%,0%,.1));
+	border-radius: 1em;
+	height: 1em;
+       margin-top: 0.5em;
+	position: relative;
+	width: 3em;
+}
+
+.cloud:after,.cloud:before {
+	background-color: #004276;
+	content: '';
+	border-radius: 100%;
+	position: absolute;
+}
+
+.cloud:after {
+	background-image: -webkit-linear-gradient(hsla(0,0%,0%,0) 50%, hsla(0,0%,0%,.025));
+	background-image: -moz-linear-gradient(hsla(0,0%,0%,0) 50%, hsla(0,0%,0%,.025));
+	background-image: -o-linear-gradient(hsla(0,0%,0%,0) 50%, hsla(0,0%,0%,.025));
+	background-image: -ms-linear-gradient(hsla(0,0%,0%,0) 50%, hsla(0,0%,0%,.025));
+	background-image: linear-gradient(hsla(0,0%,0%,0) 50%, hsla(0,0%,0%,.025));
+	height: 1em;
+	right: .4em;
+	top: -.5em;
+	width: 1em;
+}
+
+.cloud:before {
+	background-image: -webkit-linear-gradient(hsla(0,0%,0%,0) 50%, hsla(0,0%,0%,.075));
+	background-image: -moz-linear-gradient(hsla(0,0%,0%,0) 50%, hsla(0,0%,0%,.075));
+	background-image: -o-linear-gradient(hsla(0,0%,0%,0) 50%, hsla(0,0%,0%,.075));
+	background-image: -ms-linear-gradient(hsla(0,0%,0%,0) 50%, hsla(0,0%,0%,.075));
+	background-image: linear-gradient(hsla(0,0%,0%,0) 50%, hsla(0,0%,0%,.075));
+	height: 1.6em;
+	left: .4em;
+	top: -.75em;
+	width: 1.6em;
+}
