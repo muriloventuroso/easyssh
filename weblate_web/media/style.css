@@ -472,3 +472,98 @@ height: 0.3em;
 width: 0.3em;
 content: "";
 }
+
+.newspaper {
+	height: 2em;
+	width: 1.5em;
+	border: 0.2em solid #004276;
+	border-radius: 0 0 0.6em 0;
+	font-size: 15px;
+	position: relative;
+}
+
+.newspaper::before {
+	left: -0.7em;
+	bottom: -0.19em;
+	height: 1.5em;
+	width: 0.3em;
+	border-radius: 0 0 0.6em 0.6em;
+	border: 0.2em solid #004276;
+	content: '';
+	display: block;
+	position: absolute;
+
+	-webkit-box-shadow: inset -0.05em -0.05em 0.1em 0 rgba(44, 44, 44, 0.39);
+	box-shadow: inset -0.05em -0.05em 0.1em 0 rgba(44, 44, 44, 0.39);
+}
+
+.newspaper::after {
+	-webkit-box-shadow: 0 0.2em 0 0 #004276,0 0.3em 0 0 #004276,0 0.3em 0 0 #004276,0.7em 0em 0 0 #004276,0.7em 0.3em 0 0 #004276,0.7em 0.8em 0 0 #004276,0em 0.8em 0 0 #004276,0.3em 0.8em 0 0 #004276,0.3em 1.1em 0 0 #004276,0em 1.1em 0 0 #004276,0.7em 1.1em 0 0 #004276,0.7em 1.4em 0 0 #004276,0.3em 1.4em 0 0 #004276,0em 1.4em 0 0 #004276,-0.4em 1.91em 0 0 #004276;
+	box-shadow: 0 0.2em 0 0 #004276,0 0.3em 0 0 #004276,0 0.3em 0 0 #004276,0.7em 0em 0 0 #004276,0.7em 0.3em 0 0 #004276,0.7em 0.8em 0 0 #004276,0em 0.8em 0 0 #004276,0.3em 0.8em 0 0 #004276,0.3em 1.1em 0 0 #004276,0em 1.1em 0 0 #004276,0.7em 1.1em 0 0 #004276,0.7em 1.4em 0 0 #004276,0.3em 1.4em 0 0 #004276,0em 1.4em 0 0 #004276,-0.4em 1.91em 0 0 #004276;
+	left: 0.1em;
+	bottom: 1.7em;
+	height: 0.2em;
+	width: 0.6em;
+	background: #004276;
+	content: '';
+	display: block;
+	position: absolute;
+}
+
+.comment {
+font-size: 20px;
+width: 2em;
+height: 1.5em;
+background: #004276;
+border-radius: 0.2em;
+position: relative;
+}
+
+.comment::before {
+	position:absolute;	
+	content: "";
+	bottom: -0.3em;
+	right: 0.4em;
+	width:0em;
+	height:0em;
+	border-bottom:0.4em solid transparent;
+	border-left:0.4em solid #004276;
+
+	
+}
+
+.download{
+width: 1.500em;
+height: 0.500em;
+border: 0.250em solid #004276;
+border-top: none;
+position: absolute;
+bottom: 0.188em;
+position: relative;
+  margin-top:1em;
+}
+
+.download:before{
+content: '';
+position: absolute;
+width: 0.438em;
+height: 0.625em;
+background: #004276;
+top: -0.875em;
+left: 0.563em;
+}
+
+
+
+.download:after{
+width: 0em;
+height: 0em;
+content: '';
+position: absolute;
+border-style: solid;
+border-color: #004276 transparent transparent transparent;
+border-width: 0.500em;
+left: 0.250em;
+top: -0.250em;
+
+}
