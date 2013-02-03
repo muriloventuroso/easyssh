@@ -1,0 +1,181 @@
+html {
+    font-family: sans;
+}
+
+#icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+#content {
+    margin-left: 150px;
+    max-width: 40em;
+    padding: 1em;
+}
+#headline {
+    font-size: 1.2em;
+}
+header {
+    margin-left: 150px;
+    padding: 1em;
+}
+nav {
+    position: absolute;
+    top: 178px;
+    left: 10px;
+    min-width: 128px;
+}
+nav a {
+    display: block;
+    padding: .2em;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bolder;
+}
+.more {
+    text-align: right;
+    clear: both;
+}
+.more a {
+    display: inline-block;
+	background-color: #004276;
+    color: #fff;
+    padding: .4em;
+	border-radius: .4em;
+    text-decoration: none;
+}
+.feature {
+    display: block;
+    width: 13em;
+    height: 13em;
+    text-align: center;
+    float: left;
+}
+.feature h2 {
+    font-size: 1em;
+}
+.clearer {
+    clear: both;
+}
+
+.picto:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    margin-right: -11px;
+    vertical-align: middle;
+}
+
+.picto {
+    height: 80px;
+    opacity: 0.99;
+    position: relative;
+    text-align: center;
+    width: 100px;
+    display: inline-block;
+}
+
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.wheels {
+	display: block;
+	position: relative;
+  font-size: 20px;
+	width: 1em;
+	height: 1em;
+	border: 0.1em dashed #004276;
+	border-radius: 1em;
+	margin-top: 1em;
+    margin-left:-1.4em;
+
+	-webkit-box-shadow: inset 0 0 0 0.2em #004276;
+	box-shadow: inset 0 0 0 0.2em #004276;
+}
+
+.wheels:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0.5em;
+	font-size: 0.8em;
+	margin-top: -1.2em;
+	width: 1em;
+	height: 1em;
+	border: 0.1em dashed #004276;
+	border-radius: 1em;
+
+	-webkit-box-shadow: inset 0 0 0 0.2em #004276;
+	box-shadow: inset 0 0 0 0.2em #004276;
+}
+
+.wheels:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0.92em;
+	font-size: 1.2em;
+	margin-top: -0.32em;
+	width: 1em;
+	height: 1em;
+	border: 0.1em dashed #004276;
+	border-radius: 1em;
+
+	-webkit-box-shadow: inset 0 0 0 0.2em #004276;
+	box-shadow: inset 0 0 0 0.2em #004276;
+}
+
+.profil {
+	font-size: 24px;
+	top: 0.5em;
+	border-radius: 0.7em 0.7em 0 0;
+	background: #004276;
+	width: 1.5em;
+	height: 0.8em;
+	position: relative;
+}
+
+.profil::before {
+	position: absolute;
+	content: "";
+	top: -0.9em;
+	left: 0.38em;
+	width: 0.8em;
+	height: 0.85em;
+	border-radius: 50%;
+	background: #004276;
+}
+
+.mglass {
+	margin-top: 1.5em;
+    margin-left: 1.5em;
+    position: relative;
+	width: 1.5em;
+	height: 0.5em;
+	background-color: #004276;
+
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	border-bottom-right-radius: 0.3em;
+	border-top-right-radius: 0.3em;
+}
+
+.mglass::before {
+	border: 0.4em solid #004276;
+	content: "";
+	position: absolute;
+	top: -0.84em;
+	left: -1.7em;
+	display: block;
+	width: 1.3em;
+	height: 1.3em;
+	border-radius: 50%;
+}
