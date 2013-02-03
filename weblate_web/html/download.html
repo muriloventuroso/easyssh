@@ -14,9 +14,9 @@ You can download latest release here:
 </p>
 
 <ul>
-<li>{% downloadlink "weblate-1.4.tar.xz" %}</li>
-<li>{% downloadlink "weblate-1.4.tar.bz2" %}</li>
-<li>{% downloadlink "weblate-1.4.tar.gz" %}</li>
+{% for download in downloads %}
+<li>{% downloadlink download %}</li>
+{% endfor %}
 </ul>
 
 <p>
