@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load url from future %}
+{% load i18n %}
+{% block headline %}
+Weblate is a free web based translation management system.
+{% endblock %}
+
+{% block content %}
+
+<div class="actions">
+<a href="http://demo.weblate.org/">Try our demo</a>
+
+<a href="">Downloads</a>
+</div>
+
+<a href="" class="trailer">
+<img src="/media/background.png">
+</a>
+
+{% include "base-features.html" %}
+
+<div class="more"><a href="{% url 'features' %}">See more features…</a></div>
+{% endblock %}

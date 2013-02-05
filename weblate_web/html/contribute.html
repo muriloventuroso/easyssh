@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% load url from future %}
+{% load i18n %}
+{% block title %}{% trans "Contribute to Weblate" %}{% endblock %}
+{% block header %}{% trans "Contribute to Weblate" %}{% endblock %}
+{% block headline %}{% trans "Weblate is being developed by an open community." %}{% endblock %}
+{% block content %}
+
+<h2>Code</h2>
+
+<p>
+Weblate is being developed on <a href="https://github.com/nijel/weblate">Github</a>,
+you can fork it there or just:
+</p>
+
+<pre>
+git clone git://github.com/nijel/weblate.git
+</pre>
+
+<p>
+This website is stored on <a href="https://github.com/nijel/weblate-web">Github</a> as well:
+</p>
+
+<pre>
+git clone git://github.com/nijel/weblate-web.git
+</pre>
+
+<h2>Translate</h2>
+
+<p>
+You can translate Weblate using Weblate installation at 
+<a href="https://l10n.cihar.com/engage/weblate/">l10n.cihar.com</a>.
+</p>
+
+<h2>Donate</h2>
+
+<p>
+If you like Weblate you can support it's further development by donating.
+</p>
+
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<div class="donate">
+<input type="hidden" name="cmd" value="_s-xclick" />
+<input type="hidden" name="hosted_button_id" value="AXN88S8GX5MQ4" />
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!" />
+<img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+</div>
+</form>
+{% endblock %}

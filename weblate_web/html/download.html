@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% load url from future %}
+{% load i18n %}
+{% load downloads %}
+{% block title %}{% trans "Download Weblate" %}{% endblock %}
+{% block header %}{% trans "Download Weblate" %}{% endblock %}
+{% block headline %}{% trans "Weblate comes with complete source code." %}{% endblock %}
+{% block content %}
+
+<h2>Download</h2>
+
+<p>
+You can download latest release here:
+</p>
+
+<ul>
+{% for download in downloads %}
+<li>{% downloadlink download %}</li>
+{% endfor %}
+</ul>
+
+<p>
+For openSUSE/SLES users, there are binary packages available in the
+<a href="http://software.opensuse.org/package/weblate/">openSUSE Buildservice</a>.
+</p>
+
+<p>
+In case you want to run Weblate in your cloud or virtual server, you 
+can download appliance based on openSUSE 12.2 at 
+<a href="http://susestudio.com/a/F8yMYg/weblate">SUSE Studio Gallery</a>.
+</p>
+
+<p>
+Weblate is also available as <a href="http://bitnami.org/stack/weblate">BitNami
+stack</a>, that allows you native installation on Windows, Linux or Mac OS X
+and provides virtual images for running Weblate.
+</p>
+
+
+<h2>Code</h2>
+
+<p>
+Weblate is being developed on <a href="https://github.com/nijel/weblate">Github</a>,
+you can fork it there or just:
+</p>
+
+<pre>
+git clone git://github.com/nijel/weblate.git
+</pre>
+
+{% endblock %}
