@@ -21,6 +21,7 @@
 VERSION = '1.4'
 EXTENSIONS = ('tar.xz', 'tar.bz2', 'tar.gz')
 
+
 def downloads(request):
     return {
         'downloads': ['weblate-%s.%s' % (VERSION, ext) for ext in EXTENSIONS],
