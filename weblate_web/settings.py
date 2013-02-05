@@ -203,3 +203,4 @@ LOGGING = {
 
 FILES_PATH = '%s/files/' % WEB_ROOT
 FILES_URL = 'http://dl.cihar.com/weblate/'
+LOCALE_PATHS = ('%s/../locale' % WEB_ROOT, )
