@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load url from future %}
+{% load i18n %}
+{% block title %}{% trans "Hosting Weblate" %}{% endblock %}
+{% block header %}{% trans "Hosting Weblate" %}{% endblock %}
+{% block headline %}{% trans "Weblate offers free hosting for free software." %}{% endblock %}
+{% block content %}
+
+<h2>{% trans "Hosting for free software" %}</h2>
+
+<p>
+{% blocktrans %}If you are interested in using Weblate for your free software, you can ask us to be include on <a href="http://hosted.weblate.org/">hosted.weblate.org</a>. This will allow you to use Weblate without installing and maintaining it.{% endblocktrans %}
+</p>
+
+<h2>{% trans "Other options" %}</h2>
+
+<p>
+{% url 'download' as download_url %}
+{% blocktrans %}Check our <a href="{{ download_url }}">download page</a> for appliances, which provide easy way to deploy Weblate in cloud.{% endblocktrans %}
+</p>
+
+{% endblock %}

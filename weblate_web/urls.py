@@ -31,6 +31,7 @@ urlpatterns = patterns('',
     url(r'^features/$', TemplateView.as_view(template_name="features.html"), name='features'),
     url(r'^download/$', TemplateView.as_view(template_name="download.html"), name='download'),
     url(r'^try/$', TemplateView.as_view(template_name="try.html"), name='try'),
+    url(r'^hosting/$', TemplateView.as_view(template_name="hosting.html"), name='hosting'),
     url(r'^contribute/$', TemplateView.as_view(template_name="contribute.html"), name='contribute'),
     url(r'^support/$', TemplateView.as_view(template_name="support.html"), name='support'),
 
