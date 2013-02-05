@@ -201,5 +201,5 @@ LOGGING = {
     }
 }
 
-FILES_PATH = '/home/nijel/work/weblate/'
+FILES_PATH = '%s/files/' % WEB_ROOT
 FILES_URL = 'http://dl.cihar.com/weblate/'
