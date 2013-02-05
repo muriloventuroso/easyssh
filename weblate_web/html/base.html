@@ -1,5 +1,6 @@
 {% load i18n %}
 {% load url from future %}
+{% load localeurl_tags %}
 
 <!DOCTYPE html>
 
@@ -8,7 +9,15 @@
 <link rel="stylesheet" type="text/css" href="/media/style.css">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>{% block title %}Weblate{% endblock %}</title>
-<head>
+
+{% for lang in LANGUAGES %}
+    {% if lang.0 != LANGUAGE_CODE %}
+        <link rel="alternate" hreflang="{{ lang.0 }}" href="{{ request.path|chlocale:lang.0 }}" />
+    {% endif %}
+{% endfor %}
+   <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+   <script src="/media/code.js"></script>
+</head>
 <body>
 <img id="icon" src="/media/weblate-128.png" width="128" height="128" />
 <nav>
@@ -22,9 +31,16 @@
 <a href="{% url 'contribute' %}">{% trans "Contribute" %}</a>
 <a href="{% url 'support' %}">{% trans "Support" %}</a>
 <a href="/">{% trans "Tour" %}</a>
-</ul>
 </nav>
 <header>
+<div id="language">
+{% trans "Language:" %}
+<select id="languages">
+{% for lang in LANGUAGES %}
+    <option {% if lang.0 == LANGUAGE_CODE %}selected="selected"{% endif %} value="{{ request.path|chlocale:lang.0 }}">{{ lang.1}}</option>
+{% endfor %}
+</select>
+</div>
 <h1>
 {% block header %}
 Weblate
