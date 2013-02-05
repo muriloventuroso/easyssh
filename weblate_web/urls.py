@@ -21,6 +21,42 @@
 from django.conf.urls import patterns, include, url
 from django.views.generic import TemplateView
 from django.conf import settings
+from django.contrib.sitemaps import Sitemap
+from localeurl.templatetags.localeurl_tags import chlocale
+
+# example Sitemap
+class PagesSitemap(Sitemap):
+    def __init__(self, language):
+        self.language = language
+
+    def items(self):
+        return (
+            ('/', 1.0, 'weekly'),
+            ('/features/', 0.9, 'weekly'),
+            ('/download/', 0.5, 'daily'),
+            ('/try/', 0.5, 'weekly'),
+            ('/hosting/', 0.8, 'weekly'),
+            ('/contribute/', 0.7, 'weekly'),
+            ('/support/', 0.7, 'weekly'),
+        )
+
+    def location(self, item):
+        return chlocale(item[0], self.language)
+
+    def priority(self, item):
+        if self.language == 'en':
+            return item[1]
+        else:
+            return item[1] * 3 / 4
+
+    def changefreq(self, item):
+        return item[2]
+
+# create each section in all languages
+sitemaps = {}
+
+for lang in settings.LANGUAGES:
+    sitemaps[lang[0]] = PagesSitemap(lang[0])
 
 urlpatterns = patterns('',
     # Examples:
@@ -34,6 +70,8 @@ urlpatterns = patterns('',
     url(r'^hosting/$', TemplateView.as_view(template_name="hosting.html"), name='hosting'),
     url(r'^contribute/$', TemplateView.as_view(template_name="contribute.html"), name='contribute'),
     url(r'^support/$', TemplateView.as_view(template_name="support.html"), name='support'),
+
+    url(r'^sitemap\.xml$', 'django.contrib.sitemaps.views.sitemap', {'sitemaps': sitemaps}),
 
     # Media files
     url(r'^media/(?P<path>.*)$', 'django.views.static.serve',

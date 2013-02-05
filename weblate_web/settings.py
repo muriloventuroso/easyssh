@@ -171,6 +171,7 @@ INSTALLED_APPS = (
     'weblate_web',
     'django.contrib.sessions',
     'django.contrib.staticfiles',
+    'django.contrib.sitemaps',
 )
 
 # A sample logging configuration. The only tangible logging
@@ -205,3 +206,7 @@ LOGGING = {
 FILES_PATH = '%s/files/' % WEB_ROOT
 FILES_URL = 'http://dl.cihar.com/weblate/'
 LOCALE_PATHS = ('%s/../locale' % WEB_ROOT, )
+
+LOCALE_INDEPENDENT_PATHS = (
+    r'^/sitemap.xml$',
+)
