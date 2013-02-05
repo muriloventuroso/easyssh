@@ -2,15 +2,15 @@
 {% load url from future %}
 {% load i18n %}
 {% block headline %}
-Weblate is a free web based translation management system.
+{% trans "Weblate is a free web based translation management system." %}
 {% endblock %}
 
 {% block content %}
 
 <div class="actions">
-<a href="http://demo.weblate.org/">Try our demo</a>
+<a href="http://demo.weblate.org/">{% trans "Try our demo" %}</a>
 
-<a href="">Downloads</a>
+<a href="{% url 'download' %}">{% trans "Downloads" %}</a>
 </div>
 
 <a href="" class="trailer">
@@ -19,5 +19,5 @@ Weblate is a free web based translation management system.
 
 {% include "base-features.html" %}
 
-<div class="more"><a href="{% url 'features' %}">See more features…</a></div>
+<div class="more"><a href="{% url 'features' %}">{% trans "See more features…"%}</a></div>
 {% endblock %}

@@ -6,26 +6,16 @@
 {% block headline %}{% trans "Weblate is easy to deploy as an appliance." %}{% endblock %}
 {% block content %}
 
-<h2>Demo server</h2>
+<h2>{% trans "Demo server" %}</h2>
 
 <p>
-You can try how Weblate on our <a href="http://demo.weblate.org">demo server</a>.
-You can register there and work under your username or just use <code>demo</code> 
-account with <code>demo</code> password.
+{% blocktrans %}You can try how Weblate on our <a href="http://demo.weblate.org">demo server</a>. You can register there and work under your username or just use <code>demo</code> account with <code>demo</code> password.{% endblocktrans %}
 </p>
 
-<h2>Appliances</h2>
+<h2>{% trans "Appliances" %}</h2>
 
 <p>
-If you want to test more deeply you can either download prepared appliance at
-<a href="http://susestudio.com/a/F8yMYg/weblate">SUSE Studio Gallery</a> or use
-testdrive there which allows you to play with virtual server for one hour.
-</p>
-
-<p>
-Weblate is also available as <a href="http://bitnami.org/stack/weblate">BitNami
-stack</a>, that allows you native installation on Windows, Linux or Mac OS X
-and provides virtual images for running Weblate.
+{% blocktrans %}Check our <a href="{{ download_url }}">download page</a> for appliances, which provide easy way to deploy Weblate in cloud.{% endblocktrans %}
 </p>
 
 {% endblock %}
