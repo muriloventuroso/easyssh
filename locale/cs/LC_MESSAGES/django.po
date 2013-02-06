@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-02-05 15:07+0100\n"
+"POT-Creation-Date: 2013-02-06 16:57+0100\n"
 "PO-Revision-Date: 2013-02-05 15:11+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <http://l10n.cihar.com/projects/weblate/website/cs/>\n"
@@ -101,11 +101,18 @@ msgstr "Přispějte do Weblate"
 msgid "Weblate is being developed by an open community."
 msgstr "Weblate je vyvíjeno otevřenou komunitou."
 
-#: weblate_web/html/contribute.html:9 weblate_web/html/download.html:35
+#: weblate_web/html/contribute.html:10
+msgid ""
+"You can find more detailed information about this topic in <a href=\"http://"
+"docs.weblate.org/en/latest/contributing.html\">Contributing chapter</a> of "
+"our documentation."
+msgstr ""
+
+#: weblate_web/html/contribute.html:13 weblate_web/html/download.html:35
 msgid "Code"
 msgstr "Kód"
 
-#: weblate_web/html/contribute.html:12 weblate_web/html/download.html:38
+#: weblate_web/html/contribute.html:16 weblate_web/html/download.html:38
 msgid ""
 "Weblate is being developed on <a href=\"https://github.com/nijel/weblate"
 "\">Github</a>, you can fork it there or just:"
@@ -113,7 +120,7 @@ msgstr ""
 "Weblate je vyvíjeno na <a href=\"https://github.com/nijel/weblate\">Githubu</"
 "a>, kde si ho můžete forknout, nebo stačí:"
 
-#: weblate_web/html/contribute.html:20
+#: weblate_web/html/contribute.html:24
 msgid ""
 "This website is stored on <a href=\"https://github.com/nijel/weblate-web"
 "\">Github</a> as well:"
@@ -121,11 +128,11 @@ msgstr ""
 "Tyto stránky jsou také uloženy na <a href=\"https://github.com/nijel/weblate"
 "\">Githubu</a>:"
 
-#: weblate_web/html/contribute.html:27
+#: weblate_web/html/contribute.html:31
 msgid "Translate"
 msgstr "Přeložit"
 
-#: weblate_web/html/contribute.html:30
+#: weblate_web/html/contribute.html:34
 msgid ""
 "You can translate Weblate using Weblate installation at <a href=\"https://"
 "l10n.cihar.com/engage/weblate/\">l10n.cihar.com</a>."
@@ -133,11 +140,11 @@ msgstr ""
 "Weblate můžete přeložit pomocí Weblate na serveru <a href=\"https://l10n."
 "cihar.com/projects/weblate/\">l10n.cihar.com</a>."
 
-#: weblate_web/html/contribute.html:33
+#: weblate_web/html/contribute.html:37
 msgid "Donate"
 msgstr "Přispějte"
 
-#: weblate_web/html/contribute.html:36
+#: weblate_web/html/contribute.html:40
 msgid ""
 "If you like Weblate you can support it's further development by donating."
 msgstr ""
@@ -466,11 +473,11 @@ msgstr ""
 msgid "Appliances"
 msgstr "Připravené obrazy"
 
-#: weblate_web/templatetags/downloads.py:17
+#: weblate_web/templatetags/downloads.py:38
 msgid "0 bytes"
 msgstr "0 bajtů"
 
-#: weblate_web/templatetags/downloads.py:20
+#: weblate_web/templatetags/downloads.py:41
 #, python-format
 msgid "%(size)d byte"
 msgid_plural "%(size)d bytes"
@@ -478,41 +485,41 @@ msgstr[0] "%(size)d bajt"
 msgstr[1] "%(size)d bajty"
 msgstr[2] "%(size)d bajtů"
 
-#: weblate_web/templatetags/downloads.py:22
+#: weblate_web/templatetags/downloads.py:43
 #, python-format
 msgid "%.1f KiB"
 msgstr "%.1f KiB"
 
-#: weblate_web/templatetags/downloads.py:24
+#: weblate_web/templatetags/downloads.py:45
 #, python-format
 msgid "%.1f MiB"
 msgstr "%.1f MiB"
 
-#: weblate_web/templatetags/downloads.py:25
+#: weblate_web/templatetags/downloads.py:46
 #, python-format
 msgid "%.1f GiB"
 msgstr "%.1f GiB"
 
-#: weblate_web/templatetags/downloads.py:31
+#: weblate_web/templatetags/downloads.py:53
 msgid "Sources tarball, bzip2 compressed"
 msgstr "Zdrojový tarball, komprimovaný bzipem2"
 
-#: weblate_web/templatetags/downloads.py:33
+#: weblate_web/templatetags/downloads.py:55
 msgid "Sources tarball, gzip compressed"
 msgstr "Zdrojový tarball, komprimový gzipem"
 
-#: weblate_web/templatetags/downloads.py:35
+#: weblate_web/templatetags/downloads.py:57
 msgid "Sources tarball, lzma compressed"
 msgstr "Zdrojový tarball, komprimový lzma"
 
-#: weblate_web/templatetags/downloads.py:37
+#: weblate_web/templatetags/downloads.py:59
 msgid "Sources tarball, xz compressed"
 msgstr "Zdrojový tarball, komprimový xz"
 
-#: weblate_web/templatetags/downloads.py:39
+#: weblate_web/templatetags/downloads.py:61
 msgid "Sources, zip compressed"
 msgstr "Zdrojáky, komprimované zipem"
 
-#: weblate_web/templatetags/downloads.py:41
+#: weblate_web/templatetags/downloads.py:63
 msgid "Sources, 7zip compressed"
 msgstr "Zdrojáky, komprimované 7zipem"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-02-05 15:07+0100\n"
+"POT-Creation-Date: 2013-02-06 16:57+0100\n"
 "PO-Revision-Date: 2013-02-06 00:06+0200\n"
 "Last-Translator: Matías Bellone <matiasbellone+weblate@gmail.com>\n"
 "Language-Team: Spanish <http://l10n.cihar.com/projects/weblate/website/es/>\n"
@@ -104,11 +104,18 @@ msgstr "Contribuir a Weblate"
 msgid "Weblate is being developed by an open community."
 msgstr "Weblate está siendo desarrollado por una comunidad abierta."
 
-#: weblate_web/html/contribute.html:9 weblate_web/html/download.html:35
+#: weblate_web/html/contribute.html:10
+msgid ""
+"You can find more detailed information about this topic in <a href=\"http://"
+"docs.weblate.org/en/latest/contributing.html\">Contributing chapter</a> of "
+"our documentation."
+msgstr ""
+
+#: weblate_web/html/contribute.html:13 weblate_web/html/download.html:35
 msgid "Code"
 msgstr "Código"
 
-#: weblate_web/html/contribute.html:12 weblate_web/html/download.html:38
+#: weblate_web/html/contribute.html:16 weblate_web/html/download.html:38
 msgid ""
 "Weblate is being developed on <a href=\"https://github.com/nijel/weblate"
 "\">Github</a>, you can fork it there or just:"
@@ -116,7 +123,7 @@ msgstr ""
 "Weblate se está desarrollando en <a href=\"https://github.com/nijel/weblate"
 "\">Github</a>, puede hacer derivados allí mismo o simplemente:"
 
-#: weblate_web/html/contribute.html:20
+#: weblate_web/html/contribute.html:24
 msgid ""
 "This website is stored on <a href=\"https://github.com/nijel/weblate-web"
 "\">Github</a> as well:"
@@ -124,11 +131,11 @@ msgstr ""
 "Este sitio web está almacenado en <a href=\"https://github.com/nijel/weblate-"
 "web\">Github</a> también:"
 
-#: weblate_web/html/contribute.html:27
+#: weblate_web/html/contribute.html:31
 msgid "Translate"
 msgstr "Traducir"
 
-#: weblate_web/html/contribute.html:30
+#: weblate_web/html/contribute.html:34
 msgid ""
 "You can translate Weblate using Weblate installation at <a href=\"https://"
 "l10n.cihar.com/engage/weblate/\">l10n.cihar.com</a>."
@@ -136,11 +143,11 @@ msgstr ""
 "Puede traducir Weblate utilizando la instalación de Weblate en <a href="
 "\"https://l10n.cihar.com/engage/weblate/\">l10n.cihar.com</a>."
 
-#: weblate_web/html/contribute.html:33
+#: weblate_web/html/contribute.html:37
 msgid "Donate"
 msgstr "Donar"
 
-#: weblate_web/html/contribute.html:36
+#: weblate_web/html/contribute.html:40
 msgid ""
 "If you like Weblate you can support it's further development by donating."
 msgstr ""
@@ -203,8 +210,7 @@ msgstr "Control de acceso"
 #: weblate_web/html/features.html:18
 msgid "Access rights can can be fine tuned depending on your environment."
 msgstr ""
-"Puede controlar con detalle los permisos de acceso dependiendo de su "
-"entorno."
+"Puede controlar con detalle los permisos de acceso dependiendo de su entorno."
 
 #: weblate_web/html/features.html:27
 msgid "Notifications"
@@ -315,9 +321,9 @@ msgid ""
 "maintaining it."
 msgstr ""
 "Si está interesado en utilizar Weblate para su software libre, puede "
-"solicitar que lo incluyamos en <a "
-"href=\"http://hosted.weblate.org/\">hosted.weblate.org</a>. Esto le permitirá "
-"utilizar Weblate sin tener que instalarlo ni mantenerlo."
+"solicitar que lo incluyamos en <a href=\"http://hosted.weblate.org/\">hosted."
+"weblate.org</a>. Esto le permitirá utilizar Weblate sin tener que instalarlo "
+"ni mantenerlo."
 
 #: weblate_web/html/hosting.html:16
 msgid ""
@@ -325,10 +331,10 @@ msgid ""
 "with similar naming as on website - hello/master translation would be "
 "published as <code>git://git.weblate.org/hello-master.git</code>."
 msgstr ""
-"Todos los repositorios traducidos están disponibles en "
-"<code>git.weblate.org</code> con nombres similares al sitio web - la "
-"traducción de hello/master sería publicada como <code>git://git.weblate.org"
-"/hello-master.git</code>."
+"Todos los repositorios traducidos están disponibles en <code>git.weblate."
+"org</code> con nombres similares al sitio web - la traducción de hello/"
+"master sería publicada como <code>git://git.weblate.org/hello-master.git</"
+"code>."
 
 #: weblate_web/html/hosting.html:20
 msgid ""
@@ -354,8 +360,7 @@ msgid ""
 "which provide easy way to deploy Weblate in cloud."
 msgstr ""
 "Revise nuestra <a href=\"%(download_url)s\">página de descargas</a> por "
-"aplicativos que proveen una forma sencilla para desplegar Weblate en la "
-"nube."
+"aplicativos que proveen una forma sencilla para desplegar Weblate en la nube."
 
 #: weblate_web/html/index.html:5
 msgid "Weblate is a free web based translation management system."
@@ -478,52 +483,52 @@ msgstr ""
 msgid "Appliances"
 msgstr "Aplicaciones"
 
-#: weblate_web/templatetags/downloads.py:17
+#: weblate_web/templatetags/downloads.py:38
 msgid "0 bytes"
 msgstr "0 bytes"
 
-#: weblate_web/templatetags/downloads.py:20
+#: weblate_web/templatetags/downloads.py:41
 #, python-format
 msgid "%(size)d byte"
 msgid_plural "%(size)d bytes"
 msgstr[0] "%(size)d byte"
 msgstr[1] "%(size)d bytes"
 
-#: weblate_web/templatetags/downloads.py:22
+#: weblate_web/templatetags/downloads.py:43
 #, python-format
 msgid "%.1f KiB"
 msgstr "%.1f KiB"
 
-#: weblate_web/templatetags/downloads.py:24
+#: weblate_web/templatetags/downloads.py:45
 #, python-format
 msgid "%.1f MiB"
 msgstr "%.1f MiB"
 
-#: weblate_web/templatetags/downloads.py:25
+#: weblate_web/templatetags/downloads.py:46
 #, python-format
 msgid "%.1f GiB"
 msgstr "%.1f GiB"
 
-#: weblate_web/templatetags/downloads.py:31
+#: weblate_web/templatetags/downloads.py:53
 msgid "Sources tarball, bzip2 compressed"
 msgstr "Compendio tar del código fuente, comprimido con bzip2"
 
-#: weblate_web/templatetags/downloads.py:33
+#: weblate_web/templatetags/downloads.py:55
 msgid "Sources tarball, gzip compressed"
 msgstr "Compendio tar del código fuente, comprimido con gzip"
 
-#: weblate_web/templatetags/downloads.py:35
+#: weblate_web/templatetags/downloads.py:57
 msgid "Sources tarball, lzma compressed"
 msgstr "Compendio tar del código fuente, comprimido con lzma"
 
-#: weblate_web/templatetags/downloads.py:37
+#: weblate_web/templatetags/downloads.py:59
 msgid "Sources tarball, xz compressed"
 msgstr "Compendio tar del código fuente, comprimido con xz"
 
-#: weblate_web/templatetags/downloads.py:39
+#: weblate_web/templatetags/downloads.py:61
 msgid "Sources, zip compressed"
 msgstr "Código fuente, comprimido con zip"
 
-#: weblate_web/templatetags/downloads.py:41
+#: weblate_web/templatetags/downloads.py:63
 msgid "Sources, 7zip compressed"
 msgstr "Código fuente, comprimido con 7zip"
