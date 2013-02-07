@@ -141,7 +141,7 @@ TEMPLATE_LOADERS = (
 TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.request',
     'django.core.context_processors.i18n',
-    'weblate_web.context_processors.downloads',
+    'weblate_web.context_processors.weblate_web',
 )
 
 MIDDLEWARE_CLASSES = (

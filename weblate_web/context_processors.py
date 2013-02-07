@@ -21,7 +21,7 @@
 from weblate_web.data import VERSION, EXTENSIONS
 
 
-def downloads(request):
+def weblate_web(request):
     return {
         'downloads': ['weblate-%s.%s' % (VERSION, ext) for ext in EXTENSIONS],
     }
