@@ -18,10 +18,5 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
-from weblate_web.data import VERSION, EXTENSIONS
-
-
-def downloads(request):
-    return {
-        'downloads': ['weblate-%s.%s' % (VERSION, ext) for ext in EXTENSIONS],
-    }
+VERSION = '1.4'
+EXTENSIONS = ('tar.xz', 'tar.bz2', 'tar.gz')
