@@ -33,6 +33,7 @@ class PagesSitemap(Sitemap):
         return (
             ('/', 1.0, 'weekly'),
             ('/features/', 0.9, 'weekly'),
+            ('/tour/', 0.9, 'weekly'),
             ('/download/', 0.5, 'daily'),
             ('/try/', 0.5, 'weekly'),
             ('/hosting/', 0.8, 'weekly'),
@@ -65,6 +66,7 @@ urlpatterns = patterns('',
 
     url(r'^$', TemplateView.as_view(template_name="index.html"), name='home'),
     url(r'^features/$', TemplateView.as_view(template_name="features.html"), name='features'),
+    url(r'^tour/$', TemplateView.as_view(template_name="tour.html"), name='tour'),
     url(r'^download/$', TemplateView.as_view(template_name="download.html"), name='download'),
     url(r'^try/$', TemplateView.as_view(template_name="try.html"), name='try'),
     url(r'^hosting/$', TemplateView.as_view(template_name="hosting.html"), name='hosting'),
