@@ -6,8 +6,9 @@
 
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="/media/style.css">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="/media/style.css">
+  <link rel="stylesheet" type="text/css" href="/media/colorbox.css">
   <title>{% block title %}Weblate{% endblock %}</title>
 
 {% for lang in LANGUAGES %}
@@ -16,6 +17,7 @@
     {% endif %}
 {% endfor %}
    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+   <script src="/media/jquery.colorbox-min.js"></script>
    <script src="/media/code.js"></script>
 </head>
 <body>
