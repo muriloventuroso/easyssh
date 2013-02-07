@@ -7,6 +7,6 @@ for file in $SCREENSHOTS*.png ; do
     base=${file##$SCREENSHOTS}
     thumb=$THUMBNAILS$base
     if [ ! -f $thumb ] ; then
-        convert "$file" -geometry 250x250 -quality 100 "$thumb"
+        convert "$file" -resize 200x200^ -gravity center -crop 200x200+0+0 +repage "$thumb"
     fi
 done
