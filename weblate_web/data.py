@@ -20,5 +20,5 @@
 
 VERSION = '1.4'
 EXTENSIONS = ('tar.xz', 'tar.bz2', 'tar.gz')
-SCREENSOTS = [
-]
+SCREENSHOTS = (
+)
