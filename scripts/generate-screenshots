@@ -1,0 +1,12 @@
+#!/bin/sh
+
+SCREENSHOTS=weblate_web/media/screenshots/
+THUMBNAILS=weblate_web/media/thumbnails/
+
+for file in $SCREENSHOTS*.png ; do
+    base=${file##$SCREENSHOTS}
+    thumb=$THUMBNAILS$base
+    if [ ! -f $thumb ] ; then
+        convert "$file" -geometry 250x250 -quality 100 "$thumb"
+    fi
+done
