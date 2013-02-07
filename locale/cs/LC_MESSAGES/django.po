@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-02-06 16:57+0100\n"
+"POT-Creation-Date: 2013-02-07 16:20+0100\n"
 "PO-Revision-Date: 2013-02-06 17:01+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <http://l10n.cihar.com/projects/weblate/website/cs/>\n"
@@ -18,6 +18,68 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Generator: Weblate 1.5-dev\n"
 
+#: weblate_web/data.py:29
+msgid "Overview of own translations at main page."
+msgstr ""
+
+#: weblate_web/data.py:30
+#, fuzzy
+#| msgid "Continuous translation"
+msgid "Own translations"
+msgstr "Průběžný překlad"
+
+#: weblate_web/data.py:34 weblate_web/html/features.html:68
+msgid ""
+"Translator can always see important context infromation like comments or "
+"corresponding source code."
+msgstr ""
+"Překladatelé mají vždy k dispozici různé informace o souvislostech překladu "
+"jako komentáře nebo související zdrojový kód."
+
+#: weblate_web/data.py:35 weblate_web/html/features.html:67
+msgid "Translation context"
+msgstr "Souvislosti překladu"
+
+#: weblate_web/data.py:39
+msgid ""
+"Project page gives you detailed information about project translation status."
+msgstr ""
+
+#: weblate_web/data.py:40
+msgid "Project overview"
+msgstr ""
+
+#: weblate_web/data.py:44 weblate_web/html/features.html:78
+msgid ""
+"Translators can define own glossary to stay consistent in frequently used "
+"terminology."
+msgstr ""
+"Překladatelé si mohou zadat vlastní glosář a tím pomoci zachování stejné "
+"terminologie v rámci překladu."
+
+#: weblate_web/data.py:45 weblate_web/html/features.html:77
+msgid "Glossary"
+msgstr "Glosář"
+
+#: weblate_web/data.py:49 weblate_web/html/base-features.html:19
+msgid ""
+"Customizable quality checks will help you in improving quality of "
+"translations."
+msgstr ""
+"Nastavitelné kontroly kvality vám pomohou se zlepšením kvality překladů."
+
+#: weblate_web/data.py:50 weblate_web/html/base-features.html:18
+msgid "Quality checks"
+msgstr "Kontrola kvality"
+
+#: weblate_web/data.py:54
+msgid "Weblate provides your various ways to promote your translation project."
+msgstr ""
+
+#: weblate_web/data.py:55
+msgid "Promotion"
+msgstr ""
+
 #: weblate_web/html/base-features.html:8
 msgid "Continuous translation"
 msgstr "Průběžný překlad"
@@ -26,17 +88,6 @@ msgstr "Průběžný překlad"
 msgid ""
 "Automated translation process can closely follow development of your project."
 msgstr "Automatizovaný překladový proces následuje vývoj vašeho projektu."
-
-#: weblate_web/html/base-features.html:18
-msgid "Quality checks"
-msgstr "Kontrola kvality"
-
-#: weblate_web/html/base-features.html:19
-msgid ""
-"Customizable quality checks will help you in improving quality of "
-"translations."
-msgstr ""
-"Nastavitelné kontroly kvality vám pomohou se zlepšením kvality překladů."
 
 #: weblate_web/html/base-features.html:28
 msgid "Attribution"
@@ -49,47 +100,47 @@ msgstr ""
 "Všechny vaše překlady budou zapsány pod vaším jménem do systému správy "
 "revizí."
 
-#: weblate_web/html/base.html:24
+#: weblate_web/html/base.html:26
 msgid "Home"
 msgstr "Domů"
 
-#: weblate_web/html/base.html:25
+#: weblate_web/html/base.html:27
 msgid "Blog"
 msgstr "Blog"
 
-#: weblate_web/html/base.html:26
+#: weblate_web/html/base.html:28
 msgid "Try"
 msgstr "Vyzkoušejte"
 
-#: weblate_web/html/base.html:27
+#: weblate_web/html/base.html:29
 msgid "Features"
 msgstr "Vlastnosti"
 
-#: weblate_web/html/base.html:28
+#: weblate_web/html/base.html:30
 msgid "Docs"
 msgstr "Dokumentace"
 
-#: weblate_web/html/base.html:29 weblate_web/html/download.html:10
+#: weblate_web/html/base.html:31 weblate_web/html/download.html:10
 msgid "Download"
 msgstr "Stáhnout"
 
-#: weblate_web/html/base.html:30
+#: weblate_web/html/base.html:32
 msgid "Hosting"
 msgstr "Hostování"
 
-#: weblate_web/html/base.html:31
+#: weblate_web/html/base.html:33
 msgid "Contribute"
 msgstr "Přispějte"
 
-#: weblate_web/html/base.html:32
+#: weblate_web/html/base.html:34
 msgid "Support"
 msgstr "Podpora"
 
-#: weblate_web/html/base.html:33
+#: weblate_web/html/base.html:35
 msgid "Tour"
 msgstr "Prohlídka"
 
-#: weblate_web/html/base.html:37
+#: weblate_web/html/base.html:39
 msgid "Language:"
 msgstr "Jazyk:"
 
@@ -107,8 +158,8 @@ msgid ""
 "docs.weblate.org/en/latest/contributing.html\">Contributing chapter</a> of "
 "our documentation."
 msgstr ""
-"Podrobnější informace na toto téma naleznete v naší dokumentaci <a "
-"href=\"http://docs.weblate.org/en/latest/contributing.html\">v kapitole o "
+"Podrobnější informace na toto téma naleznete v naší dokumentaci <a href="
+"\"http://docs.weblate.org/en/latest/contributing.html\">v kapitole o "
 "přispívání</a>."
 
 #: weblate_web/html/contribute.html:13 weblate_web/html/download.html:35
@@ -254,30 +305,6 @@ msgid ""
 msgstr ""
 "Weblate umí překládat různé verze programu najedou odesíláním překladů do "
 "různých větví."
-
-#: weblate_web/html/features.html:67
-msgid "Translation context"
-msgstr "Souvislosti překladu"
-
-#: weblate_web/html/features.html:68
-msgid ""
-"Translator can always see important context infromation like comments or "
-"corresponding source code."
-msgstr ""
-"Překladatelé mají vždy k dispozici různé informace o souvislostech překladu "
-"jako komentáře nebo související zdrojový kód."
-
-#: weblate_web/html/features.html:77
-msgid "Glossary"
-msgstr "Glosář"
-
-#: weblate_web/html/features.html:78
-msgid ""
-"Translators can define own glossary to stay consistent in frequently used "
-"terminology."
-msgstr ""
-"Překladatelé si mohou zadat vlastní glosář a tím pomoci zachování stejné "
-"terminologie v rámci překladu."
 
 #: weblate_web/html/features.html:87
 msgid "Acquiring feedback"
@@ -449,6 +476,18 @@ msgid ""
 msgstr ""
 "Můžete se také obrátit na <a href=\"mailto:michal@cihar.com?subject=Weblate"
 "\">Michala Čihaře</a>, který je autorem Weblate."
+
+#: weblate_web/html/tour.html:4 weblate_web/html/tour.html.py:5
+#, fuzzy
+#| msgid "Weblate features"
+msgid "Weblate screenshot tour"
+msgstr "Vlastnosti Weblate"
+
+#: weblate_web/html/tour.html:6
+#, fuzzy
+#| msgid "Weblate is a feature rich computer aided translation tool."
+msgid "Weblate has useful features for every translation."
+msgstr "Weblate nabízí mnoho funkcí pro překlad podporovaný počítačem."
 
 #: weblate_web/html/try.html:4 weblate_web/html/try.html.py:5
 msgid "Try Weblate"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-02-06 16:57+0100\n"
+"POT-Creation-Date: 2013-02-07 16:20+0100\n"
 "PO-Revision-Date: 2013-02-06 21:24+0200\n"
 "Last-Translator: Matías Bellone <matiasbellone+weblate@gmail.com>\n"
 "Language-Team: Spanish <http://l10n.cihar.com/projects/weblate/website/es/>\n"
@@ -17,6 +17,69 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 1.5-dev\n"
+
+#: weblate_web/data.py:29
+msgid "Overview of own translations at main page."
+msgstr ""
+
+#: weblate_web/data.py:30
+#, fuzzy
+#| msgid "Continuous translation"
+msgid "Own translations"
+msgstr "Traducción continua"
+
+#: weblate_web/data.py:34 weblate_web/html/features.html:68
+msgid ""
+"Translator can always see important context infromation like comments or "
+"corresponding source code."
+msgstr ""
+"El traductor siempre puede ver información importante del contexto como "
+"comentarios o el código fuente correspondiente."
+
+#: weblate_web/data.py:35 weblate_web/html/features.html:67
+msgid "Translation context"
+msgstr "Contexto de traducción"
+
+#: weblate_web/data.py:39
+msgid ""
+"Project page gives you detailed information about project translation status."
+msgstr ""
+
+#: weblate_web/data.py:40
+msgid "Project overview"
+msgstr ""
+
+#: weblate_web/data.py:44 weblate_web/html/features.html:78
+msgid ""
+"Translators can define own glossary to stay consistent in frequently used "
+"terminology."
+msgstr ""
+"Los traductores pueden definir su propio glorasio para mantener la "
+"consistencia en la terminología utilizada frecuentemente."
+
+#: weblate_web/data.py:45 weblate_web/html/features.html:77
+msgid "Glossary"
+msgstr "Glosario"
+
+#: weblate_web/data.py:49 weblate_web/html/base-features.html:19
+msgid ""
+"Customizable quality checks will help you in improving quality of "
+"translations."
+msgstr ""
+"Chequeos de calidad personalizables que le ayudarán a mejorar la calidad de "
+"las traducciones."
+
+#: weblate_web/data.py:50 weblate_web/html/base-features.html:18
+msgid "Quality checks"
+msgstr "Chequeos de calidad"
+
+#: weblate_web/data.py:54
+msgid "Weblate provides your various ways to promote your translation project."
+msgstr ""
+
+#: weblate_web/data.py:55
+msgid "Promotion"
+msgstr ""
 
 #: weblate_web/html/base-features.html:8
 msgid "Continuous translation"
@@ -29,18 +92,6 @@ msgstr ""
 "El proceso de traducción automáticamente puede seguir el desarrollo de su "
 "proyecto."
 
-#: weblate_web/html/base-features.html:18
-msgid "Quality checks"
-msgstr "Chequeos de calidad"
-
-#: weblate_web/html/base-features.html:19
-msgid ""
-"Customizable quality checks will help you in improving quality of "
-"translations."
-msgstr ""
-"Chequeos de calidad personalizables que le ayudarán a mejorar la calidad de "
-"las traducciones."
-
 #: weblate_web/html/base-features.html:28
 msgid "Attribution"
 msgstr "Atribución"
@@ -52,47 +103,47 @@ msgstr ""
 "Se reconocerá apropiadamente a todos sus traductores en el sistema de "
 "control de versiones."
 
-#: weblate_web/html/base.html:24
+#: weblate_web/html/base.html:26
 msgid "Home"
 msgstr "Inicio"
 
-#: weblate_web/html/base.html:25
+#: weblate_web/html/base.html:27
 msgid "Blog"
 msgstr "Blog"
 
-#: weblate_web/html/base.html:26
+#: weblate_web/html/base.html:28
 msgid "Try"
 msgstr "Demo"
 
-#: weblate_web/html/base.html:27
+#: weblate_web/html/base.html:29
 msgid "Features"
 msgstr "Funcionalidades"
 
-#: weblate_web/html/base.html:28
+#: weblate_web/html/base.html:30
 msgid "Docs"
 msgstr "Documentación"
 
-#: weblate_web/html/base.html:29 weblate_web/html/download.html:10
+#: weblate_web/html/base.html:31 weblate_web/html/download.html:10
 msgid "Download"
 msgstr "Descargar"
 
-#: weblate_web/html/base.html:30
+#: weblate_web/html/base.html:32
 msgid "Hosting"
 msgstr "Alojamiento"
 
-#: weblate_web/html/base.html:31
+#: weblate_web/html/base.html:33
 msgid "Contribute"
 msgstr "Contribuir"
 
-#: weblate_web/html/base.html:32
+#: weblate_web/html/base.html:34
 msgid "Support"
 msgstr "Soporte"
 
-#: weblate_web/html/base.html:33
+#: weblate_web/html/base.html:35
 msgid "Tour"
 msgstr "Tour"
 
-#: weblate_web/html/base.html:37
+#: weblate_web/html/base.html:39
 msgid "Language:"
 msgstr "Idioma:"
 
@@ -110,8 +161,8 @@ msgid ""
 "docs.weblate.org/en/latest/contributing.html\">Contributing chapter</a> of "
 "our documentation."
 msgstr ""
-"Puede encontrar información más detallada sobre este tema en el <a "
-"href=\"http://docs.weblate.org/es/latest/contributing.html\">capítulo sobre "
+"Puede encontrar información más detallada sobre este tema en el <a href="
+"\"http://docs.weblate.org/es/latest/contributing.html\">capítulo sobre "
 "contribución</a> de nuestra documentación."
 
 #: weblate_web/html/contribute.html:13 weblate_web/html/download.html:35
@@ -257,30 +308,6 @@ msgid ""
 msgstr ""
 "Weblate puede traducir diferentes versión de la traducción enviándolas a "
 "diferentes ramas automáticamente."
-
-#: weblate_web/html/features.html:67
-msgid "Translation context"
-msgstr "Contexto de traducción"
-
-#: weblate_web/html/features.html:68
-msgid ""
-"Translator can always see important context infromation like comments or "
-"corresponding source code."
-msgstr ""
-"El traductor siempre puede ver información importante del contexto como "
-"comentarios o el código fuente correspondiente."
-
-#: weblate_web/html/features.html:77
-msgid "Glossary"
-msgstr "Glosario"
-
-#: weblate_web/html/features.html:78
-msgid ""
-"Translators can define own glossary to stay consistent in frequently used "
-"terminology."
-msgstr ""
-"Los traductores pueden definir su propio glorasio para mantener la "
-"consistencia en la terminología utilizada frecuentemente."
 
 #: weblate_web/html/features.html:87
 msgid "Acquiring feedback"
@@ -458,6 +485,19 @@ msgid ""
 msgstr ""
 "También puede contactar (en Inglés) a <a href=\"mailto:michal@cihar.com?"
 "subject=Weblate\">Michal Čihař</a>, el autor de Weblate."
+
+#: weblate_web/html/tour.html:4 weblate_web/html/tour.html.py:5
+#, fuzzy
+#| msgid "Weblate features"
+msgid "Weblate screenshot tour"
+msgstr "Características de Weblate"
+
+#: weblate_web/html/tour.html:6
+#, fuzzy
+#| msgid "Weblate is a feature rich computer aided translation tool."
+msgid "Weblate has useful features for every translation."
+msgstr ""
+"Weblate es una herramienta de traducción asistida con mucha funcionalidad."
 
 #: weblate_web/html/try.html:4 weblate_web/html/try.html.py:5
 msgid "Try Weblate"
