@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2013-02-06 16:57+0100\n"
-"PO-Revision-Date: 2013-02-06 08:20+0200\n"
+"PO-Revision-Date: 2013-02-07 13:37+0200\n"
 "Last-Translator: Burak Yavuz <hitowerdigit@hotmail.com>\n"
 "Language-Team: Turkish <http://l10n.cihar.com/projects/weblate/website/tr/>\n"
 "Language: tr\n"
@@ -110,6 +110,9 @@ msgid ""
 "docs.weblate.org/en/latest/contributing.html\">Contributing chapter</a> of "
 "our documentation."
 msgstr ""
+"Belgelerimizin <a "
+"href=\"http://docs.weblate.org/en/latest/contributing.html\">Katkıda bulunma "
+"bölümünde</a> bu konu hakkında daha fazla ayrıntılı bilgi bulabilirsiniz."
 
 #: weblate_web/html/contribute.html:13 weblate_web/html/download.html:35
 msgid "Code"
@@ -181,8 +184,9 @@ msgid ""
 "a/F8yMYg/weblate\">SUSE Studio Gallery</a>."
 msgstr ""
 "Weblate'i bulutunuzda veya sanal sunucunuzda çalıştırmak istediğiniz "
-"durumda, openSUSE 12.2 tabanlı aracı <a href=\"http://susestudio.com/a/"
-"F8yMYg/weblate\">SUSE Studio Gallery</a>'den indirebilirsiniz."
+"durumda, openSUSE 12.2 tabanlı teçhizatı <a "
+"href=\"http://susestudio.com/a/F8yMYg/weblate\">SUSE Studio Gallery</a>'den "
+"indirebilirsiniz."
 
 #: weblate_web/html/download.html:31
 msgid ""
@@ -228,7 +232,7 @@ msgstr "Bulut için hazır"
 #: weblate_web/html/features.html:38
 msgid "Weblate comes with appliance, which is ready to deploy in your cloud."
 msgstr ""
-"Weblate, bulutunuz içinde dağıtmak için hazır cihaz ile birlikte gelir."
+"Weblate, bulutunuz içinde dağıtmak için hazır teçhizat ile birlikte gelir."
 
 #: weblate_web/html/features.html:47
 msgid "File formats"
@@ -251,7 +255,7 @@ msgid ""
 "Weblate can translate different versions of translation by pushin them to "
 "different branches automatically."
 msgstr ""
-"Weblate otomatik olarak farklı dallara onları iterek çevirinin farklı "
+"Weblate otomatik olarak farklı dallara onları yollayarak çevirinin farklı "
 "sürümlerini çevirebilir."
 
 #: weblate_web/html/features.html:67
@@ -329,6 +333,9 @@ msgid ""
 "with similar naming as on website - hello/master translation would be "
 "published as <code>git://git.weblate.org/hello-master.git</code>."
 msgstr ""
+"Tüm çevrilmiş havuzları web sitesindeki benzer isimlendirmeler ile "
+"<code>git.weblate.org</code> adresinde mevcuttur - merhaba/asıl çevirisi "
+"<code>git://git.weblate.org/hello-master.git</code> olarak yayımlanmaktadır."
 
 #: weblate_web/html/hosting.html:20
 msgid ""
@@ -337,10 +344,15 @@ msgid ""
 "Weblate to automatically push changes as well, add Weblate user to "
 "contributors and let us know you want to use this option."
 msgstr ""
+"GitHub'taki otomatikleştirilmiş iş akışını etkinleştirmek için ayarlarda URL "
+"olarak <code>hosted.weblate.org</code> adresi ile Weblate hizmet "
+"bağlamasını etkinleştirmeniz gerekir. Eğer Weblate'in de otomatik olarak "
+"değişiklikleri yollamasını istiyorsanız, Weblate kullanıcısını katkıda "
+"bulunanlara ekleyin ve bu seçeneği kullanmak istediğinizi bize söyleyin."
 
 #: weblate_web/html/hosting.html:23
 msgid "Other options"
-msgstr ""
+msgstr "Diğer seçenekler"
 
 #: weblate_web/html/hosting.html:27 weblate_web/html/try.html:18
 #, python-format
@@ -348,30 +360,32 @@ msgid ""
 "Check our <a href=\"%(download_url)s\">download page</a> for appliances, "
 "which provide easy way to deploy Weblate in cloud."
 msgstr ""
+"Weblate'i bulutta dağıtmanın en kolay yolunu sağlayan teçhizatlar için bizim "
+"<a href=\"%(download_url)s\">indirme sayfasını</a> kontrol edin."
 
 #: weblate_web/html/index.html:5
 msgid "Weblate is a free web based translation management system."
-msgstr ""
+msgstr "Weblate ücretsiz bir web tabanlı çeviri yönetimi sistemidir."
 
 #: weblate_web/html/index.html:11
 msgid "Try our demo"
-msgstr ""
+msgstr "Gösterimimizi deneyin"
 
 #: weblate_web/html/index.html:13
 msgid "Downloads"
-msgstr ""
+msgstr "İndirmeler"
 
 #: weblate_web/html/index.html:22
 msgid "See more features…"
-msgstr ""
+msgstr "Daha fazla özelliklere bakın…"
 
 #: weblate_web/html/support.html:4 weblate_web/html/support.html.py:5
 msgid "Weblate support"
-msgstr ""
+msgstr "Weblate desteği"
 
 #: weblate_web/html/support.html:6
 msgid "Weblate is a free software with community support."
-msgstr ""
+msgstr "Weblate topluluk desteği ile ücretsiz bir yazılımdır."
 
 #: weblate_web/html/support.html:9
 msgid "Bugs or feature requests"
@@ -445,15 +459,15 @@ msgstr ""
 
 #: weblate_web/html/try.html:4 weblate_web/html/try.html.py:5
 msgid "Try Weblate"
-msgstr ""
+msgstr "Weblate'i deneyin"
 
 #: weblate_web/html/try.html:6
 msgid "Weblate is easy to deploy as an appliance."
-msgstr ""
+msgstr "Weblate'i dağıtmak bir techizat olarak kolaydır."
 
 #: weblate_web/html/try.html:9
 msgid "Demo server"
-msgstr ""
+msgstr "Gösteri sunucusu"
 
 #: weblate_web/html/try.html:12
 msgid ""
@@ -468,54 +482,53 @@ msgstr ""
 
 #: weblate_web/html/try.html:15
 msgid "Appliances"
-msgstr "Araçlar"
+msgstr "Teçhizatlar"
 
 #: weblate_web/templatetags/downloads.py:38
 msgid "0 bytes"
-msgstr ""
+msgstr "0 bayt"
 
 #: weblate_web/templatetags/downloads.py:41
 #, python-format
 msgid "%(size)d byte"
 msgid_plural "%(size)d bytes"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(size)d bayt"
 
 #: weblate_web/templatetags/downloads.py:43
 #, python-format
 msgid "%.1f KiB"
-msgstr ""
+msgstr "%.1f KiB"
 
 #: weblate_web/templatetags/downloads.py:45
 #, python-format
 msgid "%.1f MiB"
-msgstr ""
+msgstr "%.1f MiB"
 
 #: weblate_web/templatetags/downloads.py:46
 #, python-format
 msgid "%.1f GiB"
-msgstr ""
+msgstr "%.1f GiB"
 
 #: weblate_web/templatetags/downloads.py:53
 msgid "Sources tarball, bzip2 compressed"
-msgstr ""
+msgstr "Kaynaklar tarball, bzip2 sıkıştırmalı"
 
 #: weblate_web/templatetags/downloads.py:55
 msgid "Sources tarball, gzip compressed"
-msgstr ""
+msgstr "Kaynaklar tarball, gzip sıkıştırmalı"
 
 #: weblate_web/templatetags/downloads.py:57
 msgid "Sources tarball, lzma compressed"
-msgstr ""
+msgstr "Kaynaklar tarball, lzma sıkıştırmalı"
 
 #: weblate_web/templatetags/downloads.py:59
 msgid "Sources tarball, xz compressed"
-msgstr ""
+msgstr "Kaynaklar tarball, xz sıkıştırmalı"
 
 #: weblate_web/templatetags/downloads.py:61
 msgid "Sources, zip compressed"
-msgstr ""
+msgstr "Kaynaklar, zip sıkıştırmalı"
 
 #: weblate_web/templatetags/downloads.py:63
 msgid "Sources, 7zip compressed"
-msgstr ""
+msgstr "Kaynaklar, 7zip sıkıştırmalı"
