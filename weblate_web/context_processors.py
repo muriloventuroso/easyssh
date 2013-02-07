@@ -18,7 +18,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
-from weblate_web.data import VERSION, EXTENSIONS
+from weblate_web.data import VERSION, EXTENSIONS, SCREENSHOTS
 
 
 def weblate_web(request):
