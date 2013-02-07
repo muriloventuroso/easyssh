@@ -8,7 +8,10 @@
 
 
 {% for screenshot in screenshots %}
-<a href="/media/screenshots/{{ screenshot.0 }}"><img src="/media/thumbnails/{{ screenshot.0 }}" title="{{ screenshot.1 }}"></a>
+<a href="/media/screenshots/{{ screenshot.0 }}" class="screenshot">
+<img src="/media/thumbnails/{{ screenshot.0 }}" title="{{ screenshot.1 }}">
+{{ screenshot.2 }}
+</a>
 {% endfor %}
 
 {% endblock %}

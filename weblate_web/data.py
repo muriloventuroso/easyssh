@@ -18,7 +18,15 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
+from django.utils.translation import ugettext_lazy as _
+
+
 VERSION = '1.4'
 EXTENSIONS = ('tar.xz', 'tar.bz2', 'tar.gz')
 SCREENSHOTS = (
+    (
+        'own-translations.png',
+        _('Overview of own translations at main page.'),
+        _('Own translations'),
+    ),
 )
