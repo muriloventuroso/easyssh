@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load url from future %}
+{% load i18n %}
+{% block header %}
+{% block title %}{% trans "Server error" %}{% endblock %}
+{% endblock %}
+{% block headline %}
+{% trans "Weblate is a free web based translation management system." %}
+{% endblock %}
+
+{% block content %}
+
+<p id="error">
+{% blocktrans %}The server had serious problems while serving your request. We've just sent our trained monkeys to fix the issue.{% endblocktrans %}
+</p>
+</p>
+
+{% endblock %}
+
