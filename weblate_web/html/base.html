@@ -14,12 +14,9 @@
   <link rel="image_src" type="image/png" href="/media/weblate-128.png" />
   <link rel="apple-touch-icon" href="/media/weblate-128.png" />
   <title>{% block title %}Weblate{% endblock %}</title>
-
-{% for lang in LANGUAGES %}
-    {% if lang.0 != LANGUAGE_CODE %}
-        <link rel="alternate" hreflang="{{ lang.0 }}" href="{{ request.path|chlocale:lang.0 }}" />
-    {% endif %}
-{% endfor %}
+{% for lang in LANGUAGES %}{% if lang.0 != LANGUAGE_CODE %}
+   <link rel="alternate" hreflang="{{ lang.0 }}" href="{{ request.path|chlocale:lang.0 }}" />
+{% endif %}{% endfor %}
    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
    <script src="/media/jquery.colorbox-min.js"></script>
    <script src="/media/code.js"></script>
