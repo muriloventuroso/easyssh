@@ -74,11 +74,11 @@ LANGUAGES = (
 #    ('nl', 'Nederlands'),
 #    ('pl', 'Polski'),
 #    ('pt', u'Português'),
-    ('pt_BR', u'Português brasileiro'),
+    ('pt-br', u'Português brasileiro'),
 #    ('sl', u'Slovenščina'),
 #    ('sv', u'Svenska'),
     ('tr', u'Türkçe'),
-#    ('zh_CN', u'中文'),
+#    ('zh-cn', u'中文'),
 )
 
 SITE_ID = 1
