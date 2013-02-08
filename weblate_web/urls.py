@@ -111,6 +111,11 @@ urlpatterns = patterns('',
         r'^[a-z][a-z]/$',
         RedirectView.as_view(url='/')
     ),
+    # Broken links
+    url(
+        r'^http:/.*$',
+        RedirectView.as_view(url='/')
+    ),
 
     url(
         r'^sitemap\.xml$',
