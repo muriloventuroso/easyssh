@@ -60,25 +60,63 @@ for lang in settings.LANGUAGES:
     sitemaps[lang[0]] = PagesSitemap(lang[0])
 
 urlpatterns = patterns('',
-    # Examples:
-    # url(r'^$', 'weblate_web.views.home', name='home'),
-    # url(r'^weblate_web/', include('weblate_web.foo.urls')),
-
-    url(r'^$', TemplateView.as_view(template_name="index.html"), name='home'),
-    url(r'^features/$', TemplateView.as_view(template_name="features.html"), name='features'),
-    url(r'^tour/$', TemplateView.as_view(template_name="tour.html"), name='tour'),
-    url(r'^download/$', TemplateView.as_view(template_name="download.html"), name='download'),
-    url(r'^try/$', TemplateView.as_view(template_name="try.html"), name='try'),
-    url(r'^hosting/$', TemplateView.as_view(template_name="hosting.html"), name='hosting'),
-    url(r'^contribute/$', TemplateView.as_view(template_name="contribute.html"), name='contribute'),
-    url(r'^support/$', TemplateView.as_view(template_name="support.html"), name='support'),
+    url(
+        r'^$',
+        TemplateView.as_view(template_name="index.html"),
+        name='home'
+    ),
+    url(
+        r'^features/$',
+        TemplateView.as_view(template_name="features.html"),
+        name='features'
+    ),
+    url(
+        r'^tour/$',
+        TemplateView.as_view(template_name="tour.html"),
+        name='tour'
+    ),
+    url(
+        r'^download/$',
+        TemplateView.as_view(template_name="download.html"),
+        name='download'
+    ),
+    url(
+        r'^try/$',
+        TemplateView.as_view(template_name="try.html"),
+        name='try'
+    ),
+    url(
+        r'^hosting/$',
+        TemplateView.as_view(template_name="hosting.html"),
+        name='hosting'
+    ),
+    url(
+        r'^contribute/$',
+        TemplateView.as_view(template_name="contribute.html"),
+        name='contribute'
+    ),
+    url(
+        r'^support/$',
+        TemplateView.as_view(template_name="support.html"),
+        name='support'
+    ),
 
     # Compatibility with disabled languages
-    url(r'^[a-z][a-z]/$', RedirectView.as_view(url='/')),
+    url(
+        r'^[a-z][a-z]/$',
+        RedirectView.as_view(url='/')
+    ),
 
-    url(r'^sitemap\.xml$', 'django.contrib.sitemaps.views.sitemap', {'sitemaps': sitemaps}),
+    url(
+        r'^sitemap\.xml$',
+        'django.contrib.sitemaps.views.sitemap',
+        {'sitemaps': sitemaps}
+    ),
 
-    # Media files
-    url(r'^media/(?P<path>.*)$', 'django.views.static.serve',
-        {'document_root': settings.MEDIA_ROOT}),
+    # Media files on devel server
+    url(
+        r'^media/(?P<path>.*)$',
+        'django.views.static.serve',
+        {'document_root': settings.MEDIA_ROOT}
+    ),
 )
