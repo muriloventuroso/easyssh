@@ -38,7 +38,7 @@
 {% trans "Language:" %}
 <select id="languages">
 {% for lang in LANGUAGES %}
-    <option {% if lang.0 == LANGUAGE_CODE %}selected="selected"{% endif %} value="{{ request.path|chlocale:lang.0 }}">{{ lang.1}}</option>
+    <option {% if lang.0 == LANGUAGE_CODE %}selected="selected"{% endif %} value="{{ request.path|chlocale:lang.0 }}">{{ lang.1 }}</option>
 {% endfor %}
 </select>
 </div>
