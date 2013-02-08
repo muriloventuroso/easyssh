@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-02-07 16:37+0100\n"
+"POT-Creation-Date: 2013-02-08 11:56+0100\n"
 "PO-Revision-Date: 2013-02-07 16:38+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <http://l10n.cihar.com/projects/weblate/website/cs/>\n"
@@ -79,6 +79,31 @@ msgstr ""
 msgid "Promotion"
 msgstr "Propagace"
 
+#: weblate_web/html/404.html:5
+msgid "Page not found"
+msgstr ""
+
+#: weblate_web/html/404.html:8 weblate_web/html/500.html:8
+#: weblate_web/html/index.html:5
+msgid "Weblate is a free web based translation management system."
+msgstr "Weblate je svobodný nástroj pro správu překladu přes web."
+
+#: weblate_web/html/404.html:14
+msgid "The page you are looking for was not found."
+msgstr "Stránka nebyla nalezena."
+
+#: weblate_web/html/500.html:5
+msgid "Server error"
+msgstr ""
+
+#: weblate_web/html/500.html:14
+msgid ""
+"The server had serious problems while serving your request. We've just sent "
+"our trained monkeys to fix the issue."
+msgstr ""
+"Server měl vážné problémy se zpracováním vašeho požadavku. Zrovna jsme "
+"vyslali cvičené opice, aby problém opravily."
+
 #: weblate_web/html/base-features.html:8
 msgid "Continuous translation"
 msgstr "Průběžný překlad"
@@ -99,47 +124,47 @@ msgstr ""
 "Všechny vaše překlady budou zapsány pod vaším jménem do systému správy "
 "revizí."
 
-#: weblate_web/html/base.html:26
+#: weblate_web/html/base.html:25
 msgid "Home"
 msgstr "Domů"
 
-#: weblate_web/html/base.html:27
+#: weblate_web/html/base.html:26
 msgid "Blog"
 msgstr "Blog"
 
-#: weblate_web/html/base.html:28
+#: weblate_web/html/base.html:27
 msgid "Try"
 msgstr "Vyzkoušejte"
 
-#: weblate_web/html/base.html:29
+#: weblate_web/html/base.html:28
 msgid "Features"
 msgstr "Vlastnosti"
 
-#: weblate_web/html/base.html:30
+#: weblate_web/html/base.html:29
 msgid "Docs"
 msgstr "Dokumentace"
 
-#: weblate_web/html/base.html:31 weblate_web/html/download.html:10
+#: weblate_web/html/base.html:30 weblate_web/html/download.html:10
 msgid "Download"
 msgstr "Stáhnout"
 
-#: weblate_web/html/base.html:32
+#: weblate_web/html/base.html:31
 msgid "Hosting"
 msgstr "Hostování"
 
-#: weblate_web/html/base.html:33
+#: weblate_web/html/base.html:32
 msgid "Contribute"
 msgstr "Přispějte"
 
-#: weblate_web/html/base.html:34
+#: weblate_web/html/base.html:33
 msgid "Support"
 msgstr "Podpora"
 
-#: weblate_web/html/base.html:35
+#: weblate_web/html/base.html:34
 msgid "Tour"
 msgstr "Prohlídka"
 
-#: weblate_web/html/base.html:39
+#: weblate_web/html/base.html:38
 msgid "Language:"
 msgstr "Jazyk:"
 
@@ -384,10 +409,6 @@ msgstr ""
 "Podívejte se na naši <a href=\"%(download_url)s\">stránka pro stažení</a>, "
 "kde naleznete appliance, které můžete snadno nasadit v cloudu."
 
-#: weblate_web/html/index.html:5
-msgid "Weblate is a free web based translation management system."
-msgstr "Weblate je svobodný nástroj pro správu překladu přes web."
-
 #: weblate_web/html/index.html:11
 msgid "Try our demo"
 msgstr "Vyzkoušejte naše demo"
@@ -477,7 +498,6 @@ msgstr ""
 "\">Michala Čihaře</a>, který je autorem Weblate."
 
 #: weblate_web/html/tour.html:4 weblate_web/html/tour.html.py:5
-#| msgid "Weblate features"
 msgid "Weblate tour"
 msgstr "Prohlídka Weblate"
 

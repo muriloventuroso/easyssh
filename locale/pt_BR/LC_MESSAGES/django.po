@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-02-07 16:37+0100\n"
+"POT-Creation-Date: 2013-02-08 11:56+0100\n"
 "PO-Revision-Date: 2013-02-07 18:15+0200\n"
 "Last-Translator: Claudio F Filho <filhocf@gmail.com>\n"
-"Language-Team: Portuguese (Brazil) "
-"<http://l10n.cihar.com/projects/weblate/website/pt_BR/>\n"
+"Language-Team: Portuguese (Brazil) <http://l10n.cihar.com/projects/weblate/"
+"website/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -24,7 +24,6 @@ msgid "Overview of own translations at main page."
 msgstr "Visão geral das nossas traduções na página principal."
 
 #: weblate_web/data.py:30
-#| msgid "Continuous translation"
 msgid "Own translations"
 msgstr "Nossas traduções"
 
@@ -84,6 +83,32 @@ msgstr ""
 msgid "Promotion"
 msgstr "Promoção"
 
+#: weblate_web/html/404.html:5
+msgid "Page not found"
+msgstr ""
+
+#: weblate_web/html/404.html:8 weblate_web/html/500.html:8
+#: weblate_web/html/index.html:5
+msgid "Weblate is a free web based translation management system."
+msgstr ""
+"O Weblate é um sistema de gerenciamento de tradução livre baseado na web."
+
+#: weblate_web/html/404.html:14
+msgid "The page you are looking for was not found."
+msgstr "A página que você está procurando não foi encontrada."
+
+#: weblate_web/html/500.html:5
+msgid "Server error"
+msgstr ""
+
+#: weblate_web/html/500.html:14
+msgid ""
+"The server had serious problems while serving your request. We've just sent "
+"our trained monkeys to fix the issue."
+msgstr ""
+"O servidor teve sérios problemas com suas requisições. Nós já enviamos "
+"nossos macaquinhos amestrados concertar este problema."
+
 #: weblate_web/html/base-features.html:8
 msgid "Continuous translation"
 msgstr "Tradução continua"
@@ -106,47 +131,47 @@ msgstr ""
 "Todos os seus tradutores serão creditados apropriadamente no sistema de "
 "controle de versão."
 
-#: weblate_web/html/base.html:26
+#: weblate_web/html/base.html:25
 msgid "Home"
 msgstr "Início"
 
-#: weblate_web/html/base.html:27
+#: weblate_web/html/base.html:26
 msgid "Blog"
 msgstr "Blog"
 
-#: weblate_web/html/base.html:28
+#: weblate_web/html/base.html:27
 msgid "Try"
 msgstr "Experimente"
 
-#: weblate_web/html/base.html:29
+#: weblate_web/html/base.html:28
 msgid "Features"
 msgstr "Características"
 
-#: weblate_web/html/base.html:30
+#: weblate_web/html/base.html:29
 msgid "Docs"
 msgstr "Documentos"
 
-#: weblate_web/html/base.html:31 weblate_web/html/download.html:10
+#: weblate_web/html/base.html:30 weblate_web/html/download.html:10
 msgid "Download"
 msgstr "Descarregar"
 
-#: weblate_web/html/base.html:32
+#: weblate_web/html/base.html:31
 msgid "Hosting"
 msgstr "Hospedagem"
 
-#: weblate_web/html/base.html:33
+#: weblate_web/html/base.html:32
 msgid "Contribute"
 msgstr "Contribua"
 
-#: weblate_web/html/base.html:34
+#: weblate_web/html/base.html:33
 msgid "Support"
 msgstr "Ajuda e Suporte"
 
-#: weblate_web/html/base.html:35
+#: weblate_web/html/base.html:34
 msgid "Tour"
 msgstr "Tour"
 
-#: weblate_web/html/base.html:39
+#: weblate_web/html/base.html:38
 msgid "Language:"
 msgstr "Idioma:"
 
@@ -396,11 +421,6 @@ msgstr ""
 "Verifique nossa <a href=\"%(download_url)s\">pagina de downloads</a> para "
 "aplicações que provêm uma forma fácil de instalar o Weblate na nuvem."
 
-#: weblate_web/html/index.html:5
-msgid "Weblate is a free web based translation management system."
-msgstr ""
-"O Weblate é um sistema de gerenciamento de tradução livre baseado na web."
-
 #: weblate_web/html/index.html:11
 msgid "Try our demo"
 msgstr "Experimente nossa demonstração"
@@ -492,12 +512,10 @@ msgstr ""
 "\">Michal Čihař</a>, o autor do Weblate."
 
 #: weblate_web/html/tour.html:4 weblate_web/html/tour.html.py:5
-#| msgid "Weblate features"
 msgid "Weblate tour"
 msgstr "Tour do Weblate"
 
 #: weblate_web/html/tour.html:6
-#| msgid "Weblate is a feature rich computer aided translation tool."
 msgid "Weblate has useful features for every translation."
 msgstr "O Weblate tem funcionalidades uteis para qualquer tradução."
 

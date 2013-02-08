@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-02-07 16:37+0100\n"
+"POT-Creation-Date: 2013-02-08 11:56+0100\n"
 "PO-Revision-Date: 2013-02-05 13:49+0200\n"
 "Last-Translator: Gyeongsu Han <hansim@gmail.com>\n"
 "Language-Team: Korean <http://l10n.cihar.com/projects/weblate/website/ko/>\n"
@@ -43,7 +43,7 @@ msgstr ""
 
 #: weblate_web/data.py:40
 msgid "Project overview"
-msgstr ""
+msgstr "프로젝트 총괄개요"
 
 #: weblate_web/data.py:44 weblate_web/html/features.html:78
 msgid ""
@@ -73,6 +73,31 @@ msgstr ""
 msgid "Promotion"
 msgstr ""
 
+#: weblate_web/html/404.html:5
+msgid "Page not found"
+msgstr ""
+
+#: weblate_web/html/404.html:8 weblate_web/html/500.html:8
+#: weblate_web/html/index.html:5
+msgid "Weblate is a free web based translation management system."
+msgstr ""
+
+#: weblate_web/html/404.html:14
+msgid "The page you are looking for was not found."
+msgstr "요청하신 페이지를 찾을수 없습니다."
+
+#: weblate_web/html/500.html:5
+msgid "Server error"
+msgstr ""
+
+#: weblate_web/html/500.html:14
+msgid ""
+"The server had serious problems while serving your request. We've just sent "
+"our trained monkeys to fix the issue."
+msgstr ""
+"요청을 처리하는 동안 서버에 심각한 문제가 있었습니다. 이 바나나 같은 문제를 "
+"해결하기 위해 숙련된 원숭이(개발자)를 파견했습니다 (;^.^;)."
+
 #: weblate_web/html/base-features.html:8
 msgid "Continuous translation"
 msgstr ""
@@ -91,47 +116,47 @@ msgid ""
 "All your translators will be properly credited in the version control system."
 msgstr ""
 
-#: weblate_web/html/base.html:26
+#: weblate_web/html/base.html:25
 msgid "Home"
 msgstr "홈"
 
-#: weblate_web/html/base.html:27
+#: weblate_web/html/base.html:26
 msgid "Blog"
 msgstr ""
 
-#: weblate_web/html/base.html:28
+#: weblate_web/html/base.html:27
 msgid "Try"
 msgstr ""
 
-#: weblate_web/html/base.html:29
+#: weblate_web/html/base.html:28
 msgid "Features"
 msgstr ""
 
-#: weblate_web/html/base.html:30
+#: weblate_web/html/base.html:29
 msgid "Docs"
 msgstr ""
 
-#: weblate_web/html/base.html:31 weblate_web/html/download.html:10
+#: weblate_web/html/base.html:30 weblate_web/html/download.html:10
 msgid "Download"
 msgstr "내려받기"
 
-#: weblate_web/html/base.html:32
+#: weblate_web/html/base.html:31
 msgid "Hosting"
 msgstr ""
 
-#: weblate_web/html/base.html:33
+#: weblate_web/html/base.html:32
 msgid "Contribute"
 msgstr ""
 
-#: weblate_web/html/base.html:34
+#: weblate_web/html/base.html:33
 msgid "Support"
 msgstr ""
 
-#: weblate_web/html/base.html:35
+#: weblate_web/html/base.html:34
 msgid "Tour"
 msgstr ""
 
-#: weblate_web/html/base.html:39
+#: weblate_web/html/base.html:38
 msgid "Language:"
 msgstr ""
 
@@ -349,10 +374,6 @@ msgid ""
 "which provide easy way to deploy Weblate in cloud."
 msgstr ""
 
-#: weblate_web/html/index.html:5
-msgid "Weblate is a free web based translation management system."
-msgstr ""
-
 #: weblate_web/html/index.html:11
 msgid "Try our demo"
 msgstr ""
@@ -444,7 +465,6 @@ msgstr ""
 
 #: weblate_web/html/tour.html:4 weblate_web/html/tour.html.py:5
 #, fuzzy
-#| msgid "Weblate features"
 msgid "Weblate tour"
 msgstr "Weblate 특징"
 

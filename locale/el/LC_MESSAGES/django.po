@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-02-07 16:37+0100\n"
+"POT-Creation-Date: 2013-02-08 11:56+0100\n"
 "PO-Revision-Date: 2013-02-07 21:39+0200\n"
 "Last-Translator: Panagiotis Papazoglou <papaz_p@yahoo.com>\n"
 "Language-Team: Greek <http://l10n.cihar.com/projects/weblate/website/el/>\n"
@@ -23,7 +23,6 @@ msgid "Overview of own translations at main page."
 msgstr "Επισκόπηση των δικών σας μεταφράσεων στην κεντρική σελίδα."
 
 #: weblate_web/data.py:30
-#| msgid "Continuous translation"
 msgid "Own translations"
 msgstr "Οι δικές σας μεταφράσεις"
 
@@ -84,6 +83,32 @@ msgstr ""
 msgid "Promotion"
 msgstr ""
 
+#: weblate_web/html/404.html:5
+msgid "Page not found"
+msgstr ""
+
+#: weblate_web/html/404.html:8 weblate_web/html/500.html:8
+#: weblate_web/html/index.html:5
+msgid "Weblate is a free web based translation management system."
+msgstr ""
+"Το Weblate είναι ένα δωρεάν σύστημα διαχείρισης διαδικτυακής μετάφρασης."
+
+#: weblate_web/html/404.html:14
+msgid "The page you are looking for was not found."
+msgstr "Η σελίδα που αναζητάτε δεν βρέθηκε."
+
+#: weblate_web/html/500.html:5
+msgid "Server error"
+msgstr ""
+
+#: weblate_web/html/500.html:14
+msgid ""
+"The server had serious problems while serving your request. We've just sent "
+"our trained monkeys to fix the issue."
+msgstr ""
+"Ο διακομιστής είχε σοβαρά προβλήματα να εξυπηρετήσει το αίτημά σας. Στείλαμε "
+"τους τεχνικούς μας να διορθώσουν το θέμα."
+
 #: weblate_web/html/base-features.html:8
 msgid "Continuous translation"
 msgstr "Συνεχής μετάφραση"
@@ -106,47 +131,47 @@ msgstr ""
 "Όλοι οι μεταφραστές σας θα λαμβάνουν τα πνευματικά δικαιώματα σωστά στο "
 "σύστημα ελέγχου εκδόσεων."
 
-#: weblate_web/html/base.html:26
+#: weblate_web/html/base.html:25
 msgid "Home"
 msgstr "Αρχική"
 
-#: weblate_web/html/base.html:27
+#: weblate_web/html/base.html:26
 msgid "Blog"
 msgstr "Ιστολόγιο"
 
-#: weblate_web/html/base.html:28
+#: weblate_web/html/base.html:27
 msgid "Try"
 msgstr "Δοκιμή"
 
-#: weblate_web/html/base.html:29
+#: weblate_web/html/base.html:28
 msgid "Features"
 msgstr "Χαρακτηριστικά"
 
-#: weblate_web/html/base.html:30
+#: weblate_web/html/base.html:29
 msgid "Docs"
 msgstr "Έγγραφα"
 
-#: weblate_web/html/base.html:31 weblate_web/html/download.html:10
+#: weblate_web/html/base.html:30 weblate_web/html/download.html:10
 msgid "Download"
 msgstr "Λήψη"
 
-#: weblate_web/html/base.html:32
+#: weblate_web/html/base.html:31
 msgid "Hosting"
 msgstr "Φιλοξενία"
 
-#: weblate_web/html/base.html:33
+#: weblate_web/html/base.html:32
 msgid "Contribute"
 msgstr "Συνεισφορά"
 
-#: weblate_web/html/base.html:34
+#: weblate_web/html/base.html:33
 msgid "Support"
 msgstr "Υποστήριξη"
 
-#: weblate_web/html/base.html:35
+#: weblate_web/html/base.html:34
 msgid "Tour"
 msgstr "Περιοδεία"
 
-#: weblate_web/html/base.html:39
+#: weblate_web/html/base.html:38
 msgid "Language:"
 msgstr "Γλώσσα:"
 
@@ -400,11 +425,6 @@ msgstr ""
 "Ελέγξτε τη <a href=\"%(download_url)s\">σελίδα λήψης</a> για εφαρμογές, οι "
 "οποίες παρέχουν εύκολο τρόπο ενσωμάτωσης του Weblate σε σύννεφο."
 
-#: weblate_web/html/index.html:5
-msgid "Weblate is a free web based translation management system."
-msgstr ""
-"Το Weblate είναι ένα δωρεάν σύστημα διαχείρισης διαδικτυακής μετάφρασης."
-
 #: weblate_web/html/index.html:11
 msgid "Try our demo"
 msgstr "Δοκιμάστε το demo μας"
@@ -496,12 +516,10 @@ msgstr ""
 "subject=Weblate\"> Michal Čihař</a>, που είναι δημιουργός του Weblate."
 
 #: weblate_web/html/tour.html:4 weblate_web/html/tour.html.py:5
-#| msgid "Weblate features"
 msgid "Weblate tour"
 msgstr "Περιοδεία του Weblate"
 
 #: weblate_web/html/tour.html:6
-#| msgid "Weblate is a feature rich computer aided translation tool."
 msgid "Weblate has useful features for every translation."
 msgstr "Το Weblate έχει χρήσιμα χαρακτηριστικά για κάθε μετάφραση."
 
