@@ -116,6 +116,10 @@ urlpatterns = patterns('',
         r'^http:/.*$',
         RedirectView.as_view(url='/')
     ),
+    url(
+        r'^index\.html$',
+        RedirectView.as_view(url='/')
+    ),
 
     url(
         r'^sitemap\.xml$',
