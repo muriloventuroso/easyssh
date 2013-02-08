@@ -111,6 +111,10 @@ urlpatterns = patterns('',
         r'^[a-z][a-z]/$',
         RedirectView.as_view(url='/')
     ),
+    url(
+        r'^[a-z][a-z]_[A-Z][A-Z]/$',
+        RedirectView.as_view(url='/')
+    ),
     # Broken links
     url(
         r'^http:/.*$',
@@ -122,6 +126,10 @@ urlpatterns = patterns('',
     ),
     url(
         r'^[a-z][a-z]/index\.html$',
+        RedirectView.as_view(url='/')
+    ),
+    url(
+        r'^[a-z][a-z]_[A-Z][A-Z]/index\.html$',
         RedirectView.as_view(url='/')
     ),
 
