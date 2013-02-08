@@ -19,7 +19,7 @@
 #
 
 from django.conf.urls import patterns, include, url
-from django.views.generic import TemplateView
+from django.views.generic import TemplateView, RedirectView
 from django.conf import settings
 from django.contrib.sitemaps import Sitemap
 from localeurl.templatetags.localeurl_tags import chlocale
@@ -72,6 +72,9 @@ urlpatterns = patterns('',
     url(r'^hosting/$', TemplateView.as_view(template_name="hosting.html"), name='hosting'),
     url(r'^contribute/$', TemplateView.as_view(template_name="contribute.html"), name='contribute'),
     url(r'^support/$', TemplateView.as_view(template_name="support.html"), name='support'),
+
+    # Compatibility with disabled languages
+    url(r'^[a-z][a-z]/$', RedirectView.as_view(url='/')),
 
     url(r'^sitemap\.xml$', 'django.contrib.sitemaps.views.sitemap', {'sitemaps': sitemaps}),
 
