@@ -24,8 +24,13 @@ from django.conf import settings
 from django.contrib.sitemaps import Sitemap
 from localeurl.templatetags.localeurl_tags import chlocale
 
-# example Sitemap
+
 class PagesSitemap(Sitemap):
+    '''
+    Sitemap of static pages for one language.
+    This is heavily based on localeurl sitemap, but
+    does not use get_absolute_url.
+    '''
     def __init__(self, language):
         self.language = language
 
