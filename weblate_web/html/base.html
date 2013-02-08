@@ -16,6 +16,9 @@
   <link rel="image_src" type="image/png" href="/media/weblate-128.png" />
   <link rel="apple-touch-icon" href="/media/weblate-128.png" />
   <title>{% block title %}Weblate{% endblock %}</title>
+  <link rel="alternate" type="application/rss+xml" href="http://blog.cihar.com/archives/weblate/index-atom.xml" title="Weblate blog (Atom 1.0)"/>
+  <link rel="alternate" type="application/rss+xml" href="http://blog.cihar.com/archives/weblate/index-rss.xml" title="Weblate blog (RSS 2.0)"/>
+  <link rel="alternate" type="application/rss+xml" href="http://blog.cihar.com/archives/weblate/index.xml" title="Weblate blog (RSS 1.0)"/>
 {% for lang in LANGUAGES %}{% if lang.0 != LANGUAGE_CODE %}
    <link rel="alternate" hreflang="{{ lang.0 }}" href="{{ request.path|chlocale:lang.0 }}" />
 {% endif %}{% endfor %}
