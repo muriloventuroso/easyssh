@@ -51,7 +51,7 @@ SCREENSHOTS = (
     ),
     (
         'promote.png',
-        _('Weblate provides your various ways to promote your translation project.'),
+        _('Weblate provides various ways to promote your translation project.'),
         _('Promotion'),
     ),
 )
