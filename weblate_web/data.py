@@ -41,7 +41,7 @@ SCREENSHOTS = (
     ),
     (
         'glossary.png',
-        _('Translators can define own glossary to stay consistent in frequently used terminology.'),
+        _('Translators can define their own glossary to stay consistent in frequently used terminology.'),
         _('Glossary'),
     ),
     (
