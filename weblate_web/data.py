@@ -31,7 +31,7 @@ SCREENSHOTS = (
     ),
     (
         'translation-context.png',
-        _('Translator can always see important context infromation like comments or corresponding source code.'),
+        _('Translator can always see important context information like comments or corresponding source code.'),
         _('Translation context'),
     ),
     (
