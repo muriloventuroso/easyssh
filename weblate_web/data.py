@@ -31,7 +31,7 @@ SCREENSHOTS = (
     ),
     (
         'translation-context.png',
-        _('Translator can always see important context infromation like comments or corresponding source code.'),
+        _('Translator can always see important context information like comments or corresponding source code.'),
         _('Translation context'),
     ),
     (
@@ -51,7 +51,7 @@ SCREENSHOTS = (
     ),
     (
         'promote.png',
-        _('Weblate provides your various ways to promote your translation project.'),
+        _('Weblate provides various ways to promote your translation project.'),
         _('Promotion'),
     ),
 )
