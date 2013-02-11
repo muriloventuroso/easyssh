@@ -18,7 +18,8 @@ def main():
     languages = []
     for lang in data:
         if lang['translated_percent'] > THRESHOLD:
-            languages.append(lang['code'])
+            code = lang['code'].replace('_', '-').lower()
+            languages.append(code)
     languages.sort()
     print 'Found languages:'
     print '\n'.join(languages)
