@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-02-11 09:07+0100\n"
+"POT-Creation-Date: 2013-02-12 11:36+0100\n"
 "PO-Revision-Date: 2013-02-11 09:30+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <http://l10n.cihar.com/projects/weblate/website/cs/>\n"
@@ -125,7 +125,6 @@ msgstr ""
 "revizí."
 
 #: weblate_web/html/base.html:30
-#| msgid "Weblate tour"
 msgid "Weblate logo"
 msgstr "Logo Weblate"
 
@@ -191,11 +190,11 @@ msgstr ""
 "\"http://docs.weblate.org/en/latest/contributing.html\">v kapitole o "
 "přispívání</a>."
 
-#: weblate_web/html/contribute.html:15 weblate_web/html/download.html:37
+#: weblate_web/html/contribute.html:15 weblate_web/html/download.html:38
 msgid "Code"
 msgstr "Kód"
 
-#: weblate_web/html/contribute.html:18 weblate_web/html/download.html:40
+#: weblate_web/html/contribute.html:18 weblate_web/html/download.html:41
 msgid ""
 "Weblate is being developed on <a href=\"https://github.com/nijel/weblate"
 "\">Github</a>, you can fork it there or just:"
@@ -264,7 +263,13 @@ msgstr ""
 "stáhnou připravené obrazy se openSUSE 12.2 v <a href=\"http://susestudio.com/"
 "a/F8yMYg/weblate\">SUSE Studio Gallery</a>."
 
-#: weblate_web/html/download.html:33
+#: weblate_web/html/download.html:30
+msgid ""
+"Check <a href=\"http://docs.weblate.org/en/latest/install.html#appliance"
+"\">our documentation</a> for more information about appliance setup."
+msgstr ""
+
+#: weblate_web/html/download.html:34
 msgid ""
 "Weblate is also available as <a href=\"http://bitnami.org/stack/weblate"
 "\">BitNami stack</a>, that allows you native installation on Windows, Linux "
@@ -356,6 +361,37 @@ msgid "Translations can be downloaded for offline translation and merged back."
 msgstr ""
 "Překlady mohou být staženy pro práci bez internetu a poté nahrány zpět."
 
+#: weblate_web/html/features.html:109
+msgid "Integrated"
+msgstr ""
+
+#: weblate_web/html/features.html:110
+#, fuzzy
+#| msgid ""
+#| "All your translators will be properly credited in the version control "
+#| "system."
+msgid "Translations are managed within same version control system as code."
+msgstr ""
+"Všechny vaše překlady budou zapsány pod vaším jménem do systému správy "
+"revizí."
+
+#: weblate_web/html/features.html:119
+msgid "Documentation"
+msgstr ""
+
+#: weblate_web/html/features.html:120
+msgid ""
+"Weblate comes with comprehensive documentation covering both setup and usage."
+msgstr ""
+
+#: weblate_web/html/features.html:129
+msgid "Review"
+msgstr ""
+
+#: weblate_web/html/features.html:130
+msgid "Translators have several options to review others contributions."
+msgstr ""
+
 #: weblate_web/html/hosting.html:4 weblate_web/html/hosting.html.py:5
 msgid "Hosting Weblate"
 msgstr "Hostování Weblate"
@@ -423,7 +459,6 @@ msgid "Downloads"
 msgstr "Stáhnout"
 
 #: weblate_web/html/index.html:19
-#| msgid "Weblate screenshot tour"
 msgid "Weblate screenshot"
 msgstr "Obrázek Weblate"
 
