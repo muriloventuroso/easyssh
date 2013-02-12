@@ -116,7 +116,7 @@ nav a {
 .feature {
     display: block;
     width: 13em;
-    height: 13em;
+    height: 14em;
     text-align: center;
     float: left;
     padding: .5em;
@@ -573,4 +573,70 @@ nav a {
     border-width: 0.500em;
     left: 0.250em;
     top: -0.250em;
+}
+
+.centralized {
+	position: relative;
+	width: 0.5em;
+	height: 0.5em;
+	margin: 30% auto;
+	background: #004276;
+	border-radius: 50%;
+    box-shadow: 0 0 0 0.2em #ffffff, 0 0 0 0.6em #004276, 0 0 0 1em #ffffff, 0 0 0 1.4em #004276;
+}
+
+.file {
+    font-size: 16px;
+    border-top: 0.2em solid #004276;
+    position: relative;
+    width: 1em;
+    height: 2em;
+    border-right: 0.2em solid #004276;
+    border-bottom: 0.2em solid #004276;
+}
+
+.file::before {
+    bottom: -0.2em;
+    left: -0.5em;
+    position: absolute;
+    width: 0.5em;
+    height: 1.72em;
+    border-left: 0.2em solid #004276;
+    border-bottom: 0.2em solid #004276;
+    content: "";
+}
+
+.file::after {
+    top: -0.2em;
+    left: -0.50em;
+    position: absolute;
+    border-right: 0.5em solid #004276;
+    border-top: 0.5em solid transparent;
+    content: "";
+}
+
+.eye {
+	width: 0;
+	height: 0;
+	position: relative;
+	margin: 30% auto;
+	border: 1.0em solid #004276;
+	border-radius: 5.0em 0.5em / 5.0em 0.5em;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);	
+}
+
+.eye:before {
+	content: "";
+	position: absolute;
+	top: -0.45em;
+	left: -0.45em;
+	width: 0.4em;
+	height: 0.4em;
+	background: #004276;
+	border: 0.25em solid #ffffff;	
+	border-radius: 50%;
 }
