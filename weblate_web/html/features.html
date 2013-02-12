@@ -10,7 +10,7 @@
 
 {% include "base-features.html" %}
 
-<div class="feature">
+<a class="feature" href="http://docs.weblate.org/en/latest/admin.html#access-control">
 <div class="picto">
 <div class="icon">
 <div class="lock"></div>
@@ -18,9 +18,9 @@
 </div>
 <h2>{% trans "Access control" %}</h2>
 <p>{% trans "Access rights can be fine tuned depending on your environment." %}</p>
-</div>
+</a>
 
-<div class="feature">
+<a class="feature" href="http://docs.weblate.org/en/latest/usage.html#subscriptions">
 <div class="picto">
 <div class="icon">
 <div class="mail"></div>
@@ -28,9 +28,9 @@
 </div>
 <h2>{% trans "Notifications" %}</h2>
 <p>{% trans "Translators can be notified on new strings to translate or other events." %}</p>
-</div>
+</a>
 
-<div class="feature">
+<a class="feature" href="{% url 'download' %}">
 <div class="picto">
 <div class="icon">
 <div class="cloud"></div>
@@ -38,9 +38,9 @@
 </div>
 <h2>{% trans "Ready for cloud" %}</h2>
 <p>{% trans "Weblate comes with appliance, which is ready to deploy in your cloud." %}</p>
-</div>
+</a>
 
-<div class="feature">
+<a class="feature" href="http://docs.weblate.org/en/latest/formats.html">
 <div class="picto">
 <div class="icon">
 <div class="cube"></div>
@@ -48,9 +48,9 @@
 </div>
 <h2>{% trans "File formats" %}</h2>
 <p>{% trans "Weblate supports all widely used file formats for localisation like Gettext or resource strings." %}</p>
-</div>
+</a>
 
-<div class="feature">
+<a class="feature" href="http://docs.weblate.org/en/latest/faq.html#how-do-i-translate-several-branches-at-once">
 <div class="picto">
 <div class="icon">
 <div class="link"></div>
@@ -58,9 +58,9 @@
 </div>
 <h2>{% trans "Branches support" %}</h2>
 <p>{% trans "Weblate can translate different versions of translation by pushing them to different branches automatically." %}</p>
-</div>
+</a>
 
-<div class="feature">
+<a class="feature" href="http://docs.weblate.org/en/latest/usage.html#translating">
 <div class="picto">
 <div class="icon">
 <div class="heal"></div>
@@ -68,9 +68,9 @@
 </div>
 <h2>{% trans "Translation context" %}</h2>
 <p>{% trans "Translator can always see important context information like comments or corresponding source code." %}</p>
-</div>
+</a>
 
-<div class="feature">
+<a class="feature" href="http://docs.weblate.org/en/latest/usage.html#glossary">
 <div class="picto">
 <div class="icon">
 <div class="file"></div>
@@ -78,9 +78,9 @@
 </div>
 <h2>{% trans "Glossary" %}</h2>
 <p>{% trans "Translators can define their own glossary to stay consistent in frequently used terminology." %}</p>
-</div>
+</a>
 
-<div class="feature">
+<a class="feature" href="http://docs.weblate.org/en/latest/faq.html#how-do-i-provide-feedback-on-source-string">
 <div class="picto">
 <div class="icon">
 <div class="comment"></div>
@@ -88,9 +88,9 @@
 </div>
 <h2>{% trans "Acquiring feedback" %}</h2>
 <p>{% trans "You can also use Weblate to acquire feedback on source strings and thus improve them." %}</p>
-</div>
+</a>
 
-<div class="feature">
+<a class="feature" href="http://docs.weblate.org/en/latest/usage.html#export-and-import">
 <div class="picto">
 <div class="icon">
 <div class="download"></div>
@@ -98,9 +98,9 @@
 </div>
 <h2>{% trans "Export and import" %}</h2>
 <p>{% trans "Translations can be downloaded for offline translation and merged back." %}</p>
-</div>
+</a>
 
-<div class="feature">
+<a class="feature" href="http://docs.weblate.org/en/latest/about.html#project-goals">
 <div class="picto">
 <div class="icon">
 <div class="centralized"></div>
@@ -108,9 +108,9 @@
 </div>
 <h2>{% trans "Integrated" %}</h2>
 <p>{% trans "Translations are managed within same version control system as code." %}</p>
-</div>
+</a>
 
-<div class="feature">
+<a class="feature" href="http://docs.weblate.org/">
 <div class="picto">
 <div class="icon">
 <div class="newspaper"></div>
@@ -118,9 +118,9 @@
 </div>
 <h2>{% trans "Documentation" %}</h2>
 <p>{% trans "Weblate comes with comprehensive documentation covering both setup and usage." %}</p>
-</div>
+</a>
 
-<div class="feature">
+<a class="feature" href="http://docs.weblate.org/en/latest/faq.html#how-do-i-review-others-translations">
 <div class="picto">
 <div class="icon">
 <div class="eye"></div>
@@ -128,6 +128,6 @@
 </div>
 <h2>{% trans "Review" %}</h2>
 <p>{% trans "Translators have several options to review others contributions." %}</p>
-</div>
+</a>
 
 {% endblock %}
