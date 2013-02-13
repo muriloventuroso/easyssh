@@ -718,3 +718,28 @@ nav a {
     border-radius: 50%;
     box-shadow:2em -.15em 0 #004276,.15em -2em 0 #004276;
 }
+
+.histogram{
+    height: 4em;
+    overflow-y:hidden;
+    background:transparent;
+    font-size:10px;
+}
+
+.histogram:before{
+    content: "";
+    display: block;
+    width: 0;
+    height: 3em;
+    box-shadow: 1em 2.5em 0 0.3em #004276, 1.7em 2em 0 0.3em #004276,2.4em 0.8em 0 0.3em #004276,3.1em 1.5em 0 0.3em #004276;
+}
+
+.histogram:after{
+    content: "";
+    display: block;
+    position: relative;
+    margin-top: 0.9em;
+    width: 4em;
+    height: 0.1em;
+    background: #004276;
+}
