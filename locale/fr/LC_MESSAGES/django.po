@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2013-02-13 20:06+0100\n"
-"PO-Revision-Date: 2013-02-13 19:09+0200\n"
+"PO-Revision-Date: 2013-02-13 22:37+0200\n"
 "Last-Translator: Marc Delisle <marc@infomarc.info>\n"
 "Language-Team: French <http://l10n.cihar.com/projects/weblate/website/fr/>\n"
 "Language: fr\n"
@@ -335,9 +335,10 @@ msgstr "Prêt pour le nuage"
 msgid ""
 "Weblate comes with an appliance, which is ready to deploy in your cloud."
 msgstr ""
+"Weblate est disponible en version applicative, prête à déployer dans votre "
+"nuage."
 
 #: weblate_web/html/features.html:49
-#, fuzzy
 msgid "File formats"
 msgstr "Formats de fichier"
 
@@ -359,6 +360,8 @@ msgid ""
 "Weblate can handle different versions of the translation by pushing them to "
 "different branches automatically."
 msgstr ""
+"Weblate peut gérer différentes versions de la traduction en les poussant à "
+"différentes branches automatiquement."
 
 #: weblate_web/html/features.html:89
 msgid "Acquiring feedback"
@@ -410,6 +413,8 @@ msgstr "Examen"
 #: weblate_web/html/features.html:130
 msgid "Translators have several options to review contributions made by peers."
 msgstr ""
+"Les traducteurs ont plusieurs options pour examiner les contributions "
+"apportées par les pairs."
 
 #: weblate_web/html/features.html:139
 msgid "Languages"
@@ -465,10 +470,15 @@ msgid ""
 "Weblate to automatically push changes as well, add Weblate user to "
 "contributors and let us know you want to use this option."
 msgstr ""
+"Pour activer le flux de travail automatisé sur GitHub, vous devez activer le "
+"service Weblate avec <code>hosted.weblate.org</code> comme URL. Si vous "
+"voulez que Weblate pousse automatiquement les changements, ajoutez "
+"l'utilisateur Weblate aux contributeurs et dites-nous que vous souhaitez "
+"utiliser cette option."
 
 #: weblate_web/html/hosting.html:25
 msgid "Hosting for commerical products"
-msgstr ""
+msgstr "Hébergement pour des produits commerciaux"
 
 #: weblate_web/html/hosting.html:28
 msgid ""
@@ -480,7 +490,7 @@ msgstr ""
 
 #: weblate_web/html/hosting.html:31
 msgid "Other options"
-msgstr ""
+msgstr "Autres options"
 
 #: weblate_web/html/hosting.html:35 weblate_web/html/try.html:20
 #, python-format
@@ -491,7 +501,7 @@ msgstr ""
 
 #: weblate_web/html/index.html:13
 msgid "Try our demo"
-msgstr ""
+msgstr "Essayez notre démo"
 
 #: weblate_web/html/index.html:15
 msgid "Downloads"
@@ -499,19 +509,19 @@ msgstr "Téléchargement"
 
 #: weblate_web/html/index.html:19
 msgid "Weblate screenshot"
-msgstr ""
+msgstr "Capture d'écran de Weblate"
 
 #: weblate_web/html/index.html:24
 msgid "See more features…"
-msgstr ""
+msgstr "Voir plus de fonctionnalités…"
 
 #: weblate_web/html/support.html:4 weblate_web/html/support.html.py:5
 msgid "Weblate support"
-msgstr ""
+msgstr "Soutien Weblate"
 
 #: weblate_web/html/support.html:7
 msgid "Weblate is a free software with community support."
-msgstr ""
+msgstr "Weblate est un logiciel libre, avec le soutien de la communauté."
 
 #: weblate_web/html/support.html:11
 msgid "Bugs or feature requests"
@@ -585,23 +595,23 @@ msgstr ""
 
 #: weblate_web/html/tour.html:4 weblate_web/html/tour.html.py:5
 msgid "Weblate tour"
-msgstr ""
+msgstr "Visite de Weblate"
 
 #: weblate_web/html/tour.html:7
 msgid "Weblate has useful features for every translation."
-msgstr ""
+msgstr "Weblate dispose de fonctionnalités utiles pour chaque traduction."
 
 #: weblate_web/html/try.html:4 weblate_web/html/try.html.py:5
 msgid "Try Weblate"
-msgstr ""
+msgstr "Essayez Weblate"
 
 #: weblate_web/html/try.html:7
 msgid "Weblate is easy to deploy as an appliance."
-msgstr ""
+msgstr "Weblate est facile à déployer sous forme applicative."
 
 #: weblate_web/html/try.html:11
 msgid "Demo server"
-msgstr ""
+msgstr "Serveur de démonstration"
 
 #: weblate_web/html/try.html:14
 msgid ""
@@ -620,50 +630,50 @@ msgstr "Images disque"
 
 #: weblate_web/templatetags/downloads.py:38
 msgid "0 bytes"
-msgstr ""
+msgstr "0 octets"
 
 #: weblate_web/templatetags/downloads.py:41
 #, python-format
 msgid "%(size)d byte"
 msgid_plural "%(size)d bytes"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(size)d octet"
+msgstr[1] "%(size)d octets"
 
 #: weblate_web/templatetags/downloads.py:43
 #, python-format
 msgid "%.1f KiB"
-msgstr ""
+msgstr "%.1f Kio"
 
 #: weblate_web/templatetags/downloads.py:45
 #, python-format
 msgid "%.1f MiB"
-msgstr ""
+msgstr "%.1f Mio"
 
 #: weblate_web/templatetags/downloads.py:46
 #, python-format
 msgid "%.1f GiB"
-msgstr ""
+msgstr "%.1f Gio"
 
 #: weblate_web/templatetags/downloads.py:53
 msgid "Sources tarball, bzip2 compressed"
-msgstr ""
+msgstr "Archive source, compressée bzip2"
 
 #: weblate_web/templatetags/downloads.py:55
 msgid "Sources tarball, gzip compressed"
-msgstr ""
+msgstr "Archive source, compressée gzip"
 
 #: weblate_web/templatetags/downloads.py:57
 msgid "Sources tarball, lzma compressed"
-msgstr ""
+msgstr "Archive source, compressée lzma"
 
 #: weblate_web/templatetags/downloads.py:59
 msgid "Sources tarball, xz compressed"
-msgstr ""
+msgstr "Archive source, compressée xz"
 
 #: weblate_web/templatetags/downloads.py:61
 msgid "Sources, zip compressed"
-msgstr ""
+msgstr "Archive source, compressée zip"
 
 #: weblate_web/templatetags/downloads.py:63
 msgid "Sources, 7zip compressed"
-msgstr ""
+msgstr "Archive source, compressée 7zip"
