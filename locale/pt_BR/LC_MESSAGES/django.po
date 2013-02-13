@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-02-12 11:36+0100\n"
+"POT-Creation-Date: 2013-02-13 14:30+0100\n"
 "PO-Revision-Date: 2013-02-12 01:11+0200\n"
 "Last-Translator: Claudio F Filho <filhocf@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <http://l10n.cihar.com/projects/weblate/"
@@ -19,15 +19,15 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 1.5-dev\n"
 
-#: weblate_web/data.py:29
+#: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
 msgstr "Visão geral das nossas traduções na página principal."
 
-#: weblate_web/data.py:30
+#: weblate_web/data.py:34
 msgid "Own translations"
 msgstr "Nossas traduções"
 
-#: weblate_web/data.py:34 weblate_web/html/features.html:70
+#: weblate_web/data.py:38 weblate_web/html/features.html:70
 msgid ""
 "Translator can always see important context information like comments or "
 "corresponding source code."
@@ -35,22 +35,22 @@ msgstr ""
 "Tradutores sempre podem ver importante informação de contexto como "
 "comentários ou código fonte correspondente."
 
-#: weblate_web/data.py:35 weblate_web/html/features.html:69
+#: weblate_web/data.py:39 weblate_web/html/features.html:69
 msgid "Translation context"
 msgstr "Contexto da tradução"
 
-#: weblate_web/data.py:39
+#: weblate_web/data.py:43
 msgid ""
 "Project page gives you detailed information about project translation status."
 msgstr ""
 "A página de projeto dá para você informações detalhadas sobre o estado do "
 "projeto de tradução."
 
-#: weblate_web/data.py:40
+#: weblate_web/data.py:44
 msgid "Project overview"
 msgstr "Visão geral do projeto"
 
-#: weblate_web/data.py:44 weblate_web/html/features.html:80
+#: weblate_web/data.py:48 weblate_web/html/features.html:80
 msgid ""
 "Translators can define their own glossary to stay consistent in frequently "
 "used terminology."
@@ -58,11 +58,11 @@ msgstr ""
 "Tradutores podem definir seus glossários mantendo consistência na "
 "terminologia usada frequentemente."
 
-#: weblate_web/data.py:45 weblate_web/html/features.html:79
+#: weblate_web/data.py:49 weblate_web/html/features.html:79
 msgid "Glossary"
 msgstr "Glossário"
 
-#: weblate_web/data.py:49 weblate_web/html/base-features.html:19
+#: weblate_web/data.py:53 weblate_web/html/base-features.html:19
 msgid ""
 "Customizable quality checks will help you in improving quality of "
 "translations."
@@ -70,16 +70,16 @@ msgstr ""
 "Verificação de qualidade personalizável ajudará você em melhorar a qualidade "
 "das traduções."
 
-#: weblate_web/data.py:50 weblate_web/html/base-features.html:18
+#: weblate_web/data.py:54 weblate_web/html/base-features.html:18
 msgid "Quality checks"
 msgstr "Verificações de qualidade"
 
-#: weblate_web/data.py:54
+#: weblate_web/data.py:58 weblate_web/html/features.html:150
 msgid "Weblate provides you various ways to promote your translation project."
 msgstr ""
 "O Weblate provê seus vários caminhos para promover seu projeto de tradução."
 
-#: weblate_web/data.py:55
+#: weblate_web/data.py:59 weblate_web/html/features.html:149
 msgid "Promotion"
 msgstr "Promoção"
 
@@ -229,11 +229,17 @@ msgstr ""
 "Você pode traduzir o Weblate usando a instalação do Weblate em <a href="
 "\"https://l10n.cihar.com/engage/weblate/\">l10n.cihar.com</a>."
 
-#: weblate_web/html/contribute.html:39
+#: weblate_web/html/contribute.html:41
+#, fuzzy
+#| msgid "Translation context"
+msgid "Translation status"
+msgstr "Contexto da tradução"
+
+#: weblate_web/html/contribute.html:45
 msgid "Donate"
 msgstr "Doar"
 
-#: weblate_web/html/contribute.html:42
+#: weblate_web/html/contribute.html:48
 msgid ""
 "If you like Weblate you can support it's further development by donating."
 msgstr ""
@@ -402,6 +408,18 @@ msgstr ""
 msgid "Translators have several options to review others contributions."
 msgstr ""
 
+#: weblate_web/html/features.html:139
+#, fuzzy
+#| msgid "Language:"
+msgid "Languages"
+msgstr "Idioma:"
+
+#: weblate_web/html/features.html:140
+msgid ""
+"Weblate supports over 150 languages out of the box, others can be defined by "
+"administrator."
+msgstr ""
+
 #: weblate_web/html/hosting.html:4 weblate_web/html/hosting.html.py:5
 msgid "Hosting Weblate"
 msgstr "Hospedagem do Weblate"
@@ -450,10 +468,26 @@ msgstr ""
 "que deseja utilizar esta opção."
 
 #: weblate_web/html/hosting.html:25
+msgid "Hosting for commerical products"
+msgstr ""
+
+#: weblate_web/html/hosting.html:28
+#, fuzzy
+#| msgid ""
+#| "You can also contact <a href=\"mailto:michal@cihar.com?subject=Weblate"
+#| "\">Michal Čihař</a>, who is author of Weblate."
+msgid ""
+"Please contact <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> for more "
+"details."
+msgstr ""
+"Você também pode contatar o <a href=\"mailto:michal@cihar.com?subject=Weblate"
+"\">Michal Čihař</a>, o autor do Weblate."
+
+#: weblate_web/html/hosting.html:31
 msgid "Other options"
 msgstr "Outras opções"
 
-#: weblate_web/html/hosting.html:29 weblate_web/html/try.html:20
+#: weblate_web/html/hosting.html:35 weblate_web/html/try.html:20
 #, python-format
 msgid ""
 "Check our <a href=\"%(download_url)s\">download page</a> for appliances, "
