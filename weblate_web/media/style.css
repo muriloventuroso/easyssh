@@ -640,3 +640,51 @@ nav a {
     border: 0.25em solid #ffffff;
     border-radius: 50%;
 }
+
+.fish{
+    width: 2.1em;
+    height: 2.1em;
+    position: relative;
+    border-radius: 1.5em 0em 1.5em 0em;
+
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background-color: #004276;
+}
+
+.fish::before {
+    position: absolute;
+    content: "";
+    top: 1.8em;
+    right: 1.4em;
+    width: 0.3em;
+    height: 0em;
+    border-bottom: 0.5em solid #004276;
+    border-left: 0.5em solid transparent;
+    border-right: 0.5em solid transparent;
+
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.fish::after {
+    left: 0.92em;
+    top: 0.18em;
+    position: absolute;
+    content: "";
+    background-color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    height: 0.2em;
+    width: 0.2em;
+    border-radius: 0.1em;
+
+    -webkit-box-shadow: 0.15em -0.7em 0.05em 0.02em #004276, -0.1em -1.2em 0.05em 0.06em #004276;
+    box-shadow: 0.15em -0.7em 0.05em 0.02em #004276, -0.1em -1.2em 0.05em 0.06em #004276;
+}
