@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-02-13 20:06+0100\n"
+"POT-Creation-Date: 2013-02-14 11:39+0100\n"
 "PO-Revision-Date: 2013-02-12 01:11+0200\n"
 "Last-Translator: Claudio F Filho <filhocf@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <http://l10n.cihar.com/projects/weblate/"
@@ -88,7 +88,7 @@ msgid "Page not found"
 msgstr "Página não encontrada"
 
 #: weblate_web/html/404.html:9 weblate_web/html/500.html:9
-#: weblate_web/html/index.html:6
+#: weblate_web/html/index.html:8
 msgid "Weblate is a free web-based translation management system."
 msgstr ""
 "O Weblate é um sistema de gerenciamento de tradução livre baseado na web."
@@ -131,51 +131,57 @@ msgstr ""
 "Todos os seus tradutores serão creditados apropriadamente no sistema de "
 "controle de versão."
 
-#: weblate_web/html/base.html:30
+#: weblate_web/html/base.html:12
+#, fuzzy
+#| msgid "Translate"
+msgid "translate"
+msgstr "Traduzir"
+
+#: weblate_web/html/base.html:31
 msgid "Weblate logo"
 msgstr "Logo do Weblate"
 
-#: weblate_web/html/base.html:32
+#: weblate_web/html/base.html:33
 msgid "Home"
 msgstr "Início"
 
-#: weblate_web/html/base.html:33
+#: weblate_web/html/base.html:34
 msgid "Blog"
 msgstr "Blog"
 
-#: weblate_web/html/base.html:34
+#: weblate_web/html/base.html:35
 msgid "Try"
 msgstr "Experimente"
 
-#: weblate_web/html/base.html:35
+#: weblate_web/html/base.html:36
 msgid "Features"
 msgstr "Características"
 
-#: weblate_web/html/base.html:36
+#: weblate_web/html/base.html:37
 msgid "Docs"
 msgstr "Documentos"
 
-#: weblate_web/html/base.html:37 weblate_web/html/download.html:12
+#: weblate_web/html/base.html:38 weblate_web/html/download.html:12
 msgid "Download"
 msgstr "Descarregar"
 
-#: weblate_web/html/base.html:38
+#: weblate_web/html/base.html:39
 msgid "Hosting"
 msgstr "Hospedagem"
 
-#: weblate_web/html/base.html:39
+#: weblate_web/html/base.html:40
 msgid "Contribute"
 msgstr "Contribua"
 
-#: weblate_web/html/base.html:40
+#: weblate_web/html/base.html:41
 msgid "Support"
 msgstr "Ajuda e Suporte"
 
-#: weblate_web/html/base.html:41
+#: weblate_web/html/base.html:42
 msgid "Tour"
 msgstr "Tour"
 
-#: weblate_web/html/base.html:45
+#: weblate_web/html/base.html:46
 msgid "Language:"
 msgstr "Idioma:"
 
@@ -491,19 +497,32 @@ msgstr ""
 "Verifique nossa <a href=\"%(download_url)s\">pagina de downloads</a> para "
 "aplicações que provêm uma forma fácil de instalar o Weblate na nuvem."
 
-#: weblate_web/html/index.html:13
+#: weblate_web/html/index.html:4
+#, fuzzy
+#| msgid "Weblate is a free web-based translation management system."
+msgid "Weblate - web-based translation"
+msgstr ""
+"O Weblate é um sistema de gerenciamento de tradução livre baseado na web."
+
+#: weblate_web/html/index.html:5
+#, fuzzy
+#| msgid "Try Weblate"
+msgid "Weblate"
+msgstr "Experimente o Weblate"
+
+#: weblate_web/html/index.html:15
 msgid "Try our demo"
 msgstr "Experimente nossa demonstração"
 
-#: weblate_web/html/index.html:15
+#: weblate_web/html/index.html:17
 msgid "Downloads"
 msgstr "Downloads"
 
-#: weblate_web/html/index.html:19
+#: weblate_web/html/index.html:21
 msgid "Weblate screenshot"
 msgstr "Captura de tela do Weblate"
 
-#: weblate_web/html/index.html:24
+#: weblate_web/html/index.html:26
 msgid "See more features…"
 msgstr "Veja mais funcionalidades..."
 

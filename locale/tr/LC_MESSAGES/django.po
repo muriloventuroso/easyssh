@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-02-13 20:06+0100\n"
+"POT-Creation-Date: 2013-02-14 11:39+0100\n"
 "PO-Revision-Date: 2013-02-13 20:10+0200\n"
 "Last-Translator: Burak Yavuz <hitowerdigit@hotmail.com>\n"
 "Language-Team: Turkish <http://l10n.cihar.com/projects/weblate/website/tr/>\n"
@@ -84,7 +84,7 @@ msgid "Page not found"
 msgstr "Sayfa bulunamadı"
 
 #: weblate_web/html/404.html:9 weblate_web/html/500.html:9
-#: weblate_web/html/index.html:6
+#: weblate_web/html/index.html:8
 msgid "Weblate is a free web-based translation management system."
 msgstr "Weblate ücretsiz bir web tabanlı çeviri yönetimi sistemidir."
 
@@ -126,51 +126,57 @@ msgstr ""
 "Tüm çevirmenleriniz uygun bir şekilde sürüm denetim sisteminde itibar "
 "kazanacaklardır."
 
-#: weblate_web/html/base.html:30
+#: weblate_web/html/base.html:12
+#, fuzzy
+#| msgid "Translate"
+msgid "translate"
+msgstr "Çevir"
+
+#: weblate_web/html/base.html:31
 msgid "Weblate logo"
 msgstr "Weblate logosu"
 
-#: weblate_web/html/base.html:32
+#: weblate_web/html/base.html:33
 msgid "Home"
 msgstr "Giriş"
 
-#: weblate_web/html/base.html:33
+#: weblate_web/html/base.html:34
 msgid "Blog"
 msgstr "Blog"
 
-#: weblate_web/html/base.html:34
+#: weblate_web/html/base.html:35
 msgid "Try"
 msgstr "Deneyin"
 
-#: weblate_web/html/base.html:35
+#: weblate_web/html/base.html:36
 msgid "Features"
 msgstr "Özellikler"
 
-#: weblate_web/html/base.html:36
+#: weblate_web/html/base.html:37
 msgid "Docs"
 msgstr "Belgeler"
 
-#: weblate_web/html/base.html:37 weblate_web/html/download.html:12
+#: weblate_web/html/base.html:38 weblate_web/html/download.html:12
 msgid "Download"
 msgstr "İndir"
 
-#: weblate_web/html/base.html:38
+#: weblate_web/html/base.html:39
 msgid "Hosting"
 msgstr "Barındırma"
 
-#: weblate_web/html/base.html:39
+#: weblate_web/html/base.html:40
 msgid "Contribute"
 msgstr "Katkı"
 
-#: weblate_web/html/base.html:40
+#: weblate_web/html/base.html:41
 msgid "Support"
 msgstr "Destek"
 
-#: weblate_web/html/base.html:41
+#: weblate_web/html/base.html:42
 msgid "Tour"
 msgstr "Tur"
 
-#: weblate_web/html/base.html:45
+#: weblate_web/html/base.html:46
 msgid "Language:"
 msgstr "Dil:"
 
@@ -481,19 +487,31 @@ msgstr ""
 "Weblate'i bulutta dağıtmanın en kolay yolunu sağlayan teçhizatlar için bizim "
 "<a href=\"%(download_url)s\">indirme sayfasını</a> kontrol edin."
 
-#: weblate_web/html/index.html:13
+#: weblate_web/html/index.html:4
+#, fuzzy
+#| msgid "Weblate is a free web-based translation management system."
+msgid "Weblate - web-based translation"
+msgstr "Weblate ücretsiz bir web tabanlı çeviri yönetimi sistemidir."
+
+#: weblate_web/html/index.html:5
+#, fuzzy
+#| msgid "Try Weblate"
+msgid "Weblate"
+msgstr "Weblate'i deneyin"
+
+#: weblate_web/html/index.html:15
 msgid "Try our demo"
 msgstr "Gösterimimizi deneyin"
 
-#: weblate_web/html/index.html:15
+#: weblate_web/html/index.html:17
 msgid "Downloads"
 msgstr "İndirmeler"
 
-#: weblate_web/html/index.html:19
+#: weblate_web/html/index.html:21
 msgid "Weblate screenshot"
 msgstr "Weblate ekran görüntüsü"
 
-#: weblate_web/html/index.html:24
+#: weblate_web/html/index.html:26
 msgid "See more features…"
 msgstr "Daha fazla özelliklere bakın…"
 
