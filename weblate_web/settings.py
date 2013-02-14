@@ -65,7 +65,7 @@ LANGUAGES = (
     ('el', 'Ελληνικά'),
     ('es', u'Español'),
 #    ('fi', 'Suomi'),
-#    ('fr', u'Français'),
+    ('fr', u'Français'),
 #    ('gl', 'Galego'),
 #    ('hu', 'Magyar'),
 #    ('id', 'Indonesia'),
