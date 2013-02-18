@@ -75,7 +75,7 @@ LANGUAGES = (
 #    ('pl', 'Polski'),
 #    ('pt', u'Português'),
     ('pt-br', u'Português brasileiro'),
-#    ('sl', u'Slovenščina'),
+    ('sl', u'Slovenščina'),
 #    ('sv', u'Svenska'),
     ('tr', u'Türkçe'),
 #    ('zh-cn', u'中文'),
