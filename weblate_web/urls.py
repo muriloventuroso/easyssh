@@ -125,7 +125,7 @@ urlpatterns = patterns('',
         RedirectView.as_view(url='/')
     ),
     url(
-        r'^index\.\([a-z][a-z]\)\.html$',
+        r'^index\.([a-z][a-z])\.html$',
         RedirectView.as_view(url='/')
     ),
     url(
