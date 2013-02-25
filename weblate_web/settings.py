@@ -59,7 +59,7 @@ LANGUAGE_CODE = 'en-us'
 LANGUAGES = (
 #    ('ca', u'Català'),
     ('cs', u'Česky'),
-#    ('da', 'Dansk'),
+    ('da', 'Dansk'),
 #    ('de', 'Deutsch'),
     ('en', 'English'),
     ('el', 'Ελληνικά'),
@@ -72,7 +72,7 @@ LANGUAGES = (
 #    ('ja', u'日本語'),
 #    ('ko', u'한국어'),
 #    ('nl', 'Nederlands'),
-#    ('pl', 'Polski'),
+    ('pl', 'Polski'),
 #    ('pt', u'Português'),
     ('pt-br', u'Português brasileiro'),
     ('sl', u'Slovenščina'),
