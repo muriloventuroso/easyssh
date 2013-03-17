@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2013-03-08 09:50+0100\n"
-"PO-Revision-Date: 2013-03-13 10:16+0200\n"
+"PO-Revision-Date: 2013-03-17 17:03+0200\n"
 "Last-Translator: Anders Jonsson <jonars03@student.umu.se>\n"
 "Language-Team: Swedish <http://l10n.cihar.com/projects/weblate/website/sv/>\n"
 "Language: sv\n"
@@ -20,17 +20,19 @@ msgstr ""
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
-msgstr ""
+msgstr "Överblick av egna översättningar på huvudsidan."
 
 #: weblate_web/data.py:34
 msgid "Own translations"
-msgstr ""
+msgstr "Egna översättningar"
 
 #: weblate_web/data.py:38 weblate_web/html/features.html:70
 msgid ""
 "Translator can always see important context information like comments or "
 "corresponding source code."
 msgstr ""
+"Översättaren kan alltid se viktig information som kommentarer eller "
+"motsvarande källkod för att förstå sammanhanget."
 
 #: weblate_web/data.py:39 weblate_web/html/features.html:69
 msgid "Translation context"
@@ -40,16 +42,20 @@ msgstr "Översättningssammanhang"
 msgid ""
 "Project page gives you detailed information about project translation status."
 msgstr ""
+"Projektsidan ger dig detaljerad information om projektets "
+"översättningsstatus."
 
 #: weblate_web/data.py:44
 msgid "Project overview"
-msgstr ""
+msgstr "Projektöverblick"
 
 #: weblate_web/data.py:48 weblate_web/html/features.html:80
 msgid ""
 "Translators can define their own glossary to stay consistent in frequently "
 "used terminology."
 msgstr ""
+"Översättare kan definiera en egen ordlista för att hålla sig konsekventa i "
+"ofta använd terminologi."
 
 #: weblate_web/data.py:49 weblate_web/html/features.html:79
 msgid "Glossary"
@@ -60,18 +66,22 @@ msgid ""
 "Customizable quality checks will help you in improving quality of "
 "translations."
 msgstr ""
+"Justerbara kvalitetskontroller hjälper dig förbättra kvaliteten på "
+"översättningar."
 
 #: weblate_web/data.py:54 weblate_web/html/base-features.html:18
 msgid "Quality checks"
-msgstr ""
+msgstr "Kvalitetskontroller"
 
 #: weblate_web/data.py:58 weblate_web/html/features.html:150
 msgid "Weblate provides you various ways to promote your translation project."
 msgstr ""
+"Weblate erbjuder dig diverse sätt att göra reklam för ditt "
+"översättningsprojekt."
 
 #: weblate_web/data.py:59 weblate_web/html/features.html:149
 msgid "Promotion"
-msgstr ""
+msgstr "Marknadsföring"
 
 #: weblate_web/html/404.html:5
 msgid "Page not found"
@@ -100,21 +110,25 @@ msgstr ""
 
 #: weblate_web/html/base-features.html:8
 msgid "Continuous translation"
-msgstr ""
+msgstr "Kontinuerlig översättning"
 
 #: weblate_web/html/base-features.html:9
 msgid ""
 "Automated translation process can closely follow development of your project."
 msgstr ""
+"En automatiserad översättningsprocess kan nära följa utvecklandet av ditt "
+"projekt."
 
 #: weblate_web/html/base-features.html:28
 msgid "Attribution"
-msgstr ""
+msgstr "Attribuering"
 
 #: weblate_web/html/base-features.html:29
 msgid ""
 "All your translators will be properly credited in the version control system."
 msgstr ""
+"Alla dina översättare får ordentligt erkännande i "
+"versionshanteringssystemet."
 
 #: weblate_web/html/base.html:12
 msgctxt "Keyword"
@@ -123,7 +137,7 @@ msgstr "översätt"
 
 #: weblate_web/html/base.html:32
 msgid "Weblate logo"
-msgstr ""
+msgstr "Weblates logo"
 
 #: weblate_web/html/base.html:34
 msgid "Home"
@@ -135,15 +149,15 @@ msgstr "Blogg"
 
 #: weblate_web/html/base.html:36
 msgid "Try"
-msgstr ""
+msgstr "Pröva"
 
 #: weblate_web/html/base.html:37
 msgid "Features"
-msgstr ""
+msgstr "Funktioner"
 
 #: weblate_web/html/base.html:38
 msgid "Docs"
-msgstr ""
+msgstr "Dokumentation"
 
 #: weblate_web/html/base.html:39 weblate_web/html/download.html:12
 msgid "Download"
@@ -163,7 +177,7 @@ msgstr "Support"
 
 #: weblate_web/html/base.html:43
 msgid "Tour"
-msgstr ""
+msgstr "Rundtur"
 
 #: weblate_web/html/base.html:47
 msgid "Language:"
@@ -175,7 +189,7 @@ msgstr "Bidra till Weblate"
 
 #: weblate_web/html/contribute.html:7
 msgid "Weblate is being developed by an open community."
-msgstr ""
+msgstr "Weblate utvecklas av en öppen gemenskap."
 
 #: weblate_web/html/contribute.html:12
 msgid ""
@@ -183,6 +197,9 @@ msgid ""
 "docs.weblate.org/en/latest/contributing.html\">Contributing chapter</a> of "
 "our documentation."
 msgstr ""
+"Du kan finna mer detaljerad information om detta ämne i <a "
+"href=\"http://docs.weblate.org/en/latest/contributing.html\">kapitlet "
+"Contributing</a> i vår dokumentation."
 
 #: weblate_web/html/contribute.html:15 weblate_web/html/download.html:38
 msgid "Code"
@@ -193,6 +210,8 @@ msgid ""
 "Weblate is being developed on <a href=\"https://github.com/nijel/weblate"
 "\">Github</a>, you can fork it there or just:"
 msgstr ""
+"Weblate utvecklas på <a href=\"https://github.com/nijel/weblate\">Github</a>, "
+"du kan skapa en förgrening där eller bara utföra:"
 
 #: weblate_web/html/contribute.html:26
 msgid ""
@@ -211,6 +230,8 @@ msgid ""
 "You can translate Weblate using Weblate installation at <a href=\"https://"
 "l10n.cihar.com/engage/weblate/\">l10n.cihar.com</a>."
 msgstr ""
+"Du kan översätta Weblate med Weblateinstallationen på <a "
+"href=\"https://l10n.cihar.com/engage/weblate/\">l10n.cihar.com</a>."
 
 #: weblate_web/html/contribute.html:41
 msgid "Translation status"
@@ -224,14 +245,16 @@ msgstr "Donera"
 msgid ""
 "If you like Weblate you can support it's further development by donating."
 msgstr ""
+"Om du gillar Weblate kan du stöda dess fortsatta utveckling genom att "
+"donera."
 
 #: weblate_web/html/download.html:5 weblate_web/html/download.html.py:6
 msgid "Download Weblate"
-msgstr ""
+msgstr "Hämta hem Weblate"
 
 #: weblate_web/html/download.html:8
 msgid "Weblate comes with complete source code."
-msgstr ""
+msgstr "Weblate kommer med komplett källkod."
 
 #: weblate_web/html/download.html:15
 msgid "You can download latest release here:"
@@ -242,6 +265,9 @@ msgid ""
 "For openSUSE/SLES users, there are binary packages available in the <a href="
 "\"http://software.opensuse.org/package/weblate/\">openSUSE Buildservice</a>."
 msgstr ""
+"För användare av openSUSE/SLES finns det binära paket tillgängliga i <a "
+"href=\"http://software.opensuse.org/package/weblate/\">openSUSE "
+"Buildservice</a>."
 
 #: weblate_web/html/download.html:29
 msgid ""
@@ -262,26 +288,30 @@ msgid ""
 "\">BitNami stack</a>, that allows you native installation on Windows, Linux "
 "or Mac OS X and provides virtual images for running Weblate."
 msgstr ""
+"Weblate finns också tillgänglig som en <a "
+"href=\"http://bitnami.org/stack/weblate\">BitNami-stack</a> som ger dig "
+"möjlighet till inhemsk installation på Windows, Linux eller Mac OS X och "
+"erbjuder virtuella avbilder för att köra Weblate."
 
 #: weblate_web/html/features.html:4 weblate_web/html/features.html.py:5
 msgid "Weblate features"
-msgstr ""
+msgstr "Funktioner i Weblate"
 
 #: weblate_web/html/features.html:7
 msgid "Weblate is a feature rich computer aided translation tool."
-msgstr ""
+msgstr "Weblate är ett datorstött översättningsverktyg med många funktioner."
 
 #: weblate_web/html/features.html:19
 msgid "Access control"
-msgstr ""
+msgstr "Åtkomstkontroll"
 
 #: weblate_web/html/features.html:20
 msgid "Access rights can be fine tuned depending on your environment."
-msgstr ""
+msgstr "Åtkomstkontroller kan finjusteras beroende på din miljö."
 
 #: weblate_web/html/features.html:29
 msgid "Notifications"
-msgstr ""
+msgstr "Meddelanden"
 
 #: weblate_web/html/features.html:30
 msgid ""
@@ -308,26 +338,32 @@ msgid ""
 "Weblate supports all widely used file formats for localisation like Gettext "
 "or resource strings."
 msgstr ""
+"Weblate stöder alla vanligt använda filformat för översättning som Gettext "
+"eller resurssträngar."
 
 #: weblate_web/html/features.html:59
 msgid "Branches support"
-msgstr ""
+msgstr "Stöd för grenar"
 
 #: weblate_web/html/features.html:60
 msgid ""
 "Weblate can handle different versions of the translation by pushing them to "
 "different branches automatically."
 msgstr ""
+"Weblate kan hantera olika versioner av översättningen genom att sända dem "
+"till olika grenar automatiskt."
 
 #: weblate_web/html/features.html:89
 msgid "Acquiring feedback"
-msgstr ""
+msgstr "Få feedback"
 
 #: weblate_web/html/features.html:90
 msgid ""
 "You can also use Weblate to acquire feedback on source strings and thus "
 "improve them."
 msgstr ""
+"Du kan också använda Weblate för att få feedback på källsträngar och därmed "
+"förbättra dem."
 
 #: weblate_web/html/features.html:99
 msgid "Export and import"
@@ -336,14 +372,16 @@ msgstr "Export och import"
 #: weblate_web/html/features.html:100
 msgid "Translations can be downloaded for offline translation and merged back."
 msgstr ""
+"Översättningar kan hämtas för översättning offline och sedan slås ihop med "
+"originalet igen."
 
 #: weblate_web/html/features.html:109
 msgid "Integrated"
-msgstr ""
+msgstr "Integrerat"
 
 #: weblate_web/html/features.html:110
 msgid "Translations are managed within same version control system as code."
-msgstr ""
+msgstr "Översättningar hanteras i samma versionshanteringssystem som kod."
 
 #: weblate_web/html/features.html:119
 msgid "Documentation"
@@ -363,6 +401,7 @@ msgstr "Granska"
 #: weblate_web/html/features.html:130
 msgid "Translators have several options to review contributions made by peers."
 msgstr ""
+"Översättare har flera val för att granska bidrag från andra översättare."
 
 #: weblate_web/html/features.html:139
 msgid "Languages"
@@ -373,6 +412,8 @@ msgid ""
 "Weblate supports over 150 languages out of the box, others can be defined by "
 "administrator."
 msgstr ""
+"Weblate stöder över 150 språk som standard, fler kan definieras av en "
+"administratör."
 
 #: weblate_web/html/features.html:159
 msgid "Reports"
@@ -383,6 +424,8 @@ msgid ""
 "Weblate generates various reports to provide information about project "
 "activity."
 msgstr ""
+"Weblate genererar diverse rapporter för att erbjuda information om projekts "
+"aktivitet."
 
 #: weblate_web/html/hosting.html:4 weblate_web/html/hosting.html.py:5
 msgid "Hosting Weblate"
@@ -403,6 +446,10 @@ msgid ""
 "org</a>. This will allow you to use Weblate without installing and "
 "maintaining it."
 msgstr ""
+"Om du är intresserad i att använda Weblate för din fria programvara kan du "
+"fråga oss om att bli inkluderad på <a "
+"href=\"http://hosted.weblate.org/\">hosted.weblate.org</a>. Det möjliggör för "
+"dig att använda Weblate utan att installera och underhålla det."
 
 #: weblate_web/html/hosting.html:18
 msgid ""
@@ -410,6 +457,9 @@ msgid ""
 "with similar naming as on website - hello/master translation would be "
 "published as <code>git://git.weblate.org/hello-master.git</code>."
 msgstr ""
+"Alla översatta förråd finns tillgängliga på <code>git.weblate.org</code> med "
+"liknande namn som på webbplatsen - översättningen av hello/master skulle "
+"publiceras som <code>git://git.weblate.org/hello-master.git</code>."
 
 #: weblate_web/html/hosting.html:22
 msgid ""
@@ -433,7 +483,7 @@ msgstr ""
 
 #: weblate_web/html/hosting.html:31
 msgid "Other options"
-msgstr ""
+msgstr "Andra val"
 
 #: weblate_web/html/hosting.html:35 weblate_web/html/try.html:20
 #, python-format
@@ -459,31 +509,31 @@ msgstr ""
 
 #: weblate_web/html/index.html:19
 msgid "Try our demo"
-msgstr ""
+msgstr "Pröva vår demo"
 
 #: weblate_web/html/index.html:21
 msgid "Downloads"
-msgstr ""
+msgstr "Hämtningar"
 
 #: weblate_web/html/index.html:25
 msgid "Weblate screenshot"
-msgstr ""
+msgstr "Weblate-skärmdump"
 
 #: weblate_web/html/index.html:30
 msgid "See more features…"
-msgstr ""
+msgstr "Se fler funktioner…"
 
 #: weblate_web/html/support.html:4 weblate_web/html/support.html.py:5
 msgid "Weblate support"
-msgstr ""
+msgstr "Weblate-support"
 
 #: weblate_web/html/support.html:7
 msgid "Weblate is a free software with community support."
-msgstr ""
+msgstr "Weblate är fri programvara med support från gemenskapen."
 
 #: weblate_web/html/support.html:11
 msgid "Bugs or feature requests"
-msgstr ""
+msgstr "Fel eller förfrågningar om funktioner"
 
 #: weblate_web/html/support.html:14
 msgid ""
@@ -491,10 +541,14 @@ msgid ""
 "Please report it to <a href=\"https://github.com/nijel/weblate/issues"
 "\">issue tracker on GitHub</a>."
 msgstr ""
+"Har du upptäckt något fel med Weblate? Har du någon idé hur det kan blir "
+"bättre? Rapportera det till <a "
+"href=\"https://github.com/nijel/weblate/issues\">felrapporteringssystemet på "
+"GitHub</a>."
 
 #: weblate_web/html/support.html:17
 msgid "Mailing list"
-msgstr ""
+msgstr "Sändlista"
 
 #: weblate_web/html/support.html:20
 msgid ""
@@ -504,6 +558,11 @@ msgid ""
 "weblate\">subscribe</a> or <a href=\"https://lists.cihar.com/pipermail/"
 "weblate/\">browse archives</a>."
 msgstr ""
+"Det finns en sändlista <a "
+"href=\"mailto:weblate@lists.cihar.com\">weblate@lists.cihar.com</a> där du kan "
+"diskutera olika saker om Weblate. Du kan <a href=\"https://lists.cihar.com"
+"/cgi-bin/mailman/listinfo/weblate\">prenumerera</a> eller <a "
+"href=\"https://lists.cihar.com/pipermail/weblate/\">utforska arkiven</a>."
 
 #: weblate_web/html/support.html:24
 msgid ""
@@ -511,10 +570,13 @@ msgid ""
 "comp.web.weblate\">Gmane</a> where you can browse archives or use NNTP "
 "interface."
 msgstr ""
+"Sändlistan är också tillgänglig på <a "
+"href=\"http://dir.gmane.org/gmane.comp.web.weblate\">Gmane</a> där du kan "
+"utforska arkiven eller använda NNTP-gränssnittet."
 
 #: weblate_web/html/support.html:27
 msgid "IRC"
-msgstr ""
+msgstr "IRC"
 
 #: weblate_web/html/support.html:30
 msgid ""
@@ -523,6 +585,9 @@ msgid ""
 "You can also use <a href=\"http://webchat.freenode.net?channels=weblate"
 "\">webchat</a> there."
 msgstr ""
+"Då någon intresserad är online kan du också få hjälp på kanalen #weblate på "
+"nätverket <a href=\"http://freenode.net/\">freenode</a>. Du kan också använda "
+"<a href=\"http://webchat.freenode.net?channels=weblate\">webchat</a> där."
 
 #: weblate_web/html/support.html:33
 msgid "Contact"
@@ -533,18 +598,21 @@ msgid ""
 "You can also contact <a href=\"mailto:michal@cihar.com?subject=Weblate"
 "\">Michal Čihař</a>, who is author of Weblate."
 msgstr ""
+"Du kan också kontakta <a "
+"href=\"mailto:michal@cihar.com?subject=Weblate\">Michal Čihař</a> som skapat "
+"Weblate."
 
 #: weblate_web/html/tour.html:4 weblate_web/html/tour.html.py:5
 msgid "Weblate tour"
-msgstr ""
+msgstr "Rundtur i Weblate"
 
 #: weblate_web/html/tour.html:7
 msgid "Weblate has useful features for every translation."
-msgstr ""
+msgstr "Weblate har användbara funktioner för varje översättning."
 
 #: weblate_web/html/try.html:4 weblate_web/html/try.html.py:5
 msgid "Try Weblate"
-msgstr ""
+msgstr "Pröva Weblate"
 
 #: weblate_web/html/try.html:7
 msgid "Weblate is easy to deploy as an appliance."
@@ -552,7 +620,7 @@ msgstr ""
 
 #: weblate_web/html/try.html:11
 msgid "Demo server"
-msgstr ""
+msgstr "Demo-server"
 
 #: weblate_web/html/try.html:14
 msgid ""
@@ -560,6 +628,10 @@ msgid ""
 "server</a>. You can register there and work under your username or just use "
 "<code>demo</code> account with <code>demo</code> password."
 msgstr ""
+"Du kan pröva Weblate på vår <a href=\"http://demo.weblate.org\">demo-"
+"server</a>. Du kan registrera dig där och arbeta under ditt användarnamn "
+"eller bara använda kontot <code>demo</code> med lösenordet "
+"<code>demo</code>."
 
 #: weblate_web/html/try.html:17
 msgid "Appliances"
@@ -567,50 +639,50 @@ msgstr ""
 
 #: weblate_web/templatetags/downloads.py:38
 msgid "0 bytes"
-msgstr ""
+msgstr "0 byte"
 
 #: weblate_web/templatetags/downloads.py:41
 #, python-format
 msgid "%(size)d byte"
 msgid_plural "%(size)d bytes"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(size)d byte"
+msgstr[1] "%(size)d byte"
 
 #: weblate_web/templatetags/downloads.py:43
 #, python-format
 msgid "%.1f KiB"
-msgstr ""
+msgstr "%.1f KiB"
 
 #: weblate_web/templatetags/downloads.py:45
 #, python-format
 msgid "%.1f MiB"
-msgstr ""
+msgstr "%.1f MiB"
 
 #: weblate_web/templatetags/downloads.py:46
 #, python-format
 msgid "%.1f GiB"
-msgstr ""
+msgstr "%.1f GiB"
 
 #: weblate_web/templatetags/downloads.py:53
 msgid "Sources tarball, bzip2 compressed"
-msgstr ""
+msgstr "Källkod i tarball, bzip2-komprimerad"
 
 #: weblate_web/templatetags/downloads.py:55
 msgid "Sources tarball, gzip compressed"
-msgstr ""
+msgstr "Källkod i tarball, gzip-komprimerad"
 
 #: weblate_web/templatetags/downloads.py:57
 msgid "Sources tarball, lzma compressed"
-msgstr ""
+msgstr "Källkod i tarball, lzma-komprimerad"
 
 #: weblate_web/templatetags/downloads.py:59
 msgid "Sources tarball, xz compressed"
-msgstr ""
+msgstr "Källkod i tarball, xz-komprimerad"
 
 #: weblate_web/templatetags/downloads.py:61
 msgid "Sources, zip compressed"
-msgstr ""
+msgstr "Källkod, zip-komprimerad"
 
 #: weblate_web/templatetags/downloads.py:63
 msgid "Sources, 7zip compressed"
-msgstr ""
+msgstr "Källkod, 7zip-komprimerad"
