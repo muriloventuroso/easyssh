@@ -14,6 +14,16 @@
 {% blocktrans %}If you are interested in using Weblate for your free software, you can ask us to be include on <a href="http://hosted.weblate.org/">hosted.weblate.org</a>. This will allow you to use Weblate without installing and maintaining it.{% endblocktrans %}
 </p>
 
+<h3>{% trans "Conditions for free hosting" %}</h3>
+
+<ul>
+<li>{% trans 'Translated content has to be released under <a href="http://en.wikipedia.org/wiki/Free_software_license">free license</a>.' %}</li>
+<li>{% trans "Source code has to be publicly available in supported version control system." %}</li>
+<li>{% trans "There is no guarantee for service availability or quality." %}</li>
+</ul>
+
+<h3>{% trans "Translation workflow" %}</h3>
+
 <p>
 {% blocktrans %}All translated repositories are available at <code>git.weblate.org</code> with similar naming as on website - hello/master translation would be published as <code>git://git.weblate.org/hello-master.git</code>.{% endblocktrans %}
 </p>
@@ -22,7 +32,7 @@
 {% blocktrans %}To enable automated workflow on GitHub, you need to enable Weblate service hook in settings with <code>hosted.weblate.org</code> as URL. If you want Weblate to automatically push changes as well, add Weblate user to contributors and let us know you want to use this option.{% endblocktrans %}
 </p>
 
-<h2>{% trans "Hosting for commercial products" %}</h2>
+<h2>{% trans "Commercial hosting" %}</h2>
 
 <p>
 {% blocktrans %}Please contact <a href="mailto:michal@cihar.com">Michal Čihař</a> for more details.{% endblocktrans %}
