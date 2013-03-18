@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-03-08 09:50+0100\n"
+"POT-Creation-Date: 2013-03-18 11:35+0100\n"
 "PO-Revision-Date: 2013-03-01 11:18+0200\n"
 "Last-Translator: Robert Readman <robert_readman@hotmail.com>\n"
 "Language-Team: English (United Kingdom) <http://l10n.cihar.com/projects/"
@@ -131,51 +131,51 @@ msgctxt "Keyword"
 msgid "translate"
 msgstr "translate"
 
-#: weblate_web/html/base.html:32
+#: weblate_web/html/base.html:33
 msgid "Weblate logo"
 msgstr "Weblate logo"
 
-#: weblate_web/html/base.html:34
+#: weblate_web/html/base.html:35
 msgid "Home"
 msgstr "Home"
 
-#: weblate_web/html/base.html:35
+#: weblate_web/html/base.html:36
 msgid "Blog"
 msgstr "Blog"
 
-#: weblate_web/html/base.html:36
+#: weblate_web/html/base.html:37
 msgid "Try"
 msgstr "Try"
 
-#: weblate_web/html/base.html:37
+#: weblate_web/html/base.html:38
 msgid "Features"
 msgstr "Features"
 
-#: weblate_web/html/base.html:38
+#: weblate_web/html/base.html:39
 msgid "Docs"
 msgstr "Docs"
 
-#: weblate_web/html/base.html:39 weblate_web/html/download.html:12
+#: weblate_web/html/base.html:40 weblate_web/html/download.html:12
 msgid "Download"
 msgstr "Download"
 
-#: weblate_web/html/base.html:40
+#: weblate_web/html/base.html:41
 msgid "Hosting"
 msgstr "Hosting"
 
-#: weblate_web/html/base.html:41
+#: weblate_web/html/base.html:42
 msgid "Contribute"
 msgstr "Contribute"
 
-#: weblate_web/html/base.html:42
+#: weblate_web/html/base.html:43
 msgid "Support"
 msgstr "Support"
 
-#: weblate_web/html/base.html:43
+#: weblate_web/html/base.html:44
 msgid "Tour"
 msgstr "Tour"
 
-#: weblate_web/html/base.html:47
+#: weblate_web/html/base.html:48
 msgid "Language:"
 msgstr "Language:"
 
@@ -449,45 +449,77 @@ msgstr ""
 "org</a>. This will allow you to use Weblate without installing and "
 "maintaining it."
 
-#: weblate_web/html/hosting.html:18
+#: weblate_web/html/hosting.html:17
+#, fuzzy
+#| msgid "Hosting for free software"
+msgid "Conditions for free hosting"
+msgstr "Hosting for free software"
+
+#: weblate_web/html/hosting.html:20
 msgid ""
-"All translated repositories are available at <code>git.weblate.org</code> "
-"with similar naming as on website - hello/master translation would be "
-"published as <code>git://git.weblate.org/hello-master.git</code>."
+"Translated content has to be released under <a href=\"http://en.wikipedia."
+"org/wiki/Free_software_license\">free license</a>."
 msgstr ""
-"All translated repositories are available at <code>git.weblate.org</code> "
-"with similar naming as on website - hello/master translation would be "
-"published as <code>git://git.weblate.org/hello-master.git</code>."
+
+#: weblate_web/html/hosting.html:21
+#, fuzzy
+#| msgid ""
+#| "All your translators will be properly credited in the version control "
+#| "system."
+msgid ""
+"Source code has to be publicly available in supported version control system."
+msgstr ""
+"All your translators will be properly credited in the version control system."
 
 #: weblate_web/html/hosting.html:22
-msgid ""
-"To enable automated workflow on GitHub, you need to enable Weblate service "
-"hook in settings with <code>hosted.weblate.org</code> as URL. If you want "
-"Weblate to automatically push changes as well, add Weblate user to "
-"contributors and let us know you want to use this option."
+msgid "There is no guarantee for service availability or quality."
 msgstr ""
-"To enable automated workflow on GitHub, you need to enable Weblate service "
-"hook in settings with <code>hosted.weblate.org</code> as URL. If you want "
-"Weblate to automatically push changes as well, add Weblate user to "
-"contributors and let us know you want to use this option."
 
 #: weblate_web/html/hosting.html:25
-msgid "Hosting for commercial products"
-msgstr "Hosting for commercial products"
+#, fuzzy
+#| msgid "Translation context"
+msgid "Translation workflow"
+msgstr "Translation context"
 
 #: weblate_web/html/hosting.html:28
 msgid ""
+"All translated repositories are available at <code>git.weblate.org</code> "
+"with similar naming as on website - hello/master translation would be "
+"published as <code>git://git.weblate.org/hello-master.git</code>."
+msgstr ""
+"All translated repositories are available at <code>git.weblate.org</code> "
+"with similar naming as on website - hello/master translation would be "
+"published as <code>git://git.weblate.org/hello-master.git</code>."
+
+#: weblate_web/html/hosting.html:32
+msgid ""
+"To enable automated workflow on GitHub, you need to enable Weblate service "
+"hook in settings with <code>hosted.weblate.org</code> as URL. If you want "
+"Weblate to automatically push changes as well, add Weblate user to "
+"contributors and let us know you want to use this option."
+msgstr ""
+"To enable automated workflow on GitHub, you need to enable Weblate service "
+"hook in settings with <code>hosted.weblate.org</code> as URL. If you want "
+"Weblate to automatically push changes as well, add Weblate user to "
+"contributors and let us know you want to use this option."
+
+#: weblate_web/html/hosting.html:35
+msgid "Commercial hosting"
+msgstr ""
+
+#: weblate_web/html/hosting.html:38
+msgid ""
 "Please contact <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> for more "
 "details."
 msgstr ""
 "Please contact <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> for more "
 "details."
 
-#: weblate_web/html/hosting.html:31
+#: weblate_web/html/hosting.html:41
 msgid "Other options"
 msgstr "Other options"
 
-#: weblate_web/html/hosting.html:35 weblate_web/html/try.html:20
+#: weblate_web/html/hosting.html:45 weblate_web/html/try.html:20
 #, python-format
 msgid ""
 "Check our <a href=\"%(download_url)s\">download page</a> for appliances, "
@@ -687,3 +719,6 @@ msgstr "Sources, zip compressed"
 #: weblate_web/templatetags/downloads.py:63
 msgid "Sources, 7zip compressed"
 msgstr "Sources, 7zip compressed"
+
+#~ msgid "Hosting for commercial products"
+#~ msgstr "Hosting for commercial products"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-03-08 09:50+0100\n"
+"POT-Creation-Date: 2013-03-18 11:35+0100\n"
 "PO-Revision-Date: 2013-03-08 15:21+0200\n"
 "Last-Translator: Matías Bellone <matiasbellone+weblate@gmail.com>\n"
 "Language-Team: Spanish <http://l10n.cihar.com/projects/weblate/website/es/>\n"
@@ -134,51 +134,51 @@ msgctxt "Keyword"
 msgid "translate"
 msgstr "traducir"
 
-#: weblate_web/html/base.html:32
+#: weblate_web/html/base.html:33
 msgid "Weblate logo"
 msgstr "Logo de Weblate"
 
-#: weblate_web/html/base.html:34
+#: weblate_web/html/base.html:35
 msgid "Home"
 msgstr "Inicio"
 
-#: weblate_web/html/base.html:35
+#: weblate_web/html/base.html:36
 msgid "Blog"
 msgstr "Blog"
 
-#: weblate_web/html/base.html:36
+#: weblate_web/html/base.html:37
 msgid "Try"
 msgstr "Probar"
 
-#: weblate_web/html/base.html:37
+#: weblate_web/html/base.html:38
 msgid "Features"
 msgstr "Funcionalidades"
 
-#: weblate_web/html/base.html:38
+#: weblate_web/html/base.html:39
 msgid "Docs"
 msgstr "Documentación"
 
-#: weblate_web/html/base.html:39 weblate_web/html/download.html:12
+#: weblate_web/html/base.html:40 weblate_web/html/download.html:12
 msgid "Download"
 msgstr "Descargar"
 
-#: weblate_web/html/base.html:40
+#: weblate_web/html/base.html:41
 msgid "Hosting"
 msgstr "Alojamiento"
 
-#: weblate_web/html/base.html:41
+#: weblate_web/html/base.html:42
 msgid "Contribute"
 msgstr "Contribuir"
 
-#: weblate_web/html/base.html:42
+#: weblate_web/html/base.html:43
 msgid "Support"
 msgstr "Asistencia"
 
-#: weblate_web/html/base.html:43
+#: weblate_web/html/base.html:44
 msgid "Tour"
 msgstr "Tour"
 
-#: weblate_web/html/base.html:47
+#: weblate_web/html/base.html:48
 msgid "Language:"
 msgstr "Idioma:"
 
@@ -428,8 +428,6 @@ msgid "Reports"
 msgstr "Informes"
 
 #: weblate_web/html/features.html:160
-#| msgid ""
-#| "Weblate provides you various ways to promote your translation project."
 msgid ""
 "Weblate generates various reports to provide information about project "
 "activity."
@@ -461,7 +459,40 @@ msgstr ""
 "weblate.org</a>. Esto le permitirá utilizar Weblate sin tener que instalarlo "
 "ni mantenerlo."
 
-#: weblate_web/html/hosting.html:18
+#: weblate_web/html/hosting.html:17
+#, fuzzy
+#| msgid "Hosting for free software"
+msgid "Conditions for free hosting"
+msgstr "Alojamiento para software libre"
+
+#: weblate_web/html/hosting.html:20
+msgid ""
+"Translated content has to be released under <a href=\"http://en.wikipedia."
+"org/wiki/Free_software_license\">free license</a>."
+msgstr ""
+
+#: weblate_web/html/hosting.html:21
+#, fuzzy
+#| msgid ""
+#| "All your translators will be properly credited in the version control "
+#| "system."
+msgid ""
+"Source code has to be publicly available in supported version control system."
+msgstr ""
+"Se reconocerá apropiadamente a todos sus traductores en el sistema de "
+"control de versiones."
+
+#: weblate_web/html/hosting.html:22
+msgid "There is no guarantee for service availability or quality."
+msgstr ""
+
+#: weblate_web/html/hosting.html:25
+#, fuzzy
+#| msgid "Translation context"
+msgid "Translation workflow"
+msgstr "Contexto de traducción"
+
+#: weblate_web/html/hosting.html:28
 msgid ""
 "All translated repositories are available at <code>git.weblate.org</code> "
 "with similar naming as on website - hello/master translation would be "
@@ -472,7 +503,7 @@ msgstr ""
 "master sería publicada como <code>git://git.weblate.org/hello-master.git</"
 "code>."
 
-#: weblate_web/html/hosting.html:22
+#: weblate_web/html/hosting.html:32
 msgid ""
 "To enable automated workflow on GitHub, you need to enable Weblate service "
 "hook in settings with <code>hosted.weblate.org</code> as URL. If you want "
@@ -485,11 +516,11 @@ msgstr ""
 "cambios automáticamente, agregue a Weblate como contribuyente y háganos "
 "saber que desea utilizar esta opción."
 
-#: weblate_web/html/hosting.html:25
-msgid "Hosting for commercial products"
-msgstr "Alojamiento para productos comerciales"
+#: weblate_web/html/hosting.html:35
+msgid "Commercial hosting"
+msgstr ""
 
-#: weblate_web/html/hosting.html:28
+#: weblate_web/html/hosting.html:38
 msgid ""
 "Please contact <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> for more "
 "details."
@@ -497,11 +528,11 @@ msgstr ""
 "Póngase en contacto (en inglés) con <a href=\"mailto:michal@cihar.com"
 "\">Michal Čihař</a> para más detalles."
 
-#: weblate_web/html/hosting.html:31
+#: weblate_web/html/hosting.html:41
 msgid "Other options"
 msgstr "Otras opciones"
 
-#: weblate_web/html/hosting.html:35 weblate_web/html/try.html:20
+#: weblate_web/html/hosting.html:45 weblate_web/html/try.html:20
 #, python-format
 msgid ""
 "Check our <a href=\"%(download_url)s\">download page</a> for appliances, "
@@ -703,6 +734,9 @@ msgstr "Código fuente, comprimido con zip"
 #: weblate_web/templatetags/downloads.py:63
 msgid "Sources, 7zip compressed"
 msgstr "Código fuente, comprimido con 7zip"
+
+#~ msgid "Hosting for commercial products"
+#~ msgstr "Alojamiento para productos comerciales"
 
 #, fuzzy
 #~| msgid "Try Weblate"

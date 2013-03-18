@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-03-08 09:50+0100\n"
+"POT-Creation-Date: 2013-03-18 11:35+0100\n"
 "PO-Revision-Date: 2013-02-17 07:41+0200\n"
 "Last-Translator: Štefan Baebler <stefan.baebler@gmail.com>\n"
 "Language-Team: Slovenian <http://l10n.cihar.com/projects/weblate/website/sl/"
@@ -132,51 +132,51 @@ msgctxt "Keyword"
 msgid "translate"
 msgstr "prevajanje,prevod"
 
-#: weblate_web/html/base.html:32
+#: weblate_web/html/base.html:33
 msgid "Weblate logo"
 msgstr "Logotip Weblate"
 
-#: weblate_web/html/base.html:34
+#: weblate_web/html/base.html:35
 msgid "Home"
 msgstr "Domov"
 
-#: weblate_web/html/base.html:35
+#: weblate_web/html/base.html:36
 msgid "Blog"
 msgstr "Blog"
 
-#: weblate_web/html/base.html:36
+#: weblate_web/html/base.html:37
 msgid "Try"
 msgstr "Preizkusite"
 
-#: weblate_web/html/base.html:37
+#: weblate_web/html/base.html:38
 msgid "Features"
 msgstr "Zmožnosti"
 
-#: weblate_web/html/base.html:38
+#: weblate_web/html/base.html:39
 msgid "Docs"
 msgstr "Dokumentacija"
 
-#: weblate_web/html/base.html:39 weblate_web/html/download.html:12
+#: weblate_web/html/base.html:40 weblate_web/html/download.html:12
 msgid "Download"
 msgstr "Prenesi"
 
-#: weblate_web/html/base.html:40
+#: weblate_web/html/base.html:41
 msgid "Hosting"
 msgstr "Gostovanje"
 
-#: weblate_web/html/base.html:41
+#: weblate_web/html/base.html:42
 msgid "Contribute"
 msgstr "Prispevajte"
 
-#: weblate_web/html/base.html:42
+#: weblate_web/html/base.html:43
 msgid "Support"
 msgstr "Podpora"
 
-#: weblate_web/html/base.html:43
+#: weblate_web/html/base.html:44
 msgid "Tour"
 msgstr "Predstavitev"
 
-#: weblate_web/html/base.html:47
+#: weblate_web/html/base.html:48
 msgid "Language:"
 msgstr "Jezik:"
 
@@ -455,7 +455,38 @@ msgstr ""
 "weblate.org</a>. To vam bo omogočilo, da uporabljate Weblate brez nameščanja "
 "in vzdrževanja."
 
-#: weblate_web/html/hosting.html:18
+#: weblate_web/html/hosting.html:17
+#, fuzzy
+#| msgid "Hosting for free software"
+msgid "Conditions for free hosting"
+msgstr "Gostovanje za brezplačno programje"
+
+#: weblate_web/html/hosting.html:20
+msgid ""
+"Translated content has to be released under <a href=\"http://en.wikipedia."
+"org/wiki/Free_software_license\">free license</a>."
+msgstr ""
+
+#: weblate_web/html/hosting.html:21
+#, fuzzy
+#| msgid ""
+#| "All your translators will be properly credited in the version control "
+#| "system."
+msgid ""
+"Source code has to be publicly available in supported version control system."
+msgstr "Vsi vaši prevodi bodo v sistemu nadzora različic ustrezno priznani."
+
+#: weblate_web/html/hosting.html:22
+msgid "There is no guarantee for service availability or quality."
+msgstr ""
+
+#: weblate_web/html/hosting.html:25
+#, fuzzy
+#| msgid "Translation context"
+msgid "Translation workflow"
+msgstr "Sobesedilo prevoda"
+
+#: weblate_web/html/hosting.html:28
 msgid ""
 "All translated repositories are available at <code>git.weblate.org</code> "
 "with similar naming as on website - hello/master translation would be "
@@ -465,7 +496,7 @@ msgstr ""
 "poimenovanjem kot na spletni strani - prevod hello/master bi bil objavljen "
 "kot <code>git://git.weblate.org/hello-master.git</code>."
 
-#: weblate_web/html/hosting.html:22
+#: weblate_web/html/hosting.html:32
 msgid ""
 "To enable automated workflow on GitHub, you need to enable Weblate service "
 "hook in settings with <code>hosted.weblate.org</code> as URL. If you want "
@@ -473,11 +504,11 @@ msgid ""
 "contributors and let us know you want to use this option."
 msgstr ""
 
-#: weblate_web/html/hosting.html:25
-msgid "Hosting for commercial products"
-msgstr "Gostovanje komercialnih izdelkov"
+#: weblate_web/html/hosting.html:35
+msgid "Commercial hosting"
+msgstr ""
 
-#: weblate_web/html/hosting.html:28
+#: weblate_web/html/hosting.html:38
 msgid ""
 "Please contact <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> for more "
 "details."
@@ -485,11 +516,11 @@ msgstr ""
 "Prosimo, stopite v stik z <a href=\"mailto:michal@cihar.com\">Michalom "
 "Čihařem</a> za več informacij."
 
-#: weblate_web/html/hosting.html:31
+#: weblate_web/html/hosting.html:41
 msgid "Other options"
 msgstr "Druge možnosti"
 
-#: weblate_web/html/hosting.html:35 weblate_web/html/try.html:20
+#: weblate_web/html/hosting.html:45 weblate_web/html/try.html:20
 #, python-format
 msgid ""
 "Check our <a href=\"%(download_url)s\">download page</a> for appliances, "
@@ -689,3 +720,6 @@ msgstr "Izvorne datoteke, stisnjeno kot zip"
 #: weblate_web/templatetags/downloads.py:63
 msgid "Sources, 7zip compressed"
 msgstr "Izvorne datoteke, stisnjeno kot 7zip"
+
+#~ msgid "Hosting for commercial products"
+#~ msgstr "Gostovanje komercialnih izdelkov"

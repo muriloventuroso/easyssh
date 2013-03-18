@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-03-08 09:50+0100\n"
+"POT-Creation-Date: 2013-03-18 11:35+0100\n"
 "PO-Revision-Date: 2013-03-08 12:01+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <http://l10n.cihar.com/projects/weblate/website/cs/>\n"
@@ -129,51 +129,51 @@ msgctxt "Keyword"
 msgid "translate"
 msgstr "překládání"
 
-#: weblate_web/html/base.html:32
+#: weblate_web/html/base.html:33
 msgid "Weblate logo"
 msgstr "Logo Weblate"
 
-#: weblate_web/html/base.html:34
+#: weblate_web/html/base.html:35
 msgid "Home"
 msgstr "Domů"
 
-#: weblate_web/html/base.html:35
+#: weblate_web/html/base.html:36
 msgid "Blog"
 msgstr "Blog"
 
-#: weblate_web/html/base.html:36
+#: weblate_web/html/base.html:37
 msgid "Try"
 msgstr "Vyzkoušejte"
 
-#: weblate_web/html/base.html:37
+#: weblate_web/html/base.html:38
 msgid "Features"
 msgstr "Vlastnosti"
 
-#: weblate_web/html/base.html:38
+#: weblate_web/html/base.html:39
 msgid "Docs"
 msgstr "Dokumentace"
 
-#: weblate_web/html/base.html:39 weblate_web/html/download.html:12
+#: weblate_web/html/base.html:40 weblate_web/html/download.html:12
 msgid "Download"
 msgstr "Stáhnout"
 
-#: weblate_web/html/base.html:40
+#: weblate_web/html/base.html:41
 msgid "Hosting"
 msgstr "Hostování"
 
-#: weblate_web/html/base.html:41
+#: weblate_web/html/base.html:42
 msgid "Contribute"
 msgstr "Přispějte"
 
-#: weblate_web/html/base.html:42
+#: weblate_web/html/base.html:43
 msgid "Support"
 msgstr "Podpora"
 
-#: weblate_web/html/base.html:43
+#: weblate_web/html/base.html:44
 msgid "Tour"
 msgstr "Prohlídka"
 
-#: weblate_web/html/base.html:47
+#: weblate_web/html/base.html:48
 msgid "Language:"
 msgstr "Jazyk:"
 
@@ -418,8 +418,6 @@ msgid "Reports"
 msgstr "Zprávy"
 
 #: weblate_web/html/features.html:160
-#| msgid ""
-#| "Weblate provides you various ways to promote your translation project."
 msgid ""
 "Weblate generates various reports to provide information about project "
 "activity."
@@ -450,7 +448,40 @@ msgstr ""
 "o zařazení na <a href=\"http://hosted.weblate.org/\">hosted.weblate.org</a>. "
 "To vám umožní používat Weblate bez nutnosti ho instalovat a udržovat."
 
-#: weblate_web/html/hosting.html:18
+#: weblate_web/html/hosting.html:17
+#, fuzzy
+#| msgid "Hosting for free software"
+msgid "Conditions for free hosting"
+msgstr "Hostování svobodného software"
+
+#: weblate_web/html/hosting.html:20
+msgid ""
+"Translated content has to be released under <a href=\"http://en.wikipedia."
+"org/wiki/Free_software_license\">free license</a>."
+msgstr ""
+
+#: weblate_web/html/hosting.html:21
+#, fuzzy
+#| msgid ""
+#| "All your translators will be properly credited in the version control "
+#| "system."
+msgid ""
+"Source code has to be publicly available in supported version control system."
+msgstr ""
+"Všechny vaše překlady budou zapsány pod vaším jménem do systému správy "
+"revizí."
+
+#: weblate_web/html/hosting.html:22
+msgid "There is no guarantee for service availability or quality."
+msgstr ""
+
+#: weblate_web/html/hosting.html:25
+#, fuzzy
+#| msgid "Translation context"
+msgid "Translation workflow"
+msgstr "Souvislosti překladu"
+
+#: weblate_web/html/hosting.html:28
 msgid ""
 "All translated repositories are available at <code>git.weblate.org</code> "
 "with similar naming as on website - hello/master translation would be "
@@ -460,7 +491,7 @@ msgstr ""
 "pod podobným jménem jako na webu - překlad hello/master bude publikován na "
 "<code>git://git.weblate.org/hello-master.git</code>."
 
-#: weblate_web/html/hosting.html:22
+#: weblate_web/html/hosting.html:32
 msgid ""
 "To enable automated workflow on GitHub, you need to enable Weblate service "
 "hook in settings with <code>hosted.weblate.org</code> as URL. If you want "
@@ -472,11 +503,11 @@ msgstr ""
 "chcete, aby Weblate také mohlo automaticky odesílat změny, přidejte do "
 "projektu uživatele Weblate a řekněte nám, že chcete použít tuto volbu."
 
-#: weblate_web/html/hosting.html:25
-msgid "Hosting for commercial products"
-msgstr "Hostování komerčních produktů"
+#: weblate_web/html/hosting.html:35
+msgid "Commercial hosting"
+msgstr ""
 
-#: weblate_web/html/hosting.html:28
+#: weblate_web/html/hosting.html:38
 msgid ""
 "Please contact <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> for more "
 "details."
@@ -484,18 +515,18 @@ msgstr ""
 "Pokud máte zájem o překládání vašeho komerčního programu pomocí Weblate, "
 "napište <a href=\"mailto:michal@cihar.com\">Michalu Čihařovi</a>."
 
-#: weblate_web/html/hosting.html:31
+#: weblate_web/html/hosting.html:41
 msgid "Other options"
 msgstr "Další možnosti"
 
-#: weblate_web/html/hosting.html:35 weblate_web/html/try.html:20
+#: weblate_web/html/hosting.html:45 weblate_web/html/try.html:20
 #, python-format
 msgid ""
 "Check our <a href=\"%(download_url)s\">download page</a> for appliances, "
 "which provide an easy way to deploy Weblate in the cloud."
 msgstr ""
-"Podívejte se na naši <a href=\"%(download_url)s\">stránku pro stažení</a>, kde "
-"naleznete appliance, které můžete snadno nasadit v cloudu."
+"Podívejte se na naši <a href=\"%(download_url)s\">stránku pro stažení</a>, "
+"kde naleznete appliance, které můžete snadno nasadit v cloudu."
 
 #: weblate_web/html/index.html:4
 msgid "Weblate - web-based translation"
@@ -688,6 +719,9 @@ msgstr "Zdrojáky, komprimované zipem"
 #: weblate_web/templatetags/downloads.py:63
 msgid "Sources, 7zip compressed"
 msgstr "Zdrojáky, komprimované 7zipem"
+
+#~ msgid "Hosting for commercial products"
+#~ msgstr "Hostování komerčních produktů"
 
 #~| msgid "Try Weblate"
 #~ msgid "Weblate"
