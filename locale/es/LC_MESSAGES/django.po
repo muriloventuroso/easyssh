@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-03-18 11:35+0100\n"
+"POT-Creation-Date: 2013-03-22 10:10+0100\n"
 "PO-Revision-Date: 2013-03-18 14:56+0200\n"
 "Last-Translator: Matías Bellone <matiasbellone+weblate@gmail.com>\n"
 "Language-Team: Spanish <http://l10n.cihar.com/projects/weblate/website/es/>\n"
@@ -460,7 +460,6 @@ msgstr ""
 "ni mantenerlo."
 
 #: weblate_web/html/hosting.html:17
-#| msgid "Hosting for free software"
 msgid "Conditions for free hosting"
 msgstr "Condiciones para el alojamiento gratuito"
 
@@ -469,14 +468,10 @@ msgid ""
 "Translated content has to be released under <a href=\"http://en.wikipedia."
 "org/wiki/Free_software_license\">free license</a>."
 msgstr ""
-"El contenido traducido tiene que ser publicado bajo una <a "
-"href=\"http://en.wikipedia.org/wiki/Free_software_license\">licencia "
-"libre</a>."
+"El contenido traducido tiene que ser publicado bajo una <a href=\"http://en."
+"wikipedia.org/wiki/Free_software_license\">licencia libre</a>."
 
 #: weblate_web/html/hosting.html:21
-#| msgid ""
-#| "All your translators will be properly credited in the version control "
-#| "system."
 msgid ""
 "Source code has to be publicly available in supported version control system."
 msgstr ""
@@ -488,11 +483,46 @@ msgid "There is no guarantee for service availability or quality."
 msgstr "No hay garantías de disponibilidad o calidad del servicio."
 
 #: weblate_web/html/hosting.html:25
-#| msgid "Translation context"
+#, fuzzy
+#| msgid "Conditions for free hosting"
+msgid "Asking for hosting"
+msgstr "Condiciones para el alojamiento gratuito"
+
+#: weblate_web/html/hosting.html:28
+#, fuzzy
+#| msgid ""
+#| "Please contact <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> for "
+#| "more details."
+msgid ""
+"Contact <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> and include at "
+"least following information:"
+msgstr ""
+"Póngase en contacto (en inglés) con <a href=\"mailto:michal@cihar.com"
+"\">Michal Čihař</a> para más detalles."
+
+#: weblate_web/html/hosting.html:32
+msgid "Information about your project."
+msgstr ""
+
+#: weblate_web/html/hosting.html:33
+#, fuzzy
+#| msgid "Project overview"
+msgid "Project website."
+msgstr "Revisión del proyecto"
+
+#: weblate_web/html/hosting.html:34
+msgid "URL of repository with translations"
+msgstr ""
+
+#: weblate_web/html/hosting.html:35
+msgid "Path to translations within the repository"
+msgstr ""
+
+#: weblate_web/html/hosting.html:38
 msgid "Translation workflow"
 msgstr "Sistema de trabajo de las traducciones"
 
-#: weblate_web/html/hosting.html:28
+#: weblate_web/html/hosting.html:41
 msgid ""
 "All translated repositories are available at <code>git.weblate.org</code> "
 "with similar naming as on website - hello/master translation would be "
@@ -503,7 +533,7 @@ msgstr ""
 "master sería publicada como <code>git://git.weblate.org/hello-master.git</"
 "code>."
 
-#: weblate_web/html/hosting.html:32
+#: weblate_web/html/hosting.html:45
 msgid ""
 "To enable automated workflow on GitHub, you need to enable Weblate service "
 "hook in settings with <code>hosted.weblate.org</code> as URL. If you want "
@@ -516,11 +546,11 @@ msgstr ""
 "cambios automáticamente, agregue a Weblate como contribuyente y háganos "
 "saber que desea utilizar esta opción."
 
-#: weblate_web/html/hosting.html:35
+#: weblate_web/html/hosting.html:48
 msgid "Commercial hosting"
 msgstr "Alojamiento comercial"
 
-#: weblate_web/html/hosting.html:38
+#: weblate_web/html/hosting.html:51
 msgid ""
 "Please contact <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> for more "
 "details."
@@ -528,11 +558,11 @@ msgstr ""
 "Póngase en contacto (en inglés) con <a href=\"mailto:michal@cihar.com"
 "\">Michal Čihař</a> para más detalles."
 
-#: weblate_web/html/hosting.html:41
+#: weblate_web/html/hosting.html:54
 msgid "Other options"
 msgstr "Otras opciones"
 
-#: weblate_web/html/hosting.html:45 weblate_web/html/try.html:20
+#: weblate_web/html/hosting.html:58 weblate_web/html/try.html:20
 #, python-format
 msgid ""
 "Check our <a href=\"%(download_url)s\">download page</a> for appliances, "

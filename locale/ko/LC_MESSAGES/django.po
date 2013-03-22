@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-03-18 11:35+0100\n"
+"POT-Creation-Date: 2013-03-22 10:10+0100\n"
 "PO-Revision-Date: 2013-02-05 13:49+0200\n"
 "Last-Translator: Gyeongsu Han <hansim@gmail.com>\n"
 "Language-Team: Korean <http://l10n.cihar.com/projects/weblate/website/ko/>\n"
@@ -435,17 +435,48 @@ msgid "There is no guarantee for service availability or quality."
 msgstr ""
 
 #: weblate_web/html/hosting.html:25
-msgid "Translation workflow"
+msgid "Asking for hosting"
 msgstr ""
 
 #: weblate_web/html/hosting.html:28
+#, fuzzy
+msgid ""
+"Contact <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> and include at "
+"least following information:"
+msgstr ""
+"Weblate의 저자인 <a href=\"mailto:michal@cihar.com?subject=Weblate\">Michal "
+"Čihař</a>에게도 연락할 수 있습니다."
+
+#: weblate_web/html/hosting.html:32
+msgid "Information about your project."
+msgstr ""
+
+#: weblate_web/html/hosting.html:33
+#, fuzzy
+#| msgid "Project overview"
+msgid "Project website."
+msgstr "프로젝트 총괄개요"
+
+#: weblate_web/html/hosting.html:34
+msgid "URL of repository with translations"
+msgstr ""
+
+#: weblate_web/html/hosting.html:35
+msgid "Path to translations within the repository"
+msgstr ""
+
+#: weblate_web/html/hosting.html:38
+msgid "Translation workflow"
+msgstr ""
+
+#: weblate_web/html/hosting.html:41
 msgid ""
 "All translated repositories are available at <code>git.weblate.org</code> "
 "with similar naming as on website - hello/master translation would be "
 "published as <code>git://git.weblate.org/hello-master.git</code>."
 msgstr ""
 
-#: weblate_web/html/hosting.html:32
+#: weblate_web/html/hosting.html:45
 msgid ""
 "To enable automated workflow on GitHub, you need to enable Weblate service "
 "hook in settings with <code>hosted.weblate.org</code> as URL. If you want "
@@ -453,11 +484,11 @@ msgid ""
 "contributors and let us know you want to use this option."
 msgstr ""
 
-#: weblate_web/html/hosting.html:35
+#: weblate_web/html/hosting.html:48
 msgid "Commercial hosting"
 msgstr ""
 
-#: weblate_web/html/hosting.html:38
+#: weblate_web/html/hosting.html:51
 #, fuzzy
 msgid ""
 "Please contact <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> for more "
@@ -466,11 +497,11 @@ msgstr ""
 "Weblate의 저자인 <a href=\"mailto:michal@cihar.com?subject=Weblate\">Michal "
 "Čihař</a>에게도 연락할 수 있습니다."
 
-#: weblate_web/html/hosting.html:41
+#: weblate_web/html/hosting.html:54
 msgid "Other options"
 msgstr "다른 옵션"
 
-#: weblate_web/html/hosting.html:45 weblate_web/html/try.html:20
+#: weblate_web/html/hosting.html:58 weblate_web/html/try.html:20
 #, python-format
 msgid ""
 "Check our <a href=\"%(download_url)s\">download page</a> for appliances, "

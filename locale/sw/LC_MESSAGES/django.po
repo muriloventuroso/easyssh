@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-03-18 11:35+0100\n"
+"POT-Creation-Date: 2013-03-22 10:10+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -416,17 +416,43 @@ msgid "There is no guarantee for service availability or quality."
 msgstr ""
 
 #: weblate_web/html/hosting.html:25
-msgid "Translation workflow"
+msgid "Asking for hosting"
 msgstr ""
 
 #: weblate_web/html/hosting.html:28
+msgid ""
+"Contact <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> and include at "
+"least following information:"
+msgstr ""
+
+#: weblate_web/html/hosting.html:32
+msgid "Information about your project."
+msgstr ""
+
+#: weblate_web/html/hosting.html:33
+msgid "Project website."
+msgstr ""
+
+#: weblate_web/html/hosting.html:34
+msgid "URL of repository with translations"
+msgstr ""
+
+#: weblate_web/html/hosting.html:35
+msgid "Path to translations within the repository"
+msgstr ""
+
+#: weblate_web/html/hosting.html:38
+msgid "Translation workflow"
+msgstr ""
+
+#: weblate_web/html/hosting.html:41
 msgid ""
 "All translated repositories are available at <code>git.weblate.org</code> "
 "with similar naming as on website - hello/master translation would be "
 "published as <code>git://git.weblate.org/hello-master.git</code>."
 msgstr ""
 
-#: weblate_web/html/hosting.html:32
+#: weblate_web/html/hosting.html:45
 msgid ""
 "To enable automated workflow on GitHub, you need to enable Weblate service "
 "hook in settings with <code>hosted.weblate.org</code> as URL. If you want "
@@ -434,21 +460,21 @@ msgid ""
 "contributors and let us know you want to use this option."
 msgstr ""
 
-#: weblate_web/html/hosting.html:35
+#: weblate_web/html/hosting.html:48
 msgid "Commercial hosting"
 msgstr ""
 
-#: weblate_web/html/hosting.html:38
+#: weblate_web/html/hosting.html:51
 msgid ""
 "Please contact <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> for more "
 "details."
 msgstr ""
 
-#: weblate_web/html/hosting.html:41
+#: weblate_web/html/hosting.html:54
 msgid "Other options"
 msgstr ""
 
-#: weblate_web/html/hosting.html:45 weblate_web/html/try.html:20
+#: weblate_web/html/hosting.html:58 weblate_web/html/try.html:20
 #, python-format
 msgid ""
 "Check our <a href=\"%(download_url)s\">download page</a> for appliances, "

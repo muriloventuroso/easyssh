@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-03-18 11:35+0100\n"
+"POT-Creation-Date: 2013-03-22 10:10+0100\n"
 "PO-Revision-Date: 2013-03-18 23:59+0200\n"
 "Last-Translator: Aputsiaq Niels Janussen <aj@isit.gl>\n"
 "Language-Team: Danish <http://l10n.cihar.com/projects/weblate/website/da/>\n"
@@ -451,7 +451,6 @@ msgstr ""
 "installere og vedligeholde den."
 
 #: weblate_web/html/hosting.html:17
-#| msgid "Hosting for free software"
 msgid "Conditions for free hosting"
 msgstr "Betingelser for fri hosting"
 
@@ -460,13 +459,10 @@ msgid ""
 "Translated content has to be released under <a href=\"http://en.wikipedia."
 "org/wiki/Free_software_license\">free license</a>."
 msgstr ""
-"Oversat indhold skal udgive under et <a "
-"href=\"http://en.wikipedia.org/wiki/Free_software_license\">frit licens</a>."
+"Oversat indhold skal udgive under et <a href=\"http://en.wikipedia.org/wiki/"
+"Free_software_license\">frit licens</a>."
 
 #: weblate_web/html/hosting.html:21
-#| msgid ""
-#| "All your translators will be properly credited in the version control "
-#| "system."
 msgid ""
 "Source code has to be publicly available in supported version control system."
 msgstr ""
@@ -478,11 +474,46 @@ msgid "There is no guarantee for service availability or quality."
 msgstr "Der er ingen garantier for tjenestens tilgængelighed eller kvalitet."
 
 #: weblate_web/html/hosting.html:25
-#| msgid "Translation context"
+#, fuzzy
+#| msgid "Conditions for free hosting"
+msgid "Asking for hosting"
+msgstr "Betingelser for fri hosting"
+
+#: weblate_web/html/hosting.html:28
+#, fuzzy
+#| msgid ""
+#| "Please contact <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> for "
+#| "more details."
+msgid ""
+"Contact <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> and include at "
+"least following information:"
+msgstr ""
+"Kontakt venligst <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> for "
+"flere detaljer."
+
+#: weblate_web/html/hosting.html:32
+msgid "Information about your project."
+msgstr ""
+
+#: weblate_web/html/hosting.html:33
+#, fuzzy
+#| msgid "Project overview"
+msgid "Project website."
+msgstr "Projekt-oversigt"
+
+#: weblate_web/html/hosting.html:34
+msgid "URL of repository with translations"
+msgstr ""
+
+#: weblate_web/html/hosting.html:35
+msgid "Path to translations within the repository"
+msgstr ""
+
+#: weblate_web/html/hosting.html:38
 msgid "Translation workflow"
 msgstr "Arbejdsgang for oversættelse"
 
-#: weblate_web/html/hosting.html:28
+#: weblate_web/html/hosting.html:41
 msgid ""
 "All translated repositories are available at <code>git.weblate.org</code> "
 "with similar naming as on website - hello/master translation would be "
@@ -492,7 +523,7 @@ msgstr ""
 "en navngivning der ligner et websteds - oversættelsen hello/master vil blive "
 "udgivet som <code>git://git.weblate.org/hello-master.git</code>."
 
-#: weblate_web/html/hosting.html:32
+#: weblate_web/html/hosting.html:45
 msgid ""
 "To enable automated workflow on GitHub, you need to enable Weblate service "
 "hook in settings with <code>hosted.weblate.org</code> as URL. If you want "
@@ -505,11 +536,11 @@ msgstr ""
 "ændringer, så tilføj Weblate-brugeren til bidragydere og giv os besked om at "
 "du vil benytte denne valgmulighed."
 
-#: weblate_web/html/hosting.html:35
+#: weblate_web/html/hosting.html:48
 msgid "Commercial hosting"
 msgstr "Kommerciel hosting"
 
-#: weblate_web/html/hosting.html:38
+#: weblate_web/html/hosting.html:51
 msgid ""
 "Please contact <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> for more "
 "details."
@@ -517,11 +548,11 @@ msgstr ""
 "Kontakt venligst <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> for "
 "flere detaljer."
 
-#: weblate_web/html/hosting.html:41
+#: weblate_web/html/hosting.html:54
 msgid "Other options"
 msgstr "Andre valgmuligheder"
 
-#: weblate_web/html/hosting.html:45 weblate_web/html/try.html:20
+#: weblate_web/html/hosting.html:58 weblate_web/html/try.html:20
 #, python-format
 msgid ""
 "Check our <a href=\"%(download_url)s\">download page</a> for appliances, "

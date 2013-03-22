@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: weblate-web\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-03-18 11:35+0100\n"
+"POT-Creation-Date: 2013-03-22 10:10+0100\n"
 "PO-Revision-Date: 2013-03-21 21:23+0200\n"
 "Last-Translator: Dmitri GOULIAEV <dmitri+weblate@gouliaev.info>\n"
 "Language-Team: Russian <http://l10n.cihar.com/projects/weblate/website/ru/>\n"
@@ -17,8 +17,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
-"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 1.5-dev\n"
 "First-Translator: Dmitri GOULIAEV <dmitri+weblate@gouliaev.info>\n"
 
@@ -463,7 +463,6 @@ msgstr ""
 "позволит вам использовать Weblate, не тратя усилий на установку и поддержку."
 
 #: weblate_web/html/hosting.html:17
-#| msgid "Hosting for free software"
 msgid "Conditions for free hosting"
 msgstr "Условия для бесплатного хостинга"
 
@@ -472,14 +471,10 @@ msgid ""
 "Translated content has to be released under <a href=\"http://en.wikipedia."
 "org/wiki/Free_software_license\">free license</a>."
 msgstr ""
-"Перевод должен быть выпущен под <a "
-"href=\"http://en.wikipedia.org/wiki/Free_software_license\">свободной "
-"лицензией</a>."
+"Перевод должен быть выпущен под <a href=\"http://en.wikipedia.org/wiki/"
+"Free_software_license\">свободной лицензией</a>."
 
 #: weblate_web/html/hosting.html:21
-#| msgid ""
-#| "All your translators will be properly credited in the version control "
-#| "system."
 msgid ""
 "Source code has to be publicly available in supported version control system."
 msgstr ""
@@ -491,11 +486,46 @@ msgid "There is no guarantee for service availability or quality."
 msgstr "Нет гарантии доступности службы или её качества."
 
 #: weblate_web/html/hosting.html:25
-#| msgid "Translation context"
+#, fuzzy
+#| msgid "Conditions for free hosting"
+msgid "Asking for hosting"
+msgstr "Условия для бесплатного хостинга"
+
+#: weblate_web/html/hosting.html:28
+#, fuzzy
+#| msgid ""
+#| "Please contact <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> for "
+#| "more details."
+msgid ""
+"Contact <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> and include at "
+"least following information:"
+msgstr ""
+"Свяжитесь с <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> для "
+"получения более подробной информации."
+
+#: weblate_web/html/hosting.html:32
+msgid "Information about your project."
+msgstr ""
+
+#: weblate_web/html/hosting.html:33
+#, fuzzy
+#| msgid "Project overview"
+msgid "Project website."
+msgstr "Краткая информация о проекте"
+
+#: weblate_web/html/hosting.html:34
+msgid "URL of repository with translations"
+msgstr ""
+
+#: weblate_web/html/hosting.html:35
+msgid "Path to translations within the repository"
+msgstr ""
+
+#: weblate_web/html/hosting.html:38
 msgid "Translation workflow"
 msgstr "Рабочий процесс перевода"
 
-#: weblate_web/html/hosting.html:28
+#: weblate_web/html/hosting.html:41
 msgid ""
 "All translated repositories are available at <code>git.weblate.org</code> "
 "with similar naming as on website - hello/master translation would be "
@@ -505,7 +535,7 @@ msgstr ""
 "похожей на используемую на этом сайте схему именования: перевод hello/master "
 "будет опубликован как <code>git://git.weblate.org/hello-master.git</code>."
 
-#: weblate_web/html/hosting.html:32
+#: weblate_web/html/hosting.html:45
 msgid ""
 "To enable automated workflow on GitHub, you need to enable Weblate service "
 "hook in settings with <code>hosted.weblate.org</code> as URL. If you want "
@@ -518,11 +548,11 @@ msgstr ""
 "изменения в удалённый репозитарий, добавьте пользователя Weblate в список "
 "авторов и дайте нам знать, что вы хотите это использовать."
 
-#: weblate_web/html/hosting.html:35
+#: weblate_web/html/hosting.html:48
 msgid "Commercial hosting"
 msgstr "Коммерческий хостинг"
 
-#: weblate_web/html/hosting.html:38
+#: weblate_web/html/hosting.html:51
 msgid ""
 "Please contact <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> for more "
 "details."
@@ -530,11 +560,11 @@ msgstr ""
 "Свяжитесь с <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> для "
 "получения более подробной информации."
 
-#: weblate_web/html/hosting.html:41
+#: weblate_web/html/hosting.html:54
 msgid "Other options"
 msgstr "Другие варианты"
 
-#: weblate_web/html/hosting.html:45 weblate_web/html/try.html:20
+#: weblate_web/html/hosting.html:58 weblate_web/html/try.html:20
 #, python-format
 msgid ""
 "Check our <a href=\"%(download_url)s\">download page</a> for appliances, "
