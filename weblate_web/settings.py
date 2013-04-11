@@ -70,7 +70,7 @@ LANGUAGES = (
 #    ('gl', 'Galego'),
 #    ('hu', 'Magyar'),
 #    ('id', 'Indonesia'),
-#    ('ja', u'日本語'),
+    ('ja', u'日本語'),
 #    ('ko', u'한국어'),
 #    ('nl', 'Nederlands'),
     ('pl', 'Polski'),
