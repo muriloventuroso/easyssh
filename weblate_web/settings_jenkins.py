@@ -44,4 +44,8 @@ JSHINT_CHECKED_FILES = (
     os.path.join(WEB_ROOT, 'media/code.js'),
 )
 
+PROJECT_APPS = (
+    'weblate_web',
+)
+
 PYLINT_RCFILE = os.path.join(WEB_ROOT, '..', 'pylint.rc')
