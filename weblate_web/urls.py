@@ -32,6 +32,7 @@ class PagesSitemap(Sitemap):
     does not use get_absolute_url.
     '''
     def __init__(self, language):
+        super(PagesSitemap, self).__init__()
         self.language = language
 
     def items(self):
