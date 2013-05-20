@@ -18,7 +18,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
-from django.conf.urls import patterns, include, url
+from django.conf.urls import patterns, url
 from django.views.generic import TemplateView, RedirectView
 from django.conf import settings
 from django.contrib.sitemaps import Sitemap
