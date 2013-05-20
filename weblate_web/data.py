@@ -35,27 +35,42 @@ SCREENSHOTS = (
     ),
     (
         'translation-context.png',
-        _('Translator can always see important context information like comments or corresponding source code.'),
+        _(
+            'Translator can always see important context information like '
+            'comments or corresponding source code.'
+        ),
         _('Translation context'),
     ),
     (
         'project-overview.png',
-        _('Project page gives you detailed information about project translation status.'),
+        _(
+            'Project page gives you detailed information about project '
+            'translation status.'
+        ),
         _('Project overview'),
     ),
     (
         'glossary.png',
-        _('Translators can define their own glossary to stay consistent in frequently used terminology.'),
+        _(
+            'Translators can define their own glossary to stay consistent '
+            'in frequently used terminology.'
+        ),
         _('Glossary'),
     ),
     (
         'checks.png',
-        _('Customizable quality checks will help you in improving quality of translations.'),
+        _(
+            'Customizable quality checks will help you in improving quality '
+            'of translations.'
+        ),
         _('Quality checks'),
     ),
     (
         'promote.png',
-        _('Weblate provides you various ways to promote your translation project.'),
+        _(
+            'Weblate provides you various ways to promote your '
+            'translation project.'
+        ),
         _('Promotion'),
     ),
 )
