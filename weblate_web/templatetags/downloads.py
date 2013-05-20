@@ -27,23 +27,23 @@ from django.conf import settings
 register = Library()
 
 
-def filesizeformat(bytes):
+def filesizeformat(num_bytes):
     """
     Formats the value like a 'human-readable' file size (i.e. 13 KB, 4.1 MB,
     102 bytes, etc).
     """
     try:
-        bytes = float(bytes)
+        num_bytes = float(num_bytes)
     except (TypeError,ValueError,UnicodeDecodeError):
         return _(u"0 bytes")
 
-    if bytes < 1024:
-        return ungettext("%(size)d byte", "%(size)d bytes", bytes) % {'size': bytes}
-    if bytes < 1024 * 1024:
-        return _("%.1f KiB") % (bytes / 1024)
-    if bytes < 1024 * 1024 * 1024:
-        return _("%.1f MiB") % (bytes / (1024 * 1024))
-    return _("%.1f GiB") % (bytes / (1024 * 1024 * 1024))
+    if num_bytes < 1024:
+        return ungettext("%(size)d byte", "%(size)d bytes", num_bytes) % {'size': num_bytes}
+    if num_bytes < 1024 * 1024:
+        return _("%.1f KiB") % (num_bytes / 1024)
+    if num_bytes < 1024 * 1024 * 1024:
+        return _("%.1f MiB") % (num_bytes / (1024 * 1024))
+    return _("%.1f GiB") % (num_bytes / (1024 * 1024 * 1024))
 
 
 @register.simple_tag
