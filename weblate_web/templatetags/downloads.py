@@ -18,7 +18,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
-from django.template import Library, Node, Variable, TemplateSyntaxError
+from django.template import Library
 import os
 from django.utils.translation import ugettext as _, ungettext
 from django.utils.safestring import mark_safe
