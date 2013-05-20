@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-05-16 09:17+0200\n"
+"POT-Creation-Date: 2013-05-20 11:52+0200\n"
 "PO-Revision-Date: 2013-05-16 09:19+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <http://l10n.cihar.com/projects/weblate/website/cs/>\n"
@@ -26,7 +26,7 @@ msgstr "Přehled vlastních překladů na hlavní stránce."
 msgid "Own translations"
 msgstr "Vlastní překlady"
 
-#: weblate_web/data.py:38 weblate_web/html/features.html:70
+#: weblate_web/data.py:39 weblate_web/html/features.html:70
 msgid ""
 "Translator can always see important context information like comments or "
 "corresponding source code."
@@ -34,20 +34,20 @@ msgstr ""
 "Překladatelé mají vždy k dispozici různé informace o souvislostech překladu "
 "jako komentáře nebo související zdrojový kód."
 
-#: weblate_web/data.py:39 weblate_web/html/features.html:69
+#: weblate_web/data.py:42 weblate_web/html/features.html:69
 msgid "Translation context"
 msgstr "Souvislosti překladu"
 
-#: weblate_web/data.py:43
+#: weblate_web/data.py:47
 msgid ""
 "Project page gives you detailed information about project translation status."
 msgstr "Projektová stránka poskytuje podrobné informace o stavu překladu."
 
-#: weblate_web/data.py:44
+#: weblate_web/data.py:50
 msgid "Project overview"
 msgstr "Přehled projektu"
 
-#: weblate_web/data.py:48 weblate_web/html/features.html:80
+#: weblate_web/data.py:55 weblate_web/html/features.html:80
 msgid ""
 "Translators can define their own glossary to stay consistent in frequently "
 "used terminology."
@@ -55,27 +55,27 @@ msgstr ""
 "Překladatelé si mohou zadat vlastní glosář a tím pomoci zachování stejné "
 "terminologie v rámci překladu."
 
-#: weblate_web/data.py:49 weblate_web/html/features.html:79
+#: weblate_web/data.py:58 weblate_web/html/features.html:79
 msgid "Glossary"
 msgstr "Glosář"
 
-#: weblate_web/data.py:53 weblate_web/html/base-features.html:19
+#: weblate_web/data.py:63 weblate_web/html/base-features.html:19
 msgid ""
 "Customizable quality checks will help you in improving quality of "
 "translations."
 msgstr ""
 "Nastavitelné kontroly kvality vám pomohou se zlepšením kvality překladů."
 
-#: weblate_web/data.py:54 weblate_web/html/base-features.html:18
+#: weblate_web/data.py:66 weblate_web/html/base-features.html:18
 msgid "Quality checks"
 msgstr "Kontrola kvality"
 
-#: weblate_web/data.py:58 weblate_web/html/features.html:150
+#: weblate_web/data.py:71 weblate_web/html/features.html:150
 msgid "Weblate provides you various ways to promote your translation project."
 msgstr ""
 "Weblate vám nabízí různé možnosti jak propagovat váš překladový projekt."
 
-#: weblate_web/data.py:59 weblate_web/html/features.html:149
+#: weblate_web/data.py:74 weblate_web/html/features.html:149
 msgid "Promotion"
 msgstr "Propagace"
 
@@ -704,7 +704,7 @@ msgstr "Připravené obrazy"
 msgid "0 bytes"
 msgstr "0 bajtů"
 
-#: weblate_web/templatetags/downloads.py:41
+#: weblate_web/templatetags/downloads.py:42
 #, python-format
 msgid "%(size)d byte"
 msgid_plural "%(size)d bytes"
@@ -712,42 +712,42 @@ msgstr[0] "%(size)d bajt"
 msgstr[1] "%(size)d bajty"
 msgstr[2] "%(size)d bajtů"
 
-#: weblate_web/templatetags/downloads.py:43
+#: weblate_web/templatetags/downloads.py:47
 #, python-format
 msgid "%.1f KiB"
 msgstr "%.1f KiB"
 
-#: weblate_web/templatetags/downloads.py:45
+#: weblate_web/templatetags/downloads.py:49
 #, python-format
 msgid "%.1f MiB"
 msgstr "%.1f MiB"
 
-#: weblate_web/templatetags/downloads.py:46
+#: weblate_web/templatetags/downloads.py:50
 #, python-format
 msgid "%.1f GiB"
 msgstr "%.1f GiB"
 
-#: weblate_web/templatetags/downloads.py:53
+#: weblate_web/templatetags/downloads.py:57
 msgid "Sources tarball, bzip2 compressed"
 msgstr "Zdrojový tarball, komprimovaný bzipem2"
 
-#: weblate_web/templatetags/downloads.py:55
+#: weblate_web/templatetags/downloads.py:59
 msgid "Sources tarball, gzip compressed"
 msgstr "Zdrojový tarball, komprimový gzipem"
 
-#: weblate_web/templatetags/downloads.py:57
+#: weblate_web/templatetags/downloads.py:61
 msgid "Sources tarball, lzma compressed"
 msgstr "Zdrojový tarball, komprimový lzma"
 
-#: weblate_web/templatetags/downloads.py:59
+#: weblate_web/templatetags/downloads.py:63
 msgid "Sources tarball, xz compressed"
 msgstr "Zdrojový tarball, komprimový xz"
 
-#: weblate_web/templatetags/downloads.py:61
+#: weblate_web/templatetags/downloads.py:65
 msgid "Sources, zip compressed"
 msgstr "Zdrojáky, komprimované zipem"
 
-#: weblate_web/templatetags/downloads.py:63
+#: weblate_web/templatetags/downloads.py:67
 msgid "Sources, 7zip compressed"
 msgstr "Zdrojáky, komprimované 7zipem"
 
