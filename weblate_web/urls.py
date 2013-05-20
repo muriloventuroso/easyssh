@@ -65,7 +65,8 @@ sitemaps = {}
 for lang in settings.LANGUAGES:
     sitemaps[lang[0]] = PagesSitemap(lang[0])
 
-urlpatterns = patterns('',
+urlpatterns = patterns(
+    '',
     url(
         r'^$',
         TemplateView.as_view(template_name="index.html"),
