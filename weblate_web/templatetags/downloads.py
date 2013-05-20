@@ -34,11 +34,15 @@ def filesizeformat(num_bytes):
     """
     try:
         num_bytes = float(num_bytes)
-    except (TypeError,ValueError,UnicodeDecodeError):
+    except (TypeError, ValueError, UnicodeDecodeError):
         return _(u"0 bytes")
 
     if num_bytes < 1024:
-        return ungettext("%(size)d byte", "%(size)d bytes", num_bytes) % {'size': num_bytes}
+        return ungettext(
+            "%(size)d byte",
+            "%(size)d bytes",
+            num_bytes
+        ) % {'size': num_bytes}
     if num_bytes < 1024 * 1024:
         return _("%.1f KiB") % (num_bytes / 1024)
     if num_bytes < 1024 * 1024 * 1024:
@@ -47,7 +51,7 @@ def filesizeformat(num_bytes):
 
 
 @register.simple_tag
-def downloadlink(name, text = None):
+def downloadlink(name, text=None):
     if text is None:
         if name[-8:] == '.tar.bz2':
             text = _('Sources tarball, bzip2 compressed')
