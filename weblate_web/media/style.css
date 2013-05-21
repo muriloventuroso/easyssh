@@ -258,7 +258,7 @@ nav a {
 .lock {
     margin-top: 0.8em;
     border-radius: 0.3em;
-    box-shadow: inset 0.9em 0.8em 0 0 #004276,inset -0.9em 0.8em 0 0 #004276,inset 0em -0.4em 0 0 #004276;
+    box-shadow: inset 0.9em 0.8em 0 0 #004276,inset -0.9em 0.8em 0 0 #004276,inset 0 -0.4em 0 0 #004276;
     font-size: 18px;
     width: 2em;
     height: 1.8em;
@@ -410,7 +410,7 @@ nav a {
     border-top-left-radius: 0.5em;
     border-top-right-radius: 0.5em;
     bottom: 0.188em;
-    border-top: solid 0em transparent;
+    border-top: solid 0 transparent;
     position: relative;
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
@@ -432,7 +432,7 @@ nav a {
     border-top-left-radius: 0.5em;
     border-top-right-radius: 0.5em;
     bottom: 0.188em;
-    border-top: solid 0em transparent;
+    border-top: solid 0 transparent;
     position: absolute;
 
     -webkit-transform: rotate(180deg);
@@ -473,7 +473,7 @@ nav a {
     top: -0.4em;
     right: 0.4em;
     width: 0.4em;
-    height: 0em;
+    height: 0;
     border-bottom: 0.4em solid #004276;
     border-left: 0.4em solid transparent;
     border-right: 0.4em solid transparent;
@@ -515,8 +515,8 @@ nav a {
 }
 
 .newspaper::after {
-    -webkit-box-shadow: 0 0.2em 0 0 #004276,0 0.3em 0 0 #004276,0 0.3em 0 0 #004276,0.7em 0em 0 0 #004276,0.7em 0.3em 0 0 #004276,0.7em 0.8em 0 0 #004276,0em 0.8em 0 0 #004276,0.3em 0.8em 0 0 #004276,0.3em 1.1em 0 0 #004276,0em 1.1em 0 0 #004276,0.7em 1.1em 0 0 #004276,0.7em 1.4em 0 0 #004276,0.3em 1.4em 0 0 #004276,0em 1.4em 0 0 #004276,-0.4em 1.91em 0 0 #004276;
-    box-shadow: 0 0.2em 0 0 #004276,0 0.3em 0 0 #004276,0 0.3em 0 0 #004276,0.7em 0em 0 0 #004276,0.7em 0.3em 0 0 #004276,0.7em 0.8em 0 0 #004276,0em 0.8em 0 0 #004276,0.3em 0.8em 0 0 #004276,0.3em 1.1em 0 0 #004276,0em 1.1em 0 0 #004276,0.7em 1.1em 0 0 #004276,0.7em 1.4em 0 0 #004276,0.3em 1.4em 0 0 #004276,0em 1.4em 0 0 #004276,-0.4em 1.91em 0 0 #004276;
+    -webkit-box-shadow: 0 0.2em 0 0 #004276,0 0.3em 0 0 #004276,0 0.3em 0 0 #004276,0.7em 0 0 0 #004276,0.7em 0.3em 0 0 #004276,0.7em 0.8em 0 0 #004276,0em 0.8em 0 0 #004276,0.3em 0.8em 0 0 #004276,0.3em 1.1em 0 0 #004276,0em 1.1em 0 0 #004276,0.7em 1.1em 0 0 #004276,0.7em 1.4em 0 0 #004276,0.3em 1.4em 0 0 #004276,0em 1.4em 0 0 #004276,-0.4em 1.91em 0 0 #004276;
+    box-shadow: 0 0.2em 0 0 #004276,0 0.3em 0 0 #004276,0 0.3em 0 0 #004276,0.7em 0 0 0 #004276,0.7em 0.3em 0 0 #004276,0.7em 0.8em 0 0 #004276,0em 0.8em 0 0 #004276,0.3em 0.8em 0 0 #004276,0.3em 1.1em 0 0 #004276,0em 1.1em 0 0 #004276,0.7em 1.1em 0 0 #004276,0.7em 1.4em 0 0 #004276,0.3em 1.4em 0 0 #004276,0em 1.4em 0 0 #004276,-0.4em 1.91em 0 0 #004276;
     left: 0.1em;
     bottom: 1.7em;
     height: 0.2em;
@@ -569,8 +569,8 @@ nav a {
 }
 
 .download:after {
-    width: 0em;
-    height: 0em;
+    width: 0;
+    height: 0;
     content: '';
     position: absolute;
     border-style: solid;
@@ -650,7 +650,7 @@ nav a {
     width: 2.1em;
     height: 2.1em;
     position: relative;
-    border-radius: 1.5em 0em 1.5em 0em;
+    border-radius: 1.5em 0 1.5em 0;
 
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
@@ -666,7 +666,7 @@ nav a {
     top: 1.8em;
     right: 1.4em;
     width: 0.3em;
-    height: 0em;
+    height: 0;
     border-bottom: 0.5em solid #004276;
     border-left: 0.5em solid transparent;
     border-right: 0.5em solid transparent;
