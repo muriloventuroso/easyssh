@@ -2,7 +2,7 @@ $(function() {
     $('#languages').change(function () {
         window.location.href = $(this).val();
     });
-    $('a.screenshot').colorbox({
+    $('.screenshot').colorbox({
         rel:'gal',
         maxWidth:'100%',
         maxHeight:'100%',
