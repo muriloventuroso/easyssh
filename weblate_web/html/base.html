@@ -30,7 +30,7 @@
    <meta name="wot-verification" content="b166aac1728babda4ade" />
 </head>
  <body {% if LANGUAGE_BIDI %}class="dir-rtl"{% endif %}>
-<img id="icon" src="/media/weblate-128.png" width="128" height="128" alt="{% trans "Weblate logo" %}"/>
+<img class="logo" src="/media/weblate-128.png" width="128" height="128" alt="{% trans "Weblate logo" %}"/>
 <nav>
 <a href="{% url 'home' %}">{% trans "Home" %}</a>
 <a href="http://blog.cihar.com/archives/weblate/">{% trans "Blog" %}</a>
@@ -44,7 +44,7 @@
 <a href="{% url 'tour' %}">{% trans "Tour" %}</a>
 </nav>
 <header>
-<div id="language">
+<div class="language">
 {% trans "Language:" %}
 <select id="languages">
 {% for lang in LANGUAGES %}
@@ -57,12 +57,12 @@
 Weblate
 {% endblock %}
 </h1>
-<p id="headline">
+<p class="headline">
 {% block headline %}
 {% endblock %}
 </p>
 </header>
-<div id="content">
+<div class="content">
 {% block content %}
 {% endblock %}
 </div>
