@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-05-21 11:22+0200\n"
+"POT-Creation-Date: 2013-06-12 14:59+0200\n"
 "PO-Revision-Date: 2013-05-26 00:16+0200\n"
 "Last-Translator: Rodrigo Souza <rodrigo.chrome@live.com>\n"
-"Language-Team: Portuguese (Brazil) "
-"<http://l10n.cihar.com/projects/weblate/website/pt_BR/>\n"
+"Language-Team: Portuguese (Brazil) <http://l10n.cihar.com/projects/weblate/"
+"website/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -76,7 +76,8 @@ msgstr "Verificações de qualidade"
 
 #: weblate_web/data.py:71 weblate_web/html/features.html:150
 msgid "Weblate provides you various ways to promote your translation project."
-msgstr "O Weblate lhe fornece vários meios de promover seu projeto de tradução."
+msgstr ""
+"O Weblate lhe fornece vários meios de promover seu projeto de tradução."
 
 #: weblate_web/data.py:74 weblate_web/html/features.html:149
 msgid "Promotion"
@@ -238,17 +239,28 @@ msgid "Translation status"
 msgstr "Estado da tradução"
 
 #: weblate_web/html/contribute.html:45
+msgid "Fund"
+msgstr ""
+
+#: weblate_web/html/contribute.html:47
+#, python-format
+msgid ""
+"New <a href=\"%(url)s\">Weblate features</a> are also being <a href=\"%(url)s"
+"\">funded on Catincan</a>, you can support them there!"
+msgstr ""
+
+#: weblate_web/html/contribute.html:49
 msgid "Donate"
 msgstr "Doar"
 
-#: weblate_web/html/contribute.html:48
+#: weblate_web/html/contribute.html:52
 msgid ""
 "If you like Weblate you can support it's further development by donating."
 msgstr ""
 "Se você gostar do Weblate, você pode ajudar na evolução dele através de "
 "doações."
 
-#: weblate_web/html/contribute.html:61
+#: weblate_web/html/contribute.html:65
 msgid ""
 "You can also use <a href=\"http://www.bitcoin.org/\">Bitcoin is a peer-to-"
 "peer network</a> and send me Bitcoins to "
@@ -286,8 +298,8 @@ msgid ""
 "a/F8yMYg/weblate\">SUSE Studio Gallery</a>."
 msgstr ""
 "Caso você queira executar o Weblate na sua nuvem ou servidor virtual, você "
-"pode baixar a aplicação baseada em openSUSE 12.2 em <a "
-"href=\"http://susestudio.com/a/F8yMYg/weblate\">SUSE Studio Gallery</a>."
+"pode baixar a aplicação baseada em openSUSE 12.2 em <a href=\"http://"
+"susestudio.com/a/F8yMYg/weblate\">SUSE Studio Gallery</a>."
 
 #: weblate_web/html/download.html:30
 msgid ""
@@ -467,9 +479,9 @@ msgid ""
 "maintaining it."
 msgstr ""
 "Se está interessado em utilizar o Weblate para seu software livre, você pode "
-"solicitar que seja incluído em <a "
-"href=\"http://hosted.weblate.org/\">hosted.weblate.org</a>. Isso permitirá a "
-"você utilizar o Weblate sem ter que instalá-lo ou mantê-lo."
+"solicitar que seja incluído em <a href=\"http://hosted.weblate.org/\">hosted."
+"weblate.org</a>. Isso permitirá a você utilizar o Weblate sem ter que "
+"instalá-lo ou mantê-lo."
 
 #: weblate_web/html/hosting.html:17
 msgid "Conditions for free hosting"
@@ -544,10 +556,10 @@ msgid ""
 "contributors and let us know you want to use this option."
 msgstr ""
 "Para ativar um fluxo de trabalho automatizado no GitHub, você precisa ativar "
-"os ganchos de serviço do Weblate nas configurações utilizando "
-"<code>hosted.weblate.org</code> como URL. Se você quiser que o Weblate "
-"também incorpore as mudanças automaticamente, adicione o usuário do Weblate "
-"como colaborador e nos conte que você quer utilizar esta opção."
+"os ganchos de serviço do Weblate nas configurações utilizando <code>hosted."
+"weblate.org</code> como URL. Se você quiser que o Weblate também incorpore "
+"as mudanças automaticamente, adicione o usuário do Weblate como colaborador "
+"e nos conte que você quer utilizar esta opção."
 
 #: weblate_web/html/hosting.html:48
 msgid "Commercial hosting"
@@ -639,13 +651,11 @@ msgid ""
 "weblate\">subscribe</a> or <a href=\"https://lists.cihar.com/pipermail/"
 "weblate/\">browse archives</a>."
 msgstr ""
-"Existe a lista de discussão <a "
-"href=\"mailto:weblate@lists.cihar.com\">weblate@lists.cihar.com</a> onde você "
-"pode discutir várias coisas sobre o Weblate. Você pode <a "
-"href=\"https://lists.cihar.com/cgi-bin/mailman/listinfo/weblate\">se "
-"inscrever</a> ou <a "
-"href=\"https://lists.cihar.com/pipermail/weblate/\">navegar pelos "
-"arquivos</a>."
+"Existe a lista de discussão <a href=\"mailto:weblate@lists.cihar.com"
+"\">weblate@lists.cihar.com</a> onde você pode discutir várias coisas sobre o "
+"Weblate. Você pode <a href=\"https://lists.cihar.com/cgi-bin/mailman/"
+"listinfo/weblate\">se inscrever</a> ou <a href=\"https://lists.cihar.com/"
+"pipermail/weblate/\">navegar pelos arquivos</a>."
 
 #: weblate_web/html/support.html:24
 msgid ""
@@ -653,9 +663,9 @@ msgid ""
 "comp.web.weblate\">Gmane</a> where you can browse archives or use NNTP "
 "interface."
 msgstr ""
-"A lista de discussão também está disponível no <a "
-"href=\"http://dir.gmane.org/gmane.comp.web.weblate\">Gmane</a> onde você pode "
-"navegar pelos arquivos ou usar uma interface NNTP."
+"A lista de discussão também está disponível no <a href=\"http://dir.gmane."
+"org/gmane.comp.web.weblate\">Gmane</a> onde você pode navegar pelos arquivos "
+"ou usar uma interface NNTP."
 
 #: weblate_web/html/support.html:27
 msgid "IRC"
@@ -669,9 +679,9 @@ msgid ""
 "\">webchat</a> there."
 msgstr ""
 "Quando algumas das pessoas interessadas estão conectadas, você também pode "
-"encontrar ajuda no canal #weblate na rede <a "
-"href=\"http://freenode.net/\">freenode</a>. Você também pode usar o <a "
-"href=\"http://webchat.freenode.net?channels=weblate\">webchat</a> aqui."
+"encontrar ajuda no canal #weblate na rede <a href=\"http://freenode.net/"
+"\">freenode</a>. Você também pode usar o <a href=\"http://webchat.freenode."
+"net?channels=weblate\">webchat</a> aqui."
 
 #: weblate_web/html/support.html:33
 msgid "Contact"
@@ -711,10 +721,9 @@ msgid ""
 "server</a>. You can register there and work under your username or just use "
 "<code>demo</code> account with <code>demo</code> password."
 msgstr ""
-"Você pode testar o Weblate em nosso <a "
-"href=\"http://demo.weblate.org\">Servidor de demonstração</a>. Você pode "
-"registrar lá e trabalhar com seu login ou só usar a conta <code>demo</code> "
-"com a senha <code>demo</code>."
+"Você pode testar o Weblate em nosso <a href=\"http://demo.weblate.org"
+"\">Servidor de demonstração</a>. Você pode registrar lá e trabalhar com seu "
+"login ou só usar a conta <code>demo</code> com a senha <code>demo</code>."
 
 #: weblate_web/html/try.html:17
 msgid "Appliances"
