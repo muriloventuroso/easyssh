@@ -66,6 +66,7 @@ TIME_ZONE = 'Europe/Prague'
 LANGUAGE_CODE = 'en-us'
 
 LANGUAGES = (
+    ('be', u'беларуская'),
     #('ca', u'Català'),
     ('cs', u'Česky'),
     ('da', 'Dansk'),
@@ -82,11 +83,12 @@ LANGUAGES = (
     #('id', 'Indonesia'),
     ('ja', u'日本語'),
     #('ko', u'한국어'),
-    #('nl', 'Nederlands'),
+    ('nl', 'Nederlands'),
     ('pl', 'Polski'),
     #('pt', u'Português'),
     ('pt-br', u'Português brasileiro'),
     ('ru', u'Русский'),
+    ('sk', u'Slovenčina'),
     ('sl', u'Slovenščina'),
     ('sv', u'Svenska'),
     ('tr', u'Türkçe'),
