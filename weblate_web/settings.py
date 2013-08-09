@@ -75,7 +75,7 @@ LANGUAGES = (
     ('en-gb', 'English (Great Britain)'),
     ('el', 'Ελληνικά'),
     ('es', u'Español'),
-    #('fi', 'Suomi'),
+    ('fi', 'Suomi'),
     ('fr', u'Français'),
     #('gl', 'Galego'),
     #('he', u'עִבְרִית'),
