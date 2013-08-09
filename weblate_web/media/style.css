@@ -39,6 +39,31 @@ a:hover {
 }
 .language {
     float: right;
+    border: 1px solid #004276;
+    padding: .3em;
+    border-radius: .3em;
+}
+.language:hover {
+    border: 1px solid #c00;
+}
+.languages {
+    border: 1px solid #004276;
+    border-radius: .3em;
+    padding: .3em;
+    background: white;
+    display: none;
+    position: absolute;
+    width: 25em;
+}
+.choice {
+    -moz-column-count:2; /* Firefox */
+    -webkit-column-count:2; /* Safari and Chrome */
+    column-count:2;
+}
+.languages a {
+    display: block;
+    padding: .2em;
+    text-align: center;
 }
 .screenshot {
     display: inline-block;

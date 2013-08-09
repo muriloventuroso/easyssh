@@ -12,6 +12,7 @@
   <meta name="description" content="{% block description %}{% endblock %}" />
   <meta name="keywords" content="weblate,git,gettext,resources,po,mo,qts,CAT,web,{% trans "translate" context "Keyword" %}" />
   <link rel="stylesheet" type="text/css" href="/media/style.css">
+  <link rel="stylesheet" type="text/css" href="/media/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="/media/colorbox.css">
   <link rel="shortcut icon" href="/media/favicon.ico" type="image/x-icon" />
   <link rel="icon" href="/media/favicon.ico" type="image/x-icon" />
@@ -45,14 +46,20 @@
 <a href="{% url 'tour' %}">{% trans "Tour" %}</a>
 </nav>
 <header>
-<div class="language">
-{% trans "Language:" %}
-<select id="languages">
+<a class="language" href="#">
+<span class="icon-globe"></span>
+{% for lang in LANGUAGES %}{% if lang.0 == LANGUAGE_CODE %}{{ lang.1 }}{% endif %}{% endfor %}
+</a>
+
+<div class="languages">
+<div class="choice">
 {% for lang in LANGUAGES %}
-    <option {% if lang.0 == LANGUAGE_CODE %}selected="selected"{% endif %} value="{{ request.path|chlocale:lang.0 }}">{{ lang.1 }}</option>
+<a href="{{ request.path|chlocale:lang.0 }}">{{ lang.1 }}</a>
 {% endfor %}
-</select>
 </div>
+<a href="{% url 'contribute' %}#translate">{% trans "Help with translations!" %}</a>
+</div>
+
 <h1>
 {% block header %}
 Weblate
