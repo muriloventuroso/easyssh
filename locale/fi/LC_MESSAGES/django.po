@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-06-12 14:59+0200\n"
+"POT-Creation-Date: 2013-08-09 15:22+0200\n"
 "PO-Revision-Date: 2013-08-01 13:55+0200\n"
 "Last-Translator: Henry Heinänen <h.heinanen@gmail.com>\n"
 "Language-Team: Finnish <http://l10n.cihar.com/projects/weblate/website/fi/>\n"
@@ -26,14 +26,14 @@ msgstr "Katsaus omista käännöksistäsi pääsivulla."
 msgid "Own translations"
 msgstr "Omat käännökset"
 
-#: weblate_web/data.py:39 weblate_web/html/features.html:70
+#: weblate_web/data.py:39 weblate_web/html/features.html:46
 msgid ""
 "Translator can always see important context information like comments or "
 "corresponding source code."
 msgstr ""
 "Kääntäjä voi aina nähdä tärkeitä tietoja, kuten kommentteja tai lähdekoodin."
 
-#: weblate_web/data.py:42 weblate_web/html/features.html:69
+#: weblate_web/data.py:42 weblate_web/html/features.html:45
 msgid "Translation context"
 msgstr "Käännöksen sisältö"
 
@@ -48,7 +48,7 @@ msgstr ""
 msgid "Project overview"
 msgstr "Projektin yleistiedot"
 
-#: weblate_web/data.py:55 weblate_web/html/features.html:80
+#: weblate_web/data.py:55 weblate_web/html/features.html:52
 msgid ""
 "Translators can define their own glossary to stay consistent in frequently "
 "used terminology."
@@ -56,26 +56,26 @@ msgstr ""
 "Kääntäjät voivat määritellä oman sanaston pysyäkseen johdonmukaisena usein "
 "käytettyjen termien kanssa."
 
-#: weblate_web/data.py:58 weblate_web/html/features.html:79
+#: weblate_web/data.py:58 weblate_web/html/features.html:51
 msgid "Glossary"
 msgstr "Sanasto"
 
-#: weblate_web/data.py:63 weblate_web/html/base-features.html:19
+#: weblate_web/data.py:63 weblate_web/html/base-features.html:11
 msgid ""
 "Customizable quality checks will help you in improving quality of "
 "translations."
 msgstr ""
 "Muokattavat laatutarkistukset auttavat sinua parantamaan käännösten laatua."
 
-#: weblate_web/data.py:66 weblate_web/html/base-features.html:18
+#: weblate_web/data.py:66 weblate_web/html/base-features.html:10
 msgid "Quality checks"
 msgstr "Laatu tarkastukset"
 
-#: weblate_web/data.py:71 weblate_web/html/features.html:150
+#: weblate_web/data.py:71 weblate_web/html/features.html:94
 msgid "Weblate provides you various ways to promote your translation project."
 msgstr "Weblate tarjoaa sinulle erilaisia tapoja tukea käännösprojektia."
 
-#: weblate_web/data.py:74 weblate_web/html/features.html:149
+#: weblate_web/data.py:74 weblate_web/html/features.html:93
 msgid "Promotion"
 msgstr "Tukeminen"
 
@@ -105,21 +105,21 @@ msgstr ""
 "lähettäneet koulutetut\n"
 "apinamme korjaamaan ongelman."
 
-#: weblate_web/html/base-features.html:8
+#: weblate_web/html/base-features.html:4
 msgid "Continuous translation"
 msgstr "Jatkuva kääntäminen"
 
-#: weblate_web/html/base-features.html:9
+#: weblate_web/html/base-features.html:5
 msgid ""
 "Automated translation process can closely follow development of your project."
 msgstr ""
 "Automaattinen käännös prosessi voi seurata tiiviisti projektisi kehitystä."
 
-#: weblate_web/html/base-features.html:28
+#: weblate_web/html/base-features.html:16
 msgid "Attribution"
 msgstr "Nimeä"
 
-#: weblate_web/html/base-features.html:29
+#: weblate_web/html/base-features.html:17
 msgid ""
 "All your translators will be properly credited in the version control system."
 msgstr ""
@@ -131,53 +131,55 @@ msgctxt "Keyword"
 msgid "translate"
 msgstr "Käännä"
 
-#: weblate_web/html/base.html:34
+#: weblate_web/html/base.html:35
 msgid "Weblate logo"
 msgstr "Weblate logo"
 
-#: weblate_web/html/base.html:36
+#: weblate_web/html/base.html:37
 msgid "Home"
 msgstr "Koti"
 
-#: weblate_web/html/base.html:37
+#: weblate_web/html/base.html:38
 msgid "Blog"
 msgstr "Blogi"
 
-#: weblate_web/html/base.html:38
+#: weblate_web/html/base.html:39
 msgid "Try"
 msgstr "Kokeile"
 
-#: weblate_web/html/base.html:39
+#: weblate_web/html/base.html:40
 msgid "Features"
 msgstr "Ominaisuudet"
 
-#: weblate_web/html/base.html:40
+#: weblate_web/html/base.html:41
 msgid "Docs"
 msgstr "Asiakirjat"
 
-#: weblate_web/html/base.html:41 weblate_web/html/download.html:12
+#: weblate_web/html/base.html:42 weblate_web/html/download.html:12
 msgid "Download"
 msgstr "Lataa"
 
-#: weblate_web/html/base.html:42
+#: weblate_web/html/base.html:43
 msgid "Hosting"
 msgstr "Isännöi"
 
-#: weblate_web/html/base.html:43
+#: weblate_web/html/base.html:44
 msgid "Contribute"
 msgstr "Osallistu"
 
-#: weblate_web/html/base.html:44
+#: weblate_web/html/base.html:45
 msgid "Support"
 msgstr "Tuki"
 
-#: weblate_web/html/base.html:45
+#: weblate_web/html/base.html:46
 msgid "Tour"
 msgstr "Kierros"
 
-#: weblate_web/html/base.html:49
-msgid "Language:"
-msgstr "Kieli:"
+#: weblate_web/html/base.html:60
+#, fuzzy
+#| msgid "Own translations"
+msgid "Help with translations!"
+msgstr "Omat käännökset"
 
 #: weblate_web/html/contribute.html:4 weblate_web/html/contribute.html.py:5
 msgid "Contribute to Weblate"
@@ -193,9 +195,8 @@ msgid ""
 "docs.weblate.org/en/latest/contributing.html\">Contributing chapter</a> of "
 "our documentation."
 msgstr ""
-"Löydät tarkempia tietoja tästä aiheesta <a "
-"href=\"http://docs.weblate.org/en/latest/contributing.html\">Osallistuminen "
-"luvussa</a> meidän asiakirjoista."
+"Löydät tarkempia tietoja tästä aiheesta <a href=\"http://docs.weblate.org/en/"
+"latest/contributing.html\">Osallistuminen luvussa</a> meidän asiakirjoista."
 
 #: weblate_web/html/contribute.html:15 weblate_web/html/download.html:38
 msgid "Code"
@@ -206,16 +207,16 @@ msgid ""
 "Weblate is being developed on <a href=\"https://github.com/nijel/weblate"
 "\">Github</a>, you can fork it there or just:"
 msgstr ""
-"Weblate on kehitetty <a href=\"https://github.com/nijel/weblate\">Github</a>, "
-"voit haarautua siellä tai vain:"
+"Weblate on kehitetty <a href=\"https://github.com/nijel/weblate\">Github</"
+"a>, voit haarautua siellä tai vain:"
 
 #: weblate_web/html/contribute.html:26
 msgid ""
 "This website is stored on <a href=\"https://github.com/nijel/weblate-web"
 "\">Github</a> as well:"
 msgstr ""
-"Tämä sivusto on tallennettu <a href=\"https://github.com/nijel/weblate-"
-"web\">GitHub</a> samoin:"
+"Tämä sivusto on tallennettu <a href=\"https://github.com/nijel/weblate-web"
+"\">GitHub</a> samoin:"
 
 #: weblate_web/html/contribute.html:33
 msgid "Translate"
@@ -226,8 +227,8 @@ msgid ""
 "You can translate Weblate using Weblate installation at <a href=\"https://"
 "l10n.cihar.com/engage/weblate/\">l10n.cihar.com</a>."
 msgstr ""
-"Voit kääntää Weblatea käyttäen Weblate asennusta <a "
-"href=\"https://l10n.cihar.com/engage/weblate/\">l10n.cihar.com</a>."
+"Voit kääntää Weblatea käyttäen Weblate asennusta <a href=\"https://l10n."
+"cihar.com/engage/weblate/\">l10n.cihar.com</a>."
 
 #: weblate_web/html/contribute.html:41
 msgid "Translation status"
@@ -243,8 +244,8 @@ msgid ""
 "New <a href=\"%(url)s\">Weblate features</a> are also being <a href=\"%(url)s"
 "\">funded on Catincan</a>, you can support them there!"
 msgstr ""
-"Uusia <a href=\"%(url)s\">Weblate ominaisuuksia</a> ovat myös <a href=\"%"
-"(url)s\">Catincanin rahoittama</a>, voit tukea niitä siellä!"
+"Uusia <a href=\"%(url)s\">Weblate ominaisuuksia</a> ovat myös <a href="
+"\"%(url)s\">Catincanin rahoittama</a>, voit tukea niitä siellä!"
 
 #: weblate_web/html/contribute.html:49
 msgid "Donate"
@@ -257,6 +258,10 @@ msgstr ""
 "Jos pidät Weblate ohjelmasta voit lahjoittamalla tukea sen kehittämistä."
 
 #: weblate_web/html/contribute.html:65
+msgid "Donate Bitcoins"
+msgstr ""
+
+#: weblate_web/html/contribute.html:69
 msgid ""
 "You can also use <a href=\"http://www.bitcoin.org/\">Bitcoin is a peer-to-"
 "peer network</a> and send me Bitcoins to "
@@ -283,9 +288,8 @@ msgid ""
 "For openSUSE/SLES users, there are binary packages available in the <a href="
 "\"http://software.opensuse.org/package/weblate/\">openSUSE Buildservice</a>."
 msgstr ""
-"OpenSUSE/SLES käyttäjille on tarjolla binääripaketit <a "
-"href=\"http://software.opensuse.org/package/weblate/\">openSUSE "
-"Buildservice</a>."
+"OpenSUSE/SLES käyttäjille on tarjolla binääripaketit <a href=\"http://"
+"software.opensuse.org/package/weblate/\">openSUSE Buildservice</a>."
 
 #: weblate_web/html/download.html:29
 msgid ""
@@ -294,16 +298,16 @@ msgid ""
 "a/F8yMYg/weblate\">SUSE Studio Gallery</a>."
 msgstr ""
 "Jos haluat suorittaa Weblate pilvipalvelussa tai virtuaalipalvelimessa, voit "
-"ladata laitteen joka pohjautuu openSUSE 12.2 <a "
-"href=\"http://susestudio.com/a/F8yMYg/weblate\">SUSE Studio Galleria</a>."
+"ladata laitteen joka pohjautuu openSUSE 12.2 <a href=\"http://susestudio.com/"
+"a/F8yMYg/weblate\">SUSE Studio Galleria</a>."
 
 #: weblate_web/html/download.html:30
 msgid ""
 "Check <a href=\"http://docs.weblate.org/en/latest/install.html#appliance"
 "\">our documentation</a> for more information about appliance setup."
 msgstr ""
-"Tarkista <a href=\"http://docs.weblate.org/en/latest/install.html#appliance\">"
-"ohjeistamme</a> lisätietoja laitteen asennukseen."
+"Tarkista <a href=\"http://docs.weblate.org/en/latest/install.html#appliance"
+"\">ohjeistamme</a> lisätietoja laitteen asennukseen."
 
 #: weblate_web/html/download.html:34
 msgid ""
@@ -311,10 +315,10 @@ msgid ""
 "\">BitNami stack</a>, that allows you native installation on Windows, Linux "
 "or Mac OS X and provides virtual images for running Weblate."
 msgstr ""
-"Weblateen on saatavana myös <a "
-"href=\"http://bitnami.org/stack/weblate\">BitNami stack</a>, jonka avulla voi "
-"suorittaa alkuperäisen asennuksen Windows, Linux tai Mac OS X koneisiin ja "
-"se tarjoaa myös virtuaali imagen käyttämisen Weblatessa."
+"Weblateen on saatavana myös <a href=\"http://bitnami.org/stack/weblate"
+"\">BitNami stack</a>, jonka avulla voi suorittaa alkuperäisen asennuksen "
+"Windows, Linux tai Mac OS X koneisiin ja se tarjoaa myös virtuaali imagen "
+"käyttämisen Weblatessa."
 
 #: weblate_web/html/features.html:4 weblate_web/html/features.html.py:5
 msgid "Weblate features"
@@ -324,40 +328,40 @@ msgstr "Weblate ominaisuudet"
 msgid "Weblate is a feature rich computer aided translation tool."
 msgstr "Weblate on täysipainoisesti tuettu tietokoneen käännöstyökalu."
 
-#: weblate_web/html/features.html:19
+#: weblate_web/html/features.html:15
 msgid "Access control"
 msgstr "Käyttöoikeuksien valvonta"
 
-#: weblate_web/html/features.html:20
+#: weblate_web/html/features.html:16
 msgid "Access rights can be fine tuned depending on your environment."
 msgstr "Käyttöoikeudet voidaan hienosäätää eri verkkoympäristöissä."
 
-#: weblate_web/html/features.html:29
+#: weblate_web/html/features.html:21
 msgid "Notifications"
 msgstr "Ilmoitukset"
 
-#: weblate_web/html/features.html:30
+#: weblate_web/html/features.html:22
 msgid ""
 "Translators can be notified on new strings to translate or other events."
 msgstr ""
 "Kääntäjille voidaan ilmoittaa jos uusia käännöksiä tarvitaan tai heitä "
 "halutaan mukaan muihin tapahtumiin."
 
-#: weblate_web/html/features.html:39
+#: weblate_web/html/features.html:27
 msgid "Ready for cloud"
 msgstr "Valmiina pilvipalveluun"
 
-#: weblate_web/html/features.html:40
+#: weblate_web/html/features.html:28
 msgid ""
 "Weblate comes with an appliance, which is ready to deploy in your cloud."
 msgstr ""
 "Weblaten mukana tulee väline, mikä on valmis lähettämään pilvipalveluun."
 
-#: weblate_web/html/features.html:49
+#: weblate_web/html/features.html:33
 msgid "File formats"
 msgstr "Tiedostomuodot"
 
-#: weblate_web/html/features.html:50
+#: weblate_web/html/features.html:34
 msgid ""
 "Weblate supports all widely used file formats for localisation like Gettext "
 "or resource strings."
@@ -365,11 +369,11 @@ msgstr ""
 "Yleisesti käytetty weblate tukee lokalisoituja tiedostomuotoja, kuten "
 "Gettext tai resource strings."
 
-#: weblate_web/html/features.html:59
+#: weblate_web/html/features.html:39
 msgid "Branches support"
 msgstr "Branches tuki"
 
-#: weblate_web/html/features.html:60
+#: weblate_web/html/features.html:40
 msgid ""
 "Weblate can handle different versions of the translation by pushing them to "
 "different branches automatically."
@@ -377,11 +381,11 @@ msgstr ""
 "Weblate pystyy käsittelemään eri versioita käännöksistä, työntämällä ne eri "
 "haaroihin automaattisesti."
 
-#: weblate_web/html/features.html:89
+#: weblate_web/html/features.html:57
 msgid "Acquiring feedback"
 msgstr "Palautteen hankkiminen"
 
-#: weblate_web/html/features.html:90
+#: weblate_web/html/features.html:58
 msgid ""
 "You can also use Weblate to acquire feedback on source strings and thus "
 "improve them."
@@ -389,46 +393,46 @@ msgstr ""
 "Voit myös käyttää Weblatea saadaksesi palautetta lähde teksteistä ja siten "
 "parantaa niitä."
 
-#: weblate_web/html/features.html:99
+#: weblate_web/html/features.html:63
 msgid "Export and import"
 msgstr "Vie ja tuo"
 
-#: weblate_web/html/features.html:100
+#: weblate_web/html/features.html:64
 msgid "Translations can be downloaded for offline translation and merged back."
 msgstr "Käännöksiä voi ladata offline käännettäväksi ja yhdistää takaisin."
 
-#: weblate_web/html/features.html:109
+#: weblate_web/html/features.html:69
 msgid "Integrated"
 msgstr "Integroitu"
 
-#: weblate_web/html/features.html:110
+#: weblate_web/html/features.html:70
 msgid "Translations are managed within same version control system as code."
 msgstr ""
 "Käännökset hallitaan samalla tavalla versionhallintajärjestelmässä kuin "
 "koodi."
 
-#: weblate_web/html/features.html:119
+#: weblate_web/html/features.html:75
 msgid "Documentation"
 msgstr "Ohjeet"
 
-#: weblate_web/html/features.html:120
+#: weblate_web/html/features.html:76
 msgid ""
 "Weblate comes with comprehensive documentation covering both setup and usage."
 msgstr "Weblaten mukana tulee kattava ohjeistus asennuksesta ja käytöstä."
 
-#: weblate_web/html/features.html:129
+#: weblate_web/html/features.html:81
 msgid "Review"
 msgstr "Tarkista"
 
-#: weblate_web/html/features.html:130
+#: weblate_web/html/features.html:82
 msgid "Translators have several options to review contributions made by peers."
 msgstr "Kääntäjillä on useita vaihtoehtoja tarkistaa vertaisten osuuksia."
 
-#: weblate_web/html/features.html:139
+#: weblate_web/html/features.html:87
 msgid "Languages"
 msgstr "Kielet"
 
-#: weblate_web/html/features.html:140
+#: weblate_web/html/features.html:88
 msgid ""
 "Weblate supports over 150 languages out of the box, others can be defined by "
 "administrator."
@@ -436,11 +440,11 @@ msgstr ""
 "Weblate tukee yli 150 kieleltä luovasti, toiset voivat järjestelmänvalvojan "
 "määrittämiä."
 
-#: weblate_web/html/features.html:159
+#: weblate_web/html/features.html:99
 msgid "Reports"
 msgstr "Raportit"
 
-#: weblate_web/html/features.html:160
+#: weblate_web/html/features.html:100
 msgid ""
 "Weblate generates various reports to provide information about project "
 "activity."
@@ -467,9 +471,8 @@ msgid ""
 "maintaining it."
 msgstr ""
 "Jos olet kiinnostunut käyttämään ilmaista Weblate ohjelmaa, voit pyytää "
-"meitä liittämään sen <a "
-"href=\"http://hosted.weblate.org/\">hosted.weblate.org</a>. Näin voit käyttää "
-"Weblatea ilman että asennat ja ylläpidät sitä."
+"meitä liittämään sen <a href=\"http://hosted.weblate.org/\">hosted.weblate."
+"org</a>. Näin voit käyttää Weblatea ilman että asennat ja ylläpidät sitä."
 
 #: weblate_web/html/hosting.html:17
 msgid "Conditions for free hosting"
@@ -480,9 +483,8 @@ msgid ""
 "Translated content has to be released under <a href=\"http://en.wikipedia."
 "org/wiki/Free_software_license\">free license</a>."
 msgstr ""
-"Käännettyä sisältöä pitää julkaista lisenssin alaisuudessa <a "
-"href=\"http://en.wikipedia.org/wiki/Free_software_license\"> ilmainen "
-"lisenssi</a>."
+"Käännettyä sisältöä pitää julkaista lisenssin alaisuudessa <a href=\"http://"
+"en.wikipedia.org/wiki/Free_software_license\"> ilmainen lisenssi</a>."
 
 #: weblate_web/html/hosting.html:21
 msgid ""
@@ -503,8 +505,8 @@ msgid ""
 "Contact <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> and include at "
 "least following information:"
 msgstr ""
-"Ota yhteyttä <a href=\"mailto:michal@cihar.com\"> Michal Čihař</a> ja viestin "
-"on sisällettävä vähintään seuraavat tiedot:"
+"Ota yhteyttä <a href=\"mailto:michal@cihar.com\"> Michal Čihař</a> ja "
+"viestin on sisällettävä vähintään seuraavat tiedot:"
 
 #: weblate_web/html/hosting.html:32
 msgid "Information about your project."
@@ -534,8 +536,8 @@ msgid ""
 msgstr ""
 "Kaikki käännetyt arkistot ovat saatavilla <code>git.weblate.org</code>, "
 "käyttää samanlaista nimeämiskäytäntöä kuin verkkosivuilla - hello/master "
-"käännös julkaistaan sivulla <code>git://git.weblate.org/hello-"
-"master.git</code>."
+"käännös julkaistaan sivulla <code>git://git.weblate.org/hello-master.git</"
+"code>."
 
 #: weblate_web/html/hosting.html:45
 msgid ""
@@ -545,8 +547,8 @@ msgid ""
 "contributors and let us know you want to use this option."
 msgstr ""
 "Ottaaksesi käyttöön automaattisen työnkulkuprosessi GitHubin, sinun on on "
-"otettava käyttöön Weblate palvelu liitos <code>hosted.weblate.org</code> "
-"URL-asetuksissa. Jos haluat Weblaten tekemään automaattisia muutoksia, lisää "
+"otettava käyttöön Weblate palvelu liitos <code>hosted.weblate.org</code> URL-"
+"asetuksissa. Jos haluat Weblaten tekemään automaattisia muutoksia, lisää "
 "Weblate käyttäjä avustajiin ja kerro meille että haluat käyttää tätä "
 "vaihtoehtoa."
 
@@ -625,9 +627,8 @@ msgid ""
 "\">issue tracker on GitHub</a>."
 msgstr ""
 "Oletko löytänyt mitään ongelmia käyttäessäsi Weblatea? Onko sinulla "
-"aavistustakaan siitä, miten parantaa sitä? Ilmoita siitä <a "
-"href=\"https://github.com/nijel/weblate/issues\">vikaseurantaohjelma "
-"GitHub</a>."
+"aavistustakaan siitä, miten parantaa sitä? Ilmoita siitä <a href=\"https://"
+"github.com/nijel/weblate/issues\">vikaseurantaohjelma GitHub</a>."
 
 #: weblate_web/html/support.html:17
 msgid "Mailing list"
@@ -641,12 +642,11 @@ msgid ""
 "weblate\">subscribe</a> or <a href=\"https://lists.cihar.com/pipermail/"
 "weblate/\">browse archives</a>."
 msgstr ""
-"Täällä on postituslista <a "
-"href=\"mailto:weblate@lists.cihar.com\">weblate@lists.cihar.com</a>, jossa "
-"voit keskustella Weblaten eri asioista. Voit <a "
-"href=\"https://lists.cihar.com/cgi-bin/mailman/listinfo/weblate\">tilata</a> "
-"tai <a href=\"https://lists.cihar.com/pipermail/weblate/\">selata "
-"arkistoja</a>."
+"Täällä on postituslista <a href=\"mailto:weblate@lists.cihar.com"
+"\">weblate@lists.cihar.com</a>, jossa voit keskustella Weblaten eri "
+"asioista. Voit <a href=\"https://lists.cihar.com/cgi-bin/mailman/listinfo/"
+"weblate\">tilata</a> tai <a href=\"https://lists.cihar.com/pipermail/weblate/"
+"\">selata arkistoja</a>."
 
 #: weblate_web/html/support.html:24
 msgid ""
@@ -654,9 +654,9 @@ msgid ""
 "comp.web.weblate\">Gmane</a> where you can browse archives or use NNTP "
 "interface."
 msgstr ""
-"Lista on saatavilla myös <a "
-"href=\"http://dir.gmane.org/gmane.comp.web.weblate\">Gmane</a> jossa voit "
-"selata arkistoja tai käyttää NNTP käyttöliittymää."
+"Lista on saatavilla myös <a href=\"http://dir.gmane.org/gmane.comp.web."
+"weblate\">Gmane</a> jossa voit selata arkistoja tai käyttää NNTP "
+"käyttöliittymää."
 
 #: weblate_web/html/support.html:27
 msgid "IRC"
@@ -683,9 +683,8 @@ msgid ""
 "You can also contact <a href=\"mailto:michal@cihar.com?subject=Weblate"
 "\">Michal Čihař</a>, who is author of Weblate."
 msgstr ""
-"Voit myös ottaa yhteyttä <a "
-"href=\"mailto:michal@cihar.com?subject=Weblate\">Michal Čihař</a>, joka on "
-"luonut Weblaten."
+"Voit myös ottaa yhteyttä <a href=\"mailto:michal@cihar.com?subject=Weblate"
+"\">Michal Čihař</a>, joka on luonut Weblaten."
 
 #: weblate_web/html/tour.html:4 weblate_web/html/tour.html.py:5
 msgid "Weblate tour"
@@ -715,8 +714,8 @@ msgid ""
 msgstr ""
 "Voit kokeilla miten Weblate meidän <a href=\"http://demo.weblate.org\"> demo "
 "palvelimelle</a>. Voit rekisteröityä siellä ja työskennellä käyttäjänimesi "
-"alaisuudessa tai vain käyttää <code>demo</code> käyttäjätiliä "
-"<code>demo</code> salasanan kanssa."
+"alaisuudessa tai vain käyttää <code>demo</code> käyttäjätiliä <code>demo</"
+"code> salasanan kanssa."
 
 #: weblate_web/html/try.html:17
 msgid "Appliances"
@@ -771,3 +770,6 @@ msgstr "Lähteet, zip pakattuja"
 #: weblate_web/templatetags/downloads.py:67
 msgid "Sources, 7zip compressed"
 msgstr "Lähteet, 7zip pakattuja"
+
+#~ msgid "Language:"
+#~ msgstr "Kieli:"

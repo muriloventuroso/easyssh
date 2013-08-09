@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-06-12 14:59+0200\n"
+"POT-Creation-Date: 2013-08-09 15:22+0200\n"
 "PO-Revision-Date: 2013-08-01 14:19+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Polish <http://l10n.cihar.com/projects/weblate/website/pl/>\n"
@@ -27,7 +27,7 @@ msgstr "Przegląd własnych tłumaczeń na stronie głównej."
 msgid "Own translations"
 msgstr "Własne tłumaczenia"
 
-#: weblate_web/data.py:39 weblate_web/html/features.html:70
+#: weblate_web/data.py:39 weblate_web/html/features.html:46
 msgid ""
 "Translator can always see important context information like comments or "
 "corresponding source code."
@@ -35,7 +35,7 @@ msgstr ""
 "Tłumacz może zawsze zobaczyć ważne informacje kontekstowe, takie jak "
 "komentarze lub odpowiedni kod źródłowy."
 
-#: weblate_web/data.py:42 weblate_web/html/features.html:69
+#: weblate_web/data.py:42 weblate_web/html/features.html:45
 msgid "Translation context"
 msgstr "Kontekst tłumaczenia"
 
@@ -50,7 +50,7 @@ msgstr ""
 msgid "Project overview"
 msgstr "Przegląd projektu"
 
-#: weblate_web/data.py:55 weblate_web/html/features.html:80
+#: weblate_web/data.py:55 weblate_web/html/features.html:52
 msgid ""
 "Translators can define their own glossary to stay consistent in frequently "
 "used terminology."
@@ -58,26 +58,26 @@ msgstr ""
 "Tłumacze mogą definiować własne słowniki w celu zachowania spójności często "
 "używanej terminologii."
 
-#: weblate_web/data.py:58 weblate_web/html/features.html:79
+#: weblate_web/data.py:58 weblate_web/html/features.html:51
 msgid "Glossary"
 msgstr "Słownik"
 
-#: weblate_web/data.py:63 weblate_web/html/base-features.html:19
+#: weblate_web/data.py:63 weblate_web/html/base-features.html:11
 msgid ""
 "Customizable quality checks will help you in improving quality of "
 "translations."
 msgstr "Konfigurowalne kontrole jakości pomogą w poprawie jakości tłumaczeń."
 
-#: weblate_web/data.py:66 weblate_web/html/base-features.html:18
+#: weblate_web/data.py:66 weblate_web/html/base-features.html:10
 msgid "Quality checks"
 msgstr "Kontrole jakości"
 
-#: weblate_web/data.py:71 weblate_web/html/features.html:150
+#: weblate_web/data.py:71 weblate_web/html/features.html:94
 msgid "Weblate provides you various ways to promote your translation project."
 msgstr ""
 "Weblate dostarcza różnych sposobów promowania twojego projektu tłumaczenia."
 
-#: weblate_web/data.py:74 weblate_web/html/features.html:149
+#: weblate_web/data.py:74 weblate_web/html/features.html:93
 msgid "Promotion"
 msgstr "Promocja"
 
@@ -106,22 +106,22 @@ msgstr ""
 "Serwer miał poważne problemy, próbując obsłużyć twoje żądanie. Intensywnie "
 "pracujemy nad tym, aby takie problemy już więcej się nie powtórzyły."
 
-#: weblate_web/html/base-features.html:8
+#: weblate_web/html/base-features.html:4
 msgid "Continuous translation"
 msgstr "Tłumaczenie ciągłe"
 
-#: weblate_web/html/base-features.html:9
+#: weblate_web/html/base-features.html:5
 msgid ""
 "Automated translation process can closely follow development of your project."
 msgstr ""
 "Zautomatyzowany proces tłumaczenia może dokładnie śledzić rozwój twojego "
 "projektu."
 
-#: weblate_web/html/base-features.html:28
+#: weblate_web/html/base-features.html:16
 msgid "Attribution"
 msgstr "Przypisywanie"
 
-#: weblate_web/html/base-features.html:29
+#: weblate_web/html/base-features.html:17
 msgid ""
 "All your translators will be properly credited in the version control system."
 msgstr ""
@@ -132,53 +132,55 @@ msgctxt "Keyword"
 msgid "translate"
 msgstr "przetłumacz"
 
-#: weblate_web/html/base.html:34
+#: weblate_web/html/base.html:35
 msgid "Weblate logo"
 msgstr "Logo Weblate"
 
-#: weblate_web/html/base.html:36
+#: weblate_web/html/base.html:37
 msgid "Home"
 msgstr "Strona domowa"
 
-#: weblate_web/html/base.html:37
+#: weblate_web/html/base.html:38
 msgid "Blog"
 msgstr "Blog"
 
-#: weblate_web/html/base.html:38
+#: weblate_web/html/base.html:39
 msgid "Try"
 msgstr "Spróbuj"
 
-#: weblate_web/html/base.html:39
+#: weblate_web/html/base.html:40
 msgid "Features"
 msgstr "Cechy"
 
-#: weblate_web/html/base.html:40
+#: weblate_web/html/base.html:41
 msgid "Docs"
 msgstr "Docs"
 
-#: weblate_web/html/base.html:41 weblate_web/html/download.html:12
+#: weblate_web/html/base.html:42 weblate_web/html/download.html:12
 msgid "Download"
 msgstr "Pobierz"
 
-#: weblate_web/html/base.html:42
+#: weblate_web/html/base.html:43
 msgid "Hosting"
 msgstr "Serwer hostingowy"
 
-#: weblate_web/html/base.html:43
+#: weblate_web/html/base.html:44
 msgid "Contribute"
 msgstr "Współpracuj"
 
-#: weblate_web/html/base.html:44
+#: weblate_web/html/base.html:45
 msgid "Support"
 msgstr "Wsparcie techniczne"
 
-#: weblate_web/html/base.html:45
+#: weblate_web/html/base.html:46
 msgid "Tour"
 msgstr "Wycieczka"
 
-#: weblate_web/html/base.html:49
-msgid "Language:"
-msgstr "Język:"
+#: weblate_web/html/base.html:60
+#, fuzzy
+#| msgid "Own translations"
+msgid "Help with translations!"
+msgstr "Własne tłumaczenia"
 
 #: weblate_web/html/contribute.html:4 weblate_web/html/contribute.html.py:5
 msgid "Contribute to Weblate"
@@ -194,9 +196,9 @@ msgid ""
 "docs.weblate.org/en/latest/contributing.html\">Contributing chapter</a> of "
 "our documentation."
 msgstr ""
-"Więcej szczegółowych informacji możesz znaleźć w <a "
-"href=\"http://docs.weblate.org/en/latest/contributing.html\">Rozdziale o "
-"współpracy</a> naszej dokumentacji."
+"Więcej szczegółowych informacji możesz znaleźć w <a href=\"http://docs."
+"weblate.org/en/latest/contributing.html\">Rozdziale o współpracy</a> naszej "
+"dokumentacji."
 
 #: weblate_web/html/contribute.html:15 weblate_web/html/download.html:38
 msgid "Code"
@@ -257,6 +259,10 @@ msgstr ""
 "darowiznę."
 
 #: weblate_web/html/contribute.html:65
+msgid "Donate Bitcoins"
+msgstr ""
+
+#: weblate_web/html/contribute.html:69
 msgid ""
 "You can also use <a href=\"http://www.bitcoin.org/\">Bitcoin is a peer-to-"
 "peer network</a> and send me Bitcoins to "
@@ -327,39 +333,39 @@ msgstr ""
 "Weblate jest wielofunkcyjnym narzędziem do tłumaczenia wspomaganego "
 "komputerowo."
 
-#: weblate_web/html/features.html:19
+#: weblate_web/html/features.html:15
 msgid "Access control"
 msgstr "Kontrola dostępu"
 
-#: weblate_web/html/features.html:20
+#: weblate_web/html/features.html:16
 msgid "Access rights can be fine tuned depending on your environment."
 msgstr "Prawa dostępu można dostosowywać zależnie od środowiska."
 
-#: weblate_web/html/features.html:29
+#: weblate_web/html/features.html:21
 msgid "Notifications"
 msgstr "Powiadomienia"
 
-#: weblate_web/html/features.html:30
+#: weblate_web/html/features.html:22
 msgid ""
 "Translators can be notified on new strings to translate or other events."
 msgstr ""
 "Tłumacze mogą być powiadamiani o nowych ciągach do tłumaczenia lub innych "
 "zdarzeniach."
 
-#: weblate_web/html/features.html:39
+#: weblate_web/html/features.html:27
 msgid "Ready for cloud"
 msgstr "Gotowy do chmury"
 
-#: weblate_web/html/features.html:40
+#: weblate_web/html/features.html:28
 msgid ""
 "Weblate comes with an appliance, which is ready to deploy in your cloud."
 msgstr "Weblate można wdrażać także w chmurze."
 
-#: weblate_web/html/features.html:49
+#: weblate_web/html/features.html:33
 msgid "File formats"
 msgstr "Formaty plików"
 
-#: weblate_web/html/features.html:50
+#: weblate_web/html/features.html:34
 msgid ""
 "Weblate supports all widely used file formats for localisation like Gettext "
 "or resource strings."
@@ -367,11 +373,11 @@ msgstr ""
 "Weblate obsługuje wszystkie powszechnie stosowane do lokalizacji formaty "
 "plików, takie jak Gettext lub łańcuchy zasobów."
 
-#: weblate_web/html/features.html:59
+#: weblate_web/html/features.html:39
 msgid "Branches support"
 msgstr "Obsługa gałęzi"
 
-#: weblate_web/html/features.html:60
+#: weblate_web/html/features.html:40
 msgid ""
 "Weblate can handle different versions of the translation by pushing them to "
 "different branches automatically."
@@ -379,11 +385,11 @@ msgstr ""
 "Weblate może obsługiwać różne wersje tłumaczenia, kierując je automatycznie "
 "do różnych gałęzi."
 
-#: weblate_web/html/features.html:89
+#: weblate_web/html/features.html:57
 msgid "Acquiring feedback"
 msgstr "Pozyskiwanie informacji zwrotnej"
 
-#: weblate_web/html/features.html:90
+#: weblate_web/html/features.html:58
 msgid ""
 "You can also use Weblate to acquire feedback on source strings and thus "
 "improve them."
@@ -391,50 +397,50 @@ msgstr ""
 "Możesz również użyć Weblate, aby uzyskać zwrotne informacje o ciągach "
 "źródłowych, i w ten sposób możesz je poprawiać."
 
-#: weblate_web/html/features.html:99
+#: weblate_web/html/features.html:63
 msgid "Export and import"
 msgstr "Eksport i import"
 
-#: weblate_web/html/features.html:100
+#: weblate_web/html/features.html:64
 msgid "Translations can be downloaded for offline translation and merged back."
 msgstr ""
 "Tłumaczenia można wykonywać w trybie offline, a następnie dołączać je, w "
 "trybie online, do tekstu już przetłumaczonego."
 
-#: weblate_web/html/features.html:109
+#: weblate_web/html/features.html:69
 msgid "Integrated"
 msgstr "Zintegrowany"
 
-#: weblate_web/html/features.html:110
+#: weblate_web/html/features.html:70
 msgid "Translations are managed within same version control system as code."
 msgstr ""
 "Tłumaczenia są zarządzane w ramach jednego systemu kontroli wersji jako kod."
 
-#: weblate_web/html/features.html:119
+#: weblate_web/html/features.html:75
 msgid "Documentation"
 msgstr "Dokumentacja"
 
-#: weblate_web/html/features.html:120
+#: weblate_web/html/features.html:76
 msgid ""
 "Weblate comes with comprehensive documentation covering both setup and usage."
 msgstr ""
 "Weblate posiada obszerną dokumentację, obejmującą zarówno konfigurację, jak "
 "i użytkowanie."
 
-#: weblate_web/html/features.html:129
+#: weblate_web/html/features.html:81
 msgid "Review"
 msgstr "Przegląd"
 
-#: weblate_web/html/features.html:130
+#: weblate_web/html/features.html:82
 msgid "Translators have several options to review contributions made by peers."
 msgstr ""
 "Tłumacz ma kilka opcji przeglądania wkładu wniesionego przez innych tłumaczy."
 
-#: weblate_web/html/features.html:139
+#: weblate_web/html/features.html:87
 msgid "Languages"
 msgstr "Języki"
 
-#: weblate_web/html/features.html:140
+#: weblate_web/html/features.html:88
 msgid ""
 "Weblate supports over 150 languages out of the box, others can be defined by "
 "administrator."
@@ -442,11 +448,11 @@ msgstr ""
 "Weblate obsługuje ponad 150 języków; inne mogą być zdefiniowane przez "
 "administratora."
 
-#: weblate_web/html/features.html:159
+#: weblate_web/html/features.html:99
 msgid "Reports"
 msgstr "Raporty"
 
-#: weblate_web/html/features.html:160
+#: weblate_web/html/features.html:100
 msgid ""
 "Weblate generates various reports to provide information about project "
 "activity."
@@ -777,6 +783,9 @@ msgstr "Źródła, skompresowany zip"
 #: weblate_web/templatetags/downloads.py:67
 msgid "Sources, 7zip compressed"
 msgstr "Źródła, skompresowany 7zip"
+
+#~ msgid "Language:"
+#~ msgstr "Język:"
 
 #~ msgid "Hosting for commercial products"
 #~ msgstr "Hosting dla komercyjnych produktów"

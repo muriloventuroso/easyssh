@@ -7,17 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-06-12 14:59+0200\n"
+"POT-Creation-Date: 2013-08-09 15:22+0200\n"
 "PO-Revision-Date: 2013-08-05 14:43+0200\n"
 "Last-Translator: Alaksiej Nieścieraŭ <alaksiej@screencustoms.com>\n"
-"Language-Team: Belarusian "
-"<http://l10n.cihar.com/projects/weblate/website/be/>\n"
+"Language-Team: Belarusian <http://l10n.cihar.com/projects/weblate/website/be/"
+">\n"
 "Language: be\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
-"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 1.7-dev\n"
 
 #: weblate_web/data.py:33
@@ -28,7 +28,7 @@ msgstr "Агляд уласных перакладаў на галоўнай с�
 msgid "Own translations"
 msgstr "Уласныя пераклады"
 
-#: weblate_web/data.py:39 weblate_web/html/features.html:70
+#: weblate_web/data.py:39 weblate_web/html/features.html:46
 msgid ""
 "Translator can always see important context information like comments or "
 "corresponding source code."
@@ -36,7 +36,7 @@ msgstr ""
 "Перакладчык заўсёды бачыць важную кантэкстуальную інфармацыю, прыкладам, "
 "каментарыі альбо адпаведны зыходны код."
 
-#: weblate_web/data.py:42 weblate_web/html/features.html:69
+#: weblate_web/data.py:42 weblate_web/html/features.html:45
 msgid "Translation context"
 msgstr "Кантэкст пераклада"
 
@@ -49,7 +49,7 @@ msgstr "Старонка праекта адлюстроўвае дэтальн�
 msgid "Project overview"
 msgstr "Агляд праекта"
 
-#: weblate_web/data.py:55 weblate_web/html/features.html:80
+#: weblate_web/data.py:55 weblate_web/html/features.html:52
 msgid ""
 "Translators can define their own glossary to stay consistent in frequently "
 "used terminology."
@@ -57,26 +57,26 @@ msgstr ""
 "Перакладчыкі могуць стварыць свой гласарый, каб аднастайна перакладаць часта "
 "ўжываную тэрміналогію."
 
-#: weblate_web/data.py:58 weblate_web/html/features.html:79
+#: weblate_web/data.py:58 weblate_web/html/features.html:51
 msgid "Glossary"
 msgstr "Гласарый"
 
-#: weblate_web/data.py:63 weblate_web/html/base-features.html:19
+#: weblate_web/data.py:63 weblate_web/html/base-features.html:11
 msgid ""
 "Customizable quality checks will help you in improving quality of "
 "translations."
 msgstr "Рэгулюемыя праверкі якасці дапамогуць палепшыць узровень перакладаў."
 
-#: weblate_web/data.py:66 weblate_web/html/base-features.html:18
+#: weblate_web/data.py:66 weblate_web/html/base-features.html:10
 msgid "Quality checks"
 msgstr "Праверка якасці"
 
-#: weblate_web/data.py:71 weblate_web/html/features.html:150
+#: weblate_web/data.py:71 weblate_web/html/features.html:94
 msgid "Weblate provides you various ways to promote your translation project."
 msgstr ""
 "Weblate дазваляе рознымі сродкамі папулярызоўваць ваш перакладніцкі праект."
 
-#: weblate_web/data.py:74 weblate_web/html/features.html:149
+#: weblate_web/data.py:74 weblate_web/html/features.html:93
 msgid "Promotion"
 msgstr "Папулярызацыя"
 
@@ -106,20 +106,21 @@ msgstr ""
 "Толькі што мы выправілі сваіх спецыянальна-навучаных малпачак, каб гэта "
 "паправіць."
 
-#: weblate_web/html/base-features.html:8
+#: weblate_web/html/base-features.html:4
 msgid "Continuous translation"
 msgstr "Бесперапынныя пераклады"
 
-#: weblate_web/html/base-features.html:9
+#: weblate_web/html/base-features.html:5
 msgid ""
 "Automated translation process can closely follow development of your project."
-msgstr "Аўтаматызаваны працэс перакладу можа ісці побач з працэсам распрацоўкі."
+msgstr ""
+"Аўтаматызаваны працэс перакладу можа ісці побач з працэсам распрацоўкі."
 
-#: weblate_web/html/base-features.html:28
+#: weblate_web/html/base-features.html:16
 msgid "Attribution"
 msgstr "Атрыбуцыя"
 
-#: weblate_web/html/base-features.html:29
+#: weblate_web/html/base-features.html:17
 msgid ""
 "All your translators will be properly credited in the version control system."
 msgstr ""
@@ -131,53 +132,55 @@ msgctxt "Keyword"
 msgid "translate"
 msgstr "Ключ"
 
-#: weblate_web/html/base.html:34
+#: weblate_web/html/base.html:35
 msgid "Weblate logo"
 msgstr "Лагатып Weblate"
 
-#: weblate_web/html/base.html:36
+#: weblate_web/html/base.html:37
 msgid "Home"
 msgstr "Пачатковая"
 
-#: weblate_web/html/base.html:37
+#: weblate_web/html/base.html:38
 msgid "Blog"
 msgstr "Блог"
 
-#: weblate_web/html/base.html:38
+#: weblate_web/html/base.html:39
 msgid "Try"
 msgstr "Паспытаць"
 
-#: weblate_web/html/base.html:39
+#: weblate_web/html/base.html:40
 msgid "Features"
 msgstr "Функцыянал"
 
-#: weblate_web/html/base.html:40
+#: weblate_web/html/base.html:41
 msgid "Docs"
 msgstr "Дакументацыя"
 
-#: weblate_web/html/base.html:41 weblate_web/html/download.html:12
+#: weblate_web/html/base.html:42 weblate_web/html/download.html:12
 msgid "Download"
 msgstr "Спампаваць"
 
-#: weblate_web/html/base.html:42
+#: weblate_web/html/base.html:43
 msgid "Hosting"
 msgstr "Хостынг"
 
-#: weblate_web/html/base.html:43
+#: weblate_web/html/base.html:44
 msgid "Contribute"
 msgstr "Зрабіць унёсак"
 
-#: weblate_web/html/base.html:44
+#: weblate_web/html/base.html:45
 msgid "Support"
 msgstr "Падтрымка"
 
-#: weblate_web/html/base.html:45
+#: weblate_web/html/base.html:46
 msgid "Tour"
 msgstr "Экскурс"
 
-#: weblate_web/html/base.html:49
-msgid "Language:"
-msgstr "Мова:"
+#: weblate_web/html/base.html:60
+#, fuzzy
+#| msgid "Own translations"
+msgid "Help with translations!"
+msgstr "Уласныя пераклады"
 
 #: weblate_web/html/contribute.html:4 weblate_web/html/contribute.html.py:5
 msgid "Contribute to Weblate"
@@ -194,8 +197,8 @@ msgid ""
 "our documentation."
 msgstr ""
 "Больш дэтальную інфармацыю на гэтую тэму можна знайсці ў нашай дакументацыі "
-"ў раздзеле <a href=\"http://docs.weblate.org/en/latest/contributing.html\">Як "
-"рабіць унёскі</a>."
+"ў раздзеле <a href=\"http://docs.weblate.org/en/latest/contributing.html"
+"\">Як рабіць унёскі</a>."
 
 #: weblate_web/html/contribute.html:15 weblate_web/html/download.html:38
 msgid "Code"
@@ -206,9 +209,8 @@ msgid ""
 "Weblate is being developed on <a href=\"https://github.com/nijel/weblate"
 "\">Github</a>, you can fork it there or just:"
 msgstr ""
-"Weblate распрацоўваецца на <a "
-"href=\"https://github.com/nijel/weblate\">Github</a>. Вы можаце там яго "
-"форкнуць альбо проста:"
+"Weblate распрацоўваецца на <a href=\"https://github.com/nijel/weblate"
+"\">Github</a>. Вы можаце там яго форкнуць альбо проста:"
 
 #: weblate_web/html/contribute.html:26
 msgid ""
@@ -227,8 +229,8 @@ msgid ""
 "You can translate Weblate using Weblate installation at <a href=\"https://"
 "l10n.cihar.com/engage/weblate/\">l10n.cihar.com</a>."
 msgstr ""
-"Weblate можна перакласці пры дапамозе Weblate, усталяванага на <a "
-"href=\"https://l10n.cihar.com/engage/weblate/\">l10n.cihar.com</a>."
+"Weblate можна перакласці пры дапамозе Weblate, усталяванага на <a href="
+"\"https://l10n.cihar.com/engage/weblate/\">l10n.cihar.com</a>."
 
 #: weblate_web/html/contribute.html:41
 msgid "Translation status"
@@ -244,8 +246,8 @@ msgid ""
 "New <a href=\"%(url)s\">Weblate features</a> are also being <a href=\"%(url)s"
 "\">funded on Catincan</a>, you can support them there!"
 msgstr ""
-"Новы <a href=\"%(url)s\">функцыянал Weblate</a> таксама <a href=\"%"
-"(url)s\">фундуецца на Catincan</a>, падтрымайце нас там!"
+"Новы <a href=\"%(url)s\">функцыянал Weblate</a> таксама <a href=\"%(url)s"
+"\">фундуецца на Catincan</a>, падтрымайце нас там!"
 
 #: weblate_web/html/contribute.html:49
 msgid "Donate"
@@ -258,6 +260,10 @@ msgstr ""
 "Калі вам падабаецца Weblate, падтрымайце далейшую распрацоўку ахвяраваннем."
 
 #: weblate_web/html/contribute.html:65
+msgid "Donate Bitcoins"
+msgstr ""
+
+#: weblate_web/html/contribute.html:69
 msgid ""
 "You can also use <a href=\"http://www.bitcoin.org/\">Bitcoin is a peer-to-"
 "peer network</a> and send me Bitcoins to "
@@ -284,9 +290,8 @@ msgid ""
 "For openSUSE/SLES users, there are binary packages available in the <a href="
 "\"http://software.opensuse.org/package/weblate/\">openSUSE Buildservice</a>."
 msgstr ""
-"Для карыстальнікаў openSUSE/SLES даступныя бінарныя пакункі ў <a "
-"href=\"http://software.opensuse.org/package/weblate/\">openSUSE "
-"Buildservice</a>."
+"Для карыстальнікаў openSUSE/SLES даступныя бінарныя пакункі ў <a href="
+"\"http://software.opensuse.org/package/weblate/\">openSUSE Buildservice</a>."
 
 #: weblate_web/html/download.html:29
 msgid ""
@@ -295,17 +300,17 @@ msgid ""
 "a/F8yMYg/weblate\">SUSE Studio Gallery</a>."
 msgstr ""
 "Як хочаце запусціць Weblate на сваім клаўд- альбо віртуальным серверы, "
-"спампуйце вобраз на базе openSUSE 12.2, змешчаны ў <a "
-"href=\"http://susestudio.com/a/F8yMYg/weblate\">SUSE Studio Gallery</a>."
+"спампуйце вобраз на базе openSUSE 12.2, змешчаны ў <a href=\"http://"
+"susestudio.com/a/F8yMYg/weblate\">SUSE Studio Gallery</a>."
 
 #: weblate_web/html/download.html:30
 msgid ""
 "Check <a href=\"http://docs.weblate.org/en/latest/install.html#appliance"
 "\">our documentation</a> for more information about appliance setup."
 msgstr ""
-"Звярніцеся да <a "
-"href=\"http://docs.weblate.org/en/latest/install.html#appliance\">нашай "
-"дакументацыі</a>, каб даведацца больш пра ўсталяванне вобразу."
+"Звярніцеся да <a href=\"http://docs.weblate.org/en/latest/install."
+"html#appliance\">нашай дакументацыі</a>, каб даведацца больш пра ўсталяванне "
+"вобразу."
 
 #: weblate_web/html/download.html:34
 msgid ""
@@ -313,10 +318,9 @@ msgid ""
 "\">BitNami stack</a>, that allows you native installation on Windows, Linux "
 "or Mac OS X and provides virtual images for running Weblate."
 msgstr ""
-"Weblate таксама даступны цераз <a "
-"href=\"http://bitnami.org/stack/weblate\">BitNami stack</a>, які дазваляе "
-"натыўную ўстаноўку пад Windows, Linux альбо Mac OS X і забяспечвае "
-"віртуальнымі вобразамі для запуску Weblate."
+"Weblate таксама даступны цераз <a href=\"http://bitnami.org/stack/weblate"
+"\">BitNami stack</a>, які дазваляе натыўную ўстаноўку пад Windows, Linux "
+"альбо Mac OS X і забяспечвае віртуальнымі вобразамі для запуску Weblate."
 
 #: weblate_web/html/features.html:4 weblate_web/html/features.html.py:5
 msgid "Weblate features"
@@ -326,40 +330,40 @@ msgstr "Функцыянал Weblate"
 msgid "Weblate is a feature rich computer aided translation tool."
 msgstr "Weblate — гэта функцыянальна-багаты перакладніцкі інструмент."
 
-#: weblate_web/html/features.html:19
+#: weblate_web/html/features.html:15
 msgid "Access control"
 msgstr "Кантроль доступа"
 
-#: weblate_web/html/features.html:20
+#: weblate_web/html/features.html:16
 msgid "Access rights can be fine tuned depending on your environment."
 msgstr "Правы доступа могуць тонка рэгулявацца ў залежнасці ад асяроддзя."
 
-#: weblate_web/html/features.html:29
+#: weblate_web/html/features.html:21
 msgid "Notifications"
 msgstr "Апавяшчэнні"
 
-#: weblate_web/html/features.html:30
+#: weblate_web/html/features.html:22
 msgid ""
 "Translators can be notified on new strings to translate or other events."
 msgstr ""
 "Перакладчыкі могуць атрымоўваць апавяшчэнні пра новыя радкі на пераклад і "
 "іншыя падзеі."
 
-#: weblate_web/html/features.html:39
+#: weblate_web/html/features.html:27
 msgid "Ready for cloud"
 msgstr "Гатовы для воблака"
 
-#: weblate_web/html/features.html:40
+#: weblate_web/html/features.html:28
 msgid ""
 "Weblate comes with an appliance, which is ready to deploy in your cloud."
 msgstr ""
 "Weblate распаўсюджваецца з вобразам, гатовым для разгортвання ў воблаку."
 
-#: weblate_web/html/features.html:49
+#: weblate_web/html/features.html:33
 msgid "File formats"
 msgstr "Фарматы файлаў"
 
-#: weblate_web/html/features.html:50
+#: weblate_web/html/features.html:34
 msgid ""
 "Weblate supports all widely used file formats for localisation like Gettext "
 "or resource strings."
@@ -367,11 +371,11 @@ msgstr ""
 "Weblate падтрымлівае ўсе шырока-ўжываныя фарматы файлаў лакалізацый, як "
 "Gettext альбо рэсурсы."
 
-#: weblate_web/html/features.html:59
+#: weblate_web/html/features.html:39
 msgid "Branches support"
 msgstr "Падтрымка ветак"
 
-#: weblate_web/html/features.html:60
+#: weblate_web/html/features.html:40
 msgid ""
 "Weblate can handle different versions of the translation by pushing them to "
 "different branches automatically."
@@ -379,11 +383,11 @@ msgstr ""
 "Weblate падтрымлівае некалькі версій перакладаў, аўтаматычна запісваючы іх у "
 "розныя веткі."
 
-#: weblate_web/html/features.html:89
+#: weblate_web/html/features.html:57
 msgid "Acquiring feedback"
 msgstr "Наяўнасць зваротнай сувязі"
 
-#: weblate_web/html/features.html:90
+#: weblate_web/html/features.html:58
 msgid ""
 "You can also use Weblate to acquire feedback on source strings and thus "
 "improve them."
@@ -391,48 +395,48 @@ msgstr ""
 "Пры дапамозе Weblate можна збіраць зваротную сувязь на перакладзеныя радкі і "
 "гэтак іх паляпшаць."
 
-#: weblate_web/html/features.html:99
+#: weblate_web/html/features.html:63
 msgid "Export and import"
 msgstr "Экспарт і імпарт"
 
-#: weblate_web/html/features.html:100
+#: weblate_web/html/features.html:64
 msgid "Translations can be downloaded for offline translation and merged back."
 msgstr ""
 "Пераклады можна спампаваць для афлайнавага перакладу, а затым памерджыць."
 
-#: weblate_web/html/features.html:109
+#: weblate_web/html/features.html:69
 msgid "Integrated"
 msgstr "Інтэграваны"
 
-#: weblate_web/html/features.html:110
+#: weblate_web/html/features.html:70
 msgid "Translations are managed within same version control system as code."
 msgstr "Пераклады месцяцца ў той самай сістэме кантролю версій, што і код."
 
-#: weblate_web/html/features.html:119
+#: weblate_web/html/features.html:75
 msgid "Documentation"
 msgstr "Дакументацыя"
 
-#: weblate_web/html/features.html:120
+#: weblate_web/html/features.html:76
 msgid ""
 "Weblate comes with comprehensive documentation covering both setup and usage."
 msgstr ""
 "Weblate ідзе з падрабязнай дакументацый, дзе раскрываюцца тэмы ўсталявання і "
 "выкарыстання."
 
-#: weblate_web/html/features.html:129
+#: weblate_web/html/features.html:81
 msgid "Review"
 msgstr "Прагляд"
 
-#: weblate_web/html/features.html:130
+#: weblate_web/html/features.html:82
 msgid "Translators have several options to review contributions made by peers."
 msgstr ""
 "Перакладчыкі маюць некалькі варыянтаў праглядаць унёскі, зробленыя іншымі."
 
-#: weblate_web/html/features.html:139
+#: weblate_web/html/features.html:87
 msgid "Languages"
 msgstr "Мовы"
 
-#: weblate_web/html/features.html:140
+#: weblate_web/html/features.html:88
 msgid ""
 "Weblate supports over 150 languages out of the box, others can be defined by "
 "administrator."
@@ -440,11 +444,11 @@ msgstr ""
 "Адразу з каробкі Weblate падтрымлівае больш як 150 моваў, іншыя могуць быць "
 "зададзеныя адміністратарам."
 
-#: weblate_web/html/features.html:159
+#: weblate_web/html/features.html:99
 msgid "Reports"
 msgstr "Справаздачы"
 
-#: weblate_web/html/features.html:160
+#: weblate_web/html/features.html:100
 msgid ""
 "Weblate generates various reports to provide information about project "
 "activity."
@@ -472,9 +476,9 @@ msgid ""
 "maintaining it."
 msgstr ""
 "Як жадаеце ўжываць Weblate для свайго свабоднага праграмнага забеспячэння, "
-"можаце папрасіць нас уключыць праект на <a "
-"href=\"http://hosted.weblate.org/\">hosted.weblate.org</a>. Гэта дазволіць "
-"ужываць Weblate без усталявання і падтрымання дзеяздольным."
+"можаце папрасіць нас уключыць праект на <a href=\"http://hosted.weblate.org/"
+"\">hosted.weblate.org</a>. Гэта дазволіць ужываць Weblate без усталявання і "
+"падтрымання дзеяздольным."
 
 #: weblate_web/html/hosting.html:17
 msgid "Conditions for free hosting"
@@ -485,9 +489,8 @@ msgid ""
 "Translated content has to be released under <a href=\"http://en.wikipedia."
 "org/wiki/Free_software_license\">free license</a>."
 msgstr ""
-"Перакладзены кантэнт мае ісці пад <a "
-"href=\"http://en.wikipedia.org/wiki/Free_software_license\">свабоднай "
-"ліцэнзіяй</a>."
+"Перакладзены кантэнт мае ісці пад <a href=\"http://en.wikipedia.org/wiki/"
+"Free_software_license\">свабоднай ліцэнзіяй</a>."
 
 #: weblate_web/html/hosting.html:21
 msgid ""
@@ -564,8 +567,8 @@ msgid ""
 "Please contact <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> for more "
 "details."
 msgstr ""
-"Калі ласка, звярніцеся да <a href=\"mailto:michal@cihar.com\">Міхала "
-"Чыгара</a> па падрабязнасці."
+"Калі ласка, звярніцеся да <a href=\"mailto:michal@cihar.com\">Міхала Чыгара</"
+"a> па падрабязнасці."
 
 #: weblate_web/html/hosting.html:54
 msgid "Other options"
@@ -590,8 +593,8 @@ msgid ""
 "features simple and clean user interface, propagation of translations across "
 "subprojects, quality checks and automatic linking to source files."
 msgstr ""
-"Weblate — гэта дармавы вэб-інструмент для перакладаў з шчыльнай "
-"Git-інтэграцыяй. Вылучаецца простым і чыстым карыстальніцкім інтэрфейсам, "
+"Weblate — гэта дармавы вэб-інструмент для перакладаў з шчыльнай Git-"
+"інтэграцыяй. Вылучаецца простым і чыстым карыстальніцкім інтэрфейсам, "
 "прапісваннем перакладаў у падпраектах, праверкай якасці і аўтаматычнай "
 "прывязкай да файлаў з зыходнікамі."
 
@@ -631,8 +634,8 @@ msgid ""
 "\">issue tracker on GitHub</a>."
 msgstr ""
 "Знайшлі памылку ў Weblate? Ёсць думкі, як гэта паправіць? Калі ласка, "
-"паведамце пра гэта цераз <a "
-"href=\"https://github.com/nijel/weblate/issues\">баг-трэкер GitHub</a>."
+"паведамце пра гэта цераз <a href=\"https://github.com/nijel/weblate/issues"
+"\">баг-трэкер GitHub</a>."
 
 #: weblate_web/html/support.html:17
 msgid "Mailing list"
@@ -646,12 +649,11 @@ msgid ""
 "weblate\">subscribe</a> or <a href=\"https://lists.cihar.com/pipermail/"
 "weblate/\">browse archives</a>."
 msgstr ""
-"Цераз рассылку <a "
-"href=\"mailto:weblate@lists.cihar.com\">weblate@lists.cihar.com</a> можна "
-"абмяркоўваць розныя пытанні па Weblate. Вы можаце <a "
-"href=\"https://lists.cihar.com/cgi-"
-"bin/mailman/listinfo/weblate\">падпісацца</a> альбо <a "
-"href=\"https://lists.cihar.com/pipermail/weblate/\">пагартаць архівы</a>."
+"Цераз рассылку <a href=\"mailto:weblate@lists.cihar.com\">weblate@lists."
+"cihar.com</a> можна абмяркоўваць розныя пытанні па Weblate. Вы можаце <a "
+"href=\"https://lists.cihar.com/cgi-bin/mailman/listinfo/weblate"
+"\">падпісацца</a> альбо <a href=\"https://lists.cihar.com/pipermail/weblate/"
+"\">пагартаць архівы</a>."
 
 #: weblate_web/html/support.html:24
 msgid ""
@@ -659,9 +661,9 @@ msgid ""
 "comp.web.weblate\">Gmane</a> where you can browse archives or use NNTP "
 "interface."
 msgstr ""
-"Спіс рассылкі таксама даступны цераз <a "
-"href=\"http://dir.gmane.org/gmane.comp.web.weblate\">Gmane</a>, дзе можна "
-"пагартаць архівы альбо скарыстаць NNTP інтэрфейс."
+"Спіс рассылкі таксама даступны цераз <a href=\"http://dir.gmane.org/gmane."
+"comp.web.weblate\">Gmane</a>, дзе можна пагартаць архівы альбо скарыстаць "
+"NNTP інтэрфейс."
 
 #: weblate_web/html/support.html:27
 msgid "IRC"
@@ -675,9 +677,9 @@ msgid ""
 "\">webchat</a> there."
 msgstr ""
 "Калі зацікаўленыя людзі анлайн, вы можаце дастаць дапамогу на канале "
-"#weblate у сетцы <a href=\"http://freenode.net/\">freenode</a>. Тамсама можна "
-"скарыстаць з <a "
-"href=\"http://webchat.freenode.net?channels=weblate\">вэб-чата</a>."
+"#weblate у сетцы <a href=\"http://freenode.net/\">freenode</a>. Тамсама "
+"можна скарыстаць з <a href=\"http://webchat.freenode.net?channels=weblate"
+"\">вэб-чата</a>."
 
 #: weblate_web/html/support.html:33
 msgid "Contact"
@@ -688,9 +690,8 @@ msgid ""
 "You can also contact <a href=\"mailto:michal@cihar.com?subject=Weblate"
 "\">Michal Čihař</a>, who is author of Weblate."
 msgstr ""
-"Таксама можаце звязацца з <a "
-"href=\"mailto:michal@cihar.com?subject=Weblate\">Міхалам Чыгарам</a>, аўтарам "
-"Weblate."
+"Таксама можаце звязацца з <a href=\"mailto:michal@cihar.com?subject=Weblate"
+"\">Міхалам Чыгарам</a>, аўтарам Weblate."
 
 #: weblate_web/html/tour.html:4 weblate_web/html/tour.html.py:5
 msgid "Weblate tour"
@@ -718,10 +719,10 @@ msgid ""
 "server</a>. You can register there and work under your username or just use "
 "<code>demo</code> account with <code>demo</code> password."
 msgstr ""
-"Вы можаце паспытаць Weblate на нашым <a "
-"href=\"http://demo.weblate.org\">дэма-серверы</a>. Там можна зарэгістравацца і "
-"працаваць з-пад вашага імя карыстальніка, альбо проста скарыстаўшы уліковы "
-"запіс <code>demo</code>, пароль <code>demo</code>."
+"Вы можаце паспытаць Weblate на нашым <a href=\"http://demo.weblate.org"
+"\">дэма-серверы</a>. Там можна зарэгістравацца і працаваць з-пад вашага імя "
+"карыстальніка, альбо проста скарыстаўшы уліковы запіс <code>demo</code>, "
+"пароль <code>demo</code>."
 
 #: weblate_web/html/try.html:17
 msgid "Appliances"
@@ -777,3 +778,6 @@ msgstr "Заходнікі, zip-архіў"
 #: weblate_web/templatetags/downloads.py:67
 msgid "Sources, 7zip compressed"
 msgstr "Зыходнікі, 7zip-архіў"
+
+#~ msgid "Language:"
+#~ msgstr "Мова:"
