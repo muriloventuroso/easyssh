@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-08-09 15:22+0200\n"
+"POT-Creation-Date: 2013-08-15 15:23+0200\n"
 "PO-Revision-Date: 2013-07-25 14:16+0200\n"
 "Last-Translator: Satoru KURASHIKI <lurdan@gmail.com>\n"
 "Language-Team: Japanese <http://l10n.cihar.com/projects/weblate/website/ja/"
@@ -155,7 +155,7 @@ msgstr "特徴"
 msgid "Docs"
 msgstr "ドキュメント"
 
-#: weblate_web/html/base.html:42 weblate_web/html/download.html:12
+#: weblate_web/html/base.html:42 weblate_web/html/download.html:22
 msgid "Download"
 msgstr "ダウンロード"
 
@@ -177,7 +177,6 @@ msgstr "ツアー"
 
 #: weblate_web/html/base.html:60
 #, fuzzy
-#| msgid "Own translations"
 msgid "Help with translations!"
 msgstr "自分の翻訳"
 
@@ -198,11 +197,11 @@ msgstr ""
 "このトピックについての詳しい情報は、ドキュメントの <a href=\"http://docs."
 "weblate.org/ja/latest/contributing.html\">協力の章</a>にあります。"
 
-#: weblate_web/html/contribute.html:15 weblate_web/html/download.html:38
+#: weblate_web/html/contribute.html:15 weblate_web/html/download.html:12
 msgid "Code"
 msgstr "コード"
 
-#: weblate_web/html/contribute.html:18 weblate_web/html/download.html:41
+#: weblate_web/html/contribute.html:18 weblate_web/html/download.html:15
 msgid ""
 "Weblate is being developed on <a href=\"https://github.com/nijel/weblate"
 "\">Github</a>, you can fork it there or just:"
@@ -280,11 +279,11 @@ msgstr "Weblate のダウンロード"
 msgid "Weblate comes with complete source code."
 msgstr "Weblate には完全なソースコードが付属しています。"
 
-#: weblate_web/html/download.html:15
+#: weblate_web/html/download.html:25
 msgid "You can download latest release here:"
 msgstr "最新のリリースはここからダウンロードできます："
 
-#: weblate_web/html/download.html:25
+#: weblate_web/html/download.html:35
 msgid ""
 "For openSUSE/SLES users, there are binary packages available in the <a href="
 "\"http://software.opensuse.org/package/weblate/\">openSUSE Buildservice</a>."
@@ -292,7 +291,11 @@ msgstr ""
 "openSUSE/SLES ユーザは、<a href=\"http://software.opensuse.org/package/"
 "weblate/\">openSUSE ビルドサービス</a>のバイナリパッケージを利用できます。"
 
-#: weblate_web/html/download.html:29
+#: weblate_web/html/download.html:38
+msgid "Cloud or emulator images"
+msgstr ""
+
+#: weblate_web/html/download.html:41
 msgid ""
 "In case you want to run Weblate in your cloud or virtual server, you can "
 "download appliance based on openSUSE 12.2 at <a href=\"http://susestudio.com/"
@@ -302,23 +305,13 @@ msgstr ""
 "susestudio.com/a/F8yMYg/weblate\">SUSE スタジオギャラリー</a>にある openSUSE "
 "12.2 ベースのアプライアンスがダウンロードできます。"
 
-#: weblate_web/html/download.html:30
+#: weblate_web/html/download.html:42
 msgid ""
 "Check <a href=\"http://docs.weblate.org/en/latest/install.html#appliance"
 "\">our documentation</a> for more information about appliance setup."
 msgstr ""
 "アプライアンスのセットアップについては、<a href=\"http://docs.weblate.org/ja/"
 "latest/install.html#appliance\">ドキュメント</a>をチェックしてください。"
-
-#: weblate_web/html/download.html:34
-msgid ""
-"Weblate is also available as <a href=\"http://bitnami.org/stack/weblate"
-"\">BitNami stack</a>, that allows you native installation on Windows, Linux "
-"or Mac OS X and provides virtual images for running Weblate."
-msgstr ""
-"Weblate は <a href=\"http://bitnami.org/stack/weblate\">BitNami スタック</a>"
-"としても利用できます。これは、Windows や Linux、Mac OS X 上に直接インストール"
-"して、Weblate を実行する仮想イメージを提供するものです。"
 
 #: weblate_web/html/features.html:4 weblate_web/html/features.html.py:5
 msgid "Weblate features"
@@ -774,6 +767,15 @@ msgstr "ソース、zip 圧縮"
 #: weblate_web/templatetags/downloads.py:67
 msgid "Sources, 7zip compressed"
 msgstr "ソース、7zip 圧縮"
+
+#~ msgid ""
+#~ "Weblate is also available as <a href=\"http://bitnami.org/stack/weblate"
+#~ "\">BitNami stack</a>, that allows you native installation on Windows, "
+#~ "Linux or Mac OS X and provides virtual images for running Weblate."
+#~ msgstr ""
+#~ "Weblate は <a href=\"http://bitnami.org/stack/weblate\">BitNami スタック</"
+#~ "a>としても利用できます。これは、Windows や Linux、Mac OS X 上に直接インス"
+#~ "トールして、Weblate を実行する仮想イメージを提供するものです。"
 
 #~ msgid "Language:"
 #~ msgstr "言語："

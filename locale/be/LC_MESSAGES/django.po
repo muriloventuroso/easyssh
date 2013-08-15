@@ -7,17 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-08-09 15:22+0200\n"
+"POT-Creation-Date: 2013-08-15 15:24+0200\n"
 "PO-Revision-Date: 2013-08-11 11:01+0200\n"
 "Last-Translator: Alaksiej Nieścieraŭ <alaksiej@screencustoms.com>\n"
-"Language-Team: Belarusian "
-"<http://l10n.cihar.com/projects/weblate/website/be/>\n"
+"Language-Team: Belarusian <http://l10n.cihar.com/projects/weblate/website/be/"
+">\n"
 "Language: be\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
-"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 1.7-dev\n"
 
 #: weblate_web/data.py:33
@@ -156,7 +156,7 @@ msgstr "Магчымасці"
 msgid "Docs"
 msgstr "Дакументацыя"
 
-#: weblate_web/html/base.html:42 weblate_web/html/download.html:12
+#: weblate_web/html/base.html:42 weblate_web/html/download.html:22
 msgid "Download"
 msgstr "Спампаваць"
 
@@ -177,7 +177,6 @@ msgid "Tour"
 msgstr "Экскурс"
 
 #: weblate_web/html/base.html:60
-#| msgid "Own translations"
 msgid "Help with translations!"
 msgstr "Дапамажыце з перакладам!"
 
@@ -199,11 +198,11 @@ msgstr ""
 "ў раздзеле <a href=\"http://docs.weblate.org/en/latest/contributing.html"
 "\">Як рабіць унёскі</a>."
 
-#: weblate_web/html/contribute.html:15 weblate_web/html/download.html:38
+#: weblate_web/html/contribute.html:15 weblate_web/html/download.html:12
 msgid "Code"
 msgstr "Код"
 
-#: weblate_web/html/contribute.html:18 weblate_web/html/download.html:41
+#: weblate_web/html/contribute.html:18 weblate_web/html/download.html:15
 msgid ""
 "Weblate is being developed on <a href=\"https://github.com/nijel/weblate"
 "\">Github</a>, you can fork it there or just:"
@@ -245,8 +244,8 @@ msgid ""
 "New <a href=\"%(url)s\">Weblate features</a> are also being <a href=\"%(url)s"
 "\">funded on Catincan</a>, you can support them there!"
 msgstr ""
-"Новыя <a href=\"%(url)s\">магчымасці Weblate</a> таксама <a href=\"%"
-"(url)s\">фундуецца на Catincan</a>, падтрымайце нас там!"
+"Новыя <a href=\"%(url)s\">магчымасці Weblate</a> таксама <a href=\"%(url)s"
+"\">фундуецца на Catincan</a>, падтрымайце нас там!"
 
 #: weblate_web/html/contribute.html:49
 msgid "Donate"
@@ -280,11 +279,11 @@ msgstr "Спампаваць Weblate"
 msgid "Weblate comes with complete source code."
 msgstr "Weblate пастаўляецца з поўным зыходным кодам."
 
-#: weblate_web/html/download.html:15
+#: weblate_web/html/download.html:25
 msgid "You can download latest release here:"
 msgstr "Апошні рэліз можна спампаваць тут:"
 
-#: weblate_web/html/download.html:25
+#: weblate_web/html/download.html:35
 msgid ""
 "For openSUSE/SLES users, there are binary packages available in the <a href="
 "\"http://software.opensuse.org/package/weblate/\">openSUSE Buildservice</a>."
@@ -292,7 +291,11 @@ msgstr ""
 "Для карыстальнікаў openSUSE/SLES даступныя бінарныя пакункі ў <a href="
 "\"http://software.opensuse.org/package/weblate/\">openSUSE Buildservice</a>."
 
-#: weblate_web/html/download.html:29
+#: weblate_web/html/download.html:38
+msgid "Cloud or emulator images"
+msgstr ""
+
+#: weblate_web/html/download.html:41
 msgid ""
 "In case you want to run Weblate in your cloud or virtual server, you can "
 "download appliance based on openSUSE 12.2 at <a href=\"http://susestudio.com/"
@@ -302,7 +305,7 @@ msgstr ""
 "спампуйце вобраз на базе openSUSE 12.2, змешчаны ў <a href=\"http://"
 "susestudio.com/a/F8yMYg/weblate\">SUSE Studio Gallery</a>."
 
-#: weblate_web/html/download.html:30
+#: weblate_web/html/download.html:42
 msgid ""
 "Check <a href=\"http://docs.weblate.org/en/latest/install.html#appliance"
 "\">our documentation</a> for more information about appliance setup."
@@ -310,17 +313,6 @@ msgstr ""
 "Звярніцеся да <a href=\"http://docs.weblate.org/en/latest/install."
 "html#appliance\">нашай дакументацыі</a>, каб даведацца больш пра ўсталяванне "
 "вобразу."
-
-#: weblate_web/html/download.html:34
-msgid ""
-"Weblate is also available as <a href=\"http://bitnami.org/stack/weblate"
-"\">BitNami stack</a>, that allows you native installation on Windows, Linux "
-"or Mac OS X and provides virtual images for running Weblate."
-msgstr ""
-"Weblate таксама даступны цераз <a "
-"href=\"http://bitnami.org/stack/weblate\">BitNami stack</a>, які дазваляе "
-"натыўнае ўсталяванне пад Windows, Linux альбо Mac OS X і забяспечвае "
-"віртуальнымі вобразамі для запуску Weblate."
 
 #: weblate_web/html/features.html:4 weblate_web/html/features.html.py:5
 msgid "Weblate features"
@@ -719,10 +711,10 @@ msgid ""
 "server</a>. You can register there and work under your username or just use "
 "<code>demo</code> account with <code>demo</code> password."
 msgstr ""
-"Вы можаце выпрабаваць Weblate на нашым <a "
-"href=\"http://demo.weblate.org\">дэма-серверы</a>. Там можна зарэгістравацца і "
-"працаваць з-пад вашага імя карыстальніка, альбо проста скарыстаўшы уліковы "
-"запіс <code>demo</code>, пароль <code>demo</code>."
+"Вы можаце выпрабаваць Weblate на нашым <a href=\"http://demo.weblate.org"
+"\">дэма-серверы</a>. Там можна зарэгістравацца і працаваць з-пад вашага імя "
+"карыстальніка, альбо проста скарыстаўшы уліковы запіс <code>demo</code>, "
+"пароль <code>demo</code>."
 
 #: weblate_web/html/try.html:17
 msgid "Appliances"
@@ -778,6 +770,16 @@ msgstr "Заходнікі, zip-архіў"
 #: weblate_web/templatetags/downloads.py:67
 msgid "Sources, 7zip compressed"
 msgstr "Зыходнікі, 7zip-архіў"
+
+#~ msgid ""
+#~ "Weblate is also available as <a href=\"http://bitnami.org/stack/weblate"
+#~ "\">BitNami stack</a>, that allows you native installation on Windows, "
+#~ "Linux or Mac OS X and provides virtual images for running Weblate."
+#~ msgstr ""
+#~ "Weblate таксама даступны цераз <a href=\"http://bitnami.org/stack/weblate"
+#~ "\">BitNami stack</a>, які дазваляе натыўнае ўсталяванне пад Windows, "
+#~ "Linux альбо Mac OS X і забяспечвае віртуальнымі вобразамі для запуску "
+#~ "Weblate."
 
 #~ msgid "Language:"
 #~ msgstr "Мова:"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-08-09 15:22+0200\n"
+"POT-Creation-Date: 2013-08-15 15:24+0200\n"
 "PO-Revision-Date: 2013-08-01 13:55+0200\n"
 "Last-Translator: Henry Heinänen <h.heinanen@gmail.com>\n"
 "Language-Team: Finnish <http://l10n.cihar.com/projects/weblate/website/fi/>\n"
@@ -155,7 +155,7 @@ msgstr "Ominaisuudet"
 msgid "Docs"
 msgstr "Asiakirjat"
 
-#: weblate_web/html/base.html:42 weblate_web/html/download.html:12
+#: weblate_web/html/base.html:42 weblate_web/html/download.html:22
 msgid "Download"
 msgstr "Lataa"
 
@@ -177,7 +177,6 @@ msgstr "Kierros"
 
 #: weblate_web/html/base.html:60
 #, fuzzy
-#| msgid "Own translations"
 msgid "Help with translations!"
 msgstr "Omat käännökset"
 
@@ -198,11 +197,11 @@ msgstr ""
 "Löydät tarkempia tietoja tästä aiheesta <a href=\"http://docs.weblate.org/en/"
 "latest/contributing.html\">Osallistuminen luvussa</a> meidän asiakirjoista."
 
-#: weblate_web/html/contribute.html:15 weblate_web/html/download.html:38
+#: weblate_web/html/contribute.html:15 weblate_web/html/download.html:12
 msgid "Code"
 msgstr "Koodi"
 
-#: weblate_web/html/contribute.html:18 weblate_web/html/download.html:41
+#: weblate_web/html/contribute.html:18 weblate_web/html/download.html:15
 msgid ""
 "Weblate is being developed on <a href=\"https://github.com/nijel/weblate"
 "\">Github</a>, you can fork it there or just:"
@@ -279,11 +278,11 @@ msgstr "Lataa Weblate"
 msgid "Weblate comes with complete source code."
 msgstr "Weblaten mukana tulee täydellinen lähdekoodi."
 
-#: weblate_web/html/download.html:15
+#: weblate_web/html/download.html:25
 msgid "You can download latest release here:"
 msgstr "Voit ladata uusimman version täältä:"
 
-#: weblate_web/html/download.html:25
+#: weblate_web/html/download.html:35
 msgid ""
 "For openSUSE/SLES users, there are binary packages available in the <a href="
 "\"http://software.opensuse.org/package/weblate/\">openSUSE Buildservice</a>."
@@ -291,7 +290,11 @@ msgstr ""
 "OpenSUSE/SLES käyttäjille on tarjolla binääripaketit <a href=\"http://"
 "software.opensuse.org/package/weblate/\">openSUSE Buildservice</a>."
 
-#: weblate_web/html/download.html:29
+#: weblate_web/html/download.html:38
+msgid "Cloud or emulator images"
+msgstr ""
+
+#: weblate_web/html/download.html:41
 msgid ""
 "In case you want to run Weblate in your cloud or virtual server, you can "
 "download appliance based on openSUSE 12.2 at <a href=\"http://susestudio.com/"
@@ -301,24 +304,13 @@ msgstr ""
 "ladata laitteen joka pohjautuu openSUSE 12.2 <a href=\"http://susestudio.com/"
 "a/F8yMYg/weblate\">SUSE Studio Galleria</a>."
 
-#: weblate_web/html/download.html:30
+#: weblate_web/html/download.html:42
 msgid ""
 "Check <a href=\"http://docs.weblate.org/en/latest/install.html#appliance"
 "\">our documentation</a> for more information about appliance setup."
 msgstr ""
 "Tarkista <a href=\"http://docs.weblate.org/en/latest/install.html#appliance"
 "\">ohjeistamme</a> lisätietoja laitteen asennukseen."
-
-#: weblate_web/html/download.html:34
-msgid ""
-"Weblate is also available as <a href=\"http://bitnami.org/stack/weblate"
-"\">BitNami stack</a>, that allows you native installation on Windows, Linux "
-"or Mac OS X and provides virtual images for running Weblate."
-msgstr ""
-"Weblateen on saatavana myös <a href=\"http://bitnami.org/stack/weblate"
-"\">BitNami stack</a>, jonka avulla voi suorittaa alkuperäisen asennuksen "
-"Windows, Linux tai Mac OS X koneisiin ja se tarjoaa myös virtuaali imagen "
-"käyttämisen Weblatessa."
 
 #: weblate_web/html/features.html:4 weblate_web/html/features.html.py:5
 msgid "Weblate features"
@@ -770,6 +762,16 @@ msgstr "Lähteet, zip pakattuja"
 #: weblate_web/templatetags/downloads.py:67
 msgid "Sources, 7zip compressed"
 msgstr "Lähteet, 7zip pakattuja"
+
+#~ msgid ""
+#~ "Weblate is also available as <a href=\"http://bitnami.org/stack/weblate"
+#~ "\">BitNami stack</a>, that allows you native installation on Windows, "
+#~ "Linux or Mac OS X and provides virtual images for running Weblate."
+#~ msgstr ""
+#~ "Weblateen on saatavana myös <a href=\"http://bitnami.org/stack/weblate"
+#~ "\">BitNami stack</a>, jonka avulla voi suorittaa alkuperäisen asennuksen "
+#~ "Windows, Linux tai Mac OS X koneisiin ja se tarjoaa myös virtuaali imagen "
+#~ "käyttämisen Weblatessa."
 
 #~ msgid "Language:"
 #~ msgstr "Kieli:"

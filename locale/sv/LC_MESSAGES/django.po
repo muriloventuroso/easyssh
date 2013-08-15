@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-08-09 15:22+0200\n"
+"POT-Creation-Date: 2013-08-15 15:23+0200\n"
 "PO-Revision-Date: 2013-04-16 18:55+0200\n"
 "Last-Translator: Anders Jonsson <jonars03@student.umu.se>\n"
 "Language-Team: Swedish <http://l10n.cihar.com/projects/weblate/website/sv/>\n"
@@ -158,7 +158,7 @@ msgstr "Funktioner"
 msgid "Docs"
 msgstr "Dokumentation"
 
-#: weblate_web/html/base.html:42 weblate_web/html/download.html:12
+#: weblate_web/html/base.html:42 weblate_web/html/download.html:22
 msgid "Download"
 msgstr "Hämta"
 
@@ -181,7 +181,6 @@ msgstr "Rundtur"
 
 #: weblate_web/html/base.html:60
 #, fuzzy
-#| msgid "Own translations"
 msgid "Help with translations!"
 msgstr "Egna översättningar"
 
@@ -203,11 +202,11 @@ msgstr ""
 "docs.weblate.org/en/latest/contributing.html\">kapitlet Contributing</a> i "
 "vår dokumentation."
 
-#: weblate_web/html/contribute.html:15 weblate_web/html/download.html:38
+#: weblate_web/html/contribute.html:15 weblate_web/html/download.html:12
 msgid "Code"
 msgstr "Kod"
 
-#: weblate_web/html/contribute.html:18 weblate_web/html/download.html:41
+#: weblate_web/html/contribute.html:18 weblate_web/html/download.html:15
 msgid ""
 "Weblate is being developed on <a href=\"https://github.com/nijel/weblate"
 "\">Github</a>, you can fork it there or just:"
@@ -279,11 +278,11 @@ msgstr "Hämta hem Weblate"
 msgid "Weblate comes with complete source code."
 msgstr "Weblate kommer med komplett källkod."
 
-#: weblate_web/html/download.html:15
+#: weblate_web/html/download.html:25
 msgid "You can download latest release here:"
 msgstr "Du kan hämta den senaste utgåvan här:"
 
-#: weblate_web/html/download.html:25
+#: weblate_web/html/download.html:35
 msgid ""
 "For openSUSE/SLES users, there are binary packages available in the <a href="
 "\"http://software.opensuse.org/package/weblate/\">openSUSE Buildservice</a>."
@@ -291,7 +290,11 @@ msgstr ""
 "För användare av openSUSE/SLES finns det binära paket tillgängliga i <a href="
 "\"http://software.opensuse.org/package/weblate/\">openSUSE Buildservice</a>."
 
-#: weblate_web/html/download.html:29
+#: weblate_web/html/download.html:38
+msgid "Cloud or emulator images"
+msgstr ""
+
+#: weblate_web/html/download.html:41
 #, fuzzy
 msgid ""
 "In case you want to run Weblate in your cloud or virtual server, you can "
@@ -302,24 +305,13 @@ msgstr ""
 "verktyget baserat på openSUSE 12,2 på <a href=\"http://susestudio.com/a/"
 "F8yMYg/weblate\"> SUSE Studio Gallery</a>."
 
-#: weblate_web/html/download.html:30
+#: weblate_web/html/download.html:42
 msgid ""
 "Check <a href=\"http://docs.weblate.org/en/latest/install.html#appliance"
 "\">our documentation</a> for more information about appliance setup."
 msgstr ""
 "Kolla <a href=\"http://docs.weblate.org/en/latest/install.html#appliance\"> "
 "vår dokumentation</a> för mer information om installation av apparaten."
-
-#: weblate_web/html/download.html:34
-msgid ""
-"Weblate is also available as <a href=\"http://bitnami.org/stack/weblate"
-"\">BitNami stack</a>, that allows you native installation on Windows, Linux "
-"or Mac OS X and provides virtual images for running Weblate."
-msgstr ""
-"Weblate finns också tillgänglig som en <a href=\"http://bitnami.org/stack/"
-"weblate\">BitNami-stack</a> som ger dig möjlighet till inhemsk installation "
-"på Windows, Linux eller Mac OS X och erbjuder virtuella avbilder för att "
-"köra Weblate."
 
 #: weblate_web/html/features.html:4 weblate_web/html/features.html.py:5
 msgid "Weblate features"
@@ -776,6 +768,16 @@ msgstr "Källkod, zip-komprimerad"
 #: weblate_web/templatetags/downloads.py:67
 msgid "Sources, 7zip compressed"
 msgstr "Källkod, 7zip-komprimerad"
+
+#~ msgid ""
+#~ "Weblate is also available as <a href=\"http://bitnami.org/stack/weblate"
+#~ "\">BitNami stack</a>, that allows you native installation on Windows, "
+#~ "Linux or Mac OS X and provides virtual images for running Weblate."
+#~ msgstr ""
+#~ "Weblate finns också tillgänglig som en <a href=\"http://bitnami.org/stack/"
+#~ "weblate\">BitNami-stack</a> som ger dig möjlighet till inhemsk "
+#~ "installation på Windows, Linux eller Mac OS X och erbjuder virtuella "
+#~ "avbilder för att köra Weblate."
 
 #~ msgid "Language:"
 #~ msgstr "Språk:"

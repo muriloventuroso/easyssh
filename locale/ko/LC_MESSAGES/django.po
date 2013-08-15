@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-08-09 15:22+0200\n"
+"POT-Creation-Date: 2013-08-15 15:24+0200\n"
 "PO-Revision-Date: 2013-06-02 12:29+0200\n"
 "Last-Translator: Kyeong Su Shin <ksshin@uwaterloo.ca>\n"
 "Language-Team: Korean <http://l10n.cihar.com/projects/weblate/website/ko/>\n"
@@ -147,7 +147,7 @@ msgstr ""
 msgid "Docs"
 msgstr ""
 
-#: weblate_web/html/base.html:42 weblate_web/html/download.html:12
+#: weblate_web/html/base.html:42 weblate_web/html/download.html:22
 msgid "Download"
 msgstr "내려받기"
 
@@ -186,11 +186,11 @@ msgid ""
 "our documentation."
 msgstr ""
 
-#: weblate_web/html/contribute.html:15 weblate_web/html/download.html:38
+#: weblate_web/html/contribute.html:15 weblate_web/html/download.html:12
 msgid "Code"
 msgstr "코드"
 
-#: weblate_web/html/contribute.html:18 weblate_web/html/download.html:41
+#: weblate_web/html/contribute.html:18 weblate_web/html/download.html:15
 msgid ""
 "Weblate is being developed on <a href=\"https://github.com/nijel/weblate"
 "\">Github</a>, you can fork it there or just:"
@@ -262,11 +262,11 @@ msgstr "Weblate 내려받기"
 msgid "Weblate comes with complete source code."
 msgstr ""
 
-#: weblate_web/html/download.html:15
+#: weblate_web/html/download.html:25
 msgid "You can download latest release here:"
 msgstr "최신 릴리즈를 내려 받을 수 있습니다:"
 
-#: weblate_web/html/download.html:25
+#: weblate_web/html/download.html:35
 msgid ""
 "For openSUSE/SLES users, there are binary packages available in the <a href="
 "\"http://software.opensuse.org/package/weblate/\">openSUSE Buildservice</a>."
@@ -274,7 +274,11 @@ msgstr ""
 "openSUSE/SLES 사용자들은, <a href=\"http://software.opensuse.org/package/"
 "weblate/\">openSUSE Buildservice</a>에서 바이너리 패키지를 구할수 있습니다."
 
-#: weblate_web/html/download.html:29
+#: weblate_web/html/download.html:38
+msgid "Cloud or emulator images"
+msgstr ""
+
+#: weblate_web/html/download.html:41
 msgid ""
 "In case you want to run Weblate in your cloud or virtual server, you can "
 "download appliance based on openSUSE 12.2 at <a href=\"http://susestudio.com/"
@@ -284,21 +288,11 @@ msgstr ""
 "어플라이언스를<a href=\"http://susestudio.com/a/F8yMYg/weblate\">SUSE Studio "
 "Gallery</a>에서 받을수 있습니다."
 
-#: weblate_web/html/download.html:30
+#: weblate_web/html/download.html:42
 msgid ""
 "Check <a href=\"http://docs.weblate.org/en/latest/install.html#appliance"
 "\">our documentation</a> for more information about appliance setup."
 msgstr ""
-
-#: weblate_web/html/download.html:34
-msgid ""
-"Weblate is also available as <a href=\"http://bitnami.org/stack/weblate"
-"\">BitNami stack</a>, that allows you native installation on Windows, Linux "
-"or Mac OS X and provides virtual images for running Weblate."
-msgstr ""
-"Weblate는 <a href=\"http://bitnami.org/stack/weblate\">BitNami stack</a>으로 "
-"구할수 있으며, Windows, Linux or Mac OS X에서 직접 설치하거나, Weblate를 실"
-"행 가능한 가상 이미지 파일 형식으로 구할수 있습니다."
 
 #: weblate_web/html/features.html:4 weblate_web/html/features.html.py:5
 msgid "Weblate features"
@@ -721,6 +715,15 @@ msgstr ""
 #: weblate_web/templatetags/downloads.py:67
 msgid "Sources, 7zip compressed"
 msgstr ""
+
+#~ msgid ""
+#~ "Weblate is also available as <a href=\"http://bitnami.org/stack/weblate"
+#~ "\">BitNami stack</a>, that allows you native installation on Windows, "
+#~ "Linux or Mac OS X and provides virtual images for running Weblate."
+#~ msgstr ""
+#~ "Weblate는 <a href=\"http://bitnami.org/stack/weblate\">BitNami stack</a>으"
+#~ "로 구할수 있으며, Windows, Linux or Mac OS X에서 직접 설치하거나, Weblate"
+#~ "를 실행 가능한 가상 이미지 파일 형식으로 구할수 있습니다."
 
 #~ msgid "Language:"
 #~ msgstr "언어:"

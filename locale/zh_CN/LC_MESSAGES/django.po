@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-08-09 15:22+0200\n"
+"POT-Creation-Date: 2013-08-15 15:23+0200\n"
 "PO-Revision-Date: 2013-08-14 09:21+0200\n"
 "Last-Translator: shanyan baishui <Siramizu@gmail.com>\n"
-"Language-Team: Simplified Chinese "
-"<http://l10n.cihar.com/projects/weblate/website/zh_CN/>\n"
+"Language-Team: Simplified Chinese <http://l10n.cihar.com/projects/weblate/"
+"website/zh_CN/>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -145,7 +145,7 @@ msgstr "功能"
 msgid "Docs"
 msgstr "文档"
 
-#: weblate_web/html/base.html:42 weblate_web/html/download.html:12
+#: weblate_web/html/base.html:42 weblate_web/html/download.html:22
 msgid "Download"
 msgstr "下载"
 
@@ -183,14 +183,14 @@ msgid ""
 "docs.weblate.org/en/latest/contributing.html\">Contributing chapter</a> of "
 "our documentation."
 msgstr ""
-"您可以在我们文档的<a href=\"http://docs.weblate.org/en/latest/contributing.html\">贡献章节<"
-"/a>中找到关于该主题的更多详细信息。"
+"您可以在我们文档的<a href=\"http://docs.weblate.org/en/latest/contributing."
+"html\">贡献章节</a>中找到关于该主题的更多详细信息。"
 
-#: weblate_web/html/contribute.html:15 weblate_web/html/download.html:38
+#: weblate_web/html/contribute.html:15 weblate_web/html/download.html:12
 msgid "Code"
 msgstr "代码"
 
-#: weblate_web/html/contribute.html:18 weblate_web/html/download.html:41
+#: weblate_web/html/contribute.html:18 weblate_web/html/download.html:15
 msgid ""
 "Weblate is being developed on <a href=\"https://github.com/nijel/weblate"
 "\">Github</a>, you can fork it there or just:"
@@ -251,8 +251,8 @@ msgid ""
 "peer network</a> and send me Bitcoins to "
 "<code>14e4wDDEUuzycjqnnZhzQJMKZLq9aa8Y9h</code>."
 msgstr ""
-"您还可以通过<a href=\"http://www.bitcoin.org/\">比特币的对等网络</a>向我发送比特币到<code>14e4wDDEUu"
-"zycjqnnZhzQJMKZLq9aa8Y9h</code>。"
+"您还可以通过<a href=\"http://www.bitcoin.org/\">比特币的对等网络</a>向我发送"
+"比特币到<code>14e4wDDEUuzycjqnnZhzQJMKZLq9aa8Y9h</code>。"
 
 #: weblate_web/html/download.html:5 weblate_web/html/download.html.py:6
 msgid "Download Weblate"
@@ -262,11 +262,11 @@ msgstr "下载 Weblate"
 msgid "Weblate comes with complete source code."
 msgstr "Weblate 提供完整的源代码。"
 
-#: weblate_web/html/download.html:15
+#: weblate_web/html/download.html:25
 msgid "You can download latest release here:"
 msgstr "您可以在这里下载最新版："
 
-#: weblate_web/html/download.html:25
+#: weblate_web/html/download.html:35
 msgid ""
 "For openSUSE/SLES users, there are binary packages available in the <a href="
 "\"http://software.opensuse.org/package/weblate/\">openSUSE Buildservice</a>."
@@ -274,7 +274,11 @@ msgstr ""
 "openSUSE/SLES 用户可到 <a href=\"http://software.opensuse.org/package/"
 "weblate/\">openSUSE 构建服务</a>下载二进制包。"
 
-#: weblate_web/html/download.html:29
+#: weblate_web/html/download.html:38
+msgid "Cloud or emulator images"
+msgstr ""
+
+#: weblate_web/html/download.html:41
 msgid ""
 "In case you want to run Weblate in your cloud or virtual server, you can "
 "download appliance based on openSUSE 12.2 at <a href=\"http://susestudio.com/"
@@ -284,23 +288,13 @@ msgstr ""
 "susestudio.com/a/F8yMYg/weblate\">SUSE 工作室回廊</a>下载基于 openSUSE 12.2 "
 "的套件。"
 
-#: weblate_web/html/download.html:30
+#: weblate_web/html/download.html:42
 msgid ""
 "Check <a href=\"http://docs.weblate.org/en/latest/install.html#appliance"
 "\">our documentation</a> for more information about appliance setup."
 msgstr ""
-"请看<a href=\"http://docs.weblate.org/en/latest/install.html#appliance\">我们的文档</"
-"a>关于安装的更多信息。"
-
-#: weblate_web/html/download.html:34
-msgid ""
-"Weblate is also available as <a href=\"http://bitnami.org/stack/weblate"
-"\">BitNami stack</a>, that allows you native installation on Windows, Linux "
-"or Mac OS X and provides virtual images for running Weblate."
-msgstr ""
-"您也可以到 <a href=\"http://bitnami.org/stack/weblate\">BitNami stack</a> 下"
-"载 Weblate 用于 Windows、Linux 和 Mac OS X 的安装程序或运行了 Weblate 的虚拟"
-"机。"
+"请看<a href=\"http://docs.weblate.org/en/latest/install.html#appliance\">我们"
+"的文档</a>关于安装的更多信息。"
 
 #: weblate_web/html/features.html:4 weblate_web/html/features.html.py:5
 msgid "Weblate features"
@@ -438,9 +432,9 @@ msgid ""
 "org</a>. This will allow you to use Weblate without installing and "
 "maintaining it."
 msgstr ""
-"如果您想在您的自由软件中使用 Weblate，您可以向我们申请托管到 <a "
-"href=\"http://hosted.weblate.org/\">hosted.weblate.org</a>。您将不需要安装和维护 Weblate "
-"就能直接使用它。"
+"如果您想在您的自由软件中使用 Weblate，您可以向我们申请托管到 <a href="
+"\"http://hosted.weblate.org/\">hosted.weblate.org</a>。您将不需要安装和维护 "
+"Weblate 就能直接使用它。"
 
 #: weblate_web/html/hosting.html:17
 msgid "Conditions for free hosting"
@@ -451,8 +445,8 @@ msgid ""
 "Translated content has to be released under <a href=\"http://en.wikipedia."
 "org/wiki/Free_software_license\">free license</a>."
 msgstr ""
-"翻译内容必须通过<a "
-"href=\"http://en.wikipedia.org/wiki/Free_software_license\">自由许可证</a>发布。"
+"翻译内容必须通过<a href=\"http://en.wikipedia.org/wiki/Free_software_license"
+"\">自由许可证</a>发布。"
 
 #: weblate_web/html/hosting.html:21
 msgid ""
@@ -471,7 +465,9 @@ msgstr "申请托管"
 msgid ""
 "Contact <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> and include at "
 "least following information:"
-msgstr "联系 <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> 并附上至少下列信息："
+msgstr ""
+"联系 <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> 并附上至少下列信"
+"息："
 
 #: weblate_web/html/hosting.html:32
 msgid "Information about your project."
@@ -517,7 +513,8 @@ msgstr "收费托管"
 msgid ""
 "Please contact <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> for more "
 "details."
-msgstr "请联系 <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> 获取详细信息。"
+msgstr ""
+"请联系 <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> 获取详细信息。"
 
 #: weblate_web/html/hosting.html:54
 msgid "Other options"
@@ -539,7 +536,9 @@ msgid ""
 "Weblate is a free web-based translation tool with tight Git integration. It "
 "features simple and clean user interface, propagation of translations across "
 "subprojects, quality checks and automatic linking to source files."
-msgstr "Weblate 是一款高度 Git 集成的在线翻译工具。它具有简洁清爽的用户界面，子项目间翻译同步、质量检查以及自动链接到源文件等功能。"
+msgstr ""
+"Weblate 是一款高度 Git 集成的在线翻译工具。它具有简洁清爽的用户界面，子项目间"
+"翻译同步、质量检查以及自动链接到源文件等功能。"
 
 #: weblate_web/html/index.html:19
 msgid "Try our demo"
@@ -713,3 +712,12 @@ msgstr "源代码，zip 压缩"
 #: weblate_web/templatetags/downloads.py:67
 msgid "Sources, 7zip compressed"
 msgstr "源代码，7zip 压缩"
+
+#~ msgid ""
+#~ "Weblate is also available as <a href=\"http://bitnami.org/stack/weblate"
+#~ "\">BitNami stack</a>, that allows you native installation on Windows, "
+#~ "Linux or Mac OS X and provides virtual images for running Weblate."
+#~ msgstr ""
+#~ "您也可以到 <a href=\"http://bitnami.org/stack/weblate\">BitNami stack</a> "
+#~ "下载 Weblate 用于 Windows、Linux 和 Mac OS X 的安装程序或运行了 Weblate 的"
+#~ "虚拟机。"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-08-09 15:22+0200\n"
+"POT-Creation-Date: 2013-08-15 15:23+0200\n"
 "PO-Revision-Date: 2013-08-11 22:48+0200\n"
 "Last-Translator: Panagiotis Papazoglou <papaz_p@yahoo.com>\n"
 "Language-Team: Greek <http://l10n.cihar.com/projects/weblate/website/el/>\n"
@@ -160,7 +160,7 @@ msgstr "Χαρακτηριστικά"
 msgid "Docs"
 msgstr "Έγγραφα"
 
-#: weblate_web/html/base.html:42 weblate_web/html/download.html:12
+#: weblate_web/html/base.html:42 weblate_web/html/download.html:22
 msgid "Download"
 msgstr "Λήψη"
 
@@ -181,7 +181,6 @@ msgid "Tour"
 msgstr "Περιοδεία"
 
 #: weblate_web/html/base.html:60
-#| msgid "Own translations"
 msgid "Help with translations!"
 msgstr "Βοήθεια με μεταφράσεις!"
 
@@ -203,11 +202,11 @@ msgstr ""
 "href=\"http://docs.weblate.org/en/latest/contributing.html\">κεφάλαιο "
 "Συνεισφορά</a> της τεκμηρίωσής μας."
 
-#: weblate_web/html/contribute.html:15 weblate_web/html/download.html:38
+#: weblate_web/html/contribute.html:15 weblate_web/html/download.html:12
 msgid "Code"
 msgstr "Κώδικας"
 
-#: weblate_web/html/contribute.html:18 weblate_web/html/download.html:41
+#: weblate_web/html/contribute.html:18 weblate_web/html/download.html:15
 msgid ""
 "Weblate is being developed on <a href=\"https://github.com/nijel/weblate"
 "\">Github</a>, you can fork it there or just:"
@@ -287,11 +286,11 @@ msgstr "Λήψη του Weblate"
 msgid "Weblate comes with complete source code."
 msgstr "Το Weblate έρχεται με πλήρη πηγαίο κώδικα."
 
-#: weblate_web/html/download.html:15
+#: weblate_web/html/download.html:25
 msgid "You can download latest release here:"
 msgstr "Μπορείτε να κατεβάσετε την τελευταία έκδοση εδώ:"
 
-#: weblate_web/html/download.html:25
+#: weblate_web/html/download.html:35
 msgid ""
 "For openSUSE/SLES users, there are binary packages available in the <a href="
 "\"http://software.opensuse.org/package/weblate/\">openSUSE Buildservice</a>."
@@ -299,7 +298,11 @@ msgstr ""
 "Για χρήστες openSUSE/SLES, υπάρχουν διαθέσιμα εκτελέσιμα πακέτα στο <a href="
 "\"http://software.opensuse.org/package/weblate/\"> openSUSE Buildservice</a>."
 
-#: weblate_web/html/download.html:29
+#: weblate_web/html/download.html:38
+msgid "Cloud or emulator images"
+msgstr ""
+
+#: weblate_web/html/download.html:41
 msgid ""
 "In case you want to run Weblate in your cloud or virtual server, you can "
 "download appliance based on openSUSE 12.2 at <a href=\"http://susestudio.com/"
@@ -310,7 +313,7 @@ msgstr ""
 "στη <a href=\"http://susestudio.com/a/F8yMYg/weblate\"> Συλλογή SUSE Studio</"
 "a>."
 
-#: weblate_web/html/download.html:30
+#: weblate_web/html/download.html:42
 msgid ""
 "Check <a href=\"http://docs.weblate.org/en/latest/install.html#appliance"
 "\">our documentation</a> for more information about appliance setup."
@@ -318,16 +321,6 @@ msgstr ""
 "Ελέγξτε την <a href=\"http://docs.weblate.org/en/latest/install."
 "html#appliance\">τεκμηρίωση μας</a> για περισσότερες πληροφορίες σχετικά με "
 "ρυθμίσεις εφαρμογής."
-
-#: weblate_web/html/download.html:34
-msgid ""
-"Weblate is also available as <a href=\"http://bitnami.org/stack/weblate"
-"\">BitNami stack</a>, that allows you native installation on Windows, Linux "
-"or Mac OS X and provides virtual images for running Weblate."
-msgstr ""
-"Το Weblate είναι επίσης διαθέσιμο ως <a href=\"http://bitnami.org/stack/"
-"weblate\">BitNami stack</a>, που σας επιτρέπει να το εγκαταστήσετε σε "
-"Windows, Linux or Mac OS X αυτόνομα και παρέχει εικόνες για το δουλέψετε."
 
 #: weblate_web/html/features.html:4 weblate_web/html/features.html.py:5
 msgid "Weblate features"
@@ -793,6 +786,15 @@ msgstr "Προελεύσεις, συμπιεσμένο zip"
 #: weblate_web/templatetags/downloads.py:67
 msgid "Sources, 7zip compressed"
 msgstr "Προελεύσεις, συμπιεσμένο 7zip"
+
+#~ msgid ""
+#~ "Weblate is also available as <a href=\"http://bitnami.org/stack/weblate"
+#~ "\">BitNami stack</a>, that allows you native installation on Windows, "
+#~ "Linux or Mac OS X and provides virtual images for running Weblate."
+#~ msgstr ""
+#~ "Το Weblate είναι επίσης διαθέσιμο ως <a href=\"http://bitnami.org/stack/"
+#~ "weblate\">BitNami stack</a>, που σας επιτρέπει να το εγκαταστήσετε σε "
+#~ "Windows, Linux or Mac OS X αυτόνομα και παρέχει εικόνες για το δουλέψετε."
 
 #~ msgid "Language:"
 #~ msgstr "Γλώσσα:"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-08-09 15:22+0200\n"
+"POT-Creation-Date: 2013-08-15 15:23+0200\n"
 "PO-Revision-Date: 2013-07-31 21:14+0200\n"
 "Last-Translator: Martin Jurík <martin@slovakdroid.sk>\n"
 "Language-Team: Slovak <http://l10n.cihar.com/projects/weblate/website/sk/>\n"
@@ -152,7 +152,7 @@ msgstr "Vlastnosti"
 msgid "Docs"
 msgstr "Dokumentácia"
 
-#: weblate_web/html/base.html:42 weblate_web/html/download.html:12
+#: weblate_web/html/base.html:42 weblate_web/html/download.html:22
 msgid "Download"
 msgstr "Stiahnuť"
 
@@ -174,7 +174,6 @@ msgstr "Prehliadka"
 
 #: weblate_web/html/base.html:60
 #, fuzzy
-#| msgid "Own translations"
 msgid "Help with translations!"
 msgstr "Vlastné preklady"
 
@@ -196,11 +195,11 @@ msgstr ""
 "\"http://docs.weblate.org/en/latest/contributing.html\">v kapitole o "
 "prispievaní</a>."
 
-#: weblate_web/html/contribute.html:15 weblate_web/html/download.html:38
+#: weblate_web/html/contribute.html:15 weblate_web/html/download.html:12
 msgid "Code"
 msgstr "Kód"
 
-#: weblate_web/html/contribute.html:18 weblate_web/html/download.html:41
+#: weblate_web/html/contribute.html:18 weblate_web/html/download.html:15
 msgid ""
 "Weblate is being developed on <a href=\"https://github.com/nijel/weblate"
 "\">Github</a>, you can fork it there or just:"
@@ -276,11 +275,11 @@ msgstr "Stiahnite si Weblate"
 msgid "Weblate comes with complete source code."
 msgstr "Weblate je k dispozícii s kompletnými zdrojovými kódmi."
 
-#: weblate_web/html/download.html:15
+#: weblate_web/html/download.html:25
 msgid "You can download latest release here:"
 msgstr "Poslednú verziu si môžete stiahnuť tu:"
 
-#: weblate_web/html/download.html:25
+#: weblate_web/html/download.html:35
 msgid ""
 "For openSUSE/SLES users, there are binary packages available in the <a href="
 "\"http://software.opensuse.org/package/weblate/\">openSUSE Buildservice</a>."
@@ -289,7 +288,11 @@ msgstr ""
 "opensuse.org/package/weblate/\">openSUSE Buildservice</a> stiahnuť rpm "
 "balíky."
 
-#: weblate_web/html/download.html:29
+#: weblate_web/html/download.html:38
+msgid "Cloud or emulator images"
+msgstr ""
+
+#: weblate_web/html/download.html:41
 msgid ""
 "In case you want to run Weblate in your cloud or virtual server, you can "
 "download appliance based on openSUSE 12.2 at <a href=\"http://susestudio.com/"
@@ -299,23 +302,13 @@ msgstr ""
 "stiahnuť pripravené obrazy s openSUSE 12.2 v <a href=\"http://susestudio.com/"
 "a/F8yMYg/weblate\">SUSE Studio Gallery</a>."
 
-#: weblate_web/html/download.html:30
+#: weblate_web/html/download.html:42
 msgid ""
 "Check <a href=\"http://docs.weblate.org/en/latest/install.html#appliance"
 "\">our documentation</a> for more information about appliance setup."
 msgstr ""
 "Pre viac informácií o pripravených obrazoch sa pozrite <a href=\"http://docs."
 "weblate.org/en/latest/install.html#appliance\"> do našej dokumentácie</a>."
-
-#: weblate_web/html/download.html:34
-msgid ""
-"Weblate is also available as <a href=\"http://bitnami.org/stack/weblate"
-"\">BitNami stack</a>, that allows you native installation on Windows, Linux "
-"or Mac OS X and provides virtual images for running Weblate."
-msgstr ""
-"Weblate je tiež dostupný ako <a href=\"http://bitnami.org/stack/weblate"
-"\">BitNami stack</a>, ktorý umožňuje inštaláciu na Windows, Linux alebo Mac "
-"OS X a tiež ponúka obrazy pre virtuálne stroje."
 
 #: weblate_web/html/features.html:4 weblate_web/html/features.html.py:5
 msgid "Weblate features"
@@ -770,6 +763,15 @@ msgstr "Zdrojové kódy, komprimované zipom"
 #: weblate_web/templatetags/downloads.py:67
 msgid "Sources, 7zip compressed"
 msgstr "Zdrojové kódy, komprimované 7zipom"
+
+#~ msgid ""
+#~ "Weblate is also available as <a href=\"http://bitnami.org/stack/weblate"
+#~ "\">BitNami stack</a>, that allows you native installation on Windows, "
+#~ "Linux or Mac OS X and provides virtual images for running Weblate."
+#~ msgstr ""
+#~ "Weblate je tiež dostupný ako <a href=\"http://bitnami.org/stack/weblate"
+#~ "\">BitNami stack</a>, ktorý umožňuje inštaláciu na Windows, Linux alebo "
+#~ "Mac OS X a tiež ponúka obrazy pre virtuálne stroje."
 
 #~ msgid "Language:"
 #~ msgstr "Jazyk:"
