@@ -92,7 +92,8 @@ LANGUAGES = (
     ('sl', u'Slovenščina'),
     ('sv', u'Svenska'),
     ('tr', u'Türkçe'),
-    #('zh-cn', u'中文'),
+    ('zh-cn', u'简体字'),
+    ('zh-tw', u'正體字'),
 )
 
 SITE_ID = 1
