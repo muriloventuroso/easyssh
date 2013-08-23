@@ -3,7 +3,6 @@ python:
   - "2.7"
 # commands to install dependencies
 install: 
-  - pip install --use-mirrors Django==$DJANGO_VERSION
   - pip install --use-mirrors -r requirements.txt
   - pip install --use-mirrors -r requirements-test.txt
 # commands to run tests
