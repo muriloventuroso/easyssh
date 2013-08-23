@@ -32,10 +32,7 @@ def filesizeformat(num_bytes):
     Formats the value like a 'human-readable' file size (i.e. 13 KB, 4.1 MB,
     102 bytes, etc).
     """
-    try:
-        num_bytes = float(num_bytes)
-    except (TypeError, ValueError, UnicodeDecodeError):
-        return _(u"0 bytes")
+    num_bytes = float(num_bytes)
 
     if num_bytes < 1024:
         return ungettext(
