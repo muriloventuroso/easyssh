@@ -54,14 +54,10 @@ def downloadlink(name, text=None):
             text = _('Sources tarball, bzip2 compressed')
         elif name[-7:] == '.tar.gz':
             text = _('Sources tarball, gzip compressed')
-        elif name[-9:] == '.tar.lzma':
-            text = _('Sources tarball, lzma compressed')
         elif name[-7:] == '.tar.xz':
             text = _('Sources tarball, xz compressed')
         elif name[-4:] == '.zip':
             text = _('Sources, zip compressed')
-        elif name[-3:] == '.7z':
-            text = _('Sources, 7zip compressed')
         else:
             text = os.path.split(name)[1]
 
