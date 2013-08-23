@@ -24,6 +24,9 @@ class ViewTestCase(TestCase):
         filenames = ['weblate-%s.%s' % (VERSION, ext) for ext in EXTENSIONS]
         unlink = []
 
+        if not os.path.exists(settings.FILES_PATH):
+            os.makedirs(settings.FILES_PATH)
+
         for filename in filenames:
             fullname = os.path.join(settings.FILES_PATH, filename)
             if not os.path.exists(fullname):
