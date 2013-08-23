@@ -39,3 +39,7 @@ class ViewTestCase(TestCase):
 
         for filename in unlink:
             os.unlink(filename)
+
+    def test_sitemap(self):
+        response = self.client.get('/sitemap.xml')
+        self.assertContains(response, 'http://testserver/es/features/')
