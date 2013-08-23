@@ -3,10 +3,14 @@
 from django.test import TestCase
 from django.conf import settings
 from weblate_web.data import VERSION, EXTENSIONS
+from weblate_web.templatetags.downloads import filesizeformat
 import os
 
 
 class ViewTestCase(TestCase):
+    '''
+    Views testing.
+    '''
     def test_index_redirect(self):
         response = self.client.get('/')
         self.assertRedirects(response, '/en/', 301)
@@ -43,3 +47,15 @@ class ViewTestCase(TestCase):
     def test_sitemap(self):
         response = self.client.get('/sitemap.xml')
         self.assertContains(response, 'http://testserver/es/features/')
+
+
+class UtilTestCase(TestCase):
+    '''
+    Helper code testing.
+    '''
+    def test_format(self):
+        self.assertEquals(filesizeformat(0), '0 bytes')
+        self.assertEquals(filesizeformat(1000), '1000 bytes')
+        self.assertEquals(filesizeformat(1000000), '976.6 KiB')
+        self.assertEquals(filesizeformat(1000000000), '953.7 MiB')
+        self.assertEquals(filesizeformat(10000000000000), '9313.2 GiB')
