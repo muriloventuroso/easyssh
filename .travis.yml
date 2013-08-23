@@ -13,7 +13,6 @@ install:
 script: 
   - ./scripts/generate-locales
   - ./manage.py validate
-  - ./manage.py syncdb --noinput
   - coverage run --source=. ./manage.py test weblate_web
   - pep8 .
   - pylint --reports=n --rcfile=pylint.rc weblate_web
