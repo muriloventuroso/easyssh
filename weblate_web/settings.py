@@ -225,3 +225,5 @@ LOCALE_INDEPENDENT_PATHS = (
     r'^/sitemap.xml$',
 )
 LOCALEURL_USE_ACCEPT_LANGUAGE = True
+
+ALLOWED_HOSTS = ['weblate.org']
