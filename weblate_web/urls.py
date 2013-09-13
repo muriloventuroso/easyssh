@@ -103,6 +103,11 @@ urlpatterns = patterns(
         name='contribute'
     ),
     url(
+        r'^donate/$',
+        TemplateView.as_view(template_name="donate.html"),
+        name='donate'
+    ),
+    url(
         r'^support/$',
         TemplateView.as_view(template_name="support.html"),
         name='support'
