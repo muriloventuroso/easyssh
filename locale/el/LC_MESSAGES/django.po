@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2013-09-13 10:56+0200\n"
-"PO-Revision-Date: 2013-09-13 10:53+0200\n"
+"PO-Revision-Date: 2013-09-13 11:29+0200\n"
 "Last-Translator: Panagiotis Papazoglou <papaz_p@yahoo.com>\n"
 "Language-Team: Greek <http://l10n.cihar.com/projects/weblate/website/el/>\n"
 "Language: el\n"
@@ -189,12 +189,14 @@ msgid "Help with translations!"
 msgstr "Βοήθεια με μεταφράσεις!"
 
 #: weblate_web/html/base.html:82
-#, fuzzy, python-format
+#, python-format
 #| msgid "Weblate is free, but welcomes donations."
 msgid ""
 "Weblate is free software, but welcomes <a href=\"%(donate_url)s\">donations</"
 "a>."
-msgstr "Το Weblate είναι δωρεάν οι δωρεές είναι καλοδεχούμενες."
+msgstr ""
+"Το Weblate είναι δωρεάν λογισμικό οι <a href=\"%(donate_url)s\">δωρεές</a> "
+"είναι καλοδεχούμενες."
 
 #: weblate_web/html/contribute.html:4 weblate_web/html/contribute.html.py:5
 msgid "Contribute to Weblate"
@@ -260,10 +262,9 @@ msgid "Weblate is free, but welcomes donations."
 msgstr "Το Weblate είναι δωρεάν οι δωρεές είναι καλοδεχούμενες."
 
 #: weblate_web/html/donate.html:11
-#, fuzzy
 #| msgid "Other options"
 msgid "Regular donations"
-msgstr "Άλλες επιλογές"
+msgstr "Τακτικές δωρεές"
 
 #: weblate_web/html/donate.html:14
 msgid ""
@@ -271,14 +272,19 @@ msgid ""
 "fund free hosting for free software. You don't have to spend big money, "
 "every penny counts."
 msgstr ""
+"Οι τακτικές δωρέες επιτρέπουν τη διατήρηση της ανάπτυξης του Weblate και "
+"βοηθούν τη χρηματοδότηση της δωρεάν φιλοξενίας για δωρεάν λογισμικό. Δεν "
+"χρειάζονται πολλά χρήματα, κάθε συνεισφορά μετράει."
 
 #: weblate_web/html/donate.html:18
 msgid "Donate using Gittip"
-msgstr ""
+msgstr "Δωρεάν με χρήση Gittip"
 
 #: weblate_web/html/donate.html:22
 msgid "Gittip allows you to send weekly amount using credit card."
 msgstr ""
+"Το Gittip σας επιτρέπει να στέλνετε εβδομαδιαία ποσό με χρήση πιστωτικής "
+"κάρτας."
 
 #: weblate_web/html/donate.html:28
 msgid ""
@@ -289,13 +295,15 @@ msgstr ""
 
 #: weblate_web/html/donate.html:34
 msgid "Donate using PayPal"
-msgstr ""
+msgstr "Δωρεά με χρήση PayPal"
 
 #: weblate_web/html/donate.html:38
 msgid ""
 "PayPal allows you to send money from credit card, PayPal ballance or bank "
 "account."
 msgstr ""
+"Το PayPal σας επιτρέπει να στείλετε χρήματα από πιστωτική κάρτα, από PayPal "
+"ballance ή τραπεζικό λογαριασμό."
 
 #: weblate_web/html/donate.html:42
 msgid "Flattr this"
@@ -308,10 +316,9 @@ msgid ""
 msgstr ""
 
 #: weblate_web/html/donate.html:50
-#, fuzzy
 #| msgid "Donate Bitcoins"
 msgid "Donate using Coinbase"
-msgstr "Δωρεά Bitcoins"
+msgstr "Δωρεά με χρήση Conbase"
 
 #: weblate_web/html/donate.html:54
 msgid "Coinbase allows you to send Bitcoins."
