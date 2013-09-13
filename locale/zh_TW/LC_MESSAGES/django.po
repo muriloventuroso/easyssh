@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-08-15 15:24+0200\n"
+"POT-Creation-Date: 2013-09-13 10:01+0200\n"
 "PO-Revision-Date: 2013-08-22 12:53+0200\n"
 "Last-Translator: ezjerry liao <ezjerry@gmail.com>\n"
-"Language-Team: Traditional Chinese "
-"<http://l10n.cihar.com/projects/weblate/website/zh_TW/>\n"
+"Language-Team: Traditional Chinese <http://l10n.cihar.com/projects/weblate/"
+"website/zh_TW/>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -184,8 +184,8 @@ msgid ""
 "docs.weblate.org/en/latest/contributing.html\">Contributing chapter</a> of "
 "our documentation."
 msgstr ""
-"您可以在<a href=\"HTTP://docs.weblate.org/en/latest/contributing.html\">提供章節</a>中找"
-"到我們有關此主題更詳細資訊的文件檔案。"
+"您可以在<a href=\"HTTP://docs.weblate.org/en/latest/contributing.html\">提供"
+"章節</a>中找到我們有關此主題更詳細資訊的文件檔案。"
 
 #: weblate_web/html/contribute.html:15 weblate_web/html/download.html:12
 msgid "Code"
@@ -216,9 +216,8 @@ msgid ""
 "You can translate Weblate using Weblate installation at <a href=\"https://"
 "l10n.cihar.com/engage/weblate/\">l10n.cihar.com</a>."
 msgstr ""
-"您可以使用已安裝了 Weblate 的 <a "
-"href=\"https://l10n.cihar.com/engage/weblate/\">l10n.cihar.com</a> 上翻譯 "
-"Weblate。"
+"您可以使用已安裝了 Weblate 的 <a href=\"https://l10n.cihar.com/engage/"
+"weblate/\">l10n.cihar.com</a> 上翻譯 Weblate。"
 
 #: weblate_web/html/contribute.html:41
 msgid "Translation status"
@@ -234,8 +233,8 @@ msgid ""
 "New <a href=\"%(url)s\">Weblate features</a> are also being <a href=\"%(url)s"
 "\">funded on Catincan</a>, you can support them there!"
 msgstr ""
-"新的 <a href=\"%(url)s\">Weblate 功能</a>也在 <a href=\"%(url)s\">Catincan "
-"上找到</a>，您可以在那裡支援他們！"
+"新的 <a href=\"%(url)s\">Weblate 功能</a>也在 <a href=\"%(url)s\">Catincan 上"
+"找到</a>，您可以在那裡支援他們！"
 
 #: weblate_web/html/contribute.html:49
 msgid "Donate"
@@ -252,12 +251,19 @@ msgstr "捐贈 Bitcoins"
 
 #: weblate_web/html/contribute.html:69
 msgid ""
+"Regular donations, which will support Weblate and it's free hosting in the "
+"long term can be done on <a href=\"https://www.gittip.com/nijel/\">Gittip</"
+"a>."
+msgstr ""
+
+#: weblate_web/html/contribute.html:73
+msgid ""
 "You can also use <a href=\"http://www.bitcoin.org/\">Bitcoin is a peer-to-"
 "peer network</a> and send me Bitcoins to "
 "<code>14e4wDDEUuzycjqnnZhzQJMKZLq9aa8Y9h</code>."
 msgstr ""
-"您還可以使用 <a href=\"http://www.bitcoin.org/\">Bitcoin 是一種對等網路</a>，並把我送到 "
-"<code>14e4wDDEUuzycjqnnZhzQJMKZLq9aa8Y9h</code>的 Bitcoin。"
+"您還可以使用 <a href=\"http://www.bitcoin.org/\">Bitcoin 是一種對等網路</a>，"
+"並把我送到 <code>14e4wDDEUuzycjqnnZhzQJMKZLq9aa8Y9h</code>的 Bitcoin。"
 
 #: weblate_web/html/download.html:5 weblate_web/html/download.html.py:6
 msgid "Download Weblate"
@@ -286,10 +292,10 @@ msgstr "雲端或模擬映射"
 #: weblate_web/html/download.html:41
 msgid ""
 "In case you want to run Weblate in your cloud or virtual server, you can "
-"download appliance based on openSUSE 12.2 at <a href=\"http://susestudio.com/"
+"download appliance based on openSUSE 12.3 at <a href=\"http://susestudio.com/"
 "a/F8yMYg/weblate\">SUSE Studio Gallery</a>."
 msgstr ""
-"萬一您想要在您的雲端或虛擬伺服器運行 Weblate，您可以到基於 openSUSE 12.2<a "
+"萬一您想要在您的雲端或虛擬伺服器運行 Weblate，您可以到基於 openSUSE 12.3<a "
 "href=\"http://susestudio.com/a/F8yMYg/weblate\"> SUSE Studio 平台</a>上下載應"
 "用。"
 
@@ -504,20 +510,32 @@ msgid ""
 msgstr ""
 
 #: weblate_web/html/hosting.html:48
+msgid "Support free hosting"
+msgstr ""
+
+#: weblate_web/html/hosting.html:52
+#, python-format
+msgid ""
+"The hosting is provided for free, but running the server and maintaining it "
+"costs some money, so you are welcome to use <a href=\"%(gittip_url)s"
+"\">Gittip</a> or <a href=\"%(donate_url)s\">other ways to donate</a>."
+msgstr ""
+
+#: weblate_web/html/hosting.html:55
 msgid "Commercial hosting"
 msgstr ""
 
-#: weblate_web/html/hosting.html:51
+#: weblate_web/html/hosting.html:58
 msgid ""
 "Please contact <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> for more "
 "details."
 msgstr ""
 
-#: weblate_web/html/hosting.html:54
+#: weblate_web/html/hosting.html:61
 msgid "Other options"
 msgstr ""
 
-#: weblate_web/html/hosting.html:58 weblate_web/html/try.html:20
+#: weblate_web/html/hosting.html:65 weblate_web/html/try.html:20
 #, python-format
 msgid ""
 "Check our <a href=\"%(download_url)s\">download page</a> for appliances, "
@@ -643,54 +661,42 @@ msgstr ""
 msgid "Appliances"
 msgstr ""
 
-#: weblate_web/templatetags/downloads.py:38
-msgid "0 bytes"
-msgstr ""
-
-#: weblate_web/templatetags/downloads.py:42
+#: weblate_web/templatetags/downloads.py:39
 #, python-format
 msgid "%(size)d byte"
 msgid_plural "%(size)d bytes"
 msgstr[0] ""
 msgstr[1] ""
 
-#: weblate_web/templatetags/downloads.py:47
+#: weblate_web/templatetags/downloads.py:44
 #, python-format
 msgid "%.1f KiB"
 msgstr ""
 
-#: weblate_web/templatetags/downloads.py:49
+#: weblate_web/templatetags/downloads.py:46
 #, python-format
 msgid "%.1f MiB"
 msgstr ""
 
-#: weblate_web/templatetags/downloads.py:50
+#: weblate_web/templatetags/downloads.py:47
 #, python-format
 msgid "%.1f GiB"
 msgstr ""
 
-#: weblate_web/templatetags/downloads.py:57
+#: weblate_web/templatetags/downloads.py:54
 msgid "Sources tarball, bzip2 compressed"
 msgstr ""
 
-#: weblate_web/templatetags/downloads.py:59
+#: weblate_web/templatetags/downloads.py:56
 msgid "Sources tarball, gzip compressed"
 msgstr ""
 
-#: weblate_web/templatetags/downloads.py:61
-msgid "Sources tarball, lzma compressed"
-msgstr ""
-
-#: weblate_web/templatetags/downloads.py:63
+#: weblate_web/templatetags/downloads.py:58
 msgid "Sources tarball, xz compressed"
 msgstr ""
 
-#: weblate_web/templatetags/downloads.py:65
+#: weblate_web/templatetags/downloads.py:60
 msgid "Sources, zip compressed"
-msgstr ""
-
-#: weblate_web/templatetags/downloads.py:67
-msgid "Sources, 7zip compressed"
 msgstr ""
 
 #~ msgid ""

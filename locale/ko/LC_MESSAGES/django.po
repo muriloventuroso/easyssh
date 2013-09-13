@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-08-15 15:24+0200\n"
+"POT-Creation-Date: 2013-09-13 10:01+0200\n"
 "PO-Revision-Date: 2013-09-10 16:42+0200\n"
 "Last-Translator: Deokyun Yu <i@saintjr.com>\n"
 "Language-Team: Korean <http://l10n.cihar.com/projects/weblate/website/ko/>\n"
@@ -30,7 +30,9 @@ msgstr "자신의 번역"
 msgid ""
 "Translator can always see important context information like comments or "
 "corresponding source code."
-msgstr "덧말이나 상응하는 소스코드 같은 중요한 문맥 정보를 번역자는 항상 볼 수 있습니다."
+msgstr ""
+"덧말이나 상응하는 소스코드 같은 중요한 문맥 정보를 번역자는 항상 볼 수 있습니"
+"다."
 
 #: weblate_web/data.py:42 weblate_web/html/features.html:45
 msgid "Translation context"
@@ -105,7 +107,8 @@ msgstr "지속적인 번역"
 #: weblate_web/html/base-features.html:5
 msgid ""
 "Automated translation process can closely follow development of your project."
-msgstr "자동화된 번역 절차는 당신의 프로젝트 개발 상황에 밀접하게 따라갈 수 있습니다."
+msgstr ""
+"자동화된 번역 절차는 당신의 프로젝트 개발 상황에 밀접하게 따라갈 수 있습니다."
 
 #: weblate_web/html/base-features.html:16
 msgid "Attribution"
@@ -183,9 +186,8 @@ msgid ""
 "docs.weblate.org/en/latest/contributing.html\">Contributing chapter</a> of "
 "our documentation."
 msgstr ""
-"이 주제에 대한 세부적인 사항은 문서의 <a "
-"href=\"http://docs.weblate.org/ko/latest/contributing.html\">기여하기 챕터</a>에서 확인할 "
-"수 있습니다.."
+"이 주제에 대한 세부적인 사항은 문서의 <a href=\"http://docs.weblate.org/ko/"
+"latest/contributing.html\">기여하기 챕터</a>에서 확인할 수 있습니다.."
 
 #: weblate_web/html/contribute.html:15 weblate_web/html/download.html:12
 msgid "Code"
@@ -250,6 +252,13 @@ msgstr "Bitcoin 기부하기"
 
 #: weblate_web/html/contribute.html:69
 msgid ""
+"Regular donations, which will support Weblate and it's free hosting in the "
+"long term can be done on <a href=\"https://www.gittip.com/nijel/\">Gittip</"
+"a>."
+msgstr ""
+
+#: weblate_web/html/contribute.html:73
+msgid ""
 "You can also use <a href=\"http://www.bitcoin.org/\">Bitcoin is a peer-to-"
 "peer network</a> and send me Bitcoins to "
 "<code>14e4wDDEUuzycjqnnZhzQJMKZLq9aa8Y9h</code>."
@@ -282,10 +291,10 @@ msgstr ""
 #: weblate_web/html/download.html:41
 msgid ""
 "In case you want to run Weblate in your cloud or virtual server, you can "
-"download appliance based on openSUSE 12.2 at <a href=\"http://susestudio.com/"
+"download appliance based on openSUSE 12.3 at <a href=\"http://susestudio.com/"
 "a/F8yMYg/weblate\">SUSE Studio Gallery</a>."
 msgstr ""
-"Weblate를 클라우드나 가상서버에서 실행하고자 하는 경우, openSUSE 12.2 기반의 "
+"Weblate를 클라우드나 가상서버에서 실행하고자 하는 경우, openSUSE 12.3 기반의 "
 "어플라이언스를<a href=\"http://susestudio.com/a/F8yMYg/weblate\">SUSE Studio "
 "Gallery</a>에서 받을수 있습니다."
 
@@ -460,8 +469,8 @@ msgid ""
 "Contact <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> and include at "
 "least following information:"
 msgstr ""
-"최소한 다음의 정보를 포함하여 <a href=\"mailto:michal@cihar.com?subject=Weblate\">Michal "
-"Čihař</a>에게 연락하시기 바랍니다:"
+"최소한 다음의 정보를 포함하여 <a href=\"mailto:michal@cihar.com?"
+"subject=Weblate\">Michal Čihař</a>에게 연락하시기 바랍니다:"
 
 #: weblate_web/html/hosting.html:32
 msgid "Information about your project."
@@ -499,22 +508,34 @@ msgid ""
 msgstr ""
 
 #: weblate_web/html/hosting.html:48
+msgid "Support free hosting"
+msgstr ""
+
+#: weblate_web/html/hosting.html:52
+#, python-format
+msgid ""
+"The hosting is provided for free, but running the server and maintaining it "
+"costs some money, so you are welcome to use <a href=\"%(gittip_url)s"
+"\">Gittip</a> or <a href=\"%(donate_url)s\">other ways to donate</a>."
+msgstr ""
+
+#: weblate_web/html/hosting.html:55
 msgid "Commercial hosting"
 msgstr ""
 
-#: weblate_web/html/hosting.html:51
+#: weblate_web/html/hosting.html:58
 msgid ""
 "Please contact <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> for more "
 "details."
 msgstr ""
-"세부 사항은 <a href=\"mailto:michal@cihar.com?subject=Weblate\">Michal Čihař</a>에게 "
-"연락하여 주십시요."
+"세부 사항은 <a href=\"mailto:michal@cihar.com?subject=Weblate\">Michal "
+"Čihař</a>에게 연락하여 주십시요."
 
-#: weblate_web/html/hosting.html:54
+#: weblate_web/html/hosting.html:61
 msgid "Other options"
 msgstr "다른 옵션"
 
-#: weblate_web/html/hosting.html:58 weblate_web/html/try.html:20
+#: weblate_web/html/hosting.html:65 weblate_web/html/try.html:20
 #, python-format
 msgid ""
 "Check our <a href=\"%(download_url)s\">download page</a> for appliances, "
@@ -531,8 +552,9 @@ msgid ""
 "features simple and clean user interface, propagation of translations across "
 "subprojects, quality checks and automatic linking to source files."
 msgstr ""
-"Weblate는 Git와 잘 연계된 웹 기반의 번역 도구입니다. 간결하고 깔끔한 사용자 인터페이스와 하위 프로젝트에 대한 번역 전파 및 "
-"품질 검사 그리고 원본 파일에 대한 자동화된 연결을 제공합니다."
+"Weblate는 Git와 잘 연계된 웹 기반의 번역 도구입니다. 간결하고 깔끔한 사용자 "
+"인터페이스와 하위 프로젝트에 대한 번역 전파 및 품질 검사 그리고 원본 파일에 "
+"대한 자동화된 연결을 제공합니다."
 
 #: weblate_web/html/index.html:19
 msgid "Try our demo"
@@ -661,55 +683,46 @@ msgstr ""
 msgid "Appliances"
 msgstr "어플라이언스"
 
-#: weblate_web/templatetags/downloads.py:38
-msgid "0 bytes"
-msgstr "0 바이트"
-
-#: weblate_web/templatetags/downloads.py:42
+#: weblate_web/templatetags/downloads.py:39
 #, python-format
 msgid "%(size)d byte"
 msgid_plural "%(size)d bytes"
 msgstr[0] ""
 msgstr[1] ""
 
-#: weblate_web/templatetags/downloads.py:47
+#: weblate_web/templatetags/downloads.py:44
 #, python-format
 msgid "%.1f KiB"
 msgstr ""
 
-#: weblate_web/templatetags/downloads.py:49
+#: weblate_web/templatetags/downloads.py:46
 #, python-format
 msgid "%.1f MiB"
 msgstr ""
 
-#: weblate_web/templatetags/downloads.py:50
+#: weblate_web/templatetags/downloads.py:47
 #, python-format
 msgid "%.1f GiB"
 msgstr ""
 
-#: weblate_web/templatetags/downloads.py:57
+#: weblate_web/templatetags/downloads.py:54
 msgid "Sources tarball, bzip2 compressed"
 msgstr ""
 
-#: weblate_web/templatetags/downloads.py:59
+#: weblate_web/templatetags/downloads.py:56
 msgid "Sources tarball, gzip compressed"
 msgstr ""
 
-#: weblate_web/templatetags/downloads.py:61
-msgid "Sources tarball, lzma compressed"
-msgstr ""
-
-#: weblate_web/templatetags/downloads.py:63
+#: weblate_web/templatetags/downloads.py:58
 msgid "Sources tarball, xz compressed"
 msgstr ""
 
-#: weblate_web/templatetags/downloads.py:65
+#: weblate_web/templatetags/downloads.py:60
 msgid "Sources, zip compressed"
 msgstr ""
 
-#: weblate_web/templatetags/downloads.py:67
-msgid "Sources, 7zip compressed"
-msgstr ""
+#~ msgid "0 bytes"
+#~ msgstr "0 바이트"
 
 #~ msgid ""
 #~ "Weblate is also available as <a href=\"http://bitnami.org/stack/weblate"

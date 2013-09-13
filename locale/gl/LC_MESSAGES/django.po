@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-08-15 15:24+0200\n"
+"POT-Creation-Date: 2013-09-13 10:01+0200\n"
 "PO-Revision-Date: 2013-04-24 08:52+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Galician <http://l10n.cihar.com/projects/weblate/website/gl/"
@@ -252,6 +252,13 @@ msgstr ""
 
 #: weblate_web/html/contribute.html:69
 msgid ""
+"Regular donations, which will support Weblate and it's free hosting in the "
+"long term can be done on <a href=\"https://www.gittip.com/nijel/\">Gittip</"
+"a>."
+msgstr ""
+
+#: weblate_web/html/contribute.html:73
+msgid ""
 "You can also use <a href=\"http://www.bitcoin.org/\">Bitcoin is a peer-to-"
 "peer network</a> and send me Bitcoins to "
 "<code>14e4wDDEUuzycjqnnZhzQJMKZLq9aa8Y9h</code>."
@@ -284,11 +291,11 @@ msgstr ""
 #: weblate_web/html/download.html:41
 msgid ""
 "In case you want to run Weblate in your cloud or virtual server, you can "
-"download appliance based on openSUSE 12.2 at <a href=\"http://susestudio.com/"
+"download appliance based on openSUSE 12.3 at <a href=\"http://susestudio.com/"
 "a/F8yMYg/weblate\">SUSE Studio Gallery</a>."
 msgstr ""
 "No caso de que queira executar Weblate na súa nube ou servidor virtual, pode "
-"descargar a ampliación baseada en openSUSE 12.2 en <a href=\"http://"
+"descargar a ampliación baseada en openSUSE 12.3 en <a href=\"http://"
 "susestudio.com/a/F8yMYg/weblate\">SUSE Studio Gallery</a>."
 
 #: weblate_web/html/download.html:42
@@ -503,10 +510,22 @@ msgid ""
 msgstr ""
 
 #: weblate_web/html/hosting.html:48
+msgid "Support free hosting"
+msgstr ""
+
+#: weblate_web/html/hosting.html:52
+#, python-format
+msgid ""
+"The hosting is provided for free, but running the server and maintaining it "
+"costs some money, so you are welcome to use <a href=\"%(gittip_url)s"
+"\">Gittip</a> or <a href=\"%(donate_url)s\">other ways to donate</a>."
+msgstr ""
+
+#: weblate_web/html/hosting.html:55
 msgid "Commercial hosting"
 msgstr ""
 
-#: weblate_web/html/hosting.html:51
+#: weblate_web/html/hosting.html:58
 #, fuzzy
 msgid ""
 "Please contact <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> for more "
@@ -515,11 +534,11 @@ msgstr ""
 "Tamén pode contactar con <a href=\"mailto:michal@cihar.com?subject=Weblate"
 "\">Michal Čihař</a> que é o autor do Weblate."
 
-#: weblate_web/html/hosting.html:54
+#: weblate_web/html/hosting.html:61
 msgid "Other options"
 msgstr ""
 
-#: weblate_web/html/hosting.html:58 weblate_web/html/try.html:20
+#: weblate_web/html/hosting.html:65 weblate_web/html/try.html:20
 #, python-format
 msgid ""
 "Check our <a href=\"%(download_url)s\">download page</a> for appliances, "
@@ -659,52 +678,40 @@ msgstr ""
 msgid "Appliances"
 msgstr "Aplicativo empaquetado"
 
-#: weblate_web/templatetags/downloads.py:38
-msgid "0 bytes"
-msgstr ""
-
-#: weblate_web/templatetags/downloads.py:42
+#: weblate_web/templatetags/downloads.py:39
 #, python-format
 msgid "%(size)d byte"
 msgid_plural "%(size)d bytes"
 msgstr[0] ""
 msgstr[1] ""
 
-#: weblate_web/templatetags/downloads.py:47
+#: weblate_web/templatetags/downloads.py:44
 #, python-format
 msgid "%.1f KiB"
 msgstr ""
 
-#: weblate_web/templatetags/downloads.py:49
+#: weblate_web/templatetags/downloads.py:46
 #, python-format
 msgid "%.1f MiB"
 msgstr ""
 
-#: weblate_web/templatetags/downloads.py:50
+#: weblate_web/templatetags/downloads.py:47
 #, python-format
 msgid "%.1f GiB"
 msgstr ""
 
-#: weblate_web/templatetags/downloads.py:57
+#: weblate_web/templatetags/downloads.py:54
 msgid "Sources tarball, bzip2 compressed"
 msgstr ""
 
-#: weblate_web/templatetags/downloads.py:59
+#: weblate_web/templatetags/downloads.py:56
 msgid "Sources tarball, gzip compressed"
 msgstr ""
 
-#: weblate_web/templatetags/downloads.py:61
-msgid "Sources tarball, lzma compressed"
-msgstr ""
-
-#: weblate_web/templatetags/downloads.py:63
+#: weblate_web/templatetags/downloads.py:58
 msgid "Sources tarball, xz compressed"
 msgstr ""
 
-#: weblate_web/templatetags/downloads.py:65
+#: weblate_web/templatetags/downloads.py:60
 msgid "Sources, zip compressed"
-msgstr ""
-
-#: weblate_web/templatetags/downloads.py:67
-msgid "Sources, 7zip compressed"
 msgstr ""

@@ -7,17 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-08-15 15:24+0200\n"
+"POT-Creation-Date: 2013-09-13 10:01+0200\n"
 "PO-Revision-Date: 2013-08-30 16:41+0200\n"
 "Last-Translator: Alaksiej Nieścieraŭ <alaksiej@screencustoms.com>\n"
-"Language-Team: Belarusian "
-"<http://l10n.cihar.com/projects/weblate/website/be/>\n"
+"Language-Team: Belarusian <http://l10n.cihar.com/projects/weblate/website/be/"
+">\n"
 "Language: be\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
-"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 1.7-dev\n"
 
 #: weblate_web/data.py:33
@@ -263,6 +263,13 @@ msgstr "Ахвяруйце Bitcoin-ы"
 
 #: weblate_web/html/contribute.html:69
 msgid ""
+"Regular donations, which will support Weblate and it's free hosting in the "
+"long term can be done on <a href=\"https://www.gittip.com/nijel/\">Gittip</"
+"a>."
+msgstr ""
+
+#: weblate_web/html/contribute.html:73
+msgid ""
 "You can also use <a href=\"http://www.bitcoin.org/\">Bitcoin is a peer-to-"
 "peer network</a> and send me Bitcoins to "
 "<code>14e4wDDEUuzycjqnnZhzQJMKZLq9aa8Y9h</code>."
@@ -298,11 +305,11 @@ msgstr "Вобразы для воблака альбо эмулятара"
 #: weblate_web/html/download.html:41
 msgid ""
 "In case you want to run Weblate in your cloud or virtual server, you can "
-"download appliance based on openSUSE 12.2 at <a href=\"http://susestudio.com/"
+"download appliance based on openSUSE 12.3 at <a href=\"http://susestudio.com/"
 "a/F8yMYg/weblate\">SUSE Studio Gallery</a>."
 msgstr ""
 "Як хочаце запусціць Weblate на сваім клаўд- альбо віртуальным серверы, "
-"спампуйце вобраз на базе openSUSE 12.2, змешчаны ў <a href=\"http://"
+"спампуйце вобраз на базе openSUSE 12.3, змешчаны ў <a href=\"http://"
 "susestudio.com/a/F8yMYg/weblate\">SUSE Studio Gallery</a>."
 
 #: weblate_web/html/download.html:42
@@ -551,10 +558,24 @@ msgstr ""
 "гэтай функцыі."
 
 #: weblate_web/html/hosting.html:48
+#, fuzzy
+#| msgid "Conditions for free hosting"
+msgid "Support free hosting"
+msgstr "Умовы для дармавога хостынгу"
+
+#: weblate_web/html/hosting.html:52
+#, python-format
+msgid ""
+"The hosting is provided for free, but running the server and maintaining it "
+"costs some money, so you are welcome to use <a href=\"%(gittip_url)s"
+"\">Gittip</a> or <a href=\"%(donate_url)s\">other ways to donate</a>."
+msgstr ""
+
+#: weblate_web/html/hosting.html:55
 msgid "Commercial hosting"
 msgstr "Камерцыйны хостынг"
 
-#: weblate_web/html/hosting.html:51
+#: weblate_web/html/hosting.html:58
 msgid ""
 "Please contact <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> for more "
 "details."
@@ -562,11 +583,11 @@ msgstr ""
 "Калі ласка, звярніцеся да <a href=\"mailto:michal@cihar.com\">Міхала Чыгара</"
 "a> па падрабязнасці."
 
-#: weblate_web/html/hosting.html:54
+#: weblate_web/html/hosting.html:61
 msgid "Other options"
 msgstr "Іншыя варыянты"
 
-#: weblate_web/html/hosting.html:58 weblate_web/html/try.html:20
+#: weblate_web/html/hosting.html:65 weblate_web/html/try.html:20
 #, python-format
 msgid ""
 "Check our <a href=\"%(download_url)s\">download page</a> for appliances, "
@@ -720,11 +741,7 @@ msgstr ""
 msgid "Appliances"
 msgstr "Дадаткі"
 
-#: weblate_web/templatetags/downloads.py:38
-msgid "0 bytes"
-msgstr "0 байтаў"
-
-#: weblate_web/templatetags/downloads.py:42
+#: weblate_web/templatetags/downloads.py:39
 #, python-format
 msgid "%(size)d byte"
 msgid_plural "%(size)d bytes"
@@ -732,44 +749,45 @@ msgstr[0] "%(size)d байт"
 msgstr[1] "%(size)d байты"
 msgstr[2] "%(size)d байтаў"
 
-#: weblate_web/templatetags/downloads.py:47
+#: weblate_web/templatetags/downloads.py:44
 #, python-format
 msgid "%.1f KiB"
 msgstr "%.1f KiB"
 
-#: weblate_web/templatetags/downloads.py:49
+#: weblate_web/templatetags/downloads.py:46
 #, python-format
 msgid "%.1f MiB"
 msgstr "%.1f MiB"
 
-#: weblate_web/templatetags/downloads.py:50
+#: weblate_web/templatetags/downloads.py:47
 #, python-format
 msgid "%.1f GiB"
 msgstr "%.1f GiB"
 
-#: weblate_web/templatetags/downloads.py:57
+#: weblate_web/templatetags/downloads.py:54
 msgid "Sources tarball, bzip2 compressed"
 msgstr "Тарболы з зыходнікамі, bzip2-архіў"
 
-#: weblate_web/templatetags/downloads.py:59
+#: weblate_web/templatetags/downloads.py:56
 msgid "Sources tarball, gzip compressed"
 msgstr "Тарболы з зыходнікамі, gzip-архіў"
 
-#: weblate_web/templatetags/downloads.py:61
-msgid "Sources tarball, lzma compressed"
-msgstr "Тарболы з зыходнікамі, lzma-архіў"
-
-#: weblate_web/templatetags/downloads.py:63
+#: weblate_web/templatetags/downloads.py:58
 msgid "Sources tarball, xz compressed"
 msgstr "Тарболы з зыходнікамі, xz-архіў"
 
-#: weblate_web/templatetags/downloads.py:65
+#: weblate_web/templatetags/downloads.py:60
 msgid "Sources, zip compressed"
 msgstr "Заходнікі, zip-архіў"
 
-#: weblate_web/templatetags/downloads.py:67
-msgid "Sources, 7zip compressed"
-msgstr "Зыходнікі, 7zip-архіў"
+#~ msgid "0 bytes"
+#~ msgstr "0 байтаў"
+
+#~ msgid "Sources tarball, lzma compressed"
+#~ msgstr "Тарболы з зыходнікамі, lzma-архіў"
+
+#~ msgid "Sources, 7zip compressed"
+#~ msgstr "Зыходнікі, 7zip-архіў"
 
 #~ msgid ""
 #~ "Weblate is also available as <a href=\"http://bitnami.org/stack/weblate"

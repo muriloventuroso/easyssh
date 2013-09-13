@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-08-15 15:24+0200\n"
+"POT-Creation-Date: 2013-09-13 10:01+0200\n"
 "PO-Revision-Date: 2013-08-22 13:29+0200\n"
 "Last-Translator: Henry Heinänen <h.heinanen@gmail.com>\n"
 "Language-Team: Finnish <http://l10n.cihar.com/projects/weblate/website/fi/>\n"
@@ -261,6 +261,13 @@ msgstr "Lahjoita Bitcoineja"
 
 #: weblate_web/html/contribute.html:69
 msgid ""
+"Regular donations, which will support Weblate and it's free hosting in the "
+"long term can be done on <a href=\"https://www.gittip.com/nijel/\">Gittip</"
+"a>."
+msgstr ""
+
+#: weblate_web/html/contribute.html:73
+msgid ""
 "You can also use <a href=\"http://www.bitcoin.org/\">Bitcoin is a peer-to-"
 "peer network</a> and send me Bitcoins to "
 "<code>14e4wDDEUuzycjqnnZhzQJMKZLq9aa8Y9h</code>."
@@ -296,11 +303,11 @@ msgstr "Pilvipalvelun tai emulaattorin kuvia"
 #: weblate_web/html/download.html:41
 msgid ""
 "In case you want to run Weblate in your cloud or virtual server, you can "
-"download appliance based on openSUSE 12.2 at <a href=\"http://susestudio.com/"
+"download appliance based on openSUSE 12.3 at <a href=\"http://susestudio.com/"
 "a/F8yMYg/weblate\">SUSE Studio Gallery</a>."
 msgstr ""
 "Jos haluat suorittaa Weblate pilvipalvelussa tai virtuaalipalvelimessa, voit "
-"ladata laitteen joka pohjautuu openSUSE 12.2 <a href=\"http://susestudio.com/"
+"ladata laitteen joka pohjautuu openSUSE 12.3 <a href=\"http://susestudio.com/"
 "a/F8yMYg/weblate\">SUSE Studio Galleria</a>."
 
 #: weblate_web/html/download.html:42
@@ -544,10 +551,24 @@ msgstr ""
 "vaihtoehtoa."
 
 #: weblate_web/html/hosting.html:48
+#, fuzzy
+#| msgid "Conditions for free hosting"
+msgid "Support free hosting"
+msgstr "Edellytykset ilmaiseen isännöintiin"
+
+#: weblate_web/html/hosting.html:52
+#, python-format
+msgid ""
+"The hosting is provided for free, but running the server and maintaining it "
+"costs some money, so you are welcome to use <a href=\"%(gittip_url)s"
+"\">Gittip</a> or <a href=\"%(donate_url)s\">other ways to donate</a>."
+msgstr ""
+
+#: weblate_web/html/hosting.html:55
 msgid "Commercial hosting"
 msgstr "Kaupallisten palvelujen isännöinti"
 
-#: weblate_web/html/hosting.html:51
+#: weblate_web/html/hosting.html:58
 msgid ""
 "Please contact <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> for more "
 "details."
@@ -555,11 +576,11 @@ msgstr ""
 "Ota yhteyttä <a href=\"mailto:michal@cihar.com\">Michal Čihař</a>saadaksesi "
 "lisätietoja."
 
-#: weblate_web/html/hosting.html:54
+#: weblate_web/html/hosting.html:61
 msgid "Other options"
 msgstr "Muita vaihtoehtoja"
 
-#: weblate_web/html/hosting.html:58 weblate_web/html/try.html:20
+#: weblate_web/html/hosting.html:65 weblate_web/html/try.html:20
 #, python-format
 msgid ""
 "Check our <a href=\"%(download_url)s\">download page</a> for appliances, "
@@ -712,55 +733,52 @@ msgstr ""
 msgid "Appliances"
 msgstr "Laitteet"
 
-#: weblate_web/templatetags/downloads.py:38
-msgid "0 bytes"
-msgstr "0 tavua"
-
-#: weblate_web/templatetags/downloads.py:42
+#: weblate_web/templatetags/downloads.py:39
 #, python-format
 msgid "%(size)d byte"
 msgid_plural "%(size)d bytes"
 msgstr[0] "%(size)d tavu"
 msgstr[1] "%(size)d tavua"
 
-#: weblate_web/templatetags/downloads.py:47
+#: weblate_web/templatetags/downloads.py:44
 #, python-format
 msgid "%.1f KiB"
 msgstr "%.1f KiB"
 
-#: weblate_web/templatetags/downloads.py:49
+#: weblate_web/templatetags/downloads.py:46
 #, python-format
 msgid "%.1f MiB"
 msgstr "%.1f MiB"
 
-#: weblate_web/templatetags/downloads.py:50
+#: weblate_web/templatetags/downloads.py:47
 #, python-format
 msgid "%.1f GiB"
 msgstr "%.1f GiB"
 
-#: weblate_web/templatetags/downloads.py:57
+#: weblate_web/templatetags/downloads.py:54
 msgid "Sources tarball, bzip2 compressed"
 msgstr "Lähteet tar, bzip2 pakattuja"
 
-#: weblate_web/templatetags/downloads.py:59
+#: weblate_web/templatetags/downloads.py:56
 msgid "Sources tarball, gzip compressed"
 msgstr "Lähteet tar, gzip pakattuja"
 
-#: weblate_web/templatetags/downloads.py:61
-msgid "Sources tarball, lzma compressed"
-msgstr "Lähteet tar, lzma pakattuja"
-
-#: weblate_web/templatetags/downloads.py:63
+#: weblate_web/templatetags/downloads.py:58
 msgid "Sources tarball, xz compressed"
 msgstr "Lähteet tar, xz pakattuja"
 
-#: weblate_web/templatetags/downloads.py:65
+#: weblate_web/templatetags/downloads.py:60
 msgid "Sources, zip compressed"
 msgstr "Lähteet, zip pakattuja"
 
-#: weblate_web/templatetags/downloads.py:67
-msgid "Sources, 7zip compressed"
-msgstr "Lähteet, 7zip pakattuja"
+#~ msgid "0 bytes"
+#~ msgstr "0 tavua"
+
+#~ msgid "Sources tarball, lzma compressed"
+#~ msgstr "Lähteet tar, lzma pakattuja"
+
+#~ msgid "Sources, 7zip compressed"
+#~ msgstr "Lähteet, 7zip pakattuja"
 
 #~ msgid ""
 #~ "Weblate is also available as <a href=\"http://bitnami.org/stack/weblate"
