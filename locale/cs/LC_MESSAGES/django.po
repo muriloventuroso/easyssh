@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-09-13 10:01+0200\n"
+"POT-Creation-Date: 2013-09-13 10:28+0200\n"
 "PO-Revision-Date: 2013-09-13 10:18+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <http://l10n.cihar.com/projects/weblate/website/cs/>\n"
@@ -162,18 +162,22 @@ msgid "Hosting"
 msgstr "Hostování"
 
 #: weblate_web/html/base.html:44
-msgid "Contribute"
+msgid "Develop"
+msgstr ""
+
+#: weblate_web/html/base.html:45 weblate_web/html/donate.html:15
+msgid "Donate"
 msgstr "Přispějte"
 
-#: weblate_web/html/base.html:45
+#: weblate_web/html/base.html:46
 msgid "Support"
 msgstr "Podpora"
 
-#: weblate_web/html/base.html:46
+#: weblate_web/html/base.html:47
 msgid "Tour"
 msgstr "Prohlídka"
 
-#: weblate_web/html/base.html:60
+#: weblate_web/html/base.html:61
 msgid "Help with translations!"
 msgstr "Pomozte s překlady!"
 
@@ -231,11 +235,23 @@ msgstr ""
 msgid "Translation status"
 msgstr "Stav překladu"
 
-#: weblate_web/html/contribute.html:45
+#: weblate_web/html/donate.html:4 weblate_web/html/donate.html.py:5
+#, fuzzy
+#| msgid "Contribute to Weblate"
+msgid "Donate to Weblate"
+msgstr "Přispějte do Weblate"
+
+#: weblate_web/html/donate.html:7
+#, fuzzy
+#| msgid "Weblate is easy to deploy as an appliance."
+msgid "Weblate is free, but welcomes donations."
+msgstr "Weblate může být snadno nasazeno jako appliance."
+
+#: weblate_web/html/donate.html:11
 msgid "Fund"
 msgstr "Financujte"
 
-#: weblate_web/html/contribute.html:47
+#: weblate_web/html/donate.html:13
 #, python-format
 msgid ""
 "New <a href=\"%(url)s\">Weblate features</a> are also being <a href=\"%(url)s"
@@ -244,39 +260,34 @@ msgstr ""
 "Nové <a href=\"%(url)s\">funkce Weblate</a> můžete také <a href=\"%(url)s"
 "\">financovat na Catincan</a>, podpořte je tam!"
 
-#: weblate_web/html/contribute.html:49
-msgid "Donate"
-msgstr "Přispějte"
-
-#: weblate_web/html/contribute.html:52
+#: weblate_web/html/donate.html:18
 msgid ""
 "If you like Weblate you can support it's further development by donating."
 msgstr ""
 "Pokud se vám Weblate líbí můžete jeho další rozvoj podpořit příspěvkem."
 
-#: weblate_web/html/contribute.html:65
+#: weblate_web/html/donate.html:35
 msgid "Donate Bitcoins"
 msgstr "Darujte Bitcoiny"
 
-#: weblate_web/html/contribute.html:69
+#: weblate_web/html/donate.html:39
 msgid ""
 "Regular donations, which will support Weblate and it's free hosting in the "
 "long term can be done on <a href=\"https://www.gittip.com/nijel/\">Gittip</"
 "a>."
 msgstr ""
 "Pravidelné příspěvky, které dlouhodobě podpoří vývoj Weblate a nabízení "
-"hostingu zdarma pro svobodný software, můžete provést na <a "
-"href=\"https://www.gittip.com/nijel/\">Gittipu</a>."
+"hostingu zdarma pro svobodný software, můžete provést na <a href=\"https://"
+"www.gittip.com/nijel/\">Gittipu</a>."
 
-#: weblate_web/html/contribute.html:73
+#: weblate_web/html/donate.html:43
+#, python-format
 msgid ""
 "You can also use <a href=\"http://www.bitcoin.org/\">Bitcoin is a peer-to-"
-"peer network</a> and send me Bitcoins to "
-"<code>%(bitcoin_address)s</code>."
+"peer network</a> and send me Bitcoins to <code>%(bitcoin_address)s</code>."
 msgstr ""
 "Můžete také použít <a href=\"http://www.bitcoin.org/cs\">peer-to-peer síť "
-"Bitcoin</a> a poslat mi Bitcoiny na "
-"<code>%(bitcoin_address)s</code>."
+"Bitcoin</a> a poslat mi Bitcoiny na <code>%(bitcoin_address)s</code>."
 
 #: weblate_web/html/download.html:5 weblate_web/html/download.html.py:6
 msgid "Download Weblate"
@@ -556,7 +567,6 @@ msgstr ""
 "projektu uživatele Weblate a řekněte nám, že chcete použít tuto volbu."
 
 #: weblate_web/html/hosting.html:48
-#| msgid "Conditions for free hosting"
 msgid "Support free hosting"
 msgstr "Podpořte bezplatné hostování"
 
@@ -568,9 +578,9 @@ msgid ""
 "\">Gittip</a> or <a href=\"%(donate_url)s\">other ways to donate</a>."
 msgstr ""
 "Hostování je nabízené zdarma, ale provoz server a jeho údržba něco stojí, "
-"takže příspěvky na provoz jsou vítány prostřednictvím <a href=\"%"
-"(gittip_url)s\">Gittipu</a> nebo <a href=\"%(donate_url)s\">jakýmkoliv jiným "
-"způsobem</a>."
+"takže příspěvky na provoz jsou vítány prostřednictvím <a href="
+"\"%(gittip_url)s\">Gittipu</a> nebo <a href=\"%(donate_url)s\">jakýmkoliv "
+"jiným způsobem</a>."
 
 #: weblate_web/html/hosting.html:55
 msgid "Commercial hosting"
@@ -776,6 +786,9 @@ msgstr "Zdrojový tarball, komprimový xz"
 #: weblate_web/templatetags/downloads.py:60
 msgid "Sources, zip compressed"
 msgstr "Zdrojáky, komprimované zipem"
+
+#~ msgid "Contribute"
+#~ msgstr "Přispějte"
 
 #~ msgid "0 bytes"
 #~ msgstr "0 bajtů"

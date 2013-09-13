@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-09-13 10:01+0200\n"
+"POT-Creation-Date: 2013-09-13 10:28+0200\n"
 "PO-Revision-Date: 2013-09-10 13:21+0200\n"
 "Last-Translator: Helder Santana <helder.bs.santana@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <http://l10n.cihar.com/projects/weblate/"
@@ -169,18 +169,22 @@ msgid "Hosting"
 msgstr "Hospedagem"
 
 #: weblate_web/html/base.html:44
-msgid "Contribute"
-msgstr "Contribua"
+msgid "Develop"
+msgstr ""
 
-#: weblate_web/html/base.html:45
+#: weblate_web/html/base.html:45 weblate_web/html/donate.html:15
+msgid "Donate"
+msgstr "Doar"
+
+#: weblate_web/html/base.html:46
 msgid "Support"
 msgstr "Ajuda e Suporte"
 
-#: weblate_web/html/base.html:46
+#: weblate_web/html/base.html:47
 msgid "Tour"
 msgstr "Tour"
 
-#: weblate_web/html/base.html:60
+#: weblate_web/html/base.html:61
 msgid "Help with translations!"
 msgstr "Ajude-nos a traduzir!"
 
@@ -238,11 +242,23 @@ msgstr ""
 msgid "Translation status"
 msgstr "Estado da tradução"
 
-#: weblate_web/html/contribute.html:45
+#: weblate_web/html/donate.html:4 weblate_web/html/donate.html.py:5
+#, fuzzy
+#| msgid "Contribute to Weblate"
+msgid "Donate to Weblate"
+msgstr "Contribua para o Weblate"
+
+#: weblate_web/html/donate.html:7
+#, fuzzy
+#| msgid "Weblate is easy to deploy as an appliance."
+msgid "Weblate is free, but welcomes donations."
+msgstr "O Weblate é fácil de instalar como uma aplicação."
+
+#: weblate_web/html/donate.html:11
 msgid "Fund"
 msgstr "Base"
 
-#: weblate_web/html/contribute.html:47
+#: weblate_web/html/donate.html:13
 #, python-format
 msgid ""
 "New <a href=\"%(url)s\">Weblate features</a> are also being <a href=\"%(url)s"
@@ -251,37 +267,32 @@ msgstr ""
 "Novos <a href=\"%(url)s\">recursos do Weblate</a> também estão sendo <a href="
 "\"%(url)s\">baseados no Catincan</a>, você pode apoiá-los lá!"
 
-#: weblate_web/html/contribute.html:49
-msgid "Donate"
-msgstr "Doar"
-
-#: weblate_web/html/contribute.html:52
+#: weblate_web/html/donate.html:18
 msgid ""
 "If you like Weblate you can support it's further development by donating."
 msgstr ""
 "Se você gostar do Weblate, você pode ajudar na evolução dele através de "
 "doações."
 
-#: weblate_web/html/contribute.html:65
+#: weblate_web/html/donate.html:35
 msgid "Donate Bitcoins"
 msgstr "Doar Bitcoins"
 
-#: weblate_web/html/contribute.html:69
+#: weblate_web/html/donate.html:39
 msgid ""
 "Regular donations, which will support Weblate and it's free hosting in the "
 "long term can be done on <a href=\"https://www.gittip.com/nijel/\">Gittip</"
 "a>."
 msgstr ""
 
-#: weblate_web/html/contribute.html:73
+#: weblate_web/html/donate.html:43
+#, python-format
 msgid ""
 "You can also use <a href=\"http://www.bitcoin.org/\">Bitcoin is a peer-to-"
-"peer network</a> and send me Bitcoins to "
-"<code>%(bitcoin_address)s</code>."
+"peer network</a> and send me Bitcoins to <code>%(bitcoin_address)s</code>."
 msgstr ""
 "Você também pode usar <a href=\"http://www.bitcoin.org/\">Bitcoin, que é uma "
-"rede P2P</a> e me enviar Bitcoins para "
-"<code>%(bitcoin_address)s</code>."
+"rede P2P</a> e me enviar Bitcoins para <code>%(bitcoin_address)s</code>."
 
 #: weblate_web/html/download.html:5 weblate_web/html/download.html.py:6
 msgid "Download Weblate"
@@ -787,6 +798,9 @@ msgstr "Pacote tar de fontes, comprimido com xz"
 #: weblate_web/templatetags/downloads.py:60
 msgid "Sources, zip compressed"
 msgstr "Fontes, comprimidas com zip"
+
+#~ msgid "Contribute"
+#~ msgstr "Contribua"
 
 #~ msgid "0 bytes"
 #~ msgstr "0 bytes"
