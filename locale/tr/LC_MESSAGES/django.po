@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2013-09-13 12:02+0200\n"
-"PO-Revision-Date: 2013-09-13 10:40+0200\n"
+"PO-Revision-Date: 2013-09-13 12:31+0200\n"
 "Last-Translator: Burak Yavuz <hitowerdigit@hotmail.com>\n"
 "Language-Team: Turkish <http://l10n.cihar.com/projects/weblate/website/tr/>\n"
 "Language: tr\n"
@@ -184,12 +184,14 @@ msgid "Help with translations!"
 msgstr "Çevirilerle yardım edin!"
 
 #: weblate_web/html/base.html:82
-#, fuzzy, python-format
+#, python-format
 #| msgid "Weblate is free, but welcomes donations."
 msgid ""
 "Weblate is free software, but welcomes <a href=\"%(donate_url)s\">donations</"
 "a>."
-msgstr "Weblate ücretsizdir, fakat bağışlarınızı bekliyoruz."
+msgstr ""
+"Weblate ücretsiz yazılımdır, fakat <a href=\"%"
+"(donate_url)s\">bağışlarınızı</a> bekliyoruz."
 
 #: weblate_web/html/contribute.html:4 weblate_web/html/contribute.html.py:5
 msgid "Contribute to Weblate"
@@ -254,10 +256,9 @@ msgid "Weblate is free, but welcomes donations."
 msgstr "Weblate ücretsizdir, fakat bağışlarınızı bekliyoruz."
 
 #: weblate_web/html/donate.html:11
-#, fuzzy
 #| msgid "Other options"
 msgid "Regular donations"
-msgstr "Diğer seçenekler"
+msgstr "Düzenli bağışlar"
 
 #: weblate_web/html/donate.html:14
 msgid ""
@@ -265,20 +266,23 @@ msgid ""
 "fund free hosting for free software. You don't have to spend big money, "
 "every penny counts."
 msgstr ""
+"Düzenli bağışlar Weblate geliştirilmesinin sürdürülebilirliğine olanak "
+"sağlar ve ücretsiz yazılım için parasız barındırmaya yardımcı olur. Büyük "
+"para harcamak zorunda değilsiniz, her kuruş sayılır."
 
 #: weblate_web/html/donate.html:18
 msgid "Donate using Gittip"
-msgstr ""
+msgstr "Gittip kullanarak bağış yapın"
 
 #: weblate_web/html/donate.html:22
 msgid "Gittip allows you to send weekly amount using credit card."
 msgstr ""
+"Gittip kredi kartı kullanarak haftalık bir miktar göndermenize izin verir."
 
 #: weblate_web/html/donate.html:25
-#, fuzzy
 #| msgid "Features"
 msgid "Fund features"
-msgstr "Özellikler"
+msgstr "Fon özellikleri"
 
 #: weblate_web/html/donate.html:28
 #, python-format
@@ -286,6 +290,8 @@ msgid ""
 "You can place bounty on individual features at <a href=\"%(url)s"
 "\">Bountysource</a>."
 msgstr ""
+"<a href=\"%(url)s\">Bountysource</a> sitesinde bireysel özelliklerde cömert "
+"yerinizi alabilirsiniz."
 
 #: weblate_web/html/donate.html:34
 msgid ""
@@ -296,33 +302,36 @@ msgstr ""
 
 #: weblate_web/html/donate.html:40
 msgid "Donate using PayPal"
-msgstr ""
+msgstr "PayPal kullanarak bağış yapın"
 
 #: weblate_web/html/donate.html:44
 msgid ""
 "PayPal allows you to send money from credit card, PayPal ballance or bank "
 "account."
 msgstr ""
+"PayPal, kredi kartı, PayPal bakiyesi veya banka hesabından para göndermenize "
+"izin verir."
 
 #: weblate_web/html/donate.html:48
 msgid "Flattr this"
-msgstr ""
+msgstr "Bunu Flattr'la"
 
 #: weblate_web/html/donate.html:52
 msgid ""
 "Flattr is micropayment site, which allows you to give monthly small amounts "
 "of money to various projects."
 msgstr ""
+"Flattr, çeşitli projelere küçük miktarlarda aylık para vermenize izin veren "
+"küçücük ödeme yapma sitesidir."
 
 #: weblate_web/html/donate.html:56
-#, fuzzy
 #| msgid "Donate Bitcoins"
 msgid "Donate using Coinbase"
-msgstr "Bitcoins Bağışla"
+msgstr "Coinbase kullanarak bağış yapın"
 
 #: weblate_web/html/donate.html:60
 msgid "Coinbase allows you to send Bitcoins."
-msgstr ""
+msgstr "Coinbase, Bitcoins göndermenize izin verir."
 
 #: weblate_web/html/donate.html:64
 #, python-format
