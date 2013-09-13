@@ -70,7 +70,7 @@ LANGUAGES = (
     #('ca', u'Català'),
     ('cs', u'Česky'),
     ('da', 'Dansk'),
-    #('de', 'Deutsch'),
+    ('de', 'Deutsch'),
     ('en', 'English'),
     ('en-gb', 'English (Great Britain)'),
     ('el', 'Ελληνικά'),
