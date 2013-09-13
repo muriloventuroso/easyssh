@@ -48,7 +48,7 @@
 <h3>{% trans "Support free hosting" %}</h3>
 
 <p>
-{% url 'contribute' as donate_url %}
+{% url 'donate' as donate_url %}
 {% blocktrans with 'https://www.gittip.com/nijel/' as gittip_url %}The hosting is provided for free, but running the server and maintaining it costs some money, so you are welcome to use <a href="{{ gittip_url }}">Gittip</a> or <a href="{{ donate_url }}">other ways to donate</a>.{% endblocktrans %}
 </p>
 
