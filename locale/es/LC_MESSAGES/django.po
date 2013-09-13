@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2013-09-13 12:02+0200\n"
-"PO-Revision-Date: 2013-08-15 23:52+0200\n"
+"PO-Revision-Date: 2013-09-13 21:26+0200\n"
 "Last-Translator: Matías Bellone <matiasbellone+weblate@gmail.com>\n"
 "Language-Team: Spanish <http://l10n.cihar.com/projects/weblate/website/es/>\n"
 "Language: es\n"
@@ -168,7 +168,7 @@ msgstr "Alojamiento"
 
 #: weblate_web/html/base.html:44
 msgid "Develop"
-msgstr ""
+msgstr "Desarrollo"
 
 #: weblate_web/html/base.html:45 weblate_web/html/donate.html:31
 msgid "Donate"
@@ -187,12 +187,14 @@ msgid "Help with translations!"
 msgstr "¡Ayude con las traducciones!"
 
 #: weblate_web/html/base.html:82
-#, fuzzy, python-format
+#, python-format
 #| msgid "Weblate is easy to deploy as an appliance."
 msgid ""
 "Weblate is free software, but welcomes <a href=\"%(donate_url)s\">donations</"
 "a>."
-msgstr "Weblate es fácil de desplegar como un aplicativo."
+msgstr ""
+"Weblate es software libre, pero las <a href=\"%(donate_url)s\">donaciones son "
+"bienvenidas</a>."
 
 #: weblate_web/html/contribute.html:4 weblate_web/html/contribute.html.py:5
 msgid "Contribute to Weblate"
@@ -249,22 +251,19 @@ msgid "Translation status"
 msgstr "Estado de la traducción"
 
 #: weblate_web/html/donate.html:4 weblate_web/html/donate.html.py:5
-#, fuzzy
 #| msgid "Contribute to Weblate"
 msgid "Donate to Weblate"
-msgstr "Contribuir a Weblate"
+msgstr "Donar a Weblate"
 
 #: weblate_web/html/donate.html:7
-#, fuzzy
 #| msgid "Weblate is easy to deploy as an appliance."
 msgid "Weblate is free, but welcomes donations."
-msgstr "Weblate es fácil de desplegar como un aplicativo."
+msgstr "Weblate es gratuito, pero las donaciones son bienvenidas."
 
 #: weblate_web/html/donate.html:11
-#, fuzzy
 #| msgid "Other options"
 msgid "Regular donations"
-msgstr "Otras opciones"
+msgstr "Donaciones periódicas"
 
 #: weblate_web/html/donate.html:14
 msgid ""
@@ -272,20 +271,23 @@ msgid ""
 "fund free hosting for free software. You don't have to spend big money, "
 "every penny counts."
 msgstr ""
+"Las donaciones periódicas permiten el desarrollo constante de Weblate y "
+"ayudan a financiar el alojamiento gratuito para proyectos de software libre. "
+"No necesita gastar mucho dinero, cada centavo ayuda."
 
 #: weblate_web/html/donate.html:18
 msgid "Donate using Gittip"
-msgstr ""
+msgstr "Donar utilizando Gittip"
 
 #: weblate_web/html/donate.html:22
 msgid "Gittip allows you to send a weekly amount using a credit card."
 msgstr ""
+"Gittip le permite enviar una cantidad semanal con una tarjeta de crédito."
 
 #: weblate_web/html/donate.html:25
-#, fuzzy
 #| msgid "Features"
 msgid "Fund features"
-msgstr "Funcionalidades"
+msgstr "Financiar funcionalidades"
 
 #: weblate_web/html/donate.html:28
 #, python-format
@@ -293,6 +295,8 @@ msgid ""
 "You can place a bounty on individual features at <a href=\"%(url)s"
 "\">Bountysource</a>."
 msgstr ""
+"Puede definir una recompensa para alguna funcionalidad específica en <a "
+"href=\"%(url)s\">Bountysource</a>."
 
 #: weblate_web/html/donate.html:34
 msgid ""
@@ -303,33 +307,36 @@ msgstr ""
 
 #: weblate_web/html/donate.html:40
 msgid "Donate using PayPal"
-msgstr ""
+msgstr "Donar utilizando PayPal"
 
 #: weblate_web/html/donate.html:44
 msgid ""
 "PayPal allows you to send money from credit card, PayPal balance or a bank "
 "account."
 msgstr ""
+"PayPal le permite enviar dinero desde una tarjeta de crédito, balance en "
+"PayPal o cuenta bancaria."
 
 #: weblate_web/html/donate.html:48
 msgid "Flattr this"
-msgstr ""
+msgstr "Flattr this"
 
 #: weblate_web/html/donate.html:52
 msgid ""
 "Flattr is a micropayment site that allows you to give monthly small amounts "
 "of money to various projects."
 msgstr ""
+"Flattr es un sitio de micropagos que le permite dar pequeñas cantidad de "
+"dinero mensualmente a varios proyectos."
 
 #: weblate_web/html/donate.html:56
-#, fuzzy
 #| msgid "Donate Bitcoins"
 msgid "Donate using Coinbase"
-msgstr "Donar Bitcoins"
+msgstr "Donar utilizando Coinbase"
 
 #: weblate_web/html/donate.html:60
 msgid "Coinbase allows you to send Bitcoins."
-msgstr ""
+msgstr "Coinbase le permite enviar Bitcoins."
 
 #: weblate_web/html/donate.html:64
 #, python-format
@@ -626,10 +633,9 @@ msgstr ""
 "saber que desea utilizar esta opción."
 
 #: weblate_web/html/hosting.html:48
-#, fuzzy
 #| msgid "Conditions for free hosting"
 msgid "Support free hosting"
-msgstr "Condiciones para el alojamiento gratuito"
+msgstr "Financiar alojamiento gratuito"
 
 #: weblate_web/html/hosting.html:52
 #, python-format
@@ -638,6 +644,10 @@ msgid ""
 "costs some money, so you are welcome to use <a href=\"%(gittip_url)s"
 "\">Gittip</a> or <a href=\"%(donate_url)s\">other ways to donate</a>."
 msgstr ""
+"Se provee alojamiento de forma gratuita, pero tener y mantener el servidor "
+"cuesta algo de dinero por lo que lo invitamos a utilizar <a href=\"%"
+"(gittip_url)s\">Gittip</a> u <a href=\"%(donate_url)s\">otras formas de "
+"donar</a>."
 
 #: weblate_web/html/hosting.html:55
 msgid "Commercial hosting"
