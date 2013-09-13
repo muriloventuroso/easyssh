@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-09-13 10:28+0200\n"
+"POT-Creation-Date: 2013-09-13 10:56+0200\n"
 "PO-Revision-Date: 2013-09-13 10:32+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <http://l10n.cihar.com/projects/weblate/website/cs/>\n"
@@ -165,7 +165,7 @@ msgstr "Hostování"
 msgid "Develop"
 msgstr "Vyvíjejte"
 
-#: weblate_web/html/base.html:45 weblate_web/html/donate.html:15
+#: weblate_web/html/base.html:45 weblate_web/html/donate.html:25
 msgid "Donate"
 msgstr "Přispějte"
 
@@ -180,6 +180,14 @@ msgstr "Prohlídka"
 #: weblate_web/html/base.html:61
 msgid "Help with translations!"
 msgstr "Pomozte s překlady!"
+
+#: weblate_web/html/base.html:82
+#, fuzzy, python-format
+#| msgid "Weblate is free, but welcomes donations."
+msgid ""
+"Weblate is free software, but welcomes <a href=\"%(donate_url)s\">donations</"
+"a>."
+msgstr "Weblate je zdarma, ale vítá vaše příspěvky."
 
 #: weblate_web/html/contribute.html:4 weblate_web/html/contribute.html.py:5
 msgid "Contribute to Weblate"
@@ -236,49 +244,71 @@ msgid "Translation status"
 msgstr "Stav překladu"
 
 #: weblate_web/html/donate.html:4 weblate_web/html/donate.html.py:5
-#| msgid "Contribute to Weblate"
 msgid "Donate to Weblate"
 msgstr "Přispějte na Weblate"
 
 #: weblate_web/html/donate.html:7
-#| msgid "Weblate is easy to deploy as an appliance."
 msgid "Weblate is free, but welcomes donations."
 msgstr "Weblate je zdarma, ale vítá vaše příspěvky."
 
 #: weblate_web/html/donate.html:11
-msgid "Fund"
-msgstr "Financujte"
+#, fuzzy
+#| msgid "Other options"
+msgid "Regular donations"
+msgstr "Další možnosti"
 
-#: weblate_web/html/donate.html:13
-#, python-format
+#: weblate_web/html/donate.html:14
 msgid ""
-"New <a href=\"%(url)s\">Weblate features</a> are also being <a href=\"%(url)s"
-"\">funded on Catincan</a>, you can support them there!"
+"Regular donations allow sustainability of Weblate development and help to "
+"fund free hosting for free software. You don't have to spend big money, "
+"every penny counts."
 msgstr ""
-"Nové <a href=\"%(url)s\">funkce Weblate</a> můžete také <a href=\"%(url)s"
-"\">financovat na Catincan</a>, podpořte je tam!"
 
 #: weblate_web/html/donate.html:18
+msgid "Donate using Gittip"
+msgstr ""
+
+#: weblate_web/html/donate.html:22
+msgid "Gittip allows you to send weekly amount using credit card."
+msgstr ""
+
+#: weblate_web/html/donate.html:28
 msgid ""
 "If you like Weblate you can support it's further development by donating."
 msgstr ""
 "Pokud se vám Weblate líbí můžete jeho další rozvoj podpořit příspěvkem."
 
-#: weblate_web/html/donate.html:35
-msgid "Donate Bitcoins"
+#: weblate_web/html/donate.html:34
+msgid "Donate using PayPal"
+msgstr ""
+
+#: weblate_web/html/donate.html:38
+msgid ""
+"PayPal allows you to send money from credit card, PayPal ballance or bank "
+"account."
+msgstr ""
+
+#: weblate_web/html/donate.html:42
+msgid "Flattr this"
+msgstr ""
+
+#: weblate_web/html/donate.html:46
+msgid ""
+"Flattr is micropayment site, which allows you to give monthly small amounts "
+"of money to various projects."
+msgstr ""
+
+#: weblate_web/html/donate.html:50
+#, fuzzy
+#| msgid "Donate Bitcoins"
+msgid "Donate using Coinbase"
 msgstr "Darujte Bitcoiny"
 
-#: weblate_web/html/donate.html:39
-msgid ""
-"Regular donations, which will support Weblate and it's free hosting in the "
-"long term can be done on <a href=\"https://www.gittip.com/nijel/\">Gittip</"
-"a>."
+#: weblate_web/html/donate.html:54
+msgid "Coinbase allows you to send Bitcoins."
 msgstr ""
-"Pravidelné příspěvky, které dlouhodobě podpoří vývoj Weblate a nabízení "
-"hostingu zdarma pro svobodný software, můžete provést na <a href=\"https://"
-"www.gittip.com/nijel/\">Gittipu</a>."
 
-#: weblate_web/html/donate.html:43
+#: weblate_web/html/donate.html:58
 #, python-format
 msgid ""
 "You can also use <a href=\"http://www.bitcoin.org/\">Bitcoin is a peer-to-"
@@ -784,6 +814,25 @@ msgstr "Zdrojový tarball, komprimový xz"
 #: weblate_web/templatetags/downloads.py:60
 msgid "Sources, zip compressed"
 msgstr "Zdrojáky, komprimované zipem"
+
+#~ msgid "Fund"
+#~ msgstr "Financujte"
+
+#~ msgid ""
+#~ "New <a href=\"%(url)s\">Weblate features</a> are also being <a href="
+#~ "\"%(url)s\">funded on Catincan</a>, you can support them there!"
+#~ msgstr ""
+#~ "Nové <a href=\"%(url)s\">funkce Weblate</a> můžete také <a href=\"%(url)s"
+#~ "\">financovat na Catincan</a>, podpořte je tam!"
+
+#~ msgid ""
+#~ "Regular donations, which will support Weblate and it's free hosting in "
+#~ "the long term can be done on <a href=\"https://www.gittip.com/nijel/"
+#~ "\">Gittip</a>."
+#~ msgstr ""
+#~ "Pravidelné příspěvky, které dlouhodobě podpoří vývoj Weblate a nabízení "
+#~ "hostingu zdarma pro svobodný software, můžete provést na <a href="
+#~ "\"https://www.gittip.com/nijel/\">Gittipu</a>."
 
 #~ msgid "Contribute"
 #~ msgstr "Přispějte"

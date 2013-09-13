@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-09-13 10:28+0200\n"
+"POT-Creation-Date: 2013-09-13 10:56+0200\n"
 "PO-Revision-Date: 2013-09-13 10:40+0200\n"
 "Last-Translator: Burak Yavuz <hitowerdigit@hotmail.com>\n"
 "Language-Team: Turkish <http://l10n.cihar.com/projects/weblate/website/tr/>\n"
@@ -167,7 +167,7 @@ msgstr "Barındırma"
 msgid "Develop"
 msgstr "Geliştirme"
 
-#: weblate_web/html/base.html:45 weblate_web/html/donate.html:15
+#: weblate_web/html/base.html:45 weblate_web/html/donate.html:25
 msgid "Donate"
 msgstr "Bağış"
 
@@ -182,6 +182,14 @@ msgstr "Tur"
 #: weblate_web/html/base.html:61
 msgid "Help with translations!"
 msgstr "Çevirilerle yardım edin!"
+
+#: weblate_web/html/base.html:82
+#, fuzzy, python-format
+#| msgid "Weblate is free, but welcomes donations."
+msgid ""
+"Weblate is free software, but welcomes <a href=\"%(donate_url)s\">donations</"
+"a>."
+msgstr "Weblate ücretsizdir, fakat bağışlarınızı bekliyoruz."
 
 #: weblate_web/html/contribute.html:4 weblate_web/html/contribute.html.py:5
 msgid "Contribute to Weblate"
@@ -238,50 +246,72 @@ msgid "Translation status"
 msgstr "Çeviri durumu"
 
 #: weblate_web/html/donate.html:4 weblate_web/html/donate.html.py:5
-#| msgid "Contribute to Weblate"
 msgid "Donate to Weblate"
 msgstr "Weblate'e Bağış Yapın"
 
 #: weblate_web/html/donate.html:7
-#| msgid "Weblate is easy to deploy as an appliance."
 msgid "Weblate is free, but welcomes donations."
 msgstr "Weblate ücretsizdir, fakat bağışlarınızı bekliyoruz."
 
 #: weblate_web/html/donate.html:11
-msgid "Fund"
-msgstr "Fon"
+#, fuzzy
+#| msgid "Other options"
+msgid "Regular donations"
+msgstr "Diğer seçenekler"
 
-#: weblate_web/html/donate.html:13
-#, python-format
+#: weblate_web/html/donate.html:14
 msgid ""
-"New <a href=\"%(url)s\">Weblate features</a> are also being <a href=\"%(url)s"
-"\">funded on Catincan</a>, you can support them there!"
+"Regular donations allow sustainability of Weblate development and help to "
+"fund free hosting for free software. You don't have to spend big money, "
+"every penny counts."
 msgstr ""
-"Ayrıca yeni <a href=\"%(url)s\">Weblate özellikleri</a> <a href=\"%(url)s"
-"\">Catincan'da finanse edildi</a>, bunu orada destekleyebilirsiniz!"
 
 #: weblate_web/html/donate.html:18
+msgid "Donate using Gittip"
+msgstr ""
+
+#: weblate_web/html/donate.html:22
+msgid "Gittip allows you to send weekly amount using credit card."
+msgstr ""
+
+#: weblate_web/html/donate.html:28
 msgid ""
 "If you like Weblate you can support it's further development by donating."
 msgstr ""
 "Eğer Weblate'i beğendiyseniz bağış yaparak ileriki geliştirmelerini "
 "destekleyebilirsiniz."
 
-#: weblate_web/html/donate.html:35
-msgid "Donate Bitcoins"
+#: weblate_web/html/donate.html:34
+msgid "Donate using PayPal"
+msgstr ""
+
+#: weblate_web/html/donate.html:38
+msgid ""
+"PayPal allows you to send money from credit card, PayPal ballance or bank "
+"account."
+msgstr ""
+
+#: weblate_web/html/donate.html:42
+msgid "Flattr this"
+msgstr ""
+
+#: weblate_web/html/donate.html:46
+msgid ""
+"Flattr is micropayment site, which allows you to give monthly small amounts "
+"of money to various projects."
+msgstr ""
+
+#: weblate_web/html/donate.html:50
+#, fuzzy
+#| msgid "Donate Bitcoins"
+msgid "Donate using Coinbase"
 msgstr "Bitcoins Bağışla"
 
-#: weblate_web/html/donate.html:39
-msgid ""
-"Regular donations, which will support Weblate and it's free hosting in the "
-"long term can be done on <a href=\"https://www.gittip.com/nijel/\">Gittip</"
-"a>."
+#: weblate_web/html/donate.html:54
+msgid "Coinbase allows you to send Bitcoins."
 msgstr ""
-"Weblate'i destekleyecek düzenli bağışlar ve uzun vadede ücretsiz "
-"barındırılması <a href=\"https://www.gittip.com/nijel/\">Gittip</a> üzerinde "
-"yapılabilir."
 
-#: weblate_web/html/donate.html:43
+#: weblate_web/html/donate.html:58
 #, python-format
 msgid ""
 "You can also use <a href=\"http://www.bitcoin.org/\">Bitcoin is a peer-to-"
@@ -570,7 +600,6 @@ msgstr ""
 "ve bu seçeneği kullanmak istediğinizi bize söyleyin."
 
 #: weblate_web/html/hosting.html:48
-#| msgid "Conditions for free hosting"
 msgid "Support free hosting"
 msgstr "Ücretsiz barındırmayı destekleyin"
 
@@ -582,8 +611,8 @@ msgid ""
 "\">Gittip</a> or <a href=\"%(donate_url)s\">other ways to donate</a>."
 msgstr ""
 "Barındırma ücretsiz sağlanır fakat sunucunun çalıştırılması ve bakımı biraz "
-"masraflıdır, bu yüzden <a href=\"%(gittip_url)s\">Gittip</a> ya da <a href=\"%"
-"(donate_url)s\">bağış için diğer yolları</a> kullanmanızı bekliyoruz."
+"masraflıdır, bu yüzden <a href=\"%(gittip_url)s\">Gittip</a> ya da <a href="
+"\"%(donate_url)s\">bağış için diğer yolları</a> kullanmanızı bekliyoruz."
 
 #: weblate_web/html/hosting.html:55
 msgid "Commercial hosting"
@@ -790,6 +819,25 @@ msgstr "Kaynaklar tarball, xz sıkıştırmalı"
 #: weblate_web/templatetags/downloads.py:60
 msgid "Sources, zip compressed"
 msgstr "Kaynaklar, zip sıkıştırmalı"
+
+#~ msgid "Fund"
+#~ msgstr "Fon"
+
+#~ msgid ""
+#~ "New <a href=\"%(url)s\">Weblate features</a> are also being <a href="
+#~ "\"%(url)s\">funded on Catincan</a>, you can support them there!"
+#~ msgstr ""
+#~ "Ayrıca yeni <a href=\"%(url)s\">Weblate özellikleri</a> <a href=\"%(url)s"
+#~ "\">Catincan'da finanse edildi</a>, bunu orada destekleyebilirsiniz!"
+
+#~ msgid ""
+#~ "Regular donations, which will support Weblate and it's free hosting in "
+#~ "the long term can be done on <a href=\"https://www.gittip.com/nijel/"
+#~ "\">Gittip</a>."
+#~ msgstr ""
+#~ "Weblate'i destekleyecek düzenli bağışlar ve uzun vadede ücretsiz "
+#~ "barındırılması <a href=\"https://www.gittip.com/nijel/\">Gittip</a> "
+#~ "üzerinde yapılabilir."
 
 #~ msgid "Contribute"
 #~ msgstr "Katkı"

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: weblate-web\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-09-13 10:28+0200\n"
+"POT-Creation-Date: 2013-09-13 10:56+0200\n"
 "PO-Revision-Date: 2013-06-12 21:29+0200\n"
 "Last-Translator: Dmitri GOULIAEV <dmitri+weblate@gouliaev.info>\n"
 "Language-Team: Russian <http://l10n.cihar.com/projects/weblate/website/ru/>\n"
@@ -173,7 +173,7 @@ msgstr "Хостинг"
 msgid "Develop"
 msgstr ""
 
-#: weblate_web/html/base.html:45 weblate_web/html/donate.html:15
+#: weblate_web/html/base.html:45 weblate_web/html/donate.html:25
 msgid "Donate"
 msgstr "Поддержать проект"
 
@@ -189,6 +189,14 @@ msgstr "Снимки экрана"
 #, fuzzy
 msgid "Help with translations!"
 msgstr "Собственные переводы"
+
+#: weblate_web/html/base.html:82
+#, fuzzy, python-format
+#| msgid "Weblate is easy to deploy as an appliance."
+msgid ""
+"Weblate is free software, but welcomes <a href=\"%(donate_url)s\">donations</"
+"a>."
+msgstr "Weblate легко развернуть в качестве виртуального модуля."
 
 #: weblate_web/html/contribute.html:4 weblate_web/html/contribute.html.py:5
 msgid "Contribute to Weblate"
@@ -257,37 +265,62 @@ msgid "Weblate is free, but welcomes donations."
 msgstr "Weblate легко развернуть в качестве виртуального модуля."
 
 #: weblate_web/html/donate.html:11
-msgid "Fund"
-msgstr "Финансировать"
+#, fuzzy
+#| msgid "Other options"
+msgid "Regular donations"
+msgstr "Другие варианты"
 
-#: weblate_web/html/donate.html:13
-#, python-format
+#: weblate_web/html/donate.html:14
 msgid ""
-"New <a href=\"%(url)s\">Weblate features</a> are also being <a href=\"%(url)s"
-"\">funded on Catincan</a>, you can support them there!"
+"Regular donations allow sustainability of Weblate development and help to "
+"fund free hosting for free software. You don't have to spend big money, "
+"every penny counts."
 msgstr ""
-"Новые <a href=\"%(url)s\">возможности Weblate</a> также можно <a href="
-"\"%(url)s\">финансировать через Catincan</a>, вы можете поддержать их там!"
 
 #: weblate_web/html/donate.html:18
+msgid "Donate using Gittip"
+msgstr ""
+
+#: weblate_web/html/donate.html:22
+msgid "Gittip allows you to send weekly amount using credit card."
+msgstr ""
+
+#: weblate_web/html/donate.html:28
 msgid ""
 "If you like Weblate you can support it's further development by donating."
 msgstr ""
 "Если вам нравится Weblate, вы можете сделать пожертвование на поддержание "
 "его дальнейшего развития."
 
-#: weblate_web/html/donate.html:35
-msgid "Donate Bitcoins"
+#: weblate_web/html/donate.html:34
+msgid "Donate using PayPal"
 msgstr ""
 
-#: weblate_web/html/donate.html:39
+#: weblate_web/html/donate.html:38
 msgid ""
-"Regular donations, which will support Weblate and it's free hosting in the "
-"long term can be done on <a href=\"https://www.gittip.com/nijel/\">Gittip</"
-"a>."
+"PayPal allows you to send money from credit card, PayPal ballance or bank "
+"account."
 msgstr ""
 
-#: weblate_web/html/donate.html:43
+#: weblate_web/html/donate.html:42
+msgid "Flattr this"
+msgstr ""
+
+#: weblate_web/html/donate.html:46
+msgid ""
+"Flattr is micropayment site, which allows you to give monthly small amounts "
+"of money to various projects."
+msgstr ""
+
+#: weblate_web/html/donate.html:50
+msgid "Donate using Coinbase"
+msgstr ""
+
+#: weblate_web/html/donate.html:54
+msgid "Coinbase allows you to send Bitcoins."
+msgstr ""
+
+#: weblate_web/html/donate.html:58
 #, python-format
 msgid ""
 "You can also use <a href=\"http://www.bitcoin.org/\">Bitcoin is a peer-to-"
@@ -802,6 +835,16 @@ msgstr "Архив исходников, сжатый xz"
 #: weblate_web/templatetags/downloads.py:60
 msgid "Sources, zip compressed"
 msgstr "Исходники, сжатые zip"
+
+#~ msgid "Fund"
+#~ msgstr "Финансировать"
+
+#~ msgid ""
+#~ "New <a href=\"%(url)s\">Weblate features</a> are also being <a href="
+#~ "\"%(url)s\">funded on Catincan</a>, you can support them there!"
+#~ msgstr ""
+#~ "Новые <a href=\"%(url)s\">возможности Weblate</a> также можно <a href="
+#~ "\"%(url)s\">финансировать через Catincan</a>, вы можете поддержать их там!"
 
 #~ msgid "Contribute"
 #~ msgstr "Содействовать"
