@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-09-13 10:56+0200\n"
+"POT-Creation-Date: 2013-09-13 12:02+0200\n"
 "PO-Revision-Date: 2013-09-13 11:10+0200\n"
 "Last-Translator: Martin Jurík <martin@droid.sk>\n"
 "Language-Team: Slovak <http://l10n.cihar.com/projects/weblate/website/sk/>\n"
@@ -164,7 +164,7 @@ msgstr "Hosťovanie"
 msgid "Develop"
 msgstr "Vyvíjajte"
 
-#: weblate_web/html/base.html:45 weblate_web/html/donate.html:25
+#: weblate_web/html/base.html:45 weblate_web/html/donate.html:31
 msgid "Donate"
 msgstr "Prispejte"
 
@@ -182,13 +182,12 @@ msgstr "Pomôžte s prekladmi!"
 
 #: weblate_web/html/base.html:82
 #, python-format
-#| msgid "Weblate is easy to deploy as an appliance."
 msgid ""
 "Weblate is free software, but welcomes <a href=\"%(donate_url)s\">donations</"
 "a>."
 msgstr ""
-"Weblate je slobodný softvér ale víta vaše <a href=\"%"
-"(donate_url)s\">príspevky</a>."
+"Weblate je slobodný softvér ale víta vaše <a href=\"%(donate_url)s"
+"\">príspevky</a>."
 
 #: weblate_web/html/contribute.html:4 weblate_web/html/contribute.html.py:5
 msgid "Contribute to Weblate"
@@ -245,17 +244,14 @@ msgid "Translation status"
 msgstr "Stav prekladu"
 
 #: weblate_web/html/donate.html:4 weblate_web/html/donate.html.py:5
-#| msgid "Contribute to Weblate"
 msgid "Donate to Weblate"
 msgstr "Prispejte na Weblate"
 
 #: weblate_web/html/donate.html:7
-#| msgid "Weblate is easy to deploy as an appliance."
 msgid "Weblate is free, but welcomes donations."
 msgstr "Weblate je zadarmo, ale víta vaše príspevky."
 
 #: weblate_web/html/donate.html:11
-#| msgid "Other options"
 msgid "Regular donations"
 msgstr "Pravidelné príspevky"
 
@@ -278,16 +274,29 @@ msgid "Gittip allows you to send weekly amount using credit card."
 msgstr ""
 "Gittip Vám umožní posielať príspevok každý týždeň pomocou kreditnej karty."
 
+#: weblate_web/html/donate.html:25
+#, fuzzy
+#| msgid "Features"
+msgid "Fund features"
+msgstr "Vlastnosti"
+
 #: weblate_web/html/donate.html:28
+#, python-format
+msgid ""
+"You can place bounty on individual features at <a href=\"%(url)s"
+"\">Bountysource</a>."
+msgstr ""
+
+#: weblate_web/html/donate.html:34
 msgid ""
 "If you like Weblate you can support it's further development by donating."
 msgstr "Ak sa Vám Weblate páči, môžete jeho ďalší rozvoj podporiť príspevkom."
 
-#: weblate_web/html/donate.html:34
+#: weblate_web/html/donate.html:40
 msgid "Donate using PayPal"
 msgstr "Prispejte pomocou PayPalu"
 
-#: weblate_web/html/donate.html:38
+#: weblate_web/html/donate.html:44
 msgid ""
 "PayPal allows you to send money from credit card, PayPal ballance or bank "
 "account."
@@ -295,11 +304,11 @@ msgstr ""
 "PayPal Vám umožní poslať príspevok pomocu kreditnej karty, hotovosti z "
 "PayPal účtu alebo z bankového účtu."
 
-#: weblate_web/html/donate.html:42
+#: weblate_web/html/donate.html:48
 msgid "Flattr this"
 msgstr "Oflattrujte Weblate"
 
-#: weblate_web/html/donate.html:46
+#: weblate_web/html/donate.html:52
 msgid ""
 "Flattr is micropayment site, which allows you to give monthly small amounts "
 "of money to various projects."
@@ -307,16 +316,15 @@ msgstr ""
 "Flattr je mikroplatobný systém, ktorý Vám umožní prispievať mesačne malé "
 "čiastky na rôzne projekty."
 
-#: weblate_web/html/donate.html:50
-#| msgid "Donate Bitcoins"
+#: weblate_web/html/donate.html:56
 msgid "Donate using Coinbase"
 msgstr "Prispejte pomocou Coinbase"
 
-#: weblate_web/html/donate.html:54
+#: weblate_web/html/donate.html:60
 msgid "Coinbase allows you to send Bitcoins."
 msgstr "Coinbase Vám umožní prispieť Bitcoiny."
 
-#: weblate_web/html/donate.html:58
+#: weblate_web/html/donate.html:64
 #, python-format
 msgid ""
 "You can also use <a href=\"http://www.bitcoin.org/\">Bitcoin is a peer-to-"
@@ -605,7 +613,6 @@ msgstr ""
 "projektu užívateľa Weblate a povedzte nám, že chcete použiť túto voľbu."
 
 #: weblate_web/html/hosting.html:48
-#| msgid "Conditions for free hosting"
 msgid "Support free hosting"
 msgstr "Podporte bezplatné hosťovanie"
 
@@ -617,9 +624,9 @@ msgid ""
 "\">Gittip</a> or <a href=\"%(donate_url)s\">other ways to donate</a>."
 msgstr ""
 "Hosťovanie je ponúkané bezplatne, ale prevádzka servera a jeho údržba niečo "
-"stojí, takže príspevky na prevádzku sú vítané prostredníctvom <a href=\"%"
-"(gittip_url)s\">Gittipu</a> alebo <a href=\"%(donate_url)s\">akýmkoľvek iným "
-"spôsobom</a>."
+"stojí, takže príspevky na prevádzku sú vítané prostredníctvom <a href="
+"\"%(gittip_url)s\">Gittipu</a> alebo <a href=\"%(donate_url)s\">akýmkoľvek "
+"iným spôsobom</a>."
 
 #: weblate_web/html/hosting.html:55
 msgid "Commercial hosting"

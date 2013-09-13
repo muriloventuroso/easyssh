@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-09-13 10:56+0200\n"
+"POT-Creation-Date: 2013-09-13 12:02+0200\n"
 "PO-Revision-Date: 2013-09-13 11:02+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <http://l10n.cihar.com/projects/weblate/website/cs/>\n"
@@ -165,7 +165,7 @@ msgstr "Hostování"
 msgid "Develop"
 msgstr "Vyvíjejte"
 
-#: weblate_web/html/base.html:45 weblate_web/html/donate.html:25
+#: weblate_web/html/base.html:45 weblate_web/html/donate.html:31
 msgid "Donate"
 msgstr "Přispějte"
 
@@ -183,13 +183,12 @@ msgstr "Pomozte s překlady!"
 
 #: weblate_web/html/base.html:82
 #, python-format
-#| msgid "Weblate is free, but welcomes donations."
 msgid ""
 "Weblate is free software, but welcomes <a href=\"%(donate_url)s\">donations</"
 "a>."
 msgstr ""
-"Weblate je svobodný software, ale vítá vaše <a href=\"%"
-"(donate_url)s\">příspěvky</a>."
+"Weblate je svobodný software, ale vítá vaše <a href=\"%(donate_url)s"
+"\">příspěvky</a>."
 
 #: weblate_web/html/contribute.html:4 weblate_web/html/contribute.html.py:5
 msgid "Contribute to Weblate"
@@ -254,7 +253,6 @@ msgid "Weblate is free, but welcomes donations."
 msgstr "Weblate je zdarma, ale vítá vaše příspěvky."
 
 #: weblate_web/html/donate.html:11
-#| msgid "Other options"
 msgid "Regular donations"
 msgstr "Pravidelné příspěvky"
 
@@ -276,17 +274,30 @@ msgstr "Přispějte pomocí Gittipu"
 msgid "Gittip allows you to send weekly amount using credit card."
 msgstr "Gittip vám umožní posílat příspěvek každý týden pomocí kreditní karty."
 
+#: weblate_web/html/donate.html:25
+#, fuzzy
+#| msgid "Features"
+msgid "Fund features"
+msgstr "Vlastnosti"
+
 #: weblate_web/html/donate.html:28
+#, python-format
+msgid ""
+"You can place bounty on individual features at <a href=\"%(url)s"
+"\">Bountysource</a>."
+msgstr ""
+
+#: weblate_web/html/donate.html:34
 msgid ""
 "If you like Weblate you can support it's further development by donating."
 msgstr ""
 "Pokud se vám Weblate líbí můžete jeho další rozvoj podpořit příspěvkem."
 
-#: weblate_web/html/donate.html:34
+#: weblate_web/html/donate.html:40
 msgid "Donate using PayPal"
 msgstr "Přispějte pomocí PayPalu"
 
-#: weblate_web/html/donate.html:38
+#: weblate_web/html/donate.html:44
 msgid ""
 "PayPal allows you to send money from credit card, PayPal ballance or bank "
 "account."
@@ -294,11 +305,11 @@ msgstr ""
 "PayPal vám umožní poslat příspěvek pomocí kreditní karty, hotovosti z PayPal "
 "účtu nebo z bankovního účtu."
 
-#: weblate_web/html/donate.html:42
+#: weblate_web/html/donate.html:48
 msgid "Flattr this"
 msgstr "Oflattrujte Weblate"
 
-#: weblate_web/html/donate.html:46
+#: weblate_web/html/donate.html:52
 msgid ""
 "Flattr is micropayment site, which allows you to give monthly small amounts "
 "of money to various projects."
@@ -306,16 +317,15 @@ msgstr ""
 "Flattr je mikroplatební systém, který vám umožní přispívat měsíčně malé "
 "částky na různé projekty."
 
-#: weblate_web/html/donate.html:50
-#| msgid "Donate Bitcoins"
+#: weblate_web/html/donate.html:56
 msgid "Donate using Coinbase"
 msgstr "Darujte pomocí Coinbase"
 
-#: weblate_web/html/donate.html:54
+#: weblate_web/html/donate.html:60
 msgid "Coinbase allows you to send Bitcoins."
 msgstr "Coinbase vám umožní přispět Bitcoiny."
 
-#: weblate_web/html/donate.html:58
+#: weblate_web/html/donate.html:64
 #, python-format
 msgid ""
 "You can also use <a href=\"http://www.bitcoin.org/\">Bitcoin is a peer-to-"
