@@ -44,6 +44,7 @@ class PagesSitemap(Sitemap):
             ('/try/', 0.5, 'weekly'),
             ('/hosting/', 0.8, 'weekly'),
             ('/contribute/', 0.7, 'weekly'),
+            ('/donate/', 0.7, 'weekly'),
             ('/support/', 0.7, 'weekly'),
         )
 
