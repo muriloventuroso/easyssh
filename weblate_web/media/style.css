@@ -44,7 +44,7 @@ a:hover {
     border-radius: .3em;
 }
 .language:hover {
-    border: 1px solid #c00;
+    border-color: #c00;
 }
 .languages {
     border: 1px solid #004276;
@@ -157,4 +157,17 @@ h4 {
 }
 .clearer {
     clear: both;
+}
+button {
+    border: 1px solid #004276;
+    padding: .3em;
+    border-radius: .3em;
+    color: #004276;
+    font-family: sans-serif;
+    background: #fff;
+    font-weight: bold;
+}
+button:hover {
+    border-color: #cc0000;
+    color: #cc0000;
 }
