@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2013-09-13 12:02+0200\n"
-"PO-Revision-Date: 2013-08-18 08:55+0200\n"
+"PO-Revision-Date: 2013-09-17 06:42+0200\n"
 "Last-Translator: shanyan baishui <Siramizu@gmail.com>\n"
-"Language-Team: Simplified Chinese <http://l10n.cihar.com/projects/weblate/"
-"website/zh_CN/>\n"
+"Language-Team: Simplified Chinese "
+"<http://l10n.cihar.com/projects/weblate/website/zh_CN/>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -155,7 +155,7 @@ msgstr "托管"
 
 #: weblate_web/html/base.html:44
 msgid "Develop"
-msgstr ""
+msgstr "开发"
 
 #: weblate_web/html/base.html:45 weblate_web/html/donate.html:31
 msgid "Donate"
@@ -174,12 +174,12 @@ msgid "Help with translations!"
 msgstr "帮我们翻译！"
 
 #: weblate_web/html/base.html:82
-#, fuzzy, python-format
+#, python-format
 #| msgid "Weblate is easy to deploy as an appliance."
 msgid ""
 "Weblate is free software, but welcomes <a href=\"%(donate_url)s\">donations</"
 "a>."
-msgstr "Weblate 提供套件以轻松部署。"
+msgstr "Weblate 是自由软件，但欢迎您的<a href=\"%(donate_url)s\">捐助</a>。"
 
 #: weblate_web/html/contribute.html:4 weblate_web/html/contribute.html.py:5
 msgid "Contribute to Weblate"
@@ -234,22 +234,19 @@ msgid "Translation status"
 msgstr "翻译状态"
 
 #: weblate_web/html/donate.html:4 weblate_web/html/donate.html.py:5
-#, fuzzy
 #| msgid "Contribute to Weblate"
 msgid "Donate to Weblate"
-msgstr "对 Weblate 贡献"
+msgstr "捐助 Weblate"
 
 #: weblate_web/html/donate.html:7
-#, fuzzy
 #| msgid "Weblate is easy to deploy as an appliance."
 msgid "Weblate is free, but welcomes donations."
-msgstr "Weblate 提供套件以轻松部署。"
+msgstr "Weblate 是免费的，但欢迎您的捐助。"
 
 #: weblate_web/html/donate.html:11
-#, fuzzy
 #| msgid "Other options"
 msgid "Regular donations"
-msgstr "其它选择"
+msgstr "定期捐助"
 
 #: weblate_web/html/donate.html:14
 msgid ""
@@ -260,11 +257,11 @@ msgstr ""
 
 #: weblate_web/html/donate.html:18
 msgid "Donate using Gittip"
-msgstr ""
+msgstr "通过 Gittip 捐助"
 
 #: weblate_web/html/donate.html:22
 msgid "Gittip allows you to send a weekly amount using a credit card."
-msgstr ""
+msgstr "Gittip 可让您用信用卡每周捐助一些。"
 
 #: weblate_web/html/donate.html:25
 #, fuzzy
@@ -286,13 +283,13 @@ msgstr "如果您喜欢 Weblate 您可以捐助以支持它的开发。"
 
 #: weblate_web/html/donate.html:40
 msgid "Donate using PayPal"
-msgstr ""
+msgstr "通过 PayPal 捐助"
 
 #: weblate_web/html/donate.html:44
 msgid ""
 "PayPal allows you to send money from credit card, PayPal balance or a bank "
 "account."
-msgstr ""
+msgstr "PayPal 可让您用信用卡、PayPal 余额或银行账户捐助。"
 
 #: weblate_web/html/donate.html:48
 msgid "Flattr this"
@@ -302,17 +299,16 @@ msgstr ""
 msgid ""
 "Flattr is a micropayment site that allows you to give monthly small amounts "
 "of money to various projects."
-msgstr ""
+msgstr "Flattr 是一个可将您每个月的捐助钱款分到多个项目的小额支付网站。"
 
 #: weblate_web/html/donate.html:56
-#, fuzzy
 #| msgid "Donate Bitcoins"
 msgid "Donate using Coinbase"
-msgstr "捐助比特币"
+msgstr "通过 Coinbase 捐助"
 
 #: weblate_web/html/donate.html:60
 msgid "Coinbase allows you to send Bitcoins."
-msgstr ""
+msgstr "Coinbase 可让您发送比特币。"
 
 #: weblate_web/html/donate.html:64
 #, python-format
@@ -575,10 +571,9 @@ msgid ""
 msgstr ""
 
 #: weblate_web/html/hosting.html:48
-#, fuzzy
 #| msgid "Conditions for free hosting"
 msgid "Support free hosting"
-msgstr "免费托管要求"
+msgstr "支持免费托管"
 
 #: weblate_web/html/hosting.html:52
 #, python-format
@@ -587,6 +582,8 @@ msgid ""
 "costs some money, so you are welcome to use <a href=\"%(gittip_url)s"
 "\">Gittip</a> or <a href=\"%(donate_url)s\">other ways to donate</a>."
 msgstr ""
+"托管是免费的，但服务器需要花费资金，我们欢迎您通过 <a href=\"%(gittip_url)s\">Gittip</a> 或 <a href=\"%"
+"(donate_url)s\">其它方式捐助</a>。"
 
 #: weblate_web/html/hosting.html:55
 msgid "Commercial hosting"
