@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-09-13 12:02+0200\n"
+"POT-Creation-Date: 2013-09-18 11:36+0200\n"
 "PO-Revision-Date: 2013-09-13 12:14+0200\n"
 "Last-Translator: Panagiotis Papazoglou <papaz_p@yahoo.com>\n"
 "Language-Team: Greek <http://l10n.cihar.com/projects/weblate/website/el/>\n"
@@ -172,7 +172,7 @@ msgstr "Φιλοξενία"
 msgid "Develop"
 msgstr "Δημιουργία"
 
-#: weblate_web/html/base.html:45 weblate_web/html/donate.html:31
+#: weblate_web/html/base.html:45 weblate_web/html/donate.html:35
 msgid "Donate"
 msgstr "Δωρεά"
 
@@ -285,31 +285,31 @@ msgstr ""
 "κάρτας."
 
 #: weblate_web/html/donate.html:25
-#| msgid "Features"
 msgid "Fund features"
 msgstr "Χαρακτηριστικά χρηματοδότησης"
 
 #: weblate_web/html/donate.html:28
-#, python-format
-msgid ""
-"You can place a bounty on individual features at <a href=\"%(url)s"
-"\">Bountysource</a>."
+msgid "Fund on Bountysource"
 msgstr ""
-"Μπορείτε να τοποθετήσετε γενναιοδωρία σε μεμονωμένα χαρακτηριστικά "
-"γνωρίσματα στο <a href=\"%(url)s\">Bountysource</a>."
 
-#: weblate_web/html/donate.html:34
+#: weblate_web/html/donate.html:32
+msgid ""
+"Bountysource allows you to fund individual features which are reported on "
+"our issue tracker."
+msgstr ""
+
+#: weblate_web/html/donate.html:38
 msgid ""
 "If you like Weblate you can support its further development by donating."
 msgstr ""
 "Αν σας αρέσει το Weblate μπορείτε να υποστηρίξετε την περαιτέρω ανάπτυξη "
 "κάνοντας μια δωρεά."
 
-#: weblate_web/html/donate.html:40
+#: weblate_web/html/donate.html:44
 msgid "Donate using PayPal"
 msgstr "Δωρεά με χρήση PayPal"
 
-#: weblate_web/html/donate.html:44
+#: weblate_web/html/donate.html:48
 msgid ""
 "PayPal allows you to send money from credit card, PayPal balance or a bank "
 "account."
@@ -317,11 +317,11 @@ msgstr ""
 "Το PayPal σας επιτρέπει να στείλετε χρήματα από πιστωτική κάρτα, από PayPal "
 "balance ή τραπεζικό λογαριασμό."
 
-#: weblate_web/html/donate.html:48
+#: weblate_web/html/donate.html:52
 msgid "Flattr this"
 msgstr "Flattr αυτό"
 
-#: weblate_web/html/donate.html:52
+#: weblate_web/html/donate.html:56
 msgid ""
 "Flattr is a micropayment site that allows you to give monthly small amounts "
 "of money to various projects."
@@ -329,15 +329,15 @@ msgstr ""
 "Το Flattr είναι ιστοσελίδα μικροπληρωμών, που σας επιτρέπει να δίνετε μικρά "
 "μηνιαία ποσά χρημάτων σε διάφορα έργα."
 
-#: weblate_web/html/donate.html:56
+#: weblate_web/html/donate.html:60
 msgid "Donate using Coinbase"
 msgstr "Δωρεά με χρήση Conbase"
 
-#: weblate_web/html/donate.html:60
+#: weblate_web/html/donate.html:64
 msgid "Coinbase allows you to send Bitcoins."
 msgstr "Το Coinbase σας επιτρέπει να δίνετε Bitcoins."
 
-#: weblate_web/html/donate.html:64
+#: weblate_web/html/donate.html:68
 #, python-format
 msgid ""
 "You can also use <a href=\"http://www.bitcoin.org/\">Bitcoin is a peer-to-"
@@ -859,6 +859,13 @@ msgstr "Προελεύσεις tarball, συμπιεσμένο xz"
 #: weblate_web/templatetags/downloads.py:60
 msgid "Sources, zip compressed"
 msgstr "Προελεύσεις, συμπιεσμένο zip"
+
+#~ msgid ""
+#~ "You can place a bounty on individual features at <a href=\"%(url)s"
+#~ "\">Bountysource</a>."
+#~ msgstr ""
+#~ "Μπορείτε να τοποθετήσετε γενναιοδωρία σε μεμονωμένα χαρακτηριστικά "
+#~ "γνωρίσματα στο <a href=\"%(url)s\">Bountysource</a>."
 
 #~ msgid "Fund"
 #~ msgstr "Ταμείο"

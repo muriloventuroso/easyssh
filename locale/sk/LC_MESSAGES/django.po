@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-09-13 12:02+0200\n"
+"POT-Creation-Date: 2013-09-18 11:36+0200\n"
 "PO-Revision-Date: 2013-09-13 17:48+0200\n"
 "Last-Translator: Martin Jurík <martin@droid.sk>\n"
 "Language-Team: Slovak <http://l10n.cihar.com/projects/weblate/website/sk/>\n"
@@ -164,7 +164,7 @@ msgstr "Hosťovanie"
 msgid "Develop"
 msgstr "Vyvíjajte"
 
-#: weblate_web/html/base.html:45 weblate_web/html/donate.html:31
+#: weblate_web/html/base.html:45 weblate_web/html/donate.html:35
 msgid "Donate"
 msgstr "Prispejte"
 
@@ -275,29 +275,29 @@ msgstr ""
 "Gittip Vám umožní posielať príspevok každý týždeň pomocou kreditnej karty."
 
 #: weblate_web/html/donate.html:25
-#| msgid "Features"
 msgid "Fund features"
 msgstr "Prispejte na nové funkcie"
 
 #: weblate_web/html/donate.html:28
-#, python-format
-msgid ""
-"You can place a bounty on individual features at <a href=\"%(url)s"
-"\">Bountysource</a>."
+msgid "Fund on Bountysource"
 msgstr ""
-"Na <a href=\"%(url)s\">Bountysource</a> môžete ponúknuť odmenu za jednotlivé "
-"nové funkcie."
 
-#: weblate_web/html/donate.html:34
+#: weblate_web/html/donate.html:32
+msgid ""
+"Bountysource allows you to fund individual features which are reported on "
+"our issue tracker."
+msgstr ""
+
+#: weblate_web/html/donate.html:38
 msgid ""
 "If you like Weblate you can support its further development by donating."
 msgstr "Ak sa Vám Weblate páči, môžete jeho ďalší rozvoj podporiť príspevkom."
 
-#: weblate_web/html/donate.html:40
+#: weblate_web/html/donate.html:44
 msgid "Donate using PayPal"
 msgstr "Prispejte pomocou PayPalu"
 
-#: weblate_web/html/donate.html:44
+#: weblate_web/html/donate.html:48
 msgid ""
 "PayPal allows you to send money from credit card, PayPal balance or a bank "
 "account."
@@ -305,11 +305,11 @@ msgstr ""
 "PayPal Vám umožní poslať príspevok pomocu kreditnej karty, hotovosti z "
 "PayPal účtu alebo z bankového účtu."
 
-#: weblate_web/html/donate.html:48
+#: weblate_web/html/donate.html:52
 msgid "Flattr this"
 msgstr "Oflattrujte Weblate"
 
-#: weblate_web/html/donate.html:52
+#: weblate_web/html/donate.html:56
 msgid ""
 "Flattr is a micropayment site that allows you to give monthly small amounts "
 "of money to various projects."
@@ -317,15 +317,15 @@ msgstr ""
 "Flattr je mikroplatobný systém, ktorý Vám umožní prispievať mesačne malé "
 "čiastky na rôzne projekty."
 
-#: weblate_web/html/donate.html:56
+#: weblate_web/html/donate.html:60
 msgid "Donate using Coinbase"
 msgstr "Prispejte pomocou Coinbase"
 
-#: weblate_web/html/donate.html:60
+#: weblate_web/html/donate.html:64
 msgid "Coinbase allows you to send Bitcoins."
 msgstr "Coinbase Vám umožní prispieť Bitcoiny."
 
-#: weblate_web/html/donate.html:64
+#: weblate_web/html/donate.html:68
 #, python-format
 msgid ""
 "You can also use <a href=\"http://www.bitcoin.org/\">Bitcoin is a peer-to-"
@@ -834,6 +834,13 @@ msgstr "Zdrojový tarball, komprimovaný xz"
 #: weblate_web/templatetags/downloads.py:60
 msgid "Sources, zip compressed"
 msgstr "Zdrojové kódy, komprimované zipom"
+
+#~ msgid ""
+#~ "You can place a bounty on individual features at <a href=\"%(url)s"
+#~ "\">Bountysource</a>."
+#~ msgstr ""
+#~ "Na <a href=\"%(url)s\">Bountysource</a> môžete ponúknuť odmenu za "
+#~ "jednotlivé nové funkcie."
 
 #~ msgid "Fund"
 #~ msgstr "Financujte"

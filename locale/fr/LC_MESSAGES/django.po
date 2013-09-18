@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-09-13 12:02+0200\n"
+"POT-Creation-Date: 2013-09-18 11:36+0200\n"
 "PO-Revision-Date: 2013-09-13 14:25+0200\n"
 "Last-Translator: Marc Delisle <marc@infomarc.info>\n"
 "Language-Team: French <http://l10n.cihar.com/projects/weblate/website/fr/>\n"
@@ -173,7 +173,7 @@ msgstr "Hébergement"
 msgid "Develop"
 msgstr "Développez"
 
-#: weblate_web/html/base.html:45 weblate_web/html/donate.html:31
+#: weblate_web/html/base.html:45 weblate_web/html/donate.html:35
 msgid "Donate"
 msgstr "Dons"
 
@@ -191,13 +191,12 @@ msgstr "Offrez votre aide pour les traductions !"
 
 #: weblate_web/html/base.html:82
 #, python-format
-#| msgid "Weblate is easy to deploy as an appliance."
 msgid ""
 "Weblate is free software, but welcomes <a href=\"%(donate_url)s\">donations</"
 "a>."
 msgstr ""
-"Weblate est un logiciel libre, cependant les <a href=\"%"
-"(donate_url)s\">dons</a> sont bienvenus."
+"Weblate est un logiciel libre, cependant les <a href=\"%(donate_url)s"
+"\">dons</a> sont bienvenus."
 
 #: weblate_web/html/contribute.html:4 weblate_web/html/contribute.html.py:5
 msgid "Contribute to Weblate"
@@ -254,17 +253,14 @@ msgid "Translation status"
 msgstr "État de la traduction"
 
 #: weblate_web/html/donate.html:4 weblate_web/html/donate.html.py:5
-#| msgid "Contribute to Weblate"
 msgid "Donate to Weblate"
 msgstr "Faites un don à Weblate"
 
 #: weblate_web/html/donate.html:7
-#| msgid "Weblate is easy to deploy as an appliance."
 msgid "Weblate is free, but welcomes donations."
 msgstr "Weblate est gratuit mais les dons sont bienvenus."
 
 #: weblate_web/html/donate.html:11
-#| msgid "Other options"
 msgid "Regular donations"
 msgstr "Dons ordinaires"
 
@@ -289,31 +285,31 @@ msgstr ""
 "crédit."
 
 #: weblate_web/html/donate.html:25
-#| msgid "Features"
 msgid "Fund features"
 msgstr "Financez des fonctionnalités"
 
 #: weblate_web/html/donate.html:28
-#, python-format
-msgid ""
-"You can place a bounty on individual features at <a href=\"%(url)s"
-"\">Bountysource</a>."
+msgid "Fund on Bountysource"
 msgstr ""
-"Vous pouvez offrir une prime pour des fonctionnalités individuelles à <a "
-"href=\"%(url)s\">Bountysource</a>."
 
-#: weblate_web/html/donate.html:34
+#: weblate_web/html/donate.html:32
+msgid ""
+"Bountysource allows you to fund individual features which are reported on "
+"our issue tracker."
+msgstr ""
+
+#: weblate_web/html/donate.html:38
 msgid ""
 "If you like Weblate you can support its further development by donating."
 msgstr ""
 "Si vous aimez Weblate vous pouvez supporter son développement en faisant un "
 "don."
 
-#: weblate_web/html/donate.html:40
+#: weblate_web/html/donate.html:44
 msgid "Donate using PayPal"
 msgstr "Faites un don via PayPal"
 
-#: weblate_web/html/donate.html:44
+#: weblate_web/html/donate.html:48
 msgid ""
 "PayPal allows you to send money from credit card, PayPal balance or a bank "
 "account."
@@ -321,11 +317,11 @@ msgstr ""
 "PayPal vous permet d'envoyer de l'argent depuis une carte de crédit, un "
 "solde PayPal ou un compte bancaire."
 
-#: weblate_web/html/donate.html:48
+#: weblate_web/html/donate.html:52
 msgid "Flattr this"
 msgstr "Flattr ceci"
 
-#: weblate_web/html/donate.html:52
+#: weblate_web/html/donate.html:56
 msgid ""
 "Flattr is a micropayment site that allows you to give monthly small amounts "
 "of money to various projects."
@@ -333,16 +329,15 @@ msgstr ""
 "Flattr est un site de micropaiement qui permet de donner de petites sommes "
 "d'argent mensuelles à divers projets."
 
-#: weblate_web/html/donate.html:56
-#| msgid "Donate Bitcoins"
+#: weblate_web/html/donate.html:60
 msgid "Donate using Coinbase"
 msgstr "Faites un don via Coinbase"
 
-#: weblate_web/html/donate.html:60
+#: weblate_web/html/donate.html:64
 msgid "Coinbase allows you to send Bitcoins."
 msgstr "Coinbase vous permet d'envoyer des Bitcoins."
 
-#: weblate_web/html/donate.html:64
+#: weblate_web/html/donate.html:68
 #, python-format
 msgid ""
 "You can also use <a href=\"http://www.bitcoin.org/\">Bitcoin is a peer-to-"
@@ -643,7 +638,6 @@ msgstr ""
 "utiliser cette option."
 
 #: weblate_web/html/hosting.html:48
-#| msgid "Conditions for free hosting"
 msgid "Support free hosting"
 msgstr "Soutenez l'hébergement gratuit"
 
@@ -866,6 +860,13 @@ msgstr "Archive source, compressée xz"
 #: weblate_web/templatetags/downloads.py:60
 msgid "Sources, zip compressed"
 msgstr "Archive source, compressée zip"
+
+#~ msgid ""
+#~ "You can place a bounty on individual features at <a href=\"%(url)s"
+#~ "\">Bountysource</a>."
+#~ msgstr ""
+#~ "Vous pouvez offrir une prime pour des fonctionnalités individuelles à <a "
+#~ "href=\"%(url)s\">Bountysource</a>."
 
 #~ msgid "Fund"
 #~ msgstr "Financer"

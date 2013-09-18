@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-09-13 12:02+0200\n"
+"POT-Creation-Date: 2013-09-18 11:36+0200\n"
 "PO-Revision-Date: 2013-09-13 15:01+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: German <http://l10n.cihar.com/projects/weblate/website/de/>\n"
@@ -169,7 +169,7 @@ msgstr "Hosting"
 msgid "Develop"
 msgstr "Entwickeln"
 
-#: weblate_web/html/base.html:45 weblate_web/html/donate.html:31
+#: weblate_web/html/base.html:45 weblate_web/html/donate.html:35
 msgid "Donate"
 msgstr "Spenden"
 
@@ -227,8 +227,8 @@ msgid ""
 "This website is stored on <a href=\"https://github.com/nijel/weblate-web"
 "\">Github</a> as well:"
 msgstr ""
-"Diese Webseite ist auch auf <a href=\"https://github.com/nijel/weblate-"
-"web\">Github</a> gespeichert:"
+"Diese Webseite ist auch auf <a href=\"https://github.com/nijel/weblate-web"
+"\">Github</a> gespeichert:"
 
 #: weblate_web/html/contribute.html:33
 msgid "Translate"
@@ -239,8 +239,8 @@ msgid ""
 "You can translate Weblate using Weblate installation at <a href=\"https://"
 "l10n.cihar.com/engage/weblate/\">l10n.cihar.com</a>."
 msgstr ""
-"Du kannst Weblate mit einer Weblate Installation auf <a "
-"href=\"https://l10n.cihar.com/engage/weblate/\">l10n.cihar.com</a> übersetzen."
+"Du kannst Weblate mit einer Weblate Installation auf <a href=\"https://l10n."
+"cihar.com/engage/weblate/\">l10n.cihar.com</a> übersetzen."
 
 #: weblate_web/html/contribute.html:41
 msgid "Translation status"
@@ -280,49 +280,51 @@ msgid "Fund features"
 msgstr "Funktionen"
 
 #: weblate_web/html/donate.html:28
-#, python-format
-msgid ""
-"You can place a bounty on individual features at <a href=\"%(url)s"
-"\">Bountysource</a>."
+msgid "Fund on Bountysource"
 msgstr ""
 
-#: weblate_web/html/donate.html:34
+#: weblate_web/html/donate.html:32
+msgid ""
+"Bountysource allows you to fund individual features which are reported on "
+"our issue tracker."
+msgstr ""
+
+#: weblate_web/html/donate.html:38
 msgid ""
 "If you like Weblate you can support its further development by donating."
 msgstr ""
 "Wenn du Weblate magst kannst du die zukünftige Entwicklung durch Spenden "
 "unterstützen."
 
-#: weblate_web/html/donate.html:40
+#: weblate_web/html/donate.html:44
 msgid "Donate using PayPal"
 msgstr "Spenden mit PayPal"
 
-#: weblate_web/html/donate.html:44
+#: weblate_web/html/donate.html:48
 msgid ""
 "PayPal allows you to send money from credit card, PayPal balance or a bank "
 "account."
 msgstr ""
 
-#: weblate_web/html/donate.html:48
+#: weblate_web/html/donate.html:52
 msgid "Flattr this"
 msgstr "Flattr Weblate"
 
-#: weblate_web/html/donate.html:52
+#: weblate_web/html/donate.html:56
 msgid ""
 "Flattr is a micropayment site that allows you to give monthly small amounts "
 "of money to various projects."
 msgstr ""
 
-#: weblate_web/html/donate.html:56
-#| msgid "Donate Bitcoins"
+#: weblate_web/html/donate.html:60
 msgid "Donate using Coinbase"
 msgstr "Spenden mit Coinbase"
 
-#: weblate_web/html/donate.html:60
+#: weblate_web/html/donate.html:64
 msgid "Coinbase allows you to send Bitcoins."
 msgstr ""
 
-#: weblate_web/html/donate.html:64
+#: weblate_web/html/donate.html:68
 #, python-format
 msgid ""
 "You can also use <a href=\"http://www.bitcoin.org/\">Bitcoin is a peer-to-"
@@ -361,17 +363,17 @@ msgid ""
 msgstr ""
 "In dem Fall das du Weblate in deiner Cloud oder auf einem virtuellen Server "
 "laufen lassen möchtest, kannst du basierend auf openSUSE 12.3 eine Maschine "
-"von <a href=\"http://susestudio.com/a/F8yMYg/weblate\">SUSE Studio Gallery</a> "
-"herunterladen."
+"von <a href=\"http://susestudio.com/a/F8yMYg/weblate\">SUSE Studio Gallery</"
+"a> herunterladen."
 
 #: weblate_web/html/download.html:42
 msgid ""
 "Check <a href=\"http://docs.weblate.org/en/latest/install.html#appliance"
 "\">our documentation</a> for more information about appliance setup."
 msgstr ""
-"Weitere Informationen über die Verwendung der Appliance sind in unserer <a h"
-"ref=\"http://docs.weblate.org/en/latest/install.html#appliance\">Dokumentation"
-"</a> zu finden."
+"Weitere Informationen über die Verwendung der Appliance sind in unserer <a "
+"href=\"http://docs.weblate.org/en/latest/install.html#appliance"
+"\">Dokumentation</a> zu finden."
 
 #: weblate_web/html/features.html:4 weblate_web/html/features.html.py:5
 msgid "Weblate features"
@@ -379,7 +381,8 @@ msgstr "Weblate Funktionalität"
 
 #: weblate_web/html/features.html:7
 msgid "Weblate is a feature rich computer aided translation tool."
-msgstr "Weblate ist ein umfangreiches computer-gestütztes Übersetzungswerkzeug."
+msgstr ""
+"Weblate ist ein umfangreiches computer-gestütztes Übersetzungswerkzeug."
 
 #: weblate_web/html/features.html:15
 msgid "Access control"

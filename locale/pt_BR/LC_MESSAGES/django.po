@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-09-13 12:02+0200\n"
+"POT-Creation-Date: 2013-09-18 11:36+0200\n"
 "PO-Revision-Date: 2013-09-14 23:47+0200\n"
 "Last-Translator: Helder Santana <helder.bs.santana@gmail.com>\n"
-"Language-Team: Portuguese (Brazil) "
-"<http://l10n.cihar.com/projects/weblate/website/pt_BR/>\n"
+"Language-Team: Portuguese (Brazil) <http://l10n.cihar.com/projects/weblate/"
+"website/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -172,7 +172,7 @@ msgstr "Hospedagem"
 msgid "Develop"
 msgstr "Desenvolver"
 
-#: weblate_web/html/base.html:45 weblate_web/html/donate.html:31
+#: weblate_web/html/base.html:45 weblate_web/html/donate.html:35
 msgid "Donate"
 msgstr "Doar"
 
@@ -190,13 +190,12 @@ msgstr "Ajude-nos a traduzir!"
 
 #: weblate_web/html/base.html:82
 #, python-format
-#| msgid "Weblate is easy to deploy as an appliance."
 msgid ""
 "Weblate is free software, but welcomes <a href=\"%(donate_url)s\">donations</"
 "a>."
 msgstr ""
-"O Weblate é um software livre, mas aceita <a href=\"%"
-"(donate_url)s\">doações</a>."
+"O Weblate é um software livre, mas aceita <a href=\"%(donate_url)s"
+"\">doações</a>."
 
 #: weblate_web/html/contribute.html:4 weblate_web/html/contribute.html.py:5
 msgid "Contribute to Weblate"
@@ -253,17 +252,14 @@ msgid "Translation status"
 msgstr "Estado da tradução"
 
 #: weblate_web/html/donate.html:4 weblate_web/html/donate.html.py:5
-#| msgid "Contribute to Weblate"
 msgid "Donate to Weblate"
 msgstr "Doações para o Weblate"
 
 #: weblate_web/html/donate.html:7
-#| msgid "Weblate is easy to deploy as an appliance."
 msgid "Weblate is free, but welcomes donations."
 msgstr "O Weblate é um software livre, mas aceita doações."
 
 #: weblate_web/html/donate.html:11
-#| msgid "Other options"
 msgid "Regular donations"
 msgstr "Doações regulares"
 
@@ -284,8 +280,7 @@ msgstr "Doe com o Gittip"
 #: weblate_web/html/donate.html:22
 msgid "Gittip allows you to send a weekly amount using a credit card."
 msgstr ""
-"Gittip permite que você envie quantias semanais utilizando cartão de "
-"crédito."
+"Gittip permite que você envie quantias semanais utilizando cartão de crédito."
 
 #: weblate_web/html/donate.html:25
 #, fuzzy
@@ -294,50 +289,53 @@ msgid "Fund features"
 msgstr "Características"
 
 #: weblate_web/html/donate.html:28
-#, python-format
-msgid ""
-"You can place a bounty on individual features at <a href=\"%(url)s"
-"\">Bountysource</a>."
+msgid "Fund on Bountysource"
 msgstr ""
 
-#: weblate_web/html/donate.html:34
+#: weblate_web/html/donate.html:32
+msgid ""
+"Bountysource allows you to fund individual features which are reported on "
+"our issue tracker."
+msgstr ""
+
+#: weblate_web/html/donate.html:38
 msgid ""
 "If you like Weblate you can support its further development by donating."
 msgstr ""
 "Se você gostar do Weblate, você pode ajudar na evolução dele através de "
 "doações."
 
-#: weblate_web/html/donate.html:40
+#: weblate_web/html/donate.html:44
 msgid "Donate using PayPal"
 msgstr ""
 
-#: weblate_web/html/donate.html:44
+#: weblate_web/html/donate.html:48
 msgid ""
 "PayPal allows you to send money from credit card, PayPal balance or a bank "
 "account."
 msgstr ""
 
-#: weblate_web/html/donate.html:48
+#: weblate_web/html/donate.html:52
 msgid "Flattr this"
 msgstr ""
 
-#: weblate_web/html/donate.html:52
+#: weblate_web/html/donate.html:56
 msgid ""
 "Flattr is a micropayment site that allows you to give monthly small amounts "
 "of money to various projects."
 msgstr ""
 
-#: weblate_web/html/donate.html:56
+#: weblate_web/html/donate.html:60
 #, fuzzy
 #| msgid "Donate Bitcoins"
 msgid "Donate using Coinbase"
 msgstr "Doar Bitcoins"
 
-#: weblate_web/html/donate.html:60
+#: weblate_web/html/donate.html:64
 msgid "Coinbase allows you to send Bitcoins."
 msgstr ""
 
-#: weblate_web/html/donate.html:64
+#: weblate_web/html/donate.html:68
 #, python-format
 msgid ""
 "You can also use <a href=\"http://www.bitcoin.org/\">Bitcoin is a peer-to-"

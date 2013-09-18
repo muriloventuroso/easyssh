@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-09-13 12:02+0200\n"
+"POT-Creation-Date: 2013-09-18 11:36+0200\n"
 "PO-Revision-Date: 2013-09-13 12:31+0200\n"
 "Last-Translator: Burak Yavuz <hitowerdigit@hotmail.com>\n"
 "Language-Team: Turkish <http://l10n.cihar.com/projects/weblate/website/tr/>\n"
@@ -167,7 +167,7 @@ msgstr "Barındırma"
 msgid "Develop"
 msgstr "Geliştirme"
 
-#: weblate_web/html/base.html:45 weblate_web/html/donate.html:31
+#: weblate_web/html/base.html:45 weblate_web/html/donate.html:35
 msgid "Donate"
 msgstr "Bağış"
 
@@ -185,13 +185,12 @@ msgstr "Çevirilerle yardım edin!"
 
 #: weblate_web/html/base.html:82
 #, python-format
-#| msgid "Weblate is free, but welcomes donations."
 msgid ""
 "Weblate is free software, but welcomes <a href=\"%(donate_url)s\">donations</"
 "a>."
 msgstr ""
-"Weblate ücretsiz yazılımdır, fakat <a href=\"%"
-"(donate_url)s\">bağışlarınızı</a> bekliyoruz."
+"Weblate ücretsiz yazılımdır, fakat <a href=\"%(donate_url)s\">bağışlarınızı</"
+"a> bekliyoruz."
 
 #: weblate_web/html/contribute.html:4 weblate_web/html/contribute.html.py:5
 msgid "Contribute to Weblate"
@@ -256,7 +255,6 @@ msgid "Weblate is free, but welcomes donations."
 msgstr "Weblate ücretsizdir, fakat bağışlarınızı bekliyoruz."
 
 #: weblate_web/html/donate.html:11
-#| msgid "Other options"
 msgid "Regular donations"
 msgstr "Düzenli bağışlar"
 
@@ -280,31 +278,31 @@ msgstr ""
 "Gittip kredi kartı kullanarak haftalık bir miktar göndermenize izin verir."
 
 #: weblate_web/html/donate.html:25
-#| msgid "Features"
 msgid "Fund features"
 msgstr "Fon özellikleri"
 
 #: weblate_web/html/donate.html:28
-#, python-format
-msgid ""
-"You can place a bounty on individual features at <a href=\"%(url)s"
-"\">Bountysource</a>."
+msgid "Fund on Bountysource"
 msgstr ""
-"<a href=\"%(url)s\">Bountysource</a> sitesinde bireysel özelliklerde cömert "
-"yerinizi alabilirsiniz."
 
-#: weblate_web/html/donate.html:34
+#: weblate_web/html/donate.html:32
+msgid ""
+"Bountysource allows you to fund individual features which are reported on "
+"our issue tracker."
+msgstr ""
+
+#: weblate_web/html/donate.html:38
 msgid ""
 "If you like Weblate you can support its further development by donating."
 msgstr ""
 "Eğer Weblate'i beğendiyseniz bağış yaparak ileriki geliştirmelerini "
 "destekleyebilirsiniz."
 
-#: weblate_web/html/donate.html:40
+#: weblate_web/html/donate.html:44
 msgid "Donate using PayPal"
 msgstr "PayPal kullanarak bağış yapın"
 
-#: weblate_web/html/donate.html:44
+#: weblate_web/html/donate.html:48
 msgid ""
 "PayPal allows you to send money from credit card, PayPal balance or a bank "
 "account."
@@ -312,11 +310,11 @@ msgstr ""
 "PayPal, kredi kartı, PayPal bakiyesi veya banka hesabından para göndermenize "
 "izin verir."
 
-#: weblate_web/html/donate.html:48
+#: weblate_web/html/donate.html:52
 msgid "Flattr this"
 msgstr "Bunu Flattr'la"
 
-#: weblate_web/html/donate.html:52
+#: weblate_web/html/donate.html:56
 msgid ""
 "Flattr is a micropayment site that allows you to give monthly small amounts "
 "of money to various projects."
@@ -324,16 +322,15 @@ msgstr ""
 "Flattr, çeşitli projelere küçük miktarlarda aylık para vermenize izin veren "
 "küçücük ödeme yapma sitesidir."
 
-#: weblate_web/html/donate.html:56
-#| msgid "Donate Bitcoins"
+#: weblate_web/html/donate.html:60
 msgid "Donate using Coinbase"
 msgstr "Coinbase kullanarak bağış yapın"
 
-#: weblate_web/html/donate.html:60
+#: weblate_web/html/donate.html:64
 msgid "Coinbase allows you to send Bitcoins."
 msgstr "Coinbase, Bitcoins göndermenize izin verir."
 
-#: weblate_web/html/donate.html:64
+#: weblate_web/html/donate.html:68
 #, python-format
 msgid ""
 "You can also use <a href=\"http://www.bitcoin.org/\">Bitcoin is a peer-to-"
@@ -841,6 +838,13 @@ msgstr "Kaynaklar tarball, xz sıkıştırmalı"
 #: weblate_web/templatetags/downloads.py:60
 msgid "Sources, zip compressed"
 msgstr "Kaynaklar, zip sıkıştırmalı"
+
+#~ msgid ""
+#~ "You can place a bounty on individual features at <a href=\"%(url)s"
+#~ "\">Bountysource</a>."
+#~ msgstr ""
+#~ "<a href=\"%(url)s\">Bountysource</a> sitesinde bireysel özelliklerde "
+#~ "cömert yerinizi alabilirsiniz."
 
 #~ msgid "Fund"
 #~ msgstr "Fon"
