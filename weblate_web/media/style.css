@@ -116,7 +116,7 @@ nav a {
     margin: 0;
     padding: 0;
 }
-.actions a {
+.actions a, .button {
     background-color: #cc0000;
     font-weight: bold;
     width: 16em;
@@ -127,6 +127,10 @@ nav a {
     text-align: center;
     padding: .4em;
     border-radius: .4em;
+    border: 1px solid #c00;
+    font-family: sans-serif;
+    font-size: 1em;
+    cursor: pointer;
 }
 .more {
     text-align: right;
@@ -158,16 +162,6 @@ h4 {
 .clearer {
     clear: both;
 }
-.button {
-    border: 1px solid #004276;
-    padding: .3em;
-    border-radius: .3em;
-    color: #004276;
-    font-family: sans-serif;
-    background: #fff;
-    font-weight: bold;
-}
 .button:hover {
-    border-color: #cc0000;
-    color: #cc0000;
+    color: #fff;
 }
