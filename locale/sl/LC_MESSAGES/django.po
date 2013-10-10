@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-09-25 11:08+0200\n"
+"POT-Creation-Date: 2013-10-10 11:27+0200\n"
 "PO-Revision-Date: 2013-10-01 17:32+0200\n"
 "Last-Translator: Domen <dbc334@gmail.com>\n"
-"Language-Team: Slovenian "
-"<http://l10n.cihar.com/projects/weblate/website/sl/>\n"
+"Language-Team: Slovenian <http://l10n.cihar.com/projects/weblate/website/sl/"
+">\n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -186,13 +186,12 @@ msgstr "Pomagajte s prevodi!"
 
 #: weblate_web/html/base.html:82
 #, python-format
-#| msgid "Weblate is easy to deploy as an appliance."
 msgid ""
 "Weblate is free software, but welcomes <a href=\"%(donate_url)s\">donations</"
 "a>."
 msgstr ""
-"Weblate je brezplačno programje, vendar so <a href=\"%"
-"(donate_url)s\">prispevki</a> dobrodošli."
+"Weblate je brezplačno programje, vendar so <a href=\"%(donate_url)s"
+"\">prispevki</a> dobrodošli."
 
 #: weblate_web/html/contribute.html:4 weblate_web/html/contribute.html.py:5
 msgid "Contribute to Weblate"
@@ -249,17 +248,14 @@ msgid "Translation status"
 msgstr "Stanje prevoda"
 
 #: weblate_web/html/donate.html:4 weblate_web/html/donate.html.py:5
-#| msgid "Contribute to Weblate"
 msgid "Donate to Weblate"
 msgstr "Donirajte Weblateu"
 
 #: weblate_web/html/donate.html:7
-#| msgid "Weblate is easy to deploy as an appliance."
 msgid "Weblate is free, but welcomes donations."
 msgstr "Weblate je brezplačen, vendar so donacije dobrodošle."
 
 #: weblate_web/html/donate.html:11
-#| msgid "Other options"
 msgid "Regular donations"
 msgstr "Redne donacije"
 
@@ -283,7 +279,6 @@ msgstr ""
 "Gittip vam omogoča pošiljanje tedenskega zneska z uporabo kreditne kartice."
 
 #: weblate_web/html/donate.html:25
-#| msgid "Features"
 msgid "Fund features"
 msgstr "Možnosti financiranja"
 
@@ -330,7 +325,6 @@ msgstr ""
 "količine denarja različnim projektom."
 
 #: weblate_web/html/donate.html:60
-#| msgid "Donate Bitcoins"
 msgid "Donate using Coinbase"
 msgstr "Donirajte s Coinbase"
 
@@ -373,19 +367,28 @@ msgid "Cloud or emulator images"
 msgstr "Slike za oblak ali posnemovalnik"
 
 #: weblate_web/html/download.html:41
+#, fuzzy, python-format
+#| msgid ""
+#| "In case you want to run Weblate in your cloud or virtual server, you can "
+#| "download appliance based on openSUSE 12.3 at <a href=\"http://susestudio."
+#| "com/a/F8yMYg/weblate\">SUSE Studio Gallery</a>."
 msgid ""
 "In case you want to run Weblate in your cloud or virtual server, you can "
-"download appliance based on openSUSE 12.3 at <a href=\"http://susestudio.com/"
-"a/F8yMYg/weblate\">SUSE Studio Gallery</a>."
+"download appliance based on openSUSE 12.3 at <a href=\"%(url)s\">SUSE Studio "
+"Gallery</a>."
 msgstr ""
 "V primeru, da želite zagnati Weblate v vašem oblaku ali virtualnem "
 "strežniku, si lahko prenesete aparat, ki temelji na openSUSE 12.3 na <a href="
 "\"http://susestudio.com/a/F8yMYg/weblate\">SUSE Studio Gallery</a> ."
 
 #: weblate_web/html/download.html:42
+#, fuzzy, python-format
+#| msgid ""
+#| "Check <a href=\"http://docs.weblate.org/en/latest/install.html#appliance"
+#| "\">our documentation</a> for more information about appliance setup."
 msgid ""
-"Check <a href=\"http://docs.weblate.org/en/latest/install.html#appliance"
-"\">our documentation</a> for more information about appliance setup."
+"Check <a href=\"%(url)s\">our documentation</a> for more information about "
+"appliance setup."
 msgstr ""
 "Preverite <a href=\"http://docs.weblate.org/en/latest/install.html#appliance"
 "\">našo dokumentacijo</a> za več informacij o nastavitvah naprave."
@@ -636,7 +639,6 @@ msgstr ""
 "možnost."
 
 #: weblate_web/html/hosting.html:48
-#| msgid "Conditions for free hosting"
 msgid "Support free hosting"
 msgstr "Podprite brezplačno gostovanje"
 
@@ -648,9 +650,8 @@ msgid ""
 "\">Gittip</a> or <a href=\"%(donate_url)s\">other ways to donate</a>."
 msgstr ""
 "Nudeno gostovanje je brezplačno, vendar poganjanje in vzdrževanje strežnika "
-"nekaj stane, zato vas vabimo, da uporabite <a href=\"%"
-"(gittip_url)s\">Gittip</a> ali <a href=\"%(donate_url)s\">druge načine "
-"doniranja</a>."
+"nekaj stane, zato vas vabimo, da uporabite <a href=\"%(gittip_url)s"
+"\">Gittip</a> ali <a href=\"%(donate_url)s\">druge načine doniranja</a>."
 
 #: weblate_web/html/hosting.html:55
 msgid "Commercial hosting"
