@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2013-10-10 11:27+0200\n"
-"PO-Revision-Date: 2013-09-19 14:55+0200\n"
+"PO-Revision-Date: 2013-10-10 22:56+0200\n"
 "Last-Translator: Dieter Adriaenssens <ruleant@users.sourceforge.net>\n"
 "Language-Team: Dutch <http://l10n.cihar.com/projects/weblate/website/nl/>\n"
 "Language: nl\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 1.7-dev\n"
+"X-Generator: Weblate 1.7\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -367,7 +367,7 @@ msgid "Cloud or emulator images"
 msgstr "Cloud of emulator images"
 
 #: weblate_web/html/download.html:41
-#, fuzzy, python-format
+#, python-format
 #| msgid ""
 #| "In case you want to run Weblate in your cloud or virtual server, you can "
 #| "download appliance based on openSUSE 12.3 at <a href=\"http://susestudio."
@@ -378,11 +378,11 @@ msgid ""
 "Gallery</a>."
 msgstr ""
 "Als u Weblate in uw eigen cloud of op uw eigen virtuele server wilt draaien, "
-"kunt u de schijfimage gebaseerd op openSUSE 12.3 downloaden van de <a href="
-"\"http://susestudio.com/a/F8yMYg/weblate\">SUSE Studio Gallery</a>."
+"kunt u de schijfimage gebaseerd op openSUSE 12.3 downloaden van de <a "
+"href=\"%(url)s\">SUSE Studio Gallery</a>."
 
 #: weblate_web/html/download.html:42
-#, fuzzy, python-format
+#, python-format
 #| msgid ""
 #| "Check <a href=\"http://docs.weblate.org/en/latest/install.html#appliance"
 #| "\">our documentation</a> for more information about appliance setup."
@@ -390,9 +390,8 @@ msgid ""
 "Check <a href=\"%(url)s\">our documentation</a> for more information about "
 "appliance setup."
 msgstr ""
-"Bekijk <a href=\"http://docs.weblate.org/en/latest/install.html#appliance"
-"\">onze documentatie</a> voor meer informatie over het instellen van een "
-"voorgeïnstalleerd systeem."
+"Bekijk <a href=\"%(url)s\">onze documentatie</a> voor meer informatie over het "
+"instellen van een voorgeïnstalleerd systeem."
 
 #: weblate_web/html/download.html:46
 msgid ""
