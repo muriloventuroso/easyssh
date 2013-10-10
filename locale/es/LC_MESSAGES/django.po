@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2013-10-10 11:27+0200\n"
-"PO-Revision-Date: 2013-09-18 16:31+0200\n"
+"PO-Revision-Date: 2013-10-10 21:48+0200\n"
 "Last-Translator: Matías Bellone <matiasbellone+weblate@gmail.com>\n"
 "Language-Team: Spanish <http://l10n.cihar.com/projects/weblate/website/es/>\n"
 "Language: es\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 1.7-dev\n"
+"X-Generator: Weblate 1.7\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -369,7 +369,7 @@ msgid "Cloud or emulator images"
 msgstr "Imágenes para la nube o emuladores"
 
 #: weblate_web/html/download.html:41
-#, fuzzy, python-format
+#, python-format
 #| msgid ""
 #| "In case you want to run Weblate in your cloud or virtual server, you can "
 #| "download appliance based on openSUSE 12.3 at <a href=\"http://susestudio."
@@ -380,11 +380,11 @@ msgid ""
 "Gallery</a>."
 msgstr ""
 "En caso que desee ejecutar Weblate en su servidor virtual o nube puede "
-"descargar el aplicativo basado en openSUSE 12.3 desde la <a href=\"http://"
-"susestudio.com/a/F8yMYg/weblate\">SUSE Studio Gallery</a>."
+"descargar el aplicativo basado en openSUSE 12.3 desde la <a href=\"%"
+"(url)s\">SUSE Studio Gallery</a>."
 
 #: weblate_web/html/download.html:42
-#, fuzzy, python-format
+#, python-format
 #| msgid ""
 #| "Check <a href=\"http://docs.weblate.org/en/latest/install.html#appliance"
 #| "\">our documentation</a> for more information about appliance setup."
@@ -392,9 +392,8 @@ msgid ""
 "Check <a href=\"%(url)s\">our documentation</a> for more information about "
 "appliance setup."
 msgstr ""
-"Revise <a href=\"http://docs.weblate.org/en/latest/install.html#appliance"
-"\">la documentación</a> para obtener más información sobre la configuración "
-"del aplicativo."
+"Revise <a href=\"%(url)s\">la documentación</a> para obtener más información "
+"sobre la configuración del aplicativo."
 
 #: weblate_web/html/download.html:46
 msgid ""
