@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2013-10-10 11:27+0200\n"
-"PO-Revision-Date: 2013-09-18 11:38+0200\n"
+"PO-Revision-Date: 2013-10-11 14:13+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <http://l10n.cihar.com/projects/weblate/website/cs/>\n"
 "Language: cs\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 1.7-dev\n"
+"X-Generator: Weblate 1.7\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -363,7 +363,7 @@ msgid "Cloud or emulator images"
 msgstr "Obrazy pro cloud nebo emulátor"
 
 #: weblate_web/html/download.html:41
-#, fuzzy, python-format
+#, python-format
 #| msgid ""
 #| "In case you want to run Weblate in your cloud or virtual server, you can "
 #| "download appliance based on openSUSE 12.3 at <a href=\"http://susestudio."
@@ -374,11 +374,11 @@ msgid ""
 "Gallery</a>."
 msgstr ""
 "Pokud chcete Weblate spouštět v cloudu nebo virtuálním serveru, můžete si "
-"stáhnou připravené obrazy se openSUSE 12.3 v <a href=\"http://susestudio.com/"
-"a/F8yMYg/weblate\">SUSE Studio Gallery</a>."
+"stáhnou připravené obrazy se openSUSE 12.3 v <a href=\"%(url)s\">SUSE Studio "
+"Gallery</a>."
 
 #: weblate_web/html/download.html:42
-#, fuzzy, python-format
+#, python-format
 #| msgid ""
 #| "Check <a href=\"http://docs.weblate.org/en/latest/install.html#appliance"
 #| "\">our documentation</a> for more information about appliance setup."
@@ -386,8 +386,8 @@ msgid ""
 "Check <a href=\"%(url)s\">our documentation</a> for more information about "
 "appliance setup."
 msgstr ""
-"Pro více informací o připravených obrazech se podívejte <a href=\"http://"
-"docs.weblate.org/en/latest/install.html#appliance\">do naší dokumentace</a>."
+"Pro více informací o připravených obrazech se podívejte <a href=\"%(url)s\">do "
+"naší dokumentace</a>."
 
 #: weblate_web/html/download.html:46
 msgid ""
