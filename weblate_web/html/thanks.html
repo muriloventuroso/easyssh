@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load url from future %}
+{% load i18n %}
+{% block title %}{% trans "Thanks from Weblate" %}{% endblock %}
+{% block header %}{% trans "Thanks from Weblate" %}{% endblock %}
+{% block description %}
+{% block headline %}{% trans "Weblate is thankful for help from others." %}{% endblock %}
+{% endblock %}
+{% block content %}
+
+<h2>{% trans "Technology" %}</h2>
+
+<p>{% trans "Development of Weblate is based on following technologies:" %}</p>
+
+<h3><a href="https://github.com/nijel/weblate"><img src="/media/github.png" alt="GitHub" /></a></h3>
+
+<p>{% trans "GitHub provides us hosting for our source code and issue tracker."%}</p>
+
+<h3><a href="https://travis-ci.org/nijel/weblate"><img src="/media/travis-ci.png" alt="Travis CI" /></a></h3>
+
+<p>{% trans "Travis CI is our continuous integration platform."%}</p>
+
+<h3><a href="https://coveralls.io/r/nijel/weblate"><img src="/media/coveralls.png" alt="Coveralls" /></a></h3>
+
+<p>{% trans "Coveralls helps us to monitor code coverage of our test suite."%}</p>
+
+{% endblock %}

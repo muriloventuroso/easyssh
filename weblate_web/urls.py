@@ -46,6 +46,7 @@ class PagesSitemap(Sitemap):
             ('/contribute/', 0.7, 'monthly'),
             ('/donate/', 0.7, 'weekly'),
             ('/support/', 0.7, 'monthly'),
+            ('/thanks/', 0.2, 'monthly'),
         )
 
     def location(self, item):
@@ -112,6 +113,11 @@ urlpatterns = patterns(
         r'^support/$',
         TemplateView.as_view(template_name="support.html"),
         name='support'
+    ),
+    url(
+        r'^thanks/$',
+        TemplateView.as_view(template_name="thanks.html"),
+        name='thanks'
     ),
 
     # Compatibility with disabled languages
