@@ -39,13 +39,13 @@ class PagesSitemap(Sitemap):
         return (
             ('/', 1.0, 'weekly'),
             ('/features/', 0.9, 'weekly'),
-            ('/tour/', 0.9, 'weekly'),
+            ('/tour/', 0.9, 'monthly'),
             ('/download/', 0.5, 'daily'),
             ('/try/', 0.5, 'weekly'),
-            ('/hosting/', 0.8, 'weekly'),
-            ('/contribute/', 0.7, 'weekly'),
+            ('/hosting/', 0.8, 'monthly'),
+            ('/contribute/', 0.7, 'monthly'),
             ('/donate/', 0.7, 'weekly'),
-            ('/support/', 0.7, 'weekly'),
+            ('/support/', 0.7, 'monthly'),
         )
 
     def location(self, item):
