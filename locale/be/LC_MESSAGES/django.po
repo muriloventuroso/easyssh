@@ -7,17 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-10-10 11:27+0200\n"
+"POT-Creation-Date: 2013-10-17 15:49+0200\n"
 "PO-Revision-Date: 2013-10-14 22:10+0200\n"
 "Last-Translator: Alaksiej Nieścieraŭ <alaksiej@screencustoms.com>\n"
-"Language-Team: Belarusian "
-"<http://l10n.cihar.com/projects/weblate/website/be/>\n"
+"Language-Team: Belarusian <http://l10n.cihar.com/projects/weblate/website/be/"
+">\n"
 "Language: be\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
-"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 1.7\n"
 
 #: weblate_web/data.py:33
@@ -180,11 +180,15 @@ msgstr "Падтрымка"
 msgid "Tour"
 msgstr "Экскурс"
 
-#: weblate_web/html/base.html:61
+#: weblate_web/html/base.html:48
+msgid "Thanks"
+msgstr ""
+
+#: weblate_web/html/base.html:62
 msgid "Help with translations!"
 msgstr "Дапамажыце з перакладам!"
 
-#: weblate_web/html/base.html:82
+#: weblate_web/html/base.html:83
 #, python-format
 msgid ""
 "Weblate is free software, but welcomes <a href=\"%(donate_url)s\">donations</"
@@ -366,10 +370,6 @@ msgstr "Вобразы для воблака альбо эмулятара"
 
 #: weblate_web/html/download.html:41
 #, python-format
-#| msgid ""
-#| "In case you want to run Weblate in your cloud or virtual server, you can "
-#| "download appliance based on openSUSE 12.3 at <a href=\"http://susestudio."
-#| "com/a/F8yMYg/weblate\">SUSE Studio Gallery</a>."
 msgid ""
 "In case you want to run Weblate in your cloud or virtual server, you can "
 "download appliance based on openSUSE 12.3 at <a href=\"%(url)s\">SUSE Studio "
@@ -381,15 +381,12 @@ msgstr ""
 
 #: weblate_web/html/download.html:42
 #, python-format
-#| msgid ""
-#| "Check <a href=\"http://docs.weblate.org/en/latest/install.html#appliance"
-#| "\">our documentation</a> for more information about appliance setup."
 msgid ""
 "Check <a href=\"%(url)s\">our documentation</a> for more information about "
 "appliance setup."
 msgstr ""
-"Звярніцеся да <a href=\"%(url)s\">нашай дакументацыі</a>, каб даведацца больш "
-"пра ўсталяванне вобразу."
+"Звярніцеся да <a href=\"%(url)s\">нашай дакументацыі</a>, каб даведацца "
+"больш пра ўсталяванне вобразу."
 
 #: weblate_web/html/download.html:46
 msgid ""
@@ -786,6 +783,36 @@ msgid ""
 msgstr ""
 "Таксама можаце звязацца з <a href=\"mailto:michal@cihar.com?subject=Weblate"
 "\">Міхалам Чыгарам</a>, аўтарам Weblate."
+
+#: weblate_web/html/thanks.html:4 weblate_web/html/thanks.html.py:5
+#, fuzzy
+#| msgid "Try Weblate"
+msgid "Thanks from Weblate"
+msgstr "Выпрабаваць Weblate"
+
+#: weblate_web/html/thanks.html:7
+msgid "Weblate is thankful for help from others."
+msgstr ""
+
+#: weblate_web/html/thanks.html:11
+msgid "Technology"
+msgstr ""
+
+#: weblate_web/html/thanks.html:13
+msgid "Development of Weblate is based on following technologies:"
+msgstr ""
+
+#: weblate_web/html/thanks.html:17
+msgid "GitHub provides us hosting for our source code and issue tracker."
+msgstr ""
+
+#: weblate_web/html/thanks.html:21
+msgid "Travis CI is our continuous integration platform."
+msgstr ""
+
+#: weblate_web/html/thanks.html:25
+msgid "Coveralls helps us to monitor code coverage of our test suite."
+msgstr ""
 
 #: weblate_web/html/tour.html:4 weblate_web/html/tour.html.py:5
 msgid "Weblate tour"

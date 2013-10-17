@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-10-10 11:27+0200\n"
+"POT-Creation-Date: 2013-10-17 15:49+0200\n"
 "PO-Revision-Date: 2013-10-11 14:16+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Italian <http://l10n.cihar.com/projects/weblate/website/it/>\n"
@@ -183,18 +183,22 @@ msgstr "Supporto"
 msgid "Tour"
 msgstr "Tour"
 
-#: weblate_web/html/base.html:61
+#: weblate_web/html/base.html:48
+msgid "Thanks"
+msgstr ""
+
+#: weblate_web/html/base.html:62
 msgid "Help with translations!"
 msgstr "Aiutaci con le traduzioni!"
 
-#: weblate_web/html/base.html:82
+#: weblate_web/html/base.html:83
 #, python-format
 msgid ""
 "Weblate is free software, but welcomes <a href=\"%(donate_url)s\">donations</"
 "a>."
 msgstr ""
-"Weblate è free software, le <a href=\"%(donate_url)s\">donazioni</a> sono bene "
-"accette."
+"Weblate è free software, le <a href=\"%(donate_url)s\">donazioni</a> sono "
+"bene accette."
 
 #: weblate_web/html/contribute.html:4 weblate_web/html/contribute.html.py:5
 msgid "Contribute to Weblate"
@@ -251,7 +255,6 @@ msgid "Translation status"
 msgstr "Stato della Traduzione"
 
 #: weblate_web/html/donate.html:4 weblate_web/html/donate.html.py:5
-#| msgid "Contribute to Weblate"
 msgid "Donate to Weblate"
 msgstr "Dona a Weblate"
 
@@ -705,6 +708,36 @@ msgstr ""
 msgid ""
 "You can also contact <a href=\"mailto:michal@cihar.com?subject=Weblate"
 "\">Michal Čihař</a>, who is author of Weblate."
+msgstr ""
+
+#: weblate_web/html/thanks.html:4 weblate_web/html/thanks.html.py:5
+#, fuzzy
+#| msgid "Donate to Weblate"
+msgid "Thanks from Weblate"
+msgstr "Dona a Weblate"
+
+#: weblate_web/html/thanks.html:7
+msgid "Weblate is thankful for help from others."
+msgstr ""
+
+#: weblate_web/html/thanks.html:11
+msgid "Technology"
+msgstr ""
+
+#: weblate_web/html/thanks.html:13
+msgid "Development of Weblate is based on following technologies:"
+msgstr ""
+
+#: weblate_web/html/thanks.html:17
+msgid "GitHub provides us hosting for our source code and issue tracker."
+msgstr ""
+
+#: weblate_web/html/thanks.html:21
+msgid "Travis CI is our continuous integration platform."
+msgstr ""
+
+#: weblate_web/html/thanks.html:25
+msgid "Coveralls helps us to monitor code coverage of our test suite."
 msgstr ""
 
 #: weblate_web/html/tour.html:4 weblate_web/html/tour.html.py:5

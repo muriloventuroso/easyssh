@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-10-10 11:27+0200\n"
+"POT-Creation-Date: 2013-10-17 15:49+0200\n"
 "PO-Revision-Date: 2013-10-05 09:39+0200\n"
 "Last-Translator: Jeffrey Shao <shaojf2001@qq.com>\n"
 "Language-Team: Simplified Chinese <http://l10n.cihar.com/projects/weblate/"
@@ -169,11 +169,15 @@ msgstr "支持"
 msgid "Tour"
 msgstr "观光"
 
-#: weblate_web/html/base.html:61
+#: weblate_web/html/base.html:48
+msgid "Thanks"
+msgstr ""
+
+#: weblate_web/html/base.html:62
 msgid "Help with translations!"
 msgstr "帮我们翻译！"
 
-#: weblate_web/html/base.html:82
+#: weblate_web/html/base.html:83
 #, python-format
 msgid ""
 "Weblate is free software, but welcomes <a href=\"%(donate_url)s\">donations</"
@@ -732,6 +736,36 @@ msgid ""
 msgstr ""
 "您也可以联系 <a href=\"mailto:michal@cihar.com?subject=Weblate\">Michal "
 "Čihař</a>，Weblate 的作者。"
+
+#: weblate_web/html/thanks.html:4 weblate_web/html/thanks.html.py:5
+#, fuzzy
+#| msgid "Try Weblate"
+msgid "Thanks from Weblate"
+msgstr "试用 Weblate"
+
+#: weblate_web/html/thanks.html:7
+msgid "Weblate is thankful for help from others."
+msgstr ""
+
+#: weblate_web/html/thanks.html:11
+msgid "Technology"
+msgstr ""
+
+#: weblate_web/html/thanks.html:13
+msgid "Development of Weblate is based on following technologies:"
+msgstr ""
+
+#: weblate_web/html/thanks.html:17
+msgid "GitHub provides us hosting for our source code and issue tracker."
+msgstr ""
+
+#: weblate_web/html/thanks.html:21
+msgid "Travis CI is our continuous integration platform."
+msgstr ""
+
+#: weblate_web/html/thanks.html:25
+msgid "Coveralls helps us to monitor code coverage of our test suite."
+msgstr ""
 
 #: weblate_web/html/tour.html:4 weblate_web/html/tour.html.py:5
 msgid "Weblate tour"
