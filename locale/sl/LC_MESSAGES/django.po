@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-10-24 16:02+0200\n"
+"POT-Creation-Date: 2013-10-29 13:31+0100\n"
 "PO-Revision-Date: 2013-10-26 21:02+0200\n"
 "Last-Translator: Domen - <mitenem@outlook.com>\n"
-"Language-Team: Slovenian "
-"<http://l10n.cihar.com/projects/weblate/website/sl/>\n"
+"Language-Team: Slovenian <http://l10n.cihar.com/projects/weblate/website/sl/"
+">\n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -372,24 +372,17 @@ msgstr "Slike za oblak ali posnemovalnik"
 
 #: weblate_web/html/download.html:41
 #, python-format
-#| msgid ""
-#| "In case you want to run Weblate in your cloud or virtual server, you can "
-#| "download appliance based on openSUSE 12.3 at <a href=\"http://susestudio."
-#| "com/a/F8yMYg/weblate\">SUSE Studio Gallery</a>."
 msgid ""
 "In case you want to run Weblate in your cloud or virtual server, you can "
 "download appliance based on openSUSE 12.3 at <a href=\"%(url)s\">SUSE Studio "
 "Gallery</a>."
 msgstr ""
 "V primeru, da želite zagnati Weblate v vašem oblaku ali na virtualnem "
-"strežniku, si lahko prenesete aparat, ki temelji na openSUSE 12.3 na <a "
-"href=\"%(url)s\">SUSE Studio Gallery</a>."
+"strežniku, si lahko prenesete aparat, ki temelji na openSUSE 12.3 na <a href="
+"\"%(url)s\">SUSE Studio Gallery</a>."
 
 #: weblate_web/html/download.html:42
 #, python-format
-#| msgid ""
-#| "Check <a href=\"http://docs.weblate.org/en/latest/install.html#appliance"
-#| "\">our documentation</a> for more information about appliance setup."
 msgid ""
 "Check <a href=\"%(url)s\">our documentation</a> for more information about "
 "appliance setup."
@@ -792,7 +785,6 @@ msgstr ""
 "\">Michalu Čihařu</a>, ki je avtor Weblate."
 
 #: weblate_web/html/thanks.html:4 weblate_web/html/thanks.html.py:5
-#| msgid "Try Weblate"
 msgid "Thanks from Weblate"
 msgstr "Zahvale Weblate"
 
@@ -805,11 +797,15 @@ msgid "Technology"
 msgstr "Tehnologija"
 
 #: weblate_web/html/thanks.html:13
-msgid "Development of Weblate is based on following technologies:"
+#, fuzzy
+#| msgid "Development of Weblate is based on following technologies:"
+msgid "The development of Weblate is based on the following technologies:"
 msgstr "Razvoj Weblate temelji na naslednjih tehnologijah:"
 
 #: weblate_web/html/thanks.html:17
-msgid "GitHub provides us hosting for our source code and issue tracker."
+#, fuzzy
+#| msgid "GitHub provides us hosting for our source code and issue tracker."
+msgid "GitHub provides hosting for our source code and issue tracker."
 msgstr "GitHub nam nudi gostovanje naše izvorne kode in sledilnika težav."
 
 #: weblate_web/html/thanks.html:21
@@ -822,7 +818,9 @@ msgstr ""
 "Coveralls nam pomaga spremljati pokritost kode našega testnega kompleta."
 
 #: weblate_web/html/thanks.html:29
-msgid "Sauce Labs is running us Selenium tests in real browsers."
+#, fuzzy
+#| msgid "Sauce Labs is running us Selenium tests in real browsers."
+msgid "Sauce Labs is running our Selenium tests in real browsers."
 msgstr "Sauce Labs nam poganja preizkuse Selenium v pravih brskalnikih."
 
 #: weblate_web/html/tour.html:4 weblate_web/html/tour.html.py:5
