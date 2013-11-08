@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2013-10-29 13:31+0100\n"
-"PO-Revision-Date: 2013-08-11 13:26+0200\n"
-"Last-Translator: Michal Čihař <michal@cihar.com>\n"
+"PO-Revision-Date: 2013-11-08 16:42+0200\n"
+"Last-Translator: Damian Gołda <damian.golda@gmail.com>\n"
 "Language-Team: Polish <http://l10n.cihar.com/projects/weblate/website/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 1.7-dev\n"
+"X-Generator: Weblate 1.8\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -182,20 +182,21 @@ msgstr "Wycieczka"
 
 #: weblate_web/html/base.html:48
 msgid "Thanks"
-msgstr ""
+msgstr "Podziękowania"
 
 #: weblate_web/html/base.html:62
-#, fuzzy
 msgid "Help with translations!"
-msgstr "Własne tłumaczenia"
+msgstr "Pomóż tłumaczyć!"
 
 #: weblate_web/html/base.html:83
-#, fuzzy, python-format
+#, python-format
 #| msgid "Weblate is easy to deploy as an appliance."
 msgid ""
 "Weblate is free software, but welcomes <a href=\"%(donate_url)s\">donations</"
 "a>."
-msgstr "Weblate jest łatwy do wdrożenia jako urządzenie."
+msgstr ""
+"Weblate jest darmowym oprogramowaniem ale <a href=\"%(donate_url)s\">datki</a> "
+"są mile widziane."
 
 #: weblate_web/html/contribute.html:4 weblate_web/html/contribute.html.py:5
 msgid "Contribute to Weblate"
@@ -252,22 +253,19 @@ msgid "Translation status"
 msgstr "Status tłumaczenia"
 
 #: weblate_web/html/donate.html:4 weblate_web/html/donate.html.py:5
-#, fuzzy
 #| msgid "Contribute to Weblate"
 msgid "Donate to Weblate"
-msgstr "Przyczyń się do rozwoju Weblate"
+msgstr "Wesprzyj Weblate"
 
 #: weblate_web/html/donate.html:7
-#, fuzzy
 #| msgid "Weblate is easy to deploy as an appliance."
 msgid "Weblate is free, but welcomes donations."
-msgstr "Weblate jest łatwy do wdrożenia jako urządzenie."
+msgstr "Weblate jest darmowy ale datki są mile widziane."
 
 #: weblate_web/html/donate.html:11
-#, fuzzy
 #| msgid "Other options"
 msgid "Regular donations"
-msgstr "Inne opcje"
+msgstr "Regularne datki"
 
 #: weblate_web/html/donate.html:14
 msgid ""
@@ -278,7 +276,7 @@ msgstr ""
 
 #: weblate_web/html/donate.html:18
 msgid "Donate using Gittip"
-msgstr ""
+msgstr "Wesprzyj używając Gittip"
 
 #: weblate_web/html/donate.html:22
 msgid "Gittip allows you to send a weekly amount using a credit card."
@@ -309,17 +307,19 @@ msgstr ""
 
 #: weblate_web/html/donate.html:44
 msgid "Donate using PayPal"
-msgstr ""
+msgstr "Wesprzyj używając PayPal"
 
 #: weblate_web/html/donate.html:48
 msgid ""
 "PayPal allows you to send money from credit card, PayPal balance or a bank "
 "account."
 msgstr ""
+"PayPal pozwala wysłać pieniądze z karty kredytowej, konta PayPal lub konta "
+"bankowego."
 
 #: weblate_web/html/donate.html:52
 msgid "Flattr this"
-msgstr ""
+msgstr "Wesprzyj przez Flattr"
 
 #: weblate_web/html/donate.html:56
 msgid ""
@@ -329,11 +329,11 @@ msgstr ""
 
 #: weblate_web/html/donate.html:60
 msgid "Donate using Coinbase"
-msgstr ""
+msgstr "Wesprzyj używając Coinbase"
 
 #: weblate_web/html/donate.html:64
 msgid "Coinbase allows you to send Bitcoins."
-msgstr ""
+msgstr "Coinbase pozwala wysyłać Bitcoins."
 
 #: weblate_web/html/donate.html:68
 #, python-format
