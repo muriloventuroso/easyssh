@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2013-10-29 13:31+0100\n"
-"PO-Revision-Date: 2013-09-18 17:13+0200\n"
+"PO-Revision-Date: 2013-11-10 11:28+0200\n"
 "Last-Translator: Martin Jurík <martin@droid.sk>\n"
 "Language-Team: Slovak <http://l10n.cihar.com/projects/weblate/website/sk/>\n"
 "Language: sk\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 1.7-dev\n"
+"X-Generator: Weblate 1.8\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -178,7 +178,7 @@ msgstr "Prehliadka"
 
 #: weblate_web/html/base.html:48
 msgid "Thanks"
-msgstr ""
+msgstr "Poďakovanie"
 
 #: weblate_web/html/base.html:62
 msgid "Help with translations!"
@@ -366,7 +366,7 @@ msgid "Cloud or emulator images"
 msgstr "Obrazy pre cloud alebo emulátor"
 
 #: weblate_web/html/download.html:41
-#, fuzzy, python-format
+#, python-format
 #| msgid ""
 #| "In case you want to run Weblate in your cloud or virtual server, you can "
 #| "download appliance based on openSUSE 12.3 at <a href=\"http://susestudio."
@@ -377,11 +377,11 @@ msgid ""
 "Gallery</a>."
 msgstr ""
 "Ak chcete Weblate spúšťať v cloude alebo virtuálnom serveri, môžete si "
-"stiahnuť pripravené obrazy s openSUSE 12.3 v <a href=\"http://susestudio.com/"
-"a/F8yMYg/weblate\">SUSE Studio Gallery</a>."
+"stiahnuť pripravené obrazy s openSUSE 12.3 v <a href=\"%(url)s\">SUSE Studio "
+"Gallery</a>."
 
 #: weblate_web/html/download.html:42
-#, fuzzy, python-format
+#, python-format
 #| msgid ""
 #| "Check <a href=\"http://docs.weblate.org/en/latest/install.html#appliance"
 #| "\">our documentation</a> for more information about appliance setup."
@@ -389,8 +389,8 @@ msgid ""
 "Check <a href=\"%(url)s\">our documentation</a> for more information about "
 "appliance setup."
 msgstr ""
-"Pre viac informácií o pripravených obrazoch sa pozrite <a href=\"http://docs."
-"weblate.org/en/latest/install.html#appliance\"> do našej dokumentácie</a>."
+"Pre viac informácií o pripravených obrazoch sa pozrite <a href=\"%(url)s\">do "
+"našej dokumentácie</a>."
 
 #: weblate_web/html/download.html:46
 msgid ""
@@ -788,38 +788,37 @@ msgstr ""
 "\">Michal Čihař</a>, ktorý je autorom Weblate."
 
 #: weblate_web/html/thanks.html:4 weblate_web/html/thanks.html.py:5
-#, fuzzy
 #| msgid "Try Weblate"
 msgid "Thanks from Weblate"
-msgstr "Vyskúšajte Weblate"
+msgstr "Poďakovanie od Weblate"
 
 #: weblate_web/html/thanks.html:7
 msgid "Weblate is thankful for help from others."
-msgstr ""
+msgstr "Weblate je vďačný za pomoc od ostatných."
 
 #: weblate_web/html/thanks.html:11
 msgid "Technology"
-msgstr ""
+msgstr "Technológia"
 
 #: weblate_web/html/thanks.html:13
 msgid "The development of Weblate is based on the following technologies:"
-msgstr ""
+msgstr "Vývoj Weblate používa nasledujúce nástroje:"
 
 #: weblate_web/html/thanks.html:17
 msgid "GitHub provides hosting for our source code and issue tracker."
-msgstr ""
+msgstr "GitHub nám poskytuje hosťovanie kódu a sledovania chýb."
 
 #: weblate_web/html/thanks.html:21
 msgid "Travis CI is our continuous integration platform."
-msgstr ""
+msgstr "Travis CI je naša platforma pre priebežnú integráciu."
 
 #: weblate_web/html/thanks.html:25
 msgid "Coveralls helps us to monitor code coverage of our test suite."
-msgstr ""
+msgstr "Coveralls nám pomáha sledovať pokrytie kódu našimi testami."
 
 #: weblate_web/html/thanks.html:29
 msgid "Sauce Labs is running our Selenium tests in real browsers."
-msgstr ""
+msgstr "Sauce Labs nám spúšťa Selenium testy v skutočných prehliadačoch."
 
 #: weblate_web/html/tour.html:4 weblate_web/html/tour.html.py:5
 msgid "Weblate tour"
