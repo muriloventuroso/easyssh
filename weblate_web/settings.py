@@ -79,7 +79,7 @@ LANGUAGES = (
     ('fr', u'Français'),
     #('gl', 'Galego'),
     #('he', u'עִבְרִית'),
-    #('hu', 'Magyar'),
+    ('hu', 'Magyar'),
     #('id', 'Indonesia'),
     ('ja', u'日本語'),
     #('ko', u'한국어'),
