@@ -54,8 +54,8 @@ class UtilTestCase(TestCase):
     Helper code testing.
     '''
     def test_format(self):
-        self.assertEquals(filesizeformat(0), '0 bytes')
-        self.assertEquals(filesizeformat(1000), '1000 bytes')
-        self.assertEquals(filesizeformat(1000000), '976.6 KiB')
-        self.assertEquals(filesizeformat(1000000000), '953.7 MiB')
-        self.assertEquals(filesizeformat(10000000000000), '9313.2 GiB')
+        self.assertEqual(filesizeformat(0), '0 bytes')
+        self.assertEqual(filesizeformat(1000), '1000 bytes')
+        self.assertEqual(filesizeformat(1000000), '976.6 KiB')
+        self.assertEqual(filesizeformat(1000000000), '953.7 MiB')
+        self.assertEqual(filesizeformat(10000000000000), '9313.2 GiB')
