@@ -4,11 +4,11 @@
 set -e
 
 # Update po files itself
-./manage.py makemessages -a -i 'weblate_web/files/*'
+./manage.py makemessages -a --keep-pot -i 'weblate_web/files/*'
 
 # Fix Report-Msgid-Bugs-To as it gets removed
 sed -i 's/"Report-Msgid-Bugs-To:.*/"Report-Msgid-Bugs-To: weblate@lists.cihar.com\\n"/' locale/*/*/*.po
 
 # Commit changes
-git add locale/*/*/*.po
+git add locale/*/*/*.po locale/django.pot
 git commit -m 'Update po files'
