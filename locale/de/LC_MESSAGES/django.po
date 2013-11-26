@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2013-11-26 11:44+0100\n"
-"PO-Revision-Date: 2013-11-03 14:44+0200\n"
-"Last-Translator: Stephan 75 <der.stephan.stephan@googlemail.com>\n"
+"PO-Revision-Date: 2013-11-26 13:00+0200\n"
+"Last-Translator: Helmut Wollmersdorfer <helmut@wollmersdorfer.at>\n"
 "Language-Team: German <http://l10n.cihar.com/projects/weblate/website/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 1.8-dev\n"
+"X-Generator: Weblate 1.9-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -382,7 +382,7 @@ msgstr ""
 "von <a href=\"%(url)s\">SUSE Studio Gallery</a> herunterladen."
 
 #: weblate_web/html/download.html:42
-#, fuzzy, python-format
+#, python-format
 #| msgid ""
 #| "Check <a href=\"http://docs.weblate.org/en/latest/install.html#appliance"
 #| "\">our documentation</a> for more information about appliance setup."
@@ -391,8 +391,7 @@ msgid ""
 "appliance setup."
 msgstr ""
 "Weitere Informationen über die Verwendung der Appliance sind in unserer <a "
-"href=\"http://docs.weblate.org/en/latest/install.html#appliance"
-"\">Dokumentation</a> zu finden."
+"href=\"%(url)s\">Dokumentation</a> zu finden."
 
 #: weblate_web/html/download.html:46
 msgid ""
@@ -609,11 +608,11 @@ msgstr ""
 
 #: weblate_web/html/hosting.html:32
 msgid "Information about your project."
-msgstr ""
+msgstr "Informationen über Ihr Projekt."
 
 #: weblate_web/html/hosting.html:33
 msgid "Project website."
-msgstr ""
+msgstr "Prjekt Web-Seite."
 
 #: weblate_web/html/hosting.html:34
 msgid "URL of repository with translations."
@@ -692,7 +691,7 @@ msgstr ""
 
 #: weblate_web/html/index.html:19
 msgid "Try our demo"
-msgstr ""
+msgstr "Probieren Sie unsere Demo"
 
 #: weblate_web/html/index.html:21
 msgid "Downloads"
