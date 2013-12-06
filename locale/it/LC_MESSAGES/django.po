@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2013-11-26 11:44+0100\n"
-"PO-Revision-Date: 2013-10-11 14:16+0200\n"
-"Last-Translator: Michal Čihař <michal@cihar.com>\n"
+"PO-Revision-Date: 2013-12-06 18:45+0200\n"
+"Last-Translator: Giorgio Zanetti <gz77it@gmail.com>\n"
 "Language-Team: Italian <http://l10n.cihar.com/projects/weblate/website/it/>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 1.7\n"
+"X-Generator: Weblate 1.9-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -185,7 +185,7 @@ msgstr "Tour"
 
 #: weblate_web/html/base.html:48
 msgid "Thanks"
-msgstr ""
+msgstr "Grazie"
 
 #: weblate_web/html/base.html:62
 msgid "Help with translations!"
@@ -220,7 +220,7 @@ msgstr ""
 
 #: weblate_web/html/contribute.html:15 weblate_web/html/download.html:12
 msgid "Code"
-msgstr "Copia"
+msgstr "Codice"
 
 #: weblate_web/html/contribute.html:18 weblate_web/html/download.html:15
 msgid ""
@@ -272,30 +272,36 @@ msgid ""
 "fund free hosting for free software. You don't have to spend big money, "
 "every penny counts."
 msgstr ""
+"Donazioni regolari rendono sostenibile lo sviluppo di Weblate e aiutano a "
+"coprire i costi di hosting gratuito per software libero. Non sono necessarie "
+"grosse cifre, ogni centesimo conta."
 
 #: weblate_web/html/donate.html:18
 msgid "Donate using Gittip"
-msgstr ""
+msgstr "Dona attraverso Gittip"
 
 #: weblate_web/html/donate.html:22
 msgid "Gittip allows you to send a weekly amount using a credit card."
 msgstr ""
+"Gittip permette di inviare un ammontare settimanale attraverso carta di "
+"credito."
 
 #: weblate_web/html/donate.html:25
-#, fuzzy
 #| msgid "Features"
 msgid "Fund features"
-msgstr "Funzionalità"
+msgstr "Funzionalità di finanziamento"
 
 #: weblate_web/html/donate.html:28
 msgid "Fund on Bountysource"
-msgstr ""
+msgstr "Finanziamento attraverso Bountysource"
 
 #: weblate_web/html/donate.html:32
 msgid ""
 "Bountysource allows you to fund individual features which are reported on "
 "our issue tracker."
 msgstr ""
+"Bountysource permette di finanziare funzionalità specifiche riportate nel "
+"nostro sistema di controllo delle problematiche."
 
 #: weblate_web/html/donate.html:38
 msgid ""
@@ -306,33 +312,36 @@ msgstr ""
 
 #: weblate_web/html/donate.html:44
 msgid "Donate using PayPal"
-msgstr ""
+msgstr "Donazioni attraverso PayPal"
 
 #: weblate_web/html/donate.html:48
 msgid ""
 "PayPal allows you to send money from credit card, PayPal balance or a bank "
 "account."
 msgstr ""
+"PayPal permette di inviare denaro attraverso carta di credito, credito "
+"PayPal o conto bancario."
 
 #: weblate_web/html/donate.html:52
 msgid "Flattr this"
-msgstr ""
+msgstr "Dona con Flattr"
 
 #: weblate_web/html/donate.html:56
 msgid ""
 "Flattr is a micropayment site that allows you to give monthly small amounts "
 "of money to various projects."
 msgstr ""
+"Flattr è un sito di micropagamenti che permette di donare piccoli ammontari "
+"di denaro a vari progetti."
 
 #: weblate_web/html/donate.html:60
-#, fuzzy
 #| msgid "Donate Bitcoins"
 msgid "Donate using Coinbase"
-msgstr "Dona in Bitcoins"
+msgstr "Dona attraverso Coinbase"
 
 #: weblate_web/html/donate.html:64
 msgid "Coinbase allows you to send Bitcoins."
-msgstr ""
+msgstr "Coinbase permette di inviare Bitcoins."
 
 #: weblate_web/html/donate.html:68
 #, python-format
@@ -360,11 +369,13 @@ msgid ""
 "For openSUSE/SLES users, there are binary packages available in the <a href="
 "\"http://software.opensuse.org/package/weblate/\">openSUSE Buildservice</a>."
 msgstr ""
+"Per gli utenti openSUSE/SLES, esistono binari disponibili attraverso <a "
+"href=\"http://software.opensuse.org/package/weblate/\">openSUSE "
+"Buildservice</a>."
 
 #: weblate_web/html/download.html:38
-#, fuzzy
 msgid "Cloud or emulator images"
-msgstr "Nel Cloud o immagine"
+msgstr "Cloud o immagini per emulatore"
 
 #: weblate_web/html/download.html:41
 #, python-format
@@ -373,6 +384,9 @@ msgid ""
 "download appliance based on openSUSE 12.3 at <a href=\"%(url)s\">SUSE Studio "
 "Gallery</a>."
 msgstr ""
+"Nel caso vogliate eseguire Weblate nel vostro cloud o virtual server, potete "
+"scaricare appliance basate su openSUSE 12.3 attraverso <a href=\"%"
+"(url)s\">SUSE Studio Gallery</a>."
 
 #: weblate_web/html/download.html:42
 #, python-format
@@ -380,6 +394,8 @@ msgid ""
 "Check <a href=\"%(url)s\">our documentation</a> for more information about "
 "appliance setup."
 msgstr ""
+"Controlla la <a href=\"%(url)s\">nostra documentazione</a> per maggiori "
+"informazioni su come installare un'appliance."
 
 #: weblate_web/html/download.html:46
 msgid ""
@@ -387,135 +403,165 @@ msgid ""
 "\">BitNami stack</a>, that allows you native installation on Windows, Linux "
 "or Mac OS X and provides virtual images for running Weblate."
 msgstr ""
+"Weblate è anche disponibile come <a "
+"href=\"http://bitnami.org/stack/weblate\">BitNami stack</a>, che consente una "
+"installazione nativa su Windows, Linux o Mac OS X e fornisce immagini "
+"virtuali per seguire Weblate."
 
 #: weblate_web/html/features.html:4 weblate_web/html/features.html.py:5
 msgid "Weblate features"
-msgstr ""
+msgstr "Funzionalità di Weblate"
 
 #: weblate_web/html/features.html:7
 msgid "Weblate is a feature rich computer aided translation tool."
 msgstr ""
+"Weblate è uno strumento di traduzione assistita da computer ricco di "
+"funzionalità."
 
 #: weblate_web/html/features.html:15
 msgid "Access control"
-msgstr ""
+msgstr "Controllo di accesso"
 
 #: weblate_web/html/features.html:16
 msgid "Access rights can be fine tuned depending on your environment."
 msgstr ""
+"I diritti di accesso possono essere finemente configurati a seconda del "
+"vostro ambiente."
 
 #: weblate_web/html/features.html:21
 msgid "Notifications"
-msgstr ""
+msgstr "Notifiche"
 
 #: weblate_web/html/features.html:22
 msgid ""
 "Translators can be notified on new strings to translate or other events."
 msgstr ""
+"I traduttori possono essere notificati riguardo nuove stringe da tradurre o "
+"altri eventi."
 
 #: weblate_web/html/features.html:27
 msgid "Ready for cloud"
-msgstr ""
+msgstr "Pronto per il cloud"
 
 #: weblate_web/html/features.html:28
 msgid ""
 "Weblate comes with an appliance, which is ready to deploy in your cloud."
 msgstr ""
+"Weblate è distribuito sotto forma di appliance, pronta da installare nel "
+"vostro cloud."
 
 #: weblate_web/html/features.html:33
 msgid "File formats"
-msgstr ""
+msgstr "Formati file"
 
 #: weblate_web/html/features.html:34
 msgid ""
 "Weblate supports all widely used file formats for localisation like Gettext "
 "or resource strings."
 msgstr ""
+"Weblate supporta tutti i più diffusi formati di file per la localizzazione "
+"come Gettext o stringhe di risorsa."
 
 #: weblate_web/html/features.html:39
 msgid "Branches support"
-msgstr ""
+msgstr "Supporto a rami di traduzione"
 
 #: weblate_web/html/features.html:40
 msgid ""
 "Weblate can handle different versions of the translation by pushing them to "
 "different branches automatically."
 msgstr ""
+"Weblate può gestire differenti versioni delle traduzioni inviandoli a "
+"differenti rami automaticamente."
 
 #: weblate_web/html/features.html:57
 msgid "Acquiring feedback"
-msgstr ""
+msgstr "Acquisire feedback"
 
 #: weblate_web/html/features.html:58
 msgid ""
 "You can also use Weblate to acquire feedback on source strings and thus "
 "improve them."
 msgstr ""
+"Potete anche usare Weblate per acquisire feedback sulle stringhe sorgenti e "
+"migliorarle."
 
 #: weblate_web/html/features.html:63
 msgid "Export and import"
-msgstr ""
+msgstr "Export e import"
 
 #: weblate_web/html/features.html:64
 msgid "Translations can be downloaded for offline translation and merged back."
 msgstr ""
+"Le traduzioni possono essere scaricate per tradurle offline e poi essere "
+"riunite."
 
 #: weblate_web/html/features.html:69
 msgid "Integrated"
-msgstr ""
+msgstr "Integrato"
 
 #: weblate_web/html/features.html:70
 msgid "Translations are managed within same version control system as code."
 msgstr ""
+"Le traduzioni sono gestite attraverso il medesimo sistema di controllo "
+"versione del codice."
 
 #: weblate_web/html/features.html:75
 msgid "Documentation"
-msgstr ""
+msgstr "Documentazione"
 
 #: weblate_web/html/features.html:76
 msgid ""
 "Weblate comes with comprehensive documentation covering both setup and usage."
 msgstr ""
+"Weblate è fornito con una completa documentazione riguardante sia "
+"l'installazione che l'uso."
 
 #: weblate_web/html/features.html:81
 msgid "Review"
-msgstr ""
+msgstr "Revisione"
 
 #: weblate_web/html/features.html:82
 msgid "Translators have several options to review contributions made by peers."
 msgstr ""
+"I traduttori hanno molteplici opzioni per revisionare i contributi forniti "
+"da altri traduttori."
 
 #: weblate_web/html/features.html:87
 msgid "Languages"
-msgstr ""
+msgstr "Lingue"
 
 #: weblate_web/html/features.html:88
 msgid ""
 "Weblate supports over 150 languages out of the box, others can be defined by "
 "administrator."
 msgstr ""
+"Weblate supporta oltre 150 lingue nativamente, altre posso essere definite "
+"dall'amministratore."
 
 #: weblate_web/html/features.html:99
 msgid "Reports"
-msgstr ""
+msgstr "Reports"
 
 #: weblate_web/html/features.html:100
 msgid ""
 "Weblate generates various reports to provide information about project "
 "activity."
 msgstr ""
+"Weblate genera vari reports per fornire informazioni sull'attività del "
+"progetto."
 
 #: weblate_web/html/hosting.html:4 weblate_web/html/hosting.html.py:5
 msgid "Hosting Weblate"
-msgstr ""
+msgstr "Hosting Weblate"
 
 #: weblate_web/html/hosting.html:7
 msgid "Weblate offers free hosting for free software."
-msgstr ""
+msgstr "Weblate offre hosting gratuito per software libero."
 
 #: weblate_web/html/hosting.html:11
 msgid "Hosting for free software"
-msgstr ""
+msgstr "Hosting per software libero"
 
 #: weblate_web/html/hosting.html:14
 msgid ""
@@ -524,55 +570,66 @@ msgid ""
 "org</a>. This will allow you to use Weblate without installing and "
 "maintaining it."
 msgstr ""
+"Se siete interessati a utilizzare Weblate per il vostro software libero, "
+"potete richiedere di essere inclusi in<a "
+"href=\"http://hosted.weblate.org/\">hosted.weblate.org</a>. Questo vi permette "
+"di usare Weblate senza doverlo installare e manutenere."
 
 #: weblate_web/html/hosting.html:17
 msgid "Conditions for free hosting"
-msgstr ""
+msgstr "Condizioni per l'hosting gratuito"
 
 #: weblate_web/html/hosting.html:20
 msgid ""
 "Translated content has to be released under <a href=\"http://en.wikipedia."
 "org/wiki/Free_software_license\">free license</a>."
 msgstr ""
+"Il contenuto tradotto deve essere rilasciato sotto <a "
+"href=\"http://en.wikipedia.org/wiki/Free_software_license\">licenza "
+"libera</a>."
 
 #: weblate_web/html/hosting.html:21
 msgid ""
 "Source code has to be publicly available in supported version control system."
 msgstr ""
+"Il codice sorgente deve essere pubblicamente disponibile attraverso un "
+"sistema di controllo versione supportato."
 
 #: weblate_web/html/hosting.html:22
 msgid "There is no guarantee for service availability or quality."
-msgstr ""
+msgstr "Non c'è garanzia riguardo la qualità e la disponibilità del servizio."
 
 #: weblate_web/html/hosting.html:25
 msgid "Asking for hosting"
-msgstr ""
+msgstr "Richieste di hosting"
 
 #: weblate_web/html/hosting.html:28
 msgid ""
 "Contact <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> and include at "
 "least following information:"
 msgstr ""
+"Contattate <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> e includete "
+"almeno le seguenti informazioni:"
 
 #: weblate_web/html/hosting.html:32
 msgid "Information about your project."
-msgstr ""
+msgstr "Informazioni riguardo il vostro progetto."
 
 #: weblate_web/html/hosting.html:33
 msgid "Project website."
-msgstr ""
+msgstr "Sito web del progetto."
 
 #: weblate_web/html/hosting.html:34
 msgid "URL of repository with translations."
-msgstr ""
+msgstr "URL del repository con le traduzioni."
 
 #: weblate_web/html/hosting.html:35
 msgid "Path to translations within the repository."
-msgstr ""
+msgstr "Percorsi alle traduzioni all'interno del repository."
 
 #: weblate_web/html/hosting.html:38
 msgid "Translation workflow"
-msgstr ""
+msgstr "Flusso di lavoro della traduzione"
 
 #: weblate_web/html/hosting.html:41
 msgid ""
@@ -580,6 +637,10 @@ msgid ""
 "with similar naming as on website - hello/master translation would be "
 "published as <code>git://git.weblate.org/hello-master.git</code>."
 msgstr ""
+"Tutti i repositories tradotti sono disponibili su "
+"<code>git.weblate.org</code> con la stessa denominazione che trovate sul "
+"sito - la traduzione hello/master sarà pubblicata come "
+"<code>git://git.weblate.org/hello-master.git</code>."
 
 #: weblate_web/html/hosting.html:45
 msgid ""
@@ -588,10 +649,15 @@ msgid ""
 "Weblate to automatically push changes as well, add Weblate user to "
 "contributors and let us know you want to use this option."
 msgstr ""
+"Per abilitare il flusso di lavoro automatizzato su GitHub è necessario "
+"abilitare il service hook di Weblate nei settaggi inserendo "
+"<code>hosted.weblate.org</code> come URL. Se volete che Weblate invii "
+"automaticamente anche le modifiche dovrete aggiungere l'utente Weblate ai "
+"contrubutori a farci sapere che volete usare questa opzione."
 
 #: weblate_web/html/hosting.html:48
 msgid "Support free hosting"
-msgstr ""
+msgstr "Supporto all'hosting gratuito"
 
 #: weblate_web/html/hosting.html:52
 #, python-format
@@ -600,20 +666,26 @@ msgid ""
 "costs some money, so you are welcome to use <a href=\"%(gittip_url)s"
 "\">Gittip</a> or <a href=\"%(donate_url)s\">other ways to donate</a>."
 msgstr ""
+"Il servizio di hosting è fornito gratuitamente, tuttavia la manutenzione e "
+"la disponibilità del server hanno un costo, dunque è benvenuta una donazione "
+"attraverso <a href=\"%(gittip_url)s\">Gittip</a> oppure <a href=\"%"
+"(donate_url)s\">altri metodi di donazione</a>."
 
 #: weblate_web/html/hosting.html:55
 msgid "Commercial hosting"
-msgstr ""
+msgstr "Hosting a pagamento"
 
 #: weblate_web/html/hosting.html:58
 msgid ""
 "Please contact <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> for more "
 "details."
 msgstr ""
+"Siete pregati di voler contattare <a href=\"mailto:michal@cihar.com\">Michal "
+"Čihař</a> per maggiori dettagli."
 
 #: weblate_web/html/hosting.html:61
 msgid "Other options"
-msgstr ""
+msgstr "Altre opzioni"
 
 #: weblate_web/html/hosting.html:65 weblate_web/html/try.html:20
 #, python-format
@@ -621,10 +693,13 @@ msgid ""
 "Check our <a href=\"%(download_url)s\">download page</a> for appliances, "
 "which provide an easy way to deploy Weblate in the cloud."
 msgstr ""
+"Visitate la nostra pagina <a href=\"%(download_url)s\">download</a> per "
+"scaricare le appliances disponibili che forniscono una facile modalità per "
+"installare Weblate nel cloud."
 
 #: weblate_web/html/index.html:4
 msgid "Weblate - web-based translation"
-msgstr ""
+msgstr "Weblate - traduzione web-based"
 
 #: weblate_web/html/index.html:15
 msgid ""
@@ -632,34 +707,38 @@ msgid ""
 "features simple and clean user interface, propagation of translations across "
 "subprojects, quality checks and automatic linking to source files."
 msgstr ""
+"Weblate è uno strumento di traduzione web-based gratuito con una stretta "
+"integrazione con Git. Fornisce una semplice e chiara interfaccia utente, "
+"propagazione delle traduzioni verso sub-progetti, controlli della qualità e "
+"linking automatico ai sorgenti."
 
 #: weblate_web/html/index.html:19
 msgid "Try our demo"
-msgstr ""
+msgstr "Prova la nostra demo"
 
 #: weblate_web/html/index.html:21
 msgid "Downloads"
-msgstr ""
+msgstr "Downloads"
 
 #: weblate_web/html/index.html:25
 msgid "Weblate screenshot"
-msgstr ""
+msgstr "Weblate screenshot"
 
 #: weblate_web/html/index.html:30
 msgid "See more features…"
-msgstr ""
+msgstr "Vedi ulteriori funzionalità…"
 
 #: weblate_web/html/support.html:4 weblate_web/html/support.html.py:5
 msgid "Weblate support"
-msgstr ""
+msgstr "Supporto a Weblate"
 
 #: weblate_web/html/support.html:7
 msgid "Weblate is a free software with community support."
-msgstr ""
+msgstr "Weblate è un software gratuito con supporto della comunità."
 
 #: weblate_web/html/support.html:11
 msgid "Bugs or feature requests"
-msgstr ""
+msgstr "Bugs e richiesta di funzionalità"
 
 #: weblate_web/html/support.html:14
 msgid ""
@@ -667,10 +746,14 @@ msgid ""
 "Please report it to <a href=\"https://github.com/nijel/weblate/issues"
 "\">issue tracker on GitHub</a>."
 msgstr ""
+"Avete riscontrato una problematica con Weblate? Avete idea su come "
+"migliorarlo? Fornite i vostri suggerimenti attraverso il nostro <a "
+"href=\"https://github.com/nijel/weblate/issues\">issue tracker on GitHub</a> "
+"(sistema di gestione delle problematiche)."
 
 #: weblate_web/html/support.html:17
 msgid "Mailing list"
-msgstr ""
+msgstr "Mailing list"
 
 #: weblate_web/html/support.html:20
 msgid ""
@@ -680,6 +763,13 @@ msgid ""
 "weblate\">subscribe</a> or <a href=\"https://lists.cihar.com/pipermail/"
 "weblate/\">browse archives</a>."
 msgstr ""
+"Una mailining list è disponibile attraverso <a "
+"href=\"mailto:weblate@lists.cihar.com\">weblate@lists.cihar.com</a> dove "
+"potete discorrere a proposito di Weblate. Potete <a "
+"href=\"https://lists.cihar.com/cgi-bin/mailman/listinfo/weblate\">effettuare "
+"una sottoscrizione</a> oppure <a "
+"href=\"https://lists.cihar.com/pipermail/weblate/\">visionare l'archivio delle "
+"discussioni</a>."
 
 #: weblate_web/html/support.html:24
 msgid ""
@@ -687,10 +777,13 @@ msgid ""
 "comp.web.weblate\">Gmane</a> where you can browse archives or use NNTP "
 "interface."
 msgstr ""
+"La mailing list è disponibile anche attraverso <a "
+"href=\"http://dir.gmane.org/gmane.comp.web.weblate\">Gmane</a> dove potete "
+"visionare larchivio delle discussioni o utilizzare l'interfacia NNTP."
 
 #: weblate_web/html/support.html:27
 msgid "IRC"
-msgstr ""
+msgstr "IRC (Internet Relay Chat)"
 
 #: weblate_web/html/support.html:30
 msgid ""
@@ -699,70 +792,78 @@ msgid ""
 "You can also use <a href=\"http://webchat.freenode.net?channels=weblate"
 "\">webchat</a> there."
 msgstr ""
+"Quando trovate utenti online, potete anche ricevere aiuto tramite il canale "
+"#weblate attraverso il network di <a "
+"href=\"http://freenode.net/\">freenode</a>. Potete anche utilizzare la  <a "
+"href=\"http://webchat.freenode.net?channels=weblate\">webchat di freenode</a>."
 
 #: weblate_web/html/support.html:33
 msgid "Contact"
-msgstr ""
+msgstr "Contatti"
 
 #: weblate_web/html/support.html:36
 msgid ""
 "You can also contact <a href=\"mailto:michal@cihar.com?subject=Weblate"
 "\">Michal Čihař</a>, who is author of Weblate."
 msgstr ""
+"Potete inoltre contattare <a "
+"href=\"mailto:michal@cihar.com?subject=Weblate\">Michal Čihař</a>, l'autore di "
+"Weblate."
 
 #: weblate_web/html/thanks.html:4 weblate_web/html/thanks.html.py:5
-#, fuzzy
 #| msgid "Donate to Weblate"
 msgid "Thanks from Weblate"
-msgstr "Dona a Weblate"
+msgstr "Grazie da Weblate"
 
 #: weblate_web/html/thanks.html:7
 msgid "Weblate is thankful for help from others."
-msgstr ""
+msgstr "Weblate è veramente grato per ogni aiuto."
 
 #: weblate_web/html/thanks.html:11
 msgid "Technology"
-msgstr ""
+msgstr "Tecnologia"
 
 #: weblate_web/html/thanks.html:13
 msgid "The development of Weblate is based on the following technologies:"
-msgstr ""
+msgstr "Lo sviluppo di weblate è basato sulle seguenti tecnologie:"
 
 #: weblate_web/html/thanks.html:17
 msgid "GitHub provides hosting for our source code and issue tracker."
 msgstr ""
+"GitHub fornisce il servizio di hosting per il nostro codice e il nostro "
+"issue tracker."
 
 #: weblate_web/html/thanks.html:21
 msgid "Travis CI is our continuous integration platform."
-msgstr ""
+msgstr "Travis CI è la nostra piattaforma di \"continuous integration\"."
 
 #: weblate_web/html/thanks.html:25
 msgid "Coveralls helps us to monitor code coverage of our test suite."
-msgstr ""
+msgstr "Coveralls ci aiuta a monitorare il coverage del codice dei nostri test."
 
 #: weblate_web/html/thanks.html:29
 msgid "Sauce Labs is running our Selenium tests in real browsers."
-msgstr ""
+msgstr "Sauce Labs esegue i nostri Selenium tests su browsers reali."
 
 #: weblate_web/html/tour.html:4 weblate_web/html/tour.html.py:5
 msgid "Weblate tour"
-msgstr ""
+msgstr "Weblate tour"
 
 #: weblate_web/html/tour.html:7
 msgid "Weblate has useful features for every translation."
-msgstr ""
+msgstr "Weblate ha funzionalità utilissime per ogni necessità di traduzione."
 
 #: weblate_web/html/try.html:4 weblate_web/html/try.html.py:5
 msgid "Try Weblate"
-msgstr ""
+msgstr "Prova Weblate"
 
 #: weblate_web/html/try.html:7
 msgid "Weblate is easy to deploy as an appliance."
-msgstr ""
+msgstr "Weblate è facile da installare attraverso le appliance."
 
 #: weblate_web/html/try.html:11
 msgid "Demo server"
-msgstr ""
+msgstr "Demo server"
 
 #: weblate_web/html/try.html:14
 msgid ""
@@ -770,17 +871,20 @@ msgid ""
 "server</a>. You can register there and work under your username or just use "
 "<code>demo</code> account with <code>demo</code> password."
 msgstr ""
+"Puoi provare Weblate sul nostro <a href=\"http://demo.weblate.org\">demo "
+"server</a>. Puoi registrarti e utilizzare il tuo username oppure utilizzare "
+"<code>demo</code> come username e <code>demo</code> come password."
 
 #: weblate_web/html/try.html:17
 msgid "Appliances"
-msgstr ""
+msgstr "Appliances"
 
 #: weblate_web/templatetags/downloads.py:39
 #, python-format
 msgid "%(size)d byte"
 msgid_plural "%(size)d bytes"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(size)d byte"
+msgstr[1] "%(size)d bytes"
 
 #: weblate_web/templatetags/downloads.py:44
 #, python-format
@@ -799,19 +903,19 @@ msgstr ""
 
 #: weblate_web/templatetags/downloads.py:54
 msgid "Sources tarball, bzip2 compressed"
-msgstr ""
+msgstr "Sorgenti tarball, compressi bzip2"
 
 #: weblate_web/templatetags/downloads.py:56
 msgid "Sources tarball, gzip compressed"
-msgstr ""
+msgstr "Sorgenti tarball, compressi gzip"
 
 #: weblate_web/templatetags/downloads.py:58
 msgid "Sources tarball, xz compressed"
-msgstr ""
+msgstr "Sorgenti tarball, compressi xz"
 
 #: weblate_web/templatetags/downloads.py:60
 msgid "Sources, zip compressed"
-msgstr ""
+msgstr "Sorgenti compressi zip"
 
 #~ msgid "Fund"
 #~ msgstr "Finanziamento"
