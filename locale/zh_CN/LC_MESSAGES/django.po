@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-11-26 11:44+0100\n"
+"POT-Creation-Date: 2014-01-03 11:38+0100\n"
 "PO-Revision-Date: 2013-10-05 09:39+0200\n"
 "Last-Translator: Jeffrey Shao <shaojf2001@qq.com>\n"
 "Language-Team: Simplified Chinese <http://l10n.cihar.com/projects/weblate/"
@@ -596,11 +596,28 @@ msgstr ""
 "URL以启用Weblate service hook. 如你也想Weblate自动推送更改，增加Weblate用户到"
 "贡献者，请让我们知晓您想要使用这个选项。"
 
-#: weblate_web/html/hosting.html:48
+#: weblate_web/html/hosting.html:49
+#, fuzzy
+#| msgid ""
+#| "To enable automated workflow on GitHub, you need to enable Weblate "
+#| "service hook in settings with <code>hosted.weblate.org</code> as URL. If "
+#| "you want Weblate to automatically push changes as well, add Weblate user "
+#| "to contributors and let us know you want to use this option."
+msgid ""
+"To enable automated workflow on Bitbucket, you need to add POST hook to "
+"<code>http://hosted.weblate.org/hooks/bitbucket/</code> URL. If you want "
+"Weblate to automatically push changes as well, give Weblate user write "
+"permission to your repository and let us know you want to use this option."
+msgstr ""
+"要使用GitHub上的自动流程，你需要在设定中用<code>hosted.weblate.org</code>作为"
+"URL以启用Weblate service hook. 如你也想Weblate自动推送更改，增加Weblate用户到"
+"贡献者，请让我们知晓您想要使用这个选项。"
+
+#: weblate_web/html/hosting.html:52
 msgid "Support free hosting"
 msgstr "支持免费托管"
 
-#: weblate_web/html/hosting.html:52
+#: weblate_web/html/hosting.html:56
 #, python-format
 msgid ""
 "The hosting is provided for free, but running the server and maintaining it "
@@ -610,22 +627,22 @@ msgstr ""
 "托管是免费的，但服务器需要花费资金，我们欢迎您通过 <a href=\"%(gittip_url)s"
 "\">Gittip</a> 或 <a href=\"%(donate_url)s\">其它方式捐助</a>。"
 
-#: weblate_web/html/hosting.html:55
+#: weblate_web/html/hosting.html:59
 msgid "Commercial hosting"
 msgstr "收费托管"
 
-#: weblate_web/html/hosting.html:58
+#: weblate_web/html/hosting.html:62
 msgid ""
 "Please contact <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> for more "
 "details."
 msgstr ""
 "请联系 <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> 获取详细信息。"
 
-#: weblate_web/html/hosting.html:61
+#: weblate_web/html/hosting.html:65
 msgid "Other options"
 msgstr "其它选择"
 
-#: weblate_web/html/hosting.html:65 weblate_web/html/try.html:20
+#: weblate_web/html/hosting.html:69 weblate_web/html/try.html:20
 #, python-format
 msgid ""
 "Check our <a href=\"%(download_url)s\">download page</a> for appliances, "

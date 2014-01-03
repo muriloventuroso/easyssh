@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-11-26 11:44+0100\n"
+"POT-Creation-Date: 2014-01-03 11:38+0100\n"
 "PO-Revision-Date: 2013-09-10 16:42+0200\n"
 "Last-Translator: Deokyun Yu <i@saintjr.com>\n"
 "Language-Team: Korean <http://l10n.cihar.com/projects/weblate/website/ko/>\n"
@@ -589,11 +589,19 @@ msgid ""
 "contributors and let us know you want to use this option."
 msgstr ""
 
-#: weblate_web/html/hosting.html:48
-msgid "Support free hosting"
+#: weblate_web/html/hosting.html:49
+msgid ""
+"To enable automated workflow on Bitbucket, you need to add POST hook to "
+"<code>http://hosted.weblate.org/hooks/bitbucket/</code> URL. If you want "
+"Weblate to automatically push changes as well, give Weblate user write "
+"permission to your repository and let us know you want to use this option."
 msgstr ""
 
 #: weblate_web/html/hosting.html:52
+msgid "Support free hosting"
+msgstr ""
+
+#: weblate_web/html/hosting.html:56
 #, python-format
 msgid ""
 "The hosting is provided for free, but running the server and maintaining it "
@@ -601,11 +609,11 @@ msgid ""
 "\">Gittip</a> or <a href=\"%(donate_url)s\">other ways to donate</a>."
 msgstr ""
 
-#: weblate_web/html/hosting.html:55
+#: weblate_web/html/hosting.html:59
 msgid "Commercial hosting"
 msgstr ""
 
-#: weblate_web/html/hosting.html:58
+#: weblate_web/html/hosting.html:62
 msgid ""
 "Please contact <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> for more "
 "details."
@@ -613,11 +621,11 @@ msgstr ""
 "세부 사항은 <a href=\"mailto:michal@cihar.com?subject=Weblate\">Michal "
 "Čihař</a>에게 연락하여 주십시요."
 
-#: weblate_web/html/hosting.html:61
+#: weblate_web/html/hosting.html:65
 msgid "Other options"
 msgstr "다른 옵션"
 
-#: weblate_web/html/hosting.html:65 weblate_web/html/try.html:20
+#: weblate_web/html/hosting.html:69 weblate_web/html/try.html:20
 #, python-format
 msgid ""
 "Check our <a href=\"%(download_url)s\">download page</a> for appliances, "

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: weblate-web\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-11-26 11:44+0100\n"
+"POT-Creation-Date: 2014-01-03 11:38+0100\n"
 "PO-Revision-Date: 2013-10-23 17:17+0200\n"
 "Last-Translator: Dmitri GOULIAEV <dmitri+weblate@gouliaev.info>\n"
 "Language-Team: Russian <http://l10n.cihar.com/projects/weblate/website/ru/>\n"
@@ -647,11 +647,30 @@ msgstr ""
 "изменения в удалённый репозитарий, добавьте пользователя Weblate в список "
 "авторов и дайте нам знать, что вы хотите это использовать."
 
-#: weblate_web/html/hosting.html:48
+#: weblate_web/html/hosting.html:49
+#, fuzzy
+#| msgid ""
+#| "To enable automated workflow on GitHub, you need to enable Weblate "
+#| "service hook in settings with <code>hosted.weblate.org</code> as URL. If "
+#| "you want Weblate to automatically push changes as well, add Weblate user "
+#| "to contributors and let us know you want to use this option."
+msgid ""
+"To enable automated workflow on Bitbucket, you need to add POST hook to "
+"<code>http://hosted.weblate.org/hooks/bitbucket/</code> URL. If you want "
+"Weblate to automatically push changes as well, give Weblate user write "
+"permission to your repository and let us know you want to use this option."
+msgstr ""
+"Чтобы включить автоматизированную схему работы на GitHub, в настройках "
+"необходимо разрешить service hook для Weblate с URL <code>hosted.weblate."
+"org</code>. Если вы хотите, чтобы Weblate также автоматически отправлял "
+"изменения в удалённый репозитарий, добавьте пользователя Weblate в список "
+"авторов и дайте нам знать, что вы хотите это использовать."
+
+#: weblate_web/html/hosting.html:52
 msgid "Support free hosting"
 msgstr "Поддержите бесплатный хостинг"
 
-#: weblate_web/html/hosting.html:52
+#: weblate_web/html/hosting.html:56
 #, python-format
 msgid ""
 "The hosting is provided for free, but running the server and maintaining it "
@@ -662,11 +681,11 @@ msgstr ""
 "денег, поэтому вы можете использовать <a href=\"%(gittip_url)s\">Gittip</a> "
 "или <a href=\"%(donate_url)s\">другие варианты пожертвования</a>."
 
-#: weblate_web/html/hosting.html:55
+#: weblate_web/html/hosting.html:59
 msgid "Commercial hosting"
 msgstr "Коммерческий хостинг"
 
-#: weblate_web/html/hosting.html:58
+#: weblate_web/html/hosting.html:62
 msgid ""
 "Please contact <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> for more "
 "details."
@@ -674,11 +693,11 @@ msgstr ""
 "Свяжитесь с <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> для "
 "получения более подробной информации."
 
-#: weblate_web/html/hosting.html:61
+#: weblate_web/html/hosting.html:65
 msgid "Other options"
 msgstr "Другие варианты"
 
-#: weblate_web/html/hosting.html:65 weblate_web/html/try.html:20
+#: weblate_web/html/hosting.html:69 weblate_web/html/try.html:20
 #, python-format
 msgid ""
 "Check our <a href=\"%(download_url)s\">download page</a> for appliances, "

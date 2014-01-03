@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-11-26 11:44+0100\n"
+"POT-Creation-Date: 2014-01-03 11:38+0100\n"
 "PO-Revision-Date: 2013-10-29 13:41+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <http://l10n.cihar.com/projects/weblate/website/cs/>\n"
@@ -630,11 +630,29 @@ msgstr ""
 "chcete, aby Weblate také mohlo automaticky odesílat změny, přidejte do "
 "projektu uživatele Weblate a řekněte nám, že chcete použít tuto volbu."
 
-#: weblate_web/html/hosting.html:48
+#: weblate_web/html/hosting.html:49
+#, fuzzy
+#| msgid ""
+#| "To enable automated workflow on GitHub, you need to enable Weblate "
+#| "service hook in settings with <code>hosted.weblate.org</code> as URL. If "
+#| "you want Weblate to automatically push changes as well, add Weblate user "
+#| "to contributors and let us know you want to use this option."
+msgid ""
+"To enable automated workflow on Bitbucket, you need to add POST hook to "
+"<code>http://hosted.weblate.org/hooks/bitbucket/</code> URL. If you want "
+"Weblate to automatically push changes as well, give Weblate user write "
+"permission to your repository and let us know you want to use this option."
+msgstr ""
+"Pro automatizaci správy překladů na GitHubu musíte povolit napojení na "
+"Weblate v nastavení a zadat <code>hosted.weblate.org</code> jako URL. Pokud "
+"chcete, aby Weblate také mohlo automaticky odesílat změny, přidejte do "
+"projektu uživatele Weblate a řekněte nám, že chcete použít tuto volbu."
+
+#: weblate_web/html/hosting.html:52
 msgid "Support free hosting"
 msgstr "Podpořte bezplatné hostování"
 
-#: weblate_web/html/hosting.html:52
+#: weblate_web/html/hosting.html:56
 #, python-format
 msgid ""
 "The hosting is provided for free, but running the server and maintaining it "
@@ -646,11 +664,11 @@ msgstr ""
 "\"%(gittip_url)s\">Gittipu</a> nebo <a href=\"%(donate_url)s\">jakýmkoliv "
 "jiným způsobem</a>."
 
-#: weblate_web/html/hosting.html:55
+#: weblate_web/html/hosting.html:59
 msgid "Commercial hosting"
 msgstr "Komerční hostování"
 
-#: weblate_web/html/hosting.html:58
+#: weblate_web/html/hosting.html:62
 msgid ""
 "Please contact <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> for more "
 "details."
@@ -658,11 +676,11 @@ msgstr ""
 "Pokud máte zájem o překládání vašeho komerčního programu pomocí Weblate, "
 "napište <a href=\"mailto:michal@cihar.com\">Michalu Čihařovi</a>."
 
-#: weblate_web/html/hosting.html:61
+#: weblate_web/html/hosting.html:65
 msgid "Other options"
 msgstr "Další možnosti"
 
-#: weblate_web/html/hosting.html:65 weblate_web/html/try.html:20
+#: weblate_web/html/hosting.html:69 weblate_web/html/try.html:20
 #, python-format
 msgid ""
 "Check our <a href=\"%(download_url)s\">download page</a> for appliances, "

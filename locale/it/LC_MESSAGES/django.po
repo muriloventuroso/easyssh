@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-11-26 11:44+0100\n"
+"POT-Creation-Date: 2014-01-03 11:38+0100\n"
 "PO-Revision-Date: 2013-12-06 18:45+0200\n"
 "Last-Translator: Giorgio Zanetti <gz77it@gmail.com>\n"
 "Language-Team: Italian <http://l10n.cihar.com/projects/weblate/website/it/>\n"
@@ -287,7 +287,6 @@ msgstr ""
 "credito."
 
 #: weblate_web/html/donate.html:25
-#| msgid "Features"
 msgid "Fund features"
 msgstr "Funzionalità di finanziamento"
 
@@ -335,7 +334,6 @@ msgstr ""
 "di denaro a vari progetti."
 
 #: weblate_web/html/donate.html:60
-#| msgid "Donate Bitcoins"
 msgid "Donate using Coinbase"
 msgstr "Dona attraverso Coinbase"
 
@@ -369,9 +367,8 @@ msgid ""
 "For openSUSE/SLES users, there are binary packages available in the <a href="
 "\"http://software.opensuse.org/package/weblate/\">openSUSE Buildservice</a>."
 msgstr ""
-"Per gli utenti openSUSE/SLES, esistono binari disponibili attraverso <a "
-"href=\"http://software.opensuse.org/package/weblate/\">openSUSE "
-"Buildservice</a>."
+"Per gli utenti openSUSE/SLES, esistono binari disponibili attraverso <a href="
+"\"http://software.opensuse.org/package/weblate/\">openSUSE Buildservice</a>."
 
 #: weblate_web/html/download.html:38
 msgid "Cloud or emulator images"
@@ -385,8 +382,8 @@ msgid ""
 "Gallery</a>."
 msgstr ""
 "Nel caso vogliate eseguire Weblate nel vostro cloud o virtual server, potete "
-"scaricare appliance basate su openSUSE 12.3 attraverso <a href=\"%"
-"(url)s\">SUSE Studio Gallery</a>."
+"scaricare appliance basate su openSUSE 12.3 attraverso <a href=\"%(url)s"
+"\">SUSE Studio Gallery</a>."
 
 #: weblate_web/html/download.html:42
 #, python-format
@@ -403,10 +400,9 @@ msgid ""
 "\">BitNami stack</a>, that allows you native installation on Windows, Linux "
 "or Mac OS X and provides virtual images for running Weblate."
 msgstr ""
-"Weblate è anche disponibile come <a "
-"href=\"http://bitnami.org/stack/weblate\">BitNami stack</a>, che consente una "
-"installazione nativa su Windows, Linux o Mac OS X e fornisce immagini "
-"virtuali per seguire Weblate."
+"Weblate è anche disponibile come <a href=\"http://bitnami.org/stack/weblate"
+"\">BitNami stack</a>, che consente una installazione nativa su Windows, "
+"Linux o Mac OS X e fornisce immagini virtuali per seguire Weblate."
 
 #: weblate_web/html/features.html:4 weblate_web/html/features.html.py:5
 msgid "Weblate features"
@@ -571,9 +567,9 @@ msgid ""
 "maintaining it."
 msgstr ""
 "Se siete interessati a utilizzare Weblate per il vostro software libero, "
-"potete richiedere di essere inclusi in<a "
-"href=\"http://hosted.weblate.org/\">hosted.weblate.org</a>. Questo vi permette "
-"di usare Weblate senza doverlo installare e manutenere."
+"potete richiedere di essere inclusi in<a href=\"http://hosted.weblate.org/"
+"\">hosted.weblate.org</a>. Questo vi permette di usare Weblate senza doverlo "
+"installare e manutenere."
 
 #: weblate_web/html/hosting.html:17
 msgid "Conditions for free hosting"
@@ -584,9 +580,8 @@ msgid ""
 "Translated content has to be released under <a href=\"http://en.wikipedia."
 "org/wiki/Free_software_license\">free license</a>."
 msgstr ""
-"Il contenuto tradotto deve essere rilasciato sotto <a "
-"href=\"http://en.wikipedia.org/wiki/Free_software_license\">licenza "
-"libera</a>."
+"Il contenuto tradotto deve essere rilasciato sotto <a href=\"http://en."
+"wikipedia.org/wiki/Free_software_license\">licenza libera</a>."
 
 #: weblate_web/html/hosting.html:21
 msgid ""
@@ -637,10 +632,10 @@ msgid ""
 "with similar naming as on website - hello/master translation would be "
 "published as <code>git://git.weblate.org/hello-master.git</code>."
 msgstr ""
-"Tutti i repositories tradotti sono disponibili su "
-"<code>git.weblate.org</code> con la stessa denominazione che trovate sul "
-"sito - la traduzione hello/master sarà pubblicata come "
-"<code>git://git.weblate.org/hello-master.git</code>."
+"Tutti i repositories tradotti sono disponibili su <code>git.weblate.org</"
+"code> con la stessa denominazione che trovate sul sito - la traduzione hello/"
+"master sarà pubblicata come <code>git://git.weblate.org/hello-master.git</"
+"code>."
 
 #: weblate_web/html/hosting.html:45
 msgid ""
@@ -650,16 +645,35 @@ msgid ""
 "contributors and let us know you want to use this option."
 msgstr ""
 "Per abilitare il flusso di lavoro automatizzato su GitHub è necessario "
-"abilitare il service hook di Weblate nei settaggi inserendo "
-"<code>hosted.weblate.org</code> come URL. Se volete che Weblate invii "
-"automaticamente anche le modifiche dovrete aggiungere l'utente Weblate ai "
-"contrubutori a farci sapere che volete usare questa opzione."
+"abilitare il service hook di Weblate nei settaggi inserendo <code>hosted."
+"weblate.org</code> come URL. Se volete che Weblate invii automaticamente "
+"anche le modifiche dovrete aggiungere l'utente Weblate ai contrubutori a "
+"farci sapere che volete usare questa opzione."
 
-#: weblate_web/html/hosting.html:48
+#: weblate_web/html/hosting.html:49
+#, fuzzy
+#| msgid ""
+#| "To enable automated workflow on GitHub, you need to enable Weblate "
+#| "service hook in settings with <code>hosted.weblate.org</code> as URL. If "
+#| "you want Weblate to automatically push changes as well, add Weblate user "
+#| "to contributors and let us know you want to use this option."
+msgid ""
+"To enable automated workflow on Bitbucket, you need to add POST hook to "
+"<code>http://hosted.weblate.org/hooks/bitbucket/</code> URL. If you want "
+"Weblate to automatically push changes as well, give Weblate user write "
+"permission to your repository and let us know you want to use this option."
+msgstr ""
+"Per abilitare il flusso di lavoro automatizzato su GitHub è necessario "
+"abilitare il service hook di Weblate nei settaggi inserendo <code>hosted."
+"weblate.org</code> come URL. Se volete che Weblate invii automaticamente "
+"anche le modifiche dovrete aggiungere l'utente Weblate ai contrubutori a "
+"farci sapere che volete usare questa opzione."
+
+#: weblate_web/html/hosting.html:52
 msgid "Support free hosting"
 msgstr "Supporto all'hosting gratuito"
 
-#: weblate_web/html/hosting.html:52
+#: weblate_web/html/hosting.html:56
 #, python-format
 msgid ""
 "The hosting is provided for free, but running the server and maintaining it "
@@ -668,14 +682,14 @@ msgid ""
 msgstr ""
 "Il servizio di hosting è fornito gratuitamente, tuttavia la manutenzione e "
 "la disponibilità del server hanno un costo, dunque è benvenuta una donazione "
-"attraverso <a href=\"%(gittip_url)s\">Gittip</a> oppure <a href=\"%"
-"(donate_url)s\">altri metodi di donazione</a>."
+"attraverso <a href=\"%(gittip_url)s\">Gittip</a> oppure <a href="
+"\"%(donate_url)s\">altri metodi di donazione</a>."
 
-#: weblate_web/html/hosting.html:55
+#: weblate_web/html/hosting.html:59
 msgid "Commercial hosting"
 msgstr "Hosting a pagamento"
 
-#: weblate_web/html/hosting.html:58
+#: weblate_web/html/hosting.html:62
 msgid ""
 "Please contact <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> for more "
 "details."
@@ -683,11 +697,11 @@ msgstr ""
 "Siete pregati di voler contattare <a href=\"mailto:michal@cihar.com\">Michal "
 "Čihař</a> per maggiori dettagli."
 
-#: weblate_web/html/hosting.html:61
+#: weblate_web/html/hosting.html:65
 msgid "Other options"
 msgstr "Altre opzioni"
 
-#: weblate_web/html/hosting.html:65 weblate_web/html/try.html:20
+#: weblate_web/html/hosting.html:69 weblate_web/html/try.html:20
 #, python-format
 msgid ""
 "Check our <a href=\"%(download_url)s\">download page</a> for appliances, "
@@ -747,8 +761,8 @@ msgid ""
 "\">issue tracker on GitHub</a>."
 msgstr ""
 "Avete riscontrato una problematica con Weblate? Avete idea su come "
-"migliorarlo? Fornite i vostri suggerimenti attraverso il nostro <a "
-"href=\"https://github.com/nijel/weblate/issues\">issue tracker on GitHub</a> "
+"migliorarlo? Fornite i vostri suggerimenti attraverso il nostro <a href="
+"\"https://github.com/nijel/weblate/issues\">issue tracker on GitHub</a> "
 "(sistema di gestione delle problematiche)."
 
 #: weblate_web/html/support.html:17
@@ -763,12 +777,11 @@ msgid ""
 "weblate\">subscribe</a> or <a href=\"https://lists.cihar.com/pipermail/"
 "weblate/\">browse archives</a>."
 msgstr ""
-"Una mailining list è disponibile attraverso <a "
-"href=\"mailto:weblate@lists.cihar.com\">weblate@lists.cihar.com</a> dove "
-"potete discorrere a proposito di Weblate. Potete <a "
-"href=\"https://lists.cihar.com/cgi-bin/mailman/listinfo/weblate\">effettuare "
-"una sottoscrizione</a> oppure <a "
-"href=\"https://lists.cihar.com/pipermail/weblate/\">visionare l'archivio delle "
+"Una mailining list è disponibile attraverso <a href=\"mailto:weblate@lists."
+"cihar.com\">weblate@lists.cihar.com</a> dove potete discorrere a proposito "
+"di Weblate. Potete <a href=\"https://lists.cihar.com/cgi-bin/mailman/"
+"listinfo/weblate\">effettuare una sottoscrizione</a> oppure <a href="
+"\"https://lists.cihar.com/pipermail/weblate/\">visionare l'archivio delle "
 "discussioni</a>."
 
 #: weblate_web/html/support.html:24
@@ -777,9 +790,9 @@ msgid ""
 "comp.web.weblate\">Gmane</a> where you can browse archives or use NNTP "
 "interface."
 msgstr ""
-"La mailing list è disponibile anche attraverso <a "
-"href=\"http://dir.gmane.org/gmane.comp.web.weblate\">Gmane</a> dove potete "
-"visionare larchivio delle discussioni o utilizzare l'interfacia NNTP."
+"La mailing list è disponibile anche attraverso <a href=\"http://dir.gmane."
+"org/gmane.comp.web.weblate\">Gmane</a> dove potete visionare larchivio delle "
+"discussioni o utilizzare l'interfacia NNTP."
 
 #: weblate_web/html/support.html:27
 msgid "IRC"
@@ -793,9 +806,9 @@ msgid ""
 "\">webchat</a> there."
 msgstr ""
 "Quando trovate utenti online, potete anche ricevere aiuto tramite il canale "
-"#weblate attraverso il network di <a "
-"href=\"http://freenode.net/\">freenode</a>. Potete anche utilizzare la  <a "
-"href=\"http://webchat.freenode.net?channels=weblate\">webchat di freenode</a>."
+"#weblate attraverso il network di <a href=\"http://freenode.net/\">freenode</"
+"a>. Potete anche utilizzare la  <a href=\"http://webchat.freenode.net?"
+"channels=weblate\">webchat di freenode</a>."
 
 #: weblate_web/html/support.html:33
 msgid "Contact"
@@ -806,12 +819,10 @@ msgid ""
 "You can also contact <a href=\"mailto:michal@cihar.com?subject=Weblate"
 "\">Michal Čihař</a>, who is author of Weblate."
 msgstr ""
-"Potete inoltre contattare <a "
-"href=\"mailto:michal@cihar.com?subject=Weblate\">Michal Čihař</a>, l'autore di "
-"Weblate."
+"Potete inoltre contattare <a href=\"mailto:michal@cihar.com?subject=Weblate"
+"\">Michal Čihař</a>, l'autore di Weblate."
 
 #: weblate_web/html/thanks.html:4 weblate_web/html/thanks.html.py:5
-#| msgid "Donate to Weblate"
 msgid "Thanks from Weblate"
 msgstr "Grazie da Weblate"
 
@@ -839,7 +850,8 @@ msgstr "Travis CI è la nostra piattaforma di \"continuous integration\"."
 
 #: weblate_web/html/thanks.html:25
 msgid "Coveralls helps us to monitor code coverage of our test suite."
-msgstr "Coveralls ci aiuta a monitorare il coverage del codice dei nostri test."
+msgstr ""
+"Coveralls ci aiuta a monitorare il coverage del codice dei nostri test."
 
 #: weblate_web/html/thanks.html:29
 msgid "Sauce Labs is running our Selenium tests in real browsers."

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-11-26 11:44+0100\n"
+"POT-Creation-Date: 2014-01-03 11:38+0100\n"
 "PO-Revision-Date: 2013-10-29 16:20+0200\n"
 "Last-Translator: Burak Yavuz <hitowerdigit@hotmail.com>\n"
 "Language-Team: Turkish <http://l10n.cihar.com/projects/weblate/website/tr/>\n"
@@ -635,11 +635,30 @@ msgstr ""
 "yollamasını istiyorsanız, Weblate kullanıcısını katkıda bulunanlara ekleyin "
 "ve bu seçeneği kullanmak istediğinizi bize söyleyin."
 
-#: weblate_web/html/hosting.html:48
+#: weblate_web/html/hosting.html:49
+#, fuzzy
+#| msgid ""
+#| "To enable automated workflow on GitHub, you need to enable Weblate "
+#| "service hook in settings with <code>hosted.weblate.org</code> as URL. If "
+#| "you want Weblate to automatically push changes as well, add Weblate user "
+#| "to contributors and let us know you want to use this option."
+msgid ""
+"To enable automated workflow on Bitbucket, you need to add POST hook to "
+"<code>http://hosted.weblate.org/hooks/bitbucket/</code> URL. If you want "
+"Weblate to automatically push changes as well, give Weblate user write "
+"permission to your repository and let us know you want to use this option."
+msgstr ""
+"GitHub'taki otomatikleştirilmiş iş akışını etkinleştirmek için ayarlarda URL "
+"olarak <code>hosted.weblate.org</code> adresi ile Weblate hizmet bağlamasını "
+"etkinleştirmeniz gerekir. Eğer Weblate'in de otomatik olarak değişiklikleri "
+"yollamasını istiyorsanız, Weblate kullanıcısını katkıda bulunanlara ekleyin "
+"ve bu seçeneği kullanmak istediğinizi bize söyleyin."
+
+#: weblate_web/html/hosting.html:52
 msgid "Support free hosting"
 msgstr "Ücretsiz barındırmayı destekleyin"
 
-#: weblate_web/html/hosting.html:52
+#: weblate_web/html/hosting.html:56
 #, python-format
 msgid ""
 "The hosting is provided for free, but running the server and maintaining it "
@@ -650,11 +669,11 @@ msgstr ""
 "masraflıdır, bu yüzden <a href=\"%(gittip_url)s\">Gittip</a> ya da <a href="
 "\"%(donate_url)s\">bağış için diğer yolları</a> kullanmanızı bekliyoruz."
 
-#: weblate_web/html/hosting.html:55
+#: weblate_web/html/hosting.html:59
 msgid "Commercial hosting"
 msgstr "Ticari barındırma"
 
-#: weblate_web/html/hosting.html:58
+#: weblate_web/html/hosting.html:62
 msgid ""
 "Please contact <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> for more "
 "details."
@@ -662,11 +681,11 @@ msgstr ""
 "Lütfen daha fazla ayrıntı için <a href=\"mailto:michal@cihar.com?"
 "subject=Weblate\">Michal Čihař</a> ile temasa geçin."
 
-#: weblate_web/html/hosting.html:61
+#: weblate_web/html/hosting.html:65
 msgid "Other options"
 msgstr "Diğer seçenekler"
 
-#: weblate_web/html/hosting.html:65 weblate_web/html/try.html:20
+#: weblate_web/html/hosting.html:69 weblate_web/html/try.html:20
 #, python-format
 msgid ""
 "Check our <a href=\"%(download_url)s\">download page</a> for appliances, "

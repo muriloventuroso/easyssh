@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2013-11-26 11:44+0100\n"
+"POT-Creation-Date: 2014-01-03 11:38+0100\n"
 "PO-Revision-Date: 2013-11-18 16:54+0200\n"
 "Last-Translator: Helder Santana <helder.bs.santana@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <http://l10n.cihar.com/projects/weblate/"
@@ -646,11 +646,30 @@ msgstr ""
 "as mudanças automaticamente, adicione o usuário do Weblate como colaborador "
 "e nos conte que você quer utilizar esta opção."
 
-#: weblate_web/html/hosting.html:48
+#: weblate_web/html/hosting.html:49
+#, fuzzy
+#| msgid ""
+#| "To enable automated workflow on GitHub, you need to enable Weblate "
+#| "service hook in settings with <code>hosted.weblate.org</code> as URL. If "
+#| "you want Weblate to automatically push changes as well, add Weblate user "
+#| "to contributors and let us know you want to use this option."
+msgid ""
+"To enable automated workflow on Bitbucket, you need to add POST hook to "
+"<code>http://hosted.weblate.org/hooks/bitbucket/</code> URL. If you want "
+"Weblate to automatically push changes as well, give Weblate user write "
+"permission to your repository and let us know you want to use this option."
+msgstr ""
+"Para ativar um fluxo de trabalho automatizado no GitHub, você precisa ativar "
+"os ganchos de serviço do Weblate nas configurações utilizando <code>hosted."
+"weblate.org</code> como URL. Se você quiser que o Weblate também incorpore "
+"as mudanças automaticamente, adicione o usuário do Weblate como colaborador "
+"e nos conte que você quer utilizar esta opção."
+
+#: weblate_web/html/hosting.html:52
 msgid "Support free hosting"
 msgstr "Apóie a hospedagem grátis"
 
-#: weblate_web/html/hosting.html:52
+#: weblate_web/html/hosting.html:56
 #, python-format
 msgid ""
 "The hosting is provided for free, but running the server and maintaining it "
@@ -661,11 +680,11 @@ msgstr ""
 "custa algum dinheiro, então agradecemos você usar o <a href=\"%(gittip_url)s"
 "\">Gittip</a> ou <a href=\"%(donate_url)s\">outros meios de pagamento</a>."
 
-#: weblate_web/html/hosting.html:55
+#: weblate_web/html/hosting.html:59
 msgid "Commercial hosting"
 msgstr "Hospedagem comercial"
 
-#: weblate_web/html/hosting.html:58
+#: weblate_web/html/hosting.html:62
 msgid ""
 "Please contact <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> for more "
 "details."
@@ -673,11 +692,11 @@ msgstr ""
 "Por favor, contate <a href=\"mailto:michal@cihar.com?subject=Weblate"
 "\">Michal Čihař</a> para mais detalhes."
 
-#: weblate_web/html/hosting.html:61
+#: weblate_web/html/hosting.html:65
 msgid "Other options"
 msgstr "Outras opções"
 
-#: weblate_web/html/hosting.html:65 weblate_web/html/try.html:20
+#: weblate_web/html/hosting.html:69 weblate_web/html/try.html:20
 #, python-format
 msgid ""
 "Check our <a href=\"%(download_url)s\">download page</a> for appliances, "
