@@ -81,6 +81,7 @@ LANGUAGES = (
     #('he', u'עִבְרִית'),
     ('hu', 'Magyar'),
     #('id', 'Indonesia'),
+    ('it', 'Italiano'),
     ('ja', u'日本語'),
     #('ko', u'한국어'),
     ('nl', 'Nederlands'),
@@ -92,6 +93,7 @@ LANGUAGES = (
     ('sl', u'Slovenščina'),
     ('sv', u'Svenska'),
     ('tr', u'Türkçe'),
+    ('uk', u'українська'),
     ('zh-cn', u'简体字'),
     ('zh-tw', u'正體字'),
 )
