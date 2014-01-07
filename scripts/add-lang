@@ -2,6 +2,6 @@
 
 set -e
 
-./manage.py makemessages -l $1 -i 'weblate_web/files/*'
+./manage.py makemessages --keep-pot -l $1 -i 'weblate_web/files/*'
 git add locale/$1/
 git commit -m "Added $1 language"
