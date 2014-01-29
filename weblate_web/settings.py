@@ -87,7 +87,7 @@ LANGUAGES = (
     #('ko', u'한국어'),
     ('nl', 'Nederlands'),
     ('pl', 'Polski'),
-    #('pt', u'Português'),
+    ('pt', u'Português'),
     ('pt-br', u'Português brasileiro'),
     ('ru', u'Русский'),
     ('sk', u'Slovenčina'),
