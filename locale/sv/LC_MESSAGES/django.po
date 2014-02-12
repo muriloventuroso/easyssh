@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2014-02-12 09:26+0100\n"
-"PO-Revision-Date: 2014-01-22 22:56+0200\n"
+"PO-Revision-Date: 2014-02-12 20:17+0200\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <http://l10n.cihar.com/projects/weblate/website/sv/>\n"
 "Language: sv\n"
@@ -163,7 +163,6 @@ msgid "Download"
 msgstr "Hämta"
 
 #: weblate_web/html/base.html:44
-#, fuzzy
 msgid "Hosting"
 msgstr "Hosting"
 
@@ -202,7 +201,7 @@ msgstr ""
 
 #: weblate_web/html/base.html:85
 msgid "Visit us on Google+"
-msgstr ""
+msgstr "Besök oss på Google+"
 
 #: weblate_web/html/contribute.html:4 weblate_web/html/contribute.html.py:5
 msgid "Contribute to Weblate"
@@ -301,6 +300,8 @@ msgid ""
 "Bountysource allows you to fund individual features which are reported on "
 "our issue tracker."
 msgstr ""
+"Bountysource ger dig möjligheten att finansiera individuella funktioner som "
+"anmäls till vårt felrapporteringssystem."
 
 #: weblate_web/html/donate.html:38
 msgid ""
@@ -371,21 +372,21 @@ msgstr ""
 
 #: weblate_web/html/download.html:38
 msgid "Cloud or emulator images"
-msgstr ""
+msgstr "Avbilder för moln eller emulator"
 
 #: weblate_web/html/download.html:41
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "In case you want to run Weblate in your cloud or virtual server, you can "
 "download appliance based on openSUSE 12.3 at <a href=\"%(url)s\">SUSE Studio "
 "Gallery</a>."
 msgstr ""
-"Om du vill köra Weblate i molnet eller virtuell server, kan du hämta "
-"verktyget baserat på openSUSE 12,2 på <a href=\"http://susestudio.com/a/"
-"F8yMYg/weblate\"> SUSE Studio Gallery</a>."
+"Om du vill köra Weblate i ditt moln eller virtuella server, kan du hämta en "
+"appliance baserad på openSUSE 12.3 på <a href=\"%(url)s\"> SUSE Studio "
+"Gallery</a>."
 
 #: weblate_web/html/download.html:42
-#, fuzzy, python-format
+#, python-format
 #| msgid ""
 #| "Check <a href=\"http://docs.weblate.org/en/latest/install.html#appliance"
 #| "\">our documentation</a> for more information about appliance setup."
@@ -393,8 +394,8 @@ msgid ""
 "Check <a href=\"%(url)s\">our documentation</a> for more information about "
 "appliance setup."
 msgstr ""
-"Kolla <a href=\"http://docs.weblate.org/en/latest/install.html#appliance\"> "
-"vår dokumentation</a> för mer information om installation av apparaten."
+"Se <a href=\"%(url)s\"> vår dokumentation</a> för mer information om "
+"installation av appliance."
 
 #: weblate_web/html/download.html:46
 msgid ""
@@ -442,7 +443,7 @@ msgstr "Redo för molnet"
 msgid ""
 "Weblate comes with an appliance, which is ready to deploy in your cloud."
 msgstr ""
-"Weblate levereras med ett verktyg, som är redo att distribueras i ditt moln."
+"Weblate levereras med en appliance som är redo att distribueras i ditt moln."
 
 #: weblate_web/html/features.html:33
 msgid "File formats"
@@ -543,9 +544,8 @@ msgstr ""
 "aktivitet."
 
 #: weblate_web/html/hosting.html:4 weblate_web/html/hosting.html.py:5
-#, fuzzy
 msgid "Hosting Weblate"
-msgstr "Hosting Weblate"
+msgstr "Hosting för Weblate"
 
 #: weblate_web/html/hosting.html:7
 msgid "Weblate offers free hosting for free software."
@@ -832,18 +832,21 @@ msgstr "Utvecklandet av Weblate är baserat på följande teknologier:"
 #: weblate_web/html/thanks.html:17
 msgid "GitHub provides hosting for our source code and issue tracker."
 msgstr ""
+"Github tillhandahåller hosting för vår källkod och vårt "
+"felrapporteringssystem."
 
 #: weblate_web/html/thanks.html:21
 msgid "Travis CI is our continuous integration platform."
-msgstr ""
+msgstr "Travis CI är vår platform för kontinuerlig integration."
 
 #: weblate_web/html/thanks.html:25
 msgid "Coveralls helps us to monitor code coverage of our test suite."
 msgstr ""
+"Coveralls hjälper oss överblicka hur stor del av koden vår testsvit täcker."
 
 #: weblate_web/html/thanks.html:29
 msgid "Sauce Labs is running our Selenium tests in real browsers."
-msgstr ""
+msgstr "Sauce Labs kör våra Selenium-test i riktiga webbläsare."
 
 #: weblate_web/html/tour.html:4 weblate_web/html/tour.html.py:5
 msgid "Weblate tour"
@@ -859,7 +862,7 @@ msgstr "Pröva Weblate"
 
 #: weblate_web/html/try.html:7
 msgid "Weblate is easy to deploy as an appliance."
-msgstr "Weblate är lätt att distribuera som ett verktyg."
+msgstr "Weblate är lätt att distribuera som en appliance."
 
 #: weblate_web/html/try.html:11
 msgid "Demo server"
