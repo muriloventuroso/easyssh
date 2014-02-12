@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2014-01-07 13:11+0100\n"
+"POT-Creation-Date: 2014-02-12 09:26+0100\n"
 "PO-Revision-Date: 2014-01-22 22:56+0200\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <http://l10n.cihar.com/projects/weblate/website/sv/>\n"
@@ -134,72 +134,75 @@ msgctxt "Keyword"
 msgid "translate"
 msgstr "översätt"
 
-#: weblate_web/html/base.html:35
+#: weblate_web/html/base.html:36
 msgid "Weblate logo"
 msgstr "Weblates logo"
 
-#: weblate_web/html/base.html:37
+#: weblate_web/html/base.html:38
 msgid "Home"
 msgstr "Hem"
 
-#: weblate_web/html/base.html:38
+#: weblate_web/html/base.html:39
 msgid "Blog"
 msgstr "Blogg"
 
-#: weblate_web/html/base.html:39
+#: weblate_web/html/base.html:40
 msgid "Try"
 msgstr "Pröva"
 
-#: weblate_web/html/base.html:40
+#: weblate_web/html/base.html:41
 msgid "Features"
 msgstr "Funktioner"
 
-#: weblate_web/html/base.html:41
+#: weblate_web/html/base.html:42
 msgid "Docs"
 msgstr "Dokumentation"
 
-#: weblate_web/html/base.html:42 weblate_web/html/download.html:22
+#: weblate_web/html/base.html:43 weblate_web/html/download.html:22
 msgid "Download"
 msgstr "Hämta"
 
-#: weblate_web/html/base.html:43
+#: weblate_web/html/base.html:44
 #, fuzzy
 msgid "Hosting"
 msgstr "Hosting"
 
-#: weblate_web/html/base.html:44
+#: weblate_web/html/base.html:45
 msgid "Develop"
 msgstr "Utveckla"
 
-#: weblate_web/html/base.html:45 weblate_web/html/donate.html:35
+#: weblate_web/html/base.html:46 weblate_web/html/donate.html:35
 msgid "Donate"
 msgstr "Donera"
 
-#: weblate_web/html/base.html:46
+#: weblate_web/html/base.html:47
 msgid "Support"
 msgstr "Support"
 
-#: weblate_web/html/base.html:47
+#: weblate_web/html/base.html:48
 msgid "Tour"
 msgstr "Rundtur"
 
-#: weblate_web/html/base.html:48
+#: weblate_web/html/base.html:49
 msgid "Thanks"
 msgstr "Tack"
 
-#: weblate_web/html/base.html:62
+#: weblate_web/html/base.html:63
 msgid "Help with translations!"
 msgstr "Hjälp med översättningar!"
 
-#: weblate_web/html/base.html:83
+#: weblate_web/html/base.html:84
 #, python-format
-#| msgid "Weblate is easy to deploy as an appliance."
 msgid ""
 "Weblate is free software, but welcomes <a href=\"%(donate_url)s\">donations</"
 "a>."
 msgstr ""
-"Weblate är fri mjukvara, men välkomnar <a href=\"%"
-"(donate_url)s\">donationer</a>."
+"Weblate är fri mjukvara, men välkomnar <a href=\"%(donate_url)s"
+"\">donationer</a>."
+
+#: weblate_web/html/base.html:85
+msgid "Visit us on Google+"
+msgstr ""
 
 #: weblate_web/html/contribute.html:4 weblate_web/html/contribute.html.py:5
 msgid "Contribute to Weblate"
@@ -256,17 +259,14 @@ msgid "Translation status"
 msgstr "Översättningsstatus"
 
 #: weblate_web/html/donate.html:4 weblate_web/html/donate.html.py:5
-#| msgid "Contribute to Weblate"
 msgid "Donate to Weblate"
 msgstr "Donera till Weblate"
 
 #: weblate_web/html/donate.html:7
-#| msgid "Weblate is easy to deploy as an appliance."
 msgid "Weblate is free, but welcomes donations."
 msgstr "Weblate är gratis, men välkomnar donationer."
 
 #: weblate_web/html/donate.html:11
-#| msgid "Other options"
 msgid "Regular donations"
 msgstr "Regelbundna donationer"
 
@@ -289,7 +289,6 @@ msgid "Gittip allows you to send a weekly amount using a credit card."
 msgstr "Gittip tillåter dig skicka en summa med ditt kreditkort varje vecka."
 
 #: weblate_web/html/donate.html:25
-#| msgid "Features"
 msgid "Fund features"
 msgstr "Finansiera funktioner"
 
@@ -347,8 +346,8 @@ msgid ""
 "peer network</a> and send me Bitcoins to <code>%(bitcoin_address)s</code>."
 msgstr ""
 "Du kan också använda <a href=\"http://www.bitcoin.org/\">Bitcoin är ett peer-"
-"to-peer nätverk</a> och skicka mig Bitcoins till <code>%"
-"(bitcoin_address)s</code>."
+"to-peer nätverk</a> och skicka mig Bitcoins till <code>%(bitcoin_address)s</"
+"code>."
 
 #: weblate_web/html/download.html:5 weblate_web/html/download.html.py:6
 msgid "Download Weblate"
@@ -666,7 +665,6 @@ msgstr ""
 "använda detta alternativ."
 
 #: weblate_web/html/hosting.html:52
-#| msgid "Conditions for free hosting"
 msgid "Support free hosting"
 msgstr "Stöd gratis hosting"
 
@@ -678,8 +676,8 @@ msgid ""
 "\">Gittip</a> or <a href=\"%(donate_url)s\">other ways to donate</a>."
 msgstr ""
 "Hosting erbjuds gratis, men det kostar pengar att köra och sköta servern, så "
-"du får gärna använda <a href=\"%(gittip_url)s\">Gittip</a> eller <a href=\"%"
-"(donate_url)s\">andra sätt att donera</a>."
+"du får gärna använda <a href=\"%(gittip_url)s\">Gittip</a> eller <a href="
+"\"%(donate_url)s\">andra sätt att donera</a>."
 
 #: weblate_web/html/hosting.html:59
 msgid "Commercial hosting"
@@ -816,7 +814,6 @@ msgstr ""
 "\">Michal Čihař</a> som skapat Weblate."
 
 #: weblate_web/html/thanks.html:4 weblate_web/html/thanks.html.py:5
-#| msgid "Try Weblate"
 msgid "Thanks from Weblate"
 msgstr "Tack från Weblate"
 

@@ -7,17 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2014-01-07 13:11+0100\n"
+"POT-Creation-Date: 2014-02-12 09:26+0100\n"
 "PO-Revision-Date: 2014-02-05 23:35+0200\n"
 "Last-Translator: Oleksandr <chesterroy@gmail.com>\n"
-"Language-Team: Ukrainian "
-"<http://l10n.cihar.com/projects/weblate/website/uk/>\n"
+"Language-Team: Ukrainian <http://l10n.cihar.com/projects/weblate/website/uk/"
+">\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
-"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 1.9-dev\n"
 
 #: weblate_web/data.py:33
@@ -133,63 +133,63 @@ msgctxt "Keyword"
 msgid "translate"
 msgstr "перекладати"
 
-#: weblate_web/html/base.html:35
+#: weblate_web/html/base.html:36
 msgid "Weblate logo"
 msgstr "Емблема Weblate"
 
-#: weblate_web/html/base.html:37
+#: weblate_web/html/base.html:38
 msgid "Home"
 msgstr "Домашня"
 
-#: weblate_web/html/base.html:38
+#: weblate_web/html/base.html:39
 msgid "Blog"
 msgstr "Блоґ"
 
-#: weblate_web/html/base.html:39
+#: weblate_web/html/base.html:40
 msgid "Try"
 msgstr "Спробуйте"
 
-#: weblate_web/html/base.html:40
+#: weblate_web/html/base.html:41
 msgid "Features"
 msgstr "Особливості"
 
-#: weblate_web/html/base.html:41
+#: weblate_web/html/base.html:42
 msgid "Docs"
 msgstr "Документація"
 
-#: weblate_web/html/base.html:42 weblate_web/html/download.html:22
+#: weblate_web/html/base.html:43 weblate_web/html/download.html:22
 msgid "Download"
 msgstr "Завантажити"
 
-#: weblate_web/html/base.html:43
+#: weblate_web/html/base.html:44
 msgid "Hosting"
 msgstr "Хостинг"
 
-#: weblate_web/html/base.html:44
+#: weblate_web/html/base.html:45
 msgid "Develop"
 msgstr "Розробляти"
 
-#: weblate_web/html/base.html:45 weblate_web/html/donate.html:35
+#: weblate_web/html/base.html:46 weblate_web/html/donate.html:35
 msgid "Donate"
 msgstr "Пожертвувати"
 
-#: weblate_web/html/base.html:46
+#: weblate_web/html/base.html:47
 msgid "Support"
 msgstr "Підтримка"
 
-#: weblate_web/html/base.html:47
+#: weblate_web/html/base.html:48
 msgid "Tour"
 msgstr "Навчальний тур"
 
-#: weblate_web/html/base.html:48
+#: weblate_web/html/base.html:49
 msgid "Thanks"
 msgstr "Подяки"
 
-#: weblate_web/html/base.html:62
+#: weblate_web/html/base.html:63
 msgid "Help with translations!"
 msgstr "Допоможіть із перекладами!"
 
-#: weblate_web/html/base.html:83
+#: weblate_web/html/base.html:84
 #, python-format
 msgid ""
 "Weblate is free software, but welcomes <a href=\"%(donate_url)s\">donations</"
@@ -197,6 +197,10 @@ msgid ""
 msgstr ""
 "Weblate є вільним програмним забезпеченням, але ми вітаємо <a href="
 "\"%(donate_url)s\"> пожертвування</a>."
+
+#: weblate_web/html/base.html:85
+msgid "Visit us on Google+"
+msgstr ""
 
 #: weblate_web/html/contribute.html:4 weblate_web/html/contribute.html.py:5
 msgid "Contribute to Weblate"
@@ -640,11 +644,6 @@ msgstr ""
 "хочете використовувати цей параметр."
 
 #: weblate_web/html/hosting.html:49
-#| msgid ""
-#| "To enable automated workflow on GitHub, you need to enable Weblate "
-#| "service hook in settings with <code>hosted.weblate.org</code> as URL. If "
-#| "you want Weblate to automatically push changes as well, add Weblate user "
-#| "to contributors and let us know you want to use this option."
 msgid ""
 "To enable automated workflow on Bitbucket, you need to add POST hook to "
 "<code>http://hosted.weblate.org/hooks/bitbucket/</code> URL. If you want "
@@ -652,11 +651,10 @@ msgid ""
 "permission to your repository and let us know you want to use this option."
 msgstr ""
 "Щоб увімкнути автоматизований документообіг на Bitbucket, вам необхідно "
-"додати хук POST до URL-адреси "
-"<code>http://hosted.weblate.org/hooks/bitbucket/</code>. Якщо ви бажаєте, "
-"аби Weblate автоматично просувала зміни, то надайте користувачу Weblate "
-"доступ до вашого репозиторію і повідомте нас про те, що ви хочете "
-"використовувати цей параметр."
+"додати хук POST до URL-адреси <code>http://hosted.weblate.org/hooks/"
+"bitbucket/</code>. Якщо ви бажаєте, аби Weblate автоматично просувала зміни, "
+"то надайте користувачу Weblate доступ до вашого репозиторію і повідомте нас "
+"про те, що ви хочете використовувати цей параметр."
 
 #: weblate_web/html/hosting.html:52
 msgid "Support free hosting"
