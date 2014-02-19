@@ -71,6 +71,7 @@ LANGUAGES = (
     ('cs', u'Čeština'),
     ('da', u'Dansk'),
     ('de', u'Deutsch'),
+    ('en', u'English'),
     ('el', u'Ελληνικά'),
     ('en-gb', u'English (United Kingdom)'),
     ('es', u'Español'),
