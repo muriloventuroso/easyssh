@@ -24,8 +24,9 @@ def print_language(lang, fmt='{0} ({1})'):
 
 def main():
     # load data
-    fp = urllib2.urlopen(URL)
-    data = fp.read()
+    handle = urllib2.urlopen(URL)
+    data = handle.read()
+    handle.close()
     # parse data
     data = json.loads(data)
 
@@ -43,7 +44,7 @@ def main():
     # prepare for checking
     languages = set(languages)
     # we always want english language
-    languages.add('en')                     
+    languages.add('en')
     # load settings
     extra = set()
     settings = imp.load_source('settings', './weblate_web/settings.py')
