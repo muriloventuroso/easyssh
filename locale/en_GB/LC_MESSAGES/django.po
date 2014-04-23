@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2014-02-12 09:26+0100\n"
-"PO-Revision-Date: 2013-11-29 22:14+0200\n"
-"Last-Translator: Gabriela Solis <gaby_ta_sol@hotmail.com>\n"
-"Language-Team: English (United Kingdom) <http://l10n.cihar.com/projects/"
-"weblate/website/en_GB/>\n"
+"PO-Revision-Date: 2014-04-24 00:45+0200\n"
+"Last-Translator: Robert Readman <robert_readman@hotmail.com>\n"
+"Language-Team: English (United Kingdom) "
+"<https://l10n.cihar.com/projects/weblate/website/en_GB/>\n"
 "Language: en_GB\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -198,7 +198,7 @@ msgstr ""
 
 #: weblate_web/html/base.html:85
 msgid "Visit us on Google+"
-msgstr ""
+msgstr "Visit us on Google+"
 
 #: weblate_web/html/contribute.html:4 weblate_web/html/contribute.html.py:5
 msgid "Contribute to Weblate"
@@ -290,13 +290,15 @@ msgstr "Fund features"
 
 #: weblate_web/html/donate.html:28
 msgid "Fund on Bountysource"
-msgstr ""
+msgstr "Fund on Bountysource"
 
 #: weblate_web/html/donate.html:32
 msgid ""
 "Bountysource allows you to fund individual features which are reported on "
 "our issue tracker."
 msgstr ""
+"Bountysource allows you to fund individual features which are reported on "
+"our issue tracker."
 
 #: weblate_web/html/donate.html:38
 msgid ""
@@ -370,7 +372,7 @@ msgid "Cloud or emulator images"
 msgstr "Cloud or emulator images"
 
 #: weblate_web/html/download.html:41
-#, fuzzy, python-format
+#, python-format
 #| msgid ""
 #| "In case you want to run Weblate in your cloud or virtual server, you can "
 #| "download appliance based on openSUSE 12.3 at <a href=\"http://susestudio."
@@ -381,11 +383,11 @@ msgid ""
 "Gallery</a>."
 msgstr ""
 "In case you want to run Weblate in your cloud or virtual server, you can "
-"download appliance based on openSUSE 12.3 at <a href=\"http://susestudio.com/"
-"a/F8yMYg/weblate\">SUSE Studio Gallery</a>."
+"download appliance based on openSUSE 12.3 at <a href=\"%(url)s\">SUSE Studio "
+"Gallery</a>."
 
 #: weblate_web/html/download.html:42
-#, fuzzy, python-format
+#, python-format
 #| msgid ""
 #| "Check <a href=\"http://docs.weblate.org/en/latest/install.html#appliance"
 #| "\">our documentation</a> for more information about appliance setup."
@@ -393,8 +395,8 @@ msgid ""
 "Check <a href=\"%(url)s\">our documentation</a> for more information about "
 "appliance setup."
 msgstr ""
-"Check <a href=\"http://docs.weblate.org/en/latest/install.html#appliance"
-"\">our documentation</a> for more information about appliance set-up."
+"Check <a href=\"%(url)s\">our documentation</a> for more information about "
+"appliance setup."
 
 #: weblate_web/html/download.html:46
 msgid ""
@@ -640,7 +642,6 @@ msgstr ""
 "contributors and let us know you want to use this option."
 
 #: weblate_web/html/hosting.html:49
-#, fuzzy
 #| msgid ""
 #| "To enable automated workflow on GitHub, you need to enable Weblate "
 #| "service hook in settings with <code>hosted.weblate.org</code> as URL. If "
@@ -652,10 +653,10 @@ msgid ""
 "Weblate to automatically push changes as well, give Weblate user write "
 "permission to your repository and let us know you want to use this option."
 msgstr ""
-"To enable automated workflow on GitHub, you need to enable Weblate service "
-"hook in settings with <code>hosted.weblate.org</code> as URL. If you want "
-"Weblate to automatically push changes as well, add Weblate user to "
-"contributors and let us know you want to use this option."
+"To enable automated workflow on Bitbucket, you need to add POST hook to "
+"<code>http://hosted.weblate.org/hooks/bitbucket/</code> URL. If you want "
+"Weblate to automatically push changes as well, give Weblate user write "
+"permission to your repository and let us know you want to use this option."
 
 #: weblate_web/html/hosting.html:52
 msgid "Support free hosting"
@@ -806,38 +807,37 @@ msgstr ""
 "\">Michal Čihař</a>, who is author of Weblate."
 
 #: weblate_web/html/thanks.html:4 weblate_web/html/thanks.html.py:5
-#, fuzzy
 #| msgid "Try Weblate"
 msgid "Thanks from Weblate"
-msgstr "Try Weblate"
+msgstr "Thanks from Weblate"
 
 #: weblate_web/html/thanks.html:7
 msgid "Weblate is thankful for help from others."
-msgstr ""
+msgstr "Weblate is thankful for help from others."
 
 #: weblate_web/html/thanks.html:11
 msgid "Technology"
-msgstr ""
+msgstr "Technology"
 
 #: weblate_web/html/thanks.html:13
 msgid "The development of Weblate is based on the following technologies:"
-msgstr ""
+msgstr "The development of Weblate is based on the following technologies:"
 
 #: weblate_web/html/thanks.html:17
 msgid "GitHub provides hosting for our source code and issue tracker."
-msgstr ""
+msgstr "GitHub provides hosting for our source code and issue tracker."
 
 #: weblate_web/html/thanks.html:21
 msgid "Travis CI is our continuous integration platform."
-msgstr ""
+msgstr "Travis CI is our continuous integration platform."
 
 #: weblate_web/html/thanks.html:25
 msgid "Coveralls helps us to monitor code coverage of our test suite."
-msgstr ""
+msgstr "Coveralls helps us to monitor code coverage of our test suite."
 
 #: weblate_web/html/thanks.html:29
 msgid "Sauce Labs is running our Selenium tests in real browsers."
-msgstr ""
+msgstr "Sauce Labs is running our Selenium tests in real browsers."
 
 #: weblate_web/html/tour.html:4 weblate_web/html/tour.html.py:5
 msgid "Weblate tour"
