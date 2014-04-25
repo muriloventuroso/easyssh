@@ -9,17 +9,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: weblate-web\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2014-02-12 09:26+0100\n"
+"POT-Creation-Date: 2014-04-25 08:56+0200\n"
 "PO-Revision-Date: 2014-03-21 15:08+0200\n"
 "Last-Translator: Dmitri GOULIAEV <dmitri+weblate@gouliaev.info>\n"
-"Language-Team: Russian <https://l10n.cihar.com/projects/weblate/website/ru/>"
-"\n"
+"Language-Team: Russian <https://l10n.cihar.com/projects/weblate/website/ru/"
+">\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
-"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 1.9-dev\n"
 "First-Translator: Dmitri GOULIAEV <dmitri+weblate@gouliaev.info>\n"
 
@@ -537,7 +537,9 @@ msgstr ""
 "быть добавлены администратором."
 
 #: weblate_web/html/features.html:99
-msgid "Reports"
+#, fuzzy
+#| msgid "Reports"
+msgid "Reporting"
 msgstr "Отчёты"
 
 #: weblate_web/html/features.html:100
@@ -653,11 +655,6 @@ msgstr ""
 "авторов и дайте нам знать, что вы хотите это использовать."
 
 #: weblate_web/html/hosting.html:49
-#| msgid ""
-#| "To enable automated workflow on GitHub, you need to enable Weblate "
-#| "service hook in settings with <code>hosted.weblate.org</code> as URL. If "
-#| "you want Weblate to automatically push changes as well, add Weblate user "
-#| "to contributors and let us know you want to use this option."
 msgid ""
 "To enable automated workflow on Bitbucket, you need to add POST hook to "
 "<code>http://hosted.weblate.org/hooks/bitbucket/</code> URL. If you want "
@@ -665,9 +662,9 @@ msgid ""
 "permission to your repository and let us know you want to use this option."
 msgstr ""
 "Чтобы включить автоматизированную схему работы на Bitbucket, необходимо "
-"добавить POST hook на <code>http://hosted.weblate.org/hooks/bitbucket/</code>"
-". Если вы хотите, чтобы Weblate также автоматически отправлял изменения в "
-"удалённый репозитарий, разрешите пользователю Weblate доступ по записи и "
+"добавить POST hook на <code>http://hosted.weblate.org/hooks/bitbucket/</"
+"code>. Если вы хотите, чтобы Weblate также автоматически отправлял изменения "
+"в удалённый репозитарий, разрешите пользователю Weblate доступ по записи и "
 "дайте нам знать, что вы хотите это использовать."
 
 #: weblate_web/html/hosting.html:52
@@ -833,12 +830,10 @@ msgid "Technology"
 msgstr "Технология"
 
 #: weblate_web/html/thanks.html:13
-#| msgid "Development of Weblate is based on following technologies:"
 msgid "The development of Weblate is based on the following technologies:"
 msgstr "Разработка Weblate основана на следующих технологиях:"
 
 #: weblate_web/html/thanks.html:17
-#| msgid "GitHub provides us hosting for our source code and issue tracker."
 msgid "GitHub provides hosting for our source code and issue tracker."
 msgstr ""
 "GitHub предоставляет хостинг для наших исходных кодов и систему отслеживания "
