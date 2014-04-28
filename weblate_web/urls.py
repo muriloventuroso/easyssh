@@ -20,15 +20,10 @@
 
 from django.conf.urls import patterns, url
 from django.conf.urls.i18n import i18n_patterns
-from django.views.generic import TemplateView as TV, RedirectView
+from django.views.generic import TemplateView, RedirectView
 from django.conf import settings
 from django.contrib.sitemaps import Sitemap
 
-
-class TemplateView(TV):
-    def get(self, request):
-        print request.resolver_match.url_name
-        return super(TemplateView, self).get(request)
 
 class PagesSitemap(Sitemap):
     '''

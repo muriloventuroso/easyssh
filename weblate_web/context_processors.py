@@ -22,7 +22,13 @@ from weblate_web.data import VERSION, EXTENSIONS, SCREENSHOTS
 
 
 def weblate_web(request):
+    if request.resolver_match:
+        url_name = request.resolver_match.url_name
+    else:
+        url_name = 'home'
+
     return {
         'downloads': ['weblate-%s.%s' % (VERSION, ext) for ext in EXTENSIONS],
         'screenshots': SCREENSHOTS,
+        'url_name': url_name,
     }

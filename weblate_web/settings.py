@@ -223,6 +223,6 @@ LOCALE_INDEPENDENT_PATHS = (
 )
 LOCALEURL_USE_ACCEPT_LANGUAGE = True
 
-ALLOWED_HOSTS = ['weblate.org']
+ALLOWED_HOSTS = ('weblate.org', '127.0.0.1')
 
 SESSION_ENGINE = "django.contrib.sessions.backends.signed_cookies"
