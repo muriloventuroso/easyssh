@@ -181,7 +181,6 @@ TEMPLATE_DIRS = (
 
 INSTALLED_APPS = (
     'weblate_web',
-    'django.contrib.sessions',
     'django.contrib.staticfiles',
     'django.contrib.sitemaps',
 )
@@ -225,3 +224,5 @@ LOCALE_INDEPENDENT_PATHS = (
 LOCALEURL_USE_ACCEPT_LANGUAGE = True
 
 ALLOWED_HOSTS = ['weblate.org']
+
+SESSION_ENGINE = "django.contrib.sessions.backends.signed_cookies"
