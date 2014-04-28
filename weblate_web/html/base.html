@@ -1,6 +1,6 @@
 {% load i18n %}
 {% load url from future %}
-{% load localeurl_tags %}
+{% get_available_languages as languages %}
 <!DOCTYPE html>
 <html lang="{{ LANGUAGE_CODE }}" dir="{% if LANGUAGE_BIDI %}rtl{% else %}ltr{% endif %}">
 <head>
@@ -23,9 +23,16 @@
   <link rel="alternate" type="application/rss+xml" href="http://blog.cihar.com/archives/weblate/index-atom.xml" title="Weblate blog (Atom 1.0)"/>
   <link rel="alternate" type="application/rss+xml" href="http://blog.cihar.com/archives/weblate/index-rss.xml" title="Weblate blog (RSS 2.0)"/>
   <link rel="alternate" type="application/rss+xml" href="http://blog.cihar.com/archives/weblate/index.xml" title="Weblate blog (RSS 1.0)"/>
-{% for lang in LANGUAGES %}{% if lang.0 != LANGUAGE_CODE %}
-   <link rel="alternate" hreflang="{{ lang.0 }}" href="{{ request.path|chlocale:lang.0 }}" />
-{% endif %}{% endfor %}
+  {% language 'en' %}
+  <link rel="canonical" href="{% url request.resolver_match.url_name %}" />
+  {% endlanguage %}
+  {% for lang_code, lang_name in languages %}
+    {% if lang_code != LANGUAGE_CODE %}
+      {% language lang_code %}
+      <link rel="alternate" hreflang="{{ lang_code }}" href="{% url request.resolver_match.url_name %}" />
+      {% endlanguage %}
+    {% endif %}
+  {% endfor %}
    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
    <script src="/media/jquery.colorbox-min.js"></script>
    <script src="/media/code.js"></script>
@@ -56,9 +63,13 @@
 
 <div class="languages">
 <div class="choice">
-{% for lang in LANGUAGES %}
-<a href="{{ request.path|chlocale:lang.0 }}">{{ lang.1 }}</a>
+{% for lang_code, lang_name in languages %}
+{% language lang_code %}
+<a href="{% url request.resolver_match.url_name %}">{{ lang_name }}</a>
+{% endlanguage %}
 {% endfor %}
+
+
 </div>
 <a href="{% url 'contribute' %}#translate">{% trans "Help with translations!" %}</a>
 </div>

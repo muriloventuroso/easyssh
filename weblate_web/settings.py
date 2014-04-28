@@ -38,7 +38,7 @@ DATABASES = {
         # Use 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
         'ENGINE': 'django.db.backends.sqlite3',
         # Database name or path to database file if using sqlite3.
-        'NAME': '',
+        'NAME': 'db.sqlite3',
         # Database user, not used with sqlite3.
         'USER': '',
         # Database pasword, not used with sqlite3.
@@ -157,9 +157,9 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 )
 
 MIDDLEWARE_CLASSES = (
-    'localeurl.middleware.LocaleURLMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
@@ -180,7 +180,6 @@ TEMPLATE_DIRS = (
 )
 
 INSTALLED_APPS = (
-    'localeurl',
     'weblate_web',
     'django.contrib.sessions',
     'django.contrib.staticfiles',

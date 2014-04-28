@@ -19,17 +19,20 @@
 #
 
 from django.conf.urls import patterns, url
-from django.views.generic import TemplateView, RedirectView
+from django.conf.urls.i18n import i18n_patterns
+from django.views.generic import TemplateView as TV, RedirectView
 from django.conf import settings
 from django.contrib.sitemaps import Sitemap
-from localeurl.templatetags.localeurl_tags import chlocale
 
+
+class TemplateView(TV):
+    def get(self, request):
+        print request.resolver_match.url_name
+        return super(TemplateView, self).get(request)
 
 class PagesSitemap(Sitemap):
     '''
     Sitemap of static pages for one language.
-    This is heavily based on localeurl sitemap, but
-    does not use get_absolute_url.
     '''
     def __init__(self, language):
         super(PagesSitemap, self).__init__()
@@ -50,7 +53,7 @@ class PagesSitemap(Sitemap):
         )
 
     def location(self, item):
-        return chlocale(item[0], self.language)
+        return '/{0}{1}'.format(self.language, item[0])
 
     def priority(self, item):
         if self.language == 'en':
@@ -67,7 +70,7 @@ sitemaps = {}
 for lang in settings.LANGUAGES:
     sitemaps[lang[0]] = PagesSitemap(lang[0])
 
-urlpatterns = patterns(
+urlpatterns = i18n_patterns(
     '',
     url(
         r'^$',
@@ -150,7 +153,8 @@ urlpatterns = patterns(
         r'^[a-z][a-z]_[A-Z][A-Z]/index\.html$',
         RedirectView.as_view(url='/')
     ),
-
+) + patterns(
+    '',
     url(
         r'^sitemap\.xml$',
         'django.contrib.sitemaps.views.sitemap',
