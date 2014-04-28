@@ -13,7 +13,7 @@ class ViewTestCase(TestCase):
     '''
     def test_index_redirect(self):
         response = self.client.get('/')
-        self.assertRedirects(response, '/en/', 301)
+        self.assertRedirects(response, '/en/', 302)
 
     def test_index_en(self):
         response = self.client.get('/en/')
