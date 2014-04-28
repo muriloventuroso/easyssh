@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2014-04-25 08:56+0200\n"
+"POT-Creation-Date: 2014-04-28 10:17+0200\n"
 "PO-Revision-Date: 2013-12-05 17:15+0200\n"
 "Last-Translator: Esa Aaltonen <hiidenlintu@mac.com>\n"
 "Language-Team: Finnish <http://l10n.cihar.com/projects/weblate/website/fi/>\n"
@@ -130,71 +130,70 @@ msgctxt "Keyword"
 msgid "translate"
 msgstr "Käännä"
 
-#: weblate_web/html/base.html:36
+#: weblate_web/html/base.html:43
 msgid "Weblate logo"
 msgstr "Weblate logo"
 
-#: weblate_web/html/base.html:38
+#: weblate_web/html/base.html:45
 msgid "Home"
 msgstr "Koti"
 
-#: weblate_web/html/base.html:39
+#: weblate_web/html/base.html:46
 msgid "Blog"
 msgstr "Blogi"
 
-#: weblate_web/html/base.html:40
+#: weblate_web/html/base.html:47
 msgid "Try"
 msgstr "Kokeile"
 
-#: weblate_web/html/base.html:41
+#: weblate_web/html/base.html:48
 msgid "Features"
 msgstr "Ominaisuudet"
 
-#: weblate_web/html/base.html:42
+#: weblate_web/html/base.html:49
 msgid "Docs"
 msgstr "Asiakirjat"
 
-#: weblate_web/html/base.html:43 weblate_web/html/download.html:22
+#: weblate_web/html/base.html:50 weblate_web/html/download.html:22
 msgid "Download"
 msgstr "Lataa"
 
-#: weblate_web/html/base.html:44
+#: weblate_web/html/base.html:51
 msgid "Hosting"
 msgstr "Isännöi"
 
-#: weblate_web/html/base.html:45
+#: weblate_web/html/base.html:52
 msgid "Develop"
 msgstr ""
 
-#: weblate_web/html/base.html:46 weblate_web/html/donate.html:35
+#: weblate_web/html/base.html:53 weblate_web/html/donate.html:35
 msgid "Donate"
 msgstr "Lahjoita"
 
-#: weblate_web/html/base.html:47
+#: weblate_web/html/base.html:54
 msgid "Support"
 msgstr "Tuki"
 
-#: weblate_web/html/base.html:48
+#: weblate_web/html/base.html:55
 msgid "Tour"
 msgstr "Kierros"
 
-#: weblate_web/html/base.html:49
+#: weblate_web/html/base.html:56
 msgid "Thanks"
 msgstr "Kiitos"
 
-#: weblate_web/html/base.html:63
+#: weblate_web/html/base.html:74
 msgid "Help with translations!"
 msgstr "Apua käännöksiin!"
 
-#: weblate_web/html/base.html:84
+#: weblate_web/html/base.html:95
 #, fuzzy, python-format
-#| msgid "Weblate is easy to deploy as an appliance."
 msgid ""
 "Weblate is free software, but welcomes <a href=\"%(donate_url)s\">donations</"
 "a>."
 msgstr "Weblate on helppo ottaa käyttöön laitteen muodossa."
 
-#: weblate_web/html/base.html:85
+#: weblate_web/html/base.html:96
 msgid "Visit us on Google+"
 msgstr ""
 
@@ -253,19 +252,16 @@ msgstr "Käännöksen tila"
 
 #: weblate_web/html/donate.html:4 weblate_web/html/donate.html.py:5
 #, fuzzy
-#| msgid "Contribute to Weblate"
 msgid "Donate to Weblate"
 msgstr "Osallistu Weblateen"
 
 #: weblate_web/html/donate.html:7
 #, fuzzy
-#| msgid "Weblate is easy to deploy as an appliance."
 msgid "Weblate is free, but welcomes donations."
 msgstr "Weblate on helppo ottaa käyttöön laitteen muodossa."
 
 #: weblate_web/html/donate.html:11
 #, fuzzy
-#| msgid "Other options"
 msgid "Regular donations"
 msgstr "Muita vaihtoehtoja"
 
@@ -286,7 +282,6 @@ msgstr ""
 
 #: weblate_web/html/donate.html:25
 #, fuzzy
-#| msgid "Features"
 msgid "Fund features"
 msgstr "Ominaisuudet"
 
@@ -328,7 +323,6 @@ msgstr ""
 
 #: weblate_web/html/donate.html:60
 #, fuzzy
-#| msgid "Donate Bitcoins"
 msgid "Donate using Coinbase"
 msgstr "Lahjoita Bitcoineja"
 
@@ -372,10 +366,6 @@ msgstr "Pilvipalvelun tai emulaattorin kuvia"
 
 #: weblate_web/html/download.html:41
 #, fuzzy, python-format
-#| msgid ""
-#| "In case you want to run Weblate in your cloud or virtual server, you can "
-#| "download appliance based on openSUSE 12.3 at <a href=\"http://susestudio."
-#| "com/a/F8yMYg/weblate\">SUSE Studio Gallery</a>."
 msgid ""
 "In case you want to run Weblate in your cloud or virtual server, you can "
 "download appliance based on openSUSE 12.3 at <a href=\"%(url)s\">SUSE Studio "
@@ -387,9 +377,6 @@ msgstr ""
 
 #: weblate_web/html/download.html:42
 #, fuzzy, python-format
-#| msgid ""
-#| "Check <a href=\"http://docs.weblate.org/en/latest/install.html#appliance"
-#| "\">our documentation</a> for more information about appliance setup."
 msgid ""
 "Check <a href=\"%(url)s\">our documentation</a> for more information about "
 "appliance setup."
@@ -530,7 +517,6 @@ msgstr ""
 
 #: weblate_web/html/features.html:99
 #, fuzzy
-#| msgid "Reports"
 msgid "Reporting"
 msgstr "Raportit"
 
@@ -644,11 +630,6 @@ msgstr ""
 
 #: weblate_web/html/hosting.html:49
 #, fuzzy
-#| msgid ""
-#| "To enable automated workflow on GitHub, you need to enable Weblate "
-#| "service hook in settings with <code>hosted.weblate.org</code> as URL. If "
-#| "you want Weblate to automatically push changes as well, add Weblate user "
-#| "to contributors and let us know you want to use this option."
 msgid ""
 "To enable automated workflow on Bitbucket, you need to add POST hook to "
 "<code>http://hosted.weblate.org/hooks/bitbucket/</code> URL. If you want "
@@ -663,7 +644,6 @@ msgstr ""
 
 #: weblate_web/html/hosting.html:52
 #, fuzzy
-#| msgid "Conditions for free hosting"
 msgid "Support free hosting"
 msgstr "Edellytykset ilmaiseen isännöintiin"
 
@@ -811,7 +791,6 @@ msgstr ""
 
 #: weblate_web/html/thanks.html:4 weblate_web/html/thanks.html.py:5
 #, fuzzy
-#| msgid "Try Weblate"
 msgid "Thanks from Weblate"
 msgstr "Kokeile Weblatea"
 

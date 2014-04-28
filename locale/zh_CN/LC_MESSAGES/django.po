@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2014-04-25 08:56+0200\n"
+"POT-Creation-Date: 2014-04-28 10:17+0200\n"
 "PO-Revision-Date: 2014-02-14 01:56+0200\n"
 "Last-Translator: Huang Zhiyi <hzy980512@126.com>\n"
 "Language-Team: Simplified Chinese <http://l10n.cihar.com/projects/weblate/"
@@ -121,70 +121,70 @@ msgctxt "Keyword"
 msgid "translate"
 msgstr "翻译"
 
-#: weblate_web/html/base.html:36
+#: weblate_web/html/base.html:43
 msgid "Weblate logo"
 msgstr "Weblate 徽标"
 
-#: weblate_web/html/base.html:38
+#: weblate_web/html/base.html:45
 msgid "Home"
 msgstr "主页"
 
-#: weblate_web/html/base.html:39
+#: weblate_web/html/base.html:46
 msgid "Blog"
 msgstr "博客"
 
-#: weblate_web/html/base.html:40
+#: weblate_web/html/base.html:47
 msgid "Try"
 msgstr "试用"
 
-#: weblate_web/html/base.html:41
+#: weblate_web/html/base.html:48
 msgid "Features"
 msgstr "功能"
 
-#: weblate_web/html/base.html:42
+#: weblate_web/html/base.html:49
 msgid "Docs"
 msgstr "文档"
 
-#: weblate_web/html/base.html:43 weblate_web/html/download.html:22
+#: weblate_web/html/base.html:50 weblate_web/html/download.html:22
 msgid "Download"
 msgstr "下载"
 
-#: weblate_web/html/base.html:44
+#: weblate_web/html/base.html:51
 msgid "Hosting"
 msgstr "托管"
 
-#: weblate_web/html/base.html:45
+#: weblate_web/html/base.html:52
 msgid "Develop"
 msgstr "开发"
 
-#: weblate_web/html/base.html:46 weblate_web/html/donate.html:35
+#: weblate_web/html/base.html:53 weblate_web/html/donate.html:35
 msgid "Donate"
 msgstr "捐助"
 
-#: weblate_web/html/base.html:47
+#: weblate_web/html/base.html:54
 msgid "Support"
 msgstr "支持"
 
-#: weblate_web/html/base.html:48
+#: weblate_web/html/base.html:55
 msgid "Tour"
 msgstr "观光"
 
-#: weblate_web/html/base.html:49
+#: weblate_web/html/base.html:56
 msgid "Thanks"
 msgstr "感谢"
 
-#: weblate_web/html/base.html:63
+#: weblate_web/html/base.html:74
 msgid "Help with translations!"
 msgstr "帮我们翻译！"
 
-#: weblate_web/html/base.html:84
+#: weblate_web/html/base.html:95
 #, python-format
 msgid ""
 "Weblate is free software, but welcomes <a href=\"%(donate_url)s\">donations</"
 "a>."
 msgstr "Weblate 是自由软件，但欢迎您的<a href=\"%(donate_url)s\">捐助</a>。"
 
-#: weblate_web/html/base.html:85
+#: weblate_web/html/base.html:96
 msgid "Visit us on Google+"
 msgstr "在Google+上访问我们"
 
@@ -351,10 +351,6 @@ msgstr "云端或模拟器镜像"
 
 #: weblate_web/html/download.html:41
 #, fuzzy, python-format
-#| msgid ""
-#| "In case you want to run Weblate in your cloud or virtual server, you can "
-#| "download appliance based on openSUSE 12.3 at <a href=\"http://susestudio."
-#| "com/a/F8yMYg/weblate\">SUSE Studio Gallery</a>."
 msgid ""
 "In case you want to run Weblate in your cloud or virtual server, you can "
 "download appliance based on openSUSE 12.3 at <a href=\"%(url)s\">SUSE Studio "
@@ -366,9 +362,6 @@ msgstr ""
 
 #: weblate_web/html/download.html:42
 #, fuzzy, python-format
-#| msgid ""
-#| "Check <a href=\"http://docs.weblate.org/en/latest/install.html#appliance"
-#| "\">our documentation</a> for more information about appliance setup."
 msgid ""
 "Check <a href=\"%(url)s\">our documentation</a> for more information about "
 "appliance setup."
@@ -495,7 +488,6 @@ msgstr "Weblate 支持超过 150 多种语言，管理员还可以自己定义�
 
 #: weblate_web/html/features.html:99
 #, fuzzy
-#| msgid "Reports"
 msgid "Reporting"
 msgstr "报告"
 
@@ -604,11 +596,6 @@ msgstr ""
 
 #: weblate_web/html/hosting.html:49
 #, fuzzy
-#| msgid ""
-#| "To enable automated workflow on GitHub, you need to enable Weblate "
-#| "service hook in settings with <code>hosted.weblate.org</code> as URL. If "
-#| "you want Weblate to automatically push changes as well, add Weblate user "
-#| "to contributors and let us know you want to use this option."
 msgid ""
 "To enable automated workflow on Bitbucket, you need to add POST hook to "
 "<code>http://hosted.weblate.org/hooks/bitbucket/</code> URL. If you want "
@@ -762,7 +749,6 @@ msgstr ""
 
 #: weblate_web/html/thanks.html:4 weblate_web/html/thanks.html.py:5
 #, fuzzy
-#| msgid "Try Weblate"
 msgid "Thanks from Weblate"
 msgstr "试用 Weblate"
 
