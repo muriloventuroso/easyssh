@@ -60,10 +60,10 @@ class PagesSitemap(Sitemap):
         return item[2]
 
 # create each section in all languages
-sitemaps = {}
+SITEMAPS = {}
 
 for lang in settings.LANGUAGES:
-    sitemaps[lang[0]] = PagesSitemap(lang[0])
+    SITEMAPS[lang[0]] = PagesSitemap(lang[0])
 
 urlpatterns = i18n_patterns(
     '',
@@ -153,7 +153,7 @@ urlpatterns = i18n_patterns(
     url(
         r'^sitemap\.xml$',
         'django.contrib.sitemaps.views.sitemap',
-        {'sitemaps': sitemaps}
+        {'sitemaps': SITEMAPS}
     ),
 
     # Media files on devel server
