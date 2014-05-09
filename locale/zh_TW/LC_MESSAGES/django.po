@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2014-05-06 11:51+0200\n"
-"PO-Revision-Date: 2014-02-17 18:04+0200\n"
+"PO-Revision-Date: 2014-05-09 19:44+0200\n"
 "Last-Translator: ezjerry liao <ezjerry@gmail.com>\n"
-"Language-Team: Traditional Chinese <https://l10n.cihar.com/projects/weblate/"
-"website/zh_TW/>\n"
+"Language-Team: Traditional Chinese "
+"<https://l10n.cihar.com/projects/weblate/website/zh_TW/>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 1.9-dev\n"
+"X-Generator: Weblate 1.9\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -487,7 +487,6 @@ msgid ""
 msgstr "Weblate 支援超過 150 種語言的全新創意，其它的可以由管理者定義。"
 
 #: weblate_web/html/features.html:99
-#, fuzzy
 msgid "Reporting"
 msgstr "回報"
 
@@ -502,10 +501,9 @@ msgid "Hosting Weblate"
 msgstr "Weblate 主機"
 
 #: weblate_web/html/hosting.html:7
-#, fuzzy
 #| msgid "Weblate offers free hosting for free software."
 msgid "Free continuous translation hosting for free software."
-msgstr "Weblate 提供免費主機給自由軟體。"
+msgstr "給自由軟體連續翻譯的免費主機。"
 
 #: weblate_web/html/hosting.html:11
 msgid "Hosting for free software"
@@ -540,21 +538,21 @@ msgstr ""
 
 #: weblate_web/html/hosting.html:25
 msgid "Asking for hosting"
-msgstr ""
+msgstr "詢問主機"
 
 #: weblate_web/html/hosting.html:28
 msgid ""
 "Contact <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> and include at "
 "least following information:"
-msgstr ""
+msgstr "連絡人 <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> 並且至少包含下列的資訊："
 
 #: weblate_web/html/hosting.html:32
 msgid "Information about your project."
-msgstr ""
+msgstr "關於您的專案的資訊。"
 
 #: weblate_web/html/hosting.html:33
 msgid "Project website."
-msgstr ""
+msgstr "專案網站。"
 
 #: weblate_web/html/hosting.html:34
 msgid "URL of repository with translations."
@@ -566,7 +564,7 @@ msgstr ""
 
 #: weblate_web/html/hosting.html:38
 msgid "Translation workflow"
-msgstr ""
+msgstr "翻譯工作流程"
 
 #: weblate_web/html/hosting.html:41
 msgid ""
@@ -593,7 +591,7 @@ msgstr ""
 
 #: weblate_web/html/hosting.html:52
 msgid "Support free hosting"
-msgstr ""
+msgstr "支援免費主機"
 
 #: weblate_web/html/hosting.html:56
 #, python-format
@@ -602,20 +600,22 @@ msgid ""
 "costs some money, so you are welcome to use <a href=\"%(gittip_url)s"
 "\">Gittip</a> or <a href=\"%(donate_url)s\">other ways to donate</a>."
 msgstr ""
+"主機是免費提供的，但運行伺服器和維護它需要花一些錢，所以歡迎您使用 <a href=\"%(gittip_url)s\">Gittip</a> 或以 <"
+"a href=\"%(donate_url)s\"> 其他方式捐贈</a>。"
 
 #: weblate_web/html/hosting.html:59
 msgid "Commercial hosting"
-msgstr ""
+msgstr "商務主機"
 
 #: weblate_web/html/hosting.html:62
 msgid ""
 "Please contact <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> for more "
 "details."
-msgstr ""
+msgstr "請更多詳細資訊，請連絡 <a href=\"mailto:michal@cihar.com\">Michal Čihař</a>。"
 
 #: weblate_web/html/hosting.html:65
 msgid "Other options"
-msgstr ""
+msgstr "其他選項"
 
 #: weblate_web/html/hosting.html:69 weblate_web/html/try.html:20
 #, python-format
@@ -643,27 +643,27 @@ msgstr "試用我們的示範"
 
 #: weblate_web/html/index.html:21
 msgid "Downloads"
-msgstr ""
+msgstr "下載"
 
 #: weblate_web/html/index.html:25
 msgid "Weblate screenshot"
-msgstr ""
+msgstr "Weblate 螢幕截圖"
 
 #: weblate_web/html/index.html:30
 msgid "See more features…"
-msgstr ""
+msgstr "了解更多的功能…"
 
 #: weblate_web/html/support.html:4 weblate_web/html/support.html.py:5
 msgid "Weblate support"
-msgstr ""
+msgstr "Weblate 支援"
 
 #: weblate_web/html/support.html:7
 msgid "Weblate is a free software with community support."
-msgstr ""
+msgstr "Weblate 是一個自由軟體與社群的支援。"
 
 #: weblate_web/html/support.html:11
 msgid "Bugs or feature requests"
-msgstr ""
+msgstr "Bug 或功能請求"
 
 #: weblate_web/html/support.html:14
 msgid ""
@@ -694,7 +694,7 @@ msgstr ""
 
 #: weblate_web/html/support.html:27
 msgid "IRC"
-msgstr ""
+msgstr "IRC"
 
 #: weblate_web/html/support.html:30
 msgid ""
@@ -713,6 +713,8 @@ msgid ""
 "You can also contact <a href=\"mailto:michal@cihar.com?subject=Weblate"
 "\">Michal Čihař</a>, who is author of Weblate."
 msgstr ""
+"您也可以聯繫 <a href=\"mailto:michal@cihar.com?subject=Weblate\">Michal Čihař</a>，"
+"誰是 Weblate 作者。"
 
 #: weblate_web/html/thanks.html:4 weblate_web/html/thanks.html.py:5
 msgid "Thanks from Weblate"
@@ -720,15 +722,15 @@ msgstr "來自 Weblate 的感謝"
 
 #: weblate_web/html/thanks.html:7
 msgid "Weblate is thankful for help from others."
-msgstr ""
+msgstr "Weblate 感謝其他人的幫助。"
 
 #: weblate_web/html/thanks.html:11
 msgid "Technology"
-msgstr ""
+msgstr "技術"
 
 #: weblate_web/html/thanks.html:13
 msgid "The development of Weblate is based on the following technologies:"
-msgstr ""
+msgstr "Weblate 的開發是基於以下的技術："
 
 #: weblate_web/html/thanks.html:17
 msgid "GitHub provides hosting for our source code and issue tracker."
