@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2014-05-06 11:51+0200\n"
-"PO-Revision-Date: 2014-06-24 03:25+0200\n"
+"PO-Revision-Date: 2014-06-25 07:16+0200\n"
 "Last-Translator: shanyan baishui <Siramizu@gmail.com>\n"
 "Language-Team: Simplified Chinese "
 "<https://l10n.cihar.com/projects/weblate/website/zh_CN/>\n"
@@ -167,7 +167,7 @@ msgstr "支持"
 
 #: weblate_web/html/base.html:55
 msgid "Tour"
-msgstr "观光"
+msgstr "简介"
 
 #: weblate_web/html/base.html:56
 msgid "Thanks"
@@ -269,17 +269,17 @@ msgstr "Gittip 可让您用信用卡每周捐助一些。"
 
 #: weblate_web/html/donate.html:25
 msgid "Fund features"
-msgstr "捐赠号召"
+msgstr "众筹"
 
 #: weblate_web/html/donate.html:28
 msgid "Fund on Bountysource"
-msgstr "在Bountysource上捐赠"
+msgstr "通过 Bountysource 众筹"
 
 #: weblate_web/html/donate.html:32
 msgid ""
 "Bountysource allows you to fund individual features which are reported on "
 "our issue tracker."
-msgstr "Bountysource可以让您单独捐赠给已报出来的问题追踪列表中的某一特性。"
+msgstr "您可以通过 Bountysource 对我们问题追踪器里的任意独立功能发起众筹。"
 
 #: weblate_web/html/donate.html:38
 msgid ""
@@ -345,27 +345,24 @@ msgstr ""
 
 #: weblate_web/html/download.html:38
 msgid "Cloud or emulator images"
-msgstr "云端或模拟器镜像"
+msgstr "云或模拟器映像"
 
 #: weblate_web/html/download.html:41
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "In case you want to run Weblate in your cloud or virtual server, you can "
 "download appliance based on openSUSE 12.3 at <a href=\"%(url)s\">SUSE Studio "
 "Gallery</a>."
 msgstr ""
-"如果您想在您的云或虚拟服务器上运行 Weblate，您可以到 <a href=\"http://"
-"susestudio.com/a/F8yMYg/weblate\">SUSE 工作室回廊</a>下载基于 openSUSE 12.3 "
-"的套件。"
+"如果您想在您的云或虚拟服务器上运行 Weblate，您可以到 <a href=\"%(url)s\">SUSE 工作室回廊</a>下载基于 "
+"openSUSE 12.3 的套件。"
 
 #: weblate_web/html/download.html:42
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "Check <a href=\"%(url)s\">our documentation</a> for more information about "
 "appliance setup."
-msgstr ""
-"请看<a href=\"http://docs.weblate.org/en/latest/install.html#appliance\">我们"
-"的文档</a>关于安装的更多信息。"
+msgstr "请看<a href=\"%(url)s\">我们的文档</a>关于安装的更多信息。"
 
 #: weblate_web/html/download.html:46
 msgid ""
@@ -485,7 +482,6 @@ msgid ""
 msgstr "Weblate 支持超过 150 多种语言，管理员还可以自己定义。"
 
 #: weblate_web/html/features.html:99
-#, fuzzy
 msgid "Reporting"
 msgstr "报告"
 
@@ -500,10 +496,9 @@ msgid "Hosting Weblate"
 msgstr "Weblate 托管"
 
 #: weblate_web/html/hosting.html:7
-#, fuzzy
 #| msgid "Weblate offers free hosting for free software."
 msgid "Free continuous translation hosting for free software."
-msgstr "Weblate 为自由软件提供免费托管。"
+msgstr "为自由软件持续提供免费的翻译托管。"
 
 #: weblate_web/html/hosting.html:11
 msgid "Hosting for free software"
@@ -571,7 +566,7 @@ msgstr "代码库中翻译的路径。"
 
 #: weblate_web/html/hosting.html:38
 msgid "Translation workflow"
-msgstr "翻译流程"
+msgstr "翻译工作流"
 
 #: weblate_web/html/hosting.html:41
 msgid ""
@@ -579,9 +574,8 @@ msgid ""
 "with similar naming as on website - hello/master translation would be "
 "published as <code>git://git.weblate.org/hello-master.git</code>."
 msgstr ""
-"所有已翻译的仓库均可以在<code>git.weblate.org</code>找到，用于网站相似的命名"
-"方式 - hello/master 翻译将被发布在<code>git://git.weblate.org/hello-master."
-"git</code>。"
+"所有已翻译的代码库均以网站上相似的名称在 <code>git.weblate.org</code> 中命名 - hello/master "
+"的翻译将被发布在 <code>git://git.weblate.org/hello-master.git</code>。"
 
 #: weblate_web/html/hosting.html:45
 msgid ""
@@ -590,21 +584,20 @@ msgid ""
 "Weblate to automatically push changes as well, add Weblate user to "
 "contributors and let us know you want to use this option."
 msgstr ""
-"要使用GitHub上的自动流程，你需要在设定中用<code>hosted.weblate.org</code>作为"
-"URL以启用Weblate service hook. 如你也想Weblate自动推送更改，增加Weblate用户到"
-"贡献者，请让我们知晓您想要使用这个选项。"
+"若要使用 GitHub 的自动工作流，您需要在设置中启用 Weblate 服务钩子并将 URL 设置为 "
+"<code>hosted.weblate.org</code>。若您想 Weblate 能自动推送修改以及能自动将 Weblate "
+"用户加为贡献者，请告诉我们您需要该功能。"
 
 #: weblate_web/html/hosting.html:49
-#, fuzzy
 msgid ""
 "To enable automated workflow on Bitbucket, you need to add POST hook to "
 "<code>http://hosted.weblate.org/hooks/bitbucket/</code> URL. If you want "
 "Weblate to automatically push changes as well, give Weblate user write "
 "permission to your repository and let us know you want to use this option."
 msgstr ""
-"要使用GitHub上的自动流程，你需要在设定中用<code>hosted.weblate.org</code>作为"
-"URL以启用Weblate service hook. 如你也想Weblate自动推送更改，增加Weblate用户到"
-"贡献者，请让我们知晓您想要使用这个选项。"
+"若要使用 Bitbucket 的自动工作流，您需要添加 POST 钩子 URL 为 "
+"<code>http://hosted.weblate.org/hooks/bitbucket/</code>。若您想 Weblate 能自动推送修改，"
+"请给 Weblate 用户对您代码库的写入权限并告诉我们您需要该功能。"
 
 #: weblate_web/html/hosting.html:52
 msgid "Support free hosting"
@@ -748,45 +741,44 @@ msgstr ""
 "Čihař</a>，Weblate 的作者。"
 
 #: weblate_web/html/thanks.html:4 weblate_web/html/thanks.html.py:5
-#, fuzzy
 msgid "Thanks from Weblate"
-msgstr "试用 Weblate"
+msgstr "来自 Weblate 的感谢"
 
 #: weblate_web/html/thanks.html:7
 msgid "Weblate is thankful for help from others."
-msgstr ""
+msgstr "Weblate 衷心感谢大家的帮助。"
 
 #: weblate_web/html/thanks.html:11
 msgid "Technology"
-msgstr ""
+msgstr "技术"
 
 #: weblate_web/html/thanks.html:13
 msgid "The development of Weblate is based on the following technologies:"
-msgstr ""
+msgstr "Weblate 的开发基于下列技术的支持："
 
 #: weblate_web/html/thanks.html:17
 msgid "GitHub provides hosting for our source code and issue tracker."
-msgstr ""
+msgstr "GitHub 为我们的源代码和问题追踪器提供托管。"
 
 #: weblate_web/html/thanks.html:21
 msgid "Travis CI is our continuous integration platform."
-msgstr ""
+msgstr "Travis CI 是我们的持续集成平台。"
 
 #: weblate_web/html/thanks.html:25
 msgid "Coveralls helps us to monitor code coverage of our test suite."
-msgstr ""
+msgstr "Coveralls 帮助我们监控测试套件的代码覆盖率。"
 
 #: weblate_web/html/thanks.html:29
 msgid "Sauce Labs is running our Selenium tests in real browsers."
-msgstr ""
+msgstr "Sauce Labs 在真正的浏览器中运行我们的 Selenium 测试。"
 
 #: weblate_web/html/tour.html:4 weblate_web/html/tour.html.py:5
 msgid "Weblate tour"
-msgstr "浏览Weblate"
+msgstr "Weblate 简介"
 
 #: weblate_web/html/tour.html:7
 msgid "Weblate has useful features for every translation."
-msgstr "Weblate针对每一翻译均有有效的特性。"
+msgstr "Weblate 对每个翻译都能提供相当实用的功能。"
 
 #: weblate_web/html/try.html:4 weblate_web/html/try.html.py:5
 msgid "Try Weblate"
