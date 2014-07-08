@@ -66,6 +66,7 @@ TIME_ZONE = 'Europe/Prague'
 LANGUAGE_CODE = 'en-us'
 
 LANGUAGES = (
+    ('az', u'Azərbaycan'),
     ('be', u'Беларуская'),
     ('br', u'Brezhoneg'),
     ('cs', u'Čeština'),
