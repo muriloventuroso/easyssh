@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2014-05-06 11:51+0200\n"
-"PO-Revision-Date: 2014-02-03 17:46+0200\n"
-"Last-Translator: Bartosz Feński <fenio@debian.org>\n"
-"Language-Team: Polish <http://l10n.cihar.com/projects/weblate/website/pl/>\n"
+"PO-Revision-Date: 2014-08-17 10:38+0200\n"
+"Last-Translator: Stanisław Krukowski <stankruk@neostrada.pl>\n"
+"Language-Team: Polish <https://l10n.cihar.com/projects/weblate/website/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 1.9-dev\n"
+"X-Generator: Weblate 1.10-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -154,7 +154,7 @@ msgstr "Cechy"
 
 #: weblate_web/html/base.html:49
 msgid "Docs"
-msgstr "Docs"
+msgstr "Dokumenty"
 
 #: weblate_web/html/base.html:50 weblate_web/html/download.html:22
 msgid "Download"
@@ -162,7 +162,7 @@ msgstr "Pobierz"
 
 #: weblate_web/html/base.html:51
 msgid "Hosting"
-msgstr "Serwer hostingowy"
+msgstr "Hosting"
 
 #: weblate_web/html/base.html:52
 msgid "Develop"
@@ -199,7 +199,7 @@ msgstr ""
 
 #: weblate_web/html/base.html:96
 msgid "Visit us on Google+"
-msgstr ""
+msgstr "Odwiedź nas na Google+"
 
 #: weblate_web/html/contribute.html:4 weblate_web/html/contribute.html.py:5
 msgid "Contribute to Weblate"
@@ -524,9 +524,8 @@ msgstr ""
 "administratora."
 
 #: weblate_web/html/features.html:99
-#, fuzzy
 msgid "Reporting"
-msgstr "Raporty"
+msgstr "Raportowanie"
 
 #: weblate_web/html/features.html:100
 msgid ""
@@ -541,10 +540,9 @@ msgid "Hosting Weblate"
 msgstr "Hostowanie Weblate"
 
 #: weblate_web/html/hosting.html:7
-#, fuzzy
 #| msgid "Weblate offers free hosting for free software."
 msgid "Free continuous translation hosting for free software."
-msgstr "Weblate oferuje darmowy hosting do darmowego oprogramowania."
+msgstr "Weblate oferuje darmowy hosting tłumaczeń do darmowego oprogramowania."
 
 #: weblate_web/html/hosting.html:11
 msgid "Hosting for free software"
@@ -643,23 +641,22 @@ msgstr ""
 "opcji."
 
 #: weblate_web/html/hosting.html:49
-#, fuzzy
 msgid ""
 "To enable automated workflow on Bitbucket, you need to add POST hook to "
 "<code>http://hosted.weblate.org/hooks/bitbucket/</code> URL. If you want "
 "Weblate to automatically push changes as well, give Weblate user write "
 "permission to your repository and let us know you want to use this option."
 msgstr ""
-"Aby włączyć automatyczny przepływ pracy GitHub, musisz włączyć połaczenie "
-"usługi Weblate w ustawieniach z <code> hosted.weblate.org </code> jako URL. "
-"Jeśli chcesz także, aby Weblate automatycznie dokonywało zmian, dodaj "
-"użytkownika Weblate do autorów i daj nam znać, jeśli chcesz skorzystać z tej "
-"opcji."
+"Aby włączyć automatyczny przepływ pracy w Bitbucket, musisz włączyć "
+"przyjęcie danych (hook) POST do URL "
+"<code>hosted.weblate.org/hooks/bitbucket</code>. Jeśli chcesz również, aby "
+"Weblate automatycznie dokonywała zmian, dodaj użytkownikowi Weblate "
+"pozwolenie na zapis w swoim repozytorium, i daj nam znać, że chcesz "
+"skorzystać z tej opcji."
 
 #: weblate_web/html/hosting.html:52
-#, fuzzy
 msgid "Support free hosting"
-msgstr "Warunki darmowego hostingu"
+msgstr "Wsparcie dla darmowego hostingu"
 
 #: weblate_web/html/hosting.html:56
 #, python-format
@@ -804,37 +801,41 @@ msgstr ""
 "subject=Weblate\">Michal Čihař</a>, który jest autorem Weblate."
 
 #: weblate_web/html/thanks.html:4 weblate_web/html/thanks.html.py:5
-#, fuzzy
 msgid "Thanks from Weblate"
-msgstr "Wypróbuj Weblate"
+msgstr "Podziękowania od Weblate"
 
 #: weblate_web/html/thanks.html:7
 msgid "Weblate is thankful for help from others."
-msgstr ""
+msgstr "Weblate jest wdzięczna za pomoc innych osób."
 
 #: weblate_web/html/thanks.html:11
 msgid "Technology"
-msgstr ""
+msgstr "Technologia"
 
 #: weblate_web/html/thanks.html:13
 msgid "The development of Weblate is based on the following technologies:"
-msgstr ""
+msgstr "Rozwój Weblate oparty jest na następujących technologiach:"
 
 #: weblate_web/html/thanks.html:17
 msgid "GitHub provides hosting for our source code and issue tracker."
 msgstr ""
+"GitHub zapewnia hosting dla naszego kodu źródłowego i do śledzenia błędów."
 
 #: weblate_web/html/thanks.html:21
 msgid "Travis CI is our continuous integration platform."
-msgstr ""
+msgstr "Travis CI jest naszą platformą ciągłej integracji."
 
 #: weblate_web/html/thanks.html:25
+#, fuzzy
 msgid "Coveralls helps us to monitor code coverage of our test suite."
 msgstr ""
+"Coveralls pomaga nam monitorować zakres (zasięg) kodu naszego pakietu "
+"testowego."
 
 #: weblate_web/html/thanks.html:29
 msgid "Sauce Labs is running our Selenium tests in real browsers."
 msgstr ""
+"Sauce Labs uruchamia nasze testy Selenium w rzeczywistych przeglądarkach."
 
 #: weblate_web/html/tour.html:4 weblate_web/html/tour.html.py:5
 msgid "Weblate tour"
