@@ -215,12 +215,9 @@ LOGGING = {
 
 FILES_PATH = os.path.join(BASE_DIR, 'files')
 FILES_URL = 'http://dl.cihar.com/weblate/'
-LOCALE_PATHS = os.path.join(BASE_DIR, '..', 'locale')
-
-LOCALE_INDEPENDENT_PATHS = (
-    r'^/sitemap.xml$',
+LOCALE_PATHS = (
+    os.path.join(BASE_DIR, '..', 'locale'),
 )
-LOCALEURL_USE_ACCEPT_LANGUAGE = True
 
 ALLOWED_HOSTS = ('weblate.org', '127.0.0.1')
 
