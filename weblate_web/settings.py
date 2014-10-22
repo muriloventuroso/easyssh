@@ -19,7 +19,7 @@
 #
 
 #
-# Django settings for weblate project.
+# Django settings for weblate website project.
 #
 
 import os
@@ -50,7 +50,7 @@ DATABASES = {
     }
 }
 
-WEB_ROOT = os.path.dirname(os.path.abspath(__file__))
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
@@ -112,7 +112,7 @@ USE_TZ = False
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/home/media/media.lawrence.com/media/"
-MEDIA_ROOT = '%s/media/' % WEB_ROOT
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
@@ -159,8 +159,8 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 )
 
 MIDDLEWARE_CLASSES = (
-    'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.common.CommonMiddleware',
     'django.middleware.locale.LocaleMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -170,15 +170,12 @@ MIDDLEWARE_CLASSES = (
 
 ROOT_URLCONF = 'weblate_web.urls'
 
-# Python dotted path to the WSGI application used by Django's runserver.
-WSGI_APPLICATION = 'weblate_web.wsgi.application'
-
 TEMPLATE_DIRS = (
-    # Put strings here, like "/home/html/django_templates" or
-    # "C:/www/django/templates".
+    # Put strings here, like "/home/html/django_templates"
+    # or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    '%s/html/' % WEB_ROOT,
+    os.path.join(BASE_DIR, 'html'),
 )
 
 INSTALLED_APPS = (
@@ -205,7 +202,7 @@ LOGGING = {
             'level': 'ERROR',
             'filters': ['require_debug_false'],
             'class': 'django.utils.log.AdminEmailHandler'
-        }
+        },
     },
     'loggers': {
         'django.request': {
@@ -216,9 +213,9 @@ LOGGING = {
     }
 }
 
-FILES_PATH = '%s/files/' % WEB_ROOT
+FILES_PATH = os.path.join(BASE_DIR, 'files')
 FILES_URL = 'http://dl.cihar.com/weblate/'
-LOCALE_PATHS = ('%s/../locale' % WEB_ROOT, )
+LOCALE_PATHS = os.path.join(BASE_DIR, '..', 'locale')
 
 LOCALE_INDEPENDENT_PATHS = (
     r'^/sitemap.xml$',
@@ -228,3 +225,6 @@ LOCALEURL_USE_ACCEPT_LANGUAGE = True
 ALLOWED_HOSTS = ('weblate.org', '127.0.0.1')
 
 SESSION_ENGINE = "django.contrib.sessions.backends.signed_cookies"
+
+# Force sane test runner
+TEST_RUNNER = 'django.test.runner.DiscoverRunner'
