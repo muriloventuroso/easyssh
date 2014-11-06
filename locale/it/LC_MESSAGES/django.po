@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2014-11-04 13:08+0100\n"
-"PO-Revision-Date: 2013-12-06 18:45+0200\n"
-"Last-Translator: Giorgio Zanetti <gz77it@gmail.com>\n"
-"Language-Team: Italian <http://hosted.weblate.org/projects/weblate/website/"
-"it/>\n"
+"PO-Revision-Date: 2014-11-06 13:13+0200\n"
+"Last-Translator: Lele Gaifax <lele@metapensiero.it>\n"
+"Language-Team: Italian "
+"<https://hosted.weblate.org/projects/weblate/website/it/>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 1.9-dev\n"
+"X-Generator: Weblate 2.0-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -245,7 +245,7 @@ msgstr ""
 
 #: weblate_web/html/contribute.html:33
 msgid "Translate"
-msgstr "Tranduci"
+msgstr "Traduci"
 
 #: weblate_web/html/contribute.html:36
 msgid ""
@@ -456,7 +456,6 @@ msgid "File formats"
 msgstr "Formati file"
 
 #: weblate_web/html/features.html:34
-#, fuzzy
 #| msgid ""
 #| "Weblate supports all widely used file formats for localisation like "
 #| "Gettext or resource strings."
@@ -465,7 +464,7 @@ msgid ""
 "JSON, XLIFF or resource strings."
 msgstr ""
 "Weblate supporta tutti i più diffusi formati di file per la localizzazione "
-"come Gettext o stringhe di risorsa."
+"come Gettext, JSON, XLIFF o stringhe di risorsa."
 
 #: weblate_web/html/features.html:39
 msgid "Branches support"
@@ -663,18 +662,17 @@ msgstr ""
 "farci sapere che volete usare questa opzione."
 
 #: weblate_web/html/hosting.html:49
-#, fuzzy
 msgid ""
 "To enable automated workflow on Bitbucket, you need to add POST hook to "
 "<code>http://hosted.weblate.org/hooks/bitbucket/</code> URL. If you want "
 "Weblate to automatically push changes as well, give Weblate user write "
 "permission to your repository and let us know you want to use this option."
 msgstr ""
-"Per abilitare il flusso di lavoro automatizzato su GitHub è necessario "
-"abilitare il service hook di Weblate nei settaggi inserendo <code>hosted."
-"weblate.org</code> come URL. Se volete che Weblate invii automaticamente "
-"anche le modifiche dovrete aggiungere l'utente Weblate ai contrubutori a "
-"farci sapere che volete usare questa opzione."
+"Per abilitare il flusso di lavoro automatizzato su Bitbucket, è necessario "
+"aggiungere un POST hook all'URL "
+"<code>http://hosted.weblate.org/hooks/bitbucket/</code>. Se volete che "
+"Weblate invii automaticamente anche le modifiche dovrete dare il permesso di "
+"scrittura all'utente Weblate e farci sapere che volete usare questa opzione."
 
 #: weblate_web/html/hosting.html:52
 msgid "Support free hosting"
@@ -723,7 +721,6 @@ msgid "Weblate - web-based translation"
 msgstr "Weblate - traduzione web-based"
 
 #: weblate_web/html/index.html:15
-#, fuzzy
 #| msgid ""
 #| "Weblate is a free web-based translation tool with tight Git integration. "
 #| "It features simple and clean user interface, propagation of translations "
@@ -735,7 +732,7 @@ msgid ""
 msgstr ""
 "Weblate è uno strumento di traduzione web-based gratuito con una stretta "
 "integrazione con Git. Fornisce una semplice e chiara interfaccia utente, "
-"propagazione delle traduzioni verso sub-progetti, controlli della qualità e "
+"propagazione delle traduzioni tra vari componenti, controlli della qualità e "
 "linking automatico ai sorgenti."
 
 #: weblate_web/html/index.html:19
