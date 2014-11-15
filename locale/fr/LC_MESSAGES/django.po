@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2014-11-14 15:15+0100\n"
-"PO-Revision-Date: 2014-11-06 22:01+0200\n"
+"PO-Revision-Date: 2014-11-15 23:23+0200\n"
 "Last-Translator: Ldm Public <ldmpub@gmail.com>\n"
-"Language-Team: French <https://hosted.weblate.org/projects/weblate/website/"
-"fr/>\n"
+"Language-Team: French "
+"<https://hosted.weblate.org/projects/weblate/website/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2.0\n"
+"X-Generator: Weblate 2.1-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -555,20 +555,22 @@ msgid ""
 msgstr "Weblate génère divers rapports à propos de l'activité du project."
 
 #: weblate_web/html/features.html:105
-#, fuzzy
 #| msgid "Access control"
 msgid "Version control"
-msgstr "Contrôle d'accès"
+msgstr "Contrôle de version"
 
 #: weblate_web/html/features.html:106
 msgid ""
 "Weblate talks directly with your version control system, currently Git and "
 "Mercurial are suppored."
 msgstr ""
+"Weblate s'intègre directement avec votre système de contrôle de version, "
+"actuellement Git et Mercurial."
 
 #: weblate_web/html/features.html:111
+#, fuzzy
 msgid "Collaboration sites"
-msgstr ""
+msgstr "Sites de collaboration"
 
 #: weblate_web/html/features.html:112
 msgid ""
@@ -578,13 +580,15 @@ msgstr ""
 
 #: weblate_web/html/features.html:117
 msgid "Responsive UI"
-msgstr ""
+msgstr "Interface utilisateur adaptative"
 
 #: weblate_web/html/features.html:118
 msgid ""
 "Weblate has responsible UI which will work nicely on your desktop, tablet or "
 "phone."
 msgstr ""
+"Weblate possède une interface utilisateur adaptative et fonctionne aussi "
+"bien depuis un ordinateur, une tablette ou un téléphone."
 
 #: weblate_web/html/hosting.html:4 weblate_web/html/hosting.html.py:5
 msgid "Hosting Weblate"
@@ -751,7 +755,6 @@ msgid "Weblate - web-based translation"
 msgstr "Weblate - traduction sur le web"
 
 #: weblate_web/html/index.html:15
-#, fuzzy
 #| msgid ""
 #| "Weblate is a free web-based translation tool with tight Git integration. "
 #| "It features simple and clean user interface, propagation of translations "
@@ -762,10 +765,11 @@ msgid ""
 "translations across components, quality checks and automatic linking to "
 "source files."
 msgstr ""
-"Weblate est un outil de traduction sur le web fortement lié à Git. A travers "
-"une interface utilisateur claire et simple, Weblate permet la propagation de "
-"traductions entre sous-projets, peut vérifier la qualité des traductions et "
-"est automatiquement lié aux fichiers sources."
+"Weblate est un outil de traduction en mode web fortement lié aux systèmes de "
+"contrôle de versions. A travers une interface utilisateur claire et simple, "
+"Weblate permet la propagation de traductions entre sous-projets, peut "
+"vérifier la qualité des traductions et est automatiquement lié aux fichiers "
+"sources."
 
 #: weblate_web/html/index.html:19
 msgid "Try our demo"
