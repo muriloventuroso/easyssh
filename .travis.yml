@@ -14,3 +14,4 @@ script:
   - pylint --reports=n --rcfile=pylint.rc weblate_web
 after_success:
   - coveralls
+sudo: false
