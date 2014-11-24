@@ -57,6 +57,7 @@ class PagesSitemap(Sitemap):
             return item[1] * 3 / 4
 
     def changefreq(self, item):
+        # pylint: disable=R0201
         return item[2]
 
 # create each section in all languages
