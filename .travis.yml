@@ -3,8 +3,8 @@ python:
   - "2.7"
 # commands to install dependencies
 install: 
-  - pip install --use-mirrors -r requirements.txt
-  - pip install --use-mirrors -r requirements-test.txt
+  - pip install --download-cache ~/.pip-cache -r requirements.txt
+  - pip install --download-cache ~/.pip-cache -r requirements-test.txt
 # commands to run tests
 script: 
   - ./scripts/generate-locales
@@ -15,3 +15,6 @@ script:
 after_success:
   - coveralls
 sudo: false
+cache:
+  directories:
+    - $HOME/.pip-cache/
