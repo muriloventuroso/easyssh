@@ -8,17 +8,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2014-11-14 15:15+0100\n"
-"PO-Revision-Date: 2014-08-26 00:05+0200\n"
-"Last-Translator: Kastuś Kašenia <KKaszenia@tut.by>\n"
-"Language-Team: Belarusian <https://hosted.weblate.org/projects/weblate/"
-"website/be/>\n"
+"PO-Revision-Date: 2014-12-18 09:18+0200\n"
+"Last-Translator: Viktar Palstsiuk <vipals@gmail.com>\n"
+"Language-Team: Belarusian "
+"<https://hosted.weblate.org/projects/weblate/website/be/>\n"
 "Language: be\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 1.10-dev\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 2.2-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -445,7 +445,6 @@ msgid "File formats"
 msgstr "Фарматы файлаў"
 
 #: weblate_web/html/features.html:34
-#, fuzzy
 #| msgid ""
 #| "Weblate supports all widely used file formats for localisation like "
 #| "Gettext or resource strings."
@@ -454,7 +453,7 @@ msgid ""
 "JSON, XLIFF or resource strings."
 msgstr ""
 "Weblate падтрымлівае ўсе шырока-ўжываныя фарматы файлаў лакалізацый, як "
-"Gettext альбо рэсурсы."
+"Gettext, JSON, XLIFF альбо рэсурсы."
 
 #: weblate_web/html/features.html:39
 msgid "Branches support"
@@ -540,36 +539,41 @@ msgstr ""
 "Weblate генеруе розныя справаздачы, даючы інфармацыю пра актыўнасць праекта."
 
 #: weblate_web/html/features.html:105
-#, fuzzy
 #| msgid "Access control"
 msgid "Version control"
-msgstr "Кантроль доступу"
+msgstr "Кантроль версій"
 
 #: weblate_web/html/features.html:106
 msgid ""
 "Weblate talks directly with your version control system, currently Git and "
 "Mercurial are suppored."
 msgstr ""
+"Weblate узаемадзейнічае напрамую з вашай сістэмай кантролю версій, на "
+"дадзены момант падтрымліваюцца Git і Mercurial."
 
 #: weblate_web/html/features.html:111
 msgid "Collaboration sites"
-msgstr ""
+msgstr "Сайты сумеснай працы"
 
 #: weblate_web/html/features.html:112
 msgid ""
 "Weblate has native support for many software development sites such as "
 "GitHub, Bitbucket or Gitlab."
 msgstr ""
+"Weblate падтрымлівае мноства сайтаў для распрацоўкі ПЗ, такіх як GitHub, "
+"BitBucket або Gitlab."
 
 #: weblate_web/html/features.html:117
 msgid "Responsive UI"
-msgstr ""
+msgstr "Спагадлівы інтэрфейс"
 
 #: weblate_web/html/features.html:118
 msgid ""
 "Weblate has responsible UI which will work nicely on your desktop, tablet or "
 "phone."
 msgstr ""
+"Weblate мае спагадлівы інтэрфейс, які будзе працаваць добра на вашым ПК, "
+"планшэце ці тэлефоне."
 
 #: weblate_web/html/hosting.html:4 weblate_web/html/hosting.html.py:5
 msgid "Hosting Weblate"
@@ -733,7 +737,6 @@ msgid "Weblate - web-based translation"
 msgstr "Weblate — вэб-інструмент для перакладаў"
 
 #: weblate_web/html/index.html:15
-#, fuzzy
 #| msgid ""
 #| "Weblate is a free web-based translation tool with tight Git integration. "
 #| "It features simple and clean user interface, propagation of translations "
@@ -744,9 +747,9 @@ msgid ""
 "translations across components, quality checks and automatic linking to "
 "source files."
 msgstr ""
-"Weblate — гэта дармавы вэб-інструмент для перакладаў з шчыльнай Git-"
-"інтэграцыяй. Вылучаецца простым і чыстым карыстальніцкім інтэрфейсам, "
-"прапісваннем перакладаў у падпраектах, праверкай якасці і аўтаматычнай "
+"Weblate — гэта дармавы вэб-інструмент для перакладаў са шчыльнай інтэграцыяй "
+"кантролю версій. Вылучаецца простым і чыстым карыстальніцкім інтэрфейсам, "
+"прапісваннем перакладаў у кампанентах, праверкай якасці і аўтаматычнай "
 "прывязкай да файлаў з зыходнікамі."
 
 #: weblate_web/html/index.html:19
