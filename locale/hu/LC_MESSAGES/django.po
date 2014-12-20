@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2014-11-14 15:15+0100\n"
-"PO-Revision-Date: 2013-11-24 09:34+0200\n"
-"Last-Translator: János Néhrer <iiamnot@gmail.com>\n"
-"Language-Team: Hungarian <http://hosted.weblate.org/projects/weblate/website/"
-"hu/>\n"
+"PO-Revision-Date: 2014-12-20 16:53+0200\n"
+"Last-Translator: Balázs Úr <urbalazs@gmail.com>\n"
+"Language-Team: Hungarian "
+"<https://hosted.weblate.org/projects/weblate/website/hu/>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 1.9-dev\n"
+"X-Generator: Weblate 2.2-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -197,7 +197,7 @@ msgstr ""
 
 #: weblate_web/html/base.html:96
 msgid "Visit us on Google+"
-msgstr ""
+msgstr "Nézzen meg minket a Google+-on"
 
 #: weblate_web/html/contribute.html:4 weblate_web/html/contribute.html.py:5
 msgid "Contribute to Weblate"
@@ -446,7 +446,6 @@ msgid "File formats"
 msgstr "Fájlformátumok"
 
 #: weblate_web/html/features.html:34
-#, fuzzy
 #| msgid ""
 #| "Weblate supports all widely used file formats for localisation like "
 #| "Gettext or resource strings."
@@ -455,7 +454,7 @@ msgid ""
 "JSON, XLIFF or resource strings."
 msgstr ""
 "A Weblate minden széles körben elterjedt fájlformátumot támogat, mind "
-"például a Gettext vagy a forrás-sztringek."
+"például a Gettext, JSON, XLIFF vagy erőforrás szövegek."
 
 #: weblate_web/html/features.html:39
 msgid "Branches support"
@@ -532,9 +531,8 @@ msgstr ""
 "rendszergazda továbbiakat adhat meg."
 
 #: weblate_web/html/features.html:99
-#, fuzzy
 msgid "Reporting"
-msgstr "Jelentések"
+msgstr "Jelentés"
 
 #: weblate_web/html/features.html:100
 msgid ""
@@ -545,46 +543,50 @@ msgstr ""
 "aktivitásáról."
 
 #: weblate_web/html/features.html:105
-#, fuzzy
 #| msgid "Access control"
 msgid "Version control"
-msgstr "Hozzáférés-kezelés"
+msgstr "Verziókezelés"
 
 #: weblate_web/html/features.html:106
 msgid ""
 "Weblate talks directly with your version control system, currently Git and "
 "Mercurial are suppored."
 msgstr ""
+"A Weblate közvetlenül a verziókezelő rendszerével kommunikál, jelenleg a Git "
+"és Mercurial támogatott."
 
 #: weblate_web/html/features.html:111
 msgid "Collaboration sites"
-msgstr ""
+msgstr "Együttműködési oldalak"
 
 #: weblate_web/html/features.html:112
 msgid ""
 "Weblate has native support for many software development sites such as "
 "GitHub, Bitbucket or Gitlab."
 msgstr ""
+"A Weblate natív támogatással rendelkezik számos szoftverfejlesztési "
+"oldalhoz, úgymint GitHub, Bitbucket vagy Gitlab."
 
 #: weblate_web/html/features.html:117
 msgid "Responsive UI"
-msgstr ""
+msgstr "Alkalmazkodó felület"
 
 #: weblate_web/html/features.html:118
 msgid ""
 "Weblate has responsible UI which will work nicely on your desktop, tablet or "
 "phone."
 msgstr ""
+"A Weblate alkalmazkodó felülettel rendelkezik, amely szépen működik asztali "
+"számítógépen, táblagépen és telefonon."
 
 #: weblate_web/html/hosting.html:4 weblate_web/html/hosting.html.py:5
 msgid "Hosting Weblate"
 msgstr "Hosting Weblate"
 
 #: weblate_web/html/hosting.html:7
-#, fuzzy
 #| msgid "Weblate offers free hosting for free software."
 msgid "Free continuous translation hosting for free software."
-msgstr "A Weblate ingyenes elhelyezést biztosít ingyenes szoftverek számára."
+msgstr "Ingyenes folyamatos fordítási tárhely szabad szoftverhez."
 
 #: weblate_web/html/hosting.html:11
 msgid "Hosting for free software"
@@ -741,7 +743,6 @@ msgid "Weblate - web-based translation"
 msgstr "Weblate - webes fordítás"
 
 #: weblate_web/html/index.html:15
-#, fuzzy
 #| msgid ""
 #| "Weblate is a free web-based translation tool with tight Git integration. "
 #| "It features simple and clean user interface, propagation of translations "
@@ -752,11 +753,11 @@ msgid ""
 "translations across components, quality checks and automatic linking to "
 "source files."
 msgstr ""
-"A Weblate egy ingyenes, webes fordítóeszköz, mely szorosan integrált a "
-"Gittel. Többek között letisztult, egyszerű felhasználó felülettel, a "
-"fordítások alprojektekre történő kiterjesztésével, valamint "
-"minőségellenőrzéssel rendelkezik. Ezen kívül képes a forrásállományok "
-"automatikus belinkelésére is."
+"A Weblate egy ingyenes, webes fordítóeszköz szorosan integrált "
+"verziókezelővel. Többek között letisztult, egyszerű felhasználói felülettel, "
+"a fordítások komponensekre történő kiterjesztésével, valamint minőség-"
+"ellenőrzéssel rendelkezik. Ezen kívül képes a forrásállományok automatikus "
+"belinkelésére is."
 
 #: weblate_web/html/index.html:19
 msgid "Try our demo"
