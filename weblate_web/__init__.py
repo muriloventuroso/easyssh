@@ -26,4 +26,3 @@ import re
 django.utils.translation.trans_real.language_code_re = re.compile(
     r'^[a-z]{1,8}(?:-[a-z0-9]{1,8})*(?:@[a-z0-9]{1,20})?$', re.IGNORECASE
 )
-
