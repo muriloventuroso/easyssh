@@ -68,6 +68,7 @@ LANGUAGE_CODE = 'en-us'
 LANGUAGES = (
     ('az', u'Azərbaycan'),
     ('be', u'Беларуская'),
+    ('be@latin', u'Biełaruskaja'),
     ('br', u'Brezhoneg'),
     ('ca', u'Català'),
     ('cs', u'Čeština'),
