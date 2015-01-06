@@ -7,6 +7,7 @@
 {% block headline %}{% trans "Weblate is easy to deploy as an appliance." %}{% endblock %}
 {% endblock %}
 {% block content %}
+{% url 'download' as download_url %}
 
 <h2>{% trans "Demo server" %}</h2>
 
