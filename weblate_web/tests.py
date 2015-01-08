@@ -23,6 +23,14 @@ class ViewTestCase(TestCase):
         response = self.client.get('/cs/')
         self.assertContains(response, u'Další vlastnosti')
 
+    def test_index_be(self):
+        response = self.client.get('/be/')
+        self.assertContains(response, u'Больш функцый')
+
+    def test_index_be_latin(self):
+        response = self.client.get('/be@latin/')
+        self.assertContains(response, u'Boĺš funkcyj')
+
     def test_download_en(self):
         # create dummy files for testing
         filenames = ['weblate-%s.%s' % (VERSION, ext) for ext in EXTENSIONS]
