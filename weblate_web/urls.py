@@ -122,32 +122,32 @@ urlpatterns = i18n_patterns(
     # Compatibility with disabled languages
     url(
         r'^[a-z][a-z]/$',
-        RedirectView.as_view(url='/')
+        RedirectView.as_view(url='/', permanent=False)
     ),
     url(
         r'^[a-z][a-z]_[A-Z][A-Z]/$',
-        RedirectView.as_view(url='/')
+        RedirectView.as_view(url='/', permanent=False)
     ),
     # Broken links
     url(
         r'^http:/.*$',
-        RedirectView.as_view(url='/')
+        RedirectView.as_view(url='/', permanent=True)
     ),
     url(
         r'^index\.html$',
-        RedirectView.as_view(url='/')
+        RedirectView.as_view(url='/', permanent=True)
     ),
     url(
         r'^index\.([a-z][a-z])\.html$',
-        RedirectView.as_view(url='/')
+        RedirectView.as_view(url='/', permanent=True)
     ),
     url(
         r'^[a-z][a-z]/index\.html$',
-        RedirectView.as_view(url='/')
+        RedirectView.as_view(url='/', permanent=True)
     ),
     url(
         r'^[a-z][a-z]_[A-Z][A-Z]/index\.html$',
-        RedirectView.as_view(url='/')
+        RedirectView.as_view(url='/', permanent=True)
     ),
 ) + patterns(
     '',
