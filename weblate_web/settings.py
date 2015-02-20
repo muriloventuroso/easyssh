@@ -95,8 +95,8 @@ LANGUAGES = (
     ('sv', u'Svenska'),
     ('tr', u'Türkçe'),
     ('uk', u'Українська'),
-    ('zh-cn', u'简体字'),
-    ('zh-tw', u'正體字'),
+    ('zh-hans', u'简体字'),
+    ('zh-hant', u'正體字'),
 )
 
 SITE_ID = 1
