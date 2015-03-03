@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2015-02-20 11:47+0100\n"
-"PO-Revision-Date: 2014-05-06 14:37+0200\n"
-"Last-Translator: Claudio Filho <filhocf@gmail.com>\n"
-"Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
-"weblate/website/pt_BR/>\n"
+"PO-Revision-Date: 2015-03-03 02:38+0200\n"
+"Last-Translator: gilberto dos santos alves <gsavix@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) "
+"<https://hosted.weblate.org/projects/weblate/website/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 1.9\n"
+"X-Generator: Weblate 2.3-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -455,7 +455,6 @@ msgid "File formats"
 msgstr "Formatos de arquivos"
 
 #: weblate_web/html/features.html:33
-#, fuzzy
 #| msgid ""
 #| "Weblate supports all widely used file formats for localisation like "
 #| "Gettext or resource strings."
@@ -464,7 +463,7 @@ msgid ""
 "JSON, XLIFF or resource strings."
 msgstr ""
 "O Weblate suporta todos os formatos de arquivo amplamente usados para "
-"localização, como o Gettext ou strings-recurso."
+"tradução, como o Gettext, JSON, XLIFF ou fonte de palavras."
 
 #: weblate_web/html/features.html:38
 msgid "Branches support"
@@ -554,36 +553,41 @@ msgstr ""
 "atividades de projeto."
 
 #: weblate_web/html/features.html:104
-#, fuzzy
 #| msgid "Access control"
 msgid "Version control"
-msgstr "Controle de acesso"
+msgstr "Controle de Versão"
 
 #: weblate_web/html/features.html:105
 msgid ""
 "Weblate talks directly with your version control system, currently Git and "
 "Mercurial are suppored."
 msgstr ""
+"Weblate interage diretamente com o sistema de controle de versão, atualmente "
+"suportados Git e Mercurial."
 
 #: weblate_web/html/features.html:110
 msgid "Collaboration sites"
-msgstr ""
+msgstr "Colaboração com os sites"
 
 #: weblate_web/html/features.html:111
 msgid ""
 "Weblate has native support for many software development sites such as "
 "GitHub, Bitbucket or Gitlab."
 msgstr ""
+"Weblate tem suporte nativo para muitos sites de desenvolvimento como GitHub, "
+"Bitbucket e Gitlab."
 
 #: weblate_web/html/features.html:116
 msgid "Responsive UI"
-msgstr ""
+msgstr "UI Responsivo"
 
 #: weblate_web/html/features.html:117
 msgid ""
 "Weblate has responsible UI which will work nicely on your desktop, tablet or "
 "phone."
 msgstr ""
+"Weblate tem UI responsivo que permite você trabalhar no desktop ou qualquer "
+"dispositivo móvel."
 
 #: weblate_web/html/hosting.html:3 weblate_web/html/hosting.html.py:4
 msgid "Hosting Weblate"
@@ -675,7 +679,6 @@ msgstr ""
 "publicada como <code>git://git.weblate.org/hello-master.git</code>."
 
 #: weblate_web/html/hosting.html:44
-#, fuzzy
 #| msgid ""
 #| "To enable automated workflow on GitHub, you need to enable Weblate "
 #| "service hook in settings with <code>hosted.weblate.org</code> as URL. If "
@@ -688,10 +691,10 @@ msgid ""
 "collaborators and let us know you want to use this option."
 msgstr ""
 "Para ativar um fluxo de trabalho automatizado no GitHub, você precisa ativar "
-"os ganchos de serviço do Weblate nas configurações utilizando <code>hosted."
-"weblate.org</code> como URL. Se você quiser que o Weblate também incorpore "
-"as mudanças automaticamente, adicione o usuário do Weblate como colaborador "
-"e nos conte que você quer utilizar esta opção."
+"o serviço do Weblate em <code>hosted.weblate.org</code> como URL. Se você "
+"quiser que o Weblate incorpore as mudanças automaticamente, adicione o "
+"usuário do Weblate aos colaboradores e informe a gente que você quer "
+"utilizar esta opção."
 
 #: weblate_web/html/hosting.html:48
 msgid ""
@@ -730,6 +733,8 @@ msgid ""
 "Commercial hosting is possible as well, our price starts at 19 EUR per "
 "project and month, please get in touch with us for more details."
 msgstr ""
+"Também existe hospedagem comercial, nosso preço começa em € 19 por projeto "
+"por mês, entre em contato conosco para maiores detalhes."
 
 #: weblate_web/html/hosting.html:65
 msgid ""
@@ -757,7 +762,6 @@ msgid "Weblate - web-based translation"
 msgstr "Weblate - tradução baseada na web"
 
 #: weblate_web/html/index.html:14
-#, fuzzy
 #| msgid ""
 #| "Weblate is a free web-based translation tool with tight Git integration. "
 #| "It features simple and clean user interface, propagation of translations "
@@ -768,10 +772,10 @@ msgid ""
 "translations across components, quality checks and automatic linking to "
 "source files."
 msgstr ""
-"Weblate é uma ferramenta de tradução livre baseada na web, com uma intensa "
-"integração com o Git. Ele possui uma interface limpa e simples, propagação "
-"de traduções em subprojetos, verificação de qualidade e associação "
-"automática aos arquivos-fonte."
+"Weblate é uma ferramenta gratuita de tradução baseada na web, com uma "
+"integração com o sistema de controle de versão. Possui uma interface simples "
+"e limpa, propagação das traduções para os componentes de subprojetos, "
+"verificação de qualidade e automação na ligação com os arquivos fonte."
 
 #: weblate_web/html/index.html:18
 msgid "Try our demo"
