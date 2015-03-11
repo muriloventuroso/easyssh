@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2015-03-06 14:08+0100\n"
-"PO-Revision-Date: 2015-03-11 11:14+0200\n"
+"PO-Revision-Date: 2015-03-11 16:57+0200\n"
 "Last-Translator: Åke Engelbrektson <eson@svenskasprakfiler.se>\n"
 "Language-Team: Swedish "
 "<https://hosted.weblate.org/projects/weblate/website/sv/>\n"
@@ -448,7 +448,6 @@ msgid "File formats"
 msgstr "Filformat"
 
 #: weblate_web/html/features.html:33
-#, fuzzy
 #| msgid ""
 #| "Weblate supports all widely used file formats for localisation like "
 #| "Gettext or resource strings."
@@ -456,8 +455,8 @@ msgid ""
 "Weblate supports all widely used file formats for localisation like Gettext, "
 "JSON, XLIFF or resource strings."
 msgstr ""
-"Weblate stöder alla vanligt använda filformat för översättning som Gettext "
-"eller resurssträngar."
+"Weblate stöder alla vanligen använda filformat för översättning, som "
+"Gettext, JSON, XLIFF eller resurssträngar."
 
 #: weblate_web/html/features.html:38
 msgid "Branches support"
@@ -534,9 +533,8 @@ msgstr ""
 "administratör."
 
 #: weblate_web/html/features.html:98
-#, fuzzy
 msgid "Reporting"
-msgstr "Rapporter"
+msgstr "Rapportering"
 
 #: weblate_web/html/features.html:99
 msgid ""
@@ -547,50 +545,54 @@ msgstr ""
 "aktivitet."
 
 #: weblate_web/html/features.html:104
-#, fuzzy
 #| msgid "Access control"
 msgid "Version control"
-msgstr "Åtkomstkontroll"
+msgstr "Versionskontroll"
 
 #: weblate_web/html/features.html:105
 msgid ""
 "Weblate talks directly with your version control system, currently Git and "
 "Mercurial are suppored."
 msgstr ""
+"Wblate kommunicerar direkt med ditt versionkontrollsystem. För närvarande "
+"stöds Git och Mercurial."
 
 #: weblate_web/html/features.html:110
 msgid "Collaboration sites"
-msgstr ""
+msgstr "Samarbetsplatser"
 
 #: weblate_web/html/features.html:111
 msgid ""
 "Weblate has native support for many software development sites such as "
 "GitHub, Bitbucket or Gitlab."
 msgstr ""
+"Weblate har inbyggt stöd för många utvecklingsplatser som GitHub, Bitbucket "
+"eller Gitlab."
 
 #: weblate_web/html/features.html:116
 msgid "Responsive UI"
-msgstr ""
+msgstr "Responsivt UI"
 
 #: weblate_web/html/features.html:117
 msgid ""
 "Weblate has responsible UI which will work nicely on your desktop, tablet or "
 "phone."
 msgstr ""
+"Weblate har responsivt UI och fungerar utmärkt på skrivbord, tablett och "
+"telefon."
 
 #: weblate_web/html/hosting.html:3 weblate_web/html/hosting.html.py:4
 msgid "Hosting Weblate"
 msgstr "Hosting för Weblate"
 
 #: weblate_web/html/hosting.html:6
-#, fuzzy
 #| msgid "Weblate offers free hosting for free software."
 msgid "Free continuous translation hosting for free software."
-msgstr "Weblate erbjuder gratis hosting för fri programvara."
+msgstr "Gratis fortlöpande översättningslagring för fri mjukvara."
 
 #: weblate_web/html/hosting.html:10
 msgid "Hosting for free software"
-msgstr "Hosting för fri programvara"
+msgstr "Lagring för fri mjukvara"
 
 #: weblate_web/html/hosting.html:13
 msgid ""
@@ -599,14 +601,14 @@ msgid ""
 "org</a>. This will allow you to use Weblate without installing and "
 "maintaining it."
 msgstr ""
-"Om du är intresserad i att använda Weblate för din fria programvara kan du "
-"fråga oss om att bli inkluderad på <a href=\"http://hosted.weblate.org/"
-"\">hosted.weblate.org</a>. Det möjliggör för dig att använda Weblate utan "
-"att installera och underhålla det."
+"Om du är intresserad i att använda Weblate för din fria mjukvara kan du be "
+"oss om att bli inkluderad på <a href=\"http://hosted.weblate.org/\""
+">hosted.weblate.org</a>. Det möjliggör för dig att använda Weblate utan att "
+"installera och underhålla det."
 
 #: weblate_web/html/hosting.html:16
 msgid "Conditions for free hosting"
-msgstr "Villkor för gratis hosting"
+msgstr "Villkor för gratis lagring"
 
 #: weblate_web/html/hosting.html:19
 msgid ""
@@ -670,7 +672,6 @@ msgstr ""
 "publiceras som <code>git://git.weblate.org/hello-master.git</code>."
 
 #: weblate_web/html/hosting.html:44
-#, fuzzy
 #| msgid ""
 #| "To enable automated workflow on GitHub, you need to enable Weblate "
 #| "service hook in settings with <code>hosted.weblate.org</code> as URL. If "
@@ -683,28 +684,27 @@ msgid ""
 "collaborators and let us know you want to use this option."
 msgstr ""
 "För att aktivera automatiserat arbetsflöde på GitHub, måste du i "
-"inställningar aktivera en krok till Weblate med <code>hosted.weblate.org</"
-"code> som URL. Om du vill att Weblate automatiskt ska skicka ändringar, lägg "
-"till användaren Weblate till bidragsgivarna och meddela oss att du vill "
-"använda detta alternativ."
+"inställningar aktivera en koppling till Weblate med "
+"<code>hosted.weblate.org</code> som URL. Om du vill att Weblate automatiskt "
+"ska skicka ändringar, lägg till användaren Weblate till bidragsgivarna och "
+"meddela oss att du vill använda detta alternativ."
 
 #: weblate_web/html/hosting.html:48
-#, fuzzy
 msgid ""
 "To enable automated workflow on Bitbucket, you need to add POST hook to "
 "<code>http://hosted.weblate.org/hooks/bitbucket/</code> URL. If you want "
 "Weblate to automatically push changes as well, give Weblate user write "
 "permission to your repository and let us know you want to use this option."
 msgstr ""
-"För att aktivera automatiserat arbetsflöde på GitHub, måste du i "
-"inställningar aktivera en krok till Weblate med <code>hosted.weblate.org</"
-"code> som URL. Om du vill att Weblate automatiskt ska skicka ändringar, lägg "
-"till användaren Weblate till bidragsgivarna och meddela oss att du vill "
-"använda detta alternativ."
+"För att aktivera automatiserat arbetsflöde på Bitbucket, måste du i "
+"inställningar aktivera en koppling till Weblate med "
+"<code>hosted.weblate.org</code> som URL. Om du vill att Weblate automatiskt "
+"ska skicka ändringar, lägg till användaren Weblate till bidragsgivarna och "
+"meddela oss att du vill använda detta alternativ."
 
 #: weblate_web/html/hosting.html:51
 msgid "Support free hosting"
-msgstr "Stöd gratis hosting"
+msgstr "Stöd gratis lagring"
 
 #: weblate_web/html/hosting.html:55
 #, python-format
@@ -713,13 +713,13 @@ msgid ""
 "costs some money, so you are welcome to use <a href=\"%(gittip_url)s"
 "\">Gratipay</a> or <a href=\"%(donate_url)s\">other ways to donate</a>."
 msgstr ""
-"Hosting erbjuds gratis, men det kostar pengar att köra och sköta servern, så "
-"du får gärna använda <a href=\"%(gittip_url)s\">Gratipay</a> eller <a href="
-"\"%(donate_url)s\">andra sätt att donera</a>."
+"Lagringen erbjuds gratis, men det kostar pengar att köra och sköta servern, "
+"så du får gärna använda <a href=\"%(gittip_url)s\">Gratipay</a> eller <a "
+"href=\"%(donate_url)s\">andra sätt att donera</a>."
 
 #: weblate_web/html/hosting.html:58
 msgid "Commercial hosting"
-msgstr "Kommersiell hosting"
+msgstr "Kommersiell lagring"
 
 #: weblate_web/html/hosting.html:61
 msgid ""
@@ -752,10 +752,9 @@ msgstr ""
 
 #: weblate_web/html/index.html:3
 msgid "Weblate - web-based translation"
-msgstr "Weblate - webbaserad översättning"
+msgstr "Weblate - Webbaserad översättning"
 
 #: weblate_web/html/index.html:14
-#, fuzzy
 #| msgid ""
 #| "Weblate is a free web-based translation tool with tight Git integration. "
 #| "It features simple and clean user interface, propagation of translations "
@@ -766,18 +765,18 @@ msgid ""
 "translations across components, quality checks and automatic linking to "
 "source files."
 msgstr ""
-"Weblate är ett webbaserat översättningsverktyg med integration mot Git. Det "
+"Weblate är ett webbaserat översättningsverktyg med nära Git-integrering. Det "
 "har ett enkelt och rent användargränssnitt, propagering av översättningar "
 "mellan underprojekt, kvalitetskontroller och automatisk länkning till "
 "källkodsfiler."
 
 #: weblate_web/html/index.html:18
 msgid "Try our demo"
-msgstr "Pröva vår demo"
+msgstr "Prova vår demo"
 
 #: weblate_web/html/index.html:20
 msgid "Downloads"
-msgstr "Hämtningar"
+msgstr "Nedladdningar"
 
 #: weblate_web/html/index.html:24
 msgid "Weblate screenshot"
@@ -797,7 +796,7 @@ msgstr "Weblate är fri programvara med support från gemenskapen."
 
 #: weblate_web/html/support.html:10
 msgid "Bugs or feature requests"
-msgstr "Fel eller förfrågningar om funktioner"
+msgstr "Fel eller förfrågningar om nya funktioner"
 
 #: weblate_web/html/support.html:13
 msgid ""
@@ -902,7 +901,7 @@ msgstr "Sauce Labs kör våra Selenium-test i riktiga webbläsare."
 
 #: weblate_web/html/thanks.html:32
 msgid "Our translations are being done on Hosted Weblate."
-msgstr ""
+msgstr "Våra översättningar utförs på Hosted Weblate."
 
 #: weblate_web/html/tour.html:3 weblate_web/html/tour.html.py:4
 msgid "Weblate tour"
