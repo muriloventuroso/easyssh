@@ -25,12 +25,10 @@
   {% language 'en' %}
   <link rel="canonical" href="{% if url_name %}{% url url_name %}{% else %}{% url 'home' %}{% endif %}" />
   {% endlanguage %}
-  <meta property="og:locale" content="{{ LANGUAGE_CODE }}" />
   {% for lang_code, lang_name in languages %}
     {% if lang_code != LANGUAGE_CODE %}
       {% language lang_code %}
       <link rel="alternate" hreflang="{{ lang_code }}" href="{% if url_name %}{% url url_name %}{% else %}{% url 'home' %}{% endif %}" />
-      <meta property="og:locale:alternate" content="{{ lang_code }}" />
       {% endlanguage %}
     {% endif %}
   {% endfor %}
