@@ -25,10 +25,12 @@
   {% language 'en' %}
   <link rel="canonical" href="{% if url_name %}{% url url_name %}{% else %}{% url 'home' %}{% endif %}" />
   {% endlanguage %}
+  <meta property="og:locale" content="{{ LANGUAGE_CODE }}" />
   {% for lang_code, lang_name in languages %}
     {% if lang_code != LANGUAGE_CODE %}
       {% language lang_code %}
       <link rel="alternate" hreflang="{{ lang_code }}" href="{% if url_name %}{% url url_name %}{% else %}{% url 'home' %}{% endif %}" />
+      <meta property="og:locale:alternate" content="{{ lang_code }}" />
       {% endlanguage %}
     {% endif %}
   {% endfor %}
@@ -37,6 +39,7 @@
    <script src="/media/code.js"></script>
    <meta name="google-site-verification" content="SSd77ql2j6xSOlvDHT2pO2r3ZMQQyMVTycyse-l9i6A" />
    <meta name="wot-verification" content="b166aac1728babda4ade" />
+   <meta property="og:image" content="/media/background.png" />
 </head>
  <body {% if LANGUAGE_BIDI %}class="dir-rtl"{% endif %}>
 <a class="logo" href="{% url 'home' %}"><img src="/media/weblate-128.png" width="128" height="128" alt="{% trans "Weblate logo" %}"/></a>
