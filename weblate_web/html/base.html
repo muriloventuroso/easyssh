@@ -18,6 +18,7 @@
   <link rel="icon" href="/media/favicon.ico" type="image/x-icon" />
   <link rel="image_src" type="image/png" href="/media/weblate-128.png" />
   <link rel="apple-touch-icon" href="/media/weblate-128.png" />
+  <meta property="og:image" content="/media/background.png" />
   <title>{% block title %}Weblate{% endblock %}</title>
   <link rel="alternate" type="application/rss+xml" href="http://blog.cihar.com/archives/weblate/index-atom.xml" title="Weblate blog (Atom 1.0)"/>
   <link rel="alternate" type="application/rss+xml" href="http://blog.cihar.com/archives/weblate/index-rss.xml" title="Weblate blog (RSS 2.0)"/>
@@ -37,7 +38,6 @@
    <script src="/media/code.js"></script>
    <meta name="google-site-verification" content="SSd77ql2j6xSOlvDHT2pO2r3ZMQQyMVTycyse-l9i6A" />
    <meta name="wot-verification" content="b166aac1728babda4ade" />
-   <meta property="og:image" content="/media/background.png" />
 </head>
  <body {% if LANGUAGE_BIDI %}class="dir-rtl"{% endif %}>
 <a class="logo" href="{% url 'home' %}"><img src="/media/weblate-128.png" width="128" height="128" alt="{% trans "Weblate logo" %}"/></a>
