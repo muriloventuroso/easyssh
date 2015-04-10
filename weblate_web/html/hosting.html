@@ -41,11 +41,11 @@
 </p>
 
 <p>
-{% blocktrans %}To enable automated workflow on GitHub, you need to enable Weblate service hook in settings with <code>hosted.weblate.org</code> as URL. If you want Weblate to automatically push changes as well, add Weblate user to collaborators and let us know you want to use this option.{% endblocktrans %}
+{% blocktrans with "https://docs.weblate.org/en/latest/admin/continuous.html#github-setup" as github and "https://docs.weblate.org/en/latest/admin/continuous.html#bitbucket-setup" as bitbucket and "https://docs.weblate.org/en/latest/admin/continuous.html#gitlab-setup" as gitlab %}Weblate can automatically receive changes from major code hosting services, see our documentation for setup on <a href="{{ github }}">GitHub</a>, <a href="{{ bitbucket }}">Bitbucket</a> or <a href="{{ gitlab }}">GitLab</a>.{% endblocktrans %}
 </p>
 
 <p>
-{% blocktrans %}To enable automated workflow on Bitbucket, you need to add POST hook to <code>http://hosted.weblate.org/hooks/bitbucket/</code> URL. If you want Weblate to automatically push changes as well, give Weblate user write permission to your repository and let us know you want to use this option.{% endblocktrans %}
+{% blocktrans with "https://docs.weblate.org/en/latest/admin/continuous.html#hosted-push" as docs %}If you want Weblate to automatically push changes as well, add Weblate push user to collaborators and let us know you want to use this option. See <a href="{{ docs }}">documentation</a> for more detailed instructions.{% endblocktrans %}
 </p>
 
 <h3>{% trans "Support free hosting" %}</h3>
