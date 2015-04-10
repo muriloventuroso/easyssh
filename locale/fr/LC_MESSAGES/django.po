@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2015-03-13 11:27+0100\n"
+"POT-Creation-Date: 2015-04-10 19:00+0200\n"
 "PO-Revision-Date: 2015-03-13 11:34+0200\n"
 "Last-Translator: Ldm Public <ldmpub@gmail.com>\n"
-"Language-Team: French "
-"<https://hosted.weblate.org/projects/weblate/website/fr/>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/weblate/website/"
+"fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -137,63 +137,63 @@ msgctxt "Keyword"
 msgid "translate"
 msgstr "traduire"
 
-#: weblate_web/html/base.html:42
+#: weblate_web/html/base.html:43
 msgid "Weblate logo"
 msgstr "Logo de Weblate"
 
-#: weblate_web/html/base.html:44
+#: weblate_web/html/base.html:45
 msgid "Home"
 msgstr "Accueil"
 
-#: weblate_web/html/base.html:45
+#: weblate_web/html/base.html:46
 msgid "Blog"
 msgstr "Blogue"
 
-#: weblate_web/html/base.html:46
+#: weblate_web/html/base.html:47
 msgid "Try"
 msgstr "Essayez"
 
-#: weblate_web/html/base.html:47
+#: weblate_web/html/base.html:48
 msgid "Features"
 msgstr "Fonctions"
 
-#: weblate_web/html/base.html:48
+#: weblate_web/html/base.html:49
 msgid "Docs"
 msgstr "Documentation"
 
-#: weblate_web/html/base.html:49 weblate_web/html/download.html:21
+#: weblate_web/html/base.html:50 weblate_web/html/download.html:21
 msgid "Download"
 msgstr "Télécharger"
 
-#: weblate_web/html/base.html:50
+#: weblate_web/html/base.html:51
 msgid "Hosting"
 msgstr "Hébergement"
 
-#: weblate_web/html/base.html:51
+#: weblate_web/html/base.html:52
 msgid "Develop"
 msgstr "Développez"
 
-#: weblate_web/html/base.html:52 weblate_web/html/donate.html:34
+#: weblate_web/html/base.html:53 weblate_web/html/donate.html:34
 msgid "Donate"
 msgstr "Dons"
 
-#: weblate_web/html/base.html:53
+#: weblate_web/html/base.html:54
 msgid "Support"
 msgstr "Support"
 
-#: weblate_web/html/base.html:54
+#: weblate_web/html/base.html:55
 msgid "Tour"
 msgstr "Visite"
 
-#: weblate_web/html/base.html:55
+#: weblate_web/html/base.html:56
 msgid "Thanks"
 msgstr "Merci"
 
-#: weblate_web/html/base.html:73
+#: weblate_web/html/base.html:74
 msgid "Help with translations!"
 msgstr "Offrez votre aide pour les traductions !"
 
-#: weblate_web/html/base.html:94
+#: weblate_web/html/base.html:95
 #, python-format
 msgid ""
 "Weblate is free software, but welcomes <a href=\"%(donate_url)s\">donations</"
@@ -202,7 +202,7 @@ msgstr ""
 "Weblate est un logiciel libre, cependant les <a href=\"%(donate_url)s"
 "\">dons</a> sont bienvenus."
 
-#: weblate_web/html/base.html:95
+#: weblate_web/html/base.html:96
 msgid "Visit us on Google+"
 msgstr "Visitez-nous sur Google+"
 
@@ -328,26 +328,14 @@ msgstr ""
 "solde PayPal ou un compte bancaire."
 
 #: weblate_web/html/donate.html:51
-msgid "Flattr Weblate"
-msgstr "Flattr ceci"
-
-#: weblate_web/html/donate.html:55
-msgid ""
-"Flattr is a micropayment site that allows you to give monthly small amounts "
-"of money to various projects."
-msgstr ""
-"Flattr est un site de micropaiement qui permet de donner de petites sommes "
-"d'argent mensuelles à divers projets."
-
-#: weblate_web/html/donate.html:59
 msgid "Donate using Coinbase"
 msgstr "Faites un don via Coinbase"
 
-#: weblate_web/html/donate.html:63
+#: weblate_web/html/donate.html:55
 msgid "Coinbase allows you to send Bitcoins."
 msgstr "Coinbase vous permet d'envoyer des Bitcoins."
 
-#: weblate_web/html/donate.html:67
+#: weblate_web/html/donate.html:59
 #, python-format
 msgid ""
 "You can also use <a href=\"http://www.bitcoin.org/\">Bitcoin is a peer-to-"
@@ -683,30 +671,20 @@ msgstr ""
 "hello-master.git</code>."
 
 #: weblate_web/html/hosting.html:44
+#, python-format
 msgid ""
-"To enable automated workflow on GitHub, you need to enable Weblate service "
-"hook in settings with <code>hosted.weblate.org</code> as URL. If you want "
-"Weblate to automatically push changes as well, add Weblate user to "
-"collaborators and let us know you want to use this option."
+"Weblate can automatically receive changes from major code hosting services, "
+"see our documentation for setup on <a href=\"%(github)s\">GitHub</a>, <a "
+"href=\"%(bitbucket)s\">Bitbucket</a> or <a href=\"%(gitlab)s\">GitLab</a>."
 msgstr ""
-"Pour activer le flux de travail automatisé sur GitHub, vous devez activer le "
-"service Weblate avec <code>hosted.weblate.org</code> comme URL. Si vous "
-"voulez que Weblate pousse automatiquement les modifications, ajoutez "
-"l'utilisateur Weblate aux contributeurs et dites-nous que vous souhaitez "
-"utiliser cette option."
 
 #: weblate_web/html/hosting.html:48
+#, python-format
 msgid ""
-"To enable automated workflow on Bitbucket, you need to add POST hook to "
-"<code>http://hosted.weblate.org/hooks/bitbucket/</code> URL. If you want "
-"Weblate to automatically push changes as well, give Weblate user write "
-"permission to your repository and let us know you want to use this option."
+"If you want Weblate to automatically push changes as well, add Weblate push "
+"user to collaborators and let us know you want to use this option. See <a "
+"href=\"%(docs)s\">documentation</a> for more detailed instructions."
 msgstr ""
-"Pour activer le flux de travail automatisé sur Bitbucket, vous devez ajouter "
-"un point d'ancrage POST vers le URL <code>http://hosted.weblate.org/hooks/"
-"bitbucket/</code>. Si vous voulez que Weblate pousse automatiquement les "
-"changements, donnez à l'utilisateur Weblate le droit d'écrire sur votre "
-"référentiel et faites-nous savoir que vous souhaitez utiliser cette option."
 
 #: weblate_web/html/hosting.html:51
 msgid "Support free hosting"
@@ -991,6 +969,41 @@ msgstr "Archive source, compressée xz"
 #: weblate_web/templatetags/downloads.py:60
 msgid "Sources, zip compressed"
 msgstr "Archive source, compressée zip"
+
+#~ msgid "Flattr Weblate"
+#~ msgstr "Flattr ceci"
+
+#~ msgid ""
+#~ "Flattr is a micropayment site that allows you to give monthly small "
+#~ "amounts of money to various projects."
+#~ msgstr ""
+#~ "Flattr est un site de micropaiement qui permet de donner de petites "
+#~ "sommes d'argent mensuelles à divers projets."
+
+#~ msgid ""
+#~ "To enable automated workflow on GitHub, you need to enable Weblate "
+#~ "service hook in settings with <code>hosted.weblate.org</code> as URL. If "
+#~ "you want Weblate to automatically push changes as well, add Weblate user "
+#~ "to collaborators and let us know you want to use this option."
+#~ msgstr ""
+#~ "Pour activer le flux de travail automatisé sur GitHub, vous devez activer "
+#~ "le service Weblate avec <code>hosted.weblate.org</code> comme URL. Si "
+#~ "vous voulez que Weblate pousse automatiquement les modifications, ajoutez "
+#~ "l'utilisateur Weblate aux contributeurs et dites-nous que vous souhaitez "
+#~ "utiliser cette option."
+
+#~ msgid ""
+#~ "To enable automated workflow on Bitbucket, you need to add POST hook to "
+#~ "<code>http://hosted.weblate.org/hooks/bitbucket/</code> URL. If you want "
+#~ "Weblate to automatically push changes as well, give Weblate user write "
+#~ "permission to your repository and let us know you want to use this option."
+#~ msgstr ""
+#~ "Pour activer le flux de travail automatisé sur Bitbucket, vous devez "
+#~ "ajouter un point d'ancrage POST vers le URL <code>http://hosted.weblate."
+#~ "org/hooks/bitbucket/</code>. Si vous voulez que Weblate pousse "
+#~ "automatiquement les changements, donnez à l'utilisateur Weblate le droit "
+#~ "d'écrire sur votre référentiel et faites-nous savoir que vous souhaitez "
+#~ "utiliser cette option."
 
 #~ msgid ""
 #~ "You can place a bounty on individual features at <a href=\"%(url)s"

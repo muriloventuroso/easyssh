@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2015-03-13 11:27+0100\n"
+"POT-Creation-Date: 2015-04-10 19:00+0200\n"
 "PO-Revision-Date: 2014-08-09 15:54+0200\n"
 "Last-Translator: 麻 醉 <mazuishenghuo@gmail.com>\n"
 "Language-Team: Simplified Chinese <https://hosted.weblate.org/projects/"
@@ -121,70 +121,70 @@ msgctxt "Keyword"
 msgid "translate"
 msgstr "翻译"
 
-#: weblate_web/html/base.html:42
+#: weblate_web/html/base.html:43
 msgid "Weblate logo"
 msgstr "Weblate 徽标"
 
-#: weblate_web/html/base.html:44
+#: weblate_web/html/base.html:45
 msgid "Home"
 msgstr "主页"
 
-#: weblate_web/html/base.html:45
+#: weblate_web/html/base.html:46
 msgid "Blog"
 msgstr "博客"
 
-#: weblate_web/html/base.html:46
+#: weblate_web/html/base.html:47
 msgid "Try"
 msgstr "试用"
 
-#: weblate_web/html/base.html:47
+#: weblate_web/html/base.html:48
 msgid "Features"
 msgstr "功能"
 
-#: weblate_web/html/base.html:48
+#: weblate_web/html/base.html:49
 msgid "Docs"
 msgstr "文档"
 
-#: weblate_web/html/base.html:49 weblate_web/html/download.html:21
+#: weblate_web/html/base.html:50 weblate_web/html/download.html:21
 msgid "Download"
 msgstr "下载"
 
-#: weblate_web/html/base.html:50
+#: weblate_web/html/base.html:51
 msgid "Hosting"
 msgstr "托管"
 
-#: weblate_web/html/base.html:51
+#: weblate_web/html/base.html:52
 msgid "Develop"
 msgstr "开发"
 
-#: weblate_web/html/base.html:52 weblate_web/html/donate.html:34
+#: weblate_web/html/base.html:53 weblate_web/html/donate.html:34
 msgid "Donate"
 msgstr "捐助"
 
-#: weblate_web/html/base.html:53
+#: weblate_web/html/base.html:54
 msgid "Support"
 msgstr "支持"
 
-#: weblate_web/html/base.html:54
+#: weblate_web/html/base.html:55
 msgid "Tour"
 msgstr "简介"
 
-#: weblate_web/html/base.html:55
+#: weblate_web/html/base.html:56
 msgid "Thanks"
 msgstr "鸣谢"
 
-#: weblate_web/html/base.html:73
+#: weblate_web/html/base.html:74
 msgid "Help with translations!"
 msgstr "帮我们翻译！"
 
-#: weblate_web/html/base.html:94
+#: weblate_web/html/base.html:95
 #, python-format
 msgid ""
 "Weblate is free software, but welcomes <a href=\"%(donate_url)s\">donations</"
 "a>."
 msgstr "Weblate 是自由软件，但欢迎您的<a href=\"%(donate_url)s\">捐助</a>。"
 
-#: weblate_web/html/base.html:95
+#: weblate_web/html/base.html:96
 msgid "Visit us on Google+"
 msgstr "访问我们的 Google+"
 
@@ -299,24 +299,14 @@ msgid ""
 msgstr "PayPal 可让您用信用卡、PayPal 余额或银行账户捐助。"
 
 #: weblate_web/html/donate.html:51
-msgid "Flattr Weblate"
-msgstr "Flattr这个"
-
-#: weblate_web/html/donate.html:55
-msgid ""
-"Flattr is a micropayment site that allows you to give monthly small amounts "
-"of money to various projects."
-msgstr "Flattr 是一个可将您每个月的捐助钱款分到多个项目的小额支付网站。"
-
-#: weblate_web/html/donate.html:59
 msgid "Donate using Coinbase"
 msgstr "通过 Coinbase 捐助"
 
-#: weblate_web/html/donate.html:63
+#: weblate_web/html/donate.html:55
 msgid "Coinbase allows you to send Bitcoins."
 msgstr "Coinbase 可让您发送比特币。"
 
-#: weblate_web/html/donate.html:67
+#: weblate_web/html/donate.html:59
 #, python-format
 msgid ""
 "You can also use <a href=\"http://www.bitcoin.org/\">Bitcoin is a peer-to-"
@@ -616,32 +606,20 @@ msgstr ""
 "git</code>。"
 
 #: weblate_web/html/hosting.html:44
-#, fuzzy
-#| msgid ""
-#| "To enable automated workflow on GitHub, you need to enable Weblate "
-#| "service hook in settings with <code>hosted.weblate.org</code> as URL. If "
-#| "you want Weblate to automatically push changes as well, add Weblate user "
-#| "to contributors and let us know you want to use this option."
+#, python-format
 msgid ""
-"To enable automated workflow on GitHub, you need to enable Weblate service "
-"hook in settings with <code>hosted.weblate.org</code> as URL. If you want "
-"Weblate to automatically push changes as well, add Weblate user to "
-"collaborators and let us know you want to use this option."
+"Weblate can automatically receive changes from major code hosting services, "
+"see our documentation for setup on <a href=\"%(github)s\">GitHub</a>, <a "
+"href=\"%(bitbucket)s\">Bitbucket</a> or <a href=\"%(gitlab)s\">GitLab</a>."
 msgstr ""
-"若要使用 GitHub 的自动工作流，您需要在设置中启用 Weblate 服务钩子并将 URL 设"
-"置为 <code>hosted.weblate.org</code>。若您想 Weblate 能自动推送修改以及能自动"
-"将 Weblate 用户加为贡献者，请告诉我们您需要该功能。"
 
 #: weblate_web/html/hosting.html:48
+#, python-format
 msgid ""
-"To enable automated workflow on Bitbucket, you need to add POST hook to "
-"<code>http://hosted.weblate.org/hooks/bitbucket/</code> URL. If you want "
-"Weblate to automatically push changes as well, give Weblate user write "
-"permission to your repository and let us know you want to use this option."
+"If you want Weblate to automatically push changes as well, add Weblate push "
+"user to collaborators and let us know you want to use this option. See <a "
+"href=\"%(docs)s\">documentation</a> for more detailed instructions."
 msgstr ""
-"若要使用 Bitbucket 的自动工作流，您需要添加 POST 钩子 URL 为 <code>http://"
-"hosted.weblate.org/hooks/bitbucket/</code>。若您想 Weblate 能自动推送修改，请"
-"给 Weblate 用户对您代码库的写入权限并告诉我们您需要该功能。"
 
 #: weblate_web/html/hosting.html:51
 msgid "Support free hosting"
@@ -912,6 +890,40 @@ msgstr "源代码 tar 包，xz 压缩"
 #: weblate_web/templatetags/downloads.py:60
 msgid "Sources, zip compressed"
 msgstr "源代码，zip 压缩"
+
+#~ msgid "Flattr Weblate"
+#~ msgstr "Flattr这个"
+
+#~ msgid ""
+#~ "Flattr is a micropayment site that allows you to give monthly small "
+#~ "amounts of money to various projects."
+#~ msgstr "Flattr 是一个可将您每个月的捐助钱款分到多个项目的小额支付网站。"
+
+#, fuzzy
+#~| msgid ""
+#~| "To enable automated workflow on GitHub, you need to enable Weblate "
+#~| "service hook in settings with <code>hosted.weblate.org</code> as URL. If "
+#~| "you want Weblate to automatically push changes as well, add Weblate user "
+#~| "to contributors and let us know you want to use this option."
+#~ msgid ""
+#~ "To enable automated workflow on GitHub, you need to enable Weblate "
+#~ "service hook in settings with <code>hosted.weblate.org</code> as URL. If "
+#~ "you want Weblate to automatically push changes as well, add Weblate user "
+#~ "to collaborators and let us know you want to use this option."
+#~ msgstr ""
+#~ "若要使用 GitHub 的自动工作流，您需要在设置中启用 Weblate 服务钩子并将 URL "
+#~ "设置为 <code>hosted.weblate.org</code>。若您想 Weblate 能自动推送修改以及"
+#~ "能自动将 Weblate 用户加为贡献者，请告诉我们您需要该功能。"
+
+#~ msgid ""
+#~ "To enable automated workflow on Bitbucket, you need to add POST hook to "
+#~ "<code>http://hosted.weblate.org/hooks/bitbucket/</code> URL. If you want "
+#~ "Weblate to automatically push changes as well, give Weblate user write "
+#~ "permission to your repository and let us know you want to use this option."
+#~ msgstr ""
+#~ "若要使用 Bitbucket 的自动工作流，您需要添加 POST 钩子 URL 为 <code>http://"
+#~ "hosted.weblate.org/hooks/bitbucket/</code>。若您想 Weblate 能自动推送修"
+#~ "改，请给 Weblate 用户对您代码库的写入权限并告诉我们您需要该功能。"
 
 #~ msgid "Contribute"
 #~ msgstr "贡献"
