@@ -10,17 +10,17 @@ msgstr ""
 "Project-Id-Version: weblate-web\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2015-04-10 19:00+0200\n"
-"PO-Revision-Date: 2015-02-06 07:53+0200\n"
-"Last-Translator: Ivan Vantu5z <vantu5z@mail.ru>\n"
-"Language-Team: Russian <https://hosted.weblate.org/projects/weblate/website/"
-"ru/>\n"
+"PO-Revision-Date: 2015-04-16 16:57+0200\n"
+"Last-Translator: Сергей С. <salnsg@gmail.com>\n"
+"Language-Team: Russian "
+"<https://hosted.weblate.org/projects/weblate/website/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 2.2-dev\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 2.3-dev\n"
 "First-Translator: Dmitri GOULIAEV <dmitri+weblate@gouliaev.info>\n"
 
 #: weblate_web/data.py:33
@@ -551,7 +551,7 @@ msgstr ""
 
 #: weblate_web/html/features.html:110
 msgid "Collaboration sites"
-msgstr ""
+msgstr "Сайты для совместной работы"
 
 #: weblate_web/html/features.html:111
 msgid ""
@@ -669,6 +669,10 @@ msgid ""
 "see our documentation for setup on <a href=\"%(github)s\">GitHub</a>, <a "
 "href=\"%(bitbucket)s\">Bitbucket</a> or <a href=\"%(gitlab)s\">GitLab</a>."
 msgstr ""
+"Weblate может автоматически принимать изменения из главных сервисов хостинга "
+"кода, смотри нашу документацию для установки на <a href=\"%(github)s\""
+">GitHub</a>, <a href=\"%(bitbucket)s\">Bitbucket</a> или <a href=\"%(gitlab)"
+"s\">GitLab</a>."
 
 #: weblate_web/html/hosting.html:48
 #, python-format
@@ -677,6 +681,10 @@ msgid ""
 "user to collaborators and let us know you want to use this option. See <a "
 "href=\"%(docs)s\">documentation</a> for more detailed instructions."
 msgstr ""
+"Если Вы хотите использовать Weblate для автоматической отправки изменений, "
+"добавьте нужного пользователя в список соисполнителей и и сообщите нам как "
+"Вы хотите использовать эту опцию.   Смотрите <a href=\"%(docs)s\""
+">документацию</a> для более подробных инструкций."
 
 #: weblate_web/html/hosting.html:51
 msgid "Support free hosting"
@@ -702,6 +710,8 @@ msgid ""
 "Commercial hosting is possible as well, our price starts at 19 EUR per "
 "project and month, please get in touch with us for more details."
 msgstr ""
+"Коммерческий хостинг возможен, наши цены начинаются с 19 евро за проект в "
+"месяц, для обсуждения деталей свяжитесь с нами."
 
 #: weblate_web/html/hosting.html:65
 msgid ""
@@ -729,7 +739,6 @@ msgid "Weblate - web-based translation"
 msgstr "Weblate — веб-ориентированный перевод"
 
 #: weblate_web/html/index.html:14
-#, fuzzy
 #| msgid ""
 #| "Weblate is a free web-based translation tool with tight Git integration. "
 #| "It features simple and clean user interface, propagation of translations "
@@ -742,7 +751,7 @@ msgid ""
 msgstr ""
 "Weblate — это бесплатный веб-инструмент для перевода, тесно интегрированный "
 "с системами контроля версий. Он отличается простым и понятным "
-"пользовательским интерфейсом, продвижением перевода по компонентам, "
+"пользовательским интерфейсом, продвинутым покомпонентным переводом, "
 "проверкой качества и автоматической привязкой к исходным файлам."
 
 #: weblate_web/html/index.html:18
@@ -814,13 +823,14 @@ msgstr ""
 
 #: weblate_web/html/support.html:26
 msgid "Stack Overflow"
-msgstr ""
+msgstr "Переполнение стека"
 
 #: weblate_web/html/support.html:28
 #, python-format
 msgid ""
 "You can also ask related questions on <a href=\"%(url)s\">Stack Overflow</a>."
 msgstr ""
+"Дополнительные вопросы по ссылке <a href=\"%(url)s\">Переполнение стека</a>."
 
 #: weblate_web/html/support.html:30
 msgid "IRC"
@@ -886,7 +896,7 @@ msgstr "В Sauce Labs наши Selenium тесты работают на нас�
 
 #: weblate_web/html/thanks.html:32
 msgid "Our translations are being done on Hosted Weblate."
-msgstr ""
+msgstr "Наши переводы выполняются на Hosted Weblate."
 
 #: weblate_web/html/tour.html:3 weblate_web/html/tour.html.py:4
 msgid "Weblate tour"
