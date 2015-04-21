@@ -8,13 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2015-04-10 19:00+0200\n"
-"PO-Revision-Date: 2014-02-12 09:26+0100\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2015-04-21 09:32+0200\n"
+"Last-Translator: Arben Çokaj <acokaj@shkoder.net>\n"
+"Language-Team: Albanian "
+"<https://hosted.weblate.org/projects/weblate/website/sq/>\n"
 "Language: sq\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.3-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -440,7 +443,6 @@ msgid "File formats"
 msgstr "Formate kartelash"
 
 #: weblate_web/html/features.html:33
-#, fuzzy
 #| msgid ""
 #| "Weblate supports all widely used file formats for localisation like "
 #| "Gettext or resource strings."
@@ -448,8 +450,8 @@ msgid ""
 "Weblate supports all widely used file formats for localisation like Gettext, "
 "JSON, XLIFF or resource strings."
 msgstr ""
-"Weblate-i mbulon krejt formatet e kartelave të përdorur gjerësisht për "
-"përkthime, të tillë si Gettext ose vargje resource."
+"Weblate mbështet të gjitha formatet e përdorura gjerësisht të fileve për "
+"përkthime, si Gettext, JSON, XLIFF ose vargje burimi."
 
 #: weblate_web/html/features.html:38
 msgid "Branches support"
@@ -529,9 +531,8 @@ msgstr ""
 "t'i shtohen nga përgjegjësi."
 
 #: weblate_web/html/features.html:98
-#, fuzzy
 msgid "Reporting"
-msgstr "Raporte"
+msgstr "Raporton"
 
 #: weblate_web/html/features.html:99
 msgid ""
@@ -542,46 +543,52 @@ msgstr ""
 "veprimtarisë në projekt."
 
 #: weblate_web/html/features.html:104
-#, fuzzy
 #| msgid "Access control"
 msgid "Version control"
-msgstr "Kontroll hyrjesh"
+msgstr "Kontrolli i versionit"
 
 #: weblate_web/html/features.html:105
 msgid ""
 "Weblate talks directly with your version control system, currently Git and "
 "Mercurial are supported."
 msgstr ""
+"Weblate bisedon direkt me sistemin e kontrollit të versionit tuaj, "
+"aktualisht mbështeten Git dhe Mercurial."
 
 #: weblate_web/html/features.html:110
 msgid "Collaboration sites"
-msgstr ""
+msgstr "Faqet e bashkëpunimit"
 
 #: weblate_web/html/features.html:111
 msgid ""
 "Weblate has native support for many software development sites such as "
 "GitHub, Bitbucket or Gitlab."
 msgstr ""
+"Weblate ka mbështetje kombëtare për shumë faqe të zhvillimit të programeve "
+"(software) si GitHub, Bitbucket ose Gitlab."
 
 #: weblate_web/html/features.html:116
 msgid "Responsive UI"
-msgstr ""
+msgstr "UI e përgjegjëshme"
 
 #: weblate_web/html/features.html:117
 msgid ""
 "Weblate has responsible UI which will work nicely on your desktop, tablet or "
 "phone."
 msgstr ""
+"Weblate ka UI të përgjegjëshme, që do të punojnë mirë në desktop, tabletin "
+"ose telefonin tuaj."
 
 #: weblate_web/html/hosting.html:3 weblate_web/html/hosting.html.py:4
 msgid "Hosting Weblate"
 msgstr "Strehimi i një instance Weblate"
 
 #: weblate_web/html/hosting.html:6
-#, fuzzy
 #| msgid "Weblate offers free hosting for free software."
 msgid "Free continuous translation hosting for free software."
-msgstr "Weblate-i ofron strehim falas për software të lirë."
+msgstr ""
+"Pritës (hosting) përkthimi i lirë dhe i vazhdueshëm për programe (software) "
+"të lira."
 
 #: weblate_web/html/hosting.html:10
 msgid "Hosting for free software"
@@ -671,6 +678,10 @@ msgid ""
 "see our documentation for setup on <a href=\"%(github)s\">GitHub</a>, <a "
 "href=\"%(bitbucket)s\">Bitbucket</a> or <a href=\"%(gitlab)s\">GitLab</a>."
 msgstr ""
+"Weblate mund t'i marrë automatikisht ndryshimet nga kodet kryesore të "
+"shërbimeve të pritësit (hosting), shiko dokumentacionin tonë për intalim në <"
+"a href=\"%(github)s\">GitHub</a>, <a href=\"%(bitbucket)s\">Bitbucket</a> "
+"ose <a href=\"%(gitlab)s\">GitLab</a>."
 
 #: weblate_web/html/hosting.html:48
 #, python-format
@@ -679,6 +690,10 @@ msgid ""
 "user to collaborators and let us know you want to use this option. See <a "
 "href=\"%(docs)s\">documentation</a> for more detailed instructions."
 msgstr ""
+"Nëse doni që Weblate t'i shtyjë automatikisht ndryshimet gjithashtu, shto "
+"përdoruesin Weblate push tek bashkëpunëtorët dhe na jep mundësi të kuptojmë "
+"se e doni këtë opsion. Shiko <a href=\"%(docs)s\">dokumentacioni</a> për "
+"instruksione më të detajuara."
 
 #: weblate_web/html/hosting.html:51
 msgid "Support free hosting"
@@ -704,6 +719,8 @@ msgid ""
 "Commercial hosting is possible as well, our price starts at 19 EUR per "
 "project and month, please get in touch with us for more details."
 msgstr ""
+"Pritësi (hosting) komercial është i mundur gjithashtu, çmimi ynë fillon nga "
+"19 euro për projekt dhe muaj, ju lutemi kontakto me ne për më shumë detaje."
 
 #: weblate_web/html/hosting.html:65
 msgid ""
@@ -732,7 +749,6 @@ msgid "Weblate - web-based translation"
 msgstr "Weblate - përkthim me bazë web"
 
 #: weblate_web/html/index.html:14
-#, fuzzy
 #| msgid ""
 #| "Weblate is a free web-based translation tool with tight Git integration. "
 #| "It features simple and clean user interface, propagation of translations "
@@ -743,10 +759,10 @@ msgid ""
 "translations across components, quality checks and automatic linking to "
 "source files."
 msgstr ""
-"Weblate-i është një mjet përkthimi me bazë web, me integrim të fortë me Git-"
-"in. Ka ndërfaqe të thjeshtë dhe të qëruar përdoruesi, lejon përshkallëzim të "
-"përkthimeve nëpër nënprojekte, kontrolle cilësie dhe lidhje të vetvetishme "
-"me kartelat burim."
+"Weblate është një mjet përkthimi i lirë me bazë ueb, me integrim të fortë të "
+"kontrollit të versionit. Ka ndërfaqe përdoruesi të thjeshtë dhe të pastër, "
+"përhap përkthimet përmes komponentëve, kontrollon cilësinë dhe lidhet "
+"automatikisht me filet e burimit."
 
 #: weblate_web/html/index.html:18
 msgid "Try our demo"
@@ -816,13 +832,14 @@ msgstr ""
 
 #: weblate_web/html/support.html:26
 msgid "Stack Overflow"
-msgstr ""
+msgstr "Stack Overflow (pirg i rrjedhave)"
 
 #: weblate_web/html/support.html:28
 #, python-format
 msgid ""
 "You can also ask related questions on <a href=\"%(url)s\">Stack Overflow</a>."
 msgstr ""
+"Mund të bëni pyetje relevante në <a href=\"%(url)s\">Stack Overflow</a>."
 
 #: weblate_web/html/support.html:30
 msgid "IRC"
@@ -889,7 +906,7 @@ msgstr "Sauce Labs xhiron testimet tona Selenium në shfletues të njëmendtë."
 
 #: weblate_web/html/thanks.html:32
 msgid "Our translations are being done on Hosted Weblate."
-msgstr ""
+msgstr "Përkthimet tona bëhen në Hosted Weblate."
 
 #: weblate_web/html/tour.html:3 weblate_web/html/tour.html.py:4
 msgid "Weblate tour"
