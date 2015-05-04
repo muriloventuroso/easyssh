@@ -5,8 +5,14 @@
 {% block description %}
 {% block headline %}{% trans "Weblate has useful features for every translation." %}{% endblock %}
 {% endblock %}
-{% block content %}
 
+{% block extrajumbo %}
+<p>
+<a class="btn btn-primary btn-lg" href="http://demo.weblate.org/" role="button"><i class="fa fa-search"></i> {% trans "Try our demo" %}</a>
+</p>
+{% endblock %}
+
+{% block content %}
 
 {% for screenshot in screenshots %}
 <a href="/media/screenshots/{{ screenshot.0 }}" class="screenshot" title="{{ screenshot.1 }}">

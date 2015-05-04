@@ -8,23 +8,28 @@
 {% endblock %}
 {% endblock %}
 
+
+{% block extrajumbo %}
+<p>
+<a class="btn btn-primary btn-lg" href="http://demo.weblate.org/" role="button"><i class="fa fa-search"></i> {% trans "Try our demo" %}</a>
+<a class="btn btn-primary btn-lg" href="{% url 'download' %}" role="button"><i class="fa fa-download"></i> {% trans "Downloads" %}</a>
+</p>
+{% endblock %}
+
+
 {% block content %}
+
 
 <p class="description">
 {% blocktrans %}Weblate is a free web-based translation tool with tight version control integration. It features simple and clean user interface, propagation of translations across components, quality checks and automatic linking to source files.{% endblocktrans %}
 </p>
 
-<div class="actions">
-<a class="button" href="http://demo.weblate.org/">{% trans "Try our demo" %}</a>
-
-<a class="button" href="{% url 'download' %}">{% trans "Downloads" %}</a>
-</div>
-
 <a href="{% url 'tour' %}" class="trailer">
-<img src="/media/background.png" alt="{% trans "Weblate screenshot" %}">
+<img src="/media/background.png" class="img-responsive" alt="{% trans "Weblate screenshot" %}">
 </a>
 
 {% include "base-features.html" %}
 
-<div class="more"><a href="{% url 'features' %}">{% trans "See more features…"%}</a></div>
+<p><a class="btn btn-primary" href="{% url 'features' %}">{% trans "See more features…"%}</a></p>
+
 {% endblock %}

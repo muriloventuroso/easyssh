@@ -5,6 +5,14 @@
 {% block description %}
 {% block headline %}{% trans "Weblate is easy to deploy as an appliance." %}{% endblock %}
 {% endblock %}
+
+
+{% block extrajumbo %}
+<p>
+<a class="btn btn-primary btn-lg" href="http://demo.weblate.org/" role="button"><i class="fa fa-search"></i> {% trans "Try our demo" %}</a>
+</p>
+{% endblock %}
+
 {% block content %}
 {% url 'download' as download_url %}
 
