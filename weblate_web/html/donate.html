@@ -5,6 +5,14 @@
 {% block description %}
 {% block headline %}{% trans "Weblate is free, but welcomes donations." %}{% endblock %}
 {% endblock %}
+{% block extrajumbo %}
+<p>
+<a href="https://gratipay.com/nijel/" class="btn btn-primary btn-lg" role="button">
+<i class="fa fa-gratipay"></i>
+{% trans "Donate using Gratipay" %}
+</a>
+</p>
+{% endblock %}
 {% block content %}
 
 <h2>{% trans "Regular donations" %}</h2>
@@ -13,7 +21,8 @@
 {% blocktrans %}Regular donations allow sustainability of Weblate development and help to fund free hosting for free software. You don't have to spend big money, every penny counts.{% endblocktrans %}
 </p>
 
-<a href="https://gratipay.com/nijel/" class="button">
+<a href="https://gratipay.com/nijel/" class="btn btn-primary">
+<i class="fa fa-gratipay"></i>
 {% trans "Donate using Gratipay" %}
 </a>
 
@@ -23,7 +32,8 @@
 
 <h2>{% trans "Fund features" %}</h2>
 
-<a href="https://www.bountysource.com/trackers/253393-nijel-weblate" class="button">
+<a href="https://www.bountysource.com/trackers/253393-nijel-weblate" class="btn btn-primary">
+<i class="fa fa-money"></i>
 {% trans "Fund on Bountysource" %}
 </a>
 
@@ -40,14 +50,18 @@
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
 <input type="hidden" name="cmd" value="_s-xclick" />
 <input type="hidden" name="hosted_button_id" value="AXN88S8GX5MQ4" />
-<button class="button" type="submit">{% trans "Donate using PayPal" %}</button>
+<button class="btn btn-primary" type="submit">
+<i class="fa fa-paypal"></i>
+{% trans "Donate using PayPal" %}
+</button>
 </form>
 
 <p>
 {% trans "PayPal allows you to send money from credit card, PayPal balance or a bank account." %}
 </p>
 
-<a href="https://www.coinbase.com/checkouts/e7c16485643a51c08cd66de46f13f0d8" class="button">
+<a href="https://www.coinbase.com/checkouts/e7c16485643a51c08cd66de46f13f0d8" class="btn btn-primary">
+<i class="fa fa-bitcoin"></i>
 {% trans "Donate using Coinbase" %}
 </a>
 

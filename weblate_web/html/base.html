@@ -10,8 +10,7 @@
   <meta name="robots" content="index, follow" />
   <meta name="description" content="{% block description %}{% endblock %}" />
   <meta name="keywords" content="weblate,git,gettext,resources,json,po,mo,qts,CAT,web,{% trans "translate" context "Keyword" %}" />
-  <link rel="stylesheet" type="text/css" href="/media/style.css">
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="/media/colorbox.css">
   <link rel="author" href="mailto:michal@cihar.com" />
   <link rel="shortcut icon" href="/media/favicon.ico" type="image/x-icon" />
@@ -34,66 +33,94 @@
     {% endif %}
   {% endfor %}
    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+
+   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="/media/custom.css">
+
    <script src="/media/jquery.colorbox-min.js"></script>
    <script src="/media/code.js"></script>
    <meta name="google-site-verification" content="SSd77ql2j6xSOlvDHT2pO2r3ZMQQyMVTycyse-l9i6A" />
    <meta name="wot-verification" content="b166aac1728babda4ade" />
 </head>
  <body {% if LANGUAGE_BIDI %}class="dir-rtl"{% endif %}>
-<a class="logo" href="{% url 'home' %}"><img src="/media/weblate-128.png" width="128" height="128" alt="{% trans "Weblate logo" %}"/></a>
-<nav>
-<a href="{% url 'home' %}">{% trans "Home" %}</a>
-<a href="http://blog.cihar.com/archives/weblate/">{% trans "Blog" %}</a>
-<a href="{% url 'try' %}">{% trans "Try" %}</a>
-<a href="{% url 'features'%}">{% trans "Features" %}</a>
-<a href="http://docs.weblate.org/">{% trans "Docs" %}</a>
-<a href="{% url 'download' %}">{% trans "Download" %}</a>
-<a href="{% url 'hosting' %}">{% trans "Hosting" %}</a>
-<a href="{% url 'contribute' %}">{% trans "Develop" %}</a>
-<a href="{% url 'donate' %}">{% trans "Donate" %}</a>
-<a href="{% url 'support' %}">{% trans "Support" %}</a>
-<a href="{% url 'tour' %}">{% trans "Tour" %}</a>
-<a href="{% url 'thanks' %}">{% trans "Thanks" %}</a>
+<nav class="navbar navbar-default navbar-static-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">{% trans "Toggle navigation" %}</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="{% url 'home' %}">
+      <img class="logo" src="/media/weblate-128.png" alt="{% trans "Weblate logo" %}" />
+      Weblate
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="http://blog.cihar.com/archives/weblate/">{% trans "Blog" %}</a></li>
+        <li><a href="{% url 'try' %}">{% trans "Try" %}</a></li>
+        <li><a href="{% url 'features'%}">{% trans "Features" %}</a></li>
+        <li><a href="http://docs.weblate.org/">{% trans "Docs" %}</a></li>
+        <li><a href="{% url 'download' %}">{% trans "Download" %}</a></li>
+        <li><a href="{% url 'hosting' %}">{% trans "Hosting" %}</a></li>
+        <li><a href="{% url 'contribute' %}">{% trans "Develop" %}</a></li>
+        <li><a href="{% url 'donate' %}">{% trans "Donate" %}</a></li>
+        <li><a href="{% url 'support' %}">{% trans "Support" %}</a></li>
+        <li><a href="{% url 'tour' %}">{% trans "Tour" %}</a></li>
+        <li><a href="{% url 'thanks' %}">{% trans "Thanks" %}</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+        <span class="fa fa-globe"></span>
+        {% for lang in LANGUAGES %}{% if lang.0 == LANGUAGE_CODE %}{{ lang.1 }}{% endif %}{% endfor %}
+        <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu">
+          {% for lang_code, lang_name in languages %}
+          {% language lang_code %}
+          <li><a href="{% if url_name %}{% url url_name %}{% else %}{% url 'home' %}{% endif %}">{{ lang_name }}</a></li>
+          {% endlanguage %}
+          {% endfor %}
+          <li role="presentation" class="divider"></li>
+          <li><a href="{% url 'contribute' %}#translate">{% trans "Help with translations!" %}</a></li>
+        </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
 </nav>
 <header>
-<a class="language" href="#">
-<span class="fa fa-globe"></span>
-{% for lang in LANGUAGES %}{% if lang.0 == LANGUAGE_CODE %}{{ lang.1 }}{% endif %}{% endfor %}
-</a>
 
-<div class="languages">
-<div class="choice">
-{% for lang_code, lang_name in languages %}
-{% language lang_code %}
-<a href="{% if url_name %}{% url url_name %}{% else %}{% url 'home' %}{% endif %}">{{ lang_name }}</a>
-{% endlanguage %}
-{% endfor %}
-
-
+<div class="jumbotron">
+  <div class="container">
+    <h1>
+    {% block header %}
+    Weblate
+    {% endblock %}
+    </h1>
+    <p class="headline">
+    {% block headline %}
+    {% endblock %}
+    </p>
+    {% block extrajumbo %}
+    {% endblock %}
+  </div>
 </div>
-<a href="{% url 'contribute' %}#translate">{% trans "Help with translations!" %}</a>
-</div>
-
-<h1>
-{% block header %}
-Weblate
-{% endblock %}
-</h1>
-<p class="headline">
-{% block headline %}
-{% endblock %}
-</p>
 </header>
-<div class="content">
+<div class="container">
+
 {% block content %}
 {% endblock %}
-</div>
-<div class="clearer"></div>
+
 <footer>
 <ul class="footer">
 <li>Copyright &copy; 2012 - 2015 <a href="http://cihar.com/">Michal Čihař</a></li>
 <li>{% url 'donate' as donate_url %}{% blocktrans %}Weblate is free software, but welcomes <a href="{{ donate_url }}">donations</a>.{% endblocktrans %}</li>
-<li><a href="https://plus.google.com/+WeblateOrg" rel="publisher" style="display: none">{% trans "Visit us on Google+" %}</a></li>
 </ul>
 </footer>
 <!-- Piwik Image Tracker -->
@@ -115,5 +142,6 @@ Weblate
 <noscript><p><img src="http://stats.cihar.com/piwik.php?idsite=12" style="border:0;" alt="" /></p></noscript>
 <!-- End Piwik Code -->
 
+</div>
 </body>
 </html>

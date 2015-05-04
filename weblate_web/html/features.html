@@ -5,117 +5,177 @@
 {% block description %}
 {% block headline %}{% trans "Weblate is a feature rich computer aided translation tool." %}{% endblock %}
 {% endblock %}
+
+{% block extrajumbo %}
+<p>
+<a class="btn btn-primary btn-lg" href="http://docs.weblate.org/" role="button"><i class="fa fa-book"></i> {% trans "View documentation" %}</a>
+</p>
+{% endblock %}
 {% block content %}
 
 {% include "base-features.html" %}
 
-<a class="feature" href="http://docs.weblate.org/en/latest/admin/auth.html">
+<div class="row">
+
+<div class="col-lg-4 feature">
+<a href="http://docs.weblate.org/en/latest/admin/auth.html">
 <div class="fa fa-lock fa-4x"></div>
 <h4>{% trans "Access control" %}</h4>
 <p>{% trans "Access rights can be fine tuned depending on your environment." %}</p>
 </a>
+</div>
 
-<a class="feature" href="http://docs.weblate.org/en/latest/user/profile.html#subscriptions">
+<div class="col-lg-4 feature">
+<a href="http://docs.weblate.org/en/latest/user/profile.html#subscriptions">
 <div class="fa fa-envelope fa-4x"></div>
 <h4>{% trans "Notifications" %}</h4>
 <p>{% trans "Translators can be notified on new strings to translate or other events." %}</p>
 </a>
+</div>
 
-<a class="feature" href="{% url 'download' %}">
+<div class="col-lg-4 feature">
+<a href="{% url 'download' %}">
 <div class="fa fa-cloud fa-4x"></div>
 <h4>{% trans "Ready for cloud" %}</h4>
 <p>{% trans "Weblate comes with an appliance, which is ready to deploy in your cloud." %}</p>
 </a>
+</div>
 
-<a class="feature" href="http://docs.weblate.org/en/latest/formats.html">
+</div>
+<div class="row">
+
+<div class="col-lg-4 feature">
+<a href="http://docs.weblate.org/en/latest/formats.html">
 <div class="fa fa-archive fa-4x"></div>
 <h4>{% trans "File formats" %}</h4>
 <p>{% trans "Weblate supports all widely used file formats for localisation like Gettext, JSON, XLIFF or resource strings." %}</p>
 </a>
+</div>
 
-<a class="feature" href="http://docs.weblate.org/en/latest/faq.html#how-do-i-translate-several-branches-at-once">
+<div class="col-lg-4 feature">
+<a href="http://docs.weblate.org/en/latest/faq.html#how-do-i-translate-several-branches-at-once">
 <div class="fa fa-link fa-4x"></div>
 <h4>{% trans "Branches support" %}</h4>
 <p>{% trans "Weblate can handle different versions of the translation by pushing them to different branches automatically." %}</p>
 </a>
+</div>
 
-<a class="feature" href="http://docs.weblate.org/en/latest/user/translating.html">
+<div class="col-lg-4 feature">
+<a href="http://docs.weblate.org/en/latest/user/translating.html">
 <div class="fa fa-medkit fa-4x"></div>
 <h4>{% trans "Translation context" %}</h4>
 <p>{% trans "Translator can always see important context information like comments or corresponding source code." %}</p>
 </a>
+</div>
 
-<a class="feature" href="http://docs.weblate.org/en/latest/user/translating.html#glossary">
+</div>
+<div class="row">
+
+<div class="col-lg-4 feature">
+<a href="http://docs.weblate.org/en/latest/user/translating.html#glossary">
 <div class="fa fa-file fa-4x"></div>
 <h4>{% trans "Glossary" %}</h4>
 <p>{% trans "Translators can define their own glossary to stay consistent in frequently used terminology." %}</p>
 </a>
+</div>
 
-<a class="feature" href="http://docs.weblate.org/en/latest/faq.html#how-do-i-provide-feedback-on-source-string">
+<div class="col-lg-4 feature">
+<a href="http://docs.weblate.org/en/latest/faq.html#how-do-i-provide-feedback-on-source-string">
 <div class="fa fa-comments fa-4x"></div>
 <h4>{% trans "Acquiring feedback" %}</h4>
 <p>{% trans "You can also use Weblate to acquire feedback on source strings and thus improve them." %}</p>
 </a>
+</div>
 
-<a class="feature" href="http://docs.weblate.org/en/latest/user/translating.html#export-and-import">
+<div class="col-lg-4 feature">
+<a href="http://docs.weblate.org/en/latest/user/translating.html#export-and-import">
 <div class="fa fa-download fa-4x"></div>
 <h4>{% trans "Export and import" %}</h4>
 <p>{% trans "Translations can be downloaded for offline translation and merged back." %}</p>
 </a>
+</div>
 
-<a class="feature" href="http://docs.weblate.org/en/latest/about.html#project-goals">
+</div>
+<div class="row">
+
+<div class="col-lg-4 feature">
+<a href="http://docs.weblate.org/en/latest/about.html#project-goals">
 <div class="fa fa-bullseye fa-4x"></div>
 <h4>{% trans "Integrated" %}</h4>
 <p>{% trans "Translations are managed within same version control system as code." %}</p>
 </a>
+</div>
 
-<a class="feature" href="http://docs.weblate.org/">
+<div class="col-lg-4 feature">
+<a href="http://docs.weblate.org/">
 <div class="fa fa-book fa-4x"></div>
 <h4>{% trans "Documentation" %}</h4>
 <p>{% trans "Weblate comes with comprehensive documentation covering both setup and usage." %}</p>
 </a>
+</div>
 
-<a class="feature" href="http://docs.weblate.org/en/latest/faq.html#how-do-i-review-others-translations">
+<div class="col-lg-4 feature">
+<a href="http://docs.weblate.org/en/latest/faq.html#how-do-i-review-others-translations">
 <div class="fa fa-eye fa-4x"></div>
 <h4>{% trans "Review" %}</h4>
 <p>{% trans "Translators have several options to review contributions made by peers." %}</p>
 </a>
+</div>
 
-<a class="feature" href="http://docs.weblate.org/en/latest/faq.html#where-do-language-definition-come-from-and-how-can-i-add-own">
+</div>
+<div class="row">
+
+<div class="col-lg-4 feature">
+<a href="http://docs.weblate.org/en/latest/faq.html#where-do-language-definition-come-from-and-how-can-i-add-own">
 <div class="fa fa-globe fa-4x"></div>
 <h4>{% trans "Languages" %}</h4>
 <p>{% trans "Weblate supports over 150 languages out of the box, others can be defined by administrator." %}</p>
 </a>
+</div>
 
-<a class="feature" href="http://docs.weblate.org/en/latest/devel/index.html#promotion">
+<div class="col-lg-4 feature">
+<a href="http://docs.weblate.org/en/latest/devel/index.html#promotion">
 <div class="fa fa-share fa-4x"></div>
 <h4>{% trans "Promotion" %}</h4>
 <p>{% trans "Weblate provides you various ways to promote your translation project." %}</p>
 </a>
+</div>
 
-<a class="feature" href="http://docs.weblate.org/en/latest/devel/index.html#reports">
+<div class="col-lg-4 feature">
+<a href="http://docs.weblate.org/en/latest/devel/index.html#reports">
 <div class="fa fa-bar-chart fa-4x"></div>
 <h4>{% trans "Reporting" %}</h4>
 <p>{% trans "Weblate generates various reports to provide information about project activity." %}</p>
 </a>
+</div>
 
-<a class="feature" href="http://docs.weblate.org/en/latest/faq.html#faq-vcs">
+</div>
+<div class="row">
+
+<div class="col-lg-4 feature">
+<a href="http://docs.weblate.org/en/latest/faq.html#faq-vcs">
 <div class="fa fa-git fa-4x"></div>
 <h4>{% trans "Version control" %}</h4>
 <p>{% trans "Weblate talks directly with your version control system, currently Git and Mercurial are supported." %}</p>
 </a>
+</div>
 
-<a class="feature" href="http://docs.weblate.org/en/latest/faq.html#faq-vcs">
+<div class="col-lg-4 feature">
+<a href="http://docs.weblate.org/en/latest/faq.html#faq-vcs">
 <div class="fa fa-github fa-4x"></div>
 <h4>{% trans "Collaboration sites" %}</h4>
 <p>{% trans "Weblate has native support for many software development sites such as GitHub, Bitbucket or Gitlab." %}</p>
 </a>
+</div>
 
-<a class="feature" href="http://demo.weblate.org/">
+<div class="col-lg-4 feature">
+<a href="http://demo.weblate.org/">
 <div class="fa fa-tablet fa-4x"></div>
 <h4>{% trans "Responsive UI" %}</h4>
 <p>{% trans "Weblate has responsible UI which will work nicely on your desktop, tablet or phone." %}</p>
 </a>
+</div>
 
+</div>
 
 {% endblock %}

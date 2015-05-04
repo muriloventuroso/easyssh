@@ -5,6 +5,12 @@
 {% block description %}
 {% block headline %}{% trans "Weblate is a free software with community support." %}{% endblock %}
 {% endblock %}
+
+{% block extrajumbo %}
+<p>
+<a class="btn btn-primary btn-lg" href="https://github.com/nijel/weblate/issues" role="button"><i class="fa fa-bug"></i> {% trans "Report issue" %}</a>
+</p>
+{% endblock %}
 {% block content %}
 
 <h2>{% trans "Bugs or feature requests" %}</h2>
