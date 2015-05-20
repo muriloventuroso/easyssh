@@ -13,7 +13,7 @@ script:
   - pep8 .
   - pylint --reports=n --rcfile=pylint.rc weblate_web
 after_success:
-  - coveralls
+  - codecov
 sudo: false
 cache:
   directories:
