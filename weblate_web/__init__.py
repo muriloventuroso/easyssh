@@ -19,7 +19,6 @@
 #
 
 import django.utils.translation.trans_real as django_trans
-from copy import _EmptyClass
 import re
 
 # Monkey patch locales, workaround for
@@ -30,27 +29,3 @@ django_trans.language_code_re = re.compile(
 django_trans.language_code_prefix_re = re.compile(
     r'^/([\w@-]+)(/|$)'
 )
-
-
-class DjangoTranslation(django_trans.DjangoTranslation):
-    """
-    Unshared _info and _catalog to avoid Django messing up
-    locale variants.
-
-    This will not be needed in Django 1.8.
-    """
-    def __copy__(self):
-        """
-        Simplified version of copy._copy_inst extended for copying
-        _info and _catalog.
-        """
-        result = _EmptyClass()
-        result.__class__ = self.__class__
-        state = self.__dict__
-        state['_info'] = self._info.copy()
-        state['_catalog'] = self._catalog.copy()
-        result.__dict__.update(state)
-        return result
-
-
-django_trans.DjangoTranslation = DjangoTranslation
