@@ -1,7 +1,7 @@
 # Weblate website
 
 [![build status](https://secure.travis-ci.org/nijel/weblate-web.png)](https://travis-ci.org/nijel/weblate-web)
-[![Coverage Status](https://coveralls.io/repos/nijel/weblate-web/badge.png?branch=master)](https://coveralls.io/r/nijel/weblate-web?branch=master)
+[![Coverage Status](http://codecov.io/github/nijel/weblate/coverage.svg?branch=master)](http://codecov.io/github/nijel/weblate?branch=master)
 
 Django based website for Weblate, running at <http://weblate.org/>.
 
