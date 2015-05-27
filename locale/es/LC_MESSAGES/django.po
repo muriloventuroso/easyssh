@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2015-05-27 09:38+0200\n"
-"PO-Revision-Date: 2015-05-07 03:03+0200\n"
-"Last-Translator: Franco <fulanodetal.github@openaliasbox.org>\n"
-"Language-Team: Spanish <https://hosted.weblate.org/projects/weblate/website/"
-"es/>\n"
+"PO-Revision-Date: 2015-05-27 15:58+0200\n"
+"Last-Translator: Laura Arjona Reina <larjona@larjona.net>\n"
+"Language-Team: Spanish "
+"<https://hosted.weblate.org/projects/weblate/website/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -635,6 +635,8 @@ msgid ""
 "Please use <a href=\"%(url)s\">contact form on Hosted Weblate</a> to request "
 "hosting. You will need following information:"
 msgstr ""
+"Por favor, use <a href=\"%(url)s\">el formulario de contacto en Hosted "
+"Weblate</a> para solicitar alojamiento. Necesitará la siguiente información:"
 
 #: weblate_web/html/hosting.html:38
 msgid "Information about your project."
@@ -680,13 +682,13 @@ msgstr ""
 "\">Bitbucket</a> o <a href=\"%(gitlab)s\">GitLab</a>."
 
 #: weblate_web/html/hosting.html:55
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "If you want Weblate to automatically push changes as well, add Weblate push "
 "user to collaborators and let us know you want to use this option. See <a "
 "href=\"%(docs)s\">documentation</a> for more detailed instructions."
 msgstr ""
-"Si quiere, Weblate realizará automáticamente los cambios, así bien, agregue "
+"Si quiere que Weblate realice automáticamente los cambios también, agregue "
 "un usuario Weblate a colaboradores y háganos saber que desea utilizar esta "
 "opción. Vea la <a href=\"%(docs)s\">documentación</a> para obtener "
 "instrucciones más detalladas."
@@ -894,11 +896,10 @@ msgid "Travis CI is our continuous integration platform."
 msgstr "Travis CI es nuestra plataforma de integración continua."
 
 #: weblate_web/html/thanks.html:24
-#, fuzzy
 #| msgid "Coveralls helps us to monitor code coverage of our test suite."
 msgid "Codecov helps us to monitor code coverage of our test suite."
 msgstr ""
-"Coveralls nos permite monitorizar la cobertura de código de todo nuestro "
+"Codecov nos permite monitorizar la cobertura de código de todo nuestro "
 "conjunto de pruebas."
 
 #: weblate_web/html/thanks.html:28
@@ -914,10 +915,11 @@ msgid "Weblate tour"
 msgstr "Tour de Weblate"
 
 #: weblate_web/html/tour.html:6
-#, fuzzy
 #| msgid "Weblate has useful features for every translation."
 msgid "Weblate has useful features for every crowdsourced translation."
-msgstr "Weblate tiene características útiles para toda traducción."
+msgstr ""
+"Weblate tiene características útiles para todas las traducciones "
+"colaborativas."
 
 #: weblate_web/html/try.html:3 weblate_web/html/try.html.py:4
 msgid "Try Weblate"
