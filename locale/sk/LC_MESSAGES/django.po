@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2015-05-20 13:04+0200\n"
+"POT-Creation-Date: 2015-05-27 09:38+0200\n"
 "PO-Revision-Date: 2015-05-25 20:38+0200\n"
 "Last-Translator: Martin Lacina <martin@whistler.sk>\n"
-"Language-Team: Slovak "
-"<https://hosted.weblate.org/projects/weblate/website/sk/>\n"
+"Language-Team: Slovak <https://hosted.weblate.org/projects/weblate/website/"
+"sk/>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -397,7 +397,6 @@ msgid "Weblate is a feature rich computer aided translation tool."
 msgstr "Weblate ponúka mnoho funkcií na preklad podporovaný počítačom."
 
 #: weblate_web/html/features.html:11
-#| msgid "Documentation"
 msgid "View documentation"
 msgstr "Zobraziť dokumentáciu"
 
@@ -575,7 +574,6 @@ msgid "Free continuous translation hosting for free software."
 msgstr "Hosťovanie priebežného prekladu zadarmo pre slobodný softvér."
 
 #: weblate_web/html/hosting.html:11
-#| msgid "Asking for hosting"
 msgid "Ask for hosting"
 msgstr "Požiadať o hosťovanie"
 
@@ -621,12 +619,11 @@ msgid "Asking for hosting"
 msgstr "Žiadosť o hosťovanie"
 
 #: weblate_web/html/hosting.html:34
+#, python-format
 msgid ""
-"Contact <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> and include at "
-"least following information:"
+"Please use <a href=\"%(url)s\">contact form on Hosted Weblate</a> to request "
+"hosting. You will need following information:"
 msgstr ""
-"Napíšte <a href=\"mailto:michal@cihar.com\">Michalovi Čihařovi</a> a "
-"nezabudnite aspoň na nasledujúce informácie:"
 
 #: weblate_web/html/hosting.html:38
 msgid "Information about your project."
@@ -765,7 +762,6 @@ msgid "Weblate is a free software with community support."
 msgstr "Weblate je slobodný softvér podporovaný komunitou."
 
 #: weblate_web/html/support.html:11
-#| msgid "Reporting"
 msgid "Report issue"
 msgstr "Nahlásiť chybu"
 
@@ -875,7 +871,6 @@ msgid "Travis CI is our continuous integration platform."
 msgstr "Travis CI je naša platforma pre priebežnú integráciu."
 
 #: weblate_web/html/thanks.html:24
-#| msgid "Coveralls helps us to monitor code coverage of our test suite."
 msgid "Codecov helps us to monitor code coverage of our test suite."
 msgstr "Codecov nám pomáha sledovať pokrytie kódu našimi testami."
 
@@ -892,7 +887,6 @@ msgid "Weblate tour"
 msgstr "Prehliadka Weblate"
 
 #: weblate_web/html/tour.html:6
-#| msgid "Weblate has useful features for every translation."
 msgid "Weblate has useful features for every crowdsourced translation."
 msgstr "Weblate ponúka užitočné funkcie pre každý crowdsourcovaný  preklad."
 
@@ -960,6 +954,13 @@ msgstr "Zdrojový tarball, komprimovaný xz"
 #: weblate_web/templatetags/downloads.py:60
 msgid "Sources, zip compressed"
 msgstr "Zdrojové kódy, komprimované zipom"
+
+#~ msgid ""
+#~ "Contact <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> and include "
+#~ "at least following information:"
+#~ msgstr ""
+#~ "Napíšte <a href=\"mailto:michal@cihar.com\">Michalovi Čihařovi</a> a "
+#~ "nezabudnite aspoň na nasledujúce informácie:"
 
 #~ msgid "Home"
 #~ msgstr "Domov"

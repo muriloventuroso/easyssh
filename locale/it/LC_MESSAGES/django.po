@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2015-05-20 13:04+0200\n"
+"POT-Creation-Date: 2015-05-27 09:38+0200\n"
 "PO-Revision-Date: 2015-03-13 16:19+0200\n"
 "Last-Translator: TWS <tablettws@gmail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/weblate/website/"
@@ -638,12 +638,11 @@ msgid "Asking for hosting"
 msgstr "Richieste di hosting"
 
 #: weblate_web/html/hosting.html:34
+#, python-format
 msgid ""
-"Contact <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> and include at "
-"least following information:"
+"Please use <a href=\"%(url)s\">contact form on Hosted Weblate</a> to request "
+"hosting. You will need following information:"
 msgstr ""
-"Contattate <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> e includete "
-"almeno le seguenti informazioni:"
 
 #: weblate_web/html/hosting.html:38
 msgid "Information about your project."
@@ -985,6 +984,13 @@ msgstr "Sorgenti tarball, compressi xz"
 #: weblate_web/templatetags/downloads.py:60
 msgid "Sources, zip compressed"
 msgstr "Sorgenti compressi zip"
+
+#~ msgid ""
+#~ "Contact <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> and include "
+#~ "at least following information:"
+#~ msgstr ""
+#~ "Contattate <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> e "
+#~ "includete almeno le seguenti informazioni:"
 
 #~ msgid "Home"
 #~ msgstr "Pagina Iniziale"

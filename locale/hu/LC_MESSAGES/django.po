@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2015-05-20 13:04+0200\n"
+"POT-Creation-Date: 2015-05-27 09:38+0200\n"
 "PO-Revision-Date: 2015-05-22 20:51+0200\n"
 "Last-Translator: Emese Ban <emese.kovacs@gmail.com>\n"
-"Language-Team: Hungarian "
-"<https://hosted.weblate.org/projects/weblate/website/hu/>\n"
+"Language-Team: Hungarian <https://hosted.weblate.org/projects/weblate/"
+"website/hu/>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -401,7 +401,6 @@ msgid "Weblate is a feature rich computer aided translation tool."
 msgstr "A Weblate egy funkciókban gazdag számítógéppel segített fordítóeszköz."
 
 #: weblate_web/html/features.html:11
-#| msgid "Documentation"
 msgid "View documentation"
 msgstr "Dokumentáció megtekintése"
 
@@ -577,7 +576,6 @@ msgid "Free continuous translation hosting for free software."
 msgstr "Ingyenes folyamatos fordítási tárhely szabad szoftverhez."
 
 #: weblate_web/html/hosting.html:11
-#| msgid "Asking for hosting"
 msgid "Ask for hosting"
 msgstr "Elhelyezés kérelmezése"
 
@@ -625,12 +623,11 @@ msgid "Asking for hosting"
 msgstr "Elhelyezés kérelmezése"
 
 #: weblate_web/html/hosting.html:34
+#, python-format
 msgid ""
-"Contact <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> and include at "
-"least following information:"
+"Please use <a href=\"%(url)s\">contact form on Hosted Weblate</a> to request "
+"hosting. You will need following information:"
 msgstr ""
-"Lépjen kapcsolatba <a href=\"mailto:michal@cihar.com\">Michal Čihař</a>-ral "
-"és adja meg legalább az alábbi információkat:"
 
 #: weblate_web/html/hosting.html:38
 msgid "Information about your project."
@@ -670,8 +667,8 @@ msgid ""
 "href=\"%(bitbucket)s\">Bitbucket</a> or <a href=\"%(gitlab)s\">GitLab</a>."
 msgstr ""
 "A Weblate automatikusan át tudja venni a forráskód változásokat a nagyobb "
-"kódtároló szolgáltatóktól, a <a href=\"%(github)s\">GitHub</a>, <a href=\""
-"%(bitbucket)s\">Bitbucket</a> vagy <a href=\"%(gitlab)s\">GitLab</a> "
+"kódtároló szolgáltatóktól, a <a href=\"%(github)s\">GitHub</a>, <a href="
+"\"%(bitbucket)s\">Bitbucket</a> vagy <a href=\"%(gitlab)s\">GitLab</a> "
 "beállításokat lásd a dokumentációnkban."
 
 #: weblate_web/html/hosting.html:55
@@ -777,7 +774,6 @@ msgid "Weblate is a free software with community support."
 msgstr "A Weblate ingyenes szoftver közösségi támogatással."
 
 #: weblate_web/html/support.html:11
-#| msgid "Reporting"
 msgid "Report issue"
 msgstr "Probléma bejelentése"
 
@@ -885,7 +881,6 @@ msgid "Travis CI is our continuous integration platform."
 msgstr "A Travis CI a mi folyamatos integrációs platformunk."
 
 #: weblate_web/html/thanks.html:24
-#| msgid "Coveralls helps us to monitor code coverage of our test suite."
 msgid "Codecov helps us to monitor code coverage of our test suite."
 msgstr "Codecov segítségével ellenőrizzük forráskódunk teszt-lefedettségét."
 
@@ -902,7 +897,6 @@ msgid "Weblate tour"
 msgstr "Weblate túra"
 
 #: weblate_web/html/tour.html:6
-#| msgid "Weblate has useful features for every translation."
 msgid "Weblate has useful features for every crowdsourced translation."
 msgstr "A Weblate hasznos funkciókat tartalmaz minden közösségi fordításhoz."
 
@@ -969,6 +963,13 @@ msgstr "Forráskód tarball, xz tömörített"
 #: weblate_web/templatetags/downloads.py:60
 msgid "Sources, zip compressed"
 msgstr "Forráskód tarball, zip tömörített"
+
+#~ msgid ""
+#~ "Contact <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> and include "
+#~ "at least following information:"
+#~ msgstr ""
+#~ "Lépjen kapcsolatba <a href=\"mailto:michal@cihar.com\">Michal Čihař</a>-"
+#~ "ral és adja meg legalább az alábbi információkat:"
 
 #~ msgid "Home"
 #~ msgstr "Kezdőlap"

@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2015-05-20 13:04+0200\n"
+"POT-Creation-Date: 2015-05-27 09:38+0200\n"
 "PO-Revision-Date: 2015-05-20 13:17+0200\n"
 "Last-Translator: Ldm Public <ldmpub@gmail.com>\n"
-"Language-Team: French "
-"<https://hosted.weblate.org/projects/weblate/website/fr/>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/weblate/website/"
+"fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -640,12 +640,11 @@ msgid "Asking for hosting"
 msgstr "Demande d'hébergement"
 
 #: weblate_web/html/hosting.html:34
+#, python-format
 msgid ""
-"Contact <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> and include at "
-"least following information:"
+"Please use <a href=\"%(url)s\">contact form on Hosted Weblate</a> to request "
+"hosting. You will need following information:"
 msgstr ""
-"Veuillez contacter <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> en "
-"incluant les informations suivantes :"
 
 #: weblate_web/html/hosting.html:38
 msgid "Information about your project."
@@ -907,7 +906,6 @@ msgid "Travis CI is our continuous integration platform."
 msgstr "Travis CI est notre plateforme d'intégration continue."
 
 #: weblate_web/html/thanks.html:24
-#| msgid "Coveralls helps us to monitor code coverage of our test suite."
 msgid "Codecov helps us to monitor code coverage of our test suite."
 msgstr ""
 "Codecov nous permet de suivre la couverture de code de notre suite de tests."
@@ -994,6 +992,13 @@ msgstr "Archive source, compressée xz"
 #: weblate_web/templatetags/downloads.py:60
 msgid "Sources, zip compressed"
 msgstr "Archive source, compressée zip"
+
+#~ msgid ""
+#~ "Contact <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> and include "
+#~ "at least following information:"
+#~ msgstr ""
+#~ "Veuillez contacter <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> "
+#~ "en incluant les informations suivantes :"
 
 #~ msgid "Home"
 #~ msgstr "Accueil"
