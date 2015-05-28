@@ -168,7 +168,15 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.locale.LocaleMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'rollbar.contrib.django.middleware.RollbarNotifierMiddleware',
 )
+
+ROLLBAR = {
+    'access_token': '',
+    'environment': 'development' if DEBUG else 'production',
+    'branch': 'master',
+    'root': '/home/nijel/weblate-web/',
+}
 
 ROOT_URLCONF = 'weblate_web.urls'
 
