@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2015-05-27 09:38+0200\n"
-"PO-Revision-Date: 2015-06-01 10:52+0200\n"
+"PO-Revision-Date: 2015-06-01 15:07+0200\n"
 "Last-Translator: Slobodan Simić <slsimic@gmail.com>\n"
 "Language-Team: Serbian "
 "<https://hosted.weblate.org/projects/weblate/website/sr/>\n"
@@ -228,7 +228,7 @@ msgid ""
 "\">Github</a>, you can fork it there or just:"
 msgstr ""
 "Веблејт се развија на <a href=\"https://github.com/nijel/weblate\""
-">Гитхабу</a>. Тамо га можете разгранати или само:"
+">Гитхабу</a>. Тамо га можете разгранати или:"
 
 #: weblate_web/html/contribute.html:31
 msgid ""
@@ -352,7 +352,7 @@ msgstr ""
 
 #: weblate_web/html/download.html:43
 msgid "Cloud or emulator images"
-msgstr ""
+msgstr "Одраз за облак или емулатор"
 
 #: weblate_web/html/download.html:46
 #, python-format
@@ -361,6 +361,9 @@ msgid ""
 "download appliance based on openSUSE 12.3 at <a href=\"%(url)s\">SUSE Studio "
 "Gallery</a>."
 msgstr ""
+"Ако желите Веблејт да покренете у облаку или виртуелном серверу можете "
+"преузету уређај базиран на openSUSE 12.3 са <a href=\"%(url)s\">SUSE студио "
+"галерија</a>."
 
 #: weblate_web/html/download.html:47
 #, python-format
@@ -368,6 +371,8 @@ msgid ""
 "Check <a href=\"%(url)s\">our documentation</a> for more information about "
 "appliance setup."
 msgstr ""
+"Погледајте <a href=\"%(url)s\">нашу документацију</a> за више информација о "
+"подешавању уређаја."
 
 #: weblate_web/html/download.html:51
 msgid ""
@@ -375,6 +380,9 @@ msgid ""
 "\">BitNami stack</a>, that allows you native installation on Windows, Linux "
 "or Mac OS X and provides virtual images for running Weblate."
 msgstr ""
+"Веблејт је доступан и као <a href=\"http://bitnami.org/stack/weblate\">"
+"Битнами стек</a>, који омогућава природне инсталације на Виндоуз, Линукс или "
+"Мек ОС Икс, дајући виртуелни одраз за покретање Веблејта."
 
 #: weblate_web/html/features.html:3 weblate_web/html/features.html.py:4
 msgid "Weblate features"
@@ -382,7 +390,7 @@ msgstr "Могућности Веблејта"
 
 #: weblate_web/html/features.html:6
 msgid "Weblate is a feature rich computer aided translation tool."
-msgstr ""
+msgstr "Веблејт је могућностима богат, рачунарски помогнут преводилачки алат."
 
 #: weblate_web/html/features.html:11
 msgid "View documentation"
@@ -394,7 +402,7 @@ msgstr "Контрола приступа"
 
 #: weblate_web/html/features.html:24
 msgid "Access rights can be fine tuned depending on your environment."
-msgstr ""
+msgstr "Права приступа могу бити фино подешена зависно од вашег окружења."
 
 #: weblate_web/html/features.html:31
 msgid "Notifications"
@@ -414,17 +422,19 @@ msgstr "Спреман за облак"
 #: weblate_web/html/features.html:40
 msgid ""
 "Weblate comes with an appliance, which is ready to deploy in your cloud."
-msgstr ""
+msgstr "Веблејт долази и као уређај који је спреман за употребу у облаку."
 
 #: weblate_web/html/features.html:50
 msgid "File formats"
-msgstr ""
+msgstr "Формати фајлова"
 
 #: weblate_web/html/features.html:51
 msgid ""
 "Weblate supports all widely used file formats for localisation like Gettext, "
 "JSON, XLIFF or resource strings."
 msgstr ""
+"Веблејт подржава широко распрострањене формате за локализацију као Gettext, "
+"JSON, XLIFF или изворне ниске."
 
 #: weblate_web/html/features.html:58
 msgid "Branches support"
@@ -440,13 +450,15 @@ msgstr ""
 
 #: weblate_web/html/features.html:85
 msgid "Acquiring feedback"
-msgstr ""
+msgstr "Повратне информације"
 
 #: weblate_web/html/features.html:86
 msgid ""
 "You can also use Weblate to acquire feedback on source strings and thus "
 "improve them."
 msgstr ""
+"Веблејт вам може обезбедити повратне информације о изворним нискама па их "
+"тако можете побољшати."
 
 #: weblate_web/html/features.html:93
 msgid "Export and import"
@@ -477,11 +489,11 @@ msgstr ""
 
 #: weblate_web/html/features.html:120
 msgid "Review"
-msgstr ""
+msgstr "Овера"
 
 #: weblate_web/html/features.html:121
 msgid "Translators have several options to review contributions made by peers."
-msgstr ""
+msgstr "Преводиоци имају неколико опција за оверу преведених порука."
 
 #: weblate_web/html/features.html:131
 msgid "Languages"
@@ -563,6 +575,10 @@ msgid ""
 "org</a>. This will allow you to use Weblate without installing and "
 "maintaining it."
 msgstr ""
+"Ако сте заинтересовани да користите Веблејт за ваш слободни софтвер, можете "
+"затражити прикључење на <a href=\"http://hosted.weblate.org/\""
+">hosted.weblate.org</a>. Тако ћете моћи да користите Веблејт без инсталације "
+"и одржавања."
 
 #: weblate_web/html/hosting.html:23
 msgid "Conditions for free hosting"
@@ -573,19 +589,22 @@ msgid ""
 "Translated content has to be released under <a href=\"http://en.wikipedia."
 "org/wiki/Free_software_license\">free license</a>."
 msgstr ""
+"Преведени садржај мора бити издат под <a href=\"http://en.wikipedia.org/wiki/"
+"Free_software_license\">слободном лиценцом</a>."
 
 #: weblate_web/html/hosting.html:27
 msgid ""
 "Source code has to be publicly available in supported version control system."
 msgstr ""
+"Изворни код мора бити јавно објављен у подржаном систему контроле верзија."
 
 #: weblate_web/html/hosting.html:28
 msgid "There is no guarantee for service availability or quality."
-msgstr ""
+msgstr "Нема гаранције за квалитет или доступност сервиса."
 
 #: weblate_web/html/hosting.html:31
 msgid "Asking for hosting"
-msgstr ""
+msgstr "Питајте за хостинг"
 
 #: weblate_web/html/hosting.html:34
 #, python-format
@@ -593,6 +612,8 @@ msgid ""
 "Please use <a href=\"%(url)s\">contact form on Hosted Weblate</a> to request "
 "hosting. You will need following information:"
 msgstr ""
+"Користите <a href=\"%(url)s\">формулар за контакт</a> да затражите хостинг. "
+"Требаће вам следеће информације:"
 
 #: weblate_web/html/hosting.html:38
 msgid "Information about your project."
@@ -620,6 +641,9 @@ msgid ""
 "with similar naming as on website - hello/master translation would be "
 "published as <code>git://git.weblate.org/hello-master.git</code>."
 msgstr ""
+"Све ризнице превода доступне су на <code>git.weblate.org</code> са сличним "
+"именовањем као на веб сајту - hello/master преводи биће објављени као "
+"<code>git://git.weblate.org/hello-master.git</code>."
 
 #: weblate_web/html/hosting.html:51
 #, python-format
@@ -628,6 +652,9 @@ msgid ""
 "see our documentation for setup on <a href=\"%(github)s\">GitHub</a>, <a "
 "href=\"%(bitbucket)s\">Bitbucket</a> or <a href=\"%(gitlab)s\">GitLab</a>."
 msgstr ""
+"Веблејт може аутоматски да прима измене са главних сервиса за хостинг кода. "
+"За подешавање погледајте документацију <a href=\"%(github)s\">Гитхаб</a>, <a "
+"href=\"%(bitbucket)s\">Битбакет</a> или <a href=\"%(gitlab)s\">Гитлаб</a>."
 
 #: weblate_web/html/hosting.html:55
 #, python-format
@@ -636,6 +663,9 @@ msgid ""
 "user to collaborators and let us know you want to use this option. See <a "
 "href=\"%(docs)s\">documentation</a> for more detailed instructions."
 msgstr ""
+"Ако желите да Веблејт аутоматски и враћа измене, додајте Веблејт корисника у "
+"сараднике и јавите нам да желите да користите ову опцију. Погледајте <a href="
+"\"%(docs)s\">документацију</a> за детаљна упутства."
 
 #: weblate_web/html/hosting.html:58
 msgid "Support free hosting"
@@ -648,6 +678,9 @@ msgid ""
 "costs some money, so you are welcome to use <a href=\"%(gittip_url)s"
 "\">Gratipay</a> or <a href=\"%(donate_url)s\">other ways to donate</a>."
 msgstr ""
+"Хостинг је бесплатан али сервер и одржавање коштају па је донација <a href=\""
+"%(gittip_url)s\">Гратипејом</a> или <a href=\"%(donate_url)s\">на други "
+"начин</a> добродошла."
 
 #: weblate_web/html/hosting.html:65
 msgid "Commercial hosting"
@@ -658,12 +691,16 @@ msgid ""
 "Commercial hosting is possible as well, our price starts at 19 EUR per "
 "project and month, please get in touch with us for more details."
 msgstr ""
+"Комерцијални хостинг је такође могућ. Наше цене крећу од 19€ по пројекту "
+"месечно. Јавите нам се за више детаља."
 
 #: weblate_web/html/hosting.html:72
 msgid ""
 "Please contact <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> for more "
 "details."
 msgstr ""
+"Контактирајте <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> за више "
+"детаља."
 
 #: weblate_web/html/hosting.html:75
 msgid "Other options"
@@ -675,6 +712,8 @@ msgid ""
 "Check our <a href=\"%(download_url)s\">download page</a> for appliances, "
 "which provide an easy way to deploy Weblate in the cloud."
 msgstr ""
+"Погледајте <a href=\"%(download_url)s\">страницу преузимања</a> за апарате, "
+"који омогућавају лак начин употребе Веблејта у облаку."
 
 #: weblate_web/html/index.html:3
 msgid "Weblate - web-based translation"
@@ -696,6 +735,9 @@ msgid ""
 "translations across components, quality checks and automatic linking to "
 "source files."
 msgstr ""
+"Веблејт је слободан, веб оријентисан алат са тесном интеграцијом са системом "
+"за контролу верзија. Има једноставно и прегледно сучеље, простирање превода "
+"кроз компоненте, проверу квалитета и аутоматско везивање за изворне фајлове."
 
 #: weblate_web/html/index.html:28
 msgid "Weblate screenshot"
@@ -727,6 +769,9 @@ msgid ""
 "Please report it to <a href=\"https://github.com/nijel/weblate/issues"
 "\">issue tracker on GitHub</a>."
 msgstr ""
+"Наишли сте на проблем у Веблејту? Имате идеју за побољшање? Пријавите на <a "
+"href=\"https://github.com/nijel/weblate/issues\">пратиоцу проблема на "
+"Гитхабу</a>."
 
 #: weblate_web/html/support.html:22
 msgid "Mailing list"
@@ -740,6 +785,11 @@ msgid ""
 "weblate\">subscribe</a> or <a href=\"https://lists.cihar.com/pipermail/"
 "weblate/\">browse archives</a>."
 msgstr ""
+"Постоји поштанска листа <a href=\"mailto:weblate@lists.cihar.com\""
+">weblate@lists.cihar.com</a> где можете да дискутујете о Веблејту. Можете се "
+"<a href=\"https://lists.cihar.com/cgi-bin/mailman/listinfo/weblate\""
+">претплатити</a> или <a href=\"https://lists.cihar.com/pipermail/weblate/\">"
+"прегледати архиву</a>."
 
 #: weblate_web/html/support.html:29
 msgid ""
@@ -747,20 +797,22 @@ msgid ""
 "comp.web.weblate\">Gmane</a> where you can browse archives or use NNTP "
 "interface."
 msgstr ""
+"Листа је доступна и на <a href=\"http://dir.gmane.org/gmane.comp.web."
+"weblate\">Gmane</a> где можете прегледати архиву користећи NNTP сучеље."
 
 #: weblate_web/html/support.html:32
 msgid "Stack Overflow"
-msgstr ""
+msgstr "Stack Overflow"
 
 #: weblate_web/html/support.html:34
 #, python-format
 msgid ""
 "You can also ask related questions on <a href=\"%(url)s\">Stack Overflow</a>."
-msgstr ""
+msgstr "Питања можете поставити и на <a href=\"%(url)s\">Stack Overflow</a>."
 
 #: weblate_web/html/support.html:36
 msgid "IRC"
-msgstr ""
+msgstr "ИРЦ"
 
 #: weblate_web/html/support.html:39
 msgid ""
@@ -769,6 +821,10 @@ msgid ""
 "You can also use <a href=\"http://webchat.freenode.net?channels=weblate"
 "\">webchat</a> there."
 msgstr ""
+"Кад је неко од заинтересованих људи на вези, помоћ можете потражити и на #"
+"weblate каналу на <a href=\"http://freenode.net/\">Фринод</a> мрежи. Можете "
+"користити и <a href=\"http://webchat.freenode.net?channels=weblate\">веб "
+"ћаскање</a>."
 
 #: weblate_web/html/support.html:42
 msgid "Contact"
@@ -779,6 +835,8 @@ msgid ""
 "You can also contact <a href=\"mailto:michal@cihar.com?subject=Weblate"
 "\">Michal Čihař</a>, who is author of Weblate."
 msgstr ""
+"Можете контактирати <a href=\"mailto:michal@cihar.com?subject=Weblate\">"
+"Michal Čihař</a>, који је аутор Веблејта."
 
 #: weblate_web/html/thanks.html:3 weblate_web/html/thanks.html.py:4
 msgid "Thanks from Weblate"
@@ -802,19 +860,19 @@ msgstr "Гитхаб омогућава хостинг за наш изворн�
 
 #: weblate_web/html/thanks.html:20
 msgid "Travis CI is our continuous integration platform."
-msgstr ""
+msgstr "Travis CI је наша интеграциона платформа."
 
 #: weblate_web/html/thanks.html:24
 msgid "Codecov helps us to monitor code coverage of our test suite."
-msgstr ""
+msgstr "Codecov помаже у надгледању кода наших тестних издања."
 
 #: weblate_web/html/thanks.html:28
 msgid "Sauce Labs is running our Selenium tests in real browsers."
-msgstr ""
+msgstr "Sauce Labs покреће Selenium тест у реалном прегледачу."
 
 #: weblate_web/html/thanks.html:32
 msgid "Our translations are being done on Hosted Weblate."
-msgstr ""
+msgstr "Наши преводи се раде на Hosted Weblate."
 
 #: weblate_web/html/tour.html:3 weblate_web/html/tour.html.py:4
 msgid "Weblate tour"
@@ -822,7 +880,7 @@ msgstr "Веблејт обилазак"
 
 #: weblate_web/html/tour.html:6
 msgid "Weblate has useful features for every crowdsourced translation."
-msgstr ""
+msgstr "Веблејт има корисне могућности за сваки групни превод."
 
 #: weblate_web/html/try.html:3 weblate_web/html/try.html.py:4
 msgid "Try Weblate"
@@ -830,7 +888,7 @@ msgstr "Испробајте Веблејт"
 
 #: weblate_web/html/try.html:6
 msgid "Weblate is easy to deploy as an appliance."
-msgstr ""
+msgstr "Веблејт је лако упослити као уређај."
 
 #: weblate_web/html/try.html:19
 msgid "Demo server"
@@ -842,10 +900,13 @@ msgid ""
 "server</a>. You can register there and work under your username or just use "
 "<code>demo</code> account with <code>demo</code> password."
 msgstr ""
+"Можете испробати Веблејт на <a href=\"http://demo.weblate.org\">демо "
+"серверу</a>. Можете се регистровати и радити под вашим корисничким именом "
+"или користити <code>demo</code> налог са <code>demo</code> лозинком."
 
 #: weblate_web/html/try.html:25
 msgid "Appliances"
-msgstr ""
+msgstr "Уређаји"
 
 #: weblate_web/templatetags/downloads.py:39
 #, python-format
