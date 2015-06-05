@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2015-05-27 09:38+0200\n"
+"POT-Creation-Date: 2015-06-05 08:57+0200\n"
 "PO-Revision-Date: 2014-04-24 00:45+0200\n"
 "Last-Translator: Robert Readman <robert_readman@hotmail.com>\n"
 "Language-Team: English (United Kingdom) <https://hosted.weblate.org/projects/"
@@ -58,6 +58,7 @@ msgstr ""
 "used terminology."
 
 #: weblate_web/data.py:58 weblate_web/html/features.html:77
+#: weblate_web/html/hosting.html:77
 msgid "Glossary"
 msgstr "Glossary"
 
@@ -697,11 +698,118 @@ msgstr "Commercial hosting"
 
 #: weblate_web/html/hosting.html:68
 msgid ""
-"Commercial hosting is possible as well, our price starts at 19 EUR per "
-"project and month, please get in touch with us for more details."
+"We can host translations for your commercial projects as well. All hosting "
+"packages include following features:"
 msgstr ""
 
 #: weblate_web/html/hosting.html:72
+msgid "Unlimited number of translation compontents"
+msgstr ""
+
+#: weblate_web/html/hosting.html:73
+msgid "Unlimited number of contributors"
+msgstr ""
+
+#: weblate_web/html/hosting.html:74
+msgid "Self service user management"
+msgstr ""
+
+#: weblate_web/html/hosting.html:75
+#, fuzzy
+#| msgid "Access control"
+msgid "Version control integration"
+msgstr "Access control"
+
+#: weblate_web/html/hosting.html:76
+#, fuzzy
+#| msgid "Own translations"
+msgid "One translation project"
+msgstr "Own translations"
+
+#: weblate_web/html/hosting.html:78
+#, fuzzy
+#| msgid "Weblate features"
+msgid "All other Weblate features"
+msgstr "Weblate features"
+
+#: weblate_web/html/hosting.html:86
+msgid "Basic"
+msgstr ""
+
+#: weblate_web/html/hosting.html:90
+msgid "Up to 1000 source strings"
+msgstr ""
+
+#: weblate_web/html/hosting.html:91
+msgid "Up to 15 target languages"
+msgstr ""
+
+#: weblate_web/html/hosting.html:92
+msgid "One VCS repository"
+msgstr ""
+
+#: weblate_web/html/hosting.html:104
+msgid "Medium"
+msgstr ""
+
+#: weblate_web/html/hosting.html:108
+msgid "Up to 3000 source strings"
+msgstr ""
+
+#: weblate_web/html/hosting.html:109
+msgid "Up to 30 target languages"
+msgstr ""
+
+#: weblate_web/html/hosting.html:110
+msgid "Two VCS repositories"
+msgstr ""
+
+#: weblate_web/html/hosting.html:122
+msgid "Advanced"
+msgstr ""
+
+#: weblate_web/html/hosting.html:126
+msgid "Up to 10000 source strings"
+msgstr ""
+
+#: weblate_web/html/hosting.html:127
+msgid "Up to 60 target languages"
+msgstr ""
+
+#: weblate_web/html/hosting.html:128
+msgid "Up to 5 VCS repositories"
+msgstr ""
+
+#: weblate_web/html/hosting.html:140
+msgid "Enterprise"
+msgstr ""
+
+#: weblate_web/html/hosting.html:144
+msgid "Unlimited source strings"
+msgstr ""
+
+#: weblate_web/html/hosting.html:145
+msgid "Unlimited target languages"
+msgstr ""
+
+#: weblate_web/html/hosting.html:146
+msgid "Unlimited VCS repositories"
+msgstr ""
+
+#: weblate_web/html/hosting.html:150
+#, fuzzy
+#| msgid "Contact"
+msgid "Contact us"
+msgstr "Contact"
+
+#: weblate_web/html/hosting.html:158
+msgid ""
+"The pricing is based on number of source strings and number of target "
+"languages. The source string is a text unit defined in a translation format, "
+"it can be word, sentence or a paragraph."
+msgstr ""
+
+#: weblate_web/html/hosting.html:162
 msgid ""
 "Please contact <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> for more "
 "details."
@@ -709,11 +817,11 @@ msgstr ""
 "Please contact <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> for more "
 "details."
 
-#: weblate_web/html/hosting.html:75
+#: weblate_web/html/hosting.html:165
 msgid "Other options"
 msgstr "Other options"
 
-#: weblate_web/html/hosting.html:79 weblate_web/html/try.html:28
+#: weblate_web/html/hosting.html:169 weblate_web/html/try.html:28
 #, python-format
 msgid ""
 "Check our <a href=\"%(download_url)s\">download page</a> for appliances, "
