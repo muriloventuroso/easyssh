@@ -6,6 +6,8 @@ from django.test.utils import override_settings
 from weblate_web.data import VERSION, EXTENSIONS
 from weblate_web.templatetags.downloads import filesizeformat, downloadlink
 import os
+import shutil
+import tempfile
 
 TEST_DATA = os.path.join(os.path.dirname(__file__), 'test-data')
 
@@ -37,23 +39,22 @@ class ViewTestCase(TestCase):
     def test_download_en(self):
         # create dummy files for testing
         filenames = ['weblate-%s.%s' % (VERSION, ext) for ext in EXTENSIONS]
-        unlink = []
 
-        if not os.path.exists(settings.FILES_PATH):
-            os.makedirs(settings.FILES_PATH)
+        temp_dir = tempfile.mkdtemp()
 
-        for filename in filenames:
-            fullname = os.path.join(settings.FILES_PATH, filename)
-            if not os.path.exists(fullname):
-                unlink.append(fullname)
-                with open(fullname, 'w') as handle:
-                    handle.write('test')
+        try:
+            with override_settings(FILES_PATH=temp_dir):
+                for filename in filenames:
+                    fullname = os.path.join(settings.FILES_PATH, filename)
+                    with open(fullname, 'w') as handle:
+                        handle.write('test')
 
-        response = self.client.get('/en/download/')
-        self.assertContains(response, 'Download Weblate')
+                response = self.client.get('/en/download/')
+                self.assertContains(response, 'Download Weblate')
 
-        for filename in unlink:
-            os.unlink(filename)
+        finally:
+            print temp_dir
+            shutil.rmtree(temp_dir)
 
     def test_sitemap(self):
         response = self.client.get('/sitemap.xml')
@@ -92,4 +93,8 @@ class UtilTestCase(TestCase):
         self.assertIn(
             '>foo.pdf (0 bytes)',
             downloadlink('foo.pdf')
+        )
+        self.assertIn(
+            '>text (0 bytes)',
+            downloadlink('foo.pdf', 'text')
         )
