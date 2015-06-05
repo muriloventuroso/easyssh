@@ -73,7 +73,6 @@
   <li>{% trans "Unlimited number of contributors" %}</li>
   <li>{% trans "Self service user management" %}</li>
   <li>{% trans "Version control integration" %}</li>
-  <li>{% trans "One translation project" %}</li>
   <li>{% trans "Glossary" %}</li>
   <li><a href="{% url 'features' %}">{% trans "All other Weblate features" %}</a></li>
 </ul>
@@ -90,10 +89,11 @@
       <li>{% trans "Up to 1000 source strings" %}</li>
       <li>{% trans "Up to 15 target languages" %}</li>
       <li>{% trans "One VCS repository" %}</li>
+      <li>{% trans "One translation project" %}</li>
     </ul>
   </div>
   <div class="panel-footer price-footer">
-  19 EUR / month
+  {% blocktrans with 19 as price %}{{ price }} EUR / month{% endblocktrans %}
   </div>
 </div>
 </div>
@@ -108,10 +108,11 @@
       <li>{% trans "Up to 3000 source strings" %}</li>
       <li>{% trans "Up to 30 target languages" %}</li>
       <li>{% trans "Two VCS repositories" %}</li>
+      <li>{% trans "One translation project" %}</li>
     </ul>
   </div>
   <div class="panel-footer price-footer">
-  49 EUR / month
+  {% blocktrans with 49 as price %}{{ price }} EUR / month{% endblocktrans %}
   </div>
 </div>
 </div>
@@ -126,10 +127,11 @@
       <li>{% trans "Up to 10000 source strings" %}</li>
       <li>{% trans "Up to 60 target languages" %}</li>
       <li>{% trans "Up to 5 VCS repositories" %}</li>
+      <li>{% trans "Unlimited translation projects" %}</li>
     </ul>
   </div>
   <div class="panel-footer price-footer">
-  99 EUR / month
+  {% blocktrans with 99 as price %}{{ price }} EUR / month{% endblocktrans %}
   </div>
 </div>
 </div>
