@@ -93,3 +93,7 @@ class UtilTestCase(TestCase):
             '>foo.pdf (0 bytes)',
             downloadlink('foo.pdf')
         )
+        self.assertIn(
+            '>text (0 bytes)',
+            downloadlink('foo.pdf', 'text')
+        )
