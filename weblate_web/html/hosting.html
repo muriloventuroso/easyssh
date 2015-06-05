@@ -65,7 +65,97 @@
 <h2>{% trans "Commercial hosting" %}</h2>
 
 <p>
-{% trans "Commercial hosting is possible as well, our price starts at 19 EUR per project and month, please get in touch with us for more details." %}
+{% trans "We can host translations for your commercial projects as well. All hosting packages include following features:" %}
+</p>
+
+<ul>
+  <li>{% trans "Unlimited number of translation compontents" %}</li>
+  <li>{% trans "Unlimited number of contributors" %}</li>
+  <li>{% trans "Self service user management" %}</li>
+  <li>{% trans "Version control integration" %}</li>
+  <li>{% trans "One translation project" %}</li>
+  <li>{% trans "Glossary" %}</li>
+  <li><a href="{% url 'features' %}">{% trans "All other Weblate features" %}</a></li>
+</ul>
+
+<div class="row">
+
+<div class="col-sm-3">
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">{% trans "Basic" %}</h3>
+  </div>
+  <div class="panel-body">
+    <ul class="list-pricing">
+      <li>{% trans "Up to 1000 source strings" %}</li>
+      <li>{% trans "Up to 15 target languages" %}</li>
+      <li>{% trans "One VCS repository" %}</li>
+    </ul>
+  </div>
+  <div class="panel-footer price-footer">
+  19 EUR / month
+  </div>
+</div>
+</div>
+
+<div class="col-sm-3">
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">{% trans "Medium" %}</h3>
+  </div>
+  <div class="panel-body">
+    <ul class="list-pricing">
+      <li>{% trans "Up to 3000 source strings" %}</li>
+      <li>{% trans "Up to 30 target languages" %}</li>
+      <li>{% trans "Two VCS repositories" %}</li>
+    </ul>
+  </div>
+  <div class="panel-footer price-footer">
+  49 EUR / month
+  </div>
+</div>
+</div>
+
+<div class="col-sm-3">
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">{% trans "Advanced" %}</h3>
+  </div>
+  <div class="panel-body">
+    <ul class="list-pricing">
+      <li>{% trans "Up to 10000 source strings" %}</li>
+      <li>{% trans "Up to 60 target languages" %}</li>
+      <li>{% trans "Up to 5 VCS repositories" %}</li>
+    </ul>
+  </div>
+  <div class="panel-footer price-footer">
+  99 EUR / month
+  </div>
+</div>
+</div>
+
+<div class="col-sm-3">
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">{% trans "Enterprise" %}</h3>
+  </div>
+  <div class="panel-body">
+    <ul class="list-pricing">
+      <li>{% trans "Unlimited source strings" %}</li>
+      <li>{% trans "Unlimited target languages" %}</li>
+      <li>{% trans "Unlimited VCS repositories" %}</li>
+    </ul>
+  </div>
+  <div class="panel-footer price-footer">
+  <a href="mailto:michal@cihar.com">{% trans "Contact us" %}</a>
+  </div>
+</div>
+</div>
+
+</div>
+
+<p>
+{% trans "The pricing is based on number of source strings and number of target languages. The source string is a text unit defined in a translation format, it can be word, sentence or a paragraph." %}
 </p>
 
 <p>
