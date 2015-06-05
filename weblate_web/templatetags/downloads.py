@@ -19,10 +19,10 @@
 #
 
 from django.template import Library
-import os
 from django.utils.translation import ugettext as _, ungettext
 from django.utils.safestring import mark_safe
 from django.conf import settings
+import os
 
 register = Library()
 
