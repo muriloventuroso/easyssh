@@ -84,6 +84,7 @@ LANGUAGES = (
     ('it', u'Italiano'),
     ('ja', u'日本語'),
     ('ko', u'한국어'),
+    ('nb', u'Norsk bokmål'),
     ('nl', u'Nederlands'),
     ('pl', u'Polski'),
     ('pt', u'Português'),
