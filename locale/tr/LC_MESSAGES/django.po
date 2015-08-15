@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2015-08-15 15:06+0200\n"
-"PO-Revision-Date: 2015-06-30 20:45+0200\n"
+"PO-Revision-Date: 2015-08-15 19:12+0200\n"
 "Last-Translator: Burak Yavuz <hitowerdigit@hotmail.com>\n"
-"Language-Team: Turkish <https://hosted.weblate.org/projects/weblate/website/"
-"tr/>\n"
+"Language-Team: Turkish "
+"<https://hosted.weblate.org/projects/weblate/website/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -576,21 +576,23 @@ msgstr "Weblate Barındırma"
 
 #: weblate_web/html/hosting-ordered.html:6
 msgid "Thank you for ordering hosting!"
-msgstr ""
+msgstr "Barındırma siparişi için teşekkür ederiz!"
 
 #: weblate_web/html/hosting-ordered.html:11
 msgid "Next steps"
-msgstr ""
+msgstr "Sonraki adımlar"
 
 #: weblate_web/html/hosting-ordered.html:13
 msgid ""
 "The project setup is currently manual. If you haven't done so already, "
 "please get in touch with us and send us details about your repository setup."
 msgstr ""
+"Proje kurulumu şu anda el ile yapılır. Eğer henüz yapmadıysanız, lütfen "
+"bizimle temasa geçin ve bize havuz kurulumunuz hakkında ayrıntıları gönderin."
 
 #: weblate_web/html/hosting-ordered.html:15
 msgid "Usually following information is needed:"
-msgstr ""
+msgstr "Genellikle aşağıdaki bilgiler gereklidir:"
 
 #: weblate_web/html/hosting-ordered.html:18 weblate_web/html/hosting.html:187
 msgid "URL of repository with translations."
@@ -606,6 +608,9 @@ msgid ""
 "adding Weblate user to your project (on GitHub, Bitbucket or GitLab) or "
 "adding SSH key we will provide you."
 msgstr ""
+"Weblate'e havuza erişmesi için izin vermek zorundasınız. Bu, projenize ("
+"GitHub, Bitbucket veya GitLab üzerinde) Weblate kullanıcısı eklenerek veya "
+"size vereceğimiz SSH anahtarı eklenerek yapılabilir."
 
 #: weblate_web/html/hosting.html:6
 msgid "Free continuous translation hosting for free software."
@@ -616,10 +621,9 @@ msgid "Ask for hosting"
 msgstr "Barındırma için sorun"
 
 #: weblate_web/html/hosting.html:17
-#, fuzzy
 #| msgid "Hosting Weblate"
 msgid "Hosting plans"
-msgstr "Weblate Barındırma"
+msgstr "Barındırma planları"
 
 #: weblate_web/html/hosting.html:20
 #, python-format
@@ -629,13 +633,16 @@ msgid ""
 "look for hosting of bigger projects, don't hesitate to <a href=\"%(contact)s"
 "\">get in touch with us</a>."
 msgstr ""
+"Çevirileri ücretsiz yazılım projelerinizin reklamı için barındırabiliriz. "
+"Aşağıda barındırma planlarının özetini görebilirsiniz. Herhangi bir sorunuz "
+"varsa veya daha büyük projeleri barındırmayı arıyorsanız, <a href=\""
+"%(contact)s\">bizimle temasa geçmekten</a> çekinmeyin."
 
 #: weblate_web/html/hosting.html:28
-#, fuzzy
 #| msgid "Hosting for free software"
 msgctxt "Hosting plan"
 msgid "Free software"
-msgstr "Ücretsiz yazılım barındırma"
+msgstr "Ücretsiz yazılım"
 
 #: weblate_web/html/hosting.html:29
 msgctxt "Hosting plan"
@@ -658,33 +665,29 @@ msgid "Enterprise"
 msgstr "Kurumsal"
 
 #: weblate_web/html/hosting.html:45
-#, fuzzy
 #| msgid "Unlimited source strings"
 msgid "Source strings"
-msgstr "Sınırsız kaynak satır"
+msgstr "Kaynak satır"
 
 #: weblate_web/html/hosting.html:46 weblate_web/html/hosting.html.py:54
 #: weblate_web/html/hosting.html:62
 msgid "Negotiable"
-msgstr ""
+msgstr "Pazarlığa açık"
 
 #: weblate_web/html/hosting.html:53
-#, fuzzy
 #| msgid "Up to 15 target languages"
 msgid "Target languages"
-msgstr "15'e kadar hedef dil"
+msgstr "Hedef diller"
 
 #: weblate_web/html/hosting.html:61
-#, fuzzy
 #| msgid "Two VCS repositories"
 msgid "VCS repositories"
-msgstr "İki VCS havuzu"
+msgstr "VCS havuzları"
 
 #: weblate_web/html/hosting.html:69
-#, fuzzy
 #| msgid "One translation project"
 msgid "Translation projects"
-msgstr "Tek çeviri projesi"
+msgstr "Çeviri projeleri"
 
 #: weblate_web/html/hosting.html:73 weblate_web/html/hosting.html.py:74
 #: weblate_web/html/hosting.html:79 weblate_web/html/hosting.html.py:80
@@ -693,25 +696,23 @@ msgstr "Tek çeviri projesi"
 #: weblate_web/html/hosting.html:88 weblate_web/html/hosting.html.py:89
 #: weblate_web/html/hosting.html:90
 msgid "Unlimited"
-msgstr ""
+msgstr "Sınırsız"
 
 #: weblate_web/html/hosting.html:77
-#, fuzzy
 #| msgid "Translation context"
 msgid "Translation components"
-msgstr "Çeviri bağlamı"
+msgstr "Çeviri bileşenleri"
 
 #: weblate_web/html/hosting.html:85
-#, fuzzy
 #| msgid "Unlimited number of translation components"
 msgid "Number of translators"
-msgstr "Sınırsız sayıda çeviri bileşeni"
+msgstr "Çevirmen sayısı"
 
 #: weblate_web/html/hosting.html:93
 #, fuzzy
 #| msgid "Self service user management"
 msgid "User management"
-msgstr "Kendi kendine yapılan kullanıcı yönetimi"
+msgstr "Kullanıcı yönetimi"
 
 #: weblate_web/html/hosting.html:101
 #, fuzzy
