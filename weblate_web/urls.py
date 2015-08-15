@@ -99,6 +99,11 @@ urlpatterns = i18n_patterns(
         name='hosting'
     ),
     url(
+        r'^hosting/ordered/$',
+        TemplateView.as_view(template_name="hosting-ordered.html"),
+        name='hosting-ordered'
+    ),
+    url(
         r'^contribute/$',
         TemplateView.as_view(template_name="contribute.html"),
         name='contribute'

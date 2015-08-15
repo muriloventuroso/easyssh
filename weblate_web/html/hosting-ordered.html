@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}{% trans "Hosting Weblate" %}{% endblock %}
+{% block header %}{% trans "Hosting Weblate" %}{% endblock %}
+{% block description %}
+{% block headline %}{% trans "Thank you for ordering hosting!" %}{% endblock %}
+{% endblock %}
+
+{% block content %}
+
+<h2>{% trans "Next steps" %}</h2>
+
+<p>{% trans "The project setup is currently manual. If you haven't done so already, please get in touch with us and send us details about your repository setup." %}</p>
+
+<p>{% trans "Usually following information is needed:" %}</p>
+
+<ul>
+<li>{% trans "URL of repository with translations." %}</li>
+<li>{% trans "Path to translations within the repository." %}</li>
+</ul>
+
+<p>{% trans "You have to allow Weblate to access your repository. This can be done by adding Weblate user to your project (on GitHub, Bitbucket or GitLab) or adding SSH key we will provide you." %}</p>
+
+{% endblock %}
+
