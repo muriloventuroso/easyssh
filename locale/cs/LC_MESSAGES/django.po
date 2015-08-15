@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2015-06-30 14:45+0200\n"
+"POT-Creation-Date: 2015-08-15 15:06+0200\n"
 "PO-Revision-Date: 2015-06-30 14:46+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
-"Language-Team: Czech "
-"<https://hosted.weblate.org/projects/weblate/website/cs/>\n"
+"Language-Team: Czech <https://hosted.weblate.org/projects/weblate/website/cs/"
+">\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -57,7 +57,7 @@ msgstr ""
 "terminologie v rámci překladu."
 
 #: weblate_web/data.py:58 weblate_web/html/features.html:77
-#: weblate_web/html/hosting.html:76
+#: weblate_web/html/hosting.html:125
 msgid "Glossary"
 msgstr "Glosář"
 
@@ -69,6 +69,7 @@ msgstr ""
 "Nastavitelné kontroly kvality vám pomohou se zlepšením kvality překladů."
 
 #: weblate_web/data.py:66 weblate_web/html/base-features.html:16
+#: weblate_web/html/hosting.html:109
 msgid "Quality checks"
 msgstr "Kontrola kvality"
 
@@ -106,7 +107,7 @@ msgstr ""
 "Server měl vážné problémy se zpracováním vašeho požadavku. Zrovna jsme "
 "vyslali cvičené opice, aby problém opravily."
 
-#: weblate_web/html/base-features.html:8
+#: weblate_web/html/base-features.html:8 weblate_web/html/hosting.html:37
 msgid "Continuous translation"
 msgstr "Průběžný překlad"
 
@@ -566,9 +567,44 @@ msgstr ""
 "Weblate má responzivní UI, které dobře funguje na vašem desktopu, tabletu "
 "nebo telefonu."
 
-#: weblate_web/html/hosting.html:3 weblate_web/html/hosting.html.py:4
+#: weblate_web/html/hosting-ordered.html:3
+#: weblate_web/html/hosting-ordered.html:4 weblate_web/html/hosting.html:3
+#: weblate_web/html/hosting.html.py:4
 msgid "Hosting Weblate"
 msgstr "Hostování Weblate"
+
+#: weblate_web/html/hosting-ordered.html:6
+msgid "Thank you for ordering hosting!"
+msgstr ""
+
+#: weblate_web/html/hosting-ordered.html:11
+msgid "Next steps"
+msgstr ""
+
+#: weblate_web/html/hosting-ordered.html:13
+msgid ""
+"The project setup is currently manual. If you haven't done so already, "
+"please get in touch with us and send us details about your repository setup."
+msgstr ""
+
+#: weblate_web/html/hosting-ordered.html:15
+msgid "Usually following information is needed:"
+msgstr ""
+
+#: weblate_web/html/hosting-ordered.html:18 weblate_web/html/hosting.html:187
+msgid "URL of repository with translations."
+msgstr "URL repozitáře s překlady."
+
+#: weblate_web/html/hosting-ordered.html:19 weblate_web/html/hosting.html:188
+msgid "Path to translations within the repository."
+msgstr "Cesta k překladům v repozitáři."
+
+#: weblate_web/html/hosting-ordered.html:22
+msgid ""
+"You have to allow Weblate to access your repository. This can be done by "
+"adding Weblate user to your project (on GitHub, Bitbucket or GitLab) or "
+"adding SSH key we will provide you."
+msgstr ""
 
 #: weblate_web/html/hosting.html:6
 msgid "Free continuous translation hosting for free software."
@@ -579,10 +615,157 @@ msgid "Ask for hosting"
 msgstr "Požádat o hostování"
 
 #: weblate_web/html/hosting.html:17
+#, fuzzy
+#| msgid "Hosting Weblate"
+msgid "Hosting plans"
+msgstr "Hostování Weblate"
+
+#: weblate_web/html/hosting.html:20
+#, python-format
+msgid ""
+"We can host translations for your commercial of free software projects. You "
+"can see summary of hosting plans below. Should you have any questions or "
+"look for hosting of bigger projects, don't hesitate to <a href=\"%(contact)s"
+"\">get in touch with us</a>."
+msgstr ""
+
+#: weblate_web/html/hosting.html:28
+#, fuzzy
+#| msgid "Hosting for free software"
+msgctxt "Hosting plan"
+msgid "Free software"
+msgstr "Hostování svobodného software"
+
+#: weblate_web/html/hosting.html:29
+msgctxt "Hosting plan"
+msgid "Basic"
+msgstr "Základní"
+
+#: weblate_web/html/hosting.html:30
+msgctxt "Hosting plan"
+msgid "Medium"
+msgstr "Střední"
+
+#: weblate_web/html/hosting.html:31
+msgctxt "Hosting plan"
+msgid "Advanced"
+msgstr "Pokročilý"
+
+#: weblate_web/html/hosting.html:32
+msgctxt "Hosting plan"
+msgid "Enterprise"
+msgstr "Vlastní"
+
+#: weblate_web/html/hosting.html:45
+#, fuzzy
+#| msgid "Unlimited source strings"
+msgid "Source strings"
+msgstr "Neomezeně zdrojových řetězců"
+
+#: weblate_web/html/hosting.html:46 weblate_web/html/hosting.html.py:54
+#: weblate_web/html/hosting.html:62
+msgid "Negotiable"
+msgstr ""
+
+#: weblate_web/html/hosting.html:53
+#, fuzzy
+#| msgid "Up to 15 target languages"
+msgid "Target languages"
+msgstr "Až 15 cílových jazyků"
+
+#: weblate_web/html/hosting.html:61
+#, fuzzy
+#| msgid "Two VCS repositories"
+msgid "VCS repositories"
+msgstr "Dva VCS repozitáře"
+
+#: weblate_web/html/hosting.html:69
+#, fuzzy
+#| msgid "One translation project"
+msgid "Translation projects"
+msgstr "Jeden překladový projekt"
+
+#: weblate_web/html/hosting.html:73 weblate_web/html/hosting.html.py:74
+#: weblate_web/html/hosting.html:79 weblate_web/html/hosting.html.py:80
+#: weblate_web/html/hosting.html:81 weblate_web/html/hosting.html.py:82
+#: weblate_web/html/hosting.html:86 weblate_web/html/hosting.html.py:87
+#: weblate_web/html/hosting.html:88 weblate_web/html/hosting.html.py:89
+#: weblate_web/html/hosting.html:90
+msgid "Unlimited"
+msgstr ""
+
+#: weblate_web/html/hosting.html:77
+#, fuzzy
+#| msgid "Translation context"
+msgid "Translation components"
+msgstr "Souvislosti překladu"
+
+#: weblate_web/html/hosting.html:85
+#, fuzzy
+#| msgid "Unlimited number of translation components"
+msgid "Number of translators"
+msgstr "Neomezený počet překladových komponent"
+
+#: weblate_web/html/hosting.html:93
+#, fuzzy
+#| msgid "Self service user management"
+msgid "User management"
+msgstr "Samostatná správa uživatelů"
+
+#: weblate_web/html/hosting.html:101
+#, fuzzy
+#| msgid "File formats"
+msgid "Supported file formats"
+msgstr "Formáty souborů"
+
+#: weblate_web/html/hosting.html:102 weblate_web/html/hosting.html.py:103
+#: weblate_web/html/hosting.html:104 weblate_web/html/hosting.html.py:105
+#: weblate_web/html/hosting.html:106
+msgid "All"
+msgstr ""
+
+#: weblate_web/html/hosting.html:113 weblate_web/html/hosting.html.py:114
+#: weblate_web/html/hosting.html:121 weblate_web/html/hosting.html.py:122
+msgid "Customizable"
+msgstr ""
+
+#: weblate_web/html/hosting.html:117
+#, fuzzy
+#| msgid "Translation status"
+msgid "Translation processing"
+msgstr "Stav překladu"
+
+#: weblate_web/html/hosting.html:137
+msgid "Contact us"
+msgstr "Napište nám"
+
+#: weblate_web/html/hosting.html:140 weblate_web/html/hosting.html.py:143
+#: weblate_web/html/hosting.html:146 weblate_web/html/hosting.html.py:149
+#, python-format
+msgid "%(price)s EUR / month"
+msgstr "%(price)s EUR / měsíc"
+
+#: weblate_web/html/hosting.html:157
+msgid ""
+"The pricing is based on number of source strings and number of target "
+"languages. The source string is a text unit defined in a translation format, "
+"it can be word, sentence or a paragraph."
+msgstr ""
+"Ceny jsou založeny na počtu zdrojových řetězců a počtu cílových jazyků. "
+"Zdrojový řetězec je jednotka použitá v překladovém formátů, může to být "
+"slovo, věta nebo odstavec."
+
+#: weblate_web/html/hosting.html:161
+msgid ""
+"The hosting setup is currently done manually, so you might want to get in "
+"touch with us prior to making subscription with your project details."
+msgstr ""
+
+#: weblate_web/html/hosting.html:164
 msgid "Hosting for free software"
 msgstr "Hostování svobodného software"
 
-#: weblate_web/html/hosting.html:20
+#: weblate_web/html/hosting.html:167
 msgid ""
 "If you are interested in using Weblate for your free software, you can ask "
 "us to be include on <a href=\"http://hosted.weblate.org/\">hosted.weblate."
@@ -593,11 +776,11 @@ msgstr ""
 "o zařazení na <a href=\"http://hosted.weblate.org/\">hosted.weblate.org</a>. "
 "To vám umožní používat Weblate bez nutnosti ho instalovat a udržovat."
 
-#: weblate_web/html/hosting.html:23
+#: weblate_web/html/hosting.html:170
 msgid "Conditions for free hosting"
 msgstr "Podmínky pro bezplatné hostování"
 
-#: weblate_web/html/hosting.html:26
+#: weblate_web/html/hosting.html:173
 msgid ""
 "Translated content has to be released under <a href=\"http://en.wikipedia."
 "org/wiki/Free_software_license\">free license</a>."
@@ -605,21 +788,21 @@ msgstr ""
 "Překládaný obsah musí být vydán pod <a href=\"http://cs.wikipedia.org/wiki/"
 "Svobodn%C3%BD_software\">svobodnou licencí</a>."
 
-#: weblate_web/html/hosting.html:27
+#: weblate_web/html/hosting.html:174
 msgid ""
 "Source code has to be publicly available in supported version control system."
 msgstr ""
 "Zdrojový kód musí být veřejně dostupný v podporovaném systému správy revizí."
 
-#: weblate_web/html/hosting.html:28
+#: weblate_web/html/hosting.html:175
 msgid "There is no guarantee for service availability or quality."
 msgstr "Není poskytována žádná záruka kvality nebo dostupnosti služby."
 
-#: weblate_web/html/hosting.html:31
+#: weblate_web/html/hosting.html:178
 msgid "Asking for hosting"
 msgstr "Žádost o hostování"
 
-#: weblate_web/html/hosting.html:34
+#: weblate_web/html/hosting.html:181
 #, python-format
 msgid ""
 "Please use <a href=\"%(url)s\">contact form on Hosted Weblate</a> to request "
@@ -629,27 +812,19 @@ msgstr ""
 "formulář na Hosted Weblate</a>. Budete potřebovat alespoň na následující "
 "informace:"
 
-#: weblate_web/html/hosting.html:38
+#: weblate_web/html/hosting.html:185
 msgid "Information about your project."
 msgstr "Informace o vašem projektu."
 
-#: weblate_web/html/hosting.html:39
+#: weblate_web/html/hosting.html:186
 msgid "Project website."
 msgstr "Webové stránky projektu."
 
-#: weblate_web/html/hosting.html:40
-msgid "URL of repository with translations."
-msgstr "URL repozitáře s překlady."
-
-#: weblate_web/html/hosting.html:41
-msgid "Path to translations within the repository."
-msgstr "Cesta k překladům v repozitáři."
-
-#: weblate_web/html/hosting.html:44
+#: weblate_web/html/hosting.html:191
 msgid "Translation workflow"
 msgstr "Průběh překladu"
 
-#: weblate_web/html/hosting.html:47
+#: weblate_web/html/hosting.html:194
 msgid ""
 "All translated repositories are available at <code>git.weblate.org</code> "
 "with similar naming as on website - hello/master translation would be "
@@ -659,7 +834,7 @@ msgstr ""
 "pod podobným jménem jako na webu - překlad hello/master bude publikován na "
 "<code>git://git.weblate.org/hello-master.git</code>."
 
-#: weblate_web/html/hosting.html:51
+#: weblate_web/html/hosting.html:198
 #, python-format
 msgid ""
 "Weblate can automatically receive changes from major code hosting services, "
@@ -671,7 +846,7 @@ msgstr ""
 "\"%(github)s\">GitHub</a>, <a href=\"%(bitbucket)s\">Bitbucket</a> nebo <a "
 "href=\"%(gitlab)s\">GitLab</a>."
 
-#: weblate_web/html/hosting.html:55
+#: weblate_web/html/hosting.html:202
 #, python-format
 msgid ""
 "If you want Weblate to automatically push changes as well, add Weblate push "
@@ -683,11 +858,11 @@ msgstr ""
 "použít tuto volbu. Podrobnější popis nastavení naleznete v <a href=\"%(docs)s"
 "\">dokumentaci</a>."
 
-#: weblate_web/html/hosting.html:58
+#: weblate_web/html/hosting.html:205
 msgid "Support free hosting"
 msgstr "Podpořte bezplatné hostování"
 
-#: weblate_web/html/hosting.html:62
+#: weblate_web/html/hosting.html:209
 #, python-format
 msgid ""
 "The hosting is provided for free, but running the server and maintaining it "
@@ -699,155 +874,21 @@ msgstr ""
 "\"%(gittip_url)s\">Gratipay</a> nebo <a href=\"%(donate_url)s\">jakýmkoliv "
 "jiným způsobem</a>."
 
-#: weblate_web/html/hosting.html:65
-msgid "Commercial hosting"
-msgstr "Komerční hostování"
+#: weblate_web/html/hosting.html:213
+#, fuzzy
+#| msgid "Ask for hosting"
+msgid "Self hosting"
+msgstr "Požádat o hostování"
 
-#: weblate_web/html/hosting.html:68
+#: weblate_web/html/hosting.html:217
+#, fuzzy, python-format
+#| msgid ""
+#| "Check our <a href=\"%(download_url)s\">download page</a> for appliances, "
+#| "which provide an easy way to deploy Weblate in the cloud."
 msgid ""
-"We can host translations for your commercial projects as well. All hosting "
-"packages include following features:"
-msgstr ""
-"Můžeme hostovat i překlady pro váš komerční projekt. Všechny balíčky "
-"zahrnují následující:"
-
-#: weblate_web/html/hosting.html:72
-msgid "Unlimited number of translation components"
-msgstr "Neomezený počet překladových komponent"
-
-#: weblate_web/html/hosting.html:73
-msgid "Unlimited number of contributors"
-msgstr "Neomezený počet překladatelů"
-
-#: weblate_web/html/hosting.html:74
-msgid "Self service user management"
-msgstr "Samostatná správa uživatelů"
-
-#: weblate_web/html/hosting.html:75
-msgid "Version control integration"
-msgstr "Integrace s verzovacím systémem"
-
-#: weblate_web/html/hosting.html:77
-msgid "All other Weblate features"
-msgstr "Všechny další vlastnosti Weblate"
-
-#: weblate_web/html/hosting.html:85
-#| msgid "Basic"
-msgctxt "Hosting plan"
-msgid "Basic"
-msgstr "Základní"
-
-#: weblate_web/html/hosting.html:89
-msgid "Up to 1000 source strings"
-msgstr "Až 1000 zdrojových řetězců"
-
-#: weblate_web/html/hosting.html:90
-msgid "Up to 15 target languages"
-msgstr "Až 15 cílových jazyků"
-
-#: weblate_web/html/hosting.html:91
-msgid "One VCS repository"
-msgstr "Jeden VCS repozitář"
-
-#: weblate_web/html/hosting.html:92 weblate_web/html/hosting.html.py:111
-msgid "One translation project"
-msgstr "Jeden překladový projekt"
-
-#: weblate_web/html/hosting.html:96 weblate_web/html/hosting.html.py:115
-#: weblate_web/html/hosting.html:134
-#, python-format
-msgid "%(price)s EUR / month"
-msgstr "%(price)s EUR / měsíc"
-
-#: weblate_web/html/hosting.html:104
-#| msgid "Medium"
-msgctxt "Hosting plan"
-msgid "Medium"
-msgstr "Střední"
-
-#: weblate_web/html/hosting.html:108
-msgid "Up to 3000 source strings"
-msgstr "Až 3000 zdrojových řetězců"
-
-#: weblate_web/html/hosting.html:109
-msgid "Up to 30 target languages"
-msgstr "Až 30 cílových jazyků"
-
-#: weblate_web/html/hosting.html:110
-msgid "Two VCS repositories"
-msgstr "Dva VCS repozitáře"
-
-#: weblate_web/html/hosting.html:123
-#| msgid "Advanced"
-msgctxt "Hosting plan"
-msgid "Advanced"
-msgstr "Pokročilý"
-
-#: weblate_web/html/hosting.html:127
-msgid "Up to 10000 source strings"
-msgstr "Až 10000 zdrojových řetězců"
-
-#: weblate_web/html/hosting.html:128
-msgid "Up to 60 target languages"
-msgstr "Až 60 cílových jazyků"
-
-#: weblate_web/html/hosting.html:129
-msgid "Up to 5 VCS repositories"
-msgstr "Až 5 VCS repozitářů"
-
-#: weblate_web/html/hosting.html:130 weblate_web/html/hosting.html.py:149
-msgid "Unlimited translation projects"
-msgstr "Neomezeně překladových projektů"
-
-#: weblate_web/html/hosting.html:142
-#| msgid "Enterprise"
-msgctxt "Hosting plan"
-msgid "Enterprise"
-msgstr "Vlastní"
-
-#: weblate_web/html/hosting.html:146
-msgid "Unlimited source strings"
-msgstr "Neomezeně zdrojových řetězců"
-
-#: weblate_web/html/hosting.html:147
-msgid "Unlimited target languages"
-msgstr "Neomezeně cílových jazyků"
-
-#: weblate_web/html/hosting.html:148
-msgid "Unlimited VCS repositories"
-msgstr "Neomezeně VCS repozitářů"
-
-#: weblate_web/html/hosting.html:153
-msgid "Contact us"
-msgstr "Napište nám"
-
-#: weblate_web/html/hosting.html:161
-msgid ""
-"The pricing is based on number of source strings and number of target "
-"languages. The source string is a text unit defined in a translation format, "
-"it can be word, sentence or a paragraph."
-msgstr ""
-"Ceny jsou založeny na počtu zdrojových řetězců a počtu cílových jazyků. "
-"Zdrojový řetězec je jednotka použitá v překladovém formátů, může to být "
-"slovo, věta nebo odstavec."
-
-#: weblate_web/html/hosting.html:165
-msgid ""
-"Please contact <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> for more "
-"details."
-msgstr ""
-"Pokud máte zájem o překládání vašeho komerčního programu pomocí Weblate, "
-"napište <a href=\"mailto:michal@cihar.com\">Michalu Čihařovi</a>."
-
-#: weblate_web/html/hosting.html:168
-msgid "Other options"
-msgstr "Další možnosti"
-
-#: weblate_web/html/hosting.html:172 weblate_web/html/try.html:28
-#, python-format
-msgid ""
-"Check our <a href=\"%(download_url)s\">download page</a> for appliances, "
-"which provide an easy way to deploy Weblate in the cloud."
+"You can also <a href=\"%(download_url)s\">download</a> Weblate sources and "
+"run it on your systems. There are also several options for deploying Weblate "
+"to the cloud."
 msgstr ""
 "Podívejte se na naši <a href=\"%(download_url)s\">stránku pro stažení</a>, "
 "kde naleznete appliance, které můžete snadno nasadit v cloudu."
@@ -1047,6 +1088,15 @@ msgstr ""
 msgid "Appliances"
 msgstr "Připravené obrazy"
 
+#: weblate_web/html/try.html:28
+#, python-format
+msgid ""
+"Check our <a href=\"%(download_url)s\">download page</a> for appliances, "
+"which provide an easy way to deploy Weblate in the cloud."
+msgstr ""
+"Podívejte se na naši <a href=\"%(download_url)s\">stránku pro stažení</a>, "
+"kde naleznete appliance, které můžete snadno nasadit v cloudu."
+
 #: weblate_web/templatetags/downloads.py:39
 #, python-format
 msgid "%(size)d byte"
@@ -1085,6 +1135,65 @@ msgstr "Zdrojový tarball, komprimový xz"
 #: weblate_web/templatetags/downloads.py:60
 msgid "Sources, zip compressed"
 msgstr "Zdrojáky, komprimované zipem"
+
+#~ msgid "Commercial hosting"
+#~ msgstr "Komerční hostování"
+
+#~ msgid ""
+#~ "We can host translations for your commercial projects as well. All "
+#~ "hosting packages include following features:"
+#~ msgstr ""
+#~ "Můžeme hostovat i překlady pro váš komerční projekt. Všechny balíčky "
+#~ "zahrnují následující:"
+
+#~ msgid "Unlimited number of contributors"
+#~ msgstr "Neomezený počet překladatelů"
+
+#~ msgid "Version control integration"
+#~ msgstr "Integrace s verzovacím systémem"
+
+#~ msgid "All other Weblate features"
+#~ msgstr "Všechny další vlastnosti Weblate"
+
+#~ msgid "Up to 1000 source strings"
+#~ msgstr "Až 1000 zdrojových řetězců"
+
+#~ msgid "One VCS repository"
+#~ msgstr "Jeden VCS repozitář"
+
+#~ msgid "Up to 3000 source strings"
+#~ msgstr "Až 3000 zdrojových řetězců"
+
+#~ msgid "Up to 30 target languages"
+#~ msgstr "Až 30 cílových jazyků"
+
+#~ msgid "Up to 10000 source strings"
+#~ msgstr "Až 10000 zdrojových řetězců"
+
+#~ msgid "Up to 60 target languages"
+#~ msgstr "Až 60 cílových jazyků"
+
+#~ msgid "Up to 5 VCS repositories"
+#~ msgstr "Až 5 VCS repozitářů"
+
+#~ msgid "Unlimited translation projects"
+#~ msgstr "Neomezeně překladových projektů"
+
+#~ msgid "Unlimited target languages"
+#~ msgstr "Neomezeně cílových jazyků"
+
+#~ msgid "Unlimited VCS repositories"
+#~ msgstr "Neomezeně VCS repozitářů"
+
+#~ msgid ""
+#~ "Please contact <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> for "
+#~ "more details."
+#~ msgstr ""
+#~ "Pokud máte zájem o překládání vašeho komerčního programu pomocí Weblate, "
+#~ "napište <a href=\"mailto:michal@cihar.com\">Michalu Čihařovi</a>."
+
+#~ msgid "Other options"
+#~ msgstr "Další možnosti"
 
 #~ msgid ""
 #~ "Commercial hosting is possible as well, our price starts at 19 EUR per "

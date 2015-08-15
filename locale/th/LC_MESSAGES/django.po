@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2015-06-30 14:45+0200\n"
+"POT-Creation-Date: 2015-08-15 15:06+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,7 +52,7 @@ msgid ""
 msgstr ""
 
 #: weblate_web/data.py:58 weblate_web/html/features.html:77
-#: weblate_web/html/hosting.html:76
+#: weblate_web/html/hosting.html:125
 msgid "Glossary"
 msgstr ""
 
@@ -63,6 +63,7 @@ msgid ""
 msgstr ""
 
 #: weblate_web/data.py:66 weblate_web/html/base-features.html:16
+#: weblate_web/html/hosting.html:109
 msgid "Quality checks"
 msgstr ""
 
@@ -97,7 +98,7 @@ msgid ""
 "our trained monkeys to fix the issue."
 msgstr ""
 
-#: weblate_web/html/base-features.html:8
+#: weblate_web/html/base-features.html:8 weblate_web/html/hosting.html:37
 msgid "Continuous translation"
 msgstr ""
 
@@ -498,8 +499,43 @@ msgid ""
 "phone."
 msgstr ""
 
-#: weblate_web/html/hosting.html:3 weblate_web/html/hosting.html.py:4
+#: weblate_web/html/hosting-ordered.html:3
+#: weblate_web/html/hosting-ordered.html:4 weblate_web/html/hosting.html:3
+#: weblate_web/html/hosting.html.py:4
 msgid "Hosting Weblate"
+msgstr ""
+
+#: weblate_web/html/hosting-ordered.html:6
+msgid "Thank you for ordering hosting!"
+msgstr ""
+
+#: weblate_web/html/hosting-ordered.html:11
+msgid "Next steps"
+msgstr ""
+
+#: weblate_web/html/hosting-ordered.html:13
+msgid ""
+"The project setup is currently manual. If you haven't done so already, "
+"please get in touch with us and send us details about your repository setup."
+msgstr ""
+
+#: weblate_web/html/hosting-ordered.html:15
+msgid "Usually following information is needed:"
+msgstr ""
+
+#: weblate_web/html/hosting-ordered.html:18 weblate_web/html/hosting.html:187
+msgid "URL of repository with translations."
+msgstr ""
+
+#: weblate_web/html/hosting-ordered.html:19 weblate_web/html/hosting.html:188
+msgid "Path to translations within the repository."
+msgstr ""
+
+#: weblate_web/html/hosting-ordered.html:22
+msgid ""
+"You have to allow Weblate to access your repository. This can be done by "
+"adding Weblate user to your project (on GitHub, Bitbucket or GitLab) or "
+"adding SSH key we will provide you."
 msgstr ""
 
 #: weblate_web/html/hosting.html:6
@@ -511,10 +547,132 @@ msgid "Ask for hosting"
 msgstr ""
 
 #: weblate_web/html/hosting.html:17
-msgid "Hosting for free software"
+msgid "Hosting plans"
 msgstr ""
 
 #: weblate_web/html/hosting.html:20
+#, python-format
+msgid ""
+"We can host translations for your commercial of free software projects. You "
+"can see summary of hosting plans below. Should you have any questions or "
+"look for hosting of bigger projects, don't hesitate to <a href=\"%(contact)s"
+"\">get in touch with us</a>."
+msgstr ""
+
+#: weblate_web/html/hosting.html:28
+msgctxt "Hosting plan"
+msgid "Free software"
+msgstr ""
+
+#: weblate_web/html/hosting.html:29
+msgctxt "Hosting plan"
+msgid "Basic"
+msgstr ""
+
+#: weblate_web/html/hosting.html:30
+msgctxt "Hosting plan"
+msgid "Medium"
+msgstr ""
+
+#: weblate_web/html/hosting.html:31
+msgctxt "Hosting plan"
+msgid "Advanced"
+msgstr ""
+
+#: weblate_web/html/hosting.html:32
+msgctxt "Hosting plan"
+msgid "Enterprise"
+msgstr ""
+
+#: weblate_web/html/hosting.html:45
+msgid "Source strings"
+msgstr ""
+
+#: weblate_web/html/hosting.html:46 weblate_web/html/hosting.html.py:54
+#: weblate_web/html/hosting.html:62
+msgid "Negotiable"
+msgstr ""
+
+#: weblate_web/html/hosting.html:53
+msgid "Target languages"
+msgstr ""
+
+#: weblate_web/html/hosting.html:61
+msgid "VCS repositories"
+msgstr ""
+
+#: weblate_web/html/hosting.html:69
+msgid "Translation projects"
+msgstr ""
+
+#: weblate_web/html/hosting.html:73 weblate_web/html/hosting.html.py:74
+#: weblate_web/html/hosting.html:79 weblate_web/html/hosting.html.py:80
+#: weblate_web/html/hosting.html:81 weblate_web/html/hosting.html.py:82
+#: weblate_web/html/hosting.html:86 weblate_web/html/hosting.html.py:87
+#: weblate_web/html/hosting.html:88 weblate_web/html/hosting.html.py:89
+#: weblate_web/html/hosting.html:90
+msgid "Unlimited"
+msgstr ""
+
+#: weblate_web/html/hosting.html:77
+msgid "Translation components"
+msgstr ""
+
+#: weblate_web/html/hosting.html:85
+msgid "Number of translators"
+msgstr ""
+
+#: weblate_web/html/hosting.html:93
+msgid "User management"
+msgstr ""
+
+#: weblate_web/html/hosting.html:101
+msgid "Supported file formats"
+msgstr ""
+
+#: weblate_web/html/hosting.html:102 weblate_web/html/hosting.html.py:103
+#: weblate_web/html/hosting.html:104 weblate_web/html/hosting.html.py:105
+#: weblate_web/html/hosting.html:106
+msgid "All"
+msgstr ""
+
+#: weblate_web/html/hosting.html:113 weblate_web/html/hosting.html.py:114
+#: weblate_web/html/hosting.html:121 weblate_web/html/hosting.html.py:122
+msgid "Customizable"
+msgstr ""
+
+#: weblate_web/html/hosting.html:117
+msgid "Translation processing"
+msgstr ""
+
+#: weblate_web/html/hosting.html:137
+msgid "Contact us"
+msgstr ""
+
+#: weblate_web/html/hosting.html:140 weblate_web/html/hosting.html.py:143
+#: weblate_web/html/hosting.html:146 weblate_web/html/hosting.html.py:149
+#, python-format
+msgid "%(price)s EUR / month"
+msgstr ""
+
+#: weblate_web/html/hosting.html:157
+msgid ""
+"The pricing is based on number of source strings and number of target "
+"languages. The source string is a text unit defined in a translation format, "
+"it can be word, sentence or a paragraph."
+msgstr ""
+
+#: weblate_web/html/hosting.html:161
+msgid ""
+"The hosting setup is currently done manually, so you might want to get in "
+"touch with us prior to making subscription with your project details."
+msgstr ""
+
+#: weblate_web/html/hosting.html:164
+msgid "Hosting for free software"
+msgstr ""
+
+#: weblate_web/html/hosting.html:167
 msgid ""
 "If you are interested in using Weblate for your free software, you can ask "
 "us to be include on <a href=\"http://hosted.weblate.org/\">hosted.weblate."
@@ -522,64 +680,56 @@ msgid ""
 "maintaining it."
 msgstr ""
 
-#: weblate_web/html/hosting.html:23
+#: weblate_web/html/hosting.html:170
 msgid "Conditions for free hosting"
 msgstr ""
 
-#: weblate_web/html/hosting.html:26
+#: weblate_web/html/hosting.html:173
 msgid ""
 "Translated content has to be released under <a href=\"http://en.wikipedia."
 "org/wiki/Free_software_license\">free license</a>."
 msgstr ""
 
-#: weblate_web/html/hosting.html:27
+#: weblate_web/html/hosting.html:174
 msgid ""
 "Source code has to be publicly available in supported version control system."
 msgstr ""
 
-#: weblate_web/html/hosting.html:28
+#: weblate_web/html/hosting.html:175
 msgid "There is no guarantee for service availability or quality."
 msgstr ""
 
-#: weblate_web/html/hosting.html:31
+#: weblate_web/html/hosting.html:178
 msgid "Asking for hosting"
 msgstr ""
 
-#: weblate_web/html/hosting.html:34
+#: weblate_web/html/hosting.html:181
 #, python-format
 msgid ""
 "Please use <a href=\"%(url)s\">contact form on Hosted Weblate</a> to request "
 "hosting. You will need following information:"
 msgstr ""
 
-#: weblate_web/html/hosting.html:38
+#: weblate_web/html/hosting.html:185
 msgid "Information about your project."
 msgstr ""
 
-#: weblate_web/html/hosting.html:39
+#: weblate_web/html/hosting.html:186
 msgid "Project website."
 msgstr ""
 
-#: weblate_web/html/hosting.html:40
-msgid "URL of repository with translations."
-msgstr ""
-
-#: weblate_web/html/hosting.html:41
-msgid "Path to translations within the repository."
-msgstr ""
-
-#: weblate_web/html/hosting.html:44
+#: weblate_web/html/hosting.html:191
 msgid "Translation workflow"
 msgstr ""
 
-#: weblate_web/html/hosting.html:47
+#: weblate_web/html/hosting.html:194
 msgid ""
 "All translated repositories are available at <code>git.weblate.org</code> "
 "with similar naming as on website - hello/master translation would be "
 "published as <code>git://git.weblate.org/hello-master.git</code>."
 msgstr ""
 
-#: weblate_web/html/hosting.html:51
+#: weblate_web/html/hosting.html:198
 #, python-format
 msgid ""
 "Weblate can automatically receive changes from major code hosting services, "
@@ -587,7 +737,7 @@ msgid ""
 "href=\"%(bitbucket)s\">Bitbucket</a> or <a href=\"%(gitlab)s\">GitLab</a>."
 msgstr ""
 
-#: weblate_web/html/hosting.html:55
+#: weblate_web/html/hosting.html:202
 #, python-format
 msgid ""
 "If you want Weblate to automatically push changes as well, add Weblate push "
@@ -595,11 +745,11 @@ msgid ""
 "href=\"%(docs)s\">documentation</a> for more detailed instructions."
 msgstr ""
 
-#: weblate_web/html/hosting.html:58
+#: weblate_web/html/hosting.html:205
 msgid "Support free hosting"
 msgstr ""
 
-#: weblate_web/html/hosting.html:62
+#: weblate_web/html/hosting.html:209
 #, python-format
 msgid ""
 "The hosting is provided for free, but running the server and maintaining it "
@@ -607,144 +757,16 @@ msgid ""
 "\">Gratipay</a> or <a href=\"%(donate_url)s\">other ways to donate</a>."
 msgstr ""
 
-#: weblate_web/html/hosting.html:65
-msgid "Commercial hosting"
+#: weblate_web/html/hosting.html:213
+msgid "Self hosting"
 msgstr ""
 
-#: weblate_web/html/hosting.html:68
-msgid ""
-"We can host translations for your commercial projects as well. All hosting "
-"packages include following features:"
-msgstr ""
-
-#: weblate_web/html/hosting.html:72
-msgid "Unlimited number of translation components"
-msgstr ""
-
-#: weblate_web/html/hosting.html:73
-msgid "Unlimited number of contributors"
-msgstr ""
-
-#: weblate_web/html/hosting.html:74
-msgid "Self service user management"
-msgstr ""
-
-#: weblate_web/html/hosting.html:75
-msgid "Version control integration"
-msgstr ""
-
-#: weblate_web/html/hosting.html:77
-msgid "All other Weblate features"
-msgstr ""
-
-#: weblate_web/html/hosting.html:85
-msgctxt "Hosting plan"
-msgid "Basic"
-msgstr ""
-
-#: weblate_web/html/hosting.html:89
-msgid "Up to 1000 source strings"
-msgstr ""
-
-#: weblate_web/html/hosting.html:90
-msgid "Up to 15 target languages"
-msgstr ""
-
-#: weblate_web/html/hosting.html:91
-msgid "One VCS repository"
-msgstr ""
-
-#: weblate_web/html/hosting.html:92 weblate_web/html/hosting.html.py:111
-msgid "One translation project"
-msgstr ""
-
-#: weblate_web/html/hosting.html:96 weblate_web/html/hosting.html.py:115
-#: weblate_web/html/hosting.html:134
-#, python-format
-msgid "%(price)s EUR / month"
-msgstr ""
-
-#: weblate_web/html/hosting.html:104
-msgctxt "Hosting plan"
-msgid "Medium"
-msgstr ""
-
-#: weblate_web/html/hosting.html:108
-msgid "Up to 3000 source strings"
-msgstr ""
-
-#: weblate_web/html/hosting.html:109
-msgid "Up to 30 target languages"
-msgstr ""
-
-#: weblate_web/html/hosting.html:110
-msgid "Two VCS repositories"
-msgstr ""
-
-#: weblate_web/html/hosting.html:123
-msgctxt "Hosting plan"
-msgid "Advanced"
-msgstr ""
-
-#: weblate_web/html/hosting.html:127
-msgid "Up to 10000 source strings"
-msgstr ""
-
-#: weblate_web/html/hosting.html:128
-msgid "Up to 60 target languages"
-msgstr ""
-
-#: weblate_web/html/hosting.html:129
-msgid "Up to 5 VCS repositories"
-msgstr ""
-
-#: weblate_web/html/hosting.html:130 weblate_web/html/hosting.html.py:149
-msgid "Unlimited translation projects"
-msgstr ""
-
-#: weblate_web/html/hosting.html:142
-msgctxt "Hosting plan"
-msgid "Enterprise"
-msgstr ""
-
-#: weblate_web/html/hosting.html:146
-msgid "Unlimited source strings"
-msgstr ""
-
-#: weblate_web/html/hosting.html:147
-msgid "Unlimited target languages"
-msgstr ""
-
-#: weblate_web/html/hosting.html:148
-msgid "Unlimited VCS repositories"
-msgstr ""
-
-#: weblate_web/html/hosting.html:153
-msgid "Contact us"
-msgstr ""
-
-#: weblate_web/html/hosting.html:161
-msgid ""
-"The pricing is based on number of source strings and number of target "
-"languages. The source string is a text unit defined in a translation format, "
-"it can be word, sentence or a paragraph."
-msgstr ""
-
-#: weblate_web/html/hosting.html:165
-msgid ""
-"Please contact <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> for more "
-"details."
-msgstr ""
-
-#: weblate_web/html/hosting.html:168
-msgid "Other options"
-msgstr ""
-
-#: weblate_web/html/hosting.html:172 weblate_web/html/try.html:28
+#: weblate_web/html/hosting.html:217
 #, python-format
 msgid ""
-"Check our <a href=\"%(download_url)s\">download page</a> for appliances, "
-"which provide an easy way to deploy Weblate in the cloud."
+"You can also <a href=\"%(download_url)s\">download</a> Weblate sources and "
+"run it on your systems. There are also several options for deploying Weblate "
+"to the cloud."
 msgstr ""
 
 #: weblate_web/html/index.html:3
@@ -916,6 +938,13 @@ msgstr ""
 
 #: weblate_web/html/try.html:25
 msgid "Appliances"
+msgstr ""
+
+#: weblate_web/html/try.html:28
+#, python-format
+msgid ""
+"Check our <a href=\"%(download_url)s\">download page</a> for appliances, "
+"which provide an easy way to deploy Weblate in the cloud."
 msgstr ""
 
 #: weblate_web/templatetags/downloads.py:39
