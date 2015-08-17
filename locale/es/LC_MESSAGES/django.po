@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2015-08-17 17:49+0200\n"
-"PO-Revision-Date: 2015-07-03 14:46+0200\n"
+"PO-Revision-Date: 2015-08-17 20:57+0200\n"
 "Last-Translator: Franco <fulanodetal.github@openaliasbox.org>\n"
-"Language-Team: Spanish <https://hosted.weblate.org/projects/weblate/website/"
-"es/>\n"
+"Language-Team: Spanish "
+"<https://hosted.weblate.org/projects/weblate/website/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -583,22 +583,26 @@ msgid "Hosting Weblate"
 msgstr "Alojamiento de Weblate"
 
 #: weblate_web/html/hosting-ordered.html:6
+#, fuzzy
 msgid "Thank you for ordering hosting!"
-msgstr ""
+msgstr "¡Gracias por ordenar un hosting!"
 
 #: weblate_web/html/hosting-ordered.html:11
 msgid "Next steps"
-msgstr ""
+msgstr "Pasos a seguir"
 
 #: weblate_web/html/hosting-ordered.html:13
 msgid ""
 "The project setup is currently manual. If you haven't done so already, "
 "please get in touch with us and send us details about your repository setup."
 msgstr ""
+"La configuración de proyecto es actualmente manual. Si todavía no lo hizo, "
+"por favor póngase en contacto con nosotros y envíenos los detalles sobre la "
+"configuración del repositorio."
 
 #: weblate_web/html/hosting-ordered.html:15
 msgid "Usually following information is needed:"
-msgstr ""
+msgstr "Se requiere generalmente la siguiente información:"
 
 #: weblate_web/html/hosting-ordered.html:18 weblate_web/html/hosting.html:187
 msgid "URL of repository with translations."
@@ -614,6 +618,9 @@ msgid ""
 "adding Weblate user to your project (on GitHub, Bitbucket or GitLab) or "
 "adding SSH key we will provide you."
 msgstr ""
+"Tienes que permitir a Weblate el acceso a su repositorio. Esto puede hacerse "
+"añadiendo usuario Weblate a su proyecto (en GitHub, Bitbucket o GitLab) o "
+"añadiendo una clave SSH que le ofrecemos."
 
 #: weblate_web/html/hosting.html:6
 msgid "Free continuous translation hosting for free software."
@@ -624,10 +631,9 @@ msgid "Ask for hosting"
 msgstr "Pedir alojamiento"
 
 #: weblate_web/html/hosting.html:17
-#, fuzzy
 #| msgid "Hosting Weblate"
 msgid "Hosting plans"
-msgstr "Alojamiento de Weblate"
+msgstr "Planes de alojamientos"
 
 #: weblate_web/html/hosting.html:20
 #, python-format
@@ -637,13 +643,16 @@ msgid ""
 "look for hosting of bigger projects, don't hesitate to <a href=\"%(contact)s"
 "\">get in touch with us</a>."
 msgstr ""
+"Podemos almacenar las traducciones para sus proyectos de software libre o "
+"comercial. Puedes ver el resumen de los siguientes planes de almacenamiento. "
+"Si tiene alguna pregunta o busca alojamiento de grandes proyectos, no dude "
+"en <a href=\"%(contact)s\"> contactarse con nosotros</a>."
 
 #: weblate_web/html/hosting.html:28
-#, fuzzy
 #| msgid "Hosting for free software"
 msgctxt "Hosting plan"
 msgid "Free software"
-msgstr "Alojamiento para software libre"
+msgstr "Software libre"
 
 #: weblate_web/html/hosting.html:29
 msgctxt "Hosting plan"
@@ -666,33 +675,29 @@ msgid "Enterprise"
 msgstr "Empresa"
 
 #: weblate_web/html/hosting.html:45
-#, fuzzy
 #| msgid "Unlimited source strings"
 msgid "Source strings"
-msgstr "Cadenas fuente ilimitada"
+msgstr "Cadenas originales"
 
 #: weblate_web/html/hosting.html:46 weblate_web/html/hosting.html.py:54
 #: weblate_web/html/hosting.html:62
 msgid "Negotiable"
-msgstr ""
+msgstr "Negociable"
 
 #: weblate_web/html/hosting.html:53
-#, fuzzy
 #| msgid "Up to 15 target languages"
 msgid "Target languages"
-msgstr "Hasta 15 idiomas"
+msgstr "Idiomas de destino"
 
 #: weblate_web/html/hosting.html:61
-#, fuzzy
 #| msgid "Two VCS repositories"
 msgid "VCS repositories"
-msgstr "Dos repositorios de VCS"
+msgstr "Repositorios VCS"
 
 #: weblate_web/html/hosting.html:69
-#, fuzzy
 #| msgid "One translation project"
 msgid "Translation projects"
-msgstr "Un proyecto de traducción"
+msgstr "Proyectos de traducción"
 
 #: weblate_web/html/hosting.html:73 weblate_web/html/hosting.html.py:74
 #: weblate_web/html/hosting.html:79 weblate_web/html/hosting.html.py:80
@@ -701,48 +706,43 @@ msgstr "Un proyecto de traducción"
 #: weblate_web/html/hosting.html:88 weblate_web/html/hosting.html.py:89
 #: weblate_web/html/hosting.html:90
 msgid "Unlimited"
-msgstr ""
+msgstr "Ilimitado"
 
 #: weblate_web/html/hosting.html:77
-#, fuzzy
 #| msgid "Translation context"
 msgid "Translation components"
-msgstr "Contexto de traducción"
+msgstr "Componentes de traducción"
 
 #: weblate_web/html/hosting.html:85
-#, fuzzy
 #| msgid "Unlimited number of translation components"
 msgid "Number of translators"
-msgstr "Número ilimitado de componentes de traducción"
+msgstr "Número de traductores"
 
 #: weblate_web/html/hosting.html:93
-#, fuzzy
 #| msgid "Self service user management"
 msgid "User management"
-msgstr "Auto servicio de gestión de usuarios"
+msgstr "Gestión de usuarios"
 
 #: weblate_web/html/hosting.html:101
-#, fuzzy
 #| msgid "File formats"
 msgid "Supported file formats"
-msgstr "Formatos de archivo"
+msgstr "Formatos de archivos soportados"
 
 #: weblate_web/html/hosting.html:102 weblate_web/html/hosting.html.py:103
 #: weblate_web/html/hosting.html:104 weblate_web/html/hosting.html.py:105
 #: weblate_web/html/hosting.html:106
 msgid "All"
-msgstr ""
+msgstr "Todos/as"
 
 #: weblate_web/html/hosting.html:113 weblate_web/html/hosting.html.py:114
 #: weblate_web/html/hosting.html:121 weblate_web/html/hosting.html.py:122
 msgid "Customizable"
-msgstr ""
+msgstr "Personalizable"
 
 #: weblate_web/html/hosting.html:117
-#, fuzzy
 #| msgid "Translation status"
 msgid "Translation processing"
-msgstr "Estado de la traducción"
+msgstr "Proceso de traducción"
 
 #: weblate_web/html/hosting.html:137
 msgid "Contact us"
@@ -769,6 +769,9 @@ msgid ""
 "The hosting setup is currently done manually, so you might want to get in "
 "touch with us prior to making subscription with your project details."
 msgstr ""
+"La configuración del hosting, se realiza actualmente en forma manual, por lo "
+"que puede contactarse con nosotros antes de realizar la suscripción con los "
+"datos de su proyecto."
 
 #: weblate_web/html/hosting.html:164
 msgid "Hosting for free software"
@@ -886,10 +889,9 @@ msgstr ""
 "donar</a>."
 
 #: weblate_web/html/hosting.html:213
-#, fuzzy
 #| msgid "Ask for hosting"
 msgid "Self hosting"
-msgstr "Pedir alojamiento"
+msgstr "Auto alojamiento"
 
 #: weblate_web/html/hosting.html:217
 #, fuzzy, python-format
@@ -901,8 +903,9 @@ msgid ""
 "run it on your systems. There are also several options for deploying Weblate "
 "to the cloud."
 msgstr ""
-"Revise nuestra <a href=\"%(download_url)s\">página de descargas</a> por "
-"aplicativos que proveen una forma sencilla para desplegar Weblate en la nube."
+"También puedes <a href=\"%(download_url)s\">descargar</a> las fuentes "
+"Weblate y ejecutarlo en sus sistemas. También hay varias opciones para el "
+"despliegue de Weblate a la nube."
 
 #: weblate_web/html/index.html:3
 msgid "Weblate - web-based translation"
