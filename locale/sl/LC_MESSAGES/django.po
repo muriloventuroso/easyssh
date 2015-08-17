@@ -7,17 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2015-08-15 15:06+0200\n"
+"POT-Creation-Date: 2015-08-17 17:49+0200\n"
 "PO-Revision-Date: 2015-08-16 13:47+0200\n"
 "Last-Translator: Domen <mitenem@outlook.com>\n"
-"Language-Team: Slovenian "
-"<https://hosted.weblate.org/projects/weblate/website/sl/>\n"
+"Language-Team: Slovenian <https://hosted.weblate.org/projects/weblate/"
+"website/sl/>\n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
-"n%100==4 ? 2 : 3;\n"
+"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
+"%100==4 ? 2 : 3;\n"
 "X-Generator: Weblate 2.4-dev\n"
 
 #: weblate_web/data.py:33
@@ -196,8 +196,8 @@ msgid ""
 "Weblate is free software, but welcomes <a href=\"%(donate_url)s\">donations</"
 "a>."
 msgstr ""
-"Weblate je prosto programje, vendar so <a href=\"%(donate_url)s\""
-">prispevki</a> dobrodošli."
+"Weblate je prosto programje, vendar so <a href=\"%(donate_url)s\">prispevki</"
+"a> dobrodošli."
 
 #: weblate_web/html/contribute.html:3 weblate_web/html/contribute.html.py:4
 msgid "Contribute to Weblate"
@@ -265,9 +265,9 @@ msgstr "Donirajte Weblateu"
 msgid "Weblate is free, but welcomes donations."
 msgstr "Weblate je brezplačen, vendar so donacije dobrodošle."
 
-#: weblate_web/html/donate.html:12 weblate_web/html/donate.html.py:26
-msgid "Donate using Gratipay"
-msgstr "Donirajte z Gratipay"
+#: weblate_web/html/donate.html:12 weblate_web/html/donate.html.py:37
+msgid "Fund on Bountysource"
+msgstr "Financirajte na Bountysource"
 
 #: weblate_web/html/donate.html:18
 msgid "Regular donations"
@@ -283,6 +283,10 @@ msgstr ""
 "brezplačno gostovanje za prosto programje. Ne rabite porabiti velikih "
 "zneskov – vsak cent šteje."
 
+#: weblate_web/html/donate.html:26
+msgid "Donate using Gratipay"
+msgstr "Donirajte z Gratipay"
+
 #: weblate_web/html/donate.html:30
 msgid "Gratipay allows you to send a weekly amount using a credit card."
 msgstr ""
@@ -291,10 +295,6 @@ msgstr ""
 #: weblate_web/html/donate.html:33
 msgid "Fund features"
 msgstr "Možnosti financiranja"
-
-#: weblate_web/html/donate.html:37
-msgid "Fund on Bountysource"
-msgstr "Financirajte na Bountysource"
 
 #: weblate_web/html/donate.html:41
 msgid ""
@@ -616,21 +616,19 @@ msgid "Ask for hosting"
 msgstr "Zaprosite za gostovanje"
 
 #: weblate_web/html/hosting.html:17
-#| msgid "Hosting Weblate"
 msgid "Hosting plans"
 msgstr "Načrti za gostovanje"
 
 #: weblate_web/html/hosting.html:20
 #, python-format
 msgid ""
-"We can host translations for your commercial of free software projects. You "
+"We can host translations for your commercial or free software projects. You "
 "can see summary of hosting plans below. Should you have any questions or "
 "look for hosting of bigger projects, don't hesitate to <a href=\"%(contact)s"
 "\">get in touch with us</a>."
 msgstr ""
 
 #: weblate_web/html/hosting.html:28
-#| msgid "Hosting for free software"
 msgctxt "Hosting plan"
 msgid "Free software"
 msgstr "Prosto programje"
@@ -656,7 +654,6 @@ msgid "Enterprise"
 msgstr "Podjetniško"
 
 #: weblate_web/html/hosting.html:45
-#| msgid "Unlimited source strings"
 msgid "Source strings"
 msgstr "Izvirni nizi"
 
@@ -666,17 +663,14 @@ msgid "Negotiable"
 msgstr "Po dogovoru"
 
 #: weblate_web/html/hosting.html:53
-#| msgid "Up to 15 target languages"
 msgid "Target languages"
 msgstr "Ciljni jeziki"
 
 #: weblate_web/html/hosting.html:61
-#| msgid "Two VCS repositories"
 msgid "VCS repositories"
 msgstr "Shrambe VCS"
 
 #: weblate_web/html/hosting.html:69
-#| msgid "One translation project"
 msgid "Translation projects"
 msgstr "Prevajalski projekti"
 
@@ -690,22 +684,18 @@ msgid "Unlimited"
 msgstr "Neomejeno"
 
 #: weblate_web/html/hosting.html:77
-#| msgid "Translation context"
 msgid "Translation components"
 msgstr "Prevajalne komponente"
 
 #: weblate_web/html/hosting.html:85
-#| msgid "Unlimited number of translation components"
 msgid "Number of translators"
 msgstr "Število prevajalcev"
 
 #: weblate_web/html/hosting.html:93
-#| msgid "Self service user management"
 msgid "User management"
 msgstr "Upravljanje uporabnikov"
 
 #: weblate_web/html/hosting.html:101
-#| msgid "File formats"
 msgid "Supported file formats"
 msgstr "Podprte oblike datotek"
 
@@ -721,7 +711,6 @@ msgid "Customizable"
 msgstr "Prilagodljivo"
 
 #: weblate_web/html/hosting.html:117
-#| msgid "Translation status"
 msgid "Translation processing"
 msgstr "Obdelava prevodov"
 
@@ -763,9 +752,9 @@ msgid ""
 "maintaining it."
 msgstr ""
 "Če vas zanima uporaba Weblate za vaše prosto programje, nas lahko prosite, "
-"da ga vključimo na <a href=\"http://hosted.weblate.org/\""
-">hosted.weblate.org</a>. To vam bo omogočilo, da uporabljate Weblate brez "
-"nameščanja in vzdrževanja."
+"da ga vključimo na <a href=\"http://hosted.weblate.org/\">hosted.weblate."
+"org</a>. To vam bo omogočilo, da uporabljate Weblate brez nameščanja in "
+"vzdrževanja."
 
 #: weblate_web/html/hosting.html:170
 msgid "Conditions for free hosting"
@@ -864,15 +853,11 @@ msgstr ""
 "\">Gratipay</a> ali <a href=\"%(donate_url)s\">druge načine doniranja</a>."
 
 #: weblate_web/html/hosting.html:213
-#| msgid "Ask for hosting"
 msgid "Self hosting"
 msgstr "Samogostovanje"
 
 #: weblate_web/html/hosting.html:217
 #, python-format
-#| msgid ""
-#| "Check our <a href=\"%(download_url)s\">download page</a> for appliances, "
-#| "which provide an easy way to deploy Weblate in the cloud."
 msgid ""
 "You can also <a href=\"%(download_url)s\">download</a> Weblate sources and "
 "run it on your systems. There are also several options for deploying Weblate "

@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2015-08-15 15:06+0200\n"
+"POT-Creation-Date: 2015-08-17 17:49+0200\n"
 "PO-Revision-Date: 2015-08-17 17:47+0200\n"
 "Last-Translator: Dieter Adriaenssens <dieter.adriaenssens@gmail.com>\n"
-"Language-Team: Dutch "
-"<https://hosted.weblate.org/projects/weblate/website/nl/>\n"
+"Language-Team: Dutch <https://hosted.weblate.org/projects/weblate/website/nl/"
+">\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -264,9 +264,9 @@ msgstr "Doe een donatie aan Weblate"
 msgid "Weblate is free, but welcomes donations."
 msgstr "Weblate is vrije software, maar donaties zijn altijd welkom."
 
-#: weblate_web/html/donate.html:12 weblate_web/html/donate.html.py:26
-msgid "Donate using Gratipay"
-msgstr "Doneer met Gratipay"
+#: weblate_web/html/donate.html:12 weblate_web/html/donate.html.py:37
+msgid "Fund on Bountysource"
+msgstr "Bekostig via Bountysource"
 
 #: weblate_web/html/donate.html:18
 msgid "Regular donations"
@@ -282,6 +282,10 @@ msgstr ""
 "helpen bij de financiering van gratis hosting voor gratis software. U hoeft "
 "geen grote bedragen uit te geven, elke cent telt."
 
+#: weblate_web/html/donate.html:26
+msgid "Donate using Gratipay"
+msgstr "Doneer met Gratipay"
+
 #: weblate_web/html/donate.html:30
 msgid "Gratipay allows you to send a weekly amount using a credit card."
 msgstr ""
@@ -291,10 +295,6 @@ msgstr ""
 #: weblate_web/html/donate.html:33
 msgid "Fund features"
 msgstr "Sponsor functies"
-
-#: weblate_web/html/donate.html:37
-msgid "Fund on Bountysource"
-msgstr "Bekostig via Bountysource"
 
 #: weblate_web/html/donate.html:41
 msgid ""
@@ -634,14 +634,13 @@ msgstr "Weblate hosten"
 #: weblate_web/html/hosting.html:20
 #, python-format
 msgid ""
-"We can host translations for your commercial of free software projects. You "
+"We can host translations for your commercial or free software projects. You "
 "can see summary of hosting plans below. Should you have any questions or "
 "look for hosting of bigger projects, don't hesitate to <a href=\"%(contact)s"
 "\">get in touch with us</a>."
 msgstr ""
 
 #: weblate_web/html/hosting.html:28
-#| msgid "Hosting for free software"
 msgctxt "Hosting plan"
 msgid "Free software"
 msgstr "Vrije software"
@@ -667,7 +666,6 @@ msgid "Enterprise"
 msgstr "Grote onderneming"
 
 #: weblate_web/html/hosting.html:45
-#| msgid "Unlimited source strings"
 msgid "Source strings"
 msgstr "Brontekenreeksen"
 
@@ -677,17 +675,14 @@ msgid "Negotiable"
 msgstr "Onderhandelbaar"
 
 #: weblate_web/html/hosting.html:53
-#| msgid "Up to 15 target languages"
 msgid "Target languages"
 msgstr "Doeltalen"
 
 #: weblate_web/html/hosting.html:61
-#| msgid "Two VCS repositories"
 msgid "VCS repositories"
 msgstr "Versiebeheersysteem databanken"
 
 #: weblate_web/html/hosting.html:69
-#| msgid "One translation project"
 msgid "Translation projects"
 msgstr "Vertaalprojecten"
 
@@ -701,22 +696,18 @@ msgid "Unlimited"
 msgstr "Onbeperkt"
 
 #: weblate_web/html/hosting.html:77
-#| msgid "Translation context"
 msgid "Translation components"
 msgstr "Vertaalonderdelen"
 
 #: weblate_web/html/hosting.html:85
-#| msgid "Unlimited number of translation components"
 msgid "Number of translators"
 msgstr "Aantal vertalers"
 
 #: weblate_web/html/hosting.html:93
-#| msgid "Self service user management"
 msgid "User management"
 msgstr "Gebruikersbeheer"
 
 #: weblate_web/html/hosting.html:101
-#| msgid "File formats"
 msgid "Supported file formats"
 msgstr "Ondersteunde bestandsformaten"
 
@@ -732,7 +723,6 @@ msgid "Customizable"
 msgstr "Aanpasbaar"
 
 #: weblate_web/html/hosting.html:117
-#| msgid "Translation status"
 msgid "Translation processing"
 msgstr "Verwerken van de vertaling"
 
@@ -877,15 +867,11 @@ msgstr ""
 "\"%(donate_url)s\">andere manieren om te doneren</a> gebruiken."
 
 #: weblate_web/html/hosting.html:213
-#| msgid "Ask for hosting"
 msgid "Self hosting"
 msgstr "Zelf hosten"
 
 #: weblate_web/html/hosting.html:217
 #, python-format
-#| msgid ""
-#| "Check our <a href=\"%(download_url)s\">download page</a> for appliances, "
-#| "which provide an easy way to deploy Weblate in the cloud."
 msgid ""
 "You can also <a href=\"%(download_url)s\">download</a> Weblate sources and "
 "run it on your systems. There are also several options for deploying Weblate "

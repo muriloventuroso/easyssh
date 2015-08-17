@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2015-08-15 15:06+0200\n"
+"POT-Creation-Date: 2015-08-17 17:49+0200\n"
 "PO-Revision-Date: 2015-06-30 15:15+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Simplified Chinese <https://hosted.weblate.org/projects/"
@@ -250,9 +250,9 @@ msgstr "捐助 Weblate"
 msgid "Weblate is free, but welcomes donations."
 msgstr "Weblate 是免费的，但欢迎您的捐助。"
 
-#: weblate_web/html/donate.html:12 weblate_web/html/donate.html.py:26
-msgid "Donate using Gratipay"
-msgstr "通过 Gratipay 捐助"
+#: weblate_web/html/donate.html:12 weblate_web/html/donate.html.py:37
+msgid "Fund on Bountysource"
+msgstr "通过 Bountysource 众筹"
 
 #: weblate_web/html/donate.html:18
 msgid "Regular donations"
@@ -267,6 +267,10 @@ msgstr ""
 "定期捐助有助于维持 Weblate 的持续开发并为免费托管自由软件提供资金。您不需要花"
 "很多钱，每一分钱都将物尽所值。"
 
+#: weblate_web/html/donate.html:26
+msgid "Donate using Gratipay"
+msgstr "通过 Gratipay 捐助"
+
 #: weblate_web/html/donate.html:30
 msgid "Gratipay allows you to send a weekly amount using a credit card."
 msgstr "Gratipay 可让您用信用卡每周捐助一些。"
@@ -274,10 +278,6 @@ msgstr "Gratipay 可让您用信用卡每周捐助一些。"
 #: weblate_web/html/donate.html:33
 msgid "Fund features"
 msgstr "众筹"
-
-#: weblate_web/html/donate.html:37
-msgid "Fund on Bountysource"
-msgstr "通过 Bountysource 众筹"
 
 #: weblate_web/html/donate.html:41
 msgid ""
@@ -585,7 +585,7 @@ msgstr "Weblate 托管"
 #: weblate_web/html/hosting.html:20
 #, python-format
 msgid ""
-"We can host translations for your commercial of free software projects. You "
+"We can host translations for your commercial or free software projects. You "
 "can see summary of hosting plans below. Should you have any questions or "
 "look for hosting of bigger projects, don't hesitate to <a href=\"%(contact)s"
 "\">get in touch with us</a>."

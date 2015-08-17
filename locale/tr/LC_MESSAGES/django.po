@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2015-08-15 15:06+0200\n"
+"POT-Creation-Date: 2015-08-17 17:49+0200\n"
 "PO-Revision-Date: 2015-08-15 19:55+0200\n"
 "Last-Translator: Burak Yavuz <hitowerdigit@hotmail.com>\n"
-"Language-Team: Turkish "
-"<https://hosted.weblate.org/projects/weblate/website/tr/>\n"
+"Language-Team: Turkish <https://hosted.weblate.org/projects/weblate/website/"
+"tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -265,9 +265,9 @@ msgstr "Weblate'e Bağış Yapın"
 msgid "Weblate is free, but welcomes donations."
 msgstr "Weblate ücretsizdir, fakat bağışlarınızı bekliyoruz."
 
-#: weblate_web/html/donate.html:12 weblate_web/html/donate.html.py:26
-msgid "Donate using Gratipay"
-msgstr "Gratipay kullanarak bağış yapın"
+#: weblate_web/html/donate.html:12 weblate_web/html/donate.html.py:37
+msgid "Fund on Bountysource"
+msgstr "Bountysource Fonu"
 
 #: weblate_web/html/donate.html:18
 msgid "Regular donations"
@@ -283,6 +283,10 @@ msgstr ""
 "sağlar ve ücretsiz yazılım için parasız barındırmaya yardımcı olur. Büyük "
 "para harcamak zorunda değilsiniz, her kuruş sayılır."
 
+#: weblate_web/html/donate.html:26
+msgid "Donate using Gratipay"
+msgstr "Gratipay kullanarak bağış yapın"
+
 #: weblate_web/html/donate.html:30
 msgid "Gratipay allows you to send a weekly amount using a credit card."
 msgstr ""
@@ -291,10 +295,6 @@ msgstr ""
 #: weblate_web/html/donate.html:33
 msgid "Fund features"
 msgstr "Fon özellikleri"
-
-#: weblate_web/html/donate.html:37
-msgid "Fund on Bountysource"
-msgstr "Bountysource Fonu"
 
 #: weblate_web/html/donate.html:41
 msgid ""
@@ -608,8 +608,8 @@ msgid ""
 "adding Weblate user to your project (on GitHub, Bitbucket or GitLab) or "
 "adding SSH key we will provide you."
 msgstr ""
-"Weblate'e havuza erişmesi için izin vermek zorundasınız. Bu, projenize ("
-"GitHub, Bitbucket veya GitLab üzerinde) Weblate kullanıcısı eklenerek veya "
+"Weblate'e havuza erişmesi için izin vermek zorundasınız. Bu, projenize "
+"(GitHub, Bitbucket veya GitLab üzerinde) Weblate kullanıcısı eklenerek veya "
 "size vereceğimiz SSH anahtarı eklenerek yapılabilir."
 
 #: weblate_web/html/hosting.html:6
@@ -621,25 +621,28 @@ msgid "Ask for hosting"
 msgstr "Barındırma için sorun"
 
 #: weblate_web/html/hosting.html:17
-#| msgid "Hosting Weblate"
 msgid "Hosting plans"
 msgstr "Barındırma planları"
 
 #: weblate_web/html/hosting.html:20
-#, python-format
+#, fuzzy, python-format
+#| msgid ""
+#| "We can host translations for your commercial of free software projects. "
+#| "You can see summary of hosting plans below. Should you have any questions "
+#| "or look for hosting of bigger projects, don't hesitate to <a href="
+#| "\"%(contact)s\">get in touch with us</a>."
 msgid ""
-"We can host translations for your commercial of free software projects. You "
+"We can host translations for your commercial or free software projects. You "
 "can see summary of hosting plans below. Should you have any questions or "
 "look for hosting of bigger projects, don't hesitate to <a href=\"%(contact)s"
 "\">get in touch with us</a>."
 msgstr ""
 "Çevirileri ücretsiz yazılım projelerinizin reklamı için barındırabiliriz. "
 "Aşağıda barındırma planlarının özetini görebilirsiniz. Herhangi bir sorunuz "
-"varsa veya daha büyük projeleri barındırmayı arıyorsanız, <a href=\""
-"%(contact)s\">bizimle temasa geçmekten</a> çekinmeyin."
+"varsa veya daha büyük projeleri barındırmayı arıyorsanız, <a href="
+"\"%(contact)s\">bizimle temasa geçmekten</a> çekinmeyin."
 
 #: weblate_web/html/hosting.html:28
-#| msgid "Hosting for free software"
 msgctxt "Hosting plan"
 msgid "Free software"
 msgstr "Ücretsiz yazılım"
@@ -665,7 +668,6 @@ msgid "Enterprise"
 msgstr "Kurumsal"
 
 #: weblate_web/html/hosting.html:45
-#| msgid "Unlimited source strings"
 msgid "Source strings"
 msgstr "Kaynak satır"
 
@@ -675,17 +677,14 @@ msgid "Negotiable"
 msgstr "Pazarlığa açık"
 
 #: weblate_web/html/hosting.html:53
-#| msgid "Up to 15 target languages"
 msgid "Target languages"
 msgstr "Hedef diller"
 
 #: weblate_web/html/hosting.html:61
-#| msgid "Two VCS repositories"
 msgid "VCS repositories"
 msgstr "VCS havuzları"
 
 #: weblate_web/html/hosting.html:69
-#| msgid "One translation project"
 msgid "Translation projects"
 msgstr "Çeviri projeleri"
 
@@ -699,22 +698,18 @@ msgid "Unlimited"
 msgstr "Sınırsız"
 
 #: weblate_web/html/hosting.html:77
-#| msgid "Translation context"
 msgid "Translation components"
 msgstr "Çeviri bileşenleri"
 
 #: weblate_web/html/hosting.html:85
-#| msgid "Unlimited number of translation components"
 msgid "Number of translators"
 msgstr "Çevirmen sayısı"
 
 #: weblate_web/html/hosting.html:93
-#| msgid "Self service user management"
 msgid "User management"
 msgstr "Kullanıcı yönetimi"
 
 #: weblate_web/html/hosting.html:101
-#| msgid "File formats"
 msgid "Supported file formats"
 msgstr "Desteklenen dosya biçimleri"
 
@@ -730,7 +725,6 @@ msgid "Customizable"
 msgstr "Özelleştirilebilir"
 
 #: weblate_web/html/hosting.html:117
-#| msgid "Translation status"
 msgid "Translation processing"
 msgstr "Çeviri işleme"
 
@@ -876,15 +870,11 @@ msgstr ""
 "\"%(donate_url)s\">bağış için diğer yolları</a> kullanmanızı bekliyoruz."
 
 #: weblate_web/html/hosting.html:213
-#| msgid "Ask for hosting"
 msgid "Self hosting"
 msgstr "Kendiliğinden barındırma"
 
 #: weblate_web/html/hosting.html:217
 #, python-format
-#| msgid ""
-#| "Check our <a href=\"%(download_url)s\">download page</a> for appliances, "
-#| "which provide an easy way to deploy Weblate in the cloud."
 msgid ""
 "You can also <a href=\"%(download_url)s\">download</a> Weblate sources and "
 "run it on your systems. There are also several options for deploying Weblate "
@@ -1100,8 +1090,8 @@ msgid ""
 "Check our <a href=\"%(download_url)s\">download page</a> for appliances, "
 "which provide an easy way to deploy Weblate in the cloud."
 msgstr ""
-"Weblate'i bulutta dağıtmanın en kolay yolunu sağlayan araçlar için <a href=\""
-"%(download_url)s\">indirme sayfamızı</a> kontrol edin."
+"Weblate'i bulutta dağıtmanın en kolay yolunu sağlayan araçlar için <a href="
+"\"%(download_url)s\">indirme sayfamızı</a> kontrol edin."
 
 #: weblate_web/templatetags/downloads.py:39
 #, python-format

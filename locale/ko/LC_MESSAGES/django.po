@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2015-08-15 15:06+0200\n"
+"POT-Creation-Date: 2015-08-17 17:49+0200\n"
 "PO-Revision-Date: 2015-06-15 12:57+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/weblate/website/"
@@ -260,9 +260,9 @@ msgstr "Weblate에 기부하기"
 msgid "Weblate is free, but welcomes donations."
 msgstr "Weblate는 무료이지만, 기부금은 환영합니다."
 
-#: weblate_web/html/donate.html:12 weblate_web/html/donate.html.py:26
-msgid "Donate using Gratipay"
-msgstr "Gratipay를 사용하여 기부하기"
+#: weblate_web/html/donate.html:12 weblate_web/html/donate.html.py:37
+msgid "Fund on Bountysource"
+msgstr "Bountysource로 기금"
 
 #: weblate_web/html/donate.html:18
 msgid "Regular donations"
@@ -277,6 +277,10 @@ msgstr ""
 "일반적인 기부는 Weblate 개발의 지속 가능성을 허용하고 자유 소프트웨어에 대한 "
 "무료 호스팅을 투자하는 데 도움이 됩니다. 약간의 돈도 큰 도움이 됩니다."
 
+#: weblate_web/html/donate.html:26
+msgid "Donate using Gratipay"
+msgstr "Gratipay를 사용하여 기부하기"
+
 #: weblate_web/html/donate.html:30
 msgid "Gratipay allows you to send a weekly amount using a credit card."
 msgstr "Gratipay은 신용 카드를 사용하여 매주 금액을 보낼 수 있게 합니다."
@@ -284,10 +288,6 @@ msgstr "Gratipay은 신용 카드를 사용하여 매주 금액을 보낼 수 �
 #: weblate_web/html/donate.html:33
 msgid "Fund features"
 msgstr "기금 기능"
-
-#: weblate_web/html/donate.html:37
-msgid "Fund on Bountysource"
-msgstr "Bountysource로 기금"
 
 #: weblate_web/html/donate.html:41
 msgid ""
@@ -616,7 +616,7 @@ msgstr "Weblate 호스팅"
 #: weblate_web/html/hosting.html:20
 #, python-format
 msgid ""
-"We can host translations for your commercial of free software projects. You "
+"We can host translations for your commercial or free software projects. You "
 "can see summary of hosting plans below. Should you have any questions or "
 "look for hosting of bigger projects, don't hesitate to <a href=\"%(contact)s"
 "\">get in touch with us</a>."

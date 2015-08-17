@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2015-08-15 15:06+0200\n"
+"POT-Creation-Date: 2015-08-17 17:49+0200\n"
 "PO-Revision-Date: 2015-08-16 18:33+0200\n"
 "Last-Translator: jan madsen <jsm@janz.dk>\n"
-"Language-Team: Danish "
-"<https://hosted.weblate.org/projects/weblate/website/da/>\n"
+"Language-Team: Danish <https://hosted.weblate.org/projects/weblate/website/"
+"da/>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -266,9 +266,9 @@ msgstr "Doner til Weblate"
 msgid "Weblate is free, but welcomes donations."
 msgstr "Weblate er gratis, men donationer er altid velkomne."
 
-#: weblate_web/html/donate.html:12 weblate_web/html/donate.html.py:26
-msgid "Donate using Gratipay"
-msgstr "Donere ved hjælp af Gratipay"
+#: weblate_web/html/donate.html:12 weblate_web/html/donate.html.py:37
+msgid "Fund on Bountysource"
+msgstr "Donér via Bountysource"
 
 #: weblate_web/html/donate.html:18
 msgid "Regular donations"
@@ -284,6 +284,10 @@ msgstr ""
 "finansiere gratis hosting af gratis software. Du behøver ikke at bruge store "
 "beløb, hver en krone tæller."
 
+#: weblate_web/html/donate.html:26
+msgid "Donate using Gratipay"
+msgstr "Donere ved hjælp af Gratipay"
+
 #: weblate_web/html/donate.html:30
 msgid "Gratipay allows you to send a weekly amount using a credit card."
 msgstr ""
@@ -292,10 +296,6 @@ msgstr ""
 #: weblate_web/html/donate.html:33
 msgid "Fund features"
 msgstr "Sponsor funktioner"
-
-#: weblate_web/html/donate.html:37
-msgid "Fund on Bountysource"
-msgstr "Donér via Bountysource"
 
 #: weblate_web/html/donate.html:41
 msgid ""
@@ -625,14 +625,13 @@ msgid "Ask for hosting"
 msgstr "Spørg om hosting"
 
 #: weblate_web/html/hosting.html:17
-#| msgid "Hosting Weblate"
 msgid "Hosting plans"
 msgstr "Hosting planer"
 
 #: weblate_web/html/hosting.html:20
 #, fuzzy, python-format
 msgid ""
-"We can host translations for your commercial of free software projects. You "
+"We can host translations for your commercial or free software projects. You "
 "can see summary of hosting plans below. Should you have any questions or "
 "look for hosting of bigger projects, don't hesitate to <a href=\"%(contact)s"
 "\">get in touch with us</a>."
@@ -643,7 +642,6 @@ msgstr ""
 "href=\"%(contact)s\">kontakte os </a>."
 
 #: weblate_web/html/hosting.html:28
-#| msgid "Hosting for free software"
 msgctxt "Hosting plan"
 msgid "Free software"
 msgstr "Fri software"
@@ -675,7 +673,6 @@ msgid "Enterprise"
 msgstr "Enterprise"
 
 #: weblate_web/html/hosting.html:45
-#| msgid "Unlimited source strings"
 msgid "Source strings"
 msgstr "Kildestrenge"
 
@@ -691,12 +688,10 @@ msgid "Target languages"
 msgstr "Målsprog"
 
 #: weblate_web/html/hosting.html:61
-#| msgid "Two VCS repositories"
 msgid "VCS repositories"
 msgstr "VCS arkiver"
 
 #: weblate_web/html/hosting.html:69
-#| msgid "One translation project"
 msgid "Translation projects"
 msgstr "Oversættelsesprojekter"
 
@@ -710,22 +705,18 @@ msgid "Unlimited"
 msgstr "Ubegrænset"
 
 #: weblate_web/html/hosting.html:77
-#| msgid "Translation context"
 msgid "Translation components"
 msgstr "Oversættelse komponenter"
 
 #: weblate_web/html/hosting.html:85
-#| msgid "Unlimited number of translation components"
 msgid "Number of translators"
 msgstr "Antal oversættelseskomponenter"
 
 #: weblate_web/html/hosting.html:93
-#| msgid "Self service user management"
 msgid "User management"
 msgstr "Brugerstyring"
 
 #: weblate_web/html/hosting.html:101
-#| msgid "File formats"
 msgid "Supported file formats"
 msgstr "Understøttede filformater"
 
