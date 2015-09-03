@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2015-08-26 16:35+0200\n"
+"POT-Creation-Date: 2015-09-03 09:41+0200\n"
 "PO-Revision-Date: 2015-08-24 21:50+0200\n"
 "Last-Translator: jan madsen <jsm@janz.dk>\n"
-"Language-Team: Danish "
-"<https://hosted.weblate.org/projects/weblate/website/da/>\n"
+"Language-Team: Danish <https://hosted.weblate.org/projects/weblate/website/"
+"da/>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -171,7 +171,7 @@ msgstr "Hosting"
 msgid "Develop"
 msgstr "Udvikling"
 
-#: weblate_web/html/base.html:73 weblate_web/html/donate.html:44
+#: weblate_web/html/base.html:73 weblate_web/html/donate.html:51
 msgid "Donate"
 msgstr "Donér"
 
@@ -266,7 +266,8 @@ msgstr "Doner til Weblate"
 msgid "Weblate is free, but welcomes donations."
 msgstr "Weblate er gratis, men donationer er altid velkomne."
 
-#: weblate_web/html/donate.html:12 weblate_web/html/donate.html.py:37
+#: weblate_web/html/donate.html:12 weblate_web/html/donate.html.py:26
+#: weblate_web/html/donate.html:44
 msgid "Fund on Bountysource"
 msgstr "Donér via Bountysource"
 
@@ -284,20 +285,20 @@ msgstr ""
 "finansiere gratis hosting af gratis software. Du behøver ikke at bruge store "
 "beløb, hver en krone tæller."
 
-#: weblate_web/html/donate.html:26
+#: weblate_web/html/donate.html:32
 msgid "Donate using Gratipay"
 msgstr "Donere ved hjælp af Gratipay"
 
-#: weblate_web/html/donate.html:30
+#: weblate_web/html/donate.html:37
 msgid "Gratipay allows you to send a weekly amount using a credit card."
 msgstr ""
 "Gratipay lader dig sende et ugentligt bidragved hjælp af et kreditkort."
 
-#: weblate_web/html/donate.html:33
+#: weblate_web/html/donate.html:40
 msgid "Fund features"
 msgstr "Sponsor funktioner"
 
-#: weblate_web/html/donate.html:41
+#: weblate_web/html/donate.html:48
 msgid ""
 "Bountysource allows you to fund individual features which are reported on "
 "our issue tracker."
@@ -305,17 +306,17 @@ msgstr ""
 "Bountysource lader dig donere enkelte egenksaber, der rapporteres i vores "
 "sagshåndtering."
 
-#: weblate_web/html/donate.html:47
+#: weblate_web/html/donate.html:54
 msgid ""
 "If you like Weblate you can support its further development by donating."
 msgstr ""
 "Hvis du kan lide Weblate, kan du støtte dets videre udvikling ved at donere."
 
-#: weblate_web/html/donate.html:55
+#: weblate_web/html/donate.html:62
 msgid "Donate using PayPal"
 msgstr "Donere ved hjælp PayPal"
 
-#: weblate_web/html/donate.html:60
+#: weblate_web/html/donate.html:67
 msgid ""
 "PayPal allows you to send money from credit card, PayPal balance or a bank "
 "account."
@@ -323,15 +324,15 @@ msgstr ""
 "Med PayPal kan du sende penge fra kreditkort, PayPal saldo eller en "
 "bankkonto."
 
-#: weblate_web/html/donate.html:65
+#: weblate_web/html/donate.html:72
 msgid "Donate using Coinbase"
 msgstr "Doner ved hjælp af Coinbase"
 
-#: weblate_web/html/donate.html:69
+#: weblate_web/html/donate.html:76
 msgid "Coinbase allows you to send Bitcoins."
 msgstr "Coinbase lader dig sende Bitcoins."
 
-#: weblate_web/html/donate.html:73
+#: weblate_web/html/donate.html:80
 #, python-format
 msgid ""
 "You can also use <a href=\"http://www.bitcoin.org/\">Bitcoin is a peer-to-"
@@ -646,13 +647,11 @@ msgid "Free software"
 msgstr "Fri software"
 
 #: weblate_web/html/hosting.html:29
-#| msgid "Basic"
 msgctxt "Hosting plan"
 msgid "Basic"
 msgstr "Basis"
 
 #: weblate_web/html/hosting.html:30
-#| msgid "Medium"
 msgctxt "Hosting plan"
 msgid "Medium"
 msgstr "Mellem"
@@ -884,9 +883,6 @@ msgstr "Selvstændig hosting"
 
 #: weblate_web/html/hosting.html:217
 #, python-format
-#| msgid ""
-#| "Check our <a href=\"%(download_url)s\">download page</a> for appliances, "
-#| "which provide an easy way to deploy Weblate in the cloud."
 msgid ""
 "You can also <a href=\"%(download_url)s\">download</a> Weblate sources and "
 "run it on your systems. There are also several options for deploying Weblate "
