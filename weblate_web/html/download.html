@@ -43,6 +43,10 @@ git clone git://github.com/nijel/weblate.git
 <h2>{% trans "Cloud or emulator images" %}</h2>
 
 <p>
+{% blocktrans with "https://docs.weblate.org/en/latest/admin/deployments.html#docker" as url %}Weblate can be run in a Docker container, please check our <a href="{{ url }}">documentation</a> for instructions.{% endblocktrans %}
+</p>
+
+<p>
 {% blocktrans with "http://susestudio.com/a/F8yMYg/weblate" as url %}In case you want to run Weblate in your cloud or virtual server, you can download appliance based on openSUSE 12.3 at <a href="{{ url }}">SUSE Studio Gallery</a>.{% endblocktrans %}
 {% blocktrans with "http://docs.weblate.org/en/latest/admin/install.html#appliance" as url %}Check <a href="{{ url }}">our documentation</a> for more information about appliance setup.{% endblocktrans %}
 </p>
