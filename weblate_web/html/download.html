@@ -40,19 +40,21 @@ git clone git://github.com/nijel/weblate.git
 {% blocktrans %}For openSUSE/SLES users, there are binary packages available in the <a href="http://software.opensuse.org/package/weblate/">openSUSE Buildservice</a>.{% endblocktrans %}
 </p>
 
-<h2>{% trans "Cloud or emulator images" %}</h2>
+<h2>{% trans "Cloud or virtualization images" %}</h2>
 
-<p>
-{% blocktrans with "https://docs.weblate.org/en/latest/admin/deployments.html#docker" as url %}Weblate can be run in a Docker container, please check our <a href="{{ url }}">documentation</a> for instructions.{% endblocktrans %}
-</p>
+<p>{% trans "Weblate can be run in any cloud or virtualization environment. Following links will show you information about some of these:" %}</p>
 
-<p>
-{% blocktrans with "http://susestudio.com/a/F8yMYg/weblate" as url %}In case you want to run Weblate in your cloud or virtual server, you can download appliance based on openSUSE 12.3 at <a href="{{ url }}">SUSE Studio Gallery</a>.{% endblocktrans %}
-{% blocktrans with "https://docs.weblate.org/en/latest/admin/deployments.html#appliance" as url %}Check <a href="{{ url }}">our documentation</a> for more information about appliance setup.{% endblocktrans %}
-</p>
+<ul>
+<li><a href="https://docs.weblate.org/en/latest/admin/deployments.html#docker">{% trans "Running Weblate in a Docker container" %}</a></li>
+<li><a href="https://docs.weblate.org/en/latest/admin/deployments.html#openshift">{% trans "Running Weblate on OpenShift platform" %}</a></li>
+<li><a href="http://susestudio.com/a/F8yMYg/weblate">{% trans "SUSE Studio appliances" %}</a></li>
+<li><a href="https://bitnami.com/stack/weblate">{% trans "BitNami Weblate stack providing native installation for most platforms as well as support for many public cloud providers" %}</a></li>
+</ul>
 
-<p>
-{% blocktrans %}Weblate is also available as <a href="http://bitnami.org/stack/weblate">BitNami stack</a>, that allows you native installation on Windows, Linux or Mac OS X and provides virtual images for running Weblate.{% endblocktrans %}
-</p>
+<a href="https://docs.weblate.org/en/latest/admin/deployments.html#docker"><img src="/media/docker.png" /></a>
+<a href="https://docs.weblate.org/en/latest/admin/deployments.html#openshift"><img src="/media/openshift.png" /></a>
+<a href="https://bitnami.com/stack/weblate/cloud/google"><img src="/media/gcp.png" /></a>
+<a href="https://bitnami.com/stack/weblate/cloud/amazon"><img src="/media/aws.png" /></a>
+<a href="https://bitnami.com/stack/weblate/cloud/azure"><img src="/media/azure.png" /></a>
 
 {% endblock %}
