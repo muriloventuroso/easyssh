@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2015-09-03 14:49+0200\n"
+"POT-Creation-Date: 2015-09-14 14:22+0200\n"
 "PO-Revision-Date: 2015-06-06 00:01+0200\n"
 "Last-Translator: Balázs Úr <urbalazs@gmail.com>\n"
 "Language-Team: Hungarian <https://hosted.weblate.org/projects/weblate/"
@@ -126,6 +126,42 @@ msgstr "Készítő megnevezése"
 msgid ""
 "All your translators will be properly credited in the version control system."
 msgstr "Minden fordító neve szerepel a verziókezelő rendszerben."
+
+#: weblate_web/html/base-features.html:36 weblate_web/html/hosting.html:17
+#, fuzzy
+#| msgid "Hosting Weblate"
+msgid "Hosting plans"
+msgstr "Hosting Weblate"
+
+#: weblate_web/html/base-features.html:37
+msgid "Hosting plans to use Weblate as a service starting at 19 EUR."
+msgstr ""
+
+#: weblate_web/html/base-features.html:44
+msgid "Ready for cloud"
+msgstr "Felhőkörnyezet támogatása"
+
+#: weblate_web/html/base-features.html:45
+#, fuzzy
+#| msgid ""
+#| "Weblate comes with an appliance, which is ready to deploy in your cloud."
+msgid ""
+"Weblate comes with an appliances, which are ready to deploy in your cloud."
+msgstr ""
+"A Weblate letölthető appliance-ként, ami igen egyszerűen üzemelhető be felhő "
+"környezetben."
+
+#: weblate_web/html/base-features.html:52
+#, fuzzy
+#| msgid "Hosting for free software"
+msgid "Free software"
+msgstr "Hosting ingyenes szoftverekhez"
+
+#: weblate_web/html/base-features.html:53
+#, fuzzy
+#| msgid "Weblate is a free software with community support."
+msgid "Weblate is free software, you can run your own instance of it."
+msgstr "A Weblate ingyenes szoftver közösségi támogatással."
 
 #: weblate_web/html/base.html:12
 msgctxt "Keyword"
@@ -284,8 +320,8 @@ msgstr ""
 
 #: weblate_web/html/donate.html:30
 msgid ""
-"You can send a monthly donation using a credit card. You can also get rewards "
-"for higher donations, for example logo placement on our website."
+"You can send a monthly donation using a credit card. You can also get "
+"rewards for higher donations, for example a logo placement on our website."
 msgstr ""
 
 #: weblate_web/html/donate.html:37
@@ -368,38 +404,34 @@ msgstr ""
 "bináris csomagok."
 
 #: weblate_web/html/download.html:43
-msgid "Cloud or emulator images"
+#, fuzzy
+#| msgid "Cloud or emulator images"
+msgid "Cloud or virtualization images"
 msgstr "Rendszerkép felhőhöz vagy virtualizációhoz"
 
-#: weblate_web/html/download.html:46
-#, python-format
+#: weblate_web/html/download.html:45
 msgid ""
-"In case you want to run Weblate in your cloud or virtual server, you can "
-"download appliance based on openSUSE 12.3 at <a href=\"%(url)s\">SUSE Studio "
-"Gallery</a>."
+"Weblate can be run in any cloud or virtualization environment. Following "
+"links will show you information about some of these:"
 msgstr ""
-"Ha felhőben vagy virtuális kiszolgálón kívánja futtatni a Weblate-et, le "
-"tudja tölteni az openSUSE 12.3 alapú appliance-t a <a href=\"%(url)s\">SUSE "
-"Studio Galériából</a>."
 
-#: weblate_web/html/download.html:47
-#, python-format
-msgid ""
-"Check <a href=\"%(url)s\">our documentation</a> for more information about "
-"appliance setup."
+#: weblate_web/html/download.html:48
+msgid "Running Weblate in a Docker container"
 msgstr ""
-"Az appliance-hez kapcsolódó további információ a <a href=\"%(url)s"
-"\">dokumentációban</a> olvasható."
+
+#: weblate_web/html/download.html:49
+msgid "Running Weblate on OpenShift platform"
+msgstr ""
+
+#: weblate_web/html/download.html:50
+msgid "SUSE Studio appliances"
+msgstr ""
 
 #: weblate_web/html/download.html:51
 msgid ""
-"Weblate is also available as <a href=\"http://bitnami.org/stack/weblate"
-"\">BitNami stack</a>, that allows you native installation on Windows, Linux "
-"or Mac OS X and provides virtual images for running Weblate."
+"BitNami Weblate stack providing native installation for most platforms as "
+"well as support for many public cloud providers"
 msgstr ""
-"A Weblate elérhető <a href=\"http://bitnami.org/stack/weblate\">BitNami "
-"alkalmazásként</a>, amin keresztül Windows, Linux, Mac OS X és virtuális "
-"rendszerkép formájában is telepíthető."
 
 #: weblate_web/html/features.html:3 weblate_web/html/features.html.py:4
 msgid "Weblate features"
@@ -432,15 +464,14 @@ msgstr ""
 "A fordítókat értesíteni lehet új fordítandó szövegről és egyéb eseményekről."
 
 #: weblate_web/html/features.html:39
-msgid "Ready for cloud"
-msgstr "Felhőkörnyezet támogatása"
+#, fuzzy
+#| msgid "Integrated"
+msgid "Integration API"
+msgstr "Integrált"
 
 #: weblate_web/html/features.html:40
-msgid ""
-"Weblate comes with an appliance, which is ready to deploy in your cloud."
+msgid "Thanks to the API you can integrate Weblate with third party services."
 msgstr ""
-"A Weblate letölthető appliance-ként, ami igen egyszerűen üzemelhető be felhő "
-"környezetben."
 
 #: weblate_web/html/features.html:50
 msgid "File formats"
@@ -600,11 +631,11 @@ msgstr ""
 msgid "Usually following information is needed:"
 msgstr ""
 
-#: weblate_web/html/hosting-ordered.html:18 weblate_web/html/hosting.html:187
+#: weblate_web/html/hosting-ordered.html:18 weblate_web/html/hosting.html:202
 msgid "URL of repository with translations."
 msgstr "A fordításokat tartalmazó tár URL-je."
 
-#: weblate_web/html/hosting-ordered.html:19 weblate_web/html/hosting.html:188
+#: weblate_web/html/hosting-ordered.html:19 weblate_web/html/hosting.html:203
 msgid "Path to translations within the repository."
 msgstr "A fordítások elérési útvonala a tárban."
 
@@ -622,12 +653,6 @@ msgstr "Ingyenes folyamatos fordítási tárhely szabad szoftverhez."
 #: weblate_web/html/hosting.html:11
 msgid "Ask for hosting"
 msgstr "Elhelyezés kérelmezése"
-
-#: weblate_web/html/hosting.html:17
-#, fuzzy
-#| msgid "Hosting Weblate"
-msgid "Hosting plans"
-msgstr "Hosting Weblate"
 
 #: weblate_web/html/hosting.html:20
 #, python-format
@@ -750,6 +775,10 @@ msgstr ""
 msgid "Translation processing"
 msgstr "Fordítás állapota"
 
+#: weblate_web/html/hosting.html:135
+msgid "Monthly"
+msgstr ""
+
 #: weblate_web/html/hosting.html:137
 msgid "Contact us"
 msgstr "Kapcsolat"
@@ -760,24 +789,35 @@ msgstr "Kapcsolat"
 msgid "%(price)s EUR / month"
 msgstr ""
 
-#: weblate_web/html/hosting.html:157
+#: weblate_web/html/hosting.html:153
+#, python-format
+msgid "Yearly (save 20%%)"
+msgstr ""
+
+#: weblate_web/html/hosting.html:155 weblate_web/html/hosting.html.py:158
+#: weblate_web/html/hosting.html:161 weblate_web/html/hosting.html.py:164
+#, python-format
+msgid "%(price)s EUR / year"
+msgstr ""
+
+#: weblate_web/html/hosting.html:172
 msgid ""
 "The pricing is based on number of source strings and number of target "
 "languages. The source string is a text unit defined in a translation format, "
 "it can be word, sentence or a paragraph."
 msgstr ""
 
-#: weblate_web/html/hosting.html:161
+#: weblate_web/html/hosting.html:176
 msgid ""
 "The hosting setup is currently done manually, so you might want to get in "
 "touch with us prior to making subscription with your project details."
 msgstr ""
 
-#: weblate_web/html/hosting.html:164
+#: weblate_web/html/hosting.html:179
 msgid "Hosting for free software"
 msgstr "Hosting ingyenes szoftverekhez"
 
-#: weblate_web/html/hosting.html:167
+#: weblate_web/html/hosting.html:182
 msgid ""
 "If you are interested in using Weblate for your free software, you can ask "
 "us to be include on <a href=\"http://hosted.weblate.org/\">hosted.weblate."
@@ -789,11 +829,11 @@ msgstr ""
 "oldalra. Ezzel úgy használhatja a Weblate-et, hogy nem kell telepítenie és "
 "fenntartania."
 
-#: weblate_web/html/hosting.html:170
+#: weblate_web/html/hosting.html:185
 msgid "Conditions for free hosting"
 msgstr "Az ingyenes elhelyezés feltételei"
 
-#: weblate_web/html/hosting.html:173
+#: weblate_web/html/hosting.html:188
 msgid ""
 "Translated content has to be released under <a href=\"http://en.wikipedia."
 "org/wiki/Free_software_license\">free license</a>."
@@ -801,41 +841,41 @@ msgstr ""
 "A lefordított tartalmat a <a href=\"http://en.wikipedia.org/wiki/"
 "Free_software_license\">szabad licenc</a> alatt kell kiadni."
 
-#: weblate_web/html/hosting.html:174
+#: weblate_web/html/hosting.html:189
 msgid ""
 "Source code has to be publicly available in supported version control system."
 msgstr ""
 "A forráskódnak szabadon elérhetőnek kell lennie támogatott verziókövető "
 "rendszerben."
 
-#: weblate_web/html/hosting.html:175
+#: weblate_web/html/hosting.html:190
 msgid "There is no guarantee for service availability or quality."
 msgstr "Nincs garantált rendelkezésre állás vagy szolgáltatási szint."
 
-#: weblate_web/html/hosting.html:178
+#: weblate_web/html/hosting.html:193
 msgid "Asking for hosting"
 msgstr "Elhelyezés kérelmezése"
 
-#: weblate_web/html/hosting.html:181
+#: weblate_web/html/hosting.html:196
 #, python-format
 msgid ""
 "Please use <a href=\"%(url)s\">contact form on Hosted Weblate</a> to request "
 "hosting. You will need following information:"
 msgstr ""
 
-#: weblate_web/html/hosting.html:185
+#: weblate_web/html/hosting.html:200
 msgid "Information about your project."
 msgstr "Információ az Ön projektjéről."
 
-#: weblate_web/html/hosting.html:186
+#: weblate_web/html/hosting.html:201
 msgid "Project website."
 msgstr "Projekt weboldala."
 
-#: weblate_web/html/hosting.html:191
+#: weblate_web/html/hosting.html:206
 msgid "Translation workflow"
 msgstr "Fordítási folyamat"
 
-#: weblate_web/html/hosting.html:194
+#: weblate_web/html/hosting.html:209
 msgid ""
 "All translated repositories are available at <code>git.weblate.org</code> "
 "with similar naming as on website - hello/master translation would be "
@@ -845,7 +885,7 @@ msgstr ""
 "weboldalhoz hasonló elnevezéssel - a hello/master fordítás <code>git://git."
 "weblate.org/hello-master.git</code> néven lesz publikálva."
 
-#: weblate_web/html/hosting.html:198
+#: weblate_web/html/hosting.html:213
 #, python-format
 msgid ""
 "Weblate can automatically receive changes from major code hosting services, "
@@ -857,7 +897,7 @@ msgstr ""
 "\"%(bitbucket)s\">Bitbucket</a> vagy <a href=\"%(gitlab)s\">GitLab</a> "
 "beállításokat lásd a dokumentációnkban."
 
-#: weblate_web/html/hosting.html:202
+#: weblate_web/html/hosting.html:217
 #, python-format
 msgid ""
 "If you want Weblate to automatically push changes as well, add Weblate push "
@@ -869,11 +909,11 @@ msgstr ""
 "értesítsen minket arról, hogy igényli ezt a lehetőséget. További "
 "információért tekintse meg a <a href=\"%(docs)s\">dokumentációnkat</a>."
 
-#: weblate_web/html/hosting.html:205
+#: weblate_web/html/hosting.html:220
 msgid "Support free hosting"
 msgstr "Támogassa az ingyenes elhelyezést"
 
-#: weblate_web/html/hosting.html:209
+#: weblate_web/html/hosting.html:224
 #, python-format
 msgid ""
 "The hosting is provided for free, but running the server and maintaining it "
@@ -884,13 +924,13 @@ msgstr ""
 "ezért örömmel vesszük a <a href=\"%(gittip_url)s\">Gratipay</a> segítségével "
 "vagy <a href=\"%(donate_url)s\">más módon</a> tett anyagi felajánlásokat."
 
-#: weblate_web/html/hosting.html:213
+#: weblate_web/html/hosting.html:228
 #, fuzzy
 #| msgid "Ask for hosting"
 msgid "Self hosting"
 msgstr "Elhelyezés kérelmezése"
 
-#: weblate_web/html/hosting.html:217
+#: weblate_web/html/hosting.html:232
 #, fuzzy, python-format
 #| msgid ""
 #| "Check our <a href=\"%(download_url)s\">download page</a> for appliances, "
@@ -1144,6 +1184,31 @@ msgstr "Forráskód tarball, xz tömörített"
 #: weblate_web/templatetags/downloads.py:60
 msgid "Sources, zip compressed"
 msgstr "Forráskód tarball, zip tömörített"
+
+#~ msgid ""
+#~ "In case you want to run Weblate in your cloud or virtual server, you can "
+#~ "download appliance based on openSUSE 12.3 at <a href=\"%(url)s\">SUSE "
+#~ "Studio Gallery</a>."
+#~ msgstr ""
+#~ "Ha felhőben vagy virtuális kiszolgálón kívánja futtatni a Weblate-et, le "
+#~ "tudja tölteni az openSUSE 12.3 alapú appliance-t a <a href=\"%(url)s"
+#~ "\">SUSE Studio Galériából</a>."
+
+#~ msgid ""
+#~ "Check <a href=\"%(url)s\">our documentation</a> for more information "
+#~ "about appliance setup."
+#~ msgstr ""
+#~ "Az appliance-hez kapcsolódó további információ a <a href=\"%(url)s"
+#~ "\">dokumentációban</a> olvasható."
+
+#~ msgid ""
+#~ "Weblate is also available as <a href=\"http://bitnami.org/stack/weblate"
+#~ "\">BitNami stack</a>, that allows you native installation on Windows, "
+#~ "Linux or Mac OS X and provides virtual images for running Weblate."
+#~ msgstr ""
+#~ "A Weblate elérhető <a href=\"http://bitnami.org/stack/weblate\">BitNami "
+#~ "alkalmazásként</a>, amin keresztül Windows, Linux, Mac OS X és virtuális "
+#~ "rendszerkép formájában is telepíthető."
 
 #~ msgid "Commercial hosting"
 #~ msgstr "Kereskedelmi elhelyezés"

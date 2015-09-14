@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2015-09-03 14:49+0200\n"
+"POT-Creation-Date: 2015-09-14 14:22+0200\n"
 "PO-Revision-Date: 2015-09-14 13:33+0200\n"
 "Last-Translator: Dieter Adriaenssens <dieter.adriaenssens@gmail.com>\n"
-"Language-Team: Dutch "
-"<https://hosted.weblate.org/projects/weblate/website/nl/>\n"
+"Language-Team: Dutch <https://hosted.weblate.org/projects/weblate/website/nl/"
+">\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -127,6 +127,41 @@ msgstr "Bijdrage"
 msgid ""
 "All your translators will be properly credited in the version control system."
 msgstr "Al uw vertalers worden correct vermeld in het versiebeheersysteem."
+
+#: weblate_web/html/base-features.html:36 weblate_web/html/hosting.html:17
+msgid "Hosting plans"
+msgstr "Hosting formules"
+
+#: weblate_web/html/base-features.html:37
+msgid "Hosting plans to use Weblate as a service starting at 19 EUR."
+msgstr ""
+
+#: weblate_web/html/base-features.html:44
+msgid "Ready for cloud"
+msgstr "Klaar voor de cloud"
+
+#: weblate_web/html/base-features.html:45
+#, fuzzy
+#| msgid ""
+#| "Weblate comes with an appliance, which is ready to deploy in your cloud."
+msgid ""
+"Weblate comes with an appliances, which are ready to deploy in your cloud."
+msgstr ""
+"Weblate is verkrijgbaar als voorgeïnstalleerde versie, klaar om gebruikt te "
+"worden in uw cloud."
+
+#: weblate_web/html/base-features.html:52
+#, fuzzy
+#| msgctxt "Hosting plan"
+#| msgid "Free software"
+msgid "Free software"
+msgstr "Vrije software"
+
+#: weblate_web/html/base-features.html:53
+#, fuzzy
+#| msgid "Weblate is a free software with community support."
+msgid "Weblate is free software, you can run your own instance of it."
+msgstr "Weblate is vrije software ondersteund door de gemeenschap."
 
 #: weblate_web/html/base.html:12
 msgctxt "Keyword"
@@ -284,9 +319,13 @@ msgstr ""
 "geen grote bedragen uit te geven, elke cent telt."
 
 #: weblate_web/html/donate.html:30
+#, fuzzy
+#| msgid ""
+#| "You can send a monthly donation using a credit card. You can also get "
+#| "rewards for higher donations, for example logo placement on our website."
 msgid ""
-"You can send a monthly donation using a credit card. You can also get rewards "
-"for higher donations, for example logo placement on our website."
+"You can send a monthly donation using a credit card. You can also get "
+"rewards for higher donations, for example a logo placement on our website."
 msgstr ""
 "U kan een maandelijkse donatie doen met een kredietkaart. Voor grotere "
 "donaties zijn er beloningen mogelijk, zoals het plaatsen van uw logo op onze "
@@ -372,38 +411,34 @@ msgstr ""
 "Buildservice</a>."
 
 #: weblate_web/html/download.html:43
-msgid "Cloud or emulator images"
+#, fuzzy
+#| msgid "Cloud or emulator images"
+msgid "Cloud or virtualization images"
 msgstr "Cloud of emulator images"
 
-#: weblate_web/html/download.html:46
-#, python-format
+#: weblate_web/html/download.html:45
 msgid ""
-"In case you want to run Weblate in your cloud or virtual server, you can "
-"download appliance based on openSUSE 12.3 at <a href=\"%(url)s\">SUSE Studio "
-"Gallery</a>."
+"Weblate can be run in any cloud or virtualization environment. Following "
+"links will show you information about some of these:"
 msgstr ""
-"Als u Weblate in uw eigen cloud of op uw eigen virtuele server wilt draaien, "
-"kunt u de schijfimage gebaseerd op openSUSE 12.3 downloaden van de <a href="
-"\"%(url)s\">SUSE Studio Gallery</a>."
 
-#: weblate_web/html/download.html:47
-#, python-format
-msgid ""
-"Check <a href=\"%(url)s\">our documentation</a> for more information about "
-"appliance setup."
+#: weblate_web/html/download.html:48
+msgid "Running Weblate in a Docker container"
 msgstr ""
-"Bekijk <a href=\"%(url)s\">onze documentatie</a> voor meer informatie over "
-"het instellen van een voorgeïnstalleerd systeem."
+
+#: weblate_web/html/download.html:49
+msgid "Running Weblate on OpenShift platform"
+msgstr ""
+
+#: weblate_web/html/download.html:50
+msgid "SUSE Studio appliances"
+msgstr ""
 
 #: weblate_web/html/download.html:51
 msgid ""
-"Weblate is also available as <a href=\"http://bitnami.org/stack/weblate"
-"\">BitNami stack</a>, that allows you native installation on Windows, Linux "
-"or Mac OS X and provides virtual images for running Weblate."
+"BitNami Weblate stack providing native installation for most platforms as "
+"well as support for many public cloud providers"
 msgstr ""
-"Weblate is ook beschikbaar als <a href=\"http://bitnami.org/stack/weblate"
-"\">BitNami stack</a>, voor een native installatie op Windows, Linux of Max "
-"OS X en virtuele schijfimages om Weblate te draaien."
 
 #: weblate_web/html/features.html:3 weblate_web/html/features.html.py:4
 msgid "Weblate features"
@@ -437,15 +472,14 @@ msgstr ""
 "andere gebeurtenissen."
 
 #: weblate_web/html/features.html:39
-msgid "Ready for cloud"
-msgstr "Klaar voor de cloud"
+#, fuzzy
+#| msgid "Integrated"
+msgid "Integration API"
+msgstr "Geïntegreerd"
 
 #: weblate_web/html/features.html:40
-msgid ""
-"Weblate comes with an appliance, which is ready to deploy in your cloud."
+msgid "Thanks to the API you can integrate Weblate with third party services."
 msgstr ""
-"Weblate is verkrijgbaar als voorgeïnstalleerde versie, klaar om gebruikt te "
-"worden in uw cloud."
 
 #: weblate_web/html/features.html:50
 msgid "File formats"
@@ -609,11 +643,11 @@ msgstr ""
 msgid "Usually following information is needed:"
 msgstr "Meestal is de volgende informatie nodig :"
 
-#: weblate_web/html/hosting-ordered.html:18 weblate_web/html/hosting.html:187
+#: weblate_web/html/hosting-ordered.html:18 weblate_web/html/hosting.html:202
 msgid "URL of repository with translations."
 msgstr "URL van de repository met vertalingen."
 
-#: weblate_web/html/hosting-ordered.html:19 weblate_web/html/hosting.html:188
+#: weblate_web/html/hosting-ordered.html:19 weblate_web/html/hosting.html:203
 msgid "Path to translations within the repository."
 msgstr "Pad naar de vertalingen binnen de repository."
 
@@ -634,10 +668,6 @@ msgstr "Gratis hosting van continue vertaling voor vrije software."
 #: weblate_web/html/hosting.html:11
 msgid "Ask for hosting"
 msgstr "Hosting aanvragen"
-
-#: weblate_web/html/hosting.html:17
-msgid "Hosting plans"
-msgstr "Hosting formules"
 
 #: weblate_web/html/hosting.html:20
 #, python-format
@@ -738,6 +768,10 @@ msgstr "Aanpasbaar"
 msgid "Translation processing"
 msgstr "Verwerken van de vertaling"
 
+#: weblate_web/html/hosting.html:135
+msgid "Monthly"
+msgstr ""
+
 #: weblate_web/html/hosting.html:137
 msgid "Contact us"
 msgstr "Contacteer ons"
@@ -748,7 +782,19 @@ msgstr "Contacteer ons"
 msgid "%(price)s EUR / month"
 msgstr "%(price)s EUR / maand"
 
-#: weblate_web/html/hosting.html:157
+#: weblate_web/html/hosting.html:153
+#, python-format
+msgid "Yearly (save 20%%)"
+msgstr ""
+
+#: weblate_web/html/hosting.html:155 weblate_web/html/hosting.html.py:158
+#: weblate_web/html/hosting.html:161 weblate_web/html/hosting.html.py:164
+#, fuzzy, python-format
+#| msgid "%(price)s EUR / month"
+msgid "%(price)s EUR / year"
+msgstr "%(price)s EUR / maand"
+
+#: weblate_web/html/hosting.html:172
 msgid ""
 "The pricing is based on number of source strings and number of target "
 "languages. The source string is a text unit defined in a translation format, "
@@ -758,7 +804,7 @@ msgstr ""
 "aantal talen. De tekenreeks is een teksteenheid die bepaald wordt door het "
 "vertaalformaat, het kan een woord, zin of een paragraaf zijn."
 
-#: weblate_web/html/hosting.html:161
+#: weblate_web/html/hosting.html:176
 msgid ""
 "The hosting setup is currently done manually, so you might want to get in "
 "touch with us prior to making subscription with your project details."
@@ -766,11 +812,11 @@ msgstr ""
 "Hosting wordt op dit moment manueel geconfigureerd, dus u neemt best contact "
 "met ons voordat u een aanvraag instuurt met de details van uw project."
 
-#: weblate_web/html/hosting.html:164
+#: weblate_web/html/hosting.html:179
 msgid "Hosting for free software"
 msgstr "Huisvesting voor vrije software"
 
-#: weblate_web/html/hosting.html:167
+#: weblate_web/html/hosting.html:182
 msgid ""
 "If you are interested in using Weblate for your free software, you can ask "
 "us to be include on <a href=\"http://hosted.weblate.org/\">hosted.weblate."
@@ -782,11 +828,11 @@ msgstr ""
 "\">hosted.weblate.org</a>. Dit stelt u in staat Weblate te gebruiken zonder "
 "deze te installeren en te onderhouden."
 
-#: weblate_web/html/hosting.html:170
+#: weblate_web/html/hosting.html:185
 msgid "Conditions for free hosting"
 msgstr "Voorwaarden voor gratis hosting"
 
-#: weblate_web/html/hosting.html:173
+#: weblate_web/html/hosting.html:188
 msgid ""
 "Translated content has to be released under <a href=\"http://en.wikipedia."
 "org/wiki/Free_software_license\">free license</a>."
@@ -794,22 +840,22 @@ msgstr ""
 "Vertaalde inhoud moet worden vrijgegeven onder een <a href=\"http://en."
 "wikipedia.org/wiki/Free_software_license\">vrije licentie</a>."
 
-#: weblate_web/html/hosting.html:174
+#: weblate_web/html/hosting.html:189
 msgid ""
 "Source code has to be publicly available in supported version control system."
 msgstr ""
 "Broncode moet publiekelijk beschikbaar zijn in een ondersteund "
 "versiebeheersysteem."
 
-#: weblate_web/html/hosting.html:175
+#: weblate_web/html/hosting.html:190
 msgid "There is no guarantee for service availability or quality."
 msgstr "Geen garantie op beschikbaarheid of kwaliteit van de dienst."
 
-#: weblate_web/html/hosting.html:178
+#: weblate_web/html/hosting.html:193
 msgid "Asking for hosting"
 msgstr "Hosting aanvragen"
 
-#: weblate_web/html/hosting.html:181
+#: weblate_web/html/hosting.html:196
 #, python-format
 msgid ""
 "Please use <a href=\"%(url)s\">contact form on Hosted Weblate</a> to request "
@@ -818,19 +864,19 @@ msgstr ""
 "Gelieve het <a href=\"%(url)s\">contact formulier op gehoste Weblate</a> te "
 "gebruiken om hosting aan te vragen. Je hebt de volgende informatie nodig:"
 
-#: weblate_web/html/hosting.html:185
+#: weblate_web/html/hosting.html:200
 msgid "Information about your project."
 msgstr "Informatie over uw project."
 
-#: weblate_web/html/hosting.html:186
+#: weblate_web/html/hosting.html:201
 msgid "Project website."
 msgstr "Projectwebsite."
 
-#: weblate_web/html/hosting.html:191
+#: weblate_web/html/hosting.html:206
 msgid "Translation workflow"
 msgstr "Vertaalworkflow"
 
-#: weblate_web/html/hosting.html:194
+#: weblate_web/html/hosting.html:209
 msgid ""
 "All translated repositories are available at <code>git.weblate.org</code> "
 "with similar naming as on website - hello/master translation would be "
@@ -841,7 +887,7 @@ msgstr ""
 "master wordt gepubliceerd als <code>git://git.weblate.org/hello-master.git</"
 "code>."
 
-#: weblate_web/html/hosting.html:198
+#: weblate_web/html/hosting.html:213
 #, python-format
 msgid ""
 "Weblate can automatically receive changes from major code hosting services, "
@@ -853,7 +899,7 @@ msgstr ""
 "\"%(github)s\">GitHub</a>, <a href=\"%(bitbucket)s\">Bitbucket</a> of <a "
 "href=\"%(gitlab)s\">GitLab</a>."
 
-#: weblate_web/html/hosting.html:202
+#: weblate_web/html/hosting.html:217
 #, python-format
 msgid ""
 "If you want Weblate to automatically push changes as well, add Weblate push "
@@ -865,11 +911,11 @@ msgstr ""
 "dat u deze optie wenst te gebruiken. In de <a href=\"%(docs)s"
 "\">documentatie</a> vindt u detailleerde instructies."
 
-#: weblate_web/html/hosting.html:205
+#: weblate_web/html/hosting.html:220
 msgid "Support free hosting"
 msgstr "Ondersteun gratis hosting"
 
-#: weblate_web/html/hosting.html:209
+#: weblate_web/html/hosting.html:224
 #, python-format
 msgid ""
 "The hosting is provided for free, but running the server and maintaining it "
@@ -880,11 +926,11 @@ msgstr ""
 "geld, dus u mag altijd <a href=\"%(gittip_url)s\">Gratipay</a> of <a href="
 "\"%(donate_url)s\">andere manieren om te doneren</a> gebruiken."
 
-#: weblate_web/html/hosting.html:213
+#: weblate_web/html/hosting.html:228
 msgid "Self hosting"
 msgstr "Zelf hosten"
 
-#: weblate_web/html/hosting.html:217
+#: weblate_web/html/hosting.html:232
 #, python-format
 msgid ""
 "You can also <a href=\"%(download_url)s\">download</a> Weblate sources and "
@@ -1139,6 +1185,31 @@ msgstr "Broncode-tarball, xz-gecomprimeerd"
 #: weblate_web/templatetags/downloads.py:60
 msgid "Sources, zip compressed"
 msgstr "Broncode, gezipt"
+
+#~ msgid ""
+#~ "In case you want to run Weblate in your cloud or virtual server, you can "
+#~ "download appliance based on openSUSE 12.3 at <a href=\"%(url)s\">SUSE "
+#~ "Studio Gallery</a>."
+#~ msgstr ""
+#~ "Als u Weblate in uw eigen cloud of op uw eigen virtuele server wilt "
+#~ "draaien, kunt u de schijfimage gebaseerd op openSUSE 12.3 downloaden van "
+#~ "de <a href=\"%(url)s\">SUSE Studio Gallery</a>."
+
+#~ msgid ""
+#~ "Check <a href=\"%(url)s\">our documentation</a> for more information "
+#~ "about appliance setup."
+#~ msgstr ""
+#~ "Bekijk <a href=\"%(url)s\">onze documentatie</a> voor meer informatie "
+#~ "over het instellen van een voorgeïnstalleerd systeem."
+
+#~ msgid ""
+#~ "Weblate is also available as <a href=\"http://bitnami.org/stack/weblate"
+#~ "\">BitNami stack</a>, that allows you native installation on Windows, "
+#~ "Linux or Mac OS X and provides virtual images for running Weblate."
+#~ msgstr ""
+#~ "Weblate is ook beschikbaar als <a href=\"http://bitnami.org/stack/weblate"
+#~ "\">BitNami stack</a>, voor een native installatie op Windows, Linux of "
+#~ "Max OS X en virtuele schijfimages om Weblate te draaien."
 
 #~ msgid "Commercial hosting"
 #~ msgstr "Commerciële hosting"

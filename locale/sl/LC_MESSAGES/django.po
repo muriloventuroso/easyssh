@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2015-09-03 14:49+0200\n"
+"POT-Creation-Date: 2015-09-14 14:22+0200\n"
 "PO-Revision-Date: 2015-08-16 13:47+0200\n"
 "Last-Translator: Domen <mitenem@outlook.com>\n"
 "Language-Team: Slovenian <https://hosted.weblate.org/projects/weblate/"
@@ -128,6 +128,40 @@ msgstr "Pripis"
 msgid ""
 "All your translators will be properly credited in the version control system."
 msgstr "Vsi vaši prevodi bodo v sistemu nadzora različic ustrezno priznani."
+
+#: weblate_web/html/base-features.html:36 weblate_web/html/hosting.html:17
+msgid "Hosting plans"
+msgstr "Načrti za gostovanje"
+
+#: weblate_web/html/base-features.html:37
+msgid "Hosting plans to use Weblate as a service starting at 19 EUR."
+msgstr ""
+
+#: weblate_web/html/base-features.html:44
+msgid "Ready for cloud"
+msgstr "Pripravljen za oblak"
+
+#: weblate_web/html/base-features.html:45
+#, fuzzy
+#| msgid ""
+#| "Weblate comes with an appliance, which is ready to deploy in your cloud."
+msgid ""
+"Weblate comes with an appliances, which are ready to deploy in your cloud."
+msgstr ""
+"Weblate vsebuje pripomoček, s katerim je pripravljen za uvedbo v oblak."
+
+#: weblate_web/html/base-features.html:52
+#, fuzzy
+#| msgctxt "Hosting plan"
+#| msgid "Free software"
+msgid "Free software"
+msgstr "Prosto programje"
+
+#: weblate_web/html/base-features.html:53
+#, fuzzy
+#| msgid "Weblate is a free software with community support."
+msgid "Weblate is free software, you can run your own instance of it."
+msgstr "Weblate je prosto programje s podporo skupnosti."
 
 #: weblate_web/html/base.html:12
 msgctxt "Keyword"
@@ -286,8 +320,8 @@ msgstr ""
 
 #: weblate_web/html/donate.html:30
 msgid ""
-"You can send a monthly donation using a credit card. You can also get rewards "
-"for higher donations, for example logo placement on our website."
+"You can send a monthly donation using a credit card. You can also get "
+"rewards for higher donations, for example a logo placement on our website."
 msgstr ""
 
 #: weblate_web/html/donate.html:37
@@ -368,38 +402,34 @@ msgstr ""
 "package/weblate/\">openSUSE Buildservice</a> na voljo binarni paketi."
 
 #: weblate_web/html/download.html:43
-msgid "Cloud or emulator images"
+#, fuzzy
+#| msgid "Cloud or emulator images"
+msgid "Cloud or virtualization images"
 msgstr "Slike za oblak ali posnemovalnik"
 
-#: weblate_web/html/download.html:46
-#, python-format
+#: weblate_web/html/download.html:45
 msgid ""
-"In case you want to run Weblate in your cloud or virtual server, you can "
-"download appliance based on openSUSE 12.3 at <a href=\"%(url)s\">SUSE Studio "
-"Gallery</a>."
+"Weblate can be run in any cloud or virtualization environment. Following "
+"links will show you information about some of these:"
 msgstr ""
-"V primeru, da želite zagnati Weblate v vašem oblaku ali na virtualnem "
-"strežniku, si lahko prenesete aparat, ki temelji na openSUSE 12.3 na <a href="
-"\"%(url)s\">SUSE Studio Gallery</a>."
 
-#: weblate_web/html/download.html:47
-#, python-format
-msgid ""
-"Check <a href=\"%(url)s\">our documentation</a> for more information about "
-"appliance setup."
+#: weblate_web/html/download.html:48
+msgid "Running Weblate in a Docker container"
 msgstr ""
-"Preverite <a href=\"%(url)s\">našo dokumentacijo</a> za več informacij o "
-"nastavitvah naprave."
+
+#: weblate_web/html/download.html:49
+msgid "Running Weblate on OpenShift platform"
+msgstr ""
+
+#: weblate_web/html/download.html:50
+msgid "SUSE Studio appliances"
+msgstr ""
 
 #: weblate_web/html/download.html:51
 msgid ""
-"Weblate is also available as <a href=\"http://bitnami.org/stack/weblate"
-"\">BitNami stack</a>, that allows you native installation on Windows, Linux "
-"or Mac OS X and provides virtual images for running Weblate."
+"BitNami Weblate stack providing native installation for most platforms as "
+"well as support for many public cloud providers"
 msgstr ""
-"Weblate je na voljo tudi kot <a href=\"http://bitnami.org/stack/weblate"
-"\">sklad BitNami</a>, ki vam omogoča domorodno namestitev na Windows, Linux "
-"in Mac OS X in zagotavlja virtualne slike za poganjanje Weblate."
 
 #: weblate_web/html/features.html:3 weblate_web/html/features.html.py:4
 msgid "Weblate features"
@@ -434,14 +464,14 @@ msgstr ""
 "dogodki."
 
 #: weblate_web/html/features.html:39
-msgid "Ready for cloud"
-msgstr "Pripravljen za oblak"
+#, fuzzy
+#| msgid "Integrated"
+msgid "Integration API"
+msgstr "Integriran"
 
 #: weblate_web/html/features.html:40
-msgid ""
-"Weblate comes with an appliance, which is ready to deploy in your cloud."
+msgid "Thanks to the API you can integrate Weblate with third party services."
 msgstr ""
-"Weblate vsebuje pripomoček, s katerim je pripravljen za uvedbo v oblak."
 
 #: weblate_web/html/features.html:50
 msgid "File formats"
@@ -599,11 +629,11 @@ msgstr ""
 msgid "Usually following information is needed:"
 msgstr "Po navadi potrebujemo naslednje podatke:"
 
-#: weblate_web/html/hosting-ordered.html:18 weblate_web/html/hosting.html:187
+#: weblate_web/html/hosting-ordered.html:18 weblate_web/html/hosting.html:202
 msgid "URL of repository with translations."
 msgstr "URL skladišča s prevodi."
 
-#: weblate_web/html/hosting-ordered.html:19 weblate_web/html/hosting.html:188
+#: weblate_web/html/hosting-ordered.html:19 weblate_web/html/hosting.html:203
 msgid "Path to translations within the repository."
 msgstr "Pot do prevodov v skladišču."
 
@@ -621,10 +651,6 @@ msgstr "Brezplačna uporaba prevajalnega sistema za prosto programje."
 #: weblate_web/html/hosting.html:11
 msgid "Ask for hosting"
 msgstr "Zaprosite za gostovanje"
-
-#: weblate_web/html/hosting.html:17
-msgid "Hosting plans"
-msgstr "Načrti za gostovanje"
 
 #: weblate_web/html/hosting.html:20
 #, python-format
@@ -721,6 +747,10 @@ msgstr "Prilagodljivo"
 msgid "Translation processing"
 msgstr "Obdelava prevodov"
 
+#: weblate_web/html/hosting.html:135
+msgid "Monthly"
+msgstr ""
+
 #: weblate_web/html/hosting.html:137
 msgid "Contact us"
 msgstr "Stopite v stik z nami"
@@ -731,7 +761,19 @@ msgstr "Stopite v stik z nami"
 msgid "%(price)s EUR / month"
 msgstr "%(price)s EUR/mesec"
 
-#: weblate_web/html/hosting.html:157
+#: weblate_web/html/hosting.html:153
+#, python-format
+msgid "Yearly (save 20%%)"
+msgstr ""
+
+#: weblate_web/html/hosting.html:155 weblate_web/html/hosting.html.py:158
+#: weblate_web/html/hosting.html:161 weblate_web/html/hosting.html.py:164
+#, fuzzy, python-format
+#| msgid "%(price)s EUR / month"
+msgid "%(price)s EUR / year"
+msgstr "%(price)s EUR/mesec"
+
+#: weblate_web/html/hosting.html:172
 msgid ""
 "The pricing is based on number of source strings and number of target "
 "languages. The source string is a text unit defined in a translation format, "
@@ -741,17 +783,17 @@ msgstr ""
 "niz je besedilna enota, opredeljena v prevajalski obliki; lahko je beseda, "
 "poved ali odstavek."
 
-#: weblate_web/html/hosting.html:161
+#: weblate_web/html/hosting.html:176
 msgid ""
 "The hosting setup is currently done manually, so you might want to get in "
 "touch with us prior to making subscription with your project details."
 msgstr ""
 
-#: weblate_web/html/hosting.html:164
+#: weblate_web/html/hosting.html:179
 msgid "Hosting for free software"
 msgstr "Gostovanje za prosto programje"
 
-#: weblate_web/html/hosting.html:167
+#: weblate_web/html/hosting.html:182
 msgid ""
 "If you are interested in using Weblate for your free software, you can ask "
 "us to be include on <a href=\"http://hosted.weblate.org/\">hosted.weblate."
@@ -763,11 +805,11 @@ msgstr ""
 "org</a>. To vam bo omogočilo, da uporabljate Weblate brez nameščanja in "
 "vzdrževanja."
 
-#: weblate_web/html/hosting.html:170
+#: weblate_web/html/hosting.html:185
 msgid "Conditions for free hosting"
 msgstr "Pogoji za brezplačno gostovanje"
 
-#: weblate_web/html/hosting.html:173
+#: weblate_web/html/hosting.html:188
 msgid ""
 "Translated content has to be released under <a href=\"http://en.wikipedia."
 "org/wiki/Free_software_license\">free license</a>."
@@ -775,21 +817,21 @@ msgstr ""
 "Prevedena vsebina mora biti izdana pod <a href=\"http://en.wikipedia.org/"
 "wiki/Free_software_license\">prostim dovoljenjem</a>."
 
-#: weblate_web/html/hosting.html:174
+#: weblate_web/html/hosting.html:189
 msgid ""
 "Source code has to be publicly available in supported version control system."
 msgstr ""
 "Izvorna koda mora biti javno dostopna v podprtem sistemu za nadzor različic."
 
-#: weblate_web/html/hosting.html:175
+#: weblate_web/html/hosting.html:190
 msgid "There is no guarantee for service availability or quality."
 msgstr "Ni nobenega zagotovila o razpoložljivosti ali kakovosti storitev."
 
-#: weblate_web/html/hosting.html:178
+#: weblate_web/html/hosting.html:193
 msgid "Asking for hosting"
 msgstr "Možnost gostovanja"
 
-#: weblate_web/html/hosting.html:181
+#: weblate_web/html/hosting.html:196
 #, python-format
 msgid ""
 "Please use <a href=\"%(url)s\">contact form on Hosted Weblate</a> to request "
@@ -798,19 +840,19 @@ msgstr ""
 "Prosimo, uporabite <a href=\"%(url)s\">kontaktni obrazec na Hosted Weblate</"
 "a>, da zaprosite za gostovanje. Potrebovali boste naslednje podatke:"
 
-#: weblate_web/html/hosting.html:185
+#: weblate_web/html/hosting.html:200
 msgid "Information about your project."
 msgstr "Informacije o vašem projektu."
 
-#: weblate_web/html/hosting.html:186
+#: weblate_web/html/hosting.html:201
 msgid "Project website."
 msgstr "Spletna stran projekta."
 
-#: weblate_web/html/hosting.html:191
+#: weblate_web/html/hosting.html:206
 msgid "Translation workflow"
 msgstr "Postopek prevajanja"
 
-#: weblate_web/html/hosting.html:194
+#: weblate_web/html/hosting.html:209
 msgid ""
 "All translated repositories are available at <code>git.weblate.org</code> "
 "with similar naming as on website - hello/master translation would be "
@@ -820,7 +862,7 @@ msgstr ""
 "poimenovanjem kot na spletni strani – prevod hello/master bi bil objavljen "
 "kot <code>git://git.weblate.org/hello-master.git</code>."
 
-#: weblate_web/html/hosting.html:198
+#: weblate_web/html/hosting.html:213
 #, python-format
 msgid ""
 "Weblate can automatically receive changes from major code hosting services, "
@@ -832,7 +874,7 @@ msgstr ""
 "\">GitHubu</a>, <a href=\"%(bitbucket)s\">Bitbucketu</a> ali <a href="
 "\"%(gitlab)s\">GitLabu</a>."
 
-#: weblate_web/html/hosting.html:202
+#: weblate_web/html/hosting.html:217
 #, python-format
 msgid ""
 "If you want Weblate to automatically push changes as well, add Weblate push "
@@ -844,11 +886,11 @@ msgstr ""
 "možnost. Za podrobnejša navodila si oglejte <a href=\"%(docs)s"
 "\">dokumentacijo</a>."
 
-#: weblate_web/html/hosting.html:205
+#: weblate_web/html/hosting.html:220
 msgid "Support free hosting"
 msgstr "Podprite brezplačno gostovanje"
 
-#: weblate_web/html/hosting.html:209
+#: weblate_web/html/hosting.html:224
 #, python-format
 msgid ""
 "The hosting is provided for free, but running the server and maintaining it "
@@ -859,11 +901,11 @@ msgstr ""
 "nekaj stane, zato vas vabimo, da uporabite <a href=\"%(gittip_url)s"
 "\">Gratipay</a> ali <a href=\"%(donate_url)s\">druge načine doniranja</a>."
 
-#: weblate_web/html/hosting.html:213
+#: weblate_web/html/hosting.html:228
 msgid "Self hosting"
 msgstr "Samogostovanje"
 
-#: weblate_web/html/hosting.html:217
+#: weblate_web/html/hosting.html:232
 #, python-format
 msgid ""
 "You can also <a href=\"%(download_url)s\">download</a> Weblate sources and "
@@ -1120,6 +1162,31 @@ msgstr "Tarball izvornih datotek, stisnjeno kot xz"
 #: weblate_web/templatetags/downloads.py:60
 msgid "Sources, zip compressed"
 msgstr "Izvorne datoteke, stisnjeno kot zip"
+
+#~ msgid ""
+#~ "In case you want to run Weblate in your cloud or virtual server, you can "
+#~ "download appliance based on openSUSE 12.3 at <a href=\"%(url)s\">SUSE "
+#~ "Studio Gallery</a>."
+#~ msgstr ""
+#~ "V primeru, da želite zagnati Weblate v vašem oblaku ali na virtualnem "
+#~ "strežniku, si lahko prenesete aparat, ki temelji na openSUSE 12.3 na <a "
+#~ "href=\"%(url)s\">SUSE Studio Gallery</a>."
+
+#~ msgid ""
+#~ "Check <a href=\"%(url)s\">our documentation</a> for more information "
+#~ "about appliance setup."
+#~ msgstr ""
+#~ "Preverite <a href=\"%(url)s\">našo dokumentacijo</a> za več informacij o "
+#~ "nastavitvah naprave."
+
+#~ msgid ""
+#~ "Weblate is also available as <a href=\"http://bitnami.org/stack/weblate"
+#~ "\">BitNami stack</a>, that allows you native installation on Windows, "
+#~ "Linux or Mac OS X and provides virtual images for running Weblate."
+#~ msgstr ""
+#~ "Weblate je na voljo tudi kot <a href=\"http://bitnami.org/stack/weblate"
+#~ "\">sklad BitNami</a>, ki vam omogoča domorodno namestitev na Windows, "
+#~ "Linux in Mac OS X in zagotavlja virtualne slike za poganjanje Weblate."
 
 #~ msgid "Commercial hosting"
 #~ msgstr "Poslovno gostovanje"
