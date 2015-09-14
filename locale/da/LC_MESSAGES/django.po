@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2015-09-14 14:22+0200\n"
-"PO-Revision-Date: 2015-09-03 17:02+0200\n"
+"PO-Revision-Date: 2015-09-14 16:20+0200\n"
 "Last-Translator: jan madsen <jsm@janz.dk>\n"
-"Language-Team: Danish <https://hosted.weblate.org/projects/weblate/website/"
-"da/>\n"
+"Language-Team: Danish "
+"<https://hosted.weblate.org/projects/weblate/website/da/>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -135,8 +135,10 @@ msgid "Hosting plans"
 msgstr "Hosting planer"
 
 #: weblate_web/html/base-features.html:37
+#, fuzzy
 msgid "Hosting plans to use Weblate as a service starting at 19 EUR."
 msgstr ""
+"Hosting planer om at bruge Weblate som en tjeneste, startende fra 19 EUR."
 
 #: weblate_web/html/base-features.html:44
 msgid "Ready for cloud"
@@ -148,7 +150,8 @@ msgstr "Parat til skyen"
 #| "Weblate comes with an appliance, which is ready to deploy in your cloud."
 msgid ""
 "Weblate comes with an appliances, which are ready to deploy in your cloud."
-msgstr "Med Weblate følger en opsætning, der er klar til placering i din sky."
+msgstr ""
+"Med Weblate følger en opsætning, der er klar til at implementere i skyen."
 
 #: weblate_web/html/base-features.html:52
 #, fuzzy
@@ -161,7 +164,7 @@ msgstr "Fri software"
 #, fuzzy
 #| msgid "Weblate is a free software with community support."
 msgid "Weblate is free software, you can run your own instance of it."
-msgstr "Weblate er fri software med brugerhjælp fra fællesskabet."
+msgstr "Weblate er fri software, som du kan køre din egen udgave af."
 
 #: weblate_web/html/base.html:12
 msgctxt "Keyword"
@@ -319,7 +322,6 @@ msgstr ""
 "beløb, hver en krone tæller."
 
 #: weblate_web/html/donate.html:30
-#, fuzzy
 #| msgid ""
 #| "You can send a monthly donation using a credit card. You can also get "
 #| "rewards for higher donations, for example logo placement on our website."
@@ -328,7 +330,7 @@ msgid ""
 "rewards for higher donations, for example a logo placement on our website."
 msgstr ""
 "Send månedlige donation ved hjælp af et kreditkort. Få belønninger for "
-"større donationer, for eksempel placering af logo på vores hjemmeside."
+"større donationer, for eksempel placering af et logo på vores hjemmeside."
 
 #: weblate_web/html/donate.html:37
 msgid "Donate using Gratipay"
@@ -409,34 +411,42 @@ msgstr ""
 "Buildservice</a>."
 
 #: weblate_web/html/download.html:43
-#, fuzzy
 #| msgid "Cloud or emulator images"
 msgid "Cloud or virtualization images"
-msgstr "Cloud eller emulator billeder"
+msgstr "Cloud eller virtualisering  billeder"
 
 #: weblate_web/html/download.html:45
+#, fuzzy
 msgid ""
 "Weblate can be run in any cloud or virtualization environment. Following "
 "links will show you information about some of these:"
 msgstr ""
+"Weblate kan køres i enhver sky eller virtualisering miljø. Efter links vil "
+"vise dig information om nogle af disse:"
 
 #: weblate_web/html/download.html:48
+#, fuzzy
 msgid "Running Weblate in a Docker container"
-msgstr ""
+msgstr "Kører Weblate i en Docker container"
 
 #: weblate_web/html/download.html:49
+#, fuzzy
 msgid "Running Weblate on OpenShift platform"
-msgstr ""
+msgstr "Kører Weblate på OpenShift platform"
 
 #: weblate_web/html/download.html:50
+#, fuzzy
 msgid "SUSE Studio appliances"
-msgstr ""
+msgstr "SUSE Studio systemer"
 
 #: weblate_web/html/download.html:51
+#, fuzzy
 msgid ""
 "BitNami Weblate stack providing native installation for most platforms as "
 "well as support for many public cloud providers"
 msgstr ""
+"BitNami Weblate stak leverer native installation for de fleste platforme "
+"samt støtte til mange offentlige cloud-udbydere"
 
 #: weblate_web/html/features.html:3 weblate_web/html/features.html.py:4
 msgid "Weblate features"
@@ -471,14 +481,14 @@ msgstr ""
 "andre begivenheder."
 
 #: weblate_web/html/features.html:39
-#, fuzzy
 #| msgid "Integrated"
 msgid "Integration API"
-msgstr "Integreret"
+msgstr "Integrations API"
 
 #: weblate_web/html/features.html:40
+#, fuzzy
 msgid "Thanks to the API you can integrate Weblate with third party services."
-msgstr ""
+msgstr "Takket være API kan du integrere Weblate med tredjeparts-tjenester."
 
 #: weblate_web/html/features.html:50
 msgid "File formats"
@@ -773,7 +783,7 @@ msgstr "Oversættelse behandling"
 
 #: weblate_web/html/hosting.html:135
 msgid "Monthly"
-msgstr ""
+msgstr "Månedlig"
 
 #: weblate_web/html/hosting.html:137
 msgid "Contact us"
@@ -788,14 +798,14 @@ msgstr "%(price)s EUR / måned"
 #: weblate_web/html/hosting.html:153
 #, python-format
 msgid "Yearly (save 20%%)"
-msgstr ""
+msgstr "Årligt (spar 20%%)"
 
 #: weblate_web/html/hosting.html:155 weblate_web/html/hosting.html.py:158
 #: weblate_web/html/hosting.html:161 weblate_web/html/hosting.html.py:164
-#, fuzzy, python-format
+#, python-format
 #| msgid "%(price)s EUR / month"
 msgid "%(price)s EUR / year"
-msgstr "%(price)s EUR / måned"
+msgstr "%(price)s EUR / år"
 
 #: weblate_web/html/hosting.html:172
 msgid ""
