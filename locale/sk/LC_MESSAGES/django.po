@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2015-09-14 14:22+0200\n"
+"POT-Creation-Date: 2015-09-16 12:21+0200\n"
 "PO-Revision-Date: 2015-09-15 08:40+0200\n"
 "Last-Translator: Martin Lacina <martin@whistler.sk>\n"
-"Language-Team: Slovak "
-"<https://hosted.weblate.org/projects/weblate/website/sk/>\n"
+"Language-Team: Slovak <https://hosted.weblate.org/projects/weblate/website/"
+"sk/>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -139,22 +139,16 @@ msgid "Ready for cloud"
 msgstr "Pripravené pre cloud"
 
 #: weblate_web/html/base-features.html:45
-#| msgid ""
-#| "Weblate comes with an appliance, which is ready to deploy in your cloud."
-msgid ""
-"Weblate comes with appliances, which are ready to deploy in your cloud."
+msgid "Weblate comes with appliances, which are ready to deploy in your cloud."
 msgstr ""
 "Weblate je k dispozícii aj ako obrazy, ktoré môžete okamžite nasadiť do "
 "vášho cloudu."
 
 #: weblate_web/html/base-features.html:52
-#| msgctxt "Hosting plan"
-#| msgid "Free software"
 msgid "Free software"
 msgstr "Slobodný softvér"
 
 #: weblate_web/html/base-features.html:53
-#| msgid "Weblate is a free software with community support."
 msgid "Weblate is free software, you can run your own instance of it."
 msgstr "Weblate je slobodný softvér, môžete spúšťať svoju vlastnú verziu."
 
@@ -220,10 +214,13 @@ msgid "Help with translations!"
 msgstr "Pomôžte s prekladmi!"
 
 #: weblate_web/html/base.html:124
-#, python-format
+#, fuzzy, python-format
+#| msgid ""
+#| "Weblate is free software, but welcomes <a href=\"%(donate_url)s"
+#| "\">donations</a>."
 msgid ""
-"Weblate is free software, but welcomes <a href=\"%(donate_url)s\">donations</"
-"a>."
+"Weblate is <a href=\"%(github_url)s\">free software</a> and welcomes <a href="
+"\"%(donate_url)s\">donations</a>."
 msgstr ""
 "Weblate je slobodný softvér ale víta vaše <a href=\"%(donate_url)s"
 "\">príspevky</a>."
@@ -314,9 +311,6 @@ msgstr ""
 "cent."
 
 #: weblate_web/html/donate.html:30
-#| msgid ""
-#| "You can send a monthly donation using a credit card. You can also get "
-#| "rewards for higher donations, for example logo placement on our website."
 msgid ""
 "You can send a monthly donation using a credit card. You can also get "
 "rewards for higher donations, for example a logo placement on our website."
@@ -401,7 +395,6 @@ msgstr ""
 "balíky."
 
 #: weblate_web/html/download.html:43
-#| msgid "Cloud or emulator images"
 msgid "Cloud or virtualization images"
 msgstr "Obrazy pre cloud alebo virtualizáciu"
 
@@ -463,7 +456,6 @@ msgstr ""
 "udalostiach."
 
 #: weblate_web/html/features.html:39
-#| msgid "Integrated"
 msgid "Integration API"
 msgstr "Integračné API"
 
@@ -770,7 +762,6 @@ msgstr "Ročne (ušetríte 20%%)"
 #: weblate_web/html/hosting.html:155 weblate_web/html/hosting.html.py:158
 #: weblate_web/html/hosting.html:161 weblate_web/html/hosting.html.py:164
 #, python-format
-#| msgid "%(price)s EUR / month"
 msgid "%(price)s EUR / year"
 msgstr "%(price)s EUR / rok"
 

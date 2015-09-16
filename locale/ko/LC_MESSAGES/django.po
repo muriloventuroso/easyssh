@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2015-09-14 14:22+0200\n"
+"POT-Creation-Date: 2015-09-16 12:21+0200\n"
 "PO-Revision-Date: 2015-06-15 12:57+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/weblate/website/"
@@ -143,8 +143,7 @@ msgstr "클라우드 준비"
 #, fuzzy
 #| msgid ""
 #| "Weblate comes with an appliance, which is ready to deploy in your cloud."
-msgid ""
-"Weblate comes with appliances, which are ready to deploy in your cloud."
+msgid "Weblate comes with appliances, which are ready to deploy in your cloud."
 msgstr "Weblate는 클라우드에 배포할 준비된 기기를 제공합니다."
 
 #: weblate_web/html/base-features.html:52
@@ -221,10 +220,13 @@ msgid "Help with translations!"
 msgstr "번역을 도와주세요!"
 
 #: weblate_web/html/base.html:124
-#, python-format
+#, fuzzy, python-format
+#| msgid ""
+#| "Weblate is free software, but welcomes <a href=\"%(donate_url)s"
+#| "\">donations</a>."
 msgid ""
-"Weblate is free software, but welcomes <a href=\"%(donate_url)s\">donations</"
-"a>."
+"Weblate is <a href=\"%(github_url)s\">free software</a> and welcomes <a href="
+"\"%(donate_url)s\">donations</a>."
 msgstr ""
 "Weblate는 자유 소프트웨어이지만, <a href=\"%(donate_url)s\">기부금</a>은 환영"
 "합니다."

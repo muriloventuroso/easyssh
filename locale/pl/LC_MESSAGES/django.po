@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2015-09-14 14:22+0200\n"
+"POT-Creation-Date: 2015-09-16 12:21+0200\n"
 "PO-Revision-Date: 2015-06-15 12:56+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/weblate/website/"
@@ -148,8 +148,7 @@ msgstr "Gotowy do chmury"
 #, fuzzy
 #| msgid ""
 #| "Weblate comes with an appliance, which is ready to deploy in your cloud."
-msgid ""
-"Weblate comes with appliances, which are ready to deploy in your cloud."
+msgid "Weblate comes with appliances, which are ready to deploy in your cloud."
 msgstr "Weblate można wdrażać także w chmurze."
 
 #: weblate_web/html/base-features.html:52
@@ -226,10 +225,13 @@ msgid "Help with translations!"
 msgstr "Pomóż tłumaczyć!"
 
 #: weblate_web/html/base.html:124
-#, python-format
+#, fuzzy, python-format
+#| msgid ""
+#| "Weblate is free software, but welcomes <a href=\"%(donate_url)s"
+#| "\">donations</a>."
 msgid ""
-"Weblate is free software, but welcomes <a href=\"%(donate_url)s\">donations</"
-"a>."
+"Weblate is <a href=\"%(github_url)s\">free software</a> and welcomes <a href="
+"\"%(donate_url)s\">donations</a>."
 msgstr ""
 "Weblate jest darmowym oprogramowaniem ale <a href=\"%(donate_url)s\">datki</"
 "a> są mile widziane."

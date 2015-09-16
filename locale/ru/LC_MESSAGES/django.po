@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: weblate-web\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2015-09-14 14:22+0200\n"
+"POT-Creation-Date: 2015-09-16 12:21+0200\n"
 "PO-Revision-Date: 2015-06-22 12:29+0200\n"
 "Last-Translator: Roman Imankulov <roman.imankulov@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/weblate/website/"
@@ -153,8 +153,7 @@ msgstr "Использование в облаках"
 #, fuzzy
 #| msgid ""
 #| "Weblate comes with an appliance, which is ready to deploy in your cloud."
-msgid ""
-"Weblate comes with appliances, which are ready to deploy in your cloud."
+msgid "Weblate comes with appliances, which are ready to deploy in your cloud."
 msgstr "Weblate поставляется с виртуальным модулем для развертывания в облаке."
 
 #: weblate_web/html/base-features.html:52
@@ -232,10 +231,13 @@ msgid "Help with translations!"
 msgstr "Помогите с переводом!"
 
 #: weblate_web/html/base.html:124
-#, python-format
+#, fuzzy, python-format
+#| msgid ""
+#| "Weblate is free software, but welcomes <a href=\"%(donate_url)s"
+#| "\">donations</a>."
 msgid ""
-"Weblate is free software, but welcomes <a href=\"%(donate_url)s\">donations</"
-"a>."
+"Weblate is <a href=\"%(github_url)s\">free software</a> and welcomes <a href="
+"\"%(donate_url)s\">donations</a>."
 msgstr ""
 "Weblate -- это свободное ПО, но приветствует <a href=\"%(donate_url)s\">мат. "
 "помощь</a>."
