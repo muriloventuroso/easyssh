@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2015-09-16 12:21+0200\n"
-"PO-Revision-Date: 2015-09-14 16:20+0200\n"
+"PO-Revision-Date: 2015-09-16 19:06+0200\n"
 "Last-Translator: jan madsen <jsm@janz.dk>\n"
-"Language-Team: Danish <https://hosted.weblate.org/projects/weblate/website/"
-"da/>\n"
+"Language-Team: Danish "
+"<https://hosted.weblate.org/projects/weblate/website/da/>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -145,7 +145,6 @@ msgid "Ready for cloud"
 msgstr "Parat til skyen"
 
 #: weblate_web/html/base-features.html:45
-#, fuzzy
 #| msgid ""
 #| "Weblate comes with an appliance, which is ready to deploy in your cloud."
 msgid "Weblate comes with appliances, which are ready to deploy in your cloud."
@@ -153,17 +152,15 @@ msgstr ""
 "Med Weblate følger en opsætning, der er klar til at implementere i skyen."
 
 #: weblate_web/html/base-features.html:52
-#, fuzzy
 #| msgctxt "Hosting plan"
 #| msgid "Free software"
 msgid "Free software"
 msgstr "Fri software"
 
 #: weblate_web/html/base-features.html:53
-#, fuzzy
 #| msgid "Weblate is a free software with community support."
 msgid "Weblate is free software, you can run your own instance of it."
-msgstr "Weblate er fri software, som du kan køre din egen udgave af."
+msgstr "Weblate er fri software, som du selv kan køre din udgave af."
 
 #: weblate_web/html/base.html:12
 msgctxt "Keyword"
@@ -227,7 +224,7 @@ msgid "Help with translations!"
 msgstr "Hjælp med oversættelser!"
 
 #: weblate_web/html/base.html:124
-#, fuzzy, python-format
+#, python-format
 #| msgid ""
 #| "Weblate is free software, but welcomes <a href=\"%(donate_url)s"
 #| "\">donations</a>."
@@ -235,8 +232,8 @@ msgid ""
 "Weblate is <a href=\"%(github_url)s\">free software</a> and welcomes <a href="
 "\"%(donate_url)s\">donations</a>."
 msgstr ""
-"Weblate er gratis software, men hilser <a href=\"%(donate_url)s\"> "
-"donationer</a> velkommen."
+"Weblate er <a href=\"%(github_url)s\"> fri software</a> og bifalder <a href="
+"\"%(donate_url)s\"> donationer</a>."
 
 #: weblate_web/html/contribute.html:3 weblate_web/html/contribute.html.py:4
 msgid "Contribute to Weblate"
@@ -414,31 +411,26 @@ msgid "Cloud or virtualization images"
 msgstr "Cloud eller virtualisering  billeder"
 
 #: weblate_web/html/download.html:45
-#, fuzzy
 msgid ""
 "Weblate can be run in any cloud or virtualization environment. Following "
 "links will show you information about some of these:"
 msgstr ""
-"Weblate kan køres i enhver sky eller virtualisering miljø. Efter links vil "
-"vise dig information om nogle af disse:"
+"Weblate kan køres i alle sky eller virtualisering miljø. Følgende links vil "
+"vise information om nogle af disse:"
 
 #: weblate_web/html/download.html:48
-#, fuzzy
 msgid "Running Weblate in a Docker container"
 msgstr "Kører Weblate i en Docker container"
 
 #: weblate_web/html/download.html:49
-#, fuzzy
 msgid "Running Weblate on OpenShift platform"
 msgstr "Kører Weblate på OpenShift platform"
 
 #: weblate_web/html/download.html:50
-#, fuzzy
 msgid "SUSE Studio appliances"
 msgstr "SUSE Studio systemer"
 
 #: weblate_web/html/download.html:51
-#, fuzzy
 msgid ""
 "BitNami Weblate stack providing native installation for most platforms as "
 "well as support for many public cloud providers"
@@ -483,7 +475,6 @@ msgid "Integration API"
 msgstr "Integrations API"
 
 #: weblate_web/html/features.html:40
-#, fuzzy
 msgid "Thanks to the API you can integrate Weblate with third party services."
 msgstr "Takket være API kan du integrere Weblate med tredjeparts-tjenester."
 
@@ -655,7 +646,6 @@ msgid "Path to translations within the repository."
 msgstr "Sti til oversættelser inden i arkivet."
 
 #: weblate_web/html/hosting-ordered.html:22
-#, fuzzy
 msgid ""
 "You have to allow Weblate to access your repository. This can be done by "
 "adding Weblate user to your project (on GitHub, Bitbucket or GitLab) or "
@@ -663,7 +653,7 @@ msgid ""
 msgstr ""
 "Du skal tillade Weblate at få adgang til arkivet. Dette kan gøres ved at "
 "tilføje Weblate brugeren til projektet (på GitHub, Bitbucket eller GitLab) "
-"eller tilføje SSH nøgle vil vi give dig."
+"eller tilføje SSH nøglen vi giver dig."
 
 #: weblate_web/html/hosting.html:6
 msgid "Free continuous translation hosting for free software."
@@ -707,7 +697,6 @@ msgid "Advanced"
 msgstr "Avanceret"
 
 #: weblate_web/html/hosting.html:32
-#, fuzzy
 #| msgid "Enterprise"
 msgctxt "Hosting plan"
 msgid "Enterprise"
@@ -723,7 +712,6 @@ msgid "Negotiable"
 msgstr "Kan forhandles"
 
 #: weblate_web/html/hosting.html:53
-#, fuzzy
 #| msgid "Up to 15 target languages"
 msgid "Target languages"
 msgstr "Målsprog"
@@ -773,10 +761,9 @@ msgid "Customizable"
 msgstr "Kan tilpasses"
 
 #: weblate_web/html/hosting.html:117
-#, fuzzy
 #| msgid "Translation status"
 msgid "Translation processing"
-msgstr "Oversættelse behandling"
+msgstr "Behandler oversættelse"
 
 #: weblate_web/html/hosting.html:135
 msgid "Monthly"
@@ -936,7 +923,6 @@ msgstr ""
 "a>."
 
 #: weblate_web/html/hosting.html:228
-#, fuzzy
 #| msgid "Ask for hosting"
 msgid "Self hosting"
 msgstr "Selvstændig hosting"
