@@ -28,7 +28,7 @@ def weblate_web(request):
         url_name = 'home'
 
     return {
-        'downloads': ['weblate-%s.%s' % (VERSION, ext) for ext in EXTENSIONS],
+        'downloads': ['Weblate-%s.%s' % (VERSION, ext) for ext in EXTENSIONS],
         'screenshots': SCREENSHOTS,
         'url_name': url_name,
     }
