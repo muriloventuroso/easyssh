@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2015-09-16 12:21+0200\n"
-"PO-Revision-Date: 2015-09-20 04:40+0200\n"
+"PO-Revision-Date: 2015-09-28 12:48+0200\n"
 "Last-Translator: Wei-cheng Kung <wck317@pchome.com.tw>\n"
 "Language-Team: Traditional Chinese "
 "<https://hosted.weblate.org/projects/weblate/website/zh_Hant/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.4-dev\n"
+"X-Generator: Weblate 2.5\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -118,37 +118,33 @@ msgid ""
 msgstr "您所有的翻譯，會在版本控制系統中正確地記入。"
 
 #: weblate_web/html/base-features.html:36 weblate_web/html/hosting.html:17
-#, fuzzy
 #| msgid "Hosting Weblate"
 msgid "Hosting plans"
-msgstr "Weblate 主機"
+msgstr "提供服務計畫"
 
 #: weblate_web/html/base-features.html:37
 msgid "Hosting plans to use Weblate as a service starting at 19 EUR."
-msgstr ""
+msgstr "19 歐元起的將 Weblate 當成服務來用的提供服務計畫。"
 
 #: weblate_web/html/base-features.html:44
 msgid "Ready for cloud"
 msgstr "雲端就緒"
 
 #: weblate_web/html/base-features.html:45
-#, fuzzy
 #| msgid ""
 #| "Weblate comes with an appliance, which is ready to deploy in your cloud."
 msgid "Weblate comes with appliances, which are ready to deploy in your cloud."
-msgstr "Weblate 附帶的裝置，這是準備部署在您的雲端。"
+msgstr "Weblate 有附帶裝置(appliances)，隨時可部署在您的雲端。"
 
 #: weblate_web/html/base-features.html:52
-#, fuzzy
 #| msgid "Hosting for free software"
 msgid "Free software"
-msgstr "自由軟體主機"
+msgstr "自由軟體"
 
 #: weblate_web/html/base-features.html:53
-#, fuzzy
 #| msgid "Weblate is a free software with community support."
 msgid "Weblate is free software, you can run your own instance of it."
-msgstr "Weblate 是一個自由軟體與社群的支援。"
+msgstr "Weblate 是自由軟體，您可以執行自己的 Weblate。"
 
 #: weblate_web/html/base.html:12
 msgctxt "Keyword"
@@ -212,7 +208,7 @@ msgid "Help with translations!"
 msgstr "幫忙翻譯！"
 
 #: weblate_web/html/base.html:124
-#, fuzzy, python-format
+#, python-format
 #| msgid ""
 #| "Weblate is free software, but welcomes <a href=\"%(donate_url)s"
 #| "\">donations</a>."
@@ -220,7 +216,8 @@ msgid ""
 "Weblate is <a href=\"%(github_url)s\">free software</a> and welcomes <a href="
 "\"%(donate_url)s\">donations</a>."
 msgstr ""
-"Weblate 是一個自由軟體，但是歡迎您 <a href=\"%(donate_url)s\">捐贈</a>。"
+"Weblate 是<a href=\"%(github_url)s\">自由軟體</a>，歡迎您 <a href=\"%(donate_url)s\""
+">贊助</a>。"
 
 #: weblate_web/html/contribute.html:3 weblate_web/html/contribute.html.py:4
 msgid "Contribute to Weblate"
@@ -306,10 +303,11 @@ msgstr ""
 "費大筆的錢，每一分錢都很重要。"
 
 #: weblate_web/html/donate.html:30
+#, fuzzy
 msgid ""
 "You can send a monthly donation using a credit card. You can also get "
 "rewards for higher donations, for example a logo placement on our website."
-msgstr ""
+msgstr "您可用信用卡每月贊助。較高的贊助也會有回報，像在您的網頁放一個徽標。"
 
 #: weblate_web/html/donate.html:37
 msgid "Donate using Gratipay"
@@ -385,25 +383,28 @@ msgstr ""
 #, fuzzy
 #| msgid "Cloud or emulator images"
 msgid "Cloud or virtualization images"
-msgstr "雲端或模擬映射"
+msgstr "雲端或虛擬映射"
 
 #: weblate_web/html/download.html:45
+#, fuzzy
 msgid ""
 "Weblate can be run in any cloud or virtualization environment. Following "
 "links will show you information about some of these:"
-msgstr ""
+msgstr "Weblate 可在任何雲或虛擬環境執行。後面連結可顯示一些案例資訊："
 
 #: weblate_web/html/download.html:48
+#, fuzzy
 msgid "Running Weblate in a Docker container"
-msgstr ""
+msgstr "於一個 Docker 容器 (container) 執行 Weblate"
 
 #: weblate_web/html/download.html:49
 msgid "Running Weblate on OpenShift platform"
-msgstr ""
+msgstr "於 OpenShift 平台執行 Weblate"
 
 #: weblate_web/html/download.html:50
+#, fuzzy
 msgid "SUSE Studio appliances"
-msgstr ""
+msgstr "SUSE Studio 裝置"
 
 #: weblate_web/html/download.html:51
 msgid ""
@@ -421,7 +422,7 @@ msgstr "Weblate 是一個功能豐富的電腦輔助翻譯工具。"
 
 #: weblate_web/html/features.html:11
 msgid "View documentation"
-msgstr "檢視文件"
+msgstr "檢視說明文件"
 
 #: weblate_web/html/features.html:23
 msgid "Access control"
@@ -441,14 +442,13 @@ msgid ""
 msgstr "翻譯者可以得到新待譯字串或其他事件的通知。"
 
 #: weblate_web/html/features.html:39
-#, fuzzy
 #| msgid "Integrated"
 msgid "Integration API"
-msgstr "整合"
+msgstr "整合之 API"
 
 #: weblate_web/html/features.html:40
 msgid "Thanks to the API you can integrate Weblate with third party services."
-msgstr ""
+msgstr "由此 API，能整合 Weblate 與第三方服務。"
 
 #: weblate_web/html/features.html:50
 msgid "File formats"
@@ -574,8 +574,9 @@ msgid "Thank you for ordering hosting!"
 msgstr ""
 
 #: weblate_web/html/hosting-ordered.html:11
+#, fuzzy
 msgid "Next steps"
-msgstr ""
+msgstr "下一步"
 
 #: weblate_web/html/hosting-ordered.html:13
 msgid ""
@@ -620,11 +621,10 @@ msgid ""
 msgstr ""
 
 #: weblate_web/html/hosting.html:28
-#, fuzzy
 #| msgid "Hosting for free software"
 msgctxt "Hosting plan"
 msgid "Free software"
-msgstr "自由軟體主機"
+msgstr "自由軟體"
 
 #: weblate_web/html/hosting.html:29
 msgctxt "Hosting plan"
@@ -644,7 +644,7 @@ msgstr "進階"
 #: weblate_web/html/hosting.html:32
 msgctxt "Hosting plan"
 msgid "Enterprise"
-msgstr ""
+msgstr "企業"
 
 #: weblate_web/html/hosting.html:45
 msgid "Source strings"
@@ -653,23 +653,21 @@ msgstr "源文字串"
 #: weblate_web/html/hosting.html:46 weblate_web/html/hosting.html.py:54
 #: weblate_web/html/hosting.html:62
 msgid "Negotiable"
-msgstr ""
+msgstr "可協商的"
 
 #: weblate_web/html/hosting.html:53
-#, fuzzy
 #| msgid "Up to 15 target languages"
 msgid "Target languages"
-msgstr "上限 15 目標語言"
+msgstr "目標語言"
 
 #: weblate_web/html/hosting.html:61
 msgid "VCS repositories"
 msgstr "VCS 儲存庫"
 
 #: weblate_web/html/hosting.html:69
-#, fuzzy
 #| msgid "One translation project"
 msgid "Translation projects"
-msgstr "1 個翻譯專案"
+msgstr "翻譯專案"
 
 #: weblate_web/html/hosting.html:73 weblate_web/html/hosting.html.py:74
 #: weblate_web/html/hosting.html:79 weblate_web/html/hosting.html.py:80
@@ -678,50 +676,46 @@ msgstr "1 個翻譯專案"
 #: weblate_web/html/hosting.html:88 weblate_web/html/hosting.html.py:89
 #: weblate_web/html/hosting.html:90
 msgid "Unlimited"
-msgstr ""
+msgstr "無限制"
 
 #: weblate_web/html/hosting.html:77
-#, fuzzy
 #| msgid "Translation context"
 msgid "Translation components"
-msgstr "翻譯內容"
+msgstr "翻譯元件"
 
 #: weblate_web/html/hosting.html:85
-#, fuzzy
 #| msgid "Unlimited number of translation components"
 msgid "Number of translators"
-msgstr "翻譯元件無限數量"
+msgstr "翻譯者數量"
 
 #: weblate_web/html/hosting.html:93
 msgid "User management"
-msgstr ""
+msgstr "使用者管理"
 
 #: weblate_web/html/hosting.html:101
-#, fuzzy
 #| msgid "File formats"
 msgid "Supported file formats"
-msgstr "檔案格式"
+msgstr "支援的檔案格式"
 
 #: weblate_web/html/hosting.html:102 weblate_web/html/hosting.html.py:103
 #: weblate_web/html/hosting.html:104 weblate_web/html/hosting.html.py:105
 #: weblate_web/html/hosting.html:106
 msgid "All"
-msgstr ""
+msgstr "全部"
 
 #: weblate_web/html/hosting.html:113 weblate_web/html/hosting.html.py:114
 #: weblate_web/html/hosting.html:121 weblate_web/html/hosting.html.py:122
 msgid "Customizable"
-msgstr ""
+msgstr "可自訂"
 
 #: weblate_web/html/hosting.html:117
-#, fuzzy
 #| msgid "Translation status"
 msgid "Translation processing"
-msgstr "翻譯狀態"
+msgstr "翻譯處理中"
 
 #: weblate_web/html/hosting.html:135
 msgid "Monthly"
-msgstr ""
+msgstr "每月"
 
 #: weblate_web/html/hosting.html:137
 msgid "Contact us"
@@ -736,14 +730,14 @@ msgstr "%(price)s EUR / 月\\"
 #: weblate_web/html/hosting.html:153
 #, python-format
 msgid "Yearly (save 20%%)"
-msgstr ""
+msgstr "每年 (省 20%%)"
 
 #: weblate_web/html/hosting.html:155 weblate_web/html/hosting.html.py:158
 #: weblate_web/html/hosting.html:161 weblate_web/html/hosting.html.py:164
-#, fuzzy, python-format
+#, python-format
 #| msgid "%(price)s EUR / month"
 msgid "%(price)s EUR / year"
-msgstr "%(price)s EUR / 月\\"
+msgstr "%(price)s EUR / 年"
 
 #: weblate_web/html/hosting.html:172
 msgid ""
