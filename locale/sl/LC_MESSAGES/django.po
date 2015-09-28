@@ -8,17 +8,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2015-09-16 12:21+0200\n"
-"PO-Revision-Date: 2015-08-16 13:47+0200\n"
+"PO-Revision-Date: 2015-09-28 22:22+0200\n"
 "Last-Translator: Domen <mitenem@outlook.com>\n"
-"Language-Team: Slovenian <https://hosted.weblate.org/projects/weblate/"
-"website/sl/>\n"
+"Language-Team: Slovenian "
+"<https://hosted.weblate.org/projects/weblate/website/sl/>\n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
-"%100==4 ? 2 : 3;\n"
-"X-Generator: Weblate 2.4-dev\n"
+"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
+"n%100==4 ? 2 : 3;\n"
+"X-Generator: Weblate 2.5\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -142,25 +142,22 @@ msgid "Ready for cloud"
 msgstr "Pripravljen za oblak"
 
 #: weblate_web/html/base-features.html:45
-#, fuzzy
 #| msgid ""
 #| "Weblate comes with an appliance, which is ready to deploy in your cloud."
 msgid "Weblate comes with appliances, which are ready to deploy in your cloud."
 msgstr ""
-"Weblate vsebuje pripomoček, s katerim je pripravljen za uvedbo v oblak."
+"Weblate vsebuje pripomočke, s katerimi je pripravljen za uvedbo v oblak."
 
 #: weblate_web/html/base-features.html:52
-#, fuzzy
 #| msgctxt "Hosting plan"
 #| msgid "Free software"
 msgid "Free software"
 msgstr "Prosto programje"
 
 #: weblate_web/html/base-features.html:53
-#, fuzzy
 #| msgid "Weblate is a free software with community support."
 msgid "Weblate is free software, you can run your own instance of it."
-msgstr "Weblate je prosto programje s podporo skupnosti."
+msgstr "Weblate je prosto programje; poganjate lahko svoj primerek."
 
 #: weblate_web/html/base.html:12
 msgctxt "Keyword"
@@ -224,7 +221,7 @@ msgid "Help with translations!"
 msgstr "Pomagajte s prevodi!"
 
 #: weblate_web/html/base.html:124
-#, fuzzy, python-format
+#, python-format
 #| msgid ""
 #| "Weblate is free software, but welcomes <a href=\"%(donate_url)s"
 #| "\">donations</a>."
@@ -232,8 +229,8 @@ msgid ""
 "Weblate is <a href=\"%(github_url)s\">free software</a> and welcomes <a href="
 "\"%(donate_url)s\">donations</a>."
 msgstr ""
-"Weblate je prosto programje, vendar so <a href=\"%(donate_url)s\">prispevki</"
-"a> dobrodošli."
+"Weblate je <a href=\"%(github_url)s\">prosto programje</a> in <a href=\""
+"%(donate_url)s\">prispevki</a> so dobrodošli."
 
 #: weblate_web/html/contribute.html:3 weblate_web/html/contribute.html.py:4
 msgid "Contribute to Weblate"
@@ -325,6 +322,8 @@ msgid ""
 "You can send a monthly donation using a credit card. You can also get "
 "rewards for higher donations, for example a logo placement on our website."
 msgstr ""
+"Mesečni prispevek lahko pošljete s kreditno kartico. Za višje prispevke ste "
+"lahko tudi nagrajeni, na primer z umestitvijo logotipa na našo spletno stran."
 
 #: weblate_web/html/donate.html:37
 msgid "Donate using Gratipay"
@@ -404,28 +403,29 @@ msgstr ""
 "package/weblate/\">openSUSE Buildservice</a> na voljo binarni paketi."
 
 #: weblate_web/html/download.html:43
-#, fuzzy
 #| msgid "Cloud or emulator images"
 msgid "Cloud or virtualization images"
-msgstr "Slike za oblak ali posnemovalnik"
+msgstr "Slike za oblak ali virtualizacijo"
 
 #: weblate_web/html/download.html:45
 msgid ""
 "Weblate can be run in any cloud or virtualization environment. Following "
 "links will show you information about some of these:"
 msgstr ""
+"Weblate lahko poganjate v katerem koli oblaku ali virtualizacijskem okolju. "
+"Naslednje povezave vam nudijo informacije o nekaterih:"
 
 #: weblate_web/html/download.html:48
 msgid "Running Weblate in a Docker container"
-msgstr ""
+msgstr "Poganjanje Weblate v vsebniku Docker"
 
 #: weblate_web/html/download.html:49
 msgid "Running Weblate on OpenShift platform"
-msgstr ""
+msgstr "Poganjanje Weblate na platformi OpenShift"
 
 #: weblate_web/html/download.html:50
 msgid "SUSE Studio appliances"
-msgstr ""
+msgstr "Pripomočki SUSE Studio"
 
 #: weblate_web/html/download.html:51
 msgid ""
@@ -466,14 +466,13 @@ msgstr ""
 "dogodki."
 
 #: weblate_web/html/features.html:39
-#, fuzzy
 #| msgid "Integrated"
 msgid "Integration API"
-msgstr "Integriran"
+msgstr "API za integracijo"
 
 #: weblate_web/html/features.html:40
 msgid "Thanks to the API you can integrate Weblate with third party services."
-msgstr ""
+msgstr "Zahvaljujoč API-ju lahko Weblate integrirate z drugimi storitvami."
 
 #: weblate_web/html/features.html:50
 msgid "File formats"
@@ -751,7 +750,7 @@ msgstr "Obdelava prevodov"
 
 #: weblate_web/html/hosting.html:135
 msgid "Monthly"
-msgstr ""
+msgstr "Mesečno"
 
 #: weblate_web/html/hosting.html:137
 msgid "Contact us"
@@ -766,14 +765,14 @@ msgstr "%(price)s EUR/mesec"
 #: weblate_web/html/hosting.html:153
 #, python-format
 msgid "Yearly (save 20%%)"
-msgstr ""
+msgstr "Letno (prihranite 20 %%)"
 
 #: weblate_web/html/hosting.html:155 weblate_web/html/hosting.html.py:158
 #: weblate_web/html/hosting.html:161 weblate_web/html/hosting.html.py:164
-#, fuzzy, python-format
+#, python-format
 #| msgid "%(price)s EUR / month"
 msgid "%(price)s EUR / year"
-msgstr "%(price)s EUR/mesec"
+msgstr "%(price)s EUR/leto"
 
 #: weblate_web/html/hosting.html:172
 msgid ""
