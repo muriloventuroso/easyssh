@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2015-09-16 12:21+0200\n"
-"PO-Revision-Date: 2015-10-25 23:55+0200\n"
-"Last-Translator: Christoph-Miebach <christoph.miebach@web.de>\n"
+"PO-Revision-Date: 2015-10-26 00:33+0200\n"
+"Last-Translator: Julian Ladisch <github.com-t3if@ladisch.de>\n"
 "Language-Team: German "
 "<https://hosted.weblate.org/projects/weblate/website/de/>\n"
 "Language: de\n"
@@ -521,7 +521,7 @@ msgid ""
 "You can also use Weblate to acquire feedback on source strings and thus "
 "improve them."
 msgstr ""
-"Weblate kann auch dazu eingesetzt werden, Rückmeldung zu Übersetzungstexten "
+"Weblate kann auch dazu eingesetzt werden, Rückmeldung zu Ursprungstexten "
 "einzuholen, um diese zu verbessern."
 
 #: weblate_web/html/features.html:93
@@ -531,8 +531,8 @@ msgstr "Export und Import"
 #: weblate_web/html/features.html:94
 msgid "Translations can be downloaded for offline translation and merged back."
 msgstr ""
-"Übersetzungen können zur Offline-Übersetzung heruntergeladen, und "
-"anschließend wieder zusammengeführt werden."
+"Übersetzungen können zur Offline-Übersetzung heruntergeladen und "
+"anschließend zurückgeführt werden."
 
 #: weblate_web/html/features.html:104
 msgid "Integrated"
@@ -552,8 +552,8 @@ msgstr "Dokumentation"
 msgid ""
 "Weblate comes with comprehensive documentation covering both setup and usage."
 msgstr ""
-"Weblate enthält ausführliche Dokumentation für die beiden Bereiche "
-"Installation und Benutzung."
+"Weblate enthält ausführliche Dokumentation, die sowohl Installation als auch "
+"Benutzung abdeckt."
 
 #: weblate_web/html/features.html:120
 msgid "Review"
@@ -598,20 +598,20 @@ msgid ""
 "Weblate talks directly with your version control system, currently Git and "
 "Mercurial are supported."
 msgstr ""
-"Weblate spricht direkt mit deinem Versionskontrollsystem, zurzeit werden Git "
+"Weblate spricht direkt mit Ihrem Versionskontrollsystem, zurzeit werden Git "
 "und Mercurial unterstützt."
 
 #: weblate_web/html/features.html:166
 msgid "Collaboration sites"
-msgstr "Kollaborationsseiten"
+msgstr "Kollaborationssites"
 
 #: weblate_web/html/features.html:167
 msgid ""
 "Weblate has native support for many software development sites such as "
 "GitHub, Bitbucket or Gitlab."
 msgstr ""
-"Weblate unterstützt Formate vieler Software-Entwicklungsseiten, so wie "
-"GitHub, Bitbucket oder Gitlab."
+"Weblate unterstützt von Haus aus viele Software-Entwicklungsites wie GitHub, "
+"Bitbucket oder Gitlab."
 
 #: weblate_web/html/features.html:174
 msgid "Responsive UI"
@@ -622,8 +622,8 @@ msgid ""
 "Weblate has responsible UI which will work nicely on your desktop, tablet or "
 "phone."
 msgstr ""
-"Weblate verfügt über eine adaptive UI, die auf Ihrem Rechner, Tablet oder "
-"Telefon toll funktionieren wird."
+"Weblate verfügt über eine adaptive Benutzeroberfläche, die auf Ihrem "
+"Rechner, Tablet oder Handy schön funktionieren wird."
 
 #: weblate_web/html/hosting-ordered.html:3
 #: weblate_web/html/hosting-ordered.html:4 weblate_web/html/hosting.html:3
@@ -633,21 +633,24 @@ msgstr "Weblate betreiben"
 
 #: weblate_web/html/hosting-ordered.html:6
 msgid "Thank you for ordering hosting!"
-msgstr ""
+msgstr "Danke für Ihre Hosting-Bestellung!"
 
 #: weblate_web/html/hosting-ordered.html:11
 msgid "Next steps"
-msgstr ""
+msgstr "Nächste Schritte"
 
 #: weblate_web/html/hosting-ordered.html:13
 msgid ""
 "The project setup is currently manual. If you haven't done so already, "
 "please get in touch with us and send us details about your repository setup."
 msgstr ""
+"Die Projekteinrichtung ist manuell. Wenn Sie das noch nicht gemacht haben, "
+"nehmen Sie bitte mit uns Kontakt auf und schicken Sie uns Details über Ihre "
+"Repository-Einrichtung."
 
 #: weblate_web/html/hosting-ordered.html:15
 msgid "Usually following information is needed:"
-msgstr ""
+msgstr "Üblicherweise sind folgende Daten notwendig:"
 
 #: weblate_web/html/hosting-ordered.html:18 weblate_web/html/hosting.html:202
 msgid "URL of repository with translations."
@@ -663,10 +666,14 @@ msgid ""
 "adding Weblate user to your project (on GitHub, Bitbucket or GitLab) or "
 "adding SSH key we will provide you."
 msgstr ""
+"Sie müssen Weblate Zugriff auf Ihr Repository erlauben. Dies können Sie "
+"machen, indem Sie den Nutzer Weblate zu Ihrem Projekt (auf GitHub, Bitbucket "
+"oder GitLab) hinzufügen, oder den SSH-Schlüssel einbauen, den wir Ihnen zur "
+"Verfügung stellen."
 
 #: weblate_web/html/hosting.html:6
 msgid "Free continuous translation hosting for free software."
-msgstr "Weblate bietet den Server-Betrieb (Hosting) für freie Software an."
+msgstr "Kostenloses Hosting für die fortlaufende Übersetzung freier Software."
 
 #: weblate_web/html/hosting.html:11
 msgid "Ask for hosting"
@@ -680,35 +687,35 @@ msgid ""
 "look for hosting of bigger projects, don't hesitate to <a href=\"%(contact)s"
 "\">get in touch with us</a>."
 msgstr ""
+"Wir können die Übersetzung Ihres Projekts mit kommerzieller oder freier "
+"Software hosten. Sie können eine Übersicht der Hostingangebote unten sehen. "
+"Sollten Sie Fragen haben oder nach einem Hosting für ein größeres Projekt "
+"suchen, freuen wir uns über Ihre <a href=\"%(contact)s\">Anfrage an uns</a>."
 
 #: weblate_web/html/hosting.html:28
 msgctxt "Hosting plan"
 msgid "Free software"
-msgstr "Frei Software"
+msgstr "Freie Software"
 
 #: weblate_web/html/hosting.html:29
-#, fuzzy
 #| msgid "Basic"
 msgctxt "Hosting plan"
 msgid "Basic"
 msgstr "Basic"
 
 #: weblate_web/html/hosting.html:30
-#, fuzzy
 #| msgid "Medium"
 msgctxt "Hosting plan"
 msgid "Medium"
 msgstr "Medium"
 
 #: weblate_web/html/hosting.html:31
-#, fuzzy
 #| msgid "Advanced"
 msgctxt "Hosting plan"
 msgid "Advanced"
 msgstr "Advanced"
 
 #: weblate_web/html/hosting.html:32
-#, fuzzy
 #| msgid "Enterprise"
 msgctxt "Hosting plan"
 msgid "Enterprise"
@@ -721,23 +728,21 @@ msgstr "Ursprungszeichenketten"
 #: weblate_web/html/hosting.html:46 weblate_web/html/hosting.html.py:54
 #: weblate_web/html/hosting.html:62
 msgid "Negotiable"
-msgstr ""
+msgstr "auf Anfrage"
 
 #: weblate_web/html/hosting.html:53
-#, fuzzy
 #| msgid "Up to 15 target languages"
 msgid "Target languages"
-msgstr "Bis zu 15 Zielsprachen"
+msgstr "Zielsprachen"
 
 #: weblate_web/html/hosting.html:61
 msgid "VCS repositories"
 msgstr "Versionsverwaltungsrepositorien"
 
 #: weblate_web/html/hosting.html:69
-#, fuzzy
 #| msgid "One translation project"
 msgid "Translation projects"
-msgstr "Ein Übersetzungsprojekt"
+msgstr "Übersetzungsprojekte"
 
 #: weblate_web/html/hosting.html:73 weblate_web/html/hosting.html.py:74
 #: weblate_web/html/hosting.html:79 weblate_web/html/hosting.html.py:80
@@ -746,52 +751,47 @@ msgstr "Ein Übersetzungsprojekt"
 #: weblate_web/html/hosting.html:88 weblate_web/html/hosting.html.py:89
 #: weblate_web/html/hosting.html:90
 msgid "Unlimited"
-msgstr ""
+msgstr "unbegrenzt"
 
 #: weblate_web/html/hosting.html:77
-#, fuzzy
 #| msgid "Translation context"
 msgid "Translation components"
-msgstr "Übersetzungskontext"
+msgstr "Übersetzungskomponenten"
 
 #: weblate_web/html/hosting.html:85
-#, fuzzy
 #| msgid "Unlimited number of translation components"
 msgid "Number of translators"
-msgstr "Unbeschränkte Anzahl von Übersetzungskomponenten"
+msgstr "Anzahl der Übersetzer"
 
 #: weblate_web/html/hosting.html:93
-#, fuzzy
 #| msgid "Self service user management"
 msgid "User management"
-msgstr "selbst betreute Nutzerverwaltung"
+msgstr "Nutzerverwaltung"
 
 #: weblate_web/html/hosting.html:101
-#, fuzzy
 #| msgid "File formats"
 msgid "Supported file formats"
-msgstr "Dateiformate"
+msgstr "Unterstützte Dateiformate"
 
 #: weblate_web/html/hosting.html:102 weblate_web/html/hosting.html.py:103
 #: weblate_web/html/hosting.html:104 weblate_web/html/hosting.html.py:105
 #: weblate_web/html/hosting.html:106
 msgid "All"
-msgstr ""
+msgstr "Alle"
 
 #: weblate_web/html/hosting.html:113 weblate_web/html/hosting.html.py:114
 #: weblate_web/html/hosting.html:121 weblate_web/html/hosting.html.py:122
 msgid "Customizable"
-msgstr ""
+msgstr "Konfigurierbar"
 
 #: weblate_web/html/hosting.html:117
-#, fuzzy
 #| msgid "Translation status"
 msgid "Translation processing"
-msgstr "Übersetzungsstatus"
+msgstr "Übersetzungsverarbeitung"
 
 #: weblate_web/html/hosting.html:135
 msgid "Monthly"
-msgstr ""
+msgstr "monatlich"
 
 #: weblate_web/html/hosting.html:137
 msgid "Contact us"
@@ -806,14 +806,14 @@ msgstr "%(price)s EUR / Monat"
 #: weblate_web/html/hosting.html:153
 #, python-format
 msgid "Yearly (save 20%%)"
-msgstr ""
+msgstr "jährlich (20%% sparen)"
 
 #: weblate_web/html/hosting.html:155 weblate_web/html/hosting.html.py:158
 #: weblate_web/html/hosting.html:161 weblate_web/html/hosting.html.py:164
-#, fuzzy, python-format
+#, python-format
 #| msgid "%(price)s EUR / month"
 msgid "%(price)s EUR / year"
-msgstr "%(price)s EUR / Monat"
+msgstr "%(price)s EUR / Jahr"
 
 #: weblate_web/html/hosting.html:172
 msgid ""
@@ -831,6 +831,9 @@ msgid ""
 "The hosting setup is currently done manually, so you might want to get in "
 "touch with us prior to making subscription with your project details."
 msgstr ""
+"Die Einrichtung des Hostings wird derzeit manuell gemacht, deshalb müssen "
+"Sie wegen Ihrer Projektdetails mit uns Kontakt aufnehmen, bevor Sie eine "
+"Bestellung aufgeben."
 
 #: weblate_web/html/hosting.html:179
 msgid "Hosting for free software"
@@ -871,8 +874,8 @@ msgstr ""
 #: weblate_web/html/hosting.html:190
 msgid "There is no guarantee for service availability or quality."
 msgstr ""
-"Eine Garantie für die Verfügbarkeit und Qualität von Weblate Diensten kann "
-"nicht gegeben werden."
+"Es gibt keine Garantie für die Verfügbarkeit und Qualität der Weblate-"
+"Dienste."
 
 #: weblate_web/html/hosting.html:193
 msgid "Asking for hosting"
@@ -934,7 +937,7 @@ msgstr ""
 
 #: weblate_web/html/hosting.html:220
 msgid "Support free hosting"
-msgstr "Unterstütze kostenloses Hosting"
+msgstr "Unterstützen Sie kostenloses Hosting"
 
 #: weblate_web/html/hosting.html:224
 #, python-format
@@ -943,19 +946,18 @@ msgid ""
 "costs some money, so you are welcome to use <a href=\"%(gittip_url)s"
 "\">Gratipay</a> or <a href=\"%(donate_url)s\">other ways to donate</a>."
 msgstr ""
-"Das Hosting wird kostenlos bereitgestellt, aber der Betrieb des Servers und "
-"Maintenance kosten etwas Geld; daher sind Spenden über <a href="
-"\"%(gittip_url)s\">Gratipay</a> oder <a href=\"%(donate_url)s\">auf anderen "
-"Wegen willkommen</a>."
+"Das Hosting wird kostenlos bereitgestellt, aber der Betrieb und die Wartung "
+"des Servers kosten etwas Geld; daher sind Spenden über <a href=\""
+"%(gittip_url)s\">Gratipay</a> oder <a href=\"%(donate_url)s\">auf anderen "
+"Wegen</a> willkommen."
 
 #: weblate_web/html/hosting.html:228
-#, fuzzy
 #| msgid "Ask for hosting"
 msgid "Self hosting"
-msgstr "Anfrage für Server-Betrieb"
+msgstr "Selber hosten"
 
 #: weblate_web/html/hosting.html:232
-#, fuzzy, python-format
+#, python-format
 #| msgid ""
 #| "Check our <a href=\"%(download_url)s\">download page</a> for appliances, "
 #| "which provide an easy way to deploy Weblate in the cloud."
@@ -964,9 +966,9 @@ msgid ""
 "run it on your systems. There are also several options for deploying Weblate "
 "to the cloud."
 msgstr ""
-"Auf unserer <a href=\"%(download_url)s\">Download Seite</a> finden Sie "
-"Appliances, welche ein einfacher Weg sind, um Weblate in einer Cloud zu "
-"installieren."
+"Sie können auch den Weblate-Quelltext <a href=\"%(download_url)s\""
+">downloaden</a> und auf Ihren System laufen lassen. Es gibt auch mehrere "
+"Optionen, um Weblate in der Cloud zu starten."
 
 #: weblate_web/html/index.html:3
 msgid "Weblate - web-based translation"
