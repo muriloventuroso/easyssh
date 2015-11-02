@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2015-09-16 12:21+0200\n"
+"POT-Creation-Date: 2015-11-02 17:06+0100\n"
 "PO-Revision-Date: 2015-09-17 15:24+0200\n"
 "Last-Translator: Παναγιώτης Παπάζογλου <papaz_p@yahoo.com>\n"
-"Language-Team: Greek "
-"<https://hosted.weblate.org/projects/weblate/website/el/>\n"
+"Language-Team: Greek <https://hosted.weblate.org/projects/weblate/website/el/"
+">\n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -225,9 +225,6 @@ msgstr "Βοήθεια με μεταφράσεις!"
 
 #: weblate_web/html/base.html:124
 #, python-format
-#| msgid ""
-#| "Weblate is free software, but welcomes <a href=\"%(donate_url)s"
-#| "\">donations</a>."
 msgid ""
 "Weblate is <a href=\"%(github_url)s\">free software</a> and welcomes <a href="
 "\"%(donate_url)s\">donations</a>."
@@ -649,11 +646,11 @@ msgstr ""
 msgid "Usually following information is needed:"
 msgstr "Συνήθως οι ακόλουθες πληροφορίες είναι απαραίτητες:"
 
-#: weblate_web/html/hosting-ordered.html:18 weblate_web/html/hosting.html:202
+#: weblate_web/html/hosting-ordered.html:18 weblate_web/html/hosting.html:206
 msgid "URL of repository with translations."
 msgstr "URL του αποθετηρίου με μεταφράσεις."
 
-#: weblate_web/html/hosting-ordered.html:19 weblate_web/html/hosting.html:203
+#: weblate_web/html/hosting-ordered.html:19 weblate_web/html/hosting.html:207
 msgid "Path to translations within the repository."
 msgstr "Διαδρομή για τις μεταφράσεις εντός του αποθετηρίου."
 
@@ -817,11 +814,17 @@ msgstr ""
 "Η εγκατάστσαη φιλοξενίας γίνεται χειροκίνητα, για αυτό ίσως θελήσετε να "
 "επικοινωνήσετε μαζί μας πριν εγγραφείτε με τις λεπτομέρειες του έργου σας."
 
-#: weblate_web/html/hosting.html:179
+#: weblate_web/html/hosting.html:180
+msgid ""
+"Alternatively we can accept payments by wire transfer (preferably IBAN) or "
+"Bitcoin. Please get in touch for more details."
+msgstr ""
+
+#: weblate_web/html/hosting.html:183
 msgid "Hosting for free software"
 msgstr "Φιλοξενία για το ελεύθερο λογισμικό"
 
-#: weblate_web/html/hosting.html:182
+#: weblate_web/html/hosting.html:186
 msgid ""
 "If you are interested in using Weblate for your free software, you can ask "
 "us to be include on <a href=\"http://hosted.weblate.org/\">hosted.weblate."
@@ -833,11 +836,11 @@ msgstr ""
 "org/\">hosted.weblate.org</a> . Αυτό θα σας επιτρέψει να χρησιμοποιήσετε το "
 "Weblate χωρίς την εγκατάσταση και τη συντήρησή του."
 
-#: weblate_web/html/hosting.html:185
+#: weblate_web/html/hosting.html:189
 msgid "Conditions for free hosting"
 msgstr "Προϋποθέσεις για ελεύθερη φιλοξενία"
 
-#: weblate_web/html/hosting.html:188
+#: weblate_web/html/hosting.html:192
 msgid ""
 "Translated content has to be released under <a href=\"http://en.wikipedia."
 "org/wiki/Free_software_license\">free license</a>."
@@ -845,23 +848,23 @@ msgstr ""
 "Το μεταφρασμένο περιεχόμενο πρέπει να δημοσιεύτεί υπό <a href=\"http://en."
 "wikipedia.org/wiki/Free_software_license\">άδεια ελεύθερης χρήσης</a>."
 
-#: weblate_web/html/hosting.html:189
+#: weblate_web/html/hosting.html:193
 msgid ""
 "Source code has to be publicly available in supported version control system."
 msgstr ""
 "Ο πηγαίος κώδικας πρέπει να είναι διαθέσιμος στο κοινό στο υποστηριζόμενο "
 "σύστημα ελέγχου εκδόσεων."
 
-#: weblate_web/html/hosting.html:190
+#: weblate_web/html/hosting.html:194
 msgid "There is no guarantee for service availability or quality."
 msgstr ""
 "Δεν υπάρχει καμία εγγύηση για τη διαθεσιμότητα της υπηρεσίας ή την ποιότητα."
 
-#: weblate_web/html/hosting.html:193
+#: weblate_web/html/hosting.html:197
 msgid "Asking for hosting"
 msgstr "Ερώτημα για φιλοξενία"
 
-#: weblate_web/html/hosting.html:196
+#: weblate_web/html/hosting.html:200
 #, python-format
 msgid ""
 "Please use <a href=\"%(url)s\">contact form on Hosted Weblate</a> to request "
@@ -870,19 +873,19 @@ msgstr ""
 "Χρήση της <a href=\"%(url)s\">φόρμας επικοινωνίας στο Hosted Weblate</a> για "
 "αίτημα φιλοξενίας. Θα χρειαστείτε τις ακόλουθες πληροφορίες:"
 
-#: weblate_web/html/hosting.html:200
+#: weblate_web/html/hosting.html:204
 msgid "Information about your project."
 msgstr "Πληροφορίες για το έργο σας."
 
-#: weblate_web/html/hosting.html:201
+#: weblate_web/html/hosting.html:205
 msgid "Project website."
 msgstr "Ιστοσελίδα έργου."
 
-#: weblate_web/html/hosting.html:206
+#: weblate_web/html/hosting.html:210
 msgid "Translation workflow"
 msgstr "Ροή εργασιών μετάφρασης"
 
-#: weblate_web/html/hosting.html:209
+#: weblate_web/html/hosting.html:213
 msgid ""
 "All translated repositories are available at <code>git.weblate.org</code> "
 "with similar naming as on website - hello/master translation would be "
@@ -892,7 +895,7 @@ msgstr ""
 "code> με παρόμοια ονομασία όπως στην ιστοσελίδα - η μετάφραση hello/master "
 "θα δημοσιευθεί ως <code>git://git.weblate.org/hello-master.git</code>."
 
-#: weblate_web/html/hosting.html:213
+#: weblate_web/html/hosting.html:217
 #, python-format
 msgid ""
 "Weblate can automatically receive changes from major code hosting services, "
@@ -904,7 +907,7 @@ msgstr ""
 "\">GitHub</a>, στο <a href=\"%(bitbucket)s\">Bitbucket</a> ή στο <a href="
 "\"%(gitlab)s\">GitLab</a>."
 
-#: weblate_web/html/hosting.html:217
+#: weblate_web/html/hosting.html:221
 #, python-format
 msgid ""
 "If you want Weblate to automatically push changes as well, add Weblate push "
@@ -916,11 +919,11 @@ msgstr ""
 "θέλετε να χρησιμοποιήσετε αυτή την επιλογή. Δείτε την <a href=\"%(docs)s"
 "\">τεκμηρίωση</a> για περισσότερες λεπτομερείς οδηγίες."
 
-#: weblate_web/html/hosting.html:220
+#: weblate_web/html/hosting.html:224
 msgid "Support free hosting"
 msgstr "Υποστήριξη ελεύθερης φιλοξενίας"
 
-#: weblate_web/html/hosting.html:224
+#: weblate_web/html/hosting.html:228
 #, python-format
 msgid ""
 "The hosting is provided for free, but running the server and maintaining it "
@@ -932,11 +935,11 @@ msgstr ""
 "\"%(gittip_url)s\">Gratipay</a> ή <a href=\"%(donate_url)s\">άλλους τρόπους "
 "δωρεάς</a>."
 
-#: weblate_web/html/hosting.html:228
+#: weblate_web/html/hosting.html:232
 msgid "Self hosting"
 msgstr "Αυτοφιλοξενία"
 
-#: weblate_web/html/hosting.html:232
+#: weblate_web/html/hosting.html:236
 #, python-format
 msgid ""
 "You can also <a href=\"%(download_url)s\">download</a> Weblate sources and "

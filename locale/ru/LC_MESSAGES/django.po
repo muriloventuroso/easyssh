@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: weblate-web\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2015-09-16 12:21+0200\n"
+"POT-Creation-Date: 2015-11-02 17:06+0100\n"
 "PO-Revision-Date: 2015-06-22 12:29+0200\n"
 "Last-Translator: Roman Imankulov <roman.imankulov@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/weblate/website/"
@@ -643,11 +643,11 @@ msgstr ""
 msgid "Usually following information is needed:"
 msgstr ""
 
-#: weblate_web/html/hosting-ordered.html:18 weblate_web/html/hosting.html:202
+#: weblate_web/html/hosting-ordered.html:18 weblate_web/html/hosting.html:206
 msgid "URL of repository with translations."
 msgstr "URL-адрес хранилища с переводами."
 
-#: weblate_web/html/hosting-ordered.html:19 weblate_web/html/hosting.html:203
+#: weblate_web/html/hosting-ordered.html:19 weblate_web/html/hosting.html:207
 msgid "Path to translations within the repository."
 msgstr "Путь к переводам внутри репозитория."
 
@@ -811,11 +811,17 @@ msgid ""
 "touch with us prior to making subscription with your project details."
 msgstr ""
 
-#: weblate_web/html/hosting.html:179
+#: weblate_web/html/hosting.html:180
+msgid ""
+"Alternatively we can accept payments by wire transfer (preferably IBAN) or "
+"Bitcoin. Please get in touch for more details."
+msgstr ""
+
+#: weblate_web/html/hosting.html:183
 msgid "Hosting for free software"
 msgstr "Хостинг для свободного программного обеспечения"
 
-#: weblate_web/html/hosting.html:182
+#: weblate_web/html/hosting.html:186
 msgid ""
 "If you are interested in using Weblate for your free software, you can ask "
 "us to be include on <a href=\"http://hosted.weblate.org/\">hosted.weblate."
@@ -827,11 +833,11 @@ msgstr ""
 "странице <a href=\"http://hosted.weblate.org/\">hosted.weblate.org</a>. Это "
 "позволит вам использовать Weblate, не тратя усилий на установку и поддержку."
 
-#: weblate_web/html/hosting.html:185
+#: weblate_web/html/hosting.html:189
 msgid "Conditions for free hosting"
 msgstr "Условия для бесплатного хостинга"
 
-#: weblate_web/html/hosting.html:188
+#: weblate_web/html/hosting.html:192
 msgid ""
 "Translated content has to be released under <a href=\"http://en.wikipedia."
 "org/wiki/Free_software_license\">free license</a>."
@@ -839,22 +845,22 @@ msgstr ""
 "Перевод должен быть выпущен под <a href=\"http://en.wikipedia.org/wiki/"
 "Free_software_license\">свободной лицензией</a>."
 
-#: weblate_web/html/hosting.html:189
+#: weblate_web/html/hosting.html:193
 msgid ""
 "Source code has to be publicly available in supported version control system."
 msgstr ""
 "Исходный код должен быть публично доступен в одной из поддерживаемых систем "
 "контроля версий."
 
-#: weblate_web/html/hosting.html:190
+#: weblate_web/html/hosting.html:194
 msgid "There is no guarantee for service availability or quality."
 msgstr "Нет гарантии доступности службы или её качества."
 
-#: weblate_web/html/hosting.html:193
+#: weblate_web/html/hosting.html:197
 msgid "Asking for hosting"
 msgstr "Просьба о хостинге"
 
-#: weblate_web/html/hosting.html:196
+#: weblate_web/html/hosting.html:200
 #, python-format
 msgid ""
 "Please use <a href=\"%(url)s\">contact form on Hosted Weblate</a> to request "
@@ -863,19 +869,19 @@ msgstr ""
 "Чтобы запросить хостинг, пожалуйста, используйте <a href=\"%(url)s\">форму "
 "для связи на Hosted Weblate</a>. Потребуется следующая информация:"
 
-#: weblate_web/html/hosting.html:200
+#: weblate_web/html/hosting.html:204
 msgid "Information about your project."
 msgstr "Информация о вашем проекте."
 
-#: weblate_web/html/hosting.html:201
+#: weblate_web/html/hosting.html:205
 msgid "Project website."
 msgstr "Веб-сайт проекта."
 
-#: weblate_web/html/hosting.html:206
+#: weblate_web/html/hosting.html:210
 msgid "Translation workflow"
 msgstr "Рабочий процесс перевода"
 
-#: weblate_web/html/hosting.html:209
+#: weblate_web/html/hosting.html:213
 msgid ""
 "All translated repositories are available at <code>git.weblate.org</code> "
 "with similar naming as on website - hello/master translation would be "
@@ -885,7 +891,7 @@ msgstr ""
 "похожей на используемую на этом сайте схему именования: перевод hello/master "
 "будет опубликован как <code>git://git.weblate.org/hello-master.git</code>."
 
-#: weblate_web/html/hosting.html:213
+#: weblate_web/html/hosting.html:217
 #, python-format
 msgid ""
 "Weblate can automatically receive changes from major code hosting services, "
@@ -897,7 +903,7 @@ msgstr ""
 "\">GitHub</a>, <a href=\"%(bitbucket)s\">Bitbucket</a> или <a href="
 "\"%(gitlab)s\">GitLab</a>."
 
-#: weblate_web/html/hosting.html:217
+#: weblate_web/html/hosting.html:221
 #, python-format
 msgid ""
 "If you want Weblate to automatically push changes as well, add Weblate push "
@@ -909,11 +915,11 @@ msgstr ""
 "Вы хотите использовать эту опцию.   Смотрите <a href=\"%(docs)s"
 "\">документацию</a> для более подробных инструкций."
 
-#: weblate_web/html/hosting.html:220
+#: weblate_web/html/hosting.html:224
 msgid "Support free hosting"
 msgstr "Поддержите бесплатный хостинг"
 
-#: weblate_web/html/hosting.html:224
+#: weblate_web/html/hosting.html:228
 #, python-format
 msgid ""
 "The hosting is provided for free, but running the server and maintaining it "
@@ -924,13 +930,13 @@ msgstr ""
 "денег, поэтому вы можете использовать <a href=\"%(gittip_url)s\">Gratipay</"
 "a> или <a href=\"%(donate_url)s\">другие варианты пожертвования</a>."
 
-#: weblate_web/html/hosting.html:228
+#: weblate_web/html/hosting.html:232
 #, fuzzy
 #| msgid "Ask for hosting"
 msgid "Self hosting"
 msgstr "Попросить хостинг"
 
-#: weblate_web/html/hosting.html:232
+#: weblate_web/html/hosting.html:236
 #, fuzzy, python-format
 #| msgid ""
 #| "Check our <a href=\"%(download_url)s\">download page</a> for appliances, "
