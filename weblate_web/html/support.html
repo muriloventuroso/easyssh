@@ -39,10 +39,10 @@
 {% blocktrans %}When some of interested people are online, you might also find help on #weblate channel on <a href="http://freenode.net/">freenode</a> network. You can also use <a href="http://webchat.freenode.net?channels=weblate">webchat</a> there.{% endblocktrans %}
 </p>
 
-<h2>{% trans "Contact" %}</h2>
+<h2>{% trans "Consulting" %}</h2>
 
 <p>
-{% blocktrans %}You can also contact <a href="mailto:michal@cihar.com?subject=Weblate">Michal Čihař</a>, who is author of Weblate.{% endblocktrans %}
+{% blocktrans with 'mailto:michal@cihar.com?subject=Weblate' as contact_link %}You can also contact <a href="{{ contact_link }}">Michal Čihař</a>, who is author of Weblate for consulting services.{% endblocktrans %}
 </p>
 
 {% endblock %}

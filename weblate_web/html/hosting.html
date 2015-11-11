@@ -236,4 +236,7 @@
 {% blocktrans %}You can also <a href="{{ download_url }}">download</a> Weblate sources and run it on your systems. There are also several options for deploying Weblate to the cloud.{% endblocktrans %}
 </p>
 
+<p>
+{% blocktrans with 'mailto:michal@cihar.com?subject=Weblate' as contact_link %}In case you need help with your self hosted solution, we're ready to help as well with consulting services tailored for your needs. Please contact <a href="{{ contact_url }}">Michal Čihař</a> for more details.{% endblocktrans %}
+
 {% endblock %}
