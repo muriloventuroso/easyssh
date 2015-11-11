@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2015-11-11 16:37+0100\n"
-"PO-Revision-Date: 2015-10-21 16:42+0200\n"
+"PO-Revision-Date: 2015-11-11 23:59+0000\n"
 "Last-Translator: Ldm Public <ldmpub@gmail.com>\n"
-"Language-Team: French <https://hosted.weblate.org/projects/weblate/website/"
-"fr/>\n"
+"Language-Team: French "
+"<https://hosted.weblate.org/projects/weblate/website/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -965,6 +965,9 @@ msgid ""
 "well with consulting services tailored for your needs. Please contact <a "
 "href=\"%(contact_url)s\">Michal Čihař</a> for more details."
 msgstr ""
+"Si vous avez besoin d'aide (y compris dans le cas où vous hébergez vous-même "
+"Weblate), nous pouvons vous proposer des prestations de consulting sur-"
+"mesure. Merci de contacter <a href=\"%(contact_url)s\">Michal Čihař</a>."
 
 #: weblate_web/html/index.html:3
 msgid "Weblate - web-based translation"
@@ -1083,13 +1086,12 @@ msgstr ""
 "\"http://webchat.freenode.net?channels=weblate\">discussion en ligne</a>."
 
 #: weblate_web/html/support.html:42
-#, fuzzy
 #| msgid "Hosting"
 msgid "Consulting"
-msgstr "Hébergement"
+msgstr "Consulting"
 
 #: weblate_web/html/support.html:45
-#, fuzzy, python-format
+#, python-format
 #| msgid ""
 #| "You can also contact <a href=\"mailto:michal@cihar.com?subject=Weblate"
 #| "\">Michal Čihař</a>, who is author of Weblate."
@@ -1097,8 +1099,8 @@ msgid ""
 "You can also contact <a href=\"%(contact_link)s\">Michal Čihař</a>, who is "
 "author of Weblate for consulting services."
 msgstr ""
-"Vous pouvez également contacter <a href=\"mailto:michal@cihar.com?"
-"subject=Weblate\">Michal Čihař</a>, l'auteur de Weblate."
+"Vous pouvez également contacter <a href=\"%(contact_link)s\">Michal Čihař</a>"
+", auteur de Weblate, pour des prestations de consutling."
 
 #: weblate_web/html/thanks.html:3 weblate_web/html/thanks.html.py:4
 msgid "Thanks from Weblate"
