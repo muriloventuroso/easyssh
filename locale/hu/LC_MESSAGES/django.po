@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2015-11-02 17:06+0100\n"
+"POT-Creation-Date: 2015-11-11 16:37+0100\n"
 "PO-Revision-Date: 2015-06-06 00:01+0200\n"
 "Last-Translator: Balázs Úr <urbalazs@gmail.com>\n"
 "Language-Team: Hungarian <https://hosted.weblate.org/projects/weblate/"
@@ -951,6 +951,14 @@ msgstr ""
 "Látogasson el a <a href=\"%(download_url)s\">letöltési oldalra</a> az "
 "appliance eléréséhez, amivel egyszerű a Weblate kihelyezése a felhőbe."
 
+#: weblate_web/html/hosting.html:240
+#, python-format
+msgid ""
+"In case you need help with your self hosted solution, we're ready to help as "
+"well with consulting services tailored for your needs. Please contact <a "
+"href=\"%(contact_url)s\">Michal Čihař</a> for more details."
+msgstr ""
+
 #: weblate_web/html/index.html:3
 msgid "Weblate - web-based translation"
 msgstr "Weblate - webes fordítás"
@@ -1065,13 +1073,19 @@ msgstr ""
 "a <a href=\"http://webchat.freenode.net?channels=weblate\">webchat</a>-et is."
 
 #: weblate_web/html/support.html:42
-msgid "Contact"
-msgstr "Kapcsolat"
+#, fuzzy
+#| msgid "Hosting"
+msgid "Consulting"
+msgstr "Elhelyezés"
 
 #: weblate_web/html/support.html:45
+#, fuzzy, python-format
+#| msgid ""
+#| "You can also contact <a href=\"mailto:michal@cihar.com?subject=Weblate"
+#| "\">Michal Čihař</a>, who is author of Weblate."
 msgid ""
-"You can also contact <a href=\"mailto:michal@cihar.com?subject=Weblate"
-"\">Michal Čihař</a>, who is author of Weblate."
+"You can also contact <a href=\"%(contact_link)s\">Michal Čihař</a>, who is "
+"author of Weblate for consulting services."
 msgstr ""
 "A Weblate alkotójával, <a href=\"mailto:michal@cihar.com?subject=Weblate"
 "\">Michal Čihař</a>-ral is kapcsolatba léphet."
@@ -1192,6 +1206,9 @@ msgstr "Forráskód tarball, xz tömörített"
 #: weblate_web/templatetags/downloads.py:60
 msgid "Sources, zip compressed"
 msgstr "Forráskód tarball, zip tömörített"
+
+#~ msgid "Contact"
+#~ msgstr "Kapcsolat"
 
 #~ msgid ""
 #~ "In case you want to run Weblate in your cloud or virtual server, you can "

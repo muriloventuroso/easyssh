@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2015-11-02 17:06+0100\n"
+"POT-Creation-Date: 2015-11-11 16:37+0100\n"
 "PO-Revision-Date: 2015-09-20 17:57+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/weblate/website/"
@@ -939,6 +939,14 @@ msgstr ""
 "Weblate y ejecutarlo en sus sistemas. También hay varias opciones para el "
 "despliegue de Weblate a la nube."
 
+#: weblate_web/html/hosting.html:240
+#, python-format
+msgid ""
+"In case you need help with your self hosted solution, we're ready to help as "
+"well with consulting services tailored for your needs. Please contact <a "
+"href=\"%(contact_url)s\">Michal Čihař</a> for more details."
+msgstr ""
+
 #: weblate_web/html/index.html:3
 msgid "Weblate - web-based translation"
 msgstr "Weblate: traducción basada en web"
@@ -1055,13 +1063,19 @@ msgstr ""
 "net?channels=weblate\">webchat</a>."
 
 #: weblate_web/html/support.html:42
-msgid "Contact"
-msgstr "Contacto"
+#, fuzzy
+#| msgid "Hosting"
+msgid "Consulting"
+msgstr "Alojamiento"
 
 #: weblate_web/html/support.html:45
+#, fuzzy, python-format
+#| msgid ""
+#| "You can also contact <a href=\"mailto:michal@cihar.com?subject=Weblate"
+#| "\">Michal Čihař</a>, who is author of Weblate."
 msgid ""
-"You can also contact <a href=\"mailto:michal@cihar.com?subject=Weblate"
-"\">Michal Čihař</a>, who is author of Weblate."
+"You can also contact <a href=\"%(contact_link)s\">Michal Čihař</a>, who is "
+"author of Weblate for consulting services."
 msgstr ""
 "También puede contactar (en Inglés) a <a href=\"mailto:michal@cihar.com?"
 "subject=Weblate\">Michal Čihař</a>, el autor de Weblate."
@@ -1189,6 +1203,9 @@ msgstr "Compendio tar del código fuente, comprimido con xz"
 #: weblate_web/templatetags/downloads.py:60
 msgid "Sources, zip compressed"
 msgstr "Código fuente, comprimido con zip"
+
+#~ msgid "Contact"
+#~ msgstr "Contacto"
 
 #~ msgid ""
 #~ "In case you want to run Weblate in your cloud or virtual server, you can "

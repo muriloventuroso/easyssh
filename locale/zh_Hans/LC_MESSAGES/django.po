@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2015-11-02 17:06+0100\n"
+"POT-Creation-Date: 2015-11-11 16:37+0100\n"
 "PO-Revision-Date: 2015-09-01 09:37+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Simplified Chinese <https://hosted.weblate.org/projects/"
@@ -888,6 +888,14 @@ msgstr ""
 "请到<a href=\"%(download_url)s\">下载页面</a>寻找套件的相关信息，套件可以让您"
 "轻松部署 Weblate 到云。"
 
+#: weblate_web/html/hosting.html:240
+#, python-format
+msgid ""
+"In case you need help with your self hosted solution, we're ready to help as "
+"well with consulting services tailored for your needs. Please contact <a "
+"href=\"%(contact_url)s\">Michal Čihař</a> for more details."
+msgstr ""
+
 #: weblate_web/html/index.html:3
 msgid "Weblate - web-based translation"
 msgstr "Weblate - 在线翻译"
@@ -1003,13 +1011,19 @@ msgstr ""
 "channels=weblate\">网页</a>访问。"
 
 #: weblate_web/html/support.html:42
-msgid "Contact"
-msgstr "联系"
+#, fuzzy
+#| msgid "Hosting"
+msgid "Consulting"
+msgstr "托管"
 
 #: weblate_web/html/support.html:45
+#, fuzzy, python-format
+#| msgid ""
+#| "You can also contact <a href=\"mailto:michal@cihar.com?subject=Weblate"
+#| "\">Michal Čihař</a>, who is author of Weblate."
 msgid ""
-"You can also contact <a href=\"mailto:michal@cihar.com?subject=Weblate"
-"\">Michal Čihař</a>, who is author of Weblate."
+"You can also contact <a href=\"%(contact_link)s\">Michal Čihař</a>, who is "
+"author of Weblate for consulting services."
 msgstr ""
 "您也可以联系 <a href=\"mailto:michal@cihar.com?subject=Weblate\">Michal "
 "Čihař</a>，Weblate 的作者。"
@@ -1133,6 +1147,9 @@ msgstr "源代码 tar 包，xz 压缩"
 #: weblate_web/templatetags/downloads.py:60
 msgid "Sources, zip compressed"
 msgstr "源代码，zip 压缩"
+
+#~ msgid "Contact"
+#~ msgstr "联系"
 
 #~ msgid ""
 #~ "In case you want to run Weblate in your cloud or virtual server, you can "

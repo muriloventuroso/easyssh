@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2015-11-02 17:06+0100\n"
+"POT-Creation-Date: 2015-11-11 16:37+0100\n"
 "PO-Revision-Date: 2015-08-30 01:05+0200\n"
 "Last-Translator: Isabell Long <isabell@issyl0.co.uk>\n"
 "Language-Team: English (United Kingdom) <https://hosted.weblate.org/projects/"
@@ -917,6 +917,14 @@ msgstr ""
 "Check our <a href=\"%(download_url)s\">download page</a> for appliances, "
 "which provide an easy way to deploy Weblate in the cloud."
 
+#: weblate_web/html/hosting.html:240
+#, python-format
+msgid ""
+"In case you need help with your self hosted solution, we're ready to help as "
+"well with consulting services tailored for your needs. Please contact <a "
+"href=\"%(contact_url)s\">Michal Čihař</a> for more details."
+msgstr ""
+
 #: weblate_web/html/index.html:3
 msgid "Weblate - web-based translation"
 msgstr "Weblate - web-based translation"
@@ -1031,13 +1039,19 @@ msgstr ""
 "\">webchat</a> there."
 
 #: weblate_web/html/support.html:42
-msgid "Contact"
-msgstr "Contact"
+#, fuzzy
+#| msgid "Hosting"
+msgid "Consulting"
+msgstr "Hosting"
 
 #: weblate_web/html/support.html:45
+#, fuzzy, python-format
+#| msgid ""
+#| "You can also contact <a href=\"mailto:michal@cihar.com?subject=Weblate"
+#| "\">Michal Čihař</a>, who is author of Weblate."
 msgid ""
-"You can also contact <a href=\"mailto:michal@cihar.com?subject=Weblate"
-"\">Michal Čihař</a>, who is author of Weblate."
+"You can also contact <a href=\"%(contact_link)s\">Michal Čihař</a>, who is "
+"author of Weblate for consulting services."
 msgstr ""
 "You can also contact <a href=\"mailto:michal@cihar.com?subject=Weblate"
 "\">Michal Čihař</a>, who is author of Weblate."
@@ -1158,6 +1172,9 @@ msgstr "Sources tarball, xz compressed"
 #: weblate_web/templatetags/downloads.py:60
 msgid "Sources, zip compressed"
 msgstr "Sources, zip compressed"
+
+#~ msgid "Contact"
+#~ msgstr "Contact"
 
 #~ msgid ""
 #~ "In case you want to run Weblate in your cloud or virtual server, you can "

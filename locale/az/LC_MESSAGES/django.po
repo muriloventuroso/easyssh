@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2015-11-02 17:06+0100\n"
+"POT-Creation-Date: 2015-11-11 16:37+0100\n"
 "PO-Revision-Date: 2015-05-09 22:27+0200\n"
 "Last-Translator: Sevdimali İsa <sevdimaliisayev@mail.ru>\n"
 "Language-Team: Azerbaijani <https://hosted.weblate.org/projects/weblate/"
@@ -934,6 +934,14 @@ msgstr ""
 "Weblate-i buluda yerləşdirmənin ən asan yollarını təmin edən alətlər üçün "
 "bizim  <a href=\"%(download_url)s\">endirmə səhifəmizi</a> yoxlayın."
 
+#: weblate_web/html/hosting.html:240
+#, python-format
+msgid ""
+"In case you need help with your self hosted solution, we're ready to help as "
+"well with consulting services tailored for your needs. Please contact <a "
+"href=\"%(contact_url)s\">Michal Čihař</a> for more details."
+msgstr ""
+
 #: weblate_web/html/index.html:3
 msgid "Weblate - web-based translation"
 msgstr "Weblate - web əsaslı tərcümə sistemi"
@@ -1052,13 +1060,19 @@ msgstr ""
 "channels=weblate\">web söhbəti</a> istifadə edə bilərsiniz."
 
 #: weblate_web/html/support.html:42
-msgid "Contact"
-msgstr "Əlaqə"
+#, fuzzy
+#| msgid "Hosting"
+msgid "Consulting"
+msgstr "Hostinq"
 
 #: weblate_web/html/support.html:45
+#, fuzzy, python-format
+#| msgid ""
+#| "You can also contact <a href=\"mailto:michal@cihar.com?subject=Weblate"
+#| "\">Michal Čihař</a>, who is author of Weblate."
 msgid ""
-"You can also contact <a href=\"mailto:michal@cihar.com?subject=Weblate"
-"\">Michal Čihař</a>, who is author of Weblate."
+"You can also contact <a href=\"%(contact_link)s\">Michal Čihař</a>, who is "
+"author of Weblate for consulting services."
 msgstr ""
 "Ayrıca Weblate-in yaradıcısı <a href=\"mailto:michal@cihar.com?"
 "subject=Weblate\">Michal Čihař</a>, ilə də əlaqə qura bilərsiniz."
@@ -1185,6 +1199,9 @@ msgstr "Qaynaqlar tarball, xz kimi sıxışdırılıb"
 #: weblate_web/templatetags/downloads.py:60
 msgid "Sources, zip compressed"
 msgstr "Qaynaqlar, zip kimi sıxışdırılıb"
+
+#~ msgid "Contact"
+#~ msgstr "Əlaqə"
 
 #~ msgid ""
 #~ "In case you want to run Weblate in your cloud or virtual server, you can "

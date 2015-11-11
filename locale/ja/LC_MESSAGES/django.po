@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2015-11-02 17:06+0100\n"
+"POT-Creation-Date: 2015-11-11 16:37+0100\n"
 "PO-Revision-Date: 2015-06-30 15:15+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/weblate/website/"
@@ -932,6 +932,14 @@ msgstr ""
 "べてみてください。これを使うと、Weblateを簡単にクラウド上にデプロイすることが"
 "できます。"
 
+#: weblate_web/html/hosting.html:240
+#, python-format
+msgid ""
+"In case you need help with your self hosted solution, we're ready to help as "
+"well with consulting services tailored for your needs. Please contact <a "
+"href=\"%(contact_url)s\">Michal Čihař</a> for more details."
+msgstr ""
+
 #: weblate_web/html/index.html:3
 msgid "Weblate - web-based translation"
 msgstr "Weblate - ウェブベースの翻訳"
@@ -1048,13 +1056,19 @@ msgstr ""
 "</a>を使うこともできます。"
 
 #: weblate_web/html/support.html:42
-msgid "Contact"
-msgstr "連絡"
+#, fuzzy
+#| msgid "Hosting"
+msgid "Consulting"
+msgstr "ホスティング"
 
 #: weblate_web/html/support.html:45
+#, fuzzy, python-format
+#| msgid ""
+#| "You can also contact <a href=\"mailto:michal@cihar.com?subject=Weblate"
+#| "\">Michal Čihař</a>, who is author of Weblate."
 msgid ""
-"You can also contact <a href=\"mailto:michal@cihar.com?subject=Weblate"
-"\">Michal Čihař</a>, who is author of Weblate."
+"You can also contact <a href=\"%(contact_link)s\">Michal Čihař</a>, who is "
+"author of Weblate for consulting services."
 msgstr ""
 "Weblate の作者である <a href=\"mailto:michal@cihar.com?subject=Weblate"
 "\">Michal Čihař</a> に連絡をとることもできます。"
@@ -1184,6 +1198,9 @@ msgstr "ソース tar 書庫、xz 圧縮"
 #: weblate_web/templatetags/downloads.py:60
 msgid "Sources, zip compressed"
 msgstr "ソース、zip 圧縮"
+
+#~ msgid "Contact"
+#~ msgstr "連絡"
 
 #~ msgid ""
 #~ "In case you want to run Weblate in your cloud or virtual server, you can "

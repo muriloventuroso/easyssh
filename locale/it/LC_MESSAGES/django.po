@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2015-11-02 17:06+0100\n"
+"POT-Creation-Date: 2015-11-11 16:37+0100\n"
 "PO-Revision-Date: 2015-11-09 13:57+0000\n"
 "Last-Translator: Massimiliano Caniparoli <massic80@gmail.com>\n"
-"Language-Team: Italian "
-"<https://hosted.weblate.org/projects/weblate/website/it/>\n"
+"Language-Team: Italian <https://hosted.weblate.org/projects/weblate/website/"
+"it/>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -148,20 +148,16 @@ msgid "Ready for cloud"
 msgstr "Pronto per il cloud"
 
 #: weblate_web/html/base-features.html:45
-#| msgid ""
-#| "Weblate comes with an appliance, which is ready to deploy in your cloud."
 msgid "Weblate comes with appliances, which are ready to deploy in your cloud."
 msgstr ""
 "Weblate è distribuito sotto forma di appliance pronte da installare nel "
 "vostro cloud."
 
 #: weblate_web/html/base-features.html:52
-#| msgid "Hosting for free software"
 msgid "Free software"
 msgstr "Software libero"
 
 #: weblate_web/html/base-features.html:53
-#| msgid "Weblate is a free software with community support."
 msgid "Weblate is free software, you can run your own instance of it."
 msgstr ""
 "Weblate è software gratuito, ne puoi utilizzare la tua istanza "
@@ -231,15 +227,12 @@ msgstr "Aiutaci con le traduzioni!"
 
 #: weblate_web/html/base.html:124
 #, python-format
-#| msgid ""
-#| "Weblate is free software, but welcomes <a href=\"%(donate_url)s"
-#| "\">donations</a>."
 msgid ""
 "Weblate is <a href=\"%(github_url)s\">free software</a> and welcomes <a href="
 "\"%(donate_url)s\">donations</a>."
 msgstr ""
-"Weblate è <a href=\"%(github_url)s\">software libero</a>: le <a href=\""
-"%(donate_url)s\">donazioni</a> sono bene accette."
+"Weblate è <a href=\"%(github_url)s\">software libero</a>: le <a href="
+"\"%(donate_url)s\">donazioni</a> sono bene accette."
 
 #: weblate_web/html/contribute.html:3 weblate_web/html/contribute.html.py:4
 msgid "Contribute to Weblate"
@@ -957,6 +950,14 @@ msgstr ""
 "scaricare le appliances disponibili che forniscono una facile modalità per "
 "installare Weblate nel cloud."
 
+#: weblate_web/html/hosting.html:240
+#, python-format
+msgid ""
+"In case you need help with your self hosted solution, we're ready to help as "
+"well with consulting services tailored for your needs. Please contact <a "
+"href=\"%(contact_url)s\">Michal Čihař</a> for more details."
+msgstr ""
+
 #: weblate_web/html/index.html:3
 msgid "Weblate - web-based translation"
 msgstr "Weblate - traduzione web-based"
@@ -1073,13 +1074,19 @@ msgstr ""
 "channels=weblate\">webchat di freenode</a>."
 
 #: weblate_web/html/support.html:42
-msgid "Contact"
-msgstr "Contatti"
+#, fuzzy
+#| msgid "Hosting"
+msgid "Consulting"
+msgstr "Hosting"
 
 #: weblate_web/html/support.html:45
+#, fuzzy, python-format
+#| msgid ""
+#| "You can also contact <a href=\"mailto:michal@cihar.com?subject=Weblate"
+#| "\">Michal Čihař</a>, who is author of Weblate."
 msgid ""
-"You can also contact <a href=\"mailto:michal@cihar.com?subject=Weblate"
-"\">Michal Čihař</a>, who is author of Weblate."
+"You can also contact <a href=\"%(contact_link)s\">Michal Čihař</a>, who is "
+"author of Weblate for consulting services."
 msgstr ""
 "Potete inoltre contattare <a href=\"mailto:michal@cihar.com?subject=Weblate"
 "\">Michal Čihař</a>, l'autore di Weblate."
@@ -1205,6 +1212,9 @@ msgstr "Sorgenti tarball, compressi xz"
 #: weblate_web/templatetags/downloads.py:60
 msgid "Sources, zip compressed"
 msgstr "Sorgenti compressi zip"
+
+#~ msgid "Contact"
+#~ msgstr "Contatti"
 
 #~ msgid ""
 #~ "In case you want to run Weblate in your cloud or virtual server, you can "

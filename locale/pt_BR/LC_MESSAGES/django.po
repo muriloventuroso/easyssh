@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Weblate 1.2\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2015-11-02 17:06+0100\n"
+"POT-Creation-Date: 2015-11-11 16:37+0100\n"
 "PO-Revision-Date: 2015-11-02 21:53+0200\n"
 "Last-Translator: Luiz Fernando Ranghetti <elchevive@opensuse.org>\n"
-"Language-Team: Portuguese (Brazil) "
-"<https://hosted.weblate.org/projects/weblate/website/pt_BR/>\n"
+"Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
+"weblate/website/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -943,6 +943,14 @@ msgstr ""
 "Weblate e rodá-lo em seus sistemas. Existem várias opções para a implantação "
 "do Weblate na nuvem."
 
+#: weblate_web/html/hosting.html:240
+#, python-format
+msgid ""
+"In case you need help with your self hosted solution, we're ready to help as "
+"well with consulting services tailored for your needs. Please contact <a "
+"href=\"%(contact_url)s\">Michal Čihař</a> for more details."
+msgstr ""
+
 #: weblate_web/html/index.html:3
 msgid "Weblate - web-based translation"
 msgstr "Weblate - tradução baseada na web"
@@ -1059,13 +1067,19 @@ msgstr ""
 "net?channels=weblate\">webchat</a> aqui."
 
 #: weblate_web/html/support.html:42
-msgid "Contact"
-msgstr "Contato"
+#, fuzzy
+#| msgid "Hosting"
+msgid "Consulting"
+msgstr "Hospedagem"
 
 #: weblate_web/html/support.html:45
+#, fuzzy, python-format
+#| msgid ""
+#| "You can also contact <a href=\"mailto:michal@cihar.com?subject=Weblate"
+#| "\">Michal Čihař</a>, who is author of Weblate."
 msgid ""
-"You can also contact <a href=\"mailto:michal@cihar.com?subject=Weblate"
-"\">Michal Čihař</a>, who is author of Weblate."
+"You can also contact <a href=\"%(contact_link)s\">Michal Čihař</a>, who is "
+"author of Weblate for consulting services."
 msgstr ""
 "Você também pode entrar em contato com <a href=\"mailto:michal@cihar.com?"
 "subject=Weblate\">Michal Čihař</a>, o autor do Weblate."
@@ -1192,6 +1206,9 @@ msgstr "Pacote tar de fontes, comprimido com xz"
 #: weblate_web/templatetags/downloads.py:60
 msgid "Sources, zip compressed"
 msgstr "Fontes, comprimidas com zip"
+
+#~ msgid "Contact"
+#~ msgstr "Contato"
 
 #~ msgid ""
 #~ "In case you want to run Weblate in your cloud or virtual server, you can "
