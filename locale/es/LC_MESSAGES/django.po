@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2015-11-11 16:37+0100\n"
-"PO-Revision-Date: 2015-09-20 17:57+0200\n"
-"Last-Translator: Michal Čihař <michal@cihar.com>\n"
-"Language-Team: Spanish <https://hosted.weblate.org/projects/weblate/website/"
-"es/>\n"
+"PO-Revision-Date: 2015-11-26 16:06+0000\n"
+"Last-Translator: Franco <fulanodetal.github1@openaliasbox.org>\n"
+"Language-Team: Spanish "
+"<https://hosted.weblate.org/projects/weblate/website/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.4-dev\n"
+"X-Generator: Weblate 2.5-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -808,6 +808,8 @@ msgid ""
 "Alternatively we can accept payments by wire transfer (preferably IBAN) or "
 "Bitcoin. Please get in touch for more details."
 msgstr ""
+"Alternativamente, podemos aceptar pagos por transferencia bancaria ("
+"preferentemente IBAN) o Bitcoin. Por favor, contáctenos para más detalles."
 
 #: weblate_web/html/hosting.html:183
 msgid "Hosting for free software"
@@ -946,6 +948,9 @@ msgid ""
 "well with consulting services tailored for your needs. Please contact <a "
 "href=\"%(contact_url)s\">Michal Čihař</a> for more details."
 msgstr ""
+"En caso de necesitar ayuda con su propia solución, estamos listos para "
+"ayudar también con consultoría a medida, para sus necesidades. Para más "
+"detalles, contacta a <a href=\"%(contact_url)s\">Michal Čihař</a>."
 
 #: weblate_web/html/index.html:3
 msgid "Weblate - web-based translation"
@@ -1063,13 +1068,12 @@ msgstr ""
 "net?channels=weblate\">webchat</a>."
 
 #: weblate_web/html/support.html:42
-#, fuzzy
 #| msgid "Hosting"
 msgid "Consulting"
-msgstr "Alojamiento"
+msgstr "Consultoría"
 
 #: weblate_web/html/support.html:45
-#, fuzzy, python-format
+#, python-format
 #| msgid ""
 #| "You can also contact <a href=\"mailto:michal@cihar.com?subject=Weblate"
 #| "\">Michal Čihař</a>, who is author of Weblate."
@@ -1077,8 +1081,8 @@ msgid ""
 "You can also contact <a href=\"%(contact_link)s\">Michal Čihař</a>, who is "
 "author of Weblate for consulting services."
 msgstr ""
-"También puede contactar (en Inglés) a <a href=\"mailto:michal@cihar.com?"
-"subject=Weblate\">Michal Čihař</a>, el autor de Weblate."
+"También puede contactar (en Inglés) a <a href=\"%(contact_link)s\">Michal "
+"Čihař</a>, el autor de Weblate para servicios de consultoría."
 
 #: weblate_web/html/thanks.html:3 weblate_web/html/thanks.html.py:4
 msgid "Thanks from Weblate"
