@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2015-11-11 16:37+0100\n"
-"PO-Revision-Date: 2015-06-06 00:01+0200\n"
-"Last-Translator: Balázs Úr <urbalazs@gmail.com>\n"
-"Language-Team: Hungarian <https://hosted.weblate.org/projects/weblate/"
-"website/hu/>\n"
+"PO-Revision-Date: 2015-11-29 09:03+0000\n"
+"Last-Translator: János Néhrer <iiamnot@gmail.com>\n"
+"Language-Team: Hungarian "
+"<https://hosted.weblate.org/projects/weblate/website/hu/>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.4-dev\n"
+"X-Generator: Weblate 2.5-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -128,10 +128,9 @@ msgid ""
 msgstr "Minden fordító neve szerepel a verziókezelő rendszerben."
 
 #: weblate_web/html/base-features.html:36 weblate_web/html/hosting.html:17
-#, fuzzy
 #| msgid "Hosting Weblate"
 msgid "Hosting plans"
-msgstr "Hosting Weblate"
+msgstr "Tárhely tervek"
 
 #: weblate_web/html/base-features.html:37
 msgid "Hosting plans to use Weblate as a service starting at 19 EUR."
@@ -142,25 +141,22 @@ msgid "Ready for cloud"
 msgstr "Felhőkörnyezet támogatása"
 
 #: weblate_web/html/base-features.html:45
-#, fuzzy
 #| msgid ""
 #| "Weblate comes with an appliance, which is ready to deploy in your cloud."
 msgid "Weblate comes with appliances, which are ready to deploy in your cloud."
 msgstr ""
-"A Weblate letölthető appliance-ként, ami igen egyszerűen üzemelhető be felhő "
-"környezetben."
+"A Weblate letölthető appliance-ként, ami könnyen üzembe helyezhető az Ön "
+"felhő környezetében."
 
 #: weblate_web/html/base-features.html:52
-#, fuzzy
 #| msgid "Hosting for free software"
 msgid "Free software"
-msgstr "Hosting ingyenes szoftverekhez"
+msgstr "Ingyenes szoftver"
 
 #: weblate_web/html/base-features.html:53
-#, fuzzy
 #| msgid "Weblate is a free software with community support."
 msgid "Weblate is free software, you can run your own instance of it."
-msgstr "A Weblate ingyenes szoftver közösségi támogatással."
+msgstr "A Weblate ingyenes szoftver, saját példányt futtathat belőle."
 
 #: weblate_web/html/base.html:12
 msgctxt "Keyword"
@@ -224,7 +220,7 @@ msgid "Help with translations!"
 msgstr "Segíts a fordításban!"
 
 #: weblate_web/html/base.html:124
-#, fuzzy, python-format
+#, python-format
 #| msgid ""
 #| "Weblate is free software, but welcomes <a href=\"%(donate_url)s"
 #| "\">donations</a>."
@@ -232,8 +228,8 @@ msgid ""
 "Weblate is <a href=\"%(github_url)s\">free software</a> and welcomes <a href="
 "\"%(donate_url)s\">donations</a>."
 msgstr ""
-"A Weblate ingyenes szoftver, de köszönettel fogadunk minden <a href="
-"\"%(donate_url)s\">támogatást</a>."
+"A Weblate <a href=\"%(github_url)s\">ingyenes szoftver</a>, de köszönettel "
+"fogadunk minden <a href=\"%(donate_url)s\">támogatást</a>."
 
 #: weblate_web/html/contribute.html:3 weblate_web/html/contribute.html.py:4
 msgid "Contribute to Weblate"
@@ -406,7 +402,6 @@ msgstr ""
 "bináris csomagok."
 
 #: weblate_web/html/download.html:43
-#, fuzzy
 #| msgid "Cloud or emulator images"
 msgid "Cloud or virtualization images"
 msgstr "Rendszerkép felhőhöz vagy virtualizációhoz"
@@ -466,10 +461,9 @@ msgstr ""
 "A fordítókat értesíteni lehet új fordítandó szövegről és egyéb eseményekről."
 
 #: weblate_web/html/features.html:39
-#, fuzzy
 #| msgid "Integrated"
 msgid "Integration API"
-msgstr "Integrált"
+msgstr "Integrációs API"
 
 #: weblate_web/html/features.html:40
 msgid "Thanks to the API you can integrate Weblate with third party services."
@@ -666,45 +660,39 @@ msgid ""
 msgstr ""
 
 #: weblate_web/html/hosting.html:28
-#, fuzzy
 #| msgid "Hosting for free software"
 msgctxt "Hosting plan"
 msgid "Free software"
-msgstr "Hosting ingyenes szoftverekhez"
+msgstr "Ingyenes szoftver"
 
 #: weblate_web/html/hosting.html:29
-#, fuzzy
 #| msgid "Basic"
 msgctxt "Hosting plan"
 msgid "Basic"
 msgstr "Alap"
 
 #: weblate_web/html/hosting.html:30
-#, fuzzy
 #| msgid "Medium"
 msgctxt "Hosting plan"
 msgid "Medium"
 msgstr "Közepes"
 
 #: weblate_web/html/hosting.html:31
-#, fuzzy
 #| msgid "Advanced"
 msgctxt "Hosting plan"
 msgid "Advanced"
-msgstr "Speciális"
+msgstr "Fejlett"
 
 #: weblate_web/html/hosting.html:32
-#, fuzzy
 #| msgid "Enterprise"
 msgctxt "Hosting plan"
 msgid "Enterprise"
-msgstr "Vállalati"
+msgstr "Nagyvállalati"
 
 #: weblate_web/html/hosting.html:45
-#, fuzzy
 #| msgid "Unlimited source strings"
 msgid "Source strings"
-msgstr "Korlátlan forrásszöveg"
+msgstr "Forrásszövegek"
 
 #: weblate_web/html/hosting.html:46 weblate_web/html/hosting.html.py:54
 #: weblate_web/html/hosting.html:62
@@ -712,22 +700,19 @@ msgid "Negotiable"
 msgstr ""
 
 #: weblate_web/html/hosting.html:53
-#, fuzzy
 #| msgid "Up to 15 target languages"
 msgid "Target languages"
-msgstr "Legfeljebb 15 célnyelv"
+msgstr "Célnyelvek"
 
 #: weblate_web/html/hosting.html:61
-#, fuzzy
 #| msgid "Two VCS repositories"
 msgid "VCS repositories"
-msgstr "Két VCS tároló"
+msgstr "VCS tárolók"
 
 #: weblate_web/html/hosting.html:69
-#, fuzzy
 #| msgid "One translation project"
 msgid "Translation projects"
-msgstr "Egy fordítási projekt"
+msgstr "Fordítási projektek"
 
 #: weblate_web/html/hosting.html:73 weblate_web/html/hosting.html.py:74
 #: weblate_web/html/hosting.html:79 weblate_web/html/hosting.html.py:80
@@ -739,26 +724,23 @@ msgid "Unlimited"
 msgstr ""
 
 #: weblate_web/html/hosting.html:77
-#, fuzzy
 #| msgid "Translation context"
 msgid "Translation components"
-msgstr "Fordítási környezet"
+msgstr "Fordítási komponensek"
 
 #: weblate_web/html/hosting.html:85
-#, fuzzy
 #| msgid "Unlimited number of translation components"
 msgid "Number of translators"
-msgstr "Fordítási összetevők korlátlan száma"
+msgstr "Fordítók száma"
 
 #: weblate_web/html/hosting.html:93
 msgid "User management"
 msgstr ""
 
 #: weblate_web/html/hosting.html:101
-#, fuzzy
 #| msgid "File formats"
 msgid "Supported file formats"
-msgstr "Fájlformátumok"
+msgstr "Támogatott fájlformátumok"
 
 #: weblate_web/html/hosting.html:102 weblate_web/html/hosting.html.py:103
 #: weblate_web/html/hosting.html:104 weblate_web/html/hosting.html.py:105
@@ -772,10 +754,9 @@ msgid "Customizable"
 msgstr ""
 
 #: weblate_web/html/hosting.html:117
-#, fuzzy
 #| msgid "Translation status"
 msgid "Translation processing"
-msgstr "Fordítás állapota"
+msgstr "Fordítási folyamat"
 
 #: weblate_web/html/hosting.html:135
 msgid "Monthly"
@@ -933,10 +914,9 @@ msgstr ""
 "vagy <a href=\"%(donate_url)s\">más módon</a> tett anyagi felajánlásokat."
 
 #: weblate_web/html/hosting.html:232
-#, fuzzy
 #| msgid "Ask for hosting"
 msgid "Self hosting"
-msgstr "Elhelyezés kérelmezése"
+msgstr "Saját hosting"
 
 #: weblate_web/html/hosting.html:236
 #, fuzzy, python-format
