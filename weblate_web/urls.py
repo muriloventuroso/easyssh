@@ -23,6 +23,8 @@ from django.conf.urls.i18n import i18n_patterns
 from django.views.generic import TemplateView, RedirectView
 from django.conf import settings
 from django.contrib.sitemaps import Sitemap
+import django.contrib.sitemaps.views
+import django.views.static
 
 
 class PagesSitemap(Sitemap):
@@ -67,7 +69,6 @@ for lang in settings.LANGUAGES:
     SITEMAPS[lang[0]] = PagesSitemap(lang[0])
 
 urlpatterns = i18n_patterns(
-    '',
     url(
         r'^$',
         TemplateView.as_view(template_name="index.html"),
@@ -154,18 +155,17 @@ urlpatterns = i18n_patterns(
         r'^[a-z][a-z]_[A-Z][A-Z]/index\.html$',
         RedirectView.as_view(url='/', permanent=True)
     ),
-) + patterns(
-    '',
+) + [
     url(
         r'^sitemap\.xml$',
-        'django.contrib.sitemaps.views.sitemap',
+        django.contrib.sitemaps.views.sitemap,
         {'sitemaps': SITEMAPS}
     ),
 
     # Media files on devel server
     url(
         r'^media/(?P<path>.*)$',
-        'django.views.static.serve',
+        django.views.static.serve,
         {'document_root': settings.MEDIA_ROOT}
     ),
-)
+]
