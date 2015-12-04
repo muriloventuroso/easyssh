@@ -18,11 +18,11 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
+import os
 from django.template import Library
 from django.utils.translation import ugettext as _, ungettext
 from django.utils.safestring import mark_safe
 from django.conf import settings
-import os
 
 register = Library()
 

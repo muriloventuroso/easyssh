@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 
+import os
+import shutil
+import tempfile
 from django.test import TestCase
 from django.conf import settings
 from django.test.utils import override_settings
 from weblate_web.data import VERSION, EXTENSIONS
 from weblate_web.templatetags.downloads import filesizeformat, downloadlink
-import os
-import shutil
-import tempfile
 
 TEST_DATA = os.path.join(os.path.dirname(__file__), 'test-data')
 
