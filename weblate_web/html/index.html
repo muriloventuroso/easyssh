@@ -36,6 +36,43 @@
 
 <p><a class="btn btn-primary" href="{% url 'features' %}">{% trans "See more features…"%}</a></p>
 
+
 {% endblock %}
 
+{% block bottom %}
+<div class="jumbotron userlogos">
+  <div class="container">
+    <h2>
+    {% trans "See who is using Weblate and join them!" %}
+    </h2>
+    <div class="row">
+
+    <div class="col-sm-3 userlogo">
+    <a href="https://hosted.weblate.org/engage/osmand/">
+    <img src="/media/logos/osmand.png" alt="OsmAnd" />
+    </a>
+    </div>
+
+    <div class="col-sm-3 userlogo">
+    <a href="https://hosted.weblate.org/engage/phpmyadmin/">
+    <img src="/media/logos/phpmyadmin.png" alt="phpMyAdmin" />
+    </a>
+    </div>
+
+    <div class="col-sm-3 userlogo">
+    <a href="https://hosted.weblate.org/engage/aptoide/">
+    <img src="/media/logos/aptoide.png" alt="Aptoide" />
+    </a>
+    </div>
+
+    <div class="col-sm-3 userlogo">
+    <a href="https://hosted.weblate.org/engage/mypaint/">
+    <img src="/media/logos/mypaint.png" alt="MyPaint" />
+    </a>
+    </div>
+
+    </div>
+  </div>
+</div>
+{% endblock %}
 {% block extrafooter %}<li>Thanks for the support of <a href="http://www.webhostingsecretrevealed.net/">Web Hosting Secret Revealed</a>.</li>{% endblock %}
