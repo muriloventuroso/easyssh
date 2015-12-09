@@ -13,11 +13,11 @@
 {% endblock %}
 {% block content %}
 
-{% include "base-features.html" %}
-
 <div class="row">
 
-<div class="col-lg-4 feature">
+{% include "base-features.html" %}
+
+<div class="col-lg-4 col-sm-6 feature">
 <a href="http://docs.weblate.org/en/latest/admin/auth.html">
 <div class="fa fa-lock fa-4x"></div>
 <h4>{% trans "Access control" %}</h4>
@@ -25,7 +25,7 @@
 </a>
 </div>
 
-<div class="col-lg-4 feature">
+<div class="col-lg-4 col-sm-6 feature">
 <a href="http://docs.weblate.org/en/latest/user/profile.html#subscriptions">
 <div class="fa fa-envelope fa-4x"></div>
 <h4>{% trans "Notifications" %}</h4>
@@ -33,7 +33,7 @@
 </a>
 </div>
 
-<div class="col-lg-4 feature">
+<div class="col-lg-4 col-sm-6 feature">
 <a href="https://docs.weblate.org/en/latest/api.html">
 <div class="fa fa-wrench fa-4x"></div>
 <h4>{% trans "Integration API" %}</h4>
@@ -41,10 +41,7 @@
 </a>
 </div>
 
-</div>
-<div class="row">
-
-<div class="col-lg-4 feature">
+<div class="col-lg-4 col-sm-6 feature">
 <a href="http://docs.weblate.org/en/latest/formats.html">
 <div class="fa fa-archive fa-4x"></div>
 <h4>{% trans "File formats" %}</h4>
@@ -52,7 +49,7 @@
 </a>
 </div>
 
-<div class="col-lg-4 feature">
+<div class="col-lg-4 col-sm-6 feature">
 <a href="http://docs.weblate.org/en/latest/faq.html#how-do-i-translate-several-branches-at-once">
 <div class="fa fa-link fa-4x"></div>
 <h4>{% trans "Branches support" %}</h4>
@@ -60,7 +57,7 @@
 </a>
 </div>
 
-<div class="col-lg-4 feature">
+<div class="col-lg-4 col-sm-6 feature">
 <a href="http://docs.weblate.org/en/latest/user/translating.html">
 <div class="fa fa-medkit fa-4x"></div>
 <h4>{% trans "Translation context" %}</h4>
@@ -68,10 +65,7 @@
 </a>
 </div>
 
-</div>
-<div class="row">
-
-<div class="col-lg-4 feature">
+<div class="col-lg-4 col-sm-6 feature">
 <a href="http://docs.weblate.org/en/latest/user/translating.html#glossary">
 <div class="fa fa-file fa-4x"></div>
 <h4>{% trans "Glossary" %}</h4>
@@ -79,7 +73,7 @@
 </a>
 </div>
 
-<div class="col-lg-4 feature">
+<div class="col-lg-4 col-sm-6 feature">
 <a href="http://docs.weblate.org/en/latest/faq.html#how-do-i-provide-feedback-on-source-string">
 <div class="fa fa-comments fa-4x"></div>
 <h4>{% trans "Acquiring feedback" %}</h4>
@@ -87,7 +81,7 @@
 </a>
 </div>
 
-<div class="col-lg-4 feature">
+<div class="col-lg-4 col-sm-6 feature">
 <a href="http://docs.weblate.org/en/latest/user/translating.html#export-and-import">
 <div class="fa fa-download fa-4x"></div>
 <h4>{% trans "Export and import" %}</h4>
@@ -95,10 +89,7 @@
 </a>
 </div>
 
-</div>
-<div class="row">
-
-<div class="col-lg-4 feature">
+<div class="col-lg-4 col-sm-6 feature">
 <a href="http://docs.weblate.org/en/latest/about.html#project-goals">
 <div class="fa fa-bullseye fa-4x"></div>
 <h4>{% trans "Integrated" %}</h4>
@@ -106,7 +97,7 @@
 </a>
 </div>
 
-<div class="col-lg-4 feature">
+<div class="col-lg-4 col-sm-6 feature">
 <a href="http://docs.weblate.org/">
 <div class="fa fa-book fa-4x"></div>
 <h4>{% trans "Documentation" %}</h4>
@@ -114,7 +105,7 @@
 </a>
 </div>
 
-<div class="col-lg-4 feature">
+<div class="col-lg-4 col-sm-6 feature">
 <a href="http://docs.weblate.org/en/latest/faq.html#how-do-i-review-others-translations">
 <div class="fa fa-eye fa-4x"></div>
 <h4>{% trans "Review" %}</h4>
@@ -122,10 +113,7 @@
 </a>
 </div>
 
-</div>
-<div class="row">
-
-<div class="col-lg-4 feature">
+<div class="col-lg-4 col-sm-6 feature">
 <a href="http://docs.weblate.org/en/latest/faq.html#where-do-language-definition-come-from-and-how-can-i-add-own">
 <div class="fa fa-globe fa-4x"></div>
 <h4>{% trans "Languages" %}</h4>
@@ -133,7 +121,7 @@
 </a>
 </div>
 
-<div class="col-lg-4 feature">
+<div class="col-lg-4 col-sm-6 feature">
 <a href="http://docs.weblate.org/en/latest/devel/index.html#promotion">
 <div class="fa fa-share fa-4x"></div>
 <h4>{% trans "Promotion" %}</h4>
@@ -141,7 +129,7 @@
 </a>
 </div>
 
-<div class="col-lg-4 feature">
+<div class="col-lg-4 col-sm-6 feature">
 <a href="http://docs.weblate.org/en/latest/devel/index.html#reports">
 <div class="fa fa-bar-chart fa-4x"></div>
 <h4>{% trans "Reporting" %}</h4>
@@ -149,10 +137,8 @@
 </a>
 </div>
 
-</div>
-<div class="row">
 
-<div class="col-lg-4 feature">
+<div class="col-lg-4 col-sm-6 feature">
 <a href="http://docs.weblate.org/en/latest/faq.html#faq-vcs">
 <div class="fa fa-git fa-4x"></div>
 <h4>{% trans "Version control" %}</h4>
@@ -160,7 +146,7 @@
 </a>
 </div>
 
-<div class="col-lg-4 feature">
+<div class="col-lg-4 col-sm-6 feature">
 <a href="http://docs.weblate.org/en/latest/faq.html#faq-vcs">
 <div class="fa fa-github fa-4x"></div>
 <h4>{% trans "Collaboration sites" %}</h4>
@@ -168,7 +154,7 @@
 </a>
 </div>
 
-<div class="col-lg-4 feature">
+<div class="col-lg-4 col-sm-6 feature">
 <a href="http://demo.weblate.org/">
 <div class="fa fa-tablet fa-4x"></div>
 <h4>{% trans "Responsive UI" %}</h4>
