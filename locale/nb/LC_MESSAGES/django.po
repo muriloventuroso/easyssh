@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2015-11-11 16:37+0100\n"
+"POT-Creation-Date: 2015-12-09 16:16+0100\n"
 "PO-Revision-Date: 2015-06-15 12:54+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/weblate/"
@@ -27,7 +27,7 @@ msgstr "Oversikt over egne oversettelser på hovedsiden."
 msgid "Own translations"
 msgstr "Egne oversettinger"
 
-#: weblate_web/data.py:39 weblate_web/html/features.html:67
+#: weblate_web/data.py:39 weblate_web/html/features.html.py:64
 msgid ""
 "Translator can always see important context information like comments or "
 "corresponding source code."
@@ -35,7 +35,7 @@ msgstr ""
 "Oversettere kan alltid se viktig innholdsinformasjon som kommentarer eller "
 "tilsvarende kildekode."
 
-#: weblate_web/data.py:42 weblate_web/html/features.html:66
+#: weblate_web/data.py:42 weblate_web/html/features.html.py:63
 msgid "Translation context"
 msgstr "Oversettelse sammenheng"
 
@@ -49,7 +49,7 @@ msgstr ""
 msgid "Project overview"
 msgstr "Prosjekt oversikt"
 
-#: weblate_web/data.py:55 weblate_web/html/features.html:78
+#: weblate_web/data.py:55 weblate_web/html/features.html.py:72
 msgid ""
 "Translators can define their own glossary to stay consistent in frequently "
 "used terminology."
@@ -57,12 +57,12 @@ msgstr ""
 "Oversettere kan definere sin egen ordliste for å være konsekvent i hyppig "
 "brukt terminologi."
 
-#: weblate_web/data.py:58 weblate_web/html/features.html:77
+#: weblate_web/data.py:58 weblate_web/html/features.html.py:71
 #: weblate_web/html/hosting.html:125
 msgid "Glossary"
 msgstr "Ordliste"
 
-#: weblate_web/data.py:63 weblate_web/html/base-features.html:17
+#: weblate_web/data.py:63 weblate_web/html/base-features.html.py:15
 msgid ""
 "Customizable quality checks will help you in improving quality of "
 "translations."
@@ -70,16 +70,16 @@ msgstr ""
 "Tilpass kvalitetskontroller vil hjelpe deg med å forbedre kvaliteten på "
 "oversettelsene."
 
-#: weblate_web/data.py:66 weblate_web/html/base-features.html:16
+#: weblate_web/data.py:66 weblate_web/html/base-features.html.py:14
 #: weblate_web/html/hosting.html:109
 msgid "Quality checks"
 msgstr "Kvalitetskontroll"
 
-#: weblate_web/data.py:71 weblate_web/html/features.html:140
+#: weblate_web/data.py:71 weblate_web/html/features.html.py:128
 msgid "Weblate provides you various ways to promote your translation project."
 msgstr "Weblate gir deg ulike måter å markedsføre oversettelsesprosjektet."
 
-#: weblate_web/data.py:74 weblate_web/html/features.html:139
+#: weblate_web/data.py:74 weblate_web/html/features.html.py:127
 msgid "Promotion"
 msgstr "Reklamekampanje"
 
@@ -87,7 +87,7 @@ msgstr "Reklamekampanje"
 msgid "Page not found"
 msgstr "Finner ikke side"
 
-#: weblate_web/html/404.html:8 weblate_web/html/500.html:8
+#: weblate_web/html/404.html:8 weblate_web/html/500.html.py:8
 #: weblate_web/html/index.html:7
 msgid "Weblate is a free web-based translation management system."
 msgstr "Weblate er en gratis web-basert oversettelse styringssystem."
@@ -108,53 +108,53 @@ msgstr ""
 "Serveren hadde alvorlige problemer ved å utføre forespørselen. Vi har "
 "nettopp sendt våre trente apekatter for å fikse problemet."
 
-#: weblate_web/html/base-features.html:8 weblate_web/html/hosting.html:37
+#: weblate_web/html/base-features.html:6 weblate_web/html/hosting.html.py:37
 msgid "Continuous translation"
 msgstr "Kontinuerlig oversettelse"
 
-#: weblate_web/html/base-features.html:9
+#: weblate_web/html/base-features.html:7
 msgid ""
 "Automated translation process can closely follow development of your project."
 msgstr ""
 "Automatisert oversettelsesprosess kan nøye følge utviklingen av prosjektet."
 
-#: weblate_web/html/base-features.html:24
+#: weblate_web/html/base-features.html:22
 msgid "Attribution"
 msgstr "Kreditering"
 
-#: weblate_web/html/base-features.html:25
+#: weblate_web/html/base-features.html:23
 msgid ""
 "All your translators will be properly credited in the version control system."
 msgstr "Alle dine oversettere vil krediteres i versjonskontrollsystemet."
 
-#: weblate_web/html/base-features.html:36 weblate_web/html/hosting.html:17
+#: weblate_web/html/base-features.html:30 weblate_web/html/hosting.html:17
 #, fuzzy
 #| msgid "Hosting Weblate"
 msgid "Hosting plans"
 msgstr "Vertslagre Weblate"
 
-#: weblate_web/html/base-features.html:37
+#: weblate_web/html/base-features.html:31
 msgid "Hosting plans to use Weblate as a service starting at 19 EUR."
 msgstr ""
 
-#: weblate_web/html/base-features.html:44
+#: weblate_web/html/base-features.html:38
 msgid "Ready for cloud"
 msgstr "Klar for sky"
 
-#: weblate_web/html/base-features.html:45
+#: weblate_web/html/base-features.html:39
 #, fuzzy
 #| msgid ""
 #| "Weblate comes with an appliance, which is ready to deploy in your cloud."
 msgid "Weblate comes with appliances, which are ready to deploy in your cloud."
 msgstr "Weblate kommer med et apparat, som er klar til å distribuere i skyen."
 
-#: weblate_web/html/base-features.html:52
+#: weblate_web/html/base-features.html:46
 #, fuzzy
 #| msgid "Hosting for free software"
 msgid "Free software"
 msgstr "Vertslagring for gratis programvare"
 
-#: weblate_web/html/base-features.html:53
+#: weblate_web/html/base-features.html:47
 #, fuzzy
 #| msgid ""
 #| "Weblate is free software, but welcomes <a href=\"%(donate_url)s"
@@ -193,7 +193,7 @@ msgstr "Funksjoner"
 msgid "Docs"
 msgstr "Dokumenter"
 
-#: weblate_web/html/base.html:70 weblate_web/html/download.html:27
+#: weblate_web/html/base.html:70 weblate_web/html/download.html.py:27
 msgid "Download"
 msgstr "Last ned"
 
@@ -205,7 +205,7 @@ msgstr "Vertslagring"
 msgid "Develop"
 msgstr "Utvikle"
 
-#: weblate_web/html/base.html:73 weblate_web/html/donate.html:56
+#: weblate_web/html/base.html:73 weblate_web/html/donate.html.py:54
 msgid "Donate"
 msgstr "Donèr"
 
@@ -225,7 +225,7 @@ msgstr "Mange takk"
 msgid "Help with translations!"
 msgstr "Hjelp med oversetting!"
 
-#: weblate_web/html/base.html:124
+#: weblate_web/html/base.html:128
 #, fuzzy, python-format
 #| msgid ""
 #| "Weblate is free software, but welcomes <a href=\"%(donate_url)s"
@@ -245,7 +245,7 @@ msgstr "Bidra med Weblate"
 msgid "Weblate is being developed by an open community."
 msgstr "Weblate blir utviklet av et åpent samfunn."
 
-#: weblate_web/html/contribute.html:10 weblate_web/html/download.html:12
+#: weblate_web/html/contribute.html:10 weblate_web/html/download.html.py:12
 msgid "View sources"
 msgstr "Vis kilder"
 
@@ -263,11 +263,11 @@ msgstr ""
 "weblate.org/en/latest/contributing.html\"> Bidra kapittel </a> av vår "
 "dokumentasjon."
 
-#: weblate_web/html/contribute.html:20 weblate_web/html/download.html:17
+#: weblate_web/html/contribute.html:20 weblate_web/html/download.html.py:17
 msgid "Code"
 msgstr "Kode"
 
-#: weblate_web/html/contribute.html:23 weblate_web/html/download.html:20
+#: weblate_web/html/contribute.html:23 weblate_web/html/download.html.py:20
 msgid ""
 "Weblate is being developed on <a href=\"https://github.com/nijel/weblate"
 "\">Github</a>, you can fork it there or just:"
@@ -304,7 +304,7 @@ msgid "Weblate is free, but welcomes donations."
 msgstr "Weblate er gratis, men tar imot donasjoner."
 
 #: weblate_web/html/donate.html:12 weblate_web/html/donate.html.py:26
-#: weblate_web/html/donate.html:49
+#: weblate_web/html/donate.html:47
 msgid "Fund on Bountysource"
 msgstr "Donèr via Bountysource"
 
@@ -328,20 +328,20 @@ msgid ""
 "rewards for higher donations, for example a logo placement on our website."
 msgstr ""
 
-#: weblate_web/html/donate.html:37
+#: weblate_web/html/donate.html:36
 msgid "Donate using Gratipay"
 msgstr "Donèr gjennom Gratipay"
 
-#: weblate_web/html/donate.html:41
+#: weblate_web/html/donate.html:40
 msgid "Gratipay allows you to send a weekly amount using a credit card."
 msgstr ""
 "Gratipay tillater deg å sende et ukentlig beløp ved å bruke et kredittkort."
 
-#: weblate_web/html/donate.html:45
+#: weblate_web/html/donate.html:43
 msgid "Fund features"
 msgstr ""
 
-#: weblate_web/html/donate.html:53
+#: weblate_web/html/donate.html:51
 msgid ""
 "Bountysource allows you to fund individual features which are reported on "
 "our issue tracker."
@@ -349,17 +349,17 @@ msgstr ""
 "Bountysource tillater deg å finansiere enkelte funksjoner som rapporteres på "
 "vår saksporer."
 
-#: weblate_web/html/donate.html:59
+#: weblate_web/html/donate.html:57
 msgid ""
 "If you like Weblate you can support its further development by donating."
 msgstr ""
 "Hvis du liker Weblate kan du støtte dens videre utvikling ved å donere."
 
-#: weblate_web/html/donate.html:67
+#: weblate_web/html/donate.html:65
 msgid "Donate using PayPal"
 msgstr "Donèr med PayPal"
 
-#: weblate_web/html/donate.html:72
+#: weblate_web/html/donate.html:70
 msgid ""
 "PayPal allows you to send money from credit card, PayPal balance or a bank "
 "account."
@@ -367,15 +367,15 @@ msgstr ""
 "PayPal tillater deg å sende penger fra kredittkort, PayPal balanse eller en "
 "bankkonto."
 
-#: weblate_web/html/donate.html:77
+#: weblate_web/html/donate.html:75
 msgid "Donate using Coinbase"
 msgstr "Donèr med Coinbase"
 
-#: weblate_web/html/donate.html:81
+#: weblate_web/html/donate.html:79
 msgid "Coinbase allows you to send Bitcoins."
 msgstr "Coinbase lar deg sende Bitcoins."
 
-#: weblate_web/html/donate.html:85
+#: weblate_web/html/donate.html:83
 #, python-format
 msgid ""
 "You can also use <a href=\"http://www.bitcoin.org/\">Bitcoin is a peer-to-"
@@ -475,11 +475,11 @@ msgstr "Integrert"
 msgid "Thanks to the API you can integrate Weblate with third party services."
 msgstr ""
 
-#: weblate_web/html/features.html:50
+#: weblate_web/html/features.html:47
 msgid "File formats"
 msgstr "Fil formater"
 
-#: weblate_web/html/features.html:51
+#: weblate_web/html/features.html:48
 msgid ""
 "Weblate supports all widely used file formats for localisation like Gettext, "
 "JSON, XLIFF or resource strings."
@@ -487,11 +487,11 @@ msgstr ""
 "Weblate støtter alle brukte filformater for lokalisering som GetText, JSON, "
 "xliff eller ressurs strenger."
 
-#: weblate_web/html/features.html:58
+#: weblate_web/html/features.html:55
 msgid "Branches support"
 msgstr "Bransje støtte"
 
-#: weblate_web/html/features.html:59
+#: weblate_web/html/features.html:56
 msgid ""
 "Weblate can handle different versions of the translation by pushing them to "
 "different branches automatically."
@@ -499,11 +499,11 @@ msgstr ""
 "Weblate kan håndtere ulike versjoner av oversettelsen ved å skyve dem til "
 "forskjellige grener automatisk."
 
-#: weblate_web/html/features.html:85
+#: weblate_web/html/features.html:79
 msgid "Acquiring feedback"
 msgstr "Innhente tilbakemeldinger"
 
-#: weblate_web/html/features.html:86
+#: weblate_web/html/features.html:80
 msgid ""
 "You can also use Weblate to acquire feedback on source strings and thus "
 "improve them."
@@ -511,47 +511,47 @@ msgstr ""
 "Du kan også bruke Weblate for å skaffe tilbakemelding på kilde strenger og "
 "dermed forbedre dem."
 
-#: weblate_web/html/features.html:93
+#: weblate_web/html/features.html:87
 msgid "Export and import"
 msgstr "Eksport og import"
 
-#: weblate_web/html/features.html:94
+#: weblate_web/html/features.html:88
 msgid "Translations can be downloaded for offline translation and merged back."
 msgstr ""
 "Oversettelser kan lastes ned for offline oversettelse og fusjoneres tilbake."
 
-#: weblate_web/html/features.html:104
+#: weblate_web/html/features.html:95
 msgid "Integrated"
 msgstr "Integrert"
 
-#: weblate_web/html/features.html:105
+#: weblate_web/html/features.html:96
 msgid "Translations are managed within same version control system as code."
 msgstr ""
 "Oversettelser forvaltes innenfor samme versjonskontroll system som kode."
 
-#: weblate_web/html/features.html:112
+#: weblate_web/html/features.html:103
 msgid "Documentation"
 msgstr "Dokumentasjon"
 
-#: weblate_web/html/features.html:113
+#: weblate_web/html/features.html:104
 msgid ""
 "Weblate comes with comprehensive documentation covering both setup and usage."
 msgstr ""
 "Weblate kommer med omfattende dokumentasjon som dekker både oppsett og bruk."
 
-#: weblate_web/html/features.html:120
+#: weblate_web/html/features.html:111
 msgid "Review"
 msgstr "Gjennomgang"
 
-#: weblate_web/html/features.html:121
+#: weblate_web/html/features.html:112
 msgid "Translators have several options to review contributions made by peers."
 msgstr "Oversettere har flere alternativer for å gjennomgå bidrag fra andre."
 
-#: weblate_web/html/features.html:131
+#: weblate_web/html/features.html:119
 msgid "Languages"
 msgstr "Språk"
 
-#: weblate_web/html/features.html:132
+#: weblate_web/html/features.html:120
 msgid ""
 "Weblate supports over 150 languages out of the box, others can be defined by "
 "administrator."
@@ -559,22 +559,22 @@ msgstr ""
 "Weblate støtter over 150 språk ut av boksen, andre kan bli definert av "
 "administrator."
 
-#: weblate_web/html/features.html:147
+#: weblate_web/html/features.html:135
 msgid "Reporting"
 msgstr "Rapportering"
 
-#: weblate_web/html/features.html:148
+#: weblate_web/html/features.html:136
 msgid ""
 "Weblate generates various reports to provide information about project "
 "activity."
 msgstr ""
 "Weblate genererer ulike rapporter for å gi informasjon om prosjektaktivitet."
 
-#: weblate_web/html/features.html:158
+#: weblate_web/html/features.html:144
 msgid "Version control"
 msgstr "Versjons kontroll"
 
-#: weblate_web/html/features.html:159
+#: weblate_web/html/features.html:145
 msgid ""
 "Weblate talks directly with your version control system, currently Git and "
 "Mercurial are supported."
@@ -582,11 +582,11 @@ msgstr ""
 "Weblate samtaler direkte med versjonskontrollsystemet, for tiden Git og "
 "Mercurial støttes."
 
-#: weblate_web/html/features.html:166
+#: weblate_web/html/features.html:152
 msgid "Collaboration sites"
 msgstr "Samarbeidende sider"
 
-#: weblate_web/html/features.html:167
+#: weblate_web/html/features.html:153
 msgid ""
 "Weblate has native support for many software development sites such as "
 "GitHub, Bitbucket or Gitlab."
@@ -594,11 +594,11 @@ msgstr ""
 "Weblate har innebygd støtte for mange programvareutvikling nettsteder som "
 "GitHub, Bitbucket eller Gitlab."
 
-#: weblate_web/html/features.html:174
+#: weblate_web/html/features.html:160
 msgid "Responsive UI"
 msgstr "Ansvarlig UI"
 
-#: weblate_web/html/features.html:175
+#: weblate_web/html/features.html:161
 msgid ""
 "Weblate has responsible UI which will work nicely on your desktop, tablet or "
 "phone."
@@ -834,7 +834,8 @@ msgstr ""
 
 #: weblate_web/html/hosting.html:193
 msgid ""
-"Source code has to be publicly available in a supported version control system."
+"Source code has to be publicly available in a supported version control "
+"system."
 msgstr ""
 "Kildekoden må være offentlig tilgjengelig i støttet versjon kontrollsystem."
 
@@ -928,7 +929,7 @@ msgstr ""
 msgid "Weblate - web-based translation"
 msgstr ""
 
-#: weblate_web/html/index.html:14 weblate_web/html/tour.html:11
+#: weblate_web/html/index.html:14 weblate_web/html/tour.html.py:11
 #: weblate_web/html/try.html:12
 msgid "Try our demo"
 msgstr ""
@@ -949,8 +950,12 @@ msgstr ""
 msgid "Weblate screenshot"
 msgstr ""
 
-#: weblate_web/html/index.html:33
+#: weblate_web/html/index.html:37
 msgid "See more features…"
+msgstr ""
+
+#: weblate_web/html/index.html:46
+msgid "See who is using Weblate and join them!"
 msgstr ""
 
 #: weblate_web/html/support.html:3 weblate_web/html/support.html.py:4

@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2015-11-11 16:37+0100\n"
+"POT-Creation-Date: 2015-12-09 16:16+0100\n"
 "PO-Revision-Date: 2015-11-18 15:33+0000\n"
 "Last-Translator: Wei-cheng Kung <wck317@pchome.com.tw>\n"
-"Language-Team: Traditional Chinese "
-"<https://hosted.weblate.org/projects/weblate/website/zh_Hant/>\n"
+"Language-Team: Traditional Chinese <https://hosted.weblate.org/projects/"
+"weblate/website/zh_Hant/>\n"
 "Language: zh_Hant\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -27,13 +27,13 @@ msgstr "首頁的個人翻譯總覽。"
 msgid "Own translations"
 msgstr "自己的翻譯"
 
-#: weblate_web/data.py:39 weblate_web/html/features.html:67
+#: weblate_web/data.py:39 weblate_web/html/features.html.py:64
 msgid ""
 "Translator can always see important context information like comments or "
 "corresponding source code."
 msgstr "翻譯人員總是能看到重要的脈落資訊，如評論或對應的源碼。"
 
-#: weblate_web/data.py:42 weblate_web/html/features.html:66
+#: weblate_web/data.py:42 weblate_web/html/features.html.py:63
 msgid "Translation context"
 msgstr "翻譯的脈落"
 
@@ -46,33 +46,33 @@ msgstr "專案頁面給予您關於專案翻譯狀態的詳細資訊。"
 msgid "Project overview"
 msgstr "專案總覽"
 
-#: weblate_web/data.py:55 weblate_web/html/features.html:78
+#: weblate_web/data.py:55 weblate_web/html/features.html.py:72
 msgid ""
 "Translators can define their own glossary to stay consistent in frequently "
 "used terminology."
 msgstr "翻譯人員可以定義自己的詞彙表，讓經常使用的術語保持一致。"
 
-#: weblate_web/data.py:58 weblate_web/html/features.html:77
+#: weblate_web/data.py:58 weblate_web/html/features.html.py:71
 #: weblate_web/html/hosting.html:125
 msgid "Glossary"
 msgstr "詞彙表"
 
-#: weblate_web/data.py:63 weblate_web/html/base-features.html:17
+#: weblate_web/data.py:63 weblate_web/html/base-features.html.py:15
 msgid ""
 "Customizable quality checks will help you in improving quality of "
 "translations."
 msgstr "可自訂的翻譯品質查核將幫助您提高翻譯品質。"
 
-#: weblate_web/data.py:66 weblate_web/html/base-features.html:16
+#: weblate_web/data.py:66 weblate_web/html/base-features.html.py:14
 #: weblate_web/html/hosting.html:109
 msgid "Quality checks"
 msgstr "翻譯品質查核"
 
-#: weblate_web/data.py:71 weblate_web/html/features.html:140
+#: weblate_web/data.py:71 weblate_web/html/features.html.py:128
 msgid "Weblate provides you various ways to promote your translation project."
 msgstr "Weblate 為您提供多種方式來宣傳您的翻譯專案。"
 
-#: weblate_web/data.py:74 weblate_web/html/features.html:139
+#: weblate_web/data.py:74 weblate_web/html/features.html.py:127
 msgid "Promotion"
 msgstr "宣傳"
 
@@ -80,7 +80,7 @@ msgstr "宣傳"
 msgid "Page not found"
 msgstr "未找到頁面"
 
-#: weblate_web/html/404.html:8 weblate_web/html/500.html:8
+#: weblate_web/html/404.html:8 weblate_web/html/500.html.py:8
 #: weblate_web/html/index.html:7
 msgid "Weblate is a free web-based translation management system."
 msgstr "Weblate 是一款免費的以網站為基礎的翻譯管理系統。"
@@ -100,45 +100,45 @@ msgid ""
 msgstr ""
 "伺服器在您請求服務時有了嚴重的問題。我們剛派了我們受過訓練的猴子去修復問題。"
 
-#: weblate_web/html/base-features.html:8 weblate_web/html/hosting.html:37
+#: weblate_web/html/base-features.html:6 weblate_web/html/hosting.html.py:37
 msgid "Continuous translation"
 msgstr "連續的翻譯"
 
-#: weblate_web/html/base-features.html:9
+#: weblate_web/html/base-features.html:7
 msgid ""
 "Automated translation process can closely follow development of your project."
 msgstr "自動翻譯過程中，可以密切的關注您專案的進展。"
 
-#: weblate_web/html/base-features.html:24
+#: weblate_web/html/base-features.html:22
 msgid "Attribution"
 msgstr "屬性"
 
-#: weblate_web/html/base-features.html:25
+#: weblate_web/html/base-features.html:23
 msgid ""
 "All your translators will be properly credited in the version control system."
 msgstr "您所有的翻譯，會在版本控制系統中正確地記入。"
 
-#: weblate_web/html/base-features.html:36 weblate_web/html/hosting.html:17
+#: weblate_web/html/base-features.html:30 weblate_web/html/hosting.html:17
 msgid "Hosting plans"
 msgstr "提供服務計畫"
 
-#: weblate_web/html/base-features.html:37
+#: weblate_web/html/base-features.html:31
 msgid "Hosting plans to use Weblate as a service starting at 19 EUR."
 msgstr "19 歐元起的將 Weblate 當成服務來用的提供服務計畫。"
 
-#: weblate_web/html/base-features.html:44
+#: weblate_web/html/base-features.html:38
 msgid "Ready for cloud"
 msgstr "雲端就緒"
 
-#: weblate_web/html/base-features.html:45
+#: weblate_web/html/base-features.html:39
 msgid "Weblate comes with appliances, which are ready to deploy in your cloud."
 msgstr "Weblate 有附帶裝置(appliances)，隨時可部署在您的雲端。"
 
-#: weblate_web/html/base-features.html:52
+#: weblate_web/html/base-features.html:46
 msgid "Free software"
 msgstr "自由軟體"
 
-#: weblate_web/html/base-features.html:53
+#: weblate_web/html/base-features.html:47
 msgid "Weblate is free software, you can run your own instance of it."
 msgstr "Weblate 是自由軟體，您可以執行自己的 Weblate。"
 
@@ -171,7 +171,7 @@ msgstr "特點"
 msgid "Docs"
 msgstr "文件檔"
 
-#: weblate_web/html/base.html:70 weblate_web/html/download.html:27
+#: weblate_web/html/base.html:70 weblate_web/html/download.html.py:27
 msgid "Download"
 msgstr "下載"
 
@@ -183,7 +183,7 @@ msgstr "主機"
 msgid "Develop"
 msgstr "開發者"
 
-#: weblate_web/html/base.html:73 weblate_web/html/donate.html:56
+#: weblate_web/html/base.html:73 weblate_web/html/donate.html.py:54
 msgid "Donate"
 msgstr "捐贈"
 
@@ -203,7 +203,7 @@ msgstr "謝謝"
 msgid "Help with translations!"
 msgstr "幫忙翻譯！"
 
-#: weblate_web/html/base.html:124
+#: weblate_web/html/base.html:128
 #, python-format
 msgid ""
 "Weblate is <a href=\"%(github_url)s\">free software</a> and welcomes <a href="
@@ -220,7 +220,7 @@ msgstr "捐助 Weblate"
 msgid "Weblate is being developed by an open community."
 msgstr "Weblate 正由開放社群在開發。"
 
-#: weblate_web/html/contribute.html:10 weblate_web/html/download.html:12
+#: weblate_web/html/contribute.html:10 weblate_web/html/download.html.py:12
 msgid "View sources"
 msgstr "檢視原始碼"
 
@@ -237,11 +237,11 @@ msgstr ""
 "您可以在<a href=\"HTTP://docs.weblate.org/en/latest/contributing.html\">提供"
 "章節</a>中找到我們有關此主題更詳細資訊的文件檔案。"
 
-#: weblate_web/html/contribute.html:20 weblate_web/html/download.html:17
+#: weblate_web/html/contribute.html:20 weblate_web/html/download.html.py:17
 msgid "Code"
 msgstr "程式碼"
 
-#: weblate_web/html/contribute.html:23 weblate_web/html/download.html:20
+#: weblate_web/html/contribute.html:23 weblate_web/html/download.html.py:20
 msgid ""
 "Weblate is being developed on <a href=\"https://github.com/nijel/weblate"
 "\">Github</a>, you can fork it there or just:"
@@ -278,7 +278,7 @@ msgid "Weblate is free, but welcomes donations."
 msgstr "Weblate 是免費的，但是歡迎您捐贈。"
 
 #: weblate_web/html/donate.html:12 weblate_web/html/donate.html.py:26
-#: weblate_web/html/donate.html:49
+#: weblate_web/html/donate.html:47
 msgid "Fund on Bountysource"
 msgstr "Bountysource 基金"
 
@@ -301,48 +301,48 @@ msgid ""
 "rewards for higher donations, for example a logo placement on our website."
 msgstr "您可用信用卡每月贊助。較高的贊助也會有回報，譬如在您的網站放一個徽標。"
 
-#: weblate_web/html/donate.html:37
+#: weblate_web/html/donate.html:36
 msgid "Donate using Gratipay"
 msgstr "使用 Gratipay 捐贈"
 
-#: weblate_web/html/donate.html:41
+#: weblate_web/html/donate.html:40
 msgid "Gratipay allows you to send a weekly amount using a credit card."
 msgstr "Gratipay 允許您以信用卡每週匯贈。"
 
-#: weblate_web/html/donate.html:45
+#: weblate_web/html/donate.html:43
 msgid "Fund features"
 msgstr "基金的特點"
 
-#: weblate_web/html/donate.html:53
+#: weblate_web/html/donate.html:51
 msgid ""
 "Bountysource allows you to fund individual features which are reported on "
 "our issue tracker."
 msgstr ""
 
-#: weblate_web/html/donate.html:59
+#: weblate_web/html/donate.html:57
 msgid ""
 "If you like Weblate you can support its further development by donating."
 msgstr "如果您喜歡 Weblate 您可以透過捐贈來支援它的進一步發展。"
 
-#: weblate_web/html/donate.html:67
+#: weblate_web/html/donate.html:65
 msgid "Donate using PayPal"
 msgstr "使用 PayPal 捐贈"
 
-#: weblate_web/html/donate.html:72
+#: weblate_web/html/donate.html:70
 msgid ""
 "PayPal allows you to send money from credit card, PayPal balance or a bank "
 "account."
 msgstr "PayPal允許您從信用卡，PayPal餘額或銀行賬戶作匯款。"
 
-#: weblate_web/html/donate.html:77
+#: weblate_web/html/donate.html:75
 msgid "Donate using Coinbase"
 msgstr "使用 Bitcoins 捐贈"
 
-#: weblate_web/html/donate.html:81
+#: weblate_web/html/donate.html:79
 msgid "Coinbase allows you to send Bitcoins."
 msgstr "Coinbase 能讓您匯送 Bitcoins。"
 
-#: weblate_web/html/donate.html:85
+#: weblate_web/html/donate.html:83
 #, python-format
 msgid ""
 "You can also use <a href=\"http://www.bitcoin.org/\">Bitcoin is a peer-to-"
@@ -440,11 +440,11 @@ msgstr "整合之 API"
 msgid "Thanks to the API you can integrate Weblate with third party services."
 msgstr "由此 API，能整合 Weblate 與第三方服務。"
 
-#: weblate_web/html/features.html:50
+#: weblate_web/html/features.html:47
 msgid "File formats"
 msgstr "檔案格式"
 
-#: weblate_web/html/features.html:51
+#: weblate_web/html/features.html:48
 msgid ""
 "Weblate supports all widely used file formats for localisation like Gettext, "
 "JSON, XLIFF or resource strings."
@@ -452,104 +452,104 @@ msgstr ""
 "Weblate 支援所有廣用的本地語言化的檔案格式，如 Gettext、JSON、XLIFF 或資源字"
 "串。"
 
-#: weblate_web/html/features.html:58
+#: weblate_web/html/features.html:55
 msgid "Branches support"
 msgstr "分支的支援"
 
-#: weblate_web/html/features.html:59
+#: weblate_web/html/features.html:56
 msgid ""
 "Weblate can handle different versions of the translation by pushing them to "
 "different branches automatically."
 msgstr "Weblate 可以自動將不同版本的翻譯推到不同的分支，來處理它們。"
 
-#: weblate_web/html/features.html:85
+#: weblate_web/html/features.html:79
 msgid "Acquiring feedback"
 msgstr "取得回報"
 
-#: weblate_web/html/features.html:86
+#: weblate_web/html/features.html:80
 msgid ""
 "You can also use Weblate to acquire feedback on source strings and thus "
 "improve them."
 msgstr "可用 Weblate 來獲取源文字串的回報，從而改善它們。"
 
-#: weblate_web/html/features.html:93
+#: weblate_web/html/features.html:87
 msgid "Export and import"
 msgstr "匯出和匯入"
 
-#: weblate_web/html/features.html:94
+#: weblate_web/html/features.html:88
 msgid "Translations can be downloaded for offline translation and merged back."
 msgstr "翻譯可以下載後離線翻譯和合併回去。"
 
-#: weblate_web/html/features.html:104
+#: weblate_web/html/features.html:95
 msgid "Integrated"
 msgstr "整合"
 
-#: weblate_web/html/features.html:105
+#: weblate_web/html/features.html:96
 msgid "Translations are managed within same version control system as code."
 msgstr "翻譯是在同一個版本控制系統管理程式碼。"
 
-#: weblate_web/html/features.html:112
+#: weblate_web/html/features.html:103
 msgid "Documentation"
 msgstr "說明文件"
 
-#: weblate_web/html/features.html:113
+#: weblate_web/html/features.html:104
 msgid ""
 "Weblate comes with comprehensive documentation covering both setup and usage."
 msgstr "Weblate 帶有全面覆蓋的安裝和使用文件檔。"
 
-#: weblate_web/html/features.html:120
+#: weblate_web/html/features.html:111
 msgid "Review"
 msgstr "檢討"
 
-#: weblate_web/html/features.html:121
+#: weblate_web/html/features.html:112
 msgid "Translators have several options to review contributions made by peers."
 msgstr "翻譯者有幾個選項去檢討同行所作的文稿。"
 
-#: weblate_web/html/features.html:131
+#: weblate_web/html/features.html:119
 msgid "Languages"
 msgstr "語言"
 
-#: weblate_web/html/features.html:132
+#: weblate_web/html/features.html:120
 msgid ""
 "Weblate supports over 150 languages out of the box, others can be defined by "
 "administrator."
 msgstr "Weblate 支援超過 150 種語言的全新創意，其它的可以由管理者定義。"
 
-#: weblate_web/html/features.html:147
+#: weblate_web/html/features.html:135
 msgid "Reporting"
 msgstr "回報"
 
-#: weblate_web/html/features.html:148
+#: weblate_web/html/features.html:136
 msgid ""
 "Weblate generates various reports to provide information about project "
 "activity."
 msgstr "Weblate 產生成各種的報告，提供有關專案的活動資訊。"
 
-#: weblate_web/html/features.html:158
+#: weblate_web/html/features.html:144
 msgid "Version control"
 msgstr "版本控制"
 
-#: weblate_web/html/features.html:159
+#: weblate_web/html/features.html:145
 msgid ""
 "Weblate talks directly with your version control system, currently Git and "
 "Mercurial are supported."
 msgstr "Weblate 能與您的版本控制系統交談，目前支援 Git 與 Mercurial。"
 
-#: weblate_web/html/features.html:166
+#: weblate_web/html/features.html:152
 msgid "Collaboration sites"
 msgstr "合作網站"
 
-#: weblate_web/html/features.html:167
+#: weblate_web/html/features.html:153
 msgid ""
 "Weblate has native support for many software development sites such as "
 "GitHub, Bitbucket or Gitlab."
 msgstr "Weblate 原生支援許多軟體發展網站，像 GitHub, Bitbucket 或 Gitlab。"
 
-#: weblate_web/html/features.html:174
+#: weblate_web/html/features.html:160
 msgid "Responsive UI"
 msgstr "立即反應的使用者介面"
 
-#: weblate_web/html/features.html:175
+#: weblate_web/html/features.html:161
 msgid ""
 "Weblate has responsible UI which will work nicely on your desktop, tablet or "
 "phone."
@@ -771,7 +771,8 @@ msgstr ""
 
 #: weblate_web/html/hosting.html:193
 msgid ""
-"Source code has to be publicly available in a supported version control system."
+"Source code has to be publicly available in a supported version control "
+"system."
 msgstr "原始程式碼必須公開地提供支援版本控制系統。"
 
 #: weblate_web/html/hosting.html:194
@@ -867,7 +868,7 @@ msgstr ""
 msgid "Weblate - web-based translation"
 msgstr "Weblate - 以網站為基礎的翻譯"
 
-#: weblate_web/html/index.html:14 weblate_web/html/tour.html:11
+#: weblate_web/html/index.html:14 weblate_web/html/tour.html.py:11
 #: weblate_web/html/try.html:12
 msgid "Try our demo"
 msgstr "試用我們的示範"
@@ -890,9 +891,13 @@ msgstr ""
 msgid "Weblate screenshot"
 msgstr "Weblate 螢幕截圖"
 
-#: weblate_web/html/index.html:33
+#: weblate_web/html/index.html:37
 msgid "See more features…"
 msgstr "了解更多的功能…"
+
+#: weblate_web/html/index.html:46
+msgid "See who is using Weblate and join them!"
+msgstr ""
 
 #: weblate_web/html/support.html:3 weblate_web/html/support.html.py:4
 msgid "Weblate support"
