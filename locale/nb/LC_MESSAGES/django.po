@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2015-12-09 16:16+0100\n"
-"PO-Revision-Date: 2015-06-15 12:54+0200\n"
-"Last-Translator: Michal Čihař <michal@cihar.com>\n"
-"Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/weblate/"
-"website/nb/>\n"
+"PO-Revision-Date: 2015-12-10 20:34+0000\n"
+"Last-Translator: Petter Reinholdtsen <pere-weblate@hungry.com>\n"
+"Language-Team: Norwegian Bokmål "
+"<https://hosted.weblate.org/projects/weblate/website/nb/>\n"
 "Language: nb\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.4-dev\n"
+"X-Generator: Weblate 2.5-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -90,7 +90,7 @@ msgstr "Finner ikke side"
 #: weblate_web/html/404.html:8 weblate_web/html/500.html.py:8
 #: weblate_web/html/index.html:7
 msgid "Weblate is a free web-based translation management system."
-msgstr "Weblate er en gratis web-basert oversettelse styringssystem."
+msgstr "Weblate er en gratis web-basert system for styring av oversettelser."
 
 #: weblate_web/html/404.html:15
 msgid "The page you are looking for was not found."
@@ -149,20 +149,16 @@ msgid "Weblate comes with appliances, which are ready to deploy in your cloud."
 msgstr "Weblate kommer med et apparat, som er klar til å distribuere i skyen."
 
 #: weblate_web/html/base-features.html:46
-#, fuzzy
 #| msgid "Hosting for free software"
 msgid "Free software"
-msgstr "Vertslagring for gratis programvare"
+msgstr "Fri programvare"
 
 #: weblate_web/html/base-features.html:47
-#, fuzzy
 #| msgid ""
 #| "Weblate is free software, but welcomes <a href=\"%(donate_url)s"
 #| "\">donations</a>."
 msgid "Weblate is free software, you can run your own instance of it."
-msgstr ""
-"Weblate er gratis programvare, men tar imot <a href=\"%(donate_url)s"
-"\">donasjoner</a>."
+msgstr "Weblate er fri programvare, og du kan kjøre din egen utgave."
 
 #: weblate_web/html/base.html:12
 msgctxt "Keyword"
@@ -226,7 +222,7 @@ msgid "Help with translations!"
 msgstr "Hjelp med oversetting!"
 
 #: weblate_web/html/base.html:128
-#, fuzzy, python-format
+#, python-format
 #| msgid ""
 #| "Weblate is free software, but welcomes <a href=\"%(donate_url)s"
 #| "\">donations</a>."
@@ -234,8 +230,8 @@ msgid ""
 "Weblate is <a href=\"%(github_url)s\">free software</a> and welcomes <a href="
 "\"%(donate_url)s\">donations</a>."
 msgstr ""
-"Weblate er gratis programvare, men tar imot <a href=\"%(donate_url)s"
-"\">donasjoner</a>."
+"Weblate er <a href=\"%(github_url)s\">fri programvare</a>, og tar gjerne "
+"imot <a href=\"%(donate_url)s\">donasjoner</a>."
 
 #: weblate_web/html/contribute.html:3 weblate_web/html/contribute.html.py:4
 msgid "Contribute to Weblate"
@@ -301,7 +297,7 @@ msgstr "Donèr til Weblate"
 
 #: weblate_web/html/donate.html:6
 msgid "Weblate is free, but welcomes donations."
-msgstr "Weblate er gratis, men tar imot donasjoner."
+msgstr "Weblate er gratis, men tar gjerne imot donasjoner."
 
 #: weblate_web/html/donate.html:12 weblate_web/html/donate.html.py:26
 #: weblate_web/html/donate.html:47
@@ -319,14 +315,17 @@ msgid ""
 "every penny counts."
 msgstr ""
 "Regelmessige donasjoner tillater Weblate en bærekraftig utvikling og bidrar "
-"til å finansiere gratis vertsskap for gratis programvare. Du trenger ikke å "
-"bruke store beløp, hver krone teller."
+"til å finansiere gratis vertsskap for fri programvare. Du trenger ikke å "
+"bruke store beløp, hver øre teller."
 
 #: weblate_web/html/donate.html:30
 msgid ""
 "You can send a monthly donation using a credit card. You can also get "
 "rewards for higher donations, for example a logo placement on our website."
 msgstr ""
+"Du kan sende månedlige donasjoner ved hjelp av et kredittkort.  Du kan også "
+"få belønninger for større donasjoner, for eksempel en logo plassert på vårt "
+"nettsted."
 
 #: weblate_web/html/donate.html:36
 msgid "Donate using Gratipay"
@@ -339,7 +338,7 @@ msgstr ""
 
 #: weblate_web/html/donate.html:43
 msgid "Fund features"
-msgstr ""
+msgstr "Finansier egenskaper"
 
 #: weblate_web/html/donate.html:51
 msgid ""
@@ -418,7 +417,7 @@ msgstr ""
 
 #: weblate_web/html/download.html:48
 msgid "Running Weblate in a Docker container"
-msgstr ""
+msgstr "Kjøre Weblate i en Docker-beholder"
 
 #: weblate_web/html/download.html:49
 msgid "Running Weblate on OpenShift platform"
@@ -466,14 +465,13 @@ msgstr ""
 "hendelser."
 
 #: weblate_web/html/features.html:39
-#, fuzzy
 #| msgid "Integrated"
 msgid "Integration API"
-msgstr "Integrert"
+msgstr "Integrasjons-API"
 
 #: weblate_web/html/features.html:40
 msgid "Thanks to the API you can integrate Weblate with third party services."
-msgstr ""
+msgstr "Takket være API-et kan du integrere Weblatte med tredjepartstjenester."
 
 #: weblate_web/html/features.html:47
 msgid "File formats"
@@ -646,8 +644,9 @@ msgid ""
 msgstr ""
 
 #: weblate_web/html/hosting.html:6
+#, fuzzy
 msgid "Free continuous translation hosting for free software."
-msgstr "Gratis kontinuerlig oversettelse vertslagring for gratis programvare."
+msgstr "Gratis kontinuerlig oversettelse vertslagring for fri programvare."
 
 #: weblate_web/html/hosting.html:11
 msgid "Ask for hosting"
@@ -663,11 +662,10 @@ msgid ""
 msgstr ""
 
 #: weblate_web/html/hosting.html:28
-#, fuzzy
 #| msgid "Hosting for free software"
 msgctxt "Hosting plan"
 msgid "Free software"
-msgstr "Vertslagring for gratis programvare"
+msgstr "Fri programvare"
 
 #: weblate_web/html/hosting.html:29
 msgctxt "Hosting plan"
@@ -805,8 +803,9 @@ msgid ""
 msgstr ""
 
 #: weblate_web/html/hosting.html:183
+#, fuzzy
 msgid "Hosting for free software"
-msgstr "Vertslagring for gratis programvare"
+msgstr "Vertslagring for fri programvare"
 
 #: weblate_web/html/hosting.html:186
 msgid ""
@@ -829,8 +828,8 @@ msgid ""
 "Translated content has to be released under <a href=\"http://en.wikipedia."
 "org/wiki/Free_software_license\">free license</a>."
 msgstr ""
-"Oversatt innhold må bli redigert <a href=\"http://en.wikipedia.org/wiki/"
-"Free_software_license\">gratis lisens</a>."
+"Oversatt innhold må bli gitt ut under en <a href=\""
+"http://en.wikipedia.org/wiki/Free_software_license\">fri lisens</a>."
 
 #: weblate_web/html/hosting.html:193
 msgid ""
@@ -964,7 +963,7 @@ msgstr ""
 
 #: weblate_web/html/support.html:6
 msgid "Weblate is a free software with community support."
-msgstr ""
+msgstr "Weblate er fri programvare med felleskapsstøtte."
 
 #: weblate_web/html/support.html:11
 msgid "Report issue"
