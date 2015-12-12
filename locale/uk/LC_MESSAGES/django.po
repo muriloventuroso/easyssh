@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2015-12-09 16:16+0100\n"
-"PO-Revision-Date: 2015-12-04 12:49+0000\n"
+"PO-Revision-Date: 2015-12-12 06:40+0000\n"
 "Last-Translator: Андрій Бандура <andriykopanytsia@gmail.com>\n"
-"Language-Team: Ukrainian <https://hosted.weblate.org/projects/weblate/"
-"website/uk/>\n"
+"Language-Team: Ukrainian "
+"<https://hosted.weblate.org/projects/weblate/website/uk/>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 2.5-dev\n"
 
 #: weblate_web/data.py:33
@@ -137,6 +137,7 @@ msgstr "Плани хостингу"
 #: weblate_web/html/base-features.html:31
 msgid "Hosting plans to use Weblate as a service starting at 19 EUR."
 msgstr ""
+"Ціни на хостинг для використання Weblate як служби починаються від 19 EUR."
 
 #: weblate_web/html/base-features.html:38
 msgid "Ready for cloud"
@@ -316,6 +317,9 @@ msgid ""
 "You can send a monthly donation using a credit card. You can also get "
 "rewards for higher donations, for example a logo placement on our website."
 msgstr ""
+"Можна надсилати місячні пожертви, використовуючи кредитну карточку. Також ви "
+"зможете отримувати нагороди за більші пожертвування, наприклад, розташування "
+"логотипу на нашому веб-сайті."
 
 #: weblate_web/html/donate.html:36
 msgid "Donate using Gratipay"
@@ -404,24 +408,28 @@ msgid ""
 "Weblate can be run in any cloud or virtualization environment. Following "
 "links will show you information about some of these:"
 msgstr ""
+"Weblate можна запустити у довільній хмарі чи середовищі віртуалізації. "
+"Наступні посилання покажуть вам усю інформацію про деякі з цих можливостей:"
 
 #: weblate_web/html/download.html:48
 msgid "Running Weblate in a Docker container"
-msgstr ""
+msgstr "Запуск Weblate у контейнері Docker"
 
 #: weblate_web/html/download.html:49
 msgid "Running Weblate on OpenShift platform"
-msgstr ""
+msgstr "Запуск Weblate на платформі OpenShift"
 
 #: weblate_web/html/download.html:50
 msgid "SUSE Studio appliances"
-msgstr ""
+msgstr "Засоби SUSE Studio"
 
 #: weblate_web/html/download.html:51
 msgid ""
 "BitNami Weblate stack providing native installation for most platforms as "
 "well as support for many public cloud providers"
 msgstr ""
+"Стек BitNami Weblate забезпечує рідне встановлення для більшості платформ, а "
+"також підтримку більшості відкритих постачальників хмарних послуг"
 
 #: weblate_web/html/features.html:3 weblate_web/html/features.html.py:4
 msgid "Weblate features"
@@ -460,7 +468,7 @@ msgstr "API для інтеграції"
 
 #: weblate_web/html/features.html:40
 msgid "Thanks to the API you can integrate Weblate with third party services."
-msgstr ""
+msgstr "Завдяки API ми можете поєднувати Weblate із сторонніми службами."
 
 #: weblate_web/html/features.html:47
 msgid "File formats"
@@ -581,6 +589,8 @@ msgid ""
 "Weblate has native support for many software development sites such as "
 "GitHub, Bitbucket or Gitlab."
 msgstr ""
+"Weblate підтримує багато сайтів для розробки ПЗ, таких як GitHub, Bitbucket "
+"або Gitlab."
 
 #: weblate_web/html/features.html:160
 msgid "Responsive UI"
@@ -613,10 +623,13 @@ msgid ""
 "The project setup is currently manual. If you haven't done so already, "
 "please get in touch with us and send us details about your repository setup."
 msgstr ""
+"Налаштування проекту є наразі ручною роботою. Якщо ви цього ще не зробили, "
+"то зв'яжіться з нами і відправити нам подробиці про налаштування вашого "
+"сховища."
 
 #: weblate_web/html/hosting-ordered.html:15
 msgid "Usually following information is needed:"
-msgstr ""
+msgstr "Переважно така інформація є необхідною:"
 
 #: weblate_web/html/hosting-ordered.html:18 weblate_web/html/hosting.html:206
 msgid "URL of repository with translations."
@@ -632,6 +645,9 @@ msgid ""
 "adding Weblate user to your project (on GitHub, Bitbucket or GitLab) or "
 "adding SSH key we will provide you."
 msgstr ""
+"Ви повинні дозволити Weblate доступ до вашого сховища. Це можна зробити, "
+"додавши користувача Weblate до вашого проекту (на GitHub, Bitbucket чи "
+"GitLab) або додавши ключ SSH, який ми надамо вам."
 
 #: weblate_web/html/hosting.html:6
 msgid "Free continuous translation hosting for free software."
@@ -649,6 +665,10 @@ msgid ""
 "look for hosting of bigger projects, don't hesitate to <a href=\"%(contact)s"
 "\">get in touch with us</a>."
 msgstr ""
+"Ми можемо розміщувати переклади для ваших комерційних або безкоштовних "
+"програмних проектів. Нижче наявний підсумок про плани для хостингу. Якщо у "
+"вас виникли питання або шукаєте хостинг для великих проектів, не соромтеся <"
+"a href=\"%(contact)s\">зв'язатися з нами</a>."
 
 #: weblate_web/html/hosting.html:28
 msgctxt "Hosting plan"
@@ -673,7 +693,7 @@ msgstr "Розширений"
 #: weblate_web/html/hosting.html:32
 msgctxt "Hosting plan"
 msgid "Enterprise"
-msgstr ""
+msgstr "Підприємство"
 
 #: weblate_web/html/hosting.html:45
 msgid "Source strings"
@@ -682,7 +702,7 @@ msgstr "Початкові рядки"
 #: weblate_web/html/hosting.html:46 weblate_web/html/hosting.html.py:54
 #: weblate_web/html/hosting.html:62
 msgid "Negotiable"
-msgstr ""
+msgstr "Договірна"
 
 #: weblate_web/html/hosting.html:53
 msgid "Target languages"
@@ -703,7 +723,7 @@ msgstr "Проекти перекладу"
 #: weblate_web/html/hosting.html:88 weblate_web/html/hosting.html.py:89
 #: weblate_web/html/hosting.html:90
 msgid "Unlimited"
-msgstr ""
+msgstr "Необмежено"
 
 #: weblate_web/html/hosting.html:77
 msgid "Translation components"
@@ -725,12 +745,12 @@ msgstr "Формати файлів, які підтримуються"
 #: weblate_web/html/hosting.html:104 weblate_web/html/hosting.html.py:105
 #: weblate_web/html/hosting.html:106
 msgid "All"
-msgstr ""
+msgstr "Усе"
 
 #: weblate_web/html/hosting.html:113 weblate_web/html/hosting.html.py:114
 #: weblate_web/html/hosting.html:121 weblate_web/html/hosting.html.py:122
 msgid "Customizable"
-msgstr ""
+msgstr "Пристосовний"
 
 #: weblate_web/html/hosting.html:117
 msgid "Translation processing"
@@ -738,7 +758,7 @@ msgstr "Обробка перекладу"
 
 #: weblate_web/html/hosting.html:135
 msgid "Monthly"
-msgstr ""
+msgstr "Щомісячно"
 
 #: weblate_web/html/hosting.html:137
 msgid "Contact us"
@@ -753,7 +773,7 @@ msgstr "%(price)s EUR / місяць"
 #: weblate_web/html/hosting.html:153
 #, python-format
 msgid "Yearly (save 20%%)"
-msgstr ""
+msgstr "Щорічно (економія 20%%)"
 
 #: weblate_web/html/hosting.html:155 weblate_web/html/hosting.html.py:158
 #: weblate_web/html/hosting.html:161 weblate_web/html/hosting.html.py:164
@@ -767,18 +787,26 @@ msgid ""
 "languages. The source string is a text unit defined in a translation format, "
 "it can be word, sentence or a paragraph."
 msgstr ""
+"Ціни залежать від числа джерельних рядків та числа цільових мов. Джерельний "
+"рядок - текстова одиниця, яка використовується у перекладі. Ним може бути "
+"слово, речення або абзац."
 
 #: weblate_web/html/hosting.html:176
 msgid ""
 "The hosting setup is currently done manually, so you might want to get in "
 "touch with us prior to making subscription with your project details."
 msgstr ""
+"Налаштування хостингу наразі робиться вручну, тому ви, можливо, захочете "
+"зв'язатися з нами до прийняття передплати з вашими даними проекту."
 
 #: weblate_web/html/hosting.html:180
 msgid ""
 "Alternatively we can accept payments by wire transfer (preferably IBAN) or "
 "Bitcoin. Please get in touch for more details."
 msgstr ""
+"В якості альтернативи ми можемо приймати платежі за безготівковим "
+"розрахунком (переважно через IBAN) або bitcoin. Будь ласка, зв'яжіться з "
+"нами за подробицями."
 
 #: weblate_web/html/hosting.html:183
 msgid "Hosting for free software"
@@ -830,6 +858,8 @@ msgid ""
 "Please use <a href=\"%(url)s\">contact form on Hosted Weblate</a> to request "
 "hosting. You will need following information:"
 msgstr ""
+"Щоб запросити хостинг, будь ласка, використовуйте <a href=\"%(url)s\">форму "
+"для зв'язку на Hosted Weblate</a>. Буде потрібна наступна інформація:"
 
 #: weblate_web/html/hosting.html:204
 msgid "Information about your project."
@@ -860,6 +890,9 @@ msgid ""
 "see our documentation for setup on <a href=\"%(github)s\">GitHub</a>, <a "
 "href=\"%(bitbucket)s\">Bitbucket</a> or <a href=\"%(gitlab)s\">GitLab</a>."
 msgstr ""
+"Weblate може автоматично приймати зміни з головних служб хостингу коду. Див. "
+"нашу документацію для налаштування на <a href=\"%(github)s\">GitHub</a>, <a "
+"href=\"%(bitbucket)s\">Bitbucket</a> або <a href=\"%(gitlab)s\">GitLab</a>."
 
 #: weblate_web/html/hosting.html:221
 #, python-format
@@ -868,6 +901,10 @@ msgid ""
 "user to collaborators and let us know you want to use this option. See <a "
 "href=\"%(docs)s\">documentation</a> for more detailed instructions."
 msgstr ""
+"Якщо ви хочете використовувати Weblate для автоматичної відправки змін, "
+"додайте потрібного користувача в список співпрацівників і повідомте нам, як "
+"ви хочете використовувати цей параметр. Дивіться <a href=\"%(docs)s\""
+">документацію</a> для докладніших вказівок."
 
 #: weblate_web/html/hosting.html:224
 msgid "Support free hosting"
@@ -906,6 +943,10 @@ msgid ""
 "well with consulting services tailored for your needs. Please contact <a "
 "href=\"%(contact_url)s\">Michal Čihař</a> for more details."
 msgstr ""
+"У випадку, якщо вам потрібна допомога з вашого самодостатнього рішення, ми "
+"готові надати консультаційні послуги з урахуванням ваших потреб. Будь ласка, "
+"зв'яжіться із <a href=\"%(contact_url)s\">Michal Čihař</a> за докладнішою "
+"інформацією."
 
 #: weblate_web/html/index.html:3
 msgid "Weblate - web-based translation"
@@ -942,7 +983,7 @@ msgstr "Див. додаткові функції …"
 
 #: weblate_web/html/index.html:46
 msgid "See who is using Weblate and join them!"
-msgstr ""
+msgstr "Погляньте, хто використовує Weblate і приєднуйтеся до них!"
 
 #: weblate_web/html/support.html:3 weblate_web/html/support.html.py:4
 msgid "Weblate support"
@@ -1000,13 +1041,14 @@ msgstr ""
 
 #: weblate_web/html/support.html:32
 msgid "Stack Overflow"
-msgstr ""
+msgstr "Переповнення стеку"
 
 #: weblate_web/html/support.html:34
 #, python-format
 msgid ""
 "You can also ask related questions on <a href=\"%(url)s\">Stack Overflow</a>."
 msgstr ""
+"Додаткові питання по посиланню <a href=\"%(url)s\">Переповнення стеку</a>."
 
 #: weblate_web/html/support.html:36
 msgid "IRC"
@@ -1071,7 +1113,7 @@ msgstr "Sauce Labs запускає наші тести Selenium у справж
 
 #: weblate_web/html/thanks.html:32
 msgid "Our translations are being done on Hosted Weblate."
-msgstr ""
+msgstr "Наші переклади виконуються на Hosted Weblate."
 
 #: weblate_web/html/tour.html:3 weblate_web/html/tour.html.py:4
 msgid "Weblate tour"
