@@ -7,17 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2015-12-09 16:16+0100\n"
+"POT-Creation-Date: 2015-12-22 11:47+0100\n"
 "PO-Revision-Date: 2015-12-11 11:44+0000\n"
 "Last-Translator: Slobodan Simić <slsimic@gmail.com>\n"
-"Language-Team: Serbian "
-"<https://hosted.weblate.org/projects/weblate/website/sr/>\n"
+"Language-Team: Serbian <https://hosted.weblate.org/projects/weblate/website/"
+"sr/>\n"
 "Language: sr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
-"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 2.5-dev\n"
 
 #: weblate_web/data.py:33
@@ -607,11 +607,11 @@ msgstr ""
 msgid "Usually following information is needed:"
 msgstr "Обично су потребни следећи подаци:"
 
-#: weblate_web/html/hosting-ordered.html:18 weblate_web/html/hosting.html:206
+#: weblate_web/html/hosting-ordered.html:18 weblate_web/html/hosting.html:214
 msgid "URL of repository with translations."
 msgstr "УРЛ ризнице са преводима."
 
-#: weblate_web/html/hosting-ordered.html:19 weblate_web/html/hosting.html:207
+#: weblate_web/html/hosting-ordered.html:19 weblate_web/html/hosting.html:215
 msgid "Path to translations within the repository."
 msgstr "Путања до превода унутар ризнице."
 
@@ -728,32 +728,36 @@ msgstr "Прилагодљиво"
 msgid "Translation processing"
 msgstr "Обрада превода"
 
-#: weblate_web/html/hosting.html:135
+#: weblate_web/html/hosting.html:133
+msgid "Own domain"
+msgstr ""
+
+#: weblate_web/html/hosting.html:143
 msgid "Monthly"
 msgstr "Месечно"
 
-#: weblate_web/html/hosting.html:137
+#: weblate_web/html/hosting.html:145
 msgid "Contact us"
 msgstr "Контактирајте нас"
 
-#: weblate_web/html/hosting.html:140 weblate_web/html/hosting.html.py:143
-#: weblate_web/html/hosting.html:146 weblate_web/html/hosting.html.py:149
+#: weblate_web/html/hosting.html:148 weblate_web/html/hosting.html.py:151
+#: weblate_web/html/hosting.html:154 weblate_web/html/hosting.html.py:157
 #, python-format
 msgid "%(price)s EUR / month"
 msgstr "%(price)s € / месечно"
 
-#: weblate_web/html/hosting.html:153
+#: weblate_web/html/hosting.html:161
 #, python-format
 msgid "Yearly (save 20%%)"
 msgstr "Годишње (уштедите 20%%)"
 
-#: weblate_web/html/hosting.html:155 weblate_web/html/hosting.html.py:158
-#: weblate_web/html/hosting.html:161 weblate_web/html/hosting.html.py:164
+#: weblate_web/html/hosting.html:163 weblate_web/html/hosting.html.py:166
+#: weblate_web/html/hosting.html:169 weblate_web/html/hosting.html.py:172
 #, python-format
 msgid "%(price)s EUR / year"
 msgstr "%(price)s EUR / годишње"
 
-#: weblate_web/html/hosting.html:172
+#: weblate_web/html/hosting.html:180
 msgid ""
 "The pricing is based on number of source strings and number of target "
 "languages. The source string is a text unit defined in a translation format, "
@@ -762,23 +766,23 @@ msgstr ""
 "Цена је базирана на броју изворних порука и броју језика за превод. Изворна "
 "порука је текстуална јединица превода. Може бити реч, реченица или пасус."
 
-#: weblate_web/html/hosting.html:176
+#: weblate_web/html/hosting.html:184
 msgid ""
 "The hosting setup is currently done manually, so you might want to get in "
 "touch with us prior to making subscription with your project details."
 msgstr ""
 
-#: weblate_web/html/hosting.html:180
+#: weblate_web/html/hosting.html:188
 msgid ""
 "Alternatively we can accept payments by wire transfer (preferably IBAN) or "
 "Bitcoin. Please get in touch for more details."
 msgstr ""
 
-#: weblate_web/html/hosting.html:183
+#: weblate_web/html/hosting.html:191
 msgid "Hosting for free software"
 msgstr "Хостинг за слободни софтвер"
 
-#: weblate_web/html/hosting.html:186
+#: weblate_web/html/hosting.html:194
 msgid ""
 "If you are interested in using Weblate for your free software, you can ask "
 "us to be include on <a href=\"http://hosted.weblate.org/\">hosted.weblate."
@@ -790,11 +794,11 @@ msgstr ""
 "weblate.org</a>. Тако ћете моћи да користите Веблејт без инсталације и "
 "одржавања."
 
-#: weblate_web/html/hosting.html:189
+#: weblate_web/html/hosting.html:197
 msgid "Conditions for free hosting"
 msgstr "Услови за бесплатан хостинг"
 
-#: weblate_web/html/hosting.html:192
+#: weblate_web/html/hosting.html:200
 msgid ""
 "Translated content has to be released under <a href=\"http://en.wikipedia."
 "org/wiki/Free_software_license\">free license</a>."
@@ -802,22 +806,22 @@ msgstr ""
 "Преведени садржај мора бити издат под <a href=\"http://en.wikipedia.org/wiki/"
 "Free_software_license\">слободном лиценцом</a>."
 
-#: weblate_web/html/hosting.html:193
+#: weblate_web/html/hosting.html:201
 msgid ""
 "Source code has to be publicly available in a supported version control "
 "system."
 msgstr ""
 "Изворни код мора бити јавно објављен у подржаном систему контроле верзија."
 
-#: weblate_web/html/hosting.html:194
+#: weblate_web/html/hosting.html:202
 msgid "There is no guarantee for service availability or quality."
 msgstr "Нема гаранције за квалитет или доступност сервиса."
 
-#: weblate_web/html/hosting.html:197
+#: weblate_web/html/hosting.html:205
 msgid "Asking for hosting"
 msgstr "Питајте за хостинг"
 
-#: weblate_web/html/hosting.html:200
+#: weblate_web/html/hosting.html:208
 #, python-format
 msgid ""
 "Please use <a href=\"%(url)s\">contact form on Hosted Weblate</a> to request "
@@ -826,19 +830,19 @@ msgstr ""
 "Користите <a href=\"%(url)s\">формулар за контакт</a> да затражите хостинг. "
 "Требаће вам следеће информације:"
 
-#: weblate_web/html/hosting.html:204
+#: weblate_web/html/hosting.html:212
 msgid "Information about your project."
 msgstr "Подаци о вашем пројекту."
 
-#: weblate_web/html/hosting.html:205
+#: weblate_web/html/hosting.html:213
 msgid "Project website."
 msgstr "Веб сајт пројекта."
 
-#: weblate_web/html/hosting.html:210
+#: weblate_web/html/hosting.html:218
 msgid "Translation workflow"
 msgstr "Ток превођења"
 
-#: weblate_web/html/hosting.html:213
+#: weblate_web/html/hosting.html:221
 msgid ""
 "All translated repositories are available at <code>git.weblate.org</code> "
 "with similar naming as on website - hello/master translation would be "
@@ -848,7 +852,7 @@ msgstr ""
 "именовањем као на веб сајту - hello/master преводи биће објављени као "
 "<code>git://git.weblate.org/hello-master.git</code>."
 
-#: weblate_web/html/hosting.html:217
+#: weblate_web/html/hosting.html:225
 #, python-format
 msgid ""
 "Weblate can automatically receive changes from major code hosting services, "
@@ -859,7 +863,7 @@ msgstr ""
 "За подешавање погледајте документацију <a href=\"%(github)s\">Гитхаб</a>, <a "
 "href=\"%(bitbucket)s\">Битбакет</a> или <a href=\"%(gitlab)s\">Гитлаб</a>."
 
-#: weblate_web/html/hosting.html:221
+#: weblate_web/html/hosting.html:229
 #, python-format
 msgid ""
 "If you want Weblate to automatically push changes as well, add Weblate push "
@@ -870,11 +874,11 @@ msgstr ""
 "сараднике и јавите нам да желите да користите ову опцију. Погледајте <a href="
 "\"%(docs)s\">документацију</a> за детаљна упутства."
 
-#: weblate_web/html/hosting.html:224
+#: weblate_web/html/hosting.html:232
 msgid "Support free hosting"
 msgstr "Подржите бесплатан хостинг"
 
-#: weblate_web/html/hosting.html:228
+#: weblate_web/html/hosting.html:236
 #, python-format
 msgid ""
 "The hosting is provided for free, but running the server and maintaining it "
@@ -885,11 +889,11 @@ msgstr ""
 "\"%(gittip_url)s\">Гратипејом</a> или <a href=\"%(donate_url)s\">на други "
 "начин</a> добродошла."
 
-#: weblate_web/html/hosting.html:232
+#: weblate_web/html/hosting.html:240
 msgid "Self hosting"
 msgstr "Сопствени хостинг"
 
-#: weblate_web/html/hosting.html:236
+#: weblate_web/html/hosting.html:244
 #, python-format
 msgid ""
 "You can also <a href=\"%(download_url)s\">download</a> Weblate sources and "
@@ -900,7 +904,7 @@ msgstr ""
 "кôд и покренете га на вашем систему. Такође постоји неколико могућности за "
 "употребу Веблејта у облаку."
 
-#: weblate_web/html/hosting.html:240
+#: weblate_web/html/hosting.html:248
 #, python-format
 msgid ""
 "In case you need help with your self hosted solution, we're ready to help as "

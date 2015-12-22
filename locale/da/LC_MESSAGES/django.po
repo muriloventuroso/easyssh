@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2015-12-09 16:16+0100\n"
+"POT-Creation-Date: 2015-12-22 11:47+0100\n"
 "PO-Revision-Date: 2015-12-09 17:46+0000\n"
 "Last-Translator: jan madsen <jsm@janz.dk>\n"
-"Language-Team: Danish "
-"<https://hosted.weblate.org/projects/weblate/website/da/>\n"
+"Language-Team: Danish <https://hosted.weblate.org/projects/weblate/website/"
+"da/>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -628,11 +628,11 @@ msgstr ""
 msgid "Usually following information is needed:"
 msgstr "Normalt er følgende oplysninger nødvendige:"
 
-#: weblate_web/html/hosting-ordered.html:18 weblate_web/html/hosting.html:206
+#: weblate_web/html/hosting-ordered.html:18 weblate_web/html/hosting.html:214
 msgid "URL of repository with translations."
 msgstr "URL for arkiv med oversættelser."
 
-#: weblate_web/html/hosting-ordered.html:19 weblate_web/html/hosting.html:207
+#: weblate_web/html/hosting-ordered.html:19 weblate_web/html/hosting.html:215
 msgid "Path to translations within the repository."
 msgstr "Sti til oversættelser inden i arkivet."
 
@@ -753,32 +753,36 @@ msgstr "Kan tilpasses"
 msgid "Translation processing"
 msgstr "Behandler oversættelse"
 
-#: weblate_web/html/hosting.html:135
+#: weblate_web/html/hosting.html:133
+msgid "Own domain"
+msgstr ""
+
+#: weblate_web/html/hosting.html:143
 msgid "Monthly"
 msgstr "Månedlig"
 
-#: weblate_web/html/hosting.html:137
+#: weblate_web/html/hosting.html:145
 msgid "Contact us"
 msgstr "Kontakt os"
 
-#: weblate_web/html/hosting.html:140 weblate_web/html/hosting.html.py:143
-#: weblate_web/html/hosting.html:146 weblate_web/html/hosting.html.py:149
+#: weblate_web/html/hosting.html:148 weblate_web/html/hosting.html.py:151
+#: weblate_web/html/hosting.html:154 weblate_web/html/hosting.html.py:157
 #, python-format
 msgid "%(price)s EUR / month"
 msgstr "%(price)s EUR / måned"
 
-#: weblate_web/html/hosting.html:153
+#: weblate_web/html/hosting.html:161
 #, python-format
 msgid "Yearly (save 20%%)"
 msgstr "Årligt (spar 20%%)"
 
-#: weblate_web/html/hosting.html:155 weblate_web/html/hosting.html.py:158
-#: weblate_web/html/hosting.html:161 weblate_web/html/hosting.html.py:164
+#: weblate_web/html/hosting.html:163 weblate_web/html/hosting.html.py:166
+#: weblate_web/html/hosting.html:169 weblate_web/html/hosting.html.py:172
 #, python-format
 msgid "%(price)s EUR / year"
 msgstr "%(price)s EUR / år"
 
-#: weblate_web/html/hosting.html:172
+#: weblate_web/html/hosting.html:180
 msgid ""
 "The pricing is based on number of source strings and number of target "
 "languages. The source string is a text unit defined in a translation format, "
@@ -788,7 +792,7 @@ msgstr ""
 "målsprog. Kildestrengen er en tekstenhed defineret i et oversættelsesformat, "
 "kan være et ord, en sætning eller et afsnit."
 
-#: weblate_web/html/hosting.html:176
+#: weblate_web/html/hosting.html:184
 msgid ""
 "The hosting setup is currently done manually, so you might want to get in "
 "touch with us prior to making subscription with your project details."
@@ -796,7 +800,7 @@ msgstr ""
 "Hosting opsætningen er i øjeblikket manuelt, så du ønsker måske at kontakte "
 "os inden med projektdetaljer inden abonnement."
 
-#: weblate_web/html/hosting.html:180
+#: weblate_web/html/hosting.html:188
 msgid ""
 "Alternatively we can accept payments by wire transfer (preferably IBAN) or "
 "Bitcoin. Please get in touch for more details."
@@ -804,11 +808,11 @@ msgstr ""
 "Alternativt kan vi accepterer betaling via bankoverførsel (helst IBAN) eller "
 "Bitcoin. Kontakt os for flere detaljer."
 
-#: weblate_web/html/hosting.html:183
+#: weblate_web/html/hosting.html:191
 msgid "Hosting for free software"
 msgstr "Hosting for fri software"
 
-#: weblate_web/html/hosting.html:186
+#: weblate_web/html/hosting.html:194
 msgid ""
 "If you are interested in using Weblate for your free software, you can ask "
 "us to be include on <a href=\"http://hosted.weblate.org/\">hosted.weblate."
@@ -820,11 +824,11 @@ msgstr ""
 "weblate.org</a>. Dette giver mulighed for at bruge Weblate uden at skulle "
 "installere og vedligeholde den."
 
-#: weblate_web/html/hosting.html:189
+#: weblate_web/html/hosting.html:197
 msgid "Conditions for free hosting"
 msgstr "Betingelser for fri hosting"
 
-#: weblate_web/html/hosting.html:192
+#: weblate_web/html/hosting.html:200
 msgid ""
 "Translated content has to be released under <a href=\"http://en.wikipedia."
 "org/wiki/Free_software_license\">free license</a>."
@@ -832,7 +836,7 @@ msgstr ""
 "Oversat indhold skal udgives under en <a href=\"http://en.wikipedia.org/wiki/"
 "Free_software_license\">fri licens</a>."
 
-#: weblate_web/html/hosting.html:193
+#: weblate_web/html/hosting.html:201
 msgid ""
 "Source code has to be publicly available in a supported version control "
 "system."
@@ -840,15 +844,15 @@ msgstr ""
 "Kildekoden skal være offentligt tilgængelig i et understøttet "
 "versionskontrolsystem."
 
-#: weblate_web/html/hosting.html:194
+#: weblate_web/html/hosting.html:202
 msgid "There is no guarantee for service availability or quality."
 msgstr "Der er ingen garantier for tjenestens tilgængelighed eller kvalitet."
 
-#: weblate_web/html/hosting.html:197
+#: weblate_web/html/hosting.html:205
 msgid "Asking for hosting"
 msgstr "Spørg om hosting"
 
-#: weblate_web/html/hosting.html:200
+#: weblate_web/html/hosting.html:208
 #, python-format
 msgid ""
 "Please use <a href=\"%(url)s\">contact form on Hosted Weblate</a> to request "
@@ -857,19 +861,19 @@ msgstr ""
 "Brug <a href=\"%(url)s\"> kontaktformularen på Hosted Weblate</a> for at "
 "anmode om hosting. Der skal bruges følgende oplysninger:"
 
-#: weblate_web/html/hosting.html:204
+#: weblate_web/html/hosting.html:212
 msgid "Information about your project."
 msgstr "Informationer om dit projekt."
 
-#: weblate_web/html/hosting.html:205
+#: weblate_web/html/hosting.html:213
 msgid "Project website."
 msgstr "Projektets hjemmeside."
 
-#: weblate_web/html/hosting.html:210
+#: weblate_web/html/hosting.html:218
 msgid "Translation workflow"
 msgstr "Arbejdsgang for oversættelse"
 
-#: weblate_web/html/hosting.html:213
+#: weblate_web/html/hosting.html:221
 msgid ""
 "All translated repositories are available at <code>git.weblate.org</code> "
 "with similar naming as on website - hello/master translation would be "
@@ -879,7 +883,7 @@ msgstr ""
 "en navngivning der ligner et websteds - oversættelsen hello/master vil blive "
 "udgivet som <code>git://git.weblate.org/hello-master.git</code>."
 
-#: weblate_web/html/hosting.html:217
+#: weblate_web/html/hosting.html:225
 #, python-format
 msgid ""
 "Weblate can automatically receive changes from major code hosting services, "
@@ -891,7 +895,7 @@ msgstr ""
 "href=\"%(bitbucket)s\"> Bitbucket</a> eller <a href=\"%(gitlab)s\"> GitLab</"
 "a>."
 
-#: weblate_web/html/hosting.html:221
+#: weblate_web/html/hosting.html:229
 #, python-format
 msgid ""
 "If you want Weblate to automatically push changes as well, add Weblate push "
@@ -903,11 +907,11 @@ msgstr ""
 "indstilling. Se <a href=\"%(docs)s\"> dokumentationen</a> for mere "
 "detaljerede instruktioner."
 
-#: weblate_web/html/hosting.html:224
+#: weblate_web/html/hosting.html:232
 msgid "Support free hosting"
 msgstr "Støt fri hosting"
 
-#: weblate_web/html/hosting.html:228
+#: weblate_web/html/hosting.html:236
 #, python-format
 msgid ""
 "The hosting is provided for free, but running the server and maintaining it "
@@ -919,11 +923,11 @@ msgstr ""
 "\">Gratipay</a> eller <a href=\"%(donate_url)s\">andre måder at donere på</"
 "a>."
 
-#: weblate_web/html/hosting.html:232
+#: weblate_web/html/hosting.html:240
 msgid "Self hosting"
 msgstr "Selvstændig hosting"
 
-#: weblate_web/html/hosting.html:236
+#: weblate_web/html/hosting.html:244
 #, python-format
 msgid ""
 "You can also <a href=\"%(download_url)s\">download</a> Weblate sources and "
@@ -934,7 +938,7 @@ msgstr ""
 "køre det på egne systemer. Der er også flere muligheder for implementering "
 "af Weblate til skyen."
 
-#: weblate_web/html/hosting.html:240
+#: weblate_web/html/hosting.html:248
 #, python-format
 msgid ""
 "In case you need help with your self hosted solution, we're ready to help as "
