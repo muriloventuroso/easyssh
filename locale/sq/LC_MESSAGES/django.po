@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2015-12-22 11:47+0100\n"
+"POT-Creation-Date: 2016-01-13 07:56+0100\n"
 "PO-Revision-Date: 2015-09-06 19:04+0200\n"
 "Last-Translator: Arben Çokaj <acokaj@shkoder.net>\n"
 "Language-Team: Albanian <https://hosted.weblate.org/projects/weblate/website/"
@@ -652,11 +652,11 @@ msgstr ""
 msgid "Usually following information is needed:"
 msgstr "Informacioni i mëposhtëm është zakonisht i nevojshëm:"
 
-#: weblate_web/html/hosting-ordered.html:18 weblate_web/html/hosting.html:214
+#: weblate_web/html/hosting-ordered.html:18 weblate_web/html/hosting.html:205
 msgid "URL of repository with translations."
 msgstr "URL e depozitës me përkthime."
 
-#: weblate_web/html/hosting-ordered.html:19 weblate_web/html/hosting.html:215
+#: weblate_web/html/hosting-ordered.html:19 weblate_web/html/hosting.html:206
 msgid "Path to translations within the repository."
 msgstr "Rruga për tek përkthimet brenda depozitës."
 
@@ -802,14 +802,12 @@ msgstr "%(price)s EUR / muaj"
 msgid "Yearly (save 20%%)"
 msgstr ""
 
-#: weblate_web/html/hosting.html:163 weblate_web/html/hosting.html.py:166
-#: weblate_web/html/hosting.html:169 weblate_web/html/hosting.html.py:172
-#, fuzzy, python-format
-#| msgid "%(price)s EUR / month"
-msgid "%(price)s EUR / year"
-msgstr "%(price)s EUR / muaj"
+#: weblate_web/html/hosting.html:163
+#, python-format
+msgid "Ask us for yearly invoicing with 20%% discount."
+msgstr ""
 
-#: weblate_web/html/hosting.html:180
+#: weblate_web/html/hosting.html:171
 msgid ""
 "The pricing is based on number of source strings and number of target "
 "languages. The source string is a text unit defined in a translation format, "
@@ -819,7 +817,7 @@ msgstr ""
 "objektivit. Vargu i burimit është një njësi teksti e përcaktuar në një "
 "format përkthimi, mund të jetë fjalë, fjali apo paragraf."
 
-#: weblate_web/html/hosting.html:184
+#: weblate_web/html/hosting.html:175
 msgid ""
 "The hosting setup is currently done manually, so you might want to get in "
 "touch with us prior to making subscription with your project details."
@@ -828,17 +826,17 @@ msgstr ""
 "të doni të kontaktoni me ne, para se të bëni abonimin me detajet e projektit "
 "tuaj."
 
-#: weblate_web/html/hosting.html:188
+#: weblate_web/html/hosting.html:179
 msgid ""
 "Alternatively we can accept payments by wire transfer (preferably IBAN) or "
 "Bitcoin. Please get in touch for more details."
 msgstr ""
 
-#: weblate_web/html/hosting.html:191
+#: weblate_web/html/hosting.html:182
 msgid "Hosting for free software"
 msgstr "Pritës (hosting) për programe (software) falas"
 
-#: weblate_web/html/hosting.html:194
+#: weblate_web/html/hosting.html:185
 msgid ""
 "If you are interested in using Weblate for your free software, you can ask "
 "us to be include on <a href=\"http://hosted.weblate.org/\">hosted.weblate."
@@ -850,11 +848,11 @@ msgstr ""
 "\">hosted.weblate.org</a>. Kjo do ju lejojë ta përdorni Weblate pa e "
 "instaluar apo mirëmbajtur atë."
 
-#: weblate_web/html/hosting.html:197
+#: weblate_web/html/hosting.html:188
 msgid "Conditions for free hosting"
 msgstr "Kushtet për pritës (hosting) falas"
 
-#: weblate_web/html/hosting.html:200
+#: weblate_web/html/hosting.html:191
 msgid ""
 "Translated content has to be released under <a href=\"http://en.wikipedia."
 "org/wiki/Free_software_license\">free license</a>."
@@ -862,7 +860,7 @@ msgstr ""
 "Përmbajtja e përkthyer duhet të lëshohet në qarkullim sipas <a href=\"http://"
 "en.wikipedia.org/wiki/Free_software_license\">liçensës falas</a>."
 
-#: weblate_web/html/hosting.html:201
+#: weblate_web/html/hosting.html:192
 msgid ""
 "Source code has to be publicly available in a supported version control "
 "system."
@@ -870,15 +868,15 @@ msgstr ""
 "Kodi i burimit duhet të jetë publikisht i vlefshëm në sistemin e mbështetur "
 "për kontrollin e versionit."
 
-#: weblate_web/html/hosting.html:202
+#: weblate_web/html/hosting.html:193
 msgid "There is no guarantee for service availability or quality."
 msgstr "Nuk ka garanci për vlefshmërinë e shërbimit apo cilësinë."
 
-#: weblate_web/html/hosting.html:205
+#: weblate_web/html/hosting.html:196
 msgid "Asking for hosting"
 msgstr "Pyetje rreth pritësit (hosting)"
 
-#: weblate_web/html/hosting.html:208
+#: weblate_web/html/hosting.html:199
 #, python-format
 msgid ""
 "Please use <a href=\"%(url)s\">contact form on Hosted Weblate</a> to request "
@@ -888,19 +886,19 @@ msgstr ""
 "Weblate</a> për të kërkuar pritës. Do të keni nevojë për informacionin që "
 "vijon:"
 
-#: weblate_web/html/hosting.html:212
+#: weblate_web/html/hosting.html:203
 msgid "Information about your project."
 msgstr "Informacion rreth projektit tuaj."
 
-#: weblate_web/html/hosting.html:213
+#: weblate_web/html/hosting.html:204
 msgid "Project website."
 msgstr "Uebfaqja e projektit."
 
-#: weblate_web/html/hosting.html:218
+#: weblate_web/html/hosting.html:209
 msgid "Translation workflow"
 msgstr "Ecuria e përkthimit"
 
-#: weblate_web/html/hosting.html:221
+#: weblate_web/html/hosting.html:212
 msgid ""
 "All translated repositories are available at <code>git.weblate.org</code> "
 "with similar naming as on website - hello/master translation would be "
@@ -911,7 +909,7 @@ msgstr ""
 "master do të publikohej si <code>git://git.weblate.org/hello-master.git</"
 "code>."
 
-#: weblate_web/html/hosting.html:225
+#: weblate_web/html/hosting.html:216
 #, python-format
 msgid ""
 "Weblate can automatically receive changes from major code hosting services, "
@@ -923,7 +921,7 @@ msgstr ""
 "<a href=\"%(github)s\">GitHub</a>, <a href=\"%(bitbucket)s\">Bitbucket</a> "
 "ose <a href=\"%(gitlab)s\">GitLab</a>."
 
-#: weblate_web/html/hosting.html:229
+#: weblate_web/html/hosting.html:220
 #, python-format
 msgid ""
 "If you want Weblate to automatically push changes as well, add Weblate push "
@@ -935,11 +933,11 @@ msgstr ""
 "se e doni këtë opsion. Shiko <a href=\"%(docs)s\">dokumentacioni</a> për "
 "instruksione më të detajuara."
 
-#: weblate_web/html/hosting.html:232
+#: weblate_web/html/hosting.html:223
 msgid "Support free hosting"
 msgstr "Mbështet pritësin (hosting) falas"
 
-#: weblate_web/html/hosting.html:236
+#: weblate_web/html/hosting.html:227
 #, python-format
 msgid ""
 "The hosting is provided for free, but running the server and maintaining it "
@@ -951,11 +949,11 @@ msgstr ""
 "\">Gratipay</a> ose <a href=\"%(donate_url)s\">mënyra të tjera të dhurimit</"
 "a>."
 
-#: weblate_web/html/hosting.html:240
+#: weblate_web/html/hosting.html:231
 msgid "Self hosting"
 msgstr "Vetë pritës (hosting)"
 
-#: weblate_web/html/hosting.html:244
+#: weblate_web/html/hosting.html:235
 #, python-format
 msgid ""
 "You can also <a href=\"%(download_url)s\">download</a> Weblate sources and "
@@ -966,7 +964,7 @@ msgstr ""
 "Weblate dhe ekekutoni ato në sistemet tuaja. Ka edhe disa opsione për "
 "vendosjen e Weblate për retë (cloud)."
 
-#: weblate_web/html/hosting.html:248
+#: weblate_web/html/hosting.html:239
 #, python-format
 msgid ""
 "In case you need help with your self hosted solution, we're ready to help as "
@@ -984,10 +982,16 @@ msgid "Try our demo"
 msgstr "Provo demon tonë"
 
 #: weblate_web/html/index.html:15
+#, fuzzy
+#| msgid "Hosting plans"
+msgid "View hosting plans"
+msgstr "Planet e pritësit (hosting)"
+
+#: weblate_web/html/index.html:16
 msgid "Downloads"
 msgstr "Shkarkime"
 
-#: weblate_web/html/index.html:24
+#: weblate_web/html/index.html:25
 msgid ""
 "Weblate is a free web-based translation tool with tight version control "
 "integration. It features simple and clean user interface, propagation of "
@@ -999,15 +1003,15 @@ msgstr ""
 "përhap përkthimet përmes komponentëve, kontrollon cilësinë dhe lidhet "
 "automatikisht me filet e burimit."
 
-#: weblate_web/html/index.html:28
+#: weblate_web/html/index.html:29
 msgid "Weblate screenshot"
 msgstr "Foto ekrani nga Weblate"
 
-#: weblate_web/html/index.html:37
+#: weblate_web/html/index.html:38
 msgid "See more features…"
 msgstr "Shiko tipare më shumë…"
 
-#: weblate_web/html/index.html:46
+#: weblate_web/html/index.html:47
 msgid "See who is using Weblate and join them!"
 msgstr ""
 
@@ -1231,6 +1235,11 @@ msgstr "Brumbull burimesh, kompresuar si xz"
 #: weblate_web/templatetags/downloads.py:60
 msgid "Sources, zip compressed"
 msgstr "Burimet, kompresuar si zip"
+
+#, fuzzy
+#~| msgid "%(price)s EUR / month"
+#~ msgid "%(price)s EUR / year"
+#~ msgstr "%(price)s EUR / muaj"
 
 #~ msgid "Contact"
 #~ msgstr "Kontakti"

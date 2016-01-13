@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2015-12-22 11:47+0100\n"
+"POT-Creation-Date: 2016-01-13 07:56+0100\n"
 "PO-Revision-Date: 2015-12-22 17:13+0000\n"
 "Last-Translator: Dieter Adriaenssens <dieter.adriaenssens@gmail.com>\n"
-"Language-Team: Dutch "
-"<https://hosted.weblate.org/projects/weblate/website/nl/>\n"
+"Language-Team: Dutch <https://hosted.weblate.org/projects/weblate/website/nl/"
+">\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -630,11 +630,11 @@ msgstr ""
 msgid "Usually following information is needed:"
 msgstr "Meestal is de volgende informatie nodig :"
 
-#: weblate_web/html/hosting-ordered.html:18 weblate_web/html/hosting.html:214
+#: weblate_web/html/hosting-ordered.html:18 weblate_web/html/hosting.html:205
 msgid "URL of repository with translations."
 msgstr "URL van de repository met vertalingen."
 
-#: weblate_web/html/hosting-ordered.html:19 weblate_web/html/hosting.html:215
+#: weblate_web/html/hosting-ordered.html:19 weblate_web/html/hosting.html:206
 msgid "Path to translations within the repository."
 msgstr "Pad naar de vertalingen binnen de repository."
 
@@ -778,13 +778,12 @@ msgstr "%(price)s EUR / maand"
 msgid "Yearly (save 20%%)"
 msgstr "Jaarlijks (20%% korting)"
 
-#: weblate_web/html/hosting.html:163 weblate_web/html/hosting.html.py:166
-#: weblate_web/html/hosting.html:169 weblate_web/html/hosting.html.py:172
+#: weblate_web/html/hosting.html:163
 #, python-format
-msgid "%(price)s EUR / year"
-msgstr "%(price)s EUR / jaar"
+msgid "Ask us for yearly invoicing with 20%% discount."
+msgstr ""
 
-#: weblate_web/html/hosting.html:180
+#: weblate_web/html/hosting.html:171
 msgid ""
 "The pricing is based on number of source strings and number of target "
 "languages. The source string is a text unit defined in a translation format, "
@@ -794,7 +793,7 @@ msgstr ""
 "aantal talen. De tekenreeks is een teksteenheid die bepaald wordt door het "
 "vertaalformaat, het kan een woord, zin of een paragraaf zijn."
 
-#: weblate_web/html/hosting.html:184
+#: weblate_web/html/hosting.html:175
 msgid ""
 "The hosting setup is currently done manually, so you might want to get in "
 "touch with us prior to making subscription with your project details."
@@ -802,7 +801,7 @@ msgstr ""
 "Hosting wordt op dit moment manueel geconfigureerd, dus u neemt best contact "
 "met ons voordat u een aanvraag instuurt met de details van uw project."
 
-#: weblate_web/html/hosting.html:188
+#: weblate_web/html/hosting.html:179
 msgid ""
 "Alternatively we can accept payments by wire transfer (preferably IBAN) or "
 "Bitcoin. Please get in touch for more details."
@@ -810,11 +809,11 @@ msgstr ""
 "We aanvaarden ook overschrijvingen (bij voorkeur met IBAN) of Bitcoin. Neem "
 "contact met ons op voor meer details."
 
-#: weblate_web/html/hosting.html:191
+#: weblate_web/html/hosting.html:182
 msgid "Hosting for free software"
 msgstr "Huisvesting voor vrije software"
 
-#: weblate_web/html/hosting.html:194
+#: weblate_web/html/hosting.html:185
 msgid ""
 "If you are interested in using Weblate for your free software, you can ask "
 "us to be include on <a href=\"http://hosted.weblate.org/\">hosted.weblate."
@@ -826,11 +825,11 @@ msgstr ""
 "\">hosted.weblate.org</a>. Dit stelt u in staat Weblate te gebruiken zonder "
 "deze te installeren en te onderhouden."
 
-#: weblate_web/html/hosting.html:197
+#: weblate_web/html/hosting.html:188
 msgid "Conditions for free hosting"
 msgstr "Voorwaarden voor gratis hosting"
 
-#: weblate_web/html/hosting.html:200
+#: weblate_web/html/hosting.html:191
 msgid ""
 "Translated content has to be released under <a href=\"http://en.wikipedia."
 "org/wiki/Free_software_license\">free license</a>."
@@ -838,7 +837,7 @@ msgstr ""
 "Vertaalde inhoud moet worden vrijgegeven onder een <a href=\"http://en."
 "wikipedia.org/wiki/Free_software_license\">vrije licentie</a>."
 
-#: weblate_web/html/hosting.html:201
+#: weblate_web/html/hosting.html:192
 msgid ""
 "Source code has to be publicly available in a supported version control "
 "system."
@@ -846,15 +845,15 @@ msgstr ""
 "Broncode moet publiekelijk beschikbaar zijn in een ondersteund "
 "versiebeheersysteem."
 
-#: weblate_web/html/hosting.html:202
+#: weblate_web/html/hosting.html:193
 msgid "There is no guarantee for service availability or quality."
 msgstr "Geen garantie op beschikbaarheid of kwaliteit van de dienst."
 
-#: weblate_web/html/hosting.html:205
+#: weblate_web/html/hosting.html:196
 msgid "Asking for hosting"
 msgstr "Hosting aanvragen"
 
-#: weblate_web/html/hosting.html:208
+#: weblate_web/html/hosting.html:199
 #, python-format
 msgid ""
 "Please use <a href=\"%(url)s\">contact form on Hosted Weblate</a> to request "
@@ -863,19 +862,19 @@ msgstr ""
 "Gelieve het <a href=\"%(url)s\">contact formulier op gehoste Weblate</a> te "
 "gebruiken om hosting aan te vragen. Je hebt de volgende informatie nodig:"
 
-#: weblate_web/html/hosting.html:212
+#: weblate_web/html/hosting.html:203
 msgid "Information about your project."
 msgstr "Informatie over uw project."
 
-#: weblate_web/html/hosting.html:213
+#: weblate_web/html/hosting.html:204
 msgid "Project website."
 msgstr "Projectwebsite."
 
-#: weblate_web/html/hosting.html:218
+#: weblate_web/html/hosting.html:209
 msgid "Translation workflow"
 msgstr "Vertaalworkflow"
 
-#: weblate_web/html/hosting.html:221
+#: weblate_web/html/hosting.html:212
 msgid ""
 "All translated repositories are available at <code>git.weblate.org</code> "
 "with similar naming as on website - hello/master translation would be "
@@ -886,7 +885,7 @@ msgstr ""
 "master wordt gepubliceerd als <code>git://git.weblate.org/hello-master.git</"
 "code>."
 
-#: weblate_web/html/hosting.html:225
+#: weblate_web/html/hosting.html:216
 #, python-format
 msgid ""
 "Weblate can automatically receive changes from major code hosting services, "
@@ -898,7 +897,7 @@ msgstr ""
 "\"%(github)s\">GitHub</a>, <a href=\"%(bitbucket)s\">Bitbucket</a> of <a "
 "href=\"%(gitlab)s\">GitLab</a>."
 
-#: weblate_web/html/hosting.html:229
+#: weblate_web/html/hosting.html:220
 #, python-format
 msgid ""
 "If you want Weblate to automatically push changes as well, add Weblate push "
@@ -910,11 +909,11 @@ msgstr ""
 "dat u deze optie wenst te gebruiken. In de <a href=\"%(docs)s"
 "\">documentatie</a> vindt u detailleerde instructies."
 
-#: weblate_web/html/hosting.html:232
+#: weblate_web/html/hosting.html:223
 msgid "Support free hosting"
 msgstr "Ondersteun gratis hosting"
 
-#: weblate_web/html/hosting.html:236
+#: weblate_web/html/hosting.html:227
 #, python-format
 msgid ""
 "The hosting is provided for free, but running the server and maintaining it "
@@ -925,11 +924,11 @@ msgstr ""
 "geld, dus u mag altijd <a href=\"%(gittip_url)s\">Gratipay</a> of <a href="
 "\"%(donate_url)s\">andere manieren om te doneren</a> gebruiken."
 
-#: weblate_web/html/hosting.html:240
+#: weblate_web/html/hosting.html:231
 msgid "Self hosting"
 msgstr "Zelf hosten"
 
-#: weblate_web/html/hosting.html:244
+#: weblate_web/html/hosting.html:235
 #, python-format
 msgid ""
 "You can also <a href=\"%(download_url)s\">download</a> Weblate sources and "
@@ -940,7 +939,7 @@ msgstr ""
 "downloaden</a> en deze te installeren op uw eigen systemen. Er zijn ook "
 "verschillende mogelijkheden om Weblate in de cloud in te zetten."
 
-#: weblate_web/html/hosting.html:248
+#: weblate_web/html/hosting.html:239
 #, python-format
 msgid ""
 "In case you need help with your self hosted solution, we're ready to help as "
@@ -961,10 +960,16 @@ msgid "Try our demo"
 msgstr "Probeer onze demo"
 
 #: weblate_web/html/index.html:15
+#, fuzzy
+#| msgid "Hosting plans"
+msgid "View hosting plans"
+msgstr "Hosting formules"
+
+#: weblate_web/html/index.html:16
 msgid "Downloads"
 msgstr "Downloads"
 
-#: weblate_web/html/index.html:24
+#: weblate_web/html/index.html:25
 msgid ""
 "Weblate is a free web-based translation tool with tight version control "
 "integration. It features simple and clean user interface, propagation of "
@@ -976,15 +981,15 @@ msgstr ""
 "gebruikersinterface, verspreiding van vertalingen tussen onderdelen, "
 "kwaliteitscontroles en automatische koppeling met bronbestanden."
 
-#: weblate_web/html/index.html:28
+#: weblate_web/html/index.html:29
 msgid "Weblate screenshot"
 msgstr "Weblate-schermafdruk"
 
-#: weblate_web/html/index.html:37
+#: weblate_web/html/index.html:38
 msgid "See more features…"
 msgstr "Bekijk meer functies…"
 
-#: weblate_web/html/index.html:46
+#: weblate_web/html/index.html:47
 msgid "See who is using Weblate and join them!"
 msgstr "Ontdek wie er reeds Weblate gebruikt en voeg je erbij!"
 
@@ -1200,6 +1205,9 @@ msgstr "Broncode-tarball, xz-gecomprimeerd"
 #: weblate_web/templatetags/downloads.py:60
 msgid "Sources, zip compressed"
 msgstr "Broncode, gezipt"
+
+#~ msgid "%(price)s EUR / year"
+#~ msgstr "%(price)s EUR / jaar"
 
 #~ msgid "Contact"
 #~ msgstr "Contact"

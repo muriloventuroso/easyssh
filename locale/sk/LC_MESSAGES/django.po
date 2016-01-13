@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2015-12-22 11:47+0100\n"
+"POT-Creation-Date: 2016-01-13 07:56+0100\n"
 "PO-Revision-Date: 2015-12-21 23:33+0000\n"
 "Last-Translator: Martin Lacina <martin@whistler.sk>\n"
 "Language-Team: Slovak <https://hosted.weblate.org/projects/weblate/website/"
@@ -621,11 +621,11 @@ msgstr ""
 msgid "Usually following information is needed:"
 msgstr "Zvyčajne sú potrebné nasledujúce informácie:"
 
-#: weblate_web/html/hosting-ordered.html:18 weblate_web/html/hosting.html:214
+#: weblate_web/html/hosting-ordered.html:18 weblate_web/html/hosting.html:205
 msgid "URL of repository with translations."
 msgstr "URL repozitára s preklady."
 
-#: weblate_web/html/hosting-ordered.html:19 weblate_web/html/hosting.html:215
+#: weblate_web/html/hosting-ordered.html:19 weblate_web/html/hosting.html:206
 msgid "Path to translations within the repository."
 msgstr "Cesta k prekladom v repozitári."
 
@@ -762,13 +762,12 @@ msgstr "%(price)s EUR / mesiac"
 msgid "Yearly (save 20%%)"
 msgstr "Ročne (ušetríte 20%%)"
 
-#: weblate_web/html/hosting.html:163 weblate_web/html/hosting.html.py:166
-#: weblate_web/html/hosting.html:169 weblate_web/html/hosting.html.py:172
+#: weblate_web/html/hosting.html:163
 #, python-format
-msgid "%(price)s EUR / year"
-msgstr "%(price)s EUR / rok"
+msgid "Ask us for yearly invoicing with 20%% discount."
+msgstr ""
 
-#: weblate_web/html/hosting.html:180
+#: weblate_web/html/hosting.html:171
 msgid ""
 "The pricing is based on number of source strings and number of target "
 "languages. The source string is a text unit defined in a translation format, "
@@ -778,23 +777,23 @@ msgstr ""
 "Zdrojový text je textová jednotka definovaná v prekladovom formáte. Môže to "
 "byť slovo, veta alebo odstavec."
 
-#: weblate_web/html/hosting.html:184
+#: weblate_web/html/hosting.html:175
 msgid ""
 "The hosting setup is currently done manually, so you might want to get in "
 "touch with us prior to making subscription with your project details."
 msgstr ""
 
-#: weblate_web/html/hosting.html:188
+#: weblate_web/html/hosting.html:179
 msgid ""
 "Alternatively we can accept payments by wire transfer (preferably IBAN) or "
 "Bitcoin. Please get in touch for more details."
 msgstr ""
 
-#: weblate_web/html/hosting.html:191
+#: weblate_web/html/hosting.html:182
 msgid "Hosting for free software"
 msgstr "Hosťovanie slobodného softvéru"
 
-#: weblate_web/html/hosting.html:194
+#: weblate_web/html/hosting.html:185
 msgid ""
 "If you are interested in using Weblate for your free software, you can ask "
 "us to be include on <a href=\"http://hosted.weblate.org/\">hosted.weblate."
@@ -805,11 +804,11 @@ msgstr ""
 "zaradenie na <a href=\"http://hosted.weblate.org/\">hosted.weblate.org</a>. "
 "To Vám umožní používať Weblate bez nutnosti ho inštalovať a udržiavať."
 
-#: weblate_web/html/hosting.html:197
+#: weblate_web/html/hosting.html:188
 msgid "Conditions for free hosting"
 msgstr "Podmienky pre bezplatné hosťovanie"
 
-#: weblate_web/html/hosting.html:200
+#: weblate_web/html/hosting.html:191
 msgid ""
 "Translated content has to be released under <a href=\"http://en.wikipedia."
 "org/wiki/Free_software_license\">free license</a>."
@@ -817,22 +816,22 @@ msgstr ""
 "Prekladaný obsah musí byť vydaný pod <a href=\"http://en.wikipedia.org/wiki/"
 "Free_software_license\">slobodnou licenciou</a>."
 
-#: weblate_web/html/hosting.html:201
+#: weblate_web/html/hosting.html:192
 msgid ""
 "Source code has to be publicly available in a supported version control "
 "system."
 msgstr ""
 "Zdrojový kód musí byť verejne dostupný v podporovanom systéme správy revízií."
 
-#: weblate_web/html/hosting.html:202
+#: weblate_web/html/hosting.html:193
 msgid "There is no guarantee for service availability or quality."
 msgstr "Nie je poskytovaná žiadna záruka kvality alebo dostupnosti služieb."
 
-#: weblate_web/html/hosting.html:205
+#: weblate_web/html/hosting.html:196
 msgid "Asking for hosting"
 msgstr "Žiadosť o hosťovanie"
 
-#: weblate_web/html/hosting.html:208
+#: weblate_web/html/hosting.html:199
 #, python-format
 msgid ""
 "Please use <a href=\"%(url)s\">contact form on Hosted Weblate</a> to request "
@@ -841,19 +840,19 @@ msgstr ""
 "Použite prosím <a href=\"%(url)s\">kontaktný formulár na Hosted Weblate</a> "
 "pre žiadosť o hostovanie. Budete potrebovať nasledujúce informácie:"
 
-#: weblate_web/html/hosting.html:212
+#: weblate_web/html/hosting.html:203
 msgid "Information about your project."
 msgstr "Informácie o vašom projekte."
 
-#: weblate_web/html/hosting.html:213
+#: weblate_web/html/hosting.html:204
 msgid "Project website."
 msgstr "Webové stránky projektu."
 
-#: weblate_web/html/hosting.html:218
+#: weblate_web/html/hosting.html:209
 msgid "Translation workflow"
 msgstr "Priebeh prekladu"
 
-#: weblate_web/html/hosting.html:221
+#: weblate_web/html/hosting.html:212
 msgid ""
 "All translated repositories are available at <code>git.weblate.org</code> "
 "with similar naming as on website - hello/master translation would be "
@@ -863,7 +862,7 @@ msgstr ""
 "podobným menom ako na webe - preklad hello/master bude publikovaný na "
 "<code>git://git.weblate.org/hello-master.git</code>."
 
-#: weblate_web/html/hosting.html:225
+#: weblate_web/html/hosting.html:216
 #, python-format
 msgid ""
 "Weblate can automatically receive changes from major code hosting services, "
@@ -875,7 +874,7 @@ msgstr ""
 "a>, <a href=\"%(bitbucket)s\">Bitbucket</a> alebo <a href=\"%(gitlab)s"
 "\">GitLab</a>."
 
-#: weblate_web/html/hosting.html:229
+#: weblate_web/html/hosting.html:220
 #, python-format
 msgid ""
 "If you want Weblate to automatically push changes as well, add Weblate push "
@@ -883,11 +882,11 @@ msgid ""
 "href=\"%(docs)s\">documentation</a> for more detailed instructions."
 msgstr ""
 
-#: weblate_web/html/hosting.html:232
+#: weblate_web/html/hosting.html:223
 msgid "Support free hosting"
 msgstr "Podporte bezplatné hosťovanie"
 
-#: weblate_web/html/hosting.html:236
+#: weblate_web/html/hosting.html:227
 #, python-format
 msgid ""
 "The hosting is provided for free, but running the server and maintaining it "
@@ -899,11 +898,11 @@ msgstr ""
 "\"%(gittip_url)s\">Gratipayu</a> alebo <a href=\"%(donate_url)s\">akýmkoľvek "
 "iným spôsobom</a>."
 
-#: weblate_web/html/hosting.html:240
+#: weblate_web/html/hosting.html:231
 msgid "Self hosting"
 msgstr "Vlastný hosting"
 
-#: weblate_web/html/hosting.html:244
+#: weblate_web/html/hosting.html:235
 #, python-format
 msgid ""
 "You can also <a href=\"%(download_url)s\">download</a> Weblate sources and "
@@ -914,7 +913,7 @@ msgstr ""
 "Weblate a prevádzkovať ich na svojich systémoch. Existuje aj niekoľko "
 "možností pre prevádzovanie Weblate v cloude."
 
-#: weblate_web/html/hosting.html:248
+#: weblate_web/html/hosting.html:239
 #, python-format
 msgid ""
 "In case you need help with your self hosted solution, we're ready to help as "
@@ -932,10 +931,16 @@ msgid "Try our demo"
 msgstr "Vyskúšajte naše demo"
 
 #: weblate_web/html/index.html:15
+#, fuzzy
+#| msgid "Hosting plans"
+msgid "View hosting plans"
+msgstr "Hostingové balíčky"
+
+#: weblate_web/html/index.html:16
 msgid "Downloads"
 msgstr "Stiahnuť"
 
-#: weblate_web/html/index.html:24
+#: weblate_web/html/index.html:25
 msgid ""
 "Weblate is a free web-based translation tool with tight version control "
 "integration. It features simple and clean user interface, propagation of "
@@ -947,15 +952,15 @@ msgstr ""
 "umožňuje propagáciu prekladov medzi komponentami, kontrolu kvality prekladu "
 "alebo zobrazenie odkazov na zdrojové súbory."
 
-#: weblate_web/html/index.html:28
+#: weblate_web/html/index.html:29
 msgid "Weblate screenshot"
 msgstr "Obrázok Weblate"
 
-#: weblate_web/html/index.html:37
+#: weblate_web/html/index.html:38
 msgid "See more features…"
 msgstr "Ďalšie vlastnosti…"
 
-#: weblate_web/html/index.html:46
+#: weblate_web/html/index.html:47
 msgid "See who is using Weblate and join them!"
 msgstr "Pozrite sa, kto používa Weblate a pridajte sa k nim!"
 
@@ -1170,6 +1175,9 @@ msgstr "Zdrojový tarball, komprimovaný xz"
 #: weblate_web/templatetags/downloads.py:60
 msgid "Sources, zip compressed"
 msgstr "Zdrojové kódy, komprimované zipom"
+
+#~ msgid "%(price)s EUR / year"
+#~ msgstr "%(price)s EUR / rok"
 
 #~ msgid "Contact"
 #~ msgstr "Kontakt"

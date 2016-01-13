@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2015-12-22 11:47+0100\n"
+"POT-Creation-Date: 2016-01-13 07:56+0100\n"
 "PO-Revision-Date: 2015-12-16 21:36+0000\n"
 "Last-Translator: Vdragon, Ｖ字龍 <Vdragon.Taiwan@gmail.com>\n"
 "Language-Team: Traditional Chinese <https://hosted.weblate.org/projects/"
@@ -578,11 +578,11 @@ msgstr ""
 msgid "Usually following information is needed:"
 msgstr ""
 
-#: weblate_web/html/hosting-ordered.html:18 weblate_web/html/hosting.html:214
+#: weblate_web/html/hosting-ordered.html:18 weblate_web/html/hosting.html:205
 msgid "URL of repository with translations."
 msgstr "翻譯儲存庫的 URL。"
 
-#: weblate_web/html/hosting-ordered.html:19 weblate_web/html/hosting.html:215
+#: weblate_web/html/hosting-ordered.html:19 weblate_web/html/hosting.html:206
 msgid "Path to translations within the repository."
 msgstr "儲存庫中的翻譯檔路徑。"
 
@@ -719,36 +719,35 @@ msgstr "%(price)s EUR / 月\\"
 msgid "Yearly (save 20%%)"
 msgstr "每年 (省 20%%)"
 
-#: weblate_web/html/hosting.html:163 weblate_web/html/hosting.html.py:166
-#: weblate_web/html/hosting.html:169 weblate_web/html/hosting.html.py:172
+#: weblate_web/html/hosting.html:163
 #, python-format
-msgid "%(price)s EUR / year"
-msgstr "%(price)s EUR / 年"
+msgid "Ask us for yearly invoicing with 20%% discount."
+msgstr ""
 
-#: weblate_web/html/hosting.html:180
+#: weblate_web/html/hosting.html:171
 msgid ""
 "The pricing is based on number of source strings and number of target "
 "languages. The source string is a text unit defined in a translation format, "
 "it can be word, sentence or a paragraph."
 msgstr ""
 
-#: weblate_web/html/hosting.html:184
+#: weblate_web/html/hosting.html:175
 msgid ""
 "The hosting setup is currently done manually, so you might want to get in "
 "touch with us prior to making subscription with your project details."
 msgstr ""
 
-#: weblate_web/html/hosting.html:188
+#: weblate_web/html/hosting.html:179
 msgid ""
 "Alternatively we can accept payments by wire transfer (preferably IBAN) or "
 "Bitcoin. Please get in touch for more details."
 msgstr ""
 
-#: weblate_web/html/hosting.html:191
+#: weblate_web/html/hosting.html:182
 msgid "Hosting for free software"
 msgstr "自由軟體主機"
 
-#: weblate_web/html/hosting.html:194
+#: weblate_web/html/hosting.html:185
 msgid ""
 "If you are interested in using Weblate for your free software, you can ask "
 "us to be include on <a href=\"http://hosted.weblate.org/\">hosted.weblate."
@@ -759,11 +758,11 @@ msgstr ""
 "\"http://hosted.weblate.org/\">hosted.weblate.org</a>上。這允許您使用 "
 "Weblate，而且不需要安裝和維護它。"
 
-#: weblate_web/html/hosting.html:197
+#: weblate_web/html/hosting.html:188
 msgid "Conditions for free hosting"
 msgstr "免費主機的條件"
 
-#: weblate_web/html/hosting.html:200
+#: weblate_web/html/hosting.html:191
 msgid ""
 "Translated content has to be released under <a href=\"http://en.wikipedia."
 "org/wiki/Free_software_license\">free license</a>."
@@ -771,21 +770,21 @@ msgstr ""
 "已翻譯的內容必須在 <a href=\"http://en.wikipedia.org/wiki/"
 "Free_software_license\">free license</a> 之下發行。"
 
-#: weblate_web/html/hosting.html:201
+#: weblate_web/html/hosting.html:192
 msgid ""
 "Source code has to be publicly available in a supported version control "
 "system."
 msgstr "原始程式碼必須公開地提供支援版本控制系統。"
 
-#: weblate_web/html/hosting.html:202
+#: weblate_web/html/hosting.html:193
 msgid "There is no guarantee for service availability or quality."
 msgstr "在那方面是不能保證服務的有效性和品質。"
 
-#: weblate_web/html/hosting.html:205
+#: weblate_web/html/hosting.html:196
 msgid "Asking for hosting"
 msgstr "詢問主機"
 
-#: weblate_web/html/hosting.html:208
+#: weblate_web/html/hosting.html:199
 #, python-format
 msgid ""
 "Please use <a href=\"%(url)s\">contact form on Hosted Weblate</a> to request "
@@ -794,26 +793,26 @@ msgstr ""
 "請使用 <a href=\"%(url)s\">於 Hosted Weblate 的聯絡表單</a> 來請求主機代管，"
 "您會需要以下資訊："
 
-#: weblate_web/html/hosting.html:212
+#: weblate_web/html/hosting.html:203
 msgid "Information about your project."
 msgstr "關於您的專案的資訊。"
 
-#: weblate_web/html/hosting.html:213
+#: weblate_web/html/hosting.html:204
 msgid "Project website."
 msgstr "專案網站。"
 
-#: weblate_web/html/hosting.html:218
+#: weblate_web/html/hosting.html:209
 msgid "Translation workflow"
 msgstr "翻譯工作流程"
 
-#: weblate_web/html/hosting.html:221
+#: weblate_web/html/hosting.html:212
 msgid ""
 "All translated repositories are available at <code>git.weblate.org</code> "
 "with similar naming as on website - hello/master translation would be "
 "published as <code>git://git.weblate.org/hello-master.git</code>."
 msgstr ""
 
-#: weblate_web/html/hosting.html:225
+#: weblate_web/html/hosting.html:216
 #, python-format
 msgid ""
 "Weblate can automatically receive changes from major code hosting services, "
@@ -821,7 +820,7 @@ msgid ""
 "href=\"%(bitbucket)s\">Bitbucket</a> or <a href=\"%(gitlab)s\">GitLab</a>."
 msgstr ""
 
-#: weblate_web/html/hosting.html:229
+#: weblate_web/html/hosting.html:220
 #, python-format
 msgid ""
 "If you want Weblate to automatically push changes as well, add Weblate push "
@@ -829,11 +828,11 @@ msgid ""
 "href=\"%(docs)s\">documentation</a> for more detailed instructions."
 msgstr ""
 
-#: weblate_web/html/hosting.html:232
+#: weblate_web/html/hosting.html:223
 msgid "Support free hosting"
 msgstr "支援免費主機"
 
-#: weblate_web/html/hosting.html:236
+#: weblate_web/html/hosting.html:227
 #, python-format
 msgid ""
 "The hosting is provided for free, but running the server and maintaining it "
@@ -844,13 +843,13 @@ msgstr ""
 "\"%(gittip_url)s\">Gratipay</a> 或以 <a href=\"%(donate_url)s\"> 其他方式捐贈"
 "</a>。"
 
-#: weblate_web/html/hosting.html:240
+#: weblate_web/html/hosting.html:231
 #, fuzzy
 #| msgid "Ask for hosting"
 msgid "Self hosting"
 msgstr "詢問主機代管"
 
-#: weblate_web/html/hosting.html:244
+#: weblate_web/html/hosting.html:235
 #, python-format
 msgid ""
 "You can also <a href=\"%(download_url)s\">download</a> Weblate sources and "
@@ -858,7 +857,7 @@ msgid ""
 "to the cloud."
 msgstr ""
 
-#: weblate_web/html/hosting.html:248
+#: weblate_web/html/hosting.html:239
 #, python-format
 msgid ""
 "In case you need help with your self hosted solution, we're ready to help as "
@@ -876,10 +875,16 @@ msgid "Try our demo"
 msgstr "試用我們的示範"
 
 #: weblate_web/html/index.html:15
+#, fuzzy
+#| msgid "Hosting plans"
+msgid "View hosting plans"
+msgstr "提供服務計畫"
+
+#: weblate_web/html/index.html:16
 msgid "Downloads"
 msgstr "下載"
 
-#: weblate_web/html/index.html:24
+#: weblate_web/html/index.html:25
 msgid ""
 "Weblate is a free web-based translation tool with tight version control "
 "integration. It features simple and clean user interface, propagation of "
@@ -889,15 +894,15 @@ msgstr ""
 "Weblate 是一款以網站為基礎的翻譯工具，與版本控制緊密的整合。它特點是有單純和"
 "簡潔的使用者界面，翻譯組成元件橫越傳輸、品質的查核以及自動連接到源文檔。"
 
-#: weblate_web/html/index.html:28
+#: weblate_web/html/index.html:29
 msgid "Weblate screenshot"
 msgstr "Weblate 螢幕截圖"
 
-#: weblate_web/html/index.html:37
+#: weblate_web/html/index.html:38
 msgid "See more features…"
 msgstr "了解更多的功能…"
 
-#: weblate_web/html/index.html:46
+#: weblate_web/html/index.html:47
 msgid "See who is using Weblate and join them!"
 msgstr ""
 
@@ -1097,6 +1102,9 @@ msgstr "源碼  tarball， xz 壓縮"
 #: weblate_web/templatetags/downloads.py:60
 msgid "Sources, zip compressed"
 msgstr "源碼，zip 壓縮"
+
+#~ msgid "%(price)s EUR / year"
+#~ msgstr "%(price)s EUR / 年"
 
 #~ msgid "Contact"
 #~ msgstr "連絡人"
