@@ -12,6 +12,7 @@
 {% block extrajumbo %}
 <p>
 <a class="btn btn-primary btn-lg" href="http://demo.weblate.org/" role="button"><i class="fa fa-search"></i> {% trans "Try our demo" %}</a>
+<a class="btn btn-primary btn-lg" href="{% url 'hosting' %}" role="button"><i class="fa fa-server"></i> {% trans "View hosting plans" %}</a>
 <a class="btn btn-primary btn-lg" href="{% url 'download' %}" role="button"><i class="fa fa-download"></i> {% trans "Downloads" %}</a>
 </p>
 {% endblock %}
