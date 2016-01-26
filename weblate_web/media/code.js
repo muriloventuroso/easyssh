@@ -27,4 +27,5 @@ $(function () {
         height: '100%',
         current: '{current}/{total}'
     });
+    $('[data-toggle="tooltip"]').tooltip()
 });
