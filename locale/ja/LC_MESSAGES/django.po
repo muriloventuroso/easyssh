@@ -6,11 +6,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: weblate-website-ja\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2016-01-13 07:56+0100\n"
+"POT-Creation-Date: 2016-01-26 11:27+0100\n"
 "PO-Revision-Date: 2016-01-13 08:02+0000\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
-"Language-Team: Japanese "
-"<https://hosted.weblate.org/projects/weblate/website/ja/>\n"
+"Language-Team: Japanese <https://hosted.weblate.org/projects/weblate/website/"
+"ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -634,11 +634,11 @@ msgstr ""
 msgid "Usually following information is needed:"
 msgstr "通常は下記の情報が必要となります:"
 
-#: weblate_web/html/hosting-ordered.html:18 weblate_web/html/hosting.html:205
+#: weblate_web/html/hosting-ordered.html:18 weblate_web/html/hosting.html:221
 msgid "URL of repository with translations."
 msgstr "訳文を含むリポジトリの URL。"
 
-#: weblate_web/html/hosting-ordered.html:19 weblate_web/html/hosting.html:206
+#: weblate_web/html/hosting-ordered.html:19 weblate_web/html/hosting.html:222
 msgid "Path to translations within the repository."
 msgstr "リポジトリ内の翻訳へのパス。"
 
@@ -698,6 +698,20 @@ msgstr "アドバンスド"
 msgctxt "Hosting plan"
 msgid "Enterprise"
 msgstr "エンタープライズ"
+
+#: weblate_web/html/hosting.html:45
+#, fuzzy
+#| msgid ""
+#| "The pricing is based on number of source strings and number of target "
+#| "languages. The source string is a text unit defined in a translation "
+#| "format, it can be word, sentence or a paragraph."
+msgid ""
+"Text unit defined in a translation format, it can be word, sentence or a "
+"paragraph"
+msgstr ""
+"価格は原文とターゲットとなる言語の数をベースにしています。原文の個数は、翻訳"
+"に使用するファイル内で定義されるテキスト単位ごとに 1 つとなります。そのため、"
+"単語／文章／段落のいずれかを 1 つと数えることになります。"
 
 #: weblate_web/html/hosting.html:45
 msgid "Source strings"
@@ -761,34 +775,52 @@ msgid "Translation processing"
 msgstr "翻訳の処理"
 
 #: weblate_web/html/hosting.html:133
+msgid "Priority email suport"
+msgstr ""
+
+#: weblate_web/html/hosting.html:141
+#, fuzzy
+#| msgid "Branches support"
+msgid "Phone suport"
+msgstr "ブランチのサポート"
+
+#: weblate_web/html/hosting.html:149
+msgid "Custom domain name with SSL"
+msgstr ""
+
+#: weblate_web/html/hosting.html:149
 msgid "Own domain"
 msgstr ""
 
-#: weblate_web/html/hosting.html:143
+#: weblate_web/html/hosting.html:154
+msgid "Available on request"
+msgstr ""
+
+#: weblate_web/html/hosting.html:159
 msgid "Monthly"
 msgstr "月額"
 
-#: weblate_web/html/hosting.html:145
+#: weblate_web/html/hosting.html:161
 msgid "Contact us"
 msgstr "連絡先"
 
-#: weblate_web/html/hosting.html:148 weblate_web/html/hosting.html.py:151
-#: weblate_web/html/hosting.html:154 weblate_web/html/hosting.html.py:157
+#: weblate_web/html/hosting.html:164 weblate_web/html/hosting.html.py:167
+#: weblate_web/html/hosting.html:170 weblate_web/html/hosting.html.py:173
 #, python-format
 msgid "%(price)s EUR / month"
 msgstr "%(price)s ユーロ／月"
 
-#: weblate_web/html/hosting.html:161
+#: weblate_web/html/hosting.html:177
 #, python-format
 msgid "Yearly (save 20%%)"
 msgstr "年額 (20%% 割引)"
 
-#: weblate_web/html/hosting.html:163
+#: weblate_web/html/hosting.html:179
 #, python-format
 msgid "Ask us for yearly invoicing with 20%% discount."
 msgstr ""
 
-#: weblate_web/html/hosting.html:171
+#: weblate_web/html/hosting.html:187
 msgid ""
 "The pricing is based on number of source strings and number of target "
 "languages. The source string is a text unit defined in a translation format, "
@@ -798,7 +830,7 @@ msgstr ""
 "に使用するファイル内で定義されるテキスト単位ごとに 1 つとなります。そのため、"
 "単語／文章／段落のいずれかを 1 つと数えることになります。"
 
-#: weblate_web/html/hosting.html:175
+#: weblate_web/html/hosting.html:191
 msgid ""
 "The hosting setup is currently done manually, so you might want to get in "
 "touch with us prior to making subscription with your project details."
@@ -807,7 +839,7 @@ msgstr ""
 "ため、プロジェクトの詳細をお尋ねして購読を開始する前に、まずはご連絡いただく"
 "ことをお勧めします。"
 
-#: weblate_web/html/hosting.html:179
+#: weblate_web/html/hosting.html:195
 msgid ""
 "Alternatively we can accept payments by wire transfer (preferably IBAN) or "
 "Bitcoin. Please get in touch for more details."
@@ -815,11 +847,11 @@ msgstr ""
 "それ以外にも、直接送金 (IBAN が望ましいです) やビットコインなどでのお支払いも"
 "お受けしております。詳しくはお問い合わせください。"
 
-#: weblate_web/html/hosting.html:182
+#: weblate_web/html/hosting.html:198
 msgid "Hosting for free software"
 msgstr "フリーソフトウェア向けのホスティング"
 
-#: weblate_web/html/hosting.html:185
+#: weblate_web/html/hosting.html:201
 msgid ""
 "If you are interested in using Weblate for your free software, you can ask "
 "us to be include on <a href=\"http://hosted.weblate.org/\">hosted.weblate."
@@ -831,11 +863,11 @@ msgstr ""
 "org</a> への登録をご依頼ください。これによって、インストールやメンテナンスの"
 "手間なく Weblate を使用することができます。"
 
-#: weblate_web/html/hosting.html:188
+#: weblate_web/html/hosting.html:204
 msgid "Conditions for free hosting"
 msgstr "無料ホスティングの条件"
 
-#: weblate_web/html/hosting.html:191
+#: weblate_web/html/hosting.html:207
 msgid ""
 "Translated content has to be released under <a href=\"http://en.wikipedia."
 "org/wiki/Free_software_license\">free license</a>."
@@ -843,7 +875,7 @@ msgstr ""
 "翻訳された内容は、<a href=\"http://en.wikipedia.org/wiki/"
 "Free_software_license\">自由なライセンス</a>でリリースされる必要があります。"
 
-#: weblate_web/html/hosting.html:192
+#: weblate_web/html/hosting.html:208
 msgid ""
 "Source code has to be publicly available in a supported version control "
 "system."
@@ -851,15 +883,15 @@ msgstr ""
 "ソースコードは、サポートされているバージョン管理システムで公開されている必要"
 "があります。"
 
-#: weblate_web/html/hosting.html:193
+#: weblate_web/html/hosting.html:209
 msgid "There is no guarantee for service availability or quality."
 msgstr "サービスの可用性と品質に保証はありません。"
 
-#: weblate_web/html/hosting.html:196
+#: weblate_web/html/hosting.html:212
 msgid "Asking for hosting"
 msgstr "ホスティングの依頼"
 
-#: weblate_web/html/hosting.html:199
+#: weblate_web/html/hosting.html:215
 #, python-format
 msgid ""
 "Please use <a href=\"%(url)s\">contact form on Hosted Weblate</a> to request "
@@ -868,19 +900,19 @@ msgstr ""
 "ホスティングの依頼は <a href=\"%(url)s\">Hosted Weblate 連絡フォーム</a> をお"
 "使いください。なお、下記の情報をご提供ください:"
 
-#: weblate_web/html/hosting.html:203
+#: weblate_web/html/hosting.html:219
 msgid "Information about your project."
 msgstr "プロジェクトについての情報。"
 
-#: weblate_web/html/hosting.html:204
+#: weblate_web/html/hosting.html:220
 msgid "Project website."
 msgstr "プロジェクトのウェブサイト。"
 
-#: weblate_web/html/hosting.html:209
+#: weblate_web/html/hosting.html:225
 msgid "Translation workflow"
 msgstr "翻訳のワークフロー"
 
-#: weblate_web/html/hosting.html:212
+#: weblate_web/html/hosting.html:228
 msgid ""
 "All translated repositories are available at <code>git.weblate.org</code> "
 "with similar naming as on website - hello/master translation would be "
@@ -890,7 +922,7 @@ msgstr ""
 "たような名前で利用できます。例えば、hello/master 翻訳は <code>git://git."
 "weblate.org/hello-master.git</code>として公開されます。"
 
-#: weblate_web/html/hosting.html:216
+#: weblate_web/html/hosting.html:232
 #, python-format
 msgid ""
 "Weblate can automatically receive changes from major code hosting services, "
@@ -902,7 +934,7 @@ msgstr ""
 "\">GitHub</a>, <a href=\"%(bitbucket)s\">Bitbucket</a>, <a href=\"%(gitlab)s"
 "\">GitLab</a> の各ドキュメンテーションをお読みください。"
 
-#: weblate_web/html/hosting.html:220
+#: weblate_web/html/hosting.html:236
 #, python-format
 msgid ""
 "If you want Weblate to automatically push changes as well, add Weblate push "
@@ -914,11 +946,11 @@ msgstr ""
 "さい。詳しい手順については <a href=\"%(docs)s\">ドキュメンテーション</a> をお"
 "読みください。"
 
-#: weblate_web/html/hosting.html:223
+#: weblate_web/html/hosting.html:239
 msgid "Support free hosting"
 msgstr "無料ホスティングを支援する"
 
-#: weblate_web/html/hosting.html:227
+#: weblate_web/html/hosting.html:243
 #, python-format
 msgid ""
 "The hosting is provided for free, but running the server and maintaining it "
@@ -929,11 +961,11 @@ msgstr ""
 "かかります。そのため、 <a href=\"%(gittip_url)s\">Gratipay</a> や <a href="
 "\"%(donate_url)s\">他の方法</a> によるご寄付をお願いしております。"
 
-#: weblate_web/html/hosting.html:231
+#: weblate_web/html/hosting.html:247
 msgid "Self hosting"
 msgstr "独自ホスティング"
 
-#: weblate_web/html/hosting.html:235
+#: weblate_web/html/hosting.html:251
 #, python-format
 msgid ""
 "You can also <a href=\"%(download_url)s\">download</a> Weblate sources and "
@@ -944,7 +976,7 @@ msgstr ""
 "お使いのシステムで動作させることもできます。また、クラウド内に Weblate を配置"
 "したい場合は、いくつかの選択肢があります。"
 
-#: weblate_web/html/hosting.html:239
+#: weblate_web/html/hosting.html:255
 #, python-format
 msgid ""
 "In case you need help with your self hosted solution, we're ready to help as "
@@ -965,7 +997,6 @@ msgid "Try our demo"
 msgstr "デモを試す"
 
 #: weblate_web/html/index.html:15
-#| msgid "Hosting plans"
 msgid "View hosting plans"
 msgstr "ホスティングプランの表示"
 
