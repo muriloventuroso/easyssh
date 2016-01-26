@@ -42,7 +42,7 @@
         <td class="text-success"><i class="fa fa-check-circle"></i></td>
       </tr>
       <tr>
-        <th>{% trans "Source strings" %}</th>
+        <th><abbr data-toggle="tooltip" data-placement="bottom" title="{% trans "Text unit defined in a translation format, it can be word, sentence or a paragraph" %}">{% trans "Source strings" %}</abbr></th>
         <td>{% trans "Negotiable" %}</td>
         <td>1000</td>
         <td>3000</td>
@@ -91,7 +91,7 @@
       </tr>
       <tr>
         <th><a href="https://docs.weblate.org/en/latest/admin/access.html#managing-per-project-access-control">{% trans "User management" %}</a></th>
-        <td><i class="fa fa-times-circle"></i></td>
+        <td class="text-danger"><i class="fa fa-times-circle"></i></td>
         <td class="text-success"><i class="fa fa-check-circle"></i></td>
         <td class="text-success"><i class="fa fa-check-circle"></i></td>
         <td class="text-success"><i class="fa fa-check-circle"></i></td>
@@ -130,12 +130,28 @@
         <td class="text-success"><i class="fa fa-check-circle"></i></td>
       </tr>
       <tr>
-        <th>{% trans "Own domain" %}</th>
-        <td><i class="fa fa-times-circle"></i></td>
-        <td><i class="fa fa-times-circle"></i></td>
-        <td><i class="fa fa-times-circle"></i></td>
-        <td><i class="fa fa-times-circle"></i></td>
+        <th>{% trans "Priority email suport" %}</th>
+        <td class="text-danger"><i class="fa fa-times-circle"></i></td>
         <td class="text-success"><i class="fa fa-check-circle"></i></td>
+        <td class="text-success"><i class="fa fa-check-circle"></i></td>
+        <td class="text-success"><i class="fa fa-check-circle"></i></td>
+        <td class="text-success"><i class="fa fa-check-circle"></i></td>
+      </tr>
+      <tr>
+        <th>{% trans "Phone suport" %}</th>
+        <td class="text-danger"><i class="fa fa-times-circle"></i></td>
+        <td class="text-danger"><i class="fa fa-times-circle"></i></td>
+        <td class="text-danger"><i class="fa fa-times-circle"></i></td>
+        <td class="text-success"><i class="fa fa-check-circle"></i></td>
+        <td class="text-success"><i class="fa fa-check-circle"></i></td>
+      </tr>
+      <tr>
+        <th><abbr data-toggle="tooltip" data-placement="bottom" title="{% trans "Custom domain name with SSL" %}">{% trans "Own domain" %}</abbr></th>
+        <td class="text-danger"><i class="fa fa-times-circle"></i></td>
+        <td class="text-danger"><i class="fa fa-times-circle"></i></td>
+        <td class="text-danger"><i class="fa fa-times-circle"></i></td>
+        <td class="text-danger"><i class="fa fa-times-circle"></i></td>
+        <td class="text-success"><i data-toggle="tooltip" data-placement="bottom" title="{% trans "Available on request" %}" class="fa fa-question-circle"></i></td>
       </tr>
     </tbody>
     <tfoot>
