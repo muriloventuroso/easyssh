@@ -7,6 +7,8 @@
 {% endblock %}
 {% block content %}
 
+<div class="row">
+<div class="col-md-6">
 <h2>{% trans "Technology" %}</h2>
 
 <p>{% trans "The development of Weblate is based on the following technologies:" %}</p>
@@ -30,5 +32,17 @@
 <h3><a href="https://hosted.weblate.org/"><img src="/media/weblate-button.png" alt="Weblate" /></a></h3>
 
 <p>{% trans "Our translations are being done on Hosted Weblate." %}</p>
+</div>
 
+<div class="col-md-6">
+<h2>{% trans "Sponsors" %}</h2>
+
+<p>{% trans "Free hosting for free software projects would be impossible without our sponsors." %}</a>
+
+<p><a href="https://salt.bountysource.com/teams/weblate">{% trans "Support our project on Bountysource Salt and get exclusive logo placement on this page." %}</a></p>
+
+
+</div>
+
+</div>
 {% endblock %}
