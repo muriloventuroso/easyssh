@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2016-02-02 12:42+0100\n"
+"POT-Creation-Date: 2016-02-10 10:03+0100\n"
 "PO-Revision-Date: 2015-09-13 10:06+0200\n"
 "Last-Translator: samuvuo <samuvuo@gmail.com>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/weblate/website/"
@@ -626,11 +626,11 @@ msgstr ""
 msgid "Usually following information is needed:"
 msgstr ""
 
-#: weblate_web/html/hosting-ordered.html:18 weblate_web/html/hosting.html:221
+#: weblate_web/html/hosting-ordered.html:18 weblate_web/html/hosting.html:230
 msgid "URL of repository with translations."
 msgstr "URL osoite käännösten arkistoon."
 
-#: weblate_web/html/hosting-ordered.html:19 weblate_web/html/hosting.html:222
+#: weblate_web/html/hosting-ordered.html:19 weblate_web/html/hosting.html:231
 msgid "Path to translations within the repository."
 msgstr "Polku käännökset arkistossa."
 
@@ -787,8 +787,10 @@ msgid "Available on request"
 msgstr ""
 
 #: weblate_web/html/hosting.html:159
-msgid "Monthly"
-msgstr ""
+#, fuzzy
+#| msgid "Donate using PayPal"
+msgid "Monthly by PayPal"
+msgstr "Lahjoita PayPalin avulla"
 
 #: weblate_web/html/hosting.html:161
 msgid "Contact us"
@@ -802,38 +804,44 @@ msgstr ""
 
 #: weblate_web/html/hosting.html:177
 #, python-format
-msgid "Yearly (save 20%%)"
+msgid "Yearly by invoice (save 15-20%%)"
 msgstr ""
 
-#: weblate_web/html/hosting.html:179
+#: weblate_web/html/hosting.html:179 weblate_web/html/hosting.html.py:182
+#: weblate_web/html/hosting.html:185 weblate_web/html/hosting.html.py:188
+msgid "Ask us for yearly invoicing with discount."
+msgstr ""
+
+#: weblate_web/html/hosting.html:179 weblate_web/html/hosting.html.py:182
+#: weblate_web/html/hosting.html:185 weblate_web/html/hosting.html.py:188
 #, python-format
-msgid "Ask us for yearly invoicing with 20%% discount."
+msgid "%(price)s EUR / year"
 msgstr ""
 
-#: weblate_web/html/hosting.html:187
+#: weblate_web/html/hosting.html:196
 msgid ""
 "The pricing is based on number of source strings and number of target "
 "languages. The source string is a text unit defined in a translation format, "
 "it can be word, sentence or a paragraph."
 msgstr ""
 
-#: weblate_web/html/hosting.html:191
+#: weblate_web/html/hosting.html:200
 msgid ""
 "The hosting setup is currently done manually, so you might want to get in "
 "touch with us prior to making subscription with your project details."
 msgstr ""
 
-#: weblate_web/html/hosting.html:195
+#: weblate_web/html/hosting.html:204
 msgid ""
 "Alternatively we can accept payments by wire transfer (preferably IBAN) or "
 "Bitcoin. Please get in touch for more details."
 msgstr ""
 
-#: weblate_web/html/hosting.html:198
+#: weblate_web/html/hosting.html:207
 msgid "Hosting for free software"
 msgstr "Hostaus ilmaiselle ohjelmistolle"
 
-#: weblate_web/html/hosting.html:201
+#: weblate_web/html/hosting.html:210
 msgid ""
 "If you are interested in using Weblate for your free software, you can ask "
 "us to be include on <a href=\"http://hosted.weblate.org/\">hosted.weblate."
@@ -845,11 +853,11 @@ msgstr ""
 "weblate.org</a>. Näin voit käyttää Weblatea ilman että asennat ja ylläpidät "
 "sitä."
 
-#: weblate_web/html/hosting.html:204
+#: weblate_web/html/hosting.html:213
 msgid "Conditions for free hosting"
 msgstr "Edellytykset ilmaiseen hostaukseen"
 
-#: weblate_web/html/hosting.html:207
+#: weblate_web/html/hosting.html:216
 msgid ""
 "Translated content has to be released under <a href=\"http://en.wikipedia."
 "org/wiki/Free_software_license\">free license</a>."
@@ -858,41 +866,41 @@ msgstr ""
 "\"http://en.wikipedia.org/wiki/Free_software_license\"> ilmainen lisenssi</"
 "a>."
 
-#: weblate_web/html/hosting.html:208
+#: weblate_web/html/hosting.html:217
 msgid ""
 "Source code has to be publicly available in a supported version control "
 "system."
 msgstr ""
 "Lähdekoodi on julkisesti saatavilla tuetussa versionhallintajärjestelmässä."
 
-#: weblate_web/html/hosting.html:209
+#: weblate_web/html/hosting.html:218
 msgid "There is no guarantee for service availability or quality."
 msgstr "Ei ole takeita palvelun saatavuudelle tai laadulle."
 
-#: weblate_web/html/hosting.html:212
+#: weblate_web/html/hosting.html:221
 msgid "Asking for hosting"
 msgstr "Pyydä hostausta"
 
-#: weblate_web/html/hosting.html:215
+#: weblate_web/html/hosting.html:224
 #, python-format
 msgid ""
 "Please use <a href=\"%(url)s\">contact form on Hosted Weblate</a> to request "
 "hosting. You will need following information:"
 msgstr ""
 
-#: weblate_web/html/hosting.html:219
+#: weblate_web/html/hosting.html:228
 msgid "Information about your project."
 msgstr "Projektisi tiedot."
 
-#: weblate_web/html/hosting.html:220
+#: weblate_web/html/hosting.html:229
 msgid "Project website."
 msgstr "Projektin verkkosivu."
 
-#: weblate_web/html/hosting.html:225
+#: weblate_web/html/hosting.html:234
 msgid "Translation workflow"
 msgstr "Käännöksen työnkulku"
 
-#: weblate_web/html/hosting.html:228
+#: weblate_web/html/hosting.html:237
 msgid ""
 "All translated repositories are available at <code>git.weblate.org</code> "
 "with similar naming as on website - hello/master translation would be "
@@ -903,7 +911,7 @@ msgstr ""
 "käännös julkaistaan sivulla <code>git://git.weblate.org/hello-master.git</"
 "code>."
 
-#: weblate_web/html/hosting.html:232
+#: weblate_web/html/hosting.html:241
 #, python-format
 msgid ""
 "Weblate can automatically receive changes from major code hosting services, "
@@ -911,7 +919,7 @@ msgid ""
 "href=\"%(bitbucket)s\">Bitbucket</a> or <a href=\"%(gitlab)s\">GitLab</a>."
 msgstr ""
 
-#: weblate_web/html/hosting.html:236
+#: weblate_web/html/hosting.html:245
 #, python-format
 msgid ""
 "If you want Weblate to automatically push changes as well, add Weblate push "
@@ -919,11 +927,11 @@ msgid ""
 "href=\"%(docs)s\">documentation</a> for more detailed instructions."
 msgstr ""
 
-#: weblate_web/html/hosting.html:239
+#: weblate_web/html/hosting.html:248
 msgid "Support free hosting"
 msgstr "Tue ilmaista hostausta"
 
-#: weblate_web/html/hosting.html:243
+#: weblate_web/html/hosting.html:252
 #, python-format
 msgid ""
 "The hosting is provided for free, but running the server and maintaining it "
@@ -934,13 +942,13 @@ msgstr ""
 "joten olet tervetullut käyttämään <a href=\"%(gittip_url)s\"> Gratipayiä</a> "
 "tai <a href=\"%(donate_url)s\"> muita tapoja lahjoittaaksesi rahaa</a>."
 
-#: weblate_web/html/hosting.html:247
+#: weblate_web/html/hosting.html:256
 #, fuzzy
 #| msgid "Asking for hosting"
 msgid "Self hosting"
 msgstr "Pyydä hostausta"
 
-#: weblate_web/html/hosting.html:251
+#: weblate_web/html/hosting.html:260
 #, fuzzy, python-format
 #| msgid ""
 #| "Check our <a href=\"%(download_url)s\">download page</a> for appliances, "
@@ -953,7 +961,7 @@ msgstr ""
 "Tutustu <a href=\"%(download_url)s\">lataussivulla</a> ohjelmiin, jotka "
 "tarjoavat helpon tavan käyttää Weblatea pilvipalvelussa."
 
-#: weblate_web/html/hosting.html:255
+#: weblate_web/html/hosting.html:264
 #, python-format
 msgid ""
 "In case you need help with your self hosted solution, we're ready to help as "
