@@ -156,8 +156,8 @@
     </tbody>
     <tfoot>
       <tr>
-        <th>{% trans "Monthly" %}</th>
-        <td class="price">
+        <th>{% trans "Monthly by PayPal" %}</th>
+        <td class="price" rowspan="2">
         <a class="btn btn-primary" href="https://hosted.weblate.org/hosting/">{% trans "Contact us" %}</a>
         </td>
         <td class="price">
@@ -174,9 +174,18 @@
         </td>
       </tr>
       <tr>
-        <th>{% trans "Yearly (save 20%)" %}</th>
-        <td class="price" colspan="5">
-        <a href="mailto:michal@cihar.com?subject=Weblate invoicing">{% trans "Ask us for yearly invoicing with 20% discount." %}</a>
+        <th>{% trans "Yearly by invoice (save 15-20%)" %}</th>
+        <td class="price">
+        <a class="btn btn-primary" title="{% trans "Ask us for yearly invoicing with discount." %}" href="mailto:michal@cihar.com?subject=Weblate hosting invoice (Basic)">{% blocktrans with 199 as price %}{{ price }} EUR / year{% endblocktrans %}
+        </td>
+        <td class="price">
+        <a class="btn btn-primary" title="{% trans "Ask us for yearly invoicing with discount." %}" href="mailto:michal@cihar.com?subject=Weblate hosting invoice (Medium)">{% blocktrans with 499 as price %}{{ price }} EUR / year{% endblocktrans %}
+        </td>
+        <td class="price">
+        <a class="btn btn-primary" title="{% trans "Ask us for yearly invoicing with discount." %}" href="mailto:michal@cihar.com?subject=Weblate hosting invoice (Advanced)">{% blocktrans with 999 as price %}{{ price }} EUR / year{% endblocktrans %}
+        </td>
+        <td class="price">
+        <a class="btn btn-primary" title="{% trans "Ask us for yearly invoicing with discount." %}" href="mailto:michal@cihar.com?subject=Weblate hosting invoice (Enterprise)">{% blocktrans with 2999 as price %}{{ price }} EUR / year{% endblocktrans %}
         </td>
       </tr>
     </tfoot>
