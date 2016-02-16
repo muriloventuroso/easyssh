@@ -17,15 +17,3 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
-
-import re
-import django.utils.translation.trans_real as django_trans
-
-# Monkey patch locales, workaround for
-# https://code.djangoproject.com/ticket/24063
-django_trans.language_code_re = re.compile(
-    r'^[a-z]{1,8}(?:-[a-z0-9]{1,8})*(?:@[a-z0-9]{1,20})?$', re.IGNORECASE
-)
-django_trans.language_code_prefix_re = re.compile(
-    r'^/([\w@-]+)(/|$)'
-)
