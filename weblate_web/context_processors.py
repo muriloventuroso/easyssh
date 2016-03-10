@@ -27,8 +27,13 @@ def weblate_web(request):
     else:
         url_name = 'home'
 
+
+    downloads = [
+        'Weblate-%s.%s' % (VERSION, ext) for ext in EXTENSIONS
+    ]
+    downloads.append('Weblate-test-%s.tar.xz' % VERSION)
     return {
-        'downloads': ['Weblate-%s.%s' % (VERSION, ext) for ext in EXTENSIONS],
+        'downloads': downloads,
         'screenshots': SCREENSHOTS,
         'url_name': url_name,
     }
