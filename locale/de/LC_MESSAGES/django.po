@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2016-03-24 10:34+0100\n"
-"PO-Revision-Date: 2016-01-26 15:37+0000\n"
-"Last-Translator: Philipp Wolfer <ph.wolfer@gmail.com>\n"
-"Language-Team: German <https://hosted.weblate.org/projects/weblate/website/"
-"de/>\n"
+"PO-Revision-Date: 2016-03-28 01:17+0000\n"
+"Last-Translator: Stas Kies <stask85@gmail.com>\n"
+"Language-Team: German "
+"<https://hosted.weblate.org/projects/weblate/website/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.5-dev\n"
+"X-Generator: Weblate 2.6-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -706,7 +706,6 @@ msgid "Enterprise"
 msgstr "Enterprise"
 
 #: weblate_web/html/hosting.html:45
-#, fuzzy
 #| msgid ""
 #| "The pricing is based on number of source strings and number of target "
 #| "languages. The source string is a text unit defined in a translation "
@@ -715,10 +714,9 @@ msgid ""
 "Text unit defined in a translation format, it can be word, sentence or a "
 "paragraph"
 msgstr ""
-"Die Preisgestaltung basiert auf der Anzahl der Ursprungszeichenketten und "
-"der Anzahl der Zielsprachen. Die Ursprungszeichenkette ist eine Texteinheit, "
-"wie sie sich aus der Datei im verwendeten Übersetzungsformat ergibt, es kann "
-"ein Wort, ein Satz oder ein Absatz sein."
+"Die Ursprungszeichenkette ist eine Texteinheit, wie sie sich aus der Datei "
+"im verwendeten Übersetzungsformat ergibt, es kann ein Wort, ein Satz oder "
+"ein Absatz sein"
 
 #: weblate_web/html/hosting.html:45
 msgid "Source strings"
@@ -783,7 +781,7 @@ msgstr "Übersetzungsverarbeitung"
 
 #: weblate_web/html/hosting.html:133
 msgid "Priority email support"
-msgstr ""
+msgstr "Priorisierte Unterstützung per Email"
 
 #: weblate_web/html/hosting.html:141
 msgid "Phone support"
@@ -802,10 +800,9 @@ msgid "Available on request"
 msgstr "Verfügbar auf Anfrage"
 
 #: weblate_web/html/hosting.html:159
-#, fuzzy
 #| msgid "Donate using PayPal"
 msgid "Monthly by PayPal"
-msgstr "Spenden mit PayPal"
+msgstr "Monatlich per PayPal"
 
 #: weblate_web/html/hosting.html:161
 msgid "Contact us"
@@ -818,17 +815,16 @@ msgid "%(price)s EUR / month"
 msgstr "%(price)s EUR / Monat"
 
 #: weblate_web/html/hosting.html:177
-#, fuzzy, python-format
+#, python-format
 #| msgid "Yearly (save 20%%)"
 msgid "Yearly by invoice (save 15-20%%)"
-msgstr "jährlich (20%% sparen)"
+msgstr "jährlich auf Rechnung (15-20%% sparen)"
 
 #: weblate_web/html/hosting.html:179 weblate_web/html/hosting.html.py:182
 #: weblate_web/html/hosting.html:185 weblate_web/html/hosting.html.py:188
-#, fuzzy
 #| msgid "Ask us for yearly invoicing with 20%% discount."
 msgid "Ask us for yearly invoicing with discount."
-msgstr "Fragen Sie uns nach der jährlichen Abrechnung mit 20%% Rabatt."
+msgstr "Fragen Sie uns nach der jährlichen Abrechnung mit Rabatt."
 
 #: weblate_web/html/hosting.html:179 weblate_web/html/hosting.html.py:182
 #: weblate_web/html/hosting.html:185 weblate_web/html/hosting.html.py:188
@@ -1184,19 +1180,23 @@ msgstr "Unsere Übersetzungen werden auf Hosted Weblate verwaltet."
 
 #: weblate_web/html/thanks.html:38
 msgid "Sponsors"
-msgstr ""
+msgstr "Sponsoren"
 
 #: weblate_web/html/thanks.html:40
 msgid ""
 "Free hosting for free software projects would be impossible without our "
 "sponsors."
 msgstr ""
+"Kostenloses Hosting für kostenlose Projekte wäre ohne unsere Sponsoren nicht "
+"möglich."
 
 #: weblate_web/html/thanks.html:42
 msgid ""
 "Support our project on Bountysource Salt and get exclusive logo placement on "
 "this page."
 msgstr ""
+"Unterstützt unser Projekt auf \"Bountysource Salt\" und erhaltet einen "
+"exklusiven Platz für euer Logo auf dieser Seite."
 
 #: weblate_web/html/tour.html:3 weblate_web/html/tour.html.py:4
 msgid "Weblate tour"
@@ -1268,7 +1268,7 @@ msgstr "%.1f GiB"
 
 #: weblate_web/templatetags/downloads.py:54
 msgid "Test repositories data, useful for offline tests"
-msgstr ""
+msgstr "Daten der Repository testen, nützlich um offline Tests durchzuführen"
 
 #: weblate_web/templatetags/downloads.py:56
 msgid "Sources tarball, bzip2 compressed"
