@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2016-03-24 10:34+0100\n"
-"PO-Revision-Date: 2015-11-12 21:33+0000\n"
-"Last-Translator: josep constanti <jconstanti@yahoo.es>\n"
-"Language-Team: Catalan <https://hosted.weblate.org/projects/weblate/website/"
-"ca/>\n"
+"PO-Revision-Date: 2016-04-05 11:22+0000\n"
+"Last-Translator: Idali Vera <iveragrau@gmail.com>\n"
+"Language-Team: Catalan "
+"<https://hosted.weblate.org/projects/weblate/website/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.5-dev\n"
+"X-Generator: Weblate 2.6-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -158,10 +158,9 @@ msgid "Free software"
 msgstr "Programari lliure"
 
 #: weblate_web/html/base-features.html:47
-#, fuzzy
 #| msgid "Weblate is a free software with community support."
 msgid "Weblate is free software, you can run your own instance of it."
-msgstr "Weblate és un programari lliure amb el support de la comunitat."
+msgstr "Weblate és un programari lliure amb el suport de la comunitat."
 
 #: weblate_web/html/base.html:12
 msgctxt "Keyword"
@@ -225,7 +224,7 @@ msgid "Help with translations!"
 msgstr "Ajudeu amb traduccions!"
 
 #: weblate_web/html/base.html:140
-#, fuzzy, python-format
+#, python-format
 #| msgid ""
 #| "Weblate is free software, but welcomes <a href=\"%(donate_url)s"
 #| "\">donations</a>."
@@ -233,8 +232,8 @@ msgid ""
 "Weblate is <a href=\"%(github_url)s\">free software</a> and welcomes <a href="
 "\"%(donate_url)s\">donations</a>."
 msgstr ""
-"Weblate es software lliure, però agraeix els <a href=\"%(donate_url)s"
-"\">donatius </a>."
+"Weblate és un <a href=\"%(github_url)s\">programa lliure</a>, però agraeix "
+"els <a href=\"%(donate_url)s\">donatius </a>."
 
 #: weblate_web/html/contribute.html:3 weblate_web/html/contribute.html.py:4
 msgid "Contribute to Weblate"
@@ -424,24 +423,28 @@ msgid ""
 "Weblate can be run in any cloud or virtualization environment. Following "
 "links will show you information about some of these:"
 msgstr ""
+"Weblate pot ser executat en el núvol o una màquina virtual. Els enllaços "
+"següents mostraran més informacions sobre això:"
 
 #: weblate_web/html/download.html:48
 msgid "Running Weblate in a Docker container"
-msgstr ""
+msgstr "S'executa Weblate en un contenidor Docker"
 
 #: weblate_web/html/download.html:49
 msgid "Running Weblate on OpenShift platform"
-msgstr ""
+msgstr "S'executa Weblate en una plataforma OpenShift"
 
 #: weblate_web/html/download.html:50
 msgid "SUSE Studio appliances"
-msgstr ""
+msgstr "Aplicacions de Suse Studio"
 
 #: weblate_web/html/download.html:51
 msgid ""
 "BitNami Weblate stack providing native installation for most platforms as "
 "well as support for many public cloud providers"
 msgstr ""
+"BitNami Weblate stack forneix una instal·lació nativa per a la major part de "
+"les plataformes com també suport per a molts proveïdors de núvols públics"
 
 #: weblate_web/html/features.html:3 weblate_web/html/features.html.py:4
 msgid "Weblate features"
@@ -482,7 +485,7 @@ msgstr "Integració"
 
 #: weblate_web/html/features.html:40
 msgid "Thanks to the API you can integrate Weblate with third party services."
-msgstr ""
+msgstr "Gràcies a la nostra API, pots integrar Weblate en serveis de tercers."
 
 #: weblate_web/html/features.html:47
 msgid "File formats"
@@ -714,7 +717,6 @@ msgid "Enterprise"
 msgstr "Enterprise"
 
 #: weblate_web/html/hosting.html:45
-#, fuzzy
 #| msgid ""
 #| "The pricing is based on number of source strings and number of target "
 #| "languages. The source string is a text unit defined in a translation "
@@ -723,10 +725,8 @@ msgid ""
 "Text unit defined in a translation format, it can be word, sentence or a "
 "paragraph"
 msgstr ""
-"La tarifa de preus es fonamenta en el nombre de cadenes de caràcters i el de "
-"llenguatges destí.  La cadena de caràcters font és una unitat definida de "
-"text en un format de traducció, podent ésser un sol mot, una frase o tot un "
-"paràgraf."
+"Unitat de text en un format definit de traducció, que pot ser un mot, una "
+"frase o un paràgraf"
 
 #: weblate_web/html/hosting.html:45
 msgid "Source strings"
@@ -783,41 +783,38 @@ msgstr "Tot"
 #: weblate_web/html/hosting.html:113 weblate_web/html/hosting.html.py:114
 #: weblate_web/html/hosting.html:121 weblate_web/html/hosting.html.py:122
 msgid "Customizable"
-msgstr ""
+msgstr "Personalitzable"
 
 #: weblate_web/html/hosting.html:117
-#, fuzzy
 #| msgid "Translation status"
 msgid "Translation processing"
 msgstr "Estat de la traducció"
 
 #: weblate_web/html/hosting.html:133
 msgid "Priority email support"
-msgstr ""
+msgstr "Assistència per correu electrònic prioritària"
 
 #: weblate_web/html/hosting.html:141
-#, fuzzy
 #| msgid "Branches support"
 msgid "Phone support"
-msgstr "Suport de branques"
+msgstr "Assistència per telèfon"
 
 #: weblate_web/html/hosting.html:149
 msgid "Custom domain name with SSL"
-msgstr ""
+msgstr "Domini personalitzat amb SSL"
 
 #: weblate_web/html/hosting.html:149
 msgid "Own domain"
-msgstr ""
+msgstr "Domini propi"
 
 #: weblate_web/html/hosting.html:154
 msgid "Available on request"
-msgstr ""
+msgstr "Disponible a la demanda"
 
 #: weblate_web/html/hosting.html:159
-#, fuzzy
 #| msgid "Donate using PayPal"
 msgid "Monthly by PayPal"
-msgstr "Fer donacions amb PayPal"
+msgstr "Fer donacions mensuals amb PayPal"
 
 #: weblate_web/html/hosting.html:161
 msgid "Contact us"
@@ -832,12 +829,12 @@ msgstr "%(price)s EUR / mes"
 #: weblate_web/html/hosting.html:177
 #, python-format
 msgid "Yearly by invoice (save 15-20%%)"
-msgstr ""
+msgstr "Anyalment via factura (estalvia de 15 a 20%%)"
 
 #: weblate_web/html/hosting.html:179 weblate_web/html/hosting.html.py:182
 #: weblate_web/html/hosting.html:185 weblate_web/html/hosting.html.py:188
 msgid "Ask us for yearly invoicing with discount."
-msgstr ""
+msgstr "Demana'ns un descompte anyal de la factura."
 
 #: weblate_web/html/hosting.html:179 weblate_web/html/hosting.html.py:182
 #: weblate_web/html/hosting.html:185 weblate_web/html/hosting.html.py:188
@@ -862,12 +859,17 @@ msgid ""
 "The hosting setup is currently done manually, so you might want to get in "
 "touch with us prior to making subscription with your project details."
 msgstr ""
+"La configuració d'allotjament actualment es fa manualment, per tant és "
+"possible que vulgueu posar-vos en contacte amb nosaltres abans d'abonar-vos "
+"amb detalls del vostre projecte."
 
 #: weblate_web/html/hosting.html:204
 msgid ""
 "Alternatively we can accept payments by wire transfer (preferably IBAN) or "
 "Bitcoin. Please get in touch for more details."
 msgstr ""
+"Com a alternativa podem acceptar pagament per transferència bancària (IBAN "
+"preferentment) o Bitcoin. Poseu-vos en contacte per a més detalls."
 
 #: weblate_web/html/hosting.html:207
 msgid "Hosting for free software"
@@ -985,13 +987,12 @@ msgstr ""
 "de contribuir</a>."
 
 #: weblate_web/html/hosting.html:256
-#, fuzzy
 #| msgid "Ask for hosting"
 msgid "Self hosting"
-msgstr "Demana allotjament"
+msgstr "Allotjament propi"
 
 #: weblate_web/html/hosting.html:260
-#, fuzzy, python-format
+#, python-format
 #| msgid ""
 #| "Check our <a href=\"%(download_url)s\">download page</a> for appliances, "
 #| "which provide an easy way to deploy Weblate in the cloud."
@@ -1001,8 +1002,7 @@ msgid ""
 "to the cloud."
 msgstr ""
 "Consulteu la nostra <a href=\"%(download_url)s\">pàgina de descàrregues</a> "
-"per aplicacions que proporcionen una via senzilla per desplegar Weblate en "
-"el núvol."
+"per a aplicacions que permeten de desplegar fàcilment Weblate en el núvol."
 
 #: weblate_web/html/hosting.html:264
 #, python-format
@@ -1011,6 +1011,10 @@ msgid ""
 "well with consulting services tailored for your needs. Please contact <a "
 "href=\"%(contact_url)s\">Michal Čihař</a> for more details."
 msgstr ""
+"En cas que us calgui ajuda en la vostra pròpia solució allotjada, estem "
+"preparats per a ajudar també en els serveis adaptats a les vostres "
+"necessitats de consultoria. Poseu-vos en contacte amb <a href=\""
+"%(contact_url)s\"> 1Michal Čihař</a> 2 per a més detalls."
 
 #: weblate_web/html/index.html:3
 msgid "Weblate - web-based translation"
@@ -1022,10 +1026,9 @@ msgid "Try our demo"
 msgstr "Proveu la demostració"
 
 #: weblate_web/html/index.html:15
-#, fuzzy
 #| msgid "Hosting plans"
 msgid "View hosting plans"
-msgstr "Plans d'allotjament"
+msgstr "Veure plans d'allotjament"
 
 #: weblate_web/html/index.html:16
 msgid "Downloads"
@@ -1053,7 +1056,7 @@ msgstr "Més funcionalitats…"
 
 #: weblate_web/html/index.html:47
 msgid "See who is using Weblate and join them!"
-msgstr ""
+msgstr "Consulta qui està utilitzant Weblate i uneix-t'hi!"
 
 #: weblate_web/html/support.html:3 weblate_web/html/support.html.py:4
 msgid "Weblate support"
@@ -1138,13 +1141,12 @@ msgstr ""
 "net?channels=weblate\">discusió en línia</a>."
 
 #: weblate_web/html/support.html:42
-#, fuzzy
 #| msgid "Hosting"
 msgid "Consulting"
-msgstr "Allotjament"
+msgstr "Consultoria"
 
 #: weblate_web/html/support.html:45
-#, fuzzy, python-format
+#, python-format
 #| msgid ""
 #| "You can also contact <a href=\"mailto:michal@cihar.com?subject=Weblate"
 #| "\">Michal Čihař</a>, who is author of Weblate."
@@ -1152,8 +1154,8 @@ msgid ""
 "You can also contact <a href=\"%(contact_link)s\">Michal Čihař</a>, who is "
 "author of Weblate for consulting services."
 msgstr ""
-"També podeu contactar amb <a href=\"mailto:michal@cihar.com?subject=Weblate"
-"\">Michal Čihař</a>, qui és l'autor de Weblate."
+"També podeu contactar <a href=\"%(contact_link)s\"> 1Michal Čihař</a> 2, que "
+"és l'autor de Weblate."
 
 #: weblate_web/html/thanks.html:3 weblate_web/html/thanks.html.py:4
 msgid "Thanks from Weblate"
@@ -1197,19 +1199,23 @@ msgstr "Les nostres pròpies traduccions es fan via Weblate."
 
 #: weblate_web/html/thanks.html:38
 msgid "Sponsors"
-msgstr ""
+msgstr "Patrocinadors"
 
 #: weblate_web/html/thanks.html:40
 msgid ""
 "Free hosting for free software projects would be impossible without our "
 "sponsors."
 msgstr ""
+"L'allotjament gratuït per als projectes de programari lliure no seria "
+"possible sense els nostres patrocinadors."
 
 #: weblate_web/html/thanks.html:42
 msgid ""
 "Support our project on Bountysource Salt and get exclusive logo placement on "
 "this page."
 msgstr ""
+"Sostingueu el nostre projecte a Bountysource Salt i obtingueu el plaçament "
+"del logotip exclusiu en aquesta pàgina."
 
 #: weblate_web/html/tour.html:3 weblate_web/html/tour.html.py:4
 msgid "Weblate tour"
@@ -1282,7 +1288,7 @@ msgstr "%.1f GiB"
 
 #: weblate_web/templatetags/downloads.py:54
 msgid "Test repositories data, useful for offline tests"
-msgstr ""
+msgstr "Repositoris de dades de prova, útils per a proves fora de línia"
 
 #: weblate_web/templatetags/downloads.py:56
 msgid "Sources tarball, bzip2 compressed"
