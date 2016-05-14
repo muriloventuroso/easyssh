@@ -21,7 +21,14 @@
 </p>
 
 <pre>
+# Weblate
 git clone https://github.com/nijel/weblate.git
+
+# wlc
+git clone https://github.com/nijel/wlc.git
+
+# Weblate website
+git clone https://github.com/nijel/weblate-web.git
 </pre>
 
 <h2>{% trans "Download" %}</h2>
@@ -39,6 +46,16 @@ git clone https://github.com/nijel/weblate.git
 <p>
 {% blocktrans %}For openSUSE/SLES users, there are binary packages available in the <a href="http://software.opensuse.org/package/weblate/">openSUSE Buildservice</a>.{% endblocktrans %}
 </p>
+
+<h2>{% trans "Weblate command line client" %}</h2>
+
+<p>
+{% blocktrans with 'https://pypi.python.org/pypi/wlc' as url %}You can control Weblate remotely using <a href="{{ url }}">wlc</a>, it can be installed by using Python PIP:{% endblocktrans %}
+</p>
+
+<pre>
+pip3 install wlc
+</pre>
 
 <h2>{% trans "Cloud or virtualization images" %}</h2>
 
