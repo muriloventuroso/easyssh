@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2016-03-24 10:34+0100\n"
+"POT-Creation-Date: 2016-05-26 12:07+0200\n"
 "PO-Revision-Date: 2015-06-30 15:15+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Breton <https://hosted.weblate.org/projects/weblate/website/"
@@ -27,7 +27,7 @@ msgstr "Rakwelet ho troidigezhioù war ar bajenn bennañ."
 msgid "Own translations"
 msgstr "Ho troidigezhioù"
 
-#: weblate_web/data.py:39 weblate_web/html/features.html.py:64
+#: weblate_web/data.py:39 weblate_web/html/features.html:64
 msgid ""
 "Translator can always see important context information like comments or "
 "corresponding source code."
@@ -35,7 +35,7 @@ msgstr ""
 "Gallout a ra atav an troer gwelet an titouroù pouezus diwar-benn ar "
 "gendestenn, evel an evezhiadennoù hag ar c'hod-tarzh."
 
-#: weblate_web/data.py:42 weblate_web/html/features.html.py:63
+#: weblate_web/data.py:42 weblate_web/html/features.html:63
 msgid "Translation context"
 msgstr "Kendestenn ar meneg da dreiñ"
 
@@ -50,7 +50,7 @@ msgstr ""
 msgid "Project overview"
 msgstr "Brassell war ar raktres"
 
-#: weblate_web/data.py:55 weblate_web/html/features.html.py:72
+#: weblate_web/data.py:55 weblate_web/html/features.html:72
 msgid ""
 "Translators can define their own glossary to stay consistent in frequently "
 "used terminology."
@@ -58,12 +58,12 @@ msgstr ""
 "Gallout a ra an droerien sevel o zamm geriaoueg evit unvaniñ an dibab "
 "termenoù implijet ganto en droidigezh."
 
-#: weblate_web/data.py:58 weblate_web/html/features.html.py:71
+#: weblate_web/data.py:58 weblate_web/html/features.html:71
 #: weblate_web/html/hosting.html:125
 msgid "Glossary"
 msgstr "Geriaoueg"
 
-#: weblate_web/data.py:63 weblate_web/html/base-features.html.py:15
+#: weblate_web/data.py:63 weblate_web/html/base-features.html:15
 msgid ""
 "Customizable quality checks will help you in improving quality of "
 "translations."
@@ -71,18 +71,18 @@ msgstr ""
 "Gwiriadennoù kalite personeladus ho skoazello da wellaat live an "
 "troidigezhioù."
 
-#: weblate_web/data.py:66 weblate_web/html/base-features.html.py:14
+#: weblate_web/data.py:66 weblate_web/html/base-features.html:14
 #: weblate_web/html/hosting.html:109
 msgid "Quality checks"
 msgstr "Gwririadennoù kalite"
 
-#: weblate_web/data.py:71 weblate_web/html/features.html.py:128
+#: weblate_web/data.py:71 weblate_web/html/features.html:128
 msgid "Weblate provides you various ways to promote your translation project."
 msgstr ""
 "Kinnig a ra deoc'h Weblate degouezhioù a bep seurt evit brudañ ho raktres "
 "treiñ."
 
-#: weblate_web/data.py:74 weblate_web/html/features.html.py:127
+#: weblate_web/data.py:74 weblate_web/html/features.html:127
 msgid "Promotion"
 msgstr "Brudañ"
 
@@ -90,7 +90,7 @@ msgstr "Brudañ"
 msgid "Page not found"
 msgstr "N'eus ket eus ar bajenn-mañ"
 
-#: weblate_web/html/404.html:8 weblate_web/html/500.html.py:8
+#: weblate_web/html/404.html:8 weblate_web/html/500.html:8
 #: weblate_web/html/index.html:7
 msgid "Weblate is a free web-based translation management system."
 msgstr ""
@@ -112,7 +112,7 @@ msgstr ""
 "Melloù kudennoù en deus bet ar servijer pa oa o klask respont d'ho reked. "
 "Emañ hor marmouzien ouiziek o klask renkañ an afer."
 
-#: weblate_web/html/base-features.html:6 weblate_web/html/hosting.html.py:37
+#: weblate_web/html/base-features.html:6 weblate_web/html/hosting.html:37
 msgid "Continuous translation"
 msgstr "Treiñ dibaouez"
 
@@ -195,7 +195,7 @@ msgstr "Perzhioù"
 msgid "Docs"
 msgstr "Teuliadoù"
 
-#: weblate_web/html/base.html:82 weblate_web/html/download.html.py:27
+#: weblate_web/html/base.html:82 weblate_web/html/download.html:34
 msgid "Download"
 msgstr "Pellgargañ"
 
@@ -207,7 +207,7 @@ msgstr "Herberc'hiañ"
 msgid "Develop"
 msgstr "Diorren"
 
-#: weblate_web/html/base.html:85 weblate_web/html/donate.html.py:54
+#: weblate_web/html/base.html:85 weblate_web/html/donate.html:54
 msgid "Donate"
 msgstr "Ober un donezon"
 
@@ -239,7 +239,7 @@ msgstr ""
 "Ur meziant frank ha digoust eo Weblate, deuet mat eo ar <a href="
 "\"%(donate_url)s\">profoù</a> memes tra."
 
-#: weblate_web/html/contribute.html:3 weblate_web/html/contribute.html.py:4
+#: weblate_web/html/contribute.html:3 weblate_web/html/contribute.html:4
 msgid "Contribute to Weblate"
 msgstr "Kemerit perzh e Weblate"
 
@@ -247,7 +247,7 @@ msgstr "Kemerit perzh e Weblate"
 msgid "Weblate is being developed by an open community."
 msgstr "Diorroet eo Weblate a-drugarez d'ur gumuniezh digor."
 
-#: weblate_web/html/contribute.html:10 weblate_web/html/download.html.py:12
+#: weblate_web/html/contribute.html:10 weblate_web/html/download.html:12
 msgid "View sources"
 msgstr ""
 
@@ -265,11 +265,11 @@ msgstr ""
 "\"http://docs.weblate.org/en/latest/contributing.html\">rannbennad kemer "
 "perzh</a> hon teuliadur."
 
-#: weblate_web/html/contribute.html:20 weblate_web/html/download.html.py:17
+#: weblate_web/html/contribute.html:20 weblate_web/html/download.html:17
 msgid "Code"
 msgstr "Kod"
 
-#: weblate_web/html/contribute.html:23 weblate_web/html/download.html.py:20
+#: weblate_web/html/contribute.html:23 weblate_web/html/download.html:20
 msgid ""
 "Weblate is being developed on <a href=\"https://github.com/nijel/weblate"
 "\">Github</a>, you can fork it there or just:"
@@ -297,7 +297,7 @@ msgstr ""
 msgid "Translation status"
 msgstr "Stad an treiñ"
 
-#: weblate_web/html/donate.html:3 weblate_web/html/donate.html.py:4
+#: weblate_web/html/donate.html:3 weblate_web/html/donate.html:4
 msgid "Donate to Weblate"
 msgstr "Reiñ un dra bennak da Weblate"
 
@@ -305,7 +305,7 @@ msgstr "Reiñ un dra bennak da Weblate"
 msgid "Weblate is free, but welcomes donations."
 msgstr "Digoust eo Weblate met deuet mat e vo ho profoù."
 
-#: weblate_web/html/donate.html:12 weblate_web/html/donate.html.py:26
+#: weblate_web/html/donate.html:12 weblate_web/html/donate.html:26
 #: weblate_web/html/donate.html:47
 msgid "Fund on Bountysource"
 msgstr "Roit arc'hant dre Bountysource"
@@ -387,7 +387,7 @@ msgstr ""
 "par-ouzh-par eo Bitcoin</a> ha kas bitkoinoù din da <code>"
 "%(bitcoin_address)s</code>."
 
-#: weblate_web/html/download.html:4 weblate_web/html/download.html.py:5
+#: weblate_web/html/download.html:4 weblate_web/html/download.html:5
 msgid "Download Weblate"
 msgstr "Pellgargañ Weblate"
 
@@ -395,11 +395,11 @@ msgstr "Pellgargañ Weblate"
 msgid "Weblate comes with complete source code."
 msgstr "Dont a ra Weblate gant ar c'hod-tarzh klok."
 
-#: weblate_web/html/download.html:30
+#: weblate_web/html/download.html:37
 msgid "You can download latest release here:"
 msgstr "Gallout a rit pellgargañ ar stumm diwezhañ amañ :"
 
-#: weblate_web/html/download.html:40
+#: weblate_web/html/download.html:47
 msgid ""
 "For openSUSE/SLES users, there are binary packages available in the <a href="
 "\"http://software.opensuse.org/package/weblate/\">openSUSE Buildservice</a>."
@@ -408,37 +408,48 @@ msgstr ""
 "\"http://software.opensuse.org/package/weblate/\">servij \"build\" openSUSE</"
 "a>."
 
-#: weblate_web/html/download.html:43
+#: weblate_web/html/download.html:50
+msgid "Weblate command line client"
+msgstr ""
+
+#: weblate_web/html/download.html:53
+#, python-format
+msgid ""
+"You can control Weblate remotely using <a href=\"%(url)s\">wlc</a>, it can "
+"be installed by using Python PIP:"
+msgstr ""
+
+#: weblate_web/html/download.html:60
 #, fuzzy
 #| msgid "Cloud or emulator images"
 msgid "Cloud or virtualization images"
 msgstr "Skeudennoù koumoul pe emulator"
 
-#: weblate_web/html/download.html:45
+#: weblate_web/html/download.html:62
 msgid ""
 "Weblate can be run in any cloud or virtualization environment. Following "
 "links will show you information about some of these:"
 msgstr ""
 
-#: weblate_web/html/download.html:48
+#: weblate_web/html/download.html:65
 msgid "Running Weblate in a Docker container"
 msgstr ""
 
-#: weblate_web/html/download.html:49
+#: weblate_web/html/download.html:66
 msgid "Running Weblate on OpenShift platform"
 msgstr ""
 
-#: weblate_web/html/download.html:50
+#: weblate_web/html/download.html:67
 msgid "SUSE Studio appliances"
 msgstr ""
 
-#: weblate_web/html/download.html:51
+#: weblate_web/html/download.html:68
 msgid ""
 "BitNami Weblate stack providing native installation for most platforms as "
 "well as support for many public cloud providers"
 msgstr ""
 
-#: weblate_web/html/features.html:3 weblate_web/html/features.html.py:4
+#: weblate_web/html/features.html:3 weblate_web/html/features.html:4
 msgid "Weblate features"
 msgstr "Perzhioù Weblate"
 
@@ -618,7 +629,7 @@ msgstr ""
 
 #: weblate_web/html/hosting-ordered.html:3
 #: weblate_web/html/hosting-ordered.html:4 weblate_web/html/hosting.html:3
-#: weblate_web/html/hosting.html.py:4
+#: weblate_web/html/hosting.html:4
 msgid "Hosting Weblate"
 msgstr "Herberc'hiañ Weblate"
 
@@ -711,7 +722,7 @@ msgstr ""
 msgid "Source strings"
 msgstr ""
 
-#: weblate_web/html/hosting.html:46 weblate_web/html/hosting.html.py:54
+#: weblate_web/html/hosting.html:46 weblate_web/html/hosting.html:54
 #: weblate_web/html/hosting.html:62
 msgid "Negotiable"
 msgstr ""
@@ -732,11 +743,11 @@ msgstr ""
 msgid "Translation projects"
 msgstr "Ho troidigezhioù"
 
-#: weblate_web/html/hosting.html:73 weblate_web/html/hosting.html.py:74
-#: weblate_web/html/hosting.html:79 weblate_web/html/hosting.html.py:80
-#: weblate_web/html/hosting.html:81 weblate_web/html/hosting.html.py:82
-#: weblate_web/html/hosting.html:86 weblate_web/html/hosting.html.py:87
-#: weblate_web/html/hosting.html:88 weblate_web/html/hosting.html.py:89
+#: weblate_web/html/hosting.html:73 weblate_web/html/hosting.html:74
+#: weblate_web/html/hosting.html:79 weblate_web/html/hosting.html:80
+#: weblate_web/html/hosting.html:81 weblate_web/html/hosting.html:82
+#: weblate_web/html/hosting.html:86 weblate_web/html/hosting.html:87
+#: weblate_web/html/hosting.html:88 weblate_web/html/hosting.html:89
 #: weblate_web/html/hosting.html:90
 msgid "Unlimited"
 msgstr ""
@@ -761,14 +772,14 @@ msgstr ""
 msgid "Supported file formats"
 msgstr "Furmadoù ar restr"
 
-#: weblate_web/html/hosting.html:102 weblate_web/html/hosting.html.py:103
-#: weblate_web/html/hosting.html:104 weblate_web/html/hosting.html.py:105
+#: weblate_web/html/hosting.html:102 weblate_web/html/hosting.html:103
+#: weblate_web/html/hosting.html:104 weblate_web/html/hosting.html:105
 #: weblate_web/html/hosting.html:106
 msgid "All"
 msgstr ""
 
-#: weblate_web/html/hosting.html:113 weblate_web/html/hosting.html.py:114
-#: weblate_web/html/hosting.html:121 weblate_web/html/hosting.html.py:122
+#: weblate_web/html/hosting.html:113 weblate_web/html/hosting.html:114
+#: weblate_web/html/hosting.html:121 weblate_web/html/hosting.html:122
 msgid "Customizable"
 msgstr ""
 
@@ -810,8 +821,8 @@ msgstr "Ober un donezon dre PayPal"
 msgid "Contact us"
 msgstr "Deuit e darempred ganeomp"
 
-#: weblate_web/html/hosting.html:164 weblate_web/html/hosting.html.py:167
-#: weblate_web/html/hosting.html:170 weblate_web/html/hosting.html.py:173
+#: weblate_web/html/hosting.html:164 weblate_web/html/hosting.html:167
+#: weblate_web/html/hosting.html:170 weblate_web/html/hosting.html:173
 #, python-format
 msgid "%(price)s EUR / month"
 msgstr ""
@@ -821,13 +832,13 @@ msgstr ""
 msgid "Yearly by invoice (save 15-20%%)"
 msgstr ""
 
-#: weblate_web/html/hosting.html:179 weblate_web/html/hosting.html.py:182
-#: weblate_web/html/hosting.html:185 weblate_web/html/hosting.html.py:188
+#: weblate_web/html/hosting.html:179 weblate_web/html/hosting.html:182
+#: weblate_web/html/hosting.html:185 weblate_web/html/hosting.html:188
 msgid "Ask us for yearly invoicing with discount."
 msgstr ""
 
-#: weblate_web/html/hosting.html:179 weblate_web/html/hosting.html.py:182
-#: weblate_web/html/hosting.html:185 weblate_web/html/hosting.html.py:188
+#: weblate_web/html/hosting.html:179 weblate_web/html/hosting.html:182
+#: weblate_web/html/hosting.html:185 weblate_web/html/hosting.html:188
 #, python-format
 msgid "%(price)s EUR / year"
 msgstr ""
@@ -990,7 +1001,7 @@ msgstr ""
 msgid "Weblate - web-based translation"
 msgstr "Weblate - Treiñ war ar web"
 
-#: weblate_web/html/index.html:14 weblate_web/html/tour.html.py:11
+#: weblate_web/html/index.html:14 weblate_web/html/tour.html:11
 #: weblate_web/html/try.html:12
 msgid "Try our demo"
 msgstr "Esaeit hon demo"
@@ -1034,7 +1045,7 @@ msgstr "Gwelet muioc'h a berzhioù…"
 msgid "See who is using Weblate and join them!"
 msgstr ""
 
-#: weblate_web/html/support.html:3 weblate_web/html/support.html.py:4
+#: weblate_web/html/support.html:3 weblate_web/html/support.html:4
 msgid "Weblate support"
 msgstr "Harpañ Weblate"
 
@@ -1135,7 +1146,7 @@ msgstr ""
 "Gallout a rit mont e darempred gant <a href=\"mailto:michal@cihar.com?"
 "subject=Weblate\">Michal Čihař</a>; gantañ eo bet savet Weblate."
 
-#: weblate_web/html/thanks.html:3 weblate_web/html/thanks.html.py:4
+#: weblate_web/html/thanks.html:3 weblate_web/html/thanks.html:4
 msgid "Thanks from Weblate"
 msgstr "Weblate ho trugareka"
 
@@ -1190,7 +1201,7 @@ msgid ""
 "this page."
 msgstr ""
 
-#: weblate_web/html/tour.html:3 weblate_web/html/tour.html.py:4
+#: weblate_web/html/tour.html:3 weblate_web/html/tour.html:4
 msgid "Weblate tour"
 msgstr "Un tamm tro dre Weblate"
 
@@ -1200,7 +1211,7 @@ msgstr "Un tamm tro dre Weblate"
 msgid "Weblate has useful features for every crowdsourced translation."
 msgstr "Perzhioù talvoudus evit pep troidigezh zo gant Weblate."
 
-#: weblate_web/html/try.html:3 weblate_web/html/try.html.py:4
+#: weblate_web/html/try.html:3 weblate_web/html/try.html:4
 msgid "Try Weblate"
 msgstr "Amprouit Weblate"
 

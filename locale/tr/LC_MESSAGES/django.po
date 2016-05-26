@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2016-03-24 10:34+0100\n"
+"POT-Creation-Date: 2016-05-26 12:07+0200\n"
 "PO-Revision-Date: 2016-03-10 19:33+0000\n"
 "Last-Translator: Burak Yavuz <hitowerdigit@hotmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/weblate/website/"
@@ -27,7 +27,7 @@ msgstr "Ana sayfada kendi çevirilerime genel bakış."
 msgid "Own translations"
 msgstr "Kendi çevirilerim"
 
-#: weblate_web/data.py:39 weblate_web/html/features.html.py:64
+#: weblate_web/data.py:39 weblate_web/html/features.html:64
 msgid ""
 "Translator can always see important context information like comments or "
 "corresponding source code."
@@ -35,7 +35,7 @@ msgstr ""
 "Çevirmen her zaman yorumlar veya ilgili kaynak kodu gibi önemli bağlam "
 "bilgisini görebilir."
 
-#: weblate_web/data.py:42 weblate_web/html/features.html.py:63
+#: weblate_web/data.py:42 weblate_web/html/features.html:63
 msgid "Translation context"
 msgstr "Çeviri bağlamı"
 
@@ -48,7 +48,7 @@ msgstr "Proje sayfası size proje çeviri durumu hakkında ayrıntılı bilgi ve
 msgid "Project overview"
 msgstr "Projeye genel bakış"
 
-#: weblate_web/data.py:55 weblate_web/html/features.html.py:72
+#: weblate_web/data.py:55 weblate_web/html/features.html:72
 msgid ""
 "Translators can define their own glossary to stay consistent in frequently "
 "used terminology."
@@ -56,12 +56,12 @@ msgstr ""
 "Çevirmenler, sıkça kullanılan terminolojide tutarlı kalmak için kendi "
 "terimler sözlüğünü tanımlayabilir."
 
-#: weblate_web/data.py:58 weblate_web/html/features.html.py:71
+#: weblate_web/data.py:58 weblate_web/html/features.html:71
 #: weblate_web/html/hosting.html:125
 msgid "Glossary"
 msgstr "Terimler Sözlüğü"
 
-#: weblate_web/data.py:63 weblate_web/html/base-features.html.py:15
+#: weblate_web/data.py:63 weblate_web/html/base-features.html:15
 msgid ""
 "Customizable quality checks will help you in improving quality of "
 "translations."
@@ -69,16 +69,16 @@ msgstr ""
 "Özelleştirilebilir kalite kontrolleri çevirilerin kalitesini geliştirmede "
 "size yardımcı olacaktır."
 
-#: weblate_web/data.py:66 weblate_web/html/base-features.html.py:14
+#: weblate_web/data.py:66 weblate_web/html/base-features.html:14
 #: weblate_web/html/hosting.html:109
 msgid "Quality checks"
 msgstr "Kalite kontrolleri"
 
-#: weblate_web/data.py:71 weblate_web/html/features.html.py:128
+#: weblate_web/data.py:71 weblate_web/html/features.html:128
 msgid "Weblate provides you various ways to promote your translation project."
 msgstr "Weblate, çeviri projenizi tanıtmak için çeşitli yollar sağlar."
 
-#: weblate_web/data.py:74 weblate_web/html/features.html.py:127
+#: weblate_web/data.py:74 weblate_web/html/features.html:127
 msgid "Promotion"
 msgstr "Tanıtım"
 
@@ -86,7 +86,7 @@ msgstr "Tanıtım"
 msgid "Page not found"
 msgstr "Sayfa bulunamadı"
 
-#: weblate_web/html/404.html:8 weblate_web/html/500.html.py:8
+#: weblate_web/html/404.html:8 weblate_web/html/500.html:8
 #: weblate_web/html/index.html:7
 msgid "Weblate is a free web-based translation management system."
 msgstr "Weblate ücretsiz bir web tabanlı çeviri yönetimi sistemidir."
@@ -107,7 +107,7 @@ msgstr ""
 "Sunucunun isteğinizi yerine getirirken ciddi sorunları oldu. Bu sorunu "
 "çözmesi için eğitimli afacanlarımızı şimdi gönderdik."
 
-#: weblate_web/html/base-features.html:6 weblate_web/html/hosting.html.py:37
+#: weblate_web/html/base-features.html:6 weblate_web/html/hosting.html:37
 msgid "Continuous translation"
 msgstr "Sürekli çeviri"
 
@@ -184,7 +184,7 @@ msgstr "Özellikler"
 msgid "Docs"
 msgstr "Belgeler"
 
-#: weblate_web/html/base.html:82 weblate_web/html/download.html.py:27
+#: weblate_web/html/base.html:82 weblate_web/html/download.html:34
 msgid "Download"
 msgstr "İndirme"
 
@@ -196,7 +196,7 @@ msgstr "Barındırma"
 msgid "Develop"
 msgstr "Geliştirme"
 
-#: weblate_web/html/base.html:85 weblate_web/html/donate.html.py:54
+#: weblate_web/html/base.html:85 weblate_web/html/donate.html:54
 msgid "Donate"
 msgstr "Bağış"
 
@@ -225,7 +225,7 @@ msgstr ""
 "Weblate <a href=\"%(github_url)s\">ücretsiz yazılımdır</a> ve <a href="
 "\"%(donate_url)s\">bağışlarınızı</a> bekliyoruz."
 
-#: weblate_web/html/contribute.html:3 weblate_web/html/contribute.html.py:4
+#: weblate_web/html/contribute.html:3 weblate_web/html/contribute.html:4
 msgid "Contribute to Weblate"
 msgstr "Weblate'e katkıda bulunun"
 
@@ -233,7 +233,7 @@ msgstr "Weblate'e katkıda bulunun"
 msgid "Weblate is being developed by an open community."
 msgstr "Weblate açık bir topluluk tarafından geliştirilmektedir."
 
-#: weblate_web/html/contribute.html:10 weblate_web/html/download.html.py:12
+#: weblate_web/html/contribute.html:10 weblate_web/html/download.html:12
 msgid "View sources"
 msgstr "Kaynakları görüntüleyin"
 
@@ -251,11 +251,11 @@ msgstr ""
 "\">Katkıda bulunma bölümünde</a> bu konu hakkında daha fazla ayrıntılı bilgi "
 "bulabilirsiniz."
 
-#: weblate_web/html/contribute.html:20 weblate_web/html/download.html.py:17
+#: weblate_web/html/contribute.html:20 weblate_web/html/download.html:17
 msgid "Code"
 msgstr "Kod"
 
-#: weblate_web/html/contribute.html:23 weblate_web/html/download.html.py:20
+#: weblate_web/html/contribute.html:23 weblate_web/html/download.html:20
 msgid ""
 "Weblate is being developed on <a href=\"https://github.com/nijel/weblate"
 "\">Github</a>, you can fork it there or just:"
@@ -283,7 +283,7 @@ msgstr ""
 msgid "Translation status"
 msgstr "Çeviri durumu"
 
-#: weblate_web/html/donate.html:3 weblate_web/html/donate.html.py:4
+#: weblate_web/html/donate.html:3 weblate_web/html/donate.html:4
 msgid "Donate to Weblate"
 msgstr "Weblate'e Bağış Yapın"
 
@@ -291,7 +291,7 @@ msgstr "Weblate'e Bağış Yapın"
 msgid "Weblate is free, but welcomes donations."
 msgstr "Weblate ücretsizdir, fakat bağışlarınızı bekliyoruz."
 
-#: weblate_web/html/donate.html:12 weblate_web/html/donate.html.py:26
+#: weblate_web/html/donate.html:12 weblate_web/html/donate.html:26
 #: weblate_web/html/donate.html:47
 msgid "Fund on Bountysource"
 msgstr "Bountysource Fonu"
@@ -377,7 +377,7 @@ msgstr ""
 "olarak kullanabilirsiniz ve bana Bitcoins'i <code>%(bitcoin_address)s</code> "
 "olarak gönderebilirsiniz."
 
-#: weblate_web/html/download.html:4 weblate_web/html/download.html.py:5
+#: weblate_web/html/download.html:4 weblate_web/html/download.html:5
 msgid "Download Weblate"
 msgstr "Weblate'i İndirin"
 
@@ -385,11 +385,11 @@ msgstr "Weblate'i İndirin"
 msgid "Weblate comes with complete source code."
 msgstr "Weblate tam kaynak kodu ile gelir."
 
-#: weblate_web/html/download.html:30
+#: weblate_web/html/download.html:37
 msgid "You can download latest release here:"
 msgstr "En son yayımı buradan indirebilirsiniz:"
 
-#: weblate_web/html/download.html:40
+#: weblate_web/html/download.html:47
 msgid ""
 "For openSUSE/SLES users, there are binary packages available in the <a href="
 "\"http://software.opensuse.org/package/weblate/\">openSUSE Buildservice</a>."
@@ -397,11 +397,22 @@ msgstr ""
 "openSUSE/SLES kullanıcıları için binari paketleri <a href=\"http://software."
 "opensuse.org/package/weblate/\">openSUSE Buildservice</a>'te mevcuttur."
 
-#: weblate_web/html/download.html:43
+#: weblate_web/html/download.html:50
+msgid "Weblate command line client"
+msgstr ""
+
+#: weblate_web/html/download.html:53
+#, python-format
+msgid ""
+"You can control Weblate remotely using <a href=\"%(url)s\">wlc</a>, it can "
+"be installed by using Python PIP:"
+msgstr ""
+
+#: weblate_web/html/download.html:60
 msgid "Cloud or virtualization images"
 msgstr "Bulut ya da sanallaştırma imajları"
 
-#: weblate_web/html/download.html:45
+#: weblate_web/html/download.html:62
 msgid ""
 "Weblate can be run in any cloud or virtualization environment. Following "
 "links will show you information about some of these:"
@@ -409,19 +420,19 @@ msgstr ""
 "Weblate herhangi bir bulut veya sanallaştırma ortamında çalıştırılabilir. "
 "Aşağıdaki bağlantılar size bunlardan bazıları hakkında bilgileri gösterecek:"
 
-#: weblate_web/html/download.html:48
+#: weblate_web/html/download.html:65
 msgid "Running Weblate in a Docker container"
 msgstr "Weblate'i bir Docker kalıbı içinde çalıştırmak"
 
-#: weblate_web/html/download.html:49
+#: weblate_web/html/download.html:66
 msgid "Running Weblate on OpenShift platform"
 msgstr "Weblate'i bir OpenShift platformu üzerinde çalıştırmak"
 
-#: weblate_web/html/download.html:50
+#: weblate_web/html/download.html:67
 msgid "SUSE Studio appliances"
 msgstr "SUSE Studio araçları"
 
-#: weblate_web/html/download.html:51
+#: weblate_web/html/download.html:68
 msgid ""
 "BitNami Weblate stack providing native installation for most platforms as "
 "well as support for many public cloud providers"
@@ -429,7 +440,7 @@ msgstr ""
 "BitNami Weblate yığını, birçok ortak bulut sağlayıcıları için desteğin "
 "yanısıra çoğu platform için yerel kurulum sağlar"
 
-#: weblate_web/html/features.html:3 weblate_web/html/features.html.py:4
+#: weblate_web/html/features.html:3 weblate_web/html/features.html:4
 msgid "Weblate features"
 msgstr "Weblate özellikleri"
 
@@ -604,7 +615,7 @@ msgstr ""
 
 #: weblate_web/html/hosting-ordered.html:3
 #: weblate_web/html/hosting-ordered.html:4 weblate_web/html/hosting.html:3
-#: weblate_web/html/hosting.html.py:4
+#: weblate_web/html/hosting.html:4
 msgid "Hosting Weblate"
 msgstr "Weblate Barındırma"
 
@@ -704,7 +715,7 @@ msgstr ""
 msgid "Source strings"
 msgstr "Kaynak satır"
 
-#: weblate_web/html/hosting.html:46 weblate_web/html/hosting.html.py:54
+#: weblate_web/html/hosting.html:46 weblate_web/html/hosting.html:54
 #: weblate_web/html/hosting.html:62
 msgid "Negotiable"
 msgstr "Pazarlığa açık"
@@ -721,11 +732,11 @@ msgstr "VCS havuzları"
 msgid "Translation projects"
 msgstr "Çeviri projeleri"
 
-#: weblate_web/html/hosting.html:73 weblate_web/html/hosting.html.py:74
-#: weblate_web/html/hosting.html:79 weblate_web/html/hosting.html.py:80
-#: weblate_web/html/hosting.html:81 weblate_web/html/hosting.html.py:82
-#: weblate_web/html/hosting.html:86 weblate_web/html/hosting.html.py:87
-#: weblate_web/html/hosting.html:88 weblate_web/html/hosting.html.py:89
+#: weblate_web/html/hosting.html:73 weblate_web/html/hosting.html:74
+#: weblate_web/html/hosting.html:79 weblate_web/html/hosting.html:80
+#: weblate_web/html/hosting.html:81 weblate_web/html/hosting.html:82
+#: weblate_web/html/hosting.html:86 weblate_web/html/hosting.html:87
+#: weblate_web/html/hosting.html:88 weblate_web/html/hosting.html:89
 #: weblate_web/html/hosting.html:90
 msgid "Unlimited"
 msgstr "Sınırsız"
@@ -746,14 +757,14 @@ msgstr "Kullanıcı yönetimi"
 msgid "Supported file formats"
 msgstr "Desteklenen dosya biçimleri"
 
-#: weblate_web/html/hosting.html:102 weblate_web/html/hosting.html.py:103
-#: weblate_web/html/hosting.html:104 weblate_web/html/hosting.html.py:105
+#: weblate_web/html/hosting.html:102 weblate_web/html/hosting.html:103
+#: weblate_web/html/hosting.html:104 weblate_web/html/hosting.html:105
 #: weblate_web/html/hosting.html:106
 msgid "All"
 msgstr "Tümü"
 
-#: weblate_web/html/hosting.html:113 weblate_web/html/hosting.html.py:114
-#: weblate_web/html/hosting.html:121 weblate_web/html/hosting.html.py:122
+#: weblate_web/html/hosting.html:113 weblate_web/html/hosting.html:114
+#: weblate_web/html/hosting.html:121 weblate_web/html/hosting.html:122
 msgid "Customizable"
 msgstr "Özelleştirilebilir"
 
@@ -789,8 +800,8 @@ msgstr "PayPal ile aylık olarak"
 msgid "Contact us"
 msgstr "Bize ulaşın"
 
-#: weblate_web/html/hosting.html:164 weblate_web/html/hosting.html.py:167
-#: weblate_web/html/hosting.html:170 weblate_web/html/hosting.html.py:173
+#: weblate_web/html/hosting.html:164 weblate_web/html/hosting.html:167
+#: weblate_web/html/hosting.html:170 weblate_web/html/hosting.html:173
 #, python-format
 msgid "%(price)s EUR / month"
 msgstr "%(price)s AVRO / ay"
@@ -800,13 +811,13 @@ msgstr "%(price)s AVRO / ay"
 msgid "Yearly by invoice (save 15-20%%)"
 msgstr "Faturaya göre yıllık (kazanç %%15-20)"
 
-#: weblate_web/html/hosting.html:179 weblate_web/html/hosting.html.py:182
-#: weblate_web/html/hosting.html:185 weblate_web/html/hosting.html.py:188
+#: weblate_web/html/hosting.html:179 weblate_web/html/hosting.html:182
+#: weblate_web/html/hosting.html:185 weblate_web/html/hosting.html:188
 msgid "Ask us for yearly invoicing with discount."
 msgstr "Bize yıllık indirim ile faturalama için sorun."
 
-#: weblate_web/html/hosting.html:179 weblate_web/html/hosting.html.py:182
-#: weblate_web/html/hosting.html:185 weblate_web/html/hosting.html.py:188
+#: weblate_web/html/hosting.html:179 weblate_web/html/hosting.html:182
+#: weblate_web/html/hosting.html:185 weblate_web/html/hosting.html:188
 #, python-format
 msgid "%(price)s EUR / year"
 msgstr "%(price)s AVRO / yıl"
@@ -982,7 +993,7 @@ msgstr ""
 msgid "Weblate - web-based translation"
 msgstr "Weblate - web tabanlı çeviri"
 
-#: weblate_web/html/index.html:14 weblate_web/html/tour.html.py:11
+#: weblate_web/html/index.html:14 weblate_web/html/tour.html:11
 #: weblate_web/html/try.html:12
 msgid "Try our demo"
 msgstr "Tanıtımımızı deneyin"
@@ -1019,7 +1030,7 @@ msgstr "Daha fazla özelliklere bakın…"
 msgid "See who is using Weblate and join them!"
 msgstr "Weblate'i kimlerin kullandığına bakın ve onlara katılın!"
 
-#: weblate_web/html/support.html:3 weblate_web/html/support.html.py:4
+#: weblate_web/html/support.html:3 weblate_web/html/support.html:4
 msgid "Weblate support"
 msgstr "Weblate desteği"
 
@@ -1114,7 +1125,7 @@ msgstr ""
 "Ayrıca Weblate'in yazarı <a href=\"%(contact_link)s\">Michal Čihař</a> ile "
 "danışmanlık hizmeti için irtibata geçebilirsiniz."
 
-#: weblate_web/html/thanks.html:3 weblate_web/html/thanks.html.py:4
+#: weblate_web/html/thanks.html:3 weblate_web/html/thanks.html:4
 msgid "Thanks from Weblate"
 msgstr "Weblate'ten teşekkürler"
 
@@ -1171,7 +1182,7 @@ msgstr ""
 "Bountysource Salt üzerindeki projemizi destekleyin ve bu sayfada özel logolu "
 "yerinizi alın."
 
-#: weblate_web/html/tour.html:3 weblate_web/html/tour.html.py:4
+#: weblate_web/html/tour.html:3 weblate_web/html/tour.html:4
 msgid "Weblate tour"
 msgstr "Weblate turu"
 
@@ -1180,7 +1191,7 @@ msgid "Weblate has useful features for every crowdsourced translation."
 msgstr ""
 "Weblate, her kitlesel kaynaklı çeviri için faydalı özelliklere sahiptir."
 
-#: weblate_web/html/try.html:3 weblate_web/html/try.html.py:4
+#: weblate_web/html/try.html:3 weblate_web/html/try.html:4
 msgid "Try Weblate"
 msgstr "Weblate'i deneyin"
 
