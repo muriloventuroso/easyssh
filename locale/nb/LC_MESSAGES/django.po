@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2016-05-26 12:07+0200\n"
-"PO-Revision-Date: 2016-06-13 14:16+0000\n"
-"Last-Translator: Ingrid Yrvin <ingrid.yrvin@gmail.com>\n"
+"PO-Revision-Date: 2016-06-15 17:46+0000\n"
+"Last-Translator: 8c6311e901274f6baef2068792c8ab <ft-002@safe-mail.net>\n"
 "Language-Team: Norwegian Bokmål "
 "<https://hosted.weblate.org/projects/weblate/website/nb/>\n"
 "Language: nb\n"
@@ -68,7 +68,7 @@ msgid ""
 "Customizable quality checks will help you in improving quality of "
 "translations."
 msgstr ""
-"Justerbare kvalitetskontroller hjelper deg med å forbedre kvaliteten på "
+"Tilpassede kvalitetskontroller hjelper deg med å forbedre kvaliteten på "
 "oversettelsene."
 
 #: weblate_web/data.py:66 weblate_web/html/base-features.html:14
@@ -91,7 +91,7 @@ msgstr "Finner ikke side"
 #: weblate_web/html/404.html:8 weblate_web/html/500.html:8
 #: weblate_web/html/index.html:7
 msgid "Weblate is a free web-based translation management system."
-msgstr "Weblate er et gratis web-basert system for styring av oversettelser."
+msgstr "Weblate er et gratis nettbasert system for håndtering av oversettelser."
 
 #: weblate_web/html/404.html:15
 msgid "The page you are looking for was not found."
@@ -130,11 +130,12 @@ msgstr "Alle dine oversettere vil krediteres i versjonskontrollsystemet."
 
 #: weblate_web/html/base-features.html:30 weblate_web/html/hosting.html:17
 msgid "Hosting plans"
-msgstr "Planer for vertstjeneste"
+msgstr "Vertslagringstilbud"
 
 #: weblate_web/html/base-features.html:31
 msgid "Hosting plans to use Weblate as a service starting at 19 EUR."
-msgstr "Ferdigløsninger med WebLate fra 19 €."
+msgstr ""
+"Vertslagringstilbud for å bruke Weblate som en tjeneste starter på 19 Euro."
 
 #: weblate_web/html/base-features.html:38
 msgid "Ready for cloud"
@@ -257,8 +258,8 @@ msgid ""
 "Weblate is being developed on <a href=\"https://github.com/nijel/weblate"
 "\">Github</a>, you can fork it there or just:"
 msgstr ""
-"Weblate blir utviklet på <a href=\"https://github.com/nijel/weblate\"> "
-"Github </a>, du kan dele det der, eller bare:"
+"Weblate blir utviklet på <a href=\"https://github.com/nijel/weblate\""
+">Github</a>, du kan opprette en forgrening der, eller bare:"
 
 #: weblate_web/html/contribute.html:31
 msgid ""
@@ -281,9 +282,8 @@ msgid "Translation status"
 msgstr "Oversettelsesstatus"
 
 #: weblate_web/html/donate.html:3 weblate_web/html/donate.html:4
-#, fuzzy
 msgid "Donate to Weblate"
-msgstr "Donér til Weblate"
+msgstr "Gi til Weblate"
 
 #: weblate_web/html/donate.html:6
 msgid "Weblate is free, but welcomes donations."
@@ -306,7 +306,7 @@ msgid ""
 msgstr ""
 "Regelmessige donasjoner tillater Weblate en bærekraftig utvikling, og bidrar "
 "til å finansiere gratis vertsskap for fri programvare. Du trenger ikke å "
-"bruke store beløp, hver øre teller."
+"bruke store beløp, hver krone teller."
 
 #: weblate_web/html/donate.html:30
 msgid ""
@@ -613,11 +613,11 @@ msgstr ""
 #: weblate_web/html/hosting-ordered.html:4 weblate_web/html/hosting.html:3
 #: weblate_web/html/hosting.html:4
 msgid "Hosting Weblate"
-msgstr "Vertslagre Weblate"
+msgstr "Vertslager Weblate"
 
 #: weblate_web/html/hosting-ordered.html:6
 msgid "Thank you for ordering hosting!"
-msgstr "Takk for at du bestiller hosting!"
+msgstr "Takk for at du bestiller vertslagring!"
 
 #: weblate_web/html/hosting-ordered.html:11
 msgid "Next steps"
@@ -629,7 +629,7 @@ msgid ""
 "please get in touch with us and send us details about your repository setup."
 msgstr ""
 "Prosjektoppsettet gjøres for tiden manuelt. Hvis du ikke allerede har gjort "
-"det, kontakt oss og send detaljer om ditt pakkebrønnoppsett."
+"det, kontakt oss og send detaljer om ditt kodelageroppsett."
 
 #: weblate_web/html/hosting-ordered.html:15
 msgid "Usually following information is needed:"
@@ -649,9 +649,9 @@ msgid ""
 "adding Weblate user to your project (on GitHub, Bitbucket or GitLab) or "
 "adding SSH key we will provide you."
 msgstr ""
-"Du må la Weblate få tilgang til din pakkebrønn. Dette kan gjøres ved å legge "
-"til Weblate som bruker i prosjektet ditt (på GitHub, Bitbucket, eller "
-"GitLab), eller å legge til SSH-nøkkelen vi gir deg."
+"Du må la Weblate få tilgang til ditt kodelager. Dette kan gjøres ved å legge "
+"til Weblate som bruker i prosjektet ditt (på GitHub, Bitbucket eller GitLab)"
+", eller å legge til SSH-nøkkelen vi gir deg."
 
 #: weblate_web/html/hosting.html:6
 msgid "Free continuous translation hosting for free software."
@@ -669,10 +669,10 @@ msgid ""
 "look for hosting of bigger projects, don't hesitate to <a href=\"%(contact)s"
 "\">get in touch with us</a>."
 msgstr ""
-"Vi kan være vertskap for oversettelser til komersielle eller friprog-"
-"prosjektet. Du kan se et sammendrag over pakkene som tilbys nedenfor. Skulle "
-"du ha spørsmål om tjening av større prosjekter, ikke nøl med å <a href="
-"\"%(contact)s\">ta kontakt</a>."
+"Vi kan være vertskap for oversettelser til kommersielle- eller frie "
+"programprosjekter. Du kan se et sammendrag av vertslagringstilbudene "
+"nedenfor. Skulle du ha spørsmål eller se etter vertslagring for større "
+"prosjekter, ikke nøl med å <a href=\"%(contact)s\">ta kontakt</a>."
 
 #: weblate_web/html/hosting.html:28
 msgctxt "Hosting plan"
@@ -714,7 +714,7 @@ msgstr "Kildestrenger"
 #: weblate_web/html/hosting.html:46 weblate_web/html/hosting.html:54
 #: weblate_web/html/hosting.html:62
 msgid "Negotiable"
-msgstr "Omsettelig"
+msgstr "Kan diskuteres"
 
 #: weblate_web/html/hosting.html:53
 msgid "Target languages"
@@ -722,7 +722,7 @@ msgstr "Målspråk"
 
 #: weblate_web/html/hosting.html:61
 msgid "VCS repositories"
-msgstr "Pakkebrønner for versjonskontrollsystemer"
+msgstr "Kodelager for versjonskontrollsystemer"
 
 #: weblate_web/html/hosting.html:69
 msgid "Translation projects"
@@ -833,8 +833,8 @@ msgid ""
 "The hosting setup is currently done manually, so you might want to get in "
 "touch with us prior to making subscription with your project details."
 msgstr ""
-"Vertsoppsettet belager seg for tiden på manuelt oppsett, så du må ta kontakt "
-"med oss med dine prosjektdetaljer før du løser abonnement."
+"Vertslagringsoppsettet gjøres for tiden manuelt, så du kan ta kontakt med "
+"oss med dine prosjektdetaljer før du tegner abonnement."
 
 #: weblate_web/html/hosting.html:204
 msgid ""
@@ -914,8 +914,8 @@ msgid ""
 "with similar naming as on website - hello/master translation would be "
 "published as <code>git://git.weblate.org/hello-master.git</code>."
 msgstr ""
-"Alle oversatte pakkebrønner er tilgjengelig på <code>git.weblate.org</code> "
-"med lignende navn som på nettsiden - hello/master-oversettelsen ville blitt "
+"Alle oversatte kodelagre er tilgjengelig på <code>git.weblate.org</code> med "
+"lignende navn som på nettsiden - hello/master-oversettelsen ville blitt "
 "publisert som <code>git://git.weblate.org/hello-master.git</code>."
 
 #: weblate_web/html/hosting.html:241
@@ -952,13 +952,13 @@ msgid ""
 "costs some money, so you are welcome to use <a href=\"%(gittip_url)s"
 "\">Gratipay</a> or <a href=\"%(donate_url)s\">other ways to donate</a>."
 msgstr ""
-"Lagringen tilbys gratis, men det koster penger å skjøtte tjeneren, så du må "
-"gjerne donere penger med <a href=\"%(gittip_url)s\">Gratipay</a> eller <a "
-"href=\"%(donate_url)s\"></a>."
+"Vertslagringen tilbys gratis, men det koster penger å kjøre og vedlikeholde "
+"tjeneren, så du må gjerne donere penger med <a href=\"%(gittip_url)s\""
+">Gratipay</a> eller <a href=\"%(donate_url)s\"></a>."
 
 #: weblate_web/html/hosting.html:256
 msgid "Self hosting"
-msgstr "Egen-lagring (lEgenbevertet)"
+msgstr "Egen-vertslagring"
 
 #: weblate_web/html/hosting.html:260
 #, python-format
@@ -993,7 +993,7 @@ msgstr "Prøv vår demo"
 
 #: weblate_web/html/index.html:15
 msgid "View hosting plans"
-msgstr "Vis vertslagringspakker"
+msgstr "Vis vertslagringstilbud"
 
 #: weblate_web/html/index.html:16
 msgid "Downloads"
@@ -1136,7 +1136,8 @@ msgstr "Utviklingen av Weblate er basert på følgende teknologier:"
 
 #: weblate_web/html/thanks.html:18
 msgid "GitHub provides hosting for our source code and issue tracker."
-msgstr "GitHub tilbyr lagring av vår kildekode og sakshåndtering."
+msgstr ""
+"GitHub tilbyr vertslagring av vår kildekode og problemoppfølgingssystem."
 
 #: weblate_web/html/thanks.html:22
 msgid "Travis CI is our continuous integration platform."
@@ -1164,14 +1165,15 @@ msgid ""
 "Free hosting for free software projects would be impossible without our "
 "sponsors."
 msgstr ""
-"Gratis vertskap for friprog-prosjekter ville vært umulig uten våre sponsorer."
+"Gratis vertskap for frie programvareprosjekter ville vært umulig uten våre "
+"sponsorer."
 
 #: weblate_web/html/thanks.html:42
 msgid ""
 "Support our project on Bountysource Salt and get exclusive logo placement on "
 "this page."
 msgstr ""
-"Støtt vårt prosjekt på Bountysource Salt, og få en eksklusiv logoplassering "
+"Støtt vårt prosjekt på Bountysource Salt og få en eksklusiv logoplassering "
 "på denne siden."
 
 #: weblate_web/html/tour.html:3 weblate_web/html/tour.html:4
@@ -1241,7 +1243,7 @@ msgstr "%.1f GiB"
 
 #: weblate_web/templatetags/downloads.py:54
 msgid "Test repositories data, useful for offline tests"
-msgstr "Test pakkebrønndata, nyttig for frakoblede tester"
+msgstr "Test kodelagerdata, nyttig for frakoblede tester"
 
 #: weblate_web/templatetags/downloads.py:56
 msgid "Sources tarball, bzip2 compressed"
