@@ -7,16 +7,16 @@ msgstr ""
 "Project-Id-Version: weblate-website-ja\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2016-05-26 12:07+0200\n"
-"PO-Revision-Date: 2016-01-13 08:02+0000\n"
-"Last-Translator: Michal Čihař <michal@cihar.com>\n"
-"Language-Team: Japanese <https://hosted.weblate.org/projects/weblate/website/"
-"ja/>\n"
+"PO-Revision-Date: 2016-06-16 23:07+0000\n"
+"Last-Translator: Yasuhiko Kamata <belphegor@belbel.or.jp>\n"
+"Language-Team: Japanese "
+"<https://hosted.weblate.org/projects/weblate/website/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.5-dev\n"
+"X-Generator: Weblate 2.7-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -402,7 +402,7 @@ msgstr ""
 
 #: weblate_web/html/download.html:50
 msgid "Weblate command line client"
-msgstr ""
+msgstr "Weblate コマンドラインクライアント"
 
 #: weblate_web/html/download.html:53
 #, python-format
@@ -410,6 +410,8 @@ msgid ""
 "You can control Weblate remotely using <a href=\"%(url)s\">wlc</a>, it can "
 "be installed by using Python PIP:"
 msgstr ""
+"Weblate は、 <a href=\"%(url)s\">wlc</a> を利用することでリモートから制御することができます。 wlc は "
+"Python PIP を利用してインストールすることができます:"
 
 #: weblate_web/html/download.html:60
 msgid "Cloud or virtualization images"
@@ -711,7 +713,6 @@ msgid "Enterprise"
 msgstr "エンタープライズ"
 
 #: weblate_web/html/hosting.html:45
-#, fuzzy
 #| msgid ""
 #| "The pricing is based on number of source strings and number of target "
 #| "languages. The source string is a text unit defined in a translation "
@@ -719,10 +720,7 @@ msgstr "エンタープライズ"
 msgid ""
 "Text unit defined in a translation format, it can be word, sentence or a "
 "paragraph"
-msgstr ""
-"価格は原文とターゲットとなる言語の数をベースにしています。原文の個数は、翻訳"
-"に使用するファイル内で定義されるテキスト単位ごとに 1 つとなります。そのため、"
-"単語／文章／段落のいずれかを 1 つと数えることになります。"
+msgstr "翻訳形式内で設定したテキストの単位。単語／文／段落のいずれかになります"
 
 #: weblate_web/html/hosting.html:45
 msgid "Source strings"
@@ -787,31 +785,29 @@ msgstr "翻訳の処理"
 
 #: weblate_web/html/hosting.html:133
 msgid "Priority email support"
-msgstr ""
+msgstr "優先電子メールサポート"
 
 #: weblate_web/html/hosting.html:141
-#, fuzzy
 #| msgid "Branches support"
 msgid "Phone support"
-msgstr "ブランチのサポート"
+msgstr "電話サポート"
 
 #: weblate_web/html/hosting.html:149
 msgid "Custom domain name with SSL"
-msgstr ""
+msgstr "SSL での独自ドメイン名"
 
 #: weblate_web/html/hosting.html:149
 msgid "Own domain"
-msgstr ""
+msgstr "独自ドメイン"
 
 #: weblate_web/html/hosting.html:154
 msgid "Available on request"
-msgstr ""
+msgstr "リクエストで利用可能"
 
 #: weblate_web/html/hosting.html:159
-#, fuzzy
 #| msgid "Donate using PayPal"
 msgid "Monthly by PayPal"
-msgstr "PayPal を使って寄付する"
+msgstr "PayPal で月払い"
 
 #: weblate_web/html/hosting.html:161
 msgid "Contact us"
@@ -824,15 +820,15 @@ msgid "%(price)s EUR / month"
 msgstr "%(price)s ユーロ／月"
 
 #: weblate_web/html/hosting.html:177
-#, fuzzy, python-format
+#, python-format
 #| msgid "Yearly (save 20%%)"
 msgid "Yearly by invoice (save 15-20%%)"
-msgstr "年額 (20%% 割引)"
+msgstr "インボイスで年払い (15-20%% 節約)"
 
 #: weblate_web/html/hosting.html:179 weblate_web/html/hosting.html:182
 #: weblate_web/html/hosting.html:185 weblate_web/html/hosting.html:188
 msgid "Ask us for yearly invoicing with discount."
-msgstr ""
+msgstr "インボイスによる年払いの割引額については、お尋ねください。"
 
 #: weblate_web/html/hosting.html:179 weblate_web/html/hosting.html:182
 #: weblate_web/html/hosting.html:185 weblate_web/html/hosting.html:188
@@ -1187,19 +1183,19 @@ msgstr "私どもが実施している翻訳作業も、この Hosted Weblate �
 
 #: weblate_web/html/thanks.html:38
 msgid "Sponsors"
-msgstr ""
+msgstr "スポンサー"
 
 #: weblate_web/html/thanks.html:40
 msgid ""
 "Free hosting for free software projects would be impossible without our "
 "sponsors."
-msgstr ""
+msgstr "フリーソフトウェアに対する無料ホスティングは、スポンサー無しには実現できません。"
 
 #: weblate_web/html/thanks.html:42
 msgid ""
 "Support our project on Bountysource Salt and get exclusive logo placement on "
 "this page."
-msgstr ""
+msgstr "Bountysource Salt で我々のプロジェクトをサポートすることで、独自のロゴをページに貼り付けることができるようになります。"
 
 #: weblate_web/html/tour.html:3 weblate_web/html/tour.html:4
 msgid "Weblate tour"
@@ -1270,7 +1266,7 @@ msgstr "%.1f ギビバイト"
 
 #: weblate_web/templatetags/downloads.py:54
 msgid "Test repositories data, useful for offline tests"
-msgstr ""
+msgstr "テストリポジトリのデータ。オフラインテスト用に便利です"
 
 #: weblate_web/templatetags/downloads.py:56
 msgid "Sources tarball, bzip2 compressed"
