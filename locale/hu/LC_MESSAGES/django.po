@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2016-05-26 12:07+0200\n"
+"POT-Creation-Date: 2016-07-08 09:55+0200\n"
 "PO-Revision-Date: 2016-01-13 08:02+0000\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Hungarian <https://hosted.weblate.org/projects/weblate/"
@@ -252,18 +252,24 @@ msgstr ""
 msgid "Code"
 msgstr "Kód"
 
-#: weblate_web/html/contribute.html:23 weblate_web/html/download.html:20
+#: weblate_web/html/contribute.html:23
+#, fuzzy, python-format
+#| msgid ""
+#| "Weblate is being developed on <a href=\"https://github.com/nijel/weblate"
+#| "\">Github</a>, you can fork it there or just:"
 msgid ""
-"Weblate is being developed on <a href=\"https://github.com/nijel/weblate"
-"\">Github</a>, you can fork it there or just:"
+"Weblate is being developed on <a href=\"%(url)s\">Github</a>, you can fork "
+"it there or just:"
 msgstr ""
 "A Weblate fejlesztése <a href=\"https://github.com/nijel/weblate\">Github</"
 "a> felett történik, forkolhatja ott vagy egyszerűen:"
 
 #: weblate_web/html/contribute.html:31
-msgid ""
-"This website is stored on <a href=\"https://github.com/nijel/weblate-web"
-"\">Github</a> as well:"
+#, fuzzy, python-format
+#| msgid ""
+#| "This website is stored on <a href=\"https://github.com/nijel/weblate-web"
+#| "\">Github</a> as well:"
+msgid "This website is stored on <a href=\"%(url)s\">Github</a> as well:"
 msgstr ""
 "Ez a weboldal is <a href=\"https://github.com/nijel/weblate-web\">Github</a>-"
 "on fut:"
@@ -379,6 +385,14 @@ msgstr "Weblate letöltése"
 #: weblate_web/html/download.html:7
 msgid "Weblate comes with complete source code."
 msgstr "A Weblate-hez teljeskörű forráskód tartozik."
+
+#: weblate_web/html/download.html:20
+msgid ""
+"Weblate is being developed on <a href=\"https://github.com/nijel/weblate"
+"\">Github</a>, you can fork it there or just:"
+msgstr ""
+"A Weblate fejlesztése <a href=\"https://github.com/nijel/weblate\">Github</"
+"a> felett történik, forkolhatja ott vagy egyszerűen:"
 
 #: weblate_web/html/download.html:37
 msgid "You can download latest release here:"

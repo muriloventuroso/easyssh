@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2016-05-26 12:07+0200\n"
+"POT-Creation-Date: 2016-07-08 09:55+0200\n"
 "PO-Revision-Date: 2015-06-15 12:56+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Belarusian (latin) <https://hosted.weblate.org/projects/"
@@ -268,18 +268,24 @@ msgstr ""
 msgid "Code"
 msgstr "Kod"
 
-#: weblate_web/html/contribute.html:23 weblate_web/html/download.html:20
+#: weblate_web/html/contribute.html:23
+#, fuzzy, python-format
+#| msgid ""
+#| "Weblate is being developed on <a href=\"https://github.com/nijel/weblate"
+#| "\">Github</a>, you can fork it there or just:"
 msgid ""
-"Weblate is being developed on <a href=\"https://github.com/nijel/weblate"
-"\">Github</a>, you can fork it there or just:"
+"Weblate is being developed on <a href=\"%(url)s\">Github</a>, you can fork "
+"it there or just:"
 msgstr ""
 "Weblate raspracoŭvajecca na <a href=\"https://github.com/nijel/weblate"
 "\">Github</a>. Vy možacie tam jaho forknuć aĺbo prosta:"
 
 #: weblate_web/html/contribute.html:31
-msgid ""
-"This website is stored on <a href=\"https://github.com/nijel/weblate-web"
-"\">Github</a> as well:"
+#, fuzzy, python-format
+#| msgid ""
+#| "This website is stored on <a href=\"https://github.com/nijel/weblate-web"
+#| "\">Github</a> as well:"
+msgid "This website is stored on <a href=\"%(url)s\">Github</a> as well:"
 msgstr ""
 "Hety sajt taksama miescіcca na <a href=\"https://github.com/nijel/weblate-web"
 "\">Github</a>:"
@@ -389,6 +395,14 @@ msgstr "Sciahnuć Weblate"
 #: weblate_web/html/download.html:7
 msgid "Weblate comes with complete source code."
 msgstr "Weblate pastaŭliajecca z poŭnym zychodnym kodam."
+
+#: weblate_web/html/download.html:20
+msgid ""
+"Weblate is being developed on <a href=\"https://github.com/nijel/weblate"
+"\">Github</a>, you can fork it there or just:"
+msgstr ""
+"Weblate raspracoŭvajecca na <a href=\"https://github.com/nijel/weblate"
+"\">Github</a>. Vy možacie tam jaho forknuć aĺbo prosta:"
 
 #: weblate_web/html/download.html:37
 msgid "You can download latest release here:"

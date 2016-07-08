@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2016-05-26 12:07+0200\n"
+"POT-Creation-Date: 2016-07-08 09:55+0200\n"
 "PO-Revision-Date: 2015-10-23 17:08+0200\n"
 "Last-Translator: Xosé Calvo <xosecalvo@gmail.com>\n"
 "Language-Team: Galician <https://hosted.weblate.org/projects/weblate/website/"
@@ -242,18 +242,24 @@ msgstr ""
 msgid "Code"
 msgstr "Código"
 
-#: weblate_web/html/contribute.html:23 weblate_web/html/download.html:20
+#: weblate_web/html/contribute.html:23
+#, fuzzy, python-format
+#| msgid ""
+#| "Weblate is being developed on <a href=\"https://github.com/nijel/weblate"
+#| "\">Github</a>, you can fork it there or just:"
 msgid ""
-"Weblate is being developed on <a href=\"https://github.com/nijel/weblate"
-"\">Github</a>, you can fork it there or just:"
+"Weblate is being developed on <a href=\"%(url)s\">Github</a>, you can fork "
+"it there or just:"
 msgstr ""
 "Weblate desenvólvese en <a href=\"https://github.com/nijel/weblate\">Github</"
 "a>, pode facer derivados alí mesmo ou só:"
 
 #: weblate_web/html/contribute.html:31
-msgid ""
-"This website is stored on <a href=\"https://github.com/nijel/weblate-web"
-"\">Github</a> as well:"
+#, fuzzy, python-format
+#| msgid ""
+#| "This website is stored on <a href=\"https://github.com/nijel/weblate-web"
+#| "\">Github</a> as well:"
+msgid "This website is stored on <a href=\"%(url)s\">Github</a> as well:"
 msgstr ""
 "Weblate desenvólvese tamén en <a href=\"https://github.com/nijel/weblate-web"
 "\">Github</a>:"
@@ -357,6 +363,14 @@ msgstr ""
 #: weblate_web/html/download.html:7
 msgid "Weblate comes with complete source code."
 msgstr ""
+
+#: weblate_web/html/download.html:20
+msgid ""
+"Weblate is being developed on <a href=\"https://github.com/nijel/weblate"
+"\">Github</a>, you can fork it there or just:"
+msgstr ""
+"Weblate desenvólvese en <a href=\"https://github.com/nijel/weblate\">Github</"
+"a>, pode facer derivados alí mesmo ou só:"
 
 #: weblate_web/html/download.html:37
 msgid "You can download latest release here:"

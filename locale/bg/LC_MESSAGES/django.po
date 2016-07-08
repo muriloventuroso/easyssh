@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2016-05-26 12:07+0200\n"
+"POT-Creation-Date: 2016-07-08 09:55+0200\n"
 "PO-Revision-Date: 2016-07-02 19:46+0000\n"
 "Last-Translator: Reg Zi <qeman@abv.bg>\n"
-"Language-Team: Bulgarian "
-"<https://hosted.weblate.org/projects/weblate/website/bg/>\n"
+"Language-Team: Bulgarian <https://hosted.weblate.org/projects/weblate/"
+"website/bg/>\n"
 "Language: bg\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -255,16 +255,16 @@ msgstr ""
 msgid "Code"
 msgstr ""
 
-#: weblate_web/html/contribute.html:23 weblate_web/html/download.html:20
+#: weblate_web/html/contribute.html:23
+#, python-format
 msgid ""
-"Weblate is being developed on <a href=\"https://github.com/nijel/weblate"
-"\">Github</a>, you can fork it there or just:"
+"Weblate is being developed on <a href=\"%(url)s\">Github</a>, you can fork "
+"it there or just:"
 msgstr ""
 
 #: weblate_web/html/contribute.html:31
-msgid ""
-"This website is stored on <a href=\"https://github.com/nijel/weblate-web"
-"\">Github</a> as well:"
+#, python-format
+msgid "This website is stored on <a href=\"%(url)s\">Github</a> as well:"
 msgstr ""
 
 #: weblate_web/html/contribute.html:41
@@ -361,6 +361,12 @@ msgstr ""
 
 #: weblate_web/html/download.html:7
 msgid "Weblate comes with complete source code."
+msgstr ""
+
+#: weblate_web/html/download.html:20
+msgid ""
+"Weblate is being developed on <a href=\"https://github.com/nijel/weblate"
+"\">Github</a>, you can fork it there or just:"
 msgstr ""
 
 #: weblate_web/html/download.html:37

@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2016-05-26 12:07+0200\n"
+"POT-Creation-Date: 2016-07-08 09:55+0200\n"
 "PO-Revision-Date: 2016-06-15 17:46+0000\n"
 "Last-Translator: 8c6311e901274f6baef2068792c8ab <ft-002@safe-mail.net>\n"
-"Language-Team: Norwegian Bokmål "
-"<https://hosted.weblate.org/projects/weblate/website/nb/>\n"
+"Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/weblate/"
+"website/nb/>\n"
 "Language: nb\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -91,7 +91,8 @@ msgstr "Finner ikke side"
 #: weblate_web/html/404.html:8 weblate_web/html/500.html:8
 #: weblate_web/html/index.html:7
 msgid "Weblate is a free web-based translation management system."
-msgstr "Weblate er et gratis nettbasert system for håndtering av oversettelser."
+msgstr ""
+"Weblate er et gratis nettbasert system for håndtering av oversettelser."
 
 #: weblate_web/html/404.html:15
 msgid "The page you are looking for was not found."
@@ -253,18 +254,24 @@ msgstr ""
 msgid "Code"
 msgstr "Kode"
 
-#: weblate_web/html/contribute.html:23 weblate_web/html/download.html:20
+#: weblate_web/html/contribute.html:23
+#, fuzzy, python-format
+#| msgid ""
+#| "Weblate is being developed on <a href=\"https://github.com/nijel/weblate"
+#| "\">Github</a>, you can fork it there or just:"
 msgid ""
-"Weblate is being developed on <a href=\"https://github.com/nijel/weblate"
-"\">Github</a>, you can fork it there or just:"
+"Weblate is being developed on <a href=\"%(url)s\">Github</a>, you can fork "
+"it there or just:"
 msgstr ""
-"Weblate blir utviklet på <a href=\"https://github.com/nijel/weblate\""
-">Github</a>, du kan opprette en forgrening der, eller bare:"
+"Weblate blir utviklet på <a href=\"https://github.com/nijel/weblate"
+"\">Github</a>, du kan opprette en forgrening der, eller bare:"
 
 #: weblate_web/html/contribute.html:31
-msgid ""
-"This website is stored on <a href=\"https://github.com/nijel/weblate-web"
-"\">Github</a> as well:"
+#, fuzzy, python-format
+#| msgid ""
+#| "This website is stored on <a href=\"https://github.com/nijel/weblate-web"
+#| "\">Github</a> as well:"
+msgid "This website is stored on <a href=\"%(url)s\">Github</a> as well:"
 msgstr ""
 "Dette nettstedet er lagret på <a href=\"https://github.com/nijel/weblate-web"
 "\"> Github </a> også:"
@@ -381,6 +388,14 @@ msgstr "Last ned Weblate"
 #: weblate_web/html/download.html:7
 msgid "Weblate comes with complete source code."
 msgstr "Weblate leveres med komplett kildekode."
+
+#: weblate_web/html/download.html:20
+msgid ""
+"Weblate is being developed on <a href=\"https://github.com/nijel/weblate"
+"\">Github</a>, you can fork it there or just:"
+msgstr ""
+"Weblate blir utviklet på <a href=\"https://github.com/nijel/weblate"
+"\">Github</a>, du kan opprette en forgrening der, eller bare:"
 
 #: weblate_web/html/download.html:37
 msgid "You can download latest release here:"
@@ -650,8 +665,8 @@ msgid ""
 "adding SSH key we will provide you."
 msgstr ""
 "Du må la Weblate få tilgang til ditt kodelager. Dette kan gjøres ved å legge "
-"til Weblate som bruker i prosjektet ditt (på GitHub, Bitbucket eller GitLab)"
-", eller å legge til SSH-nøkkelen vi gir deg."
+"til Weblate som bruker i prosjektet ditt (på GitHub, Bitbucket eller "
+"GitLab), eller å legge til SSH-nøkkelen vi gir deg."
 
 #: weblate_web/html/hosting.html:6
 msgid "Free continuous translation hosting for free software."
@@ -953,8 +968,8 @@ msgid ""
 "\">Gratipay</a> or <a href=\"%(donate_url)s\">other ways to donate</a>."
 msgstr ""
 "Vertslagringen tilbys gratis, men det koster penger å kjøre og vedlikeholde "
-"tjeneren, så du må gjerne donere penger med <a href=\"%(gittip_url)s\""
-">Gratipay</a> eller <a href=\"%(donate_url)s\"></a>."
+"tjeneren, så du må gjerne donere penger med <a href=\"%(gittip_url)s"
+"\">Gratipay</a> eller <a href=\"%(donate_url)s\"></a>."
 
 #: weblate_web/html/hosting.html:256
 msgid "Self hosting"

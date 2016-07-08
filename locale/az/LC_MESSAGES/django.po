@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2016-05-26 12:07+0200\n"
+"POT-Creation-Date: 2016-07-08 09:55+0200\n"
 "PO-Revision-Date: 2016-06-25 22:31+0000\n"
 "Last-Translator: Sevdimali İsa <sevdimaliisayev@mail.ru>\n"
-"Language-Team: Azerbaijani "
-"<https://hosted.weblate.org/projects/weblate/website/az/>\n"
+"Language-Team: Azerbaijani <https://hosted.weblate.org/projects/weblate/"
+"website/az/>\n"
 "Language: az\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -133,7 +133,6 @@ msgstr ""
 "qazanacaqdır."
 
 #: weblate_web/html/base-features.html:30 weblate_web/html/hosting.html:17
-#| msgid "Hosting Weblate"
 msgid "Hosting plans"
 msgstr "Hostinq planları"
 
@@ -154,12 +153,10 @@ msgstr ""
 "Weblate? buludunuz içində yerləşdirilmək üçün bir neçə alətlə birlikdə gəlir."
 
 #: weblate_web/html/base-features.html:46
-#| msgid "Hosting for free software"
 msgid "Free software"
 msgstr "Pulsuz proqram"
 
 #: weblate_web/html/base-features.html:47
-#| msgid "Weblate is a free software with community support."
 msgid "Weblate is free software, you can run your own instance of it."
 msgstr "Weblate pulsuz proqramdır, öz nümunəninizi yarada bilərsiniz."
 
@@ -226,15 +223,12 @@ msgstr "Tərcümələrə yardım edin!"
 
 #: weblate_web/html/base.html:140
 #, python-format
-#| msgid ""
-#| "Weblate is free software, but welcomes <a href=\"%(donate_url)s"
-#| "\">donations</a>."
 msgid ""
 "Weblate is <a href=\"%(github_url)s\">free software</a> and welcomes <a href="
 "\"%(donate_url)s\">donations</a>."
 msgstr ""
-"Weblate <a href=\"%(github_url)s\">pulsuz servisdir</a> və <a href=\""
-"%(donate_url)s\">ianələrinizi</a> qəbul edərik."
+"Weblate <a href=\"%(github_url)s\">pulsuz servisdir</a> və <a href="
+"\"%(donate_url)s\">ianələrinizi</a> qəbul edərik."
 
 #: weblate_web/html/contribute.html:3 weblate_web/html/contribute.html:4
 msgid "Contribute to Weblate"
@@ -266,18 +260,24 @@ msgstr ""
 msgid "Code"
 msgstr "Kod"
 
-#: weblate_web/html/contribute.html:23 weblate_web/html/download.html:20
+#: weblate_web/html/contribute.html:23
+#, fuzzy, python-format
+#| msgid ""
+#| "Weblate is being developed on <a href=\"https://github.com/nijel/weblate"
+#| "\">Github</a>, you can fork it there or just:"
 msgid ""
-"Weblate is being developed on <a href=\"https://github.com/nijel/weblate"
-"\">Github</a>, you can fork it there or just:"
+"Weblate is being developed on <a href=\"%(url)s\">Github</a>, you can fork "
+"it there or just:"
 msgstr ""
 "Weblate, <a href=\"https://github.com/nijel/weblate\">Github</a> üzərində "
 "inkişaf etdirlir, ordanda əl ata bilərsiniz ya da sadəcə:"
 
 #: weblate_web/html/contribute.html:31
-msgid ""
-"This website is stored on <a href=\"https://github.com/nijel/weblate-web"
-"\">Github</a> as well:"
+#, fuzzy, python-format
+#| msgid ""
+#| "This website is stored on <a href=\"https://github.com/nijel/weblate-web"
+#| "\">Github</a> as well:"
+msgid "This website is stored on <a href=\"%(url)s\">Github</a> as well:"
 msgstr ""
 "Bu sayt <a href=\"https://github.com/nijel/weblate-web\">Github</a>da "
 "saxlanılır:"
@@ -397,6 +397,14 @@ msgstr "Weblate-i endir"
 msgid "Weblate comes with complete source code."
 msgstr "Weblate tam qaynaq kodu ilə gəlir."
 
+#: weblate_web/html/download.html:20
+msgid ""
+"Weblate is being developed on <a href=\"https://github.com/nijel/weblate"
+"\">Github</a>, you can fork it there or just:"
+msgstr ""
+"Weblate, <a href=\"https://github.com/nijel/weblate\">Github</a> üzərində "
+"inkişaf etdirlir, ordanda əl ata bilərsiniz ya da sadəcə:"
+
 #: weblate_web/html/download.html:37
 msgid "You can download latest release here:"
 msgstr "Ən son verisyanı burdan endirə bilərsiniz:"
@@ -421,7 +429,6 @@ msgid ""
 msgstr ""
 
 #: weblate_web/html/download.html:60
-#| msgid "Cloud or emulator images"
 msgid "Cloud or virtualization images"
 msgstr "Bulud və Virtuallaşma obrazları"
 
