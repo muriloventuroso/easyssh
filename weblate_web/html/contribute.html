@@ -20,7 +20,7 @@
 <h2>{% trans "Code" %}</h2>
 
 <p>
-{% blocktrans %}Weblate is being developed on <a href="https://github.com/nijel/weblate">Github</a>, you can fork it there or just:{% endblocktrans %}
+{% blocktrans with "https://github.com/nijel/weblate" as url %}Weblate is being developed on <a href="{{ url }}">Github</a>, you can fork it there or just:{% endblocktrans %}
 </p>
 
 <pre>
@@ -28,11 +28,11 @@ git clone https://github.com/nijel/weblate.git
 </pre>
 
 <p>
-{% blocktrans %}This website is stored on <a href="https://github.com/nijel/weblate-web">Github</a> as well:{% endblocktrans %}
+{% blocktrans with "https://github.com/WeblateOrg/website" as url %}This website is stored on <a href="{{ url }}">Github</a> as well:{% endblocktrans %}
 </p>
 
 <pre>
-git clone https://github.com/nijel/weblate-web.git
+git clone https://github.com/WeblateOrg/website.git
 </pre>
 
 <h2 id="translate">{% trans "Translate" %}</h2>
