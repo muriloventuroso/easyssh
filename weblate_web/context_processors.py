@@ -30,7 +30,6 @@ def weblate_web(request):
     downloads = [
         'Weblate-%s.%s' % (VERSION, ext) for ext in EXTENSIONS
     ]
-    downloads.append('Weblate-test-%s.tar.xz' % VERSION)
     return {
         'downloads': downloads,
         'screenshots': SCREENSHOTS,
