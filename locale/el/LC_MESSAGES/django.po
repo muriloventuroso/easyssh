@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2016-07-10 10:40+0200\n"
+"POT-Creation-Date: 2016-07-20 14:10+0200\n"
 "PO-Revision-Date: 2016-07-15 08:05+0000\n"
 "Last-Translator: Παναγιώτης Παπάζογλου <papaz_p@yahoo.com>\n"
-"Language-Team: Greek "
-"<https://hosted.weblate.org/projects/weblate/website/el/>\n"
+"Language-Team: Greek <https://hosted.weblate.org/projects/weblate/website/el/"
+">\n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -264,9 +264,6 @@ msgstr "Κώδικας"
 
 #: weblate_web/html/contribute.html:23
 #, python-format
-#| msgid ""
-#| "Weblate is being developed on <a href=\"https://github.com/nijel/weblate"
-#| "\">Github</a>, you can fork it there or just:"
 msgid ""
 "Weblate is being developed on <a href=\"%(url)s\">Github</a>, you can fork "
 "it there or just:"
@@ -276,9 +273,6 @@ msgstr ""
 
 #: weblate_web/html/contribute.html:31
 #, python-format
-#| msgid ""
-#| "This website is stored on <a href=\"https://github.com/nijel/weblate-web"
-#| "\">Github</a> as well:"
 msgid "This website is stored on <a href=\"%(url)s\">Github</a> as well:"
 msgstr ""
 "Αυτή η ιστοσελίδα είναι αποθυκευμένη στο <a href=\"%(url)s\">Github</a> "
@@ -1204,8 +1198,10 @@ msgid "Our translations are being done on Hosted Weblate."
 msgstr "Οι μεταφράσεις μας γίνονται στο Hosted Weblate."
 
 #: weblate_web/html/thanks.html:38
-msgid "Sponsors"
-msgstr "Χορηγοί"
+#, fuzzy
+#| msgid "Support"
+msgid "Supporters"
+msgstr "Υποστήριξη"
 
 #: weblate_web/html/thanks.html:40
 msgid ""
@@ -1307,6 +1303,9 @@ msgstr "Προελεύσεις tarball, συμπιεσμένο xz"
 #: weblate_web/templatetags/downloads.py:62
 msgid "Sources, zip compressed"
 msgstr "Προελεύσεις, συμπιεσμένο zip"
+
+#~ msgid "Sponsors"
+#~ msgstr "Χορηγοί"
 
 #~ msgid "Monthly"
 #~ msgstr "Μηνιαίως"
