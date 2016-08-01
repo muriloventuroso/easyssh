@@ -8,17 +8,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2016-07-20 14:10+0200\n"
-"PO-Revision-Date: 2016-06-24 21:21+0000\n"
+"PO-Revision-Date: 2016-08-01 14:05+0000\n"
 "Last-Translator: Domen <mitenem@outlook.com>\n"
-"Language-Team: Slovenian <https://hosted.weblate.org/projects/weblate/"
-"website/sl/>\n"
+"Language-Team: Slovenian "
+"<https://hosted.weblate.org/projects/weblate/website/sl/>\n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
-"%100==4 ? 2 : 3;\n"
-"X-Generator: Weblate 2.7-dev\n"
+"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
+"n%100==4 ? 2 : 3;\n"
+"X-Generator: Weblate 2.8-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -136,6 +136,7 @@ msgstr "Načrti za gostovanje"
 #: weblate_web/html/base-features.html:31
 msgid "Hosting plans to use Weblate as a service starting at 19 EUR."
 msgstr ""
+"Paketi gostovanja za uporabo Weblate kot storitve se pričnejo pri 19 EUR."
 
 #: weblate_web/html/base-features.html:38
 msgid "Ready for cloud"
@@ -255,7 +256,7 @@ msgid "Code"
 msgstr "Koda"
 
 #: weblate_web/html/contribute.html:23
-#, fuzzy, python-format
+#, python-format
 #| msgid ""
 #| "Weblate is being developed on <a href=\"https://github.com/nijel/weblate"
 #| "\">Github</a>, you can fork it there or just:"
@@ -263,18 +264,17 @@ msgid ""
 "Weblate is being developed on <a href=\"%(url)s\">Github</a>, you can fork "
 "it there or just:"
 msgstr ""
-"Weblate razvijamo na <a href=\"https://github.com/nijel/weblate\">Github</"
-"a>; tam ga lahko vejite (fork) ali samo:"
+"Weblate razvijamo na <a href=\"%(url)s\">Githubu</a>; tam ga lahko vejite "
+"(fork) ali samo:"
 
 #: weblate_web/html/contribute.html:31
-#, fuzzy, python-format
+#, python-format
 #| msgid ""
 #| "This website is stored on <a href=\"https://github.com/nijel/weblate-web"
 #| "\">Github</a> as well:"
 msgid "This website is stored on <a href=\"%(url)s\">Github</a> as well:"
 msgstr ""
-"Spletna stran je prav tako shranjena na <a href=\"https://github.com/nijel/"
-"weblate-web\">Github</a>:"
+"Spletna stran je prav tako shranjena na <a href=\"%(url)s\">Githubu</a>:"
 
 #: weblate_web/html/contribute.html:41
 msgid ""
@@ -451,6 +451,8 @@ msgid ""
 "BitNami Weblate stack providing native installation for most platforms as "
 "well as support for many public cloud providers"
 msgstr ""
+"Sklad BitNami Weblate nudi domorodno namestitev za večino platform, kakor "
+"tudi podporo za mnoge javne ponudnike storitev v oblaku"
 
 #: weblate_web/html/features.html:3 weblate_web/html/features.html:4
 msgid "Weblate features"
@@ -643,6 +645,8 @@ msgid ""
 "The project setup is currently manual. If you haven't done so already, "
 "please get in touch with us and send us details about your repository setup."
 msgstr ""
+"Nastavitev projekta je trenutno ročna. Če tega še niste uredili, stopite v "
+"stik z nami in nam pošljite podatke o nastavitvah vašega skladišča."
 
 #: weblate_web/html/hosting-ordered.html:15
 msgid "Usually following information is needed:"
@@ -662,6 +666,9 @@ msgid ""
 "adding Weblate user to your project (on GitHub, Bitbucket or GitLab) or "
 "adding SSH key we will provide you."
 msgstr ""
+"Weblate morate dovoliti dostop do vašega skladišča. To lahko storite tako, "
+"da svojemu projektu dodate uporabnika Weblate (na GitHubu, Butbucketu ali "
+"GitLabu) ali dodate ključ SSH, ki vam ga bomo poslali."
 
 #: weblate_web/html/hosting.html:6
 msgid "Free continuous translation hosting for free software."
@@ -679,6 +686,10 @@ msgid ""
 "look for hosting of bigger projects, don't hesitate to <a href=\"%(contact)s"
 "\">get in touch with us</a>."
 msgstr ""
+"Gostujemo lahko prevode za komercialne ali odprte programske projekte. "
+"Povzetek paketov gostovanja si lahko ogledate spodaj. Če imate kakršna koli "
+"vprašanja ali vas zanima gostovanje večjih projektov, brez zadržkov <a href="
+"\"%(contact)s\">stopite v stik z nami</a>."
 
 #: weblate_web/html/hosting.html:28
 msgctxt "Hosting plan"
@@ -839,12 +850,16 @@ msgid ""
 "The hosting setup is currently done manually, so you might want to get in "
 "touch with us prior to making subscription with your project details."
 msgstr ""
+"Nastavitev projekta je trenutno ročna, zato pred sklenitvijo naročnine morda "
+"stopite v stik z nami in nam sporočite podrobnosti vašega projekta."
 
 #: weblate_web/html/hosting.html:204
 msgid ""
 "Alternatively we can accept payments by wire transfer (preferably IBAN) or "
 "Bitcoin. Please get in touch for more details."
 msgstr ""
+"Alternativno lahko sprejemamo plačila z bančnim nakazilom (IBAN, če je možno)"
+" ali z Bitcoini. Prosimo, da za več podrobnosti stopite v stik z nami."
 
 #: weblate_web/html/hosting.html:207
 msgid "Hosting for free software"
@@ -961,7 +976,7 @@ msgstr ""
 
 #: weblate_web/html/hosting.html:256
 msgid "Self hosting"
-msgstr "Samogostovanje"
+msgstr "Lastno gostovanje"
 
 #: weblate_web/html/hosting.html:260
 #, python-format
@@ -981,6 +996,10 @@ msgid ""
 "well with consulting services tailored for your needs. Please contact <a "
 "href=\"%(contact_url)s\">Michal Čihař</a> for more details."
 msgstr ""
+"Če potrebujete pomoč pri lastnem gostovanju, smo vam pripravljeni pomagati s "
+"storitvami svetovanja, prilagojenimi vašim potrebam. Prosimo, da za več "
+"podrobnosti stopite v stik z <a href=\"%(contact_url)s\">Michalom "
+"Čihařem</a>."
 
 #: weblate_web/html/index.html:3
 msgid "Weblate - web-based translation"
@@ -1155,10 +1174,9 @@ msgid "Our translations are being done on Hosted Weblate."
 msgstr "Naši prevodi nastajajo na gostovanem Weblate."
 
 #: weblate_web/html/thanks.html:38
-#, fuzzy
 #| msgid "Support"
 msgid "Supporters"
-msgstr "Podpora"
+msgstr "Podporniki"
 
 #: weblate_web/html/thanks.html:40
 msgid ""
@@ -1173,7 +1191,7 @@ msgid ""
 "Support our project on Bountysource Salt and get exclusive logo placement on "
 "this page."
 msgstr ""
-"Podprite naš projekt na Bountysource Salt in na to strani bomo ekskluzivno "
+"Podprite naš projekt na Bountysource Salt in na to stran bomo ekskluzivno "
 "postavili vaš logotip."
 
 #: weblate_web/html/tour.html:3 weblate_web/html/tour.html:4
