@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2016-07-20 14:10+0200\n"
-"PO-Revision-Date: 2016-07-26 20:42+0000\n"
+"PO-Revision-Date: 2016-08-03 22:10+0000\n"
 "Last-Translator: Sijera <sijeravl@gmail.com>\n"
 "Language-Team: Serbian "
 "<https://hosted.weblate.org/projects/weblate/website/sr/>\n"
@@ -248,7 +248,7 @@ msgid "Code"
 msgstr "Код"
 
 #: weblate_web/html/contribute.html:23
-#, fuzzy, python-format
+#, python-format
 #| msgid ""
 #| "Weblate is being developed on <a href=\"https://github.com/nijel/weblate"
 #| "\">Github</a>, you can fork it there or just:"
@@ -256,18 +256,16 @@ msgid ""
 "Weblate is being developed on <a href=\"%(url)s\">Github</a>, you can fork "
 "it there or just:"
 msgstr ""
-"Веблејт се развија на <a href=\"https://github.com/nijel/weblate\">Гитхабу</"
-"a>. Тамо га можете разгранати или:"
+"Веблејт се развија на <a href=\"%(url)s\">Github</a>. Тамо га можете "
+"разгранати или:"
 
 #: weblate_web/html/contribute.html:31
-#, fuzzy, python-format
+#, python-format
 #| msgid ""
 #| "This website is stored on <a href=\"https://github.com/nijel/weblate-web"
 #| "\">Github</a> as well:"
 msgid "This website is stored on <a href=\"%(url)s\">Github</a> as well:"
-msgstr ""
-"Овај вебсајт је такође смештен на <a href=\"https://github.com/nijel/weblate-"
-"web\">Гитхабу</a>:"
+msgstr "Овај вебсајт је такође смештен на<a href=\"%(url)s\">Github</a>:"
 
 #: weblate_web/html/contribute.html:41
 msgid ""
@@ -400,7 +398,7 @@ msgstr ""
 
 #: weblate_web/html/download.html:50
 msgid "Weblate command line client"
-msgstr ""
+msgstr "Клијент командне линије"
 
 #: weblate_web/html/download.html:53
 #, python-format
@@ -408,6 +406,8 @@ msgid ""
 "You can control Weblate remotely using <a href=\"%(url)s\">wlc</a>, it can "
 "be installed by using Python PIP:"
 msgstr ""
+"Можете удаљено контролисати Weblate помоћу <a href=\"%(url)s\"></a>. Може се "
+"инсталирати помоћу Python PIP:"
 
 #: weblate_web/html/download.html:60
 msgid "Cloud or virtualization images"
@@ -626,7 +626,7 @@ msgid ""
 "please get in touch with us and send us details about your repository setup."
 msgstr ""
 "Постављање пројекта се тренутно ради ручно. Ако га до сад нисте радили, "
-"контактирајте нас и пошаљите детаље о поставкама ваше ризнице."
+"контактирајте нас и пошаљите детаље о поставкама вашег спремишта."
 
 #: weblate_web/html/hosting-ordered.html:15
 msgid "Usually following information is needed:"
@@ -634,11 +634,11 @@ msgstr "Обично су потребни следећи подаци:"
 
 #: weblate_web/html/hosting-ordered.html:18 weblate_web/html/hosting.html:230
 msgid "URL of repository with translations."
-msgstr "УРЛ ризнице са преводима."
+msgstr "УРЛ спремишта са преводима."
 
 #: weblate_web/html/hosting-ordered.html:19 weblate_web/html/hosting.html:231
 msgid "Path to translations within the repository."
-msgstr "Путања до превода унутар ризнице."
+msgstr "Путања до превода унутар спремишта."
 
 #: weblate_web/html/hosting-ordered.html:22
 msgid ""
@@ -646,9 +646,9 @@ msgid ""
 "adding Weblate user to your project (on GitHub, Bitbucket or GitLab) or "
 "adding SSH key we will provide you."
 msgstr ""
-"МОрате дозволити Веблејту приступ вашој ризници. То се може урадити "
+"Морате дозволити Веблејту приступ вашем спремишту. То се може урадити "
 "додавањем Weblate корисника у пројекат (на Гитхабу, Битбакету или Гитлабу) "
-"или додавањем ССХ кључа који ћемо вам дати."
+"или додавањем SSH кључа који ћемо вам обезбедити."
 
 #: weblate_web/html/hosting.html:6
 msgid "Free continuous translation hosting for free software."
@@ -693,7 +693,6 @@ msgid "Enterprise"
 msgstr "Корпоративни"
 
 #: weblate_web/html/hosting.html:45
-#, fuzzy
 #| msgid ""
 #| "The pricing is based on number of source strings and number of target "
 #| "languages. The source string is a text unit defined in a translation "
@@ -702,8 +701,8 @@ msgid ""
 "Text unit defined in a translation format, it can be word, sentence or a "
 "paragraph"
 msgstr ""
-"Цена је базирана на броју изворних порука и броју језика за превод. Изворна "
-"порука је текстуална јединица превода. Може бити реч, реченица или пасус."
+"Текстуална јединица дефинисана у формату превода и може бити реч, реченица "
+"или пасус"
 
 #: weblate_web/html/hosting.html:45
 msgid "Source strings"
@@ -768,31 +767,29 @@ msgstr "Обрада превода"
 
 #: weblate_web/html/hosting.html:133
 msgid "Priority email support"
-msgstr ""
+msgstr "Приоритетна подршка е-поштом"
 
 #: weblate_web/html/hosting.html:141
-#, fuzzy
 #| msgid "Branches support"
 msgid "Phone support"
-msgstr "Подршка гранања"
+msgstr "Подршка путем телефона"
 
 #: weblate_web/html/hosting.html:149
 msgid "Custom domain name with SSL"
-msgstr ""
+msgstr "Прилагођени назив домена са SSL"
 
 #: weblate_web/html/hosting.html:149
 msgid "Own domain"
-msgstr ""
+msgstr "Сопствени домен"
 
 #: weblate_web/html/hosting.html:154
 msgid "Available on request"
-msgstr ""
+msgstr "Доступно на захтев"
 
 #: weblate_web/html/hosting.html:159
-#, fuzzy
 #| msgid "Donate using PayPal"
 msgid "Monthly by PayPal"
-msgstr "Донирајте помоћу Пејпала"
+msgstr "Месечно помоћу PayPal сервиса"
 
 #: weblate_web/html/hosting.html:161
 msgid "Contact us"
@@ -805,10 +802,10 @@ msgid "%(price)s EUR / month"
 msgstr "%(price)s € / месечно"
 
 #: weblate_web/html/hosting.html:177
-#, fuzzy, python-format
+#, python-format
 #| msgid "Yearly (save 20%%)"
 msgid "Yearly by invoice (save 15-20%%)"
-msgstr "Годишње (уштедите 20%%)"
+msgstr "Годишње по фактури (уштедите 15-20%%)"
 
 #: weblate_web/html/hosting.html:179 weblate_web/html/hosting.html:182
 #: weblate_web/html/hosting.html:185 weblate_web/html/hosting.html:188
@@ -1145,10 +1142,9 @@ msgid "Our translations are being done on Hosted Weblate."
 msgstr "Наши преводи се раде на Hosted Weblate."
 
 #: weblate_web/html/thanks.html:38
-#, fuzzy
 #| msgid "Support"
 msgid "Supporters"
-msgstr "Подршка"
+msgstr "Присталице"
 
 #: weblate_web/html/thanks.html:40
 msgid ""
@@ -1230,7 +1226,7 @@ msgstr "%.1f GiB"
 
 #: weblate_web/templatetags/downloads.py:54
 msgid "Test repositories data, useful for offline tests"
-msgstr ""
+msgstr "Подаци за тестирање спремишта, корисни за тестирање ван мреже."
 
 #: weblate_web/templatetags/downloads.py:56
 msgid "Sources tarball, bzip2 compressed"
