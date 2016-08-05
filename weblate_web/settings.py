@@ -158,8 +158,8 @@ TEMPLATES = [
         ],
         'OPTIONS': {
             'context_processors': [
-                'django.core.context_processors.request',
-                'django.core.context_processors.i18n',
+                'django.template.context_processors.request',
+                'django.template.context_processors.i18n',
                 'weblate_web.context_processors.weblate_web',
             ],
             'loaders': [
