@@ -50,9 +50,7 @@ def filesizeformat(num_bytes):
 @register.simple_tag
 def downloadlink(name, text=None):
     if text is None:
-        if 'Weblate-test' in name:
-            text = _('Test repositories data, useful for offline tests')
-        elif name[-8:] == '.tar.bz2':
+        if name[-8:] == '.tar.bz2':
             text = _('Sources tarball, bzip2 compressed')
         elif name[-7:] == '.tar.gz':
             text = _('Sources tarball, gzip compressed')
