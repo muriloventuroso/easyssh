@@ -1,24 +1,22 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Piotr Sokół <psokol.l10n@gmail.com>, 2016.
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: Weblate 1.2\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2016-07-20 14:10+0200\n"
-"PO-Revision-Date: 2016-09-01 13:53+0000\n"
-"Last-Translator: Stanisław Krukowski <dfk0077@riseup.net>\n"
-"Language-Team: Polish "
-"<https://hosted.weblate.org/projects/weblate/website/pl/>\n"
+"POT-Creation-Date: 2016-08-30 12:02+0000\n"
+"PO-Revision-Date: 2016-09-01 23:41+0200\n"
+"Last-Translator: Piotr Sokół <psokol.l10n@gmail.com>\n"
+"Language-Team: polski <>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 2.8\n"
+"X-Generator: Gtranslator 2.91.7\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -61,10 +59,12 @@ msgstr ""
 
 #: weblate_web/data.py:58 weblate_web/html/features.html:71
 #: weblate_web/html/hosting.html:125
+#: weblate/html/translate.html:346
 msgid "Glossary"
 msgstr "Słownik"
 
 #: weblate_web/data.py:63 weblate_web/html/base-features.html:15
+#: weblate/html/checks.html:32
 msgid ""
 "Customizable quality checks will help you in improving quality of "
 "translations."
@@ -94,14 +94,16 @@ msgid "Weblate is a free web-based translation management system."
 msgstr "Weblate to darmowy, internetowy system zarządzania tłumaczeniem."
 
 #: weblate_web/html/404.html:15
+#: weblate/html/404.html:11
 msgid "The page you are looking for was not found."
-msgstr "Strona, której szukasz, nie została odnaleziona."
+msgstr "Poszukiwana strona nie została odnaleziona."
 
 #: weblate_web/html/500.html:4
 msgid "Server error"
 msgstr "Błąd serwera"
 
 #: weblate_web/html/500.html:15
+#: weblate/html/500.html:12
 msgid ""
 "The server had serious problems while serving your request. We've just sent "
 "our trained monkeys to fix the issue."
@@ -158,11 +160,14 @@ msgstr ""
 "wersję tego oprogramowania."
 
 #: weblate_web/html/base.html:12
+#: weblate/html/translate.html:16
+#, fuzzy
 msgctxt "Keyword"
 msgid "translate"
-msgstr "przetłumacz"
+msgstr "tłumacz to"
 
 #: weblate_web/html/base.html:66
+#: weblate/html/base.html:84
 msgid "Toggle navigation"
 msgstr "Przełącz nawigację"
 
@@ -187,10 +192,13 @@ msgid "Docs"
 msgstr "Dokumenty"
 
 #: weblate_web/html/base.html:82 weblate_web/html/download.html:34
+#: weblate/html/translation.html:137
 msgid "Download"
 msgstr "Pobierz"
 
 #: weblate_web/html/base.html:83
+#: weblate/accounts/views.py:315
+#: weblate/html/accounts/hosting.html:7
 msgid "Hosting"
 msgstr "Hosting"
 
@@ -243,6 +251,8 @@ msgid "View sources"
 msgstr "Wyświetl źródła"
 
 #: weblate_web/html/contribute.html:11 weblate_web/html/contribute.html:38
+#: weblate/html/list-translations.html:72
+#: weblate/html/translate.html:87
 msgid "Translate"
 msgstr "Przetłumacz"
 
@@ -291,10 +301,16 @@ msgstr ""
 "https://hosted.weblate.org/engage/weblate/\"> hosted.weblate.org</a>."
 
 #: weblate_web/html/contribute.html:46
+#: weblate/html/translation.html:83
+#: weblate/html/widgets.html:56
+#: weblate/html/widgets.html:64
+#: weblate/html/widgets.html:71
+#: weblate/html/widgets.html:79
 msgid "Translation status"
 msgstr "Stan tłumaczenia"
 
 #: weblate_web/html/donate.html:3 weblate_web/html/donate.html:4
+#: weblate/trans/models/advertisement.py:43
 msgid "Donate to Weblate"
 msgstr "Złóż darowiznę dla Weblate"
 
@@ -559,6 +575,20 @@ msgstr ""
 "Tłumaczenia są zarządzane w ramach jednego systemu kontroli wersji jako kod."
 
 #: weblate_web/html/features.html:103
+#: weblate/html/accounts/profile.html:63
+#: weblate/html/accounts/profile.html:92
+#: weblate/html/accounts/profile.html:134
+#: weblate/html/accounts/profile.html:169
+#: weblate/html/accounts/profile.html:242
+#: weblate/html/accounts/profile.html:287
+#: weblate/html/admin/performance.html:23
+#: weblate/html/admin/performance.html:32
+#: weblate/html/base.html:114
+#: weblate/html/check.html:42
+#: weblate/html/check_project.html:43
+#: weblate/html/check_subproject.html:44
+#: weblate/html/checks.html:36
+#: weblate/html/footer.html:8
 msgid "Documentation"
 msgstr "Dokumentacja"
 
@@ -570,8 +600,14 @@ msgstr ""
 "i użytkowanie."
 
 #: weblate_web/html/features.html:111
+#: weblate/html/list-translations.html:12
+#: weblate/html/list-translations.html:23
+#: weblate/html/translation.html:269
+#: weblate/html/translation.html:317
+#: weblate/html/zen-units.html:55
+#, fuzzy
 msgid "Review"
-msgstr "Przegląd"
+msgstr "Wymagane sprawdzenie"
 
 #: weblate_web/html/features.html:112
 msgid "Translators have several options to review contributions made by peers."
@@ -580,6 +616,15 @@ msgstr ""
 "tłumaczy."
 
 #: weblate_web/html/features.html:119
+#: weblate/billing/models.py:157
+#: weblate/html/accounts/profile.html:21
+#: weblate/html/accounts/profile.html:39
+#: weblate/html/language.html:6
+#: weblate/html/languages.html:6
+#: weblate/lang/models.py:400
+#: weblate/lang/views.py:40
+#: weblate/trans/admin.py:59
+#: weblate/trans/forms.py:829
 msgid "Languages"
 msgstr "Języki"
 
@@ -718,6 +763,8 @@ msgid "Basic"
 msgstr "Podstawowy"
 
 #: weblate_web/html/hosting.html:30
+#: weblate/trans/models/source.py:29
+#, fuzzy
 msgctxt "Hosting plan"
 msgid "Medium"
 msgstr "Średni"
@@ -741,6 +788,8 @@ msgstr ""
 "lub akapitem"
 
 #: weblate_web/html/hosting.html:45
+#: weblate/billing/models.py:134
+#: weblate/trans/admin.py:51
 msgid "Source strings"
 msgstr "Ciągi źródłowe"
 
@@ -755,6 +804,8 @@ msgid "Target languages"
 msgstr "Języki docelowe"
 
 #: weblate_web/html/hosting.html:61
+#: weblate/billing/models.py:112
+#: weblate/trans/admin.py:47
 msgid "VCS repositories"
 msgstr "Repozytoria VCS"
 
@@ -833,6 +884,7 @@ msgid "Monthly by PayPal"
 msgstr "Miesięcznie za pomocą PayPal"
 
 #: weblate_web/html/hosting.html:161
+#: weblate/html/footer.html:7
 msgid "Contact us"
 msgstr "Skontaktuj się z nami"
 
@@ -902,10 +954,12 @@ msgstr ""
 "Pozwoli ci to na korzystanie z Weblate bez instalowania i utrzymywania go."
 
 #: weblate_web/html/hosting.html:213
+#: weblate/html/accounts/hosting.html:33
 msgid "Conditions for free hosting"
 msgstr "Warunki darmowego hostingu"
 
 #: weblate_web/html/hosting.html:216
+#: weblate/html/accounts/hosting.html:36
 msgid ""
 "Translated content has to be released under <a href=\"http://en.wikipedia."
 "org/wiki/Free_software_license\">free license</a>."
@@ -922,6 +976,7 @@ msgstr ""
 "wersji."
 
 #: weblate_web/html/hosting.html:218
+#: weblate/html/accounts/hosting.html:38
 msgid "There is no guarantee for service availability or quality."
 msgstr "Nie ma żadnej gwarancji dostępności i jakości usługi."
 
@@ -1043,6 +1098,7 @@ msgid "Try our demo"
 msgstr "Wypróbuj nasze demo"
 
 #: weblate_web/html/index.html:15
+#: weblate/html/about.html:44
 msgid "View hosting plans"
 msgstr "Zobacz plany hostingowe"
 
@@ -1101,6 +1157,7 @@ msgstr ""
 "GitHub</a>."
 
 #: weblate_web/html/support.html:22
+#: weblate/trans/models/project.py:101
 msgid "Mailing list"
 msgstr "Lista dyskusyjna"
 
