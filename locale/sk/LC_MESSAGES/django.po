@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2016-07-20 14:10+0200\n"
-"PO-Revision-Date: 2016-07-08 07:50+0000\n"
-"Last-Translator: Michal Čihař <michal@cihar.com>\n"
-"Language-Team: Slovak <https://hosted.weblate.org/projects/weblate/website/"
-"sk/>\n"
+"PO-Revision-Date: 2016-09-07 11:09+0000\n"
+"Last-Translator: Martin Lacina <martin@whistler.sk>\n"
+"Language-Team: Slovak "
+"<https://hosted.weblate.org/projects/weblate/website/sk/>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 2.7-dev\n"
+"X-Generator: Weblate 2.8\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -253,7 +253,7 @@ msgid "Code"
 msgstr "Kód"
 
 #: weblate_web/html/contribute.html:23
-#, fuzzy, python-format
+#, python-format
 #| msgid ""
 #| "Weblate is being developed on <a href=\"https://github.com/nijel/weblate"
 #| "\">Github</a>, you can fork it there or just:"
@@ -261,18 +261,16 @@ msgid ""
 "Weblate is being developed on <a href=\"%(url)s\">Github</a>, you can fork "
 "it there or just:"
 msgstr ""
-"Weblate je vyvíjaný na <a href=\"https://github.com/nijel/weblate\">Githube</"
-"a>, kde si ho môžete forknúť, alebo stačí:"
+"Weblate je vyvíjaný na <a href=\"%(url)s\">Githube</a>, kde si ho môžete "
+"forknúť alebo stačí:"
 
 #: weblate_web/html/contribute.html:31
-#, fuzzy, python-format
+#, python-format
 #| msgid ""
 #| "This website is stored on <a href=\"https://github.com/nijel/weblate-web"
 #| "\">Github</a> as well:"
 msgid "This website is stored on <a href=\"%(url)s\">Github</a> as well:"
-msgstr ""
-"Tieto webstránky sú uložené na <a href=\"https://github.com/nijel/weblate-web"
-"\">Github</a>:"
+msgstr "Tieto webstránky sú uložené aj na <a href=\"%(url)s\">Githube</a>:"
 
 #: weblate_web/html/contribute.html:41
 msgid ""
@@ -407,7 +405,7 @@ msgstr ""
 
 #: weblate_web/html/download.html:50
 msgid "Weblate command line client"
-msgstr ""
+msgstr "Weblate klient pre príkazový riadok"
 
 #: weblate_web/html/download.html:53
 #, python-format
@@ -415,6 +413,8 @@ msgid ""
 "You can control Weblate remotely using <a href=\"%(url)s\">wlc</a>, it can "
 "be installed by using Python PIP:"
 msgstr ""
+"Weblate môžete ovládať vzdialene pomocou <a href=\"%(url)s\">wlc</a>. Môže "
+"byť nainštalovaný pomocou Python PIP:"
 
 #: weblate_web/html/download.html:60
 msgid "Cloud or virtualization images"
@@ -847,12 +847,16 @@ msgid ""
 "The hosting setup is currently done manually, so you might want to get in "
 "touch with us prior to making subscription with your project details."
 msgstr ""
+"Nastavenie hostingu momentálne prebieha manuálne, takže odporúčame sa s nami "
+"spojiť pred objednávkou a doladiť podrobnosti."
 
 #: weblate_web/html/hosting.html:204
 msgid ""
 "Alternatively we can accept payments by wire transfer (preferably IBAN) or "
 "Bitcoin. Please get in touch for more details."
 msgstr ""
+"Voliteľne prijímame platby cez bankový prevod (prednostne IBAN) alebo "
+"Bitcoin. Pre viac informácii nás kontaktujte."
 
 #: weblate_web/html/hosting.html:207
 msgid "Hosting for free software"
@@ -946,6 +950,10 @@ msgid ""
 "user to collaborators and let us know you want to use this option. See <a "
 "href=\"%(docs)s\">documentation</a> for more detailed instructions."
 msgstr ""
+"Pokiaľ chcete, aby Weblate automaticky odosielal zmeny, pridajte užívateľovi "
+"Weblate právo na zápis do repozitára a dajte nám vediť, že chete použiť túto "
+"možnosť. Detailnejšie inštrukcie nájdete v <a href=\"%(docs)s\""
+">dokumentácii</a>."
 
 #: weblate_web/html/hosting.html:248
 msgid "Support free hosting"
@@ -1158,10 +1166,9 @@ msgid "Our translations are being done on Hosted Weblate."
 msgstr "Naše preklady sú tvorené na Hosted Weblate."
 
 #: weblate_web/html/thanks.html:38
-#, fuzzy
 #| msgid "Support"
 msgid "Supporters"
-msgstr "Podpora"
+msgstr "Podporovatelia"
 
 #: weblate_web/html/thanks.html:40
 msgid ""
