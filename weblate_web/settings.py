@@ -2,7 +2,7 @@
 #
 # Copyright © 2012 - 2015 Michal Čihař <michal@cihar.com>
 #
-# This file is part of Weblate <http://weblate.org/>
+# This file is part of Weblate <https://weblate.org/>
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -15,7 +15,7 @@
 # GNU General Public License for more details.
 #
 # You should have received a copy of the GNU General Public License
-# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
 #
 
 #
@@ -226,7 +226,7 @@ LOGGING = {
 }
 
 FILES_PATH = os.path.join(BASE_DIR, 'files')
-FILES_URL = 'http://dl.cihar.com/weblate/'
+FILES_URL = 'https://dl.cihar.com/weblate/'
 LOCALE_PATHS = (
     os.path.join(BASE_DIR, '..', 'locale'),
 )
