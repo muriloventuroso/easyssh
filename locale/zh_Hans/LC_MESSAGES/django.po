@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2016-07-20 14:10+0200\n"
+"POT-Creation-Date: 2016-09-15 16:27+0200\n"
 "PO-Revision-Date: 2016-07-20 18:19+0000\n"
 "Last-Translator: YFdyh000 <yfdyh000@gmail.com>\n"
-"Language-Team: Simplified Chinese "
-"<https://hosted.weblate.org/projects/weblate/website/zh_Hans/>\n"
+"Language-Team: Simplified Chinese <https://hosted.weblate.org/projects/"
+"weblate/website/zh_Hans/>\n"
 "Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -243,9 +243,6 @@ msgstr "代码"
 
 #: weblate_web/html/contribute.html:23
 #, python-format
-#| msgid ""
-#| "Weblate is being developed on <a href=\"https://github.com/nijel/weblate"
-#| "\">Github</a>, you can fork it there or just:"
 msgid ""
 "Weblate is being developed on <a href=\"%(url)s\">Github</a>, you can fork "
 "it there or just:"
@@ -253,9 +250,6 @@ msgstr "Weblate 在 <a href=\"%(url)s\">Github</a> 上开发，您可以派生�
 
 #: weblate_web/html/contribute.html:31
 #, python-format
-#| msgid ""
-#| "This website is stored on <a href=\"https://github.com/nijel/weblate-web"
-#| "\">Github</a> as well:"
 msgid "This website is stored on <a href=\"%(url)s\">Github</a> as well:"
 msgstr "本网站也存储在 <a href=\"%(url)s\">Github</a> 上："
 
@@ -1023,8 +1017,8 @@ msgid ""
 "comp.web.weblate\">Gmane</a> where you can browse archives or use NNTP "
 "interface."
 msgstr ""
-"您也可以到 <a href=\"https://dir.gmane.org/gmane.comp.web.weblate\">Gmane</a> "
-"浏览邮件列表的存档或使用 NNTP 接口。"
+"您也可以到 <a href=\"https://dir.gmane.org/gmane.comp.web.weblate\">Gmane</"
+"a> 浏览邮件列表的存档或使用 NNTP 接口。"
 
 #: weblate_web/html/support.html:32
 msgid "Stack Overflow"
@@ -1101,7 +1095,6 @@ msgid "Our translations are being done on Hosted Weblate."
 msgstr "我们的翻译在 Hosted 网站上托管。"
 
 #: weblate_web/html/thanks.html:38
-#| msgid "Support"
 msgid "Supporters"
 msgstr "支持者"
 
@@ -1182,24 +1175,23 @@ msgid "%.1f GiB"
 msgstr "%.1f GiB"
 
 #: weblate_web/templatetags/downloads.py:54
-msgid "Test repositories data, useful for offline tests"
-msgstr "测试代码库数据，通常用于离线测试"
-
-#: weblate_web/templatetags/downloads.py:56
 msgid "Sources tarball, bzip2 compressed"
 msgstr "源代码 tar 包，bzip2 压缩"
 
-#: weblate_web/templatetags/downloads.py:58
+#: weblate_web/templatetags/downloads.py:56
 msgid "Sources tarball, gzip compressed"
 msgstr "源代码 tar 包，gzip 压缩"
 
-#: weblate_web/templatetags/downloads.py:60
+#: weblate_web/templatetags/downloads.py:58
 msgid "Sources tarball, xz compressed"
 msgstr "源代码 tar 包，xz 压缩"
 
-#: weblate_web/templatetags/downloads.py:62
+#: weblate_web/templatetags/downloads.py:60
 msgid "Sources, zip compressed"
 msgstr "源代码，zip 压缩"
+
+#~ msgid "Test repositories data, useful for offline tests"
+#~ msgstr "测试代码库数据，通常用于离线测试"
 
 #~ msgid "Sponsors"
 #~ msgstr "赞助者"
@@ -1225,9 +1217,9 @@ msgstr "源代码，zip 压缩"
 #~ "\">BitNami stack</a>, that allows you native installation on Windows, "
 #~ "Linux or Mac OS X and provides virtual images for running Weblate."
 #~ msgstr ""
-#~ "您也可以到 <a href=\"https://bitnami.org/stack/weblate\">BitNami stack</a> "
-#~ "下载 Weblate 用于 Windows、Linux 和 Mac OS X 的安装程序或运行了 Weblate 的"
-#~ "虚拟机。"
+#~ "您也可以到 <a href=\"https://bitnami.org/stack/weblate\">BitNami stack</"
+#~ "a> 下载 Weblate 用于 Windows、Linux 和 Mac OS X 的安装程序或运行了 "
+#~ "Weblate 的虚拟机。"
 
 #~ msgid "Commercial hosting"
 #~ msgstr "收费托管"
@@ -1299,9 +1291,10 @@ msgstr "源代码，zip 压缩"
 #~ "Weblate to automatically push changes as well, give Weblate user write "
 #~ "permission to your repository and let us know you want to use this option."
 #~ msgstr ""
-#~ "若要使用 Bitbucket 的自动工作流，您需要添加 POST 钩子 URL 为 <code>https://"
-#~ "hosted.weblate.org/hooks/bitbucket/</code>。若您想 Weblate 能自动推送修"
-#~ "改，请给 Weblate 用户对您代码库的写入权限并告诉我们您需要该功能。"
+#~ "若要使用 Bitbucket 的自动工作流，您需要添加 POST 钩子 URL 为 "
+#~ "<code>https://hosted.weblate.org/hooks/bitbucket/</code>。若您想 Weblate "
+#~ "能自动推送修改，请给 Weblate 用户对您代码库的写入权限并告诉我们您需要该功"
+#~ "能。"
 
 #~ msgid "Contribute"
 #~ msgstr "贡献"

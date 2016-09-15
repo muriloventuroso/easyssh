@@ -7,17 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2016-07-20 14:10+0200\n"
+"POT-Creation-Date: 2016-09-15 16:27+0200\n"
 "PO-Revision-Date: 2016-07-27 17:14+0000\n"
 "Last-Translator: Viktar Vauchkevich <victorenator@gmail.com>\n"
-"Language-Team: Belarusian "
-"<https://hosted.weblate.org/projects/weblate/website/be/>\n"
+"Language-Team: Belarusian <https://hosted.weblate.org/projects/weblate/"
+"website/be/>\n"
 "Language: be\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
-"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 2.8-dev\n"
 
 #: weblate_web/data.py:33
@@ -143,8 +143,6 @@ msgid "Ready for cloud"
 msgstr "Гатовы для воблака"
 
 #: weblate_web/html/base-features.html:39
-#| msgid ""
-#| "Weblate comes with an appliance, which is ready to deploy in your cloud."
 msgid "Weblate comes with appliances, which are ready to deploy in your cloud."
 msgstr ""
 "Weblate распаўсюджваецца з вобразам, гатовым для разгортвання ў воблаку."
@@ -154,7 +152,6 @@ msgid "Free software"
 msgstr "Свабоднае праграмнае забеспячэнне"
 
 #: weblate_web/html/base-features.html:47
-#| msgid "Weblate is a free software with community support."
 msgid "Weblate is free software, you can run your own instance of it."
 msgstr ""
 "Weblate — гэта свабоднае праграмнае забеспячэнне. Вы можаце запусціць сваю "
@@ -223,15 +220,12 @@ msgstr "Дапамажыце з перакладам!"
 
 #: weblate_web/html/base.html:140
 #, python-format
-#| msgid ""
-#| "Weblate is free software, but welcomes <a href=\"%(donate_url)s"
-#| "\">donations</a>."
 msgid ""
 "Weblate is <a href=\"%(github_url)s\">free software</a> and welcomes <a href="
 "\"%(donate_url)s\">donations</a>."
 msgstr ""
-"Weblate — гэта <a href=\"%(github_url)s\">свабоднае праграмнае "
-"забеспячэнне</a> і вітае <a href=\"%(donate_url)s\">ахвяраванні</a>."
+"Weblate — гэта <a href=\"%(github_url)s\">свабоднае праграмнае забеспячэнне</"
+"a> і вітае <a href=\"%(donate_url)s\">ахвяраванні</a>."
 
 #: weblate_web/html/contribute.html:3 weblate_web/html/contribute.html:4
 msgid "Contribute to Weblate"
@@ -265,9 +259,6 @@ msgstr "Код"
 
 #: weblate_web/html/contribute.html:23
 #, python-format
-#| msgid ""
-#| "Weblate is being developed on <a href=\"https://github.com/nijel/weblate"
-#| "\">Github</a>, you can fork it there or just:"
 msgid ""
 "Weblate is being developed on <a href=\"%(url)s\">Github</a>, you can fork "
 "it there or just:"
@@ -277,9 +268,6 @@ msgstr ""
 
 #: weblate_web/html/contribute.html:31
 #, python-format
-#| msgid ""
-#| "This website is stored on <a href=\"https://github.com/nijel/weblate-web"
-#| "\">Github</a> as well:"
 msgid "This website is stored on <a href=\"%(url)s\">Github</a> as well:"
 msgstr "Гэты сайт таксама месціцца на <a href=\"%(url)s\">Github</a>:"
 
@@ -424,11 +412,10 @@ msgid ""
 "You can control Weblate remotely using <a href=\"%(url)s\">wlc</a>, it can "
 "be installed by using Python PIP:"
 msgstr ""
-"Вы можаце кіраваць Weblate аддалена, выкарыстоўваючы праграму <a href=\""
-"%(url)s\">wlc</a>, якая можа быць усталявана з дапамогай Python PIP:"
+"Вы можаце кіраваць Weblate аддалена, выкарыстоўваючы праграму <a href="
+"\"%(url)s\">wlc</a>, якая можа быць усталявана з дапамогай Python PIP:"
 
 #: weblate_web/html/download.html:60
-#| msgid "Cloud or emulator images"
 msgid "Cloud or virtualization images"
 msgstr "Вобразы для воблака альбо віртуалізацыі"
 
@@ -490,7 +477,6 @@ msgstr ""
 "іншыя падзеі."
 
 #: weblate_web/html/features.html:39
-#| msgid "Integrated"
 msgid "Integration API"
 msgstr "API для інтэграцыі"
 
@@ -691,7 +677,6 @@ msgid ""
 msgstr ""
 
 #: weblate_web/html/hosting.html:28
-#| msgid "Hosting for free software"
 msgctxt "Hosting plan"
 msgid "Free software"
 msgstr "Свабоднае праграмнае забеспячэнне"
@@ -717,10 +702,6 @@ msgid "Enterprise"
 msgstr "Прадпрыемствам"
 
 #: weblate_web/html/hosting.html:45
-#| msgid ""
-#| "The pricing is based on number of source strings and number of target "
-#| "languages. The source string is a text unit defined in a translation "
-#| "format, it can be word, sentence or a paragraph."
 msgid ""
 "Text unit defined in a translation format, it can be word, sentence or a "
 "paragraph"
@@ -739,7 +720,6 @@ msgid "Negotiable"
 msgstr "Дагаварны"
 
 #: weblate_web/html/hosting.html:53
-#| msgid "Up to 15 target languages"
 msgid "Target languages"
 msgstr "Мэтавыя мовы"
 
@@ -748,7 +728,6 @@ msgid "VCS repositories"
 msgstr "VCS рэпазіторыі"
 
 #: weblate_web/html/hosting.html:69
-#| msgid "One translation project"
 msgid "Translation projects"
 msgstr "Праекты пераклада"
 
@@ -762,22 +741,18 @@ msgid "Unlimited"
 msgstr "Неабмежаваны"
 
 #: weblate_web/html/hosting.html:77
-#| msgid "Translation context"
 msgid "Translation components"
 msgstr "Кампаненты пераклада"
 
 #: weblate_web/html/hosting.html:85
-#| msgid "Unlimited number of translation components"
 msgid "Number of translators"
 msgstr "Колькасць перакладчыкаў"
 
 #: weblate_web/html/hosting.html:93
-#| msgid "Self service user management"
 msgid "User management"
 msgstr "Кіраванне карыстальнікамі"
 
 #: weblate_web/html/hosting.html:101
-#| msgid "File formats"
 msgid "Supported file formats"
 msgstr "Падтрыманыя фарматы файлаў"
 
@@ -793,7 +768,6 @@ msgid "Customizable"
 msgstr "Наладжвальны"
 
 #: weblate_web/html/hosting.html:117
-#| msgid "Translation status"
 msgid "Translation processing"
 msgstr "Апрацоўка перакладу"
 
@@ -802,7 +776,6 @@ msgid "Priority email support"
 msgstr "Прыярытэтныя падтрымка па электроннай пошце"
 
 #: weblate_web/html/hosting.html:141
-#| msgid "Branches support"
 msgid "Phone support"
 msgstr "Тэлефонная падтрымка"
 
@@ -819,7 +792,6 @@ msgid "Available on request"
 msgstr "Даступны па запыце"
 
 #: weblate_web/html/hosting.html:159
-#| msgid "Donate using PayPal"
 msgid "Monthly by PayPal"
 msgstr "Штомесячна праз PayPal"
 
@@ -846,7 +818,6 @@ msgstr "Спытайце нас аб штогодным рахунку са зн
 #: weblate_web/html/hosting.html:179 weblate_web/html/hosting.html:182
 #: weblate_web/html/hosting.html:185 weblate_web/html/hosting.html:188
 #, python-format
-#| msgid "%(price)s EUR / month"
 msgid "%(price)s EUR / year"
 msgstr "%(price)s EUR / год"
 
@@ -871,8 +842,8 @@ msgid ""
 "Alternatively we can accept payments by wire transfer (preferably IBAN) or "
 "Bitcoin. Please get in touch for more details."
 msgstr ""
-"У якасці альтэрнатывы мы можам прымаць плацяжы па безнаяўным разліку ("
-"пажадана IBAN) або Bitcoin. Калі ласка, звяжыцеся для атрымання больш "
+"У якасці альтэрнатывы мы можам прымаць плацяжы па безнаяўным разліку "
+"(пажадана IBAN) або Bitcoin. Калі ласка, звяжыцеся для атрымання больш "
 "падрабязнай інфармацыі."
 
 #: weblate_web/html/hosting.html:207
@@ -990,15 +961,11 @@ msgstr ""
 "альбо <a href=\"%(donate_url)s\">іншымі сістэмамі ахвяравання</a>."
 
 #: weblate_web/html/hosting.html:256
-#| msgid "Ask for hosting"
 msgid "Self hosting"
 msgstr "Самастоўны хостынг"
 
 #: weblate_web/html/hosting.html:260
 #, python-format
-#| msgid ""
-#| "Check our <a href=\"%(download_url)s\">download page</a> for appliances, "
-#| "which provide an easy way to deploy Weblate in the cloud."
 msgid ""
 "You can also <a href=\"%(download_url)s\">download</a> Weblate sources and "
 "run it on your systems. There are also several options for deploying Weblate "
@@ -1141,15 +1108,11 @@ msgstr ""
 "\">вэб-чат</a>."
 
 #: weblate_web/html/support.html:42
-#| msgid "Hosting"
 msgid "Consulting"
 msgstr "Кансалтынг"
 
 #: weblate_web/html/support.html:45
 #, python-format
-#| msgid ""
-#| "You can also contact <a href=\"mailto:michal@cihar.com?subject=Weblate"
-#| "\">Michal Čihař</a>, who is author of Weblate."
 msgid ""
 "You can also contact <a href=\"%(contact_link)s\">Michal Čihař</a>, who is "
 "author of Weblate for consulting services."
@@ -1283,22 +1246,18 @@ msgid "%.1f GiB"
 msgstr "%.1f GiB"
 
 #: weblate_web/templatetags/downloads.py:54
-msgid "Test repositories data, useful for offline tests"
-msgstr ""
-
-#: weblate_web/templatetags/downloads.py:56
 msgid "Sources tarball, bzip2 compressed"
 msgstr "Тарболы з зыходнікамі, bzip2-архіў"
 
-#: weblate_web/templatetags/downloads.py:58
+#: weblate_web/templatetags/downloads.py:56
 msgid "Sources tarball, gzip compressed"
 msgstr "Тарболы з зыходнікамі, gzip-архіў"
 
-#: weblate_web/templatetags/downloads.py:60
+#: weblate_web/templatetags/downloads.py:58
 msgid "Sources tarball, xz compressed"
 msgstr "Тарболы з зыходнікамі, xz-архіў"
 
-#: weblate_web/templatetags/downloads.py:62
+#: weblate_web/templatetags/downloads.py:60
 msgid "Sources, zip compressed"
 msgstr "Заходнікі, zip-архіў"
 

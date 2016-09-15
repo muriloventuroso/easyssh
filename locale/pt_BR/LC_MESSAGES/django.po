@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Weblate 1.2\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2016-07-20 14:10+0200\n"
+"POT-Creation-Date: 2016-09-15 16:27+0200\n"
 "PO-Revision-Date: 2016-07-20 13:36+0000\n"
 "Last-Translator: Luiz Fernando Ranghetti <elchevive@opensuse.org>\n"
-"Language-Team: Portuguese (Brazil) "
-"<https://hosted.weblate.org/projects/weblate/website/pt_BR/>\n"
+"Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
+"weblate/website/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -262,9 +262,6 @@ msgstr "Código"
 
 #: weblate_web/html/contribute.html:23
 #, python-format
-#| msgid ""
-#| "Weblate is being developed on <a href=\"https://github.com/nijel/weblate"
-#| "\">Github</a>, you can fork it there or just:"
 msgid ""
 "Weblate is being developed on <a href=\"%(url)s\">Github</a>, you can fork "
 "it there or just:"
@@ -274,9 +271,6 @@ msgstr ""
 
 #: weblate_web/html/contribute.html:31
 #, python-format
-#| msgid ""
-#| "This website is stored on <a href=\"https://github.com/nijel/weblate-web"
-#| "\">Github</a> as well:"
 msgid "This website is stored on <a href=\"%(url)s\">Github</a> as well:"
 msgstr "Este site é armazenado no <a href=\"%(url)s\">Github</a> também:"
 
@@ -412,7 +406,8 @@ msgid ""
 "\"https://software.opensuse.org/package/weblate/\">openSUSE Buildservice</a>."
 msgstr ""
 "Para usuários do openSUSE/SLES, existem pacotes disponíveis no <a href="
-"\"https://software.opensuse.org/package/weblate/\">openSUSE Build Service</a>."
+"\"https://software.opensuse.org/package/weblate/\">openSUSE Build Service</"
+"a>."
 
 #: weblate_web/html/download.html:50
 msgid "Weblate command line client"
@@ -1193,7 +1188,6 @@ msgid "Our translations are being done on Hosted Weblate."
 msgstr "Nossas traduções estão sendo feitas no Hosted Weblate."
 
 #: weblate_web/html/thanks.html:38
-#| msgid "Support"
 msgid "Supporters"
 msgstr "Apoiadores"
 
@@ -1279,24 +1273,23 @@ msgid "%.1f GiB"
 msgstr "%.1f GiB"
 
 #: weblate_web/templatetags/downloads.py:54
-msgid "Test repositories data, useful for offline tests"
-msgstr "Testar dados do repositório, útil para testes offline"
-
-#: weblate_web/templatetags/downloads.py:56
 msgid "Sources tarball, bzip2 compressed"
 msgstr "Pacote tar de fontes, comprimido com bzip2"
 
-#: weblate_web/templatetags/downloads.py:58
+#: weblate_web/templatetags/downloads.py:56
 msgid "Sources tarball, gzip compressed"
 msgstr "Pacote tar de fontes, comprimido com gzip"
 
-#: weblate_web/templatetags/downloads.py:60
+#: weblate_web/templatetags/downloads.py:58
 msgid "Sources tarball, xz compressed"
 msgstr "Pacote tar de fontes, comprimido com xz"
 
-#: weblate_web/templatetags/downloads.py:62
+#: weblate_web/templatetags/downloads.py:60
 msgid "Sources, zip compressed"
 msgstr "Fontes, comprimidas com zip"
+
+#~ msgid "Test repositories data, useful for offline tests"
+#~ msgstr "Testar dados do repositório, útil para testes offline"
 
 #~ msgid "Sponsors"
 #~ msgstr "Patrocinadores"
