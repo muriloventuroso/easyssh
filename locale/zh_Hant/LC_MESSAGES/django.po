@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2016-09-15 16:27+0200\n"
+"POT-Creation-Date: 2016-12-12 11:53+0100\n"
 "PO-Revision-Date: 2016-04-15 17:37+0000\n"
 "Last-Translator: Chang-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Traditional Chinese <https://hosted.weblate.org/projects/"
@@ -183,7 +183,7 @@ msgstr "託管服務"
 msgid "Develop"
 msgstr "開發"
 
-#: weblate_web/html/base.html:85 weblate_web/html/donate.html:54
+#: weblate_web/html/base.html:85 weblate_web/html/donate.html:57
 msgid "Donate"
 msgstr "贊助"
 
@@ -244,24 +244,24 @@ msgstr "程式碼"
 #: weblate_web/html/contribute.html:23
 #, fuzzy, python-format
 #| msgid ""
-#| "Weblate is being developed on <a href=\"https://github.com/WeblateOrg/weblate"
-#| "\">Github</a>, you can fork it there or just:"
+#| "Weblate is being developed on <a href=\"https://github.com/WeblateOrg/"
+#| "weblate\">Github</a>, you can fork it there or just:"
 msgid ""
 "Weblate is being developed on <a href=\"%(url)s\">Github</a>, you can fork "
 "it there or just:"
 msgstr ""
-"Weblate 於 <a href=\"https://github.com/WeblateOrg/weblate\">Github</a> 上開發，您"
-"可以 fork 或直接："
+"Weblate 於 <a href=\"https://github.com/WeblateOrg/weblate\">Github</a> 上開"
+"發，您可以 fork 或直接："
 
 #: weblate_web/html/contribute.html:31
 #, fuzzy, python-format
 #| msgid ""
-#| "This website is stored on <a href=\"https://github.com/WeblateOrg/weblate-web"
-#| "\">Github</a> as well:"
+#| "This website is stored on <a href=\"https://github.com/WeblateOrg/weblate-"
+#| "web\">Github</a> as well:"
 msgid "This website is stored on <a href=\"%(url)s\">Github</a> as well:"
 msgstr ""
-"本網站也同時儲存於 <a href=\"https://github.com/WeblateOrg/weblate-web\">Github</"
-"a> 上："
+"本網站也同時儲存於 <a href=\"https://github.com/WeblateOrg/weblate-web"
+"\">Github</a> 上："
 
 #: weblate_web/html/contribute.html:41
 msgid ""
@@ -283,10 +283,9 @@ msgstr "贊助 Weblate"
 msgid "Weblate is free, but welcomes donations."
 msgstr "Weblate 是免費的，不過我們歡迎您的贊助。"
 
-#: weblate_web/html/donate.html:12 weblate_web/html/donate.html:26
-#: weblate_web/html/donate.html:47
-msgid "Fund on Bountysource"
-msgstr "於 Bountysource 上募資"
+#: weblate_web/html/donate.html:12 weblate_web/html/donate.html:39
+msgid "Donate using Liberapay"
+msgstr "透過 Liberapay 贊助"
 
 #: weblate_web/html/donate.html:18
 msgid "Regular donations"
@@ -301,7 +300,11 @@ msgstr ""
 "定期贊助能支持 Weblate 繼續開發，並可提供自由軟體免費的託管服務。您不需要破"
 "費，一點小金額也可以幫助我們。"
 
-#: weblate_web/html/donate.html:30
+#: weblate_web/html/donate.html:28 weblate_web/html/donate.html:50
+msgid "Fund on Bountysource"
+msgstr "於 Bountysource 上募資"
+
+#: weblate_web/html/donate.html:32
 msgid ""
 "You can send a monthly donation using a credit card. You can also get "
 "rewards for higher donations, for example a logo placement on our website."
@@ -309,19 +312,15 @@ msgstr ""
 "您可以使用信用卡來每月贊助，較高的贊助金額可以得到回饋，例如在我們的網站上放"
 "您的 Logo。"
 
-#: weblate_web/html/donate.html:36
-msgid "Donate using Liberapay"
-msgstr "透過 Liberapay 贊助"
-
-#: weblate_web/html/donate.html:40
+#: weblate_web/html/donate.html:43
 msgid "Liberapay allows you to send a weekly amount using a credit card."
 msgstr "Liberapay 允許您以信用卡每週贊助。"
 
-#: weblate_web/html/donate.html:43
+#: weblate_web/html/donate.html:46
 msgid "Fund features"
 msgstr "募資功能"
 
-#: weblate_web/html/donate.html:51
+#: weblate_web/html/donate.html:54
 msgid ""
 "Bountysource allows you to fund individual features which are reported on "
 "our issue tracker."
@@ -329,30 +328,30 @@ msgstr ""
 "您可以透過 Boutysource 募資特定之功能（回報於我們的 Issue Tracker 的那些功"
 "能）。"
 
-#: weblate_web/html/donate.html:57
+#: weblate_web/html/donate.html:60
 msgid ""
 "If you like Weblate you can support its further development by donating."
 msgstr "如果您喜歡 Weblate，您可以透過贊助來支援它的開發。"
 
-#: weblate_web/html/donate.html:65
+#: weblate_web/html/donate.html:68
 msgid "Donate using PayPal"
 msgstr "透過 PayPal 贊助"
 
-#: weblate_web/html/donate.html:70
+#: weblate_web/html/donate.html:73
 msgid ""
 "PayPal allows you to send money from credit card, PayPal balance or a bank "
 "account."
 msgstr "PayPal 能讓您從信用卡、PayPal 餘額或銀行帳戶來匯款。"
 
-#: weblate_web/html/donate.html:75
+#: weblate_web/html/donate.html:78
 msgid "Donate using Coinbase"
 msgstr "透過 Coinbase 贊助"
 
-#: weblate_web/html/donate.html:79
+#: weblate_web/html/donate.html:82
 msgid "Coinbase allows you to send Bitcoins."
 msgstr "Coinbase 能讓您以比特幣匯款。"
 
-#: weblate_web/html/donate.html:83
+#: weblate_web/html/donate.html:86
 #, python-format
 msgid ""
 "You can also use <a href=\"https://www.bitcoin.org/\">Bitcoin is a peer-to-"
@@ -374,8 +373,8 @@ msgid ""
 "Weblate is being developed on <a href=\"https://github.com/WeblateOrg/weblate"
 "\">Github</a>, you can fork it there or just:"
 msgstr ""
-"Weblate 於 <a href=\"https://github.com/WeblateOrg/weblate\">Github</a> 上開發，您"
-"可以 fork 或直接："
+"Weblate 於 <a href=\"https://github.com/WeblateOrg/weblate\">Github</a> 上開"
+"發，您可以 fork 或直接："
 
 #: weblate_web/html/download.html:37
 msgid "You can download latest release here:"
@@ -1001,8 +1000,8 @@ msgid ""
 "\">issue tracker on GitHub</a>."
 msgstr ""
 "您找到 Weblate 之任何問題嗎？或是有什麼想法可以讓 Weblate 變得更好？請至 <a "
-"href=\"https://github.com/WeblateOrg/weblate/issues\">GitHub</a> 上開個 issue 給我"
-"們吧。"
+"href=\"https://github.com/WeblateOrg/weblate/issues\">GitHub</a> 上開個 "
+"issue 給我們吧。"
 
 #: weblate_web/html/support.html:22
 msgid "Mailing list"

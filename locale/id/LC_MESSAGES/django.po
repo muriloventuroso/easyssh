@@ -6,11 +6,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Weblate 1.2\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2016-10-25 15:02+0000\n"
+"POT-Creation-Date: 2016-12-12 11:53+0100\n"
 "PO-Revision-Date: 2016-11-09 10:30+0000\n"
 "Last-Translator: Prasasto Adi <prasastoadi@gmail.com>\n"
-"Language-Team: Indonesian "
-"<https://hosted.weblate.org/projects/weblate/website/id/>\n"
+"Language-Team: Indonesian <https://hosted.weblate.org/projects/weblate/"
+"website/id/>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -59,7 +59,6 @@ msgstr ""
 
 #: weblate_web/data.py:58 weblate_web/html/features.html:71
 #: weblate_web/html/hosting.html:125
-#: weblate/templates/translate.html:373
 msgid "Glossary"
 msgstr "Glosarium"
 
@@ -92,7 +91,6 @@ msgid "Weblate is a free web-based translation management system."
 msgstr ""
 
 #: weblate_web/html/404.html:15
-#: weblate/templates/404.html:11
 msgid "The page you are looking for was not found."
 msgstr "Laman yang Anda cari tidak ditemukan."
 
@@ -101,7 +99,6 @@ msgid "Server error"
 msgstr ""
 
 #: weblate_web/html/500.html:15
-#: weblate/templates/500.html:12
 msgid ""
 "The server had serious problems while serving your request. We've just sent "
 "our trained monkeys to fix the issue."
@@ -152,7 +149,6 @@ msgid "Weblate is free software, you can run your own instance of it."
 msgstr ""
 
 #: weblate_web/html/base.html:12
-#: weblate/templates/translate.html:16
 #, fuzzy
 msgctxt "Keyword"
 msgid "translate"
@@ -183,13 +179,10 @@ msgid "Docs"
 msgstr ""
 
 #: weblate_web/html/base.html:82 weblate_web/html/download.html:34
-#: weblate/templates/translation.html:140
 msgid "Download"
 msgstr "Unduh"
 
 #: weblate_web/html/base.html:83
-#: weblate/accounts/views.py:323
-#: weblate/templates/accounts/hosting.html:7
 msgid "Hosting"
 msgstr "Hosting"
 
@@ -197,7 +190,7 @@ msgstr "Hosting"
 msgid "Develop"
 msgstr ""
 
-#: weblate_web/html/base.html:85 weblate_web/html/donate.html:54
+#: weblate_web/html/base.html:85 weblate_web/html/donate.html:57
 msgid "Donate"
 msgstr "Sumbang"
 
@@ -237,8 +230,6 @@ msgid "View sources"
 msgstr ""
 
 #: weblate_web/html/contribute.html:11 weblate_web/html/contribute.html:38
-#: weblate/templates/list-translations.html:72
-#: weblate/templates/translate.html:87
 msgid "Translate"
 msgstr "Menerjemahkan"
 
@@ -272,16 +263,10 @@ msgid ""
 msgstr ""
 
 #: weblate_web/html/contribute.html:46
-#: weblate/templates/translation.html:86
-#: weblate/templates/widgets.html:56
-#: weblate/templates/widgets.html:64
-#: weblate/templates/widgets.html:71
-#: weblate/templates/widgets.html:79
 msgid "Translation status"
 msgstr "Status penerjemahan"
 
 #: weblate_web/html/donate.html:3 weblate_web/html/donate.html:4
-#: weblate/trans/models/advertisement.py:43
 msgid "Donate to Weblate"
 msgstr "Donasi ke Weblate"
 
@@ -289,9 +274,8 @@ msgstr "Donasi ke Weblate"
 msgid "Weblate is free, but welcomes donations."
 msgstr ""
 
-#: weblate_web/html/donate.html:12 weblate_web/html/donate.html:26
-#: weblate_web/html/donate.html:47
-msgid "Fund on Bountysource"
+#: weblate_web/html/donate.html:12 weblate_web/html/donate.html:39
+msgid "Donate using Liberapay"
 msgstr ""
 
 #: weblate_web/html/donate.html:18
@@ -305,54 +289,54 @@ msgid ""
 "every penny counts."
 msgstr ""
 
-#: weblate_web/html/donate.html:30
+#: weblate_web/html/donate.html:28 weblate_web/html/donate.html:50
+msgid "Fund on Bountysource"
+msgstr ""
+
+#: weblate_web/html/donate.html:32
 msgid ""
 "You can send a monthly donation using a credit card. You can also get "
 "rewards for higher donations, for example a logo placement on our website."
 msgstr ""
 
-#: weblate_web/html/donate.html:36
-msgid "Donate using Liberapay"
-msgstr ""
-
-#: weblate_web/html/donate.html:40
+#: weblate_web/html/donate.html:43
 msgid "Liberapay allows you to send a weekly amount using a credit card."
 msgstr ""
 
-#: weblate_web/html/donate.html:43
+#: weblate_web/html/donate.html:46
 msgid "Fund features"
 msgstr ""
 
-#: weblate_web/html/donate.html:51
+#: weblate_web/html/donate.html:54
 msgid ""
 "Bountysource allows you to fund individual features which are reported on "
 "our issue tracker."
 msgstr ""
 
-#: weblate_web/html/donate.html:57
+#: weblate_web/html/donate.html:60
 msgid ""
 "If you like Weblate you can support its further development by donating."
 msgstr ""
 
-#: weblate_web/html/donate.html:65
+#: weblate_web/html/donate.html:68
 msgid "Donate using PayPal"
 msgstr ""
 
-#: weblate_web/html/donate.html:70
+#: weblate_web/html/donate.html:73
 msgid ""
 "PayPal allows you to send money from credit card, PayPal balance or a bank "
 "account."
 msgstr ""
 
-#: weblate_web/html/donate.html:75
+#: weblate_web/html/donate.html:78
 msgid "Donate using Coinbase"
 msgstr ""
 
-#: weblate_web/html/donate.html:79
+#: weblate_web/html/donate.html:82
 msgid "Coinbase allows you to send Bitcoins."
 msgstr ""
 
-#: weblate_web/html/donate.html:83
+#: weblate_web/html/donate.html:86
 #, python-format
 msgid ""
 "You can also use <a href=\"https://www.bitcoin.org/\">Bitcoin is a peer-to-"
@@ -506,20 +490,6 @@ msgid "Translations are managed within same version control system as code."
 msgstr ""
 
 #: weblate_web/html/features.html:103
-#: weblate/templates/accounts/profile.html:64
-#: weblate/templates/accounts/profile.html:93
-#: weblate/templates/accounts/profile.html:135
-#: weblate/templates/accounts/profile.html:170
-#: weblate/templates/accounts/profile.html:243
-#: weblate/templates/accounts/profile.html:288
-#: weblate/templates/admin/performance.html:23
-#: weblate/templates/admin/performance.html:32
-#: weblate/templates/base.html:116
-#: weblate/templates/check.html:42
-#: weblate/templates/check_project.html:43
-#: weblate/templates/check_subproject.html:44
-#: weblate/templates/checks.html:36
-#: weblate/templates/footer.html:8
 msgid "Documentation"
 msgstr "Dokumentasi"
 
@@ -529,8 +499,6 @@ msgid ""
 msgstr ""
 
 #: weblate_web/html/features.html:111
-#: weblate/templates/translation.html:290
-#: weblate/templates/translation.html:338
 msgid "Review"
 msgstr "Peninjauan"
 
@@ -539,16 +507,6 @@ msgid "Translators have several options to review contributions made by peers."
 msgstr ""
 
 #: weblate_web/html/features.html:119
-#: weblate/billing/models.py:157
-#: weblate/lang/models.py:400
-#: weblate/lang/views.py:40
-#: weblate/templates/accounts/profile.html:22
-#: weblate/templates/accounts/profile.html:40
-#: weblate/templates/language.html:6
-#: weblate/templates/languages.html:6
-#: weblate/templates/trans/change_list.html:18
-#: weblate/trans/admin.py:59
-#: weblate/trans/forms.py:831
 msgid "Languages"
 msgstr "Bahasa"
 
@@ -687,8 +645,6 @@ msgid ""
 msgstr ""
 
 #: weblate_web/html/hosting.html:45
-#: weblate/billing/models.py:134
-#: weblate/trans/admin.py:51
 msgid "Source strings"
 msgstr "String sumber"
 
@@ -702,8 +658,6 @@ msgid "Target languages"
 msgstr "Target bahasa"
 
 #: weblate_web/html/hosting.html:61
-#: weblate/billing/models.py:112
-#: weblate/trans/admin.py:47
 msgid "VCS repositories"
 msgstr "Repositori VCS"
 
@@ -776,7 +730,6 @@ msgid "Monthly by PayPal"
 msgstr ""
 
 #: weblate_web/html/hosting.html:161
-#: weblate/templates/footer.html:7
 msgid "Contact us"
 msgstr "Hubungi kami"
 
@@ -941,7 +894,6 @@ msgid "Try our demo"
 msgstr ""
 
 #: weblate_web/html/index.html:15
-#: weblate/templates/about.html:44
 msgid "View hosting plans"
 msgstr "Lihat pilihan hosting"
 
@@ -997,7 +949,6 @@ msgid ""
 msgstr ""
 
 #: weblate_web/html/support.html:22
-#: weblate/trans/models/project.py:101
 msgid "Mailing list"
 msgstr "Milis"
 

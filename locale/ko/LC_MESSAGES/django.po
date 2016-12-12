@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2016-09-15 16:27+0200\n"
+"POT-Creation-Date: 2016-12-12 11:53+0100\n"
 "PO-Revision-Date: 2016-10-28 12:11+0000\n"
 "Last-Translator: John Vandenberg <jayvdb@gmail.com>\n"
-"Language-Team: Korean "
-"<https://hosted.weblate.org/projects/weblate/website/ko/>\n"
+"Language-Team: Korean <https://hosted.weblate.org/projects/weblate/website/"
+"ko/>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -195,7 +195,7 @@ msgstr "호스팅"
 msgid "Develop"
 msgstr "개발"
 
-#: weblate_web/html/base.html:85 weblate_web/html/donate.html:54
+#: weblate_web/html/base.html:85 weblate_web/html/donate.html:57
 msgid "Donate"
 msgstr "기부하기"
 
@@ -262,7 +262,8 @@ msgid ""
 "Weblate is being developed on <a href=\"%(url)s\">Github</a>, you can fork "
 "it there or just:"
 msgstr ""
-"Weblate는 <a href=\"%(url)s\">Github</a>에서 개발되고 있습니다, 당신은 포크하거나 다음과 같이 하면 됩니다:"
+"Weblate는 <a href=\"%(url)s\">Github</a>에서 개발되고 있습니다, 당신은 포크하"
+"거나 다음과 같이 하면 됩니다:"
 
 #: weblate_web/html/contribute.html:31
 #, python-format
@@ -289,10 +290,9 @@ msgstr "Weblate에 기부하기"
 msgid "Weblate is free, but welcomes donations."
 msgstr "Weblate는 무료이지만, 기부금은 환영합니다."
 
-#: weblate_web/html/donate.html:12 weblate_web/html/donate.html:26
-#: weblate_web/html/donate.html:47
-msgid "Fund on Bountysource"
-msgstr "Bountysource로 기금"
+#: weblate_web/html/donate.html:12 weblate_web/html/donate.html:39
+msgid "Donate using Liberapay"
+msgstr "Liberapay를 사용하여 기부하기"
 
 #: weblate_web/html/donate.html:18
 msgid "Regular donations"
@@ -307,59 +307,59 @@ msgstr ""
 "일반적인 기부는 Weblate 개발의 지속 가능성을 허용하고 자유 소프트웨어에 대한 "
 "무료 호스팅을 투자하는 데 도움이 됩니다. 약간의 돈도 큰 도움이 됩니다."
 
-#: weblate_web/html/donate.html:30
+#: weblate_web/html/donate.html:28 weblate_web/html/donate.html:50
+msgid "Fund on Bountysource"
+msgstr "Bountysource로 기금"
+
+#: weblate_web/html/donate.html:32
 msgid ""
 "You can send a monthly donation using a credit card. You can also get "
 "rewards for higher donations, for example a logo placement on our website."
 msgstr ""
-"신용카드를 이용하여 매월 기부하실 수 있습니다. 기부액이 높을 수록 Weblate의 홈페이지에 로고가 등록되는 등의 보상을 받으실 수 "
-"있습니다."
+"신용카드를 이용하여 매월 기부하실 수 있습니다. 기부액이 높을 수록 Weblate의 "
+"홈페이지에 로고가 등록되는 등의 보상을 받으실 수 있습니다."
 
-#: weblate_web/html/donate.html:36
-msgid "Donate using Liberapay"
-msgstr "Liberapay를 사용하여 기부하기"
-
-#: weblate_web/html/donate.html:40
+#: weblate_web/html/donate.html:43
 msgid "Liberapay allows you to send a weekly amount using a credit card."
 msgstr "Liberapay은 신용 카드를 사용하여 매주 금액을 보낼 수 있게 합니다."
 
-#: weblate_web/html/donate.html:43
+#: weblate_web/html/donate.html:46
 msgid "Fund features"
 msgstr "기금 기능"
 
-#: weblate_web/html/donate.html:51
+#: weblate_web/html/donate.html:54
 msgid ""
 "Bountysource allows you to fund individual features which are reported on "
 "our issue tracker."
 msgstr ""
 "Bountysource는 저희의 이슈 트래커에 보고된 개별 기능에 투자할 수 있습니다."
 
-#: weblate_web/html/donate.html:57
+#: weblate_web/html/donate.html:60
 msgid ""
 "If you like Weblate you can support its further development by donating."
 msgstr ""
 "Weblate가 마음에 드신다면 기부하기를 통해 앞으로의 개발을 도와주실 수 있습니"
 "다."
 
-#: weblate_web/html/donate.html:65
+#: weblate_web/html/donate.html:68
 msgid "Donate using PayPal"
 msgstr "PayPal을 사용하여 기부하기"
 
-#: weblate_web/html/donate.html:70
+#: weblate_web/html/donate.html:73
 msgid ""
 "PayPal allows you to send money from credit card, PayPal balance or a bank "
 "account."
 msgstr "PayPal은 신용 카드, PayPal 잔액 또는 은행 계좌에서 보낼 수 있습니다."
 
-#: weblate_web/html/donate.html:75
+#: weblate_web/html/donate.html:78
 msgid "Donate using Coinbase"
 msgstr "코인베이스(Coinbase)를 사용하여 기부하기"
 
-#: weblate_web/html/donate.html:79
+#: weblate_web/html/donate.html:82
 msgid "Coinbase allows you to send Bitcoins."
 msgstr "코인베이스(Coinbase)는 비트코인을 보낼 수 있게 합니다."
 
-#: weblate_web/html/donate.html:83
+#: weblate_web/html/donate.html:86
 #, python-format
 msgid ""
 "You can also use <a href=\"https://www.bitcoin.org/\">Bitcoin is a peer-to-"
@@ -382,8 +382,8 @@ msgid ""
 "Weblate is being developed on <a href=\"https://github.com/WeblateOrg/weblate"
 "\">Github</a>, you can fork it there or just:"
 msgstr ""
-"Weblate는 <a href=\"https://github.com/WeblateOrg/weblate\">Github</a>에서 개발되"
-"고 있습니다, 당신은 포크하거나 다음과 같이 하면 됩니다:"
+"Weblate는 <a href=\"https://github.com/WeblateOrg/weblate\">Github</a>에서 개"
+"발되고 있습니다, 당신은 포크하거나 다음과 같이 하면 됩니다:"
 
 #: weblate_web/html/download.html:37
 msgid "You can download latest release here:"
@@ -407,8 +407,8 @@ msgid ""
 "You can control Weblate remotely using <a href=\"%(url)s\">wlc</a>, it can "
 "be installed by using Python PIP:"
 msgstr ""
-"<a href=\"%(url)s\">wlc</a>를 이용하여 Weblate를 원격으로 제어할 수 있습니다. wlc는 Python PIP로 "
-"설치할 수 있습니다 :"
+"<a href=\"%(url)s\">wlc</a>를 이용하여 Weblate를 원격으로 제어할 수 있습니"
+"다. wlc는 Python PIP로 설치할 수 있습니다 :"
 
 #: weblate_web/html/download.html:60
 #, fuzzy
@@ -420,7 +420,9 @@ msgstr "클라우드 또는 에뮬레이터 이미지"
 msgid ""
 "Weblate can be run in any cloud or virtualization environment. Following "
 "links will show you information about some of these:"
-msgstr "Weblate는 클라우드나 가상 환경의 제약 없이 실행될 수 있습니다. 다음 링크를 클릭하여 더 많은 정보를 얻어보세요 :"
+msgstr ""
+"Weblate는 클라우드나 가상 환경의 제약 없이 실행될 수 있습니다. 다음 링크를 클"
+"릭하여 더 많은 정보를 얻어보세요 :"
 
 #: weblate_web/html/download.html:65
 msgid "Running Weblate in a Docker container"
@@ -1042,8 +1044,8 @@ msgid ""
 "\">issue tracker on GitHub</a>."
 msgstr ""
 "Weblate와 관련된 문제가 있습니까? Weblate를 개선할 방법이 있습니까? <a href="
-"\"https://github.com/WeblateOrg/weblate/issues\">GitHub의 issue tracker</a>에 알려"
-"주세요."
+"\"https://github.com/WeblateOrg/weblate/issues\">GitHub의 issue tracker</a>"
+"에 알려주세요."
 
 #: weblate_web/html/support.html:22
 msgid "Mailing list"
@@ -1112,7 +1114,8 @@ msgid ""
 "You can also contact <a href=\"%(contact_link)s\">Michal Čihař</a>, who is "
 "author of Weblate for consulting services."
 msgstr ""
-"Weblate의 저자인 <a href=\"%(contact_link)s\">Michal Čihař</a>에게도 연락할 수 있습니다."
+"Weblate의 저자인 <a href=\"%(contact_link)s\">Michal Čihař</a>에게도 연락할 "
+"수 있습니다."
 
 #: weblate_web/html/thanks.html:3 weblate_web/html/thanks.html:4
 msgid "Thanks from Weblate"

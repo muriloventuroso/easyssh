@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2016-09-15 16:27+0200\n"
+"POT-Creation-Date: 2016-12-12 11:53+0100\n"
 "PO-Revision-Date: 2016-07-20 12:13+0000\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/weblate/website/cs/"
@@ -194,7 +194,7 @@ msgstr "Hostování"
 msgid "Develop"
 msgstr "Vyvíjejte"
 
-#: weblate_web/html/base.html:85 weblate_web/html/donate.html:54
+#: weblate_web/html/base.html:85 weblate_web/html/donate.html:57
 msgid "Donate"
 msgstr "Přispějte"
 
@@ -287,10 +287,9 @@ msgstr "Přispějte na Weblate"
 msgid "Weblate is free, but welcomes donations."
 msgstr "Weblate je zdarma, ale vítá vaše příspěvky."
 
-#: weblate_web/html/donate.html:12 weblate_web/html/donate.html:26
-#: weblate_web/html/donate.html:47
-msgid "Fund on Bountysource"
-msgstr "Financujte na Bountysource"
+#: weblate_web/html/donate.html:12 weblate_web/html/donate.html:39
+msgid "Donate using Liberapay"
+msgstr "Přispějte pomocí Liberapay"
 
 #: weblate_web/html/donate.html:18
 msgid "Regular donations"
@@ -306,7 +305,11 @@ msgstr ""
 "hosting zdarma pro svobodný software. Nemusíte přispět velké peníze, každý "
 "haléř se počítá."
 
-#: weblate_web/html/donate.html:30
+#: weblate_web/html/donate.html:28 weblate_web/html/donate.html:50
+msgid "Fund on Bountysource"
+msgstr "Financujte na Bountysource"
+
+#: weblate_web/html/donate.html:32
 msgid ""
 "You can send a monthly donation using a credit card. You can also get "
 "rewards for higher donations, for example a logo placement on our website."
@@ -314,20 +317,16 @@ msgstr ""
 "Můžete poslat měsíční příspěvek pomocí platební karty. Za větší příspěvky "
 "můžete získat i odměny, třeba umístění loga na naše stránky."
 
-#: weblate_web/html/donate.html:36
-msgid "Donate using Liberapay"
-msgstr "Přispějte pomocí Liberapay"
-
-#: weblate_web/html/donate.html:40
+#: weblate_web/html/donate.html:43
 msgid "Liberapay allows you to send a weekly amount using a credit card."
 msgstr ""
 "Liberapay vám umožní posílat příspěvek každý týden pomocí kreditní karty."
 
-#: weblate_web/html/donate.html:43
+#: weblate_web/html/donate.html:46
 msgid "Fund features"
 msgstr "Zaplaťte nové funkce"
 
-#: weblate_web/html/donate.html:51
+#: weblate_web/html/donate.html:54
 msgid ""
 "Bountysource allows you to fund individual features which are reported on "
 "our issue tracker."
@@ -335,17 +334,17 @@ msgstr ""
 "Bountysource umožňuje přispět na vývoj libovolné funkce, která je nahlášená "
 "v našem systému sledování chyb."
 
-#: weblate_web/html/donate.html:57
+#: weblate_web/html/donate.html:60
 msgid ""
 "If you like Weblate you can support its further development by donating."
 msgstr ""
 "Pokud se vám Weblate líbí můžete jeho další rozvoj podpořit příspěvkem."
 
-#: weblate_web/html/donate.html:65
+#: weblate_web/html/donate.html:68
 msgid "Donate using PayPal"
 msgstr "Přispějte pomocí PayPalu"
 
-#: weblate_web/html/donate.html:70
+#: weblate_web/html/donate.html:73
 msgid ""
 "PayPal allows you to send money from credit card, PayPal balance or a bank "
 "account."
@@ -353,15 +352,15 @@ msgstr ""
 "PayPal vám umožní poslat příspěvek pomocí kreditní karty, hotovosti z PayPal "
 "účtu nebo z bankovního účtu."
 
-#: weblate_web/html/donate.html:75
+#: weblate_web/html/donate.html:78
 msgid "Donate using Coinbase"
 msgstr "Darujte pomocí Coinbase"
 
-#: weblate_web/html/donate.html:79
+#: weblate_web/html/donate.html:82
 msgid "Coinbase allows you to send Bitcoins."
 msgstr "Coinbase vám umožní přispět Bitcoiny."
 
-#: weblate_web/html/donate.html:83
+#: weblate_web/html/donate.html:86
 #, python-format
 msgid ""
 "You can also use <a href=\"https://www.bitcoin.org/\">Bitcoin is a peer-to-"
@@ -383,8 +382,8 @@ msgid ""
 "Weblate is being developed on <a href=\"https://github.com/WeblateOrg/weblate"
 "\">Github</a>, you can fork it there or just:"
 msgstr ""
-"Weblate je vyvíjeno na <a href=\"https://github.com/WeblateOrg/weblate\">Githubu</"
-"a>, kde si ho můžete forknout, nebo stačí:"
+"Weblate je vyvíjeno na <a href=\"https://github.com/WeblateOrg/weblate"
+"\">Githubu</a>, kde si ho můžete forknout, nebo stačí:"
 
 #: weblate_web/html/download.html:37
 msgid "You can download latest release here:"
@@ -1054,8 +1053,8 @@ msgid ""
 "\">issue tracker on GitHub</a>."
 msgstr ""
 "Našli jste ve Weblate nějakou chybu? Máte nápad jak Weblate vylepšit? Prosím "
-"nahlašte to do <a href=\"https://github.com/WeblateOrg/weblate/issues\">systému "
-"sledování chyb na GitHubu</a>."
+"nahlašte to do <a href=\"https://github.com/WeblateOrg/weblate/issues"
+"\">systému sledování chyb na GitHubu</a>."
 
 #: weblate_web/html/support.html:22
 msgid "Mailing list"
