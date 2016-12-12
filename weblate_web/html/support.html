@@ -19,6 +19,12 @@
 {% blocktrans %}Have you found any issue with Weblate? Do you have idea how to improve it? Please report it to <a href="https://github.com/WeblateOrg/weblate/issues">issue tracker on GitHub</a>.{% endblocktrans %}
 </p>
 
+<h2>{% trans "Security issues" %}</h2>
+
+<p>
+{% blocktrans with '<a href="mailto:michal@cihar.com">Michal Čihař</a>' as contact and '<code>9C27B31342B7511D</code>' as key %}Should you find security issue within our code base, please report it to {{ contact }}. You can choose to encrypt it using his PGP key {{ key }}.{% endblocktrans %}
+</p>
+
 <h2>{% trans "Mailing list" %}</h2>
 
 <p>
