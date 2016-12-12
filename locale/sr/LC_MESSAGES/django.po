@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2016-12-12 11:53+0100\n"
+"POT-Creation-Date: 2016-12-12 12:34+0100\n"
 "PO-Revision-Date: 2016-11-04 09:33+0000\n"
 "Last-Translator: Mladen Pejaković <pejakm@autistici.org>\n"
 "Language-Team: Serbian <https://hosted.weblate.org/projects/weblate/website/"
@@ -1029,10 +1029,23 @@ msgstr ""
 "Гитхабу</a>."
 
 #: weblate_web/html/support.html:22
+#, fuzzy
+#| msgid "Report issue"
+msgid "Security issues"
+msgstr "Пријавите проблем"
+
+#: weblate_web/html/support.html:25
+#, python-format
+msgid ""
+"Should you find security issue within our code base, please report it to "
+"%(contact)s. You can choose to encrypt it using his PGP key %(key)s."
+msgstr ""
+
+#: weblate_web/html/support.html:28
 msgid "Mailing list"
 msgstr "Листа слања"
 
-#: weblate_web/html/support.html:25
+#: weblate_web/html/support.html:31
 msgid ""
 "There is a mailing list <a href=\"mailto:weblate@lists.cihar.com"
 "\">weblate@lists.cihar.com</a> where you can discuss various things about "
@@ -1046,7 +1059,7 @@ msgstr ""
 "\">претплатити</a> или <a href=\"https://lists.cihar.com/pipermail/weblate/"
 "\">прегледати архиву</a>."
 
-#: weblate_web/html/support.html:29
+#: weblate_web/html/support.html:35
 msgid ""
 "The mailing list is also available on <a href=\"https://dir.gmane.org/gmane."
 "comp.web.weblate\">Gmane</a> where you can browse archives or use NNTP "
@@ -1055,21 +1068,21 @@ msgstr ""
 "Листа је доступна и на <a href=\"https://dir.gmane.org/gmane.comp.web.weblate"
 "\">Gmane</a> где можете прегледати архиву користећи NNTP сучеље."
 
-#: weblate_web/html/support.html:32
+#: weblate_web/html/support.html:38
 msgid "Stack Overflow"
 msgstr "Stack Overflow"
 
-#: weblate_web/html/support.html:34
+#: weblate_web/html/support.html:40
 #, python-format
 msgid ""
 "You can also ask related questions on <a href=\"%(url)s\">Stack Overflow</a>."
 msgstr "Питања можете поставити и на <a href=\"%(url)s\">Stack Overflow</a>."
 
-#: weblate_web/html/support.html:36
+#: weblate_web/html/support.html:42
 msgid "IRC"
 msgstr "ИРЦ"
 
-#: weblate_web/html/support.html:39
+#: weblate_web/html/support.html:45
 msgid ""
 "When some of interested people are online, you might also find help on "
 "#weblate channel on <a href=\"https://freenode.net/\">freenode</a> network. "
@@ -1081,11 +1094,11 @@ msgstr ""
 "Можете користити и <a href=\"https://webchat.freenode.net?channels=weblate"
 "\">веб ћаскање</a>."
 
-#: weblate_web/html/support.html:42
+#: weblate_web/html/support.html:48
 msgid "Consulting"
 msgstr "Саветовање"
 
-#: weblate_web/html/support.html:45
+#: weblate_web/html/support.html:51
 #, python-format
 msgid ""
 "You can also contact <a href=\"%(contact_link)s\">Michal Čihař</a>, who is "

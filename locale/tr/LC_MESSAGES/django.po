@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2016-12-12 11:53+0100\n"
+"POT-Creation-Date: 2016-12-12 12:34+0100\n"
 "PO-Revision-Date: 2016-11-07 11:57+0000\n"
 "Last-Translator: Burak Yavuz <hitowerdigit@hotmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/weblate/website/"
@@ -1063,10 +1063,23 @@ msgstr ""
 "weblate/issues\">GitHub'taki sorun izleyicisine</a> bildirin."
 
 #: weblate_web/html/support.html:22
+#, fuzzy
+#| msgid "Report issue"
+msgid "Security issues"
+msgstr "Sorun bildirin"
+
+#: weblate_web/html/support.html:25
+#, python-format
+msgid ""
+"Should you find security issue within our code base, please report it to "
+"%(contact)s. You can choose to encrypt it using his PGP key %(key)s."
+msgstr ""
+
+#: weblate_web/html/support.html:28
 msgid "Mailing list"
 msgstr "Postalama listesi"
 
-#: weblate_web/html/support.html:25
+#: weblate_web/html/support.html:31
 msgid ""
 "There is a mailing list <a href=\"mailto:weblate@lists.cihar.com"
 "\">weblate@lists.cihar.com</a> where you can discuss various things about "
@@ -1080,7 +1093,7 @@ msgstr ""
 "olabilir</a> ya da <a href=\"https://lists.cihar.com/pipermail/weblate/"
 "\">arşivlere gözatabilirsiniz</a>."
 
-#: weblate_web/html/support.html:29
+#: weblate_web/html/support.html:35
 msgid ""
 "The mailing list is also available on <a href=\"https://dir.gmane.org/gmane."
 "comp.web.weblate\">Gmane</a> where you can browse archives or use NNTP "
@@ -1090,11 +1103,11 @@ msgstr ""
 "postalama listesi <a href=\"https://dir.gmane.org/gmane.comp.web.weblate"
 "\">Gmane</a>'de mevcuttur."
 
-#: weblate_web/html/support.html:32
+#: weblate_web/html/support.html:38
 msgid "Stack Overflow"
 msgstr "Stack Overflow Sitesi"
 
-#: weblate_web/html/support.html:34
+#: weblate_web/html/support.html:40
 #, python-format
 msgid ""
 "You can also ask related questions on <a href=\"%(url)s\">Stack Overflow</a>."
@@ -1102,11 +1115,11 @@ msgstr ""
 "Ayrıca ilgili soruları <a href=\"%(url)s\">Stack Overflow Sitesinde</a> "
 "sorabilirsiniz."
 
-#: weblate_web/html/support.html:36
+#: weblate_web/html/support.html:42
 msgid "IRC"
 msgstr "Sohbet"
 
-#: weblate_web/html/support.html:39
+#: weblate_web/html/support.html:45
 msgid ""
 "When some of interested people are online, you might also find help on "
 "#weblate channel on <a href=\"https://freenode.net/\">freenode</a> network. "
@@ -1118,11 +1131,11 @@ msgstr ""
 "zamanda oradan <a href=\"https://webchat.freenode.net?channels=weblate\">web "
 "sohbeti</a> kullanabilirsiniz."
 
-#: weblate_web/html/support.html:42
+#: weblate_web/html/support.html:48
 msgid "Consulting"
 msgstr "Danışmanlık"
 
-#: weblate_web/html/support.html:45
+#: weblate_web/html/support.html:51
 #, python-format
 msgid ""
 "You can also contact <a href=\"%(contact_link)s\">Michal Čihař</a>, who is "

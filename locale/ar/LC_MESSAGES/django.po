@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2016-12-12 11:53+0100\n"
+"POT-Creation-Date: 2016-12-12 12:34+0100\n"
 "PO-Revision-Date: 2016-10-25 16:02+0000\n"
 "Last-Translator: Iqbal Mohammad Abdul Ghoni <Iqballmags@gmail.com>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/weblate/website/"
@@ -975,10 +975,21 @@ msgid ""
 msgstr ""
 
 #: weblate_web/html/support.html:22
-msgid "Mailing list"
+msgid "Security issues"
 msgstr ""
 
 #: weblate_web/html/support.html:25
+#, python-format
+msgid ""
+"Should you find security issue within our code base, please report it to "
+"%(contact)s. You can choose to encrypt it using his PGP key %(key)s."
+msgstr ""
+
+#: weblate_web/html/support.html:28
+msgid "Mailing list"
+msgstr ""
+
+#: weblate_web/html/support.html:31
 msgid ""
 "There is a mailing list <a href=\"mailto:weblate@lists.cihar.com"
 "\">weblate@lists.cihar.com</a> where you can discuss various things about "
@@ -987,28 +998,28 @@ msgid ""
 "weblate/\">browse archives</a>."
 msgstr ""
 
-#: weblate_web/html/support.html:29
+#: weblate_web/html/support.html:35
 msgid ""
 "The mailing list is also available on <a href=\"https://dir.gmane.org/gmane."
 "comp.web.weblate\">Gmane</a> where you can browse archives or use NNTP "
 "interface."
 msgstr ""
 
-#: weblate_web/html/support.html:32
+#: weblate_web/html/support.html:38
 msgid "Stack Overflow"
 msgstr ""
 
-#: weblate_web/html/support.html:34
+#: weblate_web/html/support.html:40
 #, python-format
 msgid ""
 "You can also ask related questions on <a href=\"%(url)s\">Stack Overflow</a>."
 msgstr ""
 
-#: weblate_web/html/support.html:36
+#: weblate_web/html/support.html:42
 msgid "IRC"
 msgstr ""
 
-#: weblate_web/html/support.html:39
+#: weblate_web/html/support.html:45
 msgid ""
 "When some of interested people are online, you might also find help on "
 "#weblate channel on <a href=\"https://freenode.net/\">freenode</a> network. "
@@ -1016,13 +1027,13 @@ msgid ""
 "\">webchat</a> there."
 msgstr ""
 
-#: weblate_web/html/support.html:42
+#: weblate_web/html/support.html:48
 #, fuzzy
 #| msgid "Hosting"
 msgid "Consulting"
 msgstr "استضافة"
 
-#: weblate_web/html/support.html:45
+#: weblate_web/html/support.html:51
 #, python-format
 msgid ""
 "You can also contact <a href=\"%(contact_link)s\">Michal Čihař</a>, who is "
