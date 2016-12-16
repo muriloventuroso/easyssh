@@ -43,9 +43,11 @@ git clone https://github.com/WeblateOrg/website.git
 {% endfor %}
 </ul>
 
-<p>
-{% blocktrans %}For openSUSE/SLES users, there are binary packages available in the <a href="https://software.opensuse.org/package/weblate/">openSUSE Buildservice</a>.{% endblocktrans %}
-</p>
+<p>{% trans "You can also install using packages for following Linux distributions:" %}</p>
+
+<ul>
+<li><a href="https://software.opensuse.org/package/weblate/">openSUSE</a>
+</ul>
 
 <h2>{% trans "Weblate command line client" %}</h2>
 
@@ -57,6 +59,14 @@ git clone https://github.com/WeblateOrg/website.git
 pip3 install wlc
 </pre>
 
+<p>{% trans "You can also install using packages for following Linux distributions:" %}</p>
+
+<ul>
+<li><a href="https://packages.debian.org/wlc">Debian</a>
+<li><a href="https://software.opensuse.org/package/wlc/">openSUSE</a>
+</ul>
+
+
 <h2>{% trans "Cloud or virtualization images" %}</h2>
 
 <p>{% trans "Weblate can be run in any cloud or virtualization environment. Following links will show you information about some of these:" %}</p>
@@ -64,7 +74,7 @@ pip3 install wlc
 <ul>
 <li><a href="https://docs.weblate.org/en/latest/admin/deployments.html#docker">{% trans "Running Weblate in a Docker container" %}</a></li>
 <li><a href="https://docs.weblate.org/en/latest/admin/deployments.html#openshift">{% trans "Running Weblate on OpenShift platform" %}</a></li>
-<li><a href="https://susestudio.com/a/F8yMYg/weblate">{% trans "SUSE Studio appliances" %}</a></li>
+<li><a href="https://susestudio.com/a/F8yMYg/weblate--2">{% trans "SUSE Studio appliances" %}</a></li>
 <li><a href="https://bitnami.com/stack/weblate">{% trans "BitNami Weblate stack providing native installation for most platforms as well as support for many public cloud providers" %}</a></li>
 </ul>
 
