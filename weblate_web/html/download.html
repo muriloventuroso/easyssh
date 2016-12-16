@@ -43,9 +43,11 @@ git clone https://github.com/WeblateOrg/website.git
 {% endfor %}
 </ul>
 
-<p>
-{% blocktrans %}For openSUSE/SLES users, there are binary packages available in the <a href="https://software.opensuse.org/package/weblate/">openSUSE Buildservice</a>.{% endblocktrans %}
-</p>
+<p>{% trans "You can also install using packages for following Linux distributions:" %}</p>
+
+<ul>
+<li><a href="https://software.opensuse.org/package/weblate/">openSUSE</a>
+</ul>
 
 <h2>{% trans "Weblate command line client" %}</h2>
 
@@ -56,6 +58,14 @@ git clone https://github.com/WeblateOrg/website.git
 <pre>
 pip3 install wlc
 </pre>
+
+<p>{% trans "You can also install using packages for following Linux distributions:" %}</p>
+
+<ul>
+<li><a href="https://packages.debian.org/wlc">Debian</a>
+<li><a href="https://software.opensuse.org/package/wlc/">openSUSE</a>
+</ul>
+
 
 <h2>{% trans "Cloud or virtualization images" %}</h2>
 
