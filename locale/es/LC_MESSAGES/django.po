@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2016-12-12 12:34+0100\n"
+"POT-Creation-Date: 2016-12-16 16:29+0100\n"
 "PO-Revision-Date: 2016-08-27 23:01+0000\n"
 "Last-Translator: Guillermo Mas Coll <guillermoto@ono.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/weblate/website/"
@@ -395,19 +395,15 @@ msgstr ""
 msgid "You can download latest release here:"
 msgstr "Puede descargar la última versión aquí:"
 
-#: weblate_web/html/download.html:47
-msgid ""
-"For openSUSE/SLES users, there are binary packages available in the <a href="
-"\"https://software.opensuse.org/package/weblate/\">openSUSE Buildservice</a>."
+#: weblate_web/html/download.html:46 weblate_web/html/download.html:62
+msgid "You can also install using packages for following Linux distributions:"
 msgstr ""
-"Para usuarios de openSUSE/SLES, hay paquetes binarios disponibles en <a href="
-"\"https://software.opensuse.org/package/weblate/\">openSUSE Buildservice</a>."
 
-#: weblate_web/html/download.html:50
+#: weblate_web/html/download.html:52
 msgid "Weblate command line client"
 msgstr "Línea de comandos cliente de Weblate"
 
-#: weblate_web/html/download.html:53
+#: weblate_web/html/download.html:55
 #, python-format
 msgid ""
 "You can control Weblate remotely using <a href=\"%(url)s\">wlc</a>, it can "
@@ -416,11 +412,11 @@ msgstr ""
 "Puedes controlar remotamente Weblate usando <a href=\"%(url)s\">wlc</a>, "
 "esto puede instalarse con Python PIP:"
 
-#: weblate_web/html/download.html:60
+#: weblate_web/html/download.html:70
 msgid "Cloud or virtualization images"
 msgstr "La nube o virtualización de imágenes"
 
-#: weblate_web/html/download.html:62
+#: weblate_web/html/download.html:72
 msgid ""
 "Weblate can be run in any cloud or virtualization environment. Following "
 "links will show you information about some of these:"
@@ -428,19 +424,19 @@ msgstr ""
 "Weblate puede iniciarse en cualquier nube o entorno de virtualización. Los "
 "siguientes enlaces le mostrarán información sobre alguno de ellos:"
 
-#: weblate_web/html/download.html:65
+#: weblate_web/html/download.html:75
 msgid "Running Weblate in a Docker container"
 msgstr "Iniciando Weblate en un contenedor Docker"
 
-#: weblate_web/html/download.html:66
+#: weblate_web/html/download.html:76
 msgid "Running Weblate on OpenShift platform"
 msgstr "Iniciando Weblate en plataforma OpenShift"
 
-#: weblate_web/html/download.html:67
+#: weblate_web/html/download.html:77
 msgid "SUSE Studio appliances"
 msgstr "Accesorios de SUSE Studio"
 
-#: weblate_web/html/download.html:68
+#: weblate_web/html/download.html:78
 msgid ""
 "BitNami Weblate stack providing native installation for most platforms as "
 "well as support for many public cloud providers"
@@ -1296,6 +1292,15 @@ msgstr "Compendio tar del código fuente, comprimido con xz"
 #: weblate_web/templatetags/downloads.py:60
 msgid "Sources, zip compressed"
 msgstr "Código fuente, comprimido con zip"
+
+#~ msgid ""
+#~ "For openSUSE/SLES users, there are binary packages available in the <a "
+#~ "href=\"https://software.opensuse.org/package/weblate/\">openSUSE "
+#~ "Buildservice</a>."
+#~ msgstr ""
+#~ "Para usuarios de openSUSE/SLES, hay paquetes binarios disponibles en <a "
+#~ "href=\"https://software.opensuse.org/package/weblate/\">openSUSE "
+#~ "Buildservice</a>."
 
 #~ msgid "Test repositories data, useful for offline tests"
 #~ msgstr "Repositorio de datos de prueba, útil para pruebas sin conexión"

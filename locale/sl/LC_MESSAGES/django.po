@@ -7,17 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2016-12-12 12:34+0100\n"
+"POT-Creation-Date: 2016-12-16 16:29+0100\n"
 "PO-Revision-Date: 2016-12-14 09:33+0000\n"
 "Last-Translator: Domen <mitenem@outlook.com>\n"
-"Language-Team: Slovenian "
-"<https://hosted.weblate.org/projects/weblate/website/sl/>\n"
+"Language-Team: Slovenian <https://hosted.weblate.org/projects/weblate/"
+"website/sl/>\n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
-"n%100==4 ? 2 : 3;\n"
+"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
+"%100==4 ? 2 : 3;\n"
 "X-Generator: Weblate 2.10-dev\n"
 
 #: weblate_web/data.py:33
@@ -394,19 +394,15 @@ msgstr ""
 msgid "You can download latest release here:"
 msgstr "Tukaj si lahko prenesete najnovejšo izdajo:"
 
-#: weblate_web/html/download.html:47
-msgid ""
-"For openSUSE/SLES users, there are binary packages available in the <a href="
-"\"https://software.opensuse.org/package/weblate/\">openSUSE Buildservice</a>."
+#: weblate_web/html/download.html:46 weblate_web/html/download.html:62
+msgid "You can also install using packages for following Linux distributions:"
 msgstr ""
-"Za uporabnike openSUSE/SLES so v <a href=\"https://software.opensuse.org/"
-"package/weblate/\">openSUSE Buildservice</a> na voljo binarni paketi."
 
-#: weblate_web/html/download.html:50
+#: weblate_web/html/download.html:52
 msgid "Weblate command line client"
 msgstr "Klient Weblate za ukazno vrstico"
 
-#: weblate_web/html/download.html:53
+#: weblate_web/html/download.html:55
 #, python-format
 msgid ""
 "You can control Weblate remotely using <a href=\"%(url)s\">wlc</a>, it can "
@@ -415,11 +411,11 @@ msgstr ""
 "Weblate lahko nadzirate oddaljeno z uporabo <a href=\"%(url)s\">wlc</a>; "
 "namestite ga lahko s Python PIP:"
 
-#: weblate_web/html/download.html:60
+#: weblate_web/html/download.html:70
 msgid "Cloud or virtualization images"
 msgstr "Slike za oblak ali virtualizacijo"
 
-#: weblate_web/html/download.html:62
+#: weblate_web/html/download.html:72
 msgid ""
 "Weblate can be run in any cloud or virtualization environment. Following "
 "links will show you information about some of these:"
@@ -427,19 +423,19 @@ msgstr ""
 "Weblate lahko poganjate v katerem koli oblaku ali virtualizacijskem okolju. "
 "Naslednje povezave vam nudijo informacije o nekaterih:"
 
-#: weblate_web/html/download.html:65
+#: weblate_web/html/download.html:75
 msgid "Running Weblate in a Docker container"
 msgstr "Poganjanje Weblate v vsebniku Docker"
 
-#: weblate_web/html/download.html:66
+#: weblate_web/html/download.html:76
 msgid "Running Weblate on OpenShift platform"
 msgstr "Poganjanje Weblate na platformi OpenShift"
 
-#: weblate_web/html/download.html:67
+#: weblate_web/html/download.html:77
 msgid "SUSE Studio appliances"
 msgstr "Pripomočki SUSE Studio"
 
-#: weblate_web/html/download.html:68
+#: weblate_web/html/download.html:78
 msgid ""
 "BitNami Weblate stack providing native installation for most platforms as "
 "well as support for many public cloud providers"
@@ -1282,6 +1278,14 @@ msgstr "Tarball izvornih datotek, stisnjeno kot xz"
 #: weblate_web/templatetags/downloads.py:60
 msgid "Sources, zip compressed"
 msgstr "Izvorne datoteke, stisnjeno kot zip"
+
+#~ msgid ""
+#~ "For openSUSE/SLES users, there are binary packages available in the <a "
+#~ "href=\"https://software.opensuse.org/package/weblate/\">openSUSE "
+#~ "Buildservice</a>."
+#~ msgstr ""
+#~ "Za uporabnike openSUSE/SLES so v <a href=\"https://software.opensuse.org/"
+#~ "package/weblate/\">openSUSE Buildservice</a> na voljo binarni paketi."
 
 #~ msgid "Test repositories data, useful for offline tests"
 #~ msgstr "Preizkusi podatke repozitorijev; uporabno za nepovezane preizkuse"

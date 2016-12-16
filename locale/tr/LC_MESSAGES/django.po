@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2016-12-12 12:34+0100\n"
+"POT-Creation-Date: 2016-12-16 16:29+0100\n"
 "PO-Revision-Date: 2016-12-12 13:10+0000\n"
 "Last-Translator: Burak Yavuz <hitowerdigit@hotmail.com>\n"
-"Language-Team: Turkish "
-"<https://hosted.weblate.org/projects/weblate/website/tr/>\n"
+"Language-Team: Turkish <https://hosted.weblate.org/projects/weblate/website/"
+"tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -394,19 +394,15 @@ msgstr ""
 msgid "You can download latest release here:"
 msgstr "En son yayımı buradan indirebilirsiniz:"
 
-#: weblate_web/html/download.html:47
-msgid ""
-"For openSUSE/SLES users, there are binary packages available in the <a href="
-"\"https://software.opensuse.org/package/weblate/\">openSUSE Buildservice</a>."
+#: weblate_web/html/download.html:46 weblate_web/html/download.html:62
+msgid "You can also install using packages for following Linux distributions:"
 msgstr ""
-"openSUSE/SLES kullanıcıları için binari paketleri <a href=\"https://software."
-"opensuse.org/package/weblate/\">openSUSE Buildservice</a>'te mevcuttur."
 
-#: weblate_web/html/download.html:50
+#: weblate_web/html/download.html:52
 msgid "Weblate command line client"
 msgstr "Weblate komut satırı istemcisi"
 
-#: weblate_web/html/download.html:53
+#: weblate_web/html/download.html:55
 #, python-format
 msgid ""
 "You can control Weblate remotely using <a href=\"%(url)s\">wlc</a>, it can "
@@ -415,11 +411,11 @@ msgstr ""
 "Weblate'i <a href=\"%(url)s\">wlc</a> kullanarak uzaktan "
 "denetleyebilirsiniz, Python PIP kullanılarak yüklenebilir:"
 
-#: weblate_web/html/download.html:60
+#: weblate_web/html/download.html:70
 msgid "Cloud or virtualization images"
 msgstr "Bulut ya da sanallaştırma imajları"
 
-#: weblate_web/html/download.html:62
+#: weblate_web/html/download.html:72
 msgid ""
 "Weblate can be run in any cloud or virtualization environment. Following "
 "links will show you information about some of these:"
@@ -427,19 +423,19 @@ msgstr ""
 "Weblate herhangi bir bulut veya sanallaştırma ortamında çalıştırılabilir. "
 "Aşağıdaki bağlantılar size bunlardan bazıları hakkında bilgileri gösterecek:"
 
-#: weblate_web/html/download.html:65
+#: weblate_web/html/download.html:75
 msgid "Running Weblate in a Docker container"
 msgstr "Weblate'i bir Docker kalıbı içinde çalıştırmak"
 
-#: weblate_web/html/download.html:66
+#: weblate_web/html/download.html:76
 msgid "Running Weblate on OpenShift platform"
 msgstr "Weblate'i bir OpenShift platformu üzerinde çalıştırmak"
 
-#: weblate_web/html/download.html:67
+#: weblate_web/html/download.html:77
 msgid "SUSE Studio appliances"
 msgstr "SUSE Studio araçları"
 
-#: weblate_web/html/download.html:68
+#: weblate_web/html/download.html:78
 msgid ""
 "BitNami Weblate stack providing native installation for most platforms as "
 "well as support for many public cloud providers"
@@ -1284,6 +1280,15 @@ msgstr "Kaynaklar tarball, xz sıkıştırmalı"
 #: weblate_web/templatetags/downloads.py:60
 msgid "Sources, zip compressed"
 msgstr "Kaynaklar, zip sıkıştırmalı"
+
+#~ msgid ""
+#~ "For openSUSE/SLES users, there are binary packages available in the <a "
+#~ "href=\"https://software.opensuse.org/package/weblate/\">openSUSE "
+#~ "Buildservice</a>."
+#~ msgstr ""
+#~ "openSUSE/SLES kullanıcıları için binari paketleri <a href=\"https://"
+#~ "software.opensuse.org/package/weblate/\">openSUSE Buildservice</a>'te "
+#~ "mevcuttur."
 
 #~ msgid "Test repositories data, useful for offline tests"
 #~ msgstr "Havuzların verisini deneyin, çevrimdışı denemeler için yararlı"

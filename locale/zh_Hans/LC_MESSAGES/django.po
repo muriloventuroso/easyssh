@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2016-12-12 12:34+0100\n"
+"POT-Creation-Date: 2016-12-16 16:29+0100\n"
 "PO-Revision-Date: 2016-12-12 15:17+0000\n"
 "Last-Translator: YFdyh000 <yfdyh000@gmail.com>\n"
-"Language-Team: Chinese (Simplified) "
-"<https://hosted.weblate.org/projects/weblate/website/zh_Hans/>\n"
+"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
+"weblate/website/zh_Hans/>\n"
 "Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -368,19 +368,15 @@ msgstr ""
 msgid "You can download latest release here:"
 msgstr "您可以在这里下载最新版："
 
-#: weblate_web/html/download.html:47
-msgid ""
-"For openSUSE/SLES users, there are binary packages available in the <a href="
-"\"https://software.opensuse.org/package/weblate/\">openSUSE Buildservice</a>."
+#: weblate_web/html/download.html:46 weblate_web/html/download.html:62
+msgid "You can also install using packages for following Linux distributions:"
 msgstr ""
-"openSUSE/SLES 用户可到 <a href=\"https://software.opensuse.org/package/"
-"weblate/\">openSUSE 构建服务</a>下载二进制包。"
 
-#: weblate_web/html/download.html:50
+#: weblate_web/html/download.html:52
 msgid "Weblate command line client"
 msgstr "Weblate 命令行客户端"
 
-#: weblate_web/html/download.html:53
+#: weblate_web/html/download.html:55
 #, python-format
 msgid ""
 "You can control Weblate remotely using <a href=\"%(url)s\">wlc</a>, it can "
@@ -389,29 +385,29 @@ msgstr ""
 "您可以使用 <a href=\"%(url)s\">wlc</a> 远程控制 Weblate，它可以使用 Python "
 "PIP 安装："
 
-#: weblate_web/html/download.html:60
+#: weblate_web/html/download.html:70
 msgid "Cloud or virtualization images"
 msgstr "云或虚拟化映像"
 
-#: weblate_web/html/download.html:62
+#: weblate_web/html/download.html:72
 msgid ""
 "Weblate can be run in any cloud or virtualization environment. Following "
 "links will show you information about some of these:"
 msgstr "Weblate 可运行在任何云上或虚拟化环境中。以下链接展示了一些用例信息："
 
-#: weblate_web/html/download.html:65
+#: weblate_web/html/download.html:75
 msgid "Running Weblate in a Docker container"
 msgstr "在 Docker 容器中运行 Weblate"
 
-#: weblate_web/html/download.html:66
+#: weblate_web/html/download.html:76
 msgid "Running Weblate on OpenShift platform"
 msgstr "在 OpenShift 平台上运行 Weblate"
 
-#: weblate_web/html/download.html:67
+#: weblate_web/html/download.html:77
 msgid "SUSE Studio appliances"
 msgstr "SUSE Studio 实例"
 
-#: weblate_web/html/download.html:68
+#: weblate_web/html/download.html:78
 msgid ""
 "BitNami Weblate stack providing native installation for most platforms as "
 "well as support for many public cloud providers"
@@ -1002,7 +998,9 @@ msgstr "安全问题"
 msgid ""
 "Should you find security issue within our code base, please report it to "
 "%(contact)s. You can choose to encrypt it using his PGP key %(key)s."
-msgstr "如果您发现我们的代码有任何安全问题，请报告至 %(contact)s。您还可以选择使用 PGP 密钥 %(key)s 加密交流。"
+msgstr ""
+"如果您发现我们的代码有任何安全问题，请报告至 %(contact)s。您还可以选择使用 "
+"PGP 密钥 %(key)s 加密交流。"
 
 #: weblate_web/html/support.html:28
 msgid "Mailing list"
@@ -1199,6 +1197,14 @@ msgstr "源代码 tar 包，xz 压缩"
 #: weblate_web/templatetags/downloads.py:60
 msgid "Sources, zip compressed"
 msgstr "源代码，zip 压缩"
+
+#~ msgid ""
+#~ "For openSUSE/SLES users, there are binary packages available in the <a "
+#~ "href=\"https://software.opensuse.org/package/weblate/\">openSUSE "
+#~ "Buildservice</a>."
+#~ msgstr ""
+#~ "openSUSE/SLES 用户可到 <a href=\"https://software.opensuse.org/package/"
+#~ "weblate/\">openSUSE 构建服务</a>下载二进制包。"
 
 #~ msgid "Test repositories data, useful for offline tests"
 #~ msgstr "测试代码库数据，通常用于离线测试"

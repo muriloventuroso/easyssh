@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Swedish (Weblate)\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2016-12-12 12:34+0100\n"
+"POT-Creation-Date: 2016-12-16 16:29+0100\n"
 "PO-Revision-Date: 2016-10-28 12:14+0000\n"
 "Last-Translator: John Vandenberg <jayvdb@gmail.com>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/weblate/website/"
@@ -398,32 +398,28 @@ msgstr ""
 msgid "You can download latest release here:"
 msgstr "Du kan hämta den senaste utgåvan här:"
 
-#: weblate_web/html/download.html:47
-msgid ""
-"For openSUSE/SLES users, there are binary packages available in the <a href="
-"\"https://software.opensuse.org/package/weblate/\">openSUSE Buildservice</a>."
+#: weblate_web/html/download.html:46 weblate_web/html/download.html:62
+msgid "You can also install using packages for following Linux distributions:"
 msgstr ""
-"För användare av openSUSE/SLES finns det binära paket tillgängliga i <a href="
-"\"https://software.opensuse.org/package/weblate/\">openSUSE Buildservice</a>."
 
-#: weblate_web/html/download.html:50
+#: weblate_web/html/download.html:52
 msgid "Weblate command line client"
 msgstr ""
 
-#: weblate_web/html/download.html:53
+#: weblate_web/html/download.html:55
 #, python-format
 msgid ""
 "You can control Weblate remotely using <a href=\"%(url)s\">wlc</a>, it can "
 "be installed by using Python PIP:"
 msgstr ""
 
-#: weblate_web/html/download.html:60
+#: weblate_web/html/download.html:70
 #, fuzzy
 #| msgid "Cloud or emulator images"
 msgid "Cloud or virtualization images"
 msgstr "Avbilder för moln eller virtualisering"
 
-#: weblate_web/html/download.html:62
+#: weblate_web/html/download.html:72
 #, fuzzy
 msgid ""
 "Weblate can be run in any cloud or virtualization environment. Following "
@@ -432,20 +428,20 @@ msgstr ""
 "Weblate kan köras i vilket moln som helst eller virtualiseringsmiljö. "
 "Följande länkar kommer att visa dig information om några av dessa:"
 
-#: weblate_web/html/download.html:65
+#: weblate_web/html/download.html:75
 msgid "Running Weblate in a Docker container"
 msgstr "Att köra Weblate i en Docker-container"
 
-#: weblate_web/html/download.html:66
+#: weblate_web/html/download.html:76
 msgid "Running Weblate on OpenShift platform"
 msgstr "Att köra Weblate på OpenShift"
 
-#: weblate_web/html/download.html:67
+#: weblate_web/html/download.html:77
 #, fuzzy
 msgid "SUSE Studio appliances"
 msgstr "Redskap för SUSE Studio"
 
-#: weblate_web/html/download.html:68
+#: weblate_web/html/download.html:78
 msgid ""
 "BitNami Weblate stack providing native installation for most platforms as "
 "well as support for many public cloud providers"
@@ -1287,6 +1283,15 @@ msgstr "Källkod i tarball, xz-komprimerad"
 #: weblate_web/templatetags/downloads.py:60
 msgid "Sources, zip compressed"
 msgstr "Källkod, zip-komprimerad"
+
+#~ msgid ""
+#~ "For openSUSE/SLES users, there are binary packages available in the <a "
+#~ "href=\"https://software.opensuse.org/package/weblate/\">openSUSE "
+#~ "Buildservice</a>."
+#~ msgstr ""
+#~ "För användare av openSUSE/SLES finns det binära paket tillgängliga i <a "
+#~ "href=\"https://software.opensuse.org/package/weblate/\">openSUSE "
+#~ "Buildservice</a>."
 
 #~ msgid "Contact"
 #~ msgstr "Kontakt"
