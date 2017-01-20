@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2017-01-08 17:35+0100\n"
-"PO-Revision-Date: 2017-01-12 14:46+0000\n"
+"PO-Revision-Date: 2017-01-20 12:18+0000\n"
 "Last-Translator: Любомир Василев <lyubomirv@abv.bg>\n"
 "Language-Team: Bulgarian "
 "<https://hosted.weblate.org/projects/weblate/website/bg/>\n"
@@ -253,10 +253,13 @@ msgid ""
 "docs.weblate.org/en/latest/contributing.html\">Contributing chapter</a> of "
 "our documentation."
 msgstr ""
+"Можете да намерите повече информация по темата в <a href=\""
+"https://docs.weblate.org/en/latest/contributing.html\">раздела за принос</a> "
+"в документацията ни."
 
 #: weblate_web/html/contribute.html:20 weblate_web/html/download.html:17
 msgid "Code"
-msgstr ""
+msgstr "Код"
 
 #: weblate_web/html/contribute.html:23
 #, python-format
@@ -264,17 +267,21 @@ msgid ""
 "Weblate is being developed on <a href=\"%(url)s\">Github</a>, you can fork "
 "it there or just:"
 msgstr ""
+"Weblate се разработва в <a href=\"%(url)s\">Github</a>, където можете да "
+"направите свой наследен проект или просто да използвате:"
 
 #: weblate_web/html/contribute.html:31
 #, python-format
 msgid "This website is stored on <a href=\"%(url)s\">Github</a> as well:"
-msgstr ""
+msgstr "Този уеб сайт също се съхранява в <a href=\"%(url)s\">Github</a>:"
 
 #: weblate_web/html/contribute.html:41
 msgid ""
 "You can translate Weblate using Weblate installation at <a href=\"https://"
 "hosted.weblate.org/engage/weblate/\">hosted.weblate.org</a>."
 msgstr ""
+"Можете де преведете Weblate използвайки инсталацията на Weblate на <a href=\""
+"https://hosted.weblate.org/engage/weblate/\">hosted.weblate.org</a>."
 
 #: weblate_web/html/contribute.html:46
 msgid "Translation status"
@@ -286,15 +293,15 @@ msgstr "Дарете на Weblate"
 
 #: weblate_web/html/donate.html:6
 msgid "Weblate is free, but welcomes donations."
-msgstr ""
+msgstr "Weblate е безплатна система, но приема дарения."
 
 #: weblate_web/html/donate.html:12 weblate_web/html/donate.html:39
 msgid "Donate using Liberapay"
-msgstr ""
+msgstr "Дарение чрез Liberapay"
 
 #: weblate_web/html/donate.html:18
 msgid "Regular donations"
-msgstr ""
+msgstr "Периодични дарения"
 
 #: weblate_web/html/donate.html:21
 msgid ""
@@ -302,53 +309,67 @@ msgid ""
 "fund free hosting for free software. You don't have to spend big money, "
 "every penny counts."
 msgstr ""
+"Периодичните дарения помагат за развитието на Weblate, както и за "
+"поддръжката на безплатния хостинг за проекти с отворен код. Не е нужно да "
+"правите големи дарения, всяка стотинка има значение."
 
 #: weblate_web/html/donate.html:28 weblate_web/html/donate.html:50
 msgid "Fund on Bountysource"
-msgstr ""
+msgstr "Финансиране чрез Bountysource"
 
 #: weblate_web/html/donate.html:32
 msgid ""
 "You can send a monthly donation using a credit card. You can also get "
 "rewards for higher donations, for example a logo placement on our website."
 msgstr ""
+"Можете да изпращате ежемесечно дарение чрез кредитна карта. Ако направите по-"
+"голямо дарение, можете да получите награда, като например това да поставим "
+"Вашето лого на нашия уеб сайт."
 
 #: weblate_web/html/donate.html:43
 msgid "Liberapay allows you to send a weekly amount using a credit card."
 msgstr ""
+"С Liberapay Вие можете да изпращате определена сума ежеседмично, използвайки "
+"кредитна карта."
 
 #: weblate_web/html/donate.html:46
 msgid "Fund features"
-msgstr ""
+msgstr "Финансирайте определени функционалности"
 
 #: weblate_web/html/donate.html:54
 msgid ""
 "Bountysource allows you to fund individual features which are reported on "
 "our issue tracker."
 msgstr ""
+"Bountysource Ви позволява да финансирате определени функционалности, описани "
+"в системата ни за докладване на проблеми."
 
 #: weblate_web/html/donate.html:60
 msgid ""
 "If you like Weblate you can support its further development by donating."
 msgstr ""
+"Ако Weblate Ви харесва, можете да подкрепите развитието на системата чрез "
+"дарение."
 
 #: weblate_web/html/donate.html:68
 msgid "Donate using PayPal"
-msgstr ""
+msgstr "Дарение чрез PayPal"
 
 #: weblate_web/html/donate.html:73
 msgid ""
 "PayPal allows you to send money from credit card, PayPal balance or a bank "
 "account."
 msgstr ""
+"PayPal Ви позволява да изпращате пари, използвайки кредитна карта, "
+"средствата си в PayPal или банкова сметка."
 
 #: weblate_web/html/donate.html:78
 msgid "Donate using Coinbase"
-msgstr ""
+msgstr "Дарение чрез Coinbase"
 
 #: weblate_web/html/donate.html:82
 msgid "Coinbase allows you to send Bitcoins."
-msgstr ""
+msgstr "Coinbase Ви позволява да изпращате биткойни."
 
 #: weblate_web/html/donate.html:86
 #, python-format
@@ -356,32 +377,40 @@ msgid ""
 "You can also use <a href=\"https://www.bitcoin.org/\">Bitcoin is a peer-to-"
 "peer network</a> and send me Bitcoins to <code>%(bitcoin_address)s</code>."
 msgstr ""
+"Можете също така да използвате You can also use <a href=\""
+"https://www.bitcoin.org/\">разпределената мрежа Биткойн</a> и да изпращате "
+"биткойни на адрес <code>%(bitcoin_address)s</code>."
 
 #: weblate_web/html/download.html:4 weblate_web/html/download.html:5
 msgid "Download Weblate"
-msgstr ""
+msgstr "Сваляне на Weblate"
 
 #: weblate_web/html/download.html:7
 msgid "Weblate comes with complete source code."
-msgstr ""
+msgstr "Weblate включва целия си изходен код."
 
 #: weblate_web/html/download.html:20
 msgid ""
 "Weblate is being developed on <a href=\"https://github.com/WeblateOrg/weblate"
 "\">Github</a>, you can fork it there or just:"
 msgstr ""
+"Weblate се разработва в <a href=\"https://github.com/WeblateOrg/weblate\""
+">Github</a>, където можете да направите свой наследен проект или просто да "
+"използвате:"
 
 #: weblate_web/html/download.html:37
 msgid "You can download latest release here:"
-msgstr ""
+msgstr "Можете да свалите най-новата версия от тук:"
 
 #: weblate_web/html/download.html:46 weblate_web/html/download.html:62
 msgid "You can also install using packages for following Linux distributions:"
 msgstr ""
+"Можете също така да инсталирате чрез пакети, за следните дистрибуции на "
+"Линукс:"
 
 #: weblate_web/html/download.html:52
 msgid "Weblate command line client"
-msgstr ""
+msgstr "Клиент за команден ред на Weblate"
 
 #: weblate_web/html/download.html:55
 #, python-format
@@ -389,117 +418,138 @@ msgid ""
 "You can control Weblate remotely using <a href=\"%(url)s\">wlc</a>, it can "
 "be installed by using Python PIP:"
 msgstr ""
+"Можете да управлявате Weblate отдалечено, използвайки <a href=\"%(url)s\""
+">wlc</a>, Тази програма може да бъде инсталирана с помощта на Python PIP:"
 
 #: weblate_web/html/download.html:70
 msgid "Cloud or virtualization images"
-msgstr ""
+msgstr "Изображения за виртуализация или използване в облака"
 
 #: weblate_web/html/download.html:72
 msgid ""
 "Weblate can be run in any cloud or virtualization environment. Following "
 "links will show you information about some of these:"
 msgstr ""
+"Weblate може да работи във всяка виртуална или облачна среда. Следните "
+"връзки ще Ви дадат повече информация относно някои от тези възможности:"
 
 #: weblate_web/html/download.html:75
 msgid "Running Weblate in a Docker container"
-msgstr ""
+msgstr "Пускане на Weblate в контейнер на „Docker“"
 
 #: weblate_web/html/download.html:76
 msgid "Running Weblate on OpenShift platform"
-msgstr ""
+msgstr "Пускане на Weblate в платформа „OpenShift“"
 
 #: weblate_web/html/download.html:77
 msgid "SUSE Studio appliances"
-msgstr ""
+msgstr "Приспособления на „SUSE Studio“"
 
 #: weblate_web/html/download.html:78
 msgid ""
 "BitNami Weblate stack providing native installation for most platforms as "
 "well as support for many public cloud providers"
 msgstr ""
+"Стекът на „BitNami“ за Weblate може да осигури инсталация на специализирана "
+"версия на повечето системи, както и поддръжка на повечето доставчици на "
+"облачни услуги"
 
 #: weblate_web/html/features.html:3 weblate_web/html/features.html:4
 msgid "Weblate features"
-msgstr ""
+msgstr "Функционалности на Weblate"
 
 #: weblate_web/html/features.html:6
 msgid "Weblate is a feature rich computer aided translation tool."
-msgstr ""
+msgstr "Weblate е многофункционален инструмент за улесняване на превода."
 
 #: weblate_web/html/features.html:11
 msgid "View documentation"
-msgstr ""
+msgstr "Документация"
 
 #: weblate_web/html/features.html:23
 msgid "Access control"
-msgstr ""
+msgstr "Управление на достъпа"
 
 #: weblate_web/html/features.html:24
 msgid "Access rights can be fine tuned depending on your environment."
-msgstr ""
+msgstr "Правата за достъп могат да бъдат настроени според Вашата среда."
 
 #: weblate_web/html/features.html:31
 msgid "Notifications"
-msgstr ""
+msgstr "Известия"
 
 #: weblate_web/html/features.html:32
 msgid ""
 "Translators can be notified on new strings to translate or other events."
 msgstr ""
+"Преводачите могат да получават известия при добавянето на нови текстове за "
+"превод или други събития."
 
 #: weblate_web/html/features.html:39
 msgid "Integration API"
-msgstr ""
+msgstr "ППИ за интеграция"
 
 #: weblate_web/html/features.html:40
 msgid "Thanks to the API you can integrate Weblate with third party services."
 msgstr ""
+"Благодарения на нашето ППИ можете да интегрирате Weblate с услугите на трети "
+"страни."
 
 #: weblate_web/html/features.html:47
 msgid "File formats"
-msgstr ""
+msgstr "Файлови формати"
 
 #: weblate_web/html/features.html:48
 msgid ""
 "Weblate supports all widely used file formats for localisation like Gettext, "
 "JSON, XLIFF or resource strings."
 msgstr ""
+"Weblate поддържа всички широко използвани файлови формати за превод, като "
+"Gettext, JSON, XLIFF и ресурсни текстове."
 
 #: weblate_web/html/features.html:55
 msgid "Branches support"
-msgstr ""
+msgstr "Поддръжка на клонове"
 
 #: weblate_web/html/features.html:56
 msgid ""
 "Weblate can handle different versions of the translation by pushing them to "
 "different branches automatically."
 msgstr ""
+"Weblate може да работи с различни версии на превода като ги автоматично ги "
+"изпраща към различни клонове."
 
 #: weblate_web/html/features.html:79
 msgid "Acquiring feedback"
-msgstr ""
+msgstr "Обратна връзка"
 
 #: weblate_web/html/features.html:80
 msgid ""
 "You can also use Weblate to acquire feedback on source strings and thus "
 "improve them."
 msgstr ""
+"С Weblate можете също така да получавате коментари относно оригиналните си "
+"текстове и да ги подобрявате."
 
 #: weblate_web/html/features.html:87
 msgid "Export and import"
-msgstr ""
+msgstr "Внасяне и изнасяне"
 
 #: weblate_web/html/features.html:88
 msgid "Translations can be downloaded for offline translation and merged back."
 msgstr ""
+"Преводите могат да бъдат сваляни за превод извън линия и след това сливани "
+"обратно."
 
 #: weblate_web/html/features.html:95
 msgid "Integrated"
-msgstr ""
+msgstr "Единност"
 
 #: weblate_web/html/features.html:96
 msgid "Translations are managed within same version control system as code."
 msgstr ""
+"Преводите се съхраняват в същата система за контрол на версиите, където е и "
+"кодът."
 
 #: weblate_web/html/features.html:103
 msgid "Documentation"
@@ -509,6 +559,8 @@ msgstr "Документация"
 msgid ""
 "Weblate comes with comprehensive documentation covering both setup and usage."
 msgstr ""
+"Weblate има изчерпателна документация, покриваща както установката, така и "
+"начина на използване."
 
 #: weblate_web/html/features.html:111
 msgid "Review"
@@ -517,6 +569,8 @@ msgstr "Одобряване"
 #: weblate_web/html/features.html:112
 msgid "Translators have several options to review contributions made by peers."
 msgstr ""
+"Преводачите имат няколко начина за преглед и одобрение на преводите на "
+"колегите си."
 
 #: weblate_web/html/features.html:119
 msgid "Languages"
@@ -527,78 +581,89 @@ msgid ""
 "Weblate supports over 150 languages out of the box, others can be defined by "
 "administrator."
 msgstr ""
+"Weblate поддържа над 150 езика, а при нужда администратор може да добави още."
 
 #: weblate_web/html/features.html:135
 msgid "Reporting"
-msgstr ""
+msgstr "Отчети"
 
 #: weblate_web/html/features.html:136
 msgid ""
 "Weblate generates various reports to provide information about project "
 "activity."
 msgstr ""
+"Weblate предоставя разнообразни отчети, за да покаже дейността по проектите."
 
 #: weblate_web/html/features.html:144
 msgid "Version control"
-msgstr ""
+msgstr "Контрол на версиите"
 
 #: weblate_web/html/features.html:145
 msgid ""
 "Weblate talks directly with your version control system, currently Git and "
 "Mercurial are supported."
 msgstr ""
+"Weblate работи директно с Вашата система за контрол на версиите. В момента "
+"се поддържат Git и Mercurial."
 
 #: weblate_web/html/features.html:152
 msgid "Collaboration sites"
-msgstr ""
+msgstr "Уеб сайтове за съвместна работа"
 
 #: weblate_web/html/features.html:153
 msgid ""
 "Weblate has native support for many software development sites such as "
 "GitHub, Bitbucket or Gitlab."
 msgstr ""
+"Weblate поддържа много уеб сайтове за разработка на софтуер, като например "
+"GitHub, Bitbucket и Gitlab."
 
 #: weblate_web/html/features.html:160
 msgid "Responsive UI"
-msgstr ""
+msgstr "Отзивчив интерфейс"
 
 #: weblate_web/html/features.html:161
 msgid ""
 "Weblate has responsible UI which will work nicely on your desktop, tablet or "
 "phone."
 msgstr ""
+"Потребителският интерфейс на Weblate е лесен и удобен за използване, и може "
+"да работи на компютър, таблет или телефон."
 
 #: weblate_web/html/hosting-ordered.html:3
 #: weblate_web/html/hosting-ordered.html:4 weblate_web/html/hosting.html:3
 #: weblate_web/html/hosting.html:4
 msgid "Hosting Weblate"
-msgstr ""
+msgstr "Хостинг на Weblate"
 
 #: weblate_web/html/hosting-ordered.html:6
 msgid "Thank you for ordering hosting!"
-msgstr ""
+msgstr "Благодарим Ви, че искате да използвате нашия хостинг!"
 
 #: weblate_web/html/hosting-ordered.html:11
 msgid "Next steps"
-msgstr ""
+msgstr "Следващи стъпки"
 
 #: weblate_web/html/hosting-ordered.html:13
 msgid ""
 "The project setup is currently manual. If you haven't done so already, "
 "please get in touch with us and send us details about your repository setup."
 msgstr ""
+"В момента установката на проекта може да бъде само ръчна. Ако не сте го "
+"правили досега, моля, свържете се с нас и ни изпратете подробности относно "
+"настройките на хранилището си."
 
 #: weblate_web/html/hosting-ordered.html:15
 msgid "Usually following information is needed:"
-msgstr ""
+msgstr "Обикновено имаме нужда от следната информация:"
 
 #: weblate_web/html/hosting-ordered.html:18 weblate_web/html/hosting.html:230
 msgid "URL of repository with translations."
-msgstr ""
+msgstr "Адрес на хранилището с преводите."
 
 #: weblate_web/html/hosting-ordered.html:19 weblate_web/html/hosting.html:231
 msgid "Path to translations within the repository."
-msgstr ""
+msgstr "Път до преводите в самото хранилище."
 
 #: weblate_web/html/hosting-ordered.html:22
 msgid ""
@@ -606,14 +671,17 @@ msgid ""
 "adding Weblate user to your project (on GitHub, Bitbucket or GitLab) or "
 "adding SSH key we will provide you."
 msgstr ""
+"Трябва да дадете достъп на Weblate до хранилището си. Това може да стане "
+"като добавите потребител „Weblate“ към проекта си (в GitHub, Bitbucket или "
+"GitLab) или като добавите SSH-ключа, който ние ще Ви дадем."
 
 #: weblate_web/html/hosting.html:6
 msgid "Free continuous translation hosting for free software."
-msgstr ""
+msgstr "Безплатен хостинг за проекти с отворен код."
 
 #: weblate_web/html/hosting.html:11
 msgid "Ask for hosting"
-msgstr ""
+msgstr "Попитайте за хостинг"
 
 #: weblate_web/html/hosting.html:20
 #, python-format
@@ -623,37 +691,43 @@ msgid ""
 "look for hosting of bigger projects, don't hesitate to <a href=\"%(contact)s"
 "\">get in touch with us</a>."
 msgstr ""
+"Можем да съхраняваме превода на Вашите платени проекти и на тези с отворен "
+"код. По-долу можете да прегледате различните планове за хостинг. Ако имате "
+"въпроси или се нуждаете от хостинг на по-голям проект, не се притеснявайте "
+"да се <a href=\"%(contact)s\">свържете с нас</a>."
 
 #: weblate_web/html/hosting.html:28
 msgctxt "Hosting plan"
 msgid "Free software"
-msgstr ""
+msgstr "Свободен софтуер"
 
 #: weblate_web/html/hosting.html:29
 msgctxt "Hosting plan"
 msgid "Basic"
-msgstr ""
+msgstr "Основен"
 
 #: weblate_web/html/hosting.html:30
 msgctxt "Hosting plan"
 msgid "Medium"
-msgstr ""
+msgstr "Среден"
 
 #: weblate_web/html/hosting.html:31
 msgctxt "Hosting plan"
 msgid "Advanced"
-msgstr ""
+msgstr "Разширен"
 
 #: weblate_web/html/hosting.html:32
 msgctxt "Hosting plan"
 msgid "Enterprise"
-msgstr ""
+msgstr "Фирмен"
 
 #: weblate_web/html/hosting.html:45
 msgid ""
 "Text unit defined in a translation format, it can be word, sentence or a "
 "paragraph"
 msgstr ""
+"Текстова единица, както е описана във формата на превода. Може да бъде дума, "
+"изречение или абзац"
 
 #: weblate_web/html/hosting.html:45
 msgid "Source strings"
@@ -662,11 +736,11 @@ msgstr "Оригинални текстове"
 #: weblate_web/html/hosting.html:46 weblate_web/html/hosting.html:54
 #: weblate_web/html/hosting.html:62
 msgid "Negotiable"
-msgstr ""
+msgstr "По договаряне"
 
 #: weblate_web/html/hosting.html:53
 msgid "Target languages"
-msgstr ""
+msgstr "Целеви езици"
 
 #: weblate_web/html/hosting.html:61
 msgid "VCS repositories"
@@ -674,7 +748,7 @@ msgstr "Хранилища за контрол на версиите"
 
 #: weblate_web/html/hosting.html:69
 msgid "Translation projects"
-msgstr ""
+msgstr "Проекти за превод"
 
 #: weblate_web/html/hosting.html:73 weblate_web/html/hosting.html:74
 #: weblate_web/html/hosting.html:79 weblate_web/html/hosting.html:80
@@ -683,62 +757,62 @@ msgstr ""
 #: weblate_web/html/hosting.html:88 weblate_web/html/hosting.html:89
 #: weblate_web/html/hosting.html:90
 msgid "Unlimited"
-msgstr ""
+msgstr "Без ограничение"
 
 #: weblate_web/html/hosting.html:77
 msgid "Translation components"
-msgstr ""
+msgstr "Компоненти за превод"
 
 #: weblate_web/html/hosting.html:85
 msgid "Number of translators"
-msgstr ""
+msgstr "Брой преводачи"
 
 #: weblate_web/html/hosting.html:93
 msgid "User management"
-msgstr ""
+msgstr "Управление на потребителите"
 
 #: weblate_web/html/hosting.html:101
 msgid "Supported file formats"
-msgstr ""
+msgstr "Поддържани файлови формати"
 
 #: weblate_web/html/hosting.html:102 weblate_web/html/hosting.html:103
 #: weblate_web/html/hosting.html:104 weblate_web/html/hosting.html:105
 #: weblate_web/html/hosting.html:106
 msgid "All"
-msgstr ""
+msgstr "Всички"
 
 #: weblate_web/html/hosting.html:113 weblate_web/html/hosting.html:114
 #: weblate_web/html/hosting.html:121 weblate_web/html/hosting.html:122
 msgid "Customizable"
-msgstr ""
+msgstr "Персонализируеми"
 
 #: weblate_web/html/hosting.html:117
 msgid "Translation processing"
-msgstr ""
+msgstr "Обработка на превода"
 
 #: weblate_web/html/hosting.html:133
 msgid "Priority email support"
-msgstr ""
+msgstr "Приоритетна поддръжка по е-поща"
 
 #: weblate_web/html/hosting.html:141
 msgid "Phone support"
-msgstr ""
+msgstr "Поддръжка по телефона"
 
 #: weblate_web/html/hosting.html:149
 msgid "Custom domain name with SSL"
-msgstr ""
+msgstr "Собствено има на домейн с SSL"
 
 #: weblate_web/html/hosting.html:149
 msgid "Own domain"
-msgstr ""
+msgstr "Собствен домейн"
 
 #: weblate_web/html/hosting.html:154
 msgid "Available on request"
-msgstr ""
+msgstr "Достъпно при поискване"
 
 #: weblate_web/html/hosting.html:159
 msgid "Monthly by PayPal"
-msgstr ""
+msgstr "Ежемесечно чрез PayPal"
 
 #: weblate_web/html/hosting.html:161
 msgid "Contact us"
@@ -748,23 +822,23 @@ msgstr "Свържете се с нас"
 #: weblate_web/html/hosting.html:170 weblate_web/html/hosting.html:173
 #, python-format
 msgid "%(price)s EUR / month"
-msgstr ""
+msgstr "%(price)s € / месец"
 
 #: weblate_web/html/hosting.html:177
 #, python-format
 msgid "Yearly by invoice (save 15-20%%)"
-msgstr ""
+msgstr "Ежегодно чрез фактура (спестявате 15-20%%)"
 
 #: weblate_web/html/hosting.html:179 weblate_web/html/hosting.html:182
 #: weblate_web/html/hosting.html:185 weblate_web/html/hosting.html:188
 msgid "Ask us for yearly invoicing with discount."
-msgstr ""
+msgstr "Попитайте ни за ежегодното фактуриране с отстъпка."
 
 #: weblate_web/html/hosting.html:179 weblate_web/html/hosting.html:182
 #: weblate_web/html/hosting.html:185 weblate_web/html/hosting.html:188
 #, python-format
 msgid "%(price)s EUR / year"
-msgstr ""
+msgstr "%(price)s € / година"
 
 #: weblate_web/html/hosting.html:196
 msgid ""
@@ -772,22 +846,30 @@ msgid ""
 "languages. The source string is a text unit defined in a translation format, "
 "it can be word, sentence or a paragraph."
 msgstr ""
+"Цената се определя от броя на оригиналните текстове и броя на целевите "
+"езици. Един оригинален текст е една текстова единица, както е описана във "
+"формата за превод. Това може да бъде дума, изречение или цял абзац."
 
 #: weblate_web/html/hosting.html:200
 msgid ""
 "The hosting setup is currently done manually, so you might want to get in "
 "touch with us prior to making subscription with your project details."
 msgstr ""
+"Установката на хостинга в момента се прави ръчно, така че преди да направите "
+"абонамента си, ще трябва да се свържете с нас, за да обсъдим подробностите "
+"за проекта Ви."
 
 #: weblate_web/html/hosting.html:204
 msgid ""
 "Alternatively we can accept payments by wire transfer (preferably IBAN) or "
 "Bitcoin. Please get in touch for more details."
 msgstr ""
+"При желание, можем да приемаме плащанията и по банков път (предпочитаме IBAN)"
+" или в биткойни. Моля, свържете се с нас за повече подробности."
 
 #: weblate_web/html/hosting.html:207
 msgid "Hosting for free software"
-msgstr ""
+msgstr "Хостинг за софтуер с отворен код"
 
 #: weblate_web/html/hosting.html:210
 msgid ""
