@@ -38,8 +38,8 @@ class ViewTestCase(TestCase):
 
     def test_download_en(self):
         # create dummy files for testing
-        filenames = ['Weblate-%s.%s' % (VERSION, ext) for ext in EXTENSIONS]
-        filenames.append('Weblate-test-%s.tar.xz' % VERSION)
+        filenames = ['Weblate-{0!s}.{1!s}'.format(VERSION, ext) for ext in EXTENSIONS]
+        filenames.append('Weblate-test-{0!s}.tar.xz'.format(VERSION))
 
         temp_dir = tempfile.mkdtemp()
 
