@@ -65,7 +65,7 @@ def downloadlink(name, text=None):
 
     size = filesizeformat(filesize)
 
-    return mark_safe('<a href="{base!s}{name!s}">{text!s} ({size!s})</a>'.format(**{
+    return mark_safe('<a href="{base}{name}">{text} ({size})</a>'.format(**{
         'base': settings.FILES_URL,
         'name': name,
         'text': text,
