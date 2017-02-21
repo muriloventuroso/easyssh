@@ -62,11 +62,13 @@ class PagesSitemap(Sitemap):
         # pylint: disable=R0201
         return item[2]
 
-# create each section in all languages
-SITEMAPS = {}
 
-for lang in settings.LANGUAGES:
-    SITEMAPS[lang[0]] = PagesSitemap(lang[0])
+# create each section in all languages
+SITEMAPS = {
+    lang[0]: PagesSitemap(lang[0])
+    for lang in settings.LANGUAGES
+}
+
 
 urlpatterns = i18n_patterns(
     url(
