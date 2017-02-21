@@ -56,7 +56,6 @@ class ViewTestCase(TestCase):
                 self.assertContains(response, 'Download Weblate')
 
         finally:
-            print temp_dir
             shutil.rmtree(temp_dir)
 
     def test_sitemap(self):
