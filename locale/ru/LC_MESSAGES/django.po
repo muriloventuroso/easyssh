@@ -9,17 +9,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: weblate-web\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2017-02-05 07:18+0100\n"
+"POT-Creation-Date: 2017-02-27 18:25+0100\n"
 "PO-Revision-Date: 2017-02-05 18:15+0000\n"
 "Last-Translator: Igor <f2404@yandex.ru>\n"
-"Language-Team: Russian "
-"<https://hosted.weblate.org/projects/weblate/website/ru/>\n"
+"Language-Team: Russian <https://hosted.weblate.org/projects/weblate/website/"
+"ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
-"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 2.11\n"
 "First-Translator: Dmitri GOULIAEV <dmitri+weblate@gouliaev.info>\n"
 
@@ -63,7 +63,7 @@ msgstr ""
 "перевода часто используемых терминов."
 
 #: weblate_web/data.py:58 weblate_web/html/features.html:71
-#: weblate_web/html/hosting.html:125
+#: weblate_web/html/hosting.html:141
 msgid "Glossary"
 msgstr "Глоссарий"
 
@@ -74,7 +74,7 @@ msgid ""
 msgstr "Настраиваемый контроль качества поможет в улучшении качества перевода."
 
 #: weblate_web/data.py:66 weblate_web/html/base-features.html:14
-#: weblate_web/html/hosting.html:109
+#: weblate_web/html/hosting.html:123
 msgid "Quality checks"
 msgstr "Контроль качества"
 
@@ -113,7 +113,7 @@ msgstr ""
 "Наши специально обученные обезьяны были только что отправлены для решения "
 "проблемы."
 
-#: weblate_web/html/base-features.html:6 weblate_web/html/hosting.html:37
+#: weblate_web/html/base-features.html:6 weblate_web/html/hosting.html:42
 msgid "Continuous translation"
 msgstr "Непрерывный перевод"
 
@@ -204,7 +204,7 @@ msgstr "Хостинг"
 msgid "Develop"
 msgstr "Разработка"
 
-#: weblate_web/html/base.html:85 weblate_web/html/donate.html:57
+#: weblate_web/html/base.html:85 weblate_web/html/donate.html:64
 msgid "Donate"
 msgstr "Поддержать проект"
 
@@ -299,15 +299,28 @@ msgstr ""
 "Weblate — это свободное программное обеспечение, но приветствует "
 "пожертвования."
 
-#: weblate_web/html/donate.html:12 weblate_web/html/donate.html:39
+#: weblate_web/html/donate.html:12 weblate_web/html/donate.html:46
 msgid "Donate using Liberapay"
 msgstr "Пожертвование через Liberapay"
 
 #: weblate_web/html/donate.html:18
+#, fuzzy
+#| msgid "Ask for hosting"
+msgid "Use our hosting"
+msgstr "Попросить хостинг"
+
+#: weblate_web/html/donate.html:22
+#, python-format
+msgid ""
+"Host your commercial translations on <a href=\"%(hosting_url)s\">Hosted "
+"Weblate</a> and you will be supporting Weblate development automatically."
+msgstr ""
+
+#: weblate_web/html/donate.html:25
 msgid "Regular donations"
 msgstr "Регулярные пожертвования"
 
-#: weblate_web/html/donate.html:21
+#: weblate_web/html/donate.html:28
 msgid ""
 "Regular donations allow sustainability of Weblate development and help to "
 "fund free hosting for free software. You don't have to spend big money, "
@@ -317,11 +330,11 @@ msgstr ""
 "помогают финансировать бесплатный хостинг для свободного программного "
 "обеспечения. Вам не нужно тратить большие деньги, но ценна каждая копейка."
 
-#: weblate_web/html/donate.html:28 weblate_web/html/donate.html:50
+#: weblate_web/html/donate.html:35 weblate_web/html/donate.html:57
 msgid "Fund on Bountysource"
 msgstr "Финансируйте через Bountysource"
 
-#: weblate_web/html/donate.html:32
+#: weblate_web/html/donate.html:39
 msgid ""
 "You can send a monthly donation using a credit card. You can also get "
 "rewards for higher donations, for example a logo placement on our website."
@@ -330,17 +343,17 @@ msgstr ""
 "дебетовую карту. Вы также можете быть вознаграждены за крупные "
 "пожертвования, например, размещением логотипа на нашем сайте."
 
-#: weblate_web/html/donate.html:43
+#: weblate_web/html/donate.html:50
 msgid "Liberapay allows you to send a weekly amount using a credit card."
 msgstr ""
 "Liberapay позволяет делать пожертвование еженедельно, используя кредитную "
 "карту."
 
-#: weblate_web/html/donate.html:46
+#: weblate_web/html/donate.html:53
 msgid "Fund features"
 msgstr "Финансируйте возможности"
 
-#: weblate_web/html/donate.html:54
+#: weblate_web/html/donate.html:61
 msgid ""
 "Bountysource allows you to fund individual features which are reported on "
 "our issue tracker."
@@ -348,18 +361,18 @@ msgstr ""
 "Bountysource позволяет финансировать функциональность, упомянутую в нашей "
 "системе отслеживания проблем."
 
-#: weblate_web/html/donate.html:60
+#: weblate_web/html/donate.html:67
 msgid ""
 "If you like Weblate you can support its further development by donating."
 msgstr ""
 "Если вам нравится Weblate, вы можете сделать пожертвование на поддержание "
 "его дальнейшего развития."
 
-#: weblate_web/html/donate.html:68
+#: weblate_web/html/donate.html:75
 msgid "Donate using PayPal"
 msgstr "Пожертвуйте через PayPal"
 
-#: weblate_web/html/donate.html:73
+#: weblate_web/html/donate.html:80
 msgid ""
 "PayPal allows you to send money from credit card, PayPal balance or a bank "
 "account."
@@ -367,15 +380,15 @@ msgstr ""
 "PayPal позволяет отправлять деньги с кредитной карты, счёта в системе PayPal "
 "или счёта в банке."
 
-#: weblate_web/html/donate.html:78
+#: weblate_web/html/donate.html:85
 msgid "Donate using Coinbase"
 msgstr "Пожертвуйте через Coinbase"
 
-#: weblate_web/html/donate.html:82
+#: weblate_web/html/donate.html:89
 msgid "Coinbase allows you to send Bitcoins."
 msgstr "Coinbase позволяет отправлять биткойны."
 
-#: weblate_web/html/donate.html:86
+#: weblate_web/html/donate.html:93
 #, python-format
 msgid ""
 "You can also use <a href=\"https://www.bitcoin.org/\">Bitcoin is a peer-to-"
@@ -655,11 +668,11 @@ msgstr ""
 msgid "Usually following information is needed:"
 msgstr "Обычно требуется следующая информация:"
 
-#: weblate_web/html/hosting-ordered.html:18 weblate_web/html/hosting.html:230
+#: weblate_web/html/hosting-ordered.html:18 weblate_web/html/hosting.html:338
 msgid "URL of repository with translations."
 msgstr "URL репозитория с переводами."
 
-#: weblate_web/html/hosting-ordered.html:19 weblate_web/html/hosting.html:231
+#: weblate_web/html/hosting-ordered.html:19 weblate_web/html/hosting.html:339
 msgid "Path to translations within the repository."
 msgstr "Путь к переводам внутри репозитория."
 
@@ -682,6 +695,12 @@ msgid "Ask for hosting"
 msgstr "Попросить хостинг"
 
 #: weblate_web/html/hosting.html:20
+msgid ""
+"Hosted Weblate allows you to use Weblate without any effort and with premium "
+"support backed by it's core developers."
+msgstr ""
+
+#: weblate_web/html/hosting.html:24
 #, python-format
 msgid ""
 "We can host translations for your commercial or free software projects. You "
@@ -694,32 +713,39 @@ msgstr ""
 "разместить больший проект, не стесняйтесь <a href=\"%(contact)s\">связаться "
 "с нами</a>."
 
-#: weblate_web/html/hosting.html:28
+#: weblate_web/html/hosting.html:32
 msgctxt "Hosting plan"
 msgid "Free software"
 msgstr "Свободное ПО"
 
-#: weblate_web/html/hosting.html:29
+#: weblate_web/html/hosting.html:33
 msgctxt "Hosting plan"
 msgid "Basic"
 msgstr "Базовый"
 
-#: weblate_web/html/hosting.html:30
+#: weblate_web/html/hosting.html:34
 msgctxt "Hosting plan"
 msgid "Medium"
 msgstr "Умеренный"
 
-#: weblate_web/html/hosting.html:31
+#: weblate_web/html/hosting.html:35
 msgctxt "Hosting plan"
 msgid "Advanced"
 msgstr "Расширенный"
 
-#: weblate_web/html/hosting.html:32
+#: weblate_web/html/hosting.html:36
 msgctxt "Hosting plan"
 msgid "Enterprise"
 msgstr "Корпоративный"
 
-#: weblate_web/html/hosting.html:45
+#: weblate_web/html/hosting.html:37
+#, fuzzy
+#| msgid "Self hosting"
+msgctxt "Hosting plan"
+msgid "Self hosted"
+msgstr "Собственный хостинг"
+
+#: weblate_web/html/hosting.html:51
 msgid ""
 "Text unit defined in a translation format, it can be word, sentence or a "
 "paragraph"
@@ -727,118 +753,132 @@ msgstr ""
 "Текст, заданный в формате для перевода, может быть словом, предложением или "
 "параграфом"
 
-#: weblate_web/html/hosting.html:45
+#: weblate_web/html/hosting.html:51
 msgid "Source strings"
 msgstr "Строки-исходники"
 
-#: weblate_web/html/hosting.html:46 weblate_web/html/hosting.html:54
-#: weblate_web/html/hosting.html:62
+#: weblate_web/html/hosting.html:52 weblate_web/html/hosting.html:61
+#: weblate_web/html/hosting.html:70
 msgid "Negotiable"
 msgstr "Обсуждаемый"
 
-#: weblate_web/html/hosting.html:53
-msgid "Target languages"
-msgstr "Целевые языки"
-
-#: weblate_web/html/hosting.html:61
-msgid "VCS repositories"
-msgstr "Репозитории VCS"
-
-#: weblate_web/html/hosting.html:69
-msgid "Translation projects"
-msgstr "Переводимые проекты"
-
-#: weblate_web/html/hosting.html:73 weblate_web/html/hosting.html:74
-#: weblate_web/html/hosting.html:79 weblate_web/html/hosting.html:80
-#: weblate_web/html/hosting.html:81 weblate_web/html/hosting.html:82
-#: weblate_web/html/hosting.html:86 weblate_web/html/hosting.html:87
-#: weblate_web/html/hosting.html:88 weblate_web/html/hosting.html:89
-#: weblate_web/html/hosting.html:90
+#: weblate_web/html/hosting.html:57 weblate_web/html/hosting.html:66
+#: weblate_web/html/hosting.html:75 weblate_web/html/hosting.html:82
+#: weblate_web/html/hosting.html:83 weblate_web/html/hosting.html:84
+#: weblate_web/html/hosting.html:89 weblate_web/html/hosting.html:90
+#: weblate_web/html/hosting.html:91 weblate_web/html/hosting.html:92
+#: weblate_web/html/hosting.html:93 weblate_web/html/hosting.html:97
+#: weblate_web/html/hosting.html:98 weblate_web/html/hosting.html:99
+#: weblate_web/html/hosting.html:100 weblate_web/html/hosting.html:101
+#: weblate_web/html/hosting.html:102
 msgid "Unlimited"
 msgstr "Без ограничений"
 
-#: weblate_web/html/hosting.html:77
+#: weblate_web/html/hosting.html:60
+msgid "Target languages"
+msgstr "Целевые языки"
+
+#: weblate_web/html/hosting.html:69
+msgid "VCS repositories"
+msgstr "Репозитории VCS"
+
+#: weblate_web/html/hosting.html:78
+msgid "Translation projects"
+msgstr "Переводимые проекты"
+
+#: weblate_web/html/hosting.html:87
 msgid "Translation components"
 msgstr "Компоненты перевода"
 
-#: weblate_web/html/hosting.html:85
+#: weblate_web/html/hosting.html:96
 msgid "Number of translators"
 msgstr "Количество переводчиков"
 
-#: weblate_web/html/hosting.html:93
+#: weblate_web/html/hosting.html:105
 msgid "User management"
 msgstr "Управление пользователями"
 
-#: weblate_web/html/hosting.html:101
+#: weblate_web/html/hosting.html:114
 msgid "Supported file formats"
 msgstr "Поддерживаемые форматы файлов"
 
-#: weblate_web/html/hosting.html:102 weblate_web/html/hosting.html:103
-#: weblate_web/html/hosting.html:104 weblate_web/html/hosting.html:105
-#: weblate_web/html/hosting.html:106
+#: weblate_web/html/hosting.html:115 weblate_web/html/hosting.html:116
+#: weblate_web/html/hosting.html:117 weblate_web/html/hosting.html:118
+#: weblate_web/html/hosting.html:119 weblate_web/html/hosting.html:120
 msgid "All"
 msgstr "Все"
 
-#: weblate_web/html/hosting.html:113 weblate_web/html/hosting.html:114
-#: weblate_web/html/hosting.html:121 weblate_web/html/hosting.html:122
+#: weblate_web/html/hosting.html:127 weblate_web/html/hosting.html:128
+#: weblate_web/html/hosting.html:129 weblate_web/html/hosting.html:136
+#: weblate_web/html/hosting.html:137 weblate_web/html/hosting.html:138
 msgid "Customizable"
 msgstr "Настраиваемо"
 
-#: weblate_web/html/hosting.html:117
+#: weblate_web/html/hosting.html:132
 msgid "Translation processing"
 msgstr "Обработка переводов"
 
-#: weblate_web/html/hosting.html:133
+#: weblate_web/html/hosting.html:150 weblate_web/html/hosting.html:261
+#: weblate_web/html/hosting.html:276 weblate_web/html/hosting.html:291
 msgid "Priority email support"
 msgstr "Приоритетная поддержка по электронной почте"
 
-#: weblate_web/html/hosting.html:141
-msgid "Phone support"
-msgstr "Поддержка по телефону"
-
-#: weblate_web/html/hosting.html:149
-msgid "Custom domain name with SSL"
-msgstr "Другое имя домена с SSL"
-
-#: weblate_web/html/hosting.html:149
-msgid "Own domain"
-msgstr "Собственный домен"
-
-#: weblate_web/html/hosting.html:154
+#: weblate_web/html/hosting.html:156 weblate_web/html/hosting.html:165
+#: weblate_web/html/hosting.html:173
 msgid "Available on request"
 msgstr "Доступно по запросу"
 
 #: weblate_web/html/hosting.html:159
+msgid "Phone support"
+msgstr "Поддержка по телефону"
+
+#: weblate_web/html/hosting.html:168
+msgid "Custom domain name with SSL"
+msgstr "Другое имя домена с SSL"
+
+#: weblate_web/html/hosting.html:168
+msgid "Own domain"
+msgstr "Собственный домен"
+
+#: weblate_web/html/hosting.html:179
 msgid "Monthly by PayPal"
 msgstr "Ежемесячно через PayPal"
 
-#: weblate_web/html/hosting.html:161
+#: weblate_web/html/hosting.html:181
 msgid "Contact us"
 msgstr "Связаться с нами"
 
-#: weblate_web/html/hosting.html:164 weblate_web/html/hosting.html:167
-#: weblate_web/html/hosting.html:170 weblate_web/html/hosting.html:173
+#: weblate_web/html/hosting.html:184 weblate_web/html/hosting.html:187
+#: weblate_web/html/hosting.html:190 weblate_web/html/hosting.html:193
+#: weblate_web/html/hosting.html:253 weblate_web/html/hosting.html:268
+#: weblate_web/html/hosting.html:283
 #, python-format
 msgid "%(price)s EUR / month"
 msgstr "%(price)s евро в месяц"
 
-#: weblate_web/html/hosting.html:177
+#: weblate_web/html/hosting.html:195
+msgid "See below for options"
+msgstr ""
+
+#: weblate_web/html/hosting.html:198
 #, python-format
 msgid "Yearly by invoice (save 15-20%%)"
 msgstr "Ежегодно по накладной (скидка 15-20%%)"
 
-#: weblate_web/html/hosting.html:179 weblate_web/html/hosting.html:182
-#: weblate_web/html/hosting.html:185 weblate_web/html/hosting.html:188
+#: weblate_web/html/hosting.html:200 weblate_web/html/hosting.html:203
+#: weblate_web/html/hosting.html:206 weblate_web/html/hosting.html:209
 msgid "Ask us for yearly invoicing with discount."
 msgstr "Запросите у нас ежегодные накладные со скидкой."
 
-#: weblate_web/html/hosting.html:179 weblate_web/html/hosting.html:182
-#: weblate_web/html/hosting.html:185 weblate_web/html/hosting.html:188
+#: weblate_web/html/hosting.html:200 weblate_web/html/hosting.html:203
+#: weblate_web/html/hosting.html:206 weblate_web/html/hosting.html:209
+#: weblate_web/html/hosting.html:254 weblate_web/html/hosting.html:269
+#: weblate_web/html/hosting.html:284
 #, python-format
 msgid "%(price)s EUR / year"
 msgstr "%(price)s евро в год"
 
-#: weblate_web/html/hosting.html:196
+#: weblate_web/html/hosting.html:217
 msgid ""
 "The pricing is based on number of source strings and number of target "
 "languages. The source string is a text unit defined in a translation format, "
@@ -848,7 +888,7 @@ msgstr ""
 "— это текст, заданный в формате для перевода, она может быть словом, "
 "предложением или параграфом."
 
-#: weblate_web/html/hosting.html:200
+#: weblate_web/html/hosting.html:221
 msgid ""
 "The hosting setup is currently done manually, so you might want to get in "
 "touch with us prior to making subscription with your project details."
@@ -857,7 +897,7 @@ msgstr ""
 "возможно, захотите обсудить с нами детали вашего проекта до оформления "
 "подписки."
 
-#: weblate_web/html/hosting.html:204
+#: weblate_web/html/hosting.html:225
 msgid ""
 "Alternatively we can accept payments by wire transfer (preferably IBAN) or "
 "Bitcoin. Please get in touch for more details."
@@ -866,11 +906,118 @@ msgstr ""
 "IBAN) или криптовалютой (Bitcoin). Свяжитесь с нами, чтобы узнать "
 "подробности."
 
-#: weblate_web/html/hosting.html:207
+#: weblate_web/html/hosting.html:228
+#, fuzzy
+#| msgid "Support free hosting"
+msgid "Support for self hosted environments"
+msgstr "Поддержите бесплатный хостинг"
+
+#: weblate_web/html/hosting.html:230
+msgid ""
+"Worried of putting your translations into cloud? You can self host Weblate "
+"and we can still provide you premium support for your setup."
+msgstr ""
+
+#: weblate_web/html/hosting.html:236
+msgid "Installation on your Linux server"
+msgstr ""
+
+#: weblate_web/html/hosting.html:237
+#, fuzzy, python-format
+#| msgid "%(price)s EUR / year"
+msgid "%(price)s EUR"
+msgstr "%(price)s евро в год"
+
+#: weblate_web/html/hosting.html:242
+msgid "One time installation of Weblate"
+msgstr ""
+
+#: weblate_web/html/hosting.html:243
+msgid "Installation using virtualenv, uwsgi and nginx"
+msgstr ""
+
+#: weblate_web/html/hosting.html:244
+msgid "Using PostgreSQL, MySQL or MariaDB as database backend"
+msgstr ""
+
+#: weblate_web/html/hosting.html:245
+msgid "Requires root access or close cooperation of your admins"
+msgstr ""
+
+#: weblate_web/html/hosting.html:246
+msgid "Configuration customization"
+msgstr ""
+
+#: weblate_web/html/hosting.html:247
+msgid "Does not include custom code development"
+msgstr ""
+
+#: weblate_web/html/hosting.html:252
+msgid "Minimal support for self hosted Weblate"
+msgstr ""
+
+#: weblate_web/html/hosting.html:259 weblate_web/html/hosting.html:274
+#, python-format
+msgid "Upgrade to latest version at least every %(count)s months"
+msgstr ""
+
+#: weblate_web/html/hosting.html:260 weblate_web/html/hosting.html:275
+#: weblate_web/html/hosting.html:290
+msgid "Fixing issues that occur in your environment"
+msgstr ""
+
+#: weblate_web/html/hosting.html:262 weblate_web/html/hosting.html:277
+#: weblate_web/html/hosting.html:292
+#, python-format
+msgid "Up to %(amount)s hour of consulting or support per month"
+msgid_plural "Up to %(amount)s hours of consulting or support per month"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: weblate_web/html/hosting.html:267
+msgid "Basic support for self hosted Weblate"
+msgstr ""
+
+#: weblate_web/html/hosting.html:282
+msgid "Extended support for self hosted Weblate"
+msgstr ""
+
+#: weblate_web/html/hosting.html:289
+msgid "Upgrade to latest version on every release"
+msgstr ""
+
+#: weblate_web/html/hosting.html:297
+msgid "Consulting services or custom development"
+msgstr ""
+
+#: weblate_web/html/hosting.html:298
+#, fuzzy, python-format
+#| msgid "%(price)s EUR / year"
+msgid "%(price)s EUR / hour"
+msgstr "%(price)s евро в год"
+
+#: weblate_web/html/hosting.html:303
+msgid "Custom features development"
+msgstr ""
+
+#: weblate_web/html/hosting.html:304
+msgid "Integrating Weblate into your workflow"
+msgstr ""
+
+#: weblate_web/html/hosting.html:305
+msgid "Suggestions on the internationalization or localization process"
+msgstr ""
+
+#: weblate_web/html/hosting.html:313
+msgid "Ask us for details about self hosted Weblate"
+msgstr ""
+
+#: weblate_web/html/hosting.html:315
 msgid "Hosting for free software"
 msgstr "Хостинг для свободного программного обеспечения"
 
-#: weblate_web/html/hosting.html:210
+#: weblate_web/html/hosting.html:318
 msgid ""
 "If you are interested in using Weblate for your free software, you can ask "
 "us to be include on <a href=\"https://hosted.weblate.org/\">hosted.weblate."
@@ -882,11 +1029,11 @@ msgstr ""
 "странице <a href=\"https://hosted.weblate.org/\">hosted.weblate.org</a>. Это "
 "позволит вам использовать Weblate, не тратя усилий на установку и поддержку."
 
-#: weblate_web/html/hosting.html:213
+#: weblate_web/html/hosting.html:321
 msgid "Conditions for free hosting"
 msgstr "Условия для бесплатного хостинга"
 
-#: weblate_web/html/hosting.html:216
+#: weblate_web/html/hosting.html:324
 msgid ""
 "Translated content has to be released under <a href=\"https://en.wikipedia."
 "org/wiki/Free_software_license\">free license</a>."
@@ -894,7 +1041,7 @@ msgstr ""
 "Перевод должен быть выпущен под <a href=\"https://en.wikipedia.org/wiki/"
 "Free_software_license\">свободной лицензией</a>."
 
-#: weblate_web/html/hosting.html:217
+#: weblate_web/html/hosting.html:325
 msgid ""
 "Source code has to be publicly available in a supported version control "
 "system."
@@ -902,15 +1049,15 @@ msgstr ""
 "Исходный код должен быть публично доступен в одной из поддерживаемых систем "
 "контроля версий."
 
-#: weblate_web/html/hosting.html:218
+#: weblate_web/html/hosting.html:326
 msgid "There is no guarantee for service availability or quality."
 msgstr "Нет гарантии доступности службы или её качества."
 
-#: weblate_web/html/hosting.html:221
+#: weblate_web/html/hosting.html:329
 msgid "Asking for hosting"
 msgstr "Просьба о хостинге"
 
-#: weblate_web/html/hosting.html:224
+#: weblate_web/html/hosting.html:332
 #, python-format
 msgid ""
 "Please use <a href=\"%(url)s\">contact form on Hosted Weblate</a> to request "
@@ -919,19 +1066,19 @@ msgstr ""
 "Чтобы запросить хостинг, пожалуйста, используйте <a href=\"%(url)s\">форму "
 "для связи на Hosted Weblate</a>. Потребуется следующая информация:"
 
-#: weblate_web/html/hosting.html:228
+#: weblate_web/html/hosting.html:336
 msgid "Information about your project."
 msgstr "Информация о вашем проекте."
 
-#: weblate_web/html/hosting.html:229
+#: weblate_web/html/hosting.html:337
 msgid "Project website."
 msgstr "Веб-сайт проекта."
 
-#: weblate_web/html/hosting.html:234
+#: weblate_web/html/hosting.html:342
 msgid "Translation workflow"
 msgstr "Рабочий процесс перевода"
 
-#: weblate_web/html/hosting.html:237
+#: weblate_web/html/hosting.html:345
 msgid ""
 "All translated repositories are available using https protocol with similar "
 "naming as on website - weblate/master translation is published as "
@@ -943,7 +1090,7 @@ msgstr ""
 "опубликован как <code>https://hosted.weblate.org/git/weblate/master/</code>. "
 "Вы можете выяснить URL на вкладе информации о компоненте."
 
-#: weblate_web/html/hosting.html:241
+#: weblate_web/html/hosting.html:349
 #, python-format
 msgid ""
 "Weblate can automatically receive changes from major code hosting services, "
@@ -955,7 +1102,7 @@ msgstr ""
 "\">GitHub</a>, <a href=\"%(bitbucket)s\">Bitbucket</a> или <a href="
 "\"%(gitlab)s\">GitLab</a>."
 
-#: weblate_web/html/hosting.html:245
+#: weblate_web/html/hosting.html:353
 #, python-format
 msgid ""
 "If you want Weblate to automatically push changes as well, add Weblate push "
@@ -967,11 +1114,11 @@ msgstr ""
 "хотите использовать эту опцию. Смотрите <a href=\"%(docs)s\">документацию</"
 "a> для более подробных инструкций."
 
-#: weblate_web/html/hosting.html:248
+#: weblate_web/html/hosting.html:356
 msgid "Support free hosting"
 msgstr "Поддержите бесплатный хостинг"
 
-#: weblate_web/html/hosting.html:252
+#: weblate_web/html/hosting.html:360
 #, python-format
 msgid ""
 "The hosting is provided for free, but running the server and maintaining it "
@@ -982,11 +1129,11 @@ msgstr ""
 "денег, поэтому вы можете использовать <a href=\"%(gittip_url)s\">Liberapay</"
 "a> или <a href=\"%(donate_url)s\">другие варианты пожертвования</a>."
 
-#: weblate_web/html/hosting.html:256
+#: weblate_web/html/hosting.html:364
 msgid "Self hosting"
 msgstr "Собственный хостинг"
 
-#: weblate_web/html/hosting.html:260
+#: weblate_web/html/hosting.html:368
 #, python-format
 msgid ""
 "You can also <a href=\"%(download_url)s\">download</a> Weblate sources and "
@@ -997,7 +1144,7 @@ msgstr ""
 "запустить его на собственном сервере. Также существует несколько заготовок "
 "для выливки Weblate в облако."
 
-#: weblate_web/html/hosting.html:264
+#: weblate_web/html/hosting.html:372
 #, python-format
 msgid ""
 "In case you need help with your self hosted solution, we're ready to help as "
@@ -1151,7 +1298,11 @@ msgstr ""
 msgid "Consulting"
 msgstr "Консультации"
 
-#: weblate_web/html/support.html:51
+#: weblate_web/html/support.html:50
+msgid "See our support offerings for self hosted Weblate instances"
+msgstr ""
+
+#: weblate_web/html/support.html:53
 #, python-format
 msgid ""
 "You can also contact <a href=\"%(contact_link)s\">Michal Čihař</a>, who is "
@@ -1268,7 +1419,7 @@ msgstr ""
 "Виртуальные модули для развёртывания в облаке находятся на <a href="
 "\"%(download_url)s\">странице загрузки</a>."
 
-#: weblate_web/templatetags/downloads.py:39
+#: weblate_web/templatetags/downloads.py:40
 #, python-format
 msgid "%(size)d byte"
 msgid_plural "%(size)d bytes"
@@ -1276,34 +1427,34 @@ msgstr[0] "%(size)d байт"
 msgstr[1] "%(size)d байта"
 msgstr[2] "%(size)d байтов"
 
-#: weblate_web/templatetags/downloads.py:44
+#: weblate_web/templatetags/downloads.py:45
 #, python-format
 msgid "%.1f KiB"
 msgstr "%.1f КиБ"
 
-#: weblate_web/templatetags/downloads.py:46
+#: weblate_web/templatetags/downloads.py:47
 #, python-format
 msgid "%.1f MiB"
 msgstr "%.1f МиБ"
 
-#: weblate_web/templatetags/downloads.py:47
+#: weblate_web/templatetags/downloads.py:48
 #, python-format
 msgid "%.1f GiB"
 msgstr "%.1f ГиБ"
 
-#: weblate_web/templatetags/downloads.py:54
+#: weblate_web/templatetags/downloads.py:55
 msgid "Sources tarball, bzip2 compressed"
 msgstr "Архив исходников, сжатый bzip2"
 
-#: weblate_web/templatetags/downloads.py:56
+#: weblate_web/templatetags/downloads.py:57
 msgid "Sources tarball, gzip compressed"
 msgstr "Архив исходников, сжатый gzip"
 
-#: weblate_web/templatetags/downloads.py:58
+#: weblate_web/templatetags/downloads.py:59
 msgid "Sources tarball, xz compressed"
 msgstr "Архив исходников, сжатый xz"
 
-#: weblate_web/templatetags/downloads.py:60
+#: weblate_web/templatetags/downloads.py:61
 msgid "Sources, zip compressed"
 msgstr "Исходники, сжатые zip"
 
