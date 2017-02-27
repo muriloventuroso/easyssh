@@ -10,17 +10,17 @@ msgstr ""
 "Project-Id-Version: weblate-web\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2017-02-27 18:25+0100\n"
-"PO-Revision-Date: 2017-02-05 18:15+0000\n"
+"PO-Revision-Date: 2017-02-27 18:00+0000\n"
 "Last-Translator: Igor <f2404@yandex.ru>\n"
-"Language-Team: Russian <https://hosted.weblate.org/projects/weblate/website/"
-"ru/>\n"
+"Language-Team: Russian "
+"<https://hosted.weblate.org/projects/weblate/website/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 2.11\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 2.12-dev\n"
 "First-Translator: Dmitri GOULIAEV <dmitri+weblate@gouliaev.info>\n"
 
 #: weblate_web/data.py:33
@@ -304,10 +304,8 @@ msgid "Donate using Liberapay"
 msgstr "Пожертвование через Liberapay"
 
 #: weblate_web/html/donate.html:18
-#, fuzzy
-#| msgid "Ask for hosting"
 msgid "Use our hosting"
-msgstr "Попросить хостинг"
+msgstr "Использовать наш хостинг"
 
 #: weblate_web/html/donate.html:22
 #, python-format
@@ -739,8 +737,6 @@ msgid "Enterprise"
 msgstr "Корпоративный"
 
 #: weblate_web/html/hosting.html:37
-#, fuzzy
-#| msgid "Self hosting"
 msgctxt "Hosting plan"
 msgid "Self hosted"
 msgstr "Собственный хостинг"
@@ -858,7 +854,7 @@ msgstr "%(price)s евро в месяц"
 
 #: weblate_web/html/hosting.html:195
 msgid "See below for options"
-msgstr ""
+msgstr "Смотрите варианты внизу"
 
 #: weblate_web/html/hosting.html:198
 #, python-format
@@ -907,10 +903,8 @@ msgstr ""
 "подробности."
 
 #: weblate_web/html/hosting.html:228
-#, fuzzy
-#| msgid "Support free hosting"
 msgid "Support for self hosted environments"
-msgstr "Поддержите бесплатный хостинг"
+msgstr "Поддержка окружений своих хостингов"
 
 #: weblate_web/html/hosting.html:230
 msgid ""
@@ -920,37 +914,37 @@ msgstr ""
 
 #: weblate_web/html/hosting.html:236
 msgid "Installation on your Linux server"
-msgstr ""
+msgstr "Установка на ваш сервер Linux"
 
 #: weblate_web/html/hosting.html:237
-#, fuzzy, python-format
-#| msgid "%(price)s EUR / year"
+#, python-format
 msgid "%(price)s EUR"
-msgstr "%(price)s евро в год"
+msgstr "%(price)s евро"
 
 #: weblate_web/html/hosting.html:242
 msgid "One time installation of Weblate"
-msgstr ""
+msgstr "Однократная установка Weblate"
 
 #: weblate_web/html/hosting.html:243
 msgid "Installation using virtualenv, uwsgi and nginx"
-msgstr ""
+msgstr "Установка с использованием ваших virtualenv, uwsgi и nginx"
 
 #: weblate_web/html/hosting.html:244
 msgid "Using PostgreSQL, MySQL or MariaDB as database backend"
-msgstr ""
+msgstr "Использование PostgreSQL, MySQL или MariaDB в качестве базы данных"
 
 #: weblate_web/html/hosting.html:245
 msgid "Requires root access or close cooperation of your admins"
 msgstr ""
+"Требуется рут доступ или тесное взаимодействие с вашими администраторами"
 
 #: weblate_web/html/hosting.html:246
 msgid "Configuration customization"
-msgstr ""
+msgstr "Настройка конфигурации"
 
 #: weblate_web/html/hosting.html:247
 msgid "Does not include custom code development"
-msgstr ""
+msgstr "Не включает разработку ПО под ключ"
 
 #: weblate_web/html/hosting.html:252
 msgid "Minimal support for self hosted Weblate"
@@ -992,10 +986,9 @@ msgid "Consulting services or custom development"
 msgstr ""
 
 #: weblate_web/html/hosting.html:298
-#, fuzzy, python-format
-#| msgid "%(price)s EUR / year"
+#, python-format
 msgid "%(price)s EUR / hour"
-msgstr "%(price)s евро в год"
+msgstr "%(price)s евро в час"
 
 #: weblate_web/html/hosting.html:303
 msgid "Custom features development"
