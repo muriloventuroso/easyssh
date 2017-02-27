@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2017-02-27 18:25+0100\n"
-"PO-Revision-Date: 2017-02-05 07:52+0000\n"
+"PO-Revision-Date: 2017-02-27 18:02+0000\n"
 "Last-Translator: Burak Yavuz <hitowerdigit@hotmail.com>\n"
-"Language-Team: Turkish <https://hosted.weblate.org/projects/weblate/website/"
-"tr/>\n"
+"Language-Team: Turkish "
+"<https://hosted.weblate.org/projects/weblate/website/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2.11\n"
+"X-Generator: Weblate 2.12-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -294,10 +294,8 @@ msgid "Donate using Liberapay"
 msgstr "Liberapay kullanarak bağış yapın"
 
 #: weblate_web/html/donate.html:18
-#, fuzzy
-#| msgid "Ask for hosting"
 msgid "Use our hosting"
-msgstr "Barındırma için sorun"
+msgstr "Barındırma hizmetimizi kullanın"
 
 #: weblate_web/html/donate.html:22
 #, python-format
@@ -305,6 +303,9 @@ msgid ""
 "Host your commercial translations on <a href=\"%(hosting_url)s\">Hosted "
 "Weblate</a> and you will be supporting Weblate development automatically."
 msgstr ""
+"Ticari çevirilerinizi <a href=\"%(hosting_url)s\">Hosted Weblate</a> "
+"üzerinde barındırın ve otomatik olarak Weblate geliştirmesini "
+"destekleyeceksiniz."
 
 #: weblate_web/html/donate.html:25
 msgid "Regular donations"
@@ -726,11 +727,9 @@ msgid "Enterprise"
 msgstr "Kurumsal"
 
 #: weblate_web/html/hosting.html:37
-#, fuzzy
-#| msgid "Self hosting"
 msgctxt "Hosting plan"
 msgid "Self hosted"
-msgstr "Kendiliğinden barındırma"
+msgstr "Kendiliğinden barındırılmış"
 
 #: weblate_web/html/hosting.html:51
 msgid ""
@@ -845,7 +844,7 @@ msgstr "%(price)s AVRO / ay"
 
 #: weblate_web/html/hosting.html:195
 msgid "See below for options"
-msgstr ""
+msgstr "Seçenekler için aşağıya bakın"
 
 #: weblate_web/html/hosting.html:198
 #, python-format
@@ -905,21 +904,20 @@ msgstr ""
 
 #: weblate_web/html/hosting.html:236
 msgid "Installation on your Linux server"
-msgstr ""
+msgstr "Linux sunucunuz üzerine kurulum"
 
 #: weblate_web/html/hosting.html:237
-#, fuzzy, python-format
-#| msgid "%(price)s EUR / year"
+#, python-format
 msgid "%(price)s EUR"
-msgstr "%(price)s AVRO / yıl"
+msgstr "%(price)s AVRO"
 
 #: weblate_web/html/hosting.html:242
 msgid "One time installation of Weblate"
-msgstr ""
+msgstr "Bir defada Weblate kurulumu"
 
 #: weblate_web/html/hosting.html:243
 msgid "Installation using virtualenv, uwsgi and nginx"
-msgstr ""
+msgstr "Virtualenv, uwsgi ve nginx kullanarak kurulum"
 
 #: weblate_web/html/hosting.html:244
 msgid "Using PostgreSQL, MySQL or MariaDB as database backend"
@@ -931,7 +929,7 @@ msgstr ""
 
 #: weblate_web/html/hosting.html:246
 msgid "Configuration customization"
-msgstr ""
+msgstr "Yapılandırma özelleştirme"
 
 #: weblate_web/html/hosting.html:247
 msgid "Does not include custom code development"
