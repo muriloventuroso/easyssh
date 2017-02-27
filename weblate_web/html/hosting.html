@@ -17,6 +17,10 @@
 <h2 id="pricing">{% trans "Hosting plans" %}</h2>
 
 <p>
+{% blocktrans %}Hosted Weblate allows you to use Weblate without any effort and with premium support backed by it's core developers.{% endblocktrans %}
+</p>
+
+<p>
 {% blocktrans with "mailto:michal@cihar.com" as contact %}We can host translations for your commercial or free software projects. You can see summary of hosting plans below. Should you have any questions or look for hosting of bigger projects, don't hesitate to <a href="{{ contact }}">get in touch with us</a>.{% endblocktrans %}
 </p>
 
@@ -30,11 +34,13 @@
         <th>{% trans "Medium" context "Hosting plan" %}</th>
         <th>{% trans "Advanced" context "Hosting plan" %}</th>
         <th>{% trans "Enterprise" context "Hosting plan" %}</th>
+        <th>{% trans "Self hosted" context "Hosting plan" %}</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <th><a href="https://docs.weblate.org/en/latest/admin/continuous.html">{% trans "Continuous translation" %}</a></th>
+        <td class="text-success"><i class="fa fa-check-circle"></i></td>
         <td class="text-success"><i class="fa fa-check-circle"></i></td>
         <td class="text-success"><i class="fa fa-check-circle"></i></td>
         <td class="text-success"><i class="fa fa-check-circle"></i></td>
@@ -48,6 +54,7 @@
         <td>3000</td>
         <td>10000</td>
         <td>50000</td>
+        <td class="text-success">{% trans "Unlimited" %}</td>
       </tr>
       <tr>
         <th>{% trans "Target languages" %}</th>
@@ -56,6 +63,7 @@
         <td>30</td>
         <td>60</td>
         <td>100</td>
+        <td class="text-success">{% trans "Unlimited" %}</td>
       </tr>
       <tr>
         <th>{% trans "VCS repositories" %}</th>
@@ -64,12 +72,14 @@
         <td>2</td>
         <td>5</td>
         <td>10</td>
+        <td class="text-success">{% trans "Unlimited" %}</td>
       </tr>
       <tr>
         <th><a href="https://docs.weblate.org/en/latest/admin/projects.html#project-configuration">{% trans "Translation projects" %}</a></th>
         <td>1</td>
         <td>1</td>
         <td>2</td>
+        <td class="text-success">{% trans "Unlimited" %}</td>
         <td class="text-success">{% trans "Unlimited" %}</td>
         <td class="text-success">{% trans "Unlimited" %}</td>
       </tr>
@@ -80,9 +90,11 @@
         <td class="text-success">{% trans "Unlimited" %}</td>
         <td class="text-success">{% trans "Unlimited" %}</td>
         <td class="text-success">{% trans "Unlimited" %}</td>
+        <td class="text-success">{% trans "Unlimited" %}</td>
       </tr>
       <tr>
         <th>{% trans "Number of translators" %}</th>
+        <td class="text-success">{% trans "Unlimited" %}</td>
         <td class="text-success">{% trans "Unlimited" %}</td>
         <td class="text-success">{% trans "Unlimited" %}</td>
         <td class="text-success">{% trans "Unlimited" %}</td>
@@ -96,9 +108,11 @@
         <td class="text-success"><i class="fa fa-check-circle"></i></td>
         <td class="text-success"><i class="fa fa-check-circle"></i></td>
         <td class="text-success"><i class="fa fa-check-circle"></i></td>
+        <td class="text-success"><i class="fa fa-check-circle"></i></td>
       </tr>
       <tr>
         <th><a href="https://docs.weblate.org/en/latest/formats.html">{% trans "Supported file formats" %}</a></th>
+        <td class="text-success">{% trans "All" %}</td>
         <td class="text-success">{% trans "All" %}</td>
         <td class="text-success">{% trans "All" %}</td>
         <td class="text-success">{% trans "All" %}</td>
@@ -112,6 +126,7 @@
         <td class="text-success"><i class="fa fa-check-circle"></i></td>
         <td class="text-success">{% trans "Customizable" %}</td>
         <td class="text-success">{% trans "Customizable" %}</td>
+        <td class="text-success">{% trans "Customizable" %}</td>
       </tr>
       <tr>
         <th><a href="https://docs.weblate.org/en/latest/admin/continuous.html#processing-repository-with-scripts">{% trans "Translation processing" %}</a></th>
@@ -120,9 +135,11 @@
         <td class="text-success"><i class="fa fa-check-circle"></i></td>
         <td class="text-success">{% trans "Customizable" %}</td>
         <td class="text-success">{% trans "Customizable" %}</td>
+        <td class="text-success">{% trans "Customizable" %}</td>
       </tr>
       <tr>
         <th><a href="https://docs.weblate.org/en/latest/user/translating.html#glossary">{% trans "Glossary" %}</a></th>
+        <td class="text-success"><i class="fa fa-check-circle"></i></td>
         <td class="text-success"><i class="fa fa-check-circle"></i></td>
         <td class="text-success"><i class="fa fa-check-circle"></i></td>
         <td class="text-success"><i class="fa fa-check-circle"></i></td>
@@ -136,6 +153,7 @@
         <td class="text-success"><i class="fa fa-check-circle"></i></td>
         <td class="text-success"><i class="fa fa-check-circle"></i></td>
         <td class="text-success"><i class="fa fa-check-circle"></i></td>
+        <td class="text-success"><i data-toggle="tooltip" data-placement="bottom" title="{% trans "Available on request" %}" class="fa fa-question-circle"></i></td>
       </tr>
       <tr>
         <th>{% trans "Phone support" %}</th>
@@ -144,6 +162,7 @@
         <td class="text-danger"><i class="fa fa-times-circle"></i></td>
         <td class="text-danger"><i class="fa fa-times-circle"></i></td>
         <td class="text-success"><i class="fa fa-check-circle"></i></td>
+        <td class="text-success"><i data-toggle="tooltip" data-placement="bottom" title="{% trans "Available on request" %}" class="fa fa-question-circle"></i></td>
       </tr>
       <tr>
         <th><abbr data-toggle="tooltip" data-placement="bottom" title="{% trans "Custom domain name with SSL" %}">{% trans "Own domain" %}</abbr></th>
@@ -152,6 +171,7 @@
         <td class="text-danger"><i class="fa fa-times-circle"></i></td>
         <td class="text-danger"><i class="fa fa-times-circle"></i></td>
         <td class="text-success"><i data-toggle="tooltip" data-placement="bottom" title="{% trans "Available on request" %}" class="fa fa-question-circle"></i></td>
+        <td class="text-success"><i class="fa fa-check-circle"></i></td>
       </tr>
     </tbody>
     <tfoot>
@@ -172,6 +192,7 @@
         <td class="price">
         <a class="btn btn-primary" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=S37AJJ4R2HRLN">{% blocktrans with 299 as price %}{{ price }} EUR / month{% endblocktrans %}</a>
         </td>
+        <td rowspan="2"><a href="#self">{% trans "See below for options" %}</a></td>
       </tr>
       <tr>
         <th>{% trans "Yearly by invoice (save 15-20%)" %}</th>
@@ -203,6 +224,93 @@
 <p>
 {% trans "Alternatively we can accept payments by wire transfer (preferably IBAN) or Bitcoin. Please get in touch for more details." %}
 </p>
+
+<h2 id="self">{% trans "Support for self hosted environments" %}</h2>
+
+<p>{% blocktrans %}Worried of putting your translations into cloud? You can self host Weblate and we can still provide you premium support for your setup.{% endblocktrans %}</p>
+
+<div class="table-responsive">
+  <table class="table table-bordered table-striped">
+    <tbody>
+      <tr>
+        <th>{% trans "Installation on your Linux server" %}</th>
+        <td colspan="2" class="price">{% blocktrans with 300 as price %}{{ price }} EUR{% endblocktrans %}</td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          <ul>
+            <li>{% trans "One time installation of Weblate" %}</li>
+            <li>{% trans "Installation using virtualenv, uwsgi and nginx" %}</li>
+            <li>{% trans "Using PostgreSQL, MySQL or MariaDB as database backend" %}</li>
+            <li>{% trans "Requires root access or close cooperation of your admins" %}</li>
+            <li>{% trans "Configuration customization" %}</li>
+            <li>{% trans "Does not include custom code development" %}</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <th>{% trans "Minimal support for self hosted Weblate" %}</th>
+        <td class="price">{% blocktrans with 50 as price %}{{ price }} EUR / month{% endblocktrans %}</td>
+        <td class="price">{% blocktrans with 500 as price %}{{ price }} EUR / year{% endblocktrans %}</td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          <ul>
+            <li>{% blocktrans with count=6 %}Upgrade to latest version at least every {{ count }} months{% endblocktrans %}</li>
+            <li>{% trans "Fixing issues that occur in your environment" %}</li>
+            <li>{% trans "Priority email support" %}</li>
+            <li>{% blocktrans count amount=1 %}Up to {{ amount }} hour of consulting or support per month{% plural %}Up to {{ amount }} hours of consulting or support per month{% endblocktrans %}</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <th>{% trans "Basic support for self hosted Weblate" %}</th>
+        <td class="price">{% blocktrans with 100 as price %}{{ price }} EUR / month{% endblocktrans %}</td>
+        <td class="price">{% blocktrans with 1000 as price %}{{ price }} EUR / year{% endblocktrans %}</td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          <ul>
+            <li>{% blocktrans with count=3 %}Upgrade to latest version at least every {{ count }} months{% endblocktrans %}</li>
+            <li>{% trans "Fixing issues that occur in your environment" %}</li>
+            <li>{% trans "Priority email support" %}</li>
+            <li>{% blocktrans count amount=3 %}Up to {{ amount }} hour of consulting or support per month{% plural %}Up to {{ amount }} hours of consulting or support per month{% endblocktrans %}</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <th>{% trans "Extended support for self hosted Weblate" %}</th>
+        <td class="price">{% blocktrans with 300 as price %}{{ price }} EUR / month{% endblocktrans %}</td>
+        <td class="price">{% blocktrans with 3000 as price %}{{ price }} EUR / year{% endblocktrans %}</td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          <ul>
+            <li>{% trans "Upgrade to latest version on every release" %}</li>
+            <li>{% trans "Fixing issues that occur in your environment" %}</li>
+            <li>{% trans "Priority email support" %}</li>
+            <li>{% blocktrans count amount=10 %}Up to {{ amount }} hour of consulting or support per month{% plural %}Up to {{ amount }} hours of consulting or support per month{% endblocktrans %}</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <th>{% trans "Consulting services or custom development"  %}</th>
+        <td colspan="2" class="price">{% blocktrans with 35 as price %}{{ price }} EUR / hour{% endblocktrans %}</td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          <ul>
+            <li>{% trans "Custom features development" %}</li>
+            <li>{% trans "Integrating Weblate into your workflow" %}</li>
+            <li>{% trans "Suggestions on the internationalization or localization process" %}</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p><a class="btn btn-primary btn-lg" href="mailto:michal@cihar.com?subject=Weblate self hosting ">{% blocktrans%}Ask us for details about self hosted Weblate{% endblocktrans %}</a></p>
 
 <h2 id="free">{% trans "Hosting for free software" %}</h2>
 
