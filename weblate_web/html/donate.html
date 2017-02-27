@@ -15,6 +15,13 @@
 {% endblock %}
 {% block content %}
 
+<h2>{% trans "Use our hosting" %}</h2>
+
+<p>
+{% url 'hosting' as hosting_url %}
+{% blocktrans %}Host your commercial translations on <a href="{{ hosting_url }}">Hosted Weblate</a> and you will be supporting Weblate development automatically.{% endblocktrans %}
+</p>
+
 <h2>{% trans "Regular donations" %}</h2>
 
 <p>
