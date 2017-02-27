@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2017-02-27 18:25+0100\n"
-"PO-Revision-Date: 2017-02-05 06:30+0000\n"
+"PO-Revision-Date: 2017-02-27 19:43+0000\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
-"Language-Team: Czech <https://hosted.weblate.org/projects/weblate/website/cs/"
-">\n"
+"Language-Team: Czech "
+"<https://hosted.weblate.org/projects/weblate/website/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 2.11\n"
+"X-Generator: Weblate 2.12-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -292,10 +292,8 @@ msgid "Donate using Liberapay"
 msgstr "Přispějte pomocí Liberapay"
 
 #: weblate_web/html/donate.html:18
-#, fuzzy
-#| msgid "Ask for hosting"
 msgid "Use our hosting"
-msgstr "Požádat o hostování"
+msgstr "Hostujte u nás"
 
 #: weblate_web/html/donate.html:22
 #, python-format
@@ -720,8 +718,6 @@ msgid "Enterprise"
 msgstr "Podnikový"
 
 #: weblate_web/html/hosting.html:37
-#, fuzzy
-#| msgid "Self hosting"
 msgctxt "Hosting plan"
 msgid "Self hosted"
 msgstr "Vlastní hostování"
@@ -838,7 +834,7 @@ msgstr "%(price)s EUR / měsíc"
 
 #: weblate_web/html/hosting.html:195
 msgid "See below for options"
-msgstr ""
+msgstr "Viz možnosti níže"
 
 #: weblate_web/html/hosting.html:198
 #, python-format
@@ -885,10 +881,8 @@ msgstr ""
 "bližší informace nám napište."
 
 #: weblate_web/html/hosting.html:228
-#, fuzzy
-#| msgid "Support free hosting"
 msgid "Support for self hosted environments"
-msgstr "Podpořte bezplatné hostování"
+msgstr "Podpora pro vlastní hostování"
 
 #: weblate_web/html/hosting.html:230
 msgid ""
@@ -898,25 +892,24 @@ msgstr ""
 
 #: weblate_web/html/hosting.html:236
 msgid "Installation on your Linux server"
-msgstr ""
+msgstr "Instalace na vašem Linuxovém serveru"
 
 #: weblate_web/html/hosting.html:237
-#, fuzzy, python-format
-#| msgid "%(price)s EUR / year"
+#, python-format
 msgid "%(price)s EUR"
-msgstr "%(price)s EUR / rok"
+msgstr "%(price)s EUR"
 
 #: weblate_web/html/hosting.html:242
 msgid "One time installation of Weblate"
-msgstr ""
+msgstr "Jednorázová instalace Weblate"
 
 #: weblate_web/html/hosting.html:243
 msgid "Installation using virtualenv, uwsgi and nginx"
-msgstr ""
+msgstr "Instalace pomocí virtualenv, uwsgi a nginx"
 
 #: weblate_web/html/hosting.html:244
 msgid "Using PostgreSQL, MySQL or MariaDB as database backend"
-msgstr ""
+msgstr "Jako databázi používá PostgreSQL, MySQL nebo MariaDB"
 
 #: weblate_web/html/hosting.html:245
 msgid "Requires root access or close cooperation of your admins"
@@ -970,10 +963,9 @@ msgid "Consulting services or custom development"
 msgstr ""
 
 #: weblate_web/html/hosting.html:298
-#, fuzzy, python-format
-#| msgid "%(price)s EUR / year"
+#, python-format
 msgid "%(price)s EUR / hour"
-msgstr "%(price)s EUR / rok"
+msgstr "%(price)s EUR / hodinu"
 
 #: weblate_web/html/hosting.html:303
 msgid "Custom features development"
