@@ -7,17 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2017-02-27 18:25+0100\n"
+"POT-Creation-Date: 2017-02-28 08:18+0100\n"
 "PO-Revision-Date: 2017-02-27 21:48+0000\n"
 "Last-Translator: Viktar Vauchkevich <victorenator@gmail.com>\n"
-"Language-Team: Belarusian (latin) "
-"<https://hosted.weblate.org/projects/weblate/website/be_Latn/>\n"
+"Language-Team: Belarusian (latin) <https://hosted.weblate.org/projects/"
+"weblate/website/be_Latn/>\n"
 "Language: be@latin\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
-"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 2.12-dev\n"
 
 #: weblate_web/data.py:33
@@ -308,8 +308,8 @@ msgid ""
 "Host your commercial translations on <a href=\"%(hosting_url)s\">Hosted "
 "Weblate</a> and you will be supporting Weblate development automatically."
 msgstr ""
-"Razmiaščajcie vašyja kamiercyjnyja pieraklady na <a href=\"%(hosting_url)s\">"
-"Hosted Weblate</a> i vy aŭtamatyčna budziecie padtrymlivać raspracoŭku "
+"Razmiaščajcie vašyja kamiercyjnyja pieraklady na <a href=\"%(hosting_url)s"
+"\">Hosted Weblate</a> i vy aŭtamatyčna budziecie padtrymlivać raspracoŭku "
 "Weblate."
 
 #: weblate_web/html/donate.html:25
@@ -814,8 +814,7 @@ msgstr "Naladžvaĺny"
 msgid "Translation processing"
 msgstr "Apracoŭka pierakladu"
 
-#: weblate_web/html/hosting.html:150 weblate_web/html/hosting.html:261
-#: weblate_web/html/hosting.html:276 weblate_web/html/hosting.html:291
+#: weblate_web/html/hosting.html:150
 msgid "Priority email support"
 msgstr "Pryjarytetnyja padtrymka pa eliektronnaj pošcie"
 
@@ -951,20 +950,40 @@ msgid "Minimal support for self hosted Weblate"
 msgstr "Minimaĺnaja padtrymka ŭlasnaha Weblate"
 
 #: weblate_web/html/hosting.html:259 weblate_web/html/hosting.html:274
-#, python-format
-msgid "Upgrade to latest version at least every %(count)s months"
-msgstr "Madernizacyja da apošniaj viersii kožnyja %(count)s miesiac(aŭ)"
+#, fuzzy, python-format
+#| msgid "Upgrade to latest version at least every %(count)s months"
+msgid ""
+"Your Weblate will be upgraded to the latest version at least every %(count)s "
+"month."
+msgid_plural ""
+"Your Weblate will be upgraded to the latest version at least every %(count)s "
+"months."
+msgstr[0] "Madernizacyja da apošniaj viersii kožnyja %(count)s miesiac(aŭ)"
+msgstr[1] "Madernizacyja da apošniaj viersii kožnyja %(count)s miesiac(aŭ)"
+msgstr[2] "Madernizacyja da apošniaj viersii kožnyja %(count)s miesiac(aŭ)"
 
 #: weblate_web/html/hosting.html:260 weblate_web/html/hosting.html:275
 #: weblate_web/html/hosting.html:290
-msgid "Fixing issues that occur in your environment"
+#, fuzzy
+#| msgid "Fixing issues that occur in your environment"
+msgid "We will fix issues that occur in your environment."
 msgstr "Vypraŭliennie chibaŭ, jakija ŭznikajuć u vašym asiaroddzi"
+
+#: weblate_web/html/hosting.html:261 weblate_web/html/hosting.html:276
+#: weblate_web/html/hosting.html:291
+#, fuzzy
+#| msgid "Priority email support"
+msgid "You will receive priority email support."
+msgstr "Pryjarytetnyja padtrymka pa eliektronnaj pošcie"
 
 #: weblate_web/html/hosting.html:262 weblate_web/html/hosting.html:277
 #: weblate_web/html/hosting.html:292
-#, python-format
-msgid "Up to %(amount)s hour of consulting or support per month"
-msgid_plural "Up to %(amount)s hours of consulting or support per month"
+#, fuzzy, python-format
+#| msgid "Up to %(amount)s hour of consulting or support per month"
+#| msgid_plural "Up to %(amount)s hours of consulting or support per month"
+msgid "Up to %(amount)s hour of consulting or support per month are included."
+msgid_plural ""
+"Up to %(amount)s hours of consulting or support per month are included."
 msgstr[0] "Da %(amount)s hadziny ŭ miesiac na kansuĺtacyi i padtrymku"
 msgstr[1] "Da %(amount)s hadzin ŭ miesiac na kansuĺtacyi i padtrymku"
 msgstr[2] "Da %(amount)s hadzin ŭ miesiac na kansuĺtacyi i padtrymku"
@@ -978,7 +997,9 @@ msgid "Extended support for self hosted Weblate"
 msgstr "Pašyranaja padtrymka dlia ŭlasnaha chostynha Weblate"
 
 #: weblate_web/html/hosting.html:289
-msgid "Upgrade to latest version on every release"
+#, fuzzy
+#| msgid "Upgrade to latest version on every release"
+msgid "Your Weblate will be upgraded to the latest version on every release."
 msgstr "Madernizacyja da apošniaj viersii pry kožnym vypusku"
 
 #: weblate_web/html/hosting.html:297

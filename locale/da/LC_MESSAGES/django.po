@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2017-02-27 18:25+0100\n"
+"POT-Creation-Date: 2017-02-28 08:18+0100\n"
 "PO-Revision-Date: 2017-02-27 17:51+0000\n"
 "Last-Translator: jan madsen <jsm@janz.dk>\n"
-"Language-Team: Danish "
-"<https://hosted.weblate.org/projects/weblate/website/da/>\n"
+"Language-Team: Danish <https://hosted.weblate.org/projects/weblate/website/"
+"da/>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -810,8 +810,7 @@ msgstr "Kan tilpasses"
 msgid "Translation processing"
 msgstr "Behandler oversættelse"
 
-#: weblate_web/html/hosting.html:150 weblate_web/html/hosting.html:261
-#: weblate_web/html/hosting.html:276 weblate_web/html/hosting.html:291
+#: weblate_web/html/hosting.html:150
 msgid "Priority email support"
 msgstr "Prioriteret e-mail support"
 
@@ -959,20 +958,34 @@ msgstr "Minimal støtte til self hosted Weblate"
 
 #: weblate_web/html/hosting.html:259 weblate_web/html/hosting.html:274
 #, fuzzy, python-format
-msgid "Upgrade to latest version at least every %(count)s months"
-msgstr "Opgrader til nyeste version mindst hvert %(count). måneder"
+msgid ""
+"Your Weblate will be upgraded to the latest version at least every %(count)s "
+"month."
+msgid_plural ""
+"Your Weblate will be upgraded to the latest version at least every %(count)s "
+"months."
+msgstr[0] "Opgrader til nyeste version mindst hvert %(count). måneder"
+msgstr[1] "Opgrader til nyeste version mindst hvert %(count). måneder"
 
 #: weblate_web/html/hosting.html:260 weblate_web/html/hosting.html:275
 #: weblate_web/html/hosting.html:290
 #, fuzzy
-msgid "Fixing issues that occur in your environment"
+msgid "We will fix issues that occur in your environment."
 msgstr "Regttelse af problemer, der opstår i dit miljø"
+
+#: weblate_web/html/hosting.html:261 weblate_web/html/hosting.html:276
+#: weblate_web/html/hosting.html:291
+#, fuzzy
+#| msgid "Priority email support"
+msgid "You will receive priority email support."
+msgstr "Prioriteret e-mail support"
 
 #: weblate_web/html/hosting.html:262 weblate_web/html/hosting.html:277
 #: weblate_web/html/hosting.html:292
 #, fuzzy, python-format
-msgid "Up to %(amount)s hour of consulting or support per month"
-msgid_plural "Up to %(amount)s hours of consulting or support per month"
+msgid "Up to %(amount)s hour of consulting or support per month are included."
+msgid_plural ""
+"Up to %(amount)s hours of consulting or support per month are included."
 msgstr[0] "Op til %(amount)s times rådgivning eller støtte pr. måned"
 msgstr[1] "Op til %(amount)s timers rådgivning eller støtte pr. måned"
 
@@ -988,7 +1001,7 @@ msgstr "Udvidet support for self hostede Weblate"
 
 #: weblate_web/html/hosting.html:289
 #, fuzzy
-msgid "Upgrade to latest version on every release"
+msgid "Your Weblate will be upgraded to the latest version on every release."
 msgstr "Opgrader til nyeste version ved hver udgivelse"
 
 #: weblate_web/html/hosting.html:297
