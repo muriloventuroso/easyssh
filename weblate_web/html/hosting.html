@@ -256,10 +256,10 @@
       <tr>
         <td colspan="3">
           <ul>
-            <li>{% blocktrans with count=6 %}Upgrade to latest version at least every {{ count }} months{% endblocktrans %}</li>
-            <li>{% trans "Fixing issues that occur in your environment" %}</li>
-            <li>{% trans "Priority email support" %}</li>
-            <li>{% blocktrans count amount=1 %}Up to {{ amount }} hour of consulting or support per month{% plural %}Up to {{ amount }} hours of consulting or support per month{% endblocktrans %}</li>
+            <li>{% blocktrans count count=6 %}Your Weblate will be upgraded to the latest version at least every {{ count }} month.{% plural %}Your Weblate will be upgraded to the latest version at least every {{ count }} months.{% endblocktrans %}</li>
+            <li>{% trans "We will fix issues that occur in your environment." %}</li>
+            <li>{% trans "You will receive priority email support." %}</li>
+            <li>{% blocktrans count amount=1 %}Up to {{ amount }} hour of consulting or support per month are included.{% plural %}Up to {{ amount }} hours of consulting or support per month are included.{% endblocktrans %}</li>
           </ul>
         </td>
       </tr>
@@ -271,10 +271,10 @@
       <tr>
         <td colspan="3">
           <ul>
-            <li>{% blocktrans with count=3 %}Upgrade to latest version at least every {{ count }} months{% endblocktrans %}</li>
-            <li>{% trans "Fixing issues that occur in your environment" %}</li>
-            <li>{% trans "Priority email support" %}</li>
-            <li>{% blocktrans count amount=3 %}Up to {{ amount }} hour of consulting or support per month{% plural %}Up to {{ amount }} hours of consulting or support per month{% endblocktrans %}</li>
+            <li>{% blocktrans count count=3 %}Your Weblate will be upgraded to the latest version at least every {{ count }} month.{% plural %}Your Weblate will be upgraded to the latest version at least every {{ count }} months.{% endblocktrans %}</li>
+            <li>{% trans "We will fix issues that occur in your environment." %}</li>
+            <li>{% trans "You will receive priority email support." %}</li>
+            <li>{% blocktrans count amount=3 %}Up to {{ amount }} hour of consulting or support per month are included.{% plural %}Up to {{ amount }} hours of consulting or support per month are included.{% endblocktrans %}</li>
           </ul>
         </td>
       </tr>
@@ -286,10 +286,10 @@
       <tr>
         <td colspan="3">
           <ul>
-            <li>{% trans "Upgrade to latest version on every release" %}</li>
-            <li>{% trans "Fixing issues that occur in your environment" %}</li>
-            <li>{% trans "Priority email support" %}</li>
-            <li>{% blocktrans count amount=10 %}Up to {{ amount }} hour of consulting or support per month{% plural %}Up to {{ amount }} hours of consulting or support per month{% endblocktrans %}</li>
+            <li>{% blocktrans %}Your Weblate will be upgraded to the latest version on every release.{% endblocktrans %}</li>
+            <li>{% trans "We will fix issues that occur in your environment." %}</li>
+            <li>{% trans "You will receive priority email support." %}</li>
+            <li>{% blocktrans count amount=10 %}Up to {{ amount }} hour of consulting or support per month are included.{% plural %}Up to {{ amount }} hours of consulting or support per month are included.{% endblocktrans %}</li>
           </ul>
         </td>
       </tr>
