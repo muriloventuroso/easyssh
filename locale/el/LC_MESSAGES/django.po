@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2017-02-28 08:18+0100\n"
-"PO-Revision-Date: 2017-02-06 16:04+0000\n"
+"PO-Revision-Date: 2017-02-28 20:32+0000\n"
 "Last-Translator: Παναγιώτης Παπάζογλου <papaz_p@yahoo.com>\n"
-"Language-Team: Greek <https://hosted.weblate.org/projects/weblate/website/el/"
-">\n"
+"Language-Team: Greek "
+"<https://hosted.weblate.org/projects/weblate/website/el/>\n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.11\n"
+"X-Generator: Weblate 2.12-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -304,10 +304,8 @@ msgid "Donate using Liberapay"
 msgstr "Δωρεάν με χρήση Liberapay"
 
 #: weblate_web/html/donate.html:18
-#, fuzzy
-#| msgid "Ask for hosting"
 msgid "Use our hosting"
-msgstr "Ερώτημα για φιλοξενία"
+msgstr "Χρήση της φιλοξενίας σας"
 
 #: weblate_web/html/donate.html:22
 #, python-format
@@ -315,6 +313,8 @@ msgid ""
 "Host your commercial translations on <a href=\"%(hosting_url)s\">Hosted "
 "Weblate</a> and you will be supporting Weblate development automatically."
 msgstr ""
+"Φιλοξενήστε τις εμπορικές μεταφράσεις σας στο <a href=\"%(hosting_url)s\">"
+"Φιλόξενο Weblate</a> και θα υποστηρίζεται την ανάπτυξη του Weblate αυτόματα."
 
 #: weblate_web/html/donate.html:25
 msgid "Regular donations"
@@ -708,6 +708,9 @@ msgid ""
 "Hosted Weblate allows you to use Weblate without any effort and with premium "
 "support backed by it's core developers."
 msgstr ""
+"Το Φιλόξενο Weblate σας επιτρέπει να χρησιμοποιήσετε το Weblate χωρίς καμιά "
+"προσπάθεια και με άριστη υποστήριξη από τους ίδους του δημιουργούς του "
+"πυρήνα του."
 
 #: weblate_web/html/hosting.html:24
 #, python-format
@@ -748,11 +751,9 @@ msgid "Enterprise"
 msgstr "Επιχειρησιακό"
 
 #: weblate_web/html/hosting.html:37
-#, fuzzy
-#| msgid "Self hosting"
 msgctxt "Hosting plan"
 msgid "Self hosted"
-msgstr "Αυτοφιλοξενία"
+msgstr "Αυτοφιλοξενούμενο"
 
 #: weblate_web/html/hosting.html:51
 msgid ""
@@ -866,7 +867,7 @@ msgstr "%(price)s Ευρώ / μήνα"
 
 #: weblate_web/html/hosting.html:195
 msgid "See below for options"
-msgstr ""
+msgstr "Δείτε παρακάτω για επιλογές"
 
 #: weblate_web/html/hosting.html:198
 #, python-format
@@ -913,54 +914,53 @@ msgstr ""
 "IBAN) ή Bitcoin. Επικοινωνήστε για περισσότερες πληροφορίες."
 
 #: weblate_web/html/hosting.html:228
-#, fuzzy
-#| msgid "Support free hosting"
 msgid "Support for self hosted environments"
-msgstr "Υποστήριξη ελεύθερης φιλοξενίας"
+msgstr "Υποστήριξη για αυτοφιλοξενούμενα περιβάλλοντα"
 
 #: weblate_web/html/hosting.html:230
 msgid ""
 "Worried of putting your translations into cloud? You can self host Weblate "
 "and we can still provide you premium support for your setup."
 msgstr ""
+"Ανησυχείτε βάζοντας τις μεταφράσεις στο σύννεφο; Μπορείτε να φιλοξενήσετε "
+"μόνοι σας το Weblate και να έχετε άριστη υποστήριξη για την εγκατάστασή σας."
 
 #: weblate_web/html/hosting.html:236
 msgid "Installation on your Linux server"
-msgstr ""
+msgstr "Εγκατάσταση στον Linux διακομιστή σας"
 
 #: weblate_web/html/hosting.html:237
-#, fuzzy, python-format
-#| msgid "%(price)s EUR / year"
+#, python-format
 msgid "%(price)s EUR"
-msgstr "%(price)s Ευρώ / έτος"
+msgstr "%(price)s Ευρώ"
 
 #: weblate_web/html/hosting.html:242
 msgid "One time installation of Weblate"
-msgstr ""
+msgstr "Εγκατάσταση μιας φοράς του Weblate"
 
 #: weblate_web/html/hosting.html:243
 msgid "Installation using virtualenv, uwsgi and nginx"
-msgstr ""
+msgstr "Εγκατάσταση με χρήση των virtualenv, uwsgi και nginx"
 
 #: weblate_web/html/hosting.html:244
 msgid "Using PostgreSQL, MySQL or MariaDB as database backend"
-msgstr ""
+msgstr "Χρήση των PostgreSQL, MySQL ή MariaDB ως βάσεις δεδομένων παρασκηνίου"
 
 #: weblate_web/html/hosting.html:245
 msgid "Requires root access or close cooperation of your admins"
-msgstr ""
+msgstr "Απαιτείται ριζική πρόσβαση ή στενή συνεργασία των διαχειριστών σας"
 
 #: weblate_web/html/hosting.html:246
 msgid "Configuration customization"
-msgstr ""
+msgstr "Προσαρμογή ρύθμισης"
 
 #: weblate_web/html/hosting.html:247
 msgid "Does not include custom code development"
-msgstr ""
+msgstr "Δεν περιλαμβάνει ανάπτυξη προσαρμοσμένου κώδικα"
 
 #: weblate_web/html/hosting.html:252
 msgid "Minimal support for self hosted Weblate"
-msgstr ""
+msgstr "Ελάχιστη υποστήριξη για αυτοφιλοξενούμενο Weblate"
 
 #: weblate_web/html/hosting.html:259 weblate_web/html/hosting.html:274
 #, python-format
@@ -971,19 +971,21 @@ msgid_plural ""
 "Your Weblate will be upgraded to the latest version at least every %(count)s "
 "months."
 msgstr[0] ""
+"To Weblate θα αναβαθμιζεται στην τελευταία έκδοση τουλάχιστον κάθε %(count)s "
+"μήνα."
 msgstr[1] ""
+"To Weblate θα αναβαθμιζεται στην τελευταία έκδοση τουλάχιστον κάθε %(count)s "
+"μήνες."
 
 #: weblate_web/html/hosting.html:260 weblate_web/html/hosting.html:275
 #: weblate_web/html/hosting.html:290
 msgid "We will fix issues that occur in your environment."
-msgstr ""
+msgstr "Θα διορθώσουμε θέματα που έλαβαν χώρα στον περιβάλλον σας."
 
 #: weblate_web/html/hosting.html:261 weblate_web/html/hosting.html:276
 #: weblate_web/html/hosting.html:291
-#, fuzzy
-#| msgid "Priority email support"
 msgid "You will receive priority email support."
-msgstr "Υποστήριξη ηλεκτρονικής αλληλογραφίας προτεραιότητας"
+msgstr "Θα λάβετε υποστήριξη ηλεκτρονικής αλληλογραφίας προτεραιότητας."
 
 #: weblate_web/html/hosting.html:262 weblate_web/html/hosting.html:277
 #: weblate_web/html/hosting.html:292
@@ -992,45 +994,46 @@ msgid "Up to %(amount)s hour of consulting or support per month are included."
 msgid_plural ""
 "Up to %(amount)s hours of consulting or support per month are included."
 msgstr[0] ""
+"Μέχρι %(amount)s ώρα συμβουλευτική ή υποστήριξη ανά μήνα περιλαμβάνεται."
 msgstr[1] ""
+"Μέχρι %(amount)s ώρες συμβουλευτική ή υποστήριξη ανά μήνα περιλαμβάνονται."
 
 #: weblate_web/html/hosting.html:267
 msgid "Basic support for self hosted Weblate"
-msgstr ""
+msgstr "Βασική υποστήριξη αυτοφιλοξενούμενου Weblate"
 
 #: weblate_web/html/hosting.html:282
 msgid "Extended support for self hosted Weblate"
-msgstr ""
+msgstr "Διευρημένη υποστήριξη αυτοφιλοξενούμενου Weblate"
 
 #: weblate_web/html/hosting.html:289
 msgid "Your Weblate will be upgraded to the latest version on every release."
-msgstr ""
+msgstr "To Weblate θα αναβαθμίζεται στην τελευταία έκδοση με κάθε δημοσίευση."
 
 #: weblate_web/html/hosting.html:297
 msgid "Consulting services or custom development"
-msgstr ""
+msgstr "Υπηρεσίες συμβουλευτικής ή προσαρμοσμένη ανάπτυξη"
 
 #: weblate_web/html/hosting.html:298
-#, fuzzy, python-format
-#| msgid "%(price)s EUR / year"
+#, python-format
 msgid "%(price)s EUR / hour"
-msgstr "%(price)s Ευρώ / έτος"
+msgstr "%(price)s Ευρώ"
 
 #: weblate_web/html/hosting.html:303
 msgid "Custom features development"
-msgstr ""
+msgstr "Ανάπτυξη προσαρμοσμένων χαρακτηριστικών"
 
 #: weblate_web/html/hosting.html:304
 msgid "Integrating Weblate into your workflow"
-msgstr ""
+msgstr "Ενσωμάτωση του Weblate στη ροή εργασιών σας"
 
 #: weblate_web/html/hosting.html:305
 msgid "Suggestions on the internationalization or localization process"
-msgstr ""
+msgstr "Προτάσεις για τη διαδικασία διεθνοποίησης ή τοπικοποίησης"
 
 #: weblate_web/html/hosting.html:313
 msgid "Ask us for details about self hosted Weblate"
-msgstr ""
+msgstr "Ρωτήστε μας για λεπτομέρειες σχετικά με το αυτοφιλοξενούμενο Weblate"
 
 #: weblate_web/html/hosting.html:315
 msgid "Hosting for free software"
@@ -1321,6 +1324,7 @@ msgstr "Συμβουλευτική"
 #: weblate_web/html/support.html:50
 msgid "See our support offerings for self hosted Weblate instances"
 msgstr ""
+"Δείτε τις προσφορές υποστήριξης για περιπτώσεις αυτοφιλοξενούμενου Weblate"
 
 #: weblate_web/html/support.html:53
 #, python-format
