@@ -7,16 +7,16 @@ msgstr ""
 "Project-Id-Version: weblate-website-ja\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2017-02-27 18:25+0100\n"
-"PO-Revision-Date: 2017-02-06 01:47+0000\n"
+"PO-Revision-Date: 2017-02-28 01:36+0000\n"
 "Last-Translator: Yasuhiko Kamata <belphegor@belbel.or.jp>\n"
-"Language-Team: Japanese <https://hosted.weblate.org/projects/weblate/website/"
-"ja/>\n"
+"Language-Team: Japanese "
+"<https://hosted.weblate.org/projects/weblate/website/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.11\n"
+"X-Generator: Weblate 2.12-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -298,10 +298,8 @@ msgid "Donate using Liberapay"
 msgstr "Liberapay を使って寄付する"
 
 #: weblate_web/html/donate.html:18
-#, fuzzy
-#| msgid "Ask for hosting"
 msgid "Use our hosting"
-msgstr "ホスティングの依頼"
+msgstr "我々が提供するホスティングサービスの使用"
 
 #: weblate_web/html/donate.html:22
 #, python-format
@@ -309,6 +307,8 @@ msgid ""
 "Host your commercial translations on <a href=\"%(hosting_url)s\">Hosted "
 "Weblate</a> and you will be supporting Weblate development automatically."
 msgstr ""
+"<a href=\"%(hosting_url)s\">Hosted Weblate</a> では、商用ソフトウェアの翻訳作業を提供することもできます。"
+"Hosted Weblate を利用することで、 Weblate の開発への支援も同時に行なうことになります。"
 
 #: weblate_web/html/donate.html:25
 msgid "Regular donations"
@@ -696,6 +696,8 @@ msgid ""
 "Hosted Weblate allows you to use Weblate without any effort and with premium "
 "support backed by it's core developers."
 msgstr ""
+"Hosted Weblate を利用すると、設定や管理などの手間を全く負担することなく Weblate "
+"を利用できるほか、開発者が直接サポートを提供することになりますので、より高品質なサポートを受けることができます。"
 
 #: weblate_web/html/hosting.html:24
 #, python-format
@@ -736,8 +738,6 @@ msgid "Enterprise"
 msgstr "エンタープライズ"
 
 #: weblate_web/html/hosting.html:37
-#, fuzzy
-#| msgid "Self hosting"
 msgctxt "Hosting plan"
 msgid "Self hosted"
 msgstr "独自ホスティング"
@@ -853,7 +853,7 @@ msgstr "%(price)s ユーロ／月"
 
 #: weblate_web/html/hosting.html:195
 msgid "See below for options"
-msgstr ""
+msgstr "オプションについては下記をお読みください"
 
 #: weblate_web/html/hosting.html:198
 #, python-format
@@ -901,109 +901,107 @@ msgstr ""
 "お受けしております。詳しくはお問い合わせください。"
 
 #: weblate_web/html/hosting.html:228
-#, fuzzy
-#| msgid "Support free hosting"
 msgid "Support for self hosted environments"
-msgstr "無料ホスティングを支援する"
+msgstr "独自ホスティング環境に対するサポート"
 
 #: weblate_web/html/hosting.html:230
 msgid ""
 "Worried of putting your translations into cloud? You can self host Weblate "
 "and we can still provide you premium support for your setup."
 msgstr ""
+"翻訳データをクラウドに保存するのは不安ですか？ Weblate はサービスとしての利用だけではなく、自前のサーバ内に構築して利用することもできます。また、"
+"その構築環境に対する高品質なサポートも提供させていただいております。"
 
 #: weblate_web/html/hosting.html:236
 msgid "Installation on your Linux server"
-msgstr ""
+msgstr "ご自身で管理する Linux サーバへのインストール"
 
 #: weblate_web/html/hosting.html:237
-#, fuzzy, python-format
-#| msgid "%(price)s EUR / year"
+#, python-format
 msgid "%(price)s EUR"
-msgstr "%(price)s ユーロ／年"
+msgstr "%(price)s ユーロ"
 
 #: weblate_web/html/hosting.html:242
 msgid "One time installation of Weblate"
-msgstr ""
+msgstr "Weblate のインストール 1 回分"
 
 #: weblate_web/html/hosting.html:243
 msgid "Installation using virtualenv, uwsgi and nginx"
-msgstr ""
+msgstr "virtualenv, uwsgi, nginx を利用するインストール"
 
 #: weblate_web/html/hosting.html:244
 msgid "Using PostgreSQL, MySQL or MariaDB as database backend"
-msgstr ""
+msgstr "PostgreSQL, MySQL, MariaDB のいずれかをデータベースのバックエンドとして使用する環境を想定"
 
 #: weblate_web/html/hosting.html:245
 msgid "Requires root access or close cooperation of your admins"
-msgstr ""
+msgstr "root 権限もしくは管理者の方との密接な連絡体制を必要とします"
 
 #: weblate_web/html/hosting.html:246
 msgid "Configuration customization"
-msgstr ""
+msgstr "設定のカスタマイズ"
 
 #: weblate_web/html/hosting.html:247
 msgid "Does not include custom code development"
-msgstr ""
+msgstr "独自のコード開発に関しては、本件の対象外となります"
 
 #: weblate_web/html/hosting.html:252
 msgid "Minimal support for self hosted Weblate"
-msgstr ""
+msgstr "独自ホスティングされた Weblate に対する最小限サポート"
 
 #: weblate_web/html/hosting.html:259 weblate_web/html/hosting.html:274
 #, python-format
 msgid "Upgrade to latest version at least every %(count)s months"
-msgstr ""
+msgstr "%(count)s ヶ月ごとに最新バージョンへのアップグレード"
 
 #: weblate_web/html/hosting.html:260 weblate_web/html/hosting.html:275
 #: weblate_web/html/hosting.html:290
 msgid "Fixing issues that occur in your environment"
-msgstr ""
+msgstr "ご利用の環境で発生した問題への修正作業を実施します"
 
 #: weblate_web/html/hosting.html:262 weblate_web/html/hosting.html:277
 #: weblate_web/html/hosting.html:292
 #, python-format
 msgid "Up to %(amount)s hour of consulting or support per month"
 msgid_plural "Up to %(amount)s hours of consulting or support per month"
-msgstr[0] ""
+msgstr[0] "1 ヶ月あたり最大 %(amount)s 時間までのコンサルティング、もしくはサポートを提供させていただきます"
 
 #: weblate_web/html/hosting.html:267
 msgid "Basic support for self hosted Weblate"
-msgstr ""
+msgstr "独自ホスティングされた Weblate に対する基本サポート"
 
 #: weblate_web/html/hosting.html:282
 msgid "Extended support for self hosted Weblate"
-msgstr ""
+msgstr "独自ホスティングされた Weblate に対する拡張サポート"
 
 #: weblate_web/html/hosting.html:289
 msgid "Upgrade to latest version on every release"
-msgstr ""
+msgstr "各リリースで最新バージョンへのアップグレード"
 
 #: weblate_web/html/hosting.html:297
 msgid "Consulting services or custom development"
-msgstr ""
+msgstr "コンサルティングサービス／独自開発"
 
 #: weblate_web/html/hosting.html:298
-#, fuzzy, python-format
-#| msgid "%(price)s EUR / year"
+#, python-format
 msgid "%(price)s EUR / hour"
-msgstr "%(price)s ユーロ／年"
+msgstr "%(price)s ユーロ／時間"
 
 #: weblate_web/html/hosting.html:303
 msgid "Custom features development"
-msgstr ""
+msgstr "独自機能の開発"
 
 #: weblate_web/html/hosting.html:304
 msgid "Integrating Weblate into your workflow"
-msgstr ""
+msgstr "ご自身のワークフローへの Weblate の組み込み"
 
 #: weblate_web/html/hosting.html:305
 msgid "Suggestions on the internationalization or localization process"
-msgstr ""
+msgstr "国際化 (Internationalization; i18n) やローカライズ (l10n) に対するご提案"
 
 #: weblate_web/html/hosting.html:313
 msgid "Ask us for details about self hosted Weblate"
-msgstr ""
+msgstr "独自ホスティングの Weblate について、詳しくはお尋ねください"
 
 #: weblate_web/html/hosting.html:315
 msgid "Hosting for free software"
@@ -1291,7 +1289,7 @@ msgstr "コンサルティング"
 
 #: weblate_web/html/support.html:50
 msgid "See our support offerings for self hosted Weblate instances"
-msgstr ""
+msgstr "独自ホスティングの Weblate インスタンスに対するサポートは、こちらをご覧ください"
 
 #: weblate_web/html/support.html:53
 #, python-format
