@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2017-02-27 18:25+0100\n"
-"PO-Revision-Date: 2017-02-09 12:10+0000\n"
+"PO-Revision-Date: 2017-02-28 06:58+0000\n"
 "Last-Translator: Любомир Василев <lyubomirv@abv.bg>\n"
-"Language-Team: Bulgarian <https://hosted.weblate.org/projects/weblate/"
-"website/bg/>\n"
+"Language-Team: Bulgarian "
+"<https://hosted.weblate.org/projects/weblate/website/bg/>\n"
 "Language: bg\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -300,10 +300,8 @@ msgid "Donate using Liberapay"
 msgstr "Дарение чрез Liberapay"
 
 #: weblate_web/html/donate.html:18
-#, fuzzy
-#| msgid "Ask for hosting"
 msgid "Use our hosting"
-msgstr "Попитайте за хостинг"
+msgstr "Използвайте нашия хостинг"
 
 #: weblate_web/html/donate.html:22
 #, python-format
@@ -311,6 +309,9 @@ msgid ""
 "Host your commercial translations on <a href=\"%(hosting_url)s\">Hosted "
 "Weblate</a> and you will be supporting Weblate development automatically."
 msgstr ""
+"Можете да използвате <a href=\"%(hosting_url)s\">хостинга на Weblate</a> за "
+"частните си проекти, като така автоматично ще подкрепите развитието на "
+"Weblate."
 
 #: weblate_web/html/donate.html:25
 msgid "Regular donations"
@@ -701,6 +702,8 @@ msgid ""
 "Hosted Weblate allows you to use Weblate without any effort and with premium "
 "support backed by it's core developers."
 msgstr ""
+"Хостингът на Weblate Ви позволява да използвате Weblate без никакви усилия, "
+"като освен това можете да получите помощ от разработчиците на системата."
 
 #: weblate_web/html/hosting.html:24
 #, python-format
@@ -741,8 +744,6 @@ msgid "Enterprise"
 msgstr "Фирмен"
 
 #: weblate_web/html/hosting.html:37
-#, fuzzy
-#| msgid "Self hosting"
 msgctxt "Hosting plan"
 msgid "Self hosted"
 msgstr "Собствен хостинг"
@@ -860,7 +861,7 @@ msgstr "%(price)s € / месец"
 
 #: weblate_web/html/hosting.html:195
 msgid "See below for options"
-msgstr ""
+msgstr "Вижте възможните варианти по-долу"
 
 #: weblate_web/html/hosting.html:198
 #, python-format
@@ -908,72 +909,71 @@ msgstr ""
 "IBAN) или в биткойни. Моля, свържете се с нас за повече подробности."
 
 #: weblate_web/html/hosting.html:228
-#, fuzzy
-#| msgid "Support free hosting"
 msgid "Support for self hosted environments"
-msgstr "Подкрепете безплатния хостинг"
+msgstr "Поддръжка за собствен хостинг"
 
 #: weblate_web/html/hosting.html:230
 msgid ""
 "Worried of putting your translations into cloud? You can self host Weblate "
 "and we can still provide you premium support for your setup."
 msgstr ""
+"Притеснявате ли се да сложите преводите си в облака? Можете да използвате "
+"Weblate на собствен сървър и все пак да Ви осигурим поддръжка."
 
 #: weblate_web/html/hosting.html:236
 msgid "Installation on your Linux server"
-msgstr ""
+msgstr "Инсталация на собствен сървър с Линукс"
 
 #: weblate_web/html/hosting.html:237
-#, fuzzy, python-format
-#| msgid "%(price)s EUR / year"
+#, python-format
 msgid "%(price)s EUR"
-msgstr "%(price)s € / година"
+msgstr "%(price)s €"
 
 #: weblate_web/html/hosting.html:242
 msgid "One time installation of Weblate"
-msgstr ""
+msgstr "Еднократна инсталация на Weblate"
 
 #: weblate_web/html/hosting.html:243
 msgid "Installation using virtualenv, uwsgi and nginx"
-msgstr ""
+msgstr "Инсталация чрез virtualenv, uwsgi и nginx"
 
 #: weblate_web/html/hosting.html:244
 msgid "Using PostgreSQL, MySQL or MariaDB as database backend"
-msgstr ""
+msgstr "Използване на PostgreSQL, MySQL или MariaDB за базата данни"
 
 #: weblate_web/html/hosting.html:245
 msgid "Requires root access or close cooperation of your admins"
-msgstr ""
+msgstr "Изисква да имате достъп като администратор или помощта на такъв"
 
 #: weblate_web/html/hosting.html:246
 msgid "Configuration customization"
-msgstr ""
+msgstr "Персонализация на настройките"
 
 #: weblate_web/html/hosting.html:247
 msgid "Does not include custom code development"
-msgstr ""
+msgstr "Не включва разработка на персонализиран код според нуждите Ви"
 
 #: weblate_web/html/hosting.html:252
 msgid "Minimal support for self hosted Weblate"
-msgstr ""
+msgstr "Минимална поддръжка за самостоятелен хостинг на Weblate"
 
 #: weblate_web/html/hosting.html:259 weblate_web/html/hosting.html:274
 #, python-format
 msgid "Upgrade to latest version at least every %(count)s months"
-msgstr ""
+msgstr "Надграждане до последната версия поне на всеки %(count)s месеца"
 
 #: weblate_web/html/hosting.html:260 weblate_web/html/hosting.html:275
 #: weblate_web/html/hosting.html:290
 msgid "Fixing issues that occur in your environment"
-msgstr ""
+msgstr "Отстраняване на проблеми, които възникват в средата Ви"
 
 #: weblate_web/html/hosting.html:262 weblate_web/html/hosting.html:277
 #: weblate_web/html/hosting.html:292
 #, python-format
 msgid "Up to %(amount)s hour of consulting or support per month"
 msgid_plural "Up to %(amount)s hours of consulting or support per month"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "До %(amount)s час консултация или поддръжка на месец"
+msgstr[1] "До %(amount)s часа консултация или поддръжка на месец"
 
 #: weblate_web/html/hosting.html:267
 msgid "Basic support for self hosted Weblate"
@@ -992,10 +992,9 @@ msgid "Consulting services or custom development"
 msgstr ""
 
 #: weblate_web/html/hosting.html:298
-#, fuzzy, python-format
-#| msgid "%(price)s EUR / year"
+#, python-format
 msgid "%(price)s EUR / hour"
-msgstr "%(price)s € / година"
+msgstr "%(price)s € / час"
 
 #: weblate_web/html/hosting.html:303
 msgid "Custom features development"
