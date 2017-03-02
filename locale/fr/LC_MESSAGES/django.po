@@ -4,10 +4,10 @@ msgstr ""
 "Project-Id-Version: French (Weblate)\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2017-02-28 08:18+0100\n"
-"PO-Revision-Date: 2017-02-08 20:18+0000\n"
+"PO-Revision-Date: 2017-03-02 17:49+0000\n"
 "Last-Translator: Ldm Public <ldmpub@gmail.com>\n"
-"Language-Team: French <https://hosted.weblate.org/projects/weblate/website/"
-"fr/>\n"
+"Language-Team: French "
+"<https://hosted.weblate.org/projects/weblate/website/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -300,10 +300,8 @@ msgid "Donate using Liberapay"
 msgstr "Faites un don via Liberapay"
 
 #: weblate_web/html/donate.html:18
-#, fuzzy
-#| msgid "Ask for hosting"
 msgid "Use our hosting"
-msgstr "Demande d’hébergement"
+msgstr "Nous vous hébergeons"
 
 #: weblate_web/html/donate.html:22
 #, python-format
@@ -747,11 +745,9 @@ msgid "Enterprise"
 msgstr "Entreprise"
 
 #: weblate_web/html/hosting.html:37
-#, fuzzy
-#| msgid "Self hosting"
 msgctxt "Hosting plan"
 msgid "Self hosted"
-msgstr "Hébergement par vous-même"
+msgstr "Hébergé par vous-même"
 
 #: weblate_web/html/hosting.html:51
 msgid ""
@@ -865,7 +861,7 @@ msgstr "%(price)s EUR / mois"
 
 #: weblate_web/html/hosting.html:195
 msgid "See below for options"
-msgstr ""
+msgstr "Voir les options ci-dessous"
 
 #: weblate_web/html/hosting.html:198
 #, python-format
@@ -913,54 +909,54 @@ msgstr ""
 "préférence IBAN) ou Bitcoin. Veuillez nous contacter pour plus de détails."
 
 #: weblate_web/html/hosting.html:228
-#, fuzzy
-#| msgid "Support free hosting"
 msgid "Support for self hosted environments"
-msgstr "Soutenez l’hébergement gratuit"
+msgstr "Support pour l'hébergement en propre"
 
 #: weblate_web/html/hosting.html:230
 msgid ""
 "Worried of putting your translations into cloud? You can self host Weblate "
 "and we can still provide you premium support for your setup."
 msgstr ""
+"Vous craignez de mettre vos traductions en ligne dans le Cloud ? Vous pouvez "
+"héberger Weblate par vous-même et bénéficier de notre support Premium lors "
+"de l'installation."
 
 #: weblate_web/html/hosting.html:236
 msgid "Installation on your Linux server"
-msgstr ""
+msgstr "Installation sur votre serveur Linux"
 
 #: weblate_web/html/hosting.html:237
-#, fuzzy, python-format
-#| msgid "%(price)s EUR / year"
+#, python-format
 msgid "%(price)s EUR"
-msgstr "%(price)s EUR / an"
+msgstr "%(price)s EUR"
 
 #: weblate_web/html/hosting.html:242
 msgid "One time installation of Weblate"
-msgstr ""
+msgstr "Une installation de Weblate"
 
 #: weblate_web/html/hosting.html:243
 msgid "Installation using virtualenv, uwsgi and nginx"
-msgstr ""
+msgstr "Installation par virtualenv, uwsgi et nginx"
 
 #: weblate_web/html/hosting.html:244
 msgid "Using PostgreSQL, MySQL or MariaDB as database backend"
-msgstr ""
+msgstr "Utilisation de PostgreSQL, MySQL ou MariaDB comme base de données"
 
 #: weblate_web/html/hosting.html:245
 msgid "Requires root access or close cooperation of your admins"
-msgstr ""
+msgstr "Requiert l'accès Root ou l'aide de vos administrateurs systèmes"
 
 #: weblate_web/html/hosting.html:246
 msgid "Configuration customization"
-msgstr ""
+msgstr "Configuration personnalisée"
 
 #: weblate_web/html/hosting.html:247
 msgid "Does not include custom code development"
-msgstr ""
+msgstr "N'inclus pas de développement sur-mesure"
 
 #: weblate_web/html/hosting.html:252
 msgid "Minimal support for self hosted Weblate"
-msgstr ""
+msgstr "Support minimal pour Weblate hébergé par vous-même"
 
 #: weblate_web/html/hosting.html:259 weblate_web/html/hosting.html:274
 #, python-format
@@ -971,19 +967,21 @@ msgid_plural ""
 "Your Weblate will be upgraded to the latest version at least every %(count)s "
 "months."
 msgstr[0] ""
+"Weblate sera systématiquement mis à jour vers la dernière version %(count)s "
+"fois par mois."
 msgstr[1] ""
+"Weblate sera systématiquement mis à jour vers la dernière version au moins "
+"tous les %(count)s mois."
 
 #: weblate_web/html/hosting.html:260 weblate_web/html/hosting.html:275
 #: weblate_web/html/hosting.html:290
 msgid "We will fix issues that occur in your environment."
-msgstr ""
+msgstr "Nous corrigerons les problèmes survenant sur votre environnement."
 
 #: weblate_web/html/hosting.html:261 weblate_web/html/hosting.html:276
 #: weblate_web/html/hosting.html:291
-#, fuzzy
-#| msgid "Priority email support"
 msgid "You will receive priority email support."
-msgstr "Support prioritaire par courriel"
+msgstr "Support prioritaire par courriel."
 
 #: weblate_web/html/hosting.html:262 weblate_web/html/hosting.html:277
 #: weblate_web/html/hosting.html:292
@@ -991,34 +989,33 @@ msgstr "Support prioritaire par courriel"
 msgid "Up to %(amount)s hour of consulting or support per month are included."
 msgid_plural ""
 "Up to %(amount)s hours of consulting or support per month are included."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Jusqu'à %(amount)s heure par mois de conseil ou d'assistance inclus."
+msgstr[1] "Jusqu'à %(amount)s heures par mois de conseil ou d'assistance inclus."
 
 #: weblate_web/html/hosting.html:267
 msgid "Basic support for self hosted Weblate"
-msgstr ""
+msgstr "Support basic pour Weblate hébergé par vous-même"
 
 #: weblate_web/html/hosting.html:282
 msgid "Extended support for self hosted Weblate"
-msgstr ""
+msgstr "Support étendu pour Weblate hébergé par vous-même"
 
 #: weblate_web/html/hosting.html:289
 msgid "Your Weblate will be upgraded to the latest version on every release."
-msgstr ""
+msgstr "Weblate sera systématiquement mis à jour vers la dernière version."
 
 #: weblate_web/html/hosting.html:297
 msgid "Consulting services or custom development"
-msgstr ""
+msgstr "Prestation de conseil ou développement sur-mesure"
 
 #: weblate_web/html/hosting.html:298
-#, fuzzy, python-format
-#| msgid "%(price)s EUR / year"
+#, python-format
 msgid "%(price)s EUR / hour"
-msgstr "%(price)s EUR / an"
+msgstr "%(price)s EUR / heure"
 
 #: weblate_web/html/hosting.html:303
 msgid "Custom features development"
-msgstr ""
+msgstr "Développement de fonctionnalités sur-mesures"
 
 #: weblate_web/html/hosting.html:304
 msgid "Integrating Weblate into your workflow"
@@ -1030,7 +1027,7 @@ msgstr ""
 
 #: weblate_web/html/hosting.html:313
 msgid "Ask us for details about self hosted Weblate"
-msgstr ""
+msgstr "Contactez-nous pour en savoir plus sur l'hébergement par vous-même"
 
 #: weblate_web/html/hosting.html:315
 msgid "Hosting for free software"
@@ -1323,6 +1320,8 @@ msgstr "Conseil"
 #: weblate_web/html/support.html:50
 msgid "See our support offerings for self hosted Weblate instances"
 msgstr ""
+"Consulter nos offres de support pour les instances Weblate hébergées par "
+"vous-même"
 
 #: weblate_web/html/support.html:53
 #, python-format
