@@ -7,17 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2017-02-28 08:18+0100\n"
+"POT-Creation-Date: 2017-03-17 10:45+0100\n"
 "PO-Revision-Date: 2017-02-28 13:46+0000\n"
 "Last-Translator: Андрій Бандура <andriykopanytsia@gmail.com>\n"
-"Language-Team: Ukrainian "
-"<https://hosted.weblate.org/projects/weblate/website/uk/>\n"
+"Language-Team: Ukrainian <https://hosted.weblate.org/projects/weblate/"
+"website/uk/>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
-"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 2.12-dev\n"
 
 #: weblate_web/data.py:33
@@ -198,7 +198,7 @@ msgstr "Хостинг"
 msgid "Develop"
 msgstr "Розробляти"
 
-#: weblate_web/html/base.html:85 weblate_web/html/donate.html:64
+#: weblate_web/html/base.html:85 weblate_web/html/donate.html:61
 msgid "Donate"
 msgstr "Пожертвувати"
 
@@ -291,7 +291,7 @@ msgstr "Пожертвувати на Weblate"
 msgid "Weblate is free, but welcomes donations."
 msgstr "Weblate є безкоштовним, але ми вітаємо пожертви."
 
-#: weblate_web/html/donate.html:12 weblate_web/html/donate.html:46
+#: weblate_web/html/donate.html:12 weblate_web/html/donate.html:43
 msgid "Donate using Liberapay"
 msgstr "Пожертвувати через Liberapay"
 
@@ -322,11 +322,11 @@ msgstr ""
 "фінансувати безкоштовний хостинг для вільного програмного забезпечення. Вам "
 "не доведеться витрачати великі гроші, кожна копійка враховується."
 
-#: weblate_web/html/donate.html:35 weblate_web/html/donate.html:57
+#: weblate_web/html/donate.html:33 weblate_web/html/donate.html:54
 msgid "Fund on Bountysource"
 msgstr "Фонд на Bountysource"
 
-#: weblate_web/html/donate.html:39
+#: weblate_web/html/donate.html:37
 msgid ""
 "You can send a monthly donation using a credit card. You can also get "
 "rewards for higher donations, for example a logo placement on our website."
@@ -335,17 +335,17 @@ msgstr ""
 "зможете отримувати нагороди за більші пожертвування, наприклад, розташування "
 "логотипу на нашому веб-сайті."
 
-#: weblate_web/html/donate.html:50
+#: weblate_web/html/donate.html:47
 msgid "Liberapay allows you to send a weekly amount using a credit card."
 msgstr ""
 "Liberapay дозволяє вам надсилати щотижневі суми за допомогою кредитної "
 "картки."
 
-#: weblate_web/html/donate.html:53
+#: weblate_web/html/donate.html:50
 msgid "Fund features"
 msgstr "Можливості фонду"
 
-#: weblate_web/html/donate.html:61
+#: weblate_web/html/donate.html:58
 msgid ""
 "Bountysource allows you to fund individual features which are reported on "
 "our issue tracker."
@@ -353,18 +353,18 @@ msgstr ""
 "Bountysource дозволяє вам фінансувати індивідуальні функції, про які "
 "повідомлено на нашому відстежувачі проблем."
 
-#: weblate_web/html/donate.html:67
+#: weblate_web/html/donate.html:64
 msgid ""
 "If you like Weblate you can support its further development by donating."
 msgstr ""
 "Якщо вам подобається Weblate, то, спонсоруючи, ви підтримуєте його подальший "
 "розвиток."
 
-#: weblate_web/html/donate.html:75
+#: weblate_web/html/donate.html:72
 msgid "Donate using PayPal"
 msgstr "Пожертвувати через PayPal"
 
-#: weblate_web/html/donate.html:80
+#: weblate_web/html/donate.html:77
 msgid ""
 "PayPal allows you to send money from credit card, PayPal balance or a bank "
 "account."
@@ -372,15 +372,15 @@ msgstr ""
 "PayPal дозволяє вам відправити гроші з кредитної картки, балансу PayPal або "
 "банківського рахунку."
 
-#: weblate_web/html/donate.html:85
+#: weblate_web/html/donate.html:82
 msgid "Donate using Coinbase"
 msgstr "Пожертва через Coinbase"
 
-#: weblate_web/html/donate.html:89
+#: weblate_web/html/donate.html:86
 msgid "Coinbase allows you to send Bitcoins."
 msgstr "Coinbase дозволяє надсилати Bitcoins."
 
-#: weblate_web/html/donate.html:93
+#: weblate_web/html/donate.html:90
 #, python-format
 msgid ""
 "You can also use <a href=\"https://www.bitcoin.org/\">Bitcoin is a peer-to-"
@@ -953,8 +953,8 @@ msgid_plural ""
 "Your Weblate will be upgraded to the latest version at least every %(count)s "
 "months."
 msgstr[0] ""
-"Ваша Weblate буде оновлюватися до останньої версії принаймні кожного %(count)"
-"s місяця."
+"Ваша Weblate буде оновлюватися до останньої версії принаймні кожного "
+"%(count)s місяця."
 msgstr[1] ""
 "Ваша Weblate буде оновлюватися до останньої версії принаймні кожні %(count)s "
 "місяці."
@@ -992,7 +992,8 @@ msgstr "Розширена підтримка для власного хости
 
 #: weblate_web/html/hosting.html:289
 msgid "Your Weblate will be upgraded to the latest version on every release."
-msgstr "Ваша Weblate буде оновлюватися до останньої версії при кожному випуску."
+msgstr ""
+"Ваша Weblate буде оновлюватися до останньої версії при кожному випуску."
 
 #: weblate_web/html/hosting.html:297
 msgid "Consulting services or custom development"

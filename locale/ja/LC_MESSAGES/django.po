@@ -6,11 +6,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: weblate-website-ja\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2017-02-28 08:18+0100\n"
+"POT-Creation-Date: 2017-03-17 10:45+0100\n"
 "PO-Revision-Date: 2017-02-28 22:37+0000\n"
 "Last-Translator: Yasuhiko Kamata <belphegor@belbel.or.jp>\n"
-"Language-Team: Japanese "
-"<https://hosted.weblate.org/projects/weblate/website/ja/>\n"
+"Language-Team: Japanese <https://hosted.weblate.org/projects/weblate/website/"
+"ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -198,7 +198,7 @@ msgstr "ホスティング"
 msgid "Develop"
 msgstr "開発"
 
-#: weblate_web/html/base.html:85 weblate_web/html/donate.html:64
+#: weblate_web/html/base.html:85 weblate_web/html/donate.html:61
 msgid "Donate"
 msgstr "寄付"
 
@@ -293,7 +293,7 @@ msgstr "Weblate に寄付する"
 msgid "Weblate is free, but welcomes donations."
 msgstr "Weblate は無料ですが、寄付を歓迎します。"
 
-#: weblate_web/html/donate.html:12 weblate_web/html/donate.html:46
+#: weblate_web/html/donate.html:12 weblate_web/html/donate.html:43
 msgid "Donate using Liberapay"
 msgstr "Liberapay を使って寄付する"
 
@@ -324,11 +324,11 @@ msgstr ""
 "継続寄付によって、Weblate の開発を継続し、フリーソフトウェア向けの無料ホス"
 "ティングに資金援助することができます。大金は必要なく、少額でも重要です。"
 
-#: weblate_web/html/donate.html:35 weblate_web/html/donate.html:57
+#: weblate_web/html/donate.html:33 weblate_web/html/donate.html:54
 msgid "Fund on Bountysource"
 msgstr "Bountysource で資金を出す"
 
-#: weblate_web/html/donate.html:39
+#: weblate_web/html/donate.html:37
 msgid ""
 "You can send a monthly donation using a credit card. You can also get "
 "rewards for higher donations, for example a logo placement on our website."
@@ -337,16 +337,16 @@ msgstr ""
 "もできます。多くご寄付いただいた方については、感謝の気持ちとしてウェブサイト"
 "内にロゴを掲載したりするとこも考えております。"
 
-#: weblate_web/html/donate.html:50
+#: weblate_web/html/donate.html:47
 msgid "Liberapay allows you to send a weekly amount using a credit card."
 msgstr ""
 "Liberapay を使うと、クレジットカードを使って毎週送金することができます。"
 
-#: weblate_web/html/donate.html:53
+#: weblate_web/html/donate.html:50
 msgid "Fund features"
 msgstr "新機能に資金を出す"
 
-#: weblate_web/html/donate.html:61
+#: weblate_web/html/donate.html:58
 msgid ""
 "Bountysource allows you to fund individual features which are reported on "
 "our issue tracker."
@@ -354,18 +354,18 @@ msgstr ""
 "Bountysource を使うと、イシュートラッカーに報告された個別の機能に出資すること"
 "ができます。"
 
-#: weblate_web/html/donate.html:67
+#: weblate_web/html/donate.html:64
 msgid ""
 "If you like Weblate you can support its further development by donating."
 msgstr ""
 "もし Weblate をお気に入りいただけたのであれば、寄付によってさらなる開発を支援"
 "することができます。"
 
-#: weblate_web/html/donate.html:75
+#: weblate_web/html/donate.html:72
 msgid "Donate using PayPal"
 msgstr "PayPal を使って寄付する"
 
-#: weblate_web/html/donate.html:80
+#: weblate_web/html/donate.html:77
 msgid ""
 "PayPal allows you to send money from credit card, PayPal balance or a bank "
 "account."
@@ -373,15 +373,15 @@ msgstr ""
 "PayPal を使うと、クレジットカードか PayPal 残高、あるいは銀行口座から送金する"
 "ことができます。"
 
-#: weblate_web/html/donate.html:85
+#: weblate_web/html/donate.html:82
 msgid "Donate using Coinbase"
 msgstr "Coinbase で寄付する"
 
-#: weblate_web/html/donate.html:89
+#: weblate_web/html/donate.html:86
 msgid "Coinbase allows you to send Bitcoins."
 msgstr "Coinbase を使用すれば Bitcoin を送ることができます。"
 
-#: weblate_web/html/donate.html:93
+#: weblate_web/html/donate.html:90
 #, python-format
 msgid ""
 "You can also use <a href=\"https://www.bitcoin.org/\">Bitcoin is a peer-to-"
@@ -961,7 +961,9 @@ msgid ""
 msgid_plural ""
 "Your Weblate will be upgraded to the latest version at least every %(count)s "
 "months."
-msgstr[0] "お使いの Weblate は、少なくとも %(count)s ヶ月ごとに最新バージョンへのアップグレードが行なわれます。"
+msgstr[0] ""
+"お使いの Weblate は、少なくとも %(count)s ヶ月ごとに最新バージョンへのアップ"
+"グレードが行なわれます。"
 
 #: weblate_web/html/hosting.html:260 weblate_web/html/hosting.html:275
 #: weblate_web/html/hosting.html:290
@@ -979,7 +981,9 @@ msgstr "優先権のある電子メールサポートを受けることができ
 msgid "Up to %(amount)s hour of consulting or support per month are included."
 msgid_plural ""
 "Up to %(amount)s hours of consulting or support per month are included."
-msgstr[0] "1 ヶ月あたり最大 %(amount)s 時間までのコンサルティング、もしくはサポートが含まれています。"
+msgstr[0] ""
+"1 ヶ月あたり最大 %(amount)s 時間までのコンサルティング、もしくはサポートが含"
+"まれています。"
 
 #: weblate_web/html/hosting.html:267
 msgid "Basic support for self hosted Weblate"
@@ -991,7 +995,8 @@ msgstr "独自ホスティングされた Weblate に対する拡張サポート
 
 #: weblate_web/html/hosting.html:289
 msgid "Your Weblate will be upgraded to the latest version on every release."
-msgstr "お使いの Weblate は各リリースで最新バージョンにアップグレードされます。"
+msgstr ""
+"お使いの Weblate は各リリースで最新バージョンにアップグレードされます。"
 
 #: weblate_web/html/hosting.html:297
 msgid "Consulting services or custom development"
