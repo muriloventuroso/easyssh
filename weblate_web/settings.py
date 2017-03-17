@@ -81,6 +81,7 @@ LANGUAGES = (
     ('fi', u'Suomi'),
     ('fr', u'Français'),
     ('hu', u'Magyar'),
+    ('id', u'Indonesia'),
     ('it', u'Italiano'),
     ('ja', u'日本語'),
     ('ko', u'한국어'),
