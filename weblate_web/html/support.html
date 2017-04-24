@@ -22,7 +22,7 @@
 <h2>{% trans "Security issues" %}</h2>
 
 <p>
-{% blocktrans with '<a href="mailto:michal@cihar.com">Michal Čihař</a>' as contact and '<code>9C27B31342B7511D</code>' as key %}Should you find security issue within our code base, please report it to {{ contact }}. You can choose to encrypt it using his PGP key {{ key }}.{% endblocktrans %}
+{% blocktrans with '<a href="https://hackerone.com/weblate">HackerOne</a>' as contact and 'https://docs.weblate.org/en/latest/contributing.html#security' as docs %}Should you find security issue within our code base, please report it to {{ contact }}. More information on reporting security issues can be found in <a href="{{ docs }}">our documentation</a>.{% endblocktrans %}
 </p>
 
 <h2>{% trans "Mailing list" %}</h2>
