@@ -38,6 +38,7 @@ class SecurityMiddleware(object):
     - X-XSS-Protection
     """
 
+    # pylint: disable=unused-argument,no-self-use
     def process_response(self, request, response):
         # No CSP for debug mode (to allow djdt or error pages)
         if settings.DEBUG:
