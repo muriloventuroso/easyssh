@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2017-04-24 10:43+0200\n"
-"PO-Revision-Date: 2017-03-11 17:01+0000\n"
-"Last-Translator: Chang-Chia Tseng <pswo10680@gmail.com>\n"
-"Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
-"weblate/website/zh_Hant/>\n"
+"PO-Revision-Date: 2017-04-25 15:58+0000\n"
+"Last-Translator: 杜軍 <tuchun.jp@gmail.com>\n"
+"Language-Team: Chinese (Traditional) "
+"<https://hosted.weblate.org/projects/weblate/website/zh_Hant/>\n"
 "Language: zh_Hant\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.12\n"
+"X-Generator: Weblate 2.14-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -242,26 +242,16 @@ msgid "Code"
 msgstr "程式碼"
 
 #: weblate_web/html/contribute.html:23
-#, fuzzy, python-format
-#| msgid ""
-#| "Weblate is being developed on <a href=\"https://github.com/WeblateOrg/"
-#| "weblate\">Github</a>, you can fork it there or just:"
+#, python-format
 msgid ""
 "Weblate is being developed on <a href=\"%(url)s\">Github</a>, you can fork "
 "it there or just:"
-msgstr ""
-"Weblate 於 <a href=\"https://github.com/WeblateOrg/weblate\">Github</a> 上開"
-"發，您可以 fork 或直接："
+msgstr "Weblate 於 <a href=\"%(url)s\">Github</a> 上開發，您可以 fork 或直接："
 
 #: weblate_web/html/contribute.html:31
-#, fuzzy, python-format
-#| msgid ""
-#| "This website is stored on <a href=\"https://github.com/WeblateOrg/weblate-"
-#| "web\">Github</a> as well:"
+#, python-format
 msgid "This website is stored on <a href=\"%(url)s\">Github</a> as well:"
-msgstr ""
-"本網站也同時儲存於 <a href=\"https://github.com/WeblateOrg/weblate-web"
-"\">Github</a> 上："
+msgstr "本網站也同時儲存於 <a href=\"%(url)s\">Github</a> 上："
 
 #: weblate_web/html/contribute.html:41
 msgid ""
@@ -288,10 +278,8 @@ msgid "Donate using Liberapay"
 msgstr "透過 Liberapay 贊助"
 
 #: weblate_web/html/donate.html:18
-#, fuzzy
-#| msgid "Ask for hosting"
 msgid "Use our hosting"
-msgstr "申請託管服務"
+msgstr "使用我們提供的主持服務"
 
 #: weblate_web/html/donate.html:22
 #, python-format
@@ -299,6 +287,8 @@ msgid ""
 "Host your commercial translations on <a href=\"%(hosting_url)s\">Hosted "
 "Weblate</a> and you will be supporting Weblate development automatically."
 msgstr ""
+"您可在 <a href=\"%(hosting_url)s\">Hosted Weblate</a> 上進行您的商用翻譯，與此同時您也自動對 "
+"Weblate 的開發出了一份力。"
 
 #: weblate_web/html/donate.html:25
 msgid "Regular donations"
@@ -641,10 +631,11 @@ msgid "Ask for hosting"
 msgstr "申請託管服務"
 
 #: weblate_web/html/hosting.html:20
+#, fuzzy
 msgid ""
 "Hosted Weblate allows you to use Weblate without any effort and with premium "
 "support backed by it's core developers."
-msgstr ""
+msgstr "Hosted Weblate 可使您非常輕鬆地使用 Weblate，以及受到來自核心開發者的高品質支援。"
 
 #: weblate_web/html/hosting.html:24
 #, python-format
@@ -800,7 +791,7 @@ msgstr "%(price)s 歐元 / 每月"
 
 #: weblate_web/html/hosting.html:195
 msgid "See below for options"
-msgstr ""
+msgstr "關於選項請查看下方"
 
 #: weblate_web/html/hosting.html:198
 #, python-format
@@ -844,69 +835,72 @@ msgid ""
 msgstr "我們也接受電匯（IBAN 為佳）或是比特幣，詳情請聯繫我們。"
 
 #: weblate_web/html/hosting.html:228
-#, fuzzy
-#| msgid "Support free hosting"
 msgid "Support for self hosted environments"
-msgstr "贊助免費託管服務"
+msgstr "對於自行架設環境的支援"
 
 #: weblate_web/html/hosting.html:230
+#, fuzzy
 msgid ""
 "Worried of putting your translations into cloud? You can self host Weblate "
 "and we can still provide you premium support for your setup."
-msgstr ""
+msgstr "對於把翻譯資料放在雲端感到不安嗎?您可以自行架設 Weblate ，而我們還是可以繼續為您提供高品質的支援。"
 
 #: weblate_web/html/hosting.html:236
 msgid "Installation on your Linux server"
-msgstr ""
+msgstr "安裝於自己的 Linux 伺服器"
 
 #: weblate_web/html/hosting.html:237
-#, fuzzy, python-format
-#| msgid "%(price)s EUR / year"
+#, python-format
 msgid "%(price)s EUR"
-msgstr "%(price)s 歐元 / 每年"
+msgstr "%(price)s 歐元"
 
 #: weblate_web/html/hosting.html:242
 msgid "One time installation of Weblate"
-msgstr ""
+msgstr "Weblate 的一次安裝"
 
 #: weblate_web/html/hosting.html:243
 msgid "Installation using virtualenv, uwsgi and nginx"
-msgstr ""
+msgstr "使用 virtualenv, uwsgi, nginx 進行安裝"
 
 #: weblate_web/html/hosting.html:244
 msgid "Using PostgreSQL, MySQL or MariaDB as database backend"
 msgstr ""
 
 #: weblate_web/html/hosting.html:245
+#, fuzzy
 msgid "Requires root access or close cooperation of your admins"
-msgstr ""
+msgstr "需要 root 權限或是管理者的密切配合"
 
 #: weblate_web/html/hosting.html:246
+#, fuzzy
 msgid "Configuration customization"
-msgstr ""
+msgstr "配置的客製化"
 
 #: weblate_web/html/hosting.html:247
+#, fuzzy
 msgid "Does not include custom code development"
-msgstr ""
+msgstr "不包含客製的編碼開發"
 
 #: weblate_web/html/hosting.html:252
+#, fuzzy
 msgid "Minimal support for self hosted Weblate"
-msgstr ""
+msgstr "自行架設 Weblate 的最小限度支援"
 
 #: weblate_web/html/hosting.html:259 weblate_web/html/hosting.html:274
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "Your Weblate will be upgraded to the latest version at least every %(count)s "
 "month."
 msgid_plural ""
 "Your Weblate will be upgraded to the latest version at least every %(count)s "
 "months."
-msgstr[0] ""
+msgstr[0] "您的 Weblate 將會於至少每 %(count)s 個月內更新到最新版本"
 
 #: weblate_web/html/hosting.html:260 weblate_web/html/hosting.html:275
 #: weblate_web/html/hosting.html:290
+#, fuzzy
 msgid "We will fix issues that occur in your environment."
-msgstr ""
+msgstr "我們會替您處理發生在您環境下的問題"
 
 #: weblate_web/html/hosting.html:261 weblate_web/html/hosting.html:276
 #: weblate_web/html/hosting.html:291
@@ -917,49 +911,54 @@ msgstr "優先 Email 技術支援"
 
 #: weblate_web/html/hosting.html:262 weblate_web/html/hosting.html:277
 #: weblate_web/html/hosting.html:292
-#, python-format
+#, fuzzy, python-format
 msgid "Up to %(amount)s hour of consulting or support per month are included."
 msgid_plural ""
 "Up to %(amount)s hours of consulting or support per month are included."
-msgstr[0] ""
+msgstr[0] "每個月擁有 %(amount)s 小時的諮詢或是支援"
 
 #: weblate_web/html/hosting.html:267
+#, fuzzy
 msgid "Basic support for self hosted Weblate"
-msgstr ""
+msgstr "自行架設 Weblate 的基本支援"
 
 #: weblate_web/html/hosting.html:282
+#, fuzzy
 msgid "Extended support for self hosted Weblate"
-msgstr ""
+msgstr "自行架設 Weblate 的擴大支援"
 
 #: weblate_web/html/hosting.html:289
+#, fuzzy
 msgid "Your Weblate will be upgraded to the latest version on every release."
-msgstr ""
+msgstr "您的 Weblate 將會於每次新版本釋出時被更新到最新版本。"
 
 #: weblate_web/html/hosting.html:297
 msgid "Consulting services or custom development"
-msgstr ""
+msgstr "諮詢服務或客製化開發"
 
 #: weblate_web/html/hosting.html:298
-#, fuzzy, python-format
-#| msgid "%(price)s EUR / year"
+#, python-format
 msgid "%(price)s EUR / hour"
-msgstr "%(price)s 歐元 / 每年"
+msgstr "%(price)s 歐元 / 小時"
 
 #: weblate_web/html/hosting.html:303
+#, fuzzy
 msgid "Custom features development"
-msgstr ""
+msgstr "客製化機能之開發"
 
 #: weblate_web/html/hosting.html:304
 msgid "Integrating Weblate into your workflow"
-msgstr ""
+msgstr "於自己的工作流程中加入 Weblate"
 
 #: weblate_web/html/hosting.html:305
+#, fuzzy
 msgid "Suggestions on the internationalization or localization process"
-msgstr ""
+msgstr "提供國際化 (i18n) 或在地化 (l10n) 之建議"
 
 #: weblate_web/html/hosting.html:313
+#, fuzzy
 msgid "Ask us for details about self hosted Weblate"
-msgstr ""
+msgstr "詢問更多關於自行架設 Weblate 的詳情"
 
 #: weblate_web/html/hosting.html:315
 msgid "Hosting for free software"
