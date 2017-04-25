@@ -55,8 +55,7 @@ class PagesSitemap(Sitemap):
     def priority(self, obj):
         if self.language == 'en':
             return obj[1]
-        else:
-            return obj[1] * 3 / 4
+        return obj[1] * 3 / 4
 
     def changefreq(self, obj):
         # pylint: disable=R0201
