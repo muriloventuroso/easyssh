@@ -26,6 +26,7 @@ from django.conf import settings
 CSP_TEMPLATE = (
     "default-src 'self'; style-src {0}; img-src {1}; script-src {2}; "
     "connect-src api.rollbar.com; object-src 'none'; "
+    "font-src maxcdn.bootstrapcdn.com; "
     "child-src 'none'; frame-ancestors 'none';"
 )
 
