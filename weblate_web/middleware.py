@@ -37,6 +37,7 @@ class SecurityMiddleware(object):
     - Content-Security-Policy
     - X-XSS-Protection
     """
+
     def process_response(self, request, response):
         # No CSP for debug mode (to allow djdt or error pages)
         if settings.DEBUG:
@@ -68,4 +69,3 @@ class SecurityMiddleware(object):
         )
         response['X-XSS-Protection'] = '1; mode=block'
         return response
-

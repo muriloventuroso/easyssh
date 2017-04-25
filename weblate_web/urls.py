@@ -49,18 +49,18 @@ class PagesSitemap(Sitemap):
             ('/thanks/', 0.2, 'monthly'),
         )
 
-    def location(self, item):
-        return '/{0}{1}'.format(self.language, item[0])
+    def location(self, obj):
+        return '/{0}{1}'.format(self.language, obj[0])
 
-    def priority(self, item):
+    def priority(self, obj):
         if self.language == 'en':
-            return item[1]
+            return obj[1]
         else:
-            return item[1] * 3 / 4
+            return obj[1] * 3 / 4
 
-    def changefreq(self, item):
+    def changefreq(self, obj):
         # pylint: disable=R0201
-        return item[2]
+        return obj[2]
 
 
 # create each section in all languages
