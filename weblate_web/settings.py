@@ -180,6 +180,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.locale.LocaleMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'weblate_web.middleware.SecurityMiddleware',
     'rollbar.contrib.django.middleware.RollbarNotifierMiddleware',
 )
 
