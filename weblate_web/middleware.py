@@ -25,7 +25,7 @@ from django.conf import settings
 
 CSP_TEMPLATE = (
     "default-src 'self'; style-src {0}; img-src {1}; script-src {2}; "
-    "connect-src 'none'; object-src 'none'; "
+    "connect-src api.rollbar.com; object-src 'none'; "
     "child-src 'none'; frame-ancestors 'none';"
 )
 
@@ -52,6 +52,12 @@ class SecurityMiddleware(object):
         # Piwik
         script.append('stats.cihar.com')
         image.append('stats.cihar.com')
+
+        # Font Awesome + Bootstrap
+        script.append('maxcdn.bootstrapcdn.com')
+
+        # jQuery
+        script.append('code.jquery.com')
 
         response['Content-Security-Policy'] = CSP_TEMPLATE.format(
             ' '.join(style),
