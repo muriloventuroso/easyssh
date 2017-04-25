@@ -55,6 +55,7 @@ class SecurityMiddleware(object):
 
         # Font Awesome + Bootstrap
         script.append('maxcdn.bootstrapcdn.com')
+        style.append('maxcdn.bootstrapcdn.com')
 
         # jQuery
         script.append('code.jquery.com')
