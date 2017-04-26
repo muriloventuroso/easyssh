@@ -3,16 +3,17 @@ msgstr ""
 "Project-Id-Version: Swedish (Weblate)\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2017-04-24 10:43+0200\n"
-"PO-Revision-Date: 2016-10-28 12:14+0000\n"
-"Last-Translator: John Vandenberg <jayvdb@gmail.com>\n"
-"Language-Team: Swedish <https://hosted.weblate.org/projects/weblate/website/"
-"sv/>\n"
+"PO-Revision-Date: 2017-04-26 18:13+0000\n"
+"Last-Translator: Kristoffer Grundström <kristoffer.grundstrom1983@gmail.com>"
+"\n"
+"Language-Team: Swedish "
+"<https://hosted.weblate.org/projects/weblate/website/sv/>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.9-dev\n"
+"X-Generator: Weblate 2.14-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -128,10 +129,8 @@ msgstr ""
 "Alla dina översättare får ordentligt erkännande i versionshanteringssystemet."
 
 #: weblate_web/html/base-features.html:30 weblate_web/html/hosting.html:17
-#, fuzzy
-#| msgid "Hosting Weblate"
 msgid "Hosting plans"
-msgstr "Hosting för Weblate"
+msgstr "Värdskap för Weblate"
 
 #: weblate_web/html/base-features.html:31
 msgid "Hosting plans to use Weblate as a service starting at 19 EUR."
@@ -142,12 +141,10 @@ msgid "Ready for cloud"
 msgstr "Redo för molnet"
 
 #: weblate_web/html/base-features.html:39
-#, fuzzy
-#| msgid ""
-#| "Weblate comes with an appliance, which is ready to deploy in your cloud."
 msgid "Weblate comes with appliances, which are ready to deploy in your cloud."
 msgstr ""
-"Weblate levereras med en appliance som är redo att distribueras i ditt moln."
+"Weblate levereras med en tillämpning som är redo att distribueras i ditt "
+"moln."
 
 #: weblate_web/html/base-features.html:46
 msgid "Free software"
@@ -305,11 +302,14 @@ msgid "Use our hosting"
 msgstr "Ansöka om hosting"
 
 #: weblate_web/html/donate.html:22
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "Host your commercial translations on <a href=\"%(hosting_url)s\">Hosted "
 "Weblate</a> and you will be supporting Weblate development automatically."
 msgstr ""
+"Ansvara för dina kommersiella översättningar på <a href=\"%(hosting_url)s\">"
+"Hosted Weblate</a>, då kommer du automatiskt att hjälpa till med Weblate's "
+"utveckling."
 
 #: weblate_web/html/donate.html:25
 msgid "Regular donations"
@@ -412,12 +412,14 @@ msgid "You can download latest release here:"
 msgstr "Du kan hämta den senaste utgåvan här:"
 
 #: weblate_web/html/download.html:46 weblate_web/html/download.html:62
+#, fuzzy
 msgid "You can also install using packages for following Linux distributions:"
 msgstr ""
+"Du kan även installera genom att använda paket för följande distributioner:"
 
 #: weblate_web/html/download.html:52
 msgid "Weblate command line client"
-msgstr ""
+msgstr "Kommandoradsklient för Weblate"
 
 #: weblate_web/html/download.html:55
 #, python-format
