@@ -137,7 +137,7 @@ urlpatterns = i18n_patterns(
     ),
     # Broken links
     url(
-        r'^http:/.*$',
+        r'^https?:/.*$',
         RedirectView.as_view(url='/', permanent=True)
     ),
     url(
