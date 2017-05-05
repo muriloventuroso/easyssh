@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2017-04-24 10:43+0200\n"
-"PO-Revision-Date: 2017-04-25 15:58+0000\n"
+"PO-Revision-Date: 2017-05-05 07:57+0000\n"
 "Last-Translator: 杜軍 <tuchun.jp@gmail.com>\n"
 "Language-Team: Chinese (Traditional) "
 "<https://hosted.weblate.org/projects/weblate/website/zh_Hant/>\n"
@@ -1169,12 +1169,14 @@ msgid "Security issues"
 msgstr "安全性問題"
 
 #: weblate_web/html/support.html:25
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "Should you find security issue within our code base, please report it to "
 "%(contact)s. More information on reporting security issues can be found in "
 "<a href=\"%(docs)s\">our documentation</a>."
 msgstr ""
+"若您有在我們的原始碼內找到任何安全性相關的問題的話，請與 %(contact)s 回報。 更多有關於回報安全性相關問題的資訊可於 <a href=\""
+"%(docs)s\"> 文件 </a> 內找到。"
 
 #: weblate_web/html/support.html:28
 msgid "Mailing list"
@@ -1232,8 +1234,9 @@ msgid "Consulting"
 msgstr "洽詢"
 
 #: weblate_web/html/support.html:50
+#, fuzzy
 msgid "See our support offerings for self hosted Weblate instances"
-msgstr ""
+msgstr "請看我們對於自行架設所提供的支援"
 
 #: weblate_web/html/support.html:53
 #, python-format
@@ -1277,7 +1280,7 @@ msgstr "Sauce Labs 於真正的瀏覽器中執行我們的 Selenium 測試。"
 
 #: weblate_web/html/thanks.html:34
 msgid "Rollbar helps us to collect and fix errors happening on Hosted Weblate."
-msgstr ""
+msgstr "Rollbar 有助於我們收集並解決 Hosted Weblate 上的問題。"
 
 #: weblate_web/html/thanks.html:38
 msgid "Our translations are being done on Hosted Weblate."
