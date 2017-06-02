@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2017-05-31 17:14+0200\n"
-"PO-Revision-Date: 2017-05-31 16:45+0000\n"
+"PO-Revision-Date: 2017-06-02 12:44+0000\n"
 "Last-Translator: monolifed <monolifed@gmail.com>\n"
 "Language-Team: Turkish "
 "<https://hosted.weblate.org/projects/weblate/website/tr/>\n"
@@ -66,13 +66,13 @@ msgid ""
 "Customizable quality checks will help you in improving quality of "
 "translations."
 msgstr ""
-"Özelleştirilebilir kalite kontrolleri çevirilerin kalitesini iyileştirmede "
+"Özelleştirilebilir kalite denetimleri çevirilerin kalitesini iyileştirmede "
 "size yardımcı olacaktır."
 
 #: weblate_web/data.py:66 weblate_web/html/base-features.html:14
 #: weblate_web/html/hosting.html:123
 msgid "Quality checks"
-msgstr "Kalite kontrolleri"
+msgstr "Kalite denetimleri"
 
 #: weblate_web/data.py:71 weblate_web/html/features.html:128
 msgid "Weblate provides you various ways to promote your translation project."
@@ -126,8 +126,8 @@ msgstr "Nitelik"
 msgid ""
 "All your translators will be properly credited in the version control system."
 msgstr ""
-"Tüm çevirmenleriniz uygun bir şekilde sürüm denetim sisteminde itibar "
-"kazanacaklardır."
+"Tüm çevirmenlerinizin sürüm kontrol sisteminde uygun bir şekilde adı "
+"geçecektir."
 
 #: weblate_web/html/base-features.html:30 weblate_web/html/hosting.html:17
 msgid "Hosting plans"
@@ -423,8 +423,8 @@ msgid ""
 "You can control Weblate remotely using <a href=\"%(url)s\">wlc</a>, it can "
 "be installed by using Python PIP:"
 msgstr ""
-"Weblate'i <a href=\"%(url)s\">wlc</a> kullanarak uzaktan "
-"denetleyebilirsiniz, Python PIP kullanılarak yüklenebilir:"
+"Weblate'i <a href=\"%(url)s\">wlc</a> kullanarak uzaktan yönetebilirsiniz, "
+"Python PIP kullanarak yüklenebilir:"
 
 #: weblate_web/html/download.html:70
 msgid "Cloud or virtualization images"
@@ -472,7 +472,7 @@ msgstr "Belgeleri görüntüleyin"
 
 #: weblate_web/html/features.html:23
 msgid "Access control"
-msgstr "Erişim denetimi"
+msgstr "Erişim kontrolü"
 
 #: weblate_web/html/features.html:24
 msgid "Access rights can be fine tuned depending on your environment."
@@ -549,7 +549,7 @@ msgstr "Tümleşik"
 
 #: weblate_web/html/features.html:96
 msgid "Translations are managed within same version control system as code."
-msgstr "Çeviriler kod gibi aynı sürüm denetim sistemi içerisinde yönetilir."
+msgstr "Çeviriler aynı sürüm kontrol sisteminde kod gibi yönetilir."
 
 #: weblate_web/html/features.html:103
 msgid "Documentation"
@@ -596,15 +596,15 @@ msgstr ""
 
 #: weblate_web/html/features.html:144
 msgid "Version control"
-msgstr "Sürüm denetimi"
+msgstr "Sürüm kontrolü"
 
 #: weblate_web/html/features.html:145
 msgid ""
 "Weblate talks directly with your version control system, currently Git and "
 "Mercurial are supported."
 msgstr ""
-"Weblate, şu anda Git ve Mercurial sitelerinin desteklendiği, sürüm denetim "
-"sisteminiz ile doğrudan görüşür."
+"Weblate sürüm kontrol sisteminiz ile doğrudan konuşur; şu anda Git ve "
+"Mercurial destekleniyor."
 
 #: weblate_web/html/features.html:152
 msgid "Collaboration sites"
@@ -1043,12 +1043,12 @@ msgid ""
 "Source code has to be publicly available in a supported version control "
 "system."
 msgstr ""
-"Kaynak kodu, desteklenen sürüm denetim sisteminde açıkça kullanılabilir "
+"Kaynak kodu, desteklenen sürüm kontrol sisteminde açıkça kullanılabilir "
 "olmak zorundadır."
 
 #: weblate_web/html/hosting.html:326
 msgid "There is no guarantee for service availability or quality."
-msgstr "Hizmet kullanılabilirliği ya da kalitesi için garanti yoktur."
+msgstr "Hizmet kullanılabilirliği ya da kalitesi için güvence yoktur."
 
 #: weblate_web/html/hosting.html:329
 msgid "Asking for hosting"
@@ -1177,10 +1177,10 @@ msgid ""
 "translations across components, quality checks and automatic linking to "
 "source files."
 msgstr ""
-"Weblate sıkı sürüm denetimi tümleştirmesi olan, özgür, web tabanlı bir "
-"çeviri aracıdır. Özellikleri, kolay ve temiz bir kullanıcı arayüzü, "
-"bileşenler arasında çevirileri yayma, nitelik denetimleri ve kaynak "
-"dosyalara kendiliğinden bağlantılardır."
+"Weblate sıkı sürüm kontrol tümleştirmeli, özgür, web tabanlı bir çeviri "
+"aracıdır. Kolay ve temiz bir kullanıcı arayüzü, bileşenler arasında "
+"çevirileri yayma, kalite denetimleri ve kaynak dosyalara kendiliğinden "
+"bağlantılama özelliklerini sunar."
 
 #: weblate_web/html/index.html:29
 msgid "Weblate screenshot"
@@ -1415,7 +1415,7 @@ msgid ""
 "which provide an easy way to deploy Weblate in the cloud."
 msgstr ""
 "Weblate'i buluta yerleştirmenin en kolay yolunu sağlayan araçlar için <a "
-"href=\"%(download_url)s\">indirme sayfamızı</a> kontrol edin."
+"href=\"%(download_url)s\">indirme sayfamıza</a> bakın."
 
 #: weblate_web/templatetags/downloads.py:40
 #, python-format
