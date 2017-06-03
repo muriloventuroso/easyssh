@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2017-05-31 17:14+0200\n"
-"PO-Revision-Date: 2017-06-02 15:30+0000\n"
+"PO-Revision-Date: 2017-06-03 16:30+0000\n"
 "Last-Translator: openSUSE Lietuviškai <opensuse.lietuviu.kalba@gmail.com>\n"
 "Language-Team: Lithuanian "
 "<https://hosted.weblate.org/projects/weblate/website/lt/>\n"
@@ -22,17 +22,19 @@ msgstr ""
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
-msgstr ""
+msgstr "Jūsų vertimų apžvalga pagrindiniame puslapyje."
 
 #: weblate_web/data.py:34
 msgid "Own translations"
-msgstr ""
+msgstr "Jūsų vertimai"
 
 #: weblate_web/data.py:39 weblate_web/html/features.html:64
 msgid ""
 "Translator can always see important context information like comments or "
 "corresponding source code."
 msgstr ""
+"Vertėjai visuomet gali matyti svarbią kontekstinę informaciją, pvz., "
+"komentarus ir atitinkamą pradinį kodą."
 
 #: weblate_web/data.py:42 weblate_web/html/features.html:63
 msgid "Translation context"
@@ -42,6 +44,8 @@ msgstr "Vertimo kontekstas"
 msgid ""
 "Project page gives you detailed information about project translation status."
 msgstr ""
+"Projekto puslapyje pateikiama išsami informacija apie projekto vertimo "
+"būseną."
 
 #: weblate_web/data.py:50
 msgid "Project overview"
@@ -52,6 +56,8 @@ msgid ""
 "Translators can define their own glossary to stay consistent in frequently "
 "used terminology."
 msgstr ""
+"Vertėjai gali susidaryti savo aiškinamąjį žodyną, kuris padėtų išlaikyti "
+"vientisą terminologiją."
 
 #: weblate_web/data.py:58 weblate_web/html/features.html:71
 #: weblate_web/html/hosting.html:141
@@ -120,15 +126,15 @@ msgstr ""
 
 #: weblate_web/html/base-features.html:30 weblate_web/html/hosting.html:17
 msgid "Hosting plans"
-msgstr ""
+msgstr "Prieglobos planai"
 
 #: weblate_web/html/base-features.html:31
 msgid "Hosting plans to use Weblate as a service starting at 19 EUR."
-msgstr ""
+msgstr "Webplate prieglobos paslaugos planų kainos nuo 19 eurų."
 
 #: weblate_web/html/base-features.html:38
 msgid "Ready for cloud"
-msgstr ""
+msgstr "Paruošta dirbti debesyje"
 
 #: weblate_web/html/base-features.html:39
 msgid "Weblate comes with appliances, which are ready to deploy in your cloud."
@@ -136,11 +142,13 @@ msgstr ""
 
 #: weblate_web/html/base-features.html:46
 msgid "Free software"
-msgstr ""
+msgstr "Atviro kodo ir nemokama"
 
 #: weblate_web/html/base-features.html:47
 msgid "Weblate is free software, you can run your own instance of it."
 msgstr ""
+"Weblate yra atviro kodo ir nemokama programinė įranga, tad galite pasileisti "
+"nuosavą serverį."
 
 #: weblate_web/html/base.html:12
 msgctxt "Keyword"
@@ -177,11 +185,11 @@ msgstr "Parsisiųsti"
 
 #: weblate_web/html/base.html:83
 msgid "Hosting"
-msgstr ""
+msgstr "Priegloba"
 
 #: weblate_web/html/base.html:84
 msgid "Develop"
-msgstr ""
+msgstr "Kūrimas"
 
 #: weblate_web/html/base.html:85 weblate_web/html/donate.html:61
 msgid "Donate"
@@ -193,15 +201,15 @@ msgstr "Palaikymas"
 
 #: weblate_web/html/base.html:87
 msgid "Tour"
-msgstr ""
+msgstr "Gidas"
 
 #: weblate_web/html/base.html:88
 msgid "Thanks"
-msgstr ""
+msgstr "Dėkojame"
 
 #: weblate_web/html/base.html:103
 msgid "Help with translations!"
-msgstr ""
+msgstr "Padėkite išversti!"
 
 #: weblate_web/html/base.html:140
 #, python-format
@@ -209,6 +217,8 @@ msgid ""
 "Weblate is <a href=\"%(github_url)s\">free software</a> and welcomes <a href="
 "\"%(donate_url)s\">donations</a>."
 msgstr ""
+"Weblate yra <a href=\"%(github_url)s\">atviro kodo ir nemokama programinė "
+"įranga</a>, tad <a href=\"%(donate_url)s\">parama</a> laukiama."
 
 #: weblate_web/html/contribute.html:3 weblate_web/html/contribute.html:4
 msgid "Contribute to Weblate"
@@ -216,11 +226,11 @@ msgstr ""
 
 #: weblate_web/html/contribute.html:6
 msgid "Weblate is being developed by an open community."
-msgstr ""
+msgstr "Weblate sistemą kuria atvira bendruomenė."
 
 #: weblate_web/html/contribute.html:10 weblate_web/html/download.html:12
 msgid "View sources"
-msgstr ""
+msgstr "Peržiūrėti pradinį kodą"
 
 #: weblate_web/html/contribute.html:11 weblate_web/html/contribute.html:38
 msgid "Translate"
@@ -257,7 +267,7 @@ msgstr ""
 
 #: weblate_web/html/contribute.html:46
 msgid "Translation status"
-msgstr ""
+msgstr "Vertimų būsena"
 
 #: weblate_web/html/donate.html:3 weblate_web/html/donate.html:4
 msgid "Donate to Weblate"
@@ -265,11 +275,11 @@ msgstr "Paremti Weblate"
 
 #: weblate_web/html/donate.html:6
 msgid "Weblate is free, but welcomes donations."
-msgstr ""
+msgstr "Weblate yra nemokama, tačiau parama laukiama."
 
 #: weblate_web/html/donate.html:12 weblate_web/html/donate.html:43
 msgid "Donate using Liberapay"
-msgstr ""
+msgstr "Paremti per Liberapay"
 
 #: weblate_web/html/donate.html:18
 msgid "Use our hosting"
@@ -324,7 +334,7 @@ msgstr ""
 
 #: weblate_web/html/donate.html:72
 msgid "Donate using PayPal"
-msgstr ""
+msgstr "Paremti per PayPal"
 
 #: weblate_web/html/donate.html:77
 msgid ""
@@ -334,7 +344,7 @@ msgstr ""
 
 #: weblate_web/html/donate.html:82
 msgid "Donate using Coinbase"
-msgstr ""
+msgstr "Paremti per Coinbase"
 
 #: weblate_web/html/donate.html:86
 msgid "Coinbase allows you to send Bitcoins."
@@ -349,7 +359,7 @@ msgstr ""
 
 #: weblate_web/html/download.html:4 weblate_web/html/download.html:5
 msgid "Download Weblate"
-msgstr ""
+msgstr "Parsisiųsti Weblate"
 
 #: weblate_web/html/download.html:7
 msgid "Weblate comes with complete source code."
@@ -363,7 +373,7 @@ msgstr ""
 
 #: weblate_web/html/download.html:37
 msgid "You can download latest release here:"
-msgstr ""
+msgstr "Naujausią versiją rasite:"
 
 #: weblate_web/html/download.html:46 weblate_web/html/download.html:62
 msgid "You can also install using packages for following Linux distributions:"
@@ -371,7 +381,7 @@ msgstr ""
 
 #: weblate_web/html/download.html:52
 msgid "Weblate command line client"
-msgstr ""
+msgstr "Weblate komandinės eilutės klientas"
 
 #: weblate_web/html/download.html:55
 #, python-format
@@ -382,7 +392,7 @@ msgstr ""
 
 #: weblate_web/html/download.html:70
 msgid "Cloud or virtualization images"
-msgstr ""
+msgstr "Atvaizdžiai debesims arba virtualizacijai"
 
 #: weblate_web/html/download.html:72
 msgid ""
@@ -410,7 +420,7 @@ msgstr ""
 
 #: weblate_web/html/features.html:3 weblate_web/html/features.html:4
 msgid "Weblate features"
-msgstr ""
+msgstr "Weblate galimybės"
 
 #: weblate_web/html/features.html:6
 msgid "Weblate is a feature rich computer aided translation tool."
@@ -748,7 +758,7 @@ msgstr ""
 
 #: weblate_web/html/hosting.html:181
 msgid "Contact us"
-msgstr ""
+msgstr "Susisiekite su mumis"
 
 #: weblate_web/html/hosting.html:184 weblate_web/html/hosting.html:187
 #: weblate_web/html/hosting.html:190 weblate_web/html/hosting.html:193
@@ -756,7 +766,7 @@ msgstr ""
 #: weblate_web/html/hosting.html:283
 #, python-format
 msgid "%(price)s EUR / month"
-msgstr ""
+msgstr "%(price)s EUR / mėn."
 
 #: weblate_web/html/hosting.html:195
 msgid "See below for options"
@@ -778,7 +788,7 @@ msgstr ""
 #: weblate_web/html/hosting.html:284
 #, python-format
 msgid "%(price)s EUR / year"
-msgstr ""
+msgstr "%(price)s EUR / m."
 
 #: weblate_web/html/hosting.html:217
 msgid ""
@@ -816,7 +826,7 @@ msgstr ""
 #: weblate_web/html/hosting.html:237
 #, python-format
 msgid "%(price)s EUR"
-msgstr ""
+msgstr "%(price)s EUR"
 
 #: weblate_web/html/hosting.html:242
 msgid "One time installation of Weblate"
@@ -897,7 +907,7 @@ msgstr ""
 #: weblate_web/html/hosting.html:298
 #, python-format
 msgid "%(price)s EUR / hour"
-msgstr ""
+msgstr "%(price)s EUR / val."
 
 #: weblate_web/html/hosting.html:303
 msgid "Custom features development"
@@ -964,11 +974,11 @@ msgstr ""
 
 #: weblate_web/html/hosting.html:337
 msgid "Project website."
-msgstr ""
+msgstr "Projekto svetainė."
 
 #: weblate_web/html/hosting.html:342
 msgid "Translation workflow"
-msgstr ""
+msgstr "Vertimo eiga"
 
 #: weblate_web/html/hosting.html:345
 msgid ""
@@ -1041,7 +1051,7 @@ msgstr ""
 
 #: weblate_web/html/index.html:16
 msgid "Downloads"
-msgstr ""
+msgstr "Siuntiniai"
 
 #: weblate_web/html/index.html:25
 msgid ""
@@ -1053,11 +1063,11 @@ msgstr ""
 
 #: weblate_web/html/index.html:29
 msgid "Weblate screenshot"
-msgstr ""
+msgstr "Weblate ekranvaizdis"
 
 #: weblate_web/html/index.html:38
 msgid "See more features…"
-msgstr ""
+msgstr "Kitos savybės…"
 
 #: weblate_web/html/index.html:47
 msgid "See who is using Weblate and join them!"
@@ -1065,7 +1075,7 @@ msgstr ""
 
 #: weblate_web/html/support.html:3 weblate_web/html/support.html:4
 msgid "Weblate support"
-msgstr ""
+msgstr "Weblate palaikymas"
 
 #: weblate_web/html/support.html:6
 msgid "Weblate is a free software with community support."
@@ -1073,11 +1083,11 @@ msgstr ""
 
 #: weblate_web/html/support.html:11
 msgid "Report issue"
-msgstr ""
+msgstr "Pranešti apie nesklandumą"
 
 #: weblate_web/html/support.html:16
 msgid "Bugs or feature requests"
-msgstr ""
+msgstr "Klaidos ir pageidavimai"
 
 #: weblate_web/html/support.html:19
 msgid ""
@@ -1088,7 +1098,7 @@ msgstr ""
 
 #: weblate_web/html/support.html:22
 msgid "Security issues"
-msgstr ""
+msgstr "Saugumo spragos"
 
 #: weblate_web/html/support.html:25
 #, python-format
@@ -1100,7 +1110,7 @@ msgstr ""
 
 #: weblate_web/html/support.html:28
 msgid "Mailing list"
-msgstr ""
+msgstr "Elektroninio pašto grupė"
 
 #: weblate_web/html/support.html:31
 msgid ""
@@ -1130,7 +1140,7 @@ msgstr ""
 
 #: weblate_web/html/support.html:42
 msgid "IRC"
-msgstr ""
+msgstr "Tikralaikis pokalbis"
 
 #: weblate_web/html/support.html:45
 msgid ""
@@ -1165,11 +1175,11 @@ msgstr ""
 
 #: weblate_web/html/thanks.html:12
 msgid "Technology"
-msgstr ""
+msgstr "Technologija"
 
 #: weblate_web/html/thanks.html:14
 msgid "The development of Weblate is based on the following technologies:"
-msgstr ""
+msgstr "Weblate kūrimas remiasi šiomis technologijomis:"
 
 #: weblate_web/html/thanks.html:18
 msgid "GitHub provides hosting for our source code and issue tracker."
@@ -1197,7 +1207,7 @@ msgstr ""
 
 #: weblate_web/html/thanks.html:42
 msgid "Supporters"
-msgstr ""
+msgstr "Rėmėjai"
 
 #: weblate_web/html/thanks.html:44
 msgid ""
@@ -1260,17 +1270,17 @@ msgstr[2] ""
 #: weblate_web/templatetags/downloads.py:45
 #, python-format
 msgid "%.1f KiB"
-msgstr ""
+msgstr "%.1f KiB"
 
 #: weblate_web/templatetags/downloads.py:47
 #, python-format
 msgid "%.1f MiB"
-msgstr ""
+msgstr "%.1f MiB"
 
 #: weblate_web/templatetags/downloads.py:48
 #, python-format
 msgid "%.1f GiB"
-msgstr ""
+msgstr "%.1f GiB"
 
 #: weblate_web/templatetags/downloads.py:55
 msgid "Sources tarball, bzip2 compressed"
