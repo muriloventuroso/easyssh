@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2017-05-31 17:14+0200\n"
-"PO-Revision-Date: 2017-04-24 09:54+0000\n"
+"PO-Revision-Date: 2017-06-04 13:57+0000\n"
 "Last-Translator: jan madsen <jsm@janz.dk>\n"
-"Language-Team: Danish <https://hosted.weblate.org/projects/weblate/website/"
-"da/>\n"
+"Language-Team: Danish "
+"<https://hosted.weblate.org/projects/weblate/website/da/>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.14-dev\n"
+"X-Generator: Weblate 2.15-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -295,19 +295,17 @@ msgid "Donate using Liberapay"
 msgstr "Donere ved hjælp af Liberapay"
 
 #: weblate_web/html/donate.html:18
-#, fuzzy
-#| msgid "Ask for hosting"
 msgid "Use our hosting"
 msgstr "Brug vores hosting"
 
 #: weblate_web/html/donate.html:22
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "Host your commercial translations on <a href=\"%(hosting_url)s\">Hosted "
 "Weblate</a> and you will be supporting Weblate development automatically."
 msgstr ""
-"Host dine kommercielle oversættelser på <a href=\"%(hosting_url)s\">Hosted "
-"Weblate</a> og du vil automatisk støtte Weblate udvikling."
+"Host kommercielle oversættelser på <a href=\"%(hosting_url)s\">Hosted "
+"Weblate</a> og støt automatisk Weblate udvikling."
 
 #: weblate_web/html/donate.html:25
 msgid "Regular donations"
@@ -624,16 +622,12 @@ msgid "Responsive UI"
 msgstr "Responsivt UI"
 
 #: weblate_web/html/features.html:161
-#, fuzzy
-#| msgid ""
-#| "Weblate has responsible UI which will work nicely on your desktop, tablet "
-#| "or phone."
 msgid ""
 "Weblate has responsive UI which will work nicely on your desktop, tablet or "
 "phone."
 msgstr ""
-"Weblate har responsivt UI, der vil fungere fint på din stationære, tablet "
-"eller telefon."
+"Weblate har responsivt UI, der vil fungere fint på en pc, tablet eller "
+"telefon."
 
 #: weblate_web/html/hosting-ordered.html:3
 #: weblate_web/html/hosting-ordered.html:4 weblate_web/html/hosting.html:3
@@ -688,13 +682,12 @@ msgid "Ask for hosting"
 msgstr "Spørg om hosting"
 
 #: weblate_web/html/hosting.html:20
-#, fuzzy
 msgid ""
 "Hosted Weblate allows you to use Weblate without any effort and with premium "
 "support backed by it's core developers."
 msgstr ""
-"Hosted Weblate giver dig mulighed for at bruge Weblate uden nogen indsats, "
-"og med premium support-bakket op af det centrale udviklere."
+"Hosted Weblate giver mulighed for at bruge Weblate uden stor indsats, og med "
+"premium support-bakket op af de centrale udviklere."
 
 #: weblate_web/html/hosting.html:24
 #, python-format
@@ -850,7 +843,6 @@ msgid "%(price)s EUR / month"
 msgstr "%(price)s EUR / måned"
 
 #: weblate_web/html/hosting.html:195
-#, fuzzy
 msgid "See below for options"
 msgstr "Se nedenfor for indstillinger"
 
@@ -903,13 +895,12 @@ msgid "Support for self hosted environments"
 msgstr "Support til egen hostede miljøer"
 
 #: weblate_web/html/hosting.html:230
-#, fuzzy
 msgid ""
 "Worried of putting your translations into cloud? You can self host Weblate "
 "and we can still provide you premium support for your setup."
 msgstr ""
-"Bekymret for at sætte dine oversættelser i skyen? Du kan selv hoste Weblate "
-"og vi kan stadig give dig førsteklasses support til din opsætning."
+"Bekymret for at have oversættelser i skyen? Host selv Weblate og få "
+"stadigvæk førsteklasses support til opsætning."
 
 #: weblate_web/html/hosting.html:236
 msgid "Installation on your Linux server"
@@ -921,9 +912,8 @@ msgid "%(price)s EUR"
 msgstr "%(price)s EUR"
 
 #: weblate_web/html/hosting.html:242
-#, fuzzy
 msgid "One time installation of Weblate"
-msgstr "Én gang installation af Weblate"
+msgstr "Engangs installation af Weblate"
 
 #: weblate_web/html/hosting.html:243
 msgid "Installation using virtualenv, uwsgi and nginx"
@@ -938,9 +928,8 @@ msgid "Requires root access or close cooperation of your admins"
 msgstr "Kræver root-adgang, eller tæt samarbejde med administratorer"
 
 #: weblate_web/html/hosting.html:246
-#, fuzzy
 msgid "Configuration customization"
-msgstr "Konfiguration tilpasning"
+msgstr "Tilpasning af konfiguration"
 
 #: weblate_web/html/hosting.html:247
 msgid "Does not include custom code development"
@@ -951,7 +940,7 @@ msgid "Minimal support for self hosted Weblate"
 msgstr "Minimal støtte til egen hosted Weblate"
 
 #: weblate_web/html/hosting.html:259 weblate_web/html/hosting.html:274
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "Your Weblate will be upgraded to the latest version at least every %(count)s "
 "month."
@@ -967,9 +956,8 @@ msgstr[1] ""
 
 #: weblate_web/html/hosting.html:260 weblate_web/html/hosting.html:275
 #: weblate_web/html/hosting.html:290
-#, fuzzy
 msgid "We will fix issues that occur in your environment."
-msgstr "Rettelse af problemer, der opstår i dit miljø."
+msgstr "Rettelse af problemer som opstår i miljøet."
 
 #: weblate_web/html/hosting.html:261 weblate_web/html/hosting.html:276
 #: weblate_web/html/hosting.html:291
@@ -1017,9 +1005,8 @@ msgid "Integrating Weblate into your workflow"
 msgstr "Integrer Weblate i arbejdsgang"
 
 #: weblate_web/html/hosting.html:305
-#, fuzzy
 msgid "Suggestions on the internationalization or localization process"
-msgstr "Forslag om internationalisering eller lokaliseringsprocessen"
+msgstr "Forslag til internationalisering eller lokaliseringsprocessen"
 
 #: weblate_web/html/hosting.html:313
 msgid "Ask us for details about self hosted Weblate"
@@ -1158,15 +1145,15 @@ msgstr ""
 "af Weblate til skyen."
 
 #: weblate_web/html/hosting.html:372
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "In case you need help with your self hosted solution, we're ready to help as "
 "well with consulting services tailored for your needs. Please contact <a "
 "href=\"%(contact_url)s\">Michal Čihař</a> for more details."
 msgstr ""
-"Hvis du har brug for hjælp med din egen hosted løsning, er vi klar til at "
-"hjælpe med rådgivning skræddersyet til dine behov. Kontakt <a href="
-"\"%(contact_url)s\"> Michal Čihař</a> for flere detaljer."
+"Brug for hjælp med egen hosted løsning, få rådgivning skræddersyet efter "
+"behov. Kontakt <a href=\"%(contact_url)s\"> Michal Čihař</a> for flere "
+"detaljer."
 
 #: weblate_web/html/index.html:3
 msgid "Weblate - web-based translation"
@@ -1312,9 +1299,8 @@ msgid "Consulting"
 msgstr "Rådgivning"
 
 #: weblate_web/html/support.html:50
-#, fuzzy
 msgid "See our support offerings for self hosted Weblate instances"
-msgstr "Se supporttilbud for egen hosted Weblate forekomster"
+msgstr "Se supporttilbud for egen hosted Weblate installationer"
 
 #: weblate_web/html/support.html:53
 #, python-format
