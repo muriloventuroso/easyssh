@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2017-05-31 17:14+0200\n"
-"PO-Revision-Date: 2017-05-31 11:30+0000\n"
+"PO-Revision-Date: 2017-06-11 21:35+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
-"Language-Team: Hebrew <https://hosted.weblate.org/projects/weblate/website/"
-"he/>\n"
+"Language-Team: Hebrew "
+"<https://hosted.weblate.org/projects/weblate/website/he/>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.14.1\n"
+"X-Generator: Weblate 2.15-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -98,8 +98,8 @@ msgid ""
 "The server had serious problems while serving your request. We've just sent "
 "our trained monkeys to fix the issue."
 msgstr ""
-"השרת חווה תקלות רציניות בעת עיבוד בקשתך. שלחנו צוות קופים מאולפים כדי תקן את "
-"הבעיה."
+"השרת חווה תקלות רציניות בעת עיבוד בקשתך. שלחנו צוות קופים מאולפים כדי לתקן "
+"את הבעיה."
 
 #: weblate_web/html/base-features.html:6 weblate_web/html/hosting.html:42
 msgid "Continuous translation"
@@ -150,7 +150,7 @@ msgstr "תרגום"
 
 #: weblate_web/html/base.html:66
 msgid "Toggle navigation"
-msgstr "החלף ניווט"
+msgstr "החלפת ניווט"
 
 #: weblate_web/html/base.html:72
 msgid "Weblate logo"
@@ -162,7 +162,7 @@ msgstr "בלוג"
 
 #: weblate_web/html/base.html:79
 msgid "Try"
-msgstr "נסה"
+msgstr "התנסות"
 
 #: weblate_web/html/base.html:80
 msgid "Features"
@@ -170,7 +170,7 @@ msgstr "תכונות"
 
 #: weblate_web/html/base.html:81
 msgid "Docs"
-msgstr "דוקס"
+msgstr "מסמכים"
 
 #: weblate_web/html/base.html:82 weblate_web/html/download.html:34
 msgid "Download"
@@ -186,7 +186,7 @@ msgstr "פיתוח"
 
 #: weblate_web/html/base.html:85 weblate_web/html/donate.html:61
 msgid "Donate"
-msgstr "תרום"
+msgstr "תרומה"
 
 #: weblate_web/html/base.html:86
 msgid "Support"
@@ -202,7 +202,7 @@ msgstr "תודה"
 
 #: weblate_web/html/base.html:103
 msgid "Help with translations!"
-msgstr "סייעו בעזרת תרגומים!"
+msgstr "סיוע לתרגומים!"
 
 #: weblate_web/html/base.html:140
 #, python-format
@@ -270,7 +270,7 @@ msgstr "מצב תרגום"
 
 #: weblate_web/html/donate.html:3 weblate_web/html/donate.html:4
 msgid "Donate to Weblate"
-msgstr "תרמו למיזם Weblate"
+msgstr "תרומה למיזם Weblate"
 
 #: weblate_web/html/donate.html:6
 msgid "Weblate is free, but welcomes donations."
@@ -303,8 +303,8 @@ msgid ""
 "fund free hosting for free software. You don't have to spend big money, "
 "every penny counts."
 msgstr ""
-"תרומות רגילות מאפשרות תחזוק ופיתוח של Weblate ועוזרות לממן אחסון חינמי עבור "
-"תוכנות חינמיות. אין צורך לבזבז המון כסף, כל אגורה נחשבת."
+"תרומות רגילות מאפשרות תחזוקה ופיתוח של Weblate ועוזרות לממן אחסון חינמי עבור "
+"תכניות חינמיות. אין צורך לבזבז המון כסף, כל אגורה חשובה."
 
 #: weblate_web/html/donate.html:33 weblate_web/html/donate.html:54
 msgid "Fund on Bountysource"
@@ -315,12 +315,12 @@ msgid ""
 "You can send a monthly donation using a credit card. You can also get "
 "rewards for higher donations, for example a logo placement on our website."
 msgstr ""
-"באפשרותך לשלוח תרומה חודשית בעזרת כרטיס אשראי. כמו כן, הינך יכול לקבל תגמול "
-"עבור תרומות גדולות יותר, לדוגמה, השמת לוגו באתרנו."
+"ניתן לשלוח תרומה חודשית בעזרת כרטיס אשראי. כמו כן, אפשר לקבל תגמול עבור "
+"תרומות גדולות יותר, למשל, הצבת לוגו באתרנו."
 
 #: weblate_web/html/donate.html:47
 msgid "Liberapay allows you to send a weekly amount using a credit card."
-msgstr "Liberapay מאפשרת לך לשלוח סכום שבועי בעזרת כרטיס אשראי."
+msgstr "עם Liberapay ניתן לשלוח סכום שבועי בעזרת כרטיס אשראי."
 
 #: weblate_web/html/donate.html:50
 msgid "Fund features"
@@ -330,13 +330,15 @@ msgstr "מימון תכונות"
 msgid ""
 "Bountysource allows you to fund individual features which are reported on "
 "our issue tracker."
-msgstr "Bountysource מאפשר לך לממן תכונות בודדות המדווחות בגיליון המעקב שלנו."
+msgstr ""
+"עם Bountysource ניתן לממן תכונות בודדות המדווחות במערכת מעקב הנושאים שלנו."
 
 #: weblate_web/html/donate.html:64
 msgid ""
 "If you like Weblate you can support its further development by donating."
 msgstr ""
-"אם את/ה אוהב/ת את Weblate, את/ה יכול/ה לתמוך בפיתוח העתידי שלו על ידי תרומה."
+"אם מערכת Weblate נושאת חן בעיניך, באפשרותך לתמוך בפיתוח העתידי שלה על ידי "
+"תרומה."
 
 #: weblate_web/html/donate.html:72
 msgid "Donate using PayPal"
@@ -346,7 +348,7 @@ msgstr "לתרום באמצעות Paypal"
 msgid ""
 "PayPal allows you to send money from credit card, PayPal balance or a bank "
 "account."
-msgstr "PayPal מאפשר לך לשלוח כסף מכרטיס אשראי, יתרת PayPal או חשבון בנק."
+msgstr "עם PayPal ניתן לשלוח כסף מכרטיס אשראי, מיתרת PayPal או מחשבון בנק."
 
 #: weblate_web/html/donate.html:82
 msgid "Donate using Coinbase"
@@ -354,7 +356,7 @@ msgstr "לתרום באמצעות Coinbase"
 
 #: weblate_web/html/donate.html:86
 msgid "Coinbase allows you to send Bitcoins."
-msgstr "Coinbase מאפשר לך לשלוח Bitcoins."
+msgstr "עם Coinbase ניתן לשלוח Bitcoins."
 
 #: weblate_web/html/donate.html:90
 #, python-format
@@ -588,10 +590,6 @@ msgid "Responsive UI"
 msgstr "מנשק משתמש מסתגל"
 
 #: weblate_web/html/features.html:161
-#, fuzzy
-#| msgid ""
-#| "Weblate has responsible UI which will work nicely on your desktop, tablet "
-#| "or phone."
 msgid ""
 "Weblate has responsive UI which will work nicely on your desktop, tablet or "
 "phone."
@@ -656,6 +654,8 @@ msgid ""
 "Hosted Weblate allows you to use Weblate without any effort and with premium "
 "support backed by it's core developers."
 msgstr ""
+"Weblate מתארח מאפשר לך להשתמש ב־Weblate מבלי כל מאמץ ועם מנגנון תמיכה נרחב "
+"על ידי מפתחי הליבה של המערכת."
 
 #: weblate_web/html/hosting.html:24
 #, python-format
@@ -665,6 +665,9 @@ msgid ""
 "look for hosting of bigger projects, don't hesitate to <a href=\"%(contact)s"
 "\">get in touch with us</a>."
 msgstr ""
+"אנו יכולים לארח תרגומים למיזמי תכנה המסחריים או החופשיים שלך. ניתן לצפות "
+"בתקציר של תכניות האירוח להלן. אם יש לך שאלות או שיש לך צורך באירוח של מיזמים "
+"גדולים יותר, נא <a href=\"%(contact)s\">ליצור אתנו קשר</a>."
 
 #: weblate_web/html/hosting.html:32
 msgctxt "Hosting plan"
@@ -729,7 +732,7 @@ msgstr "שפות היעד"
 
 #: weblate_web/html/hosting.html:69
 msgid "VCS repositories"
-msgstr "מאגרי VCS"
+msgstr "מאגרי ניהול גרסאות קוד"
 
 #: weblate_web/html/hosting.html:78
 msgid "Translation projects"
@@ -979,10 +982,14 @@ msgid ""
 "org</a>. This will allow you to use Weblate without installing and "
 "maintaining it."
 msgstr ""
+"אם מעניין אותך להשתמש ב־Weblate לצורך מיזם התכנה החופשית שלך, ניתן לבקש "
+"מאתנו לכלול את המיזם שלך תחת <a href=\"https://hosted.weblate.org/\""
+">hosted.weblate.org</a>. פעולה זו תאפשר לך להשתמש ב־Weblate ללא התקנה "
+"ותחזוקה."
 
 #: weblate_web/html/hosting.html:321
 msgid "Conditions for free hosting"
-msgstr "תנאים לצורך ארוח חינמי"
+msgstr "תנאים לצורך אירוח חינמי"
 
 #: weblate_web/html/hosting.html:324
 msgid ""
@@ -1012,6 +1019,8 @@ msgid ""
 "Please use <a href=\"%(url)s\">contact form on Hosted Weblate</a> to request "
 "hosting. You will need following information:"
 msgstr ""
+"נא להשתמש ב<a href=\"%(url)s\">טופס יצירת הקשר ב־Weblate המתארח</a> כדי לבקש "
+"אירוח. יהיה עליך לספק את הפרטים הבאים:"
 
 #: weblate_web/html/hosting.html:336
 msgid "Information about your project."
@@ -1032,6 +1041,10 @@ msgid ""
 "<code>https://hosted.weblate.org/git/weblate/master/</code>. You can figure "
 "out the URL on the component information tab."
 msgstr ""
+"כל המאגרים המתורגמים זמינים באמצעות פרוטוקול https עם שמות דומים כמו באתר - "
+"התרגום weblate/master מפורסם בתור "
+"<code>https://hosted.weblate.org/git/weblate/master/</code>. ניתן לצפות "
+"בכתובת בלשונית פרטי הרכיב."
 
 #: weblate_web/html/hosting.html:349
 #, python-format
@@ -1040,6 +1053,9 @@ msgid ""
 "see our documentation for setup on <a href=\"%(github)s\">GitHub</a>, <a "
 "href=\"%(bitbucket)s\">Bitbucket</a> or <a href=\"%(gitlab)s\">GitLab</a>."
 msgstr ""
+"ל־Weblate יש אפשרות לקבל שינויים משירותי אירוח קוד עיקריים, ניתן לעיין "
+"בתיעוד שלנו להתקנת <a href=\"%(github)s\">GitHub</a>, ‏<a href=\"%(bitbucket)"
+"s\">Bitbucket</a> או <a href=\"%(gitlab)s\">GitLab</a>."
 
 #: weblate_web/html/hosting.html:353
 #, python-format
@@ -1048,6 +1064,9 @@ msgid ""
 "user to collaborators and let us know you want to use this option. See <a "
 "href=\"%(docs)s\">documentation</a> for more detailed instructions."
 msgstr ""
+"אם ברצונך שהשינויים גם יידחפו בחזרה על ידי Weblate, יש להוסיף משתמש דחיפה של "
+"Weblate למשתתפים וליידע אותנו שברצונך להשתמש באופשרות הזאת. יש לעיין ב<a "
+"href=\"%(docs)s\">תיעוד</a> לקבלת הנחיות מפורטות יותר."
 
 #: weblate_web/html/hosting.html:356
 msgid "Support free hosting"
@@ -1181,6 +1200,11 @@ msgid ""
 "weblate\">subscribe</a> or <a href=\"https://lists.cihar.com/pipermail/"
 "weblate/\">browse archives</a>."
 msgstr ""
+"ישנה רשימת דיוור <a href=\"mailto:weblate@lists.cihar.com\""
+">weblate@lists.cihar.com</a> בה ניתן לדון במגוון נושאים הקשורים ב־Weblate. "
+"ניתן <a href=\"https://lists.cihar.com/cgi-bin/mailman/listinfo/weblate\""
+">להירשם</a> או <a href=\"https://lists.cihar.com/pipermail/weblate/\">לעיין "
+"בארכיונים</a>."
 
 #: weblate_web/html/support.html:35
 msgid ""
@@ -1290,7 +1314,7 @@ msgstr ""
 
 #: weblate_web/html/tour.html:3 weblate_web/html/tour.html:4
 msgid "Weblate tour"
-msgstr "Weblate סיור"
+msgstr "סיור ב־Weblate"
 
 #: weblate_web/html/tour.html:6
 msgid "Weblate has useful features for every crowdsourced translation."
@@ -1298,7 +1322,7 @@ msgstr "ל־Weblate יש תכונות שימושיות לכל מיזם בתרג�
 
 #: weblate_web/html/try.html:3 weblate_web/html/try.html:4
 msgid "Try Weblate"
-msgstr "Weblate נסה את"
+msgstr "התנסות ב־Weblate"
 
 #: weblate_web/html/try.html:6
 msgid "Weblate is easy to deploy as an appliance."
@@ -1352,11 +1376,11 @@ msgstr ""
 
 #: weblate_web/templatetags/downloads.py:55
 msgid "Sources tarball, bzip2 compressed"
-msgstr ""
+msgstr "קובץ tar של קוד המקור, דחוס עם bzip2"
 
 #: weblate_web/templatetags/downloads.py:57
 msgid "Sources tarball, gzip compressed"
-msgstr ""
+msgstr "קובץ tar של קוד המקור, דחוס עם gzip"
 
 #: weblate_web/templatetags/downloads.py:59
 msgid "Sources tarball, xz compressed"
