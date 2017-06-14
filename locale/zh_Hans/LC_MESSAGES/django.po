@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2017-05-31 17:14+0200\n"
-"PO-Revision-Date: 2017-06-12 05:30+0000\n"
+"PO-Revision-Date: 2017-06-14 02:42+0000\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (Simplified) "
 "<https://hosted.weblate.org/projects/weblate/website/zh_Hans/>\n"
@@ -1008,20 +1008,14 @@ msgid "Translation workflow"
 msgstr "翻译工作流程"
 
 #: weblate_web/html/hosting.html:345
-#, fuzzy
-#| msgid ""
-#| "All translated repositories are available at <code>git.weblate.org</code> "
-#| "with similar naming as on website - hello/master translation would be "
-#| "published as <code>git://git.weblate.org/hello-master.git</code>."
 msgid ""
 "All translated repositories are available using https protocol with similar "
 "naming as on website - weblate/master translation is published as "
 "<code>https://hosted.weblate.org/git/weblate/master/</code>. You can figure "
 "out the URL on the component information tab."
 msgstr ""
-"所有翻译代码库均使用 https 协议以与网站上基本相似的名称命名 - weblate/master "
-"的翻译将被发布在 <code>https://hosted.weblate.org/git/weblate/master/</"
-"code>。你可以在组件信息选项卡上找出该URL。"
+"所有翻译代码库均使用 https 协议以与网站上基本相似的名称命名 - weblate/master 的翻译将被发布在 <code>https://hos"
+"ted.weblate.org/git/weblate/master/</code>。您可以在组件信息选项卡上找到该URL。"
 
 #: weblate_web/html/hosting.html:349
 #, python-format
@@ -1153,17 +1147,14 @@ msgid "Security issues"
 msgstr "安全问题"
 
 #: weblate_web/html/support.html:25
-#, fuzzy, python-format
-#| msgid ""
-#| "Should you find security issue within our code base, please report it to "
-#| "%(contact)s. You can choose to encrypt it using his PGP key %(key)s."
+#, python-format
 msgid ""
 "Should you find security issue within our code base, please report it to "
 "%(contact)s. More information on reporting security issues can be found in "
 "<a href=\"%(docs)s\">our documentation</a>."
 msgstr ""
-"如果您发现我们的代码有任何安全问题，请报告至 %(contact)s。您还可以选择使用 "
-"PGP 密钥 %(key)s 加密交流。"
+"如果您发现我们的代码有任何安全问题，请报告至 %(contact)s。您还可以在<a href=\"%(docs)s\""
+">我们的文档</a>中找到更多报告安全问题的相关信息。"
 
 #: weblate_web/html/support.html:28
 msgid "Mailing list"
