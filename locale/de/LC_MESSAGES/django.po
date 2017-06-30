@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2017-06-30 14:19+0200\n"
-"PO-Revision-Date: 2017-06-30 12:50+0000\n"
+"PO-Revision-Date: 2017-06-30 19:00+0000\n"
 "Last-Translator: Bamstam <max.strube@posteo.de>\n"
 "Language-Team: German "
 "<https://hosted.weblate.org/projects/weblate/website/de/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.15\n"
+"X-Generator: Weblate 2.16-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -136,7 +136,7 @@ msgstr ""
 
 #: weblate_web/html/base-features.html:30 weblate_web/html/hosting.html:17
 msgid "Hosting plans"
-msgstr "Hostingangebote"
+msgstr "Hosting-Angebote"
 
 #: weblate_web/html/base-features.html:31
 msgid "Hosting plans to use Weblate as a service starting at 19 EUR."
@@ -221,7 +221,7 @@ msgstr "Danksagung"
 
 #: weblate_web/html/base.html:103
 msgid "Help with translations!"
-msgstr "Hilf bei den Übersetzungen!"
+msgstr "Helfen Sie mit bei den Übersetzungen!"
 
 #: weblate_web/html/base.html:140
 #, python-format
@@ -337,9 +337,9 @@ msgid ""
 "You can send a monthly donation using a credit card. You can also get "
 "rewards for higher donations, for example a logo placement on our website."
 msgstr ""
-"Sie können monatlich per Kreditkarte spenden. Sie können zudem Anerkennung "
-"für höhere Spenden erhalten, zum Beispiel ein auf unserer Website "
-"platziertes Logo."
+"Sie können einen monatlichen Betrag per Kreditkarte spenden. Für höhere "
+"Spendenbeträge können Sie zudem eine Belohnung erhalten, wie z. B. die "
+"exklusive Platzierung Ihres Logos auf unserer Webseite."
 
 #: weblate_web/html/donate.html:47
 msgid "Liberapay allows you to send a weekly amount using a credit card."
@@ -401,7 +401,7 @@ msgstr "Weblate herunterladen"
 
 #: weblate_web/html/download.html:7
 msgid "Weblate comes with complete source code."
-msgstr "Der gesamte Weblate-Quellcode ist frei verfügbar."
+msgstr "Der Weblate-Quellcode ist frei verfügbar."
 
 #: weblate_web/html/download.html:20
 msgid ""
@@ -566,8 +566,8 @@ msgstr "Integriert"
 #: weblate_web/html/features.html:96
 msgid "Translations are managed within same version control system as code."
 msgstr ""
-"Übersetzungen werden genau wie der Quellcode in der gleichen "
-"Versionsverwaltung bearbeitet."
+"Die Übersetzungen werden in der gleichen Versionsverwaltung wie der "
+"Quellcode verwaltet."
 
 #: weblate_web/html/features.html:103
 msgid "Documentation"
@@ -679,11 +679,11 @@ msgstr "Üblicherweise sind folgende Daten notwendig:"
 
 #: weblate_web/html/hosting-ordered.html:18 weblate_web/html/hosting.html:338
 msgid "URL of repository with translations."
-msgstr "URL des Repositories mit den Übersetzungen."
+msgstr "Adresse der Paketquelle mit den Übersetzungen."
 
 #: weblate_web/html/hosting-ordered.html:19 weblate_web/html/hosting.html:339
 msgid "Path to translations within the repository."
-msgstr "Pfad zu den Übersetzungen im Repository."
+msgstr "Pfad zu den Übersetzungen in der Paketquelle."
 
 #: weblate_web/html/hosting-ordered.html:22
 msgid ""
@@ -691,9 +691,9 @@ msgid ""
 "adding Weblate user to your project (on GitHub, Bitbucket or GitLab) or "
 "adding SSH key we will provide you."
 msgstr ""
-"Sie müssen Weblate Zugriff auf Ihr Repository erlauben. Dies können Sie "
-"machen, indem Sie den Nutzer Weblate zu Ihrem Projekt (auf GitHub, Bitbucket "
-"oder GitLab) hinzufügen, oder den SSH-Schlüssel einbauen, den wir Ihnen zur "
+"Sie müssen Weblate den Zugriff auf Ihre Paketquelle erlauben. Hierfür können "
+"Sie entweder den Nutzer Weblate zu Ihrem Projekt (auf GitHub, Bitbucket oder "
+"GitLab) hinzufügen oder den SSH-Schlüssel hinzufügen, den wir Ihnen zur "
 "Verfügung stellen."
 
 #: weblate_web/html/hosting.html:6
@@ -711,8 +711,8 @@ msgid ""
 "Hosted Weblate allows you to use Weblate without any effort and with premium "
 "support backed by it's core developers."
 msgstr ""
-"Gehostetes Weblate erlaubt es Ihnen Weblate ohne großen Aufwand und mit "
-"Premium-Support durch seine Kern-Entwickler gesichert zu verwenden."
+"Hosted Weblate erlaubt es Ihnen, Weblate ohne großen Aufwand und mit Premium-"
+"Support durch unsere Kern-Entwickler zu verwenden."
 
 #: weblate_web/html/hosting.html:24
 #, python-format
@@ -874,7 +874,7 @@ msgstr "Siehe untenstehende Optionen"
 #: weblate_web/html/hosting.html:198
 #, python-format
 msgid "Yearly by invoice (save 15-20%%)"
-msgstr "jährlich auf Rechnung (15-20%% sparen)"
+msgstr "Jährlich auf Rechnung (15-20%% sparen)"
 
 #: weblate_web/html/hosting.html:200 weblate_web/html/hosting.html:203
 #: weblate_web/html/hosting.html:206 weblate_web/html/hosting.html:209
@@ -969,7 +969,7 @@ msgstr "Enthält keine benutzerdefinierte Code-Entwicklung"
 
 #: weblate_web/html/hosting.html:252
 msgid "Minimal support for self hosted Weblate"
-msgstr "Minimaler Support für Ihr selbst gehostetes Weblate"
+msgstr "Minimal-Support für Ihr selbst gehostetes Weblate"
 
 #: weblate_web/html/hosting.html:259 weblate_web/html/hosting.html:274
 #, python-format
@@ -1011,11 +1011,11 @@ msgstr[1] ""
 
 #: weblate_web/html/hosting.html:267
 msgid "Basic support for self hosted Weblate"
-msgstr "Grundlegende Unterstützung für selbst gehostetes Weblate"
+msgstr "Basis-Support für Ihr selbst gehostetes Weblate"
 
 #: weblate_web/html/hosting.html:282
 msgid "Extended support for self hosted Weblate"
-msgstr "Erweiterte Unterstützung für selbst gehostetes Weblate"
+msgstr "Erweiterter Support für Ihr selbst gehostetes Weblate"
 
 #: weblate_web/html/hosting.html:289
 msgid "Your Weblate will be upgraded to the latest version on every release."
@@ -1048,7 +1048,7 @@ msgstr "Fragen Sie uns nach Details über selbst gehostetes Weblate"
 
 #: weblate_web/html/hosting.html:315
 msgid "Hosting for free software"
-msgstr "Betrieb für freie Software"
+msgstr "Hosting-Angebote für freie Software"
 
 #: weblate_web/html/hosting.html:318
 msgid ""
@@ -1122,10 +1122,11 @@ msgid ""
 "<code>https://hosted.weblate.org/git/weblate/master/</code>. You can figure "
 "out the URL on the component information tab."
 msgstr ""
-"Alle übersetzten Repositories sind unter Verwendung des https-Protokolls mit "
-"gleichem Namen wie auf der Website verfügbar - weblate/master-Übersetzung "
-"wird veröffentlicht als <code>https://hosted.weblate.org/git/weblate/master/"
-"</code>. Du findest die URL über den Komponenten-Informations-Reiter heraus."
+"Alle übersetzten Paketquellen sind unter Verwendung des HTTPS-Protokolls "
+"unter dem gleichem Namen wie auf der Webseite abrufbar. Die Weblate/Master-"
+"Übersetzung wird veröffentlicht als "
+"<code>https://hosted.weblate.org/git/weblate/master/</code>. Die genaue "
+"Adresse lässt sich im Komponenten-Informations-Reiter ablesen."
 
 #: weblate_web/html/hosting.html:349
 #, python-format
@@ -1146,10 +1147,11 @@ msgid ""
 "user to collaborators and let us know you want to use this option. See <a "
 "href=\"%(docs)s\">documentation</a> for more detailed instructions."
 msgstr ""
-"Falls Weblate Übersetzungsupdates auch automatisch in euer Repository "
-"schreiben (push) soll, bitte den \"Weblate push user\" hinzufügen und uns "
-"Bescheid geben. Die <a href=\"%(docs)s\">Dokumentation</a> enthält weitere "
-"Details."
+"Wenn Weblate Übersetzungsänderungen auch automatisch in die Paketquelle "
+"schreiben soll (Push), fügen Sie den Weblate-Push-User entsprechend hinzu "
+"und geben Sie uns anschließend Bescheid, dass Sie diese Option verwenden "
+"möchten. Die <a href=\"%(docs)s\">Dokumentation</a> bietet hierzu "
+"zusätzliche Informationen."
 
 #: weblate_web/html/hosting.html:356
 msgid "Support free hosting"
@@ -1189,10 +1191,10 @@ msgid ""
 "well with consulting services tailored for your needs. Please contact <a "
 "href=\"%(contact_url)s\">Michal Čihař</a> for more details."
 msgstr ""
-"Falls Sie für Ihre selbst gehostete Lösung Hilfe benötigen, stehen wir zur "
-"Hilfe sowie zu Beratungsdienstleistungen, die auf Ihre Bedürfnisse "
-"zugeschnitten sind, bereit. Bitte treten Sie mit <a href=\"%(contact_url)s"
-"\">Michal Čihař</a> für weitere Details in Kontakt."
+"Wenn Sie Hilfe für Ihre selbst gehostete Lösung benötigen, unterstützen wir "
+"Sie gerne mit individuell auf Ihre Bedürfnisse zugeschnittenen "
+"Beratungsdienstleistungen. Bitte kontaktieren Sie hierzu <a href=\""
+"%(contact_url)s\">Michal Čihař</a> für weitere Details."
 
 #: weblate_web/html/index.html:3
 msgid "Weblate - web-based translation"
@@ -1249,7 +1251,7 @@ msgstr "Problem melden"
 
 #: weblate_web/html/support.html:16
 msgid "Bugs or feature requests"
-msgstr "Fehlerberichte oder Vorschläge für neue Funktionen"
+msgstr "Fehlerberichte und Vorschläge für neue Funktionen"
 
 #: weblate_web/html/support.html:19
 msgid ""
@@ -1264,7 +1266,7 @@ msgstr ""
 
 #: weblate_web/html/support.html:22
 msgid "Security issues"
-msgstr "Sicherheitsprobleme"
+msgstr "Sicherheitslücken"
 
 #: weblate_web/html/support.html:25
 #, python-format
@@ -1273,10 +1275,10 @@ msgid ""
 "%(contact)s. More information on reporting security issues can be found in "
 "<a href=\"%(docs)s\">our documentation</a>."
 msgstr ""
-"Sollten Sie Sicherheitsprobleme in unserer Code-Basis finden, melden Sie "
-"diese bitte an %(contact)s. Mehr Informationen über das Melden von "
-"Sicherheitsproblemen können sie in <a href=\"%(docs)s\">unserer "
-"Dokumentation</a> finden."
+"Sollten Sie auf Sicherheitslücken in unserem Quellcode stoßen, melden Sie "
+"diese bitte auf %(contact)s. Weitere Informationen über das Melden von "
+"Sicherheitslücken finden Sie in <a href=\"%(docs)s\">unserer "
+"Dokumentation</a>."
 
 #: weblate_web/html/support.html:28
 msgid "Mailing list"
@@ -1339,8 +1341,8 @@ msgstr "Beratung"
 #: weblate_web/html/support.html:50
 msgid "See our support offerings for self hosted Weblate instances"
 msgstr ""
-"Sehen Sie sich unsere Support-Angebote für selbst gehostete Weblate-"
-"Instanzen an"
+"Weitere Informationen zu unseren Support-Angeboten für selbst gehostete "
+"Weblate-Instanzen"
 
 #: weblate_web/html/support.html:53
 #, python-format
