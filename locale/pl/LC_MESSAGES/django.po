@@ -7,17 +7,17 @@ msgstr ""
 "Project-Id-Version: Weblate 1.2\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2017-08-07 17:56+0200\n"
-"PO-Revision-Date: 2017-04-13 08:38+0000\n"
-"Last-Translator: Stanisław Krukowski <ack0079@riseup.net>\n"
-"Language-Team: Polish <https://hosted.weblate.org/projects/weblate/website/"
-"pl/>\n"
+"PO-Revision-Date: 2017-08-15 22:47+0000\n"
+"Last-Translator: pskosinski <email@pskosinski.pl>\n"
+"Language-Team: Polish "
+"<https://hosted.weblate.org/projects/weblate/website/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 2.14-dev\n"
+"X-Generator: Weblate 2.17-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -127,7 +127,7 @@ msgstr "Przypisywanie"
 msgid ""
 "All your translators will be properly credited in the version control system."
 msgstr ""
-"Wszyscy twoi tłumacze będą prawidłowo zapisani w systemie kontroli wersji."
+"Wszyscy Twoi tłumacze będą prawidłowo podpisani w systemie kontroli wersji."
 
 #: weblate_web/html/base-features.html:30 weblate_web/html/hosting.html:17
 msgid "Hosting plans"
@@ -135,16 +135,17 @@ msgstr "Plany hostingowe"
 
 #: weblate_web/html/base-features.html:31
 msgid "Hosting plans to use Weblate as a service starting at 19 EUR."
-msgstr "Plany hostingowe Weblate, jako usługa, zaczynają się już od 19 Euro."
+msgstr "Plany hostingowe Weblate, jako usługa, zaczynają się już od 19 euro."
 
 #: weblate_web/html/base-features.html:38
 msgid "Ready for cloud"
-msgstr "Gotowy do chmury"
+msgstr "Gotowe do chmury"
 
 #: weblate_web/html/base-features.html:39
 msgid "Weblate comes with appliances, which are ready to deploy in your cloud."
 msgstr ""
-"Weblate posiada także urządzenia, które można wdrożyć także w twojej chmurze."
+"Weblate jest udostępniane ze wszystkim czego możesz potrzebować by uruchomić "
+"je w chmurze."
 
 #: weblate_web/html/base-features.html:46
 msgid "Free software"
@@ -153,8 +154,8 @@ msgstr "Wolne oprogramowanie"
 #: weblate_web/html/base-features.html:47
 msgid "Weblate is free software, you can run your own instance of it."
 msgstr ""
-"Weblate jest wolnym oprogramowaniem, a więc możesz zainstalować własną "
-"wersję tego oprogramowania."
+"Weblate jest wolnym oprogramowaniem, więc pozwala na uruchomienie własnej "
+"instancji."
 
 #: weblate_web/html/base.html:12
 msgctxt "Keyword"
@@ -223,8 +224,8 @@ msgid ""
 "Weblate is <a href=\"%(github_url)s\">free software</a> and welcomes <a href="
 "\"%(donate_url)s\">donations</a>."
 msgstr ""
-"Weblate jest <a href=\"%(github_url)s\">wolnym oprogramowaniem,</a>mile "
-"widziane są jednak <a href=\"%(donate_url)s\">darowizny</a>."
+"Weblate jest <a href=\"%(github_url)s\">wolnym oprogramowaniem</a>, które "
+"nie obejdzie się bez Twoich <a href=\"%(donate_url)s\">dotacji</a>."
 
 #: weblate_web/html/contribute.html:3 weblate_web/html/contribute.html:4
 msgid "Contribute to Weblate"
@@ -448,7 +449,7 @@ msgstr "Uruchomienie Weblate na platformie OpenShift"
 
 #: weblate_web/html/download.html:77
 msgid "SUSE Studio appliances"
-msgstr "Urządzenia SUSE Studio"
+msgstr "Obrazy SUSE Studio"
 
 #: weblate_web/html/download.html:78
 msgid ""
@@ -850,7 +851,7 @@ msgstr "Skontaktuj się z nami"
 #: weblate_web/html/hosting.html:283
 #, python-format
 msgid "%(price)s EUR / month"
-msgstr "%(price)s EURO / miesięcznie"
+msgstr "%(price)s euro / miesiąc"
 
 #: weblate_web/html/hosting.html:195
 msgid "See below for options"
@@ -872,7 +873,7 @@ msgstr "Zapytaj nas o roczną fakturę z obniżką."
 #: weblate_web/html/hosting.html:284
 #, python-format
 msgid "%(price)s EUR / year"
-msgstr "%(price)s EURO / rok"
+msgstr "%(price)s euro / rok"
 
 #: weblate_web/html/hosting.html:217
 msgid ""
@@ -918,10 +919,9 @@ msgid "Installation on your Linux server"
 msgstr ""
 
 #: weblate_web/html/hosting.html:237
-#, fuzzy, python-format
-#| msgid "%(price)s EUR / year"
+#, python-format
 msgid "%(price)s EUR"
-msgstr "%(price)s EURO / rok"
+msgstr "%(price)s euro"
 
 #: weblate_web/html/hosting.html:242
 msgid "One time installation of Weblate"
@@ -1002,10 +1002,9 @@ msgid "Consulting services or custom development"
 msgstr ""
 
 #: weblate_web/html/hosting.html:298
-#, fuzzy, python-format
-#| msgid "%(price)s EUR / year"
+#, python-format
 msgid "%(price)s EUR / hour"
-msgstr "%(price)s EURO / rok"
+msgstr "%(price)s euro / godzinę"
 
 #: weblate_web/html/hosting.html:303
 msgid "Custom features development"
@@ -1219,7 +1218,7 @@ msgstr "Zobacz więcej opcji…"
 
 #: weblate_web/html/index.html:47
 msgid "See who is using Weblate and join them!"
-msgstr "Zobacz, kto używa Weblate, i przyłącz się do nich!"
+msgstr "Zobacz kto używa Weblate i zrób to samo!"
 
 #: weblate_web/html/support.html:3 weblate_web/html/support.html:4
 msgid "Weblate support"
@@ -1227,7 +1226,7 @@ msgstr "Wsparcie Weblate"
 
 #: weblate_web/html/support.html:6
 msgid "Weblate is a free software with community support."
-msgstr "Weblate jest wolnym oprogramowaniem z obsługą społeczności."
+msgstr "Weblate jest wolnym oprogramowaniem, wspieranym przez społeczność."
 
 #: weblate_web/html/support.html:11
 msgid "Report issue"
@@ -1422,7 +1421,7 @@ msgstr "Wypróbuj Weblate"
 
 #: weblate_web/html/try.html:6
 msgid "Weblate is easy to deploy as an appliance."
-msgstr "Weblate jest łatwy do wdrożenia jako urządzenie."
+msgstr "Weblate jest łatwe do wdrożenia w chmurze."
 
 #: weblate_web/html/try.html:19
 msgid "Demo server"
@@ -1441,7 +1440,7 @@ msgstr ""
 
 #: weblate_web/html/try.html:25
 msgid "Appliances"
-msgstr "Wyposażenie"
+msgstr "Obrazy"
 
 #: weblate_web/html/try.html:28
 #, python-format
@@ -1449,8 +1448,8 @@ msgid ""
 "Check our <a href=\"%(download_url)s\">download page</a> for appliances, "
 "which provide an easy way to deploy Weblate in the cloud."
 msgstr ""
-"Sprawdź naszą <a href=\"%(download_url)s\">stronę pobierania</a> dla "
-"urządzeń, które dostarczają łatwego sposobu wdrażania Weblate w chmurze."
+"Na naszej <a href=\"%(download_url)s\">stronie pobierania</a> znajdziesz "
+"obrazy, które pozwolą Ci na łatwe wdrożenie Weblate w chmurze."
 
 #: weblate_web/templatetags/downloads.py:40
 #, python-format
