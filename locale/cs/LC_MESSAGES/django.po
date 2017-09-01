@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2017-08-07 17:56+0200\n"
-"PO-Revision-Date: 2017-08-07 15:58+0000\n"
-"Last-Translator: Michal Čihař <michal@cihar.com>\n"
+"PO-Revision-Date: 2017-09-02 16:44+0000\n"
+"Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech "
 "<https://hosted.weblate.org/projects/weblate/website/cs/>\n"
 "Language: cs\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 2.16-dev\n"
+"X-Generator: Weblate 2.17-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -53,13 +53,13 @@ msgid ""
 "Translators can define their own glossary to stay consistent in frequently "
 "used terminology."
 msgstr ""
-"Překladatelé si mohou zadat vlastní glosář a tím pomoci zachování stejné "
-"terminologie v rámci překladu."
+"Překladatelé si mohou zadat vlastní slovník pojmů a tím pomoci zachování "
+"stejné terminologie v rámci překladu."
 
 #: weblate_web/data.py:58 weblate_web/html/features.html:71
 #: weblate_web/html/hosting.html:141
 msgid "Glossary"
-msgstr "Glosář"
+msgstr "Slovník pojmů"
 
 #: weblate_web/data.py:63 weblate_web/html/base-features.html:15
 msgid ""
@@ -337,7 +337,7 @@ msgstr ""
 
 #: weblate_web/html/donate.html:50
 msgid "Fund features"
-msgstr "Zaplaťte nové funkce"
+msgstr "Financujte nové funkce"
 
 #: weblate_web/html/donate.html:58
 msgid ""
@@ -800,7 +800,7 @@ msgstr "Zpracování překladů"
 
 #: weblate_web/html/hosting.html:150
 msgid "Priority email support"
-msgstr "Prioritní emailová podpora"
+msgstr "Přednostní e-mailová podpora"
 
 #: weblate_web/html/hosting.html:156 weblate_web/html/hosting.html:165
 #: weblate_web/html/hosting.html:173
@@ -956,7 +956,7 @@ msgstr "Opravíme problémy, které nastanou ve vašem prostředí."
 #: weblate_web/html/hosting.html:261 weblate_web/html/hosting.html:276
 #: weblate_web/html/hosting.html:291
 msgid "You will receive priority email support."
-msgstr "Budete mít přístup k prioritní emailové podpoře."
+msgstr "Budete mít přístup k přednostní e-mailové podpoře."
 
 #: weblate_web/html/hosting.html:262 weblate_web/html/hosting.html:277
 #: weblate_web/html/hosting.html:292
@@ -1081,7 +1081,7 @@ msgid ""
 "out the URL on the component information tab."
 msgstr ""
 "Všechny přeložené repozitáře jsou dostupné na prostřednictvím https "
-"protokolu pod podobným jménem jako na webu - překlad weblate/master je "
+"protokolu pod podobným jménem jako na webu – překlad weblate/master je "
 "publikován na <code>https://hosted.weblate.org/git/weblate/master/</code>. "
 "Přesné URL zjistíte na záložce s informacemi u překladové komponenty."
 
@@ -1161,12 +1161,12 @@ msgstr ""
 
 #: weblate_web/html/index.html:3
 msgid "Weblate - web-based translation"
-msgstr "Weblate - překládání přes web"
+msgstr "Weblate – překládání přes web"
 
 #: weblate_web/html/index.html:14 weblate_web/html/tour.html:11
 #: weblate_web/html/try.html:12
 msgid "Try our demo"
-msgstr "Vyzkoušejte naše demo"
+msgstr "Vyzkoušejte naši ukázku"
 
 #: weblate_web/html/index.html:15
 msgid "View hosting plans"
@@ -1190,7 +1190,7 @@ msgstr ""
 
 #: weblate_web/html/index.html:29
 msgid "Weblate screenshot"
-msgstr "Obrázek Weblate"
+msgstr "Snímek obrazovky s Weblate"
 
 #: weblate_web/html/index.html:38
 msgid "See more features…"
@@ -1243,7 +1243,7 @@ msgstr ""
 
 #: weblate_web/html/support.html:28
 msgid "Mailing list"
-msgstr "Emailová konference"
+msgstr "E-mailová konference"
 
 #: weblate_web/html/support.html:31
 msgid ""
@@ -1264,9 +1264,9 @@ msgid ""
 "comp.web.weblate\">Gmane</a> where you can browse archives or use NNTP "
 "interface."
 msgstr ""
-"Emailová konference je také k dispozici na <a href=\"https://dir.gmane.org/"
-"gmane.comp.web.weblate\">Gmane</a>, kde můžete procházet archivy nebo použít "
-"NNTP rozhraní."
+"E-mailová konference je také k dispozici na <a href=\""
+"https://dir.gmane.org/gmane.comp.web.weblate\">Gmane</a>, kde můžete "
+"procházet archivy nebo použít NNTP rozhraní."
 
 #: weblate_web/html/support.html:38
 msgid "Stack Overflow"
@@ -1397,9 +1397,9 @@ msgid ""
 "server</a>. You can register there and work under your username or just use "
 "<code>demo</code> account with <code>demo</code> password."
 msgstr ""
-"Weblate si můžete vyzkoušet na našem <a href=\"https://demo.weblate.org"
-"\">demo serveru</a>.  Můžete se tam zaregistrovat a pracovat pod svým jméno "
-"nebo stačí použít účet <code>demo</code> s heslem <code>demo</code>."
+"Weblate si můžete vyzkoušet na našem <a href=\"https://demo.weblate.org\">"
+"ukázkovém serveru</a>.  Můžete se tam zaregistrovat a pracovat pod svým "
+"jméno nebo stačí použít účet <code>demo</code> s heslem <code>demo</code>."
 
 #: weblate_web/html/try.html:25
 msgid "Appliances"
@@ -1451,7 +1451,7 @@ msgstr "Zdrojový tarball, komprimový xz"
 
 #: weblate_web/templatetags/downloads.py:61
 msgid "Sources, zip compressed"
-msgstr "Zdrojáky, komprimované zipem"
+msgstr "Zdrojové kódy, komprimované zipem"
 
 #~ msgid ""
 #~ "For openSUSE/SLES users, there are binary packages available in the <a "
