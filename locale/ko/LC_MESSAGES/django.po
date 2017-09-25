@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2017-08-07 17:56+0200\n"
+"POT-Creation-Date: 2017-09-25 17:11+0200\n"
 "PO-Revision-Date: 2017-09-05 13:48+0000\n"
 "Last-Translator: k ks <kmshts@naver.com>\n"
-"Language-Team: Korean "
-"<https://hosted.weblate.org/projects/weblate/website/ko/>\n"
+"Language-Team: Korean <https://hosted.weblate.org/projects/weblate/website/"
+"ko/>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -216,8 +216,8 @@ msgid ""
 "Weblate is <a href=\"%(github_url)s\">free software</a> and welcomes <a href="
 "\"%(donate_url)s\">donations</a>."
 msgstr ""
-"Weblate는 <a href=\"%(github_url)s\">자유 소프트웨어</a>이며, <a href=\"%(donate_url)"
-"s\">기부금</a>은 환영합니다."
+"Weblate는 <a href=\"%(github_url)s\">자유 소프트웨어</a>이며, <a href="
+"\"%(donate_url)s\">기부금</a>은 환영합니다."
 
 #: weblate_web/html/contribute.html:3 weblate_web/html/contribute.html:4
 msgid "Contribute to Weblate"
@@ -363,10 +363,15 @@ msgid "Coinbase allows you to send Bitcoins."
 msgstr "코인베이스(Coinbase)는 비트코인을 보낼 수 있게 합니다."
 
 #: weblate_web/html/donate.html:90
-#, python-format
+#, fuzzy, python-format
+#| msgid ""
+#| "You can also use <a href=\"https://www.bitcoin.org/\">Bitcoin is a peer-"
+#| "to-peer network</a> and send me Bitcoins to <code>%(bitcoin_address)s</"
+#| "code>."
 msgid ""
 "You can also use <a href=\"https://www.bitcoin.org/\">Bitcoin is a peer-to-"
-"peer network</a> and send me Bitcoins to <code>%(bitcoin_address)s</code>."
+"peer network</a> and send me Bitcoins to <code><a href=\"bitcoin:%(address)s"
+"\">%(address)s</a></code>."
 msgstr ""
 "또한 <a href=\"https://www.bitcoin.org/\">p2p 네트워크인 비트코인</a>을 이용"
 "할 수 있고, <code>%(bitcoin_address)s</code>로 저희에게 비트코인을 보낼 수 있"
@@ -394,7 +399,9 @@ msgstr "최신 릴리즈를 내려 받을 수 있습니다:"
 
 #: weblate_web/html/download.html:46 weblate_web/html/download.html:62
 msgid "You can also install using packages for following Linux distributions:"
-msgstr "다음 리눅스 배포판들을 사용하시는 경우, 설치 패키지를 이용해 인스톨하시는 것이 가능합니다:"
+msgstr ""
+"다음 리눅스 배포판들을 사용하시는 경우, 설치 패키지를 이용해 인스톨하시는 것"
+"이 가능합니다:"
 
 #: weblate_web/html/download.html:52
 msgid "Weblate command line client"
@@ -605,7 +612,9 @@ msgstr "반응형 UI"
 msgid ""
 "Weblate has responsive UI which will work nicely on your desktop, tablet or "
 "phone."
-msgstr "Weblate는 반응형 UI를 사용하였기 때문에 데스크탑, 태블릿과 휴대폰에서 잘 작동합니다."
+msgstr ""
+"Weblate는 반응형 UI를 사용하였기 때문에 데스크탑, 태블릿과 휴대폰에서 잘 작동"
+"합니다."
 
 #: weblate_web/html/hosting-ordered.html:3
 #: weblate_web/html/hosting-ordered.html:4 weblate_web/html/hosting.html:3
