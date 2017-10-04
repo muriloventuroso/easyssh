@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2017-09-25 17:11+0200\n"
-"PO-Revision-Date: 2017-09-26 19:44+0000\n"
+"PO-Revision-Date: 2017-10-05 11:36+0000\n"
 "Last-Translator: jan madsen <jsm@janz.dk>\n"
 "Language-Team: Danish "
 "<https://hosted.weblate.org/projects/weblate/website/da/>\n"
@@ -377,19 +377,15 @@ msgid "Coinbase allows you to send Bitcoins."
 msgstr "Coinbase lader dig sende Bitcoins."
 
 #: weblate_web/html/donate.html:90
-#, fuzzy, python-format
-#| msgid ""
-#| "You can also use <a href=\"https://www.bitcoin.org/\">Bitcoin is a peer-"
-#| "to-peer network</a> and send me Bitcoins to <code>%(bitcoin_address)s</"
-#| "code>."
+#, python-format
 msgid ""
 "You can also use <a href=\"https://www.bitcoin.org/\">Bitcoin is a peer-to-"
 "peer network</a> and send me Bitcoins to <code><a href=\"bitcoin:%(address)s"
 "\">%(address)s</a></code>."
 msgstr ""
-"Du kan også anvende <a href=\"https://www.bitcoin.org/\"> Bitcoin er et "
-"netværk blandt ligeværdige</a> og sende mig Bitcoins til <code><a href=\""
-"bitcoin:%(address)s\">%(address)s</a></code>."
+"Brug også <a href=\"https://www.bitcoin.org/\"> Bitcoin er et peer-to-peer-"
+"netværk</a> og send Bitcoins til <code><a href=\"bitcoin:%(address)s\""
+">%(address)s</a></code>."
 
 #: weblate_web/html/download.html:4 weblate_web/html/download.html:5
 msgid "Download Weblate"
@@ -1167,7 +1163,6 @@ msgstr ""
 "detaljer."
 
 #: weblate_web/html/hosting.html:375
-#, fuzzy
 msgid ""
 "All prices exclude VAT, invoices for EU countries are issued as a reverse "
 "charge, invoices for Czech Republic will include additional VAT."
