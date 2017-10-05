@@ -6,11 +6,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Weblate 1.2\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2017-09-25 17:11+0200\n"
+"POT-Creation-Date: 2017-10-05 13:36+0200\n"
 "PO-Revision-Date: 2017-10-01 08:05+0000\n"
 "Last-Translator: Piotr Sokół <psokol.l10n@gmail.com>\n"
-"Language-Team: Polish "
-"<https://hosted.weblate.org/projects/weblate/website/pl/>\n"
+"Language-Team: Polish <https://hosted.weblate.org/projects/weblate/website/"
+"pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -199,6 +199,9 @@ msgid "Develop"
 msgstr "Tworzenie"
 
 #: weblate_web/html/base.html:85 weblate_web/html/donate.html:61
+#: weblate_web/html/donate.html:91 weblate_web/html/donate.html:92
+#: weblate_web/html/donate.html:93 weblate_web/html/donate.html:94
+#: weblate_web/html/donate.html:95
 msgid "Donate"
 msgstr "Złóż darowiznę"
 
@@ -371,27 +374,28 @@ msgstr ""
 "PayPal pozwala wysłać pieniądze z karty kredytowej, konta PayPal lub konta "
 "bankowego."
 
-#: weblate_web/html/donate.html:82
-msgid "Donate using Coinbase"
-msgstr "Złóż darowiznę używając Coinbase"
-
-#: weblate_web/html/donate.html:86
-msgid "Coinbase allows you to send Bitcoins."
-msgstr "Coinbase pozwala wysyłać Bitcoins."
-
-#: weblate_web/html/donate.html:90
-#, fuzzy, python-format
-#| msgid ""
-#| "You can also use <a href=\"https://www.bitcoin.org/\">Bitcoin is a peer-"
-#| "to-peer network</a> and send me Bitcoins to <code>%(bitcoin_address)s</"
-#| "code>."
-msgid ""
-"You can also use <a href=\"https://www.bitcoin.org/\">Bitcoin is a peer-to-"
-"peer network</a> and send me Bitcoins to <code><a href=\"bitcoin:%(address)s"
-"\">%(address)s</a></code>."
+#: weblate_web/html/donate.html:80
+msgid "Cryptocurrencies"
 msgstr ""
-"Możesz także użyć <a href=\"https://www.bitcoin.org/\">sieci peer-to-peer "
-"Bitcoin</a>. Bitcoins możesz przesłać do <code>%(bitcoin_address)s</code>."
+
+#: weblate_web/html/donate.html:83
+#, python-format
+msgid ""
+"Thanks to <a href=\"%(url)s\">Trezor</a>, we will gladly accept donations in "
+"several cryptocurrencies. You can use the addresses in table bellow."
+msgstr ""
+
+#: weblate_web/html/donate.html:88
+msgid "Currency"
+msgstr ""
+
+#: weblate_web/html/donate.html:88
+msgid "Payment link"
+msgstr ""
+
+#: weblate_web/html/donate.html:88
+msgid "Payment address"
+msgstr ""
 
 #: weblate_web/html/download.html:4 weblate_web/html/download.html:5
 msgid "Download Weblate"
@@ -1472,6 +1476,25 @@ msgstr "Źródła tarball, skompresowany xz"
 #: weblate_web/templatetags/downloads.py:61
 msgid "Sources, zip compressed"
 msgstr "Źródła, skompresowany zip"
+
+#~ msgid "Donate using Coinbase"
+#~ msgstr "Złóż darowiznę używając Coinbase"
+
+#~ msgid "Coinbase allows you to send Bitcoins."
+#~ msgstr "Coinbase pozwala wysyłać Bitcoins."
+
+#, fuzzy
+#~| msgid ""
+#~| "You can also use <a href=\"https://www.bitcoin.org/\">Bitcoin is a peer-"
+#~| "to-peer network</a> and send me Bitcoins to <code>%(bitcoin_address)s</"
+#~| "code>."
+#~ msgid ""
+#~ "You can also use <a href=\"https://www.bitcoin.org/\">Bitcoin is a peer-"
+#~ "to-peer network</a> and send me Bitcoins to <code><a href=\"bitcoin:"
+#~ "%(address)s\">%(address)s</a></code>."
+#~ msgstr ""
+#~ "Możesz także użyć <a href=\"https://www.bitcoin.org/\">sieci peer-to-peer "
+#~ "Bitcoin</a>. Bitcoins możesz przesłać do <code>%(bitcoin_address)s</code>."
 
 #~ msgid ""
 #~ "For openSUSE/SLES users, there are binary packages available in the <a "

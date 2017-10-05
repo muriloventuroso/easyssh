@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2017-09-25 17:11+0200\n"
+"POT-Creation-Date: 2017-10-05 13:36+0200\n"
 "PO-Revision-Date: 2017-08-31 05:26+0000\n"
 "Last-Translator: Jeff Huang <s8321414@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
@@ -184,6 +184,9 @@ msgid "Develop"
 msgstr "開發"
 
 #: weblate_web/html/base.html:85 weblate_web/html/donate.html:61
+#: weblate_web/html/donate.html:91 weblate_web/html/donate.html:92
+#: weblate_web/html/donate.html:93 weblate_web/html/donate.html:94
+#: weblate_web/html/donate.html:95
 msgid "Donate"
 msgstr "贊助"
 
@@ -346,27 +349,28 @@ msgid ""
 "account."
 msgstr "PayPal 能讓您從信用卡、PayPal 餘額或銀行帳戶來匯款。"
 
-#: weblate_web/html/donate.html:82
-msgid "Donate using Coinbase"
-msgstr "透過 Coinbase 贊助"
-
-#: weblate_web/html/donate.html:86
-msgid "Coinbase allows you to send Bitcoins."
-msgstr "Coinbase 能讓您以比特幣匯款。"
-
-#: weblate_web/html/donate.html:90
-#, fuzzy, python-format
-#| msgid ""
-#| "You can also use <a href=\"https://www.bitcoin.org/\">Bitcoin is a peer-"
-#| "to-peer network</a> and send me Bitcoins to <code>%(bitcoin_address)s</"
-#| "code>."
-msgid ""
-"You can also use <a href=\"https://www.bitcoin.org/\">Bitcoin is a peer-to-"
-"peer network</a> and send me Bitcoins to <code><a href=\"bitcoin:%(address)s"
-"\">%(address)s</a></code>."
+#: weblate_web/html/donate.html:80
+msgid "Cryptocurrencies"
 msgstr ""
-"您也可用 <a href=\"https://www.bitcoin.org/\">Bitcoin - 開放原始碼點對點數位"
-"貨幣</a> 以比特幣匯款至 <code>%(bitcoin_address)s</code> 給我。"
+
+#: weblate_web/html/donate.html:83
+#, python-format
+msgid ""
+"Thanks to <a href=\"%(url)s\">Trezor</a>, we will gladly accept donations in "
+"several cryptocurrencies. You can use the addresses in table bellow."
+msgstr ""
+
+#: weblate_web/html/donate.html:88
+msgid "Currency"
+msgstr ""
+
+#: weblate_web/html/donate.html:88
+msgid "Payment link"
+msgstr ""
+
+#: weblate_web/html/donate.html:88
+msgid "Payment address"
+msgstr ""
 
 #: weblate_web/html/download.html:4 weblate_web/html/download.html:5
 msgid "Download Weblate"
@@ -1374,6 +1378,25 @@ msgstr "以 tar 包裝 xz 壓縮的原始碼"
 #: weblate_web/templatetags/downloads.py:61
 msgid "Sources, zip compressed"
 msgstr "以 zip 壓縮的原始碼"
+
+#~ msgid "Donate using Coinbase"
+#~ msgstr "透過 Coinbase 贊助"
+
+#~ msgid "Coinbase allows you to send Bitcoins."
+#~ msgstr "Coinbase 能讓您以比特幣匯款。"
+
+#, fuzzy
+#~| msgid ""
+#~| "You can also use <a href=\"https://www.bitcoin.org/\">Bitcoin is a peer-"
+#~| "to-peer network</a> and send me Bitcoins to <code>%(bitcoin_address)s</"
+#~| "code>."
+#~ msgid ""
+#~ "You can also use <a href=\"https://www.bitcoin.org/\">Bitcoin is a peer-"
+#~ "to-peer network</a> and send me Bitcoins to <code><a href=\"bitcoin:"
+#~ "%(address)s\">%(address)s</a></code>."
+#~ msgstr ""
+#~ "您也可用 <a href=\"https://www.bitcoin.org/\">Bitcoin - 開放原始碼點對點數"
+#~ "位貨幣</a> 以比特幣匯款至 <code>%(bitcoin_address)s</code> 給我。"
 
 #~ msgid ""
 #~ "For openSUSE/SLES users, there are binary packages available in the <a "

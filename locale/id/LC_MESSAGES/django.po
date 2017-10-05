@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Weblate 1.2\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2017-09-25 17:11+0200\n"
+"POT-Creation-Date: 2017-10-05 13:36+0200\n"
 "PO-Revision-Date: 2017-08-22 13:21+0000\n"
 "Last-Translator: Arif Budiman <arifpedia@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/weblate/"
@@ -198,6 +198,9 @@ msgid "Develop"
 msgstr "Pengembangan"
 
 #: weblate_web/html/base.html:85 weblate_web/html/donate.html:61
+#: weblate_web/html/donate.html:91 weblate_web/html/donate.html:92
+#: weblate_web/html/donate.html:93 weblate_web/html/donate.html:94
+#: weblate_web/html/donate.html:95
 msgid "Donate"
 msgstr "Donasi"
 
@@ -371,28 +374,28 @@ msgstr ""
 "PayPal memungkinkan Anda dapat mengirimkan uang dari kartu kredit, saldo "
 "PayPal atau rekening bank."
 
-#: weblate_web/html/donate.html:82
-msgid "Donate using Coinbase"
-msgstr "Donasi menggunakan Coinbase"
-
-#: weblate_web/html/donate.html:86
-msgid "Coinbase allows you to send Bitcoins."
-msgstr "Coinbase memungkinkan Anda dapat mengirimkan Bitcoin."
-
-#: weblate_web/html/donate.html:90
-#, fuzzy, python-format
-#| msgid ""
-#| "You can also use <a href=\"https://www.bitcoin.org/\">Bitcoin is a peer-"
-#| "to-peer network</a> and send me Bitcoins to <code>%(bitcoin_address)s</"
-#| "code>."
-msgid ""
-"You can also use <a href=\"https://www.bitcoin.org/\">Bitcoin is a peer-to-"
-"peer network</a> and send me Bitcoins to <code><a href=\"bitcoin:%(address)s"
-"\">%(address)s</a></code>."
+#: weblate_web/html/donate.html:80
+msgid "Cryptocurrencies"
 msgstr ""
-"Anda juga dapat menggunakan <a href=\"https://www.bitcoin.org/\">jaringan "
-"peer-to-peer Bitcoin</a> dan mengirimkan Bitcoin ke <code>"
-"%(bitcoin_address)s</code>."
+
+#: weblate_web/html/donate.html:83
+#, python-format
+msgid ""
+"Thanks to <a href=\"%(url)s\">Trezor</a>, we will gladly accept donations in "
+"several cryptocurrencies. You can use the addresses in table bellow."
+msgstr ""
+
+#: weblate_web/html/donate.html:88
+msgid "Currency"
+msgstr ""
+
+#: weblate_web/html/donate.html:88
+msgid "Payment link"
+msgstr ""
+
+#: weblate_web/html/donate.html:88
+msgid "Payment address"
+msgstr ""
 
 #: weblate_web/html/download.html:4 weblate_web/html/download.html:5
 msgid "Download Weblate"
@@ -1467,6 +1470,26 @@ msgstr "Tarball kode sumber, terkompresi xz"
 #: weblate_web/templatetags/downloads.py:61
 msgid "Sources, zip compressed"
 msgstr "Kode sumber, terkompresi zip"
+
+#~ msgid "Donate using Coinbase"
+#~ msgstr "Donasi menggunakan Coinbase"
+
+#~ msgid "Coinbase allows you to send Bitcoins."
+#~ msgstr "Coinbase memungkinkan Anda dapat mengirimkan Bitcoin."
+
+#, fuzzy
+#~| msgid ""
+#~| "You can also use <a href=\"https://www.bitcoin.org/\">Bitcoin is a peer-"
+#~| "to-peer network</a> and send me Bitcoins to <code>%(bitcoin_address)s</"
+#~| "code>."
+#~ msgid ""
+#~ "You can also use <a href=\"https://www.bitcoin.org/\">Bitcoin is a peer-"
+#~ "to-peer network</a> and send me Bitcoins to <code><a href=\"bitcoin:"
+#~ "%(address)s\">%(address)s</a></code>."
+#~ msgstr ""
+#~ "Anda juga dapat menggunakan <a href=\"https://www.bitcoin.org/\">jaringan "
+#~ "peer-to-peer Bitcoin</a> dan mengirimkan Bitcoin ke <code>"
+#~ "%(bitcoin_address)s</code>."
 
 #~ msgid "Contact"
 #~ msgstr "Kontak"

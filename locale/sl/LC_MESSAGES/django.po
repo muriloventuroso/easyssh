@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2017-09-25 17:11+0200\n"
+"POT-Creation-Date: 2017-10-05 13:36+0200\n"
 "PO-Revision-Date: 2017-08-10 20:31+0000\n"
 "Last-Translator: Domen <mitenem@outlook.com>\n"
 "Language-Team: Slovenian <https://hosted.weblate.org/projects/weblate/"
@@ -197,6 +197,9 @@ msgid "Develop"
 msgstr "Razvijajte"
 
 #: weblate_web/html/base.html:85 weblate_web/html/donate.html:61
+#: weblate_web/html/donate.html:91 weblate_web/html/donate.html:92
+#: weblate_web/html/donate.html:93 weblate_web/html/donate.html:94
+#: weblate_web/html/donate.html:95
 msgid "Donate"
 msgstr "Donirajte"
 
@@ -369,28 +372,28 @@ msgstr ""
 "PayPal vam omogoča pošiljanje denarja s kreditno kartico, bilanco PayPal ali "
 "z bančnim računom."
 
-#: weblate_web/html/donate.html:82
-msgid "Donate using Coinbase"
-msgstr "Donirajte s Coinbase"
-
-#: weblate_web/html/donate.html:86
-msgid "Coinbase allows you to send Bitcoins."
-msgstr "Coinbase vam omogoča pošiljanje Bitcoinov."
-
-#: weblate_web/html/donate.html:90
-#, fuzzy, python-format
-#| msgid ""
-#| "You can also use <a href=\"https://www.bitcoin.org/\">Bitcoin is a peer-"
-#| "to-peer network</a> and send me Bitcoins to <code>%(bitcoin_address)s</"
-#| "code>."
-msgid ""
-"You can also use <a href=\"https://www.bitcoin.org/\">Bitcoin is a peer-to-"
-"peer network</a> and send me Bitcoins to <code><a href=\"bitcoin:%(address)s"
-"\">%(address)s</a></code>."
+#: weblate_web/html/donate.html:80
+msgid "Cryptocurrencies"
 msgstr ""
-"Uporabite lahko tudi <a href=\"https://www.bitcoin.org/\">Bitcoin</a>, ki je "
-"omrežje vsak-z-vsakim, in mi pošljete Bitcoine na <code>%(bitcoin_address)s</"
-"code>."
+
+#: weblate_web/html/donate.html:83
+#, python-format
+msgid ""
+"Thanks to <a href=\"%(url)s\">Trezor</a>, we will gladly accept donations in "
+"several cryptocurrencies. You can use the addresses in table bellow."
+msgstr ""
+
+#: weblate_web/html/donate.html:88
+msgid "Currency"
+msgstr ""
+
+#: weblate_web/html/donate.html:88
+msgid "Payment link"
+msgstr ""
+
+#: weblate_web/html/donate.html:88
+msgid "Payment address"
+msgstr ""
 
 #: weblate_web/html/download.html:4 weblate_web/html/download.html:5
 msgid "Download Weblate"
@@ -1468,6 +1471,26 @@ msgstr "Tarball izvornih datotek, stisnjeno kot xz"
 #: weblate_web/templatetags/downloads.py:61
 msgid "Sources, zip compressed"
 msgstr "Izvorne datoteke, stisnjeno kot zip"
+
+#~ msgid "Donate using Coinbase"
+#~ msgstr "Donirajte s Coinbase"
+
+#~ msgid "Coinbase allows you to send Bitcoins."
+#~ msgstr "Coinbase vam omogoča pošiljanje Bitcoinov."
+
+#, fuzzy
+#~| msgid ""
+#~| "You can also use <a href=\"https://www.bitcoin.org/\">Bitcoin is a peer-"
+#~| "to-peer network</a> and send me Bitcoins to <code>%(bitcoin_address)s</"
+#~| "code>."
+#~ msgid ""
+#~ "You can also use <a href=\"https://www.bitcoin.org/\">Bitcoin is a peer-"
+#~ "to-peer network</a> and send me Bitcoins to <code><a href=\"bitcoin:"
+#~ "%(address)s\">%(address)s</a></code>."
+#~ msgstr ""
+#~ "Uporabite lahko tudi <a href=\"https://www.bitcoin.org/\">Bitcoin</a>, ki "
+#~ "je omrežje vsak-z-vsakim, in mi pošljete Bitcoine na <code>"
+#~ "%(bitcoin_address)s</code>."
 
 #~ msgid ""
 #~ "For openSUSE/SLES users, there are binary packages available in the <a "

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2017-09-25 17:11+0200\n"
+"POT-Creation-Date: 2017-10-05 13:36+0200\n"
 "PO-Revision-Date: 2017-04-24 18:17+0000\n"
 "Last-Translator: Παναγιώτης Παπάζογλου <papaz_p@yahoo.com>\n"
 "Language-Team: Greek <https://hosted.weblate.org/projects/weblate/website/el/"
@@ -204,6 +204,9 @@ msgid "Develop"
 msgstr "Δημιουργία"
 
 #: weblate_web/html/base.html:85 weblate_web/html/donate.html:61
+#: weblate_web/html/donate.html:91 weblate_web/html/donate.html:92
+#: weblate_web/html/donate.html:93 weblate_web/html/donate.html:94
+#: weblate_web/html/donate.html:95
 msgid "Donate"
 msgstr "Δωρεά"
 
@@ -381,28 +384,28 @@ msgstr ""
 "Το PayPal σας επιτρέπει να στείλετε χρήματα από πιστωτική κάρτα, από PayPal "
 "balance ή τραπεζικό λογαριασμό."
 
-#: weblate_web/html/donate.html:82
-msgid "Donate using Coinbase"
-msgstr "Δωρεά με χρήση Conbase"
-
-#: weblate_web/html/donate.html:86
-msgid "Coinbase allows you to send Bitcoins."
-msgstr "Το Coinbase σας επιτρέπει να δίνετε Bitcoins."
-
-#: weblate_web/html/donate.html:90
-#, fuzzy, python-format
-#| msgid ""
-#| "You can also use <a href=\"https://www.bitcoin.org/\">Bitcoin is a peer-"
-#| "to-peer network</a> and send me Bitcoins to <code>%(bitcoin_address)s</"
-#| "code>."
-msgid ""
-"You can also use <a href=\"https://www.bitcoin.org/\">Bitcoin is a peer-to-"
-"peer network</a> and send me Bitcoins to <code><a href=\"bitcoin:%(address)s"
-"\">%(address)s</a></code>."
+#: weblate_web/html/donate.html:80
+msgid "Cryptocurrencies"
 msgstr ""
-"Mπορείτε, επίσης, να χρησιμοποιήσετε το <a href=\"https://www.bitcoin.org/"
-"\">Bitcoin που είναι ένα δίκτυο peer-to-peer</a> και να μου στείλετε "
-"Bitcoins στο <code>%(bitcoin_address)s</code>."
+
+#: weblate_web/html/donate.html:83
+#, python-format
+msgid ""
+"Thanks to <a href=\"%(url)s\">Trezor</a>, we will gladly accept donations in "
+"several cryptocurrencies. You can use the addresses in table bellow."
+msgstr ""
+
+#: weblate_web/html/donate.html:88
+msgid "Currency"
+msgstr ""
+
+#: weblate_web/html/donate.html:88
+msgid "Payment link"
+msgstr ""
+
+#: weblate_web/html/donate.html:88
+msgid "Payment address"
+msgstr ""
 
 #: weblate_web/html/download.html:4 weblate_web/html/download.html:5
 msgid "Download Weblate"
@@ -1511,6 +1514,26 @@ msgstr "Προελεύσεις tarball, συμπιεσμένο xz"
 #: weblate_web/templatetags/downloads.py:61
 msgid "Sources, zip compressed"
 msgstr "Προελεύσεις, συμπιεσμένο zip"
+
+#~ msgid "Donate using Coinbase"
+#~ msgstr "Δωρεά με χρήση Conbase"
+
+#~ msgid "Coinbase allows you to send Bitcoins."
+#~ msgstr "Το Coinbase σας επιτρέπει να δίνετε Bitcoins."
+
+#, fuzzy
+#~| msgid ""
+#~| "You can also use <a href=\"https://www.bitcoin.org/\">Bitcoin is a peer-"
+#~| "to-peer network</a> and send me Bitcoins to <code>%(bitcoin_address)s</"
+#~| "code>."
+#~ msgid ""
+#~ "You can also use <a href=\"https://www.bitcoin.org/\">Bitcoin is a peer-"
+#~ "to-peer network</a> and send me Bitcoins to <code><a href=\"bitcoin:"
+#~ "%(address)s\">%(address)s</a></code>."
+#~ msgstr ""
+#~ "Mπορείτε, επίσης, να χρησιμοποιήσετε το <a href=\"https://www.bitcoin.org/"
+#~ "\">Bitcoin που είναι ένα δίκτυο peer-to-peer</a> και να μου στείλετε "
+#~ "Bitcoins στο <code>%(bitcoin_address)s</code>."
 
 #~ msgid ""
 #~ "For openSUSE/SLES users, there are binary packages available in the <a "
