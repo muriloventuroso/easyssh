@@ -77,18 +77,23 @@
 {% trans "PayPal allows you to send money from credit card, PayPal balance or a bank account." %}
 </p>
 
-<a href="https://www.coinbase.com/checkouts/e7c16485643a51c08cd66de46f13f0d8" class="btn btn-primary">
-<i class="fa fa-bitcoin"></i>
-{% trans "Donate using Coinbase" %}
-</a>
+<h2>{% trans "Cryptocurrencies" %}</h2>
 
 <p>
-{% trans "Coinbase allows you to send Bitcoins." %}
+{% blocktrans with "https://shop.trezor.io?a=572b241135e1" as url %}Thanks to <a href="{{ url }}">Trezor</a>, we will gladly accept donations in several cryptocurrencies. You can use the addresses in table bellow.{% endblocktrans %}
 </p>
 
-<p>
-{% blocktrans with '365JdvFDraeP4BjBBsrndF5ScTiEikWoM2' as address %}You can also use <a href="https://www.bitcoin.org/">Bitcoin is a peer-to-peer network</a> and send me Bitcoins to <code><a href="bitcoin:{{ address }}">{{ address }}</a></code>.{% endblocktrans %}
-</p>
+<table class="table table-striped">
+<thead>
+<tr><th>{% trans "Currency" %}</th><th>{% trans "Payment link" %}</th><th>{% trans "Payment address" %}</th></tr>
+</thead>
+<tbody>
+<tr><th>Bitcoin</th><td><a href="bitcoin:365JdvFDraeP4BjBBsrndF5ScTiEikWoM2">{% trans "Donate" %}</a></td><td>365JdvFDraeP4BjBBsrndF5ScTiEikWoM2</td></tr>
+<tr><th>Litecoin</th><td><a href="litecoin:MWvtDC6VjeTdwVTcaUC3Bi9xpMxdx4aBeS">{% trans "Donate" %}</a></td><td>MWvtDC6VjeTdwVTcaUC3Bi9xpMxdx4aBeS</td></tr>
+<tr><th>DASH</th><td><a href="dash:Xe3rBj41pMdLLPGTJb5hjBAAsqoi6EHD6e">{% trans "Donate" %}</a></td><td>Xe3rBj41pMdLLPGTJb5hjBAAsqoi6EHD6e</td></tr>
+<tr><th>Zcash</th><td><a href="zcash:t1XViDSPSQcYKrYyBx3yf1Ypb7oqQaqQJpP">{% trans "Donate" %}</a></td><td>t1XViDSPSQcYKrYyBx3yf1Ypb7oqQaqQJpP</td></tr>
+<tr><th>Ethereum</th><td><a href="ethereum:0xE5cd6Fe38af85f68B377AEBCF97Fea2C9683ee0c">{% trans "Donate" %}</a></td><td>0xE5cd6Fe38af85f68B377AEBCF97Fea2C9683ee0c</td></tr>
+</tbody>
+</table>
 
 {% endblock %}
-
