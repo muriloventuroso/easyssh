@@ -25,6 +25,12 @@
 {% blocktrans with '<a href="https://hackerone.com/weblate">HackerOne</a>' as contact and 'https://docs.weblate.org/en/latest/contributing.html#security' as docs %}Should you find security issue within our code base, please report it to {{ contact }}. More information on reporting security issues can be found in <a href="{{ docs }}">our documentation</a>.{% endblocktrans %}
 </p>
 
+<h2>{% trans "Support for Hosted Weblate services" %}</h2>
+
+<p>
+{% blocktrans with '<a href="mailto:support@weblate.org">support@weblate.org</a>' as contact %}If you are using our hosting services, you can ask for support at {{ contact }}.{% endblocktrans %}
+</p>
+
 <h2>{% trans "Mailing list" %}</h2>
 
 <p>
