@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2017-10-05 13:36+0200\n"
-"PO-Revision-Date: 2017-10-30 23:44+0000\n"
+"PO-Revision-Date: 2017-11-03 19:44+0000\n"
 "Last-Translator: omar anwar aglan <omar.aglan91@yahoo.com>\n"
 "Language-Team: Arabic "
 "<https://hosted.weblate.org/projects/weblate/website/ar/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 2.17\n"
+"X-Generator: Weblate 2.18-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -448,7 +448,7 @@ msgstr "تشغيل وبليت على منصة أوبن شفت (OpenShift)"
 
 #: weblate_web/html/download.html:77
 msgid "SUSE Studio appliances"
-msgstr ""
+msgstr "ستديو جهاز SUSE"
 
 #: weblate_web/html/download.html:78
 msgid ""
@@ -665,6 +665,9 @@ msgid ""
 "adding Weblate user to your project (on GitHub, Bitbucket or GitLab) or "
 "adding SSH key we will provide you."
 msgstr ""
+"يجب عليك أن تمنح Weblate أذن الدخول لمشروعك. هذا يمكن عمله عن طريق إضافة "
+"مستخدم Weblate إلي مشروعك (علي GitHub, Bitbucket أو GitLab) أو بأضافة مفتاح "
+"SSH الذي سوف نمنحه لك."
 
 #: weblate_web/html/hosting.html:6
 msgid "Free continuous translation hosting for free software."
@@ -672,13 +675,15 @@ msgstr "استضافة ترجمة مجانية مستمرة للبرامج ال�
 
 #: weblate_web/html/hosting.html:11
 msgid "Ask for hosting"
-msgstr ""
+msgstr "إسئل من أجل الإستضافة"
 
 #: weblate_web/html/hosting.html:20
 msgid ""
 "Hosted Weblate allows you to use Weblate without any effort and with premium "
 "support backed by it's core developers."
 msgstr ""
+"Weblate المُضيف يسمح لك بإستخدام Weblate من غير أي جهد ومع الدعم الممتاز "
+"مدعومة عن طريق مطوريه الأساسين."
 
 #: weblate_web/html/hosting.html:24
 #, python-format
@@ -688,6 +693,9 @@ msgid ""
 "look for hosting of bigger projects, don't hesitate to <a href=\"%(contact)s"
 "\">get in touch with us</a>."
 msgstr ""
+"يمكنك إستضافة الترجمات لمشروعك التجاري أو المجاني. يمكنك أن تري ملخص عن خطط "
+"الإستضافة في الأسفل. إذا كان لديك أي أسئله أو للإستضافة مشاريع أكبر، لا تترد "
+"في <a href=\"%(contact)s\"> التواصل معنا</a>."
 
 #: weblate_web/html/hosting.html:32
 msgctxt "Hosting plan"
@@ -707,12 +715,12 @@ msgstr "المتوسطة"
 #: weblate_web/html/hosting.html:35
 msgctxt "Hosting plan"
 msgid "Advanced"
-msgstr ""
+msgstr "المتقدمة"
 
 #: weblate_web/html/hosting.html:36
 msgctxt "Hosting plan"
 msgid "Enterprise"
-msgstr ""
+msgstr "القصوي"
 
 #: weblate_web/html/hosting.html:37
 msgctxt "Hosting plan"
@@ -723,11 +731,11 @@ msgstr "استضافة ذاتية"
 msgid ""
 "Text unit defined in a translation format, it can be word, sentence or a "
 "paragraph"
-msgstr ""
+msgstr "وحدة الكلمة في صيغة الترجمة، هي يمكن أن تكون كلمة، جملة أو فقرة"
 
 #: weblate_web/html/hosting.html:51
 msgid "Source strings"
-msgstr "سلاسل المصدر"
+msgstr "كلمات المصدر"
 
 #: weblate_web/html/hosting.html:52 weblate_web/html/hosting.html:61
 #: weblate_web/html/hosting.html:70
@@ -748,19 +756,19 @@ msgstr "غير محدود"
 
 #: weblate_web/html/hosting.html:60
 msgid "Target languages"
-msgstr ""
+msgstr "اللغات المُستهدفة"
 
 #: weblate_web/html/hosting.html:69
 msgid "VCS repositories"
-msgstr ""
+msgstr "مشاريع VCS"
 
 #: weblate_web/html/hosting.html:78
 msgid "Translation projects"
-msgstr "الترجمات الشخصية"
+msgstr "مشاريع الترجمة"
 
 #: weblate_web/html/hosting.html:87
 msgid "Translation components"
-msgstr "سياق الترجمة"
+msgstr "مكونات الترجمة"
 
 #: weblate_web/html/hosting.html:96
 msgid "Number of translators"
@@ -768,7 +776,7 @@ msgstr "عدد المترجمين"
 
 #: weblate_web/html/hosting.html:105
 msgid "User management"
-msgstr ""
+msgstr "إدارة المُستخدمين"
 
 #: weblate_web/html/hosting.html:114
 msgid "Supported file formats"
@@ -784,15 +792,15 @@ msgstr "الكل"
 #: weblate_web/html/hosting.html:129 weblate_web/html/hosting.html:136
 #: weblate_web/html/hosting.html:137 weblate_web/html/hosting.html:138
 msgid "Customizable"
-msgstr ""
+msgstr "قابل للتعديل"
 
 #: weblate_web/html/hosting.html:132
 msgid "Translation processing"
-msgstr "حالة الترجمة"
+msgstr "معالجة الترجمة"
 
 #: weblate_web/html/hosting.html:150
 msgid "Priority email support"
-msgstr "دعم البريد الإلكتروني ذو الأولوية"
+msgstr "أولوية دعم البريد الإلكتروني"
 
 #: weblate_web/html/hosting.html:156 weblate_web/html/hosting.html:165
 #: weblate_web/html/hosting.html:173
@@ -805,11 +813,11 @@ msgstr "الدعم عبر الهاتف"
 
 #: weblate_web/html/hosting.html:168
 msgid "Custom domain name with SSL"
-msgstr ""
+msgstr "إسم نطاق مُخصص مع SSL"
 
 #: weblate_web/html/hosting.html:168
 msgid "Own domain"
-msgstr ""
+msgstr "إمتلك نطاق"
 
 #: weblate_web/html/hosting.html:179
 msgid "Monthly by PayPal"
@@ -817,7 +825,7 @@ msgstr "شهرياً عبر خدمة PayPal"
 
 #: weblate_web/html/hosting.html:181
 msgid "Contact us"
-msgstr ""
+msgstr "إتصل بنا"
 
 #: weblate_web/html/hosting.html:184 weblate_web/html/hosting.html:187
 #: weblate_web/html/hosting.html:190 weblate_web/html/hosting.html:193
@@ -825,7 +833,7 @@ msgstr ""
 #: weblate_web/html/hosting.html:283
 #, python-format
 msgid "%(price)s EUR / month"
-msgstr ""
+msgstr "%(price)s يورو / شهر"
 
 #: weblate_web/html/hosting.html:195
 msgid "See below for options"
@@ -834,12 +842,12 @@ msgstr "انظر أدناه للحصول على خيارات"
 #: weblate_web/html/hosting.html:198
 #, python-format
 msgid "Yearly by invoice (save 15-20%%)"
-msgstr ""
+msgstr "فاتورة سنوية (حفظ 15-20%%)"
 
 #: weblate_web/html/hosting.html:200 weblate_web/html/hosting.html:203
 #: weblate_web/html/hosting.html:206 weblate_web/html/hosting.html:209
 msgid "Ask us for yearly invoicing with discount."
-msgstr ""
+msgstr "إسئلنا عن الفاتورة السنوية مع التخفيض."
 
 #: weblate_web/html/hosting.html:200 weblate_web/html/hosting.html:203
 #: weblate_web/html/hosting.html:206 weblate_web/html/hosting.html:209
@@ -847,7 +855,7 @@ msgstr ""
 #: weblate_web/html/hosting.html:284
 #, python-format
 msgid "%(price)s EUR / year"
-msgstr ""
+msgstr "%(price)s يورو / السنة"
 
 #: weblate_web/html/hosting.html:217
 msgid ""
@@ -885,11 +893,11 @@ msgstr "التثبيت على خادم لينكس الخاص بك"
 #: weblate_web/html/hosting.html:237
 #, python-format
 msgid "%(price)s EUR"
-msgstr ""
+msgstr "%(price)s يورو"
 
 #: weblate_web/html/hosting.html:242
 msgid "One time installation of Weblate"
-msgstr ""
+msgstr "تثبيت مره واحدة من Weblate"
 
 #: weblate_web/html/hosting.html:243
 msgid "Installation using virtualenv, uwsgi and nginx"
@@ -976,7 +984,7 @@ msgstr ""
 
 #: weblate_web/html/hosting.html:303
 msgid "Custom features development"
-msgstr ""
+msgstr "تطوير الخصائص المخصصة"
 
 #: weblate_web/html/hosting.html:304
 msgid "Integrating Weblate into your workflow"
