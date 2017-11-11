@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: Weblate 1.2\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2017-10-05 13:36+0200\n"
-"PO-Revision-Date: 2017-10-17 18:47+0000\n"
-"Last-Translator: Daria Szatan <bla_ke@tuta.io>\n"
+"PO-Revision-Date: 2017-11-11 21:00+0000\n"
+"Last-Translator: pskosinski <email@pskosinski.pl>\n"
 "Language-Team: Polish "
 "<https://hosted.weblate.org/projects/weblate/website/pl/>\n"
 "Language: pl\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 2.17\n"
+"X-Generator: Weblate 2.18-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -950,6 +950,7 @@ msgstr "Przy użyciu PostgreSQL, MySQL lub MariaDB jako back-end'u"
 #: weblate_web/html/hosting.html:245
 msgid "Requires root access or close cooperation of your admins"
 msgstr ""
+"Wymaga dostępu do roota lub bliskiej współpracy z Twoimi administratorami"
 
 #: weblate_web/html/hosting.html:246
 msgid "Configuration customization"
@@ -984,7 +985,7 @@ msgstr[2] ""
 #: weblate_web/html/hosting.html:260 weblate_web/html/hosting.html:275
 #: weblate_web/html/hosting.html:290
 msgid "We will fix issues that occur in your environment."
-msgstr ""
+msgstr "Usuniemy błędy, jeśli wystąpią w Twoim środowisku."
 
 #: weblate_web/html/hosting.html:261 weblate_web/html/hosting.html:276
 #: weblate_web/html/hosting.html:291
@@ -998,8 +999,11 @@ msgid "Up to %(amount)s hour of consulting or support per month are included."
 msgid_plural ""
 "Up to %(amount)s hours of consulting or support per month are included."
 msgstr[0] ""
+"Włącznie z nawet %(amount)s godziną konsultacji lub wsparcia miesięcznie."
 msgstr[1] ""
+"Włącznie z nawet %(amount)s godzinami konsultacji lub wsparcia miesięcznie."
 msgstr[2] ""
+"Włącznie z nawet %(amount)s godzinami konsultacji lub wsparcia miesięcznie."
 
 #: weblate_web/html/hosting.html:267
 msgid "Basic support for self hosted Weblate"
@@ -1029,15 +1033,15 @@ msgstr "Rozwijanie niestandardowych funkcji"
 
 #: weblate_web/html/hosting.html:304
 msgid "Integrating Weblate into your workflow"
-msgstr ""
+msgstr "Integracja Weblate ze specyfiką Twojej pracy"
 
 #: weblate_web/html/hosting.html:305
 msgid "Suggestions on the internationalization or localization process"
-msgstr ""
+msgstr "Sugestie dotyczące procesu internacjonalizacji lub lokalizacji"
 
 #: weblate_web/html/hosting.html:313
 msgid "Ask us for details about self hosted Weblate"
-msgstr ""
+msgstr "Zapytaj nas o szczegóły odnośnie samodzielnego hostowania Weblate"
 
 #: weblate_web/html/hosting.html:315
 msgid "Hosting for free software"
@@ -1190,6 +1194,9 @@ msgid ""
 "All prices exclude VAT, invoices for EU countries are issued as a reverse "
 "charge, invoices for Czech Republic will include additional VAT."
 msgstr ""
+"Wszystkie podane ceny nie zawierają VAT-u. Faktury wystawiane dla klientów z "
+"państw UE są wystawiane z opłatą zwrotną VAT (VAT odprowadza kupujący), a "
+"faktury dla klientów z Czech zawierają dodatkowy VAT."
 
 #: weblate_web/html/index.html:3
 msgid "Weblate - web-based translation"
@@ -1334,6 +1341,8 @@ msgstr "Konsultacje"
 #: weblate_web/html/support.html:50
 msgid "See our support offerings for self hosted Weblate instances"
 msgstr ""
+"Przejrzyj naszą ofertę wsparcia technicznego dla samodzielnie hostowanych "
+"instancji Weblate"
 
 #: weblate_web/html/support.html:53
 #, python-format
