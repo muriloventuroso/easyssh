@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2017-10-05 13:36+0200\n"
-"PO-Revision-Date: 2016-09-07 11:09+0000\n"
-"Last-Translator: Martin Lacina <martin@whistler.sk>\n"
-"Language-Team: Slovak <https://hosted.weblate.org/projects/weblate/website/"
-"sk/>\n"
+"PO-Revision-Date: 2017-12-12 09:29+0000\n"
+"Last-Translator: palinek <palo.kisa@gmail.com>\n"
+"Language-Team: Slovak "
+"<https://hosted.weblate.org/projects/weblate/website/sk/>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 2.8\n"
+"X-Generator: Weblate 2.18-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -294,10 +294,8 @@ msgid "Donate using Liberapay"
 msgstr "Prispejte pomocou Liberapayu"
 
 #: weblate_web/html/donate.html:18
-#, fuzzy
-#| msgid "Ask for hosting"
 msgid "Use our hosting"
-msgstr "Požiadať o hosťovanie"
+msgstr "Využiť náš hosting"
 
 #: weblate_web/html/donate.html:22
 #, python-format
@@ -305,6 +303,8 @@ msgid ""
 "Host your commercial translations on <a href=\"%(hosting_url)s\">Hosted "
 "Weblate</a> and you will be supporting Weblate development automatically."
 msgstr ""
+"Využite hosting Vašich komrečných prekladov na <a href=\"%(hosting_url)s\">"
+"Hosted Weblate</a> a podporíte tým automaticky ďalší vývoj Weblate."
 
 #: weblate_web/html/donate.html:25
 msgid "Regular donations"
@@ -368,7 +368,7 @@ msgstr ""
 
 #: weblate_web/html/donate.html:80
 msgid "Cryptocurrencies"
-msgstr ""
+msgstr "Kryptomeny"
 
 #: weblate_web/html/donate.html:83
 #, python-format
@@ -376,18 +376,20 @@ msgid ""
 "Thanks to <a href=\"%(url)s\">Trezor</a>, we will gladly accept donations in "
 "several cryptocurrencies. You can use the addresses in table below."
 msgstr ""
+"Vďaka <a href=\"%(url)s\">Trezoru</a> radi akceptujeme príspevky v "
+"niekoľkých kryptomenách. Môžete využiť adresy v nasledovnej tabuľke."
 
 #: weblate_web/html/donate.html:88
 msgid "Currency"
-msgstr ""
+msgstr "Mena"
 
 #: weblate_web/html/donate.html:88
 msgid "Payment link"
-msgstr ""
+msgstr "Linka pre platbu"
 
 #: weblate_web/html/donate.html:88
 msgid "Payment address"
-msgstr ""
+msgstr "Adresa pre platbu"
 
 #: weblate_web/html/download.html:4 weblate_web/html/download.html:5
 msgid "Download Weblate"
@@ -412,6 +414,7 @@ msgstr "Poslednú verziu si môžete stiahnuť tu:"
 #: weblate_web/html/download.html:46 weblate_web/html/download.html:62
 msgid "You can also install using packages for following Linux distributions:"
 msgstr ""
+"Môžete využiť inštaláciu pomocou balíkov nasledovných Linuxových distribúcií:"
 
 #: weblate_web/html/download.html:52
 msgid "Weblate command line client"
@@ -625,16 +628,12 @@ msgid "Responsive UI"
 msgstr "Responzívne UI"
 
 #: weblate_web/html/features.html:161
-#, fuzzy
-#| msgid ""
-#| "Weblate has responsible UI which will work nicely on your desktop, tablet "
-#| "or phone."
 msgid ""
 "Weblate has responsive UI which will work nicely on your desktop, tablet or "
 "phone."
 msgstr ""
-"Weblate má responzívne UI, ktoré dobre funguje na vašom desktope, tablete "
-"alebo telefóne."
+"Weblate má svižné UI, ktoré dobre funguje na vašom desktope, tablete alebo "
+"telefóne."
 
 #: weblate_web/html/hosting-ordered.html:3
 #: weblate_web/html/hosting-ordered.html:4 weblate_web/html/hosting.html:3
@@ -665,7 +664,7 @@ msgstr "Zvyčajne sú potrebné nasledujúce informácie:"
 
 #: weblate_web/html/hosting-ordered.html:18 weblate_web/html/hosting.html:338
 msgid "URL of repository with translations."
-msgstr "URL repozitára s preklady."
+msgstr "URL repozitára s prekladmi."
 
 #: weblate_web/html/hosting-ordered.html:19 weblate_web/html/hosting.html:339
 msgid "Path to translations within the repository."
@@ -694,6 +693,8 @@ msgid ""
 "Hosted Weblate allows you to use Weblate without any effort and with premium "
 "support backed by it's core developers."
 msgstr ""
+"Služba Hosted Weblate vám umožní používať Weblate bez starostí a so "
+"špičkovou podporou od hlavných vývojárov."
 
 #: weblate_web/html/hosting.html:24
 #, python-format
@@ -734,8 +735,6 @@ msgid "Enterprise"
 msgstr "Enterprise"
 
 #: weblate_web/html/hosting.html:37
-#, fuzzy
-#| msgid "Self hosting"
 msgctxt "Hosting plan"
 msgid "Self hosted"
 msgstr "Vlastný hosting"
@@ -852,7 +851,7 @@ msgstr "%(price)s EUR / mesiac"
 
 #: weblate_web/html/hosting.html:195
 msgid "See below for options"
-msgstr ""
+msgstr "Možnosti viď nižšie"
 
 #: weblate_web/html/hosting.html:198
 #, python-format
@@ -899,54 +898,53 @@ msgstr ""
 "Bitcoin. Pre viac informácii nás kontaktujte."
 
 #: weblate_web/html/hosting.html:228
-#, fuzzy
-#| msgid "Support free hosting"
 msgid "Support for self hosted environments"
-msgstr "Podporte bezplatné hosťovanie"
+msgstr "Podpora pre vlastný hosting"
 
 #: weblate_web/html/hosting.html:230
 msgid ""
 "Worried of putting your translations into cloud? You can self host Weblate "
 "and we can still provide you premium support for your setup."
 msgstr ""
+"Obávate sa uloženia Vašich prekladov do cloudu? Môžete hostovať Weblate sami "
+"a my abezpečíme prémiovú podporu pre Vaše prostredie."
 
 #: weblate_web/html/hosting.html:236
 msgid "Installation on your Linux server"
-msgstr ""
+msgstr "Inštalácia na Váš Linux server"
 
 #: weblate_web/html/hosting.html:237
-#, fuzzy, python-format
-#| msgid "%(price)s EUR / year"
+#, python-format
 msgid "%(price)s EUR"
-msgstr "%(price)s EUR / rok"
+msgstr "%(price)s EUR"
 
 #: weblate_web/html/hosting.html:242
 msgid "One time installation of Weblate"
-msgstr ""
+msgstr "Jednorázová inštalácia Weblate"
 
 #: weblate_web/html/hosting.html:243
 msgid "Installation using virtualenv, uwsgi and nginx"
-msgstr ""
+msgstr "Ištalácia s využitím virtualenv, uwsgi a nginx"
 
 #: weblate_web/html/hosting.html:244
 msgid "Using PostgreSQL, MySQL or MariaDB as database backend"
-msgstr ""
+msgstr "S využitím databázy PostgreSQL, MySQL alebo MariaDB"
 
 #: weblate_web/html/hosting.html:245
 msgid "Requires root access or close cooperation of your admins"
-msgstr ""
+msgstr "Vyžaduje root prístup alebo dobrú kooperáciu Vášich administrátorov"
 
 #: weblate_web/html/hosting.html:246
 msgid "Configuration customization"
-msgstr ""
+msgstr "Prispôsobenie konfigurácie"
 
 #: weblate_web/html/hosting.html:247
 msgid "Does not include custom code development"
-msgstr ""
+msgstr "Nezahŕňa ďalší vývoj kódu pre špecifické účely"
 
 #: weblate_web/html/hosting.html:252
 msgid "Minimal support for self hosted Weblate"
-msgstr ""
+msgstr "Minimálna podpora pre vlasný Weblate hosting"
 
 #: weblate_web/html/hosting.html:259 weblate_web/html/hosting.html:274
 #, python-format
@@ -957,20 +955,23 @@ msgid_plural ""
 "Your Weblate will be upgraded to the latest version at least every %(count)s "
 "months."
 msgstr[0] ""
+"Váš Weblate bude upgradovaný na najnovšiu verziu minimálne raz za mesiac."
 msgstr[1] ""
+"Váš Weblate bude upgradovaný na najnovšiu verziu minimálne %(count)-krát za "
+"mesiac."
 msgstr[2] ""
+"Váš Weblate bude upgradovaný na najnovšiu verziu minimálne %(count)-krát za "
+"mesiac."
 
 #: weblate_web/html/hosting.html:260 weblate_web/html/hosting.html:275
 #: weblate_web/html/hosting.html:290
 msgid "We will fix issues that occur in your environment."
-msgstr ""
+msgstr "Vyriešime problémy, ktoré sa vystkytnú na Vašom prostredí."
 
 #: weblate_web/html/hosting.html:261 weblate_web/html/hosting.html:276
 #: weblate_web/html/hosting.html:291
-#, fuzzy
-#| msgid "Priority email support"
 msgid "You will receive priority email support."
-msgstr "Prioritná emailová podpora"
+msgstr "Získate prioritnú emailovú podporu."
 
 #: weblate_web/html/hosting.html:262 weblate_web/html/hosting.html:277
 #: weblate_web/html/hosting.html:292
@@ -978,59 +979,52 @@ msgstr "Prioritná emailová podpora"
 msgid "Up to %(amount)s hour of consulting or support per month are included."
 msgid_plural ""
 "Up to %(amount)s hours of consulting or support per month are included."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Zahrnuté konzultácie alebo podpora do %(amount) hodiny za mesiac."
+msgstr[1] "Zahrnuté konzultácie alebo podpora do %(amount) hodín za mesiac."
+msgstr[2] "Zahrnuté konzultácie alebo podpora do %(amount) hodín za mesiac."
 
 #: weblate_web/html/hosting.html:267
 msgid "Basic support for self hosted Weblate"
-msgstr ""
+msgstr "Základná podpora pre vlasný hosting Weblate"
 
 #: weblate_web/html/hosting.html:282
 msgid "Extended support for self hosted Weblate"
-msgstr ""
+msgstr "Rozšírená podpora pre vlasný hosting Weblate"
 
 #: weblate_web/html/hosting.html:289
 msgid "Your Weblate will be upgraded to the latest version on every release."
-msgstr ""
+msgstr "Váš Weblate bude upgradovaný na najnovšiu verziu po každom vydaní."
 
 #: weblate_web/html/hosting.html:297
 msgid "Consulting services or custom development"
-msgstr ""
+msgstr "Konzultácie alebo vývoj špecifických vlastností"
 
 #: weblate_web/html/hosting.html:298
-#, fuzzy, python-format
-#| msgid "%(price)s EUR / year"
+#, python-format
 msgid "%(price)s EUR / hour"
-msgstr "%(price)s EUR / rok"
+msgstr "%(price)s EUR / hodina"
 
 #: weblate_web/html/hosting.html:303
 msgid "Custom features development"
-msgstr ""
+msgstr "Vývoj špecifických vlastností"
 
 #: weblate_web/html/hosting.html:304
 msgid "Integrating Weblate into your workflow"
-msgstr ""
+msgstr "Integrácia Weblate do Vášho \"workflow\""
 
 #: weblate_web/html/hosting.html:305
 msgid "Suggestions on the internationalization or localization process"
-msgstr ""
+msgstr "Návrhy internacionalizácie alebo lokalizačného postupu"
 
 #: weblate_web/html/hosting.html:313
 msgid "Ask us for details about self hosted Weblate"
-msgstr ""
+msgstr "Opýtajte sa na detaily o vlastnom hostingu Weblate"
 
 #: weblate_web/html/hosting.html:315
 msgid "Hosting for free software"
-msgstr "Hosťovanie slobodného softvéru"
+msgstr "Hosting pre slobodný softvér"
 
 #: weblate_web/html/hosting.html:318
-#, fuzzy
-#| msgid ""
-#| "If you are interested in using Weblate for your free software, you can "
-#| "ask us to be include on <a href=\"https://hosted.weblate.org/\">hosted."
-#| "weblate.org</a>. This will allow you to use Weblate without installing "
-#| "and maintaining it."
 msgid ""
 "If you are interested in using Weblate for your free software, you can ask "
 "us for hosting of your translations on <a href=\"https://hosted.weblate.org/"
@@ -1038,12 +1032,12 @@ msgid ""
 "installing and maintaining it."
 msgstr ""
 "Ak chcete používať Weblate pre váš slobodný softvér, môžete nás požiadať o "
-"zaradenie na <a href=\"https://hosted.weblate.org/\">hosted.weblate.org</a>. "
+"hosting na <a href=\"https://hosted.weblate.org/\">hosted.weblate.org</a>. "
 "To Vám umožní používať Weblate bez nutnosti ho inštalovať a udržiavať."
 
 #: weblate_web/html/hosting.html:321
 msgid "Conditions for free hosting"
-msgstr "Podmienky pre bezplatné hosťovanie"
+msgstr "Podmienky pre bezplatný hosting"
 
 #: weblate_web/html/hosting.html:324
 msgid ""
@@ -1090,20 +1084,16 @@ msgid "Translation workflow"
 msgstr "Priebeh prekladu"
 
 #: weblate_web/html/hosting.html:345
-#, fuzzy
-#| msgid ""
-#| "All translated repositories are available at <code>git.weblate.org</code> "
-#| "with similar naming as on website - hello/master translation would be "
-#| "published as <code>git://git.weblate.org/hello-master.git</code>."
 msgid ""
 "All translated repositories are available using https protocol with similar "
 "naming as on website - weblate/master translation is published as "
 "<code>https://hosted.weblate.org/git/weblate/master/</code>. You can figure "
 "out the URL on the component information tab."
 msgstr ""
-"Všetky preložené repozitáre sú dostupné na <code>git.weblate.org</code> pod "
-"podobným menom ako na webe - preklad hello/master bude publikovaný na "
-"<code>git://git.weblate.org/hello-master.git</code>."
+"Všetky preložené repozitáre sú dostupné cez HTTPS pod menom podobným ako na "
+"webe - napr. preklad weblate/master je prístupný ako "
+"<code>https://hosted.weblate.org/git/weblate/master/</code>. Presnú URL "
+"môžete zistiť na záložke s informáciami o prekladovej komponente."
 
 #: weblate_web/html/hosting.html:349
 #, python-format
@@ -1167,12 +1157,17 @@ msgid ""
 "well with consulting services tailored for your needs. Please contact <a "
 "href=\"%(contact_url)s\">Michal Čihař</a> for more details."
 msgstr ""
+"Ak potrebujete pomoc s vlastným hostingom, radi Vám pomôžeme konzultáciami "
+"prisôsobené Vaším potrebám. Pre viac informácií, prosím, kontaktujte <a href="
+"\"%(contact_url)s\">Michal Čihař</a>."
 
 #: weblate_web/html/hosting.html:375
 msgid ""
 "All prices exclude VAT, invoices for EU countries are issued as a reverse "
 "charge, invoices for Czech Republic will include additional VAT."
 msgstr ""
+"Všetky ceny sú bez DPH, faktúry pre krajiny EU sú vystavené v režime \""
+"reverse charge\", faktúry pre Českú republiku sú navýšené o DPH."
 
 #: weblate_web/html/index.html:3
 msgid "Weblate - web-based translation"
@@ -1242,10 +1237,8 @@ msgstr ""
 "\">systému sledovania chýb na Github</a>."
 
 #: weblate_web/html/support.html:22
-#, fuzzy
-#| msgid "Report issue"
 msgid "Security issues"
-msgstr "Nahlásiť chybu"
+msgstr "Bezpečnostné chyby"
 
 #: weblate_web/html/support.html:25
 #, python-format
@@ -1254,6 +1247,9 @@ msgid ""
 "%(contact)s. More information on reporting security issues can be found in "
 "<a href=\"%(docs)s\">our documentation</a>."
 msgstr ""
+"Ak nájdete zraniteľnosť v našom kóde, prosím, nahláste to %(contact)s. Viac "
+"informácií o nahlasovaní  zraniteľností sa nachádza v <a href=\"%(docs)s\">"
+"our documentation</a>."
 
 #: weblate_web/html/support.html:28
 msgid "Mailing list"
@@ -1300,20 +1296,14 @@ msgid "IRC"
 msgstr "IRC"
 
 #: weblate_web/html/support.html:45
-#, fuzzy
-#| msgid ""
-#| "When some of interested people are online, you might also find help on "
-#| "#weblate channel on <a href=\"https://freenode.net/\">freenode</a> "
-#| "network. You can also use <a href=\"https://webchat.freenode.net?"
-#| "channels=weblate\">webchat</a> there."
 msgid ""
 "You might also find help on #weblate channel on <a href=\"https://freenode."
 "net/\">freenode</a> network. You can also use <a href=\"https://webchat."
 "freenode.net?channels=weblate\">webchat</a> there."
 msgstr ""
-"Ak je niekto online, môžete tiež vyhľadať pomoc na kanáli #weblate v sieti "
-"<a href=\"https://freenode.net/\">freenode</a>. Je tiež možné použiť ich <a "
-"href=\"https://webchat.freenode.net?channels=weblate\">webchat</a>."
+"Môžete tiež vyhľadať pomoc na kanáli #weblate v sieti <a href=\""
+"https://freenode.net/\">freenode</a>. Je tiež možné použiť ich <a href=\""
+"https://webchat.freenode.net?channels=weblate\">webchat</a>."
 
 #: weblate_web/html/support.html:48
 msgid "Consulting"
@@ -1321,7 +1311,7 @@ msgstr "Konzultácie"
 
 #: weblate_web/html/support.html:50
 msgid "See our support offerings for self hosted Weblate instances"
-msgstr ""
+msgstr "Viď našu ponuku pre podporu vlastného hostingu Weblate"
 
 #: weblate_web/html/support.html:53
 #, python-format
@@ -1366,7 +1356,7 @@ msgstr "Sauce Labs nám spúšťa Selenium testy v skutočných prehliadačoch."
 
 #: weblate_web/html/thanks.html:34
 msgid "Rollbar helps us to collect and fix errors happening on Hosted Weblate."
-msgstr ""
+msgstr "Rollbar nám pomáha zistiť a opraviť problémy na Hosted Weblate."
 
 #: weblate_web/html/thanks.html:38
 msgid "Our translations are being done on Hosted Weblate."
@@ -1388,6 +1378,8 @@ msgid ""
 "Support our project on Bountysource Salt and get exclusive logo placement on "
 "this page."
 msgstr ""
+"Podpote náš projekt na Bountysource Salt a získajte exkluzívne umiestnenie "
+"loga na tejto stránke."
 
 #: weblate_web/html/tour.html:3 weblate_web/html/tour.html:4
 msgid "Weblate tour"
