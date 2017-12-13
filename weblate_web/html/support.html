@@ -31,15 +31,39 @@
 {% blocktrans with '<a href="mailto:support@weblate.org">support@weblate.org</a>' as contact %}If you are using our hosting services, you can ask for support at {{ contact }}.{% endblocktrans %}
 </p>
 
-<h2>{% trans "Mailing list" %}</h2>
+<h2>{% trans "Mailing lists" %}</h2>
 
-<p>
-{% blocktrans %}There is a mailing list <a href="mailto:weblate@lists.cihar.com">weblate@lists.cihar.com</a> where you can discuss various things about Weblate. You can <a href="https://lists.cihar.com/cgi-bin/mailman/listinfo/weblate">subscribe</a> or <a href="https://lists.cihar.com/pipermail/weblate/">browse archives</a>.{% endblocktrans %}
-</p>
+<h3>{% trans "Users and developers mailing list" %}</h3>
+<ul>
+    <li>{% trans "You can use this mailing lists for discussions with other Weblate users and developers." %}</li>
+    <li>{% blocktrans %}You can post to it using <a href="mailto:weblate@lists.cihar.com">weblate@lists.cihar.com</a> address.{% endblocktrans %}</li>
+    <li><a href="https://lists.cihar.com/pipermail/weblate/">{% trans "You can browse mailing list archives" %}</a></li>
+<li><form class="form-inline" action="https://lists.cihar.com/cgi-bin/mailman/subscribe/weblate" method="POST">
+    <div class="input-group">
+      <input type="email" name="email" class="form-control" placeholder="{% trans "Enter your email" %}">
+      <span class="input-group-btn">
+        <input type="submit" value="{% trans "Subscribe" %}" class="btn btn-default">
+      </span>
+    </div>
+</form>
+</li>
+</ul>
 
-<p>
-{% blocktrans %}The mailing list is also available on <a href="https://dir.gmane.org/gmane.comp.web.weblate">Gmane</a> where you can browse archives or use NNTP interface.{% endblocktrans %}
-</p>
+<h3>{% trans "Hosted Weblate Announcements mailing list" %}</h3>
+<ul>
+    <li>{% trans "Low traffic mailing list with announcements about Hosted Weblate services." %}</li>
+    <li>{% trans "This list is moderated, only selected users can post announcements." %}</li>
+    <li><a href="https://lists.cihar.com/pipermail/hosted-weblate-announce/">{% trans "You can browse mailing list archives" %}</a></li>
+<li><form class="form-inline" action="https://lists.cihar.com/cgi-bin/mailman/subscribe/hosted-weblate-announce" method="POST">
+    <div class="input-group">
+      <input type="email" name="email" class="form-control" placeholder="{% trans "Enter your email" %}">
+      <span class="input-group-btn">
+        <input type="submit" value="{% trans "Subscribe" %}" class="btn btn-default">
+      </span>
+    </div>
+</form>
+</li>
+</ul>
 
 <h2>{% trans "Stack Overflow" %}</h2>
 
