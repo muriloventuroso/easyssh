@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2017-10-05 13:36+0200\n"
+"POT-Creation-Date: 2017-12-13 11:49+0100\n"
 "PO-Revision-Date: 2017-04-24 18:17+0000\n"
 "Last-Translator: Παναγιώτης Παπάζογλου <papaz_p@yahoo.com>\n"
 "Language-Team: Greek <https://hosted.weblate.org/projects/weblate/website/el/"
@@ -335,6 +335,7 @@ msgstr ""
 "χρειάζονται πολλά χρήματα, κάθε συνεισφορά μετράει."
 
 #: weblate_web/html/donate.html:33 weblate_web/html/donate.html:54
+#: weblate_web/html/thanks.html:12
 msgid "Fund on Bountysource"
 msgstr "Ταμείο στο Bountysource"
 
@@ -468,10 +469,6 @@ msgid "Running Weblate on OpenShift platform"
 msgstr "Εκτέλεση του Weblate σε μια πλατφόρμα OpenShift"
 
 #: weblate_web/html/download.html:77
-msgid "SUSE Studio appliances"
-msgstr "Συσκευές SUSE Studio"
-
-#: weblate_web/html/download.html:78
 msgid ""
 "BitNami Weblate stack providing native installation for most platforms as "
 "well as support for many public cloud providers"
@@ -1288,38 +1285,70 @@ msgstr ""
 "μπορούν να βρεθούν στην <a href=\"%(docs)s\">τεκμηρίωσή μας</a>."
 
 #: weblate_web/html/support.html:28
-msgid "Mailing list"
-msgstr "Λίστα επικοινωνίας"
+#, fuzzy
+#| msgid "Basic support for self hosted Weblate"
+msgid "Support for Hosted Weblate services"
+msgstr "Βασική υποστήριξη αυτοφιλοξενούμενου Weblate"
 
 #: weblate_web/html/support.html:31
+#, python-format
 msgid ""
-"There is a mailing list <a href=\"mailto:weblate@lists.cihar.com"
-"\">weblate@lists.cihar.com</a> where you can discuss various things about "
-"Weblate. You can <a href=\"https://lists.cihar.com/cgi-bin/mailman/listinfo/"
-"weblate\">subscribe</a> or <a href=\"https://lists.cihar.com/pipermail/"
-"weblate/\">browse archives</a>."
+"If you are using our hosting services, you can ask for support at "
+"%(contact)s."
 msgstr ""
-"Υπάρχει μια λίστα επικοινωνίας <a href=\"mailto:weblate@lists.cihar.com"
-"\">weblate@lists.cihar.com</a> όπου μπορείτε να συζητήσετε για διάφορα "
-"πράγματα σχετικά με το Weblate. Μπορείτε να <a href=\"https://lists.cihar."
-"com/cgi-bin/mailman/listinfo/weblate\">εγγραφείτε</a> ή να <a href=\"https://"
-"lists.cihar.com/pipermail/weblate/\"> αναζητήστε τα αρχείo</a>."
 
-#: weblate_web/html/support.html:35
-msgid ""
-"The mailing list is also available on <a href=\"https://dir.gmane.org/gmane."
-"comp.web.weblate\">Gmane</a> where you can browse archives or use NNTP "
-"interface."
+#: weblate_web/html/support.html:34
+#, fuzzy
+#| msgid "Mailing list"
+msgid "Mailing lists"
+msgstr "Λίστα επικοινωνίας"
+
+#: weblate_web/html/support.html:36
+msgid "Users and developers mailing list"
 msgstr ""
-"Η λίστα αλληλογραφίας είναι επίσης διαθέσιμη στο <a href=\"https://dir.gmane."
-"org/gmane.comp.web.weblate\">Gmane</a> όπου μπορείτε να περιηγηθείτε στο "
-"αρχείο ή να χρησιμοποιήσετε περιβάλλον NNTP."
 
 #: weblate_web/html/support.html:38
+msgid ""
+"You can use this mailing lists for discussions with other Weblate users and "
+"developers."
+msgstr ""
+
+#: weblate_web/html/support.html:39
+msgid ""
+"You can post to it using <a href=\"mailto:weblate@lists.cihar.com"
+"\">weblate@lists.cihar.com</a> address."
+msgstr ""
+
+#: weblate_web/html/support.html:40 weblate_web/html/support.html:56
+msgid "You can browse mailing list archives"
+msgstr ""
+
+#: weblate_web/html/support.html:43 weblate_web/html/support.html:59
+msgid "Enter your email"
+msgstr ""
+
+#: weblate_web/html/support.html:45 weblate_web/html/support.html:61
+msgid "Subscribe"
+msgstr ""
+
+#: weblate_web/html/support.html:52
+msgid "Hosted Weblate Announcements mailing list"
+msgstr ""
+
+#: weblate_web/html/support.html:54
+msgid ""
+"Low traffic mailing list with announcements about Hosted Weblate services."
+msgstr ""
+
+#: weblate_web/html/support.html:55
+msgid "This list is moderated, only selected users can post announcements."
+msgstr ""
+
+#: weblate_web/html/support.html:68
 msgid "Stack Overflow"
 msgstr "Υπερχείλιση στοίβας"
 
-#: weblate_web/html/support.html:40
+#: weblate_web/html/support.html:70
 #, python-format
 msgid ""
 "You can also ask related questions on <a href=\"%(url)s\">Stack Overflow</a>."
@@ -1327,37 +1356,16 @@ msgstr ""
 "Μπορείτε, επίσης, να ρωτήσετε σχετικές ερωτήσεις για την <a href=\"%(url)s"
 "\">Υπερχείλιση Στοίβας</a>."
 
-#: weblate_web/html/support.html:42
-msgid "IRC"
-msgstr "IRC"
-
-#: weblate_web/html/support.html:45
-#, fuzzy
-#| msgid ""
-#| "When some of interested people are online, you might also find help on "
-#| "#weblate channel on <a href=\"https://freenode.net/\">freenode</a> "
-#| "network. You can also use <a href=\"https://webchat.freenode.net?"
-#| "channels=weblate\">webchat</a> there."
-msgid ""
-"You might also find help on #weblate channel on <a href=\"https://freenode."
-"net/\">freenode</a> network. You can also use <a href=\"https://webchat."
-"freenode.net?channels=weblate\">webchat</a> there."
-msgstr ""
-"Όταν ορισμένοι ενδιαφέροντες άνθρωποι είναι συνδεδεμένοι, μπορείτε να βρείτε "
-"βοήθεια στο κανάλι #weblate στο δίκτυο <a href=\"https://freenode.net/"
-"\">freenode</a>. Μπορείτε επίσης να χρησιμοποιήσετε εκεί το <a href="
-"\"https://webchat.freenode.net?channels=weblate\">webchat</a>."
-
-#: weblate_web/html/support.html:48
+#: weblate_web/html/support.html:72
 msgid "Consulting"
 msgstr "Συμβουλευτική"
 
-#: weblate_web/html/support.html:50
+#: weblate_web/html/support.html:74
 msgid "See our support offerings for self hosted Weblate instances"
 msgstr ""
 "Δείτε τις προσφορές υποστήριξης για περιπτώσεις αυτοφιλοξενούμενου Weblate"
 
-#: weblate_web/html/support.html:53
+#: weblate_web/html/support.html:77
 #, python-format
 msgid ""
 "You can also contact <a href=\"%(contact_link)s\">Michal Čihař</a>, who is "
@@ -1374,58 +1382,58 @@ msgstr "Ευχαριστούμε για το Weblate"
 msgid "Weblate is thankful for help from others."
 msgstr "Το Weblate είναι ευγνώμον για τη βοήθεια από άλλους."
 
-#: weblate_web/html/thanks.html:12
+#: weblate_web/html/thanks.html:20
 msgid "Technology"
 msgstr "Τεχνολογία"
 
-#: weblate_web/html/thanks.html:14
+#: weblate_web/html/thanks.html:22
 msgid "The development of Weblate is based on the following technologies:"
 msgstr "Η ανάπτυξη του Weblate βασίστηκε στις ακόλουθες τεχνολογίες:"
 
-#: weblate_web/html/thanks.html:18
+#: weblate_web/html/thanks.html:26
 msgid "GitHub provides hosting for our source code and issue tracker."
 msgstr ""
 "Το Github παρέχει φιλοξενία για τον πηγαίο μας κώδικα και τον ιχνηλάτη "
 "θεμάτων."
 
-#: weblate_web/html/thanks.html:22
+#: weblate_web/html/thanks.html:30
 msgid "Travis CI is our continuous integration platform."
 msgstr "Το Travis CI είναι η πλατφόρμα συνεχούς ενσωμάτωσης."
 
-#: weblate_web/html/thanks.html:26
+#: weblate_web/html/thanks.html:34
 msgid "Codecov helps us to monitor code coverage of our test suite."
 msgstr ""
 "Το Codecov μας βοηθάει να εποπτεύουμε την κάλυψη του κώδικα στη σουίτα "
 "ελέγχου μας."
 
-#: weblate_web/html/thanks.html:30
+#: weblate_web/html/thanks.html:38
 msgid "Sauce Labs is running our Selenium tests in real browsers."
 msgstr ""
 "Τα εργαστήρια Σάλτσα εκτελούν τις δοκιμές Σεληνίου μας σε πραγματικούς "
 "φυλλομετρητές."
 
-#: weblate_web/html/thanks.html:34
+#: weblate_web/html/thanks.html:42
 msgid "Rollbar helps us to collect and fix errors happening on Hosted Weblate."
 msgstr ""
 "Η γραμμή κύλισης μας βοηθάει να συλλέγουμε και διορθώνουμε σφάλματα που "
 "συμβαίνουν στο Hosted Weblate."
 
-#: weblate_web/html/thanks.html:38
+#: weblate_web/html/thanks.html:46
 msgid "Our translations are being done on Hosted Weblate."
 msgstr "Οι μεταφράσεις μας γίνονται στο Hosted Weblate."
 
-#: weblate_web/html/thanks.html:42
+#: weblate_web/html/thanks.html:50
 msgid "Supporters"
 msgstr "Υποστηρικτές"
 
-#: weblate_web/html/thanks.html:44
+#: weblate_web/html/thanks.html:52
 msgid ""
 "Free hosting for free software projects would be impossible without our "
 "sponsors."
 msgstr ""
 "Δωρεάν φιλοξενία για δωρεάν έργα λογισμικού θα ήταν αδύνατη χωρίς χορηγούς."
 
-#: weblate_web/html/thanks.html:46
+#: weblate_web/html/thanks.html:54
 msgid ""
 "Support our project on Bountysource Salt and get exclusive logo placement on "
 "this page."
@@ -1465,10 +1473,16 @@ msgstr ""
 "<code>demo</code> με συνθηματικό το <code>demo</code>."
 
 #: weblate_web/html/try.html:25
+msgid ""
+"To test the review workflow there, you can also login as <code>review</code> "
+"user with <code>review</code> password."
+msgstr ""
+
+#: weblate_web/html/try.html:27
 msgid "Appliances"
 msgstr "Εφαρμογές"
 
-#: weblate_web/html/try.html:28
+#: weblate_web/html/try.html:30
 #, python-format
 msgid ""
 "Check our <a href=\"%(download_url)s\">download page</a> for appliances, "
@@ -1514,6 +1528,50 @@ msgstr "Προελεύσεις tarball, συμπιεσμένο xz"
 #: weblate_web/templatetags/downloads.py:61
 msgid "Sources, zip compressed"
 msgstr "Προελεύσεις, συμπιεσμένο zip"
+
+#~ msgid "SUSE Studio appliances"
+#~ msgstr "Συσκευές SUSE Studio"
+
+#~ msgid ""
+#~ "There is a mailing list <a href=\"mailto:weblate@lists.cihar.com"
+#~ "\">weblate@lists.cihar.com</a> where you can discuss various things about "
+#~ "Weblate. You can <a href=\"https://lists.cihar.com/cgi-bin/mailman/"
+#~ "listinfo/weblate\">subscribe</a> or <a href=\"https://lists.cihar.com/"
+#~ "pipermail/weblate/\">browse archives</a>."
+#~ msgstr ""
+#~ "Υπάρχει μια λίστα επικοινωνίας <a href=\"mailto:weblate@lists.cihar.com"
+#~ "\">weblate@lists.cihar.com</a> όπου μπορείτε να συζητήσετε για διάφορα "
+#~ "πράγματα σχετικά με το Weblate. Μπορείτε να <a href=\"https://lists.cihar."
+#~ "com/cgi-bin/mailman/listinfo/weblate\">εγγραφείτε</a> ή να <a href="
+#~ "\"https://lists.cihar.com/pipermail/weblate/\"> αναζητήστε τα αρχείo</a>."
+
+#~ msgid ""
+#~ "The mailing list is also available on <a href=\"https://dir.gmane.org/"
+#~ "gmane.comp.web.weblate\">Gmane</a> where you can browse archives or use "
+#~ "NNTP interface."
+#~ msgstr ""
+#~ "Η λίστα αλληλογραφίας είναι επίσης διαθέσιμη στο <a href=\"https://dir."
+#~ "gmane.org/gmane.comp.web.weblate\">Gmane</a> όπου μπορείτε να "
+#~ "περιηγηθείτε στο αρχείο ή να χρησιμοποιήσετε περιβάλλον NNTP."
+
+#~ msgid "IRC"
+#~ msgstr "IRC"
+
+#, fuzzy
+#~| msgid ""
+#~| "When some of interested people are online, you might also find help on "
+#~| "#weblate channel on <a href=\"https://freenode.net/\">freenode</a> "
+#~| "network. You can also use <a href=\"https://webchat.freenode.net?"
+#~| "channels=weblate\">webchat</a> there."
+#~ msgid ""
+#~ "You might also find help on #weblate channel on <a href=\"https://"
+#~ "freenode.net/\">freenode</a> network. You can also use <a href=\"https://"
+#~ "webchat.freenode.net?channels=weblate\">webchat</a> there."
+#~ msgstr ""
+#~ "Όταν ορισμένοι ενδιαφέροντες άνθρωποι είναι συνδεδεμένοι, μπορείτε να "
+#~ "βρείτε βοήθεια στο κανάλι #weblate στο δίκτυο <a href=\"https://freenode."
+#~ "net/\">freenode</a>. Μπορείτε επίσης να χρησιμοποιήσετε εκεί το <a href="
+#~ "\"https://webchat.freenode.net?channels=weblate\">webchat</a>."
 
 #~ msgid "Donate using Coinbase"
 #~ msgstr "Δωρεά με χρήση Conbase"

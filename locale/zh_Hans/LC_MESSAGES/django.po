@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2017-10-05 13:36+0200\n"
+"POT-Creation-Date: 2017-12-13 11:49+0100\n"
 "PO-Revision-Date: 2017-10-21 16:09+0000\n"
 "Last-Translator: Dingzhong Chen <wsxy162@gmail.com>\n"
-"Language-Team: Chinese (Simplified) "
-"<https://hosted.weblate.org/projects/weblate/website/zh_Hans/>\n"
+"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
+"weblate/website/zh_Hans/>\n"
 "Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -307,6 +307,7 @@ msgstr ""
 "很多钱，每一分钱都会充分利用。"
 
 #: weblate_web/html/donate.html:33 weblate_web/html/donate.html:54
+#: weblate_web/html/thanks.html:12
 msgid "Fund on Bountysource"
 msgstr "Bountysource 专项众筹"
 
@@ -356,7 +357,9 @@ msgstr "加密货币"
 msgid ""
 "Thanks to <a href=\"%(url)s\">Trezor</a>, we will gladly accept donations in "
 "several cryptocurrencies. You can use the addresses in table below."
-msgstr "多谢了 <a href=\"%(url)s\">Trezor</a>，我们很高兴能接受以多种加密货币的捐助。您可以使用下表中的地址。"
+msgstr ""
+"多谢了 <a href=\"%(url)s\">Trezor</a>，我们很高兴能接受以多种加密货币的捐助。"
+"您可以使用下表中的地址。"
 
 #: weblate_web/html/donate.html:88
 msgid "Currency"
@@ -426,10 +429,6 @@ msgid "Running Weblate on OpenShift platform"
 msgstr "在 OpenShift 平台上运行 Weblate"
 
 #: weblate_web/html/download.html:77
-msgid "SUSE Studio appliances"
-msgstr "SUSE Studio 实例"
-
-#: weblate_web/html/download.html:78
 msgid ""
 "BitNami Weblate stack providing native installation for most platforms as "
 "well as support for many public cloud providers"
@@ -1175,64 +1174,84 @@ msgstr ""
 "\"%(docs)s\">我们的文档</a>中找到更多报告安全问题的相关信息。"
 
 #: weblate_web/html/support.html:28
-msgid "Mailing list"
-msgstr "邮件列表"
+#, fuzzy
+#| msgid "Basic support for self hosted Weblate"
+msgid "Support for Hosted Weblate services"
+msgstr "对自主托管 Weblate 的基本支持"
 
 #: weblate_web/html/support.html:31
+#, python-format
 msgid ""
-"There is a mailing list <a href=\"mailto:weblate@lists.cihar.com"
-"\">weblate@lists.cihar.com</a> where you can discuss various things about "
-"Weblate. You can <a href=\"https://lists.cihar.com/cgi-bin/mailman/listinfo/"
-"weblate\">subscribe</a> or <a href=\"https://lists.cihar.com/pipermail/"
-"weblate/\">browse archives</a>."
+"If you are using our hosting services, you can ask for support at "
+"%(contact)s."
 msgstr ""
-"邮件列表 <a href=\"mailto:weblate@lists.cihar.com\">weblate@lists.cihar.com</"
-"a> 可以讨论与 Weblate 相关的问题。您可以<a href=\"https://lists.cihar.com/"
-"cgi-bin/mailman/listinfo/weblate\">订阅</a>或<a href=\"https://lists.cihar."
-"com/pipermail/weblate/\">浏览存档</a>。"
 
-#: weblate_web/html/support.html:35
-msgid ""
-"The mailing list is also available on <a href=\"https://dir.gmane.org/gmane."
-"comp.web.weblate\">Gmane</a> where you can browse archives or use NNTP "
-"interface."
+#: weblate_web/html/support.html:34
+#, fuzzy
+#| msgid "Mailing list"
+msgid "Mailing lists"
+msgstr "邮件列表"
+
+#: weblate_web/html/support.html:36
+msgid "Users and developers mailing list"
 msgstr ""
-"您也可以到 <a href=\"https://dir.gmane.org/gmane.comp.web.weblate\">Gmane</"
-"a> 浏览邮件列表的存档或使用 NNTP 接口。"
 
 #: weblate_web/html/support.html:38
+msgid ""
+"You can use this mailing lists for discussions with other Weblate users and "
+"developers."
+msgstr ""
+
+#: weblate_web/html/support.html:39
+msgid ""
+"You can post to it using <a href=\"mailto:weblate@lists.cihar.com"
+"\">weblate@lists.cihar.com</a> address."
+msgstr ""
+
+#: weblate_web/html/support.html:40 weblate_web/html/support.html:56
+msgid "You can browse mailing list archives"
+msgstr ""
+
+#: weblate_web/html/support.html:43 weblate_web/html/support.html:59
+msgid "Enter your email"
+msgstr ""
+
+#: weblate_web/html/support.html:45 weblate_web/html/support.html:61
+msgid "Subscribe"
+msgstr ""
+
+#: weblate_web/html/support.html:52
+msgid "Hosted Weblate Announcements mailing list"
+msgstr ""
+
+#: weblate_web/html/support.html:54
+msgid ""
+"Low traffic mailing list with announcements about Hosted Weblate services."
+msgstr ""
+
+#: weblate_web/html/support.html:55
+msgid "This list is moderated, only selected users can post announcements."
+msgstr ""
+
+#: weblate_web/html/support.html:68
 msgid "Stack Overflow"
 msgstr "Stack Overflow"
 
-#: weblate_web/html/support.html:40
+#: weblate_web/html/support.html:70
 #, python-format
 msgid ""
 "You can also ask related questions on <a href=\"%(url)s\">Stack Overflow</a>."
 msgstr "您还可以在 <a href=\"%(url)s\">Stack Overflow</a> 上询问相关的问题。"
 
-#: weblate_web/html/support.html:42
-msgid "IRC"
-msgstr "IRC"
-
-#: weblate_web/html/support.html:45
-msgid ""
-"You might also find help on #weblate channel on <a href=\"https://freenode."
-"net/\">freenode</a> network. You can also use <a href=\"https://webchat."
-"freenode.net?channels=weblate\">webchat</a> there."
-msgstr ""
-"您也可以在 <a href=\"https://freenode.net/\">freenode</a> 网络的 #weblate 频"
-"道中寻求帮助。您还可以使用其中的<a href=\"https://webchat.freenode.net?"
-"channels=weblate\">webchat(网络聊天界面)</a>。"
-
-#: weblate_web/html/support.html:48
+#: weblate_web/html/support.html:72
 msgid "Consulting"
 msgstr "咨询"
 
-#: weblate_web/html/support.html:50
+#: weblate_web/html/support.html:74
 msgid "See our support offerings for self hosted Weblate instances"
 msgstr "请参阅我们对自主托管 Weblate 实例提供的支持"
 
-#: weblate_web/html/support.html:53
+#: weblate_web/html/support.html:77
 #, python-format
 msgid ""
 "You can also contact <a href=\"%(contact_link)s\">Michal Čihař</a>, who is "
@@ -1249,49 +1268,49 @@ msgstr "来自 Weblate 的感谢"
 msgid "Weblate is thankful for help from others."
 msgstr "Weblate 衷心感谢大家的帮助。"
 
-#: weblate_web/html/thanks.html:12
+#: weblate_web/html/thanks.html:20
 msgid "Technology"
 msgstr "技术"
 
-#: weblate_web/html/thanks.html:14
+#: weblate_web/html/thanks.html:22
 msgid "The development of Weblate is based on the following technologies:"
 msgstr "Weblate 的开发基于下列技术的支持："
 
-#: weblate_web/html/thanks.html:18
+#: weblate_web/html/thanks.html:26
 msgid "GitHub provides hosting for our source code and issue tracker."
 msgstr "GitHub 为我们的源代码和问题追踪器提供托管。"
 
-#: weblate_web/html/thanks.html:22
+#: weblate_web/html/thanks.html:30
 msgid "Travis CI is our continuous integration platform."
 msgstr "Travis CI 是我们的持续集成平台。"
 
-#: weblate_web/html/thanks.html:26
+#: weblate_web/html/thanks.html:34
 msgid "Codecov helps us to monitor code coverage of our test suite."
 msgstr "Codecov 帮助我们监控测试套件的代码覆盖率。"
 
-#: weblate_web/html/thanks.html:30
+#: weblate_web/html/thanks.html:38
 msgid "Sauce Labs is running our Selenium tests in real browsers."
 msgstr "Sauce Labs 在真实的浏览器中运行我们的 Selenium 测试。"
 
-#: weblate_web/html/thanks.html:34
+#: weblate_web/html/thanks.html:42
 msgid "Rollbar helps us to collect and fix errors happening on Hosted Weblate."
 msgstr "Rollbar 帮助我们收集和修复发生在 Hosted Weblate 上的错误。"
 
-#: weblate_web/html/thanks.html:38
+#: weblate_web/html/thanks.html:46
 msgid "Our translations are being done on Hosted Weblate."
 msgstr "我们的翻译在 Hosted 网站上托管。"
 
-#: weblate_web/html/thanks.html:42
+#: weblate_web/html/thanks.html:50
 msgid "Supporters"
 msgstr "支持者"
 
-#: weblate_web/html/thanks.html:44
+#: weblate_web/html/thanks.html:52
 msgid ""
 "Free hosting for free software projects would be impossible without our "
 "sponsors."
 msgstr "免费托管自由软件项目离不开我们的赞助商。"
 
-#: weblate_web/html/thanks.html:46
+#: weblate_web/html/thanks.html:54
 msgid ""
 "Support our project on Bountysource Salt and get exclusive logo placement on "
 "this page."
@@ -1328,10 +1347,16 @@ msgstr ""
 "code> 密码登录。"
 
 #: weblate_web/html/try.html:25
+msgid ""
+"To test the review workflow there, you can also login as <code>review</code> "
+"user with <code>review</code> password."
+msgstr ""
+
+#: weblate_web/html/try.html:27
 msgid "Appliances"
 msgstr "套件"
 
-#: weblate_web/html/try.html:28
+#: weblate_web/html/try.html:30
 #, python-format
 msgid ""
 "Check our <a href=\"%(download_url)s\">download page</a> for appliances, "
@@ -1376,6 +1401,41 @@ msgstr "源代码 tar 包，xz 压缩"
 #: weblate_web/templatetags/downloads.py:61
 msgid "Sources, zip compressed"
 msgstr "源代码，zip 压缩"
+
+#~ msgid "SUSE Studio appliances"
+#~ msgstr "SUSE Studio 实例"
+
+#~ msgid ""
+#~ "There is a mailing list <a href=\"mailto:weblate@lists.cihar.com"
+#~ "\">weblate@lists.cihar.com</a> where you can discuss various things about "
+#~ "Weblate. You can <a href=\"https://lists.cihar.com/cgi-bin/mailman/"
+#~ "listinfo/weblate\">subscribe</a> or <a href=\"https://lists.cihar.com/"
+#~ "pipermail/weblate/\">browse archives</a>."
+#~ msgstr ""
+#~ "邮件列表 <a href=\"mailto:weblate@lists.cihar.com\">weblate@lists.cihar."
+#~ "com</a> 可以讨论与 Weblate 相关的问题。您可以<a href=\"https://lists."
+#~ "cihar.com/cgi-bin/mailman/listinfo/weblate\">订阅</a>或<a href=\"https://"
+#~ "lists.cihar.com/pipermail/weblate/\">浏览存档</a>。"
+
+#~ msgid ""
+#~ "The mailing list is also available on <a href=\"https://dir.gmane.org/"
+#~ "gmane.comp.web.weblate\">Gmane</a> where you can browse archives or use "
+#~ "NNTP interface."
+#~ msgstr ""
+#~ "您也可以到 <a href=\"https://dir.gmane.org/gmane.comp.web.weblate"
+#~ "\">Gmane</a> 浏览邮件列表的存档或使用 NNTP 接口。"
+
+#~ msgid "IRC"
+#~ msgstr "IRC"
+
+#~ msgid ""
+#~ "You might also find help on #weblate channel on <a href=\"https://"
+#~ "freenode.net/\">freenode</a> network. You can also use <a href=\"https://"
+#~ "webchat.freenode.net?channels=weblate\">webchat</a> there."
+#~ msgstr ""
+#~ "您也可以在 <a href=\"https://freenode.net/\">freenode</a> 网络的 #weblate "
+#~ "频道中寻求帮助。您还可以使用其中的<a href=\"https://webchat.freenode.net?"
+#~ "channels=weblate\">webchat(网络聊天界面)</a>。"
 
 #~ msgid "Donate using Coinbase"
 #~ msgstr "通过 Coinbase 捐助"

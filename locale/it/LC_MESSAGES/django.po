@@ -6,11 +6,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Weblate v. 2017.09.28\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2017-09-28 15:10+0000\n"
+"POT-Creation-Date: 2017-12-13 11:49+0100\n"
 "PO-Revision-Date: 2017-10-10 09:46+0000\n"
 "Last-Translator: ROBERTO <roberto.boriotti@canon-europe.com>\n"
-"Language-Team: Italian "
-"<https://hosted.weblate.org/projects/weblate/website/it/>\n"
+"Language-Team: Italian <https://hosted.weblate.org/projects/weblate/website/"
+"it/>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -329,6 +329,7 @@ msgstr ""
 "grosse cifre, ogni centesimo conta."
 
 #: weblate_web/html/donate.html:33 weblate_web/html/donate.html:54
+#: weblate_web/html/thanks.html:12
 msgid "Fund on Bountysource"
 msgstr "Finanziamento attraverso Bountysource"
 
@@ -426,7 +427,8 @@ msgstr "Potete scaricare l'ultima release qui:"
 
 #: weblate_web/html/download.html:46 weblate_web/html/download.html:62
 msgid "You can also install using packages for following Linux distributions:"
-msgstr "Puoi installare usando i pacchetti per le seguenti distribuzioni Linux:"
+msgstr ""
+"Puoi installare usando i pacchetti per le seguenti distribuzioni Linux:"
 
 #: weblate_web/html/download.html:52
 msgid "Weblate command line client"
@@ -462,10 +464,6 @@ msgid "Running Weblate on OpenShift platform"
 msgstr "Eseguire Weblate su piattaforma OpenShift"
 
 #: weblate_web/html/download.html:77
-msgid "SUSE Studio appliances"
-msgstr "Applicazioni SUSE Studio"
-
-#: weblate_web/html/download.html:78
 msgid ""
 "BitNami Weblate stack providing native installation for most platforms as "
 "well as support for many public cloud providers"
@@ -725,8 +723,8 @@ msgid ""
 msgstr ""
 "Possiamo ospitare le traduzioni per i tuoi progetti commerciali o gratuiti. "
 "Puoi vedere la sintesi dei piani di hosting qui sotto. Se hai domande o "
-"cercchi un hosting per progetti più grandi, non esitare a <a href=\""
-"%(contact)s\">contattarci</a>."
+"cercchi un hosting per progetti più grandi, non esitare a <a href="
+"\"%(contact)s\">contattarci</a>."
 
 #: weblate_web/html/hosting.html:32
 msgctxt "Hosting plan"
@@ -880,7 +878,8 @@ msgstr "Annualmente con fattura (risparmi il 15-20%%)"
 #: weblate_web/html/hosting.html:200 weblate_web/html/hosting.html:203
 #: weblate_web/html/hosting.html:206 weblate_web/html/hosting.html:209
 msgid "Ask us for yearly invoicing with discount."
-msgstr "Chiedici maggiori dettagl sulla fatturazione annuale e relativ isconti."
+msgstr ""
+"Chiedici maggiori dettagl sulla fatturazione annuale e relativ isconti."
 
 #: weblate_web/html/hosting.html:200 weblate_web/html/hosting.html:203
 #: weblate_web/html/hosting.html:206 weblate_web/html/hosting.html:209
@@ -914,8 +913,8 @@ msgid ""
 "Alternatively we can accept payments by wire transfer (preferably IBAN) or "
 "Bitcoin. Please get in touch for more details."
 msgstr ""
-"In alternativa possiamo accettare i pagamenti tramite bonifico bancario ("
-"preferibilmente IBAN) o Bitcoin. contattaci per ulteriori dettagli."
+"In alternativa possiamo accettare i pagamenti tramite bonifico bancario "
+"(preferibilmente IBAN) o Bitcoin. contattaci per ulteriori dettagli."
 
 #: weblate_web/html/hosting.html:228
 msgid "Support for self hosted environments"
@@ -984,7 +983,8 @@ msgstr[1] ""
 #: weblate_web/html/hosting.html:260 weblate_web/html/hosting.html:275
 #: weblate_web/html/hosting.html:290
 msgid "We will fix issues that occur in your environment."
-msgstr "Noi corregeremo i problemi che hai verificato nella tua configurazione."
+msgstr ""
+"Noi corregeremo i problemi che hai verificato nella tua configurazione."
 
 #: weblate_web/html/hosting.html:261 weblate_web/html/hosting.html:276
 #: weblate_web/html/hosting.html:291
@@ -1051,9 +1051,9 @@ msgid ""
 "installing and maintaining it."
 msgstr ""
 "Se sei interessato a usare Weblate per il tuo software libero, puoi "
-"richiedere di essere incluso in<a href=\"https://hosted.weblate.org/\""
-">hosted.weblate.org</a>. Questo ti permetterà di usare Weblate senza doverlo "
-"installare e manutenere."
+"richiedere di essere incluso in<a href=\"https://hosted.weblate.org/"
+"\">hosted.weblate.org</a>. Questo ti permetterà di usare Weblate senza "
+"doverlo installare e manutenere."
 
 #: weblate_web/html/hosting.html:321
 msgid "Conditions for free hosting"
@@ -1114,9 +1114,8 @@ msgid ""
 msgstr ""
 "Tutti i repository tradotti sono disponibili usando il prootocollo https "
 "usando un nome similare come nel sito web - la traduzione weblate/master "
-"sarà pubblicata come "
-"<code>https://hosted.weblate.org/git/weblate/master</code>. Puoi individuare "
-"l'URL nella scheda informazione componente."
+"sarà pubblicata come <code>https://hosted.weblate.org/git/weblate/master</"
+"code>. Puoi individuare l'URL nella scheda informazione componente."
 
 #: weblate_web/html/hosting.html:349
 #, python-format
@@ -1181,8 +1180,8 @@ msgid ""
 msgstr ""
 "Nel caso tu abbia bisogno di aiuto con la tua soluzione self-hosted, siamo "
 "pronti ad aiutarti anche con i servizi di consulenza su misura per le tue "
-"esigenze. Per ulteriori informazioni, contatta <a href=\"%(contact_url)s\">"
-"Michal Čihař</a>."
+"esigenze. Per ulteriori informazioni, contatta <a href=\"%(contact_url)s"
+"\">Michal Čihař</a>."
 
 #: weblate_web/html/hosting.html:375
 msgid ""
@@ -1278,39 +1277,70 @@ msgstr ""
 "\"%(docs)s\">documentazione</a>."
 
 #: weblate_web/html/support.html:28
-msgid "Mailing list"
-msgstr "Mailing list"
+#, fuzzy
+#| msgid "Basic support for self hosted Weblate"
+msgid "Support for Hosted Weblate services"
+msgstr "Supporto base su Weblate gestito autonomamnete"
 
 #: weblate_web/html/support.html:31
+#, python-format
 msgid ""
-"There is a mailing list <a href=\"mailto:weblate@lists.cihar.com"
-"\">weblate@lists.cihar.com</a> where you can discuss various things about "
-"Weblate. You can <a href=\"https://lists.cihar.com/cgi-bin/mailman/listinfo/"
-"weblate\">subscribe</a> or <a href=\"https://lists.cihar.com/pipermail/"
-"weblate/\">browse archives</a>."
+"If you are using our hosting services, you can ask for support at "
+"%(contact)s."
 msgstr ""
-"Una mailining list è disponibile attraverso <a href=\"mailto:weblate@lists."
-"cihar.com\">weblate@lists.cihar.com</a> dove potete discorrere a proposito "
-"di Weblate. Potete <a href=\"https://lists.cihar.com/cgi-bin/mailman/"
-"listinfo/weblate\">effettuare una sottoscrizione</a> oppure <a href="
-"\"https://lists.cihar.com/pipermail/weblate/\">visionare l'archivio delle "
-"discussioni</a>."
 
-#: weblate_web/html/support.html:35
-msgid ""
-"The mailing list is also available on <a href=\"https://dir.gmane.org/gmane."
-"comp.web.weblate\">Gmane</a> where you can browse archives or use NNTP "
-"interface."
+#: weblate_web/html/support.html:34
+#, fuzzy
+#| msgid "Mailing list"
+msgid "Mailing lists"
+msgstr "Mailing list"
+
+#: weblate_web/html/support.html:36
+msgid "Users and developers mailing list"
 msgstr ""
-"La mailing list è disponibile anche attraverso <a href=\"https://dir.gmane."
-"org/gmane.comp.web.weblate\">Gmane</a> dove potete visionare larchivio delle "
-"discussioni o utilizzare l'interfacia NNTP."
 
 #: weblate_web/html/support.html:38
+msgid ""
+"You can use this mailing lists for discussions with other Weblate users and "
+"developers."
+msgstr ""
+
+#: weblate_web/html/support.html:39
+msgid ""
+"You can post to it using <a href=\"mailto:weblate@lists.cihar.com"
+"\">weblate@lists.cihar.com</a> address."
+msgstr ""
+
+#: weblate_web/html/support.html:40 weblate_web/html/support.html:56
+msgid "You can browse mailing list archives"
+msgstr ""
+
+#: weblate_web/html/support.html:43 weblate_web/html/support.html:59
+msgid "Enter your email"
+msgstr ""
+
+#: weblate_web/html/support.html:45 weblate_web/html/support.html:61
+msgid "Subscribe"
+msgstr ""
+
+#: weblate_web/html/support.html:52
+msgid "Hosted Weblate Announcements mailing list"
+msgstr ""
+
+#: weblate_web/html/support.html:54
+msgid ""
+"Low traffic mailing list with announcements about Hosted Weblate services."
+msgstr ""
+
+#: weblate_web/html/support.html:55
+msgid "This list is moderated, only selected users can post announcements."
+msgstr ""
+
+#: weblate_web/html/support.html:68
 msgid "Stack Overflow"
 msgstr "Stack Overflow"
 
-#: weblate_web/html/support.html:40
+#: weblate_web/html/support.html:70
 #, python-format
 msgid ""
 "You can also ask related questions on <a href=\"%(url)s\">Stack Overflow</a>."
@@ -1318,30 +1348,16 @@ msgstr ""
 "Puoi anche porre domande a riguardo su <a href=\"%(url)s\">Stack Overflow</"
 "a>."
 
-#: weblate_web/html/support.html:42
-msgid "IRC"
-msgstr "IRC (Internet Relay Chat)"
-
-#: weblate_web/html/support.html:45
-msgid ""
-"You might also find help on #weblate channel on <a href=\"https://freenode."
-"net/\">freenode</a> network. You can also use <a href=\"https://webchat."
-"freenode.net?channels=weblate\">webchat</a> there."
-msgstr ""
-"Puoi riecevere aiuto tramite il canale #weblate attraverso su <a href=\""
-"https://freenode.net/\">freenode</a>. Puoi usare la <a href=\""
-"https://webchat.freenode.net?channels=weblate\">webchat di freenode</a>."
-
-#: weblate_web/html/support.html:48
+#: weblate_web/html/support.html:72
 msgid "Consulting"
 msgstr "Consulenza"
 
-#: weblate_web/html/support.html:50
+#: weblate_web/html/support.html:74
 msgid "See our support offerings for self hosted Weblate instances"
 msgstr ""
 "Consulta le nostre offerte di supporto per le istanze Weblate self-hosted"
 
-#: weblate_web/html/support.html:53
+#: weblate_web/html/support.html:77
 #, python-format
 msgid ""
 "You can also contact <a href=\"%(contact_link)s\">Michal Čihař</a>, who is "
@@ -1358,47 +1374,47 @@ msgstr "Grazie da Weblate"
 msgid "Weblate is thankful for help from others."
 msgstr "Weblate è veramente grato per ogni aiuto."
 
-#: weblate_web/html/thanks.html:12
+#: weblate_web/html/thanks.html:20
 msgid "Technology"
 msgstr "Tecnologia"
 
-#: weblate_web/html/thanks.html:14
+#: weblate_web/html/thanks.html:22
 msgid "The development of Weblate is based on the following technologies:"
 msgstr "Lo sviluppo di weblate è basato sulle seguenti tecnologie:"
 
-#: weblate_web/html/thanks.html:18
+#: weblate_web/html/thanks.html:26
 msgid "GitHub provides hosting for our source code and issue tracker."
 msgstr ""
 "GitHub fornisce il servizio di hosting per il nostro codice e il nostro "
 "issue tracker."
 
-#: weblate_web/html/thanks.html:22
+#: weblate_web/html/thanks.html:30
 msgid "Travis CI is our continuous integration platform."
 msgstr "Travis CI è la nostra piattaforma di \"continuous integration\"."
 
-#: weblate_web/html/thanks.html:26
+#: weblate_web/html/thanks.html:34
 msgid "Codecov helps us to monitor code coverage of our test suite."
 msgstr "Codecov ci aiuta a monitorare il coverage del codice dei nostri test."
 
-#: weblate_web/html/thanks.html:30
+#: weblate_web/html/thanks.html:38
 msgid "Sauce Labs is running our Selenium tests in real browsers."
 msgstr "Sauce Labs esegue i nostri Selenium tests su browsers reali."
 
-#: weblate_web/html/thanks.html:34
+#: weblate_web/html/thanks.html:42
 msgid "Rollbar helps us to collect and fix errors happening on Hosted Weblate."
 msgstr ""
 "La rollbar ci siuta e raccogliere e correggere gli errori che si verificano "
 "sugli host Weblate."
 
-#: weblate_web/html/thanks.html:38
+#: weblate_web/html/thanks.html:46
 msgid "Our translations are being done on Hosted Weblate."
 msgstr "Le nostre traduzioni vengono eseguite su Hosted Weblate."
 
-#: weblate_web/html/thanks.html:42
+#: weblate_web/html/thanks.html:50
 msgid "Supporters"
 msgstr "Supporter"
 
-#: weblate_web/html/thanks.html:44
+#: weblate_web/html/thanks.html:52
 msgid ""
 "Free hosting for free software projects would be impossible without our "
 "sponsors."
@@ -1406,7 +1422,7 @@ msgstr ""
 "L'hosting gratuito per progetti di free software sarebbe impossibile senza i "
 "nostri sponsor."
 
-#: weblate_web/html/thanks.html:46
+#: weblate_web/html/thanks.html:54
 msgid ""
 "Support our project on Bountysource Salt and get exclusive logo placement on "
 "this page."
@@ -1445,10 +1461,16 @@ msgstr ""
 "<code>demo</code> come username e <code>demo</code> come password."
 
 #: weblate_web/html/try.html:25
+msgid ""
+"To test the review workflow there, you can also login as <code>review</code> "
+"user with <code>review</code> password."
+msgstr ""
+
+#: weblate_web/html/try.html:27
 msgid "Appliances"
 msgstr "Appliances"
 
-#: weblate_web/html/try.html:28
+#: weblate_web/html/try.html:30
 #, python-format
 msgid ""
 "Check our <a href=\"%(download_url)s\">download page</a> for appliances, "
@@ -1495,6 +1517,44 @@ msgstr "Sorgenti tarball, compressi xz"
 #: weblate_web/templatetags/downloads.py:61
 msgid "Sources, zip compressed"
 msgstr "Sorgenti compressi zip"
+
+#~ msgid "SUSE Studio appliances"
+#~ msgstr "Applicazioni SUSE Studio"
+
+#~ msgid ""
+#~ "There is a mailing list <a href=\"mailto:weblate@lists.cihar.com"
+#~ "\">weblate@lists.cihar.com</a> where you can discuss various things about "
+#~ "Weblate. You can <a href=\"https://lists.cihar.com/cgi-bin/mailman/"
+#~ "listinfo/weblate\">subscribe</a> or <a href=\"https://lists.cihar.com/"
+#~ "pipermail/weblate/\">browse archives</a>."
+#~ msgstr ""
+#~ "Una mailining list è disponibile attraverso <a href=\"mailto:"
+#~ "weblate@lists.cihar.com\">weblate@lists.cihar.com</a> dove potete "
+#~ "discorrere a proposito di Weblate. Potete <a href=\"https://lists.cihar."
+#~ "com/cgi-bin/mailman/listinfo/weblate\">effettuare una sottoscrizione</a> "
+#~ "oppure <a href=\"https://lists.cihar.com/pipermail/weblate/\">visionare "
+#~ "l'archivio delle discussioni</a>."
+
+#~ msgid ""
+#~ "The mailing list is also available on <a href=\"https://dir.gmane.org/"
+#~ "gmane.comp.web.weblate\">Gmane</a> where you can browse archives or use "
+#~ "NNTP interface."
+#~ msgstr ""
+#~ "La mailing list è disponibile anche attraverso <a href=\"https://dir."
+#~ "gmane.org/gmane.comp.web.weblate\">Gmane</a> dove potete visionare "
+#~ "larchivio delle discussioni o utilizzare l'interfacia NNTP."
+
+#~ msgid "IRC"
+#~ msgstr "IRC (Internet Relay Chat)"
+
+#~ msgid ""
+#~ "You might also find help on #weblate channel on <a href=\"https://"
+#~ "freenode.net/\">freenode</a> network. You can also use <a href=\"https://"
+#~ "webchat.freenode.net?channels=weblate\">webchat</a> there."
+#~ msgstr ""
+#~ "Puoi riecevere aiuto tramite il canale #weblate attraverso su <a href="
+#~ "\"https://freenode.net/\">freenode</a>. Puoi usare la <a href=\"https://"
+#~ "webchat.freenode.net?channels=weblate\">webchat di freenode</a>."
 
 #~ msgid "Donate using Coinbase"
 #~ msgstr "Dona attraverso Coinbase"

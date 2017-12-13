@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2017-10-05 13:36+0200\n"
+"POT-Creation-Date: 2017-12-13 11:49+0100\n"
 "PO-Revision-Date: 2017-09-05 13:48+0000\n"
 "Last-Translator: k ks <kmshts@naver.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/weblate/website/"
@@ -314,6 +314,7 @@ msgstr ""
 "무료 호스팅을 투자하는 데 도움이 됩니다. 약간의 돈도 큰 도움이 됩니다."
 
 #: weblate_web/html/donate.html:33 weblate_web/html/donate.html:54
+#: weblate_web/html/thanks.html:12
 msgid "Fund on Bountysource"
 msgstr "Bountysource로 기금"
 
@@ -440,10 +441,6 @@ msgid "Running Weblate on OpenShift platform"
 msgstr "OpenShift 플랫폼에서 Weblate 실행"
 
 #: weblate_web/html/download.html:77
-msgid "SUSE Studio appliances"
-msgstr "SUSE Studio 어플라이언스"
-
-#: weblate_web/html/download.html:78
 msgid ""
 "BitNami Weblate stack providing native installation for most platforms as "
 "well as support for many public cloud providers"
@@ -1219,37 +1216,70 @@ msgid ""
 msgstr ""
 
 #: weblate_web/html/support.html:28
-msgid "Mailing list"
-msgstr "메일링 리스트"
+#, fuzzy
+#| msgid "Support free hosting"
+msgid "Support for Hosted Weblate services"
+msgstr "무료 호스팅 지원하기"
 
 #: weblate_web/html/support.html:31
+#, python-format
 msgid ""
-"There is a mailing list <a href=\"mailto:weblate@lists.cihar.com"
-"\">weblate@lists.cihar.com</a> where you can discuss various things about "
-"Weblate. You can <a href=\"https://lists.cihar.com/cgi-bin/mailman/listinfo/"
-"weblate\">subscribe</a> or <a href=\"https://lists.cihar.com/pipermail/"
-"weblate/\">browse archives</a>."
+"If you are using our hosting services, you can ask for support at "
+"%(contact)s."
 msgstr ""
-"Weblate에 대한 여러가지를 토의할수 있는 <a href=\"mailto:weblate@lists.cihar."
-"com\">weblate@lists.cihar.com</a>라는 메일링 리스트가 있습니다. <a href="
-"\"https://lists.cihar.com/cgi-bin/mailman/listinfo/weblate\">구독</a>하거나 "
-"<a href=\"https://lists.cihar.com/pipermail/weblate/\">기록을 살펴볼 수</a>있"
-"습니다."
 
-#: weblate_web/html/support.html:35
-msgid ""
-"The mailing list is also available on <a href=\"https://dir.gmane.org/gmane."
-"comp.web.weblate\">Gmane</a> where you can browse archives or use NNTP "
-"interface."
+#: weblate_web/html/support.html:34
+#, fuzzy
+#| msgid "Mailing list"
+msgid "Mailing lists"
+msgstr "메일링 리스트"
+
+#: weblate_web/html/support.html:36
+msgid "Users and developers mailing list"
 msgstr ""
-"메일링 리스트는 <a href=\"https://dir.gmane.org/gmane.comp.web.weblate"
-"\">Gmane</a>에서도 기록을 살펴보거나 NNTP 인터페이스를 통해 이용가능합니다."
 
 #: weblate_web/html/support.html:38
+msgid ""
+"You can use this mailing lists for discussions with other Weblate users and "
+"developers."
+msgstr ""
+
+#: weblate_web/html/support.html:39
+msgid ""
+"You can post to it using <a href=\"mailto:weblate@lists.cihar.com"
+"\">weblate@lists.cihar.com</a> address."
+msgstr ""
+
+#: weblate_web/html/support.html:40 weblate_web/html/support.html:56
+msgid "You can browse mailing list archives"
+msgstr ""
+
+#: weblate_web/html/support.html:43 weblate_web/html/support.html:59
+msgid "Enter your email"
+msgstr ""
+
+#: weblate_web/html/support.html:45 weblate_web/html/support.html:61
+msgid "Subscribe"
+msgstr ""
+
+#: weblate_web/html/support.html:52
+msgid "Hosted Weblate Announcements mailing list"
+msgstr ""
+
+#: weblate_web/html/support.html:54
+msgid ""
+"Low traffic mailing list with announcements about Hosted Weblate services."
+msgstr ""
+
+#: weblate_web/html/support.html:55
+msgid "This list is moderated, only selected users can post announcements."
+msgstr ""
+
+#: weblate_web/html/support.html:68
 msgid "Stack Overflow"
 msgstr "스택 오버플로우"
 
-#: weblate_web/html/support.html:40
+#: weblate_web/html/support.html:70
 #, python-format
 msgid ""
 "You can also ask related questions on <a href=\"%(url)s\">Stack Overflow</a>."
@@ -1257,38 +1287,17 @@ msgstr ""
 "<a href=\"%(url)s\">스택 오버플로우</a>사이트에서도 관련된 질문을 하실 수 있"
 "습니다."
 
-#: weblate_web/html/support.html:42
-msgid "IRC"
-msgstr "IRC"
-
-#: weblate_web/html/support.html:45
-#, fuzzy
-#| msgid ""
-#| "When some of interested people are online, you might also find help on "
-#| "#weblate channel on <a href=\"https://freenode.net/\">freenode</a> "
-#| "network. You can also use <a href=\"https://webchat.freenode.net?"
-#| "channels=weblate\">webchat</a> there."
-msgid ""
-"You might also find help on #weblate channel on <a href=\"https://freenode."
-"net/\">freenode</a> network. You can also use <a href=\"https://webchat."
-"freenode.net?channels=weblate\">webchat</a> there."
-msgstr ""
-"관심있는 사람이 접속해 있는 경우, <a href=\"https://freenode.net/"
-"\">freenode</a> 네트웍의 #weblate 채널에서 도움을 얻을수 있습니다. <a href="
-"\"https://webchat.freenode.net?channels=weblate\">webchat</a>을 이용해 접속"
-"할 수도 있습니다."
-
-#: weblate_web/html/support.html:48
+#: weblate_web/html/support.html:72
 #, fuzzy
 #| msgid "Hosting"
 msgid "Consulting"
 msgstr "호스팅"
 
-#: weblate_web/html/support.html:50
+#: weblate_web/html/support.html:74
 msgid "See our support offerings for self hosted Weblate instances"
 msgstr ""
 
-#: weblate_web/html/support.html:53
+#: weblate_web/html/support.html:77
 #, python-format
 msgid ""
 "You can also contact <a href=\"%(contact_link)s\">Michal Čihař</a>, who is "
@@ -1305,23 +1314,23 @@ msgstr "Weblate에 감사하기"
 msgid "Weblate is thankful for help from others."
 msgstr "여러사람들이 Weblate에 도움을 주셔서 감사드립니다."
 
-#: weblate_web/html/thanks.html:12
+#: weblate_web/html/thanks.html:20
 msgid "Technology"
 msgstr "기술"
 
-#: weblate_web/html/thanks.html:14
+#: weblate_web/html/thanks.html:22
 msgid "The development of Weblate is based on the following technologies:"
 msgstr "Weblate의 개발은 다음과 같은 기술을 기반으로 합니다:"
 
-#: weblate_web/html/thanks.html:18
+#: weblate_web/html/thanks.html:26
 msgid "GitHub provides hosting for our source code and issue tracker."
 msgstr "GitHub은 우리의 소스 코드와 이슈 트래커에 대한 호스팅을 제공합니다."
 
-#: weblate_web/html/thanks.html:22
+#: weblate_web/html/thanks.html:30
 msgid "Travis CI is our continuous integration platform."
 msgstr "Travis CI는 우리의 지속적인 통합 플래폼입니다."
 
-#: weblate_web/html/thanks.html:26
+#: weblate_web/html/thanks.html:34
 #, fuzzy
 #| msgid "Coveralls helps us to monitor code coverage of our test suite."
 msgid "Codecov helps us to monitor code coverage of our test suite."
@@ -1329,31 +1338,31 @@ msgstr ""
 "Coveralls은 우리의 테스트 도구 모음중 코드 커버리지를 모니터하는 데 도움이 됩"
 "니다."
 
-#: weblate_web/html/thanks.html:30
+#: weblate_web/html/thanks.html:38
 msgid "Sauce Labs is running our Selenium tests in real browsers."
 msgstr "Sauce Labs은 실제 브라우저에서 우리의 셀레늄 테스트를 실행 중입니다."
 
-#: weblate_web/html/thanks.html:34
+#: weblate_web/html/thanks.html:42
 msgid "Rollbar helps us to collect and fix errors happening on Hosted Weblate."
 msgstr ""
 
-#: weblate_web/html/thanks.html:38
+#: weblate_web/html/thanks.html:46
 msgid "Our translations are being done on Hosted Weblate."
 msgstr "우리의 번역은 웹레이트에서 작업중입니다."
 
-#: weblate_web/html/thanks.html:42
+#: weblate_web/html/thanks.html:50
 #, fuzzy
 #| msgid "Support"
 msgid "Supporters"
 msgstr "지원"
 
-#: weblate_web/html/thanks.html:44
+#: weblate_web/html/thanks.html:52
 msgid ""
 "Free hosting for free software projects would be impossible without our "
 "sponsors."
 msgstr ""
 
-#: weblate_web/html/thanks.html:46
+#: weblate_web/html/thanks.html:54
 msgid ""
 "Support our project on Bountysource Salt and get exclusive logo placement on "
 "this page."
@@ -1392,10 +1401,16 @@ msgstr ""
 "정 <code>데모</code> 암호를 이용하실 수 있습니다."
 
 #: weblate_web/html/try.html:25
+msgid ""
+"To test the review workflow there, you can also login as <code>review</code> "
+"user with <code>review</code> password."
+msgstr ""
+
+#: weblate_web/html/try.html:27
 msgid "Appliances"
 msgstr "기기"
 
-#: weblate_web/html/try.html:28
+#: weblate_web/html/try.html:30
 #, python-format
 msgid ""
 "Check our <a href=\"%(download_url)s\">download page</a> for appliances, "
@@ -1440,6 +1455,50 @@ msgstr "소스 코드는 tarball, xz으로 압축됨"
 #: weblate_web/templatetags/downloads.py:61
 msgid "Sources, zip compressed"
 msgstr "소스 코드는 zip으로 압축됨"
+
+#~ msgid "SUSE Studio appliances"
+#~ msgstr "SUSE Studio 어플라이언스"
+
+#~ msgid ""
+#~ "There is a mailing list <a href=\"mailto:weblate@lists.cihar.com"
+#~ "\">weblate@lists.cihar.com</a> where you can discuss various things about "
+#~ "Weblate. You can <a href=\"https://lists.cihar.com/cgi-bin/mailman/"
+#~ "listinfo/weblate\">subscribe</a> or <a href=\"https://lists.cihar.com/"
+#~ "pipermail/weblate/\">browse archives</a>."
+#~ msgstr ""
+#~ "Weblate에 대한 여러가지를 토의할수 있는 <a href=\"mailto:weblate@lists."
+#~ "cihar.com\">weblate@lists.cihar.com</a>라는 메일링 리스트가 있습니다. <a "
+#~ "href=\"https://lists.cihar.com/cgi-bin/mailman/listinfo/weblate\">구독</a>"
+#~ "하거나 <a href=\"https://lists.cihar.com/pipermail/weblate/\">기록을 살펴"
+#~ "볼 수</a>있습니다."
+
+#~ msgid ""
+#~ "The mailing list is also available on <a href=\"https://dir.gmane.org/"
+#~ "gmane.comp.web.weblate\">Gmane</a> where you can browse archives or use "
+#~ "NNTP interface."
+#~ msgstr ""
+#~ "메일링 리스트는 <a href=\"https://dir.gmane.org/gmane.comp.web.weblate"
+#~ "\">Gmane</a>에서도 기록을 살펴보거나 NNTP 인터페이스를 통해 이용가능합니"
+#~ "다."
+
+#~ msgid "IRC"
+#~ msgstr "IRC"
+
+#, fuzzy
+#~| msgid ""
+#~| "When some of interested people are online, you might also find help on "
+#~| "#weblate channel on <a href=\"https://freenode.net/\">freenode</a> "
+#~| "network. You can also use <a href=\"https://webchat.freenode.net?"
+#~| "channels=weblate\">webchat</a> there."
+#~ msgid ""
+#~ "You might also find help on #weblate channel on <a href=\"https://"
+#~ "freenode.net/\">freenode</a> network. You can also use <a href=\"https://"
+#~ "webchat.freenode.net?channels=weblate\">webchat</a> there."
+#~ msgstr ""
+#~ "관심있는 사람이 접속해 있는 경우, <a href=\"https://freenode.net/"
+#~ "\">freenode</a> 네트웍의 #weblate 채널에서 도움을 얻을수 있습니다. <a "
+#~ "href=\"https://webchat.freenode.net?channels=weblate\">webchat</a>을 이용"
+#~ "해 접속할 수도 있습니다."
 
 #~ msgid "Donate using Coinbase"
 #~ msgstr "코인베이스(Coinbase)를 사용하여 기부하기"

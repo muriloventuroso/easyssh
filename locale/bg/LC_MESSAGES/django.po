@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2017-10-05 13:36+0200\n"
+"POT-Creation-Date: 2017-12-13 11:49+0100\n"
 "PO-Revision-Date: 2017-10-05 11:40+0000\n"
 "Last-Translator: Любомир Василев <lyubomirv@abv.bg>\n"
-"Language-Team: Bulgarian "
-"<https://hosted.weblate.org/projects/weblate/website/bg/>\n"
+"Language-Team: Bulgarian <https://hosted.weblate.org/projects/weblate/"
+"website/bg/>\n"
 "Language: bg\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -331,6 +331,7 @@ msgstr ""
 "правите големи дарения, всяка стотинка има значение."
 
 #: weblate_web/html/donate.html:33 weblate_web/html/donate.html:54
+#: weblate_web/html/thanks.html:12
 msgid "Fund on Bountysource"
 msgstr "Финансиране чрез Bountysource"
 
@@ -466,10 +467,6 @@ msgid "Running Weblate on OpenShift platform"
 msgstr "Пускане на Weblate в платформа „OpenShift“"
 
 #: weblate_web/html/download.html:77
-msgid "SUSE Studio appliances"
-msgstr "Приспособления на „SUSE Studio“"
-
-#: weblate_web/html/download.html:78
 msgid ""
 "BitNami Weblate stack providing native installation for most platforms as "
 "well as support for many public cloud providers"
@@ -1273,69 +1270,86 @@ msgstr ""
 "сигурността н <a href=\"%(docs)s\">документацията</a>."
 
 #: weblate_web/html/support.html:28
-msgid "Mailing list"
-msgstr "Пощенски списък"
+#, fuzzy
+#| msgid "Basic support for self hosted Weblate"
+msgid "Support for Hosted Weblate services"
+msgstr "Основна поддръжка за самостоятелен хостинг на Weblate"
 
 #: weblate_web/html/support.html:31
+#, python-format
 msgid ""
-"There is a mailing list <a href=\"mailto:weblate@lists.cihar.com"
-"\">weblate@lists.cihar.com</a> where you can discuss various things about "
-"Weblate. You can <a href=\"https://lists.cihar.com/cgi-bin/mailman/listinfo/"
-"weblate\">subscribe</a> or <a href=\"https://lists.cihar.com/pipermail/"
-"weblate/\">browse archives</a>."
+"If you are using our hosting services, you can ask for support at "
+"%(contact)s."
 msgstr ""
-"В пощенския списък <a href=\"mailto:weblate@lists.cihar.com\">weblate@lists."
-"cihar.com</a> можете да обсъждате всичко, свързано с Weblate. Можете да се "
-"<a href=\"https://lists.cihar.com/cgi-bin/mailman/listinfo/weblate"
-"\">абонирате</a> или да <a href=\"https://lists.cihar.com/pipermail/weblate/"
-"\">разгледате архивите</a>."
 
-#: weblate_web/html/support.html:35
-msgid ""
-"The mailing list is also available on <a href=\"https://dir.gmane.org/gmane."
-"comp.web.weblate\">Gmane</a> where you can browse archives or use NNTP "
-"interface."
+#: weblate_web/html/support.html:34
+#, fuzzy
+#| msgid "Mailing list"
+msgid "Mailing lists"
+msgstr "Пощенски списък"
+
+#: weblate_web/html/support.html:36
+msgid "Users and developers mailing list"
 msgstr ""
-"Пощенският списък може да бъде намерен и в <a href=\"https://dir.gmane.org/"
-"gmane.comp.web.weblate\">Gmane</a>, където можете да разглеждате архивите "
-"или да използвате интерфейса „NNTP“."
 
 #: weblate_web/html/support.html:38
+msgid ""
+"You can use this mailing lists for discussions with other Weblate users and "
+"developers."
+msgstr ""
+
+#: weblate_web/html/support.html:39
+msgid ""
+"You can post to it using <a href=\"mailto:weblate@lists.cihar.com"
+"\">weblate@lists.cihar.com</a> address."
+msgstr ""
+
+#: weblate_web/html/support.html:40 weblate_web/html/support.html:56
+msgid "You can browse mailing list archives"
+msgstr ""
+
+#: weblate_web/html/support.html:43 weblate_web/html/support.html:59
+msgid "Enter your email"
+msgstr ""
+
+#: weblate_web/html/support.html:45 weblate_web/html/support.html:61
+msgid "Subscribe"
+msgstr ""
+
+#: weblate_web/html/support.html:52
+msgid "Hosted Weblate Announcements mailing list"
+msgstr ""
+
+#: weblate_web/html/support.html:54
+msgid ""
+"Low traffic mailing list with announcements about Hosted Weblate services."
+msgstr ""
+
+#: weblate_web/html/support.html:55
+msgid "This list is moderated, only selected users can post announcements."
+msgstr ""
+
+#: weblate_web/html/support.html:68
 msgid "Stack Overflow"
 msgstr "Stack Overflow"
 
-#: weblate_web/html/support.html:40
+#: weblate_web/html/support.html:70
 #, python-format
 msgid ""
 "You can also ask related questions on <a href=\"%(url)s\">Stack Overflow</a>."
 msgstr "Можете да задавате въпроси и в <a href=\"%(url)s\">Stack Overflow</a>."
 
-#: weblate_web/html/support.html:42
-msgid "IRC"
-msgstr "IRC"
-
-#: weblate_web/html/support.html:45
-msgid ""
-"You might also find help on #weblate channel on <a href=\"https://freenode."
-"net/\">freenode</a> network. You can also use <a href=\"https://webchat."
-"freenode.net?channels=weblate\">webchat</a> there."
-msgstr ""
-"Може да намерите помощ и в канала #weblate в мрежата на <a href=\"https://"
-"freenode.net/\">freenode</a>. Можете също да използвате възможността за <a "
-"href=\"https://webchat.freenode.net?channels=weblate\">чат в браузъра</a> на "
-"уеб сайта."
-
-#: weblate_web/html/support.html:48
+#: weblate_web/html/support.html:72
 msgid "Consulting"
 msgstr "Консултация"
 
-#: weblate_web/html/support.html:50
+#: weblate_web/html/support.html:74
 msgid "See our support offerings for self hosted Weblate instances"
 msgstr ""
 "Вижте предложенията ни за поддръжка, ако използвате собствен хостинг за "
 "Weblate"
 
-#: weblate_web/html/support.html:53
+#: weblate_web/html/support.html:77
 #, python-format
 msgid ""
 "You can also contact <a href=\"%(contact_link)s\">Michal Čihař</a>, who is "
@@ -1352,49 +1366,49 @@ msgstr "Благодарности от Weblate"
 msgid "Weblate is thankful for help from others."
 msgstr "Weblate е благодарен за помощта на другите."
 
-#: weblate_web/html/thanks.html:12
+#: weblate_web/html/thanks.html:20
 msgid "Technology"
 msgstr "Технологии"
 
-#: weblate_web/html/thanks.html:14
+#: weblate_web/html/thanks.html:22
 msgid "The development of Weblate is based on the following technologies:"
 msgstr "Разработката на Weblate се основава на следните технологии:"
 
-#: weblate_web/html/thanks.html:18
+#: weblate_web/html/thanks.html:26
 msgid "GitHub provides hosting for our source code and issue tracker."
 msgstr ""
 "„GitHub“ осигурява хостинг за изходния код и място за докладване на "
 "проблемите."
 
-#: weblate_web/html/thanks.html:22
+#: weblate_web/html/thanks.html:30
 msgid "Travis CI is our continuous integration platform."
 msgstr "„Travis CI“ е системата за непрекъсната интеграция, която използваме."
 
-#: weblate_web/html/thanks.html:26
+#: weblate_web/html/thanks.html:34
 msgid "Codecov helps us to monitor code coverage of our test suite."
 msgstr "„Codecov“ ни помага да следим каква част от кода е покрита от тестове."
 
-#: weblate_web/html/thanks.html:30
+#: weblate_web/html/thanks.html:38
 msgid "Sauce Labs is running our Selenium tests in real browsers."
 msgstr ""
 "„Sauce Labs“ изпълнява тестовете ни, базирани на „Селениум“, в истински "
 "браузъри."
 
-#: weblate_web/html/thanks.html:34
+#: weblate_web/html/thanks.html:42
 msgid "Rollbar helps us to collect and fix errors happening on Hosted Weblate."
 msgstr ""
 "„Rollbar“ ни помага да получаваме информация за проблемите в хостинга на "
 "Weblate и да ги поправяме."
 
-#: weblate_web/html/thanks.html:38
+#: weblate_web/html/thanks.html:46
 msgid "Our translations are being done on Hosted Weblate."
 msgstr "Преводите ни се правят чрез хостинга на Weblate."
 
-#: weblate_web/html/thanks.html:42
+#: weblate_web/html/thanks.html:50
 msgid "Supporters"
 msgstr "Поддръжници"
 
-#: weblate_web/html/thanks.html:44
+#: weblate_web/html/thanks.html:52
 msgid ""
 "Free hosting for free software projects would be impossible without our "
 "sponsors."
@@ -1402,7 +1416,7 @@ msgstr ""
 "Безплатният хостинг за проекти с отворен код нямаше да бъде възможен без "
 "подкрепата на нашите спонсори."
 
-#: weblate_web/html/thanks.html:46
+#: weblate_web/html/thanks.html:54
 msgid ""
 "Support our project on Bountysource Salt and get exclusive logo placement on "
 "this page."
@@ -1443,10 +1457,16 @@ msgstr ""
 "<code>demo</code>."
 
 #: weblate_web/html/try.html:25
+msgid ""
+"To test the review workflow there, you can also login as <code>review</code> "
+"user with <code>review</code> password."
+msgstr ""
+
+#: weblate_web/html/try.html:27
 msgid "Appliances"
 msgstr "Виртуални модули"
 
-#: weblate_web/html/try.html:28
+#: weblate_web/html/try.html:30
 #, python-format
 msgid ""
 "Check our <a href=\"%(download_url)s\">download page</a> for appliances, "
@@ -1492,6 +1512,44 @@ msgstr "Архив с изходния код, компресиран чрез x
 #: weblate_web/templatetags/downloads.py:61
 msgid "Sources, zip compressed"
 msgstr "Файлове с изходния код, компресирани чрез zip"
+
+#~ msgid "SUSE Studio appliances"
+#~ msgstr "Приспособления на „SUSE Studio“"
+
+#~ msgid ""
+#~ "There is a mailing list <a href=\"mailto:weblate@lists.cihar.com"
+#~ "\">weblate@lists.cihar.com</a> where you can discuss various things about "
+#~ "Weblate. You can <a href=\"https://lists.cihar.com/cgi-bin/mailman/"
+#~ "listinfo/weblate\">subscribe</a> or <a href=\"https://lists.cihar.com/"
+#~ "pipermail/weblate/\">browse archives</a>."
+#~ msgstr ""
+#~ "В пощенския списък <a href=\"mailto:weblate@lists.cihar.com"
+#~ "\">weblate@lists.cihar.com</a> можете да обсъждате всичко, свързано с "
+#~ "Weblate. Можете да се <a href=\"https://lists.cihar.com/cgi-bin/mailman/"
+#~ "listinfo/weblate\">абонирате</a> или да <a href=\"https://lists.cihar.com/"
+#~ "pipermail/weblate/\">разгледате архивите</a>."
+
+#~ msgid ""
+#~ "The mailing list is also available on <a href=\"https://dir.gmane.org/"
+#~ "gmane.comp.web.weblate\">Gmane</a> where you can browse archives or use "
+#~ "NNTP interface."
+#~ msgstr ""
+#~ "Пощенският списък може да бъде намерен и в <a href=\"https://dir.gmane."
+#~ "org/gmane.comp.web.weblate\">Gmane</a>, където можете да разглеждате "
+#~ "архивите или да използвате интерфейса „NNTP“."
+
+#~ msgid "IRC"
+#~ msgstr "IRC"
+
+#~ msgid ""
+#~ "You might also find help on #weblate channel on <a href=\"https://"
+#~ "freenode.net/\">freenode</a> network. You can also use <a href=\"https://"
+#~ "webchat.freenode.net?channels=weblate\">webchat</a> there."
+#~ msgstr ""
+#~ "Може да намерите помощ и в канала #weblate в мрежата на <a href=\"https://"
+#~ "freenode.net/\">freenode</a>. Можете също да използвате възможността за "
+#~ "<a href=\"https://webchat.freenode.net?channels=weblate\">чат в браузъра</"
+#~ "a> на уеб сайта."
 
 #~ msgid "Donate using Coinbase"
 #~ msgstr "Дарение чрез Coinbase"
