@@ -8,17 +8,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2017-12-13 11:49+0100\n"
-"PO-Revision-Date: 2017-10-05 17:06+0000\n"
+"PO-Revision-Date: 2017-12-13 19:33+0000\n"
 "Last-Translator: Viktar Vauchkevich <victorenator@gmail.com>\n"
-"Language-Team: Belarusian (latin) <https://hosted.weblate.org/projects/"
-"weblate/website/be_Latn/>\n"
+"Language-Team: Belarusian (latin) "
+"<https://hosted.weblate.org/projects/weblate/website/be_Latn/>\n"
 "Language: be@latin\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 2.17-dev\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 2.18-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -1275,10 +1275,8 @@ msgstr ""
 "biaspieki, možna znajsci ŭ <a href=\"%(docs)s\">našaj dakumientacyi</a>."
 
 #: weblate_web/html/support.html:28
-#, fuzzy
-#| msgid "Basic support for self hosted Weblate"
 msgid "Support for Hosted Weblate services"
-msgstr "Asnoŭnaja padtrymka dlia ŭlasnaha chostynha Weblate"
+msgstr "Padtrymka chostynha servisaŭ Weblate"
 
 #: weblate_web/html/support.html:31
 #, python-format
@@ -1286,53 +1284,59 @@ msgid ""
 "If you are using our hosting services, you can ask for support at "
 "%(contact)s."
 msgstr ""
+"Kali vy karystajeciesia našymi pasluhami chostynha, to možacie paprasić "
+"padtrymki ŭ %(contact)s."
 
 #: weblate_web/html/support.html:34
-#, fuzzy
-#| msgid "Mailing list"
 msgid "Mailing lists"
-msgstr "Rassylka"
+msgstr "Spisy rassylki"
 
 #: weblate_web/html/support.html:36
 msgid "Users and developers mailing list"
-msgstr ""
+msgstr "Spisy rassylki karystaĺnikaŭ i raspracoŭnikaŭ"
 
 #: weblate_web/html/support.html:38
 msgid ""
 "You can use this mailing lists for discussions with other Weblate users and "
 "developers."
 msgstr ""
+"Vy možacie karystacca hetys spisam rassylki dlia abmierkavannia z inšymi "
+"karystaĺnikami i raspracoŭnikami Weblate."
 
 #: weblate_web/html/support.html:39
 msgid ""
 "You can post to it using <a href=\"mailto:weblate@lists.cihar.com"
 "\">weblate@lists.cihar.com</a> address."
 msgstr ""
+"Vy možacie napisać u spis, vykarystoŭvajučy adras <a href=\""
+"mailto:weblate@lists.cihar.com\">weblate@lists.cihar.com</a>."
 
 #: weblate_web/html/support.html:40 weblate_web/html/support.html:56
 msgid "You can browse mailing list archives"
-msgstr ""
+msgstr "Vy možacie prahliadzieć archivy spisu rassylki"
 
 #: weblate_web/html/support.html:43 weblate_web/html/support.html:59
 msgid "Enter your email"
-msgstr ""
+msgstr "Uviadzicie vaš email"
 
 #: weblate_web/html/support.html:45 weblate_web/html/support.html:61
 msgid "Subscribe"
-msgstr ""
+msgstr "Padpisacca"
 
 #: weblate_web/html/support.html:52
 msgid "Hosted Weblate Announcements mailing list"
-msgstr ""
+msgstr "Spis rassylki abjaŭ chostynha Weblate"
 
 #: weblate_web/html/support.html:54
 msgid ""
 "Low traffic mailing list with announcements about Hosted Weblate services."
 msgstr ""
+"Spis rassylki z nievialikim trafikam abjaŭ ab servisach chostynha Weblate."
 
 #: weblate_web/html/support.html:55
 msgid "This list is moderated, only selected users can post announcements."
 msgstr ""
+"Hety spis maderyrujecca. Toĺki abranyja karystaĺniki mohuć razmiaščać abjavy."
 
 #: weblate_web/html/support.html:68
 msgid "Stack Overflow"
@@ -1461,6 +1465,8 @@ msgid ""
 "To test the review workflow there, you can also login as <code>review</code> "
 "user with <code>review</code> password."
 msgstr ""
+"Kab pravieryć praces recenzavannia, vy možacie ŭvajsci jak karystaĺnik "
+"<code>review</code> z paroliem <code>review</code>."
 
 #: weblate_web/html/try.html:27
 msgid "Appliances"
