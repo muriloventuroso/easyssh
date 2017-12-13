@@ -8,17 +8,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2017-12-13 11:49+0100\n"
-"PO-Revision-Date: 2017-10-05 18:21+0000\n"
+"PO-Revision-Date: 2017-12-13 15:45+0000\n"
 "Last-Translator: Андрій Бандура <andriykopanytsia@gmail.com>\n"
-"Language-Team: Ukrainian <https://hosted.weblate.org/projects/weblate/"
-"website/uk/>\n"
+"Language-Team: Ukrainian "
+"<https://hosted.weblate.org/projects/weblate/website/uk/>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 2.17-dev\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 2.18-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -1260,10 +1260,8 @@ msgstr ""
 "із безпекою, можна знайти у <a href=\"%(docs)s\">нашій документації</a>."
 
 #: weblate_web/html/support.html:28
-#, fuzzy
-#| msgid "Basic support for self hosted Weblate"
 msgid "Support for Hosted Weblate services"
-msgstr "Основна підтримка для власного хостингу Weblate"
+msgstr "Підтримка для послуг хостингу Weblate"
 
 #: weblate_web/html/support.html:31
 #, python-format
@@ -1271,53 +1269,61 @@ msgid ""
 "If you are using our hosting services, you can ask for support at "
 "%(contact)s."
 msgstr ""
+"Якщо ви користуєтеся нашими послугами хостингу, то можете попросити "
+"підтримки на %(contact)s."
 
 #: weblate_web/html/support.html:34
-#, fuzzy
-#| msgid "Mailing list"
 msgid "Mailing lists"
-msgstr "Список розсилки"
+msgstr "Списки розсилки"
 
 #: weblate_web/html/support.html:36
 msgid "Users and developers mailing list"
-msgstr ""
+msgstr "Список розсилки для користувачів та розробників"
 
 #: weblate_web/html/support.html:38
 msgid ""
 "You can use this mailing lists for discussions with other Weblate users and "
 "developers."
 msgstr ""
+"Ви можете користуватися цими списками розсилки для спілкування з іншими "
+"користувачами та розробниками Weblate."
 
 #: weblate_web/html/support.html:39
 msgid ""
 "You can post to it using <a href=\"mailto:weblate@lists.cihar.com"
 "\">weblate@lists.cihar.com</a> address."
 msgstr ""
+"Нове повідомлення у список можете надіслати на адресу <a href=\""
+"mailto:weblate@lists.cihar.com\">weblate@lists.cihar.com</a>."
 
 #: weblate_web/html/support.html:40 weblate_web/html/support.html:56
 msgid "You can browse mailing list archives"
-msgstr ""
+msgstr "Можете переглядати архіви списку розсилки"
 
 #: weblate_web/html/support.html:43 weblate_web/html/support.html:59
 msgid "Enter your email"
-msgstr ""
+msgstr "Введіть свою адресу ел. пошти"
 
 #: weblate_web/html/support.html:45 weblate_web/html/support.html:61
 msgid "Subscribe"
-msgstr ""
+msgstr "Підписатися"
 
 #: weblate_web/html/support.html:52
 msgid "Hosted Weblate Announcements mailing list"
-msgstr ""
+msgstr "Список розсилки оголошень Hosted Weblate"
 
 #: weblate_web/html/support.html:54
 msgid ""
 "Low traffic mailing list with announcements about Hosted Weblate services."
 msgstr ""
+"Список розсилки із невеликим трафіком, який містить оголошення про послуги "
+"Hosted Weblate."
 
 #: weblate_web/html/support.html:55
 msgid "This list is moderated, only selected users can post announcements."
 msgstr ""
+"Цей список перебуває під контролем. Лише обрані користувачі можуть "
+"розміщувати оголошення тут."
 
 #: weblate_web/html/support.html:68
 msgid "Stack Overflow"
@@ -1445,6 +1451,8 @@ msgid ""
 "To test the review workflow there, you can also login as <code>review</code> "
 "user with <code>review</code> password."
 msgstr ""
+"Щоби перевірити режим рецензування, ви можете увійти як користувач "
+"<code>review</code> із паролем <code>review</code>."
 
 #: weblate_web/html/try.html:27
 msgid "Appliances"
