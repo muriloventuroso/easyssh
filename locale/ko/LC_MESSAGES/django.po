@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2017-12-13 11:49+0100\n"
-"PO-Revision-Date: 2017-09-05 13:48+0000\n"
-"Last-Translator: k ks <kmshts@naver.com>\n"
-"Language-Team: Korean <https://hosted.weblate.org/projects/weblate/website/"
-"ko/>\n"
+"PO-Revision-Date: 2017-12-14 09:40+0000\n"
+"Last-Translator: Joseph Kim <official.jkim@gmail.com>\n"
+"Language-Team: Korean "
+"<https://hosted.weblate.org/projects/weblate/website/ko/>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.17-dev\n"
+"X-Generator: Weblate 2.18-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -92,11 +92,11 @@ msgstr "Weblate는 무료 웹 기반 번역 관리 시스템입니다."
 
 #: weblate_web/html/404.html:15
 msgid "The page you are looking for was not found."
-msgstr "찾으시는 요청하신 페이지를 찾을 수 없습니다."
+msgstr "요청하신 페이지를 찾을 수 없습니다."
 
 #: weblate_web/html/500.html:4
 msgid "Server error"
-msgstr "서비스 오류"
+msgstr "서버 오류"
 
 #: weblate_web/html/500.html:15
 msgid ""
@@ -108,13 +108,12 @@ msgstr ""
 
 #: weblate_web/html/base-features.html:6 weblate_web/html/hosting.html:42
 msgid "Continuous translation"
-msgstr "지속적인 번역"
+msgstr "연속 번역"
 
 #: weblate_web/html/base-features.html:7
 msgid ""
 "Automated translation process can closely follow development of your project."
-msgstr ""
-"자동화된 번역 절차는 당신의 프로젝트 개발 상황에 밀접하게 따라갈 수 있습니다."
+msgstr "자동화된 번역 절차는 당신의 프로젝트 개발 상황에 밀착 진행할 수 있습니다."
 
 #: weblate_web/html/base-features.html:22
 msgid "Attribution"
@@ -139,7 +138,7 @@ msgstr "클라우드 준비"
 
 #: weblate_web/html/base-features.html:39
 msgid "Weblate comes with appliances, which are ready to deploy in your cloud."
-msgstr "Weblate는 클라우드에 배포할 준비된 기기를 제공합니다."
+msgstr "Weblate는 클라우드에 배포할 준비된 도구를 함께 제공합니다."
 
 #: weblate_web/html/base-features.html:46
 msgid "Free software"
@@ -147,7 +146,7 @@ msgstr "자유 소프트웨어"
 
 #: weblate_web/html/base-features.html:47
 msgid "Weblate is free software, you can run your own instance of it."
-msgstr "Weblate는 자신 만의 인스턴스를 실행할 수 있는 자유 소프트웨어입니다."
+msgstr "Weblate는 자유 소프트웨어이며 여러분만의 상황과 환경에 맞게 도입할 수 있습니다."
 
 #: weblate_web/html/base.html:12
 msgctxt "Keyword"
@@ -263,7 +262,7 @@ msgstr ""
 #: weblate_web/html/contribute.html:31
 #, python-format
 msgid "This website is stored on <a href=\"%(url)s\">Github</a> as well:"
-msgstr "물론 이 웹사이트도 <a href=\"%(url)s\">Github</a>에 저장되어 있습니다:"
+msgstr "이 웹사이트는 <a href=\"%(url)s\">Github</a>에도 저장되어 있습니다:"
 
 #: weblate_web/html/contribute.html:41
 msgid ""
@@ -299,10 +298,12 @@ msgid ""
 "Host your commercial translations on <a href=\"%(hosting_url)s\">Hosted "
 "Weblate</a> and you will be supporting Weblate development automatically."
 msgstr ""
+"당신의 상업 번역작업을 <a href=\"%(hosting_url)s\">Hosted Weblate</a>에서 호스팅하세요. "
+"Weblate의 개발을 자동적으로 지원하시게 됩니다."
 
 #: weblate_web/html/donate.html:25
 msgid "Regular donations"
-msgstr "일반적인 기부"
+msgstr "정기 기부"
 
 #: weblate_web/html/donate.html:28
 msgid ""
@@ -310,13 +311,13 @@ msgid ""
 "fund free hosting for free software. You don't have to spend big money, "
 "every penny counts."
 msgstr ""
-"일반적인 기부는 Weblate 개발의 지속 가능성을 허용하고 자유 소프트웨어에 대한 "
-"무료 호스팅을 투자하는 데 도움이 됩니다. 약간의 돈도 큰 도움이 됩니다."
+"정기적으로 기부하시면 Weblate의 지속 가능한 개발과 자유 소프트웨어를 무료로 호스팅하는데 재정적 도움이 됩니다. 약간의 금액도 큰 "
+"도움이 됩니다."
 
 #: weblate_web/html/donate.html:33 weblate_web/html/donate.html:54
 #: weblate_web/html/thanks.html:12
 msgid "Fund on Bountysource"
-msgstr "Bountysource로 기금"
+msgstr "Bountysource에 자금 지원"
 
 #: weblate_web/html/donate.html:37
 msgid ""
@@ -332,14 +333,13 @@ msgstr "Liberapay은 신용 카드를 사용하여 매주 금액을 보낼 수 �
 
 #: weblate_web/html/donate.html:50
 msgid "Fund features"
-msgstr "기금 기능"
+msgstr "재정 지원 기능"
 
 #: weblate_web/html/donate.html:58
 msgid ""
 "Bountysource allows you to fund individual features which are reported on "
 "our issue tracker."
-msgstr ""
-"Bountysource는 저희의 이슈 트래커에 보고된 개별 기능에 투자할 수 있습니다."
+msgstr "Bountysource는 이슈 트래커에 보고된 개별 기능에 투자할 수 있도록 해줍니다."
 
 #: weblate_web/html/donate.html:64
 msgid ""
@@ -360,7 +360,7 @@ msgstr "PayPal은 신용 카드, PayPal 잔액 또는 은행 계좌에서 보낼
 
 #: weblate_web/html/donate.html:80
 msgid "Cryptocurrencies"
-msgstr ""
+msgstr "암호화 가상화폐"
 
 #: weblate_web/html/donate.html:83
 #, python-format
@@ -368,18 +368,20 @@ msgid ""
 "Thanks to <a href=\"%(url)s\">Trezor</a>, we will gladly accept donations in "
 "several cryptocurrencies. You can use the addresses in table below."
 msgstr ""
+"<a href=\"%(url)s\">Trezor</a>의 도움 덕분에 저희는 여러가지 종류의 암호화 가상화폐로 기부금을 모금할 수 있게 "
+"되었습니다. 아래의 도표에 있는 주소를 사용하실 수 있습니다."
 
 #: weblate_web/html/donate.html:88
 msgid "Currency"
-msgstr ""
+msgstr "통화"
 
 #: weblate_web/html/donate.html:88
 msgid "Payment link"
-msgstr ""
+msgstr "지불 링크"
 
 #: weblate_web/html/donate.html:88
 msgid "Payment address"
-msgstr ""
+msgstr "지불 주소"
 
 #: weblate_web/html/download.html:4 weblate_web/html/download.html:5
 msgid "Download Weblate"
@@ -394,22 +396,20 @@ msgid ""
 "Weblate is being developed on <a href=\"https://github.com/WeblateOrg/weblate"
 "\">Github</a>, you can fork it there or just:"
 msgstr ""
-"Weblate는 <a href=\"https://github.com/WeblateOrg/weblate\">Github</a>에서 개"
-"발되고 있습니다, 당신은 포크하거나 다음과 같이 하면 됩니다:"
+"Weblate는 <a href=\"https://github.com/WeblateOrg/weblate\">Github</a>에서 개발되고 "
+"있습니다. 여러분은 포크(fork)를 하거나 또는 다음과 같은 것을 할 수 있습니다:"
 
 #: weblate_web/html/download.html:37
 msgid "You can download latest release here:"
-msgstr "최신 릴리즈를 내려 받을 수 있습니다:"
+msgstr "최신 릴리즈를 내려받을 수 있습니다:"
 
 #: weblate_web/html/download.html:46 weblate_web/html/download.html:62
 msgid "You can also install using packages for following Linux distributions:"
-msgstr ""
-"다음 리눅스 배포판들을 사용하시는 경우, 설치 패키지를 이용해 인스톨하시는 것"
-"이 가능합니다:"
+msgstr "다음 리눅스 배포판들을 사용하시는 경우, 설치 패키지를 이용해 설치하시는 것이 가능합니다:"
 
 #: weblate_web/html/download.html:52
 msgid "Weblate command line client"
-msgstr "Weblate 커맨드라인 클라이언트"
+msgstr "Weblate 명령줄 클라이언트"
 
 #: weblate_web/html/download.html:55
 #, python-format
@@ -428,9 +428,7 @@ msgstr "클라우드 또는 가상화 이미지"
 msgid ""
 "Weblate can be run in any cloud or virtualization environment. Following "
 "links will show you information about some of these:"
-msgstr ""
-"Weblate는 클라우드나 가상 환경의 제약 없이 실행될 수 있습니다. 다음 링크를 클"
-"릭하여 더 많은 정보를 얻어보세요 :"
+msgstr "Weblate는 어느 클라우드나 가상 환경에서 실행될 수 있습니다. 다음 링크를 클릭하여 더 많은 정보를 얻어보세요 :"
 
 #: weblate_web/html/download.html:75
 msgid "Running Weblate in a Docker container"
@@ -444,7 +442,7 @@ msgstr "OpenShift 플랫폼에서 Weblate 실행"
 msgid ""
 "BitNami Weblate stack providing native installation for most platforms as "
 "well as support for many public cloud providers"
-msgstr ""
+msgstr "BitNami Weblate 스택은 다수의 플랫폼에서 네이티브 설치를 제공하며 여러 공개 클라우드 서비스 제공자들을 지원합니다"
 
 #: weblate_web/html/features.html:3 weblate_web/html/features.html:4
 msgid "Weblate features"
@@ -482,7 +480,7 @@ msgstr "통합 API"
 
 #: weblate_web/html/features.html:40
 msgid "Thanks to the API you can integrate Weblate with third party services."
-msgstr ""
+msgstr "API의 도움으로 Weblate를 제3자 서비스에 통합할 수 있습니다."
 
 #: weblate_web/html/features.html:47
 msgid "File formats"
@@ -493,8 +491,7 @@ msgid ""
 "Weblate supports all widely used file formats for localisation like Gettext, "
 "JSON, XLIFF or resource strings."
 msgstr ""
-"Weblate는 Gettext, JSON, XLIFF 및 문자열 자원과 같은 현지화에 쓰이는 널리 사"
-"용되는 파일 형식들을 지원합니다."
+"Weblate는 Gettext, JSON, XLIFF 및 리소스 스트링과 같은, 현지화에 널리 사용되는 파일 형식들을 지원합니다."
 
 #: weblate_web/html/features.html:55
 msgid "Branches support"
@@ -535,7 +532,7 @@ msgstr "통합됨"
 
 #: weblate_web/html/features.html:96
 msgid "Translations are managed within same version control system as code."
-msgstr "번역은 소스 코드와 같은 버전 관리 시스템 내에서 관리됩니다."
+msgstr "번역은 소스 코드와 동일한 버전 관리 시스템 내에서 관리됩니다."
 
 #: weblate_web/html/features.html:103
 msgid "Documentation"
@@ -544,8 +541,7 @@ msgstr "문서"
 #: weblate_web/html/features.html:104
 msgid ""
 "Weblate comes with comprehensive documentation covering both setup and usage."
-msgstr ""
-"Weblate는 설치 및 사용을 모두 포함하는 종합적 인 문서와 함께 제공됩니다."
+msgstr "Weblate는 설치 및 사용 모두를 위한 포괄적인 문서와 함께 제공됩니다."
 
 #: weblate_web/html/features.html:111
 msgid "Review"
@@ -553,8 +549,7 @@ msgstr "검토"
 
 #: weblate_web/html/features.html:112
 msgid "Translators have several options to review contributions made by peers."
-msgstr ""
-"번역자는 동료에 의해 만들어진 참여를 검토 하기 위한 몇 가지 옵션이 있습니다."
+msgstr "번역자는 동료에 의해 기여된 번역을 검토하기 위한 몇 가지 옵션이 있습니다."
 
 #: weblate_web/html/features.html:119
 msgid "Languages"
@@ -564,9 +559,7 @@ msgstr "언어"
 msgid ""
 "Weblate supports over 150 languages out of the box, others can be defined by "
 "administrator."
-msgstr ""
-"Weblate는 뛰어난 150가지 이상의 언어를 제공하고, 나머지는 관리자에 의해 정의"
-"될 수 있습니다."
+msgstr "Weblate는 기본적으로 150가지 이상의 언어를 지원하고, 나머지는 관리자에 의해 정의될 수 있습니다."
 
 #: weblate_web/html/features.html:135
 msgid "Reporting"
@@ -576,9 +569,7 @@ msgstr "보고"
 msgid ""
 "Weblate generates various reports to provide information about project "
 "activity."
-msgstr ""
-"Weblate는 프로젝트 활성화에 대한 정보를 제공하기 위한 다양한 보고서를 생성합"
-"니다."
+msgstr "Weblate는 프로젝트 활동에 대한 정보를 제공하는 다양한 보고서를 생성합니다."
 
 #: weblate_web/html/features.html:144
 msgid "Version control"
@@ -600,9 +591,7 @@ msgstr "공동 작업 사이트"
 msgid ""
 "Weblate has native support for many software development sites such as "
 "GitHub, Bitbucket or Gitlab."
-msgstr ""
-"Weblate는 GitHub, Bitbucket, Gitlab 등의 많은 소프트웨어 개발 사이트들을 지원"
-"합니다."
+msgstr "Weblate는 GitHub, Bitbucket, Gitlab 등의 많은 소프트웨어 개발 사이트들을 네이티브로 지원합니다."
 
 #: weblate_web/html/features.html:160
 msgid "Responsive UI"
@@ -624,7 +613,7 @@ msgstr "Weblate 호스팅"
 
 #: weblate_web/html/hosting-ordered.html:6
 msgid "Thank you for ordering hosting!"
-msgstr ""
+msgstr "호스팅 플랜을 구매해주셔서 감사합니다!"
 
 #: weblate_web/html/hosting-ordered.html:11
 msgid "Next steps"
@@ -635,18 +624,19 @@ msgid ""
 "The project setup is currently manual. If you haven't done so already, "
 "please get in touch with us and send us details about your repository setup."
 msgstr ""
+"프로젝트 설치는 현재 수동으로 진행해야 합니다. 미리 해두지 않았다면, 저희에게 연락해서 저장소 설정에 대한 상세 정보를 보내주세요."
 
 #: weblate_web/html/hosting-ordered.html:15
 msgid "Usually following information is needed:"
-msgstr ""
+msgstr "주로 다음과 같은 정보가 필요합니다:"
 
 #: weblate_web/html/hosting-ordered.html:18 weblate_web/html/hosting.html:338
 msgid "URL of repository with translations."
-msgstr "번역 저장소 URL."
+msgstr "번역이 포함되어 있는 저장소 URL."
 
 #: weblate_web/html/hosting-ordered.html:19 weblate_web/html/hosting.html:339
 msgid "Path to translations within the repository."
-msgstr "저장소 내에서 번역에 대한 경로."
+msgstr "저장서 내의 번역 경로."
 
 #: weblate_web/html/hosting-ordered.html:22
 msgid ""
@@ -654,14 +644,14 @@ msgid ""
 "adding Weblate user to your project (on GitHub, Bitbucket or GitLab) or "
 "adding SSH key we will provide you."
 msgstr ""
+"Weblate가 저장소에 접근할 수 있도록 허가해야 합니다. 이는 당신의 프로젝트 (GitHub, BitBucket, GitLab 등)에 "
+"Weblate 사용자를 추가하거나 저희가 제공하는 SSH 키를 추가함으로서 가능합니다."
 
 #: weblate_web/html/hosting.html:6
 msgid "Free continuous translation hosting for free software."
 msgstr "자유 소프트웨어를 위한 지속적인 무료 번역 호스팅."
 
 #: weblate_web/html/hosting.html:11
-#, fuzzy
-#| msgid "Asking for hosting"
 msgid "Ask for hosting"
 msgstr "호스팅 문의하기"
 
@@ -670,6 +660,7 @@ msgid ""
 "Hosted Weblate allows you to use Weblate without any effort and with premium "
 "support backed by it's core developers."
 msgstr ""
+"Hosted Weblate는 Weblate를 번거로운 수고 없이 사용할 수 있도록 해주며 핵심 개발자에 의한 프리미엄 지원을 제공합니다."
 
 #: weblate_web/html/hosting.html:24
 #, python-format
@@ -679,6 +670,9 @@ msgid ""
 "look for hosting of bigger projects, don't hesitate to <a href=\"%(contact)s"
 "\">get in touch with us</a>."
 msgstr ""
+"저희는 당시의 상업 및 자유 소프트웨어 프로젝트의 번역을 호스팅할 수 있습니다. 아래에서 호스팅 플랜에 대한 요약된 정보를 볼 수 "
+"있습니다. 만약 문의사항이 있거나 대형 프로젝트를 호스팅하고자 하신다면 망설이지 말고 <a href=\"%(contact)s\""
+">연락주세요</a>."
 
 #: weblate_web/html/hosting.html:32
 msgctxt "Hosting plan"
@@ -688,35 +682,33 @@ msgstr "자유 소프트웨어"
 #: weblate_web/html/hosting.html:33
 msgctxt "Hosting plan"
 msgid "Basic"
-msgstr ""
+msgstr "베이직"
 
 #: weblate_web/html/hosting.html:34
 msgctxt "Hosting plan"
 msgid "Medium"
-msgstr ""
+msgstr "미디엄"
 
 #: weblate_web/html/hosting.html:35
 msgctxt "Hosting plan"
 msgid "Advanced"
-msgstr ""
+msgstr "어드밴스드"
 
 #: weblate_web/html/hosting.html:36
 msgctxt "Hosting plan"
 msgid "Enterprise"
-msgstr ""
+msgstr "엔터프라이즈"
 
 #: weblate_web/html/hosting.html:37
-#, fuzzy
-#| msgid "Asking for hosting"
 msgctxt "Hosting plan"
 msgid "Self hosted"
-msgstr "호스팅 문의하기"
+msgstr "자체 호스팅"
 
 #: weblate_web/html/hosting.html:51
 msgid ""
 "Text unit defined in a translation format, it can be word, sentence or a "
 "paragraph"
-msgstr ""
+msgstr "번역 포맷으로 정의된 문자 단위, 이는 단어, 문장 및 문단일 수 있습니다"
 
 #: weblate_web/html/hosting.html:51
 msgid "Source strings"
@@ -725,7 +717,7 @@ msgstr "원본 문자열"
 #: weblate_web/html/hosting.html:52 weblate_web/html/hosting.html:61
 #: weblate_web/html/hosting.html:70
 msgid "Negotiable"
-msgstr ""
+msgstr "협상 가능"
 
 #: weblate_web/html/hosting.html:57 weblate_web/html/hosting.html:66
 #: weblate_web/html/hosting.html:75 weblate_web/html/hosting.html:82
@@ -737,7 +729,7 @@ msgstr ""
 #: weblate_web/html/hosting.html:100 weblate_web/html/hosting.html:101
 #: weblate_web/html/hosting.html:102
 msgid "Unlimited"
-msgstr ""
+msgstr "무제한"
 
 #: weblate_web/html/hosting.html:60
 msgid "Target languages"
@@ -745,19 +737,15 @@ msgstr "대상 언어"
 
 #: weblate_web/html/hosting.html:69
 msgid "VCS repositories"
-msgstr "버전 컨트롤 저장소"
+msgstr "버전 컨트롤 시스템 저장소"
 
 #: weblate_web/html/hosting.html:78
-#, fuzzy
-#| msgid "Own translations"
 msgid "Translation projects"
-msgstr "자신의 번역"
+msgstr "번역 프로젝트"
 
 #: weblate_web/html/hosting.html:87
-#, fuzzy
-#| msgid "Translation context"
 msgid "Translation components"
-msgstr "번역 내용"
+msgstr "번역 요소"
 
 #: weblate_web/html/hosting.html:96
 msgid "Number of translators"
@@ -765,7 +753,7 @@ msgstr "번역자 수"
 
 #: weblate_web/html/hosting.html:105
 msgid "User management"
-msgstr ""
+msgstr "사용자 관리"
 
 #: weblate_web/html/hosting.html:114
 msgid "Supported file formats"
@@ -775,28 +763,26 @@ msgstr "지원하는 파일 형식"
 #: weblate_web/html/hosting.html:117 weblate_web/html/hosting.html:118
 #: weblate_web/html/hosting.html:119 weblate_web/html/hosting.html:120
 msgid "All"
-msgstr ""
+msgstr "모두"
 
 #: weblate_web/html/hosting.html:127 weblate_web/html/hosting.html:128
 #: weblate_web/html/hosting.html:129 weblate_web/html/hosting.html:136
 #: weblate_web/html/hosting.html:137 weblate_web/html/hosting.html:138
 msgid "Customizable"
-msgstr ""
+msgstr "맞춤형"
 
 #: weblate_web/html/hosting.html:132
-#, fuzzy
-#| msgid "Translation status"
 msgid "Translation processing"
-msgstr "번역 현황"
+msgstr "번역 진행상황"
 
 #: weblate_web/html/hosting.html:150
 msgid "Priority email support"
-msgstr ""
+msgstr "우선적인 이메일 지원"
 
 #: weblate_web/html/hosting.html:156 weblate_web/html/hosting.html:165
 #: weblate_web/html/hosting.html:173
 msgid "Available on request"
-msgstr ""
+msgstr "요청시 가능"
 
 #: weblate_web/html/hosting.html:159
 msgid "Phone support"
@@ -804,21 +790,19 @@ msgstr "전화 지원"
 
 #: weblate_web/html/hosting.html:168
 msgid "Custom domain name with SSL"
-msgstr ""
+msgstr "임의의 도메인 이름과 SSL"
 
 #: weblate_web/html/hosting.html:168
 msgid "Own domain"
-msgstr ""
+msgstr "소속된 도메인"
 
 #: weblate_web/html/hosting.html:179
-#, fuzzy
-#| msgid "Donate using PayPal"
 msgid "Monthly by PayPal"
-msgstr "PayPal을 사용하여 기부하기"
+msgstr "PayPal을 사용하여 매월 지불"
 
 #: weblate_web/html/hosting.html:181
 msgid "Contact us"
-msgstr "연락처"
+msgstr "연락주세요"
 
 #: weblate_web/html/hosting.html:184 weblate_web/html/hosting.html:187
 #: weblate_web/html/hosting.html:190 weblate_web/html/hosting.html:193
@@ -830,17 +814,17 @@ msgstr "%(price)s 유로 / 월"
 
 #: weblate_web/html/hosting.html:195
 msgid "See below for options"
-msgstr ""
+msgstr "아래에서 옵션 보기"
 
 #: weblate_web/html/hosting.html:198
 #, python-format
 msgid "Yearly by invoice (save 15-20%%)"
-msgstr ""
+msgstr "연간 청구서 (15-20%% 절약)"
 
 #: weblate_web/html/hosting.html:200 weblate_web/html/hosting.html:203
 #: weblate_web/html/hosting.html:206 weblate_web/html/hosting.html:209
 msgid "Ask us for yearly invoicing with discount."
-msgstr ""
+msgstr "연간 청구서를 신청하시고 할인을 받으세요."
 
 #: weblate_web/html/hosting.html:200 weblate_web/html/hosting.html:203
 #: weblate_web/html/hosting.html:206 weblate_web/html/hosting.html:209
@@ -848,7 +832,7 @@ msgstr ""
 #: weblate_web/html/hosting.html:284
 #, python-format
 msgid "%(price)s EUR / year"
-msgstr "%(price)s 유로/년"
+msgstr "%(price)s 유로 / 년"
 
 #: weblate_web/html/hosting.html:217
 msgid ""
@@ -856,34 +840,39 @@ msgid ""
 "languages. The source string is a text unit defined in a translation format, "
 "it can be word, sentence or a paragraph."
 msgstr ""
+"요금은 원본 문자열의 숫자와 번역 언어의 숫자에 의해 결정됩니다. 원본 문자열은 번역 포맷으로 정의된 문자 단위이며, 이는 단어, 문장 "
+"및 문단일 수 있습니다."
 
 #: weblate_web/html/hosting.html:221
 msgid ""
 "The hosting setup is currently done manually, so you might want to get in "
 "touch with us prior to making subscription with your project details."
 msgstr ""
+"호스팅 설정은 현재 수동으로 진행되어야 하기 때문에, 호스팅 구독 가입을 결정하기 전에 저희에게 연락해서 프로젝트 상세 정보를 상의해야 "
+"할 수 있습니다."
 
 #: weblate_web/html/hosting.html:225
 msgid ""
 "Alternatively we can accept payments by wire transfer (preferably IBAN) or "
 "Bitcoin. Please get in touch for more details."
 msgstr ""
+"대안으로 저희는 전신 송금 (IBAN을 선호합니다) 또는 비트코인으로 요금을 받을 수 있습니다. 자세한 정보를 알고 싶다면 연락주세요."
 
 #: weblate_web/html/hosting.html:228
-#, fuzzy
-#| msgid "Support free hosting"
 msgid "Support for self hosted environments"
-msgstr "무료 호스팅 지원하기"
+msgstr "자체 호스팅 환경을 지원하기"
 
 #: weblate_web/html/hosting.html:230
 msgid ""
 "Worried of putting your translations into cloud? You can self host Weblate "
 "and we can still provide you premium support for your setup."
 msgstr ""
+"번역을 클라우드 서비스에서 구축하는 것이 염려되십니까? 직접 Weblate를 자체적으로 호스팅하셔도 저희는 설치에 대한 프리미엄 지원을 "
+"제공해드립니다."
 
 #: weblate_web/html/hosting.html:236
 msgid "Installation on your Linux server"
-msgstr ""
+msgstr "보유중인 리눅스 서버에 설치"
 
 #: weblate_web/html/hosting.html:237
 #, python-format
@@ -892,31 +881,31 @@ msgstr "%(price)s 유로"
 
 #: weblate_web/html/hosting.html:242
 msgid "One time installation of Weblate"
-msgstr ""
+msgstr "Weblate 1회용 설치"
 
 #: weblate_web/html/hosting.html:243
 msgid "Installation using virtualenv, uwsgi and nginx"
-msgstr ""
+msgstr "virtualenv, uwsgi, nginx를 사용한 설치"
 
 #: weblate_web/html/hosting.html:244
 msgid "Using PostgreSQL, MySQL or MariaDB as database backend"
-msgstr ""
+msgstr "PostgreSQL, MySQL 또는 MariaDB를 데이터베이스 백엔드로 사용"
 
 #: weblate_web/html/hosting.html:245
 msgid "Requires root access or close cooperation of your admins"
-msgstr ""
+msgstr "루트 권한을 요구하거나 관리자의 직접적 협조가 필요"
 
 #: weblate_web/html/hosting.html:246
 msgid "Configuration customization"
-msgstr ""
+msgstr "맞춤식 설정"
 
 #: weblate_web/html/hosting.html:247
 msgid "Does not include custom code development"
-msgstr ""
+msgstr "임의의 코드 개발을 포함하지 않음"
 
 #: weblate_web/html/hosting.html:252
 msgid "Minimal support for self hosted Weblate"
-msgstr ""
+msgstr "자체 호스팅 Weblate를 위한 최소한의 지원"
 
 #: weblate_web/html/hosting.html:259 weblate_web/html/hosting.html:274
 #, python-format
@@ -926,17 +915,17 @@ msgid ""
 msgid_plural ""
 "Your Weblate will be upgraded to the latest version at least every %(count)s "
 "months."
-msgstr[0] ""
+msgstr[0] "당신의 Weblate는 최소한 매 %(count)s개월마다 최신 버전으로 업그레이드 될 것입니다."
 
 #: weblate_web/html/hosting.html:260 weblate_web/html/hosting.html:275
 #: weblate_web/html/hosting.html:290
 msgid "We will fix issues that occur in your environment."
-msgstr ""
+msgstr "해당 환경에서 발생하는 문제를 고쳐드릴 것입니다."
 
 #: weblate_web/html/hosting.html:261 weblate_web/html/hosting.html:276
 #: weblate_web/html/hosting.html:291
 msgid "You will receive priority email support."
-msgstr ""
+msgstr "우선적인 이메일 지원을 받으실 수 있습니다."
 
 #: weblate_web/html/hosting.html:262 weblate_web/html/hosting.html:277
 #: weblate_web/html/hosting.html:292
@@ -944,66 +933,59 @@ msgstr ""
 msgid "Up to %(amount)s hour of consulting or support per month are included."
 msgid_plural ""
 "Up to %(amount)s hours of consulting or support per month are included."
-msgstr[0] ""
+msgstr[0] "매월 최장 %(amount)s시간의 컨설팅 또는 지원이 포함되어 있습니다."
 
 #: weblate_web/html/hosting.html:267
 msgid "Basic support for self hosted Weblate"
-msgstr ""
+msgstr "자체 호스팅 Weblate를 위한 기본적인 지원"
 
 #: weblate_web/html/hosting.html:282
 msgid "Extended support for self hosted Weblate"
-msgstr ""
+msgstr "자체 호스팅 Weblate를 위한 연장 지원"
 
 #: weblate_web/html/hosting.html:289
 msgid "Your Weblate will be upgraded to the latest version on every release."
-msgstr ""
+msgstr "당신의 Weblate는 매번 릴리즈될 때마다 최신 버전으로 업그레이드 될 것입니다."
 
 #: weblate_web/html/hosting.html:297
 msgid "Consulting services or custom development"
-msgstr ""
+msgstr "컨설팅 서비스 또는 임의 개발"
 
 #: weblate_web/html/hosting.html:298
 #, python-format
 msgid "%(price)s EUR / hour"
-msgstr ""
+msgstr "%(price)s 유로 / 월"
 
 #: weblate_web/html/hosting.html:303
 msgid "Custom features development"
-msgstr ""
+msgstr "임의 기능 개발"
 
 #: weblate_web/html/hosting.html:304
 msgid "Integrating Weblate into your workflow"
-msgstr ""
+msgstr "Weblate를 작업환경에 통합하기"
 
 #: weblate_web/html/hosting.html:305
 msgid "Suggestions on the internationalization or localization process"
-msgstr ""
+msgstr "번역 작업에 대한 제안"
 
 #: weblate_web/html/hosting.html:313
 msgid "Ask us for details about self hosted Weblate"
-msgstr ""
+msgstr "자체 호스팅 Weblate에 대한 상세 정보를 물어보세요"
 
 #: weblate_web/html/hosting.html:315
 msgid "Hosting for free software"
 msgstr "자유 소프트웨어를 위한 호스팅"
 
 #: weblate_web/html/hosting.html:318
-#, fuzzy
-#| msgid ""
-#| "If you are interested in using Weblate for your free software, you can "
-#| "ask us to be include on <a href=\"https://hosted.weblate.org/\">hosted."
-#| "weblate.org</a>. This will allow you to use Weblate without installing "
-#| "and maintaining it."
 msgid ""
 "If you are interested in using Weblate for your free software, you can ask "
 "us for hosting of your translations on <a href=\"https://hosted.weblate.org/"
 "\">hosted.weblate.org</a>. This will allow you to use Weblate without "
 "installing and maintaining it."
 msgstr ""
-"자유 소프트웨어에 대한 Weblate의 사용에 관심이 있다면, 귀하는 <a href="
-"\"https://hosted.weblate.org/\">hosted.weblate.org</a>에 포함하기 위해 우리에"
-"게 요청할 수 있습니다. 이것은 설치 및 유지 관리 없이 Weblate를 사용할 수 있"
-"게 합니다."
+"Weblate를 귀하의 자유 소프트웨어에 활용하고자 관심이 있다면, <a href=\"https://hosted.weblate.org/\""
+">hosted.weblate.org</a>에 귀하의 번역을 호스팅할 수 있는지 문의하세요. 이것은 설치 및 유지 관리 없이 "
+"Weblate를 사용할 수 있게 합니다."
 
 #: weblate_web/html/hosting.html:321
 msgid "Conditions for free hosting"
@@ -1014,18 +996,18 @@ msgid ""
 "Translated content has to be released under <a href=\"https://en.wikipedia."
 "org/wiki/Free_software_license\">free license</a>."
 msgstr ""
-"번역된 내용은 <a href=\"https://en.wikipedia.org/wiki/Free_software_license"
-"\">무료 라이센스</a>로 배포되어야 합니다."
+"번역된 내용은 <a href=\"https://en.wikipedia.org/wiki/Free_software_license\">자유 "
+"소프트웨어 라이센스</a>로 배포되어야 합니다."
 
 #: weblate_web/html/hosting.html:325
 msgid ""
 "Source code has to be publicly available in a supported version control "
 "system."
-msgstr "소스 코드는 지원하는 버전 관리 시스템에 공개되어야 합니다."
+msgstr "소스 코드는 지원되는 버전 관리 시스템에 공개되어 있어야 합니다."
 
 #: weblate_web/html/hosting.html:326
 msgid "There is no guarantee for service availability or quality."
-msgstr "서비스 가용성이나 품질에 대한 보장이 없습니다."
+msgstr "서비스 가용성 및 품질에 대한 보증을 하지 않습니다."
 
 #: weblate_web/html/hosting.html:329
 msgid "Asking for hosting"
@@ -1037,6 +1019,8 @@ msgid ""
 "Please use <a href=\"%(url)s\">contact form on Hosted Weblate</a> to request "
 "hosting. You will need following information:"
 msgstr ""
+"<a href=\"%(url)s\">Hosted Weblate 문의</a>에 있는 연락처를 사용해 호스팅을 요청하세요. 다음의 정보가 "
+"필요할 수 있습니다:"
 
 #: weblate_web/html/hosting.html:336
 msgid "Information about your project."
@@ -1048,23 +1032,18 @@ msgstr "프로젝트 웹사이트."
 
 #: weblate_web/html/hosting.html:342
 msgid "Translation workflow"
-msgstr "번역 작업 순서"
+msgstr "번역 작업흐름"
 
 #: weblate_web/html/hosting.html:345
-#, fuzzy
-#| msgid ""
-#| "All translated repositories are available at <code>git.weblate.org</code> "
-#| "with similar naming as on website - hello/master translation would be "
-#| "published as <code>git://git.weblate.org/hello-master.git</code>."
 msgid ""
 "All translated repositories are available using https protocol with similar "
 "naming as on website - weblate/master translation is published as "
 "<code>https://hosted.weblate.org/git/weblate/master/</code>. You can figure "
 "out the URL on the component information tab."
 msgstr ""
-"모든 번역된 저장소는 사이트와 유사한 이름을 가진 <code>git.weblate.org</"
-"code> 에서 사용할 수 있습니다 - hello/master 번역은 <code>git://git.weblate."
-"org/hello-master.git</code> 에 게시 될 것입니다."
+"모든 번역된 저장소는 웹사이트에 있는 이름과 유사한 https 프로토콜에서 찾을 수 있습니다 - weblate/master의 번역은 "
+"<code>https://hosted.weblate.org/git/weblate/master/</code>로 게시됩니다. 요소 정보 "
+"탭에서 URL을 유추하실 수 있습니다."
 
 #: weblate_web/html/hosting.html:349
 #, python-format
@@ -1073,6 +1052,9 @@ msgid ""
 "see our documentation for setup on <a href=\"%(github)s\">GitHub</a>, <a "
 "href=\"%(bitbucket)s\">Bitbucket</a> or <a href=\"%(gitlab)s\">GitLab</a>."
 msgstr ""
+"Weblate는 주요 코드 호스팅 서비스에서 자동적으로 변동사항을 가져올 수 있습니다. <a href=\"%(github)s\""
+">GitHub</a>, <a href=\"%(bitbucket)s\">Bitbucket</a> or <a href=\"%(gitlab)"
+"s\">GitLab</a> 에 해당하는 설치 안내 문서를 확인하세요."
 
 #: weblate_web/html/hosting.html:353
 #, python-format
@@ -1081,6 +1063,8 @@ msgid ""
 "user to collaborators and let us know you want to use this option. See <a "
 "href=\"%(docs)s\">documentation</a> for more detailed instructions."
 msgstr ""
+"Weblate가 변동사항을 자동적으로 내보내기를 원하신다면 Weblate push 사용자를 협업자에 추가하시고 이 옵션을 사용하고자 "
+"하는지를 저희에게 알려주세요. <a href=\"%(docs)s\">문서</a>에서 자세한 안내를 확인하실 수 있습니다."
 
 #: weblate_web/html/hosting.html:356
 msgid "Support free hosting"
@@ -1093,29 +1077,23 @@ msgid ""
 "costs some money, so you are welcome to use <a href=\"%(gittip_url)s"
 "\">Liberapay</a> or <a href=\"%(donate_url)s\">other ways to donate</a>."
 msgstr ""
-"호스팅은 무료로 제공하지만, 서버를 구동하고 유지하는 것은 약간의 비용이 소요"
-"됩니다. 그래서 귀하는  <a href=\"%(gittip_url)s\">깃팁(Liberapay)</a>  또는 "
-"<a href=\"%(donate_url)s\">기부 할 수있는 다른 방법</a>을 사용하실 수 있습니"
-"다."
+"호스팅은 무료로 제공하지만, 서버를 구동하고 유지하는 것에는 약간의 비용이 소요됩니다. 따라서 귀하는  <a href=\""
+"%(gittip_url)s\">Liberapay</a>  또는 <a href=\"%(donate_url)s\">다른 기부 방법</a>을 "
+"이용하실 수 있습니다."
 
 #: weblate_web/html/hosting.html:364
-#, fuzzy
-#| msgid "Asking for hosting"
 msgid "Self hosting"
-msgstr "호스팅 문의하기"
+msgstr "자체 호스팅"
 
 #: weblate_web/html/hosting.html:368
-#, fuzzy, python-format
-#| msgid ""
-#| "Check our <a href=\"%(download_url)s\">download page</a> for appliances, "
-#| "which provide an easy way to deploy Weblate in the cloud."
+#, python-format
 msgid ""
 "You can also <a href=\"%(download_url)s\">download</a> Weblate sources and "
 "run it on your systems. There are also several options for deploying Weblate "
 "to the cloud."
 msgstr ""
-"클라우드에 Weblate를 배포하는 쉬운 방법을 제공하는 기기를 위해 우리의 <a "
-"href=\"%(download_url)s\">내려받기 페이지</a>를 확인하십시오."
+"또한 <a href=\"%(download_url)s\">다운로드</a>에서 Weblate 소스 코드를 내려받고 기존 시스템에서 실행하실 "
+"수 있습니다. Weblate를 클라우드에서 전개하기 위한 다양한 옵션도 있습니다."
 
 #: weblate_web/html/hosting.html:372
 #, python-format
@@ -1124,12 +1102,16 @@ msgid ""
 "well with consulting services tailored for your needs. Please contact <a "
 "href=\"%(contact_url)s\">Michal Čihař</a> for more details."
 msgstr ""
+"자체 호스팅 솔루션에 도움이 필요하시다면, 요구사항 맞춤형 컨설팅 서비스로 도와드릴 수 있습니다. <a href=\""
+"%(contact_url)s\">Michal Čihař</a>에게 자세한 정보를 물어보세요."
 
 #: weblate_web/html/hosting.html:375
 msgid ""
 "All prices exclude VAT, invoices for EU countries are issued as a reverse "
 "charge, invoices for Czech Republic will include additional VAT."
 msgstr ""
+"모든 가격은 부가가치세를 포함하지 않으며, 유럽연합 국가로의 청구서는 수신자 부담으로 발송되며, 체코 공화국으로의 청구서는 별도의 "
+"부가가치세를 포함합니다."
 
 #: weblate_web/html/index.html:3
 msgid "Weblate - web-based translation"
@@ -1138,13 +1120,11 @@ msgstr "Weblate - 웹기반 번역"
 #: weblate_web/html/index.html:14 weblate_web/html/tour.html:11
 #: weblate_web/html/try.html:12
 msgid "Try our demo"
-msgstr "데모 실행"
+msgstr "데모 체험하기"
 
 #: weblate_web/html/index.html:15
-#, fuzzy
-#| msgid "Hosting Weblate"
 msgid "View hosting plans"
-msgstr "Weblate 호스팅"
+msgstr "Weblate 호스팅 플랜"
 
 #: weblate_web/html/index.html:16
 msgid "Downloads"
@@ -1157,9 +1137,8 @@ msgid ""
 "translations across components, quality checks and automatic linking to "
 "source files."
 msgstr ""
-"Weblate는 버전 관리 시스템과 잘 연계된 웹 기반의 번역 도구입니다. 간결하고 깔"
-"끔한 사용자 인터페이스와 하위 컴포넌트에 대한 번역 전파 및 품질 검사 그리고 "
-"원본 파일에 대한 자동화된 연결을 제공합니다."
+"Weblate는 버전 관리 시스템과 밀접하게 통합된 웹 기반의 번역 도구입니다. 간결하고 깔끔한 사용자 인터페이스, 요소간에 번역 배포, "
+"품질 검사 및 원본 파일에 대한 자동화된 연결을 제공합니다."
 
 #: weblate_web/html/index.html:29
 msgid "Weblate screenshot"
@@ -1171,7 +1150,7 @@ msgstr "더많은 특징들 보기…"
 
 #: weblate_web/html/index.html:47
 msgid "See who is using Weblate and join them!"
-msgstr ""
+msgstr "누가 Weblate를 사용하고 있는지 확인하고 동참하세요!"
 
 #: weblate_web/html/support.html:3 weblate_web/html/support.html:4
 msgid "Weblate support"
@@ -1182,10 +1161,8 @@ msgid "Weblate is a free software with community support."
 msgstr "Weblate는 공동체를 지원하는 자유 소프트웨어입니다."
 
 #: weblate_web/html/support.html:11
-#, fuzzy
-#| msgid "Reporting"
 msgid "Report issue"
-msgstr "보고"
+msgstr "문제점 보고"
 
 #: weblate_web/html/support.html:16
 msgid "Bugs or feature requests"
@@ -1202,10 +1179,8 @@ msgstr ""
 "에 알려주세요."
 
 #: weblate_web/html/support.html:22
-#, fuzzy
-#| msgid "Reporting"
 msgid "Security issues"
-msgstr "보고"
+msgstr "보안상의 문제점"
 
 #: weblate_web/html/support.html:25
 #, python-format
@@ -1214,66 +1189,66 @@ msgid ""
 "%(contact)s. More information on reporting security issues can be found in "
 "<a href=\"%(docs)s\">our documentation</a>."
 msgstr ""
+"현존 소스 코드 베이스에서 보안상의 문제점을 발견하셨다면 %(contact)s에 보고해주세요. 보고와 관련된 더 많은 정보는 <a "
+"href=\"%(docs)s\">문서</a>에서 확인하실 수 있습니다."
 
 #: weblate_web/html/support.html:28
-#, fuzzy
-#| msgid "Support free hosting"
 msgid "Support for Hosted Weblate services"
-msgstr "무료 호스팅 지원하기"
+msgstr "Hosted Weblate 서비스 지원"
 
 #: weblate_web/html/support.html:31
 #, python-format
 msgid ""
 "If you are using our hosting services, you can ask for support at "
 "%(contact)s."
-msgstr ""
+msgstr "저희의 호스팅 서비스를 사용중이시라면, %(contact)s에서 지원을 요청하실 수 있습니다."
 
 #: weblate_web/html/support.html:34
-#, fuzzy
-#| msgid "Mailing list"
 msgid "Mailing lists"
 msgstr "메일링 리스트"
 
 #: weblate_web/html/support.html:36
 msgid "Users and developers mailing list"
-msgstr ""
+msgstr "사용자 및 개발자 메일링 리스트"
 
 #: weblate_web/html/support.html:38
 msgid ""
 "You can use this mailing lists for discussions with other Weblate users and "
 "developers."
-msgstr ""
+msgstr "이 메일링 리스트를 다른 Weblate 사용자 및 개발자와 논의하는 데 사용하실 수 있습니다."
 
 #: weblate_web/html/support.html:39
 msgid ""
 "You can post to it using <a href=\"mailto:weblate@lists.cihar.com"
 "\">weblate@lists.cihar.com</a> address."
 msgstr ""
+"<a href=\"mailto:weblate@lists.cihar.com\">weblate@lists.cihar.com</a> 주소로 "
+"보내실 수 있습니다."
 
 #: weblate_web/html/support.html:40 weblate_web/html/support.html:56
 msgid "You can browse mailing list archives"
-msgstr ""
+msgstr "메일링 리스트 아카이브를 찾아보실 수 있습니다"
 
 #: weblate_web/html/support.html:43 weblate_web/html/support.html:59
 msgid "Enter your email"
-msgstr ""
+msgstr "이메일을 입력하세요"
 
 #: weblate_web/html/support.html:45 weblate_web/html/support.html:61
 msgid "Subscribe"
-msgstr ""
+msgstr "구독"
 
 #: weblate_web/html/support.html:52
 msgid "Hosted Weblate Announcements mailing list"
-msgstr ""
+msgstr "Hosted Weblate 공지사항 메일링 리스트"
 
 #: weblate_web/html/support.html:54
 msgid ""
 "Low traffic mailing list with announcements about Hosted Weblate services."
-msgstr ""
+msgstr "Hosted Weblate 서비스에 관한 공지사항 메일링 리스트."
 
 #: weblate_web/html/support.html:55
 msgid "This list is moderated, only selected users can post announcements."
-msgstr ""
+msgstr "이 리스트는 중재되어 있으며, 일부 선정된 사용자들만이 공지사항을 올릴 수 있습니다."
 
 #: weblate_web/html/support.html:68
 msgid "Stack Overflow"
@@ -1288,14 +1263,12 @@ msgstr ""
 "습니다."
 
 #: weblate_web/html/support.html:72
-#, fuzzy
-#| msgid "Hosting"
 msgid "Consulting"
-msgstr "호스팅"
+msgstr "컨설팅"
 
 #: weblate_web/html/support.html:74
 msgid "See our support offerings for self hosted Weblate instances"
-msgstr ""
+msgstr "자체 호스팅 Weblate 환경에 대한 지원 제공 보기"
 
 #: weblate_web/html/support.html:77
 #, python-format
@@ -1331,12 +1304,8 @@ msgid "Travis CI is our continuous integration platform."
 msgstr "Travis CI는 우리의 지속적인 통합 플래폼입니다."
 
 #: weblate_web/html/thanks.html:34
-#, fuzzy
-#| msgid "Coveralls helps us to monitor code coverage of our test suite."
 msgid "Codecov helps us to monitor code coverage of our test suite."
-msgstr ""
-"Coveralls은 우리의 테스트 도구 모음중 코드 커버리지를 모니터하는 데 도움이 됩"
-"니다."
+msgstr "Codecov은 저희가 테스트 환경에 대한 코드 범위를 감독하는데에 도움을 주고 있습니다."
 
 #: weblate_web/html/thanks.html:38
 msgid "Sauce Labs is running our Selenium tests in real browsers."
@@ -1344,39 +1313,35 @@ msgstr "Sauce Labs은 실제 브라우저에서 우리의 셀레늄 테스트를
 
 #: weblate_web/html/thanks.html:42
 msgid "Rollbar helps us to collect and fix errors happening on Hosted Weblate."
-msgstr ""
+msgstr "Rollbar는 Hosted Weblate에서 발생되는 에러를 수집하고 고칠 수 있도록 도와주고 있습니다."
 
 #: weblate_web/html/thanks.html:46
 msgid "Our translations are being done on Hosted Weblate."
-msgstr "우리의 번역은 웹레이트에서 작업중입니다."
+msgstr "우리의 번역은 Hosted Weblate에서 이루어집니다."
 
 #: weblate_web/html/thanks.html:50
-#, fuzzy
-#| msgid "Support"
 msgid "Supporters"
-msgstr "지원"
+msgstr "후원자들"
 
 #: weblate_web/html/thanks.html:52
 msgid ""
 "Free hosting for free software projects would be impossible without our "
 "sponsors."
-msgstr ""
+msgstr "자유 소프트웨어 프로젝트에 대한 무료 호스팅은 저희의 스폰서들이 없었다면 이루어지지 않았을 것입니다."
 
 #: weblate_web/html/thanks.html:54
 msgid ""
 "Support our project on Bountysource Salt and get exclusive logo placement on "
 "this page."
-msgstr ""
+msgstr "Bountysource Salt에서 저희 프로젝트를 후원해주시고 이 페이지에 특별한 로고를 게시하세요."
 
 #: weblate_web/html/tour.html:3 weblate_web/html/tour.html:4
 msgid "Weblate tour"
 msgstr "Weblate 둘러보기"
 
 #: weblate_web/html/tour.html:6
-#, fuzzy
-#| msgid "Weblate has useful features for every translation."
 msgid "Weblate has useful features for every crowdsourced translation."
-msgstr "Weblate는 모든 번역에 유용한 기능을 가지고 있습니다."
+msgstr "Weblate는 크라우드소싱 번역에 유용한 기능들을 가지고 있습니다."
 
 #: weblate_web/html/try.html:3 weblate_web/html/try.html:4
 msgid "Try Weblate"
@@ -1404,7 +1369,7 @@ msgstr ""
 msgid ""
 "To test the review workflow there, you can also login as <code>review</code> "
 "user with <code>review</code> password."
-msgstr ""
+msgstr "검토 작업흐름을 테스트하려면 <code>검토</code> 사용자와 <code>검토</code> 암호로 로그인하세요."
 
 #: weblate_web/html/try.html:27
 msgid "Appliances"
