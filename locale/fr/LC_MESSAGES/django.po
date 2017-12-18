@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: French (Weblate)\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2017-12-13 11:49+0100\n"
-"PO-Revision-Date: 2017-12-14 11:46+0000\n"
+"PO-Revision-Date: 2017-12-18 12:17+0000\n"
 "Last-Translator: Ldm Public <ldmpub@gmail.com>\n"
 "Language-Team: French "
 "<https://hosted.weblate.org/projects/weblate/website/fr/>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2.18-dev\n"
+"X-Generator: Weblate 2.18\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -1283,10 +1283,8 @@ msgstr ""
 "de sécurité sont présentes dans notre <a href=\"%(docs)s\">documentation</a>."
 
 #: weblate_web/html/support.html:28
-#, fuzzy
-#| msgid "Basic support for self hosted Weblate"
 msgid "Support for Hosted Weblate services"
-msgstr "Support basic pour Weblate hébergé par vous-même"
+msgstr "Support pour les services Hosted Weblate"
 
 #: weblate_web/html/support.html:31
 #, python-format
@@ -1294,6 +1292,8 @@ msgid ""
 "If you are using our hosting services, you can ask for support at "
 "%(contact)s."
 msgstr ""
+"Si vous utilisez nos services hébergés, vous pouvez contacter le support à "
+"%(contact)s."
 
 #: weblate_web/html/support.html:34
 msgid "Mailing lists"
@@ -1301,19 +1301,23 @@ msgstr "Listes de diffusion"
 
 #: weblate_web/html/support.html:36
 msgid "Users and developers mailing list"
-msgstr ""
+msgstr "Liste de diffusion des utilisateurs et développeurs"
 
 #: weblate_web/html/support.html:38
 msgid ""
 "You can use this mailing lists for discussions with other Weblate users and "
 "developers."
 msgstr ""
+"Vous pouvez utiliser cette liste de diffusion pour échanger avec les autres "
+"utilisateurs et développeurs de Weblate."
 
 #: weblate_web/html/support.html:39
 msgid ""
 "You can post to it using <a href=\"mailto:weblate@lists.cihar.com"
 "\">weblate@lists.cihar.com</a> address."
 msgstr ""
+"Vous pouvez envoyer vos messages en utilisant l'adresse <a href=\""
+"mailto:weblate@lists.cihar.com\">weblate@lists.cihar.com</a>."
 
 #: weblate_web/html/support.html:40 weblate_web/html/support.html:56
 msgid "You can browse mailing list archives"
@@ -1329,12 +1333,14 @@ msgstr "S'abonner"
 
 #: weblate_web/html/support.html:52
 msgid "Hosted Weblate Announcements mailing list"
-msgstr ""
+msgstr "Liste de diffusion pour les annonces Hosted Weblate"
 
 #: weblate_web/html/support.html:54
 msgid ""
 "Low traffic mailing list with announcements about Hosted Weblate services."
 msgstr ""
+"Liste de diffusion peu active utilisée pour diffuser les annonces liées aux "
+"services Hosted Weblate."
 
 #: weblate_web/html/support.html:55
 msgid "This list is moderated, only selected users can post announcements."
@@ -1472,6 +1478,8 @@ msgid ""
 "To test the review workflow there, you can also login as <code>review</code> "
 "user with <code>review</code> password."
 msgstr ""
+"Pour tester le processus de révision, connectez-vous avec l'utilisateur "
+"<code>review</code> et le mot de passe <code>review</code>."
 
 #: weblate_web/html/try.html:27
 msgid "Appliances"
