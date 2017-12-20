@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2017-12-13 11:49+0100\n"
-"PO-Revision-Date: 2017-10-13 22:49+0000\n"
+"PO-Revision-Date: 2017-12-20 13:30+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
-"Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/weblate/"
-"website/nb/>\n"
+"Language-Team: Norwegian Bokmål "
+"<https://hosted.weblate.org/projects/weblate/website/nb/>\n"
 "Language: nb\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.17\n"
+"X-Generator: Weblate 2.18\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -285,7 +285,7 @@ msgstr "Oversettelsesstatus"
 
 #: weblate_web/html/donate.html:3 weblate_web/html/donate.html:4
 msgid "Donate to Weblate"
-msgstr "Donér til Weblate"
+msgstr "Doner til Weblate"
 
 #: weblate_web/html/donate.html:6
 msgid "Weblate is free, but welcomes donations."
@@ -305,8 +305,9 @@ msgid ""
 "Host your commercial translations on <a href=\"%(hosting_url)s\">Hosted "
 "Weblate</a> and you will be supporting Weblate development automatically."
 msgstr ""
-"La <a href=\"%(hosting_url)s\">Hosted Weblate</a> være vertsskap for dine "
-"komersielle oversettelser og du støtter utviklingen av Weblate automatisk."
+"La <a href=\"%(hosting_url)s\">Hosted Weblate</a> tjene som vertsskap for "
+"dine kommersielle oversettelser, samtidig som du støtter utviklingen av "
+"Weblate."
 
 #: weblate_web/html/donate.html:25
 msgid "Regular donations"
@@ -343,7 +344,7 @@ msgstr ""
 
 #: weblate_web/html/donate.html:50
 msgid "Fund features"
-msgstr "Fondets kjennetegn"
+msgstr "Finansieringsfunksjoner"
 
 #: weblate_web/html/donate.html:58
 msgid ""
@@ -1244,10 +1245,8 @@ msgstr ""
 "sikkerhetsproblemer kan finnes i <a href=\"%(docs)s\">vår dokumentasjon</a>."
 
 #: weblate_web/html/support.html:28
-#, fuzzy
-#| msgid "Basic support for self hosted Weblate"
 msgid "Support for Hosted Weblate services"
-msgstr "Grunnleggende støtte for selvtjent Weblate"
+msgstr "Støtte for vertslagrede Weblate-tjenester"
 
 #: weblate_web/html/support.html:31
 #, python-format
@@ -1255,53 +1254,59 @@ msgid ""
 "If you are using our hosting services, you can ask for support at "
 "%(contact)s."
 msgstr ""
+"Hvis du bruker våre vertslagringstjenester, kan du spørre om støtte på "
+"%(contact)s."
 
 #: weblate_web/html/support.html:34
-#, fuzzy
-#| msgid "Mailing list"
 msgid "Mailing lists"
-msgstr "E-postliste"
+msgstr "E-postlister"
 
 #: weblate_web/html/support.html:36
 msgid "Users and developers mailing list"
-msgstr ""
+msgstr "E-postliste for utviklere og brukere"
 
 #: weblate_web/html/support.html:38
 msgid ""
 "You can use this mailing lists for discussions with other Weblate users and "
 "developers."
 msgstr ""
+"Du kan bruke denne e-postlisten for diskusjoner med andre Weblate-brukere og "
+"-utviklere."
 
 #: weblate_web/html/support.html:39
 msgid ""
 "You can post to it using <a href=\"mailto:weblate@lists.cihar.com"
 "\">weblate@lists.cihar.com</a> address."
 msgstr ""
+"Du kan poste til den ved å bruke adressen: <a href=\""
+"mailto:weblate@lists.cihar.com\">weblate@lists.cihar.com</a>."
 
 #: weblate_web/html/support.html:40 weblate_web/html/support.html:56
 msgid "You can browse mailing list archives"
-msgstr ""
+msgstr "Du kan utforske e-postlistearkivet"
 
 #: weblate_web/html/support.html:43 weblate_web/html/support.html:59
+#, fuzzy
 msgid "Enter your email"
-msgstr ""
+msgstr "Skriv inn e-postadressen din"
 
 #: weblate_web/html/support.html:45 weblate_web/html/support.html:61
 msgid "Subscribe"
-msgstr ""
+msgstr "Abonner"
 
 #: weblate_web/html/support.html:52
 msgid "Hosted Weblate Announcements mailing list"
-msgstr ""
+msgstr "Annonserings-e-postliste for vertslagret Weblate"
 
 #: weblate_web/html/support.html:54
 msgid ""
 "Low traffic mailing list with announcements about Hosted Weblate services."
 msgstr ""
+"Lavtrafikks-e-postliste med annonseringer om vertslagrede Weblate-tjenester."
 
 #: weblate_web/html/support.html:55
 msgid "This list is moderated, only selected users can post announcements."
-msgstr ""
+msgstr "Denne listen modereres, kun utvalgte brukere kan poste annonseringer."
 
 #: weblate_web/html/support.html:68
 msgid "Stack Overflow"
@@ -1426,10 +1431,13 @@ msgstr ""
 "bare bruke <code>demo</code> som konto med <code>demo</code> som passord."
 
 #: weblate_web/html/try.html:25
+#, fuzzy
 msgid ""
 "To test the review workflow there, you can also login as <code>review</code> "
 "user with <code>review</code> password."
 msgstr ""
+"For å teste gjennomsynsarbeidsflyten der, kan du også logge inn som "
+"<code>review</code> bruker med <code>review</code> password."
 
 #: weblate_web/html/try.html:27
 msgid "Appliances"
