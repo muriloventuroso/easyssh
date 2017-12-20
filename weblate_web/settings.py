@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# Copyright © 2012 - 2015 Michal Čihař <michal@cihar.com>
+# Copyright © 2012 - 2017 Michal Čihař <michal@cihar.com>
 #
 # This file is part of Weblate <https://weblate.org/>
 #
@@ -54,10 +54,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
 # although not all choices may be available on all operating systems.
-# On Unix systems, a value of None will cause Django to use the same
-# timezone as the operating system.
-# If running in a Windows environment this must be set to the same as your
-# system time zone.
+# In a Windows environment this must be set to your system time zone.
 TIME_ZONE = 'Europe/Prague'
 
 # Language code for this installation. All choices can be found here:
@@ -176,7 +173,9 @@ TEMPLATES = [
     },
 ]
 
-MIDDLEWARE_CLASSES = (
+# Middleware
+MIDDLEWARE = [
+    'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.locale.LocaleMiddleware',
@@ -184,7 +183,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'weblate_web.middleware.SecurityMiddleware',
     'rollbar.contrib.django.middleware.RollbarNotifierMiddleware',
-)
+]
 
 ROLLBAR = {
     'access_token': '',
