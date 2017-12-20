@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2017-12-13 11:49+0100\n"
+"POT-Creation-Date: 2017-12-20 14:35+0100\n"
 "PO-Revision-Date: 2017-11-09 23:55+0000\n"
 "Last-Translator: Domen <mitenem@outlook.com>\n"
 "Language-Team: Slovenian <https://hosted.weblate.org/projects/weblate/"
@@ -245,10 +245,15 @@ msgid "Translate"
 msgstr "Prevedite"
 
 #: weblate_web/html/contribute.html:17
+#, fuzzy
+#| msgid ""
+#| "You can find more detailed information about this topic in <a href="
+#| "\"https://docs.weblate.org/en/latest/contributing.html\">Contributing "
+#| "chapter</a> of our documentation."
 msgid ""
 "You can find more detailed information about this topic in <a href=\"https://"
 "docs.weblate.org/en/latest/contributing.html\">Contributing chapter</a> of "
-"our documentation."
+"the documentation."
 msgstr ""
 "Podrobnejše informacije o tej temi lahko najdete v <a href=\"https://docs."
 "weblate.org/en/latest/contributing.html\">poglavju Prispevanje</a> v naši "
@@ -274,9 +279,13 @@ msgstr ""
 "Spletna stran je prav tako shranjena na <a href=\"%(url)s\">GitHubu</a>:"
 
 #: weblate_web/html/contribute.html:41
+#, fuzzy
+#| msgid ""
+#| "You can translate Weblate using Weblate installation at <a href=\"https://"
+#| "hosted.weblate.org/engage/weblate/\">hosted.weblate.org</a>."
 msgid ""
-"You can translate Weblate using Weblate installation at <a href=\"https://"
-"hosted.weblate.org/engage/weblate/\">hosted.weblate.org</a>."
+"You can translate Weblate at <a href=\"https://hosted.weblate.org/engage/"
+"weblate/\">hosted.weblate.org</a>."
 msgstr ""
 "Weblate lahko prevedete z uporabo namestitve Weblate na <a href=\"https://"
 "hosted.weblate.org/engage/weblate/\">hosted.weblate.org</a>."
@@ -1426,10 +1435,15 @@ msgid "Demo server"
 msgstr "Preizkusni strežnik"
 
 #: weblate_web/html/try.html:22
+#, fuzzy
+#| msgid ""
+#| "You can try how Weblate on our <a href=\"https://demo.weblate.org\">demo "
+#| "server</a>. You can register there and work under your username or just "
+#| "use <code>demo</code> account with <code>demo</code> password."
 msgid ""
-"You can try how Weblate on our <a href=\"https://demo.weblate.org\">demo "
-"server</a>. You can register there and work under your username or just use "
-"<code>demo</code> account with <code>demo</code> password."
+"Try Weblate on the <a href=\"https://demo.weblate.org\">demo server</a>. "
+"Register there and work under your username, or just use username: "
+"<code>demo</code> with password: <code>demo</code>."
 msgstr ""
 "Weblate lahko preizkusite na našem <a href=\"https://demo.weblate.org"
 "\">preizkusnem strežniku</a>. Tam se lahko registrirate in delate pod svojim "
@@ -1438,8 +1452,8 @@ msgstr ""
 
 #: weblate_web/html/try.html:25
 msgid ""
-"To test the review workflow there, you can also login as <code>review</code> "
-"user with <code>review</code> password."
+"To test the review workflow there, log in with username: <code>review</"
+"code>, and password: <code>review</code>."
 msgstr ""
 
 #: weblate_web/html/try.html:27
@@ -1447,10 +1461,13 @@ msgid "Appliances"
 msgstr "Pripomočki"
 
 #: weblate_web/html/try.html:30
-#, python-format
+#, fuzzy, python-format
+#| msgid ""
+#| "Check our <a href=\"%(download_url)s\">download page</a> for appliances, "
+#| "which provide an easy way to deploy Weblate in the cloud."
 msgid ""
-"Check our <a href=\"%(download_url)s\">download page</a> for appliances, "
-"which provide an easy way to deploy Weblate in the cloud."
+"Check out the <a href=\"%(download_url)s\">download page</a> for appliances, "
+"providing an easy way to deploy Weblate in the cloud."
 msgstr ""
 "Na naši <a href=\"%(download_url)s\">strani za prenos</a> poiščite "
 "pripomočke, ki nudijo preprost način za uvedbo Weblate v oblak."

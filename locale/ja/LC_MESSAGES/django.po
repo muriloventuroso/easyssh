@@ -6,11 +6,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: weblate-website-ja\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2017-12-13 11:49+0100\n"
+"POT-Creation-Date: 2017-12-20 14:35+0100\n"
 "PO-Revision-Date: 2017-12-13 11:17+0000\n"
 "Last-Translator: Yasuhiko Kamata <belphegor@belbel.or.jp>\n"
-"Language-Team: Japanese "
-"<https://hosted.weblate.org/projects/weblate/website/ja/>\n"
+"Language-Team: Japanese <https://hosted.weblate.org/projects/weblate/website/"
+"ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -247,10 +247,15 @@ msgid "Translate"
 msgstr "翻訳"
 
 #: weblate_web/html/contribute.html:17
+#, fuzzy
+#| msgid ""
+#| "You can find more detailed information about this topic in <a href="
+#| "\"https://docs.weblate.org/en/latest/contributing.html\">Contributing "
+#| "chapter</a> of our documentation."
 msgid ""
 "You can find more detailed information about this topic in <a href=\"https://"
 "docs.weblate.org/en/latest/contributing.html\">Contributing chapter</a> of "
-"our documentation."
+"the documentation."
 msgstr ""
 "このトピックについての詳しい情報は、ドキュメント内の <a href=\"https://docs."
 "weblate.org/en/latest/contributing.html\">貢献の章</a> にあります。"
@@ -276,9 +281,13 @@ msgstr ""
 "ます："
 
 #: weblate_web/html/contribute.html:41
+#, fuzzy
+#| msgid ""
+#| "You can translate Weblate using Weblate installation at <a href=\"https://"
+#| "hosted.weblate.org/engage/weblate/\">hosted.weblate.org</a>."
 msgid ""
-"You can translate Weblate using Weblate installation at <a href=\"https://"
-"hosted.weblate.org/engage/weblate/\">hosted.weblate.org</a>."
+"You can translate Weblate at <a href=\"https://hosted.weblate.org/engage/"
+"weblate/\">hosted.weblate.org</a>."
 msgstr ""
 "<a href=\"https://hosted.weblate.org/engage/weblate/\">hosted.weblate.org</"
 "a> にインストールされている Weblate を使って Weblate を翻訳することができま"
@@ -1274,7 +1283,9 @@ msgstr "Weblate のホスティングサービスに対するサポート"
 msgid ""
 "If you are using our hosting services, you can ask for support at "
 "%(contact)s."
-msgstr "我々が提供するホスティングサービスをお使いの場合は、 %(contact)s 宛に連絡してサポートを受けてください。"
+msgstr ""
+"我々が提供するホスティングサービスをお使いの場合は、 %(contact)s 宛に連絡して"
+"サポートを受けてください。"
 
 #: weblate_web/html/support.html:34
 msgid "Mailing lists"
@@ -1288,15 +1299,17 @@ msgstr "ユーザおよび開発者向けのメーリングリスト"
 msgid ""
 "You can use this mailing lists for discussions with other Weblate users and "
 "developers."
-msgstr "メーリングリストを利用することで、 Weblate の他の利用者や開発者との間で議論を行なうことができます。"
+msgstr ""
+"メーリングリストを利用することで、 Weblate の他の利用者や開発者との間で議論を"
+"行なうことができます。"
 
 #: weblate_web/html/support.html:39
 msgid ""
 "You can post to it using <a href=\"mailto:weblate@lists.cihar.com"
 "\">weblate@lists.cihar.com</a> address."
 msgstr ""
-"投稿は <a href=\"mailto:weblate@lists.cihar.com\">weblate@lists.cihar.com</a> "
-"宛にお送りください。"
+"投稿は <a href=\"mailto:weblate@lists.cihar.com\">weblate@lists.cihar.com</"
+"a> 宛にお送りください。"
 
 #: weblate_web/html/support.html:40 weblate_web/html/support.html:56
 msgid "You can browse mailing list archives"
@@ -1317,11 +1330,15 @@ msgstr "Weblate ホスティングサービスのアナウンス用メーリン�
 #: weblate_web/html/support.html:54
 msgid ""
 "Low traffic mailing list with announcements about Hosted Weblate services."
-msgstr "Weblate のホスティングサービスに関するアナウンスが送信される、低トラフィックのメーリングリストです。"
+msgstr ""
+"Weblate のホスティングサービスに関するアナウンスが送信される、低トラフィック"
+"のメーリングリストです。"
 
 #: weblate_web/html/support.html:55
 msgid "This list is moderated, only selected users can post announcements."
-msgstr "このリストに対する投稿には、制限が設定されています。限られたユーザしかアナウンスを送信できません。"
+msgstr ""
+"このリストに対する投稿には、制限が設定されています。限られたユーザしかアナウ"
+"ンスを送信できません。"
 
 #: weblate_web/html/support.html:68
 msgid "Stack Overflow"
@@ -1443,10 +1460,15 @@ msgid "Demo server"
 msgstr "デモサーバ"
 
 #: weblate_web/html/try.html:22
+#, fuzzy
+#| msgid ""
+#| "You can try how Weblate on our <a href=\"https://demo.weblate.org\">demo "
+#| "server</a>. You can register there and work under your username or just "
+#| "use <code>demo</code> account with <code>demo</code> password."
 msgid ""
-"You can try how Weblate on our <a href=\"https://demo.weblate.org\">demo "
-"server</a>. You can register there and work under your username or just use "
-"<code>demo</code> account with <code>demo</code> password."
+"Try Weblate on the <a href=\"https://demo.weblate.org\">demo server</a>. "
+"Register there and work under your username, or just use username: "
+"<code>demo</code> with password: <code>demo</code>."
 msgstr ""
 "Weblate の動作は <a href=\"https://demo.weblate.org\">デモサーバ</a> でお試し"
 "いただくことができます。デモサーバではユーザ登録を実施して自分の名前で作業が"
@@ -1454,22 +1476,29 @@ msgstr ""
 "code> でログインしてお使いいただくこともできます。"
 
 #: weblate_web/html/try.html:25
+#, fuzzy
+#| msgid ""
+#| "To test the review workflow there, you can also login as <code>review</"
+#| "code> user with <code>review</code> password."
 msgid ""
-"To test the review workflow there, you can also login as <code>review</code> "
-"user with <code>review</code> password."
+"To test the review workflow there, log in with username: <code>review</"
+"code>, and password: <code>review</code>."
 msgstr ""
-"ここで査読のワークフローをテストしたい場合は、ユーザ名: <code>review</code>, パスワード: <code>review</code> "
-"でログインしてください。"
+"ここで査読のワークフローをテストしたい場合は、ユーザ名: <code>review</code>, "
+"パスワード: <code>review</code> でログインしてください。"
 
 #: weblate_web/html/try.html:27
 msgid "Appliances"
 msgstr "アプライアンス"
 
 #: weblate_web/html/try.html:30
-#, python-format
+#, fuzzy, python-format
+#| msgid ""
+#| "Check our <a href=\"%(download_url)s\">download page</a> for appliances, "
+#| "which provide an easy way to deploy Weblate in the cloud."
 msgid ""
-"Check our <a href=\"%(download_url)s\">download page</a> for appliances, "
-"which provide an easy way to deploy Weblate in the cloud."
+"Check out the <a href=\"%(download_url)s\">download page</a> for appliances, "
+"providing an easy way to deploy Weblate in the cloud."
 msgstr ""
 "<a href=\"%(download_url)s\">ダウンロードページ</a> でアプライアンスについて"
 "調べてみてください。これを使用することで、 Weblate を簡単にクラウド上に配置す"
