@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2017-12-20 14:35+0100\n"
-"PO-Revision-Date: 2017-12-20 11:49+0000\n"
+"PO-Revision-Date: 2017-12-21 14:38+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
-"Language-Team: Hebrew <https://hosted.weblate.org/projects/weblate/website/"
-"he/>\n"
+"Language-Team: Hebrew "
+"<https://hosted.weblate.org/projects/weblate/website/he/>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 2.19-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -233,18 +233,14 @@ msgid "Translate"
 msgstr "תרגום"
 
 #: weblate_web/html/contribute.html:17
-#, fuzzy
-#| msgid ""
-#| "You can find more detailed information about this topic in <a href="
-#| "\"https://docs.weblate.org/en/latest/contributing.html\">Contributing "
-#| "chapter</a> of our documentation."
 msgid ""
 "You can find more detailed information about this topic in <a href=\"https://"
 "docs.weblate.org/en/latest/contributing.html\">Contributing chapter</a> of "
 "the documentation."
 msgstr ""
-"ניתן למצוא מידע נוסף בנושא זה תחת <a href=\"https://docs.weblate.org/en/"
-"latest/contributing.html\">סעיף ההתנדבות</a> בתיעוד שלנו."
+"ניתן למצוא מידע נוסף בנושא זה תחת <a href=\""
+"https://docs.weblate.org/en/latest/contributing.html\">סעיף ההתנדבות</a> "
+"בתיעוד."
 
 #: weblate_web/html/contribute.html:20 weblate_web/html/download.html:17
 msgid "Code"
@@ -265,16 +261,12 @@ msgid "This website is stored on <a href=\"%(url)s\">GitHub</a> as well:"
 msgstr "אתר זה מאוחסן ב־<a href=\"%(url)s\">GitHub</a> גם כן:"
 
 #: weblate_web/html/contribute.html:41
-#, fuzzy
-#| msgid ""
-#| "You can translate Weblate using Weblate installation at <a href=\"https://"
-#| "hosted.weblate.org/engage/weblate/\">hosted.weblate.org</a>."
 msgid ""
 "You can translate Weblate at <a href=\"https://hosted.weblate.org/engage/"
 "weblate/\">hosted.weblate.org</a>."
 msgstr ""
-"ניתן לתרגם את Weblate באמצעות מערכת Weblate שמותקנת בכתובת <a href=\"https://"
-"hosted.weblate.org/engage/weblate/\">hosted.weblate.org</a>."
+"ניתן לתרגם את Weblate בכתובת <a href=\""
+"https://hosted.weblate.org/engage/weblate/\">hosted.weblate.org</a>."
 
 #: weblate_web/html/contribute.html:46
 msgid "Translation status"
@@ -1380,46 +1372,34 @@ msgid "Demo server"
 msgstr "שרת הדגמה"
 
 #: weblate_web/html/try.html:22
-#, fuzzy
-#| msgid ""
-#| "You can try how Weblate on our <a href=\"https://demo.weblate.org\">demo "
-#| "server</a>. You can register there and work under your username or just "
-#| "use <code>demo</code> account with <code>demo</code> password."
 msgid ""
 "Try Weblate on the <a href=\"https://demo.weblate.org\">demo server</a>. "
 "Register there and work under your username, or just use username: "
 "<code>demo</code> with password: <code>demo</code>."
 msgstr ""
 "ניתן להתנסות ב־Weblate על גבי <a href=\"https://demo.weblate.org\">שרת "
-"ההדגמה שלנו</a>. ניתן להירשם שם ולעבוד תחת שם המשתמש שלך או פשוט להשתמש "
-"בחשבון <code>demo</code> עם הססמה <code>demo</code>."
+"ההדגמה</a>. עליך להירשם שם ולעבוד תחת שם המשתמש שלך או פשוט להשתמש בחשבון: "
+"<code>demo</code> עם הססמה: <code>demo</code>."
 
 #: weblate_web/html/try.html:25
-#, fuzzy
-#| msgid ""
-#| "To test the review workflow there, you can also login as <code>review</"
-#| "code> user with <code>review</code> password."
 msgid ""
 "To test the review workflow there, log in with username: <code>review</"
 "code>, and password: <code>review</code>."
 msgstr ""
-"כדי לבדוק את אופן העבודה עם סקירה, ניתן להיכנס עם המשתמש <code>review</code> "
-"והססמה <code>review</code>."
+"כדי לבדוק את אופן העבודה עם סקירה שם, ניתן להיכנס עם המשתמש: "
+"<code>review</code> והססמה: <code>review</code>."
 
 #: weblate_web/html/try.html:27
 msgid "Appliances"
 msgstr "יישומים ארוזים"
 
 #: weblate_web/html/try.html:30
-#, fuzzy, python-format
-#| msgid ""
-#| "Check our <a href=\"%(download_url)s\">download page</a> for appliances, "
-#| "which provide an easy way to deploy Weblate in the cloud."
+#, python-format
 msgid ""
 "Check out the <a href=\"%(download_url)s\">download page</a> for appliances, "
 "providing an easy way to deploy Weblate in the cloud."
 msgstr ""
-"ניתן לבקר ב<a href=\"%(download_url)s\">עמוד ההורדות</a> שלנו להצגת תבניות "
+"ניתן לבקר ב<a href=\"%(download_url)s\">עמוד ההורדות</a> להצגת תבניות "
 "ההטמעה, שמספקות דרך קלה ופשוטה להטמיע את Weblate בענן."
 
 #: weblate_web/templatetags/downloads.py:40
