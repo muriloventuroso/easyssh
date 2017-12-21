@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2017-12-20 14:35+0100\n"
-"PO-Revision-Date: 2017-12-13 11:03+0000\n"
-"Last-Translator: Michal Čihař <michal@cihar.com>\n"
-"Language-Team: Slovak <https://hosted.weblate.org/projects/weblate/website/"
-"sk/>\n"
+"PO-Revision-Date: 2017-12-21 10:33+0000\n"
+"Last-Translator: palinek <palo.kisa@gmail.com>\n"
+"Language-Team: Slovak "
+"<https://hosted.weblate.org/projects/weblate/website/sk/>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 2.18-dev\n"
+"X-Generator: Weblate 2.18\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -242,18 +242,13 @@ msgid "Translate"
 msgstr "Preklad"
 
 #: weblate_web/html/contribute.html:17
-#, fuzzy
-#| msgid ""
-#| "You can find more detailed information about this topic in <a href="
-#| "\"https://docs.weblate.org/en/latest/contributing.html\">Contributing "
-#| "chapter</a> of our documentation."
 msgid ""
 "You can find more detailed information about this topic in <a href=\"https://"
 "docs.weblate.org/en/latest/contributing.html\">Contributing chapter</a> of "
 "the documentation."
 msgstr ""
-"Podrobnejšie informácie na túto tému nájdete v našej dokumentácii <a href="
-"\"https://docs.weblate.org/en/latest/contributing.html\">v kapitole o "
+"Podrobnejšie informácie na túto tému nájdete v dokumentácii <a href=\""
+"https://docs.weblate.org/en/latest/contributing.html\">v kapitole o "
 "prispievaní</a>."
 
 #: weblate_web/html/contribute.html:20 weblate_web/html/download.html:17
@@ -275,16 +270,12 @@ msgid "This website is stored on <a href=\"%(url)s\">GitHub</a> as well:"
 msgstr "Tieto webstránky sú uložené aj na <a href=\"%(url)s\">GitHube</a>:"
 
 #: weblate_web/html/contribute.html:41
-#, fuzzy
-#| msgid ""
-#| "You can translate Weblate using Weblate installation at <a href=\"https://"
-#| "hosted.weblate.org/engage/weblate/\">hosted.weblate.org</a>."
 msgid ""
 "You can translate Weblate at <a href=\"https://hosted.weblate.org/engage/"
 "weblate/\">hosted.weblate.org</a>."
 msgstr ""
-"Weblate môžete preložiť pomocou Weblate na serveri <a href=\"https://hosted."
-"weblate.org/engage/weblate/\">hosted.weblate.org</a>."
+"Weblate môžete preložiť na serveri <a href=\""
+"https://hosted.weblate.org/engage/weblate/\">hosted.weblate.org</a>."
 
 #: weblate_web/html/contribute.html:46
 msgid "Translation status"
@@ -1258,10 +1249,8 @@ msgstr ""
 "\">our documentation</a>."
 
 #: weblate_web/html/support.html:28
-#, fuzzy
-#| msgid "Basic support for self hosted Weblate"
 msgid "Support for Hosted Weblate services"
-msgstr "Základná podpora pre vlasný hosting Weblate"
+msgstr "Podpora pre vlasný hosting Weblate"
 
 #: weblate_web/html/support.html:31
 #, python-format
@@ -1269,53 +1258,58 @@ msgid ""
 "If you are using our hosting services, you can ask for support at "
 "%(contact)s."
 msgstr ""
+"Ak využívate služby nášho hostingu, možete požiadať o podporu na %(contact)s."
 
 #: weblate_web/html/support.html:34
-#, fuzzy
-#| msgid "Mailing list"
 msgid "Mailing lists"
-msgstr "E-mailová konferencia"
+msgstr "E-mailové konferencie"
 
 #: weblate_web/html/support.html:36
 msgid "Users and developers mailing list"
-msgstr ""
+msgstr "E-mailová konferencia používateľov a vývojárov"
 
 #: weblate_web/html/support.html:38
 msgid ""
 "You can use this mailing lists for discussions with other Weblate users and "
 "developers."
 msgstr ""
+"Túto E-mailovú konferenciu môžete využiť pre diskusiu s inými Weblate "
+"používateľmi a vývojármi."
 
 #: weblate_web/html/support.html:39
 msgid ""
 "You can post to it using <a href=\"mailto:weblate@lists.cihar.com"
 "\">weblate@lists.cihar.com</a> address."
 msgstr ""
+"Prispieť môžete na <a href=\"mailto:weblate@lists.cihar.com\""
+">weblate@lists.cihar.com</a> adresu."
 
 #: weblate_web/html/support.html:40 weblate_web/html/support.html:56
 msgid "You can browse mailing list archives"
-msgstr ""
+msgstr "Môžete prehliadať archív E-mailovej konferencie"
 
 #: weblate_web/html/support.html:43 weblate_web/html/support.html:59
 msgid "Enter your email"
-msgstr ""
+msgstr "Zadajte Váš E-mail"
 
 #: weblate_web/html/support.html:45 weblate_web/html/support.html:61
 msgid "Subscribe"
-msgstr ""
+msgstr "Prihlásiť"
 
 #: weblate_web/html/support.html:52
 msgid "Hosted Weblate Announcements mailing list"
-msgstr ""
+msgstr "Oznámenia pre Hosted Weblate"
 
 #: weblate_web/html/support.html:54
 msgid ""
 "Low traffic mailing list with announcements about Hosted Weblate services."
-msgstr ""
+msgstr "E-mailová konferencia s oznámeniami pre Hosted Weblate služby."
 
 #: weblate_web/html/support.html:55
 msgid "This list is moderated, only selected users can post announcements."
 msgstr ""
+"Táto konferencia je moderovaná, len vybraní používatelia môžu prispievať "
+"oznámeniami."
 
 #: weblate_web/html/support.html:68
 msgid "Stack Overflow"
@@ -1426,41 +1420,35 @@ msgid "Demo server"
 msgstr "Ukážkový server"
 
 #: weblate_web/html/try.html:22
-#, fuzzy
-#| msgid ""
-#| "You can try how Weblate on our <a href=\"https://demo.weblate.org\">demo "
-#| "server</a>. You can register there and work under your username or just "
-#| "use <code>demo</code> account with <code>demo</code> password."
 msgid ""
 "Try Weblate on the <a href=\"https://demo.weblate.org\">demo server</a>. "
 "Register there and work under your username, or just use username: "
 "<code>demo</code> with password: <code>demo</code>."
 msgstr ""
-"Weblate si môžete vyskúšať na našom <a href=\"https://demo.weblate.org"
-"\">demo serveri</a>. Môžete sa tam zaregistrovať a pracovať pod svojím menom "
-"alebo stačí použiť účet <code>demo</code> s heslom <code>demo</code>."
+"Vyskúšajte Weblate na <a href=\"https://demo.weblate.org\">demo serveri</a>. "
+"Zaregistrujte sa a pracujte pod svojím menom alebo len využite meno "
+"<code>demo</code> s heslom <code>demo</code>."
 
 #: weblate_web/html/try.html:25
 msgid ""
 "To test the review workflow there, log in with username: <code>review</"
 "code>, and password: <code>review</code>."
 msgstr ""
+"Na otestovanie workflow revidovania sa prihláste s menom: <code>review</code>"
+" a heslom:  <code>review</code>."
 
 #: weblate_web/html/try.html:27
 msgid "Appliances"
 msgstr "Pripravené obrazy"
 
 #: weblate_web/html/try.html:30
-#, fuzzy, python-format
-#| msgid ""
-#| "Check our <a href=\"%(download_url)s\">download page</a> for appliances, "
-#| "which provide an easy way to deploy Weblate in the cloud."
+#, python-format
 msgid ""
 "Check out the <a href=\"%(download_url)s\">download page</a> for appliances, "
 "providing an easy way to deploy Weblate in the cloud."
 msgstr ""
-"Pozrite sa na našu <a href=\"%(download_url)s\">stránku pre stiahnutie</a>, "
-"kde nájdete appliance, ktoré môžete ľahko nasadiť v cloude."
+"Pozrite na <a href=\"%(download_url)s\">stránku pre stiahnutie</a>, kde "
+"nájdete nástroje pre ľahké nasadenie Weblate do do cloudu."
 
 #: weblate_web/templatetags/downloads.py:40
 #, python-format
