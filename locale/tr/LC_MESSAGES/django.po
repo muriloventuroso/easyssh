@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2017-12-20 14:35+0100\n"
-"PO-Revision-Date: 2017-12-15 19:19+0000\n"
+"PO-Revision-Date: 2017-12-22 18:13+0000\n"
 "Last-Translator: monolifed <monolifed@gmail.com>\n"
-"Language-Team: Turkish <https://hosted.weblate.org/projects/weblate/website/"
-"tr/>\n"
+"Language-Team: Turkish "
+"<https://hosted.weblate.org/projects/weblate/website/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 2.19-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -244,18 +244,13 @@ msgid "Translate"
 msgstr "Çevir"
 
 #: weblate_web/html/contribute.html:17
-#, fuzzy
-#| msgid ""
-#| "You can find more detailed information about this topic in <a href="
-#| "\"https://docs.weblate.org/en/latest/contributing.html\">Contributing "
-#| "chapter</a> of our documentation."
 msgid ""
 "You can find more detailed information about this topic in <a href=\"https://"
 "docs.weblate.org/en/latest/contributing.html\">Contributing chapter</a> of "
 "the documentation."
 msgstr ""
-"Belgelerimizin <a href=\"https://docs.weblate.org/en/latest/contributing.html"
-"\">Katkıda bulunma bölümünde</a> bu konu hakkında daha fazla ayrıntılı bilgi "
+"Belgelerin <a href=\"https://docs.weblate.org/en/latest/contributing.html\">"
+"Katkıda bulunma bölümünde</a> bu konu hakkında daha fazla ayrıntılı bilgi "
 "bulabilirsiniz."
 
 #: weblate_web/html/contribute.html:20 weblate_web/html/download.html:17
@@ -277,16 +272,12 @@ msgid "This website is stored on <a href=\"%(url)s\">GitHub</a> as well:"
 msgstr "Bu web sitesi <a href=\"%(url)s\">GitHub</a>'da da depolanır:"
 
 #: weblate_web/html/contribute.html:41
-#, fuzzy
-#| msgid ""
-#| "You can translate Weblate using Weblate installation at <a href=\"https://"
-#| "hosted.weblate.org/engage/weblate/\">hosted.weblate.org</a>."
 msgid ""
 "You can translate Weblate at <a href=\"https://hosted.weblate.org/engage/"
 "weblate/\">hosted.weblate.org</a>."
 msgstr ""
-"Weblate'i <a href=\"https://hosted.weblate.org/engage/weblate/\">hosted."
-"weblate.org</a> adresinde Weblate kurulumunu kullanarak çevirebilirsiniz."
+"Weblate'i <a href=\"https://hosted.weblate.org/engage/weblate/\""
+">hosted.weblate.org</a> adresinde çevirebilirsiniz."
 
 #: weblate_web/html/contribute.html:46
 msgid "Translation status"
@@ -1442,48 +1433,35 @@ msgid "Demo server"
 msgstr "Demo tanıtım sunucusu"
 
 #: weblate_web/html/try.html:22
-#, fuzzy
-#| msgid ""
-#| "You can try how Weblate on our <a href=\"https://demo.weblate.org\">demo "
-#| "server</a>. You can register there and work under your username or just "
-#| "use <code>demo</code> account with <code>demo</code> password."
 msgid ""
 "Try Weblate on the <a href=\"https://demo.weblate.org\">demo server</a>. "
 "Register there and work under your username, or just use username: "
 "<code>demo</code> with password: <code>demo</code>."
 msgstr ""
-"Weblate'in nasıl olduğunu <a href=\"https://demo.weblate.org\">tanıtım "
-"sunucusunda</a> deneyebilirsiniz. Oradan kayıt olabilir ve kullanıcı adınız "
-"altında çalışabilir ya da yalnızca <code>demo</code> parolası ile "
-"<code>demo</code> hesabını kullanabilirsiniz."
+"Weblate'i <a href=\"https://demo.weblate.org\">tanıtım sunucusunda</a> "
+"deneyin. Orada kaydolun ve kullanıcı adınız altında çalışın ya da yalnızca "
+"<code>demo</code> kullanıcı adı ve <code>demo</code> parolasını kullanın."
 
 #: weblate_web/html/try.html:25
-#, fuzzy
-#| msgid ""
-#| "To test the review workflow there, you can also login as <code>review</"
-#| "code> user with <code>review</code> password."
 msgid ""
 "To test the review workflow there, log in with username: <code>review</"
 "code>, and password: <code>review</code>."
 msgstr ""
-"Gözden geçirme iş akışını sınamak için, <code>review</code> kullanıcısı ve "
-"<code>review</code> şifresi ile giriş yapabilirsiniz."
+"Gözden geçirme iş akışını sınamak için, <code>review</code> kullanıcı adı ve "
+"<code>review</code> şifresi ile giriş yapın."
 
 #: weblate_web/html/try.html:27
 msgid "Appliances"
 msgstr "Araçlar"
 
 #: weblate_web/html/try.html:30
-#, fuzzy, python-format
-#| msgid ""
-#| "Check our <a href=\"%(download_url)s\">download page</a> for appliances, "
-#| "which provide an easy way to deploy Weblate in the cloud."
+#, python-format
 msgid ""
 "Check out the <a href=\"%(download_url)s\">download page</a> for appliances, "
 "providing an easy way to deploy Weblate in the cloud."
 msgstr ""
 "Weblate'i buluta yerleştirmenin en kolay yolunu sağlayan araçlar için <a "
-"href=\"%(download_url)s\">indirme sayfamıza</a> bakın."
+"href=\"%(download_url)s\">indirme sayfasına</a> bakın."
 
 #: weblate_web/templatetags/downloads.py:40
 #, python-format
