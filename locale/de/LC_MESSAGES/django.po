@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2017-12-20 14:35+0100\n"
-"PO-Revision-Date: 2017-11-04 17:46+0000\n"
-"Last-Translator: Bamstam <am-em-am@posteo.de>\n"
-"Language-Team: German <https://hosted.weblate.org/projects/weblate/website/"
-"de/>\n"
+"PO-Revision-Date: 2018-01-10 06:25+0000\n"
+"Last-Translator: Ettore Atalan <atalanttore@googlemail.com>\n"
+"Language-Team: German "
+"<https://hosted.weblate.org/projects/weblate/website/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.18-dev\n"
+"X-Generator: Weblate 2.19-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -252,19 +252,14 @@ msgid "Translate"
 msgstr "Übersetzen"
 
 #: weblate_web/html/contribute.html:17
-#, fuzzy
-#| msgid ""
-#| "You can find more detailed information about this topic in <a href="
-#| "\"https://docs.weblate.org/en/latest/contributing.html\">Contributing "
-#| "chapter</a> of our documentation."
 msgid ""
 "You can find more detailed information about this topic in <a href=\"https://"
 "docs.weblate.org/en/latest/contributing.html\">Contributing chapter</a> of "
 "the documentation."
 msgstr ""
-"Detailliertere Informationen zu diesem Thema finden Sie im <a href=\"https://"
-"docs.weblate.org/en/latest/contributing.html\">Abschnitt Mitarbeit</a> in "
-"unserer Dokumentation."
+"Detailliertere Informationen zu diesem Thema finden Sie im <a href=\""
+"https://docs.weblate.org/en/latest/contributing.html\">Abschnitt "
+"Mitarbeit</a> in der Dokumentation."
 
 #: weblate_web/html/contribute.html:20 weblate_web/html/download.html:17
 msgid "Code"
@@ -285,16 +280,12 @@ msgid "This website is stored on <a href=\"%(url)s\">GitHub</a> as well:"
 msgstr "Diese Website ist auch auf <a href=\"%(url)s\">GitHub</a> gespeichert:"
 
 #: weblate_web/html/contribute.html:41
-#, fuzzy
-#| msgid ""
-#| "You can translate Weblate using Weblate installation at <a href=\"https://"
-#| "hosted.weblate.org/engage/weblate/\">hosted.weblate.org</a>."
 msgid ""
 "You can translate Weblate at <a href=\"https://hosted.weblate.org/engage/"
 "weblate/\">hosted.weblate.org</a>."
 msgstr ""
-"Sie können Weblate mit der Weblate-Installation auf <a href=\"https://hosted."
-"weblate.org/engage/weblate/\">hosted.weblate.org</a> übersetzen."
+"Sie können Weblate unter <a href=\"https://hosted.weblate.org/engage/weblate/"
+"\">hosted.weblate.org</a> übersetzen."
 
 #: weblate_web/html/contribute.html:46
 msgid "Translation status"
@@ -1313,10 +1304,8 @@ msgstr ""
 "a>."
 
 #: weblate_web/html/support.html:28
-#, fuzzy
-#| msgid "Basic support for self hosted Weblate"
 msgid "Support for Hosted Weblate services"
-msgstr "Basis-Support für Ihr selbst gehostetes Weblate"
+msgstr "Unterstützung für gehostete Weblate-Dienste"
 
 #: weblate_web/html/support.html:31
 #, python-format
@@ -1324,44 +1313,48 @@ msgid ""
 "If you are using our hosting services, you can ask for support at "
 "%(contact)s."
 msgstr ""
+"Wenn Sie unsere Hosting-Dienste nutzen, können Sie sich an %(contact)s "
+"wenden."
 
 #: weblate_web/html/support.html:34
-#, fuzzy
-#| msgid "Mailing list"
 msgid "Mailing lists"
-msgstr "Mailingliste"
+msgstr "Mailinglisten"
 
 #: weblate_web/html/support.html:36
 msgid "Users and developers mailing list"
-msgstr ""
+msgstr "Benutzer- und Entwickler-Mailingliste"
 
 #: weblate_web/html/support.html:38
 msgid ""
 "You can use this mailing lists for discussions with other Weblate users and "
 "developers."
 msgstr ""
+"Sie können diese Mailinglisten für Diskussionen mit anderen Weblate-"
+"Benutzern und -Entwicklern verwenden."
 
 #: weblate_web/html/support.html:39
 msgid ""
 "You can post to it using <a href=\"mailto:weblate@lists.cihar.com"
 "\">weblate@lists.cihar.com</a> address."
 msgstr ""
+"Sie können es mit Hilfe der Adresse <a href=\"mailto:weblate@lists.cihar."
+"com\">weblate@lists.cihar.com</a> verschicken."
 
 #: weblate_web/html/support.html:40 weblate_web/html/support.html:56
 msgid "You can browse mailing list archives"
-msgstr ""
+msgstr "Sie können in den Archiven der Mailinglisten stöbern"
 
 #: weblate_web/html/support.html:43 weblate_web/html/support.html:59
 msgid "Enter your email"
-msgstr ""
+msgstr "Geben Sie Ihre E-Mail Adresse ein"
 
 #: weblate_web/html/support.html:45 weblate_web/html/support.html:61
 msgid "Subscribe"
-msgstr ""
+msgstr "Abonnieren"
 
 #: weblate_web/html/support.html:52
 msgid "Hosted Weblate Announcements mailing list"
-msgstr ""
+msgstr "Mailingliste für gehostete Weblate-Ankündigungen"
 
 #: weblate_web/html/support.html:54
 msgid ""
@@ -1371,6 +1364,8 @@ msgstr ""
 #: weblate_web/html/support.html:55
 msgid "This list is moderated, only selected users can post announcements."
 msgstr ""
+"Diese Liste ist moderiert, nur ausgewählte Benutzer können Ankündigungen "
+"posten."
 
 #: weblate_web/html/support.html:68
 msgid "Stack Overflow"
