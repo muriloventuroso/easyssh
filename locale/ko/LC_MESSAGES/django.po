@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2017-12-20 14:35+0100\n"
-"PO-Revision-Date: 2017-12-14 09:40+0000\n"
-"Last-Translator: Joseph Kim <official.jkim@gmail.com>\n"
-"Language-Team: Korean <https://hosted.weblate.org/projects/weblate/website/"
-"ko/>\n"
+"PO-Revision-Date: 2018-01-01 14:31+0000\n"
+"Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
+"Language-Team: Korean "
+"<https://hosted.weblate.org/projects/weblate/website/ko/>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.18-dev\n"
+"X-Generator: Weblate 2.19-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -241,18 +241,14 @@ msgid "Translate"
 msgstr "번역하기"
 
 #: weblate_web/html/contribute.html:17
-#, fuzzy
-#| msgid ""
-#| "You can find more detailed information about this topic in <a href="
-#| "\"https://docs.weblate.org/en/latest/contributing.html\">Contributing "
-#| "chapter</a> of our documentation."
 msgid ""
 "You can find more detailed information about this topic in <a href=\"https://"
 "docs.weblate.org/en/latest/contributing.html\">Contributing chapter</a> of "
 "the documentation."
 msgstr ""
-"이 주제에 대한 세부적인 사항은 문서의 <a href=\"https://docs.weblate.org/en/"
-"latest/contributing.html\">참여하기 챕터</a>에서 확인할 수 있습니다."
+"이 주제에 대한 세부적인 사항은 문서의 <a href=\""
+"https://docs.weblate.org/en/latest/contributing.html\">참여하기 챕터</a>에서 확인할 수 "
+"있습니다."
 
 #: weblate_web/html/contribute.html:20 weblate_web/html/download.html:17
 msgid "Code"
@@ -273,16 +269,12 @@ msgid "This website is stored on <a href=\"%(url)s\">GitHub</a> as well:"
 msgstr "이 웹사이트는 <a href=\"%(url)s\">GitHub</a>에도 저장되어 있습니다:"
 
 #: weblate_web/html/contribute.html:41
-#, fuzzy
-#| msgid ""
-#| "You can translate Weblate using Weblate installation at <a href=\"https://"
-#| "hosted.weblate.org/engage/weblate/\">hosted.weblate.org</a>."
 msgid ""
 "You can translate Weblate at <a href=\"https://hosted.weblate.org/engage/"
 "weblate/\">hosted.weblate.org</a>."
 msgstr ""
 "<a href=\"https://hosted.weblate.org/engage/weblate/\">hosted.weblate.org</a>"
-"에 설치된 Weblate를 사용하여 Weblate를 번역할 수 있습니다."
+"에서 Weblate를 번역할 수 있습니다."
 
 #: weblate_web/html/contribute.html:46
 msgid "Translation status"
@@ -1414,47 +1406,34 @@ msgid "Demo server"
 msgstr "데모 서버"
 
 #: weblate_web/html/try.html:22
-#, fuzzy
-#| msgid ""
-#| "You can try how Weblate on our <a href=\"https://demo.weblate.org\">demo "
-#| "server</a>. You can register there and work under your username or just "
-#| "use <code>demo</code> account with <code>demo</code> password."
 msgid ""
 "Try Weblate on the <a href=\"https://demo.weblate.org\">demo server</a>. "
 "Register there and work under your username, or just use username: "
 "<code>demo</code> with password: <code>demo</code>."
 msgstr ""
-"우리의 <a href=\"https://demo.weblate.org\">데모 서버</a>에서 Weblate를 시험"
-"해 볼 수 있습니다. 귀하의 이름으로 새로운 계정을 만들거나 <code>데모</code>계"
-"정 <code>데모</code> 암호를 이용하실 수 있습니다."
+"<a href=\"https://demo.weblate.org\">데모 서버</a>에서 Weblate를 시험해 볼 수 있습니다. 여기서 "
+"귀하의 이름으로 새로운 계정을 만들어서 쓸 수도 있고, <code>demo</code> 사용자 이름과 <code>demo</code> "
+"비밀 번호를 이용하실 수도 있습니다."
 
 #: weblate_web/html/try.html:25
-#, fuzzy
-#| msgid ""
-#| "To test the review workflow there, you can also login as <code>review</"
-#| "code> user with <code>review</code> password."
 msgid ""
 "To test the review workflow there, log in with username: <code>review</"
 "code>, and password: <code>review</code>."
 msgstr ""
-"검토 작업흐름을 테스트하려면 <code>검토</code> 사용자와 <code>검토</code> 암"
-"호로 로그인하세요."
+"검토 작업 흐름을 테스트하려면 <code>review</code> 사용자와 <code>review</code> 비밀번호로 로그인하세요."
 
 #: weblate_web/html/try.html:27
 msgid "Appliances"
 msgstr "기기"
 
 #: weblate_web/html/try.html:30
-#, fuzzy, python-format
-#| msgid ""
-#| "Check our <a href=\"%(download_url)s\">download page</a> for appliances, "
-#| "which provide an easy way to deploy Weblate in the cloud."
+#, python-format
 msgid ""
 "Check out the <a href=\"%(download_url)s\">download page</a> for appliances, "
 "providing an easy way to deploy Weblate in the cloud."
 msgstr ""
-"클라우드에 Weblate를 배포하는 쉬운 방법을 제공하는 기기를 위해 우리의 <a "
-"href=\"%(download_url)s\">내려받기 페이지</a>를 확인하십시오."
+"클라우드에 쉽게 Weblate를 설치해서 사용하는 방법은, <a href=\"%(download_url)s\">내려받기 페이지</a>를 "
+"확인하십시오."
 
 #: weblate_web/templatetags/downloads.py:40
 #, python-format
