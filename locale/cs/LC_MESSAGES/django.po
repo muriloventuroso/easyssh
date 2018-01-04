@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2017-12-20 14:35+0100\n"
-"PO-Revision-Date: 2017-12-20 16:29+0000\n"
-"Last-Translator: Michal Čihař <michal@cihar.com>\n"
+"PO-Revision-Date: 2018-01-10 06:25+0000\n"
+"Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech "
 "<https://hosted.weblate.org/projects/weblate/website/cs/>\n"
 "Language: cs\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 2.19-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -93,7 +93,7 @@ msgstr "Weblate je svobodný nástroj pro správu překladu přes web."
 
 #: weblate_web/html/404.html:15
 msgid "The page you are looking for was not found."
-msgstr "Stránka nebyla nalezena."
+msgstr "Stránka, kterou hledáte, nebyla nalezena."
 
 #: weblate_web/html/500.html:4
 msgid "Server error"
@@ -621,7 +621,7 @@ msgstr ""
 
 #: weblate_web/html/features.html:160
 msgid "Responsive UI"
-msgstr "Responzivní UI"
+msgstr "Responzivní uživatelské rozhraní"
 
 #: weblate_web/html/features.html:161
 msgid ""
@@ -663,7 +663,7 @@ msgstr "URL repozitáře s překlady."
 
 #: weblate_web/html/hosting-ordered.html:19 weblate_web/html/hosting.html:339
 msgid "Path to translations within the repository."
-msgstr "Cesta k překladům v repozitáři."
+msgstr "Popis umístění překladů v repozitáři."
 
 #: weblate_web/html/hosting-ordered.html:22
 msgid ""
@@ -671,7 +671,7 @@ msgid ""
 "adding Weblate user to your project (on GitHub, Bitbucket or GitLab) or "
 "adding SSH key we will provide you."
 msgstr ""
-"Musíte umožnit Weblate přístup k vašemu repozitáři. To můžete provést "
+"Je třeba umožnit Weblate přístup k vašemu repozitáři. To můžete provést "
 "přidáním uživatele Weblate (na GitHubu, Bitbucketu nebo GitLabu) nebo "
 "přidáním SSH klíče, který vám poskytneme."
 
@@ -926,8 +926,7 @@ msgstr "Jako databázi používá PostgreSQL, MySQL nebo MariaDB"
 
 #: weblate_web/html/hosting.html:245
 msgid "Requires root access or close cooperation of your admins"
-msgstr ""
-"Vyžaduje přístup jako root nebo blízkou spolupráci s vašimi administrátory"
+msgstr "Vyžaduje přístup jako root nebo blízkou spolupráci s vašimi správci"
 
 #: weblate_web/html/hosting.html:246
 msgid "Configuration customization"
@@ -950,7 +949,7 @@ msgid_plural ""
 "Your Weblate will be upgraded to the latest version at least every %(count)s "
 "months."
 msgstr[0] ""
-"Vaše Weblate bude aktualizováno na poslední verzi každý %(count)s měsíc."
+"Vaše Weblate bude aktualizováno na nejnovější verzi každý %(count)s měsíc."
 msgstr[1] ""
 "Vaše Weblate bude aktualizováno na poslední verzi každé %(count)s měsíce."
 msgstr[2] ""
@@ -1206,7 +1205,7 @@ msgstr "Další vlastnosti…"
 
 #: weblate_web/html/index.html:47
 msgid "See who is using Weblate and join them!"
-msgstr "Koukněte, kdo používá Weblate, a přidejte se k nim!"
+msgstr "Podívejte se, kdo používá Weblate, a přidejte se k nim!"
 
 #: weblate_web/html/support.html:3 weblate_web/html/support.html:4
 msgid "Weblate support"
@@ -1292,7 +1291,7 @@ msgstr "Můžete si prohlédnout archiv konference"
 
 #: weblate_web/html/support.html:43 weblate_web/html/support.html:59
 msgid "Enter your email"
-msgstr "Zadejte váš e-mail"
+msgstr "Zadejte svůj e-mail"
 
 #: weblate_web/html/support.html:45 weblate_web/html/support.html:61
 msgid "Subscribe"
