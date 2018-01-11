@@ -103,7 +103,7 @@
       </tr>
       <tr>
         <th><a href="https://docs.weblate.org/en/latest/admin/access.html#managing-per-project-access-control">{% trans "User management" %}</a></th>
-        <td class="text-danger"><i class="fa fa-times-circle"></i></td>
+        <td class="text-danger"><i class="fa fa-times-circle"></i><sup><a href="#free-users">*</a></sup></td>
         <td class="text-success"><i class="fa fa-check-circle"></i></td>
         <td class="text-success"><i class="fa fa-check-circle"></i></td>
         <td class="text-success"><i class="fa fa-check-circle"></i></td>
@@ -338,6 +338,15 @@
 <li>{% trans "URL of repository with translations." %}</li>
 <li>{% trans "Path to translations within the repository." %}</li>
 </ul>
+
+<h3 id="free-users">{% trans "User management" %}</h3>
+
+<p>
+{% blocktrans %}The free plan does not allow you to change project visibility or to limit users which can contribute to the translation.{% endblocktrans %}
+</p>
+<p>
+{% blocktrans %}This limitation can be lifted by purchasing the "Basic" hosting plan - you will still have free software limits, but you will get extended user management capabilities.{% endblocktrans %}
+</p>
 
 <h3>{% trans "Translation workflow" %}</h3>
 
