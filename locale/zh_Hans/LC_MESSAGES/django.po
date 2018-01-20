@@ -6,18 +6,18 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2018-01-10 07:27+0100\n"
-"PO-Revision-Date: 2017-12-20 13:30+0000\n"
+"PO-Revision-Date: 2018-01-20 20:58+0000\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
-"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
-"weblate/website/zh_Hans/>\n"
+"Language-Team: Chinese (Simplified) "
+"<https://hosted.weblate.org/projects/weblate/website/zh_Hans/>\n"
 "Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 2.19-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -232,18 +232,13 @@ msgid "Translate"
 msgstr "翻译"
 
 #: weblate_web/html/contribute.html:17
-#, fuzzy
-#| msgid ""
-#| "You can find more detailed information about this topic in <a href="
-#| "\"https://docs.weblate.org/en/latest/contributing.html\">Contributing "
-#| "chapter</a> of our documentation."
 msgid ""
 "You can find more detailed information about this topic in <a href=\"https://"
 "docs.weblate.org/en/latest/contributing.html\">Contributing chapter</a> of "
 "the documentation."
 msgstr ""
-"您可以在我们文档的<a href=\"https://docs.weblate.org/en/latest/contributing."
-"html\">贡献章节</a>中找到关于该主题的更多详细信息。"
+"您可以在文档的<a href=\"https://docs.weblate.org/en/latest/contributing.html\""
+">贡献章节</a>中找到关于该主题的更多详细信息。"
 
 #: weblate_web/html/contribute.html:20 weblate_web/html/download.html:17
 msgid "Code"
@@ -262,16 +257,12 @@ msgid "This website is stored on <a href=\"%(url)s\">GitHub</a> as well:"
 msgstr "本网站也存储在 <a href=\"%(url)s\">GitHub</a> 上："
 
 #: weblate_web/html/contribute.html:41
-#, fuzzy
-#| msgid ""
-#| "You can translate Weblate using Weblate installation at <a href=\"https://"
-#| "hosted.weblate.org/engage/weblate/\">hosted.weblate.org</a>."
 msgid ""
 "You can translate Weblate at <a href=\"https://hosted.weblate.org/engage/"
 "weblate/\">hosted.weblate.org</a>."
 msgstr ""
-"您可以在 <a href=\"https://hosted.weblate.org/engage/weblate/\">hosted."
-"weblate.org</a> 使用已安装的 Weblate 翻译 Weblate。"
+"您可以在 <a href=\"https://hosted.weblate.org/engage/weblate/\""
+">hosted.weblate.org</a> 翻译 Weblate。"
 
 #: weblate_web/html/contribute.html:46
 msgid "Translation status"
@@ -1191,54 +1182,54 @@ msgstr "对自主托管 Weblate 服务的支持"
 msgid ""
 "If you are using our hosting services, you can ask for support at "
 "%(contact)s."
-msgstr ""
+msgstr "如果您正在使用我们的托管服务，您可以在 %(contact)s 请求支持。"
 
 #: weblate_web/html/support.html:34
-#, fuzzy
-#| msgid "Mailing list"
 msgid "Mailing lists"
 msgstr "邮件列表"
 
 #: weblate_web/html/support.html:36
 msgid "Users and developers mailing list"
-msgstr ""
+msgstr "用户和开发者邮件列表"
 
 #: weblate_web/html/support.html:38
 msgid ""
 "You can use mailing lists for discussions with other Weblate users and "
 "developers."
-msgstr ""
+msgstr "您可以使用邮件列表与其他 Weblate 用户和开发者进行交流。"
 
 #: weblate_web/html/support.html:39
 msgid ""
 "You can post to it using <a href=\"mailto:weblate@lists.cihar.com"
 "\">weblate@lists.cihar.com</a> address."
 msgstr ""
+"您可以使用 <a href=\"mailto:weblate@lists.cihar.com\">weblate@lists.cihar.com</a> "
+"这个地址发布信息。"
 
 #: weblate_web/html/support.html:40 weblate_web/html/support.html:56
 msgid "You can browse mailing list archives"
-msgstr ""
+msgstr "您可以浏览邮件列表存档"
 
 #: weblate_web/html/support.html:43 weblate_web/html/support.html:59
 msgid "Enter your email"
-msgstr ""
+msgstr "输入您的电子邮件地址"
 
 #: weblate_web/html/support.html:45 weblate_web/html/support.html:61
 msgid "Subscribe"
-msgstr ""
+msgstr "订阅"
 
 #: weblate_web/html/support.html:52
 msgid "Hosted Weblate Announcements mailing list"
-msgstr ""
+msgstr "受托管 Weblate 平台公告邮件列表"
 
 #: weblate_web/html/support.html:54
 msgid ""
 "Low traffic mailing list with announcements about Hosted Weblate services."
-msgstr ""
+msgstr "低流量邮件列表，提供与托管 Weblate（Hosted Weblate）服务相关的公告。"
 
 #: weblate_web/html/support.html:55
 msgid "This list is moderated, only selected users can post announcements."
-msgstr ""
+msgstr "该列表受审核，仅有指定的用户可以发布公告。"
 
 #: weblate_web/html/support.html:68
 msgid "Stack Overflow"
@@ -1363,6 +1354,7 @@ msgid ""
 "To test the review workflow there, log in with username: <code>review</"
 "code>, and password: <code>review</code>."
 msgstr ""
+"如需在该平台上测试审核工作流，请使用用户名：<code>review</code> 和密码：<code>review</code> 登录进行测试。"
 
 #: weblate_web/html/try.html:27
 msgid "Appliances"
