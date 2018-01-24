@@ -6,18 +6,18 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Weblate 1.2\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2018-01-10 07:27+0100\n"
-"PO-Revision-Date: 2017-12-13 18:51+0000\n"
+"PO-Revision-Date: 2018-01-24 22:32+0000\n"
 "Last-Translator: Luiz Fernando Ranghetti <elchevive@opensuse.org>\n"
-"Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
-"weblate/website/pt_BR/>\n"
+"Language-Team: Portuguese (Brazil) "
+"<https://hosted.weblate.org/projects/weblate/website/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2.18-dev\n"
+"X-Generator: Weblate 2.19-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -250,19 +250,14 @@ msgid "Translate"
 msgstr "Traduzir"
 
 #: weblate_web/html/contribute.html:17
-#, fuzzy
-#| msgid ""
-#| "You can find more detailed information about this topic in <a href="
-#| "\"https://docs.weblate.org/en/latest/contributing.html\">Contributing "
-#| "chapter</a> of our documentation."
 msgid ""
 "You can find more detailed information about this topic in <a href=\"https://"
 "docs.weblate.org/en/latest/contributing.html\">Contributing chapter</a> of "
 "the documentation."
 msgstr ""
-"Você pode encontrar informações detalhadas sobre este tópico no capítulo <a "
-"href=\"https://docs.weblate.org/en/latest/contributing.html\">Contribuindo</"
-"a> da nossa documentação."
+"Você pode encontrar informações mais detalhadas sobre este tópico no "
+"capítulo <a href=\"https://docs.weblate.org/en/latest/contributing.html\""
+">Contribuindo</a> da nossa documentação."
 
 #: weblate_web/html/contribute.html:20 weblate_web/html/download.html:17
 msgid "Code"
@@ -283,16 +278,12 @@ msgid "This website is stored on <a href=\"%(url)s\">GitHub</a> as well:"
 msgstr "Este site é armazenado no <a href=\"%(url)s\">GitHub</a> também:"
 
 #: weblate_web/html/contribute.html:41
-#, fuzzy
-#| msgid ""
-#| "You can translate Weblate using Weblate installation at <a href=\"https://"
-#| "hosted.weblate.org/engage/weblate/\">hosted.weblate.org</a>."
 msgid ""
 "You can translate Weblate at <a href=\"https://hosted.weblate.org/engage/"
 "weblate/\">hosted.weblate.org</a>."
 msgstr ""
-"Você pode traduzir o Weblate usando a instalação do Weblate em <a href="
-"\"https://hosted.weblate.org/engage/weblate/\">hosted.weblate.org</a>."
+"Você pode traduzir o Weblate em <a href=\""
+"https://hosted.weblate.org/engage/weblate/\">hosted.weblate.org</a>."
 
 #: weblate_web/html/contribute.html:46
 msgid "Translation status"
@@ -1300,15 +1291,11 @@ msgid "Users and developers mailing list"
 msgstr "Lista de discussão de usuários e desenvolvedores"
 
 #: weblate_web/html/support.html:38
-#, fuzzy
-#| msgid ""
-#| "You can use this mailing lists for discussions with other Weblate users "
-#| "and developers."
 msgid ""
 "You can use mailing lists for discussions with other Weblate users and "
 "developers."
 msgstr ""
-"Você pode usar esta lista de discussão para discutir com outros usuários e "
+"Você pode usar a lista de discussão para discutir com outros usuários e "
 "desenvolvedores do Weblate."
 
 #: weblate_web/html/support.html:39
@@ -1466,41 +1453,29 @@ msgid "Demo server"
 msgstr "Servidor de demonstração"
 
 #: weblate_web/html/try.html:22
-#, fuzzy
-#| msgid ""
-#| "You can try how Weblate on our <a href=\"https://demo.weblate.org\">demo "
-#| "server</a>. You can register there and work under your username or just "
-#| "use <code>demo</code> account with <code>demo</code> password."
 msgid ""
 "Try Weblate on the <a href=\"https://demo.weblate.org\">demo server</a>. "
 "Register there and work under your username, or just use username: "
 "<code>demo</code> with password: <code>demo</code>."
 msgstr ""
-"Você pode testar o Weblate em nosso <a href=\"https://demo.weblate.org"
-"\">servidor de demonstração</a>. Você pode se registrar lá e trabalhar com "
-"seu login ou só usar a conta <code>demo</code> com a senha <code>demo</code>."
+"Teste o Weblate no <a href=\"https://demo.weblate.org\">servidor de "
+"demonstração</a>. Registre-se lá e trabalhe com seu login ou use o login "
+"<code>demo</code> com a senha <code>demo</code>."
 
 #: weblate_web/html/try.html:25
-#, fuzzy
-#| msgid ""
-#| "To test the review workflow there, you can also login as <code>review</"
-#| "code> user with <code>review</code> password."
 msgid ""
 "To test the review workflow there, log in with username: <code>review</"
 "code>, and password: <code>review</code>."
 msgstr ""
-"Para testar o fluxo de revisão aqui, você pode se logar com o usuário "
-"<code>review</code> e senha <code>review</code>."
+"Para testar o fluxo de revisão aqui, entre com o login <code>review</code> e "
+"senha <code>review</code>."
 
 #: weblate_web/html/try.html:27
 msgid "Appliances"
 msgstr "Appliances"
 
 #: weblate_web/html/try.html:30
-#, fuzzy, python-format
-#| msgid ""
-#| "Check our <a href=\"%(download_url)s\">download page</a> for appliances, "
-#| "which provide an easy way to deploy Weblate in the cloud."
+#, python-format
 msgid ""
 "Check out the <a href=\"%(download_url)s\">download page</a> for appliances, "
 "providing an easy way to deploy Weblate in the cloud."
