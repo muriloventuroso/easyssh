@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2018-01-10 07:27+0100\n"
-"PO-Revision-Date: 2018-02-03 19:17+0000\n"
+"PO-Revision-Date: 2018-02-03 22:47+0000\n"
 "Last-Translator: Jesper Hertel <jesper.hertel@gmail.com>\n"
 "Language-Team: Danish "
 "<https://hosted.weblate.org/projects/weblate/website/da/>\n"
@@ -351,8 +351,8 @@ msgid ""
 "Bountysource allows you to fund individual features which are reported on "
 "our issue tracker."
 msgstr ""
-"Bountysource lader dig donere enkelte egenskaber, der rapporteres i vores "
-"sagshåndtering."
+"Bountysource lader dig finansiere individuelle funktioner, der rapporteres i "
+"vores sagshåndtering."
 
 #: weblate_web/html/donate.html:64
 msgid ""
@@ -626,15 +626,15 @@ msgstr ""
 
 #: weblate_web/html/features.html:160
 msgid "Responsive UI"
-msgstr "Brugerflade med respons"
+msgstr "Adaptiv brugergrænseflade"
 
 #: weblate_web/html/features.html:161
 msgid ""
 "Weblate has responsive UI which will work nicely on your desktop, tablet or "
 "phone."
 msgstr ""
-"Weblate har brugerflade med respons, der fungere fint på en stationær, "
-"tablet eller telefon."
+"Weblate har en adaptiv brugergrænseflade, der fungerer fint på både "
+"computer, tablet og telefon."
 
 #: weblate_web/html/hosting-ordered.html:3
 #: weblate_web/html/hosting-ordered.html:4 weblate_web/html/hosting.html:3
@@ -644,7 +644,7 @@ msgstr "Hosting af Weblate"
 
 #: weblate_web/html/hosting-ordered.html:6
 msgid "Thank you for ordering hosting!"
-msgstr "Tak for bestilling af hosting!"
+msgstr "Tak for din bestilling af hosting!"
 
 #: weblate_web/html/hosting-ordered.html:11
 msgid "Next steps"
@@ -655,8 +655,9 @@ msgid ""
 "The project setup is currently manual. If you haven't done so already, "
 "please get in touch with us and send us details about your repository setup."
 msgstr ""
-"Opsætningen af projektet er i øjeblikket manuelt. Hvis du ikke allerede har "
-"gjort det, kontakt os og send oplysninger om arkiv opsætning."
+"Opsætningen af projektet foregår indtil videre manuelt. Hvis du ikke "
+"allerede har gjort det, så kontakt os og send oplysninger om hvordan din "
+"kodebase er indrettet."
 
 #: weblate_web/html/hosting-ordered.html:15
 msgid "Usually following information is needed:"
@@ -668,7 +669,7 @@ msgstr "URL for arkiv med oversættelser."
 
 #: weblate_web/html/hosting-ordered.html:19 weblate_web/html/hosting.html:339
 msgid "Path to translations within the repository."
-msgstr "Sti til oversættelser inden i arkivet."
+msgstr "Sti til oversættelser inden for arkivet."
 
 #: weblate_web/html/hosting-ordered.html:22
 msgid ""
@@ -677,12 +678,12 @@ msgid ""
 "adding SSH key we will provide you."
 msgstr ""
 "Du skal tillade Weblate at få adgang til arkivet. Dette kan gøres ved at "
-"tilføje Weblate brugeren til projektet (på GitHub, Bitbucket eller GitLab) "
-"eller tilføje SSH nøglen vi giver dig."
+"tilføje Weblate-brugeren til projektet (på GitHub, Bitbucket eller GitLab) "
+"eller tilføje den SSH-nøgle, vi giver dig."
 
 #: weblate_web/html/hosting.html:6
 msgid "Free continuous translation hosting for free software."
-msgstr "Gratis kontinuerlig oversættelse hosting af fri software."
+msgstr "Gratis hosting af løbende oversættelse af fri software."
 
 #: weblate_web/html/hosting.html:11
 msgid "Ask for hosting"
@@ -693,7 +694,7 @@ msgid ""
 "Hosted Weblate allows you to use Weblate without any effort and with premium "
 "support backed by it's core developers."
 msgstr ""
-"Hosted Weblate giver mulighed for at bruge Weblate uden stor indsats, og med "
+"Hosted Weblate giver mulighed for nemt at bruge Weblate, og med "
 "førsteklasses support-bakket op af de centrale udviklere."
 
 #: weblate_web/html/hosting.html:24
@@ -705,9 +706,9 @@ msgid ""
 "\">get in touch with us</a>."
 msgstr ""
 "Vi kan være vært for oversættelser af kommercielle eller fri software-"
-"projekter. Du kan se n oversigt over hosting planer nedenfor. Har du "
-"spørgsmål eller søger efter hosting af større projekter, tøv ikke med at <a "
-"href=\"%(contact)s\">kontakte os </a>."
+"projekter. Du kan se en oversigt over hostingplaner nedenfor. Hvis du har "
+"spørgsmål eller leder efter hosting af større projekter, så tøv ikke med at <"
+"a href=\"%(contact)s\">kontakte os</a>."
 
 #: weblate_web/html/hosting.html:32
 msgctxt "Hosting plan"
@@ -1246,9 +1247,10 @@ msgid ""
 "%(contact)s. More information on reporting security issues can be found in "
 "<a href=\"%(docs)s\">our documentation</a>."
 msgstr ""
-"Hvis du finder sikkerhedsproblemer i vores kodebase, bedes du rapportere det "
-"til %(contact)s. Flere oplysninger om rapportering af sikkerhedsproblemer "
-"kan findes i <a href=\"%(docs)s\">vores dokumentation</a>."
+"Hvis du finder et sikkerhedsproblem i vores kodebase, bedes du rapportere "
+"det til %(contact)s. Flere oplysninger om rapportering af "
+"sikkerhedsproblemer kan findes i <a href=\"%(docs)s\">vores "
+"dokumentation</a>."
 
 #: weblate_web/html/support.html:28
 msgid "Support for Hosted Weblate services"
@@ -1309,7 +1311,8 @@ msgstr "Lavtrafikpostliste med annonceringer om Hosted Weblate-tjenester."
 #: weblate_web/html/support.html:55
 msgid "This list is moderated, only selected users can post announcements."
 msgstr ""
-"Listen er modereret; det er kun udvalgte brugere der kan skrive meddelelser."
+"Denne liste er modereret; det er kun udvalgte brugere der kan skrive "
+"meddelelser."
 
 #: weblate_web/html/support.html:68
 msgid "Stack Overflow"
