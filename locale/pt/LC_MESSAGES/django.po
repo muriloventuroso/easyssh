@@ -6,18 +6,18 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2018-01-10 07:27+0100\n"
-"PO-Revision-Date: 2017-12-09 10:44+0000\n"
+"PO-Revision-Date: 2018-02-07 06:27+0000\n"
 "Last-Translator: Pedro Albuquerque <palbuquerque73@gmail.com>\n"
-"Language-Team: Portuguese <https://hosted.weblate.org/projects/weblate/"
-"website/pt/>\n"
+"Language-Team: Portuguese "
+"<https://hosted.weblate.org/projects/weblate/website/pt/>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.18-dev\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 2.19-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -247,11 +247,6 @@ msgid "Translate"
 msgstr "Traduzir"
 
 #: weblate_web/html/contribute.html:17
-#, fuzzy
-#| msgid ""
-#| "You can find more detailed information about this topic in <a href="
-#| "\"https://docs.weblate.org/en/latest/contributing.html\">Contributing "
-#| "chapter</a> of our documentation."
 msgid ""
 "You can find more detailed information about this topic in <a href=\"https://"
 "docs.weblate.org/en/latest/contributing.html\">Contributing chapter</a> of "
@@ -259,7 +254,7 @@ msgid ""
 msgstr ""
 "Pode encontrar mais informação detalhada sobre este tópico no capítulo <a "
 "href=\"https://docs.weblate.org/en/latest/contributing.html\">Contribuir</a> "
-"da nossa documentação."
+"da documentação."
 
 #: weblate_web/html/contribute.html:20 weblate_web/html/download.html:17
 msgid "Code"
@@ -281,16 +276,12 @@ msgstr ""
 "Este site da Web também está guardado no <a href=\"%(url)s\">GitHub</a>:"
 
 #: weblate_web/html/contribute.html:41
-#, fuzzy
-#| msgid ""
-#| "You can translate Weblate using Weblate installation at <a href=\"https://"
-#| "hosted.weblate.org/engage/weblate/\">hosted.weblate.org</a>."
 msgid ""
 "You can translate Weblate at <a href=\"https://hosted.weblate.org/engage/"
 "weblate/\">hosted.weblate.org</a>."
 msgstr ""
-"Pode traduzir o Weblate, utilizando a instalação do Weblate em <a href="
-"\"https://hosted.weblate.org/engage/weblate/\">hosted.weblate.org</a>."
+"Pode traduzir o Weblate em <a href=\""
+"https://hosted.weblate.org/engage/weblate/\">hosted.weblate.org</a>."
 
 #: weblate_web/html/contribute.html:46
 msgid "Translation status"
@@ -1273,10 +1264,8 @@ msgstr ""
 "problemas de segurança na <a href=\"%(docs)s\">nossa documentação</a>."
 
 #: weblate_web/html/support.html:28
-#, fuzzy
-#| msgid "Basic support for self hosted Weblate"
 msgid "Support for Hosted Weblate services"
-msgstr "Apoio básico para alojamento próprio do Weblate"
+msgstr "Suporte para serviços de alojamento Weblate"
 
 #: weblate_web/html/support.html:31
 #, python-format
@@ -1284,53 +1273,59 @@ msgid ""
 "If you are using our hosting services, you can ask for support at "
 "%(contact)s."
 msgstr ""
+"Se está a usar os nossos serviços de alojamento, pode pedir ajuda em "
+"%(contact)s."
 
 #: weblate_web/html/support.html:34
-#, fuzzy
-#| msgid "Mailing list"
 msgid "Mailing lists"
-msgstr "Lista de correio"
+msgstr "Listas de correio"
 
 #: weblate_web/html/support.html:36
 msgid "Users and developers mailing list"
-msgstr ""
+msgstr "Lista de correio de utilizadores e programadores"
 
 #: weblate_web/html/support.html:38
 msgid ""
 "You can use mailing lists for discussions with other Weblate users and "
 "developers."
 msgstr ""
+"Pode usar as listas de correio para discussão com outros utilizadores  e "
+"programadores do Weblate."
 
 #: weblate_web/html/support.html:39
 msgid ""
 "You can post to it using <a href=\"mailto:weblate@lists.cihar.com"
 "\">weblate@lists.cihar.com</a> address."
 msgstr ""
+"Pode publicar usando o endereço <a href=\"mailto:weblate@lists.cihar.com\""
+">weblate@lists.cihar.com</a>."
 
 #: weblate_web/html/support.html:40 weblate_web/html/support.html:56
 msgid "You can browse mailing list archives"
-msgstr ""
+msgstr "Pode explorar os arquivos das listas de correio"
 
 #: weblate_web/html/support.html:43 weblate_web/html/support.html:59
 msgid "Enter your email"
-msgstr ""
+msgstr "Insira o seu email"
 
 #: weblate_web/html/support.html:45 weblate_web/html/support.html:61
 msgid "Subscribe"
-msgstr ""
+msgstr "Subscrever"
 
 #: weblate_web/html/support.html:52
 msgid "Hosted Weblate Announcements mailing list"
-msgstr ""
+msgstr "Lista de anúncios do Hosted Weblate"
 
 #: weblate_web/html/support.html:54
 msgid ""
 "Low traffic mailing list with announcements about Hosted Weblate services."
 msgstr ""
+"Lista de correio de baixo tráfego com anúncios sobre os serviços do Weblate."
 
 #: weblate_web/html/support.html:55
 msgid "This list is moderated, only selected users can post announcements."
 msgstr ""
+"É uma lista moderada, só utilizadores seleccionados podem publicar anúncios."
 
 #: weblate_web/html/support.html:68
 msgid "Stack Overflow"
@@ -1449,41 +1444,34 @@ msgid "Demo server"
 msgstr "Servidor de demonstração"
 
 #: weblate_web/html/try.html:22
-#, fuzzy
-#| msgid ""
-#| "You can try how Weblate on our <a href=\"https://demo.weblate.org\">demo "
-#| "server</a>. You can register there and work under your username or just "
-#| "use <code>demo</code> account with <code>demo</code> password."
 msgid ""
 "Try Weblate on the <a href=\"https://demo.weblate.org\">demo server</a>. "
 "Register there and work under your username, or just use username: "
 "<code>demo</code> with password: <code>demo</code>."
 msgstr ""
-"Pode testar o Weblate no nosso <a href=\"https://demo.weblate.org\">servidor "
-"de demonstração</a>. Pode registar-se e trabalhar com o seu nome de "
-"utilizador ou utilizar apenas a conta de <code>demonstração</code> com a "
-"senha <code>demo</code>."
+"Teste o Weblate no <a href=\"https://demo.weblate.org\">servidor de "
+"demonstração</a>. Registe-se e trabalhe com o seu nome de utilizador ou use "
+"só o utilizador <code>demo</code> com a senha <code>demo</code>."
 
 #: weblate_web/html/try.html:25
 msgid ""
 "To test the review workflow there, log in with username: <code>review</"
 "code>, and password: <code>review</code>."
 msgstr ""
+"Para testar o fluxo das revisões, inicie sessão com o utilizador "
+"<code>review</code> e senha <code>review</code>."
 
 #: weblate_web/html/try.html:27
 msgid "Appliances"
 msgstr "Aplicações"
 
 #: weblate_web/html/try.html:30
-#, fuzzy, python-format
-#| msgid ""
-#| "Check our <a href=\"%(download_url)s\">download page</a> for appliances, "
-#| "which provide an easy way to deploy Weblate in the cloud."
+#, python-format
 msgid ""
 "Check out the <a href=\"%(download_url)s\">download page</a> for appliances, "
 "providing an easy way to deploy Weblate in the cloud."
 msgstr ""
-"Veja a nossa <a href=\"%(download_url)s\">página de transferências</a> de "
+"Veja a <a href=\"%(download_url)s\">página de transferências</a> de "
 "aplicações, que fornecem uma forma fácil para instalar o Weblate na nuvem."
 
 #: weblate_web/templatetags/downloads.py:40
