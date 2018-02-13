@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2018-01-10 07:27+0100\n"
-"PO-Revision-Date: 2018-01-10 21:20+0000\n"
-"Last-Translator: omar anwar aglan <omar.aglan91@yahoo.com>\n"
+"PO-Revision-Date: 2018-01-30 21:02+0000\n"
+"Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Arabic "
 "<https://hosted.weblate.org/projects/weblate/website/ar/>\n"
 "Language: ar\n"
@@ -22,11 +22,11 @@ msgstr ""
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
-msgstr "استعرض الترجمات الشخصية في الصفحة الرئيسية."
+msgstr "استعرض ترجماتك على الصفحة الرئيسية."
 
 #: weblate_web/data.py:34
 msgid "Own translations"
-msgstr "الترجمات الشخصية"
+msgstr "ترجماتك"
 
 #: weblate_web/data.py:39 weblate_web/html/features.html:64
 msgid ""
@@ -43,7 +43,7 @@ msgstr "سياق الترجمة"
 #: weblate_web/data.py:47
 msgid ""
 "Project page gives you detailed information about project translation status."
-msgstr "صفحة المشروع تعطي معلومات مفصّلة عن حالة مشروع الترجمة."
+msgstr "صفحة المشروع تعطي معلومات مفصّلة عن حالة ترجمة المشروع."
 
 #: weblate_web/data.py:50
 msgid "Project overview"
@@ -60,7 +60,7 @@ msgstr ""
 #: weblate_web/data.py:58 weblate_web/html/features.html:71
 #: weblate_web/html/hosting.html:141
 msgid "Glossary"
-msgstr "مفردات"
+msgstr "المفردات"
 
 #: weblate_web/data.py:63 weblate_web/html/base-features.html:15
 msgid ""
@@ -180,7 +180,7 @@ msgstr "الوثائق"
 
 #: weblate_web/html/base.html:82 weblate_web/html/download.html:34
 msgid "Download"
-msgstr "التحميلات"
+msgstr "تحميل"
 
 #: weblate_web/html/base.html:83
 msgid "Hosting"
@@ -279,7 +279,7 @@ msgstr "حالة الترجمة"
 
 #: weblate_web/html/donate.html:3 weblate_web/html/donate.html:4
 msgid "Donate to Weblate"
-msgstr "تبرع لمساعدة Weblate"
+msgstr "تبرع لمساعدة وِبليت"
 
 #: weblate_web/html/donate.html:6
 msgid "Weblate is free, but welcomes donations."
@@ -554,7 +554,7 @@ msgstr "Weblate يأتي مع وثائق مضمنة تغطي كل من التث�
 
 #: weblate_web/html/features.html:111
 msgid "Review"
-msgstr "المراجعة"
+msgstr "مراجعة"
 
 #: weblate_web/html/features.html:112
 msgid "Translators have several options to review contributions made by peers."
@@ -726,7 +726,7 @@ msgstr "وحدة الكلمة معرفة في صيغة الترجمة، ويمك
 
 #: weblate_web/html/hosting.html:51
 msgid "Source strings"
-msgstr "سلاسل المصدر"
+msgstr "السلاسل المصدرية"
 
 #: weblate_web/html/hosting.html:52 weblate_web/html/hosting.html:61
 #: weblate_web/html/hosting.html:70
@@ -933,9 +933,9 @@ msgid ""
 msgid_plural ""
 "Your Weblate will be upgraded to the latest version at least every %(count)s "
 "months."
-msgstr[0] "لن يُرقّى Weblate إلى الإصدارة الأخيرة%(count).0s."
-msgstr[1] "سيُرقّى Weblate إلى الإصدارة الأخيرة كل%(count).0s شهر."
-msgstr[2] "سيُرقّى Weblate إلى الإصدارة الأخيرة كل%(count).0s شهرين."
+msgstr[0] "لن يُرقّى Weblate إلى الإصدارة الأخيرة%(count)s."
+msgstr[1] "سيُرقّى Weblate إلى الإصدارة الأخيرة كل%(count)s شهر."
+msgstr[2] "سيُرقّى Weblate إلى الإصدارة الأخيرة كل%(count)s شهرين."
 msgstr[3] "سيُرقّى Weblate إلى الإصدارة الأخيرة كل %(count)s شهور."
 msgstr[4] "سيُرقّى Weblate إلى الإصدارة الأخيرة كل %(count)s شهراً."
 msgstr[5] "سيُرقّى Weblate إلى الإصدارة الأخيرة كل %(count)s شهر."
@@ -1157,7 +1157,7 @@ msgstr "تجربة خدمتنا"
 
 #: weblate_web/html/index.html:15
 msgid "View hosting plans"
-msgstr "استعراض باقات الاستضافة"
+msgstr "استعرض باقات الاستضافة"
 
 #: weblate_web/html/index.html:16
 msgid "Downloads"
@@ -1425,7 +1425,7 @@ msgstr ""
 "طريقة سهلة لتطبيق Weblate على الخدمة السحابية."
 
 #: weblate_web/templatetags/downloads.py:40
-#, python-format
+#, fuzzy, python-format
 msgid "%(size)d byte"
 msgid_plural "%(size)d bytes"
 msgstr[0] "%(size)d بايت"

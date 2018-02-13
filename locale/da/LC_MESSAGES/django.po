@@ -6,12 +6,12 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2018-01-10 07:27+0100\n"
-"PO-Revision-Date: 2018-01-10 06:25+0000\n"
-"Last-Translator: jan madsen <jsm@janz.dk>\n"
-"Language-Team: Danish <https://hosted.weblate.org/projects/weblate/website/"
-"da/>\n"
+"PO-Revision-Date: 2018-02-12 02:35+0000\n"
+"Last-Translator: scootergrisen <scootergrisen@gmail.com>\n"
+"Language-Team: Danish "
+"<https://hosted.weblate.org/projects/weblate/website/da/>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -68,12 +68,13 @@ msgid ""
 "Customizable quality checks will help you in improving quality of "
 "translations."
 msgstr ""
-"Kvalitetskontrol kan tilpasses, så kvaliteten af oversættelserne kan forøges."
+"Justerbare kvalitetstjek vil hjælpe dig med at forbedre kvaliteten af "
+"oversættelserne."
 
 #: weblate_web/data.py:66 weblate_web/html/base-features.html:14
 #: weblate_web/html/hosting.html:123
 msgid "Quality checks"
-msgstr "Kvalitetskontrol"
+msgstr "Kvalitetstjek"
 
 #: weblate_web/data.py:71 weblate_web/html/features.html:128
 msgid "Weblate provides you various ways to promote your translation project."
@@ -90,7 +91,7 @@ msgstr "Siden blev ikke fundet"
 #: weblate_web/html/404.html:8 weblate_web/html/500.html:8
 #: weblate_web/html/index.html:7
 msgid "Weblate is a free web-based translation management system."
-msgstr "Weblate er et frit web-baseret system til håndtering af oversættelser."
+msgstr "Weblate er et frit webbaseret system til håndtering af oversættelser."
 
 #: weblate_web/html/404.html:15
 msgid "The page you are looking for was not found."
@@ -128,11 +129,11 @@ msgid ""
 "All your translators will be properly credited in the version control system."
 msgstr ""
 "Alle dine oversættelser vil blive korrekt krediteret i "
-"versionskontrolsystemet."
+"versionsstyringssystemet."
 
 #: weblate_web/html/base-features.html:30 weblate_web/html/hosting.html:17
 msgid "Hosting plans"
-msgstr "Hosting planer"
+msgstr "Hostingplaner"
 
 #: weblate_web/html/base-features.html:31
 msgid "Hosting plans to use Weblate as a service starting at 19 EUR."
@@ -141,12 +142,13 @@ msgstr ""
 
 #: weblate_web/html/base-features.html:38
 msgid "Ready for cloud"
-msgstr "Parat til skyen"
+msgstr "Klar til skyen"
 
 #: weblate_web/html/base-features.html:39
 msgid "Weblate comes with appliances, which are ready to deploy in your cloud."
 msgstr ""
-"Med Weblate følger en opsætning, der er klar til at implementere i skyen."
+"Med Weblate følger anvendelsesområder, der er klar til implementering i "
+"skyen."
 
 #: weblate_web/html/base-features.html:46
 msgid "Free software"
@@ -163,7 +165,7 @@ msgstr "oversæt"
 
 #: weblate_web/html/base.html:66
 msgid "Toggle navigation"
-msgstr "Skift navigation"
+msgstr "Navigation til/fra"
 
 #: weblate_web/html/base.html:72
 msgid "Weblate logo"
@@ -175,7 +177,7 @@ msgstr "Blog"
 
 #: weblate_web/html/base.html:79
 msgid "Try"
-msgstr "Afprøv"
+msgstr "Prøv"
 
 #: weblate_web/html/base.html:80
 msgid "Features"
@@ -206,7 +208,7 @@ msgstr "Donér"
 
 #: weblate_web/html/base.html:86
 msgid "Support"
-msgstr "Brugerhjælp"
+msgstr "Support"
 
 #: weblate_web/html/base.html:87
 msgid "Tour"
@@ -226,8 +228,8 @@ msgid ""
 "Weblate is <a href=\"%(github_url)s\">free software</a> and welcomes <a href="
 "\"%(donate_url)s\">donations</a>."
 msgstr ""
-"Weblate er <a href=\"%(github_url)s\"> fri software</a> og bifalder <a href="
-"\"%(donate_url)s\"> donationer</a>."
+"Weblate er <a href=\"%(github_url)s\">fri software</a> og tager gerne imod <"
+"a href=\"%(donate_url)s\">donationer</a>."
 
 #: weblate_web/html/contribute.html:3 weblate_web/html/contribute.html:4
 msgid "Contribute to Weblate"
@@ -246,19 +248,14 @@ msgid "Translate"
 msgstr "Oversæt"
 
 #: weblate_web/html/contribute.html:17
-#, fuzzy
-#| msgid ""
-#| "You can find more detailed information about this topic in <a href="
-#| "\"https://docs.weblate.org/en/latest/contributing.html\">Contributing "
-#| "chapter</a> of our documentation."
 msgid ""
 "You can find more detailed information about this topic in <a href=\"https://"
 "docs.weblate.org/en/latest/contributing.html\">Contributing chapter</a> of "
 "the documentation."
 msgstr ""
-"Du kan finde mere uddybende information om dette emne i <a href=\"https://"
-"docs.weblate.org/en/latest/contributing.html\">afsnittet «Bidrag»</a> i "
-"vores dokumentation."
+"Du kan finde mere uddybende information om emnet i <a href=\""
+"https://docs.weblate.org/en/latest/contributing.html\">afsnittet «Bidrag»</a>"
+" i dokumentation."
 
 #: weblate_web/html/contribute.html:20 weblate_web/html/download.html:17
 msgid "Code"
@@ -270,33 +267,29 @@ msgid ""
 "Weblate is being developed on <a href=\"%(url)s\">GitHub</a>, you can fork "
 "it there or just:"
 msgstr ""
-"Weblate udvikles på <a href=\"%(url)s\">GitHub</a>, du kan udspalte koden "
-"dér eller blot:"
+"Weblate udvikles på <a href=\"%(url)s\">GitHub</a>, du kan \"forke\" koden "
+"eller blot:"
 
 #: weblate_web/html/contribute.html:31
 #, python-format
 msgid "This website is stored on <a href=\"%(url)s\">GitHub</a> as well:"
-msgstr "Webstedet opbevares også på <a href=\"%(url)s\"> GitHub</a>:"
+msgstr "Webstedet opbevares også på <a href=\"%(url)s\">GitHub</a>:"
 
 #: weblate_web/html/contribute.html:41
-#, fuzzy
-#| msgid ""
-#| "You can translate Weblate using Weblate installation at <a href=\"https://"
-#| "hosted.weblate.org/engage/weblate/\">hosted.weblate.org</a>."
 msgid ""
 "You can translate Weblate at <a href=\"https://hosted.weblate.org/engage/"
 "weblate/\">hosted.weblate.org</a>."
 msgstr ""
-"Du kan oversætte Weblate ved at benytte Weblate-installationen på <a href="
-"\"https://hosted.weblate.org/engage/weblate/\">hosted.weblate.org</a>."
+"Du kan oversætte Weblate på <a href=\""
+"https://hosted.weblate.org/engage/weblate/\">hosted.weblate.org</a>."
 
 #: weblate_web/html/contribute.html:46
 msgid "Translation status"
-msgstr "Status på oversættelse"
+msgstr "Status for oversættelse"
 
 #: weblate_web/html/donate.html:3 weblate_web/html/donate.html:4
 msgid "Donate to Weblate"
-msgstr "Doner til Weblate"
+msgstr "Donér til Weblate"
 
 #: weblate_web/html/donate.html:6
 msgid "Weblate is free, but welcomes donations."
@@ -304,7 +297,7 @@ msgstr "Weblate er gratis, men donationer er altid velkomne."
 
 #: weblate_web/html/donate.html:12 weblate_web/html/donate.html:43
 msgid "Donate using Liberapay"
-msgstr "Donere ved hjælp af Liberapay"
+msgstr "Donér med Liberapay"
 
 #: weblate_web/html/donate.html:18
 msgid "Use our hosting"
@@ -316,8 +309,8 @@ msgid ""
 "Host your commercial translations on <a href=\"%(hosting_url)s\">Hosted "
 "Weblate</a> and you will be supporting Weblate development automatically."
 msgstr ""
-"Host kommercielle oversættelser på <a href=\"%(hosting_url)s\">Hosted "
-"Weblate</a> og støt automatisk Weblate udvikling."
+"Host dine kommercielle oversættelser på <a href=\"%(hosting_url)s\">Hosted "
+"Weblate</a> og støt dermed automatisk udviklingen af Weblate."
 
 #: weblate_web/html/donate.html:25
 msgid "Regular donations"
@@ -343,13 +336,12 @@ msgid ""
 "You can send a monthly donation using a credit card. You can also get "
 "rewards for higher donations, for example a logo placement on our website."
 msgstr ""
-"Send månedlige donation ved hjælp af et kreditkort. Få belønninger for "
-"større donationer, for eksempel placering af et logo på vores hjemmeside."
+"Send månedlige donation med et kreditkort. Få belønninger for større "
+"donationer, for eksempel placering af et logo på vores websted."
 
 #: weblate_web/html/donate.html:47
 msgid "Liberapay allows you to send a weekly amount using a credit card."
-msgstr ""
-"Liberapay lader dig sende et ugentligt bidragved hjælp af et kreditkort."
+msgstr "Med Liberapay kan du sende et ugentligt bidrag med et kreditkort."
 
 #: weblate_web/html/donate.html:50
 msgid "Fund features"
@@ -360,8 +352,8 @@ msgid ""
 "Bountysource allows you to fund individual features which are reported on "
 "our issue tracker."
 msgstr ""
-"Bountysource lader dig donere enkelte egenksaber, der rapporteres i vores "
-"sagshåndtering."
+"Med Bountysource kan du finansiere individuelle funktioner, der rapporteres "
+"i vores \"issue tracker\"."
 
 #: weblate_web/html/donate.html:64
 msgid ""
@@ -371,7 +363,7 @@ msgstr ""
 
 #: weblate_web/html/donate.html:72
 msgid "Donate using PayPal"
-msgstr "Donere ved hjælp PayPal"
+msgstr "Donér med PayPal"
 
 #: weblate_web/html/donate.html:77
 msgid ""
@@ -391,7 +383,7 @@ msgid ""
 "Thanks to <a href=\"%(url)s\">Trezor</a>, we will gladly accept donations in "
 "several cryptocurrencies. You can use the addresses in table below."
 msgstr ""
-"Takket være <a href=\"%(url)s\"> Trezor</a>, accepteres gerne donationer i "
+"Takket være <a href=\"%(url)s\">Trezor</a> modtager vi gerne donationer i "
 "flere kryptovalutaer. Brug adresserne i tabellen nedenfor."
 
 #: weblate_web/html/donate.html:88
@@ -412,15 +404,15 @@ msgstr "Hent Weblate"
 
 #: weblate_web/html/download.html:7
 msgid "Weblate comes with complete source code."
-msgstr "Weblate kommer med komplet kildekode."
+msgstr "Weblate fås med komplet kildekode."
 
 #: weblate_web/html/download.html:20
 msgid ""
 "Weblate is being developed on <a href=\"https://github.com/WeblateOrg/weblate"
 "\">GitHub</a>, you can fork it there or just:"
 msgstr ""
-"Weblate udvikles på <a href=\"https://github.com/WeblateOrg/weblate"
-"\">GitHub</a>, du kan udspalte koden dér eller blot:"
+"Weblate udvikles på <a href=\"https://github.com/WeblateOrg/weblate\""
+">GitHub</a>, du kan \"forke\" koden eller blot:"
 
 #: weblate_web/html/download.html:37
 msgid "You can download latest release here:"
@@ -428,12 +420,11 @@ msgstr "Du kan hente den seneste udgave her:"
 
 #: weblate_web/html/download.html:46 weblate_web/html/download.html:62
 msgid "You can also install using packages for following Linux distributions:"
-msgstr ""
-"Kan også installeres ved hjælp af pakker for følgende Linux-distributioner:"
+msgstr "Kan også installeres med pakker til følgende Linux-distributioner:"
 
 #: weblate_web/html/download.html:52
 msgid "Weblate command line client"
-msgstr "Weblate kommandolinje-klient"
+msgstr "Weblate-kommandolinjeklient"
 
 #: weblate_web/html/download.html:55
 #, python-format
@@ -441,36 +432,36 @@ msgid ""
 "You can control Weblate remotely using <a href=\"%(url)s\">wlc</a>, it can "
 "be installed by using Python PIP:"
 msgstr ""
-"Fjernstyr Weblate med <a href=\"%(url)s\"> wlc</a>, kan installeres ved "
-"hjælp af Python PIP:"
+"Du kan styre Weblate med <a href=\"%(url)s\">wlc</a>, som kan installeres "
+"med Pythons PIP:"
 
 #: weblate_web/html/download.html:70
 msgid "Cloud or virtualization images"
-msgstr "Cloud eller virtualisering  billeder"
+msgstr "Sky- eller virtualiseringsbilleder"
 
 #: weblate_web/html/download.html:72
 msgid ""
 "Weblate can be run in any cloud or virtualization environment. Following "
 "links will show you information about some of these:"
 msgstr ""
-"Weblate kan køres i alle sky eller virtualisering miljø. Følgende links vil "
-"vise information om nogle af disse:"
+"Weblate kan køres i alle sky- eller virtualiseringsmiljøer. Følgende links "
+"viser information om nogle af dem:"
 
 #: weblate_web/html/download.html:75
 msgid "Running Weblate in a Docker container"
-msgstr "Kører Weblate i en Docker container"
+msgstr "Kør Weblate i en Docker-container"
 
 #: weblate_web/html/download.html:76
 msgid "Running Weblate on OpenShift platform"
-msgstr "Kører Weblate på OpenShift platform"
+msgstr "Kør Weblate på OpenShift-platform"
 
 #: weblate_web/html/download.html:77
 msgid ""
 "BitNami Weblate stack providing native installation for most platforms as "
 "well as support for many public cloud providers"
 msgstr ""
-"BitNami Weblate stak leverer native installation for de fleste platforme "
-"samt støtte til mange offentlige cloud-udbydere"
+"BitNami Weblate-stak leverer native installation til de fleste platforme "
+"samt understøttelse af mange offentlige skyudbydere"
 
 #: weblate_web/html/features.html:3 weblate_web/html/features.html:4
 msgid "Weblate features"
@@ -479,7 +470,7 @@ msgstr "Funktioner i Weblate"
 #: weblate_web/html/features.html:6
 msgid "Weblate is a feature rich computer aided translation tool."
 msgstr ""
-"Weblate er et funktionsrigt værktøj til maskin-assisteret oversættelse."
+"Weblate er et funktionsrigt værktøj til computerassisteret oversættelse."
 
 #: weblate_web/html/features.html:11
 msgid "View documentation"
@@ -501,8 +492,8 @@ msgstr "Notifikationer"
 msgid ""
 "Translators can be notified on new strings to translate or other events."
 msgstr ""
-"Oversættere kan modtage beskeder ved nye, oversættelige tekststrenge eller "
-"andre begivenheder."
+"Oversættere kan få besked ved nye strenge som skal oversættes eller andre "
+"begivenheder."
 
 #: weblate_web/html/features.html:39
 msgid "Integration API"
@@ -563,7 +554,7 @@ msgstr "Integreret"
 
 #: weblate_web/html/features.html:96
 msgid "Translations are managed within same version control system as code."
-msgstr "Oversættelser håndteres med samme versionskontrol-system som koden."
+msgstr "Oversættelser håndteres med samme versionsstyringssystem som koden."
 
 #: weblate_web/html/features.html:103
 msgid "Documentation"
@@ -583,7 +574,7 @@ msgstr "Gennemgang"
 msgid "Translators have several options to review contributions made by peers."
 msgstr ""
 "Oversættere har flere muligheder for at gennemgå bidrag fra andre "
-"oversættetere."
+"oversættere."
 
 #: weblate_web/html/features.html:119
 msgid "Languages"
@@ -611,15 +602,15 @@ msgstr ""
 
 #: weblate_web/html/features.html:144
 msgid "Version control"
-msgstr "Versionskontrol"
+msgstr "Versionsstyring"
 
 #: weblate_web/html/features.html:145
 msgid ""
 "Weblate talks directly with your version control system, currently Git and "
 "Mercurial are supported."
 msgstr ""
-"Weblate samtaler direkte med version kontrolsystemer, i øjeblikket er Git og "
-"Mercurial understøttet."
+"Weblate snakker direkte med dit versionsstyringssystem, i øjeblikket "
+"understøttes Git og Mercurial."
 
 #: weblate_web/html/features.html:152
 msgid "Collaboration sites"
@@ -635,15 +626,15 @@ msgstr ""
 
 #: weblate_web/html/features.html:160
 msgid "Responsive UI"
-msgstr "Responsivt UI"
+msgstr "Adaptiv brugergrænseflade"
 
 #: weblate_web/html/features.html:161
 msgid ""
 "Weblate has responsive UI which will work nicely on your desktop, tablet or "
 "phone."
 msgstr ""
-"Weblate har responsivt UI, der vil fungere fint på en pc, tablet eller "
-"telefon."
+"Weblate har en adaptiv brugergrænseflade, der fungerer fint på både "
+"computer, tablet og telefon."
 
 #: weblate_web/html/hosting-ordered.html:3
 #: weblate_web/html/hosting-ordered.html:4 weblate_web/html/hosting.html:3
@@ -653,7 +644,7 @@ msgstr "Hosting af Weblate"
 
 #: weblate_web/html/hosting-ordered.html:6
 msgid "Thank you for ordering hosting!"
-msgstr "Tak for bestilling af hosting!"
+msgstr "Tak for din bestilling af hosting!"
 
 #: weblate_web/html/hosting-ordered.html:11
 msgid "Next steps"
@@ -664,8 +655,9 @@ msgid ""
 "The project setup is currently manual. If you haven't done so already, "
 "please get in touch with us and send us details about your repository setup."
 msgstr ""
-"Opsætningen af projektet er i øjeblikket manuelt. Hvis du ikke allerede har "
-"gjort det, kontakt os og send oplysninger om arkiv opsætning."
+"Opsætningen af projektet foregår indtil videre manuelt. Hvis du ikke "
+"allerede har gjort det, så kontakt os og send oplysninger om hvordan din "
+"kodebase er indrettet."
 
 #: weblate_web/html/hosting-ordered.html:15
 msgid "Usually following information is needed:"
@@ -677,7 +669,7 @@ msgstr "URL for arkiv med oversættelser."
 
 #: weblate_web/html/hosting-ordered.html:19 weblate_web/html/hosting.html:339
 msgid "Path to translations within the repository."
-msgstr "Sti til oversættelser inden i arkivet."
+msgstr "Sti til oversættelser inden for arkivet."
 
 #: weblate_web/html/hosting-ordered.html:22
 msgid ""
@@ -686,12 +678,12 @@ msgid ""
 "adding SSH key we will provide you."
 msgstr ""
 "Du skal tillade Weblate at få adgang til arkivet. Dette kan gøres ved at "
-"tilføje Weblate brugeren til projektet (på GitHub, Bitbucket eller GitLab) "
-"eller tilføje SSH nøglen vi giver dig."
+"tilføje Weblate-brugeren til projektet (på GitHub, Bitbucket eller GitLab) "
+"eller tilføje den SSH-nøgle, vi giver dig."
 
 #: weblate_web/html/hosting.html:6
 msgid "Free continuous translation hosting for free software."
-msgstr "Gratis kontinuerlig oversættelse hosting af fri software."
+msgstr "Gratis hosting af løbende oversættelse af fri software."
 
 #: weblate_web/html/hosting.html:11
 msgid "Ask for hosting"
@@ -702,8 +694,8 @@ msgid ""
 "Hosted Weblate allows you to use Weblate without any effort and with premium "
 "support backed by it's core developers."
 msgstr ""
-"Hosted Weblate giver mulighed for at bruge Weblate uden stor indsats, og med "
-"premium support-bakket op af de centrale udviklere."
+"Hosted Weblate giver mulighed for nemt at bruge Weblate, og med "
+"førsteklasses support-bakket op af de centrale udviklere."
 
 #: weblate_web/html/hosting.html:24
 #, python-format
@@ -714,9 +706,9 @@ msgid ""
 "\">get in touch with us</a>."
 msgstr ""
 "Vi kan være vært for oversættelser af kommercielle eller fri software-"
-"projekter. Du kan se n oversigt over hosting planer nedenfor. Har du "
-"spørgsmål eller søger efter hosting af større projekter, tøv ikke med at <a "
-"href=\"%(contact)s\">kontakte os </a>."
+"projekter. Du kan se en oversigt over hostingplaner nedenfor. Hvis du har "
+"spørgsmål eller leder efter hosting af større projekter, så tøv ikke med at <"
+"a href=\"%(contact)s\">kontakte os</a>."
 
 #: weblate_web/html/hosting.html:32
 msgctxt "Hosting plan"
@@ -726,7 +718,7 @@ msgstr "Fri software"
 #: weblate_web/html/hosting.html:33
 msgctxt "Hosting plan"
 msgid "Basic"
-msgstr "Basis"
+msgstr "Grundlæggende"
 
 #: weblate_web/html/hosting.html:34
 msgctxt "Hosting plan"
@@ -746,7 +738,7 @@ msgstr "Enterprise"
 #: weblate_web/html/hosting.html:37
 msgctxt "Hosting plan"
 msgid "Self hosted"
-msgstr "Egen hosted"
+msgstr "Selvhostede"
 
 #: weblate_web/html/hosting.html:51
 msgid ""
@@ -783,7 +775,7 @@ msgstr "Målsprog"
 
 #: weblate_web/html/hosting.html:69
 msgid "VCS repositories"
-msgstr "VCS arkiver"
+msgstr "VCS-arkiver"
 
 #: weblate_web/html/hosting.html:78
 msgid "Translation projects"
@@ -799,7 +791,7 @@ msgstr "Antal oversættelseskomponenter"
 
 #: weblate_web/html/hosting.html:105
 msgid "User management"
-msgstr "Brugerstyring"
+msgstr "Brugerhåndtering"
 
 #: weblate_web/html/hosting.html:114
 msgid "Supported file formats"
@@ -844,7 +836,7 @@ msgstr "Eget domæne"
 
 #: weblate_web/html/hosting.html:179
 msgid "Monthly by PayPal"
-msgstr "Månedlig med PayPal"
+msgstr "Månedligt med PayPal"
 
 #: weblate_web/html/hosting.html:181
 msgid "Contact us"
@@ -908,7 +900,7 @@ msgstr ""
 
 #: weblate_web/html/hosting.html:228
 msgid "Support for self hosted environments"
-msgstr "Support til egen hostede miljøer"
+msgstr "Support til selvhostede miljøer"
 
 #: weblate_web/html/hosting.html:230
 msgid ""
@@ -929,11 +921,11 @@ msgstr "%(price)s EUR"
 
 #: weblate_web/html/hosting.html:242
 msgid "One time installation of Weblate"
-msgstr "Engangs installation af Weblate"
+msgstr "Engangsinstallation af Weblate"
 
 #: weblate_web/html/hosting.html:243
 msgid "Installation using virtualenv, uwsgi and nginx"
-msgstr "Installation ved hjælp af virtualenv, uwsgi og nginx"
+msgstr "Installation med virtualenv, uwsgi og nginx"
 
 #: weblate_web/html/hosting.html:244
 msgid "Using PostgreSQL, MySQL or MariaDB as database backend"
@@ -953,7 +945,7 @@ msgstr "Omfatter ikke brugerdefineret kode udvikling"
 
 #: weblate_web/html/hosting.html:252
 msgid "Minimal support for self hosted Weblate"
-msgstr "Minimal støtte til egen hosted Weblate"
+msgstr "Minimal support til selvhostede Weblate"
 
 #: weblate_web/html/hosting.html:259 weblate_web/html/hosting.html:274
 #, python-format
@@ -993,11 +985,11 @@ msgstr[1] ""
 
 #: weblate_web/html/hosting.html:267
 msgid "Basic support for self hosted Weblate"
-msgstr "Grundlæggende support til egen hosted Weblate"
+msgstr "Grundlæggende support til selvhostede Weblate"
 
 #: weblate_web/html/hosting.html:282
 msgid "Extended support for self hosted Weblate"
-msgstr "Udvidet support for egen hostede Weblate"
+msgstr "Udvidet support til selvhostede Weblate"
 
 #: weblate_web/html/hosting.html:289
 msgid "Your Weblate will be upgraded to the latest version on every release."
@@ -1026,19 +1018,13 @@ msgstr "Forslag til internationalisering eller lokaliseringsprocessen"
 
 #: weblate_web/html/hosting.html:313
 msgid "Ask us for details about self hosted Weblate"
-msgstr "Spørg om detaljer for egen hosted Weblate"
+msgstr "Spørg os om detaljer om selvhostede Weblate"
 
 #: weblate_web/html/hosting.html:315
 msgid "Hosting for free software"
 msgstr "Hosting for fri software"
 
 #: weblate_web/html/hosting.html:318
-#, fuzzy
-#| msgid ""
-#| "If you are interested in using Weblate for your free software, you can "
-#| "ask us to be include on <a href=\"https://hosted.weblate.org/\">hosted."
-#| "weblate.org</a>. This will allow you to use Weblate without installing "
-#| "and maintaining it."
 msgid ""
 "If you are interested in using Weblate for your free software, you can ask "
 "us for hosting of your translations on <a href=\"https://hosted.weblate.org/"
@@ -1046,13 +1032,13 @@ msgid ""
 "installing and maintaining it."
 msgstr ""
 "Hvis du er interesseret i at bruge Weblate til din fri software, kan du bede "
-"os om hosting af dine oversættelser på<a href=\"https://hosted.weblate.org/"
-"\">hosted.weblate.org</a>. Dette giver mulighed for at bruge Weblate uden at "
+"os om hosting af dine oversættelser på<a href=\"https://hosted.weblate.org/\""
+">hosted.weblate.org</a>. Dette giver mulighed for at bruge Weblate uden at "
 "skulle installere og vedligeholde den."
 
 #: weblate_web/html/hosting.html:321
 msgid "Conditions for free hosting"
-msgstr "Betingelser for fri hosting"
+msgstr "Betingelser for gratis hosting"
 
 #: weblate_web/html/hosting.html:324
 msgid ""
@@ -1068,7 +1054,7 @@ msgid ""
 "system."
 msgstr ""
 "Kildekoden skal være offentligt tilgængelig i et understøttet "
-"versionskontrolsystem."
+"versionsstyringssystem."
 
 #: weblate_web/html/hosting.html:326
 msgid "There is no guarantee for service availability or quality."
@@ -1084,8 +1070,8 @@ msgid ""
 "Please use <a href=\"%(url)s\">contact form on Hosted Weblate</a> to request "
 "hosting. You will need following information:"
 msgstr ""
-"Brug <a href=\"%(url)s\"> kontaktformularen på Hosted Weblate</a> for at "
-"anmode om hosting. Der skal bruges følgende oplysninger:"
+"Brug <a href=\"%(url)s\">kontaktformularen på Hosted Weblate</a> for at "
+"anmode om hosting. Du skal bruge følgende oplysninger:"
 
 #: weblate_web/html/hosting.html:336
 msgid "Information about your project."
@@ -1093,7 +1079,7 @@ msgstr "Informationer om dit projekt."
 
 #: weblate_web/html/hosting.html:337
 msgid "Project website."
-msgstr "Projektets hjemmeside."
+msgstr "Projektets websted."
 
 #: weblate_web/html/hosting.html:342
 msgid "Translation workflow"
@@ -1106,10 +1092,10 @@ msgid ""
 "<code>https://hosted.weblate.org/git/weblate/master/</code>. You can figure "
 "out the URL on the component information tab."
 msgstr ""
-"Alle oversatte arkiver er tilgængelige ved hjælp af https-protokol med "
-"lignende navngivning som på hjemmesiden - weblate/master oversættelsen er "
-"udgivet som <code>https://hosted.weblate.org/git/weblate/master/</code>. "
-"Find URL-adressen på fanen komponent oplysninger."
+"Alle oversatte arkiver er tilgængelige med https-protokol med lignende "
+"navngivning som på websted - weblate/master oversættelsen er udgivet som "
+"<code>https://hosted.weblate.org/git/weblate/master/</code>. Find URL-"
+"adressen på fanen komponent oplysninger."
 
 #: weblate_web/html/hosting.html:349
 #, python-format
@@ -1118,10 +1104,9 @@ msgid ""
 "see our documentation for setup on <a href=\"%(github)s\">GitHub</a>, <a "
 "href=\"%(bitbucket)s\">Bitbucket</a> or <a href=\"%(gitlab)s\">GitLab</a>."
 msgstr ""
-"Weblate kan automatisk modtage ændringer fra store kode hosting-tjenester, "
-"se dokumentationen for opsætning på <a href=\"%(github)s\"> GitHub</a>, <a "
-"href=\"%(bitbucket)s\"> Bitbucket</a> eller <a href=\"%(gitlab)s\"> GitLab</"
-"a>."
+"Weblate kan automatisk modtage ændringer fra store kodehostingtjenester. Se "
+"dokumentationen for opsætning på <a href=\"%(github)s\">GitHub</a>, <a href="
+"\"%(bitbucket)s\">Bitbucket</a> eller <a href=\"%(gitlab)s\">GitLab</a>."
 
 #: weblate_web/html/hosting.html:353
 #, python-format
@@ -1130,14 +1115,14 @@ msgid ""
 "user to collaborators and let us know you want to use this option. See <a "
 "href=\"%(docs)s\">documentation</a> for more detailed instructions."
 msgstr ""
-"Hvis du vil kan Weblate automatisk skubbe ændringer, tilføj Weblate push "
-"bruger til samarbejdspartnere og lad os vide, at du vil bruge denne "
-"indstilling. Se <a href=\"%(docs)s\"> dokumentationen</a> for mere "
-"detaljerede instruktioner."
+"Hvis du vil have Weblate til også automatisk at pushe ændringer, så tilføj "
+"Weblate push-brugeren til dine samarbejdspartnere og fortæl os, at du gerne "
+"vil bruge denne mulighed. Se <a href=\"%(docs)s\">dokumentationen</a> for "
+"mere detaljerede instruktioner."
 
 #: weblate_web/html/hosting.html:356
 msgid "Support free hosting"
-msgstr "Støt fri hosting"
+msgstr "Støt gratis hosting"
 
 #: weblate_web/html/hosting.html:360
 #, python-format
@@ -1147,9 +1132,8 @@ msgid ""
 "\">Liberapay</a> or <a href=\"%(donate_url)s\">other ways to donate</a>."
 msgstr ""
 "Hosting tilbydes gratis, men kører på serveren og opretholdelse koster penge "
-"- derfor er du er velkommen til at bruge  <a href=\"%(gittip_url)s"
-"\">Liberapay</a> eller <a href=\"%(donate_url)s\">andre måder at donere på</"
-"a>."
+"- derfor er du er velkommen til at bruge <a href=\"%(gittip_url)s\""
+">Liberapay</a> eller <a href=\"%(donate_url)s\">andre måder at donere på</a>."
 
 #: weblate_web/html/hosting.html:364
 msgid "Self hosting"
@@ -1173,21 +1157,21 @@ msgid ""
 "well with consulting services tailored for your needs. Please contact <a "
 "href=\"%(contact_url)s\">Michal Čihař</a> for more details."
 msgstr ""
-"Brug for hjælp med egen hosted løsning, få rådgivning skræddersyet efter "
-"behov. Kontakt <a href=\"%(contact_url)s\"> Michal Čihař</a> for flere "
-"detaljer."
+"Hvis du har brug for hjælp med din selvhostede løsning, så er vi også klar "
+"til at hjælpe med konsulentydelser skræddersyet til dit behov. Kontakt <a "
+"href=\"%(contact_url)s\">Michal Čihař</a> for flere detaljer."
 
 #: weblate_web/html/hosting.html:375
 msgid ""
 "All prices exclude VAT, invoices for EU countries are issued as a reverse "
 "charge, invoices for Czech Republic will include additional VAT."
 msgstr ""
-"Alle priser er uden moms, fakturaer for EU-landene er udstedt som en omvendt "
-"betalingspligt, fakturaer til Tjekkiet vil omfatte yderligere moms."
+"Alle priser er uden moms; fakturaer for EU-landene er udstedt som en omvendt "
+"betalingspligt; fakturaer til Tjekkiet vil omfatte yderligere moms."
 
 #: weblate_web/html/index.html:3
 msgid "Weblate - web-based translation"
-msgstr "Weblate - web-baseret oversættelse"
+msgstr "Weblate - webbaseret oversættelse"
 
 #: weblate_web/html/index.html:14 weblate_web/html/tour.html:11
 #: weblate_web/html/try.html:12
@@ -1196,7 +1180,7 @@ msgstr "Prøv vores demo"
 
 #: weblate_web/html/index.html:15
 msgid "View hosting plans"
-msgstr "Se hosting planer"
+msgstr "Se hostingplaner"
 
 #: weblate_web/html/index.html:16
 msgid "Downloads"
@@ -1209,10 +1193,10 @@ msgid ""
 "translations across components, quality checks and automatic linking to "
 "source files."
 msgstr ""
-"Weblate er et frit, web-baseret oversættelsesværktøj med tæt versionkontrol "
-"integration. Det tilbyder en enkel og overskuelig brugerflade, udbredelse af "
-"oversættelser på tværs af komponenter, kvalitetskontrol og automatisk "
-"sammenkædning med kildefiler."
+"Weblate er et frit, webbaseret oversættelsesværktøj med tæt integration med "
+"versionsstyringssystem. Det tilbyder en enkel og overskuelig brugerflade, "
+"udbredelse af oversættelser på tværs af komponenter, kvalitetstjek og "
+"automatisk sammenkædning med kildefiler."
 
 #: weblate_web/html/index.html:29
 msgid "Weblate screenshot"
@@ -1224,23 +1208,23 @@ msgstr "Se flere funktioner…"
 
 #: weblate_web/html/index.html:47
 msgid "See who is using Weblate and join them!"
-msgstr "Se hvem der bruger Weblate og slut dig til dem!"
+msgstr "Se hvem der bruger Weblate og bliv en af dem!"
 
 #: weblate_web/html/support.html:3 weblate_web/html/support.html:4
 msgid "Weblate support"
-msgstr "Brugerhjælp til Weblate"
+msgstr "Support til Weblate"
 
 #: weblate_web/html/support.html:6
 msgid "Weblate is a free software with community support."
-msgstr "Weblate er fri software med brugerhjælp fra fællesskabet."
+msgstr "Weblate er fri software med support fra fællesskabet."
 
 #: weblate_web/html/support.html:11
 msgid "Report issue"
-msgstr "Rapporter problem"
+msgstr "Rapportér problem"
 
 #: weblate_web/html/support.html:16
 msgid "Bugs or feature requests"
-msgstr "Fejl eller forespørgsler om funktioner"
+msgstr "Fejl eller ønsker"
 
 #: weblate_web/html/support.html:19
 msgid ""
@@ -1248,9 +1232,9 @@ msgid ""
 "Please report it to <a href=\"https://github.com/WeblateOrg/weblate/issues"
 "\">issue tracker on GitHub</a>."
 msgstr ""
-"Har du opdaget et problem med Weblate? Har du en idé til forbedring. "
+"Har du opdaget et problem med Weblate? Har du en idé til en forbedring? "
 "Rapportér den venligst til <a href=\"https://github.com/WeblateOrg/weblate/"
-"issues\">sagshåndteringen på GitHub</a>."
+"issues\">issue tracker på GitHub</a>."
 
 #: weblate_web/html/support.html:22
 msgid "Security issues"
@@ -1263,54 +1247,45 @@ msgid ""
 "%(contact)s. More information on reporting security issues can be found in "
 "<a href=\"%(docs)s\">our documentation</a>."
 msgstr ""
-"Hvis du finder sikkerhedsproblemer inden for vores kodebase, bedes du "
-"rapportere det til %(contact)s. Flere oplysninger om rapportering af "
-"sikkerhedsproblemer kan findes i <a href=\"%(docs)s\"> vores dokumentation</"
-"a>."
+"Hvis du finder et sikkerhedsproblem i vores kodebase, bedes du rapportere "
+"det til %(contact)s. Flere oplysninger om rapportering af "
+"sikkerhedsproblemer kan findes i <a href=\"%(docs)s\">vores "
+"dokumentation</a>."
 
 #: weblate_web/html/support.html:28
-#, fuzzy
-#| msgid "Basic support for self hosted Weblate"
 msgid "Support for Hosted Weblate services"
-msgstr "Grundlæggende support til egen hosted Weblate"
+msgstr "Support til Hosted Weblate-tjenester"
 
 #: weblate_web/html/support.html:31
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "If you are using our hosting services, you can ask for support at "
 "%(contact)s."
 msgstr ""
-"Hvis du bruger vores hosting-tjenester, kan du bede om support på "
-"%(contact)s."
+"Hvis du bruger vores hostingtjenester, kan du bede om support på %(contact)s."
 
 #: weblate_web/html/support.html:34
-#, fuzzy
-#| msgid "Mailing list"
 msgid "Mailing lists"
-msgstr "Postliste"
+msgstr "Postlister"
 
 #: weblate_web/html/support.html:36
 msgid "Users and developers mailing list"
 msgstr "Postliste for brugere og udviklere"
 
 #: weblate_web/html/support.html:38
-#, fuzzy
-#| msgid ""
-#| "You can use this mailing lists for discussions with other Weblate users "
-#| "and developers."
 msgid ""
 "You can use mailing lists for discussions with other Weblate users and "
 "developers."
 msgstr ""
-"Brug  postlisten for diskussioner med andre Weblate brugere og udviklere."
+"Brug postlister til diskussioner med andre Weblate-brugere og -udviklere."
 
 #: weblate_web/html/support.html:39
 msgid ""
 "You can post to it using <a href=\"mailto:weblate@lists.cihar.com"
 "\">weblate@lists.cihar.com</a> address."
 msgstr ""
-"Skriv til postlisten på adresen <a href=\"mailto:weblate@lists.cihar.com\"> "
-"weblate@lists.cihar.com</a> ."
+"Skriv til postlisten på adressen <a href=\"mailto:weblate@lists.cihar.com\""
+">weblate@lists.cihar.com</a>."
 
 #: weblate_web/html/support.html:40 weblate_web/html/support.html:56
 msgid "You can browse mailing list archives"
@@ -1318,39 +1293,37 @@ msgstr "Gennemse postliste-arkiver"
 
 #: weblate_web/html/support.html:43 weblate_web/html/support.html:59
 msgid "Enter your email"
-msgstr "Indtast e-mail"
+msgstr "Indtast din e-mailadresse"
 
 #: weblate_web/html/support.html:45 weblate_web/html/support.html:61
 msgid "Subscribe"
-msgstr "Tilmeld"
+msgstr "Abonner"
 
 #: weblate_web/html/support.html:52
-#, fuzzy
 msgid "Hosted Weblate Announcements mailing list"
-msgstr "Meddelelses-postliste for Hosted Weblate"
+msgstr "Postliste med bekendtgørelser om Hosted Weblate"
 
 #: weblate_web/html/support.html:54
-#, fuzzy
 msgid ""
 "Low traffic mailing list with announcements about Hosted Weblate services."
-msgstr "Lav trafik postlisten med annonceringer om Hosted Weblate tjenester."
+msgstr "Lavtrafikpostliste med bekendtgørelser om Hosted Weblate-tjenester."
 
 #: weblate_web/html/support.html:55
 msgid "This list is moderated, only selected users can post announcements."
 msgstr ""
-"Listen er modereret, det er kun udvalgte brugere der kan skrive meddelelser."
+"Listen modereres; det er kun udvalgte brugere der kan skrive bekendtgørelser."
 
 #: weblate_web/html/support.html:68
 msgid "Stack Overflow"
-msgstr "Stakoverløb"
+msgstr "Stack Overflow"
 
 #: weblate_web/html/support.html:70
 #, python-format
 msgid ""
 "You can also ask related questions on <a href=\"%(url)s\">Stack Overflow</a>."
 msgstr ""
-"Du kan også stille spørgsmål i forbindelse  med <a href=\"%(url)s"
-"\">Stakoverløb</a>."
+"Du kan også stille relaterede spørgsmål på <a href=\"%(url)s\">Stack "
+"Overflow</a>."
 
 #: weblate_web/html/support.html:72
 msgid "Consulting"
@@ -1358,7 +1331,7 @@ msgstr "Rådgivning"
 
 #: weblate_web/html/support.html:74
 msgid "See our support offerings for self hosted Weblate instances"
-msgstr "Se supporttilbud for egen hosted Weblate installationer"
+msgstr "Se supporttilbud til selvhostede Weblate-instanser"
 
 #: weblate_web/html/support.html:77
 #, python-format
@@ -1387,7 +1360,7 @@ msgstr "Udviklingen af Weblate er baseret på følgende teknologier:"
 
 #: weblate_web/html/thanks.html:26
 msgid "GitHub provides hosting for our source code and issue tracker."
-msgstr "GitHub leverer hosting til vores kildekode og sagshåndtering."
+msgstr "GitHub leverer hosting til vores kildekode og issue tracker."
 
 #: weblate_web/html/thanks.html:30
 msgid "Travis CI is our continuous integration platform."
@@ -1444,50 +1417,42 @@ msgstr "Prøv Weblate"
 
 #: weblate_web/html/try.html:6
 msgid "Weblate is easy to deploy as an appliance."
-msgstr "Weblate har opsætninger som er nemme at implementere."
+msgstr "Weblate er nem at implementere som et redskab."
 
 #: weblate_web/html/try.html:19
 msgid "Demo server"
-msgstr "Demo-server"
+msgstr "Demoserver"
 
 #: weblate_web/html/try.html:22
-#, fuzzy
-#| msgid ""
-#| "You can try how Weblate on our <a href=\"https://demo.weblate.org\">demo "
-#| "server</a>. You can register there and work under your username or just "
-#| "use <code>demo</code> account with <code>demo</code> password."
 msgid ""
 "Try Weblate on the <a href=\"https://demo.weblate.org\">demo server</a>. "
 "Register there and work under your username, or just use username: "
 "<code>demo</code> with password: <code>demo</code>."
 msgstr ""
-"Du kan prøve Weblate på vores <a href=\"https://demo.weblate.org\">demo-"
-"server</a>.  Du kan tilmelde dig der, og arbejde under dit brugernavn eller "
-"blot anvende kontoen <code>demo</code> med adgangskoden <code>demo</code>."
+"Prøv Weblate på <a href=\"https://demo.weblate.org\">demoserveren</a>. "
+"Tilmeld dig og arbejd under dit eget brugernavn, eller brug brugernavnet "
+"<code>demo</code> med adgangskoden <code>demo</code>."
 
 #: weblate_web/html/try.html:25
 msgid ""
 "To test the review workflow there, log in with username: <code>review</"
 "code>, and password: <code>review</code>."
 msgstr ""
-"Test korrekturarbejdsforløb ved at logge ind med Brugernavn: <code>review</"
-"code>, og adgangskode: <code>review</code>."
+"Test korrekturarbejdsforløbet dér ved at logge ind med brugernavnet "
+"<code>review</code> og adgangskoden <code>review</code>."
 
 #: weblate_web/html/try.html:27
 msgid "Appliances"
-msgstr "Systemer"
+msgstr "Anvendelsesområder"
 
 #: weblate_web/html/try.html:30
-#, fuzzy, python-format
-#| msgid ""
-#| "Check our <a href=\"%(download_url)s\">download page</a> for appliances, "
-#| "which provide an easy way to deploy Weblate in the cloud."
+#, python-format
 msgid ""
 "Check out the <a href=\"%(download_url)s\">download page</a> for appliances, "
 "providing an easy way to deploy Weblate in the cloud."
 msgstr ""
-"Tjek vores <a href=\"%(download_url)s\">download-side</a> for opsætninger, "
-"der giver en nem måde at implementere Weblate i skyen."
+"Tjek <a href=\"%(download_url)s\">downloadsiden</a> for anvendelsesområder, "
+"som giver en nem måde at implementere Weblate i skyen."
 
 #: weblate_web/templatetags/downloads.py:40
 #, python-format

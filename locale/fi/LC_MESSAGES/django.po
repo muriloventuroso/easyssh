@@ -6,18 +6,18 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2018-01-10 07:27+0100\n"
-"PO-Revision-Date: 2017-10-11 12:42+0000\n"
+"PO-Revision-Date: 2018-02-02 22:30+0000\n"
 "Last-Translator: Tuomas Harju <tuomas@rtj-group.com>\n"
-"Language-Team: Finnish <https://hosted.weblate.org/projects/weblate/website/"
-"fi/>\n"
+"Language-Team: Finnish "
+"<https://hosted.weblate.org/projects/weblate/website/fi/>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.17-dev\n"
+"X-Generator: Weblate 2.19-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -244,18 +244,14 @@ msgid "Translate"
 msgstr "Käännä"
 
 #: weblate_web/html/contribute.html:17
-#, fuzzy
-#| msgid ""
-#| "You can find more detailed information about this topic in <a href="
-#| "\"https://docs.weblate.org/en/latest/contributing.html\">Contributing "
-#| "chapter</a> of our documentation."
 msgid ""
 "You can find more detailed information about this topic in <a href=\"https://"
 "docs.weblate.org/en/latest/contributing.html\">Contributing chapter</a> of "
 "the documentation."
 msgstr ""
-"Löydät tarkempia tietoja tästä aiheesta <a href=\"https://docs.weblate.org/"
-"en/latest/contributing.html\">Osallistuminen luvussa</a> asiakirjoistamme."
+"Löydät tarkempia tietoja tästä aiheesta dokumentaation <a href=\""
+"https://docs.weblate.org/en/latest/contributing.html\">Osallistuminen "
+"luvusta</a>."
 
 #: weblate_web/html/contribute.html:20 weblate_web/html/download.html:17
 msgid "Code"
@@ -276,16 +272,12 @@ msgid "This website is stored on <a href=\"%(url)s\">GitHub</a> as well:"
 msgstr "Tämä sivusto on tallennettu <a href=\"%(url)s\">GitHubiin</a> samoin:"
 
 #: weblate_web/html/contribute.html:41
-#, fuzzy
-#| msgid ""
-#| "You can translate Weblate using Weblate installation at <a href=\"https://"
-#| "hosted.weblate.org/engage/weblate/\">hosted.weblate.org</a>."
 msgid ""
 "You can translate Weblate at <a href=\"https://hosted.weblate.org/engage/"
 "weblate/\">hosted.weblate.org</a>."
 msgstr ""
-"Voit kääntää Weblate:lla käyttäen Weblate asennusta <a href=\"https://hosted."
-"weblate.org/engage/weblate/\">hosted.weblate.org</a>."
+"Voit kääntää Weblatella osoitteessa <a href=\""
+"https://hosted.weblate.org/engage/weblate/\">hosted.weblate.org</a>."
 
 #: weblate_web/html/contribute.html:46
 msgid "Translation status"
@@ -1262,64 +1254,67 @@ msgstr ""
 "löydät <a href=\"%(docs)s\">dokumentoinnistamme</a>."
 
 #: weblate_web/html/support.html:28
-#, fuzzy
-#| msgid "Basic support for self hosted Weblate"
 msgid "Support for Hosted Weblate services"
-msgstr "Perustason tuki omalle Weblate -asennukselle"
+msgstr "Tuki Weblate -palvelulle"
 
 #: weblate_web/html/support.html:31
 #, python-format
 msgid ""
 "If you are using our hosting services, you can ask for support at "
 "%(contact)s."
-msgstr ""
+msgstr "Jos käytössäsi on palvelumme, voit pyytää apua %(contact)s."
 
 #: weblate_web/html/support.html:34
-#, fuzzy
-#| msgid "Mailing list"
 msgid "Mailing lists"
-msgstr "Postituslista"
+msgstr "Postituslistat"
 
 #: weblate_web/html/support.html:36
 msgid "Users and developers mailing list"
-msgstr ""
+msgstr "Käyttäjien ja kehittäjien postituslista"
 
 #: weblate_web/html/support.html:38
 msgid ""
 "You can use mailing lists for discussions with other Weblate users and "
 "developers."
 msgstr ""
+"Voit käyttää postituslistoja keskusteluun muiden Weblate käyttäjien ja "
+"kehittäjien kanssa."
 
 #: weblate_web/html/support.html:39
 msgid ""
 "You can post to it using <a href=\"mailto:weblate@lists.cihar.com"
 "\">weblate@lists.cihar.com</a> address."
 msgstr ""
+"Voit lähettää sen osoitteeseen <a href=\"mailto:weblate@lists.cihar.com\"> "
+"weblate@lists.cihar.com</a>."
 
 #: weblate_web/html/support.html:40 weblate_web/html/support.html:56
 msgid "You can browse mailing list archives"
-msgstr ""
+msgstr "Voit selailla postituslistojen arkistoja"
 
 #: weblate_web/html/support.html:43 weblate_web/html/support.html:59
 msgid "Enter your email"
-msgstr ""
+msgstr "Anna sähköpostiosoitteesi"
 
 #: weblate_web/html/support.html:45 weblate_web/html/support.html:61
 msgid "Subscribe"
-msgstr ""
+msgstr "Tilaa"
 
 #: weblate_web/html/support.html:52
 msgid "Hosted Weblate Announcements mailing list"
-msgstr ""
+msgstr "Postituslista Weblate -palvelun tiedotteille"
 
 #: weblate_web/html/support.html:54
 msgid ""
 "Low traffic mailing list with announcements about Hosted Weblate services."
 msgstr ""
+"Postituslista harvakseltaan lähetettäville tiedotteille koskien Weblate "
+"-palvelua."
 
 #: weblate_web/html/support.html:55
 msgid "This list is moderated, only selected users can post announcements."
 msgstr ""
+"Tämä lista on moderoitu, vain tietyt käyttäjät voivat lähettää ilmoituksia."
 
 #: weblate_web/html/support.html:68
 msgid "Stack Overflow"
@@ -1433,42 +1428,35 @@ msgid "Demo server"
 msgstr "Demo palvelin"
 
 #: weblate_web/html/try.html:22
-#, fuzzy
-#| msgid ""
-#| "You can try how Weblate on our <a href=\"https://demo.weblate.org\">demo "
-#| "server</a>. You can register there and work under your username or just "
-#| "use <code>demo</code> account with <code>demo</code> password."
 msgid ""
 "Try Weblate on the <a href=\"https://demo.weblate.org\">demo server</a>. "
 "Register there and work under your username, or just use username: "
 "<code>demo</code> with password: <code>demo</code>."
 msgstr ""
 "Voit kokeilla Weblatea <a href=\"https://demo.weblate.org\">demo "
-"palvelimella</a>. Voit rekisteröityä siellä ja työskennellä "
-"käyttäjänimelläsi tai vain käyttää <code>demo</code> käyttäjätiliä "
-"<code>demo</code> salasanan kanssa."
+"palvelimella</a>. Rekisteröidy sinne omalla käyttäjänimelläsi, tai käytä "
+"<code>demo</code> käyttäjätiliä <code>demo</code> salasanan kanssa."
 
 #: weblate_web/html/try.html:25
 msgid ""
 "To test the review workflow there, log in with username: <code>review</"
 "code>, and password: <code>review</code>."
 msgstr ""
+"Testataksesi käännösten tarkistusprosessin, kirjaudu käyttäjänimellä "
+"<code>review</code> ja salasanalla <code>review</code>."
 
 #: weblate_web/html/try.html:27
 msgid "Appliances"
 msgstr "Ohjelmat"
 
 #: weblate_web/html/try.html:30
-#, fuzzy, python-format
-#| msgid ""
-#| "Check our <a href=\"%(download_url)s\">download page</a> for appliances, "
-#| "which provide an easy way to deploy Weblate in the cloud."
+#, python-format
 msgid ""
 "Check out the <a href=\"%(download_url)s\">download page</a> for appliances, "
 "providing an easy way to deploy Weblate in the cloud."
 msgstr ""
-"Tutustu <a href=\"%(download_url)s\">lataussivulla</a> ohjelmiin, jotka "
-"tarjoavat helpon tavan käyttää Weblatea pilvipalvelussa."
+"Tutustu <a href=\"%(download_url)s\">lataussivulla</a> ohjelmiin jotka "
+"tarjoavat helpon tavan käyttää Weblatea pilvipalveluna."
 
 #: weblate_web/templatetags/downloads.py:40
 #, python-format
