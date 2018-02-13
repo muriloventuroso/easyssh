@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2018-01-10 07:27+0100\n"
+"POT-Creation-Date: 2018-02-13 14:01+0100\n"
 "PO-Revision-Date: 2018-01-14 20:35+0000\n"
 "Last-Translator: monolifed <monolifed@gmail.com>\n"
-"Language-Team: English (United Kingdom) "
-"<https://hosted.weblate.org/projects/weblate/website/en_GB/>\n"
+"Language-Team: English (United Kingdom) <https://hosted.weblate.org/projects/"
+"weblate/website/en_GB/>\n"
 "Language: en_GB\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -781,7 +781,7 @@ msgstr "Translation components"
 msgid "Number of translators"
 msgstr "Number of translators"
 
-#: weblate_web/html/hosting.html:105
+#: weblate_web/html/hosting.html:105 weblate_web/html/hosting.html:342
 msgid "User management"
 msgstr "User management"
 
@@ -1073,11 +1073,24 @@ msgstr "Information about your project."
 msgid "Project website."
 msgstr "Project website."
 
-#: weblate_web/html/hosting.html:342
+#: weblate_web/html/hosting.html:345
+msgid ""
+"The free plan does not allow you to change project visibility or to limit "
+"users which can contribute to the translation."
+msgstr ""
+
+#: weblate_web/html/hosting.html:348
+msgid ""
+"This limitation can be lifted by purchasing the \"Basic\" hosting plan - you "
+"will still have free software limits, but you will get extended user "
+"management capabilities."
+msgstr ""
+
+#: weblate_web/html/hosting.html:351
 msgid "Translation workflow"
 msgstr "Translation workflow"
 
-#: weblate_web/html/hosting.html:345
+#: weblate_web/html/hosting.html:354
 msgid ""
 "All translated repositories are available using https protocol with similar "
 "naming as on website - weblate/master translation is published as "
@@ -1089,7 +1102,7 @@ msgstr ""
 "<code>https://hosted.weblate.org/git/weblate/master/</code>. You can figure "
 "out the URL on the component information tab."
 
-#: weblate_web/html/hosting.html:349
+#: weblate_web/html/hosting.html:358
 #, python-format
 msgid ""
 "Weblate can automatically receive changes from major code hosting services, "
@@ -1100,7 +1113,7 @@ msgstr ""
 "see our documentation for setup on <a href=\"%(github)s\">GitHub</a>, <a "
 "href=\"%(bitbucket)s\">Bitbucket</a> or <a href=\"%(gitlab)s\">GitLab</a>."
 
-#: weblate_web/html/hosting.html:353
+#: weblate_web/html/hosting.html:362
 #, python-format
 msgid ""
 "If you want Weblate to automatically push changes as well, add Weblate push "
@@ -1111,11 +1124,11 @@ msgstr ""
 "user to collaborators and let us know you want to use this option. See <a "
 "href=\"%(docs)s\">documentation</a> for more detailed instructions."
 
-#: weblate_web/html/hosting.html:356
+#: weblate_web/html/hosting.html:365
 msgid "Support free hosting"
 msgstr "Support free hosting"
 
-#: weblate_web/html/hosting.html:360
+#: weblate_web/html/hosting.html:369
 #, python-format
 msgid ""
 "The hosting is provided for free, but running the server and maintaining it "
@@ -1126,11 +1139,11 @@ msgstr ""
 "costs some money, so you are welcome to use <a href=\"%(gittip_url)s"
 "\">Liberapay</a> or <a href=\"%(donate_url)s\">other ways to donate</a>."
 
-#: weblate_web/html/hosting.html:364
+#: weblate_web/html/hosting.html:373
 msgid "Self hosting"
 msgstr "Self hosting"
 
-#: weblate_web/html/hosting.html:368
+#: weblate_web/html/hosting.html:377
 #, python-format
 msgid ""
 "You can also <a href=\"%(download_url)s\">download</a> Weblate sources and "
@@ -1141,7 +1154,7 @@ msgstr ""
 "run it on your systems. There are also several options for deploying Weblate "
 "to the cloud."
 
-#: weblate_web/html/hosting.html:372
+#: weblate_web/html/hosting.html:381
 #, python-format
 msgid ""
 "In case you need help with your self hosted solution, we're ready to help as "
@@ -1152,7 +1165,7 @@ msgstr ""
 "well with consulting services tailored for your needs. Please contact <a "
 "href=\"%(contact_url)s\">Michal Čihař</a> for more details."
 
-#: weblate_web/html/hosting.html:375
+#: weblate_web/html/hosting.html:384
 msgid ""
 "All prices exclude VAT, invoices for EU countries are issued as a reverse "
 "charge, invoices for Czech Republic will include additional VAT."

@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2018-01-10 07:27+0100\n"
+"POT-Creation-Date: 2018-02-13 14:01+0100\n"
 "PO-Revision-Date: 2018-01-11 14:36+0000\n"
 "Last-Translator: Vangelis Skarmoutsos <skarmoutsosv@gmail.com>\n"
-"Language-Team: Greek "
-"<https://hosted.weblate.org/projects/weblate/website/el/>\n"
+"Language-Team: Greek <https://hosted.weblate.org/projects/weblate/website/el/"
+">\n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -286,8 +286,8 @@ msgid ""
 "You can translate Weblate at <a href=\"https://hosted.weblate.org/engage/"
 "weblate/\">hosted.weblate.org</a>."
 msgstr ""
-"Μπορείτε να μεταφράσετε το Weblate στο <a href=\""
-"https://hosted.weblate.org/engage/weblate/\">hosted.weblate.org</a>."
+"Μπορείτε να μεταφράσετε το Weblate στο <a href=\"https://hosted.weblate.org/"
+"engage/weblate/\">hosted.weblate.org</a>."
 
 #: weblate_web/html/contribute.html:46
 msgid "Translation status"
@@ -816,7 +816,7 @@ msgstr "Περιεχόμενα μετάφρασης"
 msgid "Number of translators"
 msgstr "Αριθμός μεταφραστών"
 
-#: weblate_web/html/hosting.html:105
+#: weblate_web/html/hosting.html:105 weblate_web/html/hosting.html:342
 msgid "User management"
 msgstr "Διαχείριση χρήστη"
 
@@ -1059,9 +1059,9 @@ msgid ""
 "installing and maintaining it."
 msgstr ""
 "Αν σας ενδιαφέρει η χρήση του Weblate για το ελεύθερο λογισμικό σας, "
-"μπορείτε να ζητήσετε τη φιλοξενία των μεταφράσεων σας στο <a href=\""
-"https://hosted.weblate.org/\">hosted.weblate.org</a>. Αυτό θα σας επιτρέψει "
-"να χρησιμοποιήσετε το Weblate χωρίς την εγκατάσταση και συντήρησή του."
+"μπορείτε να ζητήσετε τη φιλοξενία των μεταφράσεων σας στο <a href=\"https://"
+"hosted.weblate.org/\">hosted.weblate.org</a>. Αυτό θα σας επιτρέψει να "
+"χρησιμοποιήσετε το Weblate χωρίς την εγκατάσταση και συντήρησή του."
 
 #: weblate_web/html/hosting.html:321
 msgid "Conditions for free hosting"
@@ -1109,11 +1109,24 @@ msgstr "Πληροφορίες για το έργο σας."
 msgid "Project website."
 msgstr "Ιστοσελίδα έργου."
 
-#: weblate_web/html/hosting.html:342
+#: weblate_web/html/hosting.html:345
+msgid ""
+"The free plan does not allow you to change project visibility or to limit "
+"users which can contribute to the translation."
+msgstr ""
+
+#: weblate_web/html/hosting.html:348
+msgid ""
+"This limitation can be lifted by purchasing the \"Basic\" hosting plan - you "
+"will still have free software limits, but you will get extended user "
+"management capabilities."
+msgstr ""
+
+#: weblate_web/html/hosting.html:351
 msgid "Translation workflow"
 msgstr "Ροή εργασιών μετάφρασης"
 
-#: weblate_web/html/hosting.html:345
+#: weblate_web/html/hosting.html:354
 msgid ""
 "All translated repositories are available using https protocol with similar "
 "naming as on website - weblate/master translation is published as "
@@ -1125,7 +1138,7 @@ msgstr ""
 "δημοσιευτεί ως <code>https://hosted.weblate.org/git/weblate/master/</code>. "
 "Μπορείτε να βρείτε το URL στην καρτέλα πληροφοριών περιεχομένου."
 
-#: weblate_web/html/hosting.html:349
+#: weblate_web/html/hosting.html:358
 #, python-format
 msgid ""
 "Weblate can automatically receive changes from major code hosting services, "
@@ -1137,7 +1150,7 @@ msgstr ""
 "\">GitHub</a>, στο <a href=\"%(bitbucket)s\">Bitbucket</a> ή στο <a href="
 "\"%(gitlab)s\">GitLab</a>."
 
-#: weblate_web/html/hosting.html:353
+#: weblate_web/html/hosting.html:362
 #, python-format
 msgid ""
 "If you want Weblate to automatically push changes as well, add Weblate push "
@@ -1149,11 +1162,11 @@ msgstr ""
 "θέλετε να χρησιμοποιήσετε αυτή την επιλογή. Δείτε την <a href=\"%(docs)s"
 "\">τεκμηρίωση</a> για περισσότερες λεπτομερείς οδηγίες."
 
-#: weblate_web/html/hosting.html:356
+#: weblate_web/html/hosting.html:365
 msgid "Support free hosting"
 msgstr "Υποστήριξη ελεύθερης φιλοξενίας"
 
-#: weblate_web/html/hosting.html:360
+#: weblate_web/html/hosting.html:369
 #, python-format
 msgid ""
 "The hosting is provided for free, but running the server and maintaining it "
@@ -1165,11 +1178,11 @@ msgstr ""
 "\"%(gittip_url)s\">Liberapay</a> ή <a href=\"%(donate_url)s\">άλλους τρόπους "
 "δωρεάς</a>."
 
-#: weblate_web/html/hosting.html:364
+#: weblate_web/html/hosting.html:373
 msgid "Self hosting"
 msgstr "Αυτοφιλοξενία"
 
-#: weblate_web/html/hosting.html:368
+#: weblate_web/html/hosting.html:377
 #, python-format
 msgid ""
 "You can also <a href=\"%(download_url)s\">download</a> Weblate sources and "
@@ -1180,7 +1193,7 @@ msgstr ""
 "Weblate και να τον τρέξετε στο δίκο σας σύστημα. Υπάρχουν, επίσης, αρκετές "
 "επιλογές για να εφαρμόσετε το Weblate στο σύννεφο."
 
-#: weblate_web/html/hosting.html:372
+#: weblate_web/html/hosting.html:381
 #, python-format
 msgid ""
 "In case you need help with your self hosted solution, we're ready to help as "
@@ -1192,7 +1205,7 @@ msgstr ""
 "ανάγκες σας. Επικοινωνήστε με τον <a href=\"%(contact_url)s\">Michal Čihař</"
 "a> για περισσότερες λεπτομέρειες."
 
-#: weblate_web/html/hosting.html:375
+#: weblate_web/html/hosting.html:384
 msgid ""
 "All prices exclude VAT, invoices for EU countries are issued as a reverse "
 "charge, invoices for Czech Republic will include additional VAT."

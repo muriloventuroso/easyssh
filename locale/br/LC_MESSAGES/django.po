@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-10 07:27+0100\n"
+"Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
+"POT-Creation-Date: 2018-02-13 14:01+0100\n"
 "PO-Revision-Date: 2016-10-28 06:08+0000\n"
 "Last-Translator: Iqbal Mohammad Abdul Ghoni <Iqballmags@gmail.com>\n"
 "Language-Team: Breton <https://hosted.weblate.org/projects/weblate/website/"
@@ -806,7 +806,7 @@ msgstr "Kendestenn ar meneg da dreiñ"
 msgid "Number of translators"
 msgstr ""
 
-#: weblate_web/html/hosting.html:105
+#: weblate_web/html/hosting.html:105 weblate_web/html/hosting.html:342
 msgid "User management"
 msgstr ""
 
@@ -1099,11 +1099,24 @@ msgstr "Titouroù diwar-benn ho raktres."
 msgid "Project website."
 msgstr "Lec'hienn ar raktres."
 
-#: weblate_web/html/hosting.html:342
+#: weblate_web/html/hosting.html:345
+msgid ""
+"The free plan does not allow you to change project visibility or to limit "
+"users which can contribute to the translation."
+msgstr ""
+
+#: weblate_web/html/hosting.html:348
+msgid ""
+"This limitation can be lifted by purchasing the \"Basic\" hosting plan - you "
+"will still have free software limits, but you will get extended user "
+"management capabilities."
+msgstr ""
+
+#: weblate_web/html/hosting.html:351
 msgid "Translation workflow"
 msgstr "Labour treiñ"
 
-#: weblate_web/html/hosting.html:345
+#: weblate_web/html/hosting.html:354
 #, fuzzy
 #| msgid ""
 #| "All translated repositories are available at <code>git.weblate.org</code> "
@@ -1119,7 +1132,7 @@ msgstr ""
 "anvioù damheñvel ouzh hini al lec'hienn web - Embannet e vefe troidigezh "
 "hello/master dindan <code>git://git.weblate.org/hello-master.git</code>."
 
-#: weblate_web/html/hosting.html:349
+#: weblate_web/html/hosting.html:358
 #, python-format
 msgid ""
 "Weblate can automatically receive changes from major code hosting services, "
@@ -1127,7 +1140,7 @@ msgid ""
 "href=\"%(bitbucket)s\">Bitbucket</a> or <a href=\"%(gitlab)s\">GitLab</a>."
 msgstr ""
 
-#: weblate_web/html/hosting.html:353
+#: weblate_web/html/hosting.html:362
 #, python-format
 msgid ""
 "If you want Weblate to automatically push changes as well, add Weblate push "
@@ -1135,11 +1148,11 @@ msgid ""
 "href=\"%(docs)s\">documentation</a> for more detailed instructions."
 msgstr ""
 
-#: weblate_web/html/hosting.html:356
+#: weblate_web/html/hosting.html:365
 msgid "Support free hosting"
 msgstr "Harpit an herberc'hiañ digoust"
 
-#: weblate_web/html/hosting.html:360
+#: weblate_web/html/hosting.html:369
 #, python-format
 msgid ""
 "The hosting is provided for free, but running the server and maintaining it "
@@ -1151,13 +1164,13 @@ msgstr ""
 "\"%(gittip_url)s\">Liberapay</a> pe <a href=\"%(donate_url)s\">pe kavout un "
 "doare bennak da reiñ un draig bennak</a>."
 
-#: weblate_web/html/hosting.html:364
+#: weblate_web/html/hosting.html:373
 #, fuzzy
 #| msgid "Asking for hosting"
 msgid "Self hosting"
 msgstr "Goulenn herberc'hiañ"
 
-#: weblate_web/html/hosting.html:368
+#: weblate_web/html/hosting.html:377
 #, fuzzy, python-format
 #| msgid ""
 #| "Check our <a href=\"%(download_url)s\">download page</a> for appliances, "
@@ -1171,7 +1184,7 @@ msgstr ""
 "arloadegoù; ar re-mañ a bourchas un doare aes da zispakañ Weblate er "
 "goumoulenn."
 
-#: weblate_web/html/hosting.html:372
+#: weblate_web/html/hosting.html:381
 #, python-format
 msgid ""
 "In case you need help with your self hosted solution, we're ready to help as "
@@ -1179,7 +1192,7 @@ msgid ""
 "href=\"%(contact_url)s\">Michal Čihař</a> for more details."
 msgstr ""
 
-#: weblate_web/html/hosting.html:375
+#: weblate_web/html/hosting.html:384
 msgid ""
 "All prices exclude VAT, invoices for EU countries are issued as a reverse "
 "charge, invoices for Czech Republic will include additional VAT."

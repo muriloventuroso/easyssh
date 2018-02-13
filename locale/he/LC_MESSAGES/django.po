@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2018-01-10 07:27+0100\n"
+"POT-Creation-Date: 2018-02-13 14:01+0100\n"
 "PO-Revision-Date: 2018-01-10 08:34+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
-"Language-Team: Hebrew "
-"<https://hosted.weblate.org/projects/weblate/website/he/>\n"
+"Language-Team: Hebrew <https://hosted.weblate.org/projects/weblate/website/"
+"he/>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -755,7 +755,7 @@ msgstr "רכיבי תרגום"
 msgid "Number of translators"
 msgstr "מספר מתרגמים"
 
-#: weblate_web/html/hosting.html:105
+#: weblate_web/html/hosting.html:105 weblate_web/html/hosting.html:342
 msgid "User management"
 msgstr "ניהול משתמשים"
 
@@ -1039,11 +1039,24 @@ msgstr "מידע על המיזם שלך."
 msgid "Project website."
 msgstr "אתר המיזם."
 
-#: weblate_web/html/hosting.html:342
+#: weblate_web/html/hosting.html:345
+msgid ""
+"The free plan does not allow you to change project visibility or to limit "
+"users which can contribute to the translation."
+msgstr ""
+
+#: weblate_web/html/hosting.html:348
+msgid ""
+"This limitation can be lifted by purchasing the \"Basic\" hosting plan - you "
+"will still have free software limits, but you will get extended user "
+"management capabilities."
+msgstr ""
+
+#: weblate_web/html/hosting.html:351
 msgid "Translation workflow"
 msgstr "מהלך תרגום"
 
-#: weblate_web/html/hosting.html:345
+#: weblate_web/html/hosting.html:354
 msgid ""
 "All translated repositories are available using https protocol with similar "
 "naming as on website - weblate/master translation is published as "
@@ -1054,7 +1067,7 @@ msgstr ""
 "התרגום weblate/master מפורסם בתור <code>https://hosted.weblate.org/git/"
 "weblate/master/</code>. ניתן לצפות בכתובת בלשונית פרטי הרכיב."
 
-#: weblate_web/html/hosting.html:349
+#: weblate_web/html/hosting.html:358
 #, python-format
 msgid ""
 "Weblate can automatically receive changes from major code hosting services, "
@@ -1065,7 +1078,7 @@ msgstr ""
 "בתיעוד שלנו להתקנת <a href=\"%(github)s\">GitHub</a>, ‏<a href=\"%(bitbucket)s"
 "\">Bitbucket</a> או <a href=\"%(gitlab)s\">GitLab</a>."
 
-#: weblate_web/html/hosting.html:353
+#: weblate_web/html/hosting.html:362
 #, python-format
 msgid ""
 "If you want Weblate to automatically push changes as well, add Weblate push "
@@ -1076,11 +1089,11 @@ msgstr ""
 "Weblate למשתתפים וליידע אותנו שברצונך להשתמש באופשרות הזאת. יש לעיין ב<a "
 "href=\"%(docs)s\">תיעוד</a> לקבלת הנחיות מפורטות יותר."
 
-#: weblate_web/html/hosting.html:356
+#: weblate_web/html/hosting.html:365
 msgid "Support free hosting"
 msgstr "לתמיכה באירוח חופשי"
 
-#: weblate_web/html/hosting.html:360
+#: weblate_web/html/hosting.html:369
 #, python-format
 msgid ""
 "The hosting is provided for free, but running the server and maintaining it "
@@ -1091,11 +1104,11 @@ msgstr ""
 "<a href=\"%(gittip_url)s\">Liberapay</a> או <a href=\"%(donate_url)s"
 "\">בדרכים אחרות</a>."
 
-#: weblate_web/html/hosting.html:364
+#: weblate_web/html/hosting.html:373
 msgid "Self hosting"
 msgstr "אירוח עצמי"
 
-#: weblate_web/html/hosting.html:368
+#: weblate_web/html/hosting.html:377
 #, python-format
 msgid ""
 "You can also <a href=\"%(download_url)s\">download</a> Weblate sources and "
@@ -1105,7 +1118,7 @@ msgstr ""
 "ניתן גם <a href=\"%(download_url)s\">להוריד</a> את קוד המקור של Weblate "
 "ולהריץ אותה על המערכות שלך. ישנן גם מספר אפשרויות של הטמעת Weblate בענן."
 
-#: weblate_web/html/hosting.html:372
+#: weblate_web/html/hosting.html:381
 #, python-format
 msgid ""
 "In case you need help with your self hosted solution, we're ready to help as "
@@ -1116,7 +1129,7 @@ msgstr ""
 "ייעוץ לפי מידותיך. נא ליצור קשר עם <a href=\"%(contact_url)s\">Michal Čihař</"
 "a> לפרטים נוספים."
 
-#: weblate_web/html/hosting.html:375
+#: weblate_web/html/hosting.html:384
 msgid ""
 "All prices exclude VAT, invoices for EU countries are issued as a reverse "
 "charge, invoices for Czech Republic will include additional VAT."

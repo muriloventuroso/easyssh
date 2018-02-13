@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2018-01-10 07:27+0100\n"
+"POT-Creation-Date: 2018-02-13 14:01+0100\n"
 "PO-Revision-Date: 2018-02-03 19:17+0000\n"
 "Last-Translator: Jesper Hertel <jesper.hertel@gmail.com>\n"
-"Language-Team: Norwegian Bokmål "
-"<https://hosted.weblate.org/projects/weblate/website/nb/>\n"
+"Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/weblate/"
+"website/nb/>\n"
 "Language: nb\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -785,7 +785,7 @@ msgstr "Oversettelseskomponenter"
 msgid "Number of translators"
 msgstr "Antall Oversettere"
 
-#: weblate_web/html/hosting.html:105
+#: weblate_web/html/hosting.html:105 weblate_web/html/hosting.html:342
 msgid "User management"
 msgstr "Brukeradministrasjon"
 
@@ -1074,11 +1074,24 @@ msgstr "Informasjon om ditt prosjekt."
 msgid "Project website."
 msgstr "Prosjekt nettside."
 
-#: weblate_web/html/hosting.html:342
+#: weblate_web/html/hosting.html:345
+msgid ""
+"The free plan does not allow you to change project visibility or to limit "
+"users which can contribute to the translation."
+msgstr ""
+
+#: weblate_web/html/hosting.html:348
+msgid ""
+"This limitation can be lifted by purchasing the \"Basic\" hosting plan - you "
+"will still have free software limits, but you will get extended user "
+"management capabilities."
+msgstr ""
+
+#: weblate_web/html/hosting.html:351
 msgid "Translation workflow"
 msgstr "Oversettelsesarbeidsflyt"
 
-#: weblate_web/html/hosting.html:345
+#: weblate_web/html/hosting.html:354
 msgid ""
 "All translated repositories are available using https protocol with similar "
 "naming as on website - weblate/master translation is published as "
@@ -1090,7 +1103,7 @@ msgstr ""
 "<code>https://hosted.weblate.org/git/weblate/master/</code>.  Du kan finne "
 "ut URL-en i komponent-informasjonsfanen."
 
-#: weblate_web/html/hosting.html:349
+#: weblate_web/html/hosting.html:358
 #, python-format
 msgid ""
 "Weblate can automatically receive changes from major code hosting services, "
@@ -1101,7 +1114,7 @@ msgstr ""
 "se vår dokumentasjon for oppsett på <a href=\"%(github)s\">GitHub</a>, <a "
 "href=\"%(bitbucket)s\">Bitbucket</a> eller <a href=\"%(gitlab)s\">GitLab</a>."
 
-#: weblate_web/html/hosting.html:353
+#: weblate_web/html/hosting.html:362
 #, python-format
 msgid ""
 "If you want Weblate to automatically push changes as well, add Weblate push "
@@ -1113,11 +1126,11 @@ msgstr ""
 "til oss om det. Se <a href=\"%(docs)s\">dokumentasjonen</a> for mer "
 "detaljerte instruksjoner."
 
-#: weblate_web/html/hosting.html:356
+#: weblate_web/html/hosting.html:365
 msgid "Support free hosting"
 msgstr "Støtt fri lagring"
 
-#: weblate_web/html/hosting.html:360
+#: weblate_web/html/hosting.html:369
 #, python-format
 msgid ""
 "The hosting is provided for free, but running the server and maintaining it "
@@ -1128,11 +1141,11 @@ msgstr ""
 "tjeneren, så du må gjerne donere penger med <a href=\"%(gittip_url)s"
 "\">Liberapay</a> eller <a href=\"%(donate_url)s\"></a>."
 
-#: weblate_web/html/hosting.html:364
+#: weblate_web/html/hosting.html:373
 msgid "Self hosting"
 msgstr "Egen-vertslagring"
 
-#: weblate_web/html/hosting.html:368
+#: weblate_web/html/hosting.html:377
 #, python-format
 msgid ""
 "You can also <a href=\"%(download_url)s\">download</a> Weblate sources and "
@@ -1143,7 +1156,7 @@ msgstr ""
 "og kjøre det på dine maskiner. Det er også flere muligheter for "
 "implementering av Weblate i skyen."
 
-#: weblate_web/html/hosting.html:372
+#: weblate_web/html/hosting.html:381
 #, python-format
 msgid ""
 "In case you need help with your self hosted solution, we're ready to help as "
@@ -1154,7 +1167,7 @@ msgstr ""
 "hjelpe deg med rådgivning skreddersydd dine behov. Kontakt <a href="
 "\"%(contact_url)s\"> Michal Čihař</a> for flere detaljer."
 
-#: weblate_web/html/hosting.html:375
+#: weblate_web/html/hosting.html:384
 msgid ""
 "All prices exclude VAT, invoices for EU countries are issued as a reverse "
 "charge, invoices for Czech Republic will include additional VAT."
@@ -1270,8 +1283,8 @@ msgid ""
 "You can use mailing lists for discussions with other Weblate users and "
 "developers."
 msgstr ""
-"Du kan bruke e-postlister for diskusjoner med andre Weblate-brukere og "
-"-utviklere."
+"Du kan bruke e-postlister for diskusjoner med andre Weblate-brukere og -"
+"utviklere."
 
 #: weblate_web/html/support.html:39
 msgid ""

@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2018-01-10 07:27+0100\n"
+"POT-Creation-Date: 2018-02-13 14:01+0100\n"
 "PO-Revision-Date: 2018-01-11 14:36+0000\n"
 "Last-Translator: Balázs Úr <urbalazs@gmail.com>\n"
-"Language-Team: Hungarian "
-"<https://hosted.weblate.org/projects/weblate/website/hu/>\n"
+"Language-Team: Hungarian <https://hosted.weblate.org/projects/weblate/"
+"website/hu/>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -248,9 +248,8 @@ msgid ""
 "docs.weblate.org/en/latest/contributing.html\">Contributing chapter</a> of "
 "the documentation."
 msgstr ""
-"Erről a témáról további részleteket talál a dokumentáció <a href=\""
-"https://docs.weblate.org/en/latest/contributing.html\">Közreműködés "
-"fejezetében</a>."
+"Erről a témáról további részleteket talál a dokumentáció <a href=\"https://"
+"docs.weblate.org/en/latest/contributing.html\">Közreműködés fejezetében</a>."
 
 #: weblate_web/html/contribute.html:20 weblate_web/html/download.html:17
 msgid "Code"
@@ -275,8 +274,8 @@ msgid ""
 "You can translate Weblate at <a href=\"https://hosted.weblate.org/engage/"
 "weblate/\">hosted.weblate.org</a>."
 msgstr ""
-"Lefordíthatja a Weblate programot a <a href=\""
-"https://hosted.weblate.org/engage/weblate/\">hosted.weblate.org</a> oldalon."
+"Lefordíthatja a Weblate programot a <a href=\"https://hosted.weblate.org/"
+"engage/weblate/\">hosted.weblate.org</a> oldalon."
 
 #: weblate_web/html/contribute.html:46
 msgid "Translation status"
@@ -776,7 +775,7 @@ msgstr "Fordítási komponensek"
 msgid "Number of translators"
 msgstr "Fordítók száma"
 
-#: weblate_web/html/hosting.html:105
+#: weblate_web/html/hosting.html:105 weblate_web/html/hosting.html:342
 msgid "User management"
 msgstr "Felhasználók kezelése"
 
@@ -1069,11 +1068,24 @@ msgstr "Információ az Ön projektjéről."
 msgid "Project website."
 msgstr "Projekt weboldala."
 
-#: weblate_web/html/hosting.html:342
+#: weblate_web/html/hosting.html:345
+msgid ""
+"The free plan does not allow you to change project visibility or to limit "
+"users which can contribute to the translation."
+msgstr ""
+
+#: weblate_web/html/hosting.html:348
+msgid ""
+"This limitation can be lifted by purchasing the \"Basic\" hosting plan - you "
+"will still have free software limits, but you will get extended user "
+"management capabilities."
+msgstr ""
+
+#: weblate_web/html/hosting.html:351
 msgid "Translation workflow"
 msgstr "Fordítási folyamat"
 
-#: weblate_web/html/hosting.html:345
+#: weblate_web/html/hosting.html:354
 #, fuzzy
 #| msgid ""
 #| "All translated repositories are available at <code>git.weblate.org</code> "
@@ -1089,7 +1101,7 @@ msgstr ""
 "weboldalhoz hasonló elnevezéssel - a hello/master fordítás <code>git://git."
 "weblate.org/hello-master.git</code> néven lesz publikálva."
 
-#: weblate_web/html/hosting.html:349
+#: weblate_web/html/hosting.html:358
 #, python-format
 msgid ""
 "Weblate can automatically receive changes from major code hosting services, "
@@ -1101,7 +1113,7 @@ msgstr ""
 "\"%(bitbucket)s\">Bitbucket</a> vagy <a href=\"%(gitlab)s\">GitLab</a> "
 "beállításokat lásd a dokumentációnkban."
 
-#: weblate_web/html/hosting.html:353
+#: weblate_web/html/hosting.html:362
 #, python-format
 msgid ""
 "If you want Weblate to automatically push changes as well, add Weblate push "
@@ -1113,11 +1125,11 @@ msgstr ""
 "értesítsen minket arról, hogy igényli ezt a lehetőséget. További "
 "információért tekintse meg a <a href=\"%(docs)s\">dokumentációnkat</a>."
 
-#: weblate_web/html/hosting.html:356
+#: weblate_web/html/hosting.html:365
 msgid "Support free hosting"
 msgstr "Támogassa az ingyenes elhelyezést"
 
-#: weblate_web/html/hosting.html:360
+#: weblate_web/html/hosting.html:369
 #, python-format
 msgid ""
 "The hosting is provided for free, but running the server and maintaining it "
@@ -1129,11 +1141,11 @@ msgstr ""
 "segítségével vagy <a href=\"%(donate_url)s\">más módon</a> tett anyagi "
 "felajánlásokat."
 
-#: weblate_web/html/hosting.html:364
+#: weblate_web/html/hosting.html:373
 msgid "Self hosting"
 msgstr "Saját hosting"
 
-#: weblate_web/html/hosting.html:368
+#: weblate_web/html/hosting.html:377
 #, python-format
 msgid ""
 "You can also <a href=\"%(download_url)s\">download</a> Weblate sources and "
@@ -1144,7 +1156,7 @@ msgstr ""
 "futtathatja saját rendszerein. Számos lehetőség van a Weblate felhőbe "
 "helyezésére is."
 
-#: weblate_web/html/hosting.html:372
+#: weblate_web/html/hosting.html:381
 #, python-format
 msgid ""
 "In case you need help with your self hosted solution, we're ready to help as "
@@ -1152,7 +1164,7 @@ msgid ""
 "href=\"%(contact_url)s\">Michal Čihař</a> for more details."
 msgstr ""
 
-#: weblate_web/html/hosting.html:375
+#: weblate_web/html/hosting.html:384
 msgid ""
 "All prices exclude VAT, invoices for EU countries are issued as a reverse "
 "charge, invoices for Czech Republic will include additional VAT."

@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2018-01-10 07:27+0100\n"
+"POT-Creation-Date: 2018-02-13 14:01+0100\n"
 "PO-Revision-Date: 2018-02-08 18:36+0000\n"
 "Last-Translator: Andreas Kleinert <Andy.Kleinert@gmail.com>\n"
-"Language-Team: German "
-"<https://hosted.weblate.org/projects/weblate/website/de/>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/weblate/website/"
+"de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -815,7 +815,7 @@ msgstr "Übersetzungskomponenten"
 msgid "Number of translators"
 msgstr "Anzahl der Übersetzer"
 
-#: weblate_web/html/hosting.html:105
+#: weblate_web/html/hosting.html:105 weblate_web/html/hosting.html:342
 msgid "User management"
 msgstr "Nutzerverwaltung"
 
@@ -1122,11 +1122,24 @@ msgstr "Grundlegende Informationen über Ihr Projekt."
 msgid "Project website."
 msgstr "Projekt-Website"
 
-#: weblate_web/html/hosting.html:342
+#: weblate_web/html/hosting.html:345
+msgid ""
+"The free plan does not allow you to change project visibility or to limit "
+"users which can contribute to the translation."
+msgstr ""
+
+#: weblate_web/html/hosting.html:348
+msgid ""
+"This limitation can be lifted by purchasing the \"Basic\" hosting plan - you "
+"will still have free software limits, but you will get extended user "
+"management capabilities."
+msgstr ""
+
+#: weblate_web/html/hosting.html:351
 msgid "Translation workflow"
 msgstr "Ablauf der Übersetzung"
 
-#: weblate_web/html/hosting.html:345
+#: weblate_web/html/hosting.html:354
 msgid ""
 "All translated repositories are available using https protocol with similar "
 "naming as on website - weblate/master translation is published as "
@@ -1139,7 +1152,7 @@ msgstr ""
 "weblate/master/</code>. Die genaue Adresse lässt sich im Komponenten-"
 "Informations-Reiter ablesen."
 
-#: weblate_web/html/hosting.html:349
+#: weblate_web/html/hosting.html:358
 #, python-format
 msgid ""
 "Weblate can automatically receive changes from major code hosting services, "
@@ -1151,7 +1164,7 @@ msgstr ""
 "\"%(github)s\">GitHub</a>, <a href=\"%(bitbucket)s\">Bitbucket</a> oder <a "
 "href=\"%(gitlab)s\">GitLab</a>."
 
-#: weblate_web/html/hosting.html:353
+#: weblate_web/html/hosting.html:362
 #, python-format
 msgid ""
 "If you want Weblate to automatically push changes as well, add Weblate push "
@@ -1164,11 +1177,11 @@ msgstr ""
 "möchten. Die <a href=\"%(docs)s\">Dokumentation</a> bietet hierzu "
 "zusätzliche Informationen."
 
-#: weblate_web/html/hosting.html:356
+#: weblate_web/html/hosting.html:365
 msgid "Support free hosting"
 msgstr "Unterstützen Sie kostenloses Hosting"
 
-#: weblate_web/html/hosting.html:360
+#: weblate_web/html/hosting.html:369
 #, python-format
 msgid ""
 "The hosting is provided for free, but running the server and maintaining it "
@@ -1180,11 +1193,11 @@ msgstr ""
 "\">Liberapay</a> oder <a href=\"%(donate_url)s\">auf anderen Wegen</a> "
 "jederzeit willkommen."
 
-#: weblate_web/html/hosting.html:364
+#: weblate_web/html/hosting.html:373
 msgid "Self hosting"
 msgstr "Selbst hosten"
 
-#: weblate_web/html/hosting.html:368
+#: weblate_web/html/hosting.html:377
 #, python-format
 msgid ""
 "You can also <a href=\"%(download_url)s\">download</a> Weblate sources and "
@@ -1195,7 +1208,7 @@ msgstr ""
 "\">herunterladen</a> und auf Ihrem System ausführen. Es gibt zudem "
 "verschiedene Möglichkeiten, um Weblate in der Cloud zu betreiben."
 
-#: weblate_web/html/hosting.html:372
+#: weblate_web/html/hosting.html:381
 #, python-format
 msgid ""
 "In case you need help with your self hosted solution, we're ready to help as "
@@ -1207,7 +1220,7 @@ msgstr ""
 "Beratungsdienstleistungen. Bitte kontaktieren Sie hierzu <a href="
 "\"%(contact_url)s\">Michal Čihař</a> für weitere Details."
 
-#: weblate_web/html/hosting.html:375
+#: weblate_web/html/hosting.html:384
 msgid ""
 "All prices exclude VAT, invoices for EU countries are issued as a reverse "
 "charge, invoices for Czech Republic will include additional VAT."
@@ -1493,9 +1506,9 @@ msgid ""
 "Register there and work under your username, or just use username: "
 "<code>demo</code> with password: <code>demo</code>."
 msgstr ""
-"Probieren Sie Weblate auf dem <a href=\"https://demo.weblate.org\""
-">Demoserver</a> aus. Registrieren Sie sich dort und arbeiten Sie unter Ihrem "
-"Benutzernamen, oder verwenden Sie einfach den Benutzernamen: "
+"Probieren Sie Weblate auf dem <a href=\"https://demo.weblate.org"
+"\">Demoserver</a> aus. Registrieren Sie sich dort und arbeiten Sie unter "
+"Ihrem Benutzernamen, oder verwenden Sie einfach den Benutzernamen: "
 "<code>demo</code> mit Passwort: <code>demo</code>."
 
 #: weblate_web/html/try.html:25

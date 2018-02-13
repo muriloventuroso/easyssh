@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-10 07:27+0100\n"
+"Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
+"POT-Creation-Date: 2018-02-13 14:01+0100\n"
 "PO-Revision-Date: 2017-05-31 20:24+0000\n"
 "Last-Translator: Слободан Симић(Slobodan Simić) <slsimic@gmail.com>\n"
 "Language-Team: Serbian <https://hosted.weblate.org/projects/weblate/website/"
@@ -781,7 +781,7 @@ msgstr "Преводилачке компоненте"
 msgid "Number of translators"
 msgstr "Број преводилаца"
 
-#: weblate_web/html/hosting.html:105
+#: weblate_web/html/hosting.html:105 weblate_web/html/hosting.html:342
 msgid "User management"
 msgstr "Управљање корисницима"
 
@@ -1076,11 +1076,24 @@ msgstr "Подаци о вашем пројекту."
 msgid "Project website."
 msgstr "Веб сајт пројекта."
 
-#: weblate_web/html/hosting.html:342
+#: weblate_web/html/hosting.html:345
+msgid ""
+"The free plan does not allow you to change project visibility or to limit "
+"users which can contribute to the translation."
+msgstr ""
+
+#: weblate_web/html/hosting.html:348
+msgid ""
+"This limitation can be lifted by purchasing the \"Basic\" hosting plan - you "
+"will still have free software limits, but you will get extended user "
+"management capabilities."
+msgstr ""
+
+#: weblate_web/html/hosting.html:351
 msgid "Translation workflow"
 msgstr "Ток превођења"
 
-#: weblate_web/html/hosting.html:345
+#: weblate_web/html/hosting.html:354
 msgid ""
 "All translated repositories are available using https protocol with similar "
 "naming as on website - weblate/master translation is published as "
@@ -1092,7 +1105,7 @@ msgstr ""
 "<code>https://hosted.weblate.org/git/weblate/master/</code>. УРЛ можете "
 "закључити из информативног језичка компоненте."
 
-#: weblate_web/html/hosting.html:349
+#: weblate_web/html/hosting.html:358
 #, python-format
 msgid ""
 "Weblate can automatically receive changes from major code hosting services, "
@@ -1103,7 +1116,7 @@ msgstr ""
 "За подешавање погледајте документацију <a href=\"%(github)s\">Гитхаб</a>, <a "
 "href=\"%(bitbucket)s\">Битбакет</a> или <a href=\"%(gitlab)s\">Гитлаб</a>."
 
-#: weblate_web/html/hosting.html:353
+#: weblate_web/html/hosting.html:362
 #, python-format
 msgid ""
 "If you want Weblate to automatically push changes as well, add Weblate push "
@@ -1114,11 +1127,11 @@ msgstr ""
 "сараднике и јавите нам да желите да користите ову опцију. Погледајте <a href="
 "\"%(docs)s\">документацију</a> за детаљна упутства."
 
-#: weblate_web/html/hosting.html:356
+#: weblate_web/html/hosting.html:365
 msgid "Support free hosting"
 msgstr "Подржите бесплатан хостинг"
 
-#: weblate_web/html/hosting.html:360
+#: weblate_web/html/hosting.html:369
 #, python-format
 msgid ""
 "The hosting is provided for free, but running the server and maintaining it "
@@ -1129,11 +1142,11 @@ msgstr ""
 "\"%(gittip_url)s\">Гратипејом</a> или <a href=\"%(donate_url)s\">на други "
 "начин</a> добродошла."
 
-#: weblate_web/html/hosting.html:364
+#: weblate_web/html/hosting.html:373
 msgid "Self hosting"
 msgstr "Сопствени хостинг"
 
-#: weblate_web/html/hosting.html:368
+#: weblate_web/html/hosting.html:377
 #, python-format
 msgid ""
 "You can also <a href=\"%(download_url)s\">download</a> Weblate sources and "
@@ -1144,7 +1157,7 @@ msgstr ""
 "кôд и покренете га на вашем систему. Такође постоји неколико могућности за "
 "употребу Веблејта у облаку."
 
-#: weblate_web/html/hosting.html:372
+#: weblate_web/html/hosting.html:381
 #, python-format
 msgid ""
 "In case you need help with your self hosted solution, we're ready to help as "
@@ -1156,7 +1169,7 @@ msgstr ""
 "Контактирајте <a href=\"%(contact_url)s\">Михала Чихара (Michal Čihař)</a> "
 "за више детаља."
 
-#: weblate_web/html/hosting.html:375
+#: weblate_web/html/hosting.html:384
 msgid ""
 "All prices exclude VAT, invoices for EU countries are issued as a reverse "
 "charge, invoices for Czech Republic will include additional VAT."

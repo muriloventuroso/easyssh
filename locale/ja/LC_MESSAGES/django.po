@@ -6,11 +6,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: weblate-website-ja\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2018-01-10 07:27+0100\n"
+"POT-Creation-Date: 2018-02-13 14:01+0100\n"
 "PO-Revision-Date: 2018-01-10 10:59+0000\n"
 "Last-Translator: Yasuhiko Kamata <belphegor@belbel.or.jp>\n"
-"Language-Team: Japanese "
-"<https://hosted.weblate.org/projects/weblate/website/ja/>\n"
+"Language-Team: Japanese <https://hosted.weblate.org/projects/weblate/website/"
+"ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -797,7 +797,7 @@ msgstr "翻訳のコンポーネント数"
 msgid "Number of translators"
 msgstr "翻訳者数"
 
-#: weblate_web/html/hosting.html:105
+#: weblate_web/html/hosting.html:105 weblate_web/html/hosting.html:342
 msgid "User management"
 msgstr "ユーザ管理"
 
@@ -1091,11 +1091,24 @@ msgstr "プロジェクトについての情報。"
 msgid "Project website."
 msgstr "プロジェクトのウェブサイト。"
 
-#: weblate_web/html/hosting.html:342
+#: weblate_web/html/hosting.html:345
+msgid ""
+"The free plan does not allow you to change project visibility or to limit "
+"users which can contribute to the translation."
+msgstr ""
+
+#: weblate_web/html/hosting.html:348
+msgid ""
+"This limitation can be lifted by purchasing the \"Basic\" hosting plan - you "
+"will still have free software limits, but you will get extended user "
+"management capabilities."
+msgstr ""
+
+#: weblate_web/html/hosting.html:351
 msgid "Translation workflow"
 msgstr "翻訳のワークフロー"
 
-#: weblate_web/html/hosting.html:345
+#: weblate_web/html/hosting.html:354
 msgid ""
 "All translated repositories are available using https protocol with similar "
 "naming as on website - weblate/master translation is published as "
@@ -1107,7 +1120,7 @@ msgstr ""
 "<code>https://hosted.weblate.org/git/weblate/master/</code> で公開されます。"
 "この情報は、コンポーネントの情報タブで確認することができます。"
 
-#: weblate_web/html/hosting.html:349
+#: weblate_web/html/hosting.html:358
 #, python-format
 msgid ""
 "Weblate can automatically receive changes from major code hosting services, "
@@ -1119,7 +1132,7 @@ msgstr ""
 "\">GitHub</a>, <a href=\"%(bitbucket)s\">Bitbucket</a>, <a href=\"%(gitlab)s"
 "\">GitLab</a> の各ドキュメンテーションをお読みください。"
 
-#: weblate_web/html/hosting.html:353
+#: weblate_web/html/hosting.html:362
 #, python-format
 msgid ""
 "If you want Weblate to automatically push changes as well, add Weblate push "
@@ -1131,11 +1144,11 @@ msgstr ""
 "さい。詳しい手順については <a href=\"%(docs)s\">ドキュメンテーション</a> をお"
 "読みください。"
 
-#: weblate_web/html/hosting.html:356
+#: weblate_web/html/hosting.html:365
 msgid "Support free hosting"
 msgstr "無料ホスティングを支援する"
 
-#: weblate_web/html/hosting.html:360
+#: weblate_web/html/hosting.html:369
 #, python-format
 msgid ""
 "The hosting is provided for free, but running the server and maintaining it "
@@ -1146,11 +1159,11 @@ msgstr ""
 "かかります。そのため、 <a href=\"%(gittip_url)s\">Liberapay</a> や <a href="
 "\"%(donate_url)s\">他の方法</a> によるご寄付をお願いしております。"
 
-#: weblate_web/html/hosting.html:364
+#: weblate_web/html/hosting.html:373
 msgid "Self hosting"
 msgstr "独自ホスティング"
 
-#: weblate_web/html/hosting.html:368
+#: weblate_web/html/hosting.html:377
 #, python-format
 msgid ""
 "You can also <a href=\"%(download_url)s\">download</a> Weblate sources and "
@@ -1161,7 +1174,7 @@ msgstr ""
 "お使いのシステムで動作させることもできます。また、クラウド内に Weblate を配置"
 "したい場合は、いくつかの選択肢があります。"
 
-#: weblate_web/html/hosting.html:372
+#: weblate_web/html/hosting.html:381
 #, python-format
 msgid ""
 "In case you need help with your self hosted solution, we're ready to help as "
@@ -1172,7 +1185,7 @@ msgstr ""
 "要件に応じてコンサルティングサービスを提供することができます。詳しくは <a "
 "href=\"%(contact_url)s\">Michal Čihař</a> 宛にご連絡ください。"
 
-#: weblate_web/html/hosting.html:375
+#: weblate_web/html/hosting.html:384
 msgid ""
 "All prices exclude VAT, invoices for EU countries are issued as a reverse "
 "charge, invoices for Czech Republic will include additional VAT."
@@ -1289,7 +1302,9 @@ msgstr "ユーザおよび開発者向けのメーリングリスト"
 msgid ""
 "You can use mailing lists for discussions with other Weblate users and "
 "developers."
-msgstr "メーリングリストを利用することで、 Weblate の他の利用者や開発者との間で議論を行なうことができます。"
+msgstr ""
+"メーリングリストを利用することで、 Weblate の他の利用者や開発者との間で議論を"
+"行なうことができます。"
 
 #: weblate_web/html/support.html:39
 msgid ""
