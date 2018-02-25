@@ -7,17 +7,17 @@ msgstr ""
 "Project-Id-Version: Weblate 1.2\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2018-02-13 14:01+0100\n"
-"PO-Revision-Date: 2018-01-10 06:25+0000\n"
-"Last-Translator: anonymous <>\n"
-"Language-Team: Polish <https://hosted.weblate.org/projects/weblate/website/"
-"pl/>\n"
+"PO-Revision-Date: 2018-02-25 11:27+0000\n"
+"Last-Translator: Stanisław Krukowski <pet209a1@riseup.net>\n"
+"Language-Team: Polish "
+"<https://hosted.weblate.org/projects/weblate/website/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 2.19-dev\n"
+"X-Generator: Weblate 2.20-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -1107,6 +1107,8 @@ msgid ""
 "The free plan does not allow you to change project visibility or to limit "
 "users which can contribute to the translation."
 msgstr ""
+"Plan darmowy nie pozwala na zmianę widzialności projektu lub na ograniczanie "
+"użytkowników, mogących się przyczyniać do tłumaczenia."
 
 #: weblate_web/html/hosting.html:348
 msgid ""
@@ -1114,6 +1116,9 @@ msgid ""
 "will still have free software limits, but you will get extended user "
 "management capabilities."
 msgstr ""
+"To ograniczenie można znieść, kupując \"Podstawowy\" (\"Basic\") plan "
+"hostingowy - nadal będziesz mieć wolne limity oprogramowania, ale dostaniesz "
+"rozszerzone możliwości zarządzania użytkownikami."
 
 #: weblate_web/html/hosting.html:351
 msgid "Translation workflow"
@@ -1312,16 +1317,12 @@ msgid "Users and developers mailing list"
 msgstr "Lista mailingowa użytkowników i deweloperów"
 
 #: weblate_web/html/support.html:38
-#, fuzzy
-#| msgid ""
-#| "You can use this mailing lists for discussions with other Weblate users "
-#| "and developers."
 msgid ""
 "You can use mailing lists for discussions with other Weblate users and "
 "developers."
 msgstr ""
-"Możesz użyć tych list dyskusyjnych do dyskusji z innymi użytkownikami i "
-"deweloperami Weblate."
+"Możesz użyć list dyskusyjnych do dyskusji z innymi użytkownikami i twórcami "
+"Weblate."
 
 #: weblate_web/html/support.html:39
 msgid ""
@@ -1477,42 +1478,36 @@ msgid "Demo server"
 msgstr "Serwer demo"
 
 #: weblate_web/html/try.html:22
-#, fuzzy
-#| msgid ""
-#| "You can try how Weblate on our <a href=\"https://demo.weblate.org\">demo "
-#| "server</a>. You can register there and work under your username or just "
-#| "use <code>demo</code> account with <code>demo</code> password."
 msgid ""
 "Try Weblate on the <a href=\"https://demo.weblate.org\">demo server</a>. "
 "Register there and work under your username, or just use username: "
 "<code>demo</code> with password: <code>demo</code>."
 msgstr ""
-"Możesz sprawdzić, jak działa Weblate na naszym <a href=\"https://demo."
-"weblate.org\">serwerze demo</a>. Możesz zarejestrować się tam na podstawie "
-"twojej nazwy użytkownika lub po prostu użyć naszego konta <code>demo</code> "
-"i hasła <code>demo</code>."
+"Sprawdź Weblate na naszym \n"
+"<a href=\"https://demo.weblate.org\">serwerze demo</a>. Zarejestruj się tam "
+"na podstawie twojej nazwy użytkownika lub po prostu użyj naszego konta "
+"<code>demo</code> i hasła <code>demo</code>."
 
 #: weblate_web/html/try.html:25
 msgid ""
 "To test the review workflow there, log in with username: <code>review</"
 "code>, and password: <code>review</code>."
 msgstr ""
+"Aby przetestować tam przegląd przepływu pracy, zaloguj się nazwą użytkownika:"
+" <code>review</code> i hasłem: <code>review</code>."
 
 #: weblate_web/html/try.html:27
 msgid "Appliances"
 msgstr "Obrazy"
 
 #: weblate_web/html/try.html:30
-#, fuzzy, python-format
-#| msgid ""
-#| "Check our <a href=\"%(download_url)s\">download page</a> for appliances, "
-#| "which provide an easy way to deploy Weblate in the cloud."
+#, python-format
 msgid ""
 "Check out the <a href=\"%(download_url)s\">download page</a> for appliances, "
 "providing an easy way to deploy Weblate in the cloud."
 msgstr ""
-"Na naszej <a href=\"%(download_url)s\">stronie pobierania</a> znajdziesz "
-"obrazy, które pozwolą Ci na łatwe wdrożenie Weblate w chmurze."
+"Sprawdź <a href=\"%(download_url)s\">stronę pobierania</a> dla urządzeń, "
+"dostarczającą łatwego sposobu wdrażania Weblate w \"chmurze\"."
 
 #: weblate_web/templatetags/downloads.py:40
 #, python-format
