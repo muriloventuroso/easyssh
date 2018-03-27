@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2018-02-13 14:01+0100\n"
+"POT-Creation-Date: 2018-03-27 11:47+0200\n"
 "PO-Revision-Date: 2017-11-09 23:55+0000\n"
 "Last-Translator: Domen <mitenem@outlook.com>\n"
 "Language-Team: Slovenian <https://hosted.weblate.org/projects/weblate/"
@@ -28,7 +28,7 @@ msgstr "Pregled lastnih prevodov na glavni strani."
 msgid "Own translations"
 msgstr "Lastni prevodi"
 
-#: weblate_web/data.py:39 weblate_web/html/features.html:64
+#: weblate_web/data.py:39 weblate_web/templates/features.html:64
 msgid ""
 "Translator can always see important context information like comments or "
 "corresponding source code."
@@ -36,7 +36,7 @@ msgstr ""
 "Prevajalec lahko vedno vidi pomembne informacije o sobesedilu, kot so "
 "pripombe in pripadajoča izvorna koda."
 
-#: weblate_web/data.py:42 weblate_web/html/features.html:63
+#: weblate_web/data.py:42 weblate_web/templates/features.html:63
 msgid "Translation context"
 msgstr "Sobesedilo prevoda"
 
@@ -49,7 +49,7 @@ msgstr "Projektna stran da podrobne informacije o stanju prevoda projekta."
 msgid "Project overview"
 msgstr "Pregled projekta"
 
-#: weblate_web/data.py:55 weblate_web/html/features.html:72
+#: weblate_web/data.py:55 weblate_web/templates/features.html:72
 msgid ""
 "Translators can define their own glossary to stay consistent in frequently "
 "used terminology."
@@ -57,12 +57,12 @@ msgstr ""
 "Prevajalci lahko določijo svoj slovar, da ostanejo dosledni pri pogosto "
 "uporabljanem izrazju."
 
-#: weblate_web/data.py:58 weblate_web/html/features.html:71
-#: weblate_web/html/hosting.html:141
+#: weblate_web/data.py:58 weblate_web/templates/features.html:71
+#: weblate_web/templates/hosting.html:141
 msgid "Glossary"
 msgstr "Slovar"
 
-#: weblate_web/data.py:63 weblate_web/html/base-features.html:15
+#: weblate_web/data.py:63 weblate_web/templates/base-features.html:15
 msgid ""
 "Customizable quality checks will help you in improving quality of "
 "translations."
@@ -70,39 +70,39 @@ msgstr ""
 "Prilagodljiv nadzor kakovosti vam bo pomagal pri izboljšanju kakovosti "
 "prevodov."
 
-#: weblate_web/data.py:66 weblate_web/html/base-features.html:14
-#: weblate_web/html/hosting.html:123
+#: weblate_web/data.py:66 weblate_web/templates/base-features.html:14
+#: weblate_web/templates/hosting.html:123
 msgid "Quality checks"
 msgstr "Preverjanja kakovosti"
 
-#: weblate_web/data.py:71 weblate_web/html/features.html:128
+#: weblate_web/data.py:71 weblate_web/templates/features.html:128
 msgid "Weblate provides you various ways to promote your translation project."
 msgstr ""
 "Weblate nudi različne načine, kako lahko promovirate svoj prevajalski "
 "projekt."
 
-#: weblate_web/data.py:74 weblate_web/html/features.html:127
+#: weblate_web/data.py:74 weblate_web/templates/features.html:127
 msgid "Promotion"
 msgstr "Promocija"
 
-#: weblate_web/html/404.html:4
+#: weblate_web/templates/404.html:4
 msgid "Page not found"
 msgstr "Strani ni bilo mogoče najti"
 
-#: weblate_web/html/404.html:8 weblate_web/html/500.html:8
-#: weblate_web/html/index.html:7
+#: weblate_web/templates/404.html:8 weblate_web/templates/500.html:8
+#: weblate_web/templates/index.html:7
 msgid "Weblate is a free web-based translation management system."
 msgstr "Weblate je brezplačen spletni sistem za upravljanje s prevodi."
 
-#: weblate_web/html/404.html:15
+#: weblate_web/templates/404.html:15
 msgid "The page you are looking for was not found."
 msgstr "Strani, ki ste jo iskali, ni bilo mogoče najti."
 
-#: weblate_web/html/500.html:4
+#: weblate_web/templates/500.html:4
 msgid "Server error"
 msgstr "Napaka strežnika"
 
-#: weblate_web/html/500.html:15
+#: weblate_web/templates/500.html:15
 msgid ""
 "The server had serious problems while serving your request. We've just sent "
 "our trained monkeys to fix the issue."
@@ -110,116 +110,118 @@ msgstr ""
 "Strežnik je med obdelavo vaše zahteve naletel na resne težave. Pravkar smo "
 "odposlali naše izurjene opice, da odpravijo napako."
 
-#: weblate_web/html/base-features.html:6 weblate_web/html/hosting.html:42
+#: weblate_web/templates/base-features.html:6
+#: weblate_web/templates/hosting.html:42
 msgid "Continuous translation"
 msgstr "Nenehno prevajanje"
 
-#: weblate_web/html/base-features.html:7
+#: weblate_web/templates/base-features.html:7
 msgid ""
 "Automated translation process can closely follow development of your project."
 msgstr ""
 "Avtomatiziran postopek prevajanja lahko tesno sledi razvoju vašega projekta."
 
-#: weblate_web/html/base-features.html:22
+#: weblate_web/templates/base-features.html:22
 msgid "Attribution"
 msgstr "Pripis"
 
-#: weblate_web/html/base-features.html:23
+#: weblate_web/templates/base-features.html:23
 msgid ""
 "All your translators will be properly credited in the version control system."
 msgstr "Vsi vaši prevodi bodo v sistemu nadzora različic ustrezno priznani."
 
-#: weblate_web/html/base-features.html:30 weblate_web/html/hosting.html:17
+#: weblate_web/templates/base-features.html:30
+#: weblate_web/templates/hosting.html:17
 msgid "Hosting plans"
 msgstr "Načrti za gostovanje"
 
-#: weblate_web/html/base-features.html:31
+#: weblate_web/templates/base-features.html:31
 msgid "Hosting plans to use Weblate as a service starting at 19 EUR."
 msgstr ""
 "Paketi gostovanja za uporabo Weblate kot storitve se pričnejo pri 19 EUR."
 
-#: weblate_web/html/base-features.html:38
+#: weblate_web/templates/base-features.html:38
 msgid "Ready for cloud"
 msgstr "Pripravljen za oblak"
 
-#: weblate_web/html/base-features.html:39
+#: weblate_web/templates/base-features.html:39
 msgid "Weblate comes with appliances, which are ready to deploy in your cloud."
 msgstr ""
 "Weblate vsebuje pripomočke, s katerimi je pripravljen za uvedbo v oblak."
 
-#: weblate_web/html/base-features.html:46
+#: weblate_web/templates/base-features.html:46
 msgid "Free software"
 msgstr "Prosto programje"
 
-#: weblate_web/html/base-features.html:47
+#: weblate_web/templates/base-features.html:47
 msgid "Weblate is free software, you can run your own instance of it."
 msgstr "Weblate je prosto programje; poganjate lahko svoj primerek."
 
-#: weblate_web/html/base.html:12
+#: weblate_web/templates/base.html:12
 msgctxt "Keyword"
 msgid "translate"
 msgstr "prevajanje,prevod"
 
-#: weblate_web/html/base.html:66
+#: weblate_web/templates/base.html:66
 msgid "Toggle navigation"
 msgstr "Preklopi krmarjenje"
 
-#: weblate_web/html/base.html:72
+#: weblate_web/templates/base.html:72
 msgid "Weblate logo"
 msgstr "Logotip Weblate"
 
-#: weblate_web/html/base.html:78
+#: weblate_web/templates/base.html:78
 msgid "Blog"
 msgstr "Blog"
 
-#: weblate_web/html/base.html:79
+#: weblate_web/templates/base.html:79
 msgid "Try"
 msgstr "Preizkusite"
 
-#: weblate_web/html/base.html:80
+#: weblate_web/templates/base.html:80
 msgid "Features"
 msgstr "Zmožnosti"
 
-#: weblate_web/html/base.html:81
+#: weblate_web/templates/base.html:81
 msgid "Docs"
 msgstr "Dokumentacija"
 
-#: weblate_web/html/base.html:82 weblate_web/html/download.html:34
+#: weblate_web/templates/base.html:82 weblate_web/templates/download.html:34
 msgid "Download"
 msgstr "Prenos"
 
-#: weblate_web/html/base.html:83
+#: weblate_web/templates/base.html:83
 msgid "Hosting"
 msgstr "Gostovanje"
 
-#: weblate_web/html/base.html:84
+#: weblate_web/templates/base.html:84
 msgid "Develop"
 msgstr "Razvijajte"
 
-#: weblate_web/html/base.html:85 weblate_web/html/donate.html:61
-#: weblate_web/html/donate.html:91 weblate_web/html/donate.html:92
-#: weblate_web/html/donate.html:93 weblate_web/html/donate.html:94
-#: weblate_web/html/donate.html:95
+#: weblate_web/templates/base.html:85 weblate_web/templates/donate.html:61
+#: weblate_web/templates/donate.html:91 weblate_web/templates/donate.html:92
+#: weblate_web/templates/donate.html:93 weblate_web/templates/donate.html:94
+#: weblate_web/templates/donate.html:95
 msgid "Donate"
 msgstr "Donirajte"
 
-#: weblate_web/html/base.html:86
+#: weblate_web/templates/base.html:86
 msgid "Support"
 msgstr "Podpora"
 
-#: weblate_web/html/base.html:87
+#: weblate_web/templates/base.html:87
 msgid "Tour"
 msgstr "Predstavitev"
 
-#: weblate_web/html/base.html:88
+#: weblate_web/templates/base.html:88
 msgid "Thanks"
 msgstr "Zahvale"
 
-#: weblate_web/html/base.html:103
+#: weblate_web/templates/base.html:103
 msgid "Help with translations!"
 msgstr "Pomagajte s prevodi!"
 
-#: weblate_web/html/base.html:140
+#: weblate_web/templates/base.html:140
 #, python-format
 msgid ""
 "Weblate is <a href=\"%(github_url)s\">free software</a> and welcomes <a href="
@@ -228,23 +230,26 @@ msgstr ""
 "Weblate je <a href=\"%(github_url)s\">prosto programje</a> in <a href="
 "\"%(donate_url)s\">prispevki</a> so dobrodošli."
 
-#: weblate_web/html/contribute.html:3 weblate_web/html/contribute.html:4
+#: weblate_web/templates/contribute.html:3
+#: weblate_web/templates/contribute.html:4
 msgid "Contribute to Weblate"
 msgstr "Prispevajte k Weblate"
 
-#: weblate_web/html/contribute.html:6
+#: weblate_web/templates/contribute.html:6
 msgid "Weblate is being developed by an open community."
 msgstr "Weblate razvija odprta skupnost."
 
-#: weblate_web/html/contribute.html:10 weblate_web/html/download.html:12
+#: weblate_web/templates/contribute.html:10
+#: weblate_web/templates/download.html:12
 msgid "View sources"
 msgstr "Ogled izvorne kode"
 
-#: weblate_web/html/contribute.html:11 weblate_web/html/contribute.html:38
+#: weblate_web/templates/contribute.html:11
+#: weblate_web/templates/contribute.html:38
 msgid "Translate"
 msgstr "Prevedite"
 
-#: weblate_web/html/contribute.html:17
+#: weblate_web/templates/contribute.html:17
 #, fuzzy
 #| msgid ""
 #| "You can find more detailed information about this topic in <a href="
@@ -259,11 +264,12 @@ msgstr ""
 "weblate.org/en/latest/contributing.html\">poglavju Prispevanje</a> v naši "
 "dokumentaciji."
 
-#: weblate_web/html/contribute.html:20 weblate_web/html/download.html:17
+#: weblate_web/templates/contribute.html:20
+#: weblate_web/templates/download.html:17
 msgid "Code"
 msgstr "Koda"
 
-#: weblate_web/html/contribute.html:23
+#: weblate_web/templates/contribute.html:23
 #, python-format
 msgid ""
 "Weblate is being developed on <a href=\"%(url)s\">GitHub</a>, you can fork "
@@ -272,13 +278,13 @@ msgstr ""
 "Weblate razvijamo na <a href=\"%(url)s\">GitHubu</a>; tam ga lahko vejite "
 "(fork) ali samo:"
 
-#: weblate_web/html/contribute.html:31
+#: weblate_web/templates/contribute.html:31
 #, python-format
 msgid "This website is stored on <a href=\"%(url)s\">GitHub</a> as well:"
 msgstr ""
 "Spletna stran je prav tako shranjena na <a href=\"%(url)s\">GitHubu</a>:"
 
-#: weblate_web/html/contribute.html:41
+#: weblate_web/templates/contribute.html:41
 #, fuzzy
 #| msgid ""
 #| "You can translate Weblate using Weblate installation at <a href=\"https://"
@@ -290,27 +296,27 @@ msgstr ""
 "Weblate lahko prevedete z uporabo namestitve Weblate na <a href=\"https://"
 "hosted.weblate.org/engage/weblate/\">hosted.weblate.org</a>."
 
-#: weblate_web/html/contribute.html:46
+#: weblate_web/templates/contribute.html:46
 msgid "Translation status"
 msgstr "Stanje prevoda"
 
-#: weblate_web/html/donate.html:3 weblate_web/html/donate.html:4
+#: weblate_web/templates/donate.html:3 weblate_web/templates/donate.html:4
 msgid "Donate to Weblate"
 msgstr "Donirajte Weblateu"
 
-#: weblate_web/html/donate.html:6
+#: weblate_web/templates/donate.html:6
 msgid "Weblate is free, but welcomes donations."
 msgstr "Weblate je brezplačen, vendar so donacije dobrodošle."
 
-#: weblate_web/html/donate.html:12 weblate_web/html/donate.html:43
+#: weblate_web/templates/donate.html:12 weblate_web/templates/donate.html:43
 msgid "Donate using Liberapay"
 msgstr "Donirajte z Liberapay"
 
-#: weblate_web/html/donate.html:18
+#: weblate_web/templates/donate.html:18
 msgid "Use our hosting"
 msgstr "Uporabite naše gostovanje"
 
-#: weblate_web/html/donate.html:22
+#: weblate_web/templates/donate.html:22
 #, python-format
 msgid ""
 "Host your commercial translations on <a href=\"%(hosting_url)s\">Hosted "
@@ -319,11 +325,11 @@ msgstr ""
 "Gostujte svoje komercialne prevode na <a href=\"%(hosting_url)s\">Gostujočem "
 "Weblate</a> in samodejno boste podpirali razvoj Weblate."
 
-#: weblate_web/html/donate.html:25
+#: weblate_web/templates/donate.html:25
 msgid "Regular donations"
 msgstr "Redne donacije"
 
-#: weblate_web/html/donate.html:28
+#: weblate_web/templates/donate.html:28
 msgid ""
 "Regular donations allow sustainability of Weblate development and help to "
 "fund free hosting for free software. You don't have to spend big money, "
@@ -333,12 +339,12 @@ msgstr ""
 "brezplačno gostovanje za prosto programje. Ne rabite porabiti velikih "
 "zneskov – vsak cent šteje."
 
-#: weblate_web/html/donate.html:33 weblate_web/html/donate.html:54
-#: weblate_web/html/thanks.html:12
+#: weblate_web/templates/donate.html:33 weblate_web/templates/donate.html:54
+#: weblate_web/templates/thanks.html:12
 msgid "Fund on Bountysource"
 msgstr "Financirajte na Bountysource"
 
-#: weblate_web/html/donate.html:37
+#: weblate_web/templates/donate.html:37
 msgid ""
 "You can send a monthly donation using a credit card. You can also get "
 "rewards for higher donations, for example a logo placement on our website."
@@ -346,17 +352,17 @@ msgstr ""
 "Mesečni prispevek lahko pošljete s kreditno kartico. Za višje prispevke ste "
 "lahko tudi nagrajeni, na primer z umestitvijo logotipa na našo spletno stran."
 
-#: weblate_web/html/donate.html:47
+#: weblate_web/templates/donate.html:47
 msgid "Liberapay allows you to send a weekly amount using a credit card."
 msgstr ""
 "Liberapay vam omogoča pošiljanje tedenskega zneska z uporabo kreditne "
 "kartice."
 
-#: weblate_web/html/donate.html:50
+#: weblate_web/templates/donate.html:50
 msgid "Fund features"
 msgstr "Možnosti financiranja"
 
-#: weblate_web/html/donate.html:58
+#: weblate_web/templates/donate.html:58
 msgid ""
 "Bountysource allows you to fund individual features which are reported on "
 "our issue tracker."
@@ -364,17 +370,17 @@ msgstr ""
 "Bountysource vam omogoča, da financirate posamezne funkcionalnosti, ki so "
 "objavljene na našem sledilniku težav."
 
-#: weblate_web/html/donate.html:64
+#: weblate_web/templates/donate.html:64
 msgid ""
 "If you like Weblate you can support its further development by donating."
 msgstr ""
 "Če vam je Weblate všeč, lahko z doniranjem podprete njegov nadaljnji razvoj."
 
-#: weblate_web/html/donate.html:72
+#: weblate_web/templates/donate.html:72
 msgid "Donate using PayPal"
 msgstr "Donirajte s PayPalom"
 
-#: weblate_web/html/donate.html:77
+#: weblate_web/templates/donate.html:77
 msgid ""
 "PayPal allows you to send money from credit card, PayPal balance or a bank "
 "account."
@@ -382,11 +388,11 @@ msgstr ""
 "PayPal vam omogoča pošiljanje denarja s kreditno kartico, bilanco PayPal ali "
 "z bančnim računom."
 
-#: weblate_web/html/donate.html:80
+#: weblate_web/templates/donate.html:80
 msgid "Cryptocurrencies"
 msgstr "Kriptovalute"
 
-#: weblate_web/html/donate.html:83
+#: weblate_web/templates/donate.html:83
 #, python-format
 msgid ""
 "Thanks to <a href=\"%(url)s\">Trezor</a>, we will gladly accept donations in "
@@ -395,27 +401,27 @@ msgstr ""
 "Zahvaljujoč <a href=\"%(url)s\">Trezor</a> z veseljem sprejmemo prispevke v "
 "več kriptovalutah. Uporabite lahko naslove v spodnji tabeli."
 
-#: weblate_web/html/donate.html:88
+#: weblate_web/templates/donate.html:88
 msgid "Currency"
 msgstr "Valuta"
 
-#: weblate_web/html/donate.html:88
+#: weblate_web/templates/donate.html:88
 msgid "Payment link"
 msgstr "Povezava za plačilo"
 
-#: weblate_web/html/donate.html:88
+#: weblate_web/templates/donate.html:88
 msgid "Payment address"
 msgstr "Naslov za plačilo"
 
-#: weblate_web/html/download.html:4 weblate_web/html/download.html:5
+#: weblate_web/templates/download.html:4 weblate_web/templates/download.html:5
 msgid "Download Weblate"
 msgstr "Prenos Weblate"
 
-#: weblate_web/html/download.html:7
+#: weblate_web/templates/download.html:7
 msgid "Weblate comes with complete source code."
 msgstr "Weblate vsebuje celotno izvorno kodo."
 
-#: weblate_web/html/download.html:20
+#: weblate_web/templates/download.html:20
 msgid ""
 "Weblate is being developed on <a href=\"https://github.com/WeblateOrg/weblate"
 "\">GitHub</a>, you can fork it there or just:"
@@ -423,20 +429,21 @@ msgstr ""
 "Weblate razvijamo na <a href=\"https://github.com/WeblateOrg/weblate"
 "\">GitHub</a>; tam ga lahko vejite (fork) ali samo:"
 
-#: weblate_web/html/download.html:37
+#: weblate_web/templates/download.html:37
 msgid "You can download latest release here:"
 msgstr "Tukaj si lahko prenesete najnovejšo izdajo:"
 
-#: weblate_web/html/download.html:46 weblate_web/html/download.html:62
+#: weblate_web/templates/download.html:46
+#: weblate_web/templates/download.html:62
 msgid "You can also install using packages for following Linux distributions:"
 msgstr ""
 "Namestite lahko tudi z uporabo paketov za naslednje distribucije Linuxa:"
 
-#: weblate_web/html/download.html:52
+#: weblate_web/templates/download.html:52
 msgid "Weblate command line client"
 msgstr "Klient Weblate za ukazno vrstico"
 
-#: weblate_web/html/download.html:55
+#: weblate_web/templates/download.html:55
 #, python-format
 msgid ""
 "You can control Weblate remotely using <a href=\"%(url)s\">wlc</a>, it can "
@@ -445,11 +452,11 @@ msgstr ""
 "Weblate lahko nadzirate oddaljeno z uporabo <a href=\"%(url)s\">wlc</a>; "
 "namestite ga lahko s Python PIP:"
 
-#: weblate_web/html/download.html:70
+#: weblate_web/templates/download.html:70
 msgid "Cloud or virtualization images"
 msgstr "Slike za oblak ali virtualizacijo"
 
-#: weblate_web/html/download.html:72
+#: weblate_web/templates/download.html:72
 msgid ""
 "Weblate can be run in any cloud or virtualization environment. Following "
 "links will show you information about some of these:"
@@ -457,15 +464,15 @@ msgstr ""
 "Weblate lahko poganjate v katerem koli oblaku ali virtualizacijskem okolju. "
 "Naslednje povezave vam nudijo informacije o nekaterih:"
 
-#: weblate_web/html/download.html:75
+#: weblate_web/templates/download.html:75
 msgid "Running Weblate in a Docker container"
 msgstr "Poganjanje Weblate v vsebniku Docker"
 
-#: weblate_web/html/download.html:76
+#: weblate_web/templates/download.html:76
 msgid "Running Weblate on OpenShift platform"
 msgstr "Poganjanje Weblate na platformi OpenShift"
 
-#: weblate_web/html/download.html:77
+#: weblate_web/templates/download.html:77
 msgid ""
 "BitNami Weblate stack providing native installation for most platforms as "
 "well as support for many public cloud providers"
@@ -473,51 +480,51 @@ msgstr ""
 "Sklad BitNami Weblate nudi domorodno namestitev za večino platform, kakor "
 "tudi podporo za mnoge javne ponudnike storitev v oblaku"
 
-#: weblate_web/html/features.html:3 weblate_web/html/features.html:4
+#: weblate_web/templates/features.html:3 weblate_web/templates/features.html:4
 msgid "Weblate features"
 msgstr "Zmožnosti Weblate"
 
-#: weblate_web/html/features.html:6
+#: weblate_web/templates/features.html:6
 msgid "Weblate is a feature rich computer aided translation tool."
 msgstr ""
 "Weblate je računalniško vodeno orodje za prevajanje, bogato z zmožnostmi."
 
-#: weblate_web/html/features.html:11
+#: weblate_web/templates/features.html:11
 msgid "View documentation"
 msgstr "Ogled dokumentacije"
 
-#: weblate_web/html/features.html:23
+#: weblate_web/templates/features.html:23
 msgid "Access control"
 msgstr "Nadzor dostopa"
 
-#: weblate_web/html/features.html:24
+#: weblate_web/templates/features.html:24
 msgid "Access rights can be fine tuned depending on your environment."
 msgstr "Pravice za dostop lahko natančno nastavite glede na vaše okolje."
 
-#: weblate_web/html/features.html:31
+#: weblate_web/templates/features.html:31
 msgid "Notifications"
 msgstr "Obvestila"
 
-#: weblate_web/html/features.html:32
+#: weblate_web/templates/features.html:32
 msgid ""
 "Translators can be notified on new strings to translate or other events."
 msgstr ""
 "Prevajalci so obveščeni, ko so na voljo novi nizi za prevajanje ali drugi "
 "dogodki."
 
-#: weblate_web/html/features.html:39
+#: weblate_web/templates/features.html:39
 msgid "Integration API"
 msgstr "API za integracijo"
 
-#: weblate_web/html/features.html:40
+#: weblate_web/templates/features.html:40
 msgid "Thanks to the API you can integrate Weblate with third party services."
 msgstr "Zahvaljujoč API-ju lahko Weblate integrirate z drugimi storitvami."
 
-#: weblate_web/html/features.html:47
+#: weblate_web/templates/features.html:47
 msgid "File formats"
 msgstr "Oblike datotek"
 
-#: weblate_web/html/features.html:48
+#: weblate_web/templates/features.html:48
 msgid ""
 "Weblate supports all widely used file formats for localisation like Gettext, "
 "JSON, XLIFF or resource strings."
@@ -525,11 +532,11 @@ msgstr ""
 "Weblate podpira vse široko uporabljane oblike datotek za lokalizacijo, kot "
 "so Gettext, JSON, XLIFF ali nizi virov."
 
-#: weblate_web/html/features.html:55
+#: weblate_web/templates/features.html:55
 msgid "Branches support"
 msgstr "Podpora vejam"
 
-#: weblate_web/html/features.html:56
+#: weblate_web/templates/features.html:56
 msgid ""
 "Weblate can handle different versions of the translation by pushing them to "
 "different branches automatically."
@@ -537,11 +544,11 @@ msgstr ""
 "Weblate lahko upravlja z različnimi različicami prevodov tako, da jih "
 "samodejno potisne na različne veje."
 
-#: weblate_web/html/features.html:79
+#: weblate_web/templates/features.html:79
 msgid "Acquiring feedback"
 msgstr "Pridobivanje povratne informacije"
 
-#: weblate_web/html/features.html:80
+#: weblate_web/templates/features.html:80
 msgid ""
 "You can also use Weblate to acquire feedback on source strings and thus "
 "improve them."
@@ -549,49 +556,49 @@ msgstr ""
 "Z Weblate lahko pridobite tudi povratne informacije izvirnih nizov in jih "
 "tako izboljšate."
 
-#: weblate_web/html/features.html:87
+#: weblate_web/templates/features.html:87
 msgid "Export and import"
 msgstr "Izvoz in uvoz"
 
-#: weblate_web/html/features.html:88
+#: weblate_web/templates/features.html:88
 msgid "Translations can be downloaded for offline translation and merged back."
 msgstr ""
 "Prevode lahko prenesete za prevajanje brez povezave in jih nato nazaj "
 "združite."
 
-#: weblate_web/html/features.html:95
+#: weblate_web/templates/features.html:95
 msgid "Integrated"
 msgstr "Integriran"
 
-#: weblate_web/html/features.html:96
+#: weblate_web/templates/features.html:96
 msgid "Translations are managed within same version control system as code."
 msgstr ""
 "Prevodi se upravljajo znotraj istega sistema za nadzor različic kot koda."
 
-#: weblate_web/html/features.html:103
+#: weblate_web/templates/features.html:103
 msgid "Documentation"
 msgstr "Dokumentacija"
 
-#: weblate_web/html/features.html:104
+#: weblate_web/templates/features.html:104
 msgid ""
 "Weblate comes with comprehensive documentation covering both setup and usage."
 msgstr ""
 "Weblate vsebuje celovito dokumentacijo, ki pokriva tako namestitev kot "
 "uporabo."
 
-#: weblate_web/html/features.html:111
+#: weblate_web/templates/features.html:111
 msgid "Review"
 msgstr "Pregled"
 
-#: weblate_web/html/features.html:112
+#: weblate_web/templates/features.html:112
 msgid "Translators have several options to review contributions made by peers."
 msgstr "Prevajalci imajo več možnosti za pregled prevodov sodelavcev."
 
-#: weblate_web/html/features.html:119
+#: weblate_web/templates/features.html:119
 msgid "Languages"
 msgstr "Jeziki"
 
-#: weblate_web/html/features.html:120
+#: weblate_web/templates/features.html:120
 msgid ""
 "Weblate supports over 150 languages out of the box, others can be defined by "
 "administrator."
@@ -599,21 +606,21 @@ msgstr ""
 "Weblate privzeto podpira več kot 150 jezikov; ostale lahko določijo "
 "upravljavci."
 
-#: weblate_web/html/features.html:135
+#: weblate_web/templates/features.html:135
 msgid "Reporting"
 msgstr "Poročanje"
 
-#: weblate_web/html/features.html:136
+#: weblate_web/templates/features.html:136
 msgid ""
 "Weblate generates various reports to provide information about project "
 "activity."
 msgstr "Weblate nudi različna poročila s podatki o dejavnosti projektov."
 
-#: weblate_web/html/features.html:144
+#: weblate_web/templates/features.html:144
 msgid "Version control"
 msgstr "Nadzor različic"
 
-#: weblate_web/html/features.html:145
+#: weblate_web/templates/features.html:145
 msgid ""
 "Weblate talks directly with your version control system, currently Git and "
 "Mercurial are supported."
@@ -621,11 +628,11 @@ msgstr ""
 "Weblate se pogovarja neposredno z vašim sistemom za nadzor različic; "
 "trenutno sta podprta Git in Mercurial."
 
-#: weblate_web/html/features.html:152
+#: weblate_web/templates/features.html:152
 msgid "Collaboration sites"
 msgstr "Sodelovalne strani"
 
-#: weblate_web/html/features.html:153
+#: weblate_web/templates/features.html:153
 msgid ""
 "Weblate has native support for many software development sites such as "
 "GitHub, Bitbucket or Gitlab."
@@ -633,11 +640,11 @@ msgstr ""
 "Weblate ima domorodno podporo za mnoge strani za razvoj programske opreme, "
 "kot so GitHub, Bitbucket ali Gitlab."
 
-#: weblate_web/html/features.html:160
+#: weblate_web/templates/features.html:160
 msgid "Responsive UI"
 msgstr "Odzivni uporabniški vmesnik"
 
-#: weblate_web/html/features.html:161
+#: weblate_web/templates/features.html:161
 msgid ""
 "Weblate has responsive UI which will work nicely on your desktop, tablet or "
 "phone."
@@ -645,21 +652,21 @@ msgstr ""
 "Weblate ima odzivni uporabniški vmesnik, ki lepo deluje na namiznem "
 "računalniku, tablici ali telefonu."
 
-#: weblate_web/html/hosting-ordered.html:3
-#: weblate_web/html/hosting-ordered.html:4 weblate_web/html/hosting.html:3
-#: weblate_web/html/hosting.html:4
+#: weblate_web/templates/hosting-ordered.html:3
+#: weblate_web/templates/hosting-ordered.html:4
+#: weblate_web/templates/hosting.html:3 weblate_web/templates/hosting.html:4
 msgid "Hosting Weblate"
 msgstr "Gostovanje Weblate"
 
-#: weblate_web/html/hosting-ordered.html:6
+#: weblate_web/templates/hosting-ordered.html:6
 msgid "Thank you for ordering hosting!"
 msgstr "Hvala za naročilo gostovanja!"
 
-#: weblate_web/html/hosting-ordered.html:11
+#: weblate_web/templates/hosting-ordered.html:11
 msgid "Next steps"
 msgstr "Naslednji koraki"
 
-#: weblate_web/html/hosting-ordered.html:13
+#: weblate_web/templates/hosting-ordered.html:13
 msgid ""
 "The project setup is currently manual. If you haven't done so already, "
 "please get in touch with us and send us details about your repository setup."
@@ -667,19 +674,21 @@ msgstr ""
 "Nastavitev projekta je trenutno ročna. Če tega še niste uredili, stopite v "
 "stik z nami in nam pošljite podatke o nastavitvah vašega skladišča."
 
-#: weblate_web/html/hosting-ordered.html:15
+#: weblate_web/templates/hosting-ordered.html:15
 msgid "Usually following information is needed:"
 msgstr "Po navadi potrebujemo naslednje podatke:"
 
-#: weblate_web/html/hosting-ordered.html:18 weblate_web/html/hosting.html:338
+#: weblate_web/templates/hosting-ordered.html:18
+#: weblate_web/templates/hosting.html:307
 msgid "URL of repository with translations."
 msgstr "URL skladišča s prevodi."
 
-#: weblate_web/html/hosting-ordered.html:19 weblate_web/html/hosting.html:339
+#: weblate_web/templates/hosting-ordered.html:19
+#: weblate_web/templates/hosting.html:308
 msgid "Path to translations within the repository."
 msgstr "Pot do prevodov v skladišču."
 
-#: weblate_web/html/hosting-ordered.html:22
+#: weblate_web/templates/hosting-ordered.html:22
 msgid ""
 "You have to allow Weblate to access your repository. This can be done by "
 "adding Weblate user to your project (on GitHub, Bitbucket or GitLab) or "
@@ -689,15 +698,15 @@ msgstr ""
 "da svojemu projektu dodate uporabnika Weblate (na GitHubu, Butbucketu ali "
 "GitLabu) ali dodate ključ SSH, ki vam ga bomo poslali."
 
-#: weblate_web/html/hosting.html:6
+#: weblate_web/templates/hosting.html:6
 msgid "Free continuous translation hosting for free software."
 msgstr "Brezplačna uporaba prevajalnega sistema za prosto programje."
 
-#: weblate_web/html/hosting.html:11
+#: weblate_web/templates/hosting.html:11
 msgid "Ask for hosting"
 msgstr "Zaprosite za gostovanje"
 
-#: weblate_web/html/hosting.html:20
+#: weblate_web/templates/hosting.html:20
 msgid ""
 "Hosted Weblate allows you to use Weblate without any effort and with premium "
 "support backed by it's core developers."
@@ -705,7 +714,7 @@ msgstr ""
 "Gostujoč Weblate vam omogoča uporabo Weblate brez vsakršnega napora in z "
 "dodatno podporo, v katero so vključeni njegovi osrednji razvijalci."
 
-#: weblate_web/html/hosting.html:24
+#: weblate_web/templates/hosting.html:24
 #, python-format
 msgid ""
 "We can host translations for your commercial or free software projects. You "
@@ -718,37 +727,37 @@ msgstr ""
 "vprašanja ali vas zanima gostovanje večjih projektov, brez zadržkov <a href="
 "\"%(contact)s\">stopite v stik z nami</a>."
 
-#: weblate_web/html/hosting.html:32
+#: weblate_web/templates/hosting.html:32
 msgctxt "Hosting plan"
 msgid "Free software"
 msgstr "Prosto programje"
 
-#: weblate_web/html/hosting.html:33
+#: weblate_web/templates/hosting.html:33
 msgctxt "Hosting plan"
 msgid "Basic"
 msgstr "Osnovno"
 
-#: weblate_web/html/hosting.html:34
+#: weblate_web/templates/hosting.html:34
 msgctxt "Hosting plan"
 msgid "Medium"
 msgstr "Srednje"
 
-#: weblate_web/html/hosting.html:35
+#: weblate_web/templates/hosting.html:35
 msgctxt "Hosting plan"
 msgid "Advanced"
 msgstr "Napredno"
 
-#: weblate_web/html/hosting.html:36
+#: weblate_web/templates/hosting.html:36
 msgctxt "Hosting plan"
 msgid "Enterprise"
 msgstr "Podjetniško"
 
-#: weblate_web/html/hosting.html:37
+#: weblate_web/templates/hosting.html:37
 msgctxt "Hosting plan"
 msgid "Self hosted"
 msgstr "Lastno gostovano"
 
-#: weblate_web/html/hosting.html:51
+#: weblate_web/templates/hosting.html:51
 msgid ""
 "Text unit defined in a translation format, it can be word, sentence or a "
 "paragraph"
@@ -756,131 +765,155 @@ msgstr ""
 "Izvirni niz je besedilna enota, opredeljena v prevajalski obliki; lahko je "
 "beseda, poved ali odstavek"
 
-#: weblate_web/html/hosting.html:51
+#: weblate_web/templates/hosting.html:51
 msgid "Source strings"
 msgstr "Izvirni nizi"
 
-#: weblate_web/html/hosting.html:52 weblate_web/html/hosting.html:61
-#: weblate_web/html/hosting.html:70
+#: weblate_web/templates/hosting.html:52 weblate_web/templates/hosting.html:61
+#: weblate_web/templates/hosting.html:70
 msgid "Negotiable"
 msgstr "Po dogovoru"
 
-#: weblate_web/html/hosting.html:57 weblate_web/html/hosting.html:66
-#: weblate_web/html/hosting.html:75 weblate_web/html/hosting.html:82
-#: weblate_web/html/hosting.html:83 weblate_web/html/hosting.html:84
-#: weblate_web/html/hosting.html:89 weblate_web/html/hosting.html:90
-#: weblate_web/html/hosting.html:91 weblate_web/html/hosting.html:92
-#: weblate_web/html/hosting.html:93 weblate_web/html/hosting.html:97
-#: weblate_web/html/hosting.html:98 weblate_web/html/hosting.html:99
-#: weblate_web/html/hosting.html:100 weblate_web/html/hosting.html:101
-#: weblate_web/html/hosting.html:102
+#: weblate_web/templates/hosting.html:57 weblate_web/templates/hosting.html:66
+#: weblate_web/templates/hosting.html:75 weblate_web/templates/hosting.html:82
+#: weblate_web/templates/hosting.html:83 weblate_web/templates/hosting.html:84
+#: weblate_web/templates/hosting.html:89 weblate_web/templates/hosting.html:90
+#: weblate_web/templates/hosting.html:91 weblate_web/templates/hosting.html:92
+#: weblate_web/templates/hosting.html:93 weblate_web/templates/hosting.html:97
+#: weblate_web/templates/hosting.html:98 weblate_web/templates/hosting.html:99
+#: weblate_web/templates/hosting.html:100
+#: weblate_web/templates/hosting.html:101
+#: weblate_web/templates/hosting.html:102
 msgid "Unlimited"
 msgstr "Neomejeno"
 
-#: weblate_web/html/hosting.html:60
+#: weblate_web/templates/hosting.html:60
 msgid "Target languages"
 msgstr "Ciljni jeziki"
 
-#: weblate_web/html/hosting.html:69
+#: weblate_web/templates/hosting.html:69
 msgid "VCS repositories"
 msgstr "Shrambe VCS"
 
-#: weblate_web/html/hosting.html:78
+#: weblate_web/templates/hosting.html:78
 msgid "Translation projects"
 msgstr "Prevajalski projekti"
 
-#: weblate_web/html/hosting.html:87
+#: weblate_web/templates/hosting.html:87
 msgid "Translation components"
 msgstr "Prevajalne komponente"
 
-#: weblate_web/html/hosting.html:96
+#: weblate_web/templates/hosting.html:96
 msgid "Number of translators"
 msgstr "Število prevajalcev"
 
-#: weblate_web/html/hosting.html:105 weblate_web/html/hosting.html:342
+#: weblate_web/templates/hosting.html:105
+#: weblate_web/templates/hosting.html:311
 msgid "User management"
 msgstr "Upravljanje uporabnikov"
 
-#: weblate_web/html/hosting.html:114
+#: weblate_web/templates/hosting.html:114
 msgid "Supported file formats"
 msgstr "Podprte oblike datotek"
 
-#: weblate_web/html/hosting.html:115 weblate_web/html/hosting.html:116
-#: weblate_web/html/hosting.html:117 weblate_web/html/hosting.html:118
-#: weblate_web/html/hosting.html:119 weblate_web/html/hosting.html:120
+#: weblate_web/templates/hosting.html:115
+#: weblate_web/templates/hosting.html:116
+#: weblate_web/templates/hosting.html:117
+#: weblate_web/templates/hosting.html:118
+#: weblate_web/templates/hosting.html:119
+#: weblate_web/templates/hosting.html:120
 msgid "All"
 msgstr "Vse"
 
-#: weblate_web/html/hosting.html:127 weblate_web/html/hosting.html:128
-#: weblate_web/html/hosting.html:129 weblate_web/html/hosting.html:136
-#: weblate_web/html/hosting.html:137 weblate_web/html/hosting.html:138
+#: weblate_web/templates/hosting.html:127
+#: weblate_web/templates/hosting.html:128
+#: weblate_web/templates/hosting.html:129
+#: weblate_web/templates/hosting.html:136
+#: weblate_web/templates/hosting.html:137
+#: weblate_web/templates/hosting.html:138
 msgid "Customizable"
 msgstr "Prilagodljivo"
 
-#: weblate_web/html/hosting.html:132
-msgid "Translation processing"
-msgstr "Obdelava prevodov"
+#: weblate_web/templates/hosting.html:132
+#, fuzzy
+#| msgid "Translation status"
+msgid "Translation addons"
+msgstr "Stanje prevoda"
 
-#: weblate_web/html/hosting.html:150
+#: weblate_web/templates/hosting.html:150
+#, fuzzy
+#| msgid "Translation workflow"
+msgid "Translation memory"
+msgstr "Postopek prevajanja"
+
+#: weblate_web/templates/hosting.html:159
 msgid "Priority email support"
 msgstr "Prednostna podpora po e-pošti"
 
-#: weblate_web/html/hosting.html:156 weblate_web/html/hosting.html:165
-#: weblate_web/html/hosting.html:173
+#: weblate_web/templates/hosting.html:165
+#: weblate_web/templates/hosting.html:173
 msgid "Available on request"
 msgstr "Na voljo na zahtevo"
 
-#: weblate_web/html/hosting.html:159
-msgid "Phone support"
-msgstr "Telefonska podpora"
-
-#: weblate_web/html/hosting.html:168
+#: weblate_web/templates/hosting.html:168
 msgid "Custom domain name with SSL"
 msgstr "Poljubno ime domene s SSL"
 
-#: weblate_web/html/hosting.html:168
+#: weblate_web/templates/hosting.html:168
 msgid "Own domain"
 msgstr "Lastna domena"
 
-#: weblate_web/html/hosting.html:179
+#: weblate_web/templates/hosting.html:170
+#: weblate_web/templates/hosting.html:171
+#: weblate_web/templates/hosting.html:172
+#, python-format
+msgid ""
+"Additional charge %(price)s EUR/year, only available with yearly billing"
+msgstr ""
+
+#: weblate_web/templates/hosting.html:179
 msgid "Monthly by PayPal"
 msgstr "Mesečno s PayPalom"
 
-#: weblate_web/html/hosting.html:181
+#: weblate_web/templates/hosting.html:181
 msgid "Contact us"
 msgstr "Stopite v stik z nami"
 
-#: weblate_web/html/hosting.html:184 weblate_web/html/hosting.html:187
-#: weblate_web/html/hosting.html:190 weblate_web/html/hosting.html:193
-#: weblate_web/html/hosting.html:253 weblate_web/html/hosting.html:268
-#: weblate_web/html/hosting.html:283
+#: weblate_web/templates/hosting.html:184
+#: weblate_web/templates/hosting.html:187
+#: weblate_web/templates/hosting.html:190
+#: weblate_web/templates/hosting.html:193
+#: weblate_web/templates/hosting.html:253
 #, python-format
 msgid "%(price)s EUR / month"
 msgstr "%(price)s EUR/mesec"
 
-#: weblate_web/html/hosting.html:195
+#: weblate_web/templates/hosting.html:195
 msgid "See below for options"
 msgstr "Poglejte spodaj za možnosti"
 
-#: weblate_web/html/hosting.html:198
+#: weblate_web/templates/hosting.html:198
 #, python-format
 msgid "Yearly by invoice (save 15-20%%)"
 msgstr "Letno z računom (prihranite 15–20 %%)"
 
-#: weblate_web/html/hosting.html:200 weblate_web/html/hosting.html:203
-#: weblate_web/html/hosting.html:206 weblate_web/html/hosting.html:209
+#: weblate_web/templates/hosting.html:200
+#: weblate_web/templates/hosting.html:203
+#: weblate_web/templates/hosting.html:206
+#: weblate_web/templates/hosting.html:209
 msgid "Ask us for yearly invoicing with discount."
 msgstr "Zaprosite nas za letno obračunavanje s popustom."
 
-#: weblate_web/html/hosting.html:200 weblate_web/html/hosting.html:203
-#: weblate_web/html/hosting.html:206 weblate_web/html/hosting.html:209
-#: weblate_web/html/hosting.html:254 weblate_web/html/hosting.html:269
-#: weblate_web/html/hosting.html:284
+#: weblate_web/templates/hosting.html:200
+#: weblate_web/templates/hosting.html:203
+#: weblate_web/templates/hosting.html:206
+#: weblate_web/templates/hosting.html:209
+#: weblate_web/templates/hosting.html:254
 #, python-format
 msgid "%(price)s EUR / year"
 msgstr "%(price)s EUR/leto"
 
-#: weblate_web/html/hosting.html:217
+#: weblate_web/templates/hosting.html:217
 msgid ""
 "The pricing is based on number of source strings and number of target "
 "languages. The source string is a text unit defined in a translation format, "
@@ -890,7 +923,7 @@ msgstr ""
 "niz je besedilna enota, opredeljena v prevajalski obliki; lahko je beseda, "
 "poved ali odstavek."
 
-#: weblate_web/html/hosting.html:221
+#: weblate_web/templates/hosting.html:221
 msgid ""
 "The hosting setup is currently done manually, so you might want to get in "
 "touch with us prior to making subscription with your project details."
@@ -898,7 +931,7 @@ msgstr ""
 "Nastavitev projekta je trenutno ročna, zato pred sklenitvijo naročnine morda "
 "stopite v stik z nami in nam sporočite podrobnosti vašega projekta."
 
-#: weblate_web/html/hosting.html:225
+#: weblate_web/templates/hosting.html:225
 msgid ""
 "Alternatively we can accept payments by wire transfer (preferably IBAN) or "
 "Bitcoin. Please get in touch for more details."
@@ -906,11 +939,11 @@ msgstr ""
 "Alternativno lahko sprejemamo plačila z bančnim nakazilom (IBAN, če je "
 "možno) ali z Bitcoini. Prosimo, da za več podrobnosti stopite v stik z nami."
 
-#: weblate_web/html/hosting.html:228
+#: weblate_web/templates/hosting.html:228
 msgid "Support for self hosted environments"
 msgstr "Podpora za lastno gostovana okolja"
 
-#: weblate_web/html/hosting.html:230
+#: weblate_web/templates/hosting.html:230
 msgid ""
 "Worried of putting your translations into cloud? You can self host Weblate "
 "and we can still provide you premium support for your setup."
@@ -918,125 +951,87 @@ msgstr ""
 "Ne želite svojih prevodov postaviti v oblak? Weblate lahko gostujete sami in "
 "še vedno vam lahko nudimo dodatno podporo za vašo namestitev."
 
-#: weblate_web/html/hosting.html:236
+#: weblate_web/templates/hosting.html:236
 msgid "Installation on your Linux server"
 msgstr "Namestitev na vašem strežniku Linux"
 
-#: weblate_web/html/hosting.html:237
+#: weblate_web/templates/hosting.html:237
 #, python-format
 msgid "%(price)s EUR"
 msgstr "%(price)s EUR"
 
-#: weblate_web/html/hosting.html:242
+#: weblate_web/templates/hosting.html:242
 msgid "One time installation of Weblate"
 msgstr "Enkratna namestitev Weblate"
 
-#: weblate_web/html/hosting.html:243
+#: weblate_web/templates/hosting.html:243
 msgid "Installation using virtualenv, uwsgi and nginx"
 msgstr "Namestitev z uporabo virtualenv, uwsgi in nginx"
 
-#: weblate_web/html/hosting.html:244
+#: weblate_web/templates/hosting.html:244
 msgid "Using PostgreSQL, MySQL or MariaDB as database backend"
 msgstr "Uporaba PostgreSQL, MySQL ali MariaDB kot zaledja zbirke podatkov"
 
-#: weblate_web/html/hosting.html:245
+#: weblate_web/templates/hosting.html:245
 msgid "Requires root access or close cooperation of your admins"
 msgstr ""
 "Zahteva korenski dostop (root) ali bližnje sodelovanje z vašimi "
 "administratorji"
 
-#: weblate_web/html/hosting.html:246
+#: weblate_web/templates/hosting.html:246
 msgid "Configuration customization"
 msgstr "Prilagoditev nastavitev"
 
-#: weblate_web/html/hosting.html:247
+#: weblate_web/templates/hosting.html:247
 msgid "Does not include custom code development"
 msgstr "Ne vključuje razvoja kode po meri"
 
-#: weblate_web/html/hosting.html:252
-msgid "Minimal support for self hosted Weblate"
-msgstr "Minimalna podpora za samogostovani Weblate"
-
-#: weblate_web/html/hosting.html:259 weblate_web/html/hosting.html:274
-#, python-format
-msgid ""
-"Your Weblate will be upgraded to the latest version at least every %(count)s "
-"month."
-msgid_plural ""
-"Your Weblate will be upgraded to the latest version at least every %(count)s "
-"months."
-msgstr[0] ""
-"Vaš Weblate bomo nadgradili na zadnjo različico vsak %(count)s mesec."
-msgstr[1] ""
-"Vaš Weblate bomo nadgradili na zadnjo različico vsaka %(count)s meseca."
-msgstr[2] ""
-"Vaš Weblate bomo nadgradili na zadnjo različico vsake %(count)s mesece."
-msgstr[3] ""
-"Vaš Weblate bomo nadgradili na zadnjo različico vsakih %(count)s mesecev."
-
-#: weblate_web/html/hosting.html:260 weblate_web/html/hosting.html:275
-#: weblate_web/html/hosting.html:290
-msgid "We will fix issues that occur in your environment."
-msgstr "Popravili bomo težave, ki se pojavljajo v vašem okolju."
-
-#: weblate_web/html/hosting.html:261 weblate_web/html/hosting.html:276
-#: weblate_web/html/hosting.html:291
-msgid "You will receive priority email support."
-msgstr "Prejeli boste prednostno podporo po e-pošti."
-
-#: weblate_web/html/hosting.html:262 weblate_web/html/hosting.html:277
-#: weblate_web/html/hosting.html:292
-#, python-format
-msgid "Up to %(amount)s hour of consulting or support per month are included."
-msgid_plural ""
-"Up to %(amount)s hours of consulting or support per month are included."
-msgstr[0] "Vključena je do %(amount)s ura svetovanja ali podpore na mesec."
-msgstr[1] "Vključeni sta do %(amount)s uri svetovanja ali podpore na mesec."
-msgstr[2] "Vključene so do %(amount)s ure svetovanja ali podpore na mesec."
-msgstr[3] "Vključenih je do %(amount)s ur svetovanja ali podpore na mesec."
-
-#: weblate_web/html/hosting.html:267
+#: weblate_web/templates/hosting.html:252
 msgid "Basic support for self hosted Weblate"
 msgstr "Osnovna podpora za samogostovani Weblate"
 
-#: weblate_web/html/hosting.html:282
-msgid "Extended support for self hosted Weblate"
-msgstr "Razširjena podpora za samogostovani Weblate"
-
-#: weblate_web/html/hosting.html:289
+#: weblate_web/templates/hosting.html:259
 msgid "Your Weblate will be upgraded to the latest version on every release."
 msgstr "Vaš Weblate bomo nadgradili na zadnjo različico pri vsaki izdaji."
 
-#: weblate_web/html/hosting.html:297
+#: weblate_web/templates/hosting.html:260
+msgid "We will fix issues that occur in your environment."
+msgstr "Popravili bomo težave, ki se pojavljajo v vašem okolju."
+
+#: weblate_web/templates/hosting.html:261
+msgid "You will receive priority email support."
+msgstr "Prejeli boste prednostno podporo po e-pošti."
+
+#: weblate_web/templates/hosting.html:266
 msgid "Consulting services or custom development"
 msgstr "Storitve svetovanja ali razvoj po meri"
 
-#: weblate_web/html/hosting.html:298
+#: weblate_web/templates/hosting.html:267
 #, python-format
 msgid "%(price)s EUR / hour"
 msgstr "%(price)s EUR/uro"
 
-#: weblate_web/html/hosting.html:303
+#: weblate_web/templates/hosting.html:272
 msgid "Custom features development"
 msgstr "Razvoj funkcionalnosti po meri"
 
-#: weblate_web/html/hosting.html:304
+#: weblate_web/templates/hosting.html:273
 msgid "Integrating Weblate into your workflow"
 msgstr "Vključitev Weblate v vaš delovni tok"
 
-#: weblate_web/html/hosting.html:305
+#: weblate_web/templates/hosting.html:274
 msgid "Suggestions on the internationalization or localization process"
 msgstr "Predlogi glede postopka internacionalizacije ali lokalizacije"
 
-#: weblate_web/html/hosting.html:313
+#: weblate_web/templates/hosting.html:282
 msgid "Ask us for details about self hosted Weblate"
 msgstr "Povprašajte nas za podrobnosti o samogostovanem Weblate"
 
-#: weblate_web/html/hosting.html:315
+#: weblate_web/templates/hosting.html:284
 msgid "Hosting for free software"
 msgstr "Gostovanje za prosto programje"
 
-#: weblate_web/html/hosting.html:318
+#: weblate_web/templates/hosting.html:287
 msgid ""
 "If you are interested in using Weblate for your free software, you can ask "
 "us for hosting of your translations on <a href=\"https://hosted.weblate.org/"
@@ -1048,11 +1043,11 @@ msgstr ""
 "weblate.org</a>. To vam bo omogočilo, da uporabljate Weblate brez nameščanja "
 "in vzdrževanja."
 
-#: weblate_web/html/hosting.html:321
+#: weblate_web/templates/hosting.html:290
 msgid "Conditions for free hosting"
 msgstr "Pogoji za brezplačno gostovanje"
 
-#: weblate_web/html/hosting.html:324
+#: weblate_web/templates/hosting.html:293
 msgid ""
 "Translated content has to be released under <a href=\"https://en.wikipedia."
 "org/wiki/Free_software_license\">free license</a>."
@@ -1060,22 +1055,22 @@ msgstr ""
 "Prevedena vsebina mora biti izdana pod <a href=\"https://en.wikipedia.org/"
 "wiki/Free_software_license\">prostim dovoljenjem</a>."
 
-#: weblate_web/html/hosting.html:325
+#: weblate_web/templates/hosting.html:294
 msgid ""
 "Source code has to be publicly available in a supported version control "
 "system."
 msgstr ""
 "Izvorna koda mora biti javno dostopna v podprtem sistemu za nadzor različic."
 
-#: weblate_web/html/hosting.html:326
+#: weblate_web/templates/hosting.html:295
 msgid "There is no guarantee for service availability or quality."
 msgstr "Ni nobenega zagotovila o razpoložljivosti ali kakovosti storitev."
 
-#: weblate_web/html/hosting.html:329
+#: weblate_web/templates/hosting.html:298
 msgid "Asking for hosting"
 msgstr "Možnost gostovanja"
 
-#: weblate_web/html/hosting.html:332
+#: weblate_web/templates/hosting.html:301
 #, python-format
 msgid ""
 "Please use <a href=\"%(url)s\">contact form on Hosted Weblate</a> to request "
@@ -1084,32 +1079,32 @@ msgstr ""
 "Prosimo, uporabite <a href=\"%(url)s\">kontaktni obrazec na Gostovanem "
 "Weblate</a>, da zaprosite za gostovanje. Potrebovali boste naslednje podatke:"
 
-#: weblate_web/html/hosting.html:336
+#: weblate_web/templates/hosting.html:305
 msgid "Information about your project."
 msgstr "Informacije o vašem projektu."
 
-#: weblate_web/html/hosting.html:337
+#: weblate_web/templates/hosting.html:306
 msgid "Project website."
 msgstr "Spletna stran projekta."
 
-#: weblate_web/html/hosting.html:345
+#: weblate_web/templates/hosting.html:314
 msgid ""
 "The free plan does not allow you to change project visibility or to limit "
 "users which can contribute to the translation."
 msgstr ""
 
-#: weblate_web/html/hosting.html:348
+#: weblate_web/templates/hosting.html:317
 msgid ""
 "This limitation can be lifted by purchasing the \"Basic\" hosting plan - you "
 "will still have free software limits, but you will get extended user "
 "management capabilities."
 msgstr ""
 
-#: weblate_web/html/hosting.html:351
+#: weblate_web/templates/hosting.html:320
 msgid "Translation workflow"
 msgstr "Postopek prevajanja"
 
-#: weblate_web/html/hosting.html:354
+#: weblate_web/templates/hosting.html:323
 msgid ""
 "All translated repositories are available using https protocol with similar "
 "naming as on website - weblate/master translation is published as "
@@ -1121,7 +1116,7 @@ msgstr ""
 "<code>https://hosted.weblate.org/git/weblate/master/</code>. URL lahko "
 "najdete na zavihku z informacijami komponente."
 
-#: weblate_web/html/hosting.html:358
+#: weblate_web/templates/hosting.html:327
 #, python-format
 msgid ""
 "Weblate can automatically receive changes from major code hosting services, "
@@ -1133,7 +1128,7 @@ msgstr ""
 "\">GitHubu</a>, <a href=\"%(bitbucket)s\">Bitbucketu</a> ali <a href="
 "\"%(gitlab)s\">GitLabu</a>."
 
-#: weblate_web/html/hosting.html:362
+#: weblate_web/templates/hosting.html:331
 #, python-format
 msgid ""
 "If you want Weblate to automatically push changes as well, add Weblate push "
@@ -1145,11 +1140,11 @@ msgstr ""
 "možnost. Za podrobnejša navodila si oglejte <a href=\"%(docs)s"
 "\">dokumentacijo</a>."
 
-#: weblate_web/html/hosting.html:365
+#: weblate_web/templates/hosting.html:334
 msgid "Support free hosting"
 msgstr "Podprite brezplačno gostovanje"
 
-#: weblate_web/html/hosting.html:369
+#: weblate_web/templates/hosting.html:338
 #, python-format
 msgid ""
 "The hosting is provided for free, but running the server and maintaining it "
@@ -1160,11 +1155,11 @@ msgstr ""
 "nekaj stane, zato vas vabimo, da uporabite <a href=\"%(gittip_url)s"
 "\">Liberapay</a> ali <a href=\"%(donate_url)s\">druge načine doniranja</a>."
 
-#: weblate_web/html/hosting.html:373
+#: weblate_web/templates/hosting.html:342
 msgid "Self hosting"
 msgstr "Lastno gostovanje"
 
-#: weblate_web/html/hosting.html:377
+#: weblate_web/templates/hosting.html:346
 #, python-format
 msgid ""
 "You can also <a href=\"%(download_url)s\">download</a> Weblate sources and "
@@ -1175,7 +1170,7 @@ msgstr ""
 "Weblate in jo poganjate na svojih sistemih. Obstaja tudi več možnosti za "
 "uvedbo Weblate v oblak."
 
-#: weblate_web/html/hosting.html:381
+#: weblate_web/templates/hosting.html:350
 #, python-format
 msgid ""
 "In case you need help with your self hosted solution, we're ready to help as "
@@ -1187,7 +1182,7 @@ msgstr ""
 "podrobnosti stopite v stik z <a href=\"%(contact_url)s\">Michalom Čihařem</"
 "a>."
 
-#: weblate_web/html/hosting.html:384
+#: weblate_web/templates/hosting.html:353
 msgid ""
 "All prices exclude VAT, invoices for EU countries are issued as a reverse "
 "charge, invoices for Czech Republic will include additional VAT."
@@ -1195,24 +1190,24 @@ msgstr ""
 "Cene ne vključujejo DDV. Računi za države EU so izdani kot obrnjena davčna "
 "obveznost; računi za Češko republiko vključujejo dodaten DDV."
 
-#: weblate_web/html/index.html:3
+#: weblate_web/templates/index.html:3
 msgid "Weblate - web-based translation"
 msgstr "Weblate – spletno podprto prevajanje"
 
-#: weblate_web/html/index.html:14 weblate_web/html/tour.html:11
-#: weblate_web/html/try.html:12
+#: weblate_web/templates/index.html:14 weblate_web/templates/tour.html:11
+#: weblate_web/templates/try.html:12
 msgid "Try our demo"
 msgstr "Preizkusite naš demo"
 
-#: weblate_web/html/index.html:15
+#: weblate_web/templates/index.html:15
 msgid "View hosting plans"
 msgstr "Ogled načrtov gostovanja"
 
-#: weblate_web/html/index.html:16
+#: weblate_web/templates/index.html:16
 msgid "Downloads"
 msgstr "Prenosi"
 
-#: weblate_web/html/index.html:25
+#: weblate_web/templates/index.html:25
 msgid ""
 "Weblate is a free web-based translation tool with tight version control "
 "integration. It features simple and clean user interface, propagation of "
@@ -1224,35 +1219,35 @@ msgstr ""
 "prevodov na komponente, preverjanje kakovosti in samodejno povezovanje do "
 "izvornih datotek."
 
-#: weblate_web/html/index.html:29
+#: weblate_web/templates/index.html:29
 msgid "Weblate screenshot"
 msgstr "Zaslonski posnetek Weblate"
 
-#: weblate_web/html/index.html:38
+#: weblate_web/templates/index.html:38
 msgid "See more features…"
 msgstr "Oglejte si več zmožnosti …"
 
-#: weblate_web/html/index.html:47
+#: weblate_web/templates/index.html:47
 msgid "See who is using Weblate and join them!"
 msgstr "Oglejte si, kdo uporablja Weblate, in se jim pridružite!"
 
-#: weblate_web/html/support.html:3 weblate_web/html/support.html:4
+#: weblate_web/templates/support.html:3 weblate_web/templates/support.html:4
 msgid "Weblate support"
 msgstr "Podpora Weblate"
 
-#: weblate_web/html/support.html:6
+#: weblate_web/templates/support.html:6
 msgid "Weblate is a free software with community support."
 msgstr "Weblate je prosto programje s podporo skupnosti."
 
-#: weblate_web/html/support.html:11
+#: weblate_web/templates/support.html:11
 msgid "Report issue"
 msgstr "Poročaj o napaki"
 
-#: weblate_web/html/support.html:16
+#: weblate_web/templates/support.html:16
 msgid "Bugs or feature requests"
 msgstr "Hrošči ali predlogi funkcij"
 
-#: weblate_web/html/support.html:19
+#: weblate_web/templates/support.html:19
 msgid ""
 "Have you found any issue with Weblate? Do you have idea how to improve it? "
 "Please report it to <a href=\"https://github.com/WeblateOrg/weblate/issues"
@@ -1262,11 +1257,11 @@ msgstr ""
 "pišite na <a href=\"https://github.com/WeblateOrg/weblate/issues\">sledilnik "
 "zadev na GitHub</a>."
 
-#: weblate_web/html/support.html:22
+#: weblate_web/templates/support.html:22
 msgid "Security issues"
 msgstr "Varnostne težave"
 
-#: weblate_web/html/support.html:25
+#: weblate_web/templates/support.html:25
 #, python-format
 msgid ""
 "Should you find security issue within our code base, please report it to "
@@ -1277,71 +1272,71 @@ msgstr ""
 "Več informacij o sporočanju varnostnih težav lahko najdete v <a href="
 "\"%(docs)s\">naši dokumentaciji</a>."
 
-#: weblate_web/html/support.html:28
+#: weblate_web/templates/support.html:28
 #, fuzzy
 #| msgid "Basic support for self hosted Weblate"
 msgid "Support for Hosted Weblate services"
 msgstr "Osnovna podpora za samogostovani Weblate"
 
-#: weblate_web/html/support.html:31
+#: weblate_web/templates/support.html:31
 #, python-format
 msgid ""
 "If you are using our hosting services, you can ask for support at "
 "%(contact)s."
 msgstr ""
 
-#: weblate_web/html/support.html:34
+#: weblate_web/templates/support.html:34
 #, fuzzy
 #| msgid "Mailing list"
 msgid "Mailing lists"
 msgstr "Poštni seznam"
 
-#: weblate_web/html/support.html:36
+#: weblate_web/templates/support.html:36
 msgid "Users and developers mailing list"
 msgstr ""
 
-#: weblate_web/html/support.html:38
+#: weblate_web/templates/support.html:38
 msgid ""
 "You can use mailing lists for discussions with other Weblate users and "
 "developers."
 msgstr ""
 
-#: weblate_web/html/support.html:39
+#: weblate_web/templates/support.html:39
 msgid ""
 "You can post to it using <a href=\"mailto:weblate@lists.cihar.com"
 "\">weblate@lists.cihar.com</a> address."
 msgstr ""
 
-#: weblate_web/html/support.html:40 weblate_web/html/support.html:56
+#: weblate_web/templates/support.html:40 weblate_web/templates/support.html:56
 msgid "You can browse mailing list archives"
 msgstr ""
 
-#: weblate_web/html/support.html:43 weblate_web/html/support.html:59
+#: weblate_web/templates/support.html:43 weblate_web/templates/support.html:59
 msgid "Enter your email"
 msgstr ""
 
-#: weblate_web/html/support.html:45 weblate_web/html/support.html:61
+#: weblate_web/templates/support.html:45 weblate_web/templates/support.html:61
 msgid "Subscribe"
 msgstr ""
 
-#: weblate_web/html/support.html:52
+#: weblate_web/templates/support.html:52
 msgid "Hosted Weblate Announcements mailing list"
 msgstr ""
 
-#: weblate_web/html/support.html:54
+#: weblate_web/templates/support.html:54
 msgid ""
 "Low traffic mailing list with announcements about Hosted Weblate services."
 msgstr ""
 
-#: weblate_web/html/support.html:55
+#: weblate_web/templates/support.html:55
 msgid "This list is moderated, only selected users can post announcements."
 msgstr ""
 
-#: weblate_web/html/support.html:68
+#: weblate_web/templates/support.html:68
 msgid "Stack Overflow"
 msgstr "Stack Overflow"
 
-#: weblate_web/html/support.html:70
+#: weblate_web/templates/support.html:70
 #, python-format
 msgid ""
 "You can also ask related questions on <a href=\"%(url)s\">Stack Overflow</a>."
@@ -1349,15 +1344,15 @@ msgstr ""
 "Sorodna vprašanja lahko zastavite tudi na <a href=\"%(url)s\">Stack "
 "Overflow</a>."
 
-#: weblate_web/html/support.html:72
+#: weblate_web/templates/support.html:72
 msgid "Consulting"
 msgstr "Svetovanje"
 
-#: weblate_web/html/support.html:74
+#: weblate_web/templates/support.html:74
 msgid "See our support offerings for self hosted Weblate instances"
 msgstr "Oglejte si našo ponudbo podpore za samogostovane primerke Weblate"
 
-#: weblate_web/html/support.html:77
+#: weblate_web/templates/support.html:77
 #, python-format
 msgid ""
 "You can also contact <a href=\"%(contact_link)s\">Michal Čihař</a>, who is "
@@ -1366,52 +1361,52 @@ msgstr ""
 "Pišete lahko tudi <a href=\"%(contact_link)s\">Michalu Čihařu</a>, ki je "
 "avtor Weblate za storitve svetovanja."
 
-#: weblate_web/html/thanks.html:3 weblate_web/html/thanks.html:4
+#: weblate_web/templates/thanks.html:3 weblate_web/templates/thanks.html:4
 msgid "Thanks from Weblate"
 msgstr "Zahvale Weblate"
 
-#: weblate_web/html/thanks.html:6
+#: weblate_web/templates/thanks.html:6
 msgid "Weblate is thankful for help from others."
 msgstr "Weblate je hvaležen za pomoč drugih."
 
-#: weblate_web/html/thanks.html:20
+#: weblate_web/templates/thanks.html:20
 msgid "Technology"
 msgstr "Tehnologija"
 
-#: weblate_web/html/thanks.html:22
+#: weblate_web/templates/thanks.html:22
 msgid "The development of Weblate is based on the following technologies:"
 msgstr "Razvoj Weblate temelji na naslednjih tehnologijah:"
 
-#: weblate_web/html/thanks.html:26
+#: weblate_web/templates/thanks.html:26
 msgid "GitHub provides hosting for our source code and issue tracker."
 msgstr "GitHub nudi gostovanje naše izvorne kode in sledilnika težav."
 
-#: weblate_web/html/thanks.html:30
+#: weblate_web/templates/thanks.html:30
 msgid "Travis CI is our continuous integration platform."
 msgstr "Travis CI je naša ploščad za neprestano integracijo."
 
-#: weblate_web/html/thanks.html:34
+#: weblate_web/templates/thanks.html:34
 msgid "Codecov helps us to monitor code coverage of our test suite."
 msgstr "Codecov nam pomaga spremljati pokritost kode našega testnega kompleta."
 
-#: weblate_web/html/thanks.html:38
+#: weblate_web/templates/thanks.html:38
 msgid "Sauce Labs is running our Selenium tests in real browsers."
 msgstr "Sauce Labs poganja naše preizkuse Selenium v pravih brskalnikih."
 
-#: weblate_web/html/thanks.html:42
+#: weblate_web/templates/thanks.html:42
 msgid "Rollbar helps us to collect and fix errors happening on Hosted Weblate."
 msgstr ""
 "Rollbar nam pomaga zbirati in popravljati napake na Gostovanem Weblate."
 
-#: weblate_web/html/thanks.html:46
+#: weblate_web/templates/thanks.html:46
 msgid "Our translations are being done on Hosted Weblate."
 msgstr "Naši prevodi nastajajo na Gostovanem Weblate."
 
-#: weblate_web/html/thanks.html:50
+#: weblate_web/templates/thanks.html:50
 msgid "Supporters"
 msgstr "Podporniki"
 
-#: weblate_web/html/thanks.html:52
+#: weblate_web/templates/thanks.html:52
 msgid ""
 "Free hosting for free software projects would be impossible without our "
 "sponsors."
@@ -1419,7 +1414,7 @@ msgstr ""
 "Brezplačno gostovanje za odprto programje ne bi bilo mogoče brez naših "
 "sponzorjev."
 
-#: weblate_web/html/thanks.html:54
+#: weblate_web/templates/thanks.html:54
 msgid ""
 "Support our project on Bountysource Salt and get exclusive logo placement on "
 "this page."
@@ -1427,27 +1422,27 @@ msgstr ""
 "Podprite naš projekt na Bountysource Salt in na to stran bomo ekskluzivno "
 "postavili vaš logotip."
 
-#: weblate_web/html/tour.html:3 weblate_web/html/tour.html:4
+#: weblate_web/templates/tour.html:3 weblate_web/templates/tour.html:4
 msgid "Weblate tour"
 msgstr "Predstavitev Weblate"
 
-#: weblate_web/html/tour.html:6
+#: weblate_web/templates/tour.html:6
 msgid "Weblate has useful features for every crowdsourced translation."
 msgstr "Weblate ima uporabne funkcije za vsak prevod, podprt z množico."
 
-#: weblate_web/html/try.html:3 weblate_web/html/try.html:4
+#: weblate_web/templates/try.html:3 weblate_web/templates/try.html:4
 msgid "Try Weblate"
 msgstr "Preizkusite Weblate"
 
-#: weblate_web/html/try.html:6
+#: weblate_web/templates/try.html:6
 msgid "Weblate is easy to deploy as an appliance."
 msgstr "Weblate je preprosto uvesti kot pripomoček."
 
-#: weblate_web/html/try.html:19
+#: weblate_web/templates/try.html:19
 msgid "Demo server"
 msgstr "Preizkusni strežnik"
 
-#: weblate_web/html/try.html:22
+#: weblate_web/templates/try.html:22
 #, fuzzy
 #| msgid ""
 #| "You can try how Weblate on our <a href=\"https://demo.weblate.org\">demo "
@@ -1463,17 +1458,17 @@ msgstr ""
 "uporabniškim imenom ali uporabite račun <code>demo</code> z geslom "
 "<code>demo</code>."
 
-#: weblate_web/html/try.html:25
+#: weblate_web/templates/try.html:25
 msgid ""
 "To test the review workflow there, log in with username: <code>review</"
 "code>, and password: <code>review</code>."
 msgstr ""
 
-#: weblate_web/html/try.html:27
+#: weblate_web/templates/try.html:27
 msgid "Appliances"
 msgstr "Pripomočki"
 
-#: weblate_web/html/try.html:30
+#: weblate_web/templates/try.html:30
 #, fuzzy, python-format
 #| msgid ""
 #| "Check our <a href=\"%(download_url)s\">download page</a> for appliances, "
@@ -1524,6 +1519,42 @@ msgstr "Tarball izvornih datotek, stisnjeno kot xz"
 #: weblate_web/templatetags/downloads.py:61
 msgid "Sources, zip compressed"
 msgstr "Izvorne datoteke, stisnjeno kot zip"
+
+#~ msgid "Translation processing"
+#~ msgstr "Obdelava prevodov"
+
+#~ msgid "Phone support"
+#~ msgstr "Telefonska podpora"
+
+#~ msgid "Minimal support for self hosted Weblate"
+#~ msgstr "Minimalna podpora za samogostovani Weblate"
+
+#~ msgid ""
+#~ "Your Weblate will be upgraded to the latest version at least every "
+#~ "%(count)s month."
+#~ msgid_plural ""
+#~ "Your Weblate will be upgraded to the latest version at least every "
+#~ "%(count)s months."
+#~ msgstr[0] ""
+#~ "Vaš Weblate bomo nadgradili na zadnjo različico vsak %(count)s mesec."
+#~ msgstr[1] ""
+#~ "Vaš Weblate bomo nadgradili na zadnjo različico vsaka %(count)s meseca."
+#~ msgstr[2] ""
+#~ "Vaš Weblate bomo nadgradili na zadnjo različico vsake %(count)s mesece."
+#~ msgstr[3] ""
+#~ "Vaš Weblate bomo nadgradili na zadnjo različico vsakih %(count)s mesecev."
+
+#~ msgid ""
+#~ "Up to %(amount)s hour of consulting or support per month are included."
+#~ msgid_plural ""
+#~ "Up to %(amount)s hours of consulting or support per month are included."
+#~ msgstr[0] "Vključena je do %(amount)s ura svetovanja ali podpore na mesec."
+#~ msgstr[1] "Vključeni sta do %(amount)s uri svetovanja ali podpore na mesec."
+#~ msgstr[2] "Vključene so do %(amount)s ure svetovanja ali podpore na mesec."
+#~ msgstr[3] "Vključenih je do %(amount)s ur svetovanja ali podpore na mesec."
+
+#~ msgid "Extended support for self hosted Weblate"
+#~ msgstr "Razširjena podpora za samogostovani Weblate"
 
 #~ msgid "SUSE Studio appliances"
 #~ msgstr "Pripomočki SUSE Studio"

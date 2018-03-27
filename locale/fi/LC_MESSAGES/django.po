@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2018-02-13 14:01+0100\n"
+"POT-Creation-Date: 2018-03-27 11:47+0200\n"
 "PO-Revision-Date: 2018-02-13 13:55+0000\n"
 "Last-Translator: Tuomas Harju <tuomas@rtj-group.com>\n"
-"Language-Team: Finnish "
-"<https://hosted.weblate.org/projects/weblate/website/fi/>\n"
+"Language-Team: Finnish <https://hosted.weblate.org/projects/weblate/website/"
+"fi/>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -27,14 +27,14 @@ msgstr "Katsaus omista käännöksistäsi etusivulla."
 msgid "Own translations"
 msgstr "Omat käännökset"
 
-#: weblate_web/data.py:39 weblate_web/html/features.html:64
+#: weblate_web/data.py:39 weblate_web/templates/features.html:64
 msgid ""
 "Translator can always see important context information like comments or "
 "corresponding source code."
 msgstr ""
 "Kääntäjä voi aina nähdä tärkeitä tietoja, kuten kommentteja tai lähdekoodin."
 
-#: weblate_web/data.py:42 weblate_web/html/features.html:63
+#: weblate_web/data.py:42 weblate_web/templates/features.html:63
 msgid "Translation context"
 msgstr "Käännöksen asiayhteys"
 
@@ -48,7 +48,7 @@ msgstr ""
 msgid "Project overview"
 msgstr "Projektin tiedot"
 
-#: weblate_web/data.py:55 weblate_web/html/features.html:72
+#: weblate_web/data.py:55 weblate_web/templates/features.html:72
 msgid ""
 "Translators can define their own glossary to stay consistent in frequently "
 "used terminology."
@@ -56,48 +56,48 @@ msgstr ""
 "Kääntäjät voivat määritellä oman sanaston pitääkseen terminologian "
 "yhdenmukaisina."
 
-#: weblate_web/data.py:58 weblate_web/html/features.html:71
-#: weblate_web/html/hosting.html:141
+#: weblate_web/data.py:58 weblate_web/templates/features.html:71
+#: weblate_web/templates/hosting.html:141
 msgid "Glossary"
 msgstr "Sanasto"
 
-#: weblate_web/data.py:63 weblate_web/html/base-features.html:15
+#: weblate_web/data.py:63 weblate_web/templates/base-features.html:15
 msgid ""
 "Customizable quality checks will help you in improving quality of "
 "translations."
 msgstr "Muokattavat laatutarkistukset auttavat parantamaan käännösten laatua."
 
-#: weblate_web/data.py:66 weblate_web/html/base-features.html:14
-#: weblate_web/html/hosting.html:123
+#: weblate_web/data.py:66 weblate_web/templates/base-features.html:14
+#: weblate_web/templates/hosting.html:123
 msgid "Quality checks"
 msgstr "Laatutarkastukset"
 
-#: weblate_web/data.py:71 weblate_web/html/features.html:128
+#: weblate_web/data.py:71 weblate_web/templates/features.html:128
 msgid "Weblate provides you various ways to promote your translation project."
 msgstr "Weblate tarjoaa erilaisia tapoja mainostaa käännösprojektiasi."
 
-#: weblate_web/data.py:74 weblate_web/html/features.html:127
+#: weblate_web/data.py:74 weblate_web/templates/features.html:127
 msgid "Promotion"
 msgstr "Mainostus"
 
-#: weblate_web/html/404.html:4
+#: weblate_web/templates/404.html:4
 msgid "Page not found"
 msgstr "Sivua ei löydy"
 
-#: weblate_web/html/404.html:8 weblate_web/html/500.html:8
-#: weblate_web/html/index.html:7
+#: weblate_web/templates/404.html:8 weblate_web/templates/500.html:8
+#: weblate_web/templates/index.html:7
 msgid "Weblate is a free web-based translation management system."
 msgstr "Weblate on ilmainen web-pohjainen käännösten hallintajärjestelmä."
 
-#: weblate_web/html/404.html:15
+#: weblate_web/templates/404.html:15
 msgid "The page you are looking for was not found."
 msgstr "Etsimääsi sivua ei löytynyt."
 
-#: weblate_web/html/500.html:4
+#: weblate_web/templates/500.html:4
 msgid "Server error"
 msgstr "Palvelinvirhe"
 
-#: weblate_web/html/500.html:15
+#: weblate_web/templates/500.html:15
 msgid ""
 "The server had serious problems while serving your request. We've just sent "
 "our trained monkeys to fix the issue."
@@ -106,119 +106,121 @@ msgstr ""
 "koulutetut\n"
 "apinamme korjaamaan ongelman."
 
-#: weblate_web/html/base-features.html:6 weblate_web/html/hosting.html:42
+#: weblate_web/templates/base-features.html:6
+#: weblate_web/templates/hosting.html:42
 msgid "Continuous translation"
 msgstr "Jatkuva kääntäminen"
 
-#: weblate_web/html/base-features.html:7
+#: weblate_web/templates/base-features.html:7
 msgid ""
 "Automated translation process can closely follow development of your project."
 msgstr ""
 "Automaattinen käännösprosessi voi seurata tiiviisti ohjelmistoprojektissa "
 "tehtävää kehitystyötä."
 
-#: weblate_web/html/base-features.html:22
+#: weblate_web/templates/base-features.html:22
 msgid "Attribution"
 msgstr "Nimeäminen"
 
-#: weblate_web/html/base-features.html:23
+#: weblate_web/templates/base-features.html:23
 msgid ""
 "All your translators will be properly credited in the version control system."
 msgstr ""
 "Kaikki kääntäjät kunniamainitaan asianmukaisesti "
 "versionhallintajärjestelmässä."
 
-#: weblate_web/html/base-features.html:30 weblate_web/html/hosting.html:17
+#: weblate_web/templates/base-features.html:30
+#: weblate_web/templates/hosting.html:17
 msgid "Hosting plans"
 msgstr "Ylläpitopaketit"
 
-#: weblate_web/html/base-features.html:31
+#: weblate_web/templates/base-features.html:31
 msgid "Hosting plans to use Weblate as a service starting at 19 EUR."
 msgstr "Hostauspalvelut Weblaten käyttämiseksi palveluna alk. 19€."
 
-#: weblate_web/html/base-features.html:38
+#: weblate_web/templates/base-features.html:38
 msgid "Ready for cloud"
 msgstr "Valmiina pilvipalveluun"
 
-#: weblate_web/html/base-features.html:39
+#: weblate_web/templates/base-features.html:39
 msgid "Weblate comes with appliances, which are ready to deploy in your cloud."
 msgstr ""
 "Weblaten mukana tulee apuohjelmia joiden avulla voit asentaa Weblaten "
 "pilvipalveluusi."
 
-#: weblate_web/html/base-features.html:46
+#: weblate_web/templates/base-features.html:46
 msgid "Free software"
 msgstr "Vapaa ohjelmisto"
 
-#: weblate_web/html/base-features.html:47
+#: weblate_web/templates/base-features.html:47
 msgid "Weblate is free software, you can run your own instance of it."
 msgstr "Weblate on ilmainen ohjelmisto, voit ylläpitää omaa kopiotasi siitä."
 
-#: weblate_web/html/base.html:12
+#: weblate_web/templates/base.html:12
 msgctxt "Keyword"
 msgid "translate"
 msgstr "Käännä"
 
-#: weblate_web/html/base.html:66
+#: weblate_web/templates/base.html:66
 msgid "Toggle navigation"
 msgstr "Vaihda navigointi"
 
-#: weblate_web/html/base.html:72
+#: weblate_web/templates/base.html:72
 msgid "Weblate logo"
 msgstr "Weblate logo"
 
-#: weblate_web/html/base.html:78
+#: weblate_web/templates/base.html:78
 msgid "Blog"
 msgstr "Blogi"
 
-#: weblate_web/html/base.html:79
+#: weblate_web/templates/base.html:79
 msgid "Try"
 msgstr "Kokeile"
 
-#: weblate_web/html/base.html:80
+#: weblate_web/templates/base.html:80
 msgid "Features"
 msgstr "Ominaisuudet"
 
-#: weblate_web/html/base.html:81
+#: weblate_web/templates/base.html:81
 msgid "Docs"
 msgstr "Dokumentit"
 
-#: weblate_web/html/base.html:82 weblate_web/html/download.html:34
+#: weblate_web/templates/base.html:82 weblate_web/templates/download.html:34
 msgid "Download"
 msgstr "Lataa"
 
-#: weblate_web/html/base.html:83
+#: weblate_web/templates/base.html:83
 msgid "Hosting"
 msgstr "Hostaus"
 
-#: weblate_web/html/base.html:84
+#: weblate_web/templates/base.html:84
 msgid "Develop"
 msgstr "Kehitä"
 
-#: weblate_web/html/base.html:85 weblate_web/html/donate.html:61
-#: weblate_web/html/donate.html:91 weblate_web/html/donate.html:92
-#: weblate_web/html/donate.html:93 weblate_web/html/donate.html:94
-#: weblate_web/html/donate.html:95
+#: weblate_web/templates/base.html:85 weblate_web/templates/donate.html:61
+#: weblate_web/templates/donate.html:91 weblate_web/templates/donate.html:92
+#: weblate_web/templates/donate.html:93 weblate_web/templates/donate.html:94
+#: weblate_web/templates/donate.html:95
 msgid "Donate"
 msgstr "Lahjoita"
 
-#: weblate_web/html/base.html:86
+#: weblate_web/templates/base.html:86
 msgid "Support"
 msgstr "Tuki"
 
-#: weblate_web/html/base.html:87
+#: weblate_web/templates/base.html:87
 msgid "Tour"
 msgstr "Kierros"
 
-#: weblate_web/html/base.html:88
+#: weblate_web/templates/base.html:88
 msgid "Thanks"
 msgstr "Kiitos"
 
-#: weblate_web/html/base.html:103
+#: weblate_web/templates/base.html:103
 msgid "Help with translations!"
 msgstr "Auta käännöksissä!"
 
-#: weblate_web/html/base.html:140
+#: weblate_web/templates/base.html:140
 #, python-format
 msgid ""
 "Weblate is <a href=\"%(github_url)s\">free software</a> and welcomes <a href="
@@ -227,23 +229,26 @@ msgstr ""
 "Weblate on <a href=\"%(github_url)s\">ilmainen ohjelma</a>, ja pyytää sinut "
 "mukaan <a href=\"%(donate_url)s\">lahjoittamaan</a>."
 
-#: weblate_web/html/contribute.html:3 weblate_web/html/contribute.html:4
+#: weblate_web/templates/contribute.html:3
+#: weblate_web/templates/contribute.html:4
 msgid "Contribute to Weblate"
 msgstr "Osallistu Weblateen"
 
-#: weblate_web/html/contribute.html:6
+#: weblate_web/templates/contribute.html:6
 msgid "Weblate is being developed by an open community."
 msgstr "Weblaten on kehittänyt avoin yhteisö."
 
-#: weblate_web/html/contribute.html:10 weblate_web/html/download.html:12
+#: weblate_web/templates/contribute.html:10
+#: weblate_web/templates/download.html:12
 msgid "View sources"
 msgstr "Näytä lähteet"
 
-#: weblate_web/html/contribute.html:11 weblate_web/html/contribute.html:38
+#: weblate_web/templates/contribute.html:11
+#: weblate_web/templates/contribute.html:38
 msgid "Translate"
 msgstr "Käännä"
 
-#: weblate_web/html/contribute.html:17
+#: weblate_web/templates/contribute.html:17
 msgid ""
 "You can find more detailed information about this topic in <a href=\"https://"
 "docs.weblate.org/en/latest/contributing.html\">Contributing chapter</a> of "
@@ -252,11 +257,12 @@ msgstr ""
 "Löydät tarkempia tietoja tästä aiheesta dokumentaation <a href=\"https://"
 "docs.weblate.org/en/latest/contributing.html\">Osallistuminen luvusta</a>."
 
-#: weblate_web/html/contribute.html:20 weblate_web/html/download.html:17
+#: weblate_web/templates/contribute.html:20
+#: weblate_web/templates/download.html:17
 msgid "Code"
 msgstr "Koodi"
 
-#: weblate_web/html/contribute.html:23
+#: weblate_web/templates/contribute.html:23
 #, python-format
 msgid ""
 "Weblate is being developed on <a href=\"%(url)s\">GitHub</a>, you can fork "
@@ -265,12 +271,12 @@ msgstr ""
 "Weblate on kehitetty <a href=\"%(url)s\">GitHubilla</a>, voit haarautua "
 "siellä tai vain:"
 
-#: weblate_web/html/contribute.html:31
+#: weblate_web/templates/contribute.html:31
 #, python-format
 msgid "This website is stored on <a href=\"%(url)s\">GitHub</a> as well:"
 msgstr "Tämä sivusto on tallennettu <a href=\"%(url)s\">GitHubiin</a> samoin:"
 
-#: weblate_web/html/contribute.html:41
+#: weblate_web/templates/contribute.html:41
 msgid ""
 "You can translate Weblate at <a href=\"https://hosted.weblate.org/engage/"
 "weblate/\">hosted.weblate.org</a>."
@@ -278,27 +284,27 @@ msgstr ""
 "Voit kääntää Weblatella osoitteessa <a href=\"https://hosted.weblate.org/"
 "engage/weblate/\">hosted.weblate.org</a>."
 
-#: weblate_web/html/contribute.html:46
+#: weblate_web/templates/contribute.html:46
 msgid "Translation status"
 msgstr "Käännöksen tila"
 
-#: weblate_web/html/donate.html:3 weblate_web/html/donate.html:4
+#: weblate_web/templates/donate.html:3 weblate_web/templates/donate.html:4
 msgid "Donate to Weblate"
 msgstr "Lahjoita Weblate:lle"
 
-#: weblate_web/html/donate.html:6
+#: weblate_web/templates/donate.html:6
 msgid "Weblate is free, but welcomes donations."
 msgstr "Weblate on ilmainen, mutta ottaa vastaan lahjoituksia."
 
-#: weblate_web/html/donate.html:12 weblate_web/html/donate.html:43
+#: weblate_web/templates/donate.html:12 weblate_web/templates/donate.html:43
 msgid "Donate using Liberapay"
 msgstr "Lahjoita käyttämällä Liberapaytä"
 
-#: weblate_web/html/donate.html:18
+#: weblate_web/templates/donate.html:18
 msgid "Use our hosting"
 msgstr "Käytä hostaus -palvelua"
 
-#: weblate_web/html/donate.html:22
+#: weblate_web/templates/donate.html:22
 #, python-format
 msgid ""
 "Host your commercial translations on <a href=\"%(hosting_url)s\">Hosted "
@@ -308,11 +314,11 @@ msgstr ""
 "Weblate</a> -hostauspalvelua ja tuet samalla automaattisesti Weblaten "
 "kehitystyötä."
 
-#: weblate_web/html/donate.html:25
+#: weblate_web/templates/donate.html:25
 msgid "Regular donations"
 msgstr "Säännölliset lahjoitukset"
 
-#: weblate_web/html/donate.html:28
+#: weblate_web/templates/donate.html:28
 msgid ""
 "Regular donations allow sustainability of Weblate development and help to "
 "fund free hosting for free software. You don't have to spend big money, "
@@ -322,12 +328,12 @@ msgstr ""
 "rahoittamaan ylläpitoa. Sinun ei tarvitse antaa paljon rahaa, jokainen "
 "sentti merkitsee."
 
-#: weblate_web/html/donate.html:33 weblate_web/html/donate.html:54
-#: weblate_web/html/thanks.html:12
+#: weblate_web/templates/donate.html:33 weblate_web/templates/donate.html:54
+#: weblate_web/templates/thanks.html:12
 msgid "Fund on Bountysource"
 msgstr "Rahoita Bountysource:lla"
 
-#: weblate_web/html/donate.html:37
+#: weblate_web/templates/donate.html:37
 msgid ""
 "You can send a monthly donation using a credit card. You can also get "
 "rewards for higher donations, for example a logo placement on our website."
@@ -336,16 +342,16 @@ msgstr ""
 "palkintoja suuremmista lahjoituksista, kuten esimerkiksi paikan logollesi "
 "meidän verkkosivuilla."
 
-#: weblate_web/html/donate.html:47
+#: weblate_web/templates/donate.html:47
 msgid "Liberapay allows you to send a weekly amount using a credit card."
 msgstr ""
 "Liberapayn avulla voit lähettää viikoittain summan käyttämällä luottokorttia."
 
-#: weblate_web/html/donate.html:50
+#: weblate_web/templates/donate.html:50
 msgid "Fund features"
 msgstr "Rahaston ominaisuudet"
 
-#: weblate_web/html/donate.html:58
+#: weblate_web/templates/donate.html:58
 msgid ""
 "Bountysource allows you to fund individual features which are reported on "
 "our issue tracker."
@@ -353,16 +359,16 @@ msgstr ""
 "Bountysourcella voit rahoittaa yksittäisiä ominaisuuksia, jotka on "
 "ilmoitettu vikaseurantaohjelmaamme."
 
-#: weblate_web/html/donate.html:64
+#: weblate_web/templates/donate.html:64
 msgid ""
 "If you like Weblate you can support its further development by donating."
 msgstr "Jos pidät Weblatesta voit tukea sen kehittämistä lahjoittamalla."
 
-#: weblate_web/html/donate.html:72
+#: weblate_web/templates/donate.html:72
 msgid "Donate using PayPal"
 msgstr "Lahjoita PayPalin avulla"
 
-#: weblate_web/html/donate.html:77
+#: weblate_web/templates/donate.html:77
 msgid ""
 "PayPal allows you to send money from credit card, PayPal balance or a bank "
 "account."
@@ -370,11 +376,11 @@ msgstr ""
 "PayPalin avulla voit lähettää rahaa luottokortilta, PayPal-saldosta tai "
 "pankkitililtä."
 
-#: weblate_web/html/donate.html:80
+#: weblate_web/templates/donate.html:80
 msgid "Cryptocurrencies"
 msgstr "Virtuaalivaluutat"
 
-#: weblate_web/html/donate.html:83
+#: weblate_web/templates/donate.html:83
 #, python-format
 msgid ""
 "Thanks to <a href=\"%(url)s\">Trezor</a>, we will gladly accept donations in "
@@ -384,27 +390,27 @@ msgstr ""
 "myös useissa virtuaalivaluutoissa. Voit käyttää alla olevia osoitteita "
 "lahjoituksen maksamisessa."
 
-#: weblate_web/html/donate.html:88
+#: weblate_web/templates/donate.html:88
 msgid "Currency"
 msgstr "Valuutta"
 
-#: weblate_web/html/donate.html:88
+#: weblate_web/templates/donate.html:88
 msgid "Payment link"
 msgstr "Maksulinkki"
 
-#: weblate_web/html/donate.html:88
+#: weblate_web/templates/donate.html:88
 msgid "Payment address"
 msgstr "Maksuosoite"
 
-#: weblate_web/html/download.html:4 weblate_web/html/download.html:5
+#: weblate_web/templates/download.html:4 weblate_web/templates/download.html:5
 msgid "Download Weblate"
 msgstr "Lataa Weblate"
 
-#: weblate_web/html/download.html:7
+#: weblate_web/templates/download.html:7
 msgid "Weblate comes with complete source code."
 msgstr "Weblaten mukana tulee täydellinen lähdekoodi."
 
-#: weblate_web/html/download.html:20
+#: weblate_web/templates/download.html:20
 msgid ""
 "Weblate is being developed on <a href=\"https://github.com/WeblateOrg/weblate"
 "\">GitHub</a>, you can fork it there or just:"
@@ -412,19 +418,20 @@ msgstr ""
 "Weblatea on kehitetään <a href=\"https://github.com/WeblateOrg/weblate"
 "\">GitHubissa</a>, voit luoda siellä haaran tai vain:"
 
-#: weblate_web/html/download.html:37
+#: weblate_web/templates/download.html:37
 msgid "You can download latest release here:"
 msgstr "Voit ladata uusimman version täältä:"
 
-#: weblate_web/html/download.html:46 weblate_web/html/download.html:62
+#: weblate_web/templates/download.html:46
+#: weblate_web/templates/download.html:62
 msgid "You can also install using packages for following Linux distributions:"
 msgstr "Voit myös asentaa käyttämällä paketteja seuraavissa Linux-jakeluissa:"
 
-#: weblate_web/html/download.html:52
+#: weblate_web/templates/download.html:52
 msgid "Weblate command line client"
 msgstr "Weblate komentoriviohjelma"
 
-#: weblate_web/html/download.html:55
+#: weblate_web/templates/download.html:55
 #, python-format
 msgid ""
 "You can control Weblate remotely using <a href=\"%(url)s\">wlc</a>, it can "
@@ -433,11 +440,11 @@ msgstr ""
 "Voit hallita Weblatea etänä käyttämällä <a href=\"%(url)s\">wlc</a>:tä, "
 "jonka voit asentaa käyttämällä Pyhton PIP:iä:"
 
-#: weblate_web/html/download.html:70
+#: weblate_web/templates/download.html:70
 msgid "Cloud or virtualization images"
 msgstr "Pilvessä tai virtuaalipalvelussa"
 
-#: weblate_web/html/download.html:72
+#: weblate_web/templates/download.html:72
 msgid ""
 "Weblate can be run in any cloud or virtualization environment. Following "
 "links will show you information about some of these:"
@@ -445,15 +452,15 @@ msgstr ""
 "Weblatea voidaan ajaa missä tahansa pilvi- tai virtuaaliympäristössä. "
 "Seuraavien linkkien takaa löytyy aiheesta lisätietoja:"
 
-#: weblate_web/html/download.html:75
+#: weblate_web/templates/download.html:75
 msgid "Running Weblate in a Docker container"
 msgstr "Weblate Docker -kontainerissa"
 
-#: weblate_web/html/download.html:76
+#: weblate_web/templates/download.html:76
 msgid "Running Weblate on OpenShift platform"
 msgstr "Weblate OpenShift -alustalla"
 
-#: weblate_web/html/download.html:77
+#: weblate_web/templates/download.html:77
 msgid ""
 "BitNami Weblate stack providing native installation for most platforms as "
 "well as support for many public cloud providers"
@@ -461,52 +468,52 @@ msgstr ""
 "BitNami Weblate tarjoaa natiivin asennuksen useimpiin palvelinympäristöihin, "
 "kuten myös tuen useimpiin julkisiin pilvipalveluihin"
 
-#: weblate_web/html/features.html:3 weblate_web/html/features.html:4
+#: weblate_web/templates/features.html:3 weblate_web/templates/features.html:4
 msgid "Weblate features"
 msgstr "Weblaten ominaisuudet"
 
-#: weblate_web/html/features.html:6
+#: weblate_web/templates/features.html:6
 msgid "Weblate is a feature rich computer aided translation tool."
 msgstr "Weblate on erittäin monipuolinen tietokoneavusteinen käännöstyökalu."
 
-#: weblate_web/html/features.html:11
+#: weblate_web/templates/features.html:11
 msgid "View documentation"
 msgstr "Näytä dokumentaatio"
 
-#: weblate_web/html/features.html:23
+#: weblate_web/templates/features.html:23
 msgid "Access control"
 msgstr "Pääsynhallinta"
 
-#: weblate_web/html/features.html:24
+#: weblate_web/templates/features.html:24
 msgid "Access rights can be fine tuned depending on your environment."
 msgstr "Käyttöoikeudet voidaan hienosäätää eri verkkoympäristöissä."
 
-#: weblate_web/html/features.html:31
+#: weblate_web/templates/features.html:31
 msgid "Notifications"
 msgstr "Ilmoitukset"
 
-#: weblate_web/html/features.html:32
+#: weblate_web/templates/features.html:32
 msgid ""
 "Translators can be notified on new strings to translate or other events."
 msgstr ""
 "Kääntäjille voidaan ilmoittaa jos uusia käännöksiä tarvitaan tai heitä "
 "halutaan mukaan muihin tapahtumiin."
 
-#: weblate_web/html/features.html:39
+#: weblate_web/templates/features.html:39
 msgid "Integration API"
 msgstr "Integraatio-API"
 
-#: weblate_web/html/features.html:40
+#: weblate_web/templates/features.html:40
 msgid "Thanks to the API you can integrate Weblate with third party services."
 msgstr ""
 "Kiitoksia rajapinnan, voit myös integroida Weblaten kolmannen osapuolen "
 "palveluihin."
 
-#: weblate_web/html/features.html:47
+#: weblate_web/templates/features.html:47
 msgid "File formats"
 msgstr "Tiedostomuodot"
 
-#: weblate_web/html/features.html:48
+#: weblate_web/templates/features.html:48
 msgid ""
 "Weblate supports all widely used file formats for localisation like Gettext, "
 "JSON, XLIFF or resource strings."
@@ -514,11 +521,11 @@ msgstr ""
 "Weblate tukee yleisiä lokalisoituja tiedostomuotoja, kuten Gettext, JSON, "
 "XLIFF tai lähdemerkkijonoja."
 
-#: weblate_web/html/features.html:55
+#: weblate_web/templates/features.html:55
 msgid "Branches support"
 msgstr "Haarojen tuki"
 
-#: weblate_web/html/features.html:56
+#: weblate_web/templates/features.html:56
 msgid ""
 "Weblate can handle different versions of the translation by pushing them to "
 "different branches automatically."
@@ -526,11 +533,11 @@ msgstr ""
 "Weblate pystyy käsittelemään eri versioita käännöksistä, työntämällä ne eri "
 "haaroihin automaattisesti."
 
-#: weblate_web/html/features.html:79
+#: weblate_web/templates/features.html:79
 msgid "Acquiring feedback"
 msgstr "Palautteen hankkiminen"
 
-#: weblate_web/html/features.html:80
+#: weblate_web/templates/features.html:80
 msgid ""
 "You can also use Weblate to acquire feedback on source strings and thus "
 "improve them."
@@ -538,66 +545,66 @@ msgstr ""
 "Voit myös käyttää Weblatea saadaksesi palautetta lähdemerkkijonoista ja "
 "siten parantaa niitä."
 
-#: weblate_web/html/features.html:87
+#: weblate_web/templates/features.html:87
 msgid "Export and import"
 msgstr "Vie ja tuo"
 
-#: weblate_web/html/features.html:88
+#: weblate_web/templates/features.html:88
 msgid "Translations can be downloaded for offline translation and merged back."
 msgstr "Käännöksiä voi ladata offline käännettäväksi ja yhdistää takaisin."
 
-#: weblate_web/html/features.html:95
+#: weblate_web/templates/features.html:95
 msgid "Integrated"
 msgstr "Integroitu"
 
-#: weblate_web/html/features.html:96
+#: weblate_web/templates/features.html:96
 msgid "Translations are managed within same version control system as code."
 msgstr ""
 "Käännöksiä hallitaan samassa versionhallintajärjestelmässä kuin lähdekoodia."
 
-#: weblate_web/html/features.html:103
+#: weblate_web/templates/features.html:103
 msgid "Documentation"
 msgstr "Ohjeet"
 
-#: weblate_web/html/features.html:104
+#: weblate_web/templates/features.html:104
 msgid ""
 "Weblate comes with comprehensive documentation covering both setup and usage."
 msgstr "Weblaten mukana tulee kattava ohjeistus asennuksesta ja käytöstä."
 
-#: weblate_web/html/features.html:111
+#: weblate_web/templates/features.html:111
 msgid "Review"
 msgstr "Tarkistettava"
 
-#: weblate_web/html/features.html:112
+#: weblate_web/templates/features.html:112
 msgid "Translators have several options to review contributions made by peers."
 msgstr "Kääntäjillä on useita vaihtoehtoja tarkastella vertaisten osuuksia."
 
-#: weblate_web/html/features.html:119
+#: weblate_web/templates/features.html:119
 msgid "Languages"
 msgstr "Kielet"
 
-#: weblate_web/html/features.html:120
+#: weblate_web/templates/features.html:120
 msgid ""
 "Weblate supports over 150 languages out of the box, others can be defined by "
 "administrator."
 msgstr "Weblate tukee yli 150 kieltä, ylläpitäjä voi määrittää lisää kieliä."
 
-#: weblate_web/html/features.html:135
+#: weblate_web/templates/features.html:135
 msgid "Reporting"
 msgstr "Raportointi"
 
-#: weblate_web/html/features.html:136
+#: weblate_web/templates/features.html:136
 msgid ""
 "Weblate generates various reports to provide information about project "
 "activity."
 msgstr ""
 "Weblate tuottaa erilaisia raportteja tiedottaakseen hankeen aktiivisuudesta."
 
-#: weblate_web/html/features.html:144
+#: weblate_web/templates/features.html:144
 msgid "Version control"
 msgstr "Versionhallinta"
 
-#: weblate_web/html/features.html:145
+#: weblate_web/templates/features.html:145
 msgid ""
 "Weblate talks directly with your version control system, currently Git and "
 "Mercurial are supported."
@@ -605,11 +612,11 @@ msgstr ""
 "Weblate keskustelee suoraan versionhallintajärjestelmäsi kanssa. Tällä "
 "hetkellä Git ja Mercurial ovat tuettuja järjestelmiä."
 
-#: weblate_web/html/features.html:152
+#: weblate_web/templates/features.html:152
 msgid "Collaboration sites"
 msgstr "Yhteistyösivustot"
 
-#: weblate_web/html/features.html:153
+#: weblate_web/templates/features.html:153
 msgid ""
 "Weblate has native support for many software development sites such as "
 "GitHub, Bitbucket or Gitlab."
@@ -617,11 +624,11 @@ msgstr ""
 "Weblatella on natiivi tuki monille ohjelmistokehityssivustoille, kuten "
 "GitHubille, Bitbucketille ja Gitlabille."
 
-#: weblate_web/html/features.html:160
+#: weblate_web/templates/features.html:160
 msgid "Responsive UI"
 msgstr "Responsiivinen käyttöliittymä"
 
-#: weblate_web/html/features.html:161
+#: weblate_web/templates/features.html:161
 msgid ""
 "Weblate has responsive UI which will work nicely on your desktop, tablet or "
 "phone."
@@ -630,21 +637,21 @@ msgstr ""
 "erinomaisen käyttökokemuksen niin pöytäkoneella, tabletilla kuin "
 "älypuhelimellakin."
 
-#: weblate_web/html/hosting-ordered.html:3
-#: weblate_web/html/hosting-ordered.html:4 weblate_web/html/hosting.html:3
-#: weblate_web/html/hosting.html:4
+#: weblate_web/templates/hosting-ordered.html:3
+#: weblate_web/templates/hosting-ordered.html:4
+#: weblate_web/templates/hosting.html:3 weblate_web/templates/hosting.html:4
 msgid "Hosting Weblate"
 msgstr "Weblaten hostaus"
 
-#: weblate_web/html/hosting-ordered.html:6
+#: weblate_web/templates/hosting-ordered.html:6
 msgid "Thank you for ordering hosting!"
 msgstr "Kiitoksia hosting -palvelun tilaamisesta!"
 
-#: weblate_web/html/hosting-ordered.html:11
+#: weblate_web/templates/hosting-ordered.html:11
 msgid "Next steps"
 msgstr "Seuraavat askeleet"
 
-#: weblate_web/html/hosting-ordered.html:13
+#: weblate_web/templates/hosting-ordered.html:13
 msgid ""
 "The project setup is currently manual. If you haven't done so already, "
 "please get in touch with us and send us details about your repository setup."
@@ -652,19 +659,21 @@ msgstr ""
 "Projekti pitää tällähetkellä luoda käsin. Jos et ole tehnyt niin aiemmin, "
 "niin ole meihin yhteydessä ja lähetä meille versionhallintasi tiedot."
 
-#: weblate_web/html/hosting-ordered.html:15
+#: weblate_web/templates/hosting-ordered.html:15
 msgid "Usually following information is needed:"
 msgstr "Yleensä seuraavat tiedot ovat tarpeen:"
 
-#: weblate_web/html/hosting-ordered.html:18 weblate_web/html/hosting.html:338
+#: weblate_web/templates/hosting-ordered.html:18
+#: weblate_web/templates/hosting.html:307
 msgid "URL of repository with translations."
 msgstr "URL osoite käännösten arkistoon."
 
-#: weblate_web/html/hosting-ordered.html:19 weblate_web/html/hosting.html:339
+#: weblate_web/templates/hosting-ordered.html:19
+#: weblate_web/templates/hosting.html:308
 msgid "Path to translations within the repository."
 msgstr "Polku käännökset arkistossa."
 
-#: weblate_web/html/hosting-ordered.html:22
+#: weblate_web/templates/hosting-ordered.html:22
 msgid ""
 "You have to allow Weblate to access your repository. This can be done by "
 "adding Weblate user to your project (on GitHub, Bitbucket or GitLab) or "
@@ -674,15 +683,15 @@ msgstr ""
 "että lisäät projektiisi joko (GitHub) Weblate -käyttäjän tai SSH -avaimen "
 "jonka saat meiltä."
 
-#: weblate_web/html/hosting.html:6
+#: weblate_web/templates/hosting.html:6
 msgid "Free continuous translation hosting for free software."
 msgstr "Yhtäjaksoinen kääntämisen hostaus, ilmaiselle ohjelmistolle."
 
-#: weblate_web/html/hosting.html:11
+#: weblate_web/templates/hosting.html:11
 msgid "Ask for hosting"
 msgstr "Pyydä hostausta"
 
-#: weblate_web/html/hosting.html:20
+#: weblate_web/templates/hosting.html:20
 msgid ""
 "Hosted Weblate allows you to use Weblate without any effort and with premium "
 "support backed by it's core developers."
@@ -691,7 +700,7 @@ msgstr ""
 "Hostauspalvelu takaa sinulle myös premium -tason tuen Weblaten "
 "kehitystiimiltä."
 
-#: weblate_web/html/hosting.html:24
+#: weblate_web/templates/hosting.html:24
 #, python-format
 msgid ""
 "We can host translations for your commercial or free software projects. You "
@@ -704,37 +713,37 @@ msgstr ""
 "on jotain kysyttävää, tai etsit palvelua isommalle projektillesi, niin älä "
 "epäröi <a href=\"%(contact)s\">olla yhteydessä meihin</a> 2."
 
-#: weblate_web/html/hosting.html:32
+#: weblate_web/templates/hosting.html:32
 msgctxt "Hosting plan"
 msgid "Free software"
 msgstr "Ilmainen ohjelmisto"
 
-#: weblate_web/html/hosting.html:33
+#: weblate_web/templates/hosting.html:33
 msgctxt "Hosting plan"
 msgid "Basic"
 msgstr "Perus"
 
-#: weblate_web/html/hosting.html:34
+#: weblate_web/templates/hosting.html:34
 msgctxt "Hosting plan"
 msgid "Medium"
 msgstr "Keskitaso"
 
-#: weblate_web/html/hosting.html:35
+#: weblate_web/templates/hosting.html:35
 msgctxt "Hosting plan"
 msgid "Advanced"
 msgstr "Kehittynyt"
 
-#: weblate_web/html/hosting.html:36
+#: weblate_web/templates/hosting.html:36
 msgctxt "Hosting plan"
 msgid "Enterprise"
 msgstr "Yritys"
 
-#: weblate_web/html/hosting.html:37
+#: weblate_web/templates/hosting.html:37
 msgctxt "Hosting plan"
 msgid "Self hosted"
 msgstr "Oma palvelin"
 
-#: weblate_web/html/hosting.html:51
+#: weblate_web/templates/hosting.html:51
 msgid ""
 "Text unit defined in a translation format, it can be word, sentence or a "
 "paragraph"
@@ -742,131 +751,155 @@ msgstr ""
 "Tekstin yksikkö, joka on määritelty käännöksen muotoilussa, ja se voi olla "
 "sana, lause tai kappale"
 
-#: weblate_web/html/hosting.html:51
+#: weblate_web/templates/hosting.html:51
 msgid "Source strings"
 msgstr "Lähdeteksti"
 
-#: weblate_web/html/hosting.html:52 weblate_web/html/hosting.html:61
-#: weblate_web/html/hosting.html:70
+#: weblate_web/templates/hosting.html:52 weblate_web/templates/hosting.html:61
+#: weblate_web/templates/hosting.html:70
 msgid "Negotiable"
 msgstr "Neuvoteltavissa"
 
-#: weblate_web/html/hosting.html:57 weblate_web/html/hosting.html:66
-#: weblate_web/html/hosting.html:75 weblate_web/html/hosting.html:82
-#: weblate_web/html/hosting.html:83 weblate_web/html/hosting.html:84
-#: weblate_web/html/hosting.html:89 weblate_web/html/hosting.html:90
-#: weblate_web/html/hosting.html:91 weblate_web/html/hosting.html:92
-#: weblate_web/html/hosting.html:93 weblate_web/html/hosting.html:97
-#: weblate_web/html/hosting.html:98 weblate_web/html/hosting.html:99
-#: weblate_web/html/hosting.html:100 weblate_web/html/hosting.html:101
-#: weblate_web/html/hosting.html:102
+#: weblate_web/templates/hosting.html:57 weblate_web/templates/hosting.html:66
+#: weblate_web/templates/hosting.html:75 weblate_web/templates/hosting.html:82
+#: weblate_web/templates/hosting.html:83 weblate_web/templates/hosting.html:84
+#: weblate_web/templates/hosting.html:89 weblate_web/templates/hosting.html:90
+#: weblate_web/templates/hosting.html:91 weblate_web/templates/hosting.html:92
+#: weblate_web/templates/hosting.html:93 weblate_web/templates/hosting.html:97
+#: weblate_web/templates/hosting.html:98 weblate_web/templates/hosting.html:99
+#: weblate_web/templates/hosting.html:100
+#: weblate_web/templates/hosting.html:101
+#: weblate_web/templates/hosting.html:102
 msgid "Unlimited"
 msgstr "Rajoittamaton"
 
-#: weblate_web/html/hosting.html:60
+#: weblate_web/templates/hosting.html:60
 msgid "Target languages"
 msgstr "Kohdekielet"
 
-#: weblate_web/html/hosting.html:69
+#: weblate_web/templates/hosting.html:69
 msgid "VCS repositories"
 msgstr "Versionhallinnan arkistot"
 
-#: weblate_web/html/hosting.html:78
+#: weblate_web/templates/hosting.html:78
 msgid "Translation projects"
 msgstr "Käännösprojektit"
 
-#: weblate_web/html/hosting.html:87
+#: weblate_web/templates/hosting.html:87
 msgid "Translation components"
 msgstr "Käännökseen liittyvää"
 
-#: weblate_web/html/hosting.html:96
+#: weblate_web/templates/hosting.html:96
 msgid "Number of translators"
 msgstr "Kääntäjien lukumäärä"
 
-#: weblate_web/html/hosting.html:105 weblate_web/html/hosting.html:342
+#: weblate_web/templates/hosting.html:105
+#: weblate_web/templates/hosting.html:311
 msgid "User management"
 msgstr "Käyttäjien hallinta"
 
-#: weblate_web/html/hosting.html:114
+#: weblate_web/templates/hosting.html:114
 msgid "Supported file formats"
 msgstr "Tuetut tiedostomuodot"
 
-#: weblate_web/html/hosting.html:115 weblate_web/html/hosting.html:116
-#: weblate_web/html/hosting.html:117 weblate_web/html/hosting.html:118
-#: weblate_web/html/hosting.html:119 weblate_web/html/hosting.html:120
+#: weblate_web/templates/hosting.html:115
+#: weblate_web/templates/hosting.html:116
+#: weblate_web/templates/hosting.html:117
+#: weblate_web/templates/hosting.html:118
+#: weblate_web/templates/hosting.html:119
+#: weblate_web/templates/hosting.html:120
 msgid "All"
 msgstr "Kaikki"
 
-#: weblate_web/html/hosting.html:127 weblate_web/html/hosting.html:128
-#: weblate_web/html/hosting.html:129 weblate_web/html/hosting.html:136
-#: weblate_web/html/hosting.html:137 weblate_web/html/hosting.html:138
+#: weblate_web/templates/hosting.html:127
+#: weblate_web/templates/hosting.html:128
+#: weblate_web/templates/hosting.html:129
+#: weblate_web/templates/hosting.html:136
+#: weblate_web/templates/hosting.html:137
+#: weblate_web/templates/hosting.html:138
 msgid "Customizable"
 msgstr "Muokattavissa"
 
-#: weblate_web/html/hosting.html:132
-msgid "Translation processing"
-msgstr "Käännöstä prosessoidaan"
+#: weblate_web/templates/hosting.html:132
+#, fuzzy
+#| msgid "Translation status"
+msgid "Translation addons"
+msgstr "Käännöksen tila"
 
-#: weblate_web/html/hosting.html:150
+#: weblate_web/templates/hosting.html:150
+#, fuzzy
+#| msgid "Translation workflow"
+msgid "Translation memory"
+msgstr "Käännöksen työnkulku"
+
+#: weblate_web/templates/hosting.html:159
 msgid "Priority email support"
 msgstr "Nopea sähköpostituki"
 
-#: weblate_web/html/hosting.html:156 weblate_web/html/hosting.html:165
-#: weblate_web/html/hosting.html:173
+#: weblate_web/templates/hosting.html:165
+#: weblate_web/templates/hosting.html:173
 msgid "Available on request"
 msgstr "Saatavilla pyynnöstä"
 
-#: weblate_web/html/hosting.html:159
-msgid "Phone support"
-msgstr "Puhelintuki"
-
-#: weblate_web/html/hosting.html:168
+#: weblate_web/templates/hosting.html:168
 msgid "Custom domain name with SSL"
 msgstr "Räätälöity verkko-osoite SSL -tuella"
 
-#: weblate_web/html/hosting.html:168
+#: weblate_web/templates/hosting.html:168
 msgid "Own domain"
 msgstr "Oma verkko-osoite"
 
-#: weblate_web/html/hosting.html:179
+#: weblate_web/templates/hosting.html:170
+#: weblate_web/templates/hosting.html:171
+#: weblate_web/templates/hosting.html:172
+#, python-format
+msgid ""
+"Additional charge %(price)s EUR/year, only available with yearly billing"
+msgstr ""
+
+#: weblate_web/templates/hosting.html:179
 msgid "Monthly by PayPal"
 msgstr "Kuukausittain PayPalilla"
 
-#: weblate_web/html/hosting.html:181
+#: weblate_web/templates/hosting.html:181
 msgid "Contact us"
 msgstr "Ota meihin yhteyttä"
 
-#: weblate_web/html/hosting.html:184 weblate_web/html/hosting.html:187
-#: weblate_web/html/hosting.html:190 weblate_web/html/hosting.html:193
-#: weblate_web/html/hosting.html:253 weblate_web/html/hosting.html:268
-#: weblate_web/html/hosting.html:283
+#: weblate_web/templates/hosting.html:184
+#: weblate_web/templates/hosting.html:187
+#: weblate_web/templates/hosting.html:190
+#: weblate_web/templates/hosting.html:193
+#: weblate_web/templates/hosting.html:253
 #, python-format
 msgid "%(price)s EUR / month"
 msgstr "%(price)s EUR / kuukausi"
 
-#: weblate_web/html/hosting.html:195
+#: weblate_web/templates/hosting.html:195
 msgid "See below for options"
 msgstr "Katso alhaalta vaihtoehdot"
 
-#: weblate_web/html/hosting.html:198
+#: weblate_web/templates/hosting.html:198
 #, python-format
 msgid "Yearly by invoice (save 15-20%%)"
 msgstr "Vuosilasku (säästä 15-20%%)"
 
-#: weblate_web/html/hosting.html:200 weblate_web/html/hosting.html:203
-#: weblate_web/html/hosting.html:206 weblate_web/html/hosting.html:209
+#: weblate_web/templates/hosting.html:200
+#: weblate_web/templates/hosting.html:203
+#: weblate_web/templates/hosting.html:206
+#: weblate_web/templates/hosting.html:209
 msgid "Ask us for yearly invoicing with discount."
 msgstr "Kysy meiltä alennetua vuosilaskutusta."
 
-#: weblate_web/html/hosting.html:200 weblate_web/html/hosting.html:203
-#: weblate_web/html/hosting.html:206 weblate_web/html/hosting.html:209
-#: weblate_web/html/hosting.html:254 weblate_web/html/hosting.html:269
-#: weblate_web/html/hosting.html:284
+#: weblate_web/templates/hosting.html:200
+#: weblate_web/templates/hosting.html:203
+#: weblate_web/templates/hosting.html:206
+#: weblate_web/templates/hosting.html:209
+#: weblate_web/templates/hosting.html:254
 #, python-format
 msgid "%(price)s EUR / year"
 msgstr "%(price)s EUR / vuosi"
 
-#: weblate_web/html/hosting.html:217
+#: weblate_web/templates/hosting.html:217
 msgid ""
 "The pricing is based on number of source strings and number of target "
 "languages. The source string is a text unit defined in a translation format, "
@@ -876,7 +909,7 @@ msgstr ""
 "tekstiyksikkö joka on määritelty käännösmuotoilussa, ja se voi olla joko "
 "sana, lause tai kappale."
 
-#: weblate_web/html/hosting.html:221
+#: weblate_web/templates/hosting.html:221
 msgid ""
 "The hosting setup is currently done manually, so you might want to get in "
 "touch with us prior to making subscription with your project details."
@@ -885,7 +918,7 @@ msgstr ""
 "yhteydessä ennen tilauksen tekemistä ja keskustella projektisi "
 "yksityiskohdista ja vaatimuksista."
 
-#: weblate_web/html/hosting.html:225
+#: weblate_web/templates/hosting.html:225
 msgid ""
 "Alternatively we can accept payments by wire transfer (preferably IBAN) or "
 "Bitcoin. Please get in touch for more details."
@@ -893,11 +926,11 @@ msgstr ""
 "Vaihtoehtoisesti voimme vastaanottaa maksuja tilisiirtoina (IBAN) tai "
 "Bitcoin -rahana. Ole yhteydessä saadaksesi lisätietoja."
 
-#: weblate_web/html/hosting.html:228
+#: weblate_web/templates/hosting.html:228
 msgid "Support for self hosted environments"
 msgstr "Tukee asennusta omalle palvelimelle"
 
-#: weblate_web/html/hosting.html:230
+#: weblate_web/templates/hosting.html:230
 msgid ""
 "Worried of putting your translations into cloud? You can self host Weblate "
 "and we can still provide you premium support for your setup."
@@ -905,123 +938,88 @@ msgstr ""
 "Huolestuttaako käännösten lataaminen pilvipalveluun? Voit asentaa Weblaten "
 "omalle palvelimellesi ja me voimme tarjota sinulle premium -tason tukea."
 
-#: weblate_web/html/hosting.html:236
+#: weblate_web/templates/hosting.html:236
 msgid "Installation on your Linux server"
 msgstr "Asennus omalle Linux -palvelimelle"
 
-#: weblate_web/html/hosting.html:237
+#: weblate_web/templates/hosting.html:237
 #, python-format
 msgid "%(price)s EUR"
 msgstr "%(price)s EUR"
 
-#: weblate_web/html/hosting.html:242
+#: weblate_web/templates/hosting.html:242
 msgid "One time installation of Weblate"
 msgstr "Weblaten kerta-asennus"
 
-#: weblate_web/html/hosting.html:243
+#: weblate_web/templates/hosting.html:243
 msgid "Installation using virtualenv, uwsgi and nginx"
 msgstr "Asennus käyttäen virtualenv, uwsgi ja nginx"
 
-#: weblate_web/html/hosting.html:244
+#: weblate_web/templates/hosting.html:244
 msgid "Using PostgreSQL, MySQL or MariaDB as database backend"
 msgstr "Käyttäen PostgreSQL, MySQL tai MariaDB -tietokantoja"
 
-#: weblate_web/html/hosting.html:245
+#: weblate_web/templates/hosting.html:245
 msgid "Requires root access or close cooperation of your admins"
 msgstr ""
 "Edellyttää root -tason pääsyä, tai läheistä yhteistyötä pääkäyttäjiesi kanssa"
 
-#: weblate_web/html/hosting.html:246
+#: weblate_web/templates/hosting.html:246
 msgid "Configuration customization"
 msgstr "Asetusten räätälöinti"
 
-#: weblate_web/html/hosting.html:247
+#: weblate_web/templates/hosting.html:247
 msgid "Does not include custom code development"
 msgstr "Ei sisällä räätälöityjen ominaisuuksien kehitystyötä"
 
-#: weblate_web/html/hosting.html:252
-msgid "Minimal support for self hosted Weblate"
-msgstr "Minimaalinen tuki omalle asennukselle"
-
-#: weblate_web/html/hosting.html:259 weblate_web/html/hosting.html:274
-#, python-format
-msgid ""
-"Your Weblate will be upgraded to the latest version at least every %(count)s "
-"month."
-msgid_plural ""
-"Your Weblate will be upgraded to the latest version at least every %(count)s "
-"months."
-msgstr[0] ""
-"Weblate -asennuksesi päivitetään viimeisimpään versioon joka kuukausi."
-msgstr[1] ""
-"Weblate -asennuksesi päivitetään viimeisimpään versioon vähintään joka "
-"%(count)s kuukausi."
-
-#: weblate_web/html/hosting.html:260 weblate_web/html/hosting.html:275
-#: weblate_web/html/hosting.html:290
-msgid "We will fix issues that occur in your environment."
-msgstr "Korjaamme ympäristössäsi esiintyvät ongelmat."
-
-#: weblate_web/html/hosting.html:261 weblate_web/html/hosting.html:276
-#: weblate_web/html/hosting.html:291
-msgid "You will receive priority email support."
-msgstr "Saat nopean sähköpostituen."
-
-#: weblate_web/html/hosting.html:262 weblate_web/html/hosting.html:277
-#: weblate_web/html/hosting.html:292
-#, python-format
-msgid "Up to %(amount)s hour of consulting or support per month are included."
-msgid_plural ""
-"Up to %(amount)s hours of consulting or support per month are included."
-msgstr[0] ""
-"Sisältää korkeintaan yhden tunnin konsultointia tai tukea joka kuukausi."
-msgstr[1] ""
-"Sisältää korkeintaan %(amount)s tuntia konsultointia tai tukea joka kuukausi."
-
-#: weblate_web/html/hosting.html:267
+#: weblate_web/templates/hosting.html:252
 msgid "Basic support for self hosted Weblate"
 msgstr "Perustason tuki omalle Weblate -asennukselle"
 
-#: weblate_web/html/hosting.html:282
-msgid "Extended support for self hosted Weblate"
-msgstr "Laaja tuki omalle Weblate -asennukselle"
-
-#: weblate_web/html/hosting.html:289
+#: weblate_web/templates/hosting.html:259
 msgid "Your Weblate will be upgraded to the latest version on every release."
 msgstr ""
 "Weblate asennuksesi päivitetään viimeisimpään versioon jokaisen julkaisun "
 "jälkeen."
 
-#: weblate_web/html/hosting.html:297
+#: weblate_web/templates/hosting.html:260
+msgid "We will fix issues that occur in your environment."
+msgstr "Korjaamme ympäristössäsi esiintyvät ongelmat."
+
+#: weblate_web/templates/hosting.html:261
+msgid "You will receive priority email support."
+msgstr "Saat nopean sähköpostituen."
+
+#: weblate_web/templates/hosting.html:266
 msgid "Consulting services or custom development"
 msgstr "Konsultointipalvelu ja räätälöintityö"
 
-#: weblate_web/html/hosting.html:298
+#: weblate_web/templates/hosting.html:267
 #, python-format
 msgid "%(price)s EUR / hour"
 msgstr "%(price)s EUR / tunti"
 
-#: weblate_web/html/hosting.html:303
+#: weblate_web/templates/hosting.html:272
 msgid "Custom features development"
 msgstr "Räätälöityjen ominaisuuksien kehitystyö"
 
-#: weblate_web/html/hosting.html:304
+#: weblate_web/templates/hosting.html:273
 msgid "Integrating Weblate into your workflow"
 msgstr "Weblaten integrointi toimintoihisi"
 
-#: weblate_web/html/hosting.html:305
+#: weblate_web/templates/hosting.html:274
 msgid "Suggestions on the internationalization or localization process"
 msgstr "Ehdotuksia kansainvälistymis- tai lokalisointiprosessiisi"
 
-#: weblate_web/html/hosting.html:313
+#: weblate_web/templates/hosting.html:282
 msgid "Ask us for details about self hosted Weblate"
 msgstr "Pyydä lisätietoja oman palvelimesi ylläpidosta"
 
-#: weblate_web/html/hosting.html:315
+#: weblate_web/templates/hosting.html:284
 msgid "Hosting for free software"
 msgstr "Hostaus ilmaiselle ohjelmistolle"
 
-#: weblate_web/html/hosting.html:318
+#: weblate_web/templates/hosting.html:287
 msgid ""
 "If you are interested in using Weblate for your free software, you can ask "
 "us for hosting of your translations on <a href=\"https://hosted.weblate.org/"
@@ -1033,11 +1031,11 @@ msgstr ""
 "\">hosted.weblate.org</a>. Näin voit käyttää Weblatea ilman asennus- ja "
 "ylläpitohuolia."
 
-#: weblate_web/html/hosting.html:321
+#: weblate_web/templates/hosting.html:290
 msgid "Conditions for free hosting"
 msgstr "Edellytykset ilmaiseen hostaukseen"
 
-#: weblate_web/html/hosting.html:324
+#: weblate_web/templates/hosting.html:293
 msgid ""
 "Translated content has to be released under <a href=\"https://en.wikipedia."
 "org/wiki/Free_software_license\">free license</a>."
@@ -1046,22 +1044,22 @@ msgstr ""
 "\"https://en.wikipedia.org/wiki/Free_software_license\"> ilmainen lisenssi</"
 "a>."
 
-#: weblate_web/html/hosting.html:325
+#: weblate_web/templates/hosting.html:294
 msgid ""
 "Source code has to be publicly available in a supported version control "
 "system."
 msgstr ""
 "Lähdekoodi on julkisesti saatavilla tuetussa versionhallintajärjestelmässä."
 
-#: weblate_web/html/hosting.html:326
+#: weblate_web/templates/hosting.html:295
 msgid "There is no guarantee for service availability or quality."
 msgstr "Ei ole takeita palvelun saatavuudelle tai laadulle."
 
-#: weblate_web/html/hosting.html:329
+#: weblate_web/templates/hosting.html:298
 msgid "Asking for hosting"
 msgstr "Pyydä hostausta"
 
-#: weblate_web/html/hosting.html:332
+#: weblate_web/templates/hosting.html:301
 #, python-format
 msgid ""
 "Please use <a href=\"%(url)s\">contact form on Hosted Weblate</a> to request "
@@ -1071,15 +1069,15 @@ msgstr ""
 "palvelusta</a> pyytäessäsi palvelun avaamista. Tulet tarvitsemaan seuraavia "
 "tietoja:"
 
-#: weblate_web/html/hosting.html:336
+#: weblate_web/templates/hosting.html:305
 msgid "Information about your project."
 msgstr "Projektisi tiedot."
 
-#: weblate_web/html/hosting.html:337
+#: weblate_web/templates/hosting.html:306
 msgid "Project website."
 msgstr "Projektin verkkosivu."
 
-#: weblate_web/html/hosting.html:345
+#: weblate_web/templates/hosting.html:314
 msgid ""
 "The free plan does not allow you to change project visibility or to limit "
 "users which can contribute to the translation."
@@ -1087,7 +1085,7 @@ msgstr ""
 "Käyttämällä ilmaista lisenssiä et voit muuttaa käännösprojektisi näkyvyyttä "
 "tai rajoittaa käyttäjiä jotka voivat tehdä käännöstyötä."
 
-#: weblate_web/html/hosting.html:348
+#: weblate_web/templates/hosting.html:317
 msgid ""
 "This limitation can be lifted by purchasing the \"Basic\" hosting plan - you "
 "will still have free software limits, but you will get extended user "
@@ -1097,11 +1095,11 @@ msgstr ""
 "ilmaisen ohjelmiston rajoitteet, mutta saat käyttöösi laajennetut "
 "käyttäjänhallintaominaisuudet."
 
-#: weblate_web/html/hosting.html:351
+#: weblate_web/templates/hosting.html:320
 msgid "Translation workflow"
 msgstr "Käännöksen työnkulku"
 
-#: weblate_web/html/hosting.html:354
+#: weblate_web/templates/hosting.html:323
 msgid ""
 "All translated repositories are available using https protocol with similar "
 "naming as on website - weblate/master translation is published as "
@@ -1114,7 +1112,7 @@ msgstr ""
 "master/</code>. Voit selvittää URL:n rakenteen komponentin tietoja -"
 "välilehdeltä."
 
-#: weblate_web/html/hosting.html:358
+#: weblate_web/templates/hosting.html:327
 #, python-format
 msgid ""
 "Weblate can automatically receive changes from major code hosting services, "
@@ -1126,7 +1124,7 @@ msgstr ""
 "ottaa käyttöön <a href=\"%(github)s\">GitHub</a>, <a href=\"%(bitbucket)s"
 "\">Bitbucket</a> tai <a href=\"%(gitlab)s\">GitLab</a>."
 
-#: weblate_web/html/hosting.html:362
+#: weblate_web/templates/hosting.html:331
 #, python-format
 msgid ""
 "If you want Weblate to automatically push changes as well, add Weblate push "
@@ -1138,11 +1136,11 @@ msgstr ""
 "(collaborators) ja kerro meille että tahdot käyttää tätä ominaisuutta. Katso "
 "<a href=\"%(docs)s\">ohjeista</a> lisätietoja."
 
-#: weblate_web/html/hosting.html:365
+#: weblate_web/templates/hosting.html:334
 msgid "Support free hosting"
 msgstr "Tue ilmaista hostausta"
 
-#: weblate_web/html/hosting.html:369
+#: weblate_web/templates/hosting.html:338
 #, python-format
 msgid ""
 "The hosting is provided for free, but running the server and maintaining it "
@@ -1153,11 +1151,11 @@ msgstr ""
 "joten olet tervetullut käyttämään <a href=\"%(gittip_url)s\"> Liberapayiä</"
 "a> tai <a href=\"%(donate_url)s\"> muita tapoja lahjoittaaksesi rahaa</a>."
 
-#: weblate_web/html/hosting.html:373
+#: weblate_web/templates/hosting.html:342
 msgid "Self hosting"
 msgstr "Itsenäinen hostaus"
 
-#: weblate_web/html/hosting.html:377
+#: weblate_web/templates/hosting.html:346
 #, python-format
 msgid ""
 "You can also <a href=\"%(download_url)s\">download</a> Weblate sources and "
@@ -1168,7 +1166,7 @@ msgstr ""
 "ylläpitää sitä omalla järjestelmälläsi. Weblaten voi myös julkaista pilvessä "
 "monella eri vaihtoehdolla."
 
-#: weblate_web/html/hosting.html:381
+#: weblate_web/templates/hosting.html:350
 #, python-format
 msgid ""
 "In case you need help with your self hosted solution, we're ready to help as "
@@ -1179,7 +1177,7 @@ msgstr ""
 "kuten myös tarjoamaan konsultointipalvelua erityistarpeisiisi. Ota yhteyttä "
 "<a href=\"%(contact_url)s\">Michal Čihař</a> saadaksesi lisätietoja."
 
-#: weblate_web/html/hosting.html:384
+#: weblate_web/templates/hosting.html:353
 msgid ""
 "All prices exclude VAT, invoices for EU countries are issued as a reverse "
 "charge, invoices for Czech Republic will include additional VAT."
@@ -1188,24 +1186,24 @@ msgstr ""
 "maihin lähetettävissä laskuissa on käännetty verovelvollisuus (ostaja on "
 "verovelvollinen)."
 
-#: weblate_web/html/index.html:3
+#: weblate_web/templates/index.html:3
 msgid "Weblate - web-based translation"
 msgstr "Weblate - web-pohjainen kääntäjä"
 
-#: weblate_web/html/index.html:14 weblate_web/html/tour.html:11
-#: weblate_web/html/try.html:12
+#: weblate_web/templates/index.html:14 weblate_web/templates/tour.html:11
+#: weblate_web/templates/try.html:12
 msgid "Try our demo"
 msgstr "Kokeile demoa"
 
-#: weblate_web/html/index.html:15
+#: weblate_web/templates/index.html:15
 msgid "View hosting plans"
 msgstr "Katso hostauspalvelupakettit"
 
-#: weblate_web/html/index.html:16
+#: weblate_web/templates/index.html:16
 msgid "Downloads"
 msgstr "Lataukset"
 
-#: weblate_web/html/index.html:25
+#: weblate_web/templates/index.html:25
 msgid ""
 "Weblate is a free web-based translation tool with tight version control "
 "integration. It features simple and clean user interface, propagation of "
@@ -1217,35 +1215,35 @@ msgstr ""
 "käyttöliittymän, komponenttien käännösten etenemisen seurannan sekä "
 "työkaluja laadunvalvontaan ja lähdetiedostojen automaattisen linkityksen."
 
-#: weblate_web/html/index.html:29
+#: weblate_web/templates/index.html:29
 msgid "Weblate screenshot"
 msgstr "Weblate kuvankaappaus"
 
-#: weblate_web/html/index.html:38
+#: weblate_web/templates/index.html:38
 msgid "See more features…"
 msgstr "Katso lisää ominaisuuksia…"
 
-#: weblate_web/html/index.html:47
+#: weblate_web/templates/index.html:47
 msgid "See who is using Weblate and join them!"
 msgstr "Katso ketkä kaikki käyttävät jo Weblatea ja liity heidän joukkoon!"
 
-#: weblate_web/html/support.html:3 weblate_web/html/support.html:4
+#: weblate_web/templates/support.html:3 weblate_web/templates/support.html:4
 msgid "Weblate support"
 msgstr "Weblate tuki"
 
-#: weblate_web/html/support.html:6
+#: weblate_web/templates/support.html:6
 msgid "Weblate is a free software with community support."
 msgstr "Weblate on ilmainen ohjelmisto, yhteisön tuella."
 
-#: weblate_web/html/support.html:11
+#: weblate_web/templates/support.html:11
 msgid "Report issue"
 msgstr "Ilmoita ongelmasta"
 
-#: weblate_web/html/support.html:16
+#: weblate_web/templates/support.html:16
 msgid "Bugs or feature requests"
 msgstr "Bugien tai toimintojen pyynnöt"
 
-#: weblate_web/html/support.html:19
+#: weblate_web/templates/support.html:19
 msgid ""
 "Have you found any issue with Weblate? Do you have idea how to improve it? "
 "Please report it to <a href=\"https://github.com/WeblateOrg/weblate/issues"
@@ -1255,11 +1253,11 @@ msgstr ""
 "aavistustakaan siitä, miten parantaa sitä? Ilmoita siitä: <a href=\"https://"
 "github.com/WeblateOrg/weblate/issues\">vikaseurantaohjelma GitHub</a>."
 
-#: weblate_web/html/support.html:22
+#: weblate_web/templates/support.html:22
 msgid "Security issues"
 msgstr "Tietoturvariskit"
 
-#: weblate_web/html/support.html:25
+#: weblate_web/templates/support.html:25
 #, python-format
 msgid ""
 "Should you find security issue within our code base, please report it to "
@@ -1270,26 +1268,26 @@ msgstr ""
 "lähettää %(contact)slle. Lisätietoja tietoturvaongelmien raportoinnista "
 "löydät <a href=\"%(docs)s\">dokumentoinnistamme</a>."
 
-#: weblate_web/html/support.html:28
+#: weblate_web/templates/support.html:28
 msgid "Support for Hosted Weblate services"
 msgstr "Tuki Weblate -palvelulle"
 
-#: weblate_web/html/support.html:31
+#: weblate_web/templates/support.html:31
 #, python-format
 msgid ""
 "If you are using our hosting services, you can ask for support at "
 "%(contact)s."
 msgstr "Jos käytössäsi on palvelumme, voit pyytää apua %(contact)s."
 
-#: weblate_web/html/support.html:34
+#: weblate_web/templates/support.html:34
 msgid "Mailing lists"
 msgstr "Postituslistat"
 
-#: weblate_web/html/support.html:36
+#: weblate_web/templates/support.html:36
 msgid "Users and developers mailing list"
 msgstr "Käyttäjien ja kehittäjien postituslista"
 
-#: weblate_web/html/support.html:38
+#: weblate_web/templates/support.html:38
 msgid ""
 "You can use mailing lists for discussions with other Weblate users and "
 "developers."
@@ -1297,7 +1295,7 @@ msgstr ""
 "Voit käyttää postituslistoja keskusteluun muiden Weblate käyttäjien ja "
 "kehittäjien kanssa."
 
-#: weblate_web/html/support.html:39
+#: weblate_web/templates/support.html:39
 msgid ""
 "You can post to it using <a href=\"mailto:weblate@lists.cihar.com"
 "\">weblate@lists.cihar.com</a> address."
@@ -1305,39 +1303,39 @@ msgstr ""
 "Voit lähettää sen osoitteeseen <a href=\"mailto:weblate@lists.cihar.com\"> "
 "weblate@lists.cihar.com</a>."
 
-#: weblate_web/html/support.html:40 weblate_web/html/support.html:56
+#: weblate_web/templates/support.html:40 weblate_web/templates/support.html:56
 msgid "You can browse mailing list archives"
 msgstr "Voit selailla postituslistojen arkistoja"
 
-#: weblate_web/html/support.html:43 weblate_web/html/support.html:59
+#: weblate_web/templates/support.html:43 weblate_web/templates/support.html:59
 msgid "Enter your email"
 msgstr "Anna sähköpostiosoitteesi"
 
-#: weblate_web/html/support.html:45 weblate_web/html/support.html:61
+#: weblate_web/templates/support.html:45 weblate_web/templates/support.html:61
 msgid "Subscribe"
 msgstr "Tilaa"
 
-#: weblate_web/html/support.html:52
+#: weblate_web/templates/support.html:52
 msgid "Hosted Weblate Announcements mailing list"
 msgstr "Postituslista Weblate -palvelun tiedotteille"
 
-#: weblate_web/html/support.html:54
+#: weblate_web/templates/support.html:54
 msgid ""
 "Low traffic mailing list with announcements about Hosted Weblate services."
 msgstr ""
 "Postituslista harvakseltaan lähetettäville tiedotteille koskien Weblate -"
 "palvelua."
 
-#: weblate_web/html/support.html:55
+#: weblate_web/templates/support.html:55
 msgid "This list is moderated, only selected users can post announcements."
 msgstr ""
 "Tämä lista on moderoitu, vain tietyt käyttäjät voivat lähettää ilmoituksia."
 
-#: weblate_web/html/support.html:68
+#: weblate_web/templates/support.html:68
 msgid "Stack Overflow"
 msgstr "Stack Overflow"
 
-#: weblate_web/html/support.html:70
+#: weblate_web/templates/support.html:70
 #, python-format
 msgid ""
 "You can also ask related questions on <a href=\"%(url)s\">Stack Overflow</a>."
@@ -1345,15 +1343,15 @@ msgstr ""
 "Voit myös kysyä aiheeseen liittyviä kysymyksiä <a href=\"%(url)s\">Stack "
 "Overflow</a> -foorumilla."
 
-#: weblate_web/html/support.html:72
+#: weblate_web/templates/support.html:72
 msgid "Consulting"
 msgstr "Konsultointi"
 
-#: weblate_web/html/support.html:74
+#: weblate_web/templates/support.html:74
 msgid "See our support offerings for self hosted Weblate instances"
 msgstr "Katso tarjontamme oman palveliasennuksesi tukitoimintoihin"
 
-#: weblate_web/html/support.html:77
+#: weblate_web/templates/support.html:77
 #, python-format
 msgid ""
 "You can also contact <a href=\"%(contact_link)s\">Michal Čihař</a>, who is "
@@ -1362,53 +1360,53 @@ msgstr ""
 "Voit myös ottaa yhteyttä <a href=\"%(contact_link)s\">Michal Čihař</a>, joka "
 "on luonut Weblaten."
 
-#: weblate_web/html/thanks.html:3 weblate_web/html/thanks.html:4
+#: weblate_web/templates/thanks.html:3 weblate_web/templates/thanks.html:4
 msgid "Thanks from Weblate"
 msgstr "Weblate kiittää"
 
-#: weblate_web/html/thanks.html:6
+#: weblate_web/templates/thanks.html:6
 msgid "Weblate is thankful for help from others."
 msgstr "Weblate on kiitollinen saatuaan apua muilta."
 
-#: weblate_web/html/thanks.html:20
+#: weblate_web/templates/thanks.html:20
 msgid "Technology"
 msgstr "Tekniikka"
 
-#: weblate_web/html/thanks.html:22
+#: weblate_web/templates/thanks.html:22
 msgid "The development of Weblate is based on the following technologies:"
 msgstr "Weblate kehitys perustuu seuraaviin tekniikoihin:"
 
-#: weblate_web/html/thanks.html:26
+#: weblate_web/templates/thanks.html:26
 msgid "GitHub provides hosting for our source code and issue tracker."
 msgstr "GitHub tarjoaa hostauksen lähdekoodille ja vikaseurantaohjelmalle."
 
-#: weblate_web/html/thanks.html:30
+#: weblate_web/templates/thanks.html:30
 msgid "Travis CI is our continuous integration platform."
 msgstr "Travis CI on jatkuva integraatioalustamme."
 
-#: weblate_web/html/thanks.html:34
+#: weblate_web/templates/thanks.html:34
 msgid "Codecov helps us to monitor code coverage of our test suite."
 msgstr "Codecov auttaa meitä valvomaan koodin kattavuutta testikirjastossamme."
 
-#: weblate_web/html/thanks.html:38
+#: weblate_web/templates/thanks.html:38
 msgid "Sauce Labs is running our Selenium tests in real browsers."
 msgstr "Sauce Lab pitää käynnissä Selenium testejämme oikeissa selaimissa."
 
-#: weblate_web/html/thanks.html:42
+#: weblate_web/templates/thanks.html:42
 msgid "Rollbar helps us to collect and fix errors happening on Hosted Weblate."
 msgstr ""
 "Rollbar auttaa meitä keräämään ja korjaamaan Weblate -palvelussa ilmeneviä "
 "vikoja."
 
-#: weblate_web/html/thanks.html:46
+#: weblate_web/templates/thanks.html:46
 msgid "Our translations are being done on Hosted Weblate."
 msgstr "Käännöksemme on tehty Weblate -palvelussa."
 
-#: weblate_web/html/thanks.html:50
+#: weblate_web/templates/thanks.html:50
 msgid "Supporters"
 msgstr "Tukijat"
 
-#: weblate_web/html/thanks.html:52
+#: weblate_web/templates/thanks.html:52
 msgid ""
 "Free hosting for free software projects would be impossible without our "
 "sponsors."
@@ -1416,7 +1414,7 @@ msgstr ""
 "Ilmaisen palvelun tarjoaminen avoimen lähdekoodin projekteille olisi "
 "mahdotonta ilman sponsoreitamme."
 
-#: weblate_web/html/thanks.html:54
+#: weblate_web/templates/thanks.html:54
 msgid ""
 "Support our project on Bountysource Salt and get exclusive logo placement on "
 "this page."
@@ -1424,27 +1422,27 @@ msgstr ""
 "Tue projektiamme Bountysource Salt -palvelussa ja saat logosi näkyville "
 "tällä sivulla."
 
-#: weblate_web/html/tour.html:3 weblate_web/html/tour.html:4
+#: weblate_web/templates/tour.html:3 weblate_web/templates/tour.html:4
 msgid "Weblate tour"
 msgstr "Weblate kierros"
 
-#: weblate_web/html/tour.html:6
+#: weblate_web/templates/tour.html:6
 msgid "Weblate has useful features for every crowdsourced translation."
 msgstr "Weblatessa on hyödyllisiä ominaisuuksia jokaiseen käännökseen."
 
-#: weblate_web/html/try.html:3 weblate_web/html/try.html:4
+#: weblate_web/templates/try.html:3 weblate_web/templates/try.html:4
 msgid "Try Weblate"
 msgstr "Kokeile Weblatea"
 
-#: weblate_web/html/try.html:6
+#: weblate_web/templates/try.html:6
 msgid "Weblate is easy to deploy as an appliance."
 msgstr "Weblate ohjelma on helppo ottaa käyttöön."
 
-#: weblate_web/html/try.html:19
+#: weblate_web/templates/try.html:19
 msgid "Demo server"
 msgstr "Demo palvelin"
 
-#: weblate_web/html/try.html:22
+#: weblate_web/templates/try.html:22
 msgid ""
 "Try Weblate on the <a href=\"https://demo.weblate.org\">demo server</a>. "
 "Register there and work under your username, or just use username: "
@@ -1454,7 +1452,7 @@ msgstr ""
 "palvelimella</a>. Rekisteröidy sinne omalla käyttäjänimelläsi, tai käytä "
 "<code>demo</code> käyttäjätiliä <code>demo</code> salasanan kanssa."
 
-#: weblate_web/html/try.html:25
+#: weblate_web/templates/try.html:25
 msgid ""
 "To test the review workflow there, log in with username: <code>review</"
 "code>, and password: <code>review</code>."
@@ -1462,11 +1460,11 @@ msgstr ""
 "Testataksesi käännösten tarkistusprosessin, kirjaudu käyttäjänimellä "
 "<code>review</code> ja salasanalla <code>review</code>."
 
-#: weblate_web/html/try.html:27
+#: weblate_web/templates/try.html:27
 msgid "Appliances"
 msgstr "Ohjelmat"
 
-#: weblate_web/html/try.html:30
+#: weblate_web/templates/try.html:30
 #, python-format
 msgid ""
 "Check out the <a href=\"%(download_url)s\">download page</a> for appliances, "
@@ -1512,6 +1510,40 @@ msgstr "Lähteet tar, xz pakattuja"
 #: weblate_web/templatetags/downloads.py:61
 msgid "Sources, zip compressed"
 msgstr "Lähteet, zip pakattuja"
+
+#~ msgid "Translation processing"
+#~ msgstr "Käännöstä prosessoidaan"
+
+#~ msgid "Phone support"
+#~ msgstr "Puhelintuki"
+
+#~ msgid "Minimal support for self hosted Weblate"
+#~ msgstr "Minimaalinen tuki omalle asennukselle"
+
+#~ msgid ""
+#~ "Your Weblate will be upgraded to the latest version at least every "
+#~ "%(count)s month."
+#~ msgid_plural ""
+#~ "Your Weblate will be upgraded to the latest version at least every "
+#~ "%(count)s months."
+#~ msgstr[0] ""
+#~ "Weblate -asennuksesi päivitetään viimeisimpään versioon joka kuukausi."
+#~ msgstr[1] ""
+#~ "Weblate -asennuksesi päivitetään viimeisimpään versioon vähintään joka "
+#~ "%(count)s kuukausi."
+
+#~ msgid ""
+#~ "Up to %(amount)s hour of consulting or support per month are included."
+#~ msgid_plural ""
+#~ "Up to %(amount)s hours of consulting or support per month are included."
+#~ msgstr[0] ""
+#~ "Sisältää korkeintaan yhden tunnin konsultointia tai tukea joka kuukausi."
+#~ msgstr[1] ""
+#~ "Sisältää korkeintaan %(amount)s tuntia konsultointia tai tukea joka "
+#~ "kuukausi."
+
+#~ msgid "Extended support for self hosted Weblate"
+#~ msgstr "Laaja tuki omalle Weblate -asennukselle"
 
 #~ msgid "SUSE Studio appliances"
 #~ msgstr "SUSE Studio -välineillä"
