@@ -154,9 +154,6 @@ SECRET_KEY = 'qov6(*cp%)b*ot+8c%#4@4or(t@_$y5#d8k9u1^+pknz%lms0x'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [
-            os.path.join(BASE_DIR, 'html'),
-        ],
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.request',
