@@ -1,0 +1,22 @@
+[
+  {
+    "directory": "/home/cassidyjames/Projects/cassidyjames/palette/build",
+    "command": "valac -C --debug --pkg gtk+-3.0 --pkg glib-2.0 --color=always --directory com.github.cassidyjames.palette@exe --basedir ../ --gresources=../data/com.github.cassidyjames.palette.gresource.xml ../src/Application.vala ../src/MainWindow.vala",
+    "file": "../src/Application.vala"
+  },
+  {
+    "directory": "/home/cassidyjames/Projects/cassidyjames/palette/build",
+    "command": "cc  -Icom.github.cassidyjames.palette@exe -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/x86_64-linux-gnu/dbus-1.0/include -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/harfbuzz -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -O0 -g '-DGETTEXT_PACKAGE=\"com.github.cassidyjames.palette\"' -pthread -MD -MQ 'com.github.cassidyjames.palette@exe/meson-generated_.._as-resources.c.o' -MF 'com.github.cassidyjames.palette@exe/meson-generated_.._as-resources.c.o.d' -o 'com.github.cassidyjames.palette@exe/meson-generated_.._as-resources.c.o' -c as-resources.c",
+    "file": "as-resources.c"
+  },
+  {
+    "directory": "/home/cassidyjames/Projects/cassidyjames/palette/build",
+    "command": "cc  -Icom.github.cassidyjames.palette@exe -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/x86_64-linux-gnu/dbus-1.0/include -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/harfbuzz -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g '-DGETTEXT_PACKAGE=\"com.github.cassidyjames.palette\"' -pthread -MD -MQ 'com.github.cassidyjames.palette@exe/meson-generated_src_Application.c.o' -MF 'com.github.cassidyjames.palette@exe/meson-generated_src_Application.c.o.d' -o 'com.github.cassidyjames.palette@exe/meson-generated_src_Application.c.o' -c 'com.github.cassidyjames.palette@exe/src/Application.c'",
+    "file": "com.github.cassidyjames.palette@exe/src/Application.c"
+  },
+  {
+    "directory": "/home/cassidyjames/Projects/cassidyjames/palette/build",
+    "command": "cc  -Icom.github.cassidyjames.palette@exe -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/x86_64-linux-gnu/dbus-1.0/include -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/harfbuzz -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g '-DGETTEXT_PACKAGE=\"com.github.cassidyjames.palette\"' -pthread -MD -MQ 'com.github.cassidyjames.palette@exe/meson-generated_src_MainWindow.c.o' -MF 'com.github.cassidyjames.palette@exe/meson-generated_src_MainWindow.c.o.d' -o 'com.github.cassidyjames.palette@exe/meson-generated_src_MainWindow.c.o' -c 'com.github.cassidyjames.palette@exe/src/MainWindow.c'",
+    "file": "com.github.cassidyjames.palette@exe/src/MainWindow.c"
+  }
+]
