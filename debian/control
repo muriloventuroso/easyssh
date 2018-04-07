@@ -1,0 +1,18 @@
+Source: com.github.cassidyjames.lyra
+Section: x11
+Priority: extra
+Maintainer: Cassidy James Blaede <c@ssidyjam.es>
+Build-Depends: appstream,
+               debhelper (>= 9),
+               desktop-file-utils,
+               libgranite-dev,
+               libgtk-3-dev,
+               meson,
+               valac
+Standards-Version: 3.9.3
+
+Package: com.github.cassidyjames.lyra
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Calculate display info like DPI and aspect ratio
+ Input a few simple details and figure out the aspect ratio, DPI, and other details of any display.
