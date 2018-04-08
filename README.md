@@ -2,4 +2,4 @@
 
 Color palette app for elementary OS
 
-![Sketch](data/sketch.jpg)
+![Screenshot](data/screenshot.png)
