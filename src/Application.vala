@@ -33,7 +33,7 @@ public class Palette : Gtk.Application {
         var quit_action = new SimpleAction ("quit", null);
 
         add_action (quit_action);
-        add_accelerator ("Escape", "app.quit", null);
+        set_accels_for_action ("app.quit", {"Escape"});
 
         var provider = new Gtk.CssProvider ();
         provider.load_from_resource ("/com/github/cassidyjames/palette/Application.css");
