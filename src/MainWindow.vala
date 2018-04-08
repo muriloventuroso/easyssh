@@ -36,23 +36,23 @@ public class MainWindow : Gtk.Window {
     strawberry_context.add_class ("strawberry");
     strawberry_context.add_class ("circular");
     
-    var strawberry_100 = new Gtk.Label ("100");
+    var strawberry_100 = new Gtk.Label ("Strawberry 100");
     strawberry_100.hexpand = true;
     strawberry_100.get_style_context ().add_class ("strawberry-100");
     
-    var strawberry_300 = new Gtk.Label ("300");
+    var strawberry_300 = new Gtk.Label ("Strawberry 300");
     strawberry_300.hexpand = true;
     strawberry_300.get_style_context ().add_class ("strawberry-300");
     
-    var strawberry_500 = new Gtk.Label ("500");
+    var strawberry_500 = new Gtk.Label ("Strawberry 500");
     strawberry_500.hexpand = true;
     strawberry_500.get_style_context ().add_class ("strawberry-500");
     
-    var strawberry_700 = new Gtk.Label ("700");
+    var strawberry_700 = new Gtk.Label ("Strawberry 700");
     strawberry_700.hexpand = true;
     strawberry_700.get_style_context ().add_class ("strawberry-700");
     
-    var strawberry_900 = new Gtk.Label ("900");
+    var strawberry_900 = new Gtk.Label ("Strawberry 900");
     strawberry_900.hexpand = true;
     strawberry_900.get_style_context ().add_class ("strawberry-900");
     
