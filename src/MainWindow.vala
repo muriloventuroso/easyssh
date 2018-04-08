@@ -41,16 +41,16 @@ public class MainWindow : Gtk.Window {
         header_context.add_class ("default-decoration");
         header_context.add_class (Gtk.STYLE_CLASS_FLAT);
 
-        var strawberry_button = new ColorButton ("strawberry", _("Strawberry"));
-        var orange_button = new ColorButton ("orange", _("Orange"));
-        var banana_button = new ColorButton ("banana", _("Banana"));
-        var lime_button = new ColorButton ("lime", _("Lime"));
-        var blueberry_button = new ColorButton ("blueberry", _("Blueberry"));
-        var grape_button = new ColorButton ("grape", _("Grape"));
-        var cocoa_button = new ColorButton ("cocoa", _("Cocoa"));
-        var silver_button = new ColorButton ("silver", _("Silver"));
-        var slate_button = new ColorButton ("slate", _("Slate"));
-        var black_button = new ColorButton ("black", _("Black"));
+        var strawberry_button = new ColorButton (Color.STRAWBERRY);
+        var orange_button = new ColorButton (Color.ORANGE);
+        var banana_button = new ColorButton (Color.BANANA);
+        var lime_button = new ColorButton (Color.LIME);
+        var blueberry_button = new ColorButton (Color.BLUEBERRY);
+        var grape_button = new ColorButton (Color.GRAPE);
+        var cocoa_button = new ColorButton (Color.COCOA);
+        var silver_button = new ColorButton (Color.SILVER);
+        var slate_button = new ColorButton (Color.SLATE);
+        var black_button = new ColorButton (Color.BLACK);
 
         var main_layout = new Gtk.Grid ();
         main_layout.column_spacing = main_layout.row_spacing = 12;
@@ -59,7 +59,7 @@ public class MainWindow : Gtk.Window {
         main_layout.attach (strawberry_button, 0, 0, 1, 1);
         main_layout.attach (orange_button,     1, 0, 1, 1);
         main_layout.attach (banana_button,     2, 0, 1, 1);
-        main_layout.attach (lime_button,       3, 0, 1, 1);        
+        main_layout.attach (lime_button,       3, 0, 1, 1);
         main_layout.attach (blueberry_button,  4, 0, 1, 1);
         main_layout.attach (grape_button,      5, 0, 1, 1);
 

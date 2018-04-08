@@ -15,6 +15,7 @@ executable(
     meson.project_name(),
     asresources,
     'src/Application.vala',
+    'src/Colors.vala',
     'src/MainWindow.vala',
     'src/Widgets/ColorButton.vala',
     dependencies: [
