@@ -22,7 +22,7 @@
 public class ColorButton : Gtk.Button {
     public string class_name { get; construct; }
     public string human { get; construct; }
-    
+
     public ColorButton (string class_name, string human) {
         Object (
             height_request: 128,
@@ -32,32 +32,37 @@ public class ColorButton : Gtk.Button {
             tooltip_text: human
         );
     }
-    
+
     construct {
         var color_context = get_style_context ();
         color_context.add_class (class_name);
         color_context.add_class ("circular");
-        
+
         var color_100 = new Gtk.Label ("%s 100".printf (human));
         color_100.hexpand = true;
+        color_100.height_request = 48;
         color_100.get_style_context ().add_class ("%s-100".printf (class_name));
-        
+
         var color_300 = new Gtk.Label ("%s 300".printf (human));
         color_300.hexpand = true;
+        color_300.height_request = 48;
         color_300.get_style_context ().add_class ("%s-300".printf (class_name));
-        
+
         var color_500 = new Gtk.Label ("%s 500".printf (human));
         color_500.hexpand = true;
+        color_500.height_request = 48;
         color_500.get_style_context ().add_class ("%s-500".printf (class_name));
-        
+
         var color_700 = new Gtk.Label ("%s 700".printf (human));
         color_700.hexpand = true;
+        color_700.height_request = 48;
         color_700.get_style_context ().add_class ("%s-700".printf (class_name));
-        
+
         var color_900 = new Gtk.Label ("%s 900".printf (human));
         color_900.hexpand = true;
+        color_900.height_request = 48;
         color_900.get_style_context ().add_class ("%s-900".printf (class_name));
-        
+
         var color_grid = new Gtk.Grid ();
         color_grid.width_request = 200;
         color_grid.attach (color_100, 0, 0, 1, 1);
@@ -69,7 +74,7 @@ public class ColorButton : Gtk.Button {
         var color_menu = new Gtk.Popover (this);
         color_menu.add (color_grid);
         color_menu.position = Gtk.PositionType.BOTTOM;
-        
+
         this.clicked.connect (() => {
             color_menu.popup ();
             color_menu.show_all ();
