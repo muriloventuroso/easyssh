@@ -36,23 +36,24 @@ public class ColorButton : Gtk.Button {
         color_context.add_class (color.style_class ());
         color_context.add_class ("circular");
 
-        var color_100 = new ColorVariant (color, 100);
-        var color_300 = new ColorVariant (color, 300);
-        var color_500 = new ColorVariant (color, 500);
-        var color_700 = new ColorVariant (color, 700);
-        var color_900 = new ColorVariant (color, 900);
-
         var color_grid = new Gtk.Grid ();
+
+        var color_menu = new Gtk.Popover (this);
+        color_menu.add (color_grid);
+        color_menu.position = Gtk.PositionType.BOTTOM;
+
+        var color_100 = new ColorVariant (color, 100, color_menu);
+        var color_300 = new ColorVariant (color, 300, color_menu);
+        var color_500 = new ColorVariant (color, 500, color_menu);
+        var color_700 = new ColorVariant (color, 700, color_menu);
+        var color_900 = new ColorVariant (color, 900, color_menu);
+
         color_grid.width_request = 200;
         color_grid.attach (color_100, 0, 0, 1, 1);
         color_grid.attach (color_300, 0, 1, 1, 1);
         color_grid.attach (color_500, 0, 2, 1, 1);
         color_grid.attach (color_700, 0, 3, 1, 1);
         color_grid.attach (color_900, 0, 4, 1, 1);
-
-        var color_menu = new Gtk.Popover (this);
-        color_menu.add (color_grid);
-        color_menu.position = Gtk.PositionType.BOTTOM;
 
         this.clicked.connect (() => {
             color_menu.popup ();

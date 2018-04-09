@@ -22,10 +22,12 @@
 public class ColorVariant : Gtk.Button {
     public Color color { get; construct; }
     public int variant { get; construct; }
+    public Gtk.Popover color_menu { get; construct; }
     
-    public ColorVariant (Color color, int variant) {
+    public ColorVariant (Color color, int variant, Gtk.Popover color_menu) {
         Object (
             color: color,
+            color_menu: color_menu,
             height_request: 48,
             hexpand: true,
             label: "%s %i %s".printf (
@@ -46,6 +48,7 @@ public class ColorVariant : Gtk.Button {
         
         this.clicked.connect (() => {
             Gtk.Clipboard.get_default (this.get_display ()).set_text (color.hex ()[variant], -1);
+            color_menu.popdown ();
         });
     }
 }
