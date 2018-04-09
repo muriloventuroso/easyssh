@@ -1,17 +1,19 @@
 Source: com.github.cassidyjames.palette
 Section: x11
-Priority: extra
 Maintainer: Cassidy James Blaede <c@ssidyjam.es>
 Build-Depends: debhelper (>= 9),
+               desktop-file-utils,
+               gettext,
                libgee-0.8-dev,
                libgtk-3-dev,
                meson,
-               valac
-Standards-Version: 3.9.3
+               valac (>= 0.26)
+Standards-Version: 3.9.6
+Homepage: https://github.com/cassidyjames/palette
 
 Package: com.github.cassidyjames.palette
 Architecture: any
+Priority: extra
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: View and copy colors from the elementary brand palette
- Easily access the entire palette on your local device, plus copy any variation 
- of each color to paste into your own projects.
+ Access the elementary color palette on your local device
