@@ -19,6 +19,7 @@ executable(
     'src/MainWindow.vala',
     'src/Widgets/ColorButton.vala',
     dependencies: [
+        dependency('gee-0.8'),
         dependency('glib-2.0'),
         dependency('gtk+-3.0')
     ],
