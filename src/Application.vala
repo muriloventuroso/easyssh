@@ -21,7 +21,7 @@
 
 public class Palette : Gtk.Application {
     public Palette () {
-        Object (application_id: "com.github.cassidyjames.lyra",
+        Object (application_id: "com.github.cassidyjames.palette",
         flags: ApplicationFlags.FLAGS_NONE);
     }
 
