@@ -45,7 +45,7 @@ public class ColorVariant : Gtk.Button {
         ));
         
         this.clicked.connect (() => {
-            Gtk.Clipboard.get_default (this.get_display ()).set_text (color.hex ()[100], -1);
+            Gtk.Clipboard.get_default (this.get_display ()).set_text (color.hex ()[variant], -1);
         });
     }
 }
