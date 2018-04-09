@@ -33,33 +33,33 @@ public class ColorButton : Gtk.Button {
 
     construct {
         var color_context = get_style_context ();
-        color_context.add_class (color.class_name ());
+        color_context.add_class (color.style_class ());
         color_context.add_class ("circular");
 
         var color_100 = new Gtk.Label ("%s 100".printf (color.to_string ()));
         color_100.hexpand = true;
         color_100.height_request = 48;
-        color_100.get_style_context ().add_class ("%s-100".printf (color.class_name ()));
+        color_100.get_style_context ().add_class ("%s-100".printf (color.style_class ()));
 
         var color_300 = new Gtk.Label ("%s 300".printf (color.to_string ()));
         color_300.hexpand = true;
         color_300.height_request = 48;
-        color_300.get_style_context ().add_class ("%s-300".printf (color.class_name ()));
+        color_300.get_style_context ().add_class ("%s-300".printf (color.style_class ()));
 
         var color_500 = new Gtk.Label ("%s 500".printf (color.to_string ()));
         color_500.hexpand = true;
         color_500.height_request = 48;
-        color_500.get_style_context ().add_class ("%s-500".printf (color.class_name ()));
+        color_500.get_style_context ().add_class ("%s-500".printf (color.style_class ()));
 
         var color_700 = new Gtk.Label ("%s 700".printf (color.to_string ()));
         color_700.hexpand = true;
         color_700.height_request = 48;
-        color_700.get_style_context ().add_class ("%s-700".printf (color.class_name ()));
+        color_700.get_style_context ().add_class ("%s-700".printf (color.style_class ()));
 
         var color_900 = new Gtk.Label ("%s 900".printf (color.to_string ()));
         color_900.hexpand = true;
         color_900.height_request = 48;
-        color_900.get_style_context ().add_class ("%s-900".printf (color.class_name ()));
+        color_900.get_style_context ().add_class ("%s-900".printf (color.style_class ()));
 
         var color_grid = new Gtk.Grid ();
         color_grid.width_request = 200;

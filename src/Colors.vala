@@ -68,7 +68,7 @@ public enum Color {
         }
     }
     
-    public string class_name () {
+    public string style_class () {
         switch (this) {
             case STRAWBERRY:
                 return "strawberry";
