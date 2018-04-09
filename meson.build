@@ -15,9 +15,12 @@ executable(
     meson.project_name(),
     asresources,
     'src/Application.vala',
+    'src/Colors.vala',
     'src/MainWindow.vala',
     'src/Widgets/ColorButton.vala',
+    'src/Widgets/ColorVariant.vala',
     dependencies: [
+        dependency('gee-0.8'),
         dependency('glib-2.0'),
         dependency('gtk+-3.0')
     ],

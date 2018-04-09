@@ -20,48 +20,27 @@
 */
 
 public class ColorButton : Gtk.Button {
-    public string class_name { get; construct; }
-    public string human { get; construct; }
-
-    public ColorButton (string class_name, string human) {
+    public Color color { get; construct; }
+    
+    public ColorButton (Color color) {
         Object (
             height_request: 128,
             width_request: 128,
-            class_name: class_name,
-            human: human,
-            tooltip_text: human
+            color: color,
+            tooltip_text: color.to_string ()
         );
     }
 
     construct {
         var color_context = get_style_context ();
-        color_context.add_class (class_name);
+        color_context.add_class (color.style_class ());
         color_context.add_class ("circular");
 
-        var color_100 = new Gtk.Label ("%s 100".printf (human));
-        color_100.hexpand = true;
-        color_100.height_request = 48;
-        color_100.get_style_context ().add_class ("%s-100".printf (class_name));
-
-        var color_300 = new Gtk.Label ("%s 300".printf (human));
-        color_300.hexpand = true;
-        color_300.height_request = 48;
-        color_300.get_style_context ().add_class ("%s-300".printf (class_name));
-
-        var color_500 = new Gtk.Label ("%s 500".printf (human));
-        color_500.hexpand = true;
-        color_500.height_request = 48;
-        color_500.get_style_context ().add_class ("%s-500".printf (class_name));
-
-        var color_700 = new Gtk.Label ("%s 700".printf (human));
-        color_700.hexpand = true;
-        color_700.height_request = 48;
-        color_700.get_style_context ().add_class ("%s-700".printf (class_name));
-
-        var color_900 = new Gtk.Label ("%s 900".printf (human));
-        color_900.hexpand = true;
-        color_900.height_request = 48;
-        color_900.get_style_context ().add_class ("%s-900".printf (class_name));
+        var color_100 = new ColorVariant (color, 100);
+        var color_300 = new ColorVariant (color, 300);
+        var color_500 = new ColorVariant (color, 500);
+        var color_700 = new ColorVariant (color, 700);
+        var color_900 = new ColorVariant (color, 900);
 
         var color_grid = new Gtk.Grid ();
         color_grid.width_request = 200;
