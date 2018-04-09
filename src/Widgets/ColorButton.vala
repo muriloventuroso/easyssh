@@ -56,8 +56,10 @@ public class ColorButton : Gtk.Button {
         color_grid.attach (color_900, 0, 4, 1, 1);
 
         this.clicked.connect (() => {
-            color_menu.popup ();
+            // TODO: Change to a Gtk.MenuButton so I don't have to manually show/hide'
+            color_menu.show ();
             color_menu.show_all ();
         });
     }
 }
+
