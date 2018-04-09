@@ -73,8 +73,6 @@ public class MainWindow : Gtk.Window {
         context.add_class ("rounded");
         context.add_class ("flat");
 
-        show_all ();
-
         set_titlebar (header);
         add (main_layout);
     }
