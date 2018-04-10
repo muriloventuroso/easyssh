@@ -30,11 +30,6 @@ public class ColorVariant : Gtk.Button {
             color_menu: color_menu,
             height_request: 48,
             hexpand: true,
-            label: "%s %i %s".printf (
-                color.to_string (),
-                variant,
-                color.hex ()[variant]
-            ),
             tooltip_text: _("Copy %s to clipboard").printf (color.hex ()[variant]),
             variant: variant
         );
@@ -45,7 +40,24 @@ public class ColorVariant : Gtk.Button {
             color.style_class (), 
             variant
         ));
-        
+
+        var variant_label = new Gtk.Label ("%s %i".printf (color.to_string (), variant));
+        variant_label.expand = true;
+        variant_label.halign = Gtk.Align.START;
+        variant_label.valign = Gtk.Align.CENTER;
+
+        var hex_label = new Gtk.Label ((string)color.hex ()[variant]);
+        hex_label.expand = true;
+        hex_label.halign = Gtk.Align.END;
+        hex_label.valign = Gtk.Align.CENTER;
+        hex_label.get_style_context ().add_class ("monospace");
+
+        var grid = new Gtk.Grid ();
+        grid.attach (variant_label, 0, 0, 1, 1);
+        grid.attach (hex_label,     1, 0, 1, 1);
+
+        this.add (grid);
+
         this.clicked.connect (() => {
             Gtk.Clipboard.get_default (this.get_display ()).set_text (color.hex ()[variant], -1);
             color_menu.hide ();
