@@ -379,6 +379,12 @@ button.circular,
     color: transparent;
 }
 
+popover,
+.popover {
+    background: @theme_bg_color;
+    padding: 3px;
+}
+
 popover button,
 .popover .button {
 	border: none;
@@ -389,13 +395,13 @@ popover button,
 
 popover button:first-child,
 .popover .button:first-child {
-    border-top-left-radius: 2.5px;
-    border-top-right-radius: 2.5px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
 }
 
 popover button:last-child,
 .popover .button:last-child {
-    border-bottom-left-radius: 2.5px;
-    border-bottom-right-radius: 2.5px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
 }
 
