@@ -77,3 +77,4 @@ public class MainWindow : Gtk.Window {
         add (main_layout);
     }
 }
+

@@ -19,7 +19,7 @@
 * Authored by: Cassidy James Blaede <c@ssidyjam.es>
 */
 
-public class ColorButton : Gtk.Button {
+public class ColorButton : Gtk.MenuButton {
     public Color color { get; construct; }
     
     public ColorButton (Color color) {
@@ -54,12 +54,9 @@ public class ColorButton : Gtk.Button {
         color_grid.attach (color_500, 0, 2, 1, 1);
         color_grid.attach (color_700, 0, 3, 1, 1);
         color_grid.attach (color_900, 0, 4, 1, 1);
-
-        this.clicked.connect (() => {
-            // TODO: Change to a Gtk.MenuButton so I don't have to manually show/hide'
-            color_menu.show ();
-            color_menu.show_all ();
-        });
+        
+        color_grid.show_all ();
+        popover = color_menu;
     }
 }
 
