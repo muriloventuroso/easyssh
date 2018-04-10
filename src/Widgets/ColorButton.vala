@@ -84,9 +84,12 @@ public class ColorButton : Gtk.MenuButton {
             gdk_black
         );
 
-        var fg_color = BLACK;
-        if ( contrast_white > contrast_black ) {
-            fg_color = WHITE;
+        var fg_color = WHITE;
+        
+        // NOTE: We cheat and add 3 to contrast when checking against black, 
+        // because white generally looks better on a colored background
+        if ( contrast_black > (contrast_white + 3) ) {
+            fg_color = BLACK;
         }
 
         var provider = new Gtk.CssProvider ();
