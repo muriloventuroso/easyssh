@@ -374,8 +374,6 @@
   color: white;
 }
 
-/* APP WIDGET OVERRIDES */
-
 button.circular,
 .button.circular {
     color: transparent;
@@ -387,5 +385,17 @@ popover button,
 	border-radius: 0;
 	text-shadow: none;
 	box-shadow: none;
+}
+
+popover button:first-child,
+.popover .button:first-child {
+    border-top-left-radius: 2.5px;
+    border-top-right-radius: 2.5px;
+}
+
+popover button:last-child,
+.popover .button:last-child {
+    border-bottom-left-radius: 2.5px;
+    border-bottom-right-radius: 2.5px;
 }
 
