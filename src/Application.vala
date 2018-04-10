@@ -25,8 +25,12 @@ public class Palette : Gtk.Application {
         flags: ApplicationFlags.FLAGS_NONE);
     }
 
-
     protected override void activate () {
+        if (get_windows ().length () > 0) {
+            get_windows ().data.present ();
+            return;
+        }
+
         var app_window = new MainWindow (this);
         app_window.show_all ();
 
@@ -45,7 +49,6 @@ public class Palette : Gtk.Application {
             }
         });
     }
-
 
     private static int main (string[] args) {
         Gtk.init (ref args);
