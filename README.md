@@ -26,7 +26,6 @@ Palette is designed and developed on and for [elementary OS](https://elementary.
 If you want to hack on and build Palette yourself, you'll need the following dependencies:
 
 * libgee-0.8-dev
-* libgranite-dev
 * libgtk-3-dev
 * meson
 * valac
