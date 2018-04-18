@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2018 Cassidy James Blaede (https://cassidyjames.com)
+* Copyright (c) 2018 Murilo Venturoso
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -16,44 +16,49 @@
 * Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
 * Boston, MA 02110-1301 USA
 *
-* Authored by: Cassidy James Blaede <c@ssidyjam.es>
+* Authored by: Murilo Venturoso <muriloventuroso@gmail.com>
 */
 
-public class Palette : Gtk.Application {
-    public Palette () {
-        Object (application_id: "com.github.cassidyjames.palette",
-        flags: ApplicationFlags.FLAGS_NONE);
-    }
+namespace EasySSH {
 
-    protected override void activate () {
-        if (get_windows ().length () > 0) {
-            get_windows ().data.present ();
-            return;
+    public Settings settings;
+
+    public class Application : Granite.Application {
+        public Application () {
+            Object (application_id: "com.github.muriloventuroso.easyssh",
+            flags: ApplicationFlags.FLAGS_NONE);
         }
 
-        var app_window = new MainWindow (this);
-        app_window.show_all ();
-
-        var quit_action = new SimpleAction ("quit", null);
-
-        add_action (quit_action);
-        set_accels_for_action ("app.quit", {"Escape"});
-
-        var provider = new Gtk.CssProvider ();
-        provider.load_from_resource ("/com/github/cassidyjames/palette/Application.css");
-        Gtk.StyleContext.add_provider_for_screen (Gdk.Screen.get_default (), provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
-
-        quit_action.activate.connect (() => {
-            if (app_window != null) {
-                app_window.destroy ();
+        protected override void activate () {
+            if (get_windows ().length () > 0) {
+                get_windows ().data.present ();
+                return;
             }
-        });
-    }
+            settings = new Settings ();
+            var app_window = new MainWindow (this);
+            app_window.show_all ();
 
-    private static int main (string[] args) {
-        Gtk.init (ref args);
+            var quit_action = new SimpleAction ("quit", null);
 
-        var app = new Palette ();
-        return app.run (args);
+            add_action (quit_action);
+            set_accels_for_action ("app.quit", {"Escape"});
+
+            var provider = new Gtk.CssProvider ();
+            provider.load_from_resource ("/com/github/muriloventuroso/easyssh/Application.css");
+            Gtk.StyleContext.add_provider_for_screen (Gdk.Screen.get_default (), provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
+
+            quit_action.activate.connect (() => {
+                if (app_window != null) {
+                    app_window.destroy ();
+                }
+            });
+        }
+
+        private static int main (string[] args) {
+            Gtk.init (ref args);
+
+            var app = new Application ();
+            return app.run (args);
+        }
     }
 }

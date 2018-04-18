@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2018 Cassidy James Blaede (https://cassidyjames.com)
+* Copyright (c) 2018 Murilo Venturoso
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -16,37 +16,6 @@
 * Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
 * Boston, MA 02110-1301 USA
 *
-* Authored by: Cassidy James Blaede <c@ssidyjam.es>
+* Authored by: Murilo Venturoso <muriloventuroso@gmail.com>
 */
-
-button.circular,
-.button.circular {
-    color: transparent;
-}
-
-popover,
-.popover {
-    background: @theme_bg_color;
-    padding: 3px;
-}
-
-popover button,
-.popover .button {
-	border: none;
-	border-radius: 0;
-	text-shadow: none;
-	box-shadow: none;
-}
-
-popover button:first-child,
-.popover .button:first-child {
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-}
-
-popover button:last-child,
-.popover .button:last-child {
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
-}
 
