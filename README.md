@@ -35,7 +35,7 @@ Run `meson build` to configure the build environment and run `ninja test` to bui
     cd build
     ninja test
 
-To install, use `ninja install`, then execute with `muriloventuroso.easyssh`
+To install, use `ninja install`, then execute with `com.github.muriloventuroso.easyssh`
 
     sudo ninja install
     com.github.muriloventuroso.easyssh
