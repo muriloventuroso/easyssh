@@ -1,0 +1,13 @@
+language: generic
+
+services:
+ - docker
+
+env:
+ - DEPENDENCY_PACKAGES="appstream desktop-file-utils libjson-glib-1.0-0-dev libgranite-dev libvte-2.91-dev libgee-0.8-dev meson valac"
+
+install:
+ - docker run -v "$PWD":/tmp/build-dir elementary/docker:juno-unstable /bin/sh -c "apt-get update && apt-get -y install $DEPENDENCY_PACKAGES && cd /tmp/build-dir && meson build && cd build && ninja test"
+
+script:
+ - echo BUILDS PASSED
