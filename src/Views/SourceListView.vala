@@ -44,6 +44,18 @@ namespace EasySSH {
             paned.position = 130;
 
             source_list = new Granite.Widgets.SourceList ();
+            source_list.button_press_event.connect(() => {
+                var n_host = hostmanager.get_host_by_name(source_list.selected.name);
+                var n = n_host.notebook;
+                var term = new TerminalBox(n_host, n, window);
+                var next_tab = n.n_tabs;
+                var n_tab = new Granite.Widgets.Tab (n_host.name + " - " + next_tab.to_string(), null, term);
+
+                n.insert_tab (n_tab, next_tab );
+                n.current = n_tab;
+                window.current_terminal = term.term;
+                term.term.grab_focus();
+            });
             
             paned.pack1 (source_list, false, false);
             paned.pack2 (box, true, false);
@@ -108,6 +120,7 @@ namespace EasySSH {
 
         private void insert_host(Host host, Granite.Widgets.SourceList.ExpandableItem category){
             var item = new Granite.Widgets.SourceList.Item (host.name);
+            
             host.item = item;
             category.add (item);
             var n = host.notebook;
