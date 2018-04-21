@@ -41,11 +41,11 @@ namespace EasySSH {
             open_dialog = false;
             var scroller = new Gtk.ScrolledWindow(null, null);
             term = new TerminalWidget(window);
+
             term.spawn_sync(Vte.PtyFlags.DEFAULT, null, {"/bin/sh"},
                                         null, SpawnFlags.SEARCH_PATH, null, null, null);
 
             term.contents_changed.connect(on_change_terminal);
-
             start_connection();
 
             add(term);

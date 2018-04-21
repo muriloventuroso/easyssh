@@ -108,7 +108,6 @@ namespace EasySSH {
             terminal_id = "%i".printf (terminal_id_counter++);
 
             init_complete = false;
-
             window = parent_window;
             child_has_exited = false;
             killed = false;

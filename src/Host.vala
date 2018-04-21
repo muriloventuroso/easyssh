@@ -53,6 +53,18 @@ namespace EasySSH {
             hosts = new ArrayList<Host> ();
         }
 
+        public int compare_hosts (Host a, Host b) {
+            if(a.name < b.name){
+                return -1;
+            }else{
+                return 1;
+            }
+        }
+
+        public void sort_hosts(){
+            hosts.sort(compare_hosts);
+        }
+
         public int get_length(){
             int i = 0;
             foreach (Host host in hosts) {

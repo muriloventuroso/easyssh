@@ -70,6 +70,7 @@ namespace EasySSH {
                     notebook.insert_tab(tab, 0);
                 }else if(notebook.n_tabs > 1){
                     window.current_terminal = (TerminalWidget)((TerminalBox)notebook.current.page).term;
+                    window.current_terminal.grab_focus();
                 }
                 clean_box();
                 box.add(notebook);
@@ -181,12 +182,17 @@ namespace EasySSH {
                         if(group_exist == false){
                             var group = add_group(host.group);
                             group.add_host(host);
-                            insert_host(host, group.category);
                         }else{
                             Group group = hostmanager.get_group_by_name(host.group);
                             group.add_host(host);
-                            insert_host(host, group.category);
                         }   
+                    }
+
+                    foreach(var group in hostmanager.get_groups()){
+                        group.sort_hosts();
+                        foreach (var host in group.get_hosts()) {
+                            insert_host(host, group.category);
+                        }
                     }
                 }
             } catch (Error e) {
