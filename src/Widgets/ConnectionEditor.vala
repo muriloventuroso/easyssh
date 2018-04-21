@@ -63,13 +63,12 @@ namespace EasySSH {
 
             if(data_host != null){
                 name_entry.text = data_host.name;
-                check_name();
+                name_entry.is_valid = check_name();
                 group_entry.text = data_host.group;
                 host_entry.text = data_host.host;
                 port_entry.text = data_host.port;
                 username_entry.text = data_host.username;
                 password_entry.text = data_host.password;
-                update_save_button();
             }
 
             name_entry.changed.connect (() => {
@@ -115,6 +114,8 @@ namespace EasySSH {
             attach (new Granite.HeaderLabel (_("Password:")), 0, 12, 1, 1);
             attach (password_entry, 0, 13, 1, 1);
             attach (buttons, 0, 14, 1, 1);
+
+            update_save_button();
         }
 
         private bool check_name () {
