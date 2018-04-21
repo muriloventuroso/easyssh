@@ -25,7 +25,7 @@ namespace EasySSH {
         public HostManager hostmanager;
         private Welcome welcome;
         private Gtk.Box box;
-        private Granite.Widgets.SourceList source_list;
+        public Granite.Widgets.SourceList source_list;
         public MainWindow window { get; construct; }
         private EasySSH.Settings settings;
 
@@ -59,6 +59,9 @@ namespace EasySSH {
             load_hosts();
 
             source_list.item_selected.connect ((item) => {
+                if(item == null){
+                    return;
+                }
 
                 var select_host = hostmanager.get_host_by_name(item.name);
                 var notebook = select_host.notebook;
@@ -200,7 +203,7 @@ namespace EasySSH {
             }
         }
 
-        public void add_host(Host host){
+        public Host add_host(Host host){
             var group = hostmanager.get_group_by_name(host.group);
             if(group == null){
                 group = add_group(host.group);
@@ -209,6 +212,7 @@ namespace EasySSH {
             group.add_host(host);
             insert_host(host, group.category);
             save_hosts();
+            return host;
         }
 
         public Group add_group(string name){
@@ -221,7 +225,7 @@ namespace EasySSH {
             return group;
         }
 
-        public bool edit_host(Host e_host){
+        public Host edit_host(Host e_host){
             var host = hostmanager.get_host_by_name(source_list.selected.name);
             var group = hostmanager.get_group_by_name(host.group);
             e_host.notebook = host.notebook;
@@ -248,7 +252,9 @@ namespace EasySSH {
                 e_host.notebook.insert_tab(new_tab, 0);
             }
             save_hosts();
-            return true;
+            host.item = source_list.selected;
+            source_list.selected = null;
+            return host;
 
         }
 

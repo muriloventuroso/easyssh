@@ -141,10 +141,13 @@ namespace EasySSH {
             settings.window_maximized = this.is_maximized;
 
             if (!settings.window_maximized) {
-                int x, y;
+                int x, y, width, height;
                 this.get_position (out x, out y);
+                this.get_size (out width, out height);
                 settings.pos_x = x;
                 settings.pos_y = y;
+                settings.window_height = height;
+                settings.window_width = width;
             }
         }
 

@@ -159,17 +159,17 @@ namespace EasySSH {
             host.password = password_entry.text;
 
             if(data_host == null){
-                sourcelistview.add_host(host);
+                host = sourcelistview.add_host(host);
             }else{
-                sourcelistview.edit_host(host);
+                host = sourcelistview.edit_host(host);
             }
+            sourcelistview.source_list.selected = host.item;
+            destroy();
             
-            exit();
         }
 
         private void exit(){
             sourcelistview.clean_box();
-            sourcelistview.restore();
             destroy();
         }
 
