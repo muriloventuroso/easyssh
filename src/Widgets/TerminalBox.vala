@@ -20,7 +20,7 @@
 */
 
 namespace EasySSH {
-    public class TerminalBox : Gtk.Box {
+    public class TerminalBox : Gtk.ScrolledWindow {
 
         public Host dataHost { get; construct; }
         private bool send_password;
@@ -45,20 +45,15 @@ namespace EasySSH {
                                         null, SpawnFlags.SEARCH_PATH, null, null, null);
 
             term.contents_changed.connect(on_change_terminal);
-            term.paste_clipboard.connect(on_paste_clipboard);
 
             start_connection();
 
-            pack_start(term);
+            add(term);
         }
 
         public void start_connection(){
             string cmd = "ssh " + dataHost.username + "@" + dataHost.host + " -p " + dataHost.port + "\n";
             term.feed_child(cmd, cmd.length + 1);
-        }
-
-        public void on_paste_clipboard(){
-            print("paste");
         }
 
         public void on_change_terminal (Vte.Terminal terminal){

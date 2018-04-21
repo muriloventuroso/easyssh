@@ -56,7 +56,6 @@ namespace EasySSH {
                 }
             });
 
-
             load_hosts();
 
             source_list.item_selected.connect ((item) => {
@@ -135,7 +134,6 @@ namespace EasySSH {
         }
 
         private void on_tab_moved (Granite.Widgets.Tab tab, int x, int y) {
-            print("moved\n");
             var t = get_term_widget (tab);
             window.current_terminal = t;
         }

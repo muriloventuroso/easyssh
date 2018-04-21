@@ -115,7 +115,6 @@ namespace EasySSH {
 
             /* Connect to necessary signals */
             button_press_event.connect ((event) => {
-                print("button press\n");
                 if (event.button ==  Gdk.BUTTON_SECONDARY) {
                     uri = get_link (event);
 
@@ -135,7 +134,6 @@ namespace EasySSH {
             });
 
             button_release_event.connect ((event) => {
-                print("button release\n");
                 if (event.button == Gdk.BUTTON_PRIMARY) {
                     uri = get_link (event);
 
@@ -152,7 +150,6 @@ namespace EasySSH {
             });
 
             selection_changed.connect (() => {
-                print("select changed\n");
                 window.main_actions.get_action ("Copy").set_sensitive (get_has_selection ());
             });
 

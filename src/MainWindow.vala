@@ -201,7 +201,6 @@ namespace EasySSH {
         }
 
         void action_copy () {
-            print("copy\n");
             if (current_terminal.uri != null && ! current_terminal.get_has_selection ())
                 clipboard.set_text (current_terminal.uri,
                                     current_terminal.uri.length);
