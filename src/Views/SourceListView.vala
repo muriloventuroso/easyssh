@@ -20,6 +20,30 @@
 */
 
 namespace EasySSH {
+    public class Item : Granite.Widgets.SourceList.Item {
+        private Gtk.Menu host_menu;
+
+        public Item (string name = "") {
+            this.name = name;
+        }
+        construct {
+            host_menu = new Gtk.Menu ();
+            var host_edit = new Gtk.MenuItem.with_label (_("Edit"));
+            host_edit.action_name = MainWindow.ACTION_PREFIX + MainWindow.ACTION_EDIT_CONN;
+            var host_remove = new Gtk.MenuItem.with_label (_("Remove"));
+            host_remove.action_name = MainWindow.ACTION_PREFIX + MainWindow.ACTION_REMOVE_CONN;
+            host_menu.append(host_edit);
+            host_menu.append(host_remove);
+
+
+            host_menu.show_all();
+        }
+
+        public override Gtk.Menu? get_context_menu () {
+            return host_menu;
+        }
+    }
+
     public class SourceListView : Gtk.Frame {
 
         public HostManager hostmanager;
@@ -28,6 +52,7 @@ namespace EasySSH {
         public Granite.Widgets.SourceList source_list;
         public MainWindow window { get; construct; }
         private EasySSH.Settings settings;
+        
 
         public SourceListView (MainWindow window) {
             Object (window: window);
@@ -42,9 +67,11 @@ namespace EasySSH {
             welcome = new Welcome();
             box.add(welcome);
             paned.position = 130;
+            
 
             source_list = new Granite.Widgets.SourceList ();
             source_list.button_press_event.connect(() => {
+
                 var n_host = hostmanager.get_host_by_name(source_list.selected.name);
                 var n = n_host.notebook;
                 var term = new TerminalBox(n_host, n, window);
@@ -56,7 +83,7 @@ namespace EasySSH {
                 window.current_terminal = term.term;
                 term.term.grab_focus();
             });
-            
+
             paned.pack1 (source_list, false, false);
             paned.pack2 (box, true, false);
             paned.set_position(settings.panel_size);
@@ -119,7 +146,7 @@ namespace EasySSH {
         }
 
         private void insert_host(Host host, Granite.Widgets.SourceList.ExpandableItem category){
-            var item = new Granite.Widgets.SourceList.Item (host.name);
+            var item = new Item (host.name);
             
             host.item = item;
             category.add (item);

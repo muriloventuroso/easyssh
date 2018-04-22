@@ -169,7 +169,13 @@ namespace EasySSH {
         }
 
         private void exit(){
-            sourcelistview.clean_box();
+            var item = sourcelistview.source_list.selected;
+            if(item == null){
+                sourcelistview.restore();
+            }else{
+                sourcelistview.source_list.selected = null;
+                sourcelistview.source_list.selected = item;    
+            }
             destroy();
         }
 
