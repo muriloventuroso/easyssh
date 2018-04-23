@@ -130,6 +130,7 @@ namespace EasySSH {
                     case Gdk.Key.Escape:
                         return true;
                 }
+                return false;
             });
         }
 

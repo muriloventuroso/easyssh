@@ -157,6 +157,9 @@ namespace EasySSH {
             host.port = port_entry.text;
             host.username = username_entry.text;
             host.password = password_entry.text;
+            if(host.port == null || host.port == ""){
+                host.port = "22";
+            }
 
             if(data_host == null){
                 host = sourcelistview.add_host(host);
