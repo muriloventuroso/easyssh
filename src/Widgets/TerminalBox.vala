@@ -28,6 +28,7 @@ namespace EasySSH {
         public Granite.Widgets.DynamicNotebook notebook  { get; construct; }
         public TerminalWidget term;
         public MainWindow window  { get; construct; }
+        public Granite.Widgets.Tab tab {get; set;}
 
         public TerminalBox (Host host, Granite.Widgets.DynamicNotebook notebook, MainWindow window) {
             Object (
@@ -61,6 +62,10 @@ namespace EasySSH {
             if(res != null){
                 string[] lines = res.split("\n");
                 string[] ret = {};
+                if(term != window.current_terminal){
+                    dataHost.item.icon = new GLib.ThemedIcon ("mail-mark-important");
+                    tab.icon = new GLib.ThemedIcon ("mail-mark-important");
+                }
                 foreach (unowned string str in lines) {
                     if(str != ""){
                         ret += str;

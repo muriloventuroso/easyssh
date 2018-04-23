@@ -78,7 +78,9 @@ namespace EasySSH {
             var next_tab = notebook.n_tabs;
             var tab = new Granite.Widgets.Tab (host.name + " - " + next_tab.to_string(), null, term);
             notebook.insert_tab (tab, next_tab);
+            notebook.remove_tab(notebook.current);
             notebook.current = tab;
+            destroy();
         }
 
     }
