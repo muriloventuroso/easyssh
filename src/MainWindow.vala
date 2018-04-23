@@ -75,7 +75,7 @@ namespace EasySSH {
 
             /* Actions and UIManager */
             main_actions = new Gtk.ActionGroup ("MainActionGroup");
-            main_actions.set_translation_domain ("pantheon-terminal");
+            main_actions.set_translation_domain ("com.github.muriloventuroso.easyssh");
             main_actions.add_actions (main_entries, this);
 
             clipboard = Gtk.Clipboard.get (Gdk.Atom.intern ("CLIPBOARD", false));

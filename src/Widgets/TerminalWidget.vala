@@ -29,8 +29,6 @@ namespace EasySSH {
         }
 
         internal const string DEFAULT_LABEL = _("Terminal");
-        public string terminal_id;
-        static int terminal_id_counter = 0;
         private bool init_complete;
         private EasySSH.Settings settings;
 
@@ -85,14 +83,6 @@ namespace EasySSH {
         const string USERPASS = USERCHARS_CLASS + "+(?:" + PASSCHARS_CLASS + "+)?";
         const string URLPATH = "(?:(/" + PATHCHARS_CLASS + "+(?:[(]" + PATHCHARS_CLASS + "*[)])*" + PATHCHARS_CLASS + "*)*" + PATHTERM_CLASS + ")?";
 
-        const string[] regex_strings = {
-            SCHEME + "//(?:" + USERPASS + "\\@)?" + HOST + PORT + URLPATH,
-            "(?:www|ftp)" + HOSTCHARS_CLASS + "*\\." + HOST + PORT + URLPATH,
-            "(?:callto:|h323:|sip:)" + USERCHARS_CLASS + "[" + USERCHARS + ".]*(?:" + PORT + "/[a-z0-9]+)?\\@" + HOST,
-            "(?:mailto:)?" + USERCHARS_CLASS + "[" + USERCHARS + ".]*\\@" + HOSTCHARS_CLASS + "+\\." + HOST,
-            "(?:news:|man:|info:)[[:alnum:]\\Q^_{|}~!\"#$%&'()*+,./;:=?`\\E]+"
-        };
-
         public bool child_has_exited {
             get;
             private set;
@@ -104,8 +94,6 @@ namespace EasySSH {
         }
 
         public TerminalWidget (MainWindow parent_window) {
-
-            terminal_id = "%i".printf (terminal_id_counter++);
 
             init_complete = false;
             window = parent_window;
@@ -151,9 +139,6 @@ namespace EasySSH {
             selection_changed.connect (() => {
                 window.main_actions.get_action ("Copy").set_sensitive (get_has_selection ());
             });
-
-            /* Make Links Clickable */
-            this.clickable (regex_strings);
         }
 
         construct {
@@ -178,19 +163,6 @@ namespace EasySSH {
         public int calculate_height (int row_count) {
             int height = (int) (this.get_char_height ()) * row_count;
             return height;
-        }
-
-        private void clickable (string[] str) {
-            foreach (string exp in str) {
-                try {
-                    var regex = new GLib.Regex (exp);
-                    int id = this.match_add_gregex (regex, 0);
-
-                    this.match_set_cursor_type (id, Gdk.CursorType.HAND2);
-                } catch (GLib.RegexError error) {
-                    warning (error.message);
-                }
-            }
         }
 
         private string? get_link (Gdk.Event event) {

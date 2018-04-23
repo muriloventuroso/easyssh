@@ -10,6 +10,10 @@ A complete, efficient and easy-to-use manager. Create and edit connections, grou
   <a href="https://appcenter.elementary.io/com.github.muriloventuroso.easyssh"><img src="https://appcenter.elementary.io/badge.svg" alt="Get it on AppCenter" /></a>
 </p>
 
+### Donate
+<a href="https://www.paypal.me/muriloventuroso">PayPal</a> | <a href="https://www.patreon.com/muriloventuroso">Patreon</a>
+
+
 
 ![Screenshot](data/screenshot.png)
 

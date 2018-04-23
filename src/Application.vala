@@ -29,6 +29,10 @@ namespace EasySSH {
             flags: ApplicationFlags.FLAGS_NONE);
         }
 
+        construct {
+            Intl.setlocale (LocaleCategory.ALL, "");
+        }
+
         protected override void activate () {
             if (get_windows ().length () > 0) {
                 get_windows ().data.present ();
