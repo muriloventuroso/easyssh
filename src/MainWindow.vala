@@ -124,6 +124,13 @@ namespace EasySSH {
                     save_settings ();
                     return false;
                 });
+
+            key_press_event.connect ((e) => {
+                switch (e.keyval) {
+                    case Gdk.Key.Escape:
+                        return true;
+                }
+            });
         }
 
         private void load_settings () {
