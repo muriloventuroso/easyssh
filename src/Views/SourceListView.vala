@@ -120,7 +120,7 @@ namespace EasySSH {
                     var connect = new Connection(select_host, notebook, window);
                     var tab = new Granite.Widgets.Tab (select_host.name, null, connect);
                     notebook.insert_tab(tab, 0);
-                }else if(notebook.n_tabs > 1){
+                }else if(notebook.n_tabs > 0){
                     var box = (TerminalBox)notebook.current.page;
                     window.current_terminal = (TerminalWidget)box.term;
                     window.current_terminal.grab_focus();
