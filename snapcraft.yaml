@@ -1,0 +1,47 @@
+name: easyssh
+version: 1.1.7
+summary: SSH Connection Manager
+description: A complete, efficient and easy-to-use manager. Create and edit connections, groups, customize the terminal, with multiple instances of the same connection.
+
+icon: data/icons/24/com.github.muriloventuroso.easyssh.svg
+grade: devel # must be 'stable' to release into candidate/stable channels
+confinement: devmode # use 'strict' once you have the right plugs and slots
+
+slots:
+  dbus-easyssh:
+    interface: dbus
+    bus: session
+    name: com.github.muriloventuroso.easyssh
+
+apps:
+  easyssh:
+    command: easyssh
+    plugs: [x11, unity7, network]
+
+parts:
+    granite:
+        plugin: cmake
+        source: lp:granite/0.5
+        source-type: bzr
+        build-packages:
+            - build-essential
+            - valac
+        stage-packages:
+            - valac-0.30-vapi
+    easyssh:
+        plugin: meson
+        meson-parameters:
+          - --prefix=/usr
+        source: lp:easyssh
+        source-type: bzr
+        configflags: [-DCMAKE_INSTALL_PREFIX=/usr]
+        after: [granite]
+        build-packages:
+            - build-essential
+            - valac
+            - meson
+            - libgee-0.8-dev
+            - libgtk-3-dev
+            - libgranite-dev
+            - libvte-2.91-dev
+            - libjson-glib-dev
