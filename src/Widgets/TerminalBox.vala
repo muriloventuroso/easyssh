@@ -75,12 +75,22 @@ namespace EasySSH {
                 if (ret.length > 2 && "closed." in ret[ret.length - 2] && "$" in ret[ret.length - 1]) {
                     var tab = notebook.get_tab_by_widget(this);
                     notebook.remove_tab(tab);
+                }else if (ret.length > 2 && "Broken pipe" in ret[ret.length - 2] && "$" in ret[ret.length - 1]) {
+                    var tab = notebook.get_tab_by_widget(this);
+                    if(open_dialog == false){
+                        alert_error(ret[ret.length - 2], tab);
+                    }
+                }else if (ret.length > 2 && "Connection timed out" in ret[ret.length - 2] && "$" in ret[ret.length - 1]) {
+                    var tab = notebook.get_tab_by_widget(this);
+                    if(open_dialog == false){
+                        alert_error(ret[ret.length - 2], tab);
+                    }
                 }else if (ret.length > 2 && "refused" in ret[ret.length - 2] && "$" in ret[ret.length - 1]) {
                     var tab = notebook.get_tab_by_widget(this);
                     if(open_dialog == false){
                         alert_error_retry(ret[ret.length - 2], tab);    
                     }
-                }else if (ret.length > 2 && "denied" in ret[ret.length - 2]) {
+                }else if (ret.length > 2 && "Permission denied, please try again." in ret[ret.length - 2]) {
                     var tab = notebook.get_tab_by_widget(this);
                     if(open_dialog == false){
                         alert_error(ret[ret.length - 2], tab);

@@ -23,25 +23,31 @@ parts:
         plugin: cmake
         source: lp:granite/0.5
         source-type: bzr
+        configflags: [-DCMAKE_BUILD_TYPE=Release, -DCMAKE_INSTALL_PREFIX=/usr, -DCMAKE_INSTALL_LIBDIR=/usr/lib]
         build-packages:
-            - build-essential
-            - valac
+          - build-essential
+          - valac
         stage-packages:
-            - valac-0.30-vapi
+          - valac-0.30-vapi
+
     easyssh:
         plugin: meson
         meson-parameters:
           - --prefix=/usr
-        source: lp:easyssh
-        source-type: bzr
-        configflags: [-DCMAKE_INSTALL_PREFIX=/usr]
-        after: [granite]
+        source: https://github.com/muriloventuroso/easyssh.git
+        source-type: git
+        after: [granite, desktop-gtk3]
         build-packages:
             - build-essential
             - valac
-            - meson
+            - intltool
             - libgee-0.8-dev
+            - debhelper
             - libgtk-3-dev
             - libgranite-dev
             - libvte-2.91-dev
             - libjson-glib-dev
+        stage-packages:
+            - gobject-introspection
+            - libgee-0.8-2
+            - libgtk-3-0

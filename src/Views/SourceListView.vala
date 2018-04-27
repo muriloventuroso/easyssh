@@ -121,18 +121,20 @@ namespace EasySSH {
                     var tab = new Granite.Widgets.Tab (select_host.name, null, connect);
                     notebook.insert_tab(tab, 0);
                 }else if(notebook.n_tabs > 0){
-                    var box = (TerminalBox)notebook.current.page;
-                    window.current_terminal = (TerminalWidget)box.term;
-                    window.current_terminal.grab_focus();
-                    box.tab.icon = null;
-                    var all_read = true;
-                    foreach (var g_tab in notebook.tabs) {
-                        if(g_tab.icon != null){
-                            all_read = false;
+                    if(Type.from_instance(notebook.current.page).name() == "EasySSHTerminalBox"){
+                        var box = (TerminalBox)notebook.current.page;
+                        window.current_terminal = (TerminalWidget)box.term;
+                        window.current_terminal.grab_focus();
+                        box.tab.icon = null;
+                        var all_read = true;
+                        foreach (var g_tab in notebook.tabs) {
+                            if(g_tab.icon != null){
+                                all_read = false;
+                            }
                         }
-                    }
-                    if(all_read == true){
-                        item.icon = null;
+                        if(all_read == true){
+                            item.icon = null;
+                        }
                     }
                 }
                 clean_box();
