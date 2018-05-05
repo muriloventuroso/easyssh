@@ -42,6 +42,7 @@ namespace EasySSH {
             open_dialog = false;
             var scroller = new Gtk.ScrolledWindow(null, null);
             term = new TerminalWidget(window);
+            term.set_scrollback_lines(-1);
 
             term.spawn_sync(Vte.PtyFlags.DEFAULT, null, {"/bin/sh"},
                                         null, SpawnFlags.SEARCH_PATH, null, null, null);
@@ -50,6 +51,8 @@ namespace EasySSH {
             start_connection();
 
             add(term);
+
+            set_vadjustment(term.get_vadjustment());
         }
 
         public void start_connection(){
