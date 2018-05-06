@@ -193,10 +193,10 @@ namespace EasySSH {
             sourcelist.new_conn();
         }
         private void action_edit_conn () {
-            sourcelist.edit_conn();   
+            sourcelist.edit_conn();
         }
         private void action_remove_conn () {
-            sourcelist.remove_conn();   
+            sourcelist.remove_conn();
         }
         private void action_preferences () {
             if (preferences_dialog == null) {
@@ -208,7 +208,7 @@ namespace EasySSH {
                 });
             }
 
-            preferences_dialog.present (); 
+            preferences_dialog.present ();
         }
 
         void action_copy () {

@@ -73,7 +73,7 @@ namespace EasySSH {
                     if(str != ""){
                         ret += str;
                     }
-                    
+
                 }
                 if (ret.length > 2 && "closed." in ret[ret.length - 2] && "$" in ret[ret.length - 1]) {
                     var tab = notebook.get_tab_by_widget(this);
@@ -91,7 +91,7 @@ namespace EasySSH {
                 }else if (ret.length > 2 && "refused" in ret[ret.length - 2] && "$" in ret[ret.length - 1]) {
                     var tab = notebook.get_tab_by_widget(this);
                     if(open_dialog == false){
-                        alert_error_retry(ret[ret.length - 2], tab);    
+                        alert_error_retry(ret[ret.length - 2], tab);
                     }
                 }else if (ret.length > 2 && "Permission denied, please try again." in ret[ret.length - 2]) {
                     var tab = notebook.get_tab_by_widget(this);
@@ -110,7 +110,7 @@ namespace EasySSH {
                         send_password = true;
                     }
                 }
-                
+
             }
         }
 
@@ -129,7 +129,7 @@ namespace EasySSH {
         private void alert_error_retry (string error, Granite.Widgets.Tab? tab) {
             open_dialog = true;
             var message_dialog = new Granite.MessageDialog.with_image_from_icon_name (_("Connection Error. Retry?"), error, "dialog-warning", Gtk.ButtonsType.NONE);
-            
+
             var no_button = new Gtk.Button.with_label (_("No"));
             message_dialog.add_action_widget (no_button, Gtk.ResponseType.CANCEL);
 
@@ -143,7 +143,7 @@ namespace EasySSH {
             }else{
                 remove_tab(tab);
             }
-            
+
             open_dialog = false;
             message_dialog.destroy ();
         }
@@ -154,15 +154,15 @@ namespace EasySSH {
             message_dialog.show_all ();
             if (message_dialog.run () == Gtk.ResponseType.CLOSE) {
                 remove_tab(tab);
-            }        
+            }
             open_dialog = false;
             message_dialog.destroy ();
         }
 
         private void alert_figerprint (string description, Granite.Widgets.Tab? tab) {
             open_dialog = true;
-            var message_dialog = new Granite.MessageDialog.with_image_from_icon_name (_("Figerprint"), description, "dialog-information", Gtk.ButtonsType.NONE);
-            
+            var message_dialog = new Granite.MessageDialog.with_image_from_icon_name (_("Fingerprint"), description, "dialog-information", Gtk.ButtonsType.NONE);
+
             var no_button = new Gtk.Button.with_label (_("No"));
             message_dialog.add_action_widget (no_button, Gtk.ResponseType.CANCEL);
 
@@ -178,7 +178,7 @@ namespace EasySSH {
                 term_send("no");
                 remove_tab(tab);
             }
-            
+
             open_dialog = false;
             message_dialog.destroy ();
         }
