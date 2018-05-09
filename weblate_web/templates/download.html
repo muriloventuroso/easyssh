@@ -14,23 +14,6 @@
 {% endblock %}
 {% block content %}
 
-<h2>{% trans "Code" %}</h2>
-
-<p>
-{% blocktrans %}Weblate is being developed on <a href="https://github.com/WeblateOrg/weblate">GitHub</a>, you can fork it there or just:{% endblocktrans %}
-</p>
-
-<pre>
-# Weblate
-git clone https://github.com/WeblateOrg/weblate.git
-
-# wlc
-git clone https://github.com/WeblateOrg/wlc.git
-
-# Weblate website
-git clone https://github.com/WeblateOrg/website.git
-</pre>
-
 <h2>{% trans "Download" %}</h2>
 
 <p>
@@ -82,5 +65,22 @@ pip3 install wlc
 <a href="https://bitnami.com/stack/weblate/cloud/google"><img src="/media/gcp.png" /></a>
 <a href="https://bitnami.com/stack/weblate/cloud/amazon"><img src="/media/aws.png" /></a>
 <a href="https://bitnami.com/stack/weblate/cloud/azure"><img src="/media/azure.png" /></a>
+
+<h2>{% trans "Code" %}</h2>
+
+<p>
+{% blocktrans %}Weblate is being developed on <a href="https://github.com/WeblateOrg/weblate">GitHub</a>, you can fork it there or just:{% endblocktrans %}
+</p>
+
+<pre>
+# Weblate
+git clone https://github.com/WeblateOrg/weblate.git
+
+# wlc
+git clone https://github.com/WeblateOrg/wlc.git
+
+# Weblate website
+git clone https://github.com/WeblateOrg/website.git
+</pre>
 
 {% endblock %}
