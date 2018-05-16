@@ -31,7 +31,7 @@ namespace EasySSH {
         public string username  {get; set;}
         public string password  {get; set;}
         public string group  {get; set;}
-        public Granite.Widgets.DynamicNotebook? notebook {get; set;}
+        public Granite.Widgets.DynamicNotebook notebook {get; set;}
         public Granite.Widgets.SourceList.Item? item {get; set;}
 
         construct {
@@ -202,6 +202,17 @@ namespace EasySSH {
                 }
             }
             return false;
+        }
+
+        public ArrayList<Granite.Widgets.DynamicNotebook>? get_notebooks(){
+            var notebooks = new ArrayList<Granite.Widgets.DynamicNotebook>();
+            for(int i = 0; i < groups.length; i++){
+                var hosts = groups[i].get_hosts();
+                for(int a = 0; a < hosts.size; a++){
+                    notebooks.add(hosts[a].notebook);
+                }
+            }
+            return notebooks;
         }
 
     }

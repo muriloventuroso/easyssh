@@ -147,6 +147,26 @@ namespace EasySSH {
             show_all();
         }
 
+        public void restore_hosts(string host_name, int qtd){
+            var host = hostmanager.get_host_by_name(host_name);
+            if(host == null){
+                return;
+            }
+            var n = host.notebook;
+            for (int i = 0; i < qtd; i++) {
+                var term = new TerminalBox(host, n, window);
+                var next_tab = n.n_tabs;
+
+                var n_tab = new Granite.Widgets.Tab (host.name + " - " + (next_tab + 1).to_string(), null, term);
+                term.tab = n_tab;
+
+                n.insert_tab (n_tab, next_tab);
+                n.current = n_tab;
+                window.current_terminal = term.term;
+                term.term.grab_focus();
+            }
+        }
+
         public void restore(){
             if(source_list.selected == null){
                 box.add(welcome);

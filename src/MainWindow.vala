@@ -114,10 +114,10 @@ namespace EasySSH {
 
             set_titlebar (header);
 
-            load_settings();
-
             sourcelist = new SourceListView(this);
             add (sourcelist);
+
+            load_settings();
 
             this.delete_event.connect (
                 () => {
@@ -134,6 +134,52 @@ namespace EasySSH {
             });
         }
 
+        private TerminalBox? get_term_widget (Granite.Widgets.Tab tab) {
+            if(Type.from_instance(tab.page).name() == "EasySSHConnection"){
+                return null;
+            }else{
+                return (TerminalBox)tab.page;
+            }
+            
+        }
+
+        private void save_opened_hosts () {
+            string[] opened_hosts = {};
+            var notebooks = sourcelist.hostmanager.get_notebooks();
+            for(int a = 0; a < notebooks.size; a++){
+                var notebook = notebooks[a];
+                var count = 0;
+                var location = "";
+                notebook.tabs.foreach ((tab) => {
+                    var term = get_term_widget (tab);
+                    if (term == null) {
+                        return;
+                    }
+
+                    location = term.dataHost.name;
+                    count += 1;
+                });
+                if(count > 0){
+                    opened_hosts += location + "," + count.to_string();
+                }
+                
+            }
+
+            settings.hosts = opened_hosts;
+
+        }
+
+        private void restore_hosts(){
+            for (int i = 0; i < settings.hosts.length; i++) {
+                var entry = settings.hosts[i];
+                var host_split = entry.split(",");
+                var qtd_hosts = host_split[host_split.length - 1];
+                var name_host = string.joinv(",", host_split[0:host_split.length - 1]);
+                
+                sourcelist.restore_hosts(name_host, int.parse(qtd_hosts));
+            }
+        }
+
         private void load_settings () {
             if (settings.window_maximized) {
                 this.maximize ();
@@ -142,10 +188,17 @@ namespace EasySSH {
                 this.set_default_size (settings.window_width, settings.window_height);
             }
             this.move (settings.pos_x, settings.pos_y);
+            if(settings.restore_hosts == true){
+                restore_hosts();
+            }
 
         }
 
         private void save_settings () {
+            if(settings.restore_hosts == true){
+                save_opened_hosts();
+            }
+            
             settings.window_maximized = this.is_maximized;
 
             if (!settings.window_maximized) {
