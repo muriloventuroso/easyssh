@@ -111,6 +111,7 @@ namespace EasySSH {
                 if(item == null){
                     return;
                 }
+                window.current_terminal = null;
 
                 var select_host = hostmanager.get_host_by_name(item.name);
                 var notebook = select_host.notebook;
@@ -126,16 +127,16 @@ namespace EasySSH {
                         window.current_terminal = (TerminalWidget)box.term;
                         window.current_terminal.grab_focus();
                         box.tab.icon = null;
-                        var all_read = true;
-                        foreach (var g_tab in notebook.tabs) {
-                            if(g_tab.icon != null){
-                                all_read = false;
-                            }
-                        }
-                        if(all_read == true){
-                            item.icon = null;
-                        }
                     }
+                }
+                var all_read = true;
+                foreach (var g_tab in notebook.tabs) {
+                    if(g_tab.icon != null){
+                        all_read = false;
+                    }
+                }
+                if(all_read == true){
+                    item.icon = null;
                 }
                 clean_box();
                 box.add(notebook);
