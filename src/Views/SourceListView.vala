@@ -111,6 +111,7 @@ namespace EasySSH {
                 if(item == null){
                     return;
                 }
+                window.current_terminal = null;
 
                 var select_host = hostmanager.get_host_by_name(item.name);
                 var notebook = select_host.notebook;
@@ -126,16 +127,16 @@ namespace EasySSH {
                         window.current_terminal = (TerminalWidget)box.term;
                         window.current_terminal.grab_focus();
                         box.tab.icon = null;
-                        var all_read = true;
-                        foreach (var g_tab in notebook.tabs) {
-                            if(g_tab.icon != null){
-                                all_read = false;
-                            }
-                        }
-                        if(all_read == true){
-                            item.icon = null;
-                        }
                     }
+                }
+                var all_read = true;
+                foreach (var g_tab in notebook.tabs) {
+                    if(g_tab.icon != null){
+                        all_read = false;
+                    }
+                }
+                if(all_read == true){
+                    item.icon = null;
                 }
                 clean_box();
                 box.add(notebook);
@@ -144,6 +145,26 @@ namespace EasySSH {
                 
             });
             show_all();
+        }
+
+        public void restore_hosts(string host_name, int qtd){
+            var host = hostmanager.get_host_by_name(host_name);
+            if(host == null){
+                return;
+            }
+            var n = host.notebook;
+            for (int i = 0; i < qtd; i++) {
+                var term = new TerminalBox(host, n, window);
+                var next_tab = n.n_tabs;
+
+                var n_tab = new Granite.Widgets.Tab (host.name + " - " + (next_tab + 1).to_string(), null, term);
+                term.tab = n_tab;
+
+                n.insert_tab (n_tab, next_tab);
+                n.current = n_tab;
+                window.current_terminal = term.term;
+                term.term.grab_focus();
+            }
         }
 
         public void restore(){

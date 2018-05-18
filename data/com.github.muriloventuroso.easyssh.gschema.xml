@@ -55,6 +55,16 @@
             <summary>Font name and size to use in terminal.</summary>
             <description></description>
         </key>
+        <key name="restore-hosts" type="b">
+            <default>false</default>
+            <summary>Should restore opened hosts</summary>
+            <description>Should restore opened hosts</description>
+        </key>
+        <key name="hosts" type="as">
+            <default>[]</default>
+            <summary>List of active hosts from the last window.</summary>
+            <description>List of active hosts from the last window.</description>
+        </key>
 
         
     </schema>

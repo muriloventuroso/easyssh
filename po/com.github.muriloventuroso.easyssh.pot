@@ -8,160 +8,162 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.muriloventuroso.easyssh\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-06 17:50+0400\n"
+"POT-Creation-Date: 2018-05-16 16:56-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.4\n"
-"X-Poedit-Basepath: ../src\n"
-"X-Poedit-SearchPath-0: .\n"
 
-#: MainWindow.vala:64
+#: src/MainWindow.vala:64
 msgid "EasySSH"
 msgstr ""
 
-#: MainWindow.vala:231
+#: src/MainWindow.vala:284
 msgid "Copy"
 msgstr ""
 
-#: MainWindow.vala:232
+#: src/MainWindow.vala:285
 msgid "Paste"
 msgstr ""
 
-#: MainWindow.vala:233
+#: src/MainWindow.vala:286
 msgid "Select All"
 msgstr ""
 
-#: Views/SourceListView.vala:31 Widgets/Connection.vala:55
+#: src/Views/SourceListView.vala:31 src/Widgets/Connection.vala:55
 msgid "Edit"
 msgstr ""
 
-#: Views/SourceListView.vala:33 Views/SourceListView.vala:398
-#: Widgets/Connection.vala:58
+#: src/Views/SourceListView.vala:33 src/Views/SourceListView.vala:419
+#: src/Widgets/Connection.vala:58
 msgid "Remove"
 msgstr ""
 
-#: Views/SourceListView.vala:395
+#: src/Views/SourceListView.vala:416
 msgid "Remove "
 msgstr ""
 
-#: Views/SourceListView.vala:395
+#: src/Views/SourceListView.vala:416
 msgid ""
 "Are you sure you want to remove this connection and all data associated with "
 "it?"
 msgstr ""
 
-#: Widgets/Connection.vala:52
-msgid "Connect"
-msgstr ""
-
-#: Widgets/ConnectionEditor.vala:79
-msgid "Save"
-msgstr ""
-
-#: Widgets/ConnectionEditor.vala:83
-msgid "Cancel"
-msgstr ""
-
-#: Widgets/ConnectionEditor.vala:97 Widgets/Welcome.vala:26
-msgid "Add Connection"
-msgstr ""
-
-#: Widgets/ConnectionEditor.vala:99
-msgid "Edit Connection"
-msgstr ""
-
-#: Widgets/ConnectionEditor.vala:103
-msgid "Name:"
-msgstr ""
-
-#: Widgets/ConnectionEditor.vala:106
-msgid "Group:"
-msgstr ""
-
-#: Widgets/ConnectionEditor.vala:108
-msgid "Host:"
-msgstr ""
-
-#: Widgets/ConnectionEditor.vala:110
-msgid "Port:"
-msgstr ""
-
-#: Widgets/ConnectionEditor.vala:112
-msgid "Username:"
-msgstr ""
-
-#: Widgets/ConnectionEditor.vala:114
-msgid "Password:"
-msgstr ""
-
-#: Widgets/ConnectionEditor.vala:142
-msgid "Name is already taken"
-msgstr ""
-
-#: Widgets/HeaderBar.vala:37
-msgid "Create a new connection"
-msgstr ""
-
-#: Widgets/HeaderBar.vala:42 Widgets/Preferences.vala:35
-msgid "Preferences"
-msgstr ""
-
-#: Widgets/Preferences.vala:44
-msgid "Select Hosts Configuration Folder…"
-msgstr ""
-
-#: Widgets/Preferences.vala:66
-msgid "Hosts Configuration Folder:"
-msgstr ""
-
-#: Widgets/Preferences.vala:69
-msgid "Terminal Background Color:"
-msgstr ""
-
-#: Widgets/Preferences.vala:72
-msgid "Terminal Font:"
-msgstr ""
-
-#: Widgets/Preferences.vala:80
-msgid "General"
-msgstr ""
-
-#: Widgets/Preferences.vala:92
-msgid "Close"
-msgstr ""
-
-#: Widgets/TerminalBox.vala:131
+#: src/Widgets/TerminalBox.vala:136
 msgid "Connection Error. Retry?"
 msgstr ""
 
-#: Widgets/TerminalBox.vala:133 Widgets/TerminalBox.vala:166
+#: src/Widgets/TerminalBox.vala:138 src/Widgets/TerminalBox.vala:171
 msgid "No"
 msgstr ""
 
-#: Widgets/TerminalBox.vala:136 Widgets/TerminalBox.vala:169
+#: src/Widgets/TerminalBox.vala:141 src/Widgets/TerminalBox.vala:174
 msgid "Yes"
 msgstr ""
 
-#: Widgets/TerminalBox.vala:152
+#: src/Widgets/TerminalBox.vala:157
 msgid "Connection Error."
 msgstr ""
 
-#: Widgets/TerminalBox.vala:164
+#: src/Widgets/TerminalBox.vala:169
 msgid "Fingerprint"
 msgstr ""
 
-#: Widgets/TerminalWidget.vala:31
-msgid "Terminal"
-msgstr ""
-
-#: Widgets/Welcome.vala:25
+#: src/Widgets/Welcome.vala:25
 msgid "SSH Connection Manager"
 msgstr ""
 
-#: Widgets/Welcome.vala:26
+#: src/Widgets/Welcome.vala:26 src/Widgets/ConnectionEditor.vala:97
+msgid "Add Connection"
+msgstr ""
+
+#: src/Widgets/Welcome.vala:26
 msgid "Start by adding an SSH connection to EasySSH"
+msgstr ""
+
+#: src/Widgets/HeaderBar.vala:37
+msgid "Create a new connection"
+msgstr ""
+
+#: src/Widgets/HeaderBar.vala:42 src/Widgets/Preferences.vala:35
+msgid "Preferences"
+msgstr ""
+
+#: src/Widgets/ConnectionEditor.vala:79
+msgid "Save"
+msgstr ""
+
+#: src/Widgets/ConnectionEditor.vala:83
+msgid "Cancel"
+msgstr ""
+
+#: src/Widgets/ConnectionEditor.vala:99
+msgid "Edit Connection"
+msgstr ""
+
+#: src/Widgets/ConnectionEditor.vala:103
+msgid "Name:"
+msgstr ""
+
+#: src/Widgets/ConnectionEditor.vala:106
+msgid "Group:"
+msgstr ""
+
+#: src/Widgets/ConnectionEditor.vala:108
+msgid "Host:"
+msgstr ""
+
+#: src/Widgets/ConnectionEditor.vala:110
+msgid "Port:"
+msgstr ""
+
+#: src/Widgets/ConnectionEditor.vala:112
+msgid "Username:"
+msgstr ""
+
+#: src/Widgets/ConnectionEditor.vala:114
+msgid "Password:"
+msgstr ""
+
+#: src/Widgets/ConnectionEditor.vala:142
+msgid "Name is already taken"
+msgstr ""
+
+#: src/Widgets/Connection.vala:52
+msgid "Connect"
+msgstr ""
+
+#: src/Widgets/Preferences.vala:44
+msgid "Select Hosts Configuration Folder…"
+msgstr ""
+
+#: src/Widgets/Preferences.vala:74
+msgid "Hosts Configuration Folder:"
+msgstr ""
+
+#: src/Widgets/Preferences.vala:77
+msgid "Terminal Background Color:"
+msgstr ""
+
+#: src/Widgets/Preferences.vala:80
+msgid "Terminal Font:"
+msgstr ""
+
+#: src/Widgets/Preferences.vala:83
+msgid "Restore Opened Hosts:"
+msgstr ""
+
+#: src/Widgets/Preferences.vala:91
+msgid "General"
+msgstr ""
+
+#: src/Widgets/Preferences.vala:103
+msgid "Close"
+msgstr ""
+
+#: src/Widgets/TerminalWidget.vala:31
+msgid "Terminal"
 msgstr ""

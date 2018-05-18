@@ -93,6 +93,11 @@ namespace EasySSH {
                     if(open_dialog == false){
                         alert_error_retry(ret[ret.length - 2], tab);
                     }
+                }else if (ret.length > 2 && "No route to host" in ret[ret.length - 2] && "$" in ret[ret.length - 1]) {
+                    var tab = notebook.get_tab_by_widget(this);
+                    if(open_dialog == false){
+                        alert_error_retry(ret[ret.length - 2], tab);
+                    }
                 }else if (ret.length > 2 && "Permission denied, please try again." in ret[ret.length - 2]) {
                     var tab = notebook.get_tab_by_widget(this);
                     if(open_dialog == false){

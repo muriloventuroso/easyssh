@@ -31,6 +31,8 @@ namespace EasySSH {
         public string hosts_folder { get; set; }
         public string terminal_background_color {get; set;}
         public string terminal_font {get; set;}
+        public string[] hosts { get; set; }
+        public bool restore_hosts { get; set; }
 
         public static Settings get_default () {
             if (settings == null) {

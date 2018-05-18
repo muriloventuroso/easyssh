@@ -60,6 +60,14 @@ namespace EasySSH {
                 settings.terminal_font = terminal_font_button.get_font();
             });
 
+            var restore_hosts_switch = new Gtk.Switch();
+            restore_hosts_switch.halign = Gtk.Align.START;
+            restore_hosts_switch.valign = Gtk.Align.CENTER;
+            restore_hosts_switch.set_active(settings.restore_hosts);
+            restore_hosts_switch.notify["active"].connect (() => {
+                settings.restore_hosts = restore_hosts_switch.active;
+            });
+
             var general_grid = new Gtk.Grid ();
             general_grid.column_spacing = 12;
             general_grid.row_spacing = 6;
@@ -71,6 +79,9 @@ namespace EasySSH {
 
             general_grid.attach (new Granite.HeaderLabel (_("Terminal Font:")), 0, 2, 1, 1);
             general_grid.attach (terminal_font_button, 1, 2, 1, 1);
+
+            general_grid.attach (new Granite.HeaderLabel (_("Restore Opened Hosts:")), 0, 3, 1, 1);
+            general_grid.attach (restore_hosts_switch, 1, 3, 1, 1);
 
 
             main_stack = new Gtk.Stack ();
@@ -96,6 +107,8 @@ namespace EasySSH {
 
             add_action_widget (close_button, 0);
         }
+
+
 
     }
 }
