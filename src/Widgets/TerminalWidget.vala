@@ -48,6 +48,8 @@ namespace EasySSH {
         private Gtk.Menu menu;
         public Granite.Widgets.Tab tab;
         public string? uri;
+        public Host host { get; construct; }
+        GLib.Pid child_pid;
 
         private string _tab_label;
         public string tab_label {
@@ -93,7 +95,10 @@ namespace EasySSH {
             private set;
         }
 
-        public TerminalWidget (MainWindow parent_window) {
+        public TerminalWidget (MainWindow parent_window, Host host) {
+            Object (
+                host: host
+            );
 
             init_complete = false;
             window = parent_window;
@@ -152,6 +157,11 @@ namespace EasySSH {
                 set_font(new Pango.FontDescription().from_string(settings.terminal_font));    
             }
             
+        }
+
+        public void active_shell() {
+            this.spawn_sync(Vte.PtyFlags.DEFAULT, null, {"/bin/sh"},
+                                        null, SpawnFlags.SEARCH_PATH, null, out this.child_pid, null);
         }
 
 

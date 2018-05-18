@@ -26,6 +26,7 @@ namespace EasySSH {
         private Gtk.Clipboard clipboard;
         private Gtk.Clipboard primary_selection;
         private EasySSH.Settings settings;
+        private string? default_filemanager = null;
 
         public const string ACTION_PREFIX = "win.";
         public const string ACTION_NEW_CONN = "action_new_conn";
@@ -50,6 +51,7 @@ namespace EasySSH {
                 <menuitem name="Copy" action="Copy"/>
                 <menuitem name="Paste" action="Paste"/>
                 <menuitem name="Select All" action="Select All"/>
+                <menuitem name="Show in File Browser" action="Show in File Browser"/>
             </popup>
             </ui>
         """;
@@ -132,6 +134,42 @@ namespace EasySSH {
                 }
                 return false;
             });
+            get_default_filemanager ();
+        }
+
+        private void get_default_filemanager () {
+            var stdout = "";
+            var stderr = "";
+            var result = Process.spawn_command_line_sync ("xdg-mime query default inode/directory",
+                                    out stdout,
+                                    out stderr,
+                                    null);
+            if(result==false){
+                print(stderr + "\n");
+                return;
+            }
+            var filename = stdout;
+
+            var res = Process.spawn_command_line_sync ("cat /usr/share/applications/" + filename,
+                                    out stdout,
+                                    out stderr,
+                                    null);
+            if(res==false){
+                print(stderr + "\n");
+                return;
+            }
+            var lines = stdout.split("\n");
+            var filemanager = "";
+            foreach (string line in lines) {
+                var split_line = line.split("=");
+                if(split_line[0] == "Exec"){
+                    filemanager = split_line[1].replace("%U", "");
+                    break;
+                }
+            }
+            if(filemanager != ""){
+                default_filemanager = filemanager;
+            }
         }
 
         private TerminalBox? get_term_widget (Granite.Widgets.Tab tab) {
@@ -279,11 +317,20 @@ namespace EasySSH {
         void action_select_all () {
             current_terminal.select_all ();
         }
+        void action_open_in_files () {
+            if(default_filemanager == null){
+                return;
+            }
+            var command = "sftp://" + current_terminal.host.username + "@" + current_terminal.host.host + ":" + current_terminal.host.port;
+            Process.spawn_command_line_async (default_filemanager + " " + command);
+        }
 
         const Gtk.ActionEntry[] main_entries = {
             { "Copy", null, N_("Copy"), "<Control><Shift>c", null, action_copy },
             { "Paste", null, N_("Paste"), "<Control><Shift>v", null, action_paste },
             { "Select All", null, N_("Select All"), "<Control><Shift>a", null, action_select_all },
+            { "Select All", null, N_("Select All"), "<Control><Shift>a", null, action_select_all },
+            { "Show in File Browser", null, N_("Show in File Browser"), "<Control><Shift>e", null, action_open_in_files }
         };
     }
 
