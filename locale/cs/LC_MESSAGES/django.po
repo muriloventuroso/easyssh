@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2018-04-14 07:12+0200\n"
+"POT-Creation-Date: 2018-05-21 13:24+0200\n"
 "PO-Revision-Date: 2018-03-27 10:16+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/weblate/website/cs/"
@@ -184,7 +184,7 @@ msgstr "Vlastnosti"
 msgid "Docs"
 msgstr "Dokumentace"
 
-#: weblate_web/templates/base.html:82 weblate_web/templates/download.html:34
+#: weblate_web/templates/base.html:82 weblate_web/templates/download.html:17
 msgid "Download"
 msgstr "Stáhnout"
 
@@ -199,7 +199,7 @@ msgstr "Vyvíjejte"
 #: weblate_web/templates/base.html:85 weblate_web/templates/donate.html:61
 #: weblate_web/templates/donate.html:91 weblate_web/templates/donate.html:92
 #: weblate_web/templates/donate.html:93 weblate_web/templates/donate.html:94
-#: weblate_web/templates/donate.html:95
+#: weblate_web/templates/donate.html:95 weblate_web/templates/donate.html:96
 msgid "Donate"
 msgstr "Přispějte"
 
@@ -258,7 +258,7 @@ msgstr ""
 "přispívání</a>."
 
 #: weblate_web/templates/contribute.html:20
-#: weblate_web/templates/download.html:17
+#: weblate_web/templates/download.html:69
 msgid "Code"
 msgstr "Kód"
 
@@ -341,9 +341,11 @@ msgstr ""
 "můžete získat i odměny, třeba umístění loga na naše stránky."
 
 #: weblate_web/templates/donate.html:47
-msgid "Liberapay allows you to send a weekly amount using a credit card."
+msgid ""
+"Liberapay is a recurrent donations platform where you send weekly amount to "
+"fund projects you use. You can use credit card, bank transfer or direct "
+"debit to top up the account."
 msgstr ""
-"Liberapay vám umožní posílat příspěvek každý týden pomocí kreditní karty."
 
 #: weblate_web/templates/donate.html:50
 msgid "Fund features"
@@ -409,27 +411,19 @@ msgid "Weblate comes with complete source code."
 msgstr "Weblate je k dispozici s kompletními zdrojovými kódy."
 
 #: weblate_web/templates/download.html:20
-msgid ""
-"Weblate is being developed on <a href=\"https://github.com/WeblateOrg/weblate"
-"\">GitHub</a>, you can fork it there or just:"
-msgstr ""
-"Weblate je vyvíjeno na <a href=\"https://github.com/WeblateOrg/weblate"
-"\">GitHubu</a>, kde si ho můžete forknout, nebo stačí:"
-
-#: weblate_web/templates/download.html:37
 msgid "You can download latest release here:"
 msgstr "Poslední verzi si můžete stáhnout zde:"
 
-#: weblate_web/templates/download.html:46
-#: weblate_web/templates/download.html:62
+#: weblate_web/templates/download.html:29
+#: weblate_web/templates/download.html:45
 msgid "You can also install using packages for following Linux distributions:"
 msgstr "Můžete si také nainstalovat balíčky pro vaší Linuxovou distribuci:"
 
-#: weblate_web/templates/download.html:52
+#: weblate_web/templates/download.html:35
 msgid "Weblate command line client"
 msgstr "Nástroj pro příkazovou řádku"
 
-#: weblate_web/templates/download.html:55
+#: weblate_web/templates/download.html:38
 #, python-format
 msgid ""
 "You can control Weblate remotely using <a href=\"%(url)s\">wlc</a>, it can "
@@ -438,11 +432,11 @@ msgstr ""
 "Weblate můžete ovládat vzdáleně pomocí <a href=\"%(url)s\">wlc</a>, můžete "
 "ho nainstalovat přes Python PIP:"
 
-#: weblate_web/templates/download.html:70
+#: weblate_web/templates/download.html:53
 msgid "Cloud or virtualization images"
 msgstr "Obrazy pro cloud nebo virtualizaci"
 
-#: weblate_web/templates/download.html:72
+#: weblate_web/templates/download.html:55
 msgid ""
 "Weblate can be run in any cloud or virtualization environment. Following "
 "links will show you information about some of these:"
@@ -450,21 +444,29 @@ msgstr ""
 "Weblate můžete provozovat v cloudu nebo pomocí virtualizace. Následující "
 "odkazy vám poskytnout informace o některých možnostech:"
 
-#: weblate_web/templates/download.html:75
+#: weblate_web/templates/download.html:58
 msgid "Running Weblate in a Docker container"
 msgstr "Provozování Weblate v Docker kontejneru"
 
-#: weblate_web/templates/download.html:76
+#: weblate_web/templates/download.html:59
 msgid "Running Weblate on OpenShift platform"
 msgstr "Provozování Weblate na platformě OpenShift"
 
-#: weblate_web/templates/download.html:77
+#: weblate_web/templates/download.html:60
 msgid ""
 "BitNami Weblate stack providing native installation for most platforms as "
 "well as support for many public cloud providers"
 msgstr ""
 "BitNami Weblate nabízí přímou instalaci na mnoho platforem a podporu pro "
 "mnoho veřejných cloudů"
+
+#: weblate_web/templates/download.html:72
+msgid ""
+"Weblate is being developed on <a href=\"https://github.com/WeblateOrg/weblate"
+"\">GitHub</a>, you can fork it there or just:"
+msgstr ""
+"Weblate je vyvíjeno na <a href=\"https://github.com/WeblateOrg/weblate"
+"\">GitHubu</a>, kde si ho můžete forknout, nebo stačí:"
 
 #: weblate_web/templates/features.html:3 weblate_web/templates/features.html:4
 msgid "Weblate features"
@@ -1499,6 +1501,10 @@ msgstr "Zdrojový tarball, komprimový xz"
 #: weblate_web/templatetags/downloads.py:61
 msgid "Sources, zip compressed"
 msgstr "Zdrojové kódy, komprimované zipem"
+
+#~ msgid "Liberapay allows you to send a weekly amount using a credit card."
+#~ msgstr ""
+#~ "Liberapay vám umožní posílat příspěvek každý týden pomocí kreditní karty."
 
 #~ msgid "Translation processing"
 #~ msgstr "Zpracování překladů"

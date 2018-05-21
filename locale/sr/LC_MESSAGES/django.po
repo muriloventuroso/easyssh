@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2018-04-14 07:12+0200\n"
+"POT-Creation-Date: 2018-05-21 13:24+0200\n"
 "PO-Revision-Date: 2017-05-31 20:24+0000\n"
 "Last-Translator: Слободан Симић(Slobodan Simić) <slsimic@gmail.com>\n"
 "Language-Team: Serbian <https://hosted.weblate.org/projects/weblate/website/"
@@ -179,7 +179,7 @@ msgstr "Могућности"
 msgid "Docs"
 msgstr "Документација"
 
-#: weblate_web/templates/base.html:82 weblate_web/templates/download.html:34
+#: weblate_web/templates/base.html:82 weblate_web/templates/download.html:17
 msgid "Download"
 msgstr "Преузимање"
 
@@ -194,7 +194,7 @@ msgstr "Развој"
 #: weblate_web/templates/base.html:85 weblate_web/templates/donate.html:61
 #: weblate_web/templates/donate.html:91 weblate_web/templates/donate.html:92
 #: weblate_web/templates/donate.html:93 weblate_web/templates/donate.html:94
-#: weblate_web/templates/donate.html:95
+#: weblate_web/templates/donate.html:95 weblate_web/templates/donate.html:96
 msgid "Donate"
 msgstr "Донација"
 
@@ -258,7 +258,7 @@ msgstr ""
 "документацији."
 
 #: weblate_web/templates/contribute.html:20
-#: weblate_web/templates/download.html:17
+#: weblate_web/templates/download.html:69
 msgid "Code"
 msgstr "Кôд"
 
@@ -344,9 +344,11 @@ msgstr ""
 "донације можемо поставити ваш лого на наш вебсајт."
 
 #: weblate_web/templates/donate.html:47
-msgid "Liberapay allows you to send a weekly amount using a credit card."
+msgid ""
+"Liberapay is a recurrent donations platform where you send weekly amount to "
+"fund projects you use. You can use credit card, bank transfer or direct "
+"debit to top up the account."
 msgstr ""
-"Либерапеј омогућава да недељно шаљете одређени износ са кредитне картице."
 
 #: weblate_web/templates/donate.html:50
 msgid "Fund features"
@@ -409,28 +411,20 @@ msgid "Weblate comes with complete source code."
 msgstr "Веблејт долази са комплетним изворним кôдом."
 
 #: weblate_web/templates/download.html:20
-msgid ""
-"Weblate is being developed on <a href=\"https://github.com/WeblateOrg/weblate"
-"\">GitHub</a>, you can fork it there or just:"
-msgstr ""
-"Веблејт се развија на <a href=\"https://github.com/WeblateOrg/weblate"
-"\">Гитхабу</a>. Тамо га можете разгранати или:"
-
-#: weblate_web/templates/download.html:37
 msgid "You can download latest release here:"
 msgstr "Последњу верзију можете преузети овде:"
 
-#: weblate_web/templates/download.html:46
-#: weblate_web/templates/download.html:62
+#: weblate_web/templates/download.html:29
+#: weblate_web/templates/download.html:45
 msgid "You can also install using packages for following Linux distributions:"
 msgstr ""
 "Такође можете инсталирати користећи пакете за следеће Линукс дистрибуције:"
 
-#: weblate_web/templates/download.html:52
+#: weblate_web/templates/download.html:35
 msgid "Weblate command line client"
 msgstr "Клијент командне линије"
 
-#: weblate_web/templates/download.html:55
+#: weblate_web/templates/download.html:38
 #, python-format
 msgid ""
 "You can control Weblate remotely using <a href=\"%(url)s\">wlc</a>, it can "
@@ -439,11 +433,11 @@ msgstr ""
 "Можете удаљено контролисати Веблејт помоћу команде <a href=\"%(url)s\">wlc</"
 "a>. Може се инсталирати помоћу „Python PIP“:"
 
-#: weblate_web/templates/download.html:70
+#: weblate_web/templates/download.html:53
 msgid "Cloud or virtualization images"
 msgstr "Одраз за облак или виртуелну машину"
 
-#: weblate_web/templates/download.html:72
+#: weblate_web/templates/download.html:55
 msgid ""
 "Weblate can be run in any cloud or virtualization environment. Following "
 "links will show you information about some of these:"
@@ -451,21 +445,29 @@ msgstr ""
 "Веблејт може да ради у облаку или виртуелном окружењу. Следећи линкови вам "
 "могу пружити информације о некима од њих:"
 
-#: weblate_web/templates/download.html:75
+#: weblate_web/templates/download.html:58
 msgid "Running Weblate in a Docker container"
 msgstr "Покретање Веблејта у Докер контејнеру"
 
-#: weblate_web/templates/download.html:76
+#: weblate_web/templates/download.html:59
 msgid "Running Weblate on OpenShift platform"
 msgstr "Покретање Веблејта на Опен Шифт платформи"
 
-#: weblate_web/templates/download.html:77
+#: weblate_web/templates/download.html:60
 msgid ""
 "BitNami Weblate stack providing native installation for most platforms as "
 "well as support for many public cloud providers"
 msgstr ""
 "„BitNami“ Веблејт обезбеђује основну инсталацију за већину платформи као и "
 "подршку за многе јавне добављаче у облаку"
+
+#: weblate_web/templates/download.html:72
+msgid ""
+"Weblate is being developed on <a href=\"https://github.com/WeblateOrg/weblate"
+"\">GitHub</a>, you can fork it there or just:"
+msgstr ""
+"Веблејт се развија на <a href=\"https://github.com/WeblateOrg/weblate"
+"\">Гитхабу</a>. Тамо га можете разгранати или:"
 
 #: weblate_web/templates/features.html:3 weblate_web/templates/features.html:4
 msgid "Weblate features"
@@ -1498,6 +1500,10 @@ msgstr "Изворни кôд, ТАР архива, „xz“ компресиј�
 #: weblate_web/templatetags/downloads.py:61
 msgid "Sources, zip compressed"
 msgstr "Изворни кôд, „zip“ компресија"
+
+#~ msgid "Liberapay allows you to send a weekly amount using a credit card."
+#~ msgstr ""
+#~ "Либерапеј омогућава да недељно шаљете одређени износ са кредитне картице."
 
 #~ msgid "Translation processing"
 #~ msgstr "Обрада превода"

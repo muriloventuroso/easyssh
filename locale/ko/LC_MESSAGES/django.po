@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2018-04-14 07:12+0200\n"
+"POT-Creation-Date: 2018-05-21 13:24+0200\n"
 "PO-Revision-Date: 2018-03-31 03:35+0000\n"
 "Last-Translator: k ks <kmshts@naver.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/weblate/website/"
@@ -182,7 +182,7 @@ msgstr "특징"
 msgid "Docs"
 msgstr "문서"
 
-#: weblate_web/templates/base.html:82 weblate_web/templates/download.html:34
+#: weblate_web/templates/base.html:82 weblate_web/templates/download.html:17
 msgid "Download"
 msgstr "다운로드"
 
@@ -197,7 +197,7 @@ msgstr "개발"
 #: weblate_web/templates/base.html:85 weblate_web/templates/donate.html:61
 #: weblate_web/templates/donate.html:91 weblate_web/templates/donate.html:92
 #: weblate_web/templates/donate.html:93 weblate_web/templates/donate.html:94
-#: weblate_web/templates/donate.html:95
+#: weblate_web/templates/donate.html:95 weblate_web/templates/donate.html:96
 msgid "Donate"
 msgstr "기부하기"
 
@@ -255,7 +255,7 @@ msgstr ""
 "latest/contributing.html\">참여하기 챕터</a>에서 확인할 수 있습니다."
 
 #: weblate_web/templates/contribute.html:20
-#: weblate_web/templates/download.html:17
+#: weblate_web/templates/download.html:69
 msgid "Code"
 msgstr "코드"
 
@@ -337,8 +337,11 @@ msgstr ""
 "홈페이지에 로고가 등록되는 등의 보상을 받으실 수 있습니다."
 
 #: weblate_web/templates/donate.html:47
-msgid "Liberapay allows you to send a weekly amount using a credit card."
-msgstr "Liberapay은 신용 카드를 사용하여 매주 금액을 보낼 수 있게 합니다."
+msgid ""
+"Liberapay is a recurrent donations platform where you send weekly amount to "
+"fund projects you use. You can use credit card, bank transfer or direct "
+"debit to top up the account."
+msgstr ""
 
 #: weblate_web/templates/donate.html:50
 msgid "Fund features"
@@ -403,30 +406,21 @@ msgid "Weblate comes with complete source code."
 msgstr "Weblate는 완전한 소스 코드와 함께 제공됩니다."
 
 #: weblate_web/templates/download.html:20
-msgid ""
-"Weblate is being developed on <a href=\"https://github.com/WeblateOrg/weblate"
-"\">GitHub</a>, you can fork it there or just:"
-msgstr ""
-"Weblate는 <a href=\"https://github.com/WeblateOrg/weblate\">GitHub</a>에서 개"
-"발되고 있습니다. 여러분은 포크(fork)를 하거나 또는 다음과 같은 것을 할 수 있"
-"습니다:"
-
-#: weblate_web/templates/download.html:37
 msgid "You can download latest release here:"
 msgstr "최신 릴리즈를 내려받을 수 있습니다:"
 
-#: weblate_web/templates/download.html:46
-#: weblate_web/templates/download.html:62
+#: weblate_web/templates/download.html:29
+#: weblate_web/templates/download.html:45
 msgid "You can also install using packages for following Linux distributions:"
 msgstr ""
 "다음 리눅스 배포판들을 사용하시는 경우, 설치 패키지를 이용해 설치하시는 것이 "
 "가능합니다:"
 
-#: weblate_web/templates/download.html:52
+#: weblate_web/templates/download.html:35
 msgid "Weblate command line client"
 msgstr "Weblate 명령줄 클라이언트"
 
-#: weblate_web/templates/download.html:55
+#: weblate_web/templates/download.html:38
 #, python-format
 msgid ""
 "You can control Weblate remotely using <a href=\"%(url)s\">wlc</a>, it can "
@@ -435,11 +429,11 @@ msgstr ""
 "<a href=\"%(url)s\">wlc</a>를 이용하여 Weblate를 원격으로 제어할 수 있습니"
 "다. wlc는 Python PIP로 설치할 수 있습니다 :"
 
-#: weblate_web/templates/download.html:70
+#: weblate_web/templates/download.html:53
 msgid "Cloud or virtualization images"
 msgstr "클라우드 또는 가상화 이미지"
 
-#: weblate_web/templates/download.html:72
+#: weblate_web/templates/download.html:55
 msgid ""
 "Weblate can be run in any cloud or virtualization environment. Following "
 "links will show you information about some of these:"
@@ -447,21 +441,30 @@ msgstr ""
 "Weblate는 어느 클라우드나 가상 환경에서 실행될 수 있습니다. 다음 링크를 클릭"
 "하여 더 많은 정보를 얻어보세요 :"
 
-#: weblate_web/templates/download.html:75
+#: weblate_web/templates/download.html:58
 msgid "Running Weblate in a Docker container"
 msgstr "Docker 컨테이너 내에서 Weblate 실행"
 
-#: weblate_web/templates/download.html:76
+#: weblate_web/templates/download.html:59
 msgid "Running Weblate on OpenShift platform"
 msgstr "OpenShift 플랫폼에서 Weblate 실행"
 
-#: weblate_web/templates/download.html:77
+#: weblate_web/templates/download.html:60
 msgid ""
 "BitNami Weblate stack providing native installation for most platforms as "
 "well as support for many public cloud providers"
 msgstr ""
 "BitNami Weblate 스택은 다수의 플랫폼에서 네이티브 설치를 제공하며 여러 공개 "
 "클라우드 서비스 제공자들을 지원합니다"
+
+#: weblate_web/templates/download.html:72
+msgid ""
+"Weblate is being developed on <a href=\"https://github.com/WeblateOrg/weblate"
+"\">GitHub</a>, you can fork it there or just:"
+msgstr ""
+"Weblate는 <a href=\"https://github.com/WeblateOrg/weblate\">GitHub</a>에서 개"
+"발되고 있습니다. 여러분은 포크(fork)를 하거나 또는 다음과 같은 것을 할 수 있"
+"습니다:"
 
 #: weblate_web/templates/features.html:3 weblate_web/templates/features.html:4
 msgid "Weblate features"
@@ -1488,6 +1491,9 @@ msgstr "소스 코드는 tarball, xz으로 압축됨"
 #: weblate_web/templatetags/downloads.py:61
 msgid "Sources, zip compressed"
 msgstr "소스 코드는 zip으로 압축됨"
+
+#~ msgid "Liberapay allows you to send a weekly amount using a credit card."
+#~ msgstr "Liberapay은 신용 카드를 사용하여 매주 금액을 보낼 수 있게 합니다."
 
 #~ msgid "Translation processing"
 #~ msgstr "번역 진행상황"

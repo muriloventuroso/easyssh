@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Weblate 1.2\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2018-04-14 07:12+0200\n"
+"POT-Creation-Date: 2018-05-21 13:24+0200\n"
 "PO-Revision-Date: 2018-03-28 05:03+0000\n"
 "Last-Translator: Maurício Meneghini Fauth <mauriciofauth@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
@@ -191,7 +191,7 @@ msgstr "Recursos"
 msgid "Docs"
 msgstr "Documentos"
 
-#: weblate_web/templates/base.html:82 weblate_web/templates/download.html:34
+#: weblate_web/templates/base.html:82 weblate_web/templates/download.html:17
 msgid "Download"
 msgstr "Baixar"
 
@@ -206,7 +206,7 @@ msgstr "Desenvolver"
 #: weblate_web/templates/base.html:85 weblate_web/templates/donate.html:61
 #: weblate_web/templates/donate.html:91 weblate_web/templates/donate.html:92
 #: weblate_web/templates/donate.html:93 weblate_web/templates/donate.html:94
-#: weblate_web/templates/donate.html:95
+#: weblate_web/templates/donate.html:95 weblate_web/templates/donate.html:96
 msgid "Donate"
 msgstr "Doar"
 
@@ -265,7 +265,7 @@ msgstr ""
 "\">Contribuindo</a> da nossa documentação."
 
 #: weblate_web/templates/contribute.html:20
-#: weblate_web/templates/download.html:17
+#: weblate_web/templates/download.html:69
 msgid "Code"
 msgstr "Código"
 
@@ -350,10 +350,11 @@ msgstr ""
 "logomarca em nosso website."
 
 #: weblate_web/templates/donate.html:47
-msgid "Liberapay allows you to send a weekly amount using a credit card."
+msgid ""
+"Liberapay is a recurrent donations platform where you send weekly amount to "
+"fund projects you use. You can use credit card, bank transfer or direct "
+"debit to top up the account."
 msgstr ""
-"Liberapay permite que você envie quantias semanais utilizando cartão de "
-"crédito."
 
 #: weblate_web/templates/donate.html:50
 msgid "Fund features"
@@ -420,29 +421,21 @@ msgid "Weblate comes with complete source code."
 msgstr "O Weblate vem com o código fonte completo."
 
 #: weblate_web/templates/download.html:20
-msgid ""
-"Weblate is being developed on <a href=\"https://github.com/WeblateOrg/weblate"
-"\">GitHub</a>, you can fork it there or just:"
-msgstr ""
-"O Weblate está sendo desenvolvido no <a href=\"https://github.com/WeblateOrg/"
-"weblate\">GitHub</a>, e você pode copiá-lo ali mesmo ou simplesmente:"
-
-#: weblate_web/templates/download.html:37
 msgid "You can download latest release here:"
 msgstr "Você pode baixar a última versão aqui:"
 
-#: weblate_web/templates/download.html:46
-#: weblate_web/templates/download.html:62
+#: weblate_web/templates/download.html:29
+#: weblate_web/templates/download.html:45
 msgid "You can also install using packages for following Linux distributions:"
 msgstr ""
 "Você também pode instalar usando pacotes para as seguintes distribuições "
 "Linux:"
 
-#: weblate_web/templates/download.html:52
+#: weblate_web/templates/download.html:35
 msgid "Weblate command line client"
 msgstr "Cliente em linha de comando do Weblate"
 
-#: weblate_web/templates/download.html:55
+#: weblate_web/templates/download.html:38
 #, python-format
 msgid ""
 "You can control Weblate remotely using <a href=\"%(url)s\">wlc</a>, it can "
@@ -451,11 +444,11 @@ msgstr ""
 "Você pode controlar o Weblate remotamente usando o <a href=\"%(url)s\">wlc</"
 "a>, ele pode ser instalado usando o Python PIP:"
 
-#: weblate_web/templates/download.html:70
+#: weblate_web/templates/download.html:53
 msgid "Cloud or virtualization images"
 msgstr "Nuvem ou imagens de virtualização"
 
-#: weblate_web/templates/download.html:72
+#: weblate_web/templates/download.html:55
 msgid ""
 "Weblate can be run in any cloud or virtualization environment. Following "
 "links will show you information about some of these:"
@@ -463,21 +456,29 @@ msgstr ""
 "O Weblate pode ser executado em qualquer nuvem ou ambiente virtualizado. Os "
 "links a seguir mostrarão informações sobre alguns destes:"
 
-#: weblate_web/templates/download.html:75
+#: weblate_web/templates/download.html:58
 msgid "Running Weblate in a Docker container"
 msgstr "Executando o Weblate em um container Docker"
 
-#: weblate_web/templates/download.html:76
+#: weblate_web/templates/download.html:59
 msgid "Running Weblate on OpenShift platform"
 msgstr "Executando o Weblate na plataforma OpenShift"
 
-#: weblate_web/templates/download.html:77
+#: weblate_web/templates/download.html:60
 msgid ""
 "BitNami Weblate stack providing native installation for most platforms as "
 "well as support for many public cloud providers"
 msgstr ""
 "O BitNami Weblate stack fornece instalação nativa para a maioria das "
 "plataformas bem como supporte para muitos fornecedores de nuvem públicas"
+
+#: weblate_web/templates/download.html:72
+msgid ""
+"Weblate is being developed on <a href=\"https://github.com/WeblateOrg/weblate"
+"\">GitHub</a>, you can fork it there or just:"
+msgstr ""
+"O Weblate está sendo desenvolvido no <a href=\"https://github.com/WeblateOrg/"
+"weblate\">GitHub</a>, e você pode copiá-lo ali mesmo ou simplesmente:"
 
 #: weblate_web/templates/features.html:3 weblate_web/templates/features.html:4
 msgid "Weblate features"
@@ -1534,6 +1535,11 @@ msgstr "Pacote tar de fontes, comprimido com xz"
 #: weblate_web/templatetags/downloads.py:61
 msgid "Sources, zip compressed"
 msgstr "Fontes, comprimidas com zip"
+
+#~ msgid "Liberapay allows you to send a weekly amount using a credit card."
+#~ msgstr ""
+#~ "Liberapay permite que você envie quantias semanais utilizando cartão de "
+#~ "crédito."
 
 #~ msgid "Translation processing"
 #~ msgstr "Processo de tradução"
