@@ -16,19 +16,21 @@ slots:
 apps:
   easyssh:
     command: easyssh
-    plugs: [x11, unity7, network]
+    plugs: [x11, unity7, network, gsettings, home]
 
 parts:
     granite:
         plugin: cmake
-        source: lp:granite/0.5
-        source-type: bzr
+        source: https://github.com/elementary/granite/archive/0.5.tar.gz
+        source-type: tar
         configflags: [-DCMAKE_BUILD_TYPE=Release, -DCMAKE_INSTALL_PREFIX=/usr, -DCMAKE_INSTALL_LIBDIR=/usr/lib]
         build-packages:
-          - build-essential
-          - valac
-        stage-packages:
-          - valac-0.30-vapi
+            - build-essential
+            - libgee-0.8-dev
+            - libgirepository1.0-dev
+            - libgtk-3-dev
+            - cmake
+            - gobject-introspection
 
     easyssh:
         plugin: meson
@@ -51,3 +53,12 @@ parts:
             - gobject-introspection
             - libgee-0.8-2
             - libgtk-3-0
+    valac:
+      plugin: autotools
+      source: http://download.gnome.org/sources/vala/0.38/vala-0.38.8.tar.xz
+      build-packages:
+         - flex    
+         - bison
+         - build-essential
+         - libglib2.0-dev
+         - libgraphviz-dev
