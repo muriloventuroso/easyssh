@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/muriloventuroso/easyssh.svg?branch=master)](https://travis-ci.org/muriloventuroso/easyssh)
+[![Build Status](https://travis-ci.org/muriloventuroso/easyssh.svg?branch=master)](https://travis-ci.org/muriloventuroso/easyssh)[![Snap Status](https://build.snapcraft.io/badge/muriloventuroso/easyssh.svg)](https://build.snapcraft.io/user/muriloventuroso/easyssh)
 
 <h1 align="center">EasySSH</h1>
 
