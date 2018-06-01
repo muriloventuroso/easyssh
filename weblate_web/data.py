@@ -21,7 +21,7 @@
 from django.utils.translation import ugettext_lazy as _
 
 # Version offered for download
-VERSION = '2.20'
+VERSION = '3.0'
 
 # Extensions offered for donwload
 EXTENSIONS = ('tar.xz', 'tar.bz2', 'tar.gz')
