@@ -297,7 +297,7 @@ namespace EasySSH {
 
         public Host add_host(Host host) {
             var group = hostmanager.get_group_by_name(host.group);
-            if(group == null {
+            if(group == null) {
                 group = add_group(host.group);
             }
             group.add_host(host);
