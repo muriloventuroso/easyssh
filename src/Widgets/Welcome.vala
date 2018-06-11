@@ -30,7 +30,6 @@ namespace EasySSH {
             var button = welcome.get_button_from_index(0);
             button.action_name = MainWindow.ACTION_PREFIX + MainWindow.ACTION_NEW_CONN;
 
-            
         }
     }
 }

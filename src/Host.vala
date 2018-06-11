@@ -26,11 +26,11 @@ namespace EasySSH {
 
         /* Fields */
         public string name {get; set;}
-        public string host  {get; set;}
-        public string port  {get; set;}
-        public string username  {get; set;}
-        public string password  {get; set;}
-        public string group  {get; set;}
+        public string host {get; set;}
+        public string port {get; set;}
+        public string username {get; set;}
+        public string password {get; set;}
+        public string group {get; set;}
         public Granite.Widgets.DynamicNotebook notebook {get; set;}
         public Granite.Widgets.SourceList.Item? item {get; set;}
 
@@ -54,18 +54,18 @@ namespace EasySSH {
         }
 
         public int compare_hosts (Host a, Host b) {
-            if(a.name < b.name){
+            if(a.name < b.name) {
                 return -1;
-            }else{
+            } else {
                 return 1;
             }
         }
 
-        public void sort_hosts(){
+        public void sort_hosts() {
             hosts.sort(compare_hosts);
         }
 
-        public int get_length(){
+        public int get_length() {
             int i = 0;
             foreach (Host host in hosts) {
                 i += 1;
@@ -73,40 +73,40 @@ namespace EasySSH {
             return i;
         }
 
-        public void add_host(Host host){
+        public void add_host(Host host) {
             hosts.add(host);
         }
 
-        public ArrayList<Host> get_hosts(){
+        public ArrayList<Host> get_hosts() {
             return hosts;
         }
 
-        public void update_host(string host_name, Host host){
-            for(int a = 0; a < get_length(); a++){
-                if(hosts[a].name == host_name){
+        public void update_host(string host_name, Host host) {
+            for(int a = 0; a < get_length(); a++) {
+                if(hosts[a].name == host_name) {
                     hosts[a] = host;
                     break;
                 }
             }
         }
 
-        public void remove_host(string host_name){
+        public void remove_host(string host_name) {
             int i = -1;
-            for(int a = 0; a < get_length(); a++){
-                if(hosts[a].name == host_name){
+            for(int a = 0; a < get_length(); a++) {
+                if(hosts[a].name == host_name) {
                     i = a;
                     break;
                 }
             }
-            if(i != -1){
+            if(i != -1) {
                 hosts.remove_at(i);
             }
         }
 
-        public Host? get_host_by_name(string name){
+        public Host? get_host_by_name(string name) {
             Host? get_host = null;
-            for(int a = 0; a < get_length(); a++){
-                if(hosts[a].name == name){
+            for(int a = 0; a < get_length(); a++) {
+                if(hosts[a].name == name) {
                     get_host = hosts[a];
                     break;
                 }
@@ -114,11 +114,11 @@ namespace EasySSH {
             return get_host;
         }
 
-        public Host? get_host(Host host){
+        public Host? get_host(Host host) {
             Host? get_host = null;
             print("get host\n");
-            for(int a = 0; a < get_length(); a++){
-                if(hosts[a] == host){
+            for(int a = 0; a < get_length(); a++) {
+                if(hosts[a] == host) {
                     print("achei!\n");
                     get_host = hosts[a];
                     break;
@@ -136,79 +136,79 @@ namespace EasySSH {
             groups = new Group[0];
         }
 
-        public void add_group(Group group){
+        public void add_group(Group group) {
             groups += group;
         }
 
-        public Group[] get_groups(){
+        public Group[] get_groups() {
             return groups;
         }
 
-        public bool exist_group(string name){
-            if(groups.length == 0){
+        public bool exist_group(string name) {
+            if(groups.length == 0) {
                 return false;
             }
-            for(int a = 0; a < groups.length; a++){
-                if(groups[a].name == name){
+            for(int a = 0; a < groups.length; a++) {
+                if(groups[a].name == name) {
                     return true;
                 }
             }
             return false;
         }
 
-        public Group? get_group_by_name(string name){
-            for(int a = 0; a < groups.length; a++){
-                if(groups[a].name == name){
+        public Group? get_group_by_name(string name) {
+            for(int a = 0; a < groups.length; a++) {
+                if(groups[a].name == name) {
                     return groups[a];
                 }
             }
             return null;
         }
 
-        public int get_length_hosts(string group_name){
-            for(int a = 0; a < groups.length; a++){
-                if(groups[a].name == group_name){
+        public int get_length_hosts(string group_name) {
+            for(int a = 0; a < groups.length; a++) {
+                if(groups[a].name == group_name) {
                     return groups[a].get_length();
                 }
             }
             return 0;
         }
 
-        public Host? get_host(Host host){
-            for(int i = 0; i < groups.length; i++){
+        public Host? get_host(Host host) {
+            for(int i = 0; i < groups.length; i++) {
                 var n_host = groups[i].get_host(host);
-                if(host != null){
+                if(host != null) {
                     return n_host;
                 }
             }
             return null;
         }
 
-        public Host? get_host_by_name(string name){
-            for(int i = 0; i < groups.length; i++){
+        public Host? get_host_by_name(string name) {
+            for(int i = 0; i < groups.length; i++) {
                 var n_host = groups[i].get_host_by_name(name);
-                if(n_host != null){
+                if(n_host != null) {
                     return n_host;
                 }
             }
             return null;
         }
 
-        public bool exist_host_name(string name){
-            for(int i = 0; i < groups.length; i++){
+        public bool exist_host_name(string name) {
+            for(int i = 0; i < groups.length; i++) {
                 var n_host = groups[i].get_host_by_name(name);
-                if(n_host != null){
+                if(n_host != null) {
                     return true;
                 }
             }
             return false;
         }
 
-        public ArrayList<Granite.Widgets.DynamicNotebook>? get_notebooks(){
+        public ArrayList<Granite.Widgets.DynamicNotebook>? get_notebooks() {
             var notebooks = new ArrayList<Granite.Widgets.DynamicNotebook>();
-            for(int i = 0; i < groups.length; i++){
+            for(int i = 0; i < groups.length; i++) {
                 var hosts = groups[i].get_hosts();
-                for(int a = 0; a < hosts.size; a++){
+                for(int a = 0; a < hosts.size; a++) {
                     notebooks.add(hosts[a].notebook);
                 }
             }

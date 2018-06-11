@@ -41,7 +41,7 @@ namespace EasySSH {
             return settings;
         }
 
-        public Settings ()  {
+        public Settings() {
             base ("com.github.muriloventuroso.easyssh");
             if (hosts_folder == "") {
                 hosts_folder = GLib.Environment.get_user_config_dir() + "/easyssh";

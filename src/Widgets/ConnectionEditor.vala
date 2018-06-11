@@ -32,8 +32,8 @@ namespace EasySSH {
         private Gtk.Button save_button;
         private Gtk.Button cancel_button;
         private Gtk.Label label;
-        public SourceListView sourcelistview  { get; construct; }
-        public Host data_host  { get; construct; }
+        public SourceListView sourcelistview { get; construct; }
+        public Host data_host { get; construct; }
 
         public ConnectionEditor (SourceListView sourcelistview, Host? data_host) {
             Object (
@@ -61,7 +61,7 @@ namespace EasySSH {
             password_entry = new Gtk.Entry ();
             password_entry.visibility = false;
 
-            if(data_host != null){
+            if(data_host != null) {
                 name_entry.text = data_host.name;
                 name_entry.is_valid = check_name();
                 group_entry.text = data_host.group;
@@ -93,10 +93,10 @@ namespace EasySSH {
             buttons.pack_start(cancel_button, false, false, 0);
             buttons.pack_end(save_button, false, false, 0);
 
-            if(data_host == null){
+            if(data_host == null) {
                 label = new Gtk.Label(_("Add Connection"));
-            }else{
-                label = new Gtk.Label(_("Edit Connection"));            
+            } else {
+                label = new Gtk.Label(_("Edit Connection"));
             }
             label.get_style_context ().add_class("h2");
             add (label);
@@ -121,14 +121,13 @@ namespace EasySSH {
         private bool check_name () {
             string name_entry_text = name_entry.text;
             bool name_is_taken = false;
-            if(data_host != null){
-                if(name_entry_text != data_host.name){
+            if(data_host != null) {
+                if(name_entry_text != data_host.name) {
                     name_is_taken = sourcelistview.hostmanager.exist_host_name (name_entry_text);
                 }
-            }else{
+            } else {
                 name_is_taken = sourcelistview.hostmanager.exist_host_name (name_entry_text);
             }
-            
 
             if (name_entry_text == "") {
                 name_error_revealer.reveal_child = false;
@@ -149,7 +148,7 @@ namespace EasySSH {
             return false;
         }
 
-        private void save_and_exit(){
+        private void save_and_exit() {
             var host = new Host();
             host.name = name_entry.text;
             host.group = group_entry.text;
@@ -157,27 +156,26 @@ namespace EasySSH {
             host.port = port_entry.text;
             host.username = username_entry.text;
             host.password = password_entry.text;
-            if(host.port == null || host.port == ""){
+            if(host.port == null || host.port == "") {
                 host.port = "22";
             }
 
-            if(data_host == null){
+            if(data_host == null) {
                 host = sourcelistview.add_host(host);
-            }else{
+            } else {
                 host = sourcelistview.edit_host(host);
             }
             sourcelistview.source_list.selected = host.item;
             destroy();
-            
         }
 
-        private void exit(){
+        private void exit() {
             var item = sourcelistview.source_list.selected;
-            if(item == null){
+            if(item == null) {
                 sourcelistview.restore();
-            }else{
+            } else {
                 sourcelistview.source_list.selected = null;
-                sourcelistview.source_list.selected = item;    
+                sourcelistview.source_list.selected = item;
             }
             destroy();
         }

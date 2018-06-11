@@ -52,7 +52,6 @@ namespace EasySSH {
         public Granite.Widgets.SourceList source_list;
         public MainWindow window { get; construct; }
         private EasySSH.Settings settings;
-        
 
         public SourceListView (MainWindow window) {
             Object (window: window);
@@ -67,7 +66,6 @@ namespace EasySSH {
             welcome = new Welcome();
             box.add(welcome);
             paned.position = 130;
-            
 
             source_list = new Granite.Widgets.SourceList ();
 
@@ -78,14 +76,14 @@ namespace EasySSH {
                 var n = n_host.notebook;
                 var term = new TerminalBox(n_host, n, window);
                 var next_tab = n.n_tabs;
-                if(Type.from_instance(n.current.page).name() == "EasySSHConnection"){
+                if(Type.from_instance(n.current.page).name() == "EasySSHConnection") {
                     next_tab = 0;
                 }
                 var n_tab = new Granite.Widgets.Tab (n_host.name + " - " + (next_tab + 1).to_string(), null, term);
                 term.tab = n_tab;
 
                 n.insert_tab (n_tab, next_tab);
-                if(next_tab == 0){
+                if(next_tab == 0) {
                     n.remove_tab(n.current);
                 }
                 n.current = n_tab;
@@ -116,13 +114,12 @@ namespace EasySSH {
                 var select_host = hostmanager.get_host_by_name(item.name);
                 var notebook = select_host.notebook;
                 notebook.hexpand = true;
-               
-                if(notebook.n_tabs == 0){
+                if(notebook.n_tabs == 0) {
                     var connect = new Connection(select_host, notebook, window);
                     var tab = new Granite.Widgets.Tab (select_host.name, null, connect);
                     notebook.insert_tab(tab, 0);
-                }else if(notebook.n_tabs > 0){
-                    if(Type.from_instance(notebook.current.page).name() == "EasySSHTerminalBox"){
+                }else if(notebook.n_tabs > 0) {
+                    if(Type.from_instance(notebook.current.page).name() == "EasySSHTerminalBox") {
                         var box = (TerminalBox)notebook.current.page;
                         window.current_terminal = (TerminalWidget)box.term;
                         window.current_terminal.grab_focus();
@@ -131,25 +128,24 @@ namespace EasySSH {
                 }
                 var all_read = true;
                 foreach (var g_tab in notebook.tabs) {
-                    if(g_tab.icon != null){
+                    if(g_tab.icon != null) {
                         all_read = false;
                     }
                 }
-                if(all_read == true){
+                if(all_read == true) {
                     item.icon = null;
                 }
                 clean_box();
                 box.add(notebook);
 
                 show_all();
-                
             });
             show_all();
         }
 
-        public void restore_hosts(string host_name, int qtd){
+        public void restore_hosts(string host_name, int qtd) {
             var host = hostmanager.get_host_by_name(host_name);
-            if(host == null){
+            if(host == null) {
                 return;
             }
             var n = host.notebook;
@@ -167,35 +163,34 @@ namespace EasySSH {
             }
         }
 
-        public void restore(){
-            if(source_list.selected == null){
+        public void restore() {
+            if(source_list.selected == null) {
                 box.add(welcome);
-            }else{
+            } else {
                 var host = hostmanager.get_host_by_name(source_list.selected.name);
-                if(host == null){
+                if(host == null) {
                     box.add(welcome);
-                }else{
-                    box.add(host.notebook);        
+                } else {
+                    box.add(host.notebook);
                 }
-                
+
             }
             show_all();
         }
 
-        public void clean_box(){
+        public void clean_box() {
             var children = box.get_children();
             foreach (Gtk.Widget element in children) {
-                box.remove(element);  
+                box.remove(element);
             }
         }
 
-        private void insert_host(Host host, Granite.Widgets.SourceList.ExpandableItem category){
+        private void insert_host(Host host, Granite.Widgets.SourceList.ExpandableItem category) {
             var item = new Item (host.name);
-            
             host.item = item;
             category.add (item);
             var n = host.notebook;
-            if(n.n_tabs > 0){
+            if(n.n_tabs > 0) {
                 var r_tab = n.get_tab_by_index(0);
                 n.remove_tab(r_tab);
             }
@@ -210,7 +205,7 @@ namespace EasySSH {
                 window.current_terminal = term.term;
             });
             n.tab_removed.connect(() => {
-                if(n.n_tabs == 0){
+                if(n.n_tabs == 0) {
                     var n_host = hostmanager.get_host_by_name(host.name);
                     var n_connect = new Connection(n_host, n, window);
                     var n_tab = new Granite.Widgets.Tab (n_host.name, null, n_connect);
@@ -228,7 +223,7 @@ namespace EasySSH {
             tab.icon = null;
         }
         private void on_tab_switched (Granite.Widgets.Tab? old_tab, Granite.Widgets.Tab new_tab) {
-            if(Type.from_instance(new_tab.page).name() == "EasySSHTerminalBox"){
+            if(Type.from_instance(new_tab.page).name() == "EasySSHTerminalBox") {
                 var t = get_term_widget (new_tab);
                 window.current_terminal = t;
                 var box = (TerminalBox)new_tab.page;
@@ -236,28 +231,27 @@ namespace EasySSH {
                 new_tab.icon = null;
                 var all_read = true;
                 foreach (var g_tab in box.dataHost.notebook.tabs) {
-                    if(g_tab.icon != null){
+                    if(g_tab.icon != null) {
                         all_read = false;
                     }
                 }
-                if(all_read == true){
+                if(all_read == true) {
                     box.dataHost.item.icon = null;
                 }
             }
-            
         }
         private TerminalWidget get_term_widget (Granite.Widgets.Tab tab) {
             return (TerminalWidget)((TerminalBox)tab.page).term;
         }
 
-        public void load_hosts(){
+        public void load_hosts() {
             try {
                 string res = "";
                 var file = File.new_for_path (EasySSH.settings.hosts_folder + "/hosts.json");
-                
+
                 if (!file.query_exists ()) {
-                    file.make_directory();    
-                }else{
+                    file.make_directory();
+                } else {
                     var dis = new DataInputStream (file.read ());
                     string line;
 
@@ -280,16 +274,16 @@ namespace EasySSH {
                         host.password = item.get_string_member("password");
                         host.group = item.get_string_member("group");
                         var group_exist = hostmanager.exist_group(host.group);
-                        if(group_exist == false){
+                        if(group_exist == false) {
                             var group = add_group(host.group);
                             group.add_host(host);
-                        }else{
+                        } else {
                             Group group = hostmanager.get_group_by_name(host.group);
                             group.add_host(host);
-                        }   
+                        }
                     }
 
-                    foreach(var group in hostmanager.get_groups()){
+                    foreach(var group in hostmanager.get_groups()) {
                         group.sort_hosts();
                         foreach (var host in group.get_hosts()) {
                             insert_host(host, group.category);
@@ -301,11 +295,10 @@ namespace EasySSH {
             }
         }
 
-        public Host add_host(Host host){
+        public Host add_host(Host host) {
             var group = hostmanager.get_group_by_name(host.group);
-            if(group == null){
+            if(group == null {
                 group = add_group(host.group);
-                
             }
             group.add_host(host);
             insert_host(host, group.category);
@@ -313,7 +306,7 @@ namespace EasySSH {
             return host;
         }
 
-        public Group add_group(string name){
+        public Group add_group(string name) {
             var group = new Group(name);
             var category = new Granite.Widgets.SourceList.ExpandableItem (group.name);
             category.expand_all ();
@@ -323,24 +316,24 @@ namespace EasySSH {
             return group;
         }
 
-        public Host edit_host(Host e_host){
+        public Host edit_host(Host e_host) {
             var host = hostmanager.get_host_by_name(source_list.selected.name);
             var group = hostmanager.get_group_by_name(host.group);
             e_host.notebook = host.notebook;
-            if(host.group == e_host.group){
+            if(host.group == e_host.group) {
                 group.update_host(host.name, e_host);
                 source_list.selected.name = host.name;
-            }else{
+            } else {
                 group.category.remove(host.item);
                 group.remove_host(host.name);
                 var n_group = hostmanager.get_group_by_name(e_host.group);
-                if(n_group == null){
+                if(n_group == null) {
                     n_group = add_group(e_host.group);
                 }
                 n_group.add_host(e_host);
                 insert_host(e_host, n_group.category);
             }
-            
+
             var tab = e_host.notebook.get_tab_by_index(0);
             e_host.notebook.remove_tab(tab);
             save_hosts();
@@ -350,14 +343,14 @@ namespace EasySSH {
 
         }
 
-        public void save_hosts(){
+        public void save_hosts() {
             Json.Array array_hosts = new Json.Array();
             var groups = hostmanager.get_groups();
-            for(int a = 0; a < groups.length; a++){
+            for(int a = 0; a < groups.length; a++) {
                 var hosts = groups[a].get_hosts();
                 var length_hosts = groups[a].get_length();
-                for(int i = 0; i < length_hosts; i++){
-                    if(hosts[i] == null){
+                for(int i = 0; i < length_hosts; i++) {
+                    if(hosts[i] == null) {
                         continue;
                     }
                     var s_host = new Host();
@@ -373,19 +366,19 @@ namespace EasySSH {
                     array_hosts.add_element(root);
                 }
             }
-            
+
             Json.Node root = new Json.Node.alloc();
             root.init_array(array_hosts);
             Json.Generator gen = new Json.Generator();
             gen.set_root(root);
             string data = gen.to_data(null);
-            
+
             var file = File.new_for_path (EasySSH.settings.hosts_folder + "/hosts.json");
-            
+
             {
                 if (file.query_exists ()) {
                     file.delete ();
-                }else{
+                } else {
                     file.make_directory();
                 }
                 var dos = new DataOutputStream (file.create (FileCreateFlags.REPLACE_DESTINATION));
@@ -394,28 +387,27 @@ namespace EasySSH {
             }
         }
 
-        public void new_conn(){
+        public void new_conn() {
             clean_box();
             box.pack_start(new ConnectionEditor(this, null));
 
             show_all();
         }
 
-        public void edit_conn(){
+        public void edit_conn() {
             clean_box();
             var host = hostmanager.get_host_by_name(source_list.selected.name);
 
             box.pack_start(new ConnectionEditor(this, host));
             show_all();
         }
-        public void remove_conn(){
+        public void remove_conn() {
             var host = hostmanager.get_host_by_name(source_list.selected.name);
             confirm_remove_dialog (host);
         }
         private void confirm_remove_dialog (Host host) {
             var message_dialog = new Granite.MessageDialog.with_image_from_icon_name (_("Remove ") + host.name, _("Are you sure you want to remove this connection and all data associated with it?"), "dialog-warning", Gtk.ButtonsType.CANCEL);
             message_dialog.transient_for = window;
-            
             var suggested_button = new Gtk.Button.with_label (_("Remove"));
             suggested_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
             message_dialog.add_action_widget (suggested_button, Gtk.ResponseType.ACCEPT);
@@ -429,7 +421,6 @@ namespace EasySSH {
                 save_hosts();
                 restore();
             }
-            
             message_dialog.destroy ();
         }
     }

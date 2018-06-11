@@ -148,15 +148,15 @@ namespace EasySSH {
 
         construct {
             settings = EasySSH.Settings.get_default();
-            if(settings.terminal_background_color != ""){
+            if(settings.terminal_background_color != "") {
                 var color = Gdk.RGBA();
                 color.parse(settings.terminal_background_color);
-                set_color_background(color);    
+                set_color_background(color);
             }
-            if(settings.terminal_font != ""){
-                set_font(new Pango.FontDescription().from_string(settings.terminal_font));    
+            if(settings.terminal_font != "") {
+                set_font(new Pango.FontDescription().from_string(settings.terminal_font));
             }
-            
+
         }
 
         public void active_shell() {

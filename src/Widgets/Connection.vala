@@ -23,7 +23,7 @@ namespace EasySSH {
     public class Connection : Gtk.Box {
 
         public Host host {get; construct;}
-        public Granite.Widgets.DynamicNotebook notebook  { get; construct; }
+        public Granite.Widgets.DynamicNotebook notebook { get; construct; }
         private Gtk.Label title;
         private Gtk.Label description;
         public MainWindow window {get; construct;}
@@ -69,10 +69,9 @@ namespace EasySSH {
             buttons.pack_end(connect_button, false, false, 0);
 
             add(buttons);
-            
         }
 
-        public void add_tab(){
+        public void add_tab() {
             var term = new TerminalBox(host, notebook, window);
             term.set_can_focus(false);
             var next_tab = notebook.n_tabs;

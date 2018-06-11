@@ -144,7 +144,7 @@ namespace EasySSH {
                                     out stdout,
                                     out stderr,
                                     null);
-            if(result==false){
+            if(result==false) {
                 print(stderr + "\n");
                 return;
             }
@@ -154,7 +154,7 @@ namespace EasySSH {
                                     out stdout,
                                     out stderr,
                                     null);
-            if(res==false){
+            if(res==false) {
                 print(stderr + "\n");
                 return;
             }
@@ -162,29 +162,28 @@ namespace EasySSH {
             var filemanager = "";
             foreach (string line in lines) {
                 var split_line = line.split("=");
-                if(split_line[0] == "Exec"){
+                if(split_line[0] == "Exec") {
                     filemanager = split_line[1].replace("%U", "");
                     break;
                 }
             }
-            if(filemanager != ""){
+            if(filemanager != "") {
                 default_filemanager = filemanager;
             }
         }
 
         private TerminalBox? get_term_widget (Granite.Widgets.Tab tab) {
-            if(Type.from_instance(tab.page).name() == "EasySSHConnection"){
+            if(Type.from_instance(tab.page).name() == "EasySSHConnection") {
                 return null;
-            }else{
+            } else {
                 return (TerminalBox)tab.page;
             }
-            
         }
 
         private void save_opened_hosts () {
             string[] opened_hosts = {};
             var notebooks = sourcelist.hostmanager.get_notebooks();
-            for(int a = 0; a < notebooks.size; a++){
+            for(int a = 0; a < notebooks.size; a++) {
                 var notebook = notebooks[a];
                 var count = 0;
                 var location = "";
@@ -197,23 +196,21 @@ namespace EasySSH {
                     location = term.dataHost.name;
                     count += 1;
                 });
-                if(count > 0){
+                if(count > 0) {
                     opened_hosts += location + "," + count.to_string();
                 }
-                
             }
 
             settings.hosts = opened_hosts;
 
         }
 
-        private void restore_hosts(){
+        private void restore_hosts() {
             for (int i = 0; i < settings.hosts.length; i++) {
                 var entry = settings.hosts[i];
                 var host_split = entry.split(",");
                 var qtd_hosts = host_split[host_split.length - 1];
                 var name_host = string.joinv(",", host_split[0:host_split.length - 1]);
-                
                 sourcelist.restore_hosts(name_host, int.parse(qtd_hosts));
             }
         }
@@ -226,17 +223,16 @@ namespace EasySSH {
                 this.set_default_size (settings.window_width, settings.window_height);
             }
             this.move (settings.pos_x, settings.pos_y);
-            if(settings.restore_hosts == true){
+            if(settings.restore_hosts == true) {
                 restore_hosts();
             }
 
         }
 
         private void save_settings () {
-            if(settings.restore_hosts == true){
+            if(settings.restore_hosts == true) {
                 save_opened_hosts();
             }
-            
             settings.window_maximized = this.is_maximized;
 
             if (!settings.window_maximized) {
@@ -318,7 +314,7 @@ namespace EasySSH {
             current_terminal.select_all ();
         }
         void action_open_in_files () {
-            if(default_filemanager == null){
+            if(default_filemanager == null) {
                 return;
             }
             var command = "sftp://" + current_terminal.host.username + "@" + current_terminal.host.host + ":" + current_terminal.host.port;

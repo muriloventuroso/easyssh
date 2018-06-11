@@ -25,9 +25,9 @@ namespace EasySSH {
         public Host dataHost { get; construct; }
         private bool send_password;
         private bool open_dialog;
-        public Granite.Widgets.DynamicNotebook notebook  { get; construct; }
+        public Granite.Widgets.DynamicNotebook notebook { get; construct; }
         public TerminalWidget term;
-        public MainWindow window  { get; construct; }
+        public MainWindow window { get; construct; }
         public Granite.Widgets.Tab tab {get; set;}
 
         public TerminalBox (Host host, Granite.Widgets.DynamicNotebook notebook, MainWindow window) {
@@ -54,22 +54,22 @@ namespace EasySSH {
             set_vadjustment(term.get_vadjustment());
         }
 
-        public void start_connection(){
+        public void start_connection() {
             string cmd = "ssh " + dataHost.username + "@" + dataHost.host + " -p " + dataHost.port + "\n";
             term.feed_child(cmd, cmd.length + 1);
         }
 
-        public void on_change_terminal (Vte.Terminal terminal){
+        public void on_change_terminal (Vte.Terminal terminal) {
             string? res = terminal.get_text(null, null);
-            if(res != null){
+            if(res != null) {
                 string[] lines = res.split("\n");
                 string[] ret = {};
-                if(term != window.current_terminal){
+                if(term != window.current_terminal) {
                     dataHost.item.icon = new GLib.ThemedIcon ("mail-mark-important");
                     tab.icon = new GLib.ThemedIcon ("mail-mark-important");
                 }
                 foreach (unowned string str in lines) {
-                    if(str != ""){
+                    if(str != "") {
                         ret += str;
                     }
 
@@ -79,37 +79,37 @@ namespace EasySSH {
                     notebook.remove_tab(tab);
                 }else if (ret.length > 2 && "Broken pipe" in ret[ret.length - 2] && "$" in ret[ret.length - 1]) {
                     var tab = notebook.get_tab_by_widget(this);
-                    if(open_dialog == false){
+                    if(open_dialog == false) {
                         alert_error(ret[ret.length - 2], tab);
                     }
                 }else if (ret.length > 2 && "Connection timed out" in ret[ret.length - 2] && "$" in ret[ret.length - 1]) {
                     var tab = notebook.get_tab_by_widget(this);
-                    if(open_dialog == false){
+                    if(open_dialog == false) {
                         alert_error(ret[ret.length - 2], tab);
                     }
                 }else if (ret.length > 2 && "refused" in ret[ret.length - 2] && "$" in ret[ret.length - 1]) {
                     var tab = notebook.get_tab_by_widget(this);
-                    if(open_dialog == false){
+                    if(open_dialog == false) {
                         alert_error_retry(ret[ret.length - 2], tab);
                     }
                 }else if (ret.length > 2 && "No route to host" in ret[ret.length - 2] && "$" in ret[ret.length - 1]) {
                     var tab = notebook.get_tab_by_widget(this);
-                    if(open_dialog == false){
+                    if(open_dialog == false) {
                         alert_error_retry(ret[ret.length - 2], tab);
                     }
                 }else if (ret.length > 2 && "Permission denied, please try again." in ret[ret.length - 2]) {
                     var tab = notebook.get_tab_by_widget(this);
-                    if(open_dialog == false){
+                    if(open_dialog == false) {
                         alert_error(ret[ret.length - 2], tab);
                     }
                 }else if (ret.length > 3 && "yes/no" in ret[ret.length - 1]) {
                     var tab = notebook.get_tab_by_widget(this);
-                    if(open_dialog == false){
+                    if(open_dialog == false) {
                         var message = string.joinv("\n", ret[ret.length - 3:ret.length]);
                         alert_figerprint(message, tab);
                     }
-                }else if(ret.length > 0 && "password" in ret[ret.length - 1]){
-                    if(send_password == false){
+                }else if(ret.length > 0 && "password" in ret[ret.length - 1]) {
+                    if(send_password == false) {
                         term_send_password();
                         send_password = true;
                     }
@@ -118,15 +118,15 @@ namespace EasySSH {
             }
         }
 
-        private void term_send_password(){
+        private void term_send_password() {
             term.feed_child(dataHost.password + "\n", dataHost.password.length + 1);
         }
 
-        private void term_send(string cmd){
+        private void term_send(string cmd) {
             term.feed_child(cmd + "\n", cmd.length + 1);
         }
 
-        private void remove_tab(Granite.Widgets.Tab tab){
+        private void remove_tab(Granite.Widgets.Tab tab) {
             notebook.remove_tab(tab);
         }
 
@@ -144,7 +144,7 @@ namespace EasySSH {
             message_dialog.show_all ();
             if (message_dialog.run () == Gtk.ResponseType.ACCEPT) {
                 start_connection();
-            }else{
+            } else {
                 remove_tab(tab);
             }
 
@@ -178,7 +178,7 @@ namespace EasySSH {
             if (message_dialog.run () == Gtk.ResponseType.ACCEPT) {
                 term_send("yes");
                 term_send_password();
-            }else{
+            } else {
                 term_send("no");
                 remove_tab(tab);
             }
