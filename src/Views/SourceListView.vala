@@ -98,15 +98,15 @@ namespace EasySSH {
 
             /* Size of panel */
             paned.size_allocate.connect(() => {
-                if(paned.get_position() != settings.panel_size){
-                    settings.panel_size = paned.get_position();    
+                if(paned.get_position() != settings.panel_size) {
+                    settings.panel_size = paned.get_position();
                 }
             });
 
             load_hosts();
 
             source_list.item_selected.connect ((item) => {
-                if(item == null){
+                if(item == null) {
                     return;
                 }
                 window.current_terminal = null;
@@ -273,6 +273,14 @@ namespace EasySSH {
                         host.username = item.get_string_member("username");
                         host.password = item.get_string_member("password");
                         host.group = item.get_string_member("group");
+                        host.color = item.get_string_member("color");
+                        if(host.color == null) {
+                            host.color = EasySSH.settings.terminal_background_color;
+                        }
+                        host.font = item.get_string_member("font");
+                        if(host.font == null) {
+                            host.font = EasySSH.settings.terminal_font;
+                        }
                         var group_exist = hostmanager.exist_group(host.group);
                         if(group_exist == false) {
                             var group = add_group(host.group);
@@ -361,6 +369,8 @@ namespace EasySSH {
                     s_host.username = hosts[i].username;
                     s_host.password = hosts[i].password;
                     s_host.notebook = null;
+                    s_host.color = hosts[i].color;
+                    s_host.font = hosts[i].font;
 
                     Json.Node root = Json.gobject_serialize(s_host);
                     array_hosts.add_element(root);

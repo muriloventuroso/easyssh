@@ -29,8 +29,11 @@ namespace EasySSH {
         private Gtk.Entry port_entry;
         private Gtk.Entry username_entry;
         private Gtk.Entry password_entry;
+        private Gtk.ColorButton terminal_background_color_button;
+        private Gtk.FontButton terminal_font_button;
         private Gtk.Button save_button;
         private Gtk.Button cancel_button;
+        private Gtk.Button advanced_button;
         private Gtk.Label label;
         public SourceListView sourcelistview { get; construct; }
         public Host data_host { get; construct; }
@@ -49,6 +52,7 @@ namespace EasySSH {
         }
 
         construct {
+            settings = Settings.get_default ();
             name_entry = new ValidatedEntry ();
             name_entry.hexpand = true;
             name_error_revealer = new ErrorRevealer (".");
@@ -61,6 +65,7 @@ namespace EasySSH {
             password_entry = new Gtk.Entry ();
             password_entry.visibility = false;
 
+            var color = Gdk.RGBA ();
             if(data_host != null) {
                 name_entry.text = data_host.name;
                 name_entry.is_valid = check_name();
@@ -69,7 +74,15 @@ namespace EasySSH {
                 port_entry.text = data_host.port;
                 username_entry.text = data_host.username;
                 password_entry.text = data_host.password;
+                color.parse(data_host.color);
+                var terminal_font = data_host.font;
+            } else {
+                color.parse(settings.terminal_background_color);
+                var terminal_font = settings.terminal_font;
             }
+
+            terminal_background_color_button = new Gtk.ColorButton.with_rgba (color);
+            terminal_font_button = new Gtk.FontButton.with_font(settings.terminal_font);
 
             name_entry.changed.connect (() => {
                 name_entry.is_valid = check_name ();
@@ -81,6 +94,8 @@ namespace EasySSH {
             save_button.can_default = true;
             save_button.sensitive = false;
             cancel_button  = new Gtk.Button.with_label (_("Cancel"));
+            cancel_button.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
+            advanced_button = new Gtk.ToggleButton.with_label (_("Advanced"));
 
             save_button.clicked.connect (save_and_exit);
             cancel_button.clicked.connect (exit);
@@ -90,7 +105,8 @@ namespace EasySSH {
             buttons.spacing = 6;
             buttons.margin_top = 6;
 
-            buttons.pack_start(cancel_button, false, false, 0);
+            buttons.pack_start(advanced_button, false, false, 0);
+            buttons.add(cancel_button);
             buttons.pack_end(save_button, false, false, 0);
 
             if(data_host == null) {
@@ -113,8 +129,32 @@ namespace EasySSH {
             attach (username_entry, 0, 11, 1, 1);
             attach (new Granite.HeaderLabel (_("Password:")), 0, 12, 1, 1);
             attach (password_entry, 0, 13, 1, 1);
-            attach (buttons, 0, 14, 1, 1);
 
+            var revealer = new Gtk.Revealer();
+            var grid_advanced = new Gtk.Grid ();
+
+            grid_advanced.attach (new Granite.HeaderLabel (_("Terminal Background Color:")), 0, 1, 1, 1);
+            grid_advanced.attach (terminal_background_color_button, 0, 2, 1, 1);
+            var clean_color  = new Gtk.Button.from_icon_name ("edit-clear");
+            clean_color.clicked.connect(() => {
+                var n_color = Gdk.RGBA ();
+                n_color.parse(settings.terminal_background_color);
+                terminal_background_color_button.set_rgba(n_color);
+            });
+            grid_advanced.attach_next_to (clean_color, terminal_background_color_button, Gtk.PositionType.RIGHT, 1, 1);
+            grid_advanced.attach (new Granite.HeaderLabel (_("Terminal Font:")), 0, 3, 1, 1);
+            grid_advanced.attach (terminal_font_button, 0, 4, 1, 1);
+            var clean_font  = new Gtk.Button.from_icon_name ("edit-clear");
+            clean_font.clicked.connect(() => {
+                terminal_font_button.set_font(settings.terminal_font);
+            });
+            grid_advanced.attach_next_to (clean_font, terminal_font_button, Gtk.PositionType.RIGHT, 1, 1);
+
+            revealer.add(grid_advanced);
+            attach (revealer, 0, 14, 1, 1);
+            advanced_button.bind_property ("active", revealer, "reveal-child");
+
+            attach (buttons, 0, 15, 1, 1);
             update_save_button();
         }
 
@@ -156,6 +196,8 @@ namespace EasySSH {
             host.port = port_entry.text;
             host.username = username_entry.text;
             host.password = password_entry.text;
+            host.color = terminal_background_color_button.rgba.to_string();
+            host.font = terminal_font_button.get_font();
             if(host.port == null || host.port == "") {
                 host.port = "22";
             }

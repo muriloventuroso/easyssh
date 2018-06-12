@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.muriloventuroso.easyssh\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-18 10:10-0300\n"
+"POT-Creation-Date: 2018-06-12 09:55-0300\n"
 "PO-Revision-Date: 2018-05-27 00:44+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/easyssh/"
@@ -23,19 +23,19 @@ msgstr ""
 msgid "EasySSH"
 msgstr "EasySSH"
 
-#: src/MainWindow.vala:329
+#: src/MainWindow.vala:325
 msgid "Copy"
 msgstr "Kopier"
 
-#: src/MainWindow.vala:330
+#: src/MainWindow.vala:326
 msgid "Paste"
 msgstr "Lim inn"
 
-#: src/MainWindow.vala:331 src/MainWindow.vala:332
+#: src/MainWindow.vala:327 src/MainWindow.vala:328
 msgid "Select All"
 msgstr "Velg alt"
 
-#: src/MainWindow.vala:333
+#: src/MainWindow.vala:329
 msgid "Show in File Browser"
 msgstr "Vis i filutforsker"
 
@@ -43,16 +43,16 @@ msgstr "Vis i filutforsker"
 msgid "Edit"
 msgstr "Rediger"
 
-#: src/Views/SourceListView.vala:33 src/Views/SourceListView.vala:419
+#: src/Views/SourceListView.vala:33 src/Views/SourceListView.vala:421
 #: src/Widgets/Connection.vala:58
 msgid "Remove"
 msgstr "Fjern"
 
-#: src/Views/SourceListView.vala:416
+#: src/Views/SourceListView.vala:419
 msgid "Remove "
 msgstr "Fjern "
 
-#: src/Views/SourceListView.vala:416
+#: src/Views/SourceListView.vala:419
 msgid ""
 "Are you sure you want to remove this connection and all data associated with "
 "it?"
@@ -86,7 +86,7 @@ msgstr "Fingeravtrykk"
 msgid "SSH Connection Manager"
 msgstr "SSH-tilkoblingsbehandler"
 
-#: src/Widgets/Welcome.vala:26 src/Widgets/ConnectionEditor.vala:97
+#: src/Widgets/Welcome.vala:26 src/Widgets/ConnectionEditor.vala:113
 msgid "Add Connection"
 msgstr "Legg til tilkobling"
 
@@ -102,43 +102,55 @@ msgstr "Opprett en ny tilkobling"
 msgid "Preferences"
 msgstr "Innstillinger"
 
-#: src/Widgets/ConnectionEditor.vala:79
+#: src/Widgets/ConnectionEditor.vala:92
 msgid "Save"
 msgstr "Lagre"
 
-#: src/Widgets/ConnectionEditor.vala:83
+#: src/Widgets/ConnectionEditor.vala:96
 msgid "Cancel"
 msgstr "Avbryt"
 
-#: src/Widgets/ConnectionEditor.vala:99
+#: src/Widgets/ConnectionEditor.vala:98
+msgid "Advanced"
+msgstr ""
+
+#: src/Widgets/ConnectionEditor.vala:115
 msgid "Edit Connection"
 msgstr "Rediger tilkobling"
 
-#: src/Widgets/ConnectionEditor.vala:103
+#: src/Widgets/ConnectionEditor.vala:119
 msgid "Name:"
 msgstr "Navn:"
 
-#: src/Widgets/ConnectionEditor.vala:106
+#: src/Widgets/ConnectionEditor.vala:122
 msgid "Group:"
 msgstr "Gruppe:"
 
-#: src/Widgets/ConnectionEditor.vala:108
+#: src/Widgets/ConnectionEditor.vala:124
 msgid "Host:"
 msgstr "Vert:"
 
-#: src/Widgets/ConnectionEditor.vala:110
+#: src/Widgets/ConnectionEditor.vala:126
 msgid "Port:"
 msgstr "Port:"
 
-#: src/Widgets/ConnectionEditor.vala:112
+#: src/Widgets/ConnectionEditor.vala:128
 msgid "Username:"
 msgstr "Brukernavn:"
 
-#: src/Widgets/ConnectionEditor.vala:114
+#: src/Widgets/ConnectionEditor.vala:130
 msgid "Password:"
 msgstr "Passord:"
 
-#: src/Widgets/ConnectionEditor.vala:142
+#: src/Widgets/ConnectionEditor.vala:136 src/Widgets/Preferences.vala:77
+msgid "Terminal Background Color:"
+msgstr "Terminalbakgrunnsfarge:"
+
+#: src/Widgets/ConnectionEditor.vala:145 src/Widgets/Preferences.vala:80
+msgid "Terminal Font:"
+msgstr "Terminalskrift:"
+
+#: src/Widgets/ConnectionEditor.vala:181
 msgid "Name is already taken"
 msgstr "Navnet er allerede tatt"
 
@@ -153,14 +165,6 @@ msgstr "Velg vertsoppsettsmappe…"
 #: src/Widgets/Preferences.vala:74
 msgid "Hosts Configuration Folder:"
 msgstr "Vertoppsettsmappe:"
-
-#: src/Widgets/Preferences.vala:77
-msgid "Terminal Background Color:"
-msgstr "Terminalbakgrunnsfarge:"
-
-#: src/Widgets/Preferences.vala:80
-msgid "Terminal Font:"
-msgstr "Terminalskrift:"
 
 #: src/Widgets/Preferences.vala:83
 msgid "Restore Opened Hosts:"
