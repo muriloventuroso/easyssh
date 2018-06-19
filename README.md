@@ -13,9 +13,8 @@ A complete, efficient and easy-to-use manager. Create and edit connections, grou
 ### Donate
 <a href="https://www.paypal.me/muriloventuroso">PayPal</a> | <a href="https://www.patreon.com/muriloventuroso">Patreon</a>
 
-
-
 ![Screenshot](data/screenshot.png)
+
 ![Screenshot](data/screenshot2.png)
 
 
