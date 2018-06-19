@@ -16,6 +16,7 @@ A complete, efficient and easy-to-use manager. Create and edit connections, grou
 
 
 ![Screenshot](data/screenshot.png)
+![Screenshot](data/screenshot2.png)
 
 
 [![Get it on AppCenter](https://appcenter.elementary.io/badge.svg)](https://appcenter.elementary.io/com.github.muriloventuroso.easyssh)
@@ -43,6 +44,17 @@ To install, use `ninja install`, then execute with `com.github.muriloventuroso.e
 
     sudo ninja install
     com.github.muriloventuroso.easyssh
+
+
+## Install with Flatpak
+
+Install:
+
+    flatpak install flathub com.github.muriloventuroso.easyssh
+
+Run:
+
+    flatpak run com.github.muriloventuroso.easyssh
 
 
 -----
