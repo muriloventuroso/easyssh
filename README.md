@@ -15,7 +15,7 @@ A complete, efficient and easy-to-use manager. Create and edit connections, grou
 
 ![Screenshot](data/screenshot.png)
 
-![Screenshot](data/screenshot2.png)
+![Screenshot](data/screenshot3.png)
 
 
 [![Get it on AppCenter](https://appcenter.elementary.io/badge.svg)](https://appcenter.elementary.io/com.github.muriloventuroso.easyssh)
