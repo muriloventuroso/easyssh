@@ -18,14 +18,29 @@ apps:
     command: com.github.muriloventuroso.easyssh
     desktop: usr/share/applications/com.github.muriloventuroso.easyssh.desktop
     plugs: [network, home, x11, unity7, gsettings]
+apps:
+  bookworm:
+    command: com.github.muriloventuroso.easyssh
+    slots: [ dbus-easyssh ]
+    desktop: usr/share/applications/com.github.muriloventuroso.easyssh.desktop
+    plugs: [network, home, x11, unity7, gsettings]
+
 
 parts:
+    valac:
+      plugin: autotools
+      source: http://download.gnome.org/sources/vala/0.38/vala-0.38.8.tar.xz
+      build-packages:
+         - flex    
+         - bison
+         - build-essential
+         - libglib2.0-dev
+         - libgraphviz-dev
     granite:
         plugin: cmake
-        source: https://github.com/elementary/granite/archive/5.0.tar.gz
+        source: https://github.com/elementary/granite/archive/0.5.tar.gz
         source-type: tar
         configflags: [-DCMAKE_BUILD_TYPE=Release, -DCMAKE_INSTALL_PREFIX=/usr, -DCMAKE_INSTALL_LIBDIR=/usr/lib]
-        after: [valac]
         build-packages:
             - build-essential
             - libgee-0.8-dev
@@ -40,7 +55,7 @@ parts:
           - --prefix=/usr
         source: https://github.com/muriloventuroso/easyssh.git
         source-type: git
-        after: [valac, granite, desktop-gtk3]
+        after: [valac, granite]
         build-packages:
             - build-essential
             - intltool
@@ -53,12 +68,3 @@ parts:
             - gobject-introspection
             - libgee-0.8-2
             - libgtk-3-0
-    valac:
-      plugin: autotools
-      source: http://download.gnome.org/sources/vala/0.40/vala-0.40.6.tar.xz
-      build-packages:
-         - flex    
-         - bison
-         - build-essential
-         - libglib2.0-dev
-         - libgraphviz-dev

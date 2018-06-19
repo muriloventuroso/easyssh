@@ -70,7 +70,10 @@ namespace EasySSH {
         public int get_length() {
             int i = 0;
             foreach (Host host in hosts) {
-                i += 1;
+                if(host != null){
+                    i += 1;
+                }
+                
             }
             return i;
         }

@@ -33,6 +33,7 @@ namespace EasySSH {
         public string terminal_font {get; set;}
         public string[] hosts { get; set; }
         public bool restore_hosts { get; set; }
+        public bool use_dark_theme { get; set; }
 
         public static Settings get_default () {
             if (settings == null) {

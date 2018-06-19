@@ -68,27 +68,38 @@ namespace EasySSH {
                 settings.restore_hosts = restore_hosts_switch.active;
             });
 
+            var use_dark_theme = new Gtk.Switch ();
+            use_dark_theme.halign = Gtk.Align.START;
+            use_dark_theme.valign = Gtk.Align.CENTER;
+            use_dark_theme.active = settings.use_dark_theme;
+            use_dark_theme.notify["active"].connect (() => { settings.use_dark_theme = use_dark_theme.active; });
+
             var general_grid = new Gtk.Grid ();
             general_grid.column_spacing = 12;
             general_grid.row_spacing = 6;
             general_grid.attach (new Granite.HeaderLabel (_("Hosts Configuration Folder:")), 0, 0, 1, 1);
             general_grid.attach (hosts_filechooser, 1, 0, 1, 1);
 
-            general_grid.attach (new Granite.HeaderLabel (_("Terminal Background Color:")), 0, 1, 1, 1);
-            general_grid.attach (terminal_background_color_button, 1, 1, 1, 1);
+            general_grid.attach (new Granite.HeaderLabel (_("Restore Opened Hosts:")), 0, 1, 1, 1);
+            general_grid.attach (restore_hosts_switch, 1, 1, 1, 1);
 
-            general_grid.attach (new Granite.HeaderLabel (_("Terminal Font:")), 0, 2, 1, 1);
-            general_grid.attach (terminal_font_button, 1, 2, 1, 1);
+            var appearance_grid = new Gtk.Grid ();
 
-            general_grid.attach (new Granite.HeaderLabel (_("Restore Opened Hosts:")), 0, 3, 1, 1);
-            general_grid.attach (restore_hosts_switch, 1, 3, 1, 1);
+            appearance_grid.attach (new Granite.HeaderLabel (_("Terminal Background Color:")), 0, 0, 1, 1);
+            appearance_grid.attach (terminal_background_color_button, 1, 0, 1, 1);
 
+            appearance_grid.attach (new Granite.HeaderLabel (_("Terminal Font:")), 0, 1, 1, 1);
+            appearance_grid.attach (terminal_font_button, 1, 1, 1, 1);
+
+            appearance_grid.attach (new Granite.HeaderLabel (_("Use Dark Theme:")), 0, 2, 1, 1);
+            appearance_grid.attach (use_dark_theme, 1, 2, 1, 1);
 
             main_stack = new Gtk.Stack ();
             main_stack.margin = 6;
             main_stack.margin_bottom = 18;
             main_stack.margin_top = 24;
             main_stack.add_titled (general_grid, "general", _("General"));
+            main_stack.add_titled (appearance_grid, "appearance", _("Appearance"));
 
             var main_stackswitcher = new Gtk.StackSwitcher ();
             main_stackswitcher.set_stack (main_stack);
