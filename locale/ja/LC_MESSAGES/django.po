@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: weblate-website-ja\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2018-06-20 16:52+0200\n"
-"PO-Revision-Date: 2018-06-07 07:39+0000\n"
+"PO-Revision-Date: 2018-06-20 22:29+0000\n"
 "Last-Translator: Yasuhiko Kamata <belphegor@belbel.or.jp>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/weblate/website/"
 "ja/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.0\n"
+"X-Generator: Weblate 3.1-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -84,7 +84,7 @@ msgstr "宣伝"
 
 #: weblate_web/data.py:79
 msgid "Translation workflow can be customized by using addons."
-msgstr ""
+msgstr "翻訳のワークフローは、アドオンを利用することでカスタマイズすることができます。"
 
 #: weblate_web/data.py:81
 msgid "Addons"
@@ -94,18 +94,16 @@ msgstr "アドオン"
 msgid ""
 "Automatic translation can be used to bootstrap your translations using "
 "machine translation services or translation memory."
-msgstr ""
+msgstr "自動翻訳は、機械翻訳や翻訳メモリを利用して翻訳作業を促進できる仕組みです。"
 
 #: weblate_web/data.py:89
-#, fuzzy
-#| msgid "Continuous translation"
 msgid "Automatic translation"
-msgstr "継続的な翻訳"
+msgstr "自動翻訳"
 
 #: weblate_web/data.py:94
 msgid ""
 "Translations can be exported and imported in many widely used file formats."
-msgstr ""
+msgstr "翻訳データは、よく使用される様々なファイル形式にエクスポートしたり、それらをインポートしたりすることができます。"
 
 #: weblate_web/data.py:97 weblate_web/templates/features.html:87
 msgid "Export and import"
@@ -113,7 +111,7 @@ msgstr "エクスポートとインポート"
 
 #: weblate_web/data.py:101
 msgid "You can define access levels for every user."
-msgstr ""
+msgstr "各ユーザに対してアクセスレベルを設定することができます。"
 
 #: weblate_web/data.py:102 weblate_web/templates/hosting.html:105
 #: weblate_web/templates/hosting.html:311
@@ -566,16 +564,11 @@ msgid "File formats"
 msgstr "ファイル形式"
 
 #: weblate_web/templates/features.html:48
-#, fuzzy
-#| msgid ""
-#| "Weblate supports all widely used file formats for localisation like "
-#| "Gettext, JSON, XLIFF or resource strings."
 msgid ""
 "Weblate supports all widely used file formats for localisation, like "
 "gettext, JSON, XLIFF or resource strings."
 msgstr ""
-"Weblate は gettext, JSON, XLIFF やリソース文字列など、ローカライズに広く使わ"
-"れているすべてのファイル形式に対応しています。"
+"Weblate は gettext, JSON, XLIFF やリソース文字列など、ローカライズに広く使われているすべてのファイル形式に対応しています。"
 
 #: weblate_web/templates/features.html:55
 msgid "Branches support"
@@ -1380,12 +1373,8 @@ msgstr ""
 "のメーリングリストです。"
 
 #: weblate_web/templates/support.html:55
-#, fuzzy
-#| msgid "This list is moderated, only selected users can post announcements."
 msgid "This list is moderated, only chosen users can post announcements."
-msgstr ""
-"このリストに対する投稿には、制限が設定されています。限られたユーザしかアナウ"
-"ンスを送信できません。"
+msgstr "このリストに対する投稿には、制限が設定されています。限られたユーザしかアナウンスを送信できません。"
 
 #: weblate_web/templates/support.html:68
 msgid "Stack Overflow"
