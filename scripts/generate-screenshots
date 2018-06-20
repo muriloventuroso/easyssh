@@ -1,7 +1,16 @@
 #!/bin/sh
 
+WEBLATE=~/work/weblate/docs/images/
 SCREENSHOTS=weblate_web/media/screenshots/
 THUMBNAILS=weblate_web/media/thumbnails/
+
+cp $WEBLATE/source-information.png $SCREENSHOTS/translation-context.png
+cp $WEBLATE/your-translations.png $SCREENSHOTS/own-translations.png
+cp $WEBLATE/glossary-edit.png $SCREENSHOTS/glossary.png
+
+for shot in checks project-overview promote ; do
+    cp $WEBLATE/$shot.png $SCREENSHOTS/
+done
 
 for file in $SCREENSHOTS*.png ; do
     base=${file##$SCREENSHOTS}
