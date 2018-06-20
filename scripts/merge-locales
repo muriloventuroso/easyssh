@@ -6,10 +6,6 @@ for d in locale/* ; do
     if [ $loc = "django.pot" ] ; then
         continue
     fi
-    msgmerge -U -C ../weblate/weblate/locale/${loc}/LC_MESSAGES/django.po $d/LC_MESSAGES/django.po locale/django.pot 
-    web=/tmp/weblate-web/po/$loc.po 
-    if [ -f $web ] ; then
-        msgmerge -U -C $web $d/LC_MESSAGES/django.po locale/django.pot 
-    fi
+    msgmerge -U --previous -C ~/work/weblate/weblate/locale/${loc}/LC_MESSAGES/django.po $d/LC_MESSAGES/django.po locale/django.pot
 done
 
