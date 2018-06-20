@@ -8,7 +8,7 @@ cp $WEBLATE/source-information.png $SCREENSHOTS/translation-context.png
 cp $WEBLATE/your-translations.png $SCREENSHOTS/own-translations.png
 cp $WEBLATE/glossary-edit.png $SCREENSHOTS/glossary.png
 
-for shot in checks project-overview promote ; do
+for shot in checks project-overview promote addons automatic-translation export-import manage-users ; do
     cp $WEBLATE/$shot.png $SCREENSHOTS/
 done
 

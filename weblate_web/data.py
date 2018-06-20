@@ -73,4 +73,32 @@ SCREENSHOTS = (
         ),
         _('Promotion'),
     ),
+    (
+        'addons.png',
+        _(
+            'Translation workflow can be customized by using addons.'
+        ),
+        _('Addons'),
+    ),
+    (
+        'automatic-translation.png',
+        _(
+            'Automatic translation can be used to bootstrap your translations '
+            'using machine translation services or translation memory.'
+        ),
+        _('Automatic translation'),
+    ),
+    (
+        'export-import.png',
+        _(
+            'Translations can be exported and imported in many widely used '
+            'file formats.'
+        ),
+        _('Export and import')
+    ),
+    (
+        'manage-users.png',
+        _('You can define access levels for every user.'),
+        _('User management'),
+    ),
 )
