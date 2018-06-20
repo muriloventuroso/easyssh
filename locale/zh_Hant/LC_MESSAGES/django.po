@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2018-05-21 13:24+0200\n"
+"POT-Creation-Date: 2018-06-20 16:49+0200\n"
 "PO-Revision-Date: 2018-05-25 12:39+0000\n"
 "Last-Translator: Chang-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
@@ -74,6 +74,44 @@ msgstr "Weblate 為您提供多種方法宣傳推廣您的翻譯專案。"
 #: weblate_web/data.py:74 weblate_web/templates/features.html:127
 msgid "Promotion"
 msgstr "宣傳"
+
+#: weblate_web/data.py:79
+msgid "Translation workflow can be customized by using addons."
+msgstr ""
+
+#: weblate_web/data.py:81
+msgid "Addons"
+msgstr ""
+
+#: weblate_web/data.py:86
+msgid ""
+"Automatic translation can be used to bootstrap your translations using "
+"machine translation services or translation memory."
+msgstr ""
+
+#: weblate_web/data.py:89
+#, fuzzy
+#| msgid "Continuous translation"
+msgid "Automatic translation"
+msgstr "持續翻譯"
+
+#: weblate_web/data.py:94
+msgid ""
+"Translations can be exported and imported in many widely used file formats."
+msgstr ""
+
+#: weblate_web/data.py:97 weblate_web/templates/features.html:87
+msgid "Export and import"
+msgstr "匯出與匯入"
+
+#: weblate_web/data.py:101
+msgid "You can define access levels for every user."
+msgstr ""
+
+#: weblate_web/data.py:102 weblate_web/templates/hosting.html:105
+#: weblate_web/templates/hosting.html:311
+msgid "User management"
+msgstr "使用者管理"
 
 #: weblate_web/templates/404.html:4
 msgid "Page not found"
@@ -332,7 +370,9 @@ msgid ""
 "Liberapay is a recurrent donations platform where you send weekly amount to "
 "fund projects you use. You can use credit card, bank transfer or direct "
 "debit to top up the account."
-msgstr "Liberapay 是個週期性贊助平臺，您可以每週向您使用的專案資助固定的金額。您可以使用信用卡、銀行電匯、金融卡等方式加值帳號。"
+msgstr ""
+"Liberapay 是個週期性贊助平臺，您可以每週向您使用的專案資助固定的金額。您可以"
+"使用信用卡、銀行電匯、金融卡等方式加值帳號。"
 
 #: weblate_web/templates/donate.html:50
 msgid "Fund features"
@@ -490,9 +530,13 @@ msgid "File formats"
 msgstr "檔案格式"
 
 #: weblate_web/templates/features.html:48
+#, fuzzy
+#| msgid ""
+#| "Weblate supports all widely used file formats for localisation like "
+#| "Gettext, JSON, XLIFF or resource strings."
 msgid ""
-"Weblate supports all widely used file formats for localisation like Gettext, "
-"JSON, XLIFF or resource strings."
+"Weblate supports all widely used file formats for localisation, like "
+"gettext, JSON, XLIFF or resource strings."
 msgstr ""
 "Weblate 支援所有廣泛使用的在地化檔案格式，例如 Gettext、JSON、XLIFF 或資源字"
 "串等。"
@@ -516,10 +560,6 @@ msgid ""
 "You can also use Weblate to acquire feedback on source strings and thus "
 "improve them."
 msgstr "您也可以使用 Weblate 來獲取來源字串的意見回饋並改善之。"
-
-#: weblate_web/templates/features.html:87
-msgid "Export and import"
-msgstr "匯出與匯入"
 
 #: weblate_web/templates/features.html:88
 msgid "Translations can be downloaded for offline translation and merged back."
@@ -748,11 +788,6 @@ msgstr "翻譯組件數"
 #: weblate_web/templates/hosting.html:96
 msgid "Number of translators"
 msgstr "翻譯者人數"
-
-#: weblate_web/templates/hosting.html:105
-#: weblate_web/templates/hosting.html:311
-msgid "User management"
-msgstr "使用者管理"
 
 #: weblate_web/templates/hosting.html:114
 msgid "Supported file formats"
@@ -1251,7 +1286,9 @@ msgid ""
 msgstr "低流量郵遞清單，發布 Hosted Weblate 服務相關公告。"
 
 #: weblate_web/templates/support.html:55
-msgid "This list is moderated, only selected users can post announcements."
+#, fuzzy
+#| msgid "This list is moderated, only selected users can post announcements."
+msgid "This list is moderated, only chosen users can post announcements."
 msgstr "這份清單限制投稿，只有選定的使用者可以張貼公告。"
 
 #: weblate_web/templates/support.html:68

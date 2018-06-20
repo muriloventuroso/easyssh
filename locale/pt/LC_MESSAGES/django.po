@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2018-05-21 13:24+0200\n"
+"POT-Creation-Date: 2018-06-20 16:49+0200\n"
 "PO-Revision-Date: 2018-02-23 09:15+0000\n"
 "Last-Translator: Paulo Caldeira <paucal@gmail.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/weblate/"
@@ -85,6 +85,44 @@ msgstr ""
 #: weblate_web/data.py:74 weblate_web/templates/features.html:127
 msgid "Promotion"
 msgstr "Promoção"
+
+#: weblate_web/data.py:79
+msgid "Translation workflow can be customized by using addons."
+msgstr ""
+
+#: weblate_web/data.py:81
+msgid "Addons"
+msgstr ""
+
+#: weblate_web/data.py:86
+msgid ""
+"Automatic translation can be used to bootstrap your translations using "
+"machine translation services or translation memory."
+msgstr ""
+
+#: weblate_web/data.py:89
+#, fuzzy
+#| msgid "Continuous translation"
+msgid "Automatic translation"
+msgstr "Tradução contínua"
+
+#: weblate_web/data.py:94
+msgid ""
+"Translations can be exported and imported in many widely used file formats."
+msgstr ""
+
+#: weblate_web/data.py:97 weblate_web/templates/features.html:87
+msgid "Export and import"
+msgstr "Exportação e importação"
+
+#: weblate_web/data.py:101
+msgid "You can define access levels for every user."
+msgstr ""
+
+#: weblate_web/data.py:102 weblate_web/templates/hosting.html:105
+#: weblate_web/templates/hosting.html:311
+msgid "User management"
+msgstr "Gestão de utilizadores"
 
 #: weblate_web/templates/404.html:4
 msgid "Page not found"
@@ -526,9 +564,13 @@ msgid "File formats"
 msgstr "Formatos de ficheiro"
 
 #: weblate_web/templates/features.html:48
+#, fuzzy
+#| msgid ""
+#| "Weblate supports all widely used file formats for localisation like "
+#| "Gettext, JSON, XLIFF or resource strings."
 msgid ""
-"Weblate supports all widely used file formats for localisation like Gettext, "
-"JSON, XLIFF or resource strings."
+"Weblate supports all widely used file formats for localisation, like "
+"gettext, JSON, XLIFF or resource strings."
 msgstr ""
 "O Weblate suporta os formatos mais utilizados para localização, tais como "
 "Gettext, JSON, XLIFF ou cadeias de recursos."
@@ -556,10 +598,6 @@ msgid ""
 msgstr ""
 "Também pode utilizar o Weblate para obter a opinião sobre as linhas fonte, "
 "para as poder melhorar."
-
-#: weblate_web/templates/features.html:87
-msgid "Export and import"
-msgstr "Exportação e importação"
 
 #: weblate_web/templates/features.html:88
 msgid "Translations can be downloaded for offline translation and merged back."
@@ -811,11 +849,6 @@ msgstr "Componentes da tradução"
 #: weblate_web/templates/hosting.html:96
 msgid "Number of translators"
 msgstr "Número de tradutores"
-
-#: weblate_web/templates/hosting.html:105
-#: weblate_web/templates/hosting.html:311
-msgid "User management"
-msgstr "Gestão de utilizadores"
 
 #: weblate_web/templates/hosting.html:114
 msgid "Supported file formats"
@@ -1344,7 +1377,9 @@ msgstr ""
 "Lista de correio de baixo tráfego com anúncios sobre os serviços do Weblate."
 
 #: weblate_web/templates/support.html:55
-msgid "This list is moderated, only selected users can post announcements."
+#, fuzzy
+#| msgid "This list is moderated, only selected users can post announcements."
+msgid "This list is moderated, only chosen users can post announcements."
 msgstr ""
 "É uma lista moderada, só utilizadores seleccionados podem publicar anúncios."
 

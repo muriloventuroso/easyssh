@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2018-05-21 13:24+0200\n"
+"POT-Creation-Date: 2018-06-20 16:49+0200\n"
 "PO-Revision-Date: 2018-05-21 12:14+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/weblate/website/"
@@ -75,6 +75,44 @@ msgstr "Weblate מספק לך דרכים שונות כדי לקדם את מיז�
 #: weblate_web/data.py:74 weblate_web/templates/features.html:127
 msgid "Promotion"
 msgstr "קידום"
+
+#: weblate_web/data.py:79
+msgid "Translation workflow can be customized by using addons."
+msgstr ""
+
+#: weblate_web/data.py:81
+msgid "Addons"
+msgstr ""
+
+#: weblate_web/data.py:86
+msgid ""
+"Automatic translation can be used to bootstrap your translations using "
+"machine translation services or translation memory."
+msgstr ""
+
+#: weblate_web/data.py:89
+#, fuzzy
+#| msgid "Continuous translation"
+msgid "Automatic translation"
+msgstr "תרגום רציף"
+
+#: weblate_web/data.py:94
+msgid ""
+"Translations can be exported and imported in many widely used file formats."
+msgstr ""
+
+#: weblate_web/data.py:97 weblate_web/templates/features.html:87
+msgid "Export and import"
+msgstr "ייצוא וייבוא"
+
+#: weblate_web/data.py:101
+msgid "You can define access levels for every user."
+msgstr ""
+
+#: weblate_web/data.py:102 weblate_web/templates/hosting.html:105
+#: weblate_web/templates/hosting.html:311
+msgid "User management"
+msgstr "ניהול משתמשים"
 
 #: weblate_web/templates/404.html:4
 msgid "Page not found"
@@ -498,9 +536,13 @@ msgid "File formats"
 msgstr "סוגי קבצים"
 
 #: weblate_web/templates/features.html:48
+#, fuzzy
+#| msgid ""
+#| "Weblate supports all widely used file formats for localisation like "
+#| "Gettext, JSON, XLIFF or resource strings."
 msgid ""
-"Weblate supports all widely used file formats for localisation like Gettext, "
-"JSON, XLIFF or resource strings."
+"Weblate supports all widely used file formats for localisation, like "
+"gettext, JSON, XLIFF or resource strings."
 msgstr ""
 "ל־Weblate יש תמיכה בכל סוגי הקבצים הנפוצים לתרגום כמו Gettext,‏ JSON,‏ XLIFF "
 "או מחרוזות משאבים."
@@ -526,10 +568,6 @@ msgid ""
 "You can also use Weblate to acquire feedback on source strings and thus "
 "improve them."
 msgstr "ניתן להשתמש ב־Weblate כדי לקבל משוב על מחרוזות המקור וכך גם לשפר אותן."
-
-#: weblate_web/templates/features.html:87
-msgid "Export and import"
-msgstr "ייצוא וייבוא"
 
 #: weblate_web/templates/features.html:88
 msgid "Translations can be downloaded for offline translation and merged back."
@@ -770,11 +808,6 @@ msgstr "רכיבי תרגום"
 #: weblate_web/templates/hosting.html:96
 msgid "Number of translators"
 msgstr "מספר מתרגמים"
-
-#: weblate_web/templates/hosting.html:105
-#: weblate_web/templates/hosting.html:311
-msgid "User management"
-msgstr "ניהול משתמשים"
 
 #: weblate_web/templates/hosting.html:114
 msgid "Supported file formats"
@@ -1283,7 +1316,9 @@ msgstr ""
 "רשימת תפוצה דלה בעדכונים שמיועדת להכרזות בנושאי שירותי Weblate עם אירוח."
 
 #: weblate_web/templates/support.html:55
-msgid "This list is moderated, only selected users can post announcements."
+#, fuzzy
+#| msgid "This list is moderated, only selected users can post announcements."
+msgid "This list is moderated, only chosen users can post announcements."
 msgstr "רשימה זו נמצאת תחת פיקוח, רק משתמשים נבחרים יכולים לפרסם הכרזות."
 
 #: weblate_web/templates/support.html:68

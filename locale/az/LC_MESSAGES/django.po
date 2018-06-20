@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2018-05-21 13:24+0200\n"
+"POT-Creation-Date: 2018-06-20 16:49+0200\n"
 "PO-Revision-Date: 2017-02-14 20:51+0000\n"
 "Last-Translator: Sevdimali İsa <sevdimaliisayev@mail.ru>\n"
 "Language-Team: Azerbaijani <https://hosted.weblate.org/projects/weblate/"
@@ -84,6 +84,44 @@ msgstr ""
 #: weblate_web/data.py:74 weblate_web/templates/features.html:127
 msgid "Promotion"
 msgstr "Təbliğat"
+
+#: weblate_web/data.py:79
+msgid "Translation workflow can be customized by using addons."
+msgstr ""
+
+#: weblate_web/data.py:81
+msgid "Addons"
+msgstr ""
+
+#: weblate_web/data.py:86
+msgid ""
+"Automatic translation can be used to bootstrap your translations using "
+"machine translation services or translation memory."
+msgstr ""
+
+#: weblate_web/data.py:89
+#, fuzzy
+#| msgid "Continuous translation"
+msgid "Automatic translation"
+msgstr "Davamlı tərcümə"
+
+#: weblate_web/data.py:94
+msgid ""
+"Translations can be exported and imported in many widely used file formats."
+msgstr ""
+
+#: weblate_web/data.py:97 weblate_web/templates/features.html:87
+msgid "Export and import"
+msgstr "Eksport və İmport"
+
+#: weblate_web/data.py:101
+msgid "You can define access levels for every user."
+msgstr ""
+
+#: weblate_web/data.py:102 weblate_web/templates/hosting.html:105
+#: weblate_web/templates/hosting.html:311
+msgid "User management"
+msgstr "istifadəçi idarəetməsi"
 
 #: weblate_web/templates/404.html:4
 msgid "Page not found"
@@ -528,9 +566,13 @@ msgid "File formats"
 msgstr "Fayl formatları"
 
 #: weblate_web/templates/features.html:48
+#, fuzzy
+#| msgid ""
+#| "Weblate supports all widely used file formats for localisation like "
+#| "Gettext, JSON, XLIFF or resource strings."
 msgid ""
-"Weblate supports all widely used file formats for localisation like Gettext, "
-"JSON, XLIFF or resource strings."
+"Weblate supports all widely used file formats for localisation, like "
+"gettext, JSON, XLIFF or resource strings."
 msgstr ""
 "Weblate, Gettext, JSON, XLIFF və ya qaynaq sətirləri kimi lokallaşdırılma "
 "üçün geniş yayılmış bütün fayl formatlarını dəstəkləyir."
@@ -556,10 +598,6 @@ msgid ""
 msgstr ""
 "Ayrıca qaynaq sətirlərdən geni dönüşləri ala bilmək üçün Weblate-i istifadə "
 "edə bilər və beləliklə onları inkişaf etdirə bilərsiniz."
-
-#: weblate_web/templates/features.html:87
-msgid "Export and import"
-msgstr "Eksport və İmport"
 
 #: weblate_web/templates/features.html:88
 msgid "Translations can be downloaded for offline translation and merged back."
@@ -814,11 +852,6 @@ msgstr "Tərcümə komponentləri"
 #: weblate_web/templates/hosting.html:96
 msgid "Number of translators"
 msgstr "Tərcüməçi sayı"
-
-#: weblate_web/templates/hosting.html:105
-#: weblate_web/templates/hosting.html:311
-msgid "User management"
-msgstr "istifadəçi idarəetməsi"
 
 #: weblate_web/templates/hosting.html:114
 msgid "Supported file formats"
@@ -1335,7 +1368,7 @@ msgid ""
 msgstr ""
 
 #: weblate_web/templates/support.html:55
-msgid "This list is moderated, only selected users can post announcements."
+msgid "This list is moderated, only chosen users can post announcements."
 msgstr ""
 
 #: weblate_web/templates/support.html:68
