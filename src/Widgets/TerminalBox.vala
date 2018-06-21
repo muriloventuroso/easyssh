@@ -55,7 +55,16 @@ namespace EasySSH {
         }
 
         public void start_connection() {
-            string cmd = "ssh " + dataHost.username + "@" + dataHost.host + " -p " + dataHost.port + "\n";
+            var builder = new StringBuilder ();
+            builder.append("ssh " + dataHost.username + "@" + dataHost.host + " -p " + dataHost.port);
+            string[] lines = dataHost.tunnels.split (",");
+            foreach (unowned string str in lines) {
+                if(str != ""){
+                    builder.append(" " + str);
+                }
+            }
+            builder.append("\n");
+            var cmd = builder.str;
             term.feed_child(cmd, cmd.length + 1);
         }
 
@@ -112,6 +121,11 @@ namespace EasySSH {
                     if(send_password == false) {
                         term_send_password();
                         send_password = true;
+                    }
+                }else if(ret.length > 0 && ret[ret.length - 1] == "$ "){
+                    var tab = notebook.get_tab_by_widget(this);
+                    if(open_dialog == false) {
+                        alert_error(_("Could not connect. Please check the connection settings."), tab);
                     }
                 }
 

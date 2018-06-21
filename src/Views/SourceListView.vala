@@ -48,7 +48,7 @@ namespace EasySSH {
 
         public HostManager hostmanager;
         private Welcome welcome;
-        private Gtk.Box box;
+        private Gtk.ScrolledWindow box;
         public Granite.Widgets.SourceList source_list;
         public MainWindow window { get; construct; }
         private EasySSH.Settings settings;
@@ -62,7 +62,7 @@ namespace EasySSH {
             hostmanager = new HostManager();
 
             var paned = new Gtk.Paned (Gtk.Orientation.HORIZONTAL);
-            box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 0);
+            box = new Gtk.ScrolledWindow (null, null);
             welcome = new Welcome();
             box.add(welcome);
             paned.position = 130;
@@ -274,6 +274,7 @@ namespace EasySSH {
                         host.password = item.get_string_member("password");
                         host.group = item.get_string_member("group");
                         host.color = item.get_string_member("color");
+                        host.tunnels = item.get_string_member("tunnels");
                         if(host.color == null) {
                             host.color = EasySSH.settings.terminal_background_color;
                         }
@@ -371,6 +372,7 @@ namespace EasySSH {
                     s_host.notebook = null;
                     s_host.color = hosts[i].color;
                     s_host.font = hosts[i].font;
+                    s_host.tunnels = hosts[i].tunnels;
 
                     Json.Node root = Json.gobject_serialize(s_host);
                     array_hosts.add_element(root);
@@ -399,7 +401,7 @@ namespace EasySSH {
 
         public void new_conn() {
             clean_box();
-            box.pack_start(new ConnectionEditor(this, null));
+            box.add(new ConnectionEditor(this, null));
 
             show_all();
         }
@@ -408,7 +410,7 @@ namespace EasySSH {
             clean_box();
             var host = hostmanager.get_host_by_name(source_list.selected.name);
 
-            box.pack_start(new ConnectionEditor(this, host));
+            box.add(new ConnectionEditor(this, host));
             show_all();
         }
         public void remove_conn() {
