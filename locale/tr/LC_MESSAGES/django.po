@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2018-06-20 16:52+0200\n"
-"PO-Revision-Date: 2018-05-23 00:00+0000\n"
+"PO-Revision-Date: 2018-06-21 04:03+0000\n"
 "Last-Translator: monolifed <monolifed@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/weblate/website/"
 "tr/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0-dev\n"
+"X-Generator: Weblate 3.1-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -84,7 +84,7 @@ msgstr "Tanıtım"
 
 #: weblate_web/data.py:79
 msgid "Translation workflow can be customized by using addons."
-msgstr ""
+msgstr "Çeviri iş akışı eklentiler kullanılarak özelleştirilebilir."
 
 #: weblate_web/data.py:81
 msgid "Addons"
@@ -95,17 +95,19 @@ msgid ""
 "Automatic translation can be used to bootstrap your translations using "
 "machine translation services or translation memory."
 msgstr ""
+"Kendiliğinden çeviri, çevirilerinizi makine çeviri hizmetleri veya çeviri "
+"belleği kullanarak başlatmak için kullanılabilir."
 
 #: weblate_web/data.py:89
-#, fuzzy
-#| msgid "Continuous translation"
 msgid "Automatic translation"
-msgstr "Sürekli çeviri"
+msgstr "Kendiliğinden çeviri"
 
 #: weblate_web/data.py:94
 msgid ""
 "Translations can be exported and imported in many widely used file formats."
 msgstr ""
+"Çeviriler, yaygın olarak kullanılan birçok çeviri dosya biçiminde içe veya "
+"dışa aktarılabilir."
 
 #: weblate_web/data.py:97 weblate_web/templates/features.html:87
 msgid "Export and import"
@@ -113,7 +115,7 @@ msgstr "Dışa ve içe aktarma"
 
 #: weblate_web/data.py:101
 msgid "You can define access levels for every user."
-msgstr ""
+msgstr "Her kullanıcı için erişim dğzeyini tanımlayabilirsiniz."
 
 #: weblate_web/data.py:102 weblate_web/templates/hosting.html:105
 #: weblate_web/templates/hosting.html:311
@@ -560,15 +562,11 @@ msgid "File formats"
 msgstr "Dosya biçimleri"
 
 #: weblate_web/templates/features.html:48
-#, fuzzy
-#| msgid ""
-#| "Weblate supports all widely used file formats for localisation like "
-#| "Gettext, JSON, XLIFF or resource strings."
 msgid ""
 "Weblate supports all widely used file formats for localisation, like "
 "gettext, JSON, XLIFF or resource strings."
 msgstr ""
-"Weblate, Gettext, JSON, XLIFF veya kaynak sarıtları gibi yerelleştirme için "
+"Weblate, gettext, JSON, XLIFF veya kaynak satırları gibi, yerelleştirme için "
 "yaygın olarak kullanılan tüm dosya biçimlerini destekler."
 
 #: weblate_web/templates/features.html:55
@@ -1366,11 +1364,9 @@ msgstr ""
 "postalama listesi."
 
 #: weblate_web/templates/support.html:55
-#, fuzzy
-#| msgid "This list is moderated, only selected users can post announcements."
 msgid "This list is moderated, only chosen users can post announcements."
 msgstr ""
-"Bu liste denetlenmektedir, yalnızca seçili kullanıcılar duyuruları "
+"Bu liste denetlenmektedir, yalnızca seçilmiş kullanıcılar duyuruları "
 "postalayabilir."
 
 #: weblate_web/templates/support.html:68
