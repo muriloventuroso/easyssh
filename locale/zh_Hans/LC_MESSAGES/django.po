@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2018-06-20 16:52+0200\n"
-"PO-Revision-Date: 2018-05-16 07:35+0000\n"
-"Last-Translator: dragonandy <dragonandy@foxmail.com>\n"
+"PO-Revision-Date: 2018-06-21 09:48+0000\n"
+"Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "weblate/website/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.0-dev\n"
+"X-Generator: Weblate 3.1-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -78,7 +78,7 @@ msgstr "宣传"
 
 #: weblate_web/data.py:79
 msgid "Translation workflow can be customized by using addons."
-msgstr ""
+msgstr "可以使用插件来自定义翻译工作流。"
 
 #: weblate_web/data.py:81
 msgid "Addons"
@@ -88,18 +88,16 @@ msgstr "附加组件"
 msgid ""
 "Automatic translation can be used to bootstrap your translations using "
 "machine translation services or translation memory."
-msgstr ""
+msgstr "运用机器翻译服务或翻译存储的自动翻译功能可用来初步填充您的翻译。"
 
 #: weblate_web/data.py:89
-#, fuzzy
-#| msgid "Continuous translation"
 msgid "Automatic translation"
-msgstr "不间断翻译"
+msgstr "自动翻译"
 
 #: weblate_web/data.py:94
 msgid ""
 "Translations can be exported and imported in many widely used file formats."
-msgstr ""
+msgstr "翻译数据可以使用许多常用的文件格式来导入导出。"
 
 #: weblate_web/data.py:97 weblate_web/templates/features.html:87
 msgid "Export and import"
@@ -107,7 +105,7 @@ msgstr "导出和导入"
 
 #: weblate_web/data.py:101
 msgid "You can define access levels for every user."
-msgstr ""
+msgstr "您可以为每一个用户定义访问等级。"
 
 #: weblate_web/data.py:102 weblate_web/templates/hosting.html:105
 #: weblate_web/templates/hosting.html:311
@@ -368,7 +366,7 @@ msgid ""
 "Liberapay is a recurrent donations platform where you send weekly amount to "
 "fund projects you use. You can use credit card, bank transfer or direct "
 "debit to top up the account."
-msgstr ""
+msgstr "Liberapay 是一个周期性捐赠平台，您可以使用它向您使用的项目每周发送捐款。您可以使用信用卡、银行转帐或直接储蓄充值的方式来对账户充值。"
 
 #: weblate_web/templates/donate.html:50
 msgid "Fund features"
@@ -525,14 +523,10 @@ msgid "File formats"
 msgstr "文件格式"
 
 #: weblate_web/templates/features.html:48
-#, fuzzy
-#| msgid ""
-#| "Weblate supports all widely used file formats for localization like "
-#| "Gettext, JSON, XLIFF or resource strings."
 msgid ""
 "Weblate supports all widely used file formats for localization, like "
 "gettext, JSON, XLIFF or resource strings."
-msgstr "Weblate 支持几乎所有文件格式，例如 Gettext、JSON、XLIFF 和资源字符串。"
+msgstr "Weblate 支持所有与本地化相关的常见文件格式，例如 gettext、JSON、XLIFF 和资源字符串。"
 
 #: weblate_web/templates/features.html:55
 msgid "Branches support"
@@ -1281,8 +1275,6 @@ msgid ""
 msgstr "低流量邮件列表，提供与托管 Weblate（Hosted Weblate）服务相关的公告。"
 
 #: weblate_web/templates/support.html:55
-#, fuzzy
-#| msgid "This list is moderated, only selected users can post announcements."
 msgid "This list is moderated, only chosen users can post announcements."
 msgstr "该列表受审核，仅有指定的用户可以发布公告。"
 
