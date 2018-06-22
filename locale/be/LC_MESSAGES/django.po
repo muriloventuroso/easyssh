@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2018-06-20 16:52+0200\n"
-"PO-Revision-Date: 2018-05-31 22:13+0000\n"
+"PO-Revision-Date: 2018-06-22 21:09+0000\n"
 "Last-Translator: Viktar Vauchkevich <victorenator@gmail.com>\n"
 "Language-Team: Belarusian <https://hosted.weblate.org/projects/weblate/"
 "website/be/>\n"
@@ -16,9 +16,9 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.0-dev\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 3.1-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -85,7 +85,7 @@ msgstr "Папулярызацыя"
 
 #: weblate_web/data.py:79
 msgid "Translation workflow can be customized by using addons."
-msgstr ""
+msgstr "Працэс перакладу можна палепшыць з дапамогай дадаткаў."
 
 #: weblate_web/data.py:81
 msgid "Addons"
@@ -96,17 +96,19 @@ msgid ""
 "Automatic translation can be used to bootstrap your translations using "
 "machine translation services or translation memory."
 msgstr ""
+"Аўтаматычны пераклад можна выкарыстаць для пачатковага запаўнення перакладаў "
+"праз сэрвісы машыннага перакладу ці праз памяць перакладаў."
 
 #: weblate_web/data.py:89
-#, fuzzy
-#| msgid "Continuous translation"
 msgid "Automatic translation"
-msgstr "Бесперапынныя пераклады"
+msgstr "Аўтаматычны пераклад"
 
 #: weblate_web/data.py:94
 msgid ""
 "Translations can be exported and imported in many widely used file formats."
 msgstr ""
+"Пераклады могуць быць экспартаваныя і імпартаваныя ў шматлікія файлавы "
+"фарматы."
 
 #: weblate_web/data.py:97 weblate_web/templates/features.html:87
 msgid "Export and import"
@@ -114,7 +116,7 @@ msgstr "Экспарт і імпарт"
 
 #: weblate_web/data.py:101
 msgid "You can define access levels for every user."
-msgstr ""
+msgstr "Вы можаце задаць узровень доступу для кожнага карыстальніка."
 
 #: weblate_web/data.py:102 weblate_web/templates/hosting.html:105
 #: weblate_web/templates/hosting.html:311
@@ -560,16 +562,12 @@ msgid "File formats"
 msgstr "Фарматы файлаў"
 
 #: weblate_web/templates/features.html:48
-#, fuzzy
-#| msgid ""
-#| "Weblate supports all widely used file formats for localization like "
-#| "Gettext, JSON, XLIFF or resource strings."
 msgid ""
 "Weblate supports all widely used file formats for localization, like "
 "gettext, JSON, XLIFF or resource strings."
 msgstr ""
 "Weblate падтрымлівае ўсе шырока-ўжываныя фарматы файлаў лакалізацый, як "
-"Gettext, JSON, XLIFF альбо рэсурсы."
+"gettext, JSON, XLIFF альбо рэсурсы."
 
 #: weblate_web/templates/features.html:55
 msgid "Branches support"
@@ -1366,8 +1364,6 @@ msgid ""
 msgstr "Спіс рассылкі з невялікім трафікам аб'яў аб сэрвісах хостынга Weblate."
 
 #: weblate_web/templates/support.html:55
-#, fuzzy
-#| msgid "This list is moderated, only selected users can post announcements."
 msgid "This list is moderated, only chosen users can post announcements."
 msgstr ""
 "Гэты спіс мадэрыруецца. Толькі абраныя карыстальнікі могуць размяшчаць "
