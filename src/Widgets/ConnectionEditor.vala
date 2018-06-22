@@ -257,7 +257,7 @@ namespace EasySSH {
             grid.attach (revealer, 0, 14, 1, 1);
             advanced_button.bind_property ("active", revealer, "reveal-child");
 
-            grid.attach (buttons, 0, 13, 1, 1);
+            grid.attach (buttons, 0, 15, 1, 1);
             update_save_button();
             show_all ();
         }
