@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2018-06-20 16:52+0200\n"
-"PO-Revision-Date: 2018-05-22 11:07+0000\n"
+"PO-Revision-Date: 2018-06-22 11:55+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/weblate/website/cs/"
 ">\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 3.0-dev\n"
+"X-Generator: Weblate 3.1-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -84,7 +84,7 @@ msgstr "Propagace"
 
 #: weblate_web/data.py:79
 msgid "Translation workflow can be customized by using addons."
-msgstr ""
+msgstr "Pracovní postup překladu je možné přizpůsobit pomocí doplňků."
 
 #: weblate_web/data.py:81
 msgid "Addons"
@@ -95,17 +95,19 @@ msgid ""
 "Automatic translation can be used to bootstrap your translations using "
 "machine translation services or translation memory."
 msgstr ""
+"Pro rozjetí překladu je možné použít automatický překlad pomocí služeb "
+"strojového překladu nebo překladové paměti."
 
 #: weblate_web/data.py:89
-#, fuzzy
-#| msgid "Continuous translation"
 msgid "Automatic translation"
-msgstr "Průběžný překlad"
+msgstr "Automatický překlad"
 
 #: weblate_web/data.py:94
 msgid ""
 "Translations can be exported and imported in many widely used file formats."
 msgstr ""
+"Překlady je možné exportovat do a importovat z mnoha široce používaných "
+"formátů souborů."
 
 #: weblate_web/data.py:97 weblate_web/templates/features.html:87
 msgid "Export and import"
@@ -113,7 +115,7 @@ msgstr "Export a import"
 
 #: weblate_web/data.py:101
 msgid "You can define access levels for every user."
-msgstr ""
+msgstr "Každému z uživatelů je možné určit úrovně přístupových oprávnění."
 
 #: weblate_web/data.py:102 weblate_web/templates/hosting.html:105
 #: weblate_web/templates/hosting.html:311
@@ -553,16 +555,12 @@ msgid "File formats"
 msgstr "Formáty souborů"
 
 #: weblate_web/templates/features.html:48
-#, fuzzy
-#| msgid ""
-#| "Weblate supports all widely used file formats for localization like "
-#| "Gettext, JSON, XLIFF or resource strings."
 msgid ""
 "Weblate supports all widely used file formats for localization, like "
 "gettext, JSON, XLIFF or resource strings."
 msgstr ""
-"Weblate podporuje všechny běžně používané formáty pro překlady jako třeba "
-"Gettext, JSON, XLIFF nebo textové zdroje."
+"Weblate podporuje všechny běžně používané formáty pro překlady, jako třeba "
+"gettext, JSON, XLIFF nebo textové zdroje."
 
 #: weblate_web/templates/features.html:55
 msgid "Branches support"
@@ -1356,10 +1354,8 @@ msgstr ""
 "Konference s malým provozem s důležitými oznámeními o službě Hosted Weblate."
 
 #: weblate_web/templates/support.html:55
-#, fuzzy
-#| msgid "This list is moderated, only selected users can post announcements."
 msgid "This list is moderated, only chosen users can post announcements."
-msgstr "Tato konference je moderovaná, přispívat mohou jen zvolení uživatelé."
+msgstr "Tato konference je moderovaná, přispívat mohou pouze zvolení uživatelé."
 
 #: weblate_web/templates/support.html:68
 msgid "Stack Overflow"
