@@ -48,7 +48,7 @@ namespace EasySSH {
 
         public HostManager hostmanager;
         private Welcome welcome;
-        private Gtk.ScrolledWindow box;
+        private Gtk.Box box;
         public Granite.Widgets.SourceList source_list;
         public MainWindow window { get; construct; }
         private EasySSH.Settings settings;
@@ -62,7 +62,7 @@ namespace EasySSH {
             hostmanager = new HostManager();
 
             var paned = new Gtk.Paned (Gtk.Orientation.HORIZONTAL);
-            box = new Gtk.ScrolledWindow (null, null);
+            box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 0);
             welcome = new Welcome();
             box.add(welcome);
             paned.position = 130;
@@ -258,7 +258,6 @@ namespace EasySSH {
                     while ((line = dis.read_line (null)) != null) {
                         res += line;
                     }
-
                     var parser = new Json.Parser ();
                     parser.load_from_data (res);
 
@@ -273,13 +272,19 @@ namespace EasySSH {
                         host.username = item.get_string_member("username");
                         host.password = item.get_string_member("password");
                         host.group = item.get_string_member("group");
-                        host.color = item.get_string_member("color");
-                        host.tunnels = item.get_string_member("tunnels");
-                        if(host.color == null) {
+                        if(item.has_member("color")){
+                            host.color = item.get_string_member("color");
+                        }else {
                             host.color = EasySSH.settings.terminal_background_color;
                         }
-                        host.font = item.get_string_member("font");
-                        if(host.font == null) {
+                        if(item.has_member("tunnels")){
+                            host.tunnels = item.get_string_member("tunnels");
+                        }else {
+                            host.tunnels = "";
+                        }
+                        if(item.has_member("font")){
+                            host.font = item.get_string_member("font");
+                        }else {
                             host.font = EasySSH.settings.terminal_font;
                         }
                         var group_exist = hostmanager.exist_group(host.group);

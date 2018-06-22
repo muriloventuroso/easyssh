@@ -20,7 +20,7 @@
 */
 
 namespace EasySSH {
-    public class ConnectionEditor : Gtk.Grid {
+    public class ConnectionEditor : Gtk.ScrolledWindow {
 
         private ValidatedEntry name_entry;
         private ErrorRevealer name_error_revealer;
@@ -42,12 +42,6 @@ namespace EasySSH {
 
         public ConnectionEditor (SourceListView sourcelistview, Host? data_host) {
             Object (
-                margin_start: 22,
-                margin_end: 22,
-                column_spacing: 22,
-                orientation: Gtk.Orientation.VERTICAL,
-                valign: Gtk.Align.CENTER,
-                expand: true,
                 sourcelistview: sourcelistview,
                 data_host: data_host
             );
@@ -55,6 +49,14 @@ namespace EasySSH {
 
         construct {
             settings = Settings.get_default ();
+            var grid = new Gtk.Grid ();
+            grid.column_spacing = 22;
+            grid.orientation = Gtk.Orientation.VERTICAL;
+            grid.expand = true;
+            grid.margin_start = 22;
+            grid.margin_end = 22;
+            grid.get_style_context ().add_class("grid-connection-editor");
+            add(grid);
             name_entry = new ValidatedEntry ();
             name_entry.hexpand = true;
             name_error_revealer = new ErrorRevealer (".");
@@ -118,19 +120,19 @@ namespace EasySSH {
             }
             label.get_style_context ().add_class("h2");
             add (label);
-            attach (new Granite.HeaderLabel (_("Name:")), 0, 1, 1, 1);
-            attach (name_entry, 0, 2, 1, 1);
-            attach (name_error_revealer, 0, 3, 1, 1);
-            attach (new Granite.HeaderLabel (_("Group:")), 0, 4, 1, 1);
-            attach (group_entry, 0, 5, 1, 1);
-            attach (new Granite.HeaderLabel (_("Host:")), 0, 6, 1, 1);
-            attach (host_entry, 0, 7, 1, 1);
-            attach (new Granite.HeaderLabel (_("Port:")), 0, 8, 1, 1);
-            attach (port_entry, 0, 9, 1, 1);
-            attach (new Granite.HeaderLabel (_("Username:")), 0, 10, 1, 1);
-            attach (username_entry, 0, 11, 1, 1);
-            attach (new Granite.HeaderLabel (_("Password:")), 0, 12, 1, 1);
-            attach (password_entry, 0, 13, 1, 1);
+            grid.attach (new Granite.HeaderLabel (_("Name:")), 0, 1, 1, 1);
+            grid.attach (name_entry, 0, 2, 1, 1);
+            grid.attach (name_error_revealer, 0, 3, 1, 1);
+            grid.attach (new Granite.HeaderLabel (_("Group:")), 0, 4, 1, 1);
+            grid.attach (group_entry, 0, 5, 1, 1);
+            grid.attach (new Granite.HeaderLabel (_("Host:")), 0, 6, 1, 1);
+            grid.attach (host_entry, 0, 7, 1, 1);
+            grid.attach (new Granite.HeaderLabel (_("Port:")), 0, 8, 1, 1);
+            grid.attach (port_entry, 0, 9, 1, 1);
+            grid.attach (new Granite.HeaderLabel (_("Username:")), 0, 10, 1, 1);
+            grid.attach (username_entry, 0, 11, 1, 1);
+            grid.attach (new Granite.HeaderLabel (_("Password:")), 0, 12, 1, 1);
+            grid.attach (password_entry, 0, 13, 1, 1);
 
             var revealer = new Gtk.Revealer();
 
@@ -252,10 +254,10 @@ namespace EasySSH {
             box_advanced.pack_start(main_stackswitcher, false, false, 0);
             box_advanced.pack_start(main_stack, false, false, 0);
             revealer.add(box_advanced);
-            attach (revealer, 0, 14, 1, 1);
+            grid.attach (revealer, 0, 14, 1, 1);
             advanced_button.bind_property ("active", revealer, "reveal-child");
 
-            attach (buttons, 0, 15, 1, 1);
+            grid.attach (buttons, 0, 13, 1, 1);
             update_save_button();
             show_all ();
         }
