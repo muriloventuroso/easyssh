@@ -52,7 +52,6 @@ namespace EasySSH {
             var grid = new Gtk.Grid ();
             grid.column_spacing = 22;
             grid.orientation = Gtk.Orientation.VERTICAL;
-            grid.expand = true;
             grid.margin_start = 22;
             grid.margin_end = 22;
             grid.get_style_context ().add_class("grid-connection-editor");
@@ -108,6 +107,7 @@ namespace EasySSH {
             buttons.layout_style = Gtk.ButtonBoxStyle.END;
             buttons.spacing = 6;
             buttons.margin_top = 6;
+            buttons.margin_bottom = 30;
 
             buttons.pack_start(advanced_button, false, false, 0);
             buttons.add(cancel_button);
@@ -119,7 +119,7 @@ namespace EasySSH {
                 label = new Gtk.Label(_("Edit Connection"));
             }
             label.get_style_context ().add_class("h2");
-            add (label);
+            grid.add (label);
             grid.attach (new Granite.HeaderLabel (_("Name:")), 0, 1, 1, 1);
             grid.attach (name_entry, 0, 2, 1, 1);
             grid.attach (name_error_revealer, 0, 3, 1, 1);
