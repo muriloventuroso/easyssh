@@ -23,7 +23,7 @@ A complete, efficient and easy-to-use manager. Create and edit connections, grou
 
 ## Developing and Building
 
-If you want to hack on and build Palette yourself, you'll need the following dependencies:
+If you want to hack on and build EasySSH yourself, you'll need the following dependencies:
 
 * libgee-0.8-dev
 * libgtk-3-dev

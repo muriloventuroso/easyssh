@@ -65,7 +65,7 @@ namespace EasySSH {
             }
             builder.append("\n");
             var cmd = builder.str;
-            term.feed_child(cmd, cmd.length + 1);
+            term.feed_child(cmd.to_utf8 ());
         }
 
         public void on_change_terminal (Vte.Terminal terminal) {
@@ -133,11 +133,13 @@ namespace EasySSH {
         }
 
         private void term_send_password() {
-            term.feed_child(dataHost.password + "\n", dataHost.password.length + 1);
+            var cmd = dataHost.password + "\n";
+            term.feed_child(cmd.to_utf8 ());
         }
 
         private void term_send(string cmd) {
-            term.feed_child(cmd + "\n", cmd.length + 1);
+            var n_cmd = cmd + "\n";
+            term.feed_child(n_cmd.to_utf8 ());
         }
 
         private void remove_tab(Granite.Widgets.Tab tab) {

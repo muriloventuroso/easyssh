@@ -55,7 +55,7 @@ executable(
         dependency('gtk+-3.0'),
         dependency('granite'),
         dependency('json-glib-1.0'),
-        dependency('vte-2.91'),
+        dependency('vte-2.91', version: '>0.52'),
         dependency('gee-0.8'),
         meson.get_compiler('c').find_library('m', required : false)
     ],
