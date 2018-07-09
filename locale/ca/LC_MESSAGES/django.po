@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2018-06-26 21:28+0200\n"
-"PO-Revision-Date: 2018-04-04 06:42+0000\n"
+"PO-Revision-Date: 2018-07-09 13:08+0000\n"
 "Last-Translator: Joan Montané <joan@montane.cat>\n"
 "Language-Team: Catalan <https://hosted.weblate.org/projects/weblate/website/"
 "ca/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.20-dev\n"
+"X-Generator: Weblate 3.1-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -88,28 +88,31 @@ msgstr "Promoció"
 
 #: weblate_web/data.py:79
 msgid "Translation workflow can be customized by using addons."
-msgstr ""
+msgstr "Podeu personalitzar el procés de traducció mitjançant complements."
 
 #: weblate_web/data.py:81
 msgid "Addons"
-msgstr ""
+msgstr "Complements"
 
 #: weblate_web/data.py:86
 msgid ""
 "Automatic translation can be used to bootstrap your translations using "
 "machine translation services or translation memory."
 msgstr ""
+"Podeu fer una traducció automàtica per a iniciar ràpidament les vostres "
+"traduccions fent ús de serveis de traducció mecànica o de la memòria de "
+"traduccions."
 
 #: weblate_web/data.py:89
-#, fuzzy
-#| msgid "Continuous translation"
 msgid "Automatic translation"
-msgstr "Traducció contínua"
+msgstr "Traducció automàtica"
 
 #: weblate_web/data.py:94
 msgid ""
 "Translations can be exported and imported in many widely used file formats."
 msgstr ""
+"Podeu exportar i importar les traduccions en molts formats de fitxer "
+"habituals."
 
 #: weblate_web/data.py:97 weblate_web/templates/features.html:87
 msgid "Export and import"
@@ -117,7 +120,7 @@ msgstr "Exportació i importació"
 
 #: weblate_web/data.py:101
 msgid "You can define access levels for every user."
-msgstr ""
+msgstr "Podeu definir nivells d'accés per a cada usuari."
 
 #: weblate_web/data.py:102 weblate_web/templates/hosting.html:105
 #: weblate_web/templates/hosting.html:311
@@ -396,6 +399,9 @@ msgid ""
 "fund projects you use. You can use credit card, bank transfer or direct "
 "debit to top up the account."
 msgstr ""
+"Liberapay és una plataforma de donatius recurrents on envieu setmanalment "
+"una quantitat per a finançar els projectes que useu. Podeu usar una targeta "
+"bancària, transferència bancària o càrrec bancari que es carregarà al compte."
 
 #: weblate_web/templates/donate.html:50
 msgid "Fund features"
@@ -566,16 +572,12 @@ msgid "File formats"
 msgstr "Formats de fitxer"
 
 #: weblate_web/templates/features.html:48
-#, fuzzy
-#| msgid ""
-#| "Weblate supports all widely used file formats for localization like "
-#| "Gettext, JSON, XLIFF or resource strings."
 msgid ""
 "Weblate supports all widely used file formats for localization, like "
 "gettext, JSON, XLIFF or resource strings."
 msgstr ""
 "El Weblate accepta els formats de fitxer més populars per a personalitzar la "
-"llengua, com Gettext, JSON, XLIFF o cadenes de recursos."
+"llengua, com ara gettext, JSON, XLIFF o cadenes de recursos."
 
 #: weblate_web/templates/features.html:55
 msgid "Branches support"
@@ -748,6 +750,8 @@ msgstr ""
 #: weblate_web/templates/hosting.html:6
 msgid "Use Weblate as a service or get support for on-premises hosting."
 msgstr ""
+"Useu el Weblate com a servei o obteniu assistència per a hostatjar-lo "
+"localment."
 
 #: weblate_web/templates/hosting.html:11
 msgid "Ask for hosting"
@@ -1382,8 +1386,6 @@ msgstr ""
 "Weblate."
 
 #: weblate_web/templates/support.html:55
-#, fuzzy
-#| msgid "This list is moderated, only selected users can post announcements."
 msgid "This list is moderated, only chosen users can post announcements."
 msgstr ""
 "Aquesta llista està moderada, només els usuaris seleccionats poden enviar-hi "
