@@ -1,13 +1,36 @@
-language: generic
+ ---
+
+language: node_js
+
+node_js:
+  - lts/*
+
+sudo: required
 
 services:
- - docker
+  - docker
 
-env:
- - DEPENDENCY_PACKAGES="appstream desktop-file-utils libjson-glib-dev libgranite-dev libvte-2.91-dev libgee-0.8-dev meson valac"
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - libstdc++-5-dev
+      - libvte-2.91-dev
+      - libgee-0.8-dev
+
+cache:
+  directories:
+    - /tmp/liftoff
+
+matrix:
+  include:
+    - env: DIST=loki
+    - env: DIST=juno
 
 install:
- - docker run -v "$PWD":/tmp/build-dir elementary/docker:juno-unstable /bin/sh -c "apt-get update && apt-get -y install $DEPENDENCY_PACKAGES && cd /tmp/build-dir && meson build && cd build && ninja test"
+  - npm install @elementaryos/houston
 
 script:
- - echo BUILDS PASSED
+  - houston ci
+    --distribution $DIST
