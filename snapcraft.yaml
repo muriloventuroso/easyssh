@@ -1,5 +1,5 @@
 name: easyssh
-version: 1.2.0
+version: 1.2.7
 summary: SSH Connection Manager
 description: A complete, efficient and easy-to-use manager. Create and edit connections, groups, customize the terminal, with multiple instances of the same connection.
 
@@ -27,30 +27,31 @@ apps:
 
 
 parts:
-    elementary:
-        plugin: nil
-        override-build: |
-              add-apt-repository -y ppa:elementary-os/stable
-              add-apt-repository -y ppa:elementary-os/os-patches
-              echo "Package: *" > /etc/apt/preferences.d/elementary-stable
-              echo "Pin: release o=LP-PPA-elementary-os-stable" >> /etc/apt/preferences.d/elementary-stable
-              echo "Pin-Priority: 1000" >> /etc/apt/preferences.d/elementary-stable
-              echo "Package: *" > /etc/apt/preferences.d/elementary-patches
-              echo "Pin: release o=LP-PPA-elementary-os-os-patches" >> /etc/apt/preferences.d/elementary-patches
-              echo "Pin-Priority: 1000" >> /etc/apt/preferences.d/elementary-patches
-              apt update
-              apt dist-upgrade -y
-    openssh:
+    granite:
         plugin: cmake
+        source: https://github.com/elementary/granite/archive/0.5.tar.gz
         source-type: tar
-        source: https://cloudflare.cdn.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-7.6p1.tar.gz
+        configflags: [-DCMAKE_BUILD_TYPE=Release, -DCMAKE_INSTALL_PREFIX=/usr, -DCMAKE_INSTALL_LIBDIR=/usr/lib]
+        build-packages:
+            - build-essential
+            - libgee-0.8-dev
+            - libgirepository1.0-dev
+            - libgtk-3-dev
+            - cmake
+            - gobject-introspection
+
+    openssh:
+      plugin: autotools
+      source: https://github.com/mariogrip/openssh-portable.git
+      build-packages:
+        - libssl-dev
     easyssh:
         plugin: meson
         meson-parameters:
           - --prefix=/usr
-        source: https://github.com/muriloventuroso/easyssh.git
-        source-type: git
-        after: [elementary, desktop-gnome-platform, openssh]
+        source: https://github.com/muriloventuroso/easyssh/archive/1.2.7.tar.gz
+        source-type: tar
+        after: [granite, desktop-gtk3, openssh]
         build-packages:
             - build-essential
             - intltool
@@ -63,3 +64,12 @@ parts:
             - gobject-introspection
             - libgee-0.8-2
             - libgtk-3-0
+    valac:
+      plugin: autotools
+      source: http://download.gnome.org/sources/vala/0.38/vala-0.38.8.tar.xz
+      build-packages:
+         - flex    
+         - bison
+         - build-essential
+         - libglib2.0-dev
+         - libgraphviz-dev
