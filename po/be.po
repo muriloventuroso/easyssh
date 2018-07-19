@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.muriloventuroso.easyssh\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-21 13:25-0300\n"
+"POT-Creation-Date: 2018-07-19 17:44-0300\n"
 "PO-Revision-Date: 2018-06-22 21:00+0000\n"
 "Last-Translator: Viktar Vauchkevich <victorenator@gmail.com>\n"
 "Language-Team: Belarusian <https://hosted.weblate.org/projects/easyssh/"
@@ -16,8 +16,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
-"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 3.1-dev\n"
 
 #: src/MainWindow.vala:66
@@ -44,43 +44,39 @@ msgstr "Паказаць у файлавым аглядальніку"
 msgid "Edit"
 msgstr "Рэдагаваць"
 
-#: src/Views/SourceListView.vala:33 src/Views/SourceListView.vala:423
-#: src/Widgets/ConnectionEditor.vala:189 src/Widgets/Connection.vala:58
+#: src/Views/SourceListView.vala:33 src/Views/SourceListView.vala:446
+#: src/Widgets/ConnectionEditor.vala:213 src/Widgets/Connection.vala:58
 msgid "Remove"
 msgstr "Выдаліць"
 
-#: src/Views/SourceListView.vala:421
+#: src/Views/SourceListView.vala:444
 msgid "Remove "
 msgstr "Выдаліць "
 
-#: src/Views/SourceListView.vala:421
+#: src/Views/SourceListView.vala:444
 msgid ""
 "Are you sure you want to remove this connection and all data associated with "
 "it?"
 msgstr ""
 "Вы ўпэўнены, што хочаце выдаліць гэта злучэнне і ўсе даныя, звязаныя з ім?"
 
-#: src/Widgets/TerminalBox.vala:128
-msgid "Could not connect. Please check the connection settings."
-msgstr "Не атрымалася злучыцца. Калі ласка, праверце налады злучэння."
-
-#: src/Widgets/TerminalBox.vala:149
+#: src/Widgets/TerminalBox.vala:152
 msgid "Connection Error. Retry?"
 msgstr "Памылка злучэння. Паўтарыць?"
 
-#: src/Widgets/TerminalBox.vala:151 src/Widgets/TerminalBox.vala:184
+#: src/Widgets/TerminalBox.vala:154 src/Widgets/TerminalBox.vala:187
 msgid "No"
 msgstr "Не"
 
-#: src/Widgets/TerminalBox.vala:154 src/Widgets/TerminalBox.vala:187
+#: src/Widgets/TerminalBox.vala:157 src/Widgets/TerminalBox.vala:190
 msgid "Yes"
 msgstr "Так"
 
-#: src/Widgets/TerminalBox.vala:170
+#: src/Widgets/TerminalBox.vala:173
 msgid "Connection Error."
 msgstr "Памылка злучэння."
 
-#: src/Widgets/TerminalBox.vala:182
+#: src/Widgets/TerminalBox.vala:185
 msgid "Fingerprint"
 msgstr "Адбітак"
 
@@ -88,7 +84,7 @@ msgstr "Адбітак"
 msgid "SSH Connection Manager"
 msgstr "Менеджар SSH-злучэнняў"
 
-#: src/Widgets/Welcome.vala:26 src/Widgets/ConnectionEditor.vala:115
+#: src/Widgets/Welcome.vala:26 src/Widgets/ConnectionEditor.vala:120
 msgid "Add Connection"
 msgstr "Дадаць злучэнне"
 
@@ -104,91 +100,99 @@ msgstr "Стварыць новае злучэнне"
 msgid "Preferences"
 msgstr "Налады"
 
-#: src/Widgets/ConnectionEditor.vala:94
+#: src/Widgets/ConnectionEditor.vala:98
 msgid "Save"
 msgstr "Захаваць"
 
-#: src/Widgets/ConnectionEditor.vala:98
+#: src/Widgets/ConnectionEditor.vala:102
 msgid "Cancel"
 msgstr "Адмяніць"
 
-#: src/Widgets/ConnectionEditor.vala:100 src/Widgets/ConnectionEditor.vala:141
+#: src/Widgets/ConnectionEditor.vala:104 src/Widgets/ConnectionEditor.vala:165
 msgid "Advanced"
 msgstr "Пашыраныя"
 
-#: src/Widgets/ConnectionEditor.vala:117
+#: src/Widgets/ConnectionEditor.vala:122
 msgid "Edit Connection"
 msgstr "Рэдагаваць злучэнне"
 
-#: src/Widgets/ConnectionEditor.vala:121
+#: src/Widgets/ConnectionEditor.vala:126
 msgid "Name:"
 msgstr "Назва:"
 
-#: src/Widgets/ConnectionEditor.vala:124
+#: src/Widgets/ConnectionEditor.vala:129
 msgid "Group:"
 msgstr "Група:"
 
-#: src/Widgets/ConnectionEditor.vala:126
+#: src/Widgets/ConnectionEditor.vala:131
 msgid "Host:"
 msgstr "Вузел:"
 
-#: src/Widgets/ConnectionEditor.vala:128
+#: src/Widgets/ConnectionEditor.vala:133
 msgid "Port:"
 msgstr "Порт:"
 
-#: src/Widgets/ConnectionEditor.vala:130
+#: src/Widgets/ConnectionEditor.vala:135
 msgid "Username:"
 msgstr "Імя карыстальніка:"
 
-#: src/Widgets/ConnectionEditor.vala:132
+#: src/Widgets/ConnectionEditor.vala:137 src/Widgets/ConnectionEditor.vala:152
 msgid "Password:"
 msgstr "Пароль:"
 
-#: src/Widgets/ConnectionEditor.vala:148 src/Widgets/Preferences.vala:88
+#: src/Widgets/ConnectionEditor.vala:142
+msgid "Select Identity File"
+msgstr ""
+
+#: src/Widgets/ConnectionEditor.vala:148
+msgid "Identity File:"
+msgstr ""
+
+#: src/Widgets/ConnectionEditor.vala:172 src/Widgets/Preferences.vala:88
 msgid "Terminal Background Color:"
 msgstr "Колер фону тэрміналу:"
 
-#: src/Widgets/ConnectionEditor.vala:157 src/Widgets/Preferences.vala:91
+#: src/Widgets/ConnectionEditor.vala:181 src/Widgets/Preferences.vala:91
 msgid "Terminal Font:"
 msgstr "Шрыфт тэрмінілу:"
 
-#: src/Widgets/ConnectionEditor.vala:199
+#: src/Widgets/ConnectionEditor.vala:223
 msgid "Forwarded Ports:"
 msgstr "Пракінутыя парты:"
 
-#: src/Widgets/ConnectionEditor.vala:202
+#: src/Widgets/ConnectionEditor.vala:226
 msgid "Add new forwarded port"
 msgstr "Дадаць новы пракінуты порт"
 
-#: src/Widgets/ConnectionEditor.vala:204
+#: src/Widgets/ConnectionEditor.vala:228
 msgid "Source Port:"
 msgstr "Зыходны порт:"
 
-#: src/Widgets/ConnectionEditor.vala:207
+#: src/Widgets/ConnectionEditor.vala:231
 msgid "Destination:"
 msgstr "Прызначэнне:"
 
-#: src/Widgets/ConnectionEditor.vala:212
+#: src/Widgets/ConnectionEditor.vala:236
 msgid "Local"
 msgstr "Лакальны"
 
-#: src/Widgets/ConnectionEditor.vala:215
+#: src/Widgets/ConnectionEditor.vala:239
 msgid "Remote"
 msgstr "Аддалены"
 
-#: src/Widgets/ConnectionEditor.vala:221
+#: src/Widgets/ConnectionEditor.vala:245
 msgid "Add Tunnel"
 msgstr "Дадаць тунэль"
 
-#: src/Widgets/ConnectionEditor.vala:246 src/Widgets/Preferences.vala:102
+#: src/Widgets/ConnectionEditor.vala:270 src/Widgets/Preferences.vala:102
 msgid "Appearance"
 msgstr "Афармленне"
 
-#: src/Widgets/ConnectionEditor.vala:247
+#: src/Widgets/ConnectionEditor.vala:271
 msgid "Tunnels"
 msgstr "Тунэлі"
 
-#: src/Widgets/ConnectionEditor.vala:283
+#: src/Widgets/ConnectionEditor.vala:307
 msgid "Name is already taken"
 msgstr "Назва ўжо выкарыстоўваецца"
 
@@ -223,3 +227,6 @@ msgstr "Закрыць"
 #: src/Widgets/TerminalWidget.vala:31
 msgid "Terminal"
 msgstr "Тэрмінал"
+
+#~ msgid "Could not connect. Please check the connection settings."
+#~ msgstr "Не атрымалася злучыцца. Калі ласка, праверце налады злучэння."

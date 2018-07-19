@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.muriloventuroso.easyssh\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-21 13:25-0300\n"
+"POT-Creation-Date: 2018-07-19 17:44-0300\n"
 "PO-Revision-Date: 2018-06-22 16:11+0000\n"
 "Last-Translator: PaPerseller <2445513240@qq.com>\n"
 "Language-Team: Chinese <https://hosted.weblate.org/projects/easyssh/"
@@ -43,42 +43,38 @@ msgstr "在文件管理器中显示"
 msgid "Edit"
 msgstr "编辑"
 
-#: src/Views/SourceListView.vala:33 src/Views/SourceListView.vala:423
-#: src/Widgets/ConnectionEditor.vala:189 src/Widgets/Connection.vala:58
+#: src/Views/SourceListView.vala:33 src/Views/SourceListView.vala:446
+#: src/Widgets/ConnectionEditor.vala:213 src/Widgets/Connection.vala:58
 msgid "Remove"
 msgstr "移除"
 
-#: src/Views/SourceListView.vala:421
+#: src/Views/SourceListView.vala:444
 msgid "Remove "
 msgstr "移除 "
 
-#: src/Views/SourceListView.vala:421
+#: src/Views/SourceListView.vala:444
 msgid ""
 "Are you sure you want to remove this connection and all data associated with "
 "it?"
 msgstr "您确定要删除此连接以及与其相关的所有数据吗？"
 
-#: src/Widgets/TerminalBox.vala:128
-msgid "Could not connect. Please check the connection settings."
-msgstr "无法连接。请检查连接设置。"
-
-#: src/Widgets/TerminalBox.vala:149
+#: src/Widgets/TerminalBox.vala:152
 msgid "Connection Error. Retry?"
 msgstr "连接错误。重试？"
 
-#: src/Widgets/TerminalBox.vala:151 src/Widgets/TerminalBox.vala:184
+#: src/Widgets/TerminalBox.vala:154 src/Widgets/TerminalBox.vala:187
 msgid "No"
 msgstr "否"
 
-#: src/Widgets/TerminalBox.vala:154 src/Widgets/TerminalBox.vala:187
+#: src/Widgets/TerminalBox.vala:157 src/Widgets/TerminalBox.vala:190
 msgid "Yes"
 msgstr "是"
 
-#: src/Widgets/TerminalBox.vala:170
+#: src/Widgets/TerminalBox.vala:173
 msgid "Connection Error."
 msgstr "连接错误。"
 
-#: src/Widgets/TerminalBox.vala:182
+#: src/Widgets/TerminalBox.vala:185
 msgid "Fingerprint"
 msgstr ""
 
@@ -86,7 +82,7 @@ msgstr ""
 msgid "SSH Connection Manager"
 msgstr ""
 
-#: src/Widgets/Welcome.vala:26 src/Widgets/ConnectionEditor.vala:115
+#: src/Widgets/Welcome.vala:26 src/Widgets/ConnectionEditor.vala:120
 msgid "Add Connection"
 msgstr "添加连接"
 
@@ -102,91 +98,99 @@ msgstr "创建一个新的连接"
 msgid "Preferences"
 msgstr "偏好设置"
 
-#: src/Widgets/ConnectionEditor.vala:94
+#: src/Widgets/ConnectionEditor.vala:98
 msgid "Save"
 msgstr "保存"
 
-#: src/Widgets/ConnectionEditor.vala:98
+#: src/Widgets/ConnectionEditor.vala:102
 msgid "Cancel"
 msgstr "取消"
 
-#: src/Widgets/ConnectionEditor.vala:100 src/Widgets/ConnectionEditor.vala:141
+#: src/Widgets/ConnectionEditor.vala:104 src/Widgets/ConnectionEditor.vala:165
 msgid "Advanced"
 msgstr "高级"
 
-#: src/Widgets/ConnectionEditor.vala:117
+#: src/Widgets/ConnectionEditor.vala:122
 msgid "Edit Connection"
 msgstr "编辑连接"
 
-#: src/Widgets/ConnectionEditor.vala:121
+#: src/Widgets/ConnectionEditor.vala:126
 msgid "Name:"
 msgstr "名称："
 
-#: src/Widgets/ConnectionEditor.vala:124
+#: src/Widgets/ConnectionEditor.vala:129
 msgid "Group:"
 msgstr ""
 
-#: src/Widgets/ConnectionEditor.vala:126
+#: src/Widgets/ConnectionEditor.vala:131
 msgid "Host:"
 msgstr ""
 
-#: src/Widgets/ConnectionEditor.vala:128
+#: src/Widgets/ConnectionEditor.vala:133
 msgid "Port:"
 msgstr "端口："
 
-#: src/Widgets/ConnectionEditor.vala:130
+#: src/Widgets/ConnectionEditor.vala:135
 msgid "Username:"
 msgstr "用户名："
 
-#: src/Widgets/ConnectionEditor.vala:132
+#: src/Widgets/ConnectionEditor.vala:137 src/Widgets/ConnectionEditor.vala:152
 msgid "Password:"
 msgstr "密码："
 
-#: src/Widgets/ConnectionEditor.vala:148 src/Widgets/Preferences.vala:88
+#: src/Widgets/ConnectionEditor.vala:142
+msgid "Select Identity File"
+msgstr ""
+
+#: src/Widgets/ConnectionEditor.vala:148
+msgid "Identity File:"
+msgstr ""
+
+#: src/Widgets/ConnectionEditor.vala:172 src/Widgets/Preferences.vala:88
 msgid "Terminal Background Color:"
 msgstr "终端背景颜色："
 
-#: src/Widgets/ConnectionEditor.vala:157 src/Widgets/Preferences.vala:91
+#: src/Widgets/ConnectionEditor.vala:181 src/Widgets/Preferences.vala:91
 msgid "Terminal Font:"
 msgstr "终端字体："
 
-#: src/Widgets/ConnectionEditor.vala:199
+#: src/Widgets/ConnectionEditor.vala:223
 msgid "Forwarded Ports:"
 msgstr ""
 
-#: src/Widgets/ConnectionEditor.vala:202
+#: src/Widgets/ConnectionEditor.vala:226
 msgid "Add new forwarded port"
 msgstr ""
 
-#: src/Widgets/ConnectionEditor.vala:204
+#: src/Widgets/ConnectionEditor.vala:228
 msgid "Source Port:"
 msgstr ""
 
-#: src/Widgets/ConnectionEditor.vala:207
+#: src/Widgets/ConnectionEditor.vala:231
 msgid "Destination:"
 msgstr ""
 
-#: src/Widgets/ConnectionEditor.vala:212
+#: src/Widgets/ConnectionEditor.vala:236
 msgid "Local"
 msgstr ""
 
-#: src/Widgets/ConnectionEditor.vala:215
+#: src/Widgets/ConnectionEditor.vala:239
 msgid "Remote"
 msgstr "远程"
 
-#: src/Widgets/ConnectionEditor.vala:221
+#: src/Widgets/ConnectionEditor.vala:245
 msgid "Add Tunnel"
 msgstr ""
 
-#: src/Widgets/ConnectionEditor.vala:246 src/Widgets/Preferences.vala:102
+#: src/Widgets/ConnectionEditor.vala:270 src/Widgets/Preferences.vala:102
 msgid "Appearance"
 msgstr ""
 
-#: src/Widgets/ConnectionEditor.vala:247
+#: src/Widgets/ConnectionEditor.vala:271
 msgid "Tunnels"
 msgstr ""
 
-#: src/Widgets/ConnectionEditor.vala:283
+#: src/Widgets/ConnectionEditor.vala:307
 msgid "Name is already taken"
 msgstr "名称已被占用"
 
@@ -221,3 +225,6 @@ msgstr "关闭"
 #: src/Widgets/TerminalWidget.vala:31
 msgid "Terminal"
 msgstr "终端"
+
+#~ msgid "Could not connect. Please check the connection settings."
+#~ msgstr "无法连接。请检查连接设置。"

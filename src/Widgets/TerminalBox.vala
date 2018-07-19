@@ -56,7 +56,13 @@ namespace EasySSH {
 
         public void start_connection() {
             var builder = new StringBuilder ();
-            builder.append("ssh " + dataHost.username + "@" + dataHost.host + " -p " + dataHost.port);
+            builder.append("ssh " + dataHost.username + "@" + dataHost.host);
+            if(dataHost.port != ""){
+                builder.append(" -p " + dataHost.port);
+            }
+            if(dataHost.identity_file != "") {
+                builder.append(" -i " + dataHost.identity_file);
+            }
             string[] lines = dataHost.tunnels.split (",");
             foreach (unowned string str in lines) {
                 if(str != ""){

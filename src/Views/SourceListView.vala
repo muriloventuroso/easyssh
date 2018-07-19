@@ -270,7 +270,12 @@ namespace EasySSH {
                         host.host = item.get_string_member("host");
                         host.port = item.get_string_member("port");
                         host.username = item.get_string_member("username");
-                        host.password = item.get_string_member("password");
+                        if(item.has_member("password")){
+                            host.password = item.get_string_member("password");
+                        }
+                        if(item.has_member("identity_file")){
+                            host.identity_file = item.get_string_member("identity_file");
+                        }
                         host.group = item.get_string_member("group");
                         if(item.has_member("color")){
                             host.color = item.get_string_member("color");
@@ -386,6 +391,7 @@ namespace EasySSH {
                     s_host.port = hosts[i].port;
                     s_host.username = hosts[i].username;
                     s_host.password = hosts[i].password;
+                    s_host.identity_file = hosts[i].identity_file;
                     s_host.notebook = null;
                     s_host.color = hosts[i].color;
                     s_host.font = hosts[i].font;

@@ -7,10 +7,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.muriloventuroso.easyssh\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-21 13:25-0300\n"
+"POT-Creation-Date: 2018-07-19 17:44-0300\n"
 "PO-Revision-Date: 2018-07-05 02:42+0000\n"
-"Last-Translator: Kristoffer Grundström <kristoffer.grundstrom1983@gmail.com>"
-"\n"
+"Last-Translator: Kristoffer Grundström <kristoffer.grundstrom1983@gmail."
+"com>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/easyssh/"
 "translations/sv/>\n"
 "Language: sv\n"
@@ -44,16 +44,16 @@ msgstr "Visa i filbläddraren"
 msgid "Edit"
 msgstr "Redigera"
 
-#: src/Views/SourceListView.vala:33 src/Views/SourceListView.vala:423
-#: src/Widgets/ConnectionEditor.vala:189 src/Widgets/Connection.vala:58
+#: src/Views/SourceListView.vala:33 src/Views/SourceListView.vala:446
+#: src/Widgets/ConnectionEditor.vala:213 src/Widgets/Connection.vala:58
 msgid "Remove"
 msgstr "Ta bort"
 
-#: src/Views/SourceListView.vala:421
+#: src/Views/SourceListView.vala:444
 msgid "Remove "
 msgstr "Ta bort "
 
-#: src/Views/SourceListView.vala:421
+#: src/Views/SourceListView.vala:444
 msgid ""
 "Are you sure you want to remove this connection and all data associated with "
 "it?"
@@ -61,28 +61,23 @@ msgstr ""
 "Är du säker på att du vill ta bort den här anslutningen och all data som "
 "associeras med den?"
 
-#: src/Widgets/TerminalBox.vala:128
-msgid "Could not connect. Please check the connection settings."
-msgstr ""
-"Kunde inte ansluta. Vänligen kontrollera inställningarna för anslutningen."
-
-#: src/Widgets/TerminalBox.vala:149
+#: src/Widgets/TerminalBox.vala:152
 msgid "Connection Error. Retry?"
 msgstr "Anslutningsfel. Försöka igen?"
 
-#: src/Widgets/TerminalBox.vala:151 src/Widgets/TerminalBox.vala:184
+#: src/Widgets/TerminalBox.vala:154 src/Widgets/TerminalBox.vala:187
 msgid "No"
 msgstr "Nej"
 
-#: src/Widgets/TerminalBox.vala:154 src/Widgets/TerminalBox.vala:187
+#: src/Widgets/TerminalBox.vala:157 src/Widgets/TerminalBox.vala:190
 msgid "Yes"
 msgstr "Ja"
 
-#: src/Widgets/TerminalBox.vala:170
+#: src/Widgets/TerminalBox.vala:173
 msgid "Connection Error."
 msgstr "Anslutningsfel."
 
-#: src/Widgets/TerminalBox.vala:182
+#: src/Widgets/TerminalBox.vala:185
 msgid "Fingerprint"
 msgstr "Fingeravtryck."
 
@@ -90,7 +85,7 @@ msgstr "Fingeravtryck."
 msgid "SSH Connection Manager"
 msgstr ""
 
-#: src/Widgets/Welcome.vala:26 src/Widgets/ConnectionEditor.vala:115
+#: src/Widgets/Welcome.vala:26 src/Widgets/ConnectionEditor.vala:120
 msgid "Add Connection"
 msgstr "Lägg till anslutning"
 
@@ -106,91 +101,99 @@ msgstr "Skapa en ny anslutning"
 msgid "Preferences"
 msgstr "Egenskaper"
 
-#: src/Widgets/ConnectionEditor.vala:94
+#: src/Widgets/ConnectionEditor.vala:98
 msgid "Save"
 msgstr "Spara"
 
-#: src/Widgets/ConnectionEditor.vala:98
+#: src/Widgets/ConnectionEditor.vala:102
 msgid "Cancel"
 msgstr "Avbryt"
 
-#: src/Widgets/ConnectionEditor.vala:100 src/Widgets/ConnectionEditor.vala:141
+#: src/Widgets/ConnectionEditor.vala:104 src/Widgets/ConnectionEditor.vala:165
 msgid "Advanced"
 msgstr "Avancerat"
 
-#: src/Widgets/ConnectionEditor.vala:117
+#: src/Widgets/ConnectionEditor.vala:122
 msgid "Edit Connection"
 msgstr "Redigera anslutning"
 
-#: src/Widgets/ConnectionEditor.vala:121
+#: src/Widgets/ConnectionEditor.vala:126
 msgid "Name:"
 msgstr "Namn:"
 
-#: src/Widgets/ConnectionEditor.vala:124
+#: src/Widgets/ConnectionEditor.vala:129
 msgid "Group:"
 msgstr "Grupp:"
 
-#: src/Widgets/ConnectionEditor.vala:126
+#: src/Widgets/ConnectionEditor.vala:131
 msgid "Host:"
 msgstr "Värd:"
 
-#: src/Widgets/ConnectionEditor.vala:128
+#: src/Widgets/ConnectionEditor.vala:133
 msgid "Port:"
 msgstr "Port:"
 
-#: src/Widgets/ConnectionEditor.vala:130
+#: src/Widgets/ConnectionEditor.vala:135
 msgid "Username:"
 msgstr "Användarnamn:"
 
-#: src/Widgets/ConnectionEditor.vala:132
+#: src/Widgets/ConnectionEditor.vala:137 src/Widgets/ConnectionEditor.vala:152
 msgid "Password:"
 msgstr "Lösenord:"
 
-#: src/Widgets/ConnectionEditor.vala:148 src/Widgets/Preferences.vala:88
+#: src/Widgets/ConnectionEditor.vala:142
+msgid "Select Identity File"
+msgstr ""
+
+#: src/Widgets/ConnectionEditor.vala:148
+msgid "Identity File:"
+msgstr ""
+
+#: src/Widgets/ConnectionEditor.vala:172 src/Widgets/Preferences.vala:88
 msgid "Terminal Background Color:"
 msgstr "Bakgrundsfärgen för terminalen:"
 
-#: src/Widgets/ConnectionEditor.vala:157 src/Widgets/Preferences.vala:91
+#: src/Widgets/ConnectionEditor.vala:181 src/Widgets/Preferences.vala:91
 msgid "Terminal Font:"
 msgstr "Typsnittet för terminalen:"
 
-#: src/Widgets/ConnectionEditor.vala:199
+#: src/Widgets/ConnectionEditor.vala:223
 msgid "Forwarded Ports:"
 msgstr "Vidarebefordrade portar:"
 
-#: src/Widgets/ConnectionEditor.vala:202
+#: src/Widgets/ConnectionEditor.vala:226
 msgid "Add new forwarded port"
 msgstr "Lägg till en ny vidarebefordrad port"
 
-#: src/Widgets/ConnectionEditor.vala:204
+#: src/Widgets/ConnectionEditor.vala:228
 msgid "Source Port:"
 msgstr "Källa för porten:"
 
-#: src/Widgets/ConnectionEditor.vala:207
+#: src/Widgets/ConnectionEditor.vala:231
 msgid "Destination:"
 msgstr "Destination:"
 
-#: src/Widgets/ConnectionEditor.vala:212
+#: src/Widgets/ConnectionEditor.vala:236
 msgid "Local"
 msgstr "Lokal"
 
-#: src/Widgets/ConnectionEditor.vala:215
+#: src/Widgets/ConnectionEditor.vala:239
 msgid "Remote"
 msgstr "Fjärrstyrd"
 
-#: src/Widgets/ConnectionEditor.vala:221
+#: src/Widgets/ConnectionEditor.vala:245
 msgid "Add Tunnel"
 msgstr "Lägg till tunnel"
 
-#: src/Widgets/ConnectionEditor.vala:246 src/Widgets/Preferences.vala:102
+#: src/Widgets/ConnectionEditor.vala:270 src/Widgets/Preferences.vala:102
 msgid "Appearance"
 msgstr "Utseende"
 
-#: src/Widgets/ConnectionEditor.vala:247
+#: src/Widgets/ConnectionEditor.vala:271
 msgid "Tunnels"
 msgstr "Tunnlar"
 
-#: src/Widgets/ConnectionEditor.vala:283
+#: src/Widgets/ConnectionEditor.vala:307
 msgid "Name is already taken"
 msgstr "Namnet är redan taget"
 
@@ -225,3 +228,7 @@ msgstr "Stäng"
 #: src/Widgets/TerminalWidget.vala:31
 msgid "Terminal"
 msgstr "Terminal"
+
+#~ msgid "Could not connect. Please check the connection settings."
+#~ msgstr ""
+#~ "Kunde inte ansluta. Vänligen kontrollera inställningarna för anslutningen."

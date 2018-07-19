@@ -37,6 +37,8 @@ namespace EasySSH {
         private Gtk.Label label;
         private Gtk.ListBox list_tunnels;
         private Gee.ArrayList<string> array_tunnels;
+        private Gtk.CheckButton change_password;
+        private Gtk.FileChooserButton identityfile_chooser;
         public SourceListView sourcelistview { get; construct; }
         public Host data_host { get; construct; }
 
@@ -132,8 +134,27 @@ namespace EasySSH {
             grid.attach (port_entry, 0, 9, 1, 1);
             grid.attach (new Granite.HeaderLabel (_("Username:")), 0, 10, 1, 1);
             grid.attach (username_entry, 0, 11, 1, 1);
-            grid.attach (new Granite.HeaderLabel (_("Password:")), 0, 12, 1, 1);
+            var label_password = new Granite.HeaderLabel (_("Password:"));
+
+            grid.attach (label_password, 0, 12, 1, 1);
             grid.attach (password_entry, 0, 13, 1, 1);
+            change_password = new Gtk.CheckButton.with_label ("Change Password to Identity File");
+            identityfile_chooser = new Gtk.FileChooserButton (_("Select Identity File"), Gtk.FileChooserAction.OPEN);
+            grid.attach (identityfile_chooser, 0, 13, 1, 1);
+            identityfile_chooser.hide();
+            change_password.toggled.connect (() => {
+                if (change_password.active) {
+                    password_entry.hide();
+                    label_password.label = _("Identity File:");
+                    identityfile_chooser.show();
+                } else {
+                    password_entry.show();
+                    label_password.label = _("Password:");
+                    identityfile_chooser.hide();
+                }
+
+            });
+            grid.attach (change_password, 0, 14, 1, 1);
 
             var revealer = new Gtk.Revealer();
 
@@ -255,10 +276,10 @@ namespace EasySSH {
             box_advanced.pack_start(main_stackswitcher, false, false, 0);
             box_advanced.pack_start(main_stack, false, false, 0);
             revealer.add(box_advanced);
-            grid.attach (revealer, 0, 14, 1, 1);
+            grid.attach (revealer, 0, 15, 1, 1);
             advanced_button.bind_property ("active", revealer, "reveal-child");
 
-            grid.attach (buttons, 0, 15, 1, 1);
+            grid.attach (buttons, 0, 16, 1, 1);
             update_save_button();
             show_all ();
         }
@@ -300,7 +321,13 @@ namespace EasySSH {
             host.host = host_entry.text;
             host.port = port_entry.text;
             host.username = username_entry.text;
-            host.password = password_entry.text;
+            if(change_password.active){
+                host.identity_file = identityfile_chooser.get_uri();
+                host.password = "";
+            }else{
+                host.identity_file = "";
+                host.password = password_entry.text;
+            }
             host.color = terminal_background_color_button.rgba.to_string();
             host.font = terminal_font_button.get_font();
             var count = 0;

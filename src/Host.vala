@@ -34,6 +34,7 @@ namespace EasySSH {
         public string color {get; set;}
         public string font {get; set;}
         public string tunnels {get; set;}
+        public string identity_file {get; set;}
         public Granite.Widgets.DynamicNotebook notebook {get; set;}
         public Granite.Widgets.SourceList.Item? item {get; set;}
 
