@@ -336,7 +336,7 @@ namespace EasySSH {
             e_host.notebook = host.notebook;
             if(host.group == e_host.group) {
                 group.update_host(host.name, e_host);
-                source_list.selected.name = host.name;
+                source_list.selected.name = e_host.name;
             } else {
                 group.category.remove(host.item);
                 group.remove_host(host.name);
@@ -349,10 +349,22 @@ namespace EasySSH {
             }
 
             var tab = e_host.notebook.get_tab_by_index(0);
-            e_host.notebook.remove_tab(tab);
+            if(Type.from_instance(tab.page).name() == "EasySSHConnection") {
+                e_host.notebook.remove_tab(tab);
+                host.item = source_list.selected;
+                source_list.selected = null;
+                box.add(welcome);
+            } else {
+                for(int i = 0; i < e_host.notebook.n_tabs; i++) {
+                    var l_tab = e_host.notebook.get_tab_by_index(i);
+                    if(Type.from_instance(tab.page).name() == "EasySSHTerminalBox") {
+                        l_tab.label = e_host.name + " - " + (i + 1).to_string();
+                    }
+                }
+            }
+            
             save_hosts();
-            host.item = source_list.selected;
-            source_list.selected = null;
+            
             return host;
 
         }

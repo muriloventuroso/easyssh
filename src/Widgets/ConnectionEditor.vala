@@ -43,7 +43,9 @@ namespace EasySSH {
         public ConnectionEditor (SourceListView sourcelistview, Host? data_host) {
             Object (
                 sourcelistview: sourcelistview,
-                data_host: data_host
+                data_host: data_host,
+                margin_start: 20,
+                margin_end: 20
             );
         }
 
@@ -52,8 +54,7 @@ namespace EasySSH {
             var grid = new Gtk.Grid ();
             grid.column_spacing = 22;
             grid.orientation = Gtk.Orientation.VERTICAL;
-            grid.margin_start = 22;
-            grid.margin_end = 22;
+
             grid.get_style_context ().add_class("grid-connection-editor");
             add(grid);
             name_entry = new ValidatedEntry ();
@@ -318,15 +319,19 @@ namespace EasySSH {
             } else {
                 host = sourcelistview.edit_host(host);
             }
-            sourcelistview.source_list.selected = host.item;
+            var item = sourcelistview.source_list.selected;
+            sourcelistview.source_list.selected = null;
+            sourcelistview.source_list.selected = item;
             destroy();
         }
 
         private void exit() {
             var item = sourcelistview.source_list.selected;
             if(item == null) {
+                print("null");
                 sourcelistview.restore();
             } else {
+                print("not null");
                 sourcelistview.source_list.selected = null;
                 sourcelistview.source_list.selected = item;
             }

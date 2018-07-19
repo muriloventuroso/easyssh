@@ -122,11 +122,6 @@ namespace EasySSH {
                         term_send_password();
                         send_password = true;
                     }
-                }else if(ret.length > 0 && ret[ret.length - 1] == "$ "){
-                    var tab = notebook.get_tab_by_widget(this);
-                    if(open_dialog == false) {
-                        alert_error(_("Could not connect. Please check the connection settings."), tab);
-                    }
                 }
 
             }
