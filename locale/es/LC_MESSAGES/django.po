@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2018-06-26 21:28+0200\n"
-"PO-Revision-Date: 2018-06-17 08:30+0000\n"
-"Last-Translator: advocatux <advocatux@airpost.net>\n"
+"PO-Revision-Date: 2018-07-19 15:59+0000\n"
+"Last-Translator: Franco <francobenedetti.59+github1@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/weblate/website/"
 "es/>\n"
 "Language: es\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.1-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -88,6 +88,8 @@ msgstr "Promoción"
 #: weblate_web/data.py:79
 msgid "Translation workflow can be customized by using addons."
 msgstr ""
+"El flujo de trabajo de traducción puede personalizarse mediante el uso de "
+"complementos."
 
 #: weblate_web/data.py:81
 msgid "Addons"
@@ -98,17 +100,19 @@ msgid ""
 "Automatic translation can be used to bootstrap your translations using "
 "machine translation services or translation memory."
 msgstr ""
+"La traducción automática puede utilizarse para iniciar sus traducciones "
+"utilizando servicios de traducción automática o memoria de traducción."
 
 #: weblate_web/data.py:89
-#, fuzzy
-#| msgid "Continuous translation"
 msgid "Automatic translation"
-msgstr "Traducción continua"
+msgstr "Traducción automática"
 
 #: weblate_web/data.py:94
 msgid ""
 "Translations can be exported and imported in many widely used file formats."
 msgstr ""
+"Las traducciones pueden exportarse e importarse en muchos formatos de "
+"archivo muy utilizados."
 
 #: weblate_web/data.py:97 weblate_web/templates/features.html:87
 msgid "Export and import"
@@ -116,7 +120,7 @@ msgstr "Exportación e importación"
 
 #: weblate_web/data.py:101
 msgid "You can define access levels for every user."
-msgstr ""
+msgstr "Puede definir niveles de acceso para cada usuario."
 
 #: weblate_web/data.py:102 weblate_web/templates/hosting.html:105
 #: weblate_web/templates/hosting.html:311
@@ -565,16 +569,12 @@ msgid "File formats"
 msgstr "Formatos de archivo"
 
 #: weblate_web/templates/features.html:48
-#, fuzzy
-#| msgid ""
-#| "Weblate supports all widely used file formats for localization like "
-#| "Gettext, JSON, XLIFF or resource strings."
 msgid ""
 "Weblate supports all widely used file formats for localization, like "
 "gettext, JSON, XLIFF or resource strings."
 msgstr ""
-"Weblate es compatible con todos los formatos de archivos ampliamente "
-"utilizados para localización como Gettext, JSON, XLIFF o cadenas de recursos."
+"Weblate es compatible con todos los formatos de archivo de localización más "
+"utilizados, como gettext, JSON, XLIFF o cadenas de recursos."
 
 #: weblate_web/templates/features.html:55
 msgid "Branches support"
@@ -746,6 +746,7 @@ msgstr ""
 #: weblate_web/templates/hosting.html:6
 msgid "Use Weblate as a service or get support for on-premises hosting."
 msgstr ""
+"Utilice Weblate como un servicio u obtenga soporte para alojamiento local."
 
 #: weblate_web/templates/hosting.html:11
 msgid "Ask for hosting"
@@ -1379,11 +1380,9 @@ msgstr ""
 "alojamiento de Weblate."
 
 #: weblate_web/templates/support.html:55
-#, fuzzy
-#| msgid "This list is moderated, only selected users can post announcements."
 msgid "This list is moderated, only chosen users can post announcements."
 msgstr ""
-"Esta lista es moderada, sólo usuarios seleccionados pueden publicar anuncios."
+"Esta lista es moderada, sólo los usuarios elegidos pueden publicar anuncios."
 
 #: weblate_web/templates/support.html:68
 msgid "Stack Overflow"
