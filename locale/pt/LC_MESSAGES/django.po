@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2018-06-26 21:28+0200\n"
-"PO-Revision-Date: 2018-02-23 09:15+0000\n"
-"Last-Translator: Paulo Caldeira <paucal@gmail.com>\n"
+"PO-Revision-Date: 2018-07-21 11:41+0000\n"
+"Last-Translator: Pedro Albuquerque <palbuquerque73@gmail.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/weblate/"
 "website/pt/>\n"
 "Language: pt\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2.20-dev\n"
+"X-Generator: Weblate 3.1-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -88,7 +88,7 @@ msgstr "Promoção"
 
 #: weblate_web/data.py:79
 msgid "Translation workflow can be customized by using addons."
-msgstr ""
+msgstr "O processo de tradução pode ser personalizado utilizando extensões."
 
 #: weblate_web/data.py:81
 msgid "Addons"
@@ -99,17 +99,19 @@ msgid ""
 "Automatic translation can be used to bootstrap your translations using "
 "machine translation services or translation memory."
 msgstr ""
+"A tradução automática pode ser utilizada para unificar as suas traduções com "
+"tradutores automáticos ou memórias de tradução."
 
 #: weblate_web/data.py:89
-#, fuzzy
-#| msgid "Continuous translation"
 msgid "Automatic translation"
-msgstr "Tradução contínua"
+msgstr "Tradução automática"
 
 #: weblate_web/data.py:94
 msgid ""
 "Translations can be exported and imported in many widely used file formats."
 msgstr ""
+"As traduções podem ser importadas ou exportadas em múltiplos formatos "
+"largamente utilizados."
 
 #: weblate_web/data.py:97 weblate_web/templates/features.html:87
 msgid "Export and import"
@@ -117,7 +119,7 @@ msgstr "Exportação e importação"
 
 #: weblate_web/data.py:101
 msgid "You can define access levels for every user."
-msgstr ""
+msgstr "Pode definir níveis de acesso para cada utilizador."
 
 #: weblate_web/data.py:102 weblate_web/templates/hosting.html:105
 #: weblate_web/templates/hosting.html:311
@@ -393,6 +395,9 @@ msgid ""
 "fund projects you use. You can use credit card, bank transfer or direct "
 "debit to top up the account."
 msgstr ""
+"O Liberapay é uma plataforma de donativos recorrentes para onde envia um "
+"valor semanal como fundo para projectos que utiliza. Pode fazê-lo com cartão "
+"de crédito, transferência bancária ou cartão de débito."
 
 #: weblate_web/templates/donate.html:50
 msgid "Fund features"
@@ -564,16 +569,12 @@ msgid "File formats"
 msgstr "Formatos de ficheiro"
 
 #: weblate_web/templates/features.html:48
-#, fuzzy
-#| msgid ""
-#| "Weblate supports all widely used file formats for localization like "
-#| "Gettext, JSON, XLIFF or resource strings."
 msgid ""
 "Weblate supports all widely used file formats for localization, like "
 "gettext, JSON, XLIFF or resource strings."
 msgstr ""
 "O Weblate suporta os formatos mais utilizados para localização, tais como "
-"Gettext, JSON, XLIFF ou cadeias de recursos."
+"gettext, JSON, XLIFF ou cadeias de recursos."
 
 #: weblate_web/templates/features.html:55
 msgid "Branches support"
@@ -743,7 +744,7 @@ msgstr ""
 
 #: weblate_web/templates/hosting.html:6
 msgid "Use Weblate as a service or get support for on-premises hosting."
-msgstr ""
+msgstr "Use o Weblate como serviço ou obtenha apoio para alojamento local."
 
 #: weblate_web/templates/hosting.html:11
 msgid "Ask for hosting"
@@ -873,16 +874,12 @@ msgid "Customizable"
 msgstr "Personalizável"
 
 #: weblate_web/templates/hosting.html:132
-#, fuzzy
-#| msgid "Translation status"
 msgid "Translation addons"
-msgstr "Estado da tradução"
+msgstr "Extensões da tradução"
 
 #: weblate_web/templates/hosting.html:150
-#, fuzzy
-#| msgid "Translation workflow"
 msgid "Translation memory"
-msgstr "Fluxo de trabalho da tradução"
+msgstr "Memória de tradução"
 
 #: weblate_web/templates/hosting.html:159
 msgid "Priority email support"
@@ -908,6 +905,7 @@ msgstr "Domínio próprio"
 msgid ""
 "Additional charge %(price)s EUR/year, only available with yearly billing"
 msgstr ""
+"Taxa adicional de %(price)s EUR/ano, só disponível para facturação anual"
 
 #: weblate_web/templates/hosting.html:179
 msgid "Monthly by PayPal"
@@ -1377,8 +1375,6 @@ msgstr ""
 "Lista de correio de baixo tráfego com anúncios sobre os serviços do Weblate."
 
 #: weblate_web/templates/support.html:55
-#, fuzzy
-#| msgid "This list is moderated, only selected users can post announcements."
 msgid "This list is moderated, only chosen users can post announcements."
 msgstr ""
 "É uma lista moderada, só utilizadores seleccionados podem publicar anúncios."
