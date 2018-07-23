@@ -18,12 +18,14 @@ apps:
     command: com.github.muriloventuroso.easyssh
     desktop: usr/share/applications/com.github.muriloventuroso.easyssh.desktop
     plugs: [network, home, x11, unity7, gsettings]
+    slots: [ dbus-easyssh ]
 
 parts:
     granite:
         plugin: cmake
         source: https://github.com/elementary/granite/archive/0.5.tar.gz
         source-type: tar
+        after: [valac]
         configflags: [-DCMAKE_BUILD_TYPE=Release, -DCMAKE_INSTALL_PREFIX=/usr, -DCMAKE_INSTALL_LIBDIR=/usr/lib]
         build-packages:
             - build-essential
