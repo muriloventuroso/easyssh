@@ -15,7 +15,5 @@ done
 for file in $SCREENSHOTS*.png ; do
     base=${file##$SCREENSHOTS}
     thumb=$THUMBNAILS$base
-    if [ ! -f $thumb ] ; then
-        convert "$file" -resize 300x300^ -gravity center -crop 300x300+0+0 +repage "$thumb"
-    fi
+    convert "$file" -resize 300x300^ -gravity center -crop 300x300+0+0 +repage "$thumb"
 done
