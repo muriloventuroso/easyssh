@@ -247,7 +247,8 @@ namespace EasySSH {
         public void load_hosts() {
             try {
                 string res = "";
-                var file = File.new_for_path (EasySSH.settings.hosts_folder + "/hosts.json");
+                string hosts_folder = EasySSH.settings.hosts_folder.replace ("%20", " ");
+                var file = File.new_for_path (hosts_folder + "/hosts.json");
 
                 if (!file.query_exists ()) {
                     file.make_directory();
@@ -408,7 +409,7 @@ namespace EasySSH {
             gen.set_root(root);
             string data = gen.to_data(null);
 
-            var file = File.new_for_path (EasySSH.settings.hosts_folder + "/hosts.json");
+            var file = File.new_for_path (EasySSH.settings.hosts_folder.replace ("%20", " ") + "/hosts.json");
 
             {
                 if (file.query_exists ()) {

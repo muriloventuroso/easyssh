@@ -43,9 +43,9 @@ namespace EasySSH {
             settings = Settings.get_default ();
             var hosts_filechooser = new Gtk.FileChooserButton (_("Select Hosts Configuration Folder…"), Gtk.FileChooserAction.SELECT_FOLDER);
             hosts_filechooser.hexpand = true;
-            hosts_filechooser.set_current_folder (settings.hosts_folder);
+            hosts_filechooser.set_current_folder (settings.hosts_folder.replace ("%20", " "));
             hosts_filechooser.file_set.connect (() => {
-                settings.hosts_folder = hosts_filechooser.get_uri().split(":")[1];
+                settings.hosts_folder = hosts_filechooser.get_uri().split(":")[1].replace ("%20", " ");
             });
             var color = Gdk.RGBA();
             color.parse(settings.terminal_background_color);
