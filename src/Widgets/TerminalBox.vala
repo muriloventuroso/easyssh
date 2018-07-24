@@ -60,7 +60,7 @@ namespace EasySSH {
             if(dataHost.port != ""){
                 builder.append(" -p " + dataHost.port);
             }
-            if(dataHost.identity_file != "") {
+            if(dataHost.identity_file != "" && dataHost.identity_file != null) {
                 builder.append(" -i " + dataHost.identity_file);
             }
             string[] lines = dataHost.tunnels.split (",");
