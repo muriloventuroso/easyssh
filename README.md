@@ -30,6 +30,7 @@ If you want to hack on and build EasySSH yourself, you'll need the following dep
 * libgranite-dev
 * libvte-2.91-dev
 * libjson-glib-dev
+* libunity-dev
 * meson
 * valac
 
