@@ -88,6 +88,7 @@ namespace EasySSH {
                 }
                 n.current = n_tab;
                 window.current_terminal = term.term;
+                term.set_selected();
                 term.term.grab_focus();
             });
 
@@ -123,7 +124,8 @@ namespace EasySSH {
                         var box = (TerminalBox)notebook.current.page;
                         window.current_terminal = (TerminalWidget)box.term;
                         window.current_terminal.grab_focus();
-                        box.tab.icon = null;
+                        box.set_selected();
+                        box.remove_badge ();
                     }
                 }
                 var all_read = true;
@@ -159,6 +161,7 @@ namespace EasySSH {
                 n.insert_tab (n_tab, next_tab);
                 n.current = n_tab;
                 window.current_terminal = term.term;
+                term.set_selected();
                 term.term.grab_focus();
             }
         }
@@ -203,6 +206,7 @@ namespace EasySSH {
                 n.insert_tab (n_tab, next_tab );
                 n.current = n_tab;
                 window.current_terminal = term.term;
+                term.set_selected();
             });
             n.tab_removed.connect(() => {
                 if(n.n_tabs == 0) {
@@ -219,14 +223,18 @@ namespace EasySSH {
 
         private void on_tab_moved (Granite.Widgets.Tab tab, int x, int y) {
             var t = get_term_widget (tab);
+            var box = (TerminalBox)tab.page;
             window.current_terminal = t;
-            tab.icon = null;
+            box.set_selected();
+            box.remove_badge ();
         }
         private void on_tab_switched (Granite.Widgets.Tab? old_tab, Granite.Widgets.Tab new_tab) {
             if(Type.from_instance(new_tab.page).name() == "EasySSHTerminalBox") {
                 var t = get_term_widget (new_tab);
                 window.current_terminal = t;
                 var box = (TerminalBox)new_tab.page;
+                box.set_selected();
+                box.remove_badge ();
                 box.dataHost.item.icon = null;
                 new_tab.icon = null;
                 var all_read = true;

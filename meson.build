@@ -57,6 +57,7 @@ executable(
         dependency('json-glib-1.0'),
         dependency('vte-2.91', version: '>0.52'),
         dependency('gee-0.8'),
+        dependency('unity'),
         meson.get_compiler('c').find_library('m', required : false)
     ],
     install: true

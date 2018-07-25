@@ -29,6 +29,7 @@ namespace EasySSH {
         public TerminalWidget term;
         public MainWindow window { get; construct; }
         public Granite.Widgets.Tab tab {get; set;}
+        private bool unread_changes;
 
         public TerminalBox (Host host, Granite.Widgets.DynamicNotebook notebook, MainWindow window) {
             Object (
@@ -40,6 +41,7 @@ namespace EasySSH {
 
         construct {
             open_dialog = false;
+            unread_changes = false;
             var scroller = new Gtk.ScrolledWindow(null, null);
             term = new TerminalWidget(window, dataHost);
             term.set_scrollback_lines(-1);
@@ -52,6 +54,10 @@ namespace EasySSH {
             add(term);
 
             set_vadjustment(term.get_vadjustment());
+        }
+
+        public void set_selected (){
+            unread_changes = false;
         }
 
         public void start_connection() {
@@ -74,14 +80,34 @@ namespace EasySSH {
             term.feed_child(cmd.to_utf8 ());
         }
 
+        public void add_badge (){
+            var entry = Unity.LauncherEntry.get_for_desktop_id ("com.github.muriloventuroso.easyssh.desktop");
+            entry.count_visible = true;
+            entry.count = entry.count + 1;
+            unread_changes = true;
+            dataHost.item.icon = new GLib.ThemedIcon ("mail-mark-important");
+            tab.icon = new GLib.ThemedIcon ("mail-mark-important");
+        }
+        public void remove_badge (){
+            var entry = Unity.LauncherEntry.get_for_desktop_id ("com.github.muriloventuroso.easyssh.desktop");
+            if(entry.count_visible == true){
+                entry.count = entry.count - 1;
+                if(entry.count == 0){
+                    entry.count_visible = false;
+                }
+            }
+            unread_changes = false;
+            dataHost.item.icon = new GLib.ThemedIcon ("mail-mark-important");
+            tab.icon = null;
+        }
+
         public void on_change_terminal (Vte.Terminal terminal) {
             string? res = terminal.get_text(null, null);
             if(res != null) {
                 string[] lines = res.split("\n");
                 string[] ret = {};
-                if(term != window.current_terminal) {
-                    dataHost.item.icon = new GLib.ThemedIcon ("mail-mark-important");
-                    tab.icon = new GLib.ThemedIcon ("mail-mark-important");
+                if(term != window.current_terminal && unread_changes == false) {
+                    add_badge ();
                 }
                 foreach (unowned string str in lines) {
                     if(str != "") {
