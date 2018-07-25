@@ -4,7 +4,7 @@ gnome = import('gnome')
 i18n = import('i18n')
 
 add_global_arguments('-DGETTEXT_PACKAGE="' + meson.project_name() + '"', language:'c')
-
+add_project_arguments('--define=UNITY_SUPPORT=1', language : 'vala')
 # Add locale support
 conf = configuration_data()
 conf.set_quoted('GETTEXT_PACKAGE', meson.project_name())
