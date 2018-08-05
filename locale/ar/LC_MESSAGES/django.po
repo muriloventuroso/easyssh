@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2018-06-26 21:28+0200\n"
-"PO-Revision-Date: 2018-07-11 11:05+0000\n"
+"PO-Revision-Date: 2018-08-06 09:34+0000\n"
 "Last-Translator: ButterflyOfFire <ButterflyOfFire@protonmail.com>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/weblate/website/"
 "ar/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 3.1-dev\n"
+"X-Generator: Weblate 3.1.1\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -47,7 +47,7 @@ msgstr "صفحة المشروع تعطي معلومات مفصّلة عن حال
 
 #: weblate_web/data.py:50
 msgid "Project overview"
-msgstr "معلومات عامة عن المشروع"
+msgstr "نظرة شاملة عن المشروع"
 
 #: weblate_web/data.py:55 weblate_web/templates/features.html:72
 msgid ""
@@ -127,13 +127,11 @@ msgstr "الصفحة غير موجودة"
 #: weblate_web/templates/404.html:8 weblate_web/templates/500.html:8
 #: weblate_web/templates/index.html:7
 msgid "Weblate is a free web-based translation management system."
-msgstr ""
-"Weblate عبارة عن نظام لإدارة الترجمة ، وهو متاح مجاناً للجميع، ويعمل عبر "
-"الإنترنت من خلال متصفحات الإنترنت."
+msgstr "Weblate نظام حر لإدارة الترجمة عبر الويب."
 
 #: weblate_web/templates/404.html:15
 msgid "The page you are looking for was not found."
-msgstr "لم يمكن إيجاد الصفحة التي تبحث عنها."
+msgstr "لا وجود للصفحة التي تبحث عنها."
 
 #: weblate_web/templates/500.html:4
 msgid "Server error"
@@ -144,7 +142,8 @@ msgid ""
 "The server had serious problems while serving your request. We've just sent "
 "our trained monkeys to fix the issue."
 msgstr ""
-"واجه الخادم خللاً أثناء تلبية طلبك، لقد أُبلغ المختصين بالخلل للعمل على إصلاحه."
+"واجه الخادم خللاً أثناء تلبية طلبك، لقد أُبلغ المختصون بالخلل للعمل على "
+"إصلاحه."
 
 #: weblate_web/templates/base-features.html:6
 #: weblate_web/templates/hosting.html:42
@@ -158,7 +157,7 @@ msgstr "عملية الترجمة الآلية يمكنها متابعة تطو�
 
 #: weblate_web/templates/base-features.html:22
 msgid "Attribution"
-msgstr "ارتباط"
+msgstr "النسب"
 
 #: weblate_web/templates/base-features.html:23
 msgid ""
@@ -172,7 +171,7 @@ msgstr "باقات الاستضافة"
 
 #: weblate_web/templates/base-features.html:31
 msgid "Hosting plans to use Weblate as a service starting at 19 EUR."
-msgstr "أسعار باقات الاستضافة على Weblate تبدأ من 19 يورو."
+msgstr "أسعار باقات الاستضافة على Weblate كخدمة تبدأ من 19 يورو."
 
 #: weblate_web/templates/base-features.html:38
 msgid "Ready for cloud"
@@ -184,7 +183,7 @@ msgstr "توفر لك خدمة Weblate طرح مشاريعك مباشرة على
 
 #: weblate_web/templates/base-features.html:46
 msgid "Free software"
-msgstr "برنامج مجاني"
+msgstr "برنامج حُرّ"
 
 #: weblate_web/templates/base-features.html:47
 msgid "Weblate is free software, you can run your own instance of it."
@@ -209,7 +208,7 @@ msgstr "المدوّنة"
 
 #: weblate_web/templates/base.html:79
 msgid "Try"
-msgstr "تجربة"
+msgstr "تجريب"
 
 #: weblate_web/templates/base.html:80
 msgid "Features"
@@ -217,11 +216,11 @@ msgstr "المميزات"
 
 #: weblate_web/templates/base.html:81
 msgid "Docs"
-msgstr "الوثائق"
+msgstr "المستندات"
 
 #: weblate_web/templates/base.html:82 weblate_web/templates/download.html:17
 msgid "Download"
-msgstr "تحميل"
+msgstr "تنزيل"
 
 #: weblate_web/templates/base.html:83
 msgid "Hosting"
@@ -260,7 +259,7 @@ msgid ""
 "Weblate is <a href=\"%(github_url)s\">free software</a> and welcomes <a href="
 "\"%(donate_url)s\">donations</a>."
 msgstr ""
-"Weblate  منظومة برمجيّة  <a href=\"%(github_url)s\">حرة</a>، و جميع  <a href="
+"Weblate منظومة برمجيّة  <a href=\"%(github_url)s\">حرة</a>، و جميع  <a href="
 "\"%(donate_url)s\">التبرّعات</a> مُرحب بها."
 
 #: weblate_web/templates/contribute.html:3
@@ -275,7 +274,7 @@ msgstr "يطوّر Weblate مجتمعٌ مفتوح ومستعد لاستقبال
 #: weblate_web/templates/contribute.html:10
 #: weblate_web/templates/download.html:12
 msgid "View sources"
-msgstr "شاهد المصادر"
+msgstr "الإطلاع على المصادر"
 
 #: weblate_web/templates/contribute.html:11
 #: weblate_web/templates/contribute.html:38
@@ -339,7 +338,7 @@ msgid "Use our hosting"
 msgstr "استخدم استضافتنا"
 
 #: weblate_web/templates/donate.html:22
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "Host your commercial translations on <a href=\"%(hosting_url)s\">Hosted "
 "Weblate</a> and you will be supporting Weblate development automatically."
