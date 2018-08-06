@@ -117,7 +117,7 @@ namespace EasySSH {
                 }
                 if (ret.length > 2 && "closed." in ret[ret.length - 2] && "$" in ret[ret.length - 1]) {
                     var tab = notebook.get_tab_by_widget(this);
-                    notebook.remove_tab(tab);
+                    remove_tab (tab);
                 }else if (ret.length > 2 && "Broken pipe" in ret[ret.length - 2] && "$" in ret[ret.length - 1]) {
                     var tab = notebook.get_tab_by_widget(this);
                     if(open_dialog == false) {
@@ -170,6 +170,9 @@ namespace EasySSH {
         }
 
         private void remove_tab(Granite.Widgets.Tab tab) {
+            if(tab.icon != null){
+                remove_badge ();
+            }
             notebook.remove_tab(tab);
         }
 
