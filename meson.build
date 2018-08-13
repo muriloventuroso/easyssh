@@ -33,6 +33,21 @@ c_args = [
 
 subdir('data')
 subdir('po')
+dependencies = [
+    dependency('gee-0.8'),
+    dependency('glib-2.0'),
+    dependency('gtk+-3.0'),
+    dependency('granite'),
+    dependency('json-glib-1.0'),
+    dependency('vte-2.91', version: '>0.52'),
+    dependency('gee-0.8'),
+    meson.get_compiler('c').find_library('m', required : false)
+]
+if get_option('libunity')
+    unity_dep = dependency('unity')
+    add_project_arguments('--define=UNITY_SUPPORT=1', language : 'vala')
+    dependencies += unity_dep
+endif
 executable(
     meson.project_name(),
     code_resources,
@@ -49,17 +64,7 @@ executable(
     'src/Widgets/ErrorRevealer.vala',
     'src/Widgets/Preferences.vala',
     'src/Widgets/TerminalWidget.vala',
-    dependencies: [
-        dependency('gee-0.8'),
-        dependency('glib-2.0'),
-        dependency('gtk+-3.0'),
-        dependency('granite'),
-        dependency('json-glib-1.0'),
-        dependency('vte-2.91', version: '>0.52'),
-        dependency('gee-0.8'),
-        dependency('unity'),
-        meson.get_compiler('c').find_library('m', required : false)
-    ],
+    dependencies: dependencies,
     install: true
 )
 
