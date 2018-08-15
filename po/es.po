@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.muriloventuroso.easyssh\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-19 17:44-0300\n"
+"POT-Creation-Date: 2018-08-15 13:52-0300\n"
 "PO-Revision-Date: 2018-08-05 15:43-0300\n"
 "Last-Translator: Alonso Lara <alonso.lara.plana@gmail.com>\n"
 "Language-Team: Spanish\n"
@@ -37,20 +37,20 @@ msgstr "Seleccionar todo"
 msgid "Show in File Browser"
 msgstr "Mostrar en el navegador de archivos"
 
-#: src/Views/SourceListView.vala:31 src/Widgets/Connection.vala:55
+#: src/Views/SourceListView.vala:31 src/Widgets/Connection.vala:60
 msgid "Edit"
 msgstr "Editar"
 
-#: src/Views/SourceListView.vala:33 src/Views/SourceListView.vala:446
-#: src/Widgets/ConnectionEditor.vala:213 src/Widgets/Connection.vala:58
+#: src/Views/SourceListView.vala:33 src/Views/SourceListView.vala:617
+#: src/Widgets/ConnectionEditor.vala:318 src/Widgets/Connection.vala:63
 msgid "Remove"
 msgstr "Eliminar"
 
-#: src/Views/SourceListView.vala:444
+#: src/Views/SourceListView.vala:615
 msgid "Remove "
 msgstr "Eliminar "
 
-#: src/Views/SourceListView.vala:444
+#: src/Views/SourceListView.vala:615
 msgid ""
 "Are you sure you want to remove this connection and all data associated with "
 "it?"
@@ -58,23 +58,23 @@ msgstr ""
 "¿Está seguro de querer eliminar esta conexión y todos los datos asociados a "
 "la misma?"
 
-#: src/Widgets/TerminalBox.vala:152
+#: src/Widgets/TerminalBox.vala:191
 msgid "Connection Error. Retry?"
 msgstr "Error en la conexión. ¿Reintentar?"
 
-#: src/Widgets/TerminalBox.vala:154 src/Widgets/TerminalBox.vala:187
+#: src/Widgets/TerminalBox.vala:193 src/Widgets/TerminalBox.vala:226
 msgid "No"
 msgstr "No"
 
-#: src/Widgets/TerminalBox.vala:157 src/Widgets/TerminalBox.vala:190
+#: src/Widgets/TerminalBox.vala:196 src/Widgets/TerminalBox.vala:229
 msgid "Yes"
 msgstr "Sí"
 
-#: src/Widgets/TerminalBox.vala:173
+#: src/Widgets/TerminalBox.vala:212
 msgid "Connection Error."
 msgstr "Error en la conexión."
 
-#: src/Widgets/TerminalBox.vala:185
+#: src/Widgets/TerminalBox.vala:224
 msgid "Fingerprint"
 msgstr "Huella dactilar"
 
@@ -82,7 +82,7 @@ msgstr "Huella dactilar"
 msgid "SSH Connection Manager"
 msgstr "Administrador de conexiones SSH"
 
-#: src/Widgets/Welcome.vala:26 src/Widgets/ConnectionEditor.vala:120
+#: src/Widgets/Welcome.vala:26 src/Widgets/ConnectionEditor.vala:128
 msgid "Add Connection"
 msgstr "Añadir conexión"
 
@@ -94,107 +94,115 @@ msgstr "Comience añadiendo una conxión SSH a EasySSH"
 msgid "Create a new connection"
 msgstr "Crear una nueva conexión"
 
-#: src/Widgets/HeaderBar.vala:42 src/Widgets/Preferences.vala:35
+#: src/Widgets/HeaderBar.vala:39 src/Widgets/Preferences.vala:35
 msgid "Preferences"
 msgstr "Preferencias"
 
-#: src/Widgets/ConnectionEditor.vala:98
+#: src/Widgets/HeaderBar.vala:48
+msgid "Menu"
+msgstr ""
+
+#: src/Widgets/ConnectionEditor.vala:106
 msgid "Save"
 msgstr "Guardar"
 
-#: src/Widgets/ConnectionEditor.vala:102
+#: src/Widgets/ConnectionEditor.vala:110
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: src/Widgets/ConnectionEditor.vala:104 src/Widgets/ConnectionEditor.vala:165
+#: src/Widgets/ConnectionEditor.vala:112 src/Widgets/ConnectionEditor.vala:270
 msgid "Advanced"
 msgstr "Avanzado"
 
-#: src/Widgets/ConnectionEditor.vala:122
+#: src/Widgets/ConnectionEditor.vala:130
 msgid "Edit Connection"
 msgstr "Editar conexión"
 
-#: src/Widgets/ConnectionEditor.vala:126
+#: src/Widgets/ConnectionEditor.vala:134
 msgid "Name:"
 msgstr "Nombre:"
 
-#: src/Widgets/ConnectionEditor.vala:129
+#: src/Widgets/ConnectionEditor.vala:137
 msgid "Group:"
 msgstr "Grupo:"
 
-#: src/Widgets/ConnectionEditor.vala:131
+#: src/Widgets/ConnectionEditor.vala:139
 msgid "Host:"
 msgstr "Servidor:"
 
-#: src/Widgets/ConnectionEditor.vala:133
+#: src/Widgets/ConnectionEditor.vala:141
 msgid "Port:"
 msgstr "Puerto:"
 
-#: src/Widgets/ConnectionEditor.vala:135
+#: src/Widgets/ConnectionEditor.vala:143
 msgid "Username:"
 msgstr "Usuario:"
 
-#: src/Widgets/ConnectionEditor.vala:137 src/Widgets/ConnectionEditor.vala:152
+#: src/Widgets/ConnectionEditor.vala:145 src/Widgets/ConnectionEditor.vala:160
 msgid "Password:"
 msgstr "Contraseña:"
 
-#: src/Widgets/ConnectionEditor.vala:142
+#: src/Widgets/ConnectionEditor.vala:150
 msgid "Select Identity File"
 msgstr "Seleccione archivo de identidad"
 
-#: src/Widgets/ConnectionEditor.vala:148
+#: src/Widgets/ConnectionEditor.vala:156
 msgid "Identity File:"
 msgstr "Archivo de identidad:"
 
-#: src/Widgets/ConnectionEditor.vala:172 src/Widgets/Preferences.vala:88
+#: src/Widgets/ConnectionEditor.vala:169
+msgid "SSH Config:"
+msgstr ""
+
+#: src/Widgets/ConnectionEditor.vala:277 src/Widgets/Preferences.vala:99
 msgid "Terminal Background Color:"
 msgstr "Color de fondo del terminal:"
 
-#: src/Widgets/ConnectionEditor.vala:181 src/Widgets/Preferences.vala:91
+#: src/Widgets/ConnectionEditor.vala:286 src/Widgets/Preferences.vala:102
 msgid "Terminal Font:"
 msgstr "Tipo de letra del terminal:"
 
-#: src/Widgets/ConnectionEditor.vala:223
+#: src/Widgets/ConnectionEditor.vala:328
 msgid "Forwarded Ports:"
 msgstr "Puertos reenviados:"
 
-#: src/Widgets/ConnectionEditor.vala:226
+#: src/Widgets/ConnectionEditor.vala:331
 msgid "Add new forwarded port"
 msgstr "Añadir un puerto a reenviar"
 
-#: src/Widgets/ConnectionEditor.vala:228
+#: src/Widgets/ConnectionEditor.vala:333
 msgid "Source Port:"
 msgstr "Puerto de origen:"
 
-#: src/Widgets/ConnectionEditor.vala:231
+#: src/Widgets/ConnectionEditor.vala:336
 msgid "Destination:"
 msgstr "Destino:"
 
-#: src/Widgets/ConnectionEditor.vala:236
+#: src/Widgets/ConnectionEditor.vala:341
 msgid "Local"
 msgstr "Local"
 
-#: src/Widgets/ConnectionEditor.vala:239
+#: src/Widgets/ConnectionEditor.vala:344
 msgid "Remote"
 msgstr "Remoto"
 
-#: src/Widgets/ConnectionEditor.vala:245
+#: src/Widgets/ConnectionEditor.vala:350
 msgid "Add Tunnel"
 msgstr "Añadir tunel"
 
-#: src/Widgets/ConnectionEditor.vala:270 src/Widgets/Preferences.vala:102
+#: src/Widgets/ConnectionEditor.vala:375 src/Widgets/Preferences.vala:113
 msgid "Appearance"
 msgstr "Apariencia"
 
-#: src/Widgets/ConnectionEditor.vala:271
+#: src/Widgets/ConnectionEditor.vala:376
 msgid "Tunnels"
 msgstr "Túneles"
 
-#: src/Widgets/ConnectionEditor.vala:307
+#: src/Widgets/ConnectionEditor.vala:412
 msgid "Name is already taken"
 msgstr "El nombre ya está en uso"
 
-#: src/Widgets/Connection.vala:52
+#: src/Widgets/Connection.vala:57
 msgid "Connect"
 msgstr "Conectar"
 
@@ -202,23 +210,27 @@ msgstr "Conectar"
 msgid "Select Hosts Configuration Folder…"
 msgstr "Seleccione la carpeta de configuración de servidores…"
 
-#: src/Widgets/Preferences.vala:80
+#: src/Widgets/Preferences.vala:88
 msgid "Hosts Configuration Folder:"
 msgstr "Carpeta de configuración de servidores:"
 
-#: src/Widgets/Preferences.vala:83
+#: src/Widgets/Preferences.vala:91
 msgid "Restore Opened Hosts:"
 msgstr "Restaurar servidores abiertos:"
 
 #: src/Widgets/Preferences.vala:94
+msgid "Sync SSH Config:"
+msgstr ""
+
+#: src/Widgets/Preferences.vala:105
 msgid "Use Dark Theme:"
 msgstr "Usar tema oscuro:"
 
-#: src/Widgets/Preferences.vala:101
+#: src/Widgets/Preferences.vala:112
 msgid "General"
 msgstr "General"
 
-#: src/Widgets/Preferences.vala:114
+#: src/Widgets/Preferences.vala:125
 msgid "Close"
 msgstr "Cerrar"
 

@@ -42,8 +42,13 @@ namespace EasySSH {
 
             title = new Gtk.Label(host.name);
             title.get_style_context ().add_class("h2");
-
-            description = new Gtk.Label("ssh " + host.username + "@" + host.host + " -p " + host.port);
+            var text_description = "";
+            if(host.ssh_config != ""){
+                text_description = "ssh " + host.name;
+            } else {
+                text_description = "ssh " + host.username + "@" + host.host + " -p " + host.port;
+            }
+            description = new Gtk.Label(text_description);
             description.get_style_context ().add_class("h4");
 
             pack_start(title, false, false, 0);

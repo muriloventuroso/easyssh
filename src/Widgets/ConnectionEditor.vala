@@ -29,6 +29,7 @@ namespace EasySSH {
         private Gtk.Entry port_entry;
         private Gtk.Entry username_entry;
         private Gtk.Entry password_entry;
+        private Gtk.TextView ssh_config_entry;
         private Gtk.ColorButton terminal_background_color_button;
         private Gtk.FontButton terminal_font_button;
         private Gtk.Button save_button;
@@ -70,6 +71,13 @@ namespace EasySSH {
             username_entry = new Gtk.Entry ();
             password_entry = new Gtk.Entry ();
             password_entry.visibility = false;
+            var ssh_config_scroll = new Gtk.ScrolledWindow (null, null);
+            ssh_config_scroll.set_vexpand (true);
+            ssh_config_scroll.set_hexpand (true);
+            ssh_config_entry = new Gtk.TextView ();
+            ssh_config_entry.left_margin = 10;
+            ssh_config_entry.top_margin = 10;
+            ssh_config_scroll.add (ssh_config_entry);
 
             var color = Gdk.RGBA ();
             if(data_host != null) {
@@ -155,7 +163,104 @@ namespace EasySSH {
 
             });
             grid.attach (change_password, 0, 14, 1, 1);
+            if(settings.sync_ssh_config == true){
+                ssh_config_entry.set_vexpand(true);
+                ssh_config_entry.buffer.text = sourcelistview.get_host_ssh_config (data_host.name);
+                grid.attach (new Granite.HeaderLabel (_("SSH Config:")), 0, 15, 2, 1);
+                grid.attach (ssh_config_scroll, 0, 16, 1, 1);
 
+                host_entry.key_release_event.connect (() => {
+                    var text_config = ssh_config_entry.buffer.text.split("\n");
+                    var new_config = "";
+                    var change = false;
+                    foreach (string l in text_config) {
+                        if(l == ""){
+                            continue;
+                        }
+                        var new_line = l + "\n";
+                        if(l.length >= 8){
+                            if(l.substring(0, 8) == "HostName"){
+                                new_line = "HostName " + host_entry.get_text() + "\n";
+                                change = true;
+                            }
+                        }
+                        new_config += new_line;
+                    }
+                    if(change == false){
+                        new_config += "HostName " + host_entry.get_text() + "\n";
+                    }
+                    ssh_config_entry.buffer.text = new_config;
+                });
+
+                username_entry.key_release_event.connect (() => {
+                    var text_config = ssh_config_entry.buffer.text.split("\n");
+                    var new_config = "";
+                    var change = false;
+                    foreach (string l in text_config) {
+                        if(l == ""){
+                            continue;
+                        }
+                        var new_line = l + "\n";
+                        if(l.length >= 4){
+                            if(l.substring(0, 4) == "User"){
+                                new_line = "User " + username_entry.get_text() + "\n";
+                                change = true;
+                            }
+                        }
+                        new_config += new_line;
+                    }
+                    if(change == false){
+                        new_config += "User " + username_entry.get_text() + "\n";
+                    }
+                    ssh_config_entry.buffer.text = new_config;
+                });
+
+                port_entry.key_release_event.connect (() => {
+                    var text_config = ssh_config_entry.buffer.text.split("\n");
+                    var new_config = "";
+                    var change = false;
+                    foreach (string l in text_config) {
+                        if(l == ""){
+                            continue;
+                        }
+                        var new_line = l + "\n";
+                        if(l.length >= 4){
+                            if(l.substring(0, 4) == "Port"){
+                                new_line = "Port " + port_entry.get_text() + "\n";
+                                change = true;
+                            }
+                        }
+                        new_config += new_line;
+                    }
+                    if(change == false){
+                        new_config += "Port " + port_entry.get_text() + "\n";
+                    }
+                    ssh_config_entry.buffer.text = new_config;
+                });
+
+                identityfile_chooser.file_set.connect (() => {
+                    var text_config = ssh_config_entry.buffer.text.split("\n");
+                    var new_config = "";
+                    var change = false;
+                    foreach (string l in text_config) {
+                        if(l == ""){
+                            continue;
+                        }
+                        var new_line = l + "\n";
+                        if(l.length >= 12){
+                            if(l.substring(0, 12) == "IdentityFile"){
+                                new_line = "IdentityFile " + identityfile_chooser.get_uri() + "\n";
+                                change = true;
+                            }
+                        }
+                        new_config += new_line;
+                    }
+                    if(change == false){
+                        new_config += "IdentityFile " + identityfile_chooser.get_uri() + "\n";
+                    }
+                    ssh_config_entry.buffer.text = new_config;
+                });
+            }
             var revealer = new Gtk.Revealer();
 
             var box_advanced = new Gtk.Box(Gtk.Orientation.VERTICAL, 0);
@@ -276,10 +381,10 @@ namespace EasySSH {
             box_advanced.pack_start(main_stackswitcher, false, false, 0);
             box_advanced.pack_start(main_stack, false, false, 0);
             revealer.add(box_advanced);
-            grid.attach (revealer, 0, 15, 1, 1);
+            grid.attach (revealer, 0, 17, 1, 1);
             advanced_button.bind_property ("active", revealer, "reveal-child");
 
-            grid.attach (buttons, 0, 16, 1, 1);
+            grid.attach (buttons, 0, 18, 1, 1);
             update_save_button();
             show_all ();
         }
@@ -316,7 +421,7 @@ namespace EasySSH {
 
         private void save_and_exit() {
             var host = new Host();
-            host.name = name_entry.text;
+            host.name = name_entry.text.replace(" ", "-");
             host.group = group_entry.text;
             host.host = host_entry.text;
             host.port = port_entry.text;
@@ -330,6 +435,9 @@ namespace EasySSH {
             }
             host.color = terminal_background_color_button.rgba.to_string();
             host.font = terminal_font_button.get_font();
+            if(settings.sync_ssh_config){
+                host.ssh_config = ssh_config_entry.buffer.text;
+            }
             var count = 0;
             var tunnels = "";
             list_tunnels.@foreach (() => {

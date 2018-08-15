@@ -103,8 +103,10 @@ namespace EasySSH {
                     settings.panel_size = paned.get_position();
                 }
             });
-
             load_hosts();
+            if(settings.sync_ssh_config == true){
+                load_ssh_config ();
+            }
 
             source_list.item_selected.connect ((item) => {
                 if(item == null) {
@@ -276,14 +278,23 @@ namespace EasySSH {
                         var item = hostnode.get_object ();
                         var host = new Host();
                         host.name = item.get_string_member("name");
-                        host.host = item.get_string_member("host");
-                        host.port = item.get_string_member("port");
-                        host.username = item.get_string_member("username");
+                        if(item.has_member("host")){
+                            host.host = item.get_string_member("host");
+                        }
+                        if(item.has_member("port")){
+                            host.port = item.get_string_member("port");
+                        }
+                        if(item.has_member("username")){
+                            host.username = item.get_string_member("username");
+                        }
+
+                        host.ssh_config = "";
+
                         if(item.has_member("password")){
                             host.password = item.get_string_member("password");
                         }
-                        if(item.has_member("identity_file")){
-                            host.identity_file = item.get_string_member("identity_file");
+                        if(item.has_member("identity-file")){
+                            host.identity_file = item.get_string_member("identity-file");
                         }
                         host.group = item.get_string_member("group");
                         if(item.has_member("color")){
@@ -367,7 +378,8 @@ namespace EasySSH {
                 e_host.notebook.remove_tab(tab);
                 host.item = source_list.selected;
                 source_list.selected = null;
-                box.add(welcome);
+                clean_box ();
+                box.add (welcome);
             } else {
                 for(int i = 0; i < e_host.notebook.n_tabs; i++) {
                     var l_tab = e_host.notebook.get_tab_by_index(i);
@@ -376,9 +388,9 @@ namespace EasySSH {
                     }
                 }
             }
-            
+
             save_hosts();
-            
+
             return host;
 
         }
@@ -386,6 +398,7 @@ namespace EasySSH {
         public void save_hosts() {
             Json.Array array_hosts = new Json.Array();
             var groups = hostmanager.get_groups();
+            var data_ssh_config = "";
             for(int a = 0; a < groups.length; a++) {
                 var hosts = groups[a].get_hosts();
                 var length_hosts = groups[a].get_length();
@@ -408,6 +421,27 @@ namespace EasySSH {
 
                     Json.Node root = Json.gobject_serialize(s_host);
                     array_hosts.add_element(root);
+
+                    if(settings.sync_ssh_config){
+                        data_ssh_config += "Host " + hosts[i].name + "\n    ";
+                        if(hosts[i].ssh_config != ""){
+                            data_ssh_config += hosts[i].ssh_config.replace("\n", "\n    ");
+                        }else{
+                            if(hosts[i].host != ""){
+                                data_ssh_config += "HostName " + hosts[i].host + "\n";
+                            }
+                            if(hosts[i].username != ""){
+                                data_ssh_config += "    User " + hosts[i].username + "\n";
+                            }
+                            if(hosts[i].port != ""){
+                                data_ssh_config += "    Port " + hosts[i].port + "\n";
+                            }
+                            if(hosts[i].identity_file != ""){
+                                data_ssh_config += "    IdentityFile " + hosts[i].identity_file + "\n";
+                            }
+                        }
+                        data_ssh_config += "\n";
+                    }
                 }
             }
 
@@ -429,6 +463,134 @@ namespace EasySSH {
 
                 dos.put_string (data);
             }
+
+            if(settings.sync_ssh_config){
+                var file_ssh = File.new_for_path (Environment.get_home_dir () + "/.ssh/config");
+                {
+                    if (file_ssh.query_exists ()) {
+                        file_ssh.delete ();
+                    } else {
+                        file_ssh.make_directory();
+                    }
+                    var dos_ssh = new DataOutputStream (file_ssh.create (FileCreateFlags.REPLACE_DESTINATION));
+                    dos_ssh.put_string (data_ssh_config);
+                }
+            }
+        }
+
+        public void load_ssh_config() {
+
+            var file = FileStream.open(Environment.get_home_dir () + "/.ssh/config", "r");
+            assert (file != null);
+
+            string line = file.read_line();
+            while (line != null){
+                var next_line = true;
+                if(line.length >= 4 && line.substring(0, 4) == "Host"){
+
+                    var name_host = line.split(" ")[1];
+                    var host = hostmanager.get_host_by_name(name_host);
+                    if(host == null){
+                        var n_host = new Host();
+                        var result = "";
+                        while (line != null) {
+                            line = file.read_line();
+                            if(line.substring(0, 4) != "Host"){
+                                var l = line.strip();
+                                if(l != ""){
+                                    result += l + "\n";
+                                }
+                                if(l.contains ("=")){
+                                    l = l.replace("=", "");
+                                }
+                                if(l.contains (" ")){
+                                    var k = l.split(" ")[0];
+                                    var v = l.split(" ")[1];
+                                    if(k == "HostName"){
+                                        n_host.host = v;
+                                    }else if (k == "User") {
+                                        n_host.username = v;
+                                    }else if(k == "Port"){
+                                        n_host.port = v;
+                                    }else if(k == "IdentityFile"){
+                                        n_host.identity_file = v;
+                                    }
+                                }
+                            }else{
+                                next_line = false;
+                                break;
+                            }
+                        }
+                        n_host.name = name_host;
+                        n_host.ssh_config = result;
+                        n_host.group = "SSHConfig";
+                        add_host(n_host);
+                    }else{
+
+                        var result = "";
+                        while (line != null) {
+                            line = file.read_line();
+                            if(line.substring(0, 4) != "Host"){
+                                var l = line.strip();
+                                if(l != ""){
+                                    result += l.strip() + "\n";
+                                }
+                                if(l.contains ("=")){
+                                    l = l.replace("=", "");
+                                }
+                                if(l.contains (" ")){
+                                    var k = l.split(" ")[0];
+                                    var v = l.split(" ")[1];
+                                    if(k == "HostName"){
+                                        host.host = v;
+                                    }else if (k == "User") {
+                                        host.username = v;
+                                    }else if(k == "Port"){
+                                        host.port = v;
+                                    }else if(k == "IdentityFile"){
+                                        host.identity_file = v;
+                                    }
+                                }
+                            }else{
+                                next_line = false;
+                                break;
+                            }
+                        }
+                        host.ssh_config = result;
+                        hostmanager.update_host (name_host, host);
+                    }
+                }
+                if(next_line){
+                    line = file.read_line();
+                }
+            }
+        }
+
+        public string get_host_ssh_config (string name) {
+            var file = FileStream.open(Environment.get_home_dir () + "/.ssh/config", "r");
+            assert (file != null);
+            string line = file.read_line();
+            var result = "";
+            while (line != null){
+                if(line.length >= 4 && line.substring(0, 4) == "Host"){
+                    var name_host = line.split(" ")[1];
+                    if(name_host == name){
+                        while (line != null) {
+                            line = file.read_line();
+                            if(line.substring(0, 4) != "Host"){
+                                var l = line.strip();
+                                if(l != ""){
+                                    result += l + "\n";
+                                }
+                            }else{
+                                break;
+                            }
+                        }
+                    }
+                }
+                line = file.read_line();
+            }
+            return result;
         }
 
         public void new_conn() {

@@ -62,20 +62,26 @@ namespace EasySSH {
 
         public void start_connection() {
             var builder = new StringBuilder ();
-            builder.append("ssh " + dataHost.username + "@" + dataHost.host);
-            if(dataHost.port != ""){
-                builder.append(" -p " + dataHost.port);
-            }
-            if(dataHost.identity_file != "" && dataHost.identity_file != null) {
-                builder.append(" -i " + dataHost.identity_file);
-            }
-            string[] lines = dataHost.tunnels.split (",");
-            foreach (unowned string str in lines) {
-                if(str != ""){
-                    builder.append(" " + str);
+            if(dataHost.ssh_config != ""){
+                builder.append("ssh " + dataHost.username + "@" + dataHost.host);
+                if(dataHost.port != ""){
+                    builder.append(" -p " + dataHost.port);
                 }
+                if(dataHost.identity_file != "" && dataHost.identity_file != null) {
+                    builder.append(" -i " + dataHost.identity_file);
+                }
+                string[] lines = dataHost.tunnels.split (",");
+                foreach (unowned string str in lines) {
+                    if(str != ""){
+                        builder.append(" " + str);
+                    }
+                }
+                builder.append("\n");
+            } else {
+                builder.append("ssh ");
+                builder.append(dataHost.name);
+                builder.append("\n");
             }
-            builder.append("\n");
             var cmd = builder.str;
             term.feed_child(cmd.to_utf8 ());
         }

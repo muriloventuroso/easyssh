@@ -68,6 +68,14 @@ namespace EasySSH {
                 settings.restore_hosts = restore_hosts_switch.active;
             });
 
+            var sync_ssh_switch = new Gtk.Switch();
+            sync_ssh_switch.halign = Gtk.Align.START;
+            sync_ssh_switch.valign = Gtk.Align.CENTER;
+            sync_ssh_switch.set_active(settings.sync_ssh_config);
+            sync_ssh_switch.notify["active"].connect (() => {
+                settings.sync_ssh_config = sync_ssh_switch.active;
+            });
+
             var use_dark_theme = new Gtk.Switch ();
             use_dark_theme.halign = Gtk.Align.START;
             use_dark_theme.valign = Gtk.Align.CENTER;
@@ -82,6 +90,9 @@ namespace EasySSH {
 
             general_grid.attach (new Granite.HeaderLabel (_("Restore Opened Hosts:")), 0, 1, 1, 1);
             general_grid.attach (restore_hosts_switch, 1, 1, 1, 1);
+
+            general_grid.attach (new Granite.HeaderLabel (_("Sync SSH Config:")), 0, 2, 1, 1);
+            general_grid.attach (sync_ssh_switch, 1, 2, 1, 1);
 
             var appearance_grid = new Gtk.Grid ();
 

@@ -35,6 +35,7 @@ namespace EasySSH {
         public string font {get; set;}
         public string tunnels {get; set;}
         public string identity_file {get; set;}
+        public string ssh_config {get; set;}
         public Granite.Widgets.DynamicNotebook notebook {get; set;}
         public Granite.Widgets.SourceList.Item? item {get; set;}
 
@@ -75,7 +76,6 @@ namespace EasySSH {
                 if(host != null){
                     i += 1;
                 }
-                
             }
             return i;
         }
@@ -141,6 +141,18 @@ namespace EasySSH {
 
         construct {
             groups = new Group[0];
+        }
+
+
+
+        public void update_host(string host_name, Host host) {
+            for(int i = 0; i < groups.length; i++) {
+                var n_host = groups[i].get_host_by_name(host_name);
+                if(n_host != null) {
+                    var n_group = get_group_by_name (n_host.group);
+                    n_group.update_host (host_name, host);
+                }
+            }
         }
 
         public void add_group(Group group) {

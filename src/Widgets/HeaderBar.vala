@@ -30,16 +30,23 @@ namespace EasySSH {
                 );
             }
         construct {
-
-            Gtk.ToolButton new_conn = new Gtk.ToolButton (new Gtk.Image.from_icon_name ("document-new", Gtk.IconSize.MENU), null);
+            get_style_context ().add_class ("default-decoration");
+            Gtk.ToolButton new_conn = new Gtk.ToolButton (new Gtk.Image.from_icon_name ("document-new-symbolic", Gtk.IconSize.SMALL_TOOLBAR), null);
 
             new_conn.action_name = MainWindow.ACTION_PREFIX + MainWindow.ACTION_NEW_CONN;
             new_conn.tooltip_text = _("Create a new connection");
 
-            Gtk.ToolButton settings_button = new Gtk.ToolButton (new Gtk.Image.from_icon_name ("open-menu", Gtk.IconSize.MENU), null);
+            var preferences_menuitem = new Gtk.MenuItem.with_label (_("Preferences"));
+            preferences_menuitem.action_name = MainWindow.ACTION_PREFIX + MainWindow.ACTION_PREFERENCES;
+            var menu = new Gtk.Menu ();
+            menu.append (preferences_menuitem);
+            menu.show_all ();
 
-            settings_button.action_name = MainWindow.ACTION_PREFIX + MainWindow.ACTION_PREFERENCES;
-            settings_button.tooltip_text = _("Preferences");
+            Gtk.MenuButton settings_button = new Gtk.MenuButton ();
+            settings_button.image = new Gtk.Image.from_icon_name ("open-menu-symbolic", Gtk.IconSize.SMALL_TOOLBAR);
+            settings_button.popup = menu;
+            settings_button.tooltip_text = _("Menu");
+            settings_button.valign = Gtk.Align.CENTER;
 
             pack_start(new_conn);
             pack_end(settings_button);

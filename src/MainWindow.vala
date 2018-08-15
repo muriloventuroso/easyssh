@@ -140,6 +140,12 @@ namespace EasySSH {
                 return false;
             });
             get_default_filemanager ();
+
+            settings.notify["sync-ssh-config"].connect (
+                () => {
+                    sourcelist.load_ssh_config ();
+                    sourcelist.save_hosts ();
+            });
         }
 
         private void get_default_filemanager () {
