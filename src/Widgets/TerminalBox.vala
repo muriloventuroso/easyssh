@@ -62,7 +62,7 @@ namespace EasySSH {
 
         public void start_connection() {
             var builder = new StringBuilder ();
-            if(dataHost.ssh_config != ""){
+            if(dataHost.ssh_config == ""){
                 builder.append("ssh " + dataHost.username + "@" + dataHost.host);
                 if(dataHost.port != ""){
                     builder.append(" -p " + dataHost.port);

@@ -146,7 +146,7 @@ namespace EasySSH {
 
             grid.attach (label_password, 0, 12, 1, 1);
             grid.attach (password_entry, 0, 13, 1, 1);
-            change_password = new Gtk.CheckButton.with_label ("Change Password to Identity File");
+            change_password = new Gtk.CheckButton.with_label (_("Change Password to Identity File"));
             identityfile_chooser = new Gtk.FileChooserButton (_("Select Identity File"), Gtk.FileChooserAction.OPEN);
             grid.attach (identityfile_chooser, 0, 13, 1, 1);
             identityfile_chooser.hide();
