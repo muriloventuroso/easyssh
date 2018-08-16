@@ -9,6 +9,7 @@ A complete, efficient and easy-to-use manager. Create and edit connections, grou
 <p align="center">
   <a href="https://appcenter.elementary.io/com.github.muriloventuroso.easyssh"><img src="https://appcenter.elementary.io/badge.svg" alt="Get it on AppCenter" /></a>
 </p>
+
 ### Features
 
 * Manage connections and groups
