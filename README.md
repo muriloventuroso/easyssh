@@ -9,13 +9,21 @@ A complete, efficient and easy-to-use manager. Create and edit connections, grou
 <p align="center">
   <a href="https://appcenter.elementary.io/com.github.muriloventuroso.easyssh"><img src="https://appcenter.elementary.io/badge.svg" alt="Get it on AppCenter" /></a>
 </p>
+### Features
+
+* Manage connections and groups
+* Customize terminal
+* Dark Theme
+* Multiple instances of same connection
+* Restore opened hosts
+* Sync `~/.ssh/config`
 
 ### Donate
 <a href="https://www.paypal.me/muriloventuroso">PayPal</a> | <a href="https://www.patreon.com/muriloventuroso">Patreon</a>
 
 ![Screenshot](data/screenshot.png)
 
-![Screenshot](data/screenshot3.png)
+![Screenshot](data/screenshot2.png)
 
 
 [![Get it on AppCenter](https://appcenter.elementary.io/badge.svg)](https://appcenter.elementary.io/com.github.muriloventuroso.easyssh)
