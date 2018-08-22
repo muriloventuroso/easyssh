@@ -83,7 +83,11 @@ namespace EasySSH {
                 builder.append("\n");
             }
             var cmd = builder.str;
-            term.feed_child(cmd.to_utf8 ());
+            #if UBUNTU_BIONIC_PATCHED_VTE
+                term.feed_child(cmd, cmd.length);
+            #else
+                term.feed_child(cmd.to_utf8 ());
+            #endif
         }
 
         public void add_badge (){
@@ -171,12 +175,20 @@ namespace EasySSH {
 
         private void term_send_password() {
             var cmd = dataHost.password + "\n";
-            term.feed_child(cmd.to_utf8 ());
+            #if UBUNTU_BIONIC_PATCHED_VTE
+                term.feed_child(cmd, cmd.length);
+            #else
+                term.feed_child(cmd.to_utf8 ());
+            #endif
         }
 
         private void term_send(string cmd) {
             var n_cmd = cmd + "\n";
-            term.feed_child(n_cmd.to_utf8 ());
+            #if UBUNTU_BIONIC_PATCHED_VTE
+                term.feed_child(cmd, cmd.length);
+            #else
+                term.feed_child(cmd.to_utf8 ());
+            #endif
         }
 
         private void remove_tab(Granite.Widgets.Tab tab) {

@@ -48,6 +48,9 @@ if get_option('libunity')
     add_project_arguments('--define=UNITY_SUPPORT=1', language : 'vala')
     dependencies += unity_dep
 endif
+if get_option('ubuntu-bionic-patched-vte')
+    add_project_arguments(['--define', 'UBUNTU_BIONIC_PATCHED_VTE'], language : 'vala')
+endif
 executable(
     meson.project_name(),
     code_resources,
