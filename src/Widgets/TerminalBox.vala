@@ -185,9 +185,9 @@ namespace EasySSH {
         private void term_send(string cmd) {
             var n_cmd = cmd + "\n";
             #if UBUNTU_BIONIC_PATCHED_VTE
-                term.feed_child(cmd, cmd.length);
+                term.feed_child(n_cmd, cmd.length);
             #else
-                term.feed_child(cmd.to_utf8 ());
+                term.feed_child(n_cmd.to_utf8 ());
             #endif
         }
 
