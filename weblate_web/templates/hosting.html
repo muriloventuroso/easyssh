@@ -240,8 +240,13 @@
         <td colspan="3">
           <ul>
             <li>{% trans "One time installation of Weblate" %}</li>
+            <li>{% trans "Either installation directly on your system" %}
+            <ul>
             <li>{% trans "Installation using virtualenv, uwsgi and nginx" %}</li>
             <li>{% trans "Using PostgreSQL, MySQL or MariaDB as database backend" %}</li>
+            </ul>
+            </li>
+            <li>{% trans "Or installation using Docker" %}</li>
             <li>{% trans "Requires root access or close cooperation of your admins" %}</li>
             <li>{% trans "Configuration customization" %}</li>
             <li>{% trans "Does not include custom code development" %}</li>
