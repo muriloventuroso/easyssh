@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2018-06-26 21:28+0200\n"
-"PO-Revision-Date: 2018-08-05 08:49+0000\n"
-"Last-Translator: Stanko <janezkranjski505@yahoo.com>\n"
+"PO-Revision-Date: 2018-08-24 18:28+0000\n"
+"Last-Translator: Domen <mitenem@outlook.com>\n"
 "Language-Team: Slovenian <https://hosted.weblate.org/projects/weblate/"
 "website/sl/>\n"
 "Language: sl\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
 "n%100==4 ? 2 : 3;\n"
-"X-Generator: Weblate 3.1.1\n"
+"X-Generator: Weblate 3.2-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -91,13 +91,15 @@ msgstr "Delovni tok prevajanja lahko prilagodite z dodatki."
 
 #: weblate_web/data.py:81
 msgid "Addons"
-msgstr ""
+msgstr "Dodatki"
 
 #: weblate_web/data.py:86
 msgid ""
 "Automatic translation can be used to bootstrap your translations using "
 "machine translation services or translation memory."
 msgstr ""
+"Samodejne prevode lahko uporabite za zapolnitev svojih prevodov z uporabo "
+"storitev strojnega prevajanja ali spomina prevodov."
 
 #: weblate_web/data.py:89
 msgid "Automatic translation"
@@ -107,6 +109,8 @@ msgstr "Samodejni prevod"
 msgid ""
 "Translations can be exported and imported in many widely used file formats."
 msgstr ""
+"Prevode lahko izvozite in uvozite v mnogih široko uporabljanih datotečnih "
+"oblikah."
 
 #: weblate_web/data.py:97 weblate_web/templates/features.html:87
 msgid "Export and import"
@@ -114,7 +118,7 @@ msgstr "Izvoz in uvoz"
 
 #: weblate_web/data.py:101
 msgid "You can define access levels for every user."
-msgstr ""
+msgstr "Določite lahko stopnje dostopa za vsakega uporabnika."
 
 #: weblate_web/data.py:102 weblate_web/templates/hosting.html:105
 #: weblate_web/templates/hosting.html:311
@@ -169,7 +173,7 @@ msgstr "Vsi vaši prevodi bodo v sistemu nadzora različic ustrezno priznani."
 #: weblate_web/templates/base-features.html:30
 #: weblate_web/templates/hosting.html:17
 msgid "Hosting plans"
-msgstr "Načrti za gostovanje"
+msgstr "Načrti gostovanja"
 
 #: weblate_web/templates/base-features.html:31
 msgid "Hosting plans to use Weblate as a service starting at 19 EUR."
@@ -385,6 +389,9 @@ msgid ""
 "fund projects you use. You can use credit card, bank transfer or direct "
 "debit to top up the account."
 msgstr ""
+"Liberapay je platforma za ponavljajoče donacije, kjer tedensko pošiljate "
+"znesek za podporo projektom, ki jih uporabljate. Uporabite lahko kreditno "
+"kartico, bančno nakazilo ali trajnik, da napolnite svoj račun."
 
 #: weblate_web/templates/donate.html:50
 msgid "Fund features"
@@ -553,16 +560,12 @@ msgid "File formats"
 msgstr "Oblike datotek"
 
 #: weblate_web/templates/features.html:48
-#, fuzzy
-#| msgid ""
-#| "Weblate supports all widely used file formats for localization like "
-#| "Gettext, JSON, XLIFF or resource strings."
 msgid ""
 "Weblate supports all widely used file formats for localization, like "
 "gettext, JSON, XLIFF or resource strings."
 msgstr ""
 "Weblate podpira vse široko uporabljane oblike datotek za lokalizacijo, kot "
-"so Gettext, JSON, XLIFF ali nizi virov."
+"so gettext, JSON, XLIFF ali nizi virov."
 
 #: weblate_web/templates/features.html:55
 msgid "Branches support"
@@ -729,6 +732,8 @@ msgstr ""
 #: weblate_web/templates/hosting.html:6
 msgid "Use Weblate as a service or get support for on-premises hosting."
 msgstr ""
+"Uporabljajte Weblate kot storitev ali pridobite podporo za gostovanje pri "
+"sebi."
 
 #: weblate_web/templates/hosting.html:11
 msgid "Ask for hosting"
@@ -1111,6 +1116,8 @@ msgid ""
 "The free plan does not allow you to change project visibility or to limit "
 "users which can contribute to the translation."
 msgstr ""
+"Brezplačen paket vam ne dovoljuje spreminjanja vidnosti projekta ali "
+"omejitev uporabnikov, ki lahko prispevajo k prevodu."
 
 #: weblate_web/templates/hosting.html:317
 msgid ""
@@ -1118,6 +1125,9 @@ msgid ""
 "will still have free software limits, but you will get extended user "
 "management capabilities."
 msgstr ""
+"To omejitev lahko opravite z nakupom načrta gostovanja »Osnovno« – še vedno "
+"boste imeli omejitve prostega programja, ampak dobili boste razširjene "
+"zmožnosti upravljanja uporabnikov."
 
 #: weblate_web/templates/hosting.html:320
 msgid "Translation workflow"
@@ -1317,12 +1327,16 @@ msgid ""
 "You can use mailing lists for discussions with other Weblate users and "
 "developers."
 msgstr ""
+"Uporabite lahko poštne sezname za razpravo z drugimi uporabniki Weblate in "
+"razvijalci."
 
 #: weblate_web/templates/support.html:39
 msgid ""
 "You can post to it using <a href=\"mailto:weblate@lists.cihar.com"
 "\">weblate@lists.cihar.com</a> address."
 msgstr ""
+"Nanje lahko objavite z uporabo naslova <a href=\"mailto:weblate@lists.cihar."
+"com\">weblate@lists.cihar.com</a>."
 
 #: weblate_web/templates/support.html:40 weblate_web/templates/support.html:56
 msgid "You can browse mailing list archives"
@@ -1343,11 +1357,11 @@ msgstr "Poštni seznam obvestil gostovanega Weblate"
 #: weblate_web/templates/support.html:54
 msgid ""
 "Low traffic mailing list with announcements about Hosted Weblate services."
-msgstr ""
+msgstr "Nizkoprometni poštni seznam z obvestili o gostovanih storitvah Weblate."
 
 #: weblate_web/templates/support.html:55
 msgid "This list is moderated, only chosen users can post announcements."
-msgstr ""
+msgstr "Seznam je moderiran; samo izbrani uporabniki lahko objavijo obvestila."
 
 #: weblate_web/templates/support.html:68
 msgid "Stack Overflow"
@@ -1475,6 +1489,8 @@ msgid ""
 "To test the review workflow there, log in with username: <code>review</"
 "code>, and password: <code>review</code>."
 msgstr ""
+"Da preizkusite delovni tok recenzije, se prijavite z uporabniškim imenom "
+"<code>review</code> in geslom <code>review</code>."
 
 #: weblate_web/templates/try.html:27
 msgid "Appliances"
