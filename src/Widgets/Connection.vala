@@ -58,12 +58,14 @@ namespace EasySSH {
             connect_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
             connect_button.clicked.connect (add_tab);
             var edit_button  = new Gtk.Button.with_label (_("Edit"));
-            edit_button.action_name = MainWindow.ACTION_PREFIX + MainWindow.ACTION_EDIT_CONN;
-
+            edit_button.clicked.connect (() => {
+                window.action_edit_conn (host.name);
+            });
             var remove_button = new Gtk.Button.with_label (_("Remove"));
             remove_button.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
-            remove_button.action_name = MainWindow.ACTION_PREFIX + MainWindow.ACTION_REMOVE_CONN;
-
+            remove_button.clicked.connect (() => {
+                window.action_remove_conn (host.name);
+            });
             var buttons = new Gtk.ButtonBox (Gtk.Orientation.HORIZONTAL);
             buttons.layout_style = Gtk.ButtonBoxStyle.CENTER;
             buttons.spacing = 6;

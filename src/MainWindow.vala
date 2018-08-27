@@ -30,8 +30,6 @@ namespace EasySSH {
 
         public const string ACTION_PREFIX = "win.";
         public const string ACTION_NEW_CONN = "action_new_conn";
-        public const string ACTION_EDIT_CONN = "action_edit_conn";
-        public const string ACTION_REMOVE_CONN = "action_remove_conn";
         public const string ACTION_PREFERENCES = "action_preferences";
 
         public SimpleActionGroup actions { get; construct; }
@@ -40,8 +38,6 @@ namespace EasySSH {
 
         private const ActionEntry[] action_entries = {
             { ACTION_NEW_CONN, action_new_conn },
-            { ACTION_EDIT_CONN, action_edit_conn },
-            { ACTION_REMOVE_CONN, action_remove_conn },
             { ACTION_PREFERENCES, action_preferences },
         };
 
@@ -145,6 +141,12 @@ namespace EasySSH {
                 () => {
                     sourcelist.load_ssh_config ();
                     sourcelist.save_hosts ();
+            });
+            sourcelist.host_edit_clicked.connect ((name) => {
+                sourcelist.edit_conn(name);
+            });
+            sourcelist.host_remove_clicked.connect ((name) => {
+                sourcelist.remove_conn(name);
             });
         }
 
@@ -287,14 +289,14 @@ namespace EasySSH {
 
             main_actions.get_action ("Paste").set_sensitive (can_paste);
         }
+        public void action_edit_conn (string name) {
+            sourcelist.edit_conn(name);
+        }
+        public void action_remove_conn (string name) {
+            sourcelist.remove_conn(name);
+        }
         private void action_new_conn () {
             sourcelist.new_conn();
-        }
-        private void action_edit_conn () {
-            sourcelist.edit_conn();
-        }
-        private void action_remove_conn () {
-            sourcelist.remove_conn();
         }
         private void action_preferences () {
             if (preferences_dialog == null) {

@@ -22,19 +22,27 @@
 namespace EasySSH {
     public class Item : Granite.Widgets.SourceList.Item {
         private Gtk.Menu host_menu;
-
+        public signal void host_edit_clicked (string name);
+        public signal void host_remove_clicked (string name);
         public Item (string name = "") {
-            this.name = name;
+            Object (
+                name: name
+            );
         }
         construct {
             host_menu = new Gtk.Menu ();
-            var host_edit = new Gtk.MenuItem.with_label (_("Edit"));
-            host_edit.action_name = MainWindow.ACTION_PREFIX + MainWindow.ACTION_EDIT_CONN;
-            var host_remove = new Gtk.MenuItem.with_label (_("Remove"));
-            host_remove.action_name = MainWindow.ACTION_PREFIX + MainWindow.ACTION_REMOVE_CONN;
-            host_menu.append(host_edit);
-            host_menu.append(host_remove);
 
+            var host_edit = new Gtk.MenuItem.with_label (_("Edit"));
+            host_edit.activate.connect (() => {
+                host_edit_clicked (name);
+            });
+            host_menu.append (host_edit);
+
+            var host_remove = new Gtk.MenuItem.with_label (_("Remove"));
+            host_remove.activate.connect (() => {
+                host_remove_clicked (name);
+            });
+            host_menu.append (host_remove);
 
             host_menu.show_all();
         }
@@ -52,6 +60,8 @@ namespace EasySSH {
         public Granite.Widgets.SourceList source_list;
         public MainWindow window { get; construct; }
         private EasySSH.Settings settings;
+        public signal void host_edit_clicked (string name);
+        public signal void host_remove_clicked (string name);
 
         public SourceListView (MainWindow window) {
             Object (window: window);
@@ -220,6 +230,8 @@ namespace EasySSH {
             });
             n.tab_moved.connect(on_tab_moved);
             n.tab_switched.connect(on_tab_switched);
+            item.host_edit_clicked.connect ((name) => {host_edit_clicked (name);});
+            item.host_remove_clicked.connect ((name) => {host_remove_clicked (name);});
 
         }
 
@@ -600,15 +612,15 @@ namespace EasySSH {
             show_all();
         }
 
-        public void edit_conn() {
+        public void edit_conn(string name) {
             clean_box();
-            var host = hostmanager.get_host_by_name(source_list.selected.name);
+            var host = hostmanager.get_host_by_name(name);
 
             box.add(new ConnectionEditor(this, host));
             show_all();
         }
-        public void remove_conn() {
-            var host = hostmanager.get_host_by_name(source_list.selected.name);
+        public void remove_conn(string name) {
+            var host = hostmanager.get_host_by_name(name);
             confirm_remove_dialog (host);
         }
         private void confirm_remove_dialog (Host host) {
