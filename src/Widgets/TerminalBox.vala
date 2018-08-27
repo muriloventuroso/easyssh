@@ -30,6 +30,7 @@ namespace EasySSH {
         public MainWindow window { get; construct; }
         public Granite.Widgets.Tab tab {get; set;}
         private bool unread_changes;
+        private EasySSH.Settings settings;
 
         public TerminalBox (Host host, Granite.Widgets.DynamicNotebook notebook, MainWindow window) {
             Object (
@@ -40,6 +41,7 @@ namespace EasySSH {
         }
 
         construct {
+            settings = EasySSH.Settings.get_default();
             open_dialog = false;
             unread_changes = false;
             var scroller = new Gtk.ScrolledWindow(null, null);
@@ -62,7 +64,7 @@ namespace EasySSH {
 
         public void start_connection() {
             var builder = new StringBuilder ();
-            if(dataHost.ssh_config == ""){
+            if(settings.sync_ssh_config == false){
                 builder.append("ssh " + dataHost.username + "@" + dataHost.host);
                 if(dataHost.port != ""){
                     builder.append(" -p " + dataHost.port);
