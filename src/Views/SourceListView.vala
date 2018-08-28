@@ -386,19 +386,24 @@ namespace EasySSH {
             }
 
             var tab = e_host.notebook.get_tab_by_index(0);
-            if(Type.from_instance(tab.page).name() == "EasySSHConnection") {
-                e_host.notebook.remove_tab(tab);
-                host.item = source_list.selected;
-                source_list.selected = null;
-                clean_box ();
-                box.add (welcome);
-            } else {
-                for(int i = 0; i < e_host.notebook.n_tabs; i++) {
-                    var l_tab = e_host.notebook.get_tab_by_index(i);
-                    if(Type.from_instance(tab.page).name() == "EasySSHTerminalBox") {
-                        l_tab.label = e_host.name + " - " + (i + 1).to_string();
+            if(tab != null){
+                if(Type.from_instance(tab.page).name() == "EasySSHConnection") {
+                    e_host.notebook.remove_tab(tab);
+                    host.item = source_list.selected;
+                    source_list.selected = null;
+                    clean_box ();
+                    box.add (welcome);
+                } else {
+                    for(int i = 0; i < e_host.notebook.n_tabs; i++) {
+                        var l_tab = e_host.notebook.get_tab_by_index(i);
+                        if(Type.from_instance(tab.page).name() == "EasySSHTerminalBox") {
+                            l_tab.label = e_host.name + " - " + (i + 1).to_string();
+                        }
                     }
                 }
+            } else {
+                clean_box ();
+                box.add (welcome);
             }
 
             save_hosts();
@@ -436,6 +441,7 @@ namespace EasySSH {
 
                     if(settings.sync_ssh_config){
                         data_ssh_config += "Host " + hosts[i].name.replace(",", " ") + "\n    ";
+                        print(hosts[i].ssh_config);
                         if(hosts[i].ssh_config != ""){
                             data_ssh_config += hosts[i].ssh_config.replace("\n", "\n    ");
                         }else{
