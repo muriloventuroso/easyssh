@@ -452,7 +452,7 @@ namespace EasySSH {
             if(data_host == null) {
                 host = sourcelistview.add_host(host);
             } else {
-                host = sourcelistview.edit_host(host);
+                host = sourcelistview.edit_host(data_host.name, host);
             }
             var item = sourcelistview.source_list.selected;
             sourcelistview.source_list.selected = null;
@@ -463,10 +463,8 @@ namespace EasySSH {
         private void exit() {
             var item = sourcelistview.source_list.selected;
             if(item == null) {
-                print("null");
                 sourcelistview.restore();
             } else {
-                print("not null");
                 sourcelistview.source_list.selected = null;
                 sourcelistview.source_list.selected = item;
             }

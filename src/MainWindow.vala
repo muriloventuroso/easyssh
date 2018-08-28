@@ -338,7 +338,6 @@ namespace EasySSH {
             { "Copy", null, N_("Copy"), "<Control><Shift>c", null, action_copy },
             { "Paste", null, N_("Paste"), "<Control><Shift>v", null, action_paste },
             { "Select All", null, N_("Select All"), "<Control><Shift>a", null, action_select_all },
-            { "Select All", null, N_("Select All"), "<Control><Shift>a", null, action_select_all },
             { "Show in File Browser", null, N_("Show in File Browser"), "<Control><Shift>e", null, action_open_in_files }
         };
     }

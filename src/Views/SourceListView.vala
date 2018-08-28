@@ -367,13 +367,13 @@ namespace EasySSH {
             return group;
         }
 
-        public Host edit_host(Host e_host) {
-            var host = hostmanager.get_host_by_name(source_list.selected.name);
+        public Host edit_host(string old_name, Host e_host) {
+            var host = hostmanager.get_host_by_name(old_name);
             var group = hostmanager.get_group_by_name(host.group);
             e_host.notebook = host.notebook;
             if(host.group == e_host.group) {
-                group.update_host(host.name, e_host);
-                source_list.selected.name = e_host.name;
+                group.update_host(old_name, e_host);
+                host.item.name = e_host.name;
             } else {
                 group.category.remove(host.item);
                 group.remove_host(host.name);
@@ -384,9 +384,8 @@ namespace EasySSH {
                 n_group.add_host(e_host);
                 insert_host(e_host, n_group.category);
             }
-
-            var tab = e_host.notebook.get_tab_by_index(0);
-            if(tab != null){
+            if(e_host.notebook.n_tabs > 0){
+                var tab = e_host.notebook.get_tab_by_index(0);
                 if(Type.from_instance(tab.page).name() == "EasySSHConnection") {
                     e_host.notebook.remove_tab(tab);
                     host.item = source_list.selected;
@@ -441,7 +440,6 @@ namespace EasySSH {
 
                     if(settings.sync_ssh_config){
                         data_ssh_config += "Host " + hosts[i].name.replace(",", " ") + "\n    ";
-                        print(hosts[i].ssh_config);
                         if(hosts[i].ssh_config != ""){
                             data_ssh_config += hosts[i].ssh_config.replace("\n", "\n    ");
                         }else{
@@ -519,7 +517,10 @@ namespace EasySSH {
                         var result = "";
                         while (line != null) {
                             line = file.read_line();
-                            if(line.substring(0, 4) != "Host"){
+                            if(line == null){
+                                continue;
+                            }
+                            if(line.length >= 4 && line.substring(0, 4) != "Host"){
                                 var l = line.strip();
                                 if(l != ""){
                                     result += l + "\n";
@@ -554,7 +555,10 @@ namespace EasySSH {
                         var result = "";
                         while (line != null) {
                             line = file.read_line();
-                            if(line.substring(0, 4) != "Host"){
+                            if(line == null){
+                                continue;
+                            }
+                            if(line.length >= 4 && line.substring(0, 4) != "Host"){
                                 var l = line.strip();
                                 if(l != ""){
                                     result += l.strip() + "\n";
@@ -608,7 +612,10 @@ namespace EasySSH {
                     if(name_host == name){
                         while (line != null) {
                             line = file.read_line();
-                            if(line.substring(0, 4) != "Host"){
+                            if(line == null){
+                                continue;
+                            }
+                            if(line.length >= 4 && line.substring(0, 4) != "Host"){
                                 var l = line.strip();
                                 if(l != ""){
                                     result += l + "\n";
