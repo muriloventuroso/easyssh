@@ -435,7 +435,7 @@ namespace EasySSH {
                     array_hosts.add_element(root);
 
                     if(settings.sync_ssh_config){
-                        data_ssh_config += "Host " + hosts[i].name + "\n    ";
+                        data_ssh_config += "Host " + hosts[i].name.replace(",", " ") + "\n    ";
                         if(hosts[i].ssh_config != ""){
                             data_ssh_config += hosts[i].ssh_config.replace("\n", "\n    ");
                         }else{
@@ -500,7 +500,13 @@ namespace EasySSH {
                 var next_line = true;
                 if(line.length >= 4 && line.substring(0, 4) == "Host"){
 
-                    var name_host = line.split(" ")[1];
+                    var split = line.split(" ");
+                    var name_host = split[1];
+                    if(split.length > 1){
+                        for (int a = 2; a < split.length; a++) {
+                            name_host += "," + split[a];
+                        }
+                    }
                     var host = hostmanager.get_host_by_name(name_host);
                     if(host == null){
                         var n_host = new Host();
@@ -579,13 +585,20 @@ namespace EasySSH {
         }
 
         public string get_host_ssh_config (string name) {
+
             var file = FileStream.open(Environment.get_home_dir () + "/.ssh/config", "r");
             assert (file != null);
             string line = file.read_line();
             var result = "";
             while (line != null){
                 if(line.length >= 4 && line.substring(0, 4) == "Host"){
-                    var name_host = line.split(" ")[1];
+                    var split = line.split(" ");
+                    var name_host = split[1];
+                    if(split.length > 1){
+                        for (int a = 2; a < split.length; a++) {
+                            name_host += "," + split[a];
+                        }
+                    }
                     if(name_host == name){
                         while (line != null) {
                             line = file.read_line();

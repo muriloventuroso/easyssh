@@ -67,8 +67,6 @@ namespace EasySSH {
 
         public int default_size;
 
-        const string SEND_PROCESS_FINISHED_BASH = "dbus-send --type=method_call --session --dest=io.elementary.terminal /io/elementary/terminal io.elementary.terminal.ProcessFinished string:$PANTHEON_TERMINAL_ID string:\"$(history 1 | cut -c 8-)\" int32:\$__bp_last_ret_value >/dev/null 2>&1";
-
         /* Following strings are used to build RegEx for matching URIs */
         const string USERCHARS = "-[:alnum:]";
         const string USERCHARS_CLASS = "[" + USERCHARS + "]";

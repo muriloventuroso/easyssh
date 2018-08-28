@@ -81,7 +81,7 @@ namespace EasySSH {
                 builder.append("\n");
             } else {
                 builder.append("ssh ");
-                builder.append(dataHost.name);
+                builder.append(dataHost.name.split(",")[0]);
                 builder.append("\n");
             }
             var cmd = builder.str;

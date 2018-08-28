@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/muriloventuroso/easyssh.svg?branch=master)](https://travis-ci.org/muriloventuroso/easyssh)[![Translation status](https://hosted.weblate.org/widgets/easyssh/-/translations/svg-badge.svg)](https://hosted.weblate.org/engage/easyssh/?utm_source=widget)
+[![Translation status](https://hosted.weblate.org/widgets/easyssh/-/translations/svg-badge.svg)](https://hosted.weblate.org/engage/easyssh/?utm_source=widget)
 
 <h1 align="center">EasySSH</h1>
 
