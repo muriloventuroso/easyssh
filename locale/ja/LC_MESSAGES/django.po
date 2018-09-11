@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2018-06-26 21:28+0200\n"
 "PO-Revision-Date: 2018-09-11 22:34+0000\n"
-"Last-Translator: Yasuhiko Kamata <belphegor@belbel.or.jp>\n"
+"Last-Translator: Kyotaro Iijima <kyotaro.eyes@gmail.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/weblate/website/"
 "ja/>\n"
 "Language: ja\n"
@@ -137,15 +137,13 @@ msgstr "閲覧しようとしているページが見つかりません。"
 
 #: weblate_web/templates/500.html:4
 msgid "Server error"
-msgstr "サーバエラー"
+msgstr "サーバ エラー"
 
 #: weblate_web/templates/500.html:15
 msgid ""
 "The server had serious problems while serving your request. We've just sent "
 "our trained monkeys to fix the issue."
-msgstr ""
-"リクエストの処理中に、サーバ上で深刻な問題がありました。この間抜けな問題を解"
-"決するために、熟練のおサルさん (開発者) を派遣しました (笑)。"
+msgstr "リクエストの処理中に、サーバで深刻な問題が発生しました。問題解決のために、熟練のおサルさん (開発者) を派遣しました (笑)。"
 
 #: weblate_web/templates/base-features.html:6
 #: weblate_web/templates/hosting.html:42
@@ -171,7 +169,7 @@ msgstr "翻訳者は全員、バージョン管理システムにおいて適切
 #: weblate_web/templates/base-features.html:30
 #: weblate_web/templates/hosting.html:17
 msgid "Hosting plans"
-msgstr "ホスティングプラン"
+msgstr "ホスティング プラン"
 
 #: weblate_web/templates/base-features.html:31
 msgid "Hosting plans to use Weblate as a service starting at 19 EUR."
@@ -191,7 +189,7 @@ msgstr ""
 
 #: weblate_web/templates/base-features.html:46
 msgid "Free software"
-msgstr "フリーソフトウェア"
+msgstr "フリー ソフトウェア"
 
 #: weblate_web/templates/base-features.html:47
 msgid "Weblate is free software, you can run your own instance of it."
@@ -270,8 +268,8 @@ msgid ""
 "Weblate is <a href=\"%(github_url)s\">free software</a> and welcomes <a href="
 "\"%(donate_url)s\">donations</a>."
 msgstr ""
-"Weblate は <a href=\"%(github_url)s\">フリーソフトウェア</a> ですが、 <a "
-"href=\"%(donate_url)s\">寄付</a> も歓迎しております。"
+"Weblate は <a href=\"%(github_url)s\">フリー ソフトウェア</a> ですが、 <a href=\""
+"%(donate_url)s\">寄付</a> も歓迎しております。"
 
 #: weblate_web/templates/contribute.html:3
 #: weblate_web/templates/contribute.html:4
@@ -370,8 +368,7 @@ msgid ""
 "fund free hosting for free software. You don't have to spend big money, "
 "every penny counts."
 msgstr ""
-"継続寄付によって、Weblate の開発を継続し、フリーソフトウェア向けの無料ホス"
-"ティングに資金援助することができます。大金は必要なく、少額でも重要です。"
+"継続寄付によって、Weblate の開発を継続し、フリー ソフトウェア向けの無料ホスティングに資金援助できます。大金は必要なく、少額でも重要です。"
 
 #: weblate_web/templates/donate.html:33 weblate_web/templates/donate.html:54
 #: weblate_web/templates/thanks.html:12
@@ -583,9 +580,7 @@ msgstr "ブランチのサポート"
 msgid ""
 "Weblate can handle different versions of the translation by pushing them to "
 "different branches automatically."
-msgstr ""
-"Weblate は、別々のブランチに自動でプッシュすることで、バージョンの違う複数の"
-"翻訳を処理することができます。"
+msgstr "Weblate は、別々のブランチに自動でプッシュすることで、バージョンの違う複数の翻訳を処理できます。"
 
 #: weblate_web/templates/features.html:79
 msgid "Acquiring feedback"
@@ -658,7 +653,7 @@ msgstr ""
 
 #: weblate_web/templates/features.html:144
 msgid "Version control"
-msgstr "バージョンコントロール"
+msgstr "バージョン管理"
 
 #: weblate_web/templates/features.html:145
 msgid ""
@@ -682,7 +677,7 @@ msgstr ""
 
 #: weblate_web/templates/features.html:160
 msgid "Responsive UI"
-msgstr "柔軟なUI"
+msgstr "操作性の高い UI"
 
 #: weblate_web/templates/features.html:161
 msgid ""
@@ -722,7 +717,7 @@ msgstr "通常は下記の情報が必要となります:"
 #: weblate_web/templates/hosting-ordered.html:18
 #: weblate_web/templates/hosting.html:307
 msgid "URL of repository with translations."
-msgstr "訳文を含むリポジトリの URL。"
+msgstr "翻訳データを含むリポジトリの URL。"
 
 #: weblate_web/templates/hosting-ordered.html:19
 #: weblate_web/templates/hosting.html:308
@@ -735,10 +730,8 @@ msgid ""
 "adding Weblate user to your project (on GitHub, Bitbucket or GitLab) or "
 "adding SSH key we will provide you."
 msgstr ""
-"Weblate からお使いのリポジトリに対して、アクセスできる許可を設定する必要があ"
-"ります。これは Weblate のユーザをお使いのプロジェクト (GitHub, Bitbucket, "
-"GitLab のいずれか) に追加するか、もしくは SSH 鍵を追加することで実現すること"
-"ができます。"
+"Weblate からお使いのリポジトリに対して、アクセス権を設定する必要があります。これは Weblate のユーザをお使いのプロジェクト "
+"(GitHub、Bitbucket、GitLab のいずれか) に追加するか、もしくは SSH 鍵を追加して実現します。"
 
 #: weblate_web/templates/hosting.html:6
 msgid "Use Weblate as a service or get support for on-premises hosting."
