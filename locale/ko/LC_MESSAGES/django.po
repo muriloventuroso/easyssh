@@ -1,15 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 송태섭 <xotjq237@gmail.com>, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2018-06-26 21:28+0200\n"
-"PO-Revision-Date: 2018-07-23 11:06+0000\n"
-"Last-Translator: Michal Čihař <michal@cihar.com>\n"
+"PO-Revision-Date: 2018-09-16 11:16+0000\n"
+"Last-Translator: 송태섭 <xotjq237@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/weblate/website/"
 "ko/>\n"
 "Language: ko\n"
@@ -17,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.1-dev\n"
+"X-Generator: Weblate 3.2-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -83,17 +82,17 @@ msgstr "홍보"
 
 #: weblate_web/data.py:79
 msgid "Translation workflow can be customized by using addons."
-msgstr ""
+msgstr "애드온을 사용하여 번역 워크플로우를 커스터마이즈 할 수 있습니다."
 
 #: weblate_web/data.py:81
 msgid "Addons"
-msgstr ""
+msgstr "애드온"
 
 #: weblate_web/data.py:86
 msgid ""
 "Automatic translation can be used to bootstrap your translations using "
 "machine translation services or translation memory."
-msgstr ""
+msgstr "자동 번역은 기계 번역 서비스나 번역 메모리를 사용해서 번역에 부트스트랩 할 수 있습니다."
 
 #: weblate_web/data.py:89
 msgid "Automatic translation"
@@ -102,7 +101,7 @@ msgstr "자동 번역"
 #: weblate_web/data.py:94
 msgid ""
 "Translations can be exported and imported in many widely used file formats."
-msgstr ""
+msgstr "번역은 많은 널리 사용되는 파일 형식으로 내보내고 가져올 수 있습니다."
 
 #: weblate_web/data.py:97 weblate_web/templates/features.html:87
 msgid "Export and import"
@@ -110,7 +109,7 @@ msgstr "내보내기/가져오기"
 
 #: weblate_web/data.py:101
 msgid "You can define access levels for every user."
-msgstr ""
+msgstr "모든 사용자를 위한 액세스 수준을 정의할 수 있습니다."
 
 #: weblate_web/data.py:102 weblate_web/templates/hosting.html:105
 #: weblate_web/templates/hosting.html:311
@@ -378,6 +377,8 @@ msgid ""
 "fund projects you use. You can use credit card, bank transfer or direct "
 "debit to top up the account."
 msgstr ""
+"Liberapay는 당신이 쓰는 프로젝트에 주기적으로 기부하기 위한 기부 플랫폼입니다. 당신은 신용카드, 은행 송금, 혹은 자동 이체로 "
+"계정을 충전할 수 있습니다."
 
 #: weblate_web/templates/donate.html:50
 msgid "Fund features"
@@ -545,16 +546,10 @@ msgid "File formats"
 msgstr "파일 형식"
 
 #: weblate_web/templates/features.html:48
-#, fuzzy
-#| msgid ""
-#| "Weblate supports all widely used file formats for localization like "
-#| "Gettext, JSON, XLIFF or resource strings."
 msgid ""
 "Weblate supports all widely used file formats for localization, like "
 "gettext, JSON, XLIFF or resource strings."
-msgstr ""
-"Weblate는 Gettext, JSON, XLIFF 및 리소스 스트링과 같은, 현지화에 널리 사용되"
-"는 파일 형식들을 지원합니다."
+msgstr "Weblate는 gettext, JSON, XLIFF, 리소스 스트링과 같은, 현지화에 널리 사용되는 파일 형식들을 지원합니다."
 
 #: weblate_web/templates/features.html:55
 msgid "Branches support"
@@ -718,7 +713,7 @@ msgstr ""
 
 #: weblate_web/templates/hosting.html:6
 msgid "Use Weblate as a service or get support for on-premises hosting."
-msgstr ""
+msgstr "Weblate를 서비스로 사용하거나 사내 호스팅에 대한 지원을 받으세요."
 
 #: weblate_web/templates/hosting.html:11
 msgid "Ask for hosting"
@@ -1336,12 +1331,8 @@ msgid ""
 msgstr "Hosted Weblate 서비스에 관한 공지사항 메일링 리스트."
 
 #: weblate_web/templates/support.html:55
-#, fuzzy
-#| msgid "This list is moderated, only selected users can post announcements."
 msgid "This list is moderated, only chosen users can post announcements."
-msgstr ""
-"이 리스트는 중재되어 있으며, 일부 선정된 사용자들만이 공지사항을 올릴 수 있습"
-"니다."
+msgstr "이 목록은 검토 중이므로, 일부 선정된 사용자들만이 공지사항을 올릴 수 있습니다."
 
 #: weblate_web/templates/support.html:68
 msgid "Stack Overflow"
