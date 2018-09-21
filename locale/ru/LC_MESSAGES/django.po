@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: weblate-web\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2018-06-26 21:28+0200\n"
-"PO-Revision-Date: 2018-09-21 09:48+0000\n"
+"PO-Revision-Date: 2018-09-21 19:26+0000\n"
 "Last-Translator: mesnevi <shams@airpost.net>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/weblate/website/"
 "ru/>\n"
@@ -481,8 +481,8 @@ msgid ""
 "You can control Weblate remotely using <a href=\"%(url)s\">wlc</a>, it can "
 "be installed by using Python PIP:"
 msgstr ""
-"Вы можете управлять Weblate удаленно с помощью <a href=\"%(url)s\">wlc</a>, "
-"который может быть установлен с помощью Python PIP:"
+"Управлять Weblate удаленно можно с помощью <a href=\"%(url)s\">wlc</a>. Его "
+"можно установить, воспользовавшись Python PIP:"
 
 #: weblate_web/templates/download.html:53
 msgid "Cloud or virtualization images"
@@ -508,16 +508,17 @@ msgid ""
 "BitNami Weblate stack providing native installation for most platforms as "
 "well as support for many public cloud providers"
 msgstr ""
-"BitNami Weblate Stack предоставляет возможность установки на большинство "
-"платформ, а также поддерживает множество публичных облачных сервисов"
+"BitNami Weblate Stack напрямую устанавливается на большинство платформ, а "
+"также поддерживает множество публичных облачных сервисов"
 
 #: weblate_web/templates/download.html:72
 msgid ""
 "Weblate is being developed on <a href=\"https://github.com/WeblateOrg/weblate"
 "\">GitHub</a>, you can fork it there or just:"
 msgstr ""
-"Weblate разрабатывается на <a href=\"https://github.com/WeblateOrg/weblate"
-"\">GitHub</a>, вы можете сделать форк прямо там или просто ввести:"
+"Weblate разрабатывают на <a href=\"https://github.com/WeblateOrg/weblate\""
+">GitHub</a>, вы можете сделать форк прямо там или просто набрать в командной "
+"строке:"
 
 #: weblate_web/templates/features.html:3 weblate_web/templates/features.html:4
 msgid "Weblate features"
@@ -548,16 +549,16 @@ msgstr "Уведомления"
 msgid ""
 "Translators can be notified on new strings to translate or other events."
 msgstr ""
-"Переводчики могут получать уведомления о появлении новых строк для перевода "
-"или других событиях."
+"Когда появляются новые строки для перевода, или что-то происходит, "
+"переводчики могут получать уведомления."
 
 #: weblate_web/templates/features.html:39
 msgid "Integration API"
-msgstr "Интеграционный API"
+msgstr "API для интеграции"
 
 #: weblate_web/templates/features.html:40
 msgid "Thanks to the API you can integrate Weblate with third party services."
-msgstr "Благодаря API, вы можете включать в Weblate дополнительные сервисы."
+msgstr "Благодаря API в Weblate можно включать дополнительные сервисы."
 
 #: weblate_web/templates/features.html:47
 msgid "File formats"
@@ -568,8 +569,8 @@ msgid ""
 "Weblate supports all widely used file formats for localization, like "
 "gettext, JSON, XLIFF or resource strings."
 msgstr ""
-"Weblate поддерживает все широко используемые форматы файлов для локализации, "
-"например: gettext, JSON, XLIFF или строки ресурсов."
+"Weblate поддерживает все популярные файловые форматы для локализации: "
+"gettext, JSON, XLIFF или строки ресурсов."
 
 #: weblate_web/templates/features.html:55
 msgid "Branches support"
@@ -580,8 +581,8 @@ msgid ""
 "Weblate can handle different versions of the translation by pushing them to "
 "different branches automatically."
 msgstr ""
-"Weblate может обрабатывать разные версии перевода, автоматически сохраняя их "
-"в разных ветвях."
+"Weblate может работать с разными версиями перевода, автоматически сохраняя "
+"их в разных ветвях."
 
 #: weblate_web/templates/features.html:79
 msgid "Acquiring feedback"
@@ -592,14 +593,14 @@ msgid ""
 "You can also use Weblate to acquire feedback on source strings and thus "
 "improve them."
 msgstr ""
-"Вы также можете использовать Weblate для получения отзывов на текст "
-"исходника для его улучшения."
+"Weblate можно использовать для получения отзывов на качество исходных "
+"текстов и повышать его."
 
 #: weblate_web/templates/features.html:88
 msgid "Translations can be downloaded for offline translation and merged back."
 msgstr ""
-"Переводы могут быть выгружены для автономного перевода и последующего "
-"слияния."
+"Текстовые строки можно выгрузить для автономного перевода, а потом загрузить "
+"обратно и смержить."
 
 #: weblate_web/templates/features.html:95
 msgid "Integrated"
@@ -608,8 +609,8 @@ msgstr "Интеграция"
 #: weblate_web/templates/features.html:96
 msgid "Translations are managed within same version control system as code."
 msgstr ""
-"Управление переводом осуществляется той же системой контроля версий, которая "
-"используется для кода."
+"За переводами следит та же самая система контроля версий, которую используют "
+"для остального кода."
 
 #: weblate_web/templates/features.html:103
 msgid "Documentation"
@@ -619,16 +620,17 @@ msgstr "Документация"
 msgid ""
 "Weblate comes with comprehensive documentation covering both setup and usage."
 msgstr ""
-"Weblate поставляется с исчерпывающей документацией, описывающей как "
+"У Weblate удобная и понятная документация, подробно описывающая как его "
 "установку, так и использование."
 
 #: weblate_web/templates/features.html:111
 msgid "Review"
-msgstr "Отзывы"
+msgstr "Ревью"
 
 #: weblate_web/templates/features.html:112
 msgid "Translators have several options to review contributions made by peers."
-msgstr "У переводчиков есть несколько способов оценки вклада коллег."
+msgstr ""
+"Переводчики могут проверить (вычитать) работу коллег несколькими способами."
 
 #: weblate_web/templates/features.html:119
 msgid "Languages"
@@ -639,8 +641,8 @@ msgid ""
 "Weblate supports over 150 languages out of the box, others can be defined by "
 "administrator."
 msgstr ""
-"Weblate поддерживает более 150 языков «из коробки», другие языки могут быть "
-"добавлены администратором."
+"Weblate поддерживает более 150 языков «из коробки», отсутствующие языки "
+"может добавить администратор."
 
 #: weblate_web/templates/features.html:135
 msgid "Reporting"
@@ -651,8 +653,8 @@ msgid ""
 "Weblate generates various reports to provide information about project "
 "activity."
 msgstr ""
-"Weblate генерирует различные отчеты для предоставления информации о "
-"деятельности по проекту."
+"Weblate составляет разнообразные отчеты, позволяющие получить предоставление "
+"о том, в каком состоянии проект."
 
 #: weblate_web/templates/features.html:144
 msgid "Version control"
@@ -663,8 +665,8 @@ msgid ""
 "Weblate talks directly with your version control system, currently Git and "
 "Mercurial are supported."
 msgstr ""
-"Weblate взаимодействует напрямую с вашей системой контроля версий, на данный "
-"момент поддерживаются Git и Mercurial."
+"Weblate взаимодействует напрямую с вашей системой контроля версий, в "
+"настоящий момент мы поддерживаем Git и Mercurial."
 
 #: weblate_web/templates/features.html:152
 msgid "Collaboration sites"
@@ -687,8 +689,8 @@ msgid ""
 "Weblate has responsive UI which will work nicely on your desktop, tablet or "
 "phone."
 msgstr ""
-"Гибкий интерфейс Weblate будет работать замечательно на ПК, планшете или "
-"телефоне."
+"У интерфейса Weblate очень короткое время отклика, с ним приятно иметь дело "
+"как на ПК, так на планшете или телефоне."
 
 #: weblate_web/templates/hosting-ordered.html:3
 #: weblate_web/templates/hosting-ordered.html:4
@@ -709,18 +711,17 @@ msgid ""
 "The project setup is currently manual. If you haven't done so already, "
 "please get in touch with us and send us details about your repository setup."
 msgstr ""
-"Настройка проекта на данный момент — ручная. Если для вас это впервые, "
-"свяжитесь с нами и направьте дополнительную информацию о настройке вашего "
-"репозитория."
+"В настоящий момент проекты настраивают  вручную. Если вы делаете это первый "
+"раз, свяжитесь с нами и отправьте информацию о настройках вашего репозитория."
 
 #: weblate_web/templates/hosting-ordered.html:15
 msgid "Usually following information is needed:"
-msgstr "Обычно требуется следующая информация:"
+msgstr "Обычно стоит упомянуть вот что:"
 
 #: weblate_web/templates/hosting-ordered.html:18
 #: weblate_web/templates/hosting.html:307
 msgid "URL of repository with translations."
-msgstr "URL репозитория с переводами."
+msgstr "URL репозитория со строками для перевода."
 
 #: weblate_web/templates/hosting-ordered.html:19
 #: weblate_web/templates/hosting.html:308
@@ -739,8 +740,7 @@ msgstr ""
 
 #: weblate_web/templates/hosting.html:6
 msgid "Use Weblate as a service or get support for on-premises hosting."
-msgstr ""
-"Используйте Weblate как сервис или получите поддержку локального хостинга."
+msgstr "Используйте Weblate как сервис или воспользуйтесь локальными ресурсами."
 
 #: weblate_web/templates/hosting.html:11
 msgid "Ask for hosting"
@@ -751,8 +751,9 @@ msgid ""
 "Hosted Weblate allows you to use Weblate without any effort and with premium "
 "support backed by it's core developers."
 msgstr ""
-"Hosted Weblate позволяет вам использовать Weblate без всяких усилий и "
-"получать премиальную поддержку от его основных разработчиков."
+"Hosted Weblate позволяет пользоваться Weblate, не тратя силы и время на "
+"доработку и починку: всем занимаются разработчики этого проекта (и это "
+"поддержка премиум-класса!)."
 
 #: weblate_web/templates/hosting.html:24
 #, python-format
@@ -762,10 +763,10 @@ msgid ""
 "look for hosting of bigger projects, don't hesitate to <a href=\"%(contact)s"
 "\">get in touch with us</a>."
 msgstr ""
-"Мы можем хостить переводы для коммерческих и свободных проектов. Сводка по "
-"стоимостям расположена ниже. Если у вас есть вопросы или вы желаете "
-"разместить больший проект, не стесняйтесь <a href=\"%(contact)s\">связаться "
-"с нами</a>."
+"Мы можем хостить переводы как для коммерческих, так и для свободных "
+"проектов. Описание тарифов — ниже. Если у вас остались вопросы, или вы "
+"хотели бы разместить больший проект, не стесняйтесь и <a href=\"%(contact)s\""
+">свяжитесь с нами</a>."
 
 #: weblate_web/templates/hosting.html:32
 msgctxt "Hosting plan"
@@ -1283,7 +1284,7 @@ msgstr ""
 
 #: weblate_web/templates/support.html:11
 msgid "Report issue"
-msgstr "Сообщить о проблеме"
+msgstr "Сообщить о сбое"
 
 #: weblate_web/templates/support.html:16
 msgid "Bugs or feature requests"
@@ -1295,9 +1296,9 @@ msgid ""
 "Please report it to <a href=\"https://github.com/WeblateOrg/weblate/issues"
 "\">issue tracker on GitHub</a>."
 msgstr ""
-"У вас какие-либо проблемы с Weblate? У вас есть идеи — как его улучшить? "
-"Пожалуйста, сообщите об этом в <a href=\"https://github.com/WeblateOrg/"
-"weblate/issues\">системе отслеживания ошибок на GitHub</a>."
+"Столкнулись со сбоями в работе Weblate? Есть соображения, как сделать его "
+"лучше? Пожалуйста, расскажите нам об этом в <a href=\"https://github.com/"
+"WeblateOrg/weblate/issues\">системе отслеживания задач на GitHub</a>."
 
 #: weblate_web/templates/support.html:22
 msgid "Security issues"
@@ -1310,10 +1311,9 @@ msgid ""
 "%(contact)s. More information on reporting security issues can be found in "
 "<a href=\"%(docs)s\">our documentation</a>."
 msgstr ""
-"В случае обнаружения проблемы безопасности в нашей кодовой базе сообщите, "
-"пожалуйста, о ней %(contact)s. Вы можете получить больше информации о "
-"сообщении о проблемах безопасности из <a href=\"%(docs)s\">нашей "
-"документации</a>."
+"Если обнаружите в нашем коде проблемы безопасности, сообщите нам, пожалуйста:"
+" %(contact)s. Более подробно о том, что нужно включить в сообщение — в <a "
+"href=\"%(docs)s\">нашей документации</a>."
 
 #: weblate_web/templates/support.html:28
 msgid "Support for Hosted Weblate services"
