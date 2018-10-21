@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2018-06-26 21:28+0200\n"
+"POT-Creation-Date: 2018-10-21 13:33+0200\n"
 "PO-Revision-Date: 2018-06-27 02:04+0000\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
@@ -108,7 +108,7 @@ msgid "You can define access levels for every user."
 msgstr "您可以为每一个用户定义访问等级。"
 
 #: weblate_web/data.py:102 weblate_web/templates/hosting.html:105
-#: weblate_web/templates/hosting.html:311
+#: weblate_web/templates/hosting.html:316
 msgid "User management"
 msgstr "用户管理"
 
@@ -185,66 +185,70 @@ msgctxt "Keyword"
 msgid "translate"
 msgstr "翻译"
 
-#: weblate_web/templates/base.html:66
+#: weblate_web/templates/base.html:54
 msgid "Toggle navigation"
 msgstr "导航栏开关"
 
-#: weblate_web/templates/base.html:72
+#: weblate_web/templates/base.html:60
 msgid "Weblate logo"
 msgstr "Weblate 徽标"
 
-#: weblate_web/templates/base.html:78
+#: weblate_web/templates/base.html:66
 msgid "Blog"
 msgstr "博客"
 
-#: weblate_web/templates/base.html:79
+#: weblate_web/templates/base.html:67
 msgid "Try"
 msgstr "试用"
 
-#: weblate_web/templates/base.html:80
+#: weblate_web/templates/base.html:68
 msgid "Features"
 msgstr "功能"
 
-#: weblate_web/templates/base.html:81
+#: weblate_web/templates/base.html:69
 msgid "Docs"
 msgstr "文档"
 
-#: weblate_web/templates/base.html:82 weblate_web/templates/download.html:17
+#: weblate_web/templates/base.html:70 weblate_web/templates/download.html:17
 msgid "Download"
 msgstr "下载"
 
-#: weblate_web/templates/base.html:83
+#: weblate_web/templates/base.html:71
 msgid "Hosting"
 msgstr "托管"
 
-#: weblate_web/templates/base.html:84
+#: weblate_web/templates/base.html:72
 msgid "Develop"
 msgstr "开发"
 
-#: weblate_web/templates/base.html:85 weblate_web/templates/donate.html:61
+#: weblate_web/templates/base.html:73 weblate_web/templates/donate.html:61
 #: weblate_web/templates/donate.html:91 weblate_web/templates/donate.html:92
 #: weblate_web/templates/donate.html:93 weblate_web/templates/donate.html:94
 #: weblate_web/templates/donate.html:95 weblate_web/templates/donate.html:96
 msgid "Donate"
 msgstr "捐助"
 
-#: weblate_web/templates/base.html:86
+#: weblate_web/templates/base.html:74
 msgid "Support"
 msgstr "支持"
 
-#: weblate_web/templates/base.html:87
+#: weblate_web/templates/base.html:75
 msgid "Tour"
 msgstr "简介"
 
-#: weblate_web/templates/base.html:88
+#: weblate_web/templates/base.html:76
 msgid "Thanks"
 msgstr "鸣谢"
 
-#: weblate_web/templates/base.html:103
+#: weblate_web/templates/base.html:91
 msgid "Help with translations!"
 msgstr "帮我们翻译！"
 
-#: weblate_web/templates/base.html:140
+#: weblate_web/templates/base.html:128 weblate_web/templates/terms.html:4
+msgid "Terms of Service and Privacy Policy"
+msgstr ""
+
+#: weblate_web/templates/base.html:129
 #, python-format
 msgid ""
 "Weblate is <a href=\"%(github_url)s\">free software</a> and welcomes <a href="
@@ -658,12 +662,12 @@ msgid "Usually following information is needed:"
 msgstr "通常需要下列信息："
 
 #: weblate_web/templates/hosting-ordered.html:18
-#: weblate_web/templates/hosting.html:307
+#: weblate_web/templates/hosting.html:312
 msgid "URL of repository with translations."
 msgstr "含有翻译的代码库网址。"
 
 #: weblate_web/templates/hosting-ordered.html:19
-#: weblate_web/templates/hosting.html:308
+#: weblate_web/templates/hosting.html:313
 msgid "Path to translations within the repository."
 msgstr "代码库中翻译所在的路径。"
 
@@ -848,7 +852,7 @@ msgstr "联系我们"
 #: weblate_web/templates/hosting.html:187
 #: weblate_web/templates/hosting.html:190
 #: weblate_web/templates/hosting.html:193
-#: weblate_web/templates/hosting.html:253
+#: weblate_web/templates/hosting.html:258
 #, python-format
 msgid "%(price)s EUR / month"
 msgstr "%(price)s 欧元 / 每月"
@@ -873,7 +877,7 @@ msgstr "咨询我们获取年订优惠。"
 #: weblate_web/templates/hosting.html:203
 #: weblate_web/templates/hosting.html:206
 #: weblate_web/templates/hosting.html:209
-#: weblate_web/templates/hosting.html:254
+#: weblate_web/templates/hosting.html:259
 #, python-format
 msgid "%(price)s EUR / year"
 msgstr "%(price)s 欧元 / 每年"
@@ -928,71 +932,79 @@ msgid "One time installation of Weblate"
 msgstr "Weblate 一步安装"
 
 #: weblate_web/templates/hosting.html:243
+msgid "Either installation directly on your system"
+msgstr ""
+
+#: weblate_web/templates/hosting.html:245
 msgid "Installation using virtualenv, uwsgi and nginx"
 msgstr "使用 virtualenv, uwsgi,和 nginx"
 
-#: weblate_web/templates/hosting.html:244
+#: weblate_web/templates/hosting.html:246
 msgid "Using PostgreSQL, MySQL or MariaDB as database backend"
 msgstr "使用 PostgreSQL、MySQL 或 MariaDB 作为数据库后端"
 
-#: weblate_web/templates/hosting.html:245
+#: weblate_web/templates/hosting.html:249
+msgid "Or installation using Docker"
+msgstr ""
+
+#: weblate_web/templates/hosting.html:250
 msgid "Requires root access or close cooperation of your admins"
 msgstr "需要 root 权限，或与您的管理员密切合作"
 
-#: weblate_web/templates/hosting.html:246
+#: weblate_web/templates/hosting.html:251
 msgid "Configuration customization"
 msgstr "配置个性化"
 
-#: weblate_web/templates/hosting.html:247
+#: weblate_web/templates/hosting.html:252
 msgid "Does not include custom code development"
 msgstr "不包括自定义代码开发"
 
-#: weblate_web/templates/hosting.html:252
+#: weblate_web/templates/hosting.html:257
 msgid "Basic support for self hosted Weblate"
 msgstr "对自主托管 Weblate 的基本支持"
 
-#: weblate_web/templates/hosting.html:259
+#: weblate_web/templates/hosting.html:264
 msgid "Your Weblate will be upgraded to the latest version on every release."
 msgstr "您的 Weblate 将在每次发布时自动升级到最新版本。"
 
-#: weblate_web/templates/hosting.html:260
+#: weblate_web/templates/hosting.html:265
 msgid "We will fix issues that occur in your environment."
 msgstr "我们将解决在您的系统环境中发生的问题。"
 
-#: weblate_web/templates/hosting.html:261
+#: weblate_web/templates/hosting.html:266
 msgid "You will receive priority email support."
 msgstr "您将得到优先的电子邮件支持。"
 
-#: weblate_web/templates/hosting.html:266
+#: weblate_web/templates/hosting.html:271
 msgid "Consulting services or custom development"
 msgstr "咨询服务或定制开发"
 
-#: weblate_web/templates/hosting.html:267
+#: weblate_web/templates/hosting.html:272
 #, python-format
 msgid "%(price)s EUR / hour"
 msgstr "%(price)s 欧元 / 小时"
 
-#: weblate_web/templates/hosting.html:272
+#: weblate_web/templates/hosting.html:277
 msgid "Custom features development"
 msgstr "定制功能开发"
 
-#: weblate_web/templates/hosting.html:273
+#: weblate_web/templates/hosting.html:278
 msgid "Integrating Weblate into your workflow"
 msgstr "将 Weblate 集成到您的工作流程"
 
-#: weblate_web/templates/hosting.html:274
+#: weblate_web/templates/hosting.html:279
 msgid "Suggestions on the internationalization or localization process"
 msgstr "关于国际化或本地化进程的建议"
 
-#: weblate_web/templates/hosting.html:282
+#: weblate_web/templates/hosting.html:287
 msgid "Ask us for details about self hosted Weblate"
 msgstr "咨询我们关于自主托管 Weblate 的详细资料"
 
-#: weblate_web/templates/hosting.html:284
+#: weblate_web/templates/hosting.html:289
 msgid "Hosting for free software"
 msgstr "托管自由软件"
 
-#: weblate_web/templates/hosting.html:287
+#: weblate_web/templates/hosting.html:292
 msgid ""
 "If you are interested in using Weblate for your free software, you can ask "
 "us for hosting of your translations on <a href=\"https://hosted.weblate.org/"
@@ -1003,11 +1015,11 @@ msgstr ""
 "hosted.weblate.org/\">hosted.weblate.org</a>上托管您的翻译。这样您便可以方便"
 "地使用 Weblate ，同时避免安装维护它。"
 
-#: weblate_web/templates/hosting.html:290
+#: weblate_web/templates/hosting.html:295
 msgid "Conditions for free hosting"
 msgstr "免费托管要求"
 
-#: weblate_web/templates/hosting.html:293
+#: weblate_web/templates/hosting.html:298
 msgid ""
 "Translated content has to be released under <a href=\"https://en.wikipedia."
 "org/wiki/Free_software_license\">free license</a>."
@@ -1015,21 +1027,21 @@ msgstr ""
 "翻译的内容必须通过<a href=\"https://en.wikipedia.org/wiki/"
 "Free_software_license\">自由许可证</a>发布。"
 
-#: weblate_web/templates/hosting.html:294
+#: weblate_web/templates/hosting.html:299
 msgid ""
 "Source code has to be publicly available in a supported version control "
 "system."
 msgstr "源代码必须在受支持的版本控制系统中公开。"
 
-#: weblate_web/templates/hosting.html:295
+#: weblate_web/templates/hosting.html:300
 msgid "There is no guarantee for service availability or quality."
 msgstr "我们不担保服务的可用性和质量。"
 
-#: weblate_web/templates/hosting.html:298
+#: weblate_web/templates/hosting.html:303
 msgid "Asking for hosting"
 msgstr "申请托管"
 
-#: weblate_web/templates/hosting.html:301
+#: weblate_web/templates/hosting.html:306
 #, python-format
 msgid ""
 "Please use <a href=\"%(url)s\">contact form on Hosted Weblate</a> to request "
@@ -1038,21 +1050,21 @@ msgstr ""
 "请使用 <a href=\"%(url)s\">Hosted 网站上的联系表单</a>申请托管。您需要提供下"
 "列信息："
 
-#: weblate_web/templates/hosting.html:305
+#: weblate_web/templates/hosting.html:310
 msgid "Information about your project."
 msgstr "关于您的项目的信息。"
 
-#: weblate_web/templates/hosting.html:306
+#: weblate_web/templates/hosting.html:311
 msgid "Project website."
 msgstr "项目网站。"
 
-#: weblate_web/templates/hosting.html:314
+#: weblate_web/templates/hosting.html:319
 msgid ""
 "The free plan does not allow you to change project visibility or to limit "
 "users which can contribute to the translation."
 msgstr "免费方案不允许您更改项目可见性或限制可贡献翻译的用户。"
 
-#: weblate_web/templates/hosting.html:317
+#: weblate_web/templates/hosting.html:322
 msgid ""
 "This limitation can be lifted by purchasing the \"Basic\" hosting plan - you "
 "will still have free software limits, but you will get extended user "
@@ -1061,11 +1073,11 @@ msgstr ""
 "这项限制可以由购买“基本（Basic）”托管方案来解除——您仍然受限于仅能托管自由软"
 "件，但您将得到更多的用户管理功能。"
 
-#: weblate_web/templates/hosting.html:320
+#: weblate_web/templates/hosting.html:325
 msgid "Translation workflow"
 msgstr "翻译工作流程"
 
-#: weblate_web/templates/hosting.html:323
+#: weblate_web/templates/hosting.html:328
 msgid ""
 "All translated repositories are available using https protocol with similar "
 "naming as on website - weblate/master translation is published as "
@@ -1076,7 +1088,7 @@ msgstr ""
 "的翻译将被发布在 <code>https://hosted.weblate.org/git/weblate/master/</"
 "code>。您可以在组件信息选项卡上找到该URL。"
 
-#: weblate_web/templates/hosting.html:327
+#: weblate_web/templates/hosting.html:332
 #, python-format
 msgid ""
 "Weblate can automatically receive changes from major code hosting services, "
@@ -1087,7 +1099,7 @@ msgstr ""
 "\"%(github)s\">GitHub</a>、<a href=\"%(bitbucket)s\">Bitbucket</a> 或 <a "
 "href=\"%(gitlab)s\">GitLab</a> 的文档。"
 
-#: weblate_web/templates/hosting.html:331
+#: weblate_web/templates/hosting.html:336
 #, python-format
 msgid ""
 "If you want Weblate to automatically push changes as well, add Weblate push "
@@ -1098,11 +1110,11 @@ msgstr ""
 "让我们知道您想使用此选项。参见<a href=\"%(docs)s\">文档</a>了解详细的操作说"
 "明。"
 
-#: weblate_web/templates/hosting.html:334
+#: weblate_web/templates/hosting.html:339
 msgid "Support free hosting"
 msgstr "支持免费托管"
 
-#: weblate_web/templates/hosting.html:338
+#: weblate_web/templates/hosting.html:343
 #, python-format
 msgid ""
 "The hosting is provided for free, but running the server and maintaining it "
@@ -1113,11 +1125,11 @@ msgstr ""
 "\"%(gittip_url)s\">Liberapay</a> 或 <a href=\"%(donate_url)s\">其他方式捐助</"
 "a>。"
 
-#: weblate_web/templates/hosting.html:342
+#: weblate_web/templates/hosting.html:347
 msgid "Self hosting"
 msgstr "自行托管"
 
-#: weblate_web/templates/hosting.html:346
+#: weblate_web/templates/hosting.html:351
 #, python-format
 msgid ""
 "You can also <a href=\"%(download_url)s\">download</a> Weblate sources and "
@@ -1127,7 +1139,7 @@ msgstr ""
 "您可以<a href=\"%(download_url)s\">下载</a> Weblate 的源代码并在您的系统上自"
 "行运行它。还可以将 Weblate 部署到云平台中。"
 
-#: weblate_web/templates/hosting.html:350
+#: weblate_web/templates/hosting.html:355
 #, python-format
 msgid ""
 "In case you need help with your self hosted solution, we're ready to help as "
@@ -1138,7 +1150,7 @@ msgstr ""
 "身定做了咨询服务。请联系 <a href=\"%(contact_url)s\">Michal Čihař</a> 了解更"
 "多细节。"
 
-#: weblate_web/templates/hosting.html:353
+#: weblate_web/templates/hosting.html:358
 msgid ""
 "All prices exclude VAT, invoices for EU countries are issued as a reverse "
 "charge, invoices for Czech Republic will include additional VAT."
@@ -1309,6 +1321,18 @@ msgstr ""
 "您也可以联系 <a href=\"%(contact_link)s\">Michal Čihař</a>，Weblate 咨询服务"
 "的作者。"
 
+#: weblate_web/templates/terms.html:3 weblate_web/templates/terms.html:13
+msgid "Terms of Service"
+msgstr "服务条款"
+
+#: weblate_web/templates/terms.html:6
+msgid "The legal documents necessary to operate this service."
+msgstr ""
+
+#: weblate_web/templates/terms.html:20
+msgid "Privacy Policy"
+msgstr "隐私策略"
+
 #: weblate_web/templates/thanks.html:3 weblate_web/templates/thanks.html:4
 msgid "Thanks from Weblate"
 msgstr "来自 Weblate 的感谢"
@@ -1342,24 +1366,20 @@ msgid "Sauce Labs is running our Selenium tests in real browsers."
 msgstr "Sauce Labs 在真实的浏览器中运行我们的 Selenium 测试。"
 
 #: weblate_web/templates/thanks.html:42
-msgid "Rollbar helps us to collect and fix errors happening on Hosted Weblate."
-msgstr "Rollbar 帮助我们收集和修复发生在 Hosted Weblate 上的错误。"
-
-#: weblate_web/templates/thanks.html:46
 msgid "Our translations are being done on Hosted Weblate."
 msgstr "我们的翻译在 Hosted 网站上托管。"
 
-#: weblate_web/templates/thanks.html:50
+#: weblate_web/templates/thanks.html:46
 msgid "Supporters"
 msgstr "支持者"
 
-#: weblate_web/templates/thanks.html:52
+#: weblate_web/templates/thanks.html:48
 msgid ""
 "Free hosting for free software projects would be impossible without our "
 "sponsors."
 msgstr "免费托管自由软件项目离不开我们的赞助商。"
 
-#: weblate_web/templates/thanks.html:54
+#: weblate_web/templates/thanks.html:50
 msgid ""
 "Support our project on Bountysource Salt and get exclusive logo placement on "
 "this page."
@@ -1452,6 +1472,10 @@ msgstr "源代码 tar 包，xz 压缩"
 #: weblate_web/templatetags/downloads.py:61
 msgid "Sources, zip compressed"
 msgstr "源代码，zip 压缩"
+
+#~ msgid ""
+#~ "Rollbar helps us to collect and fix errors happening on Hosted Weblate."
+#~ msgstr "Rollbar 帮助我们收集和修复发生在 Hosted Weblate 上的错误。"
 
 #~ msgid "Free continuous translation hosting for free software."
 #~ msgstr "为自由软件免费提供不间断的翻译托管。"

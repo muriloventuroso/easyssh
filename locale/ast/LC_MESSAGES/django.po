@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2018-06-26 21:28+0200\n"
+"POT-Creation-Date: 2018-10-21 13:33+0200\n"
 "PO-Revision-Date: 2017-10-09 14:44+0000\n"
 "Last-Translator: Xuacu Saturio <xuacusk8@gmail.com>\n"
 "Language-Team: Asturian <https://hosted.weblate.org/projects/weblate/website/"
@@ -119,7 +119,7 @@ msgid "You can define access levels for every user."
 msgstr ""
 
 #: weblate_web/data.py:102 weblate_web/templates/hosting.html:105
-#: weblate_web/templates/hosting.html:311
+#: weblate_web/templates/hosting.html:316
 msgid "User management"
 msgstr ""
 
@@ -202,66 +202,70 @@ msgctxt "Keyword"
 msgid "translate"
 msgstr ""
 
-#: weblate_web/templates/base.html:66
+#: weblate_web/templates/base.html:54
 msgid "Toggle navigation"
 msgstr ""
 
-#: weblate_web/templates/base.html:72
+#: weblate_web/templates/base.html:60
 msgid "Weblate logo"
 msgstr ""
 
-#: weblate_web/templates/base.html:78
+#: weblate_web/templates/base.html:66
 msgid "Blog"
 msgstr ""
 
-#: weblate_web/templates/base.html:79
+#: weblate_web/templates/base.html:67
 msgid "Try"
 msgstr ""
 
-#: weblate_web/templates/base.html:80
+#: weblate_web/templates/base.html:68
 msgid "Features"
 msgstr ""
 
-#: weblate_web/templates/base.html:81
+#: weblate_web/templates/base.html:69
 msgid "Docs"
 msgstr ""
 
-#: weblate_web/templates/base.html:82 weblate_web/templates/download.html:17
+#: weblate_web/templates/base.html:70 weblate_web/templates/download.html:17
 msgid "Download"
 msgstr ""
 
-#: weblate_web/templates/base.html:83
+#: weblate_web/templates/base.html:71
 msgid "Hosting"
 msgstr ""
 
-#: weblate_web/templates/base.html:84
+#: weblate_web/templates/base.html:72
 msgid "Develop"
 msgstr ""
 
-#: weblate_web/templates/base.html:85 weblate_web/templates/donate.html:61
+#: weblate_web/templates/base.html:73 weblate_web/templates/donate.html:61
 #: weblate_web/templates/donate.html:91 weblate_web/templates/donate.html:92
 #: weblate_web/templates/donate.html:93 weblate_web/templates/donate.html:94
 #: weblate_web/templates/donate.html:95 weblate_web/templates/donate.html:96
 msgid "Donate"
 msgstr ""
 
-#: weblate_web/templates/base.html:86
+#: weblate_web/templates/base.html:74
 msgid "Support"
 msgstr ""
 
-#: weblate_web/templates/base.html:87
+#: weblate_web/templates/base.html:75
 msgid "Tour"
 msgstr ""
 
-#: weblate_web/templates/base.html:88
+#: weblate_web/templates/base.html:76
 msgid "Thanks"
 msgstr ""
 
-#: weblate_web/templates/base.html:103
+#: weblate_web/templates/base.html:91
 msgid "Help with translations!"
 msgstr ""
 
-#: weblate_web/templates/base.html:140
+#: weblate_web/templates/base.html:128 weblate_web/templates/terms.html:4
+msgid "Terms of Service and Privacy Policy"
+msgstr ""
+
+#: weblate_web/templates/base.html:129
 #, python-format
 msgid ""
 "Weblate is <a href=\"%(github_url)s\">free software</a> and welcomes <a href="
@@ -650,12 +654,12 @@ msgid "Usually following information is needed:"
 msgstr ""
 
 #: weblate_web/templates/hosting-ordered.html:18
-#: weblate_web/templates/hosting.html:307
+#: weblate_web/templates/hosting.html:312
 msgid "URL of repository with translations."
 msgstr ""
 
 #: weblate_web/templates/hosting-ordered.html:19
-#: weblate_web/templates/hosting.html:308
+#: weblate_web/templates/hosting.html:313
 msgid "Path to translations within the repository."
 msgstr ""
 
@@ -838,7 +842,7 @@ msgstr "Comunícate con nós"
 #: weblate_web/templates/hosting.html:187
 #: weblate_web/templates/hosting.html:190
 #: weblate_web/templates/hosting.html:193
-#: weblate_web/templates/hosting.html:253
+#: weblate_web/templates/hosting.html:258
 #, python-format
 msgid "%(price)s EUR / month"
 msgstr ""
@@ -863,7 +867,7 @@ msgstr ""
 #: weblate_web/templates/hosting.html:203
 #: weblate_web/templates/hosting.html:206
 #: weblate_web/templates/hosting.html:209
-#: weblate_web/templates/hosting.html:254
+#: weblate_web/templates/hosting.html:259
 #, python-format
 msgid "%(price)s EUR / year"
 msgstr ""
@@ -911,71 +915,79 @@ msgid "One time installation of Weblate"
 msgstr ""
 
 #: weblate_web/templates/hosting.html:243
-msgid "Installation using virtualenv, uwsgi and nginx"
-msgstr ""
-
-#: weblate_web/templates/hosting.html:244
-msgid "Using PostgreSQL, MySQL or MariaDB as database backend"
+msgid "Either installation directly on your system"
 msgstr ""
 
 #: weblate_web/templates/hosting.html:245
-msgid "Requires root access or close cooperation of your admins"
+msgid "Installation using virtualenv, uwsgi and nginx"
 msgstr ""
 
 #: weblate_web/templates/hosting.html:246
+msgid "Using PostgreSQL, MySQL or MariaDB as database backend"
+msgstr ""
+
+#: weblate_web/templates/hosting.html:249
+msgid "Or installation using Docker"
+msgstr ""
+
+#: weblate_web/templates/hosting.html:250
+msgid "Requires root access or close cooperation of your admins"
+msgstr ""
+
+#: weblate_web/templates/hosting.html:251
 msgid "Configuration customization"
 msgstr ""
 
-#: weblate_web/templates/hosting.html:247
+#: weblate_web/templates/hosting.html:252
 msgid "Does not include custom code development"
 msgstr ""
 
-#: weblate_web/templates/hosting.html:252
+#: weblate_web/templates/hosting.html:257
 msgid "Basic support for self hosted Weblate"
 msgstr ""
 
-#: weblate_web/templates/hosting.html:259
+#: weblate_web/templates/hosting.html:264
 msgid "Your Weblate will be upgraded to the latest version on every release."
 msgstr ""
 
-#: weblate_web/templates/hosting.html:260
+#: weblate_web/templates/hosting.html:265
 msgid "We will fix issues that occur in your environment."
 msgstr ""
 
-#: weblate_web/templates/hosting.html:261
+#: weblate_web/templates/hosting.html:266
 msgid "You will receive priority email support."
 msgstr ""
 
-#: weblate_web/templates/hosting.html:266
+#: weblate_web/templates/hosting.html:271
 msgid "Consulting services or custom development"
 msgstr ""
 
-#: weblate_web/templates/hosting.html:267
+#: weblate_web/templates/hosting.html:272
 #, python-format
 msgid "%(price)s EUR / hour"
 msgstr ""
 
-#: weblate_web/templates/hosting.html:272
+#: weblate_web/templates/hosting.html:277
 msgid "Custom features development"
 msgstr ""
 
-#: weblate_web/templates/hosting.html:273
+#: weblate_web/templates/hosting.html:278
 msgid "Integrating Weblate into your workflow"
 msgstr ""
 
-#: weblate_web/templates/hosting.html:274
+#: weblate_web/templates/hosting.html:279
 msgid "Suggestions on the internationalization or localization process"
 msgstr ""
 
-#: weblate_web/templates/hosting.html:282
+#: weblate_web/templates/hosting.html:287
 msgid "Ask us for details about self hosted Weblate"
 msgstr ""
 
-#: weblate_web/templates/hosting.html:284
+#: weblate_web/templates/hosting.html:289
 msgid "Hosting for free software"
 msgstr ""
 
-#: weblate_web/templates/hosting.html:287
+#: weblate_web/templates/hosting.html:292
 msgid ""
 "If you are interested in using Weblate for your free software, you can ask "
 "us for hosting of your translations on <a href=\"https://hosted.weblate.org/"
@@ -983,63 +995,63 @@ msgid ""
 "installing and maintaining it."
 msgstr ""
 
-#: weblate_web/templates/hosting.html:290
+#: weblate_web/templates/hosting.html:295
 msgid "Conditions for free hosting"
 msgstr ""
 
-#: weblate_web/templates/hosting.html:293
+#: weblate_web/templates/hosting.html:298
 msgid ""
 "Translated content has to be released under <a href=\"https://en.wikipedia."
 "org/wiki/Free_software_license\">free license</a>."
 msgstr ""
 
-#: weblate_web/templates/hosting.html:294
+#: weblate_web/templates/hosting.html:299
 msgid ""
 "Source code has to be publicly available in a supported version control "
 "system."
 msgstr ""
 
-#: weblate_web/templates/hosting.html:295
+#: weblate_web/templates/hosting.html:300
 msgid "There is no guarantee for service availability or quality."
 msgstr ""
 
-#: weblate_web/templates/hosting.html:298
+#: weblate_web/templates/hosting.html:303
 msgid "Asking for hosting"
 msgstr ""
 
-#: weblate_web/templates/hosting.html:301
+#: weblate_web/templates/hosting.html:306
 #, python-format
 msgid ""
 "Please use <a href=\"%(url)s\">contact form on Hosted Weblate</a> to request "
 "hosting. You will need following information:"
 msgstr ""
 
-#: weblate_web/templates/hosting.html:305
+#: weblate_web/templates/hosting.html:310
 msgid "Information about your project."
 msgstr ""
 
-#: weblate_web/templates/hosting.html:306
+#: weblate_web/templates/hosting.html:311
 msgid "Project website."
 msgstr ""
 
-#: weblate_web/templates/hosting.html:314
+#: weblate_web/templates/hosting.html:319
 msgid ""
 "The free plan does not allow you to change project visibility or to limit "
 "users which can contribute to the translation."
 msgstr ""
 
-#: weblate_web/templates/hosting.html:317
+#: weblate_web/templates/hosting.html:322
 msgid ""
 "This limitation can be lifted by purchasing the \"Basic\" hosting plan - you "
 "will still have free software limits, but you will get extended user "
 "management capabilities."
 msgstr ""
 
-#: weblate_web/templates/hosting.html:320
+#: weblate_web/templates/hosting.html:325
 msgid "Translation workflow"
 msgstr ""
 
-#: weblate_web/templates/hosting.html:323
+#: weblate_web/templates/hosting.html:328
 msgid ""
 "All translated repositories are available using https protocol with similar "
 "naming as on website - weblate/master translation is published as "
@@ -1047,7 +1059,7 @@ msgid ""
 "out the URL on the component information tab."
 msgstr ""
 
-#: weblate_web/templates/hosting.html:327
+#: weblate_web/templates/hosting.html:332
 #, python-format
 msgid ""
 "Weblate can automatically receive changes from major code hosting services, "
@@ -1055,7 +1067,7 @@ msgid ""
 "href=\"%(bitbucket)s\">Bitbucket</a> or <a href=\"%(gitlab)s\">GitLab</a>."
 msgstr ""
 
-#: weblate_web/templates/hosting.html:331
+#: weblate_web/templates/hosting.html:336
 #, python-format
 msgid ""
 "If you want Weblate to automatically push changes as well, add Weblate push "
@@ -1063,11 +1075,11 @@ msgid ""
 "href=\"%(docs)s\">documentation</a> for more detailed instructions."
 msgstr ""
 
-#: weblate_web/templates/hosting.html:334
+#: weblate_web/templates/hosting.html:339
 msgid "Support free hosting"
 msgstr ""
 
-#: weblate_web/templates/hosting.html:338
+#: weblate_web/templates/hosting.html:343
 #, python-format
 msgid ""
 "The hosting is provided for free, but running the server and maintaining it "
@@ -1075,11 +1087,11 @@ msgid ""
 "\">Liberapay</a> or <a href=\"%(donate_url)s\">other ways to donate</a>."
 msgstr ""
 
-#: weblate_web/templates/hosting.html:342
+#: weblate_web/templates/hosting.html:347
 msgid "Self hosting"
 msgstr ""
 
-#: weblate_web/templates/hosting.html:346
+#: weblate_web/templates/hosting.html:351
 #, python-format
 msgid ""
 "You can also <a href=\"%(download_url)s\">download</a> Weblate sources and "
@@ -1087,7 +1099,7 @@ msgid ""
 "to the cloud."
 msgstr ""
 
-#: weblate_web/templates/hosting.html:350
+#: weblate_web/templates/hosting.html:355
 #, python-format
 msgid ""
 "In case you need help with your self hosted solution, we're ready to help as "
@@ -1095,7 +1107,7 @@ msgid ""
 "href=\"%(contact_url)s\">Michal Čihař</a> for more details."
 msgstr ""
 
-#: weblate_web/templates/hosting.html:353
+#: weblate_web/templates/hosting.html:358
 msgid ""
 "All prices exclude VAT, invoices for EU countries are issued as a reverse "
 "charge, invoices for Czech Republic will include additional VAT."
@@ -1254,6 +1266,18 @@ msgid ""
 "author of Weblate for consulting services."
 msgstr ""
 
+#: weblate_web/templates/terms.html:3 weblate_web/templates/terms.html:13
+msgid "Terms of Service"
+msgstr ""
+
+#: weblate_web/templates/terms.html:6
+msgid "The legal documents necessary to operate this service."
+msgstr ""
+
+#: weblate_web/templates/terms.html:20
+msgid "Privacy Policy"
+msgstr ""
+
 #: weblate_web/templates/thanks.html:3 weblate_web/templates/thanks.html:4
 msgid "Thanks from Weblate"
 msgstr ""
@@ -1287,24 +1311,20 @@ msgid "Sauce Labs is running our Selenium tests in real browsers."
 msgstr ""
 
 #: weblate_web/templates/thanks.html:42
-msgid "Rollbar helps us to collect and fix errors happening on Hosted Weblate."
-msgstr ""
-
-#: weblate_web/templates/thanks.html:46
 msgid "Our translations are being done on Hosted Weblate."
 msgstr ""
 
-#: weblate_web/templates/thanks.html:50
+#: weblate_web/templates/thanks.html:46
 msgid "Supporters"
 msgstr ""
 
-#: weblate_web/templates/thanks.html:52
+#: weblate_web/templates/thanks.html:48
 msgid ""
 "Free hosting for free software projects would be impossible without our "
 "sponsors."
 msgstr ""
 
-#: weblate_web/templates/thanks.html:54
+#: weblate_web/templates/thanks.html:50
 msgid ""
 "Support our project on Bountysource Salt and get exclusive logo placement on "
 "this page."
