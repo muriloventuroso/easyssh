@@ -68,20 +68,19 @@
         <li class="nav-item"><a class="nav-link" href="https://docs.weblate.org/">{% trans "Docs" %}</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+        <li class="dropdown"><a href="#" class="nav-link dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <span class="fas fa-language"></span>
         {% for lang in LANGUAGES %}{% if lang.0 == LANGUAGE_CODE %}{{ lang.1 }}{% endif %}{% endfor %}
-        <b class="caret"></b>
         </a>
-        <ul class="dropdown-menu">
+        <div class="dropdown-menu{% if not LANGUAGE_BIDI %} dropdown-menu-right{% endif %}" aria-labelledby="dropdownMenuLink">
           {% for lang_code, lang_name in languages %}
           {% language lang_code %}
-          <li><a href="{% if url_name %}{% url url_name %}{% else %}{% url 'home' %}{% endif %}">{{ lang_name }}</a></li>
+          <a class="dropdown-item" href="{% if url_name %}{% url url_name %}{% else %}{% url 'home' %}{% endif %}">{{ lang_name }}</a>
           {% endlanguage %}
           {% endfor %}
-          <li role="presentation" class="divider"></li>
-          <li><a href="{% url 'contribute' %}#translate">{% trans "Help with translations!" %}</a></li>
-        </ul>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="{% url 'contribute' %}#translate">{% trans "Help with translations!" %}</a>
+        </div>
         </li>
       </ul>
     </div>
