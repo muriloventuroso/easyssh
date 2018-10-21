@@ -128,7 +128,6 @@
 <li><a href="{% url 'terms' %}">{% trans "Terms of Service and Privacy Policy" %}</a></li>
 <li>{% url 'donate' as donate_url %}{% blocktrans with 'https://github.com/WeblateOrg/weblate' as github_url %}Weblate is <a href="{{ github_url }}">free software</a> and welcomes <a href="{{ donate_url }}">donations</a>.{% endblocktrans %}</li>
 <li><a href="https://twitter.com/WeblateOrg" title="Twitter"><i class="fab fa-twitter"></i></a></li>
-<li><a href="https://plus.google.com/+WeblateOrg" title="Google+"><i class="fab fa-google-plus"></i></a></li>
 <li><a href="https://www.facebook.com/WeblateOrg" title="Facebook"><i class="fab fa-facebook"></i></a></li>
 <li><a href="https://github.com/WeblateOrg/weblate" title="GitHub"><i class="fab fa-github"></i></a></li>
 {% block extrafooter %}{% endblock %}
