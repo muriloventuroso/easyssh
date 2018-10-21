@@ -24,11 +24,10 @@
 {% blocktrans with "mailto:michal@cihar.com" as contact %}We can host translations for your commercial or free software projects. You can see summary of hosting plans below. Should you have any questions or look for hosting of bigger projects, don't hesitate to <a href="{{ contact }}">get in touch with us</a>.{% endblocktrans %}
 </p>
 
-<div class="table-responsive">
   <table class="table table-bordered table-striped">
-    <thead>
-      <tr class="info">
-        <td></td>
+    <thead class="thead-dark">
+      <tr>
+        <th></th>
         <th><a href="#free">{% trans "Free software" context "Hosting plan" %}</a></th>
         <th>{% trans "Basic" context "Hosting plan" %}</th>
         <th>{% trans "Medium" context "Hosting plan" %}</th>
@@ -211,7 +210,6 @@
       </tr>
     </tfoot>
   </table>
-</div>
 
 <p>
 {% trans "The pricing is based on number of source strings and number of target languages. The source string is a text unit defined in a translation format, it can be word, sentence or a paragraph." %}
