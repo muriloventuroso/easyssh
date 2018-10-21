@@ -8,7 +8,7 @@
 
 {% block extrajumbo %}
 <p>
-<a class="btn btn-primary btn-lg" href="https://github.com/WeblateOrg/weblate/issues" role="button"><i class="fas fa-bug"></i> {% trans "Report issue" %}</a>
+<a class="btn btn-info btn-lg" href="https://github.com/WeblateOrg/weblate/issues" role="button"><i class="fas fa-bug"></i> {% trans "Report issue" %}</a>
 </p>
 {% endblock %}
 {% block content %}
@@ -71,7 +71,7 @@
 
 <h2>{% trans "Consulting" %}</h2>
 
-<p><a href="{% url 'hosting' %}#self" class="btn btn-primary btn-lg">{% trans "See our support offerings for self hosted Weblate instances" %}</a></p>
+<p><a href="{% url 'hosting' %}#self" class="btn btn-info btn-lg">{% trans "See our support offerings for self hosted Weblate instances" %}</a></p>
 
 <p>
 {% blocktrans with 'mailto:michal@cihar.com?subject=Weblate' as contact_link %}You can also contact <a href="{{ contact_link }}">Michal Čihař</a>, who is author of Weblate for consulting services.{% endblocktrans %}

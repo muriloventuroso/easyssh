@@ -32,11 +32,10 @@
       {% endlanguage %}
     {% endif %}
   {% endfor %}
-   <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+   <script src="/media/jquery-3.3.1.min.js"></script>
 
-   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
-   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="/media/bootstrap-4.1.3.min.css">
+   <script src="/media/bootstrap-4.1.3.bundle.min.js"></script>
    <link rel="stylesheet" type="text/css" href="/media/custom.css">
    <script src="/media/fontawesome-free-5.4.1.js"></script>
 
@@ -46,37 +45,30 @@
    <meta name="wot-verification" content="b166aac1728babda4ade" />
 </head>
  <body {% if LANGUAGE_BIDI %}class="dir-rtl"{% endif %}>
-<nav class="navbar navbar-default navbar-static-top">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">{% trans "Toggle navigation" %}</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="{% url 'home' %}">
-      <img class="logo" src="/media/weblate-128.png" alt="{% trans "Weblate logo" %}" />
-      Weblate
-      </a>
-    </div>
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li><a href="{% url 'try' %}">{% trans "Try" %}</a></li>
-        <li><a href="{% url 'features'%}">{% trans "Features" %}</a></li>
-        <li><a href="{% url 'download' %}">{% trans "Download" %}</a></li>
-        <li><a href="{% url 'hosting' %}">{% trans "Hosting" %}</a></li>
-        <li><a href="{% url 'contribute' %}">{% trans "Develop" %}</a></li>
-        <li><a href="{% url 'donate' %}">{% trans "Donate" %}</a></li>
-        <li><a href="{% url 'support' %}">{% trans "Support" %}</a></li>
-        <li><a href="{% url 'tour' %}">{% trans "Tour" %}</a></li>
-        <li><a href="{% url 'thanks' %}">{% trans "Thanks" %}</a></li>
-        <li><a href="https://blog.cihar.com/archives/weblate/">{% trans "Blog" %}</a></li>
-        <li><a href="https://docs.weblate.org/">{% trans "Docs" %}</a></li>
+<nav class="navbar navbar-default navbar-expand-md navbar-static-top navbar-light bg-light">
+  <a class="navbar-brand" href="{% url 'home' %}">
+  <img class="logo" src="/media/weblate-128.png" alt="{% trans "Weblate logo" %}" />
+  Weblate
+  </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>     
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a class="nav-link" href="{% url 'try' %}">{% trans "Try" %}</a></li>
+        <li class="nav-item"><a class="nav-link" href="{% url 'features'%}">{% trans "Features" %}</a></li>
+        <li class="nav-item"><a class="nav-link" href="{% url 'download' %}">{% trans "Download" %}</a></li>
+        <li class="nav-item"><a class="nav-link" href="{% url 'hosting' %}">{% trans "Hosting" %}</a></li>
+        <li class="nav-item"><a class="nav-link" href="{% url 'contribute' %}">{% trans "Develop" %}</a></li>
+        <li class="nav-item"><a class="nav-link" href="{% url 'donate' %}">{% trans "Donate" %}</a></li>
+        <li class="nav-item"><a class="nav-link" href="{% url 'support' %}">{% trans "Support" %}</a></li>
+        <li class="nav-item"><a class="nav-link" href="{% url 'tour' %}">{% trans "Tour" %}</a></li>
+        <li class="nav-item"><a class="nav-link" href="{% url 'thanks' %}">{% trans "Thanks" %}</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://blog.cihar.com/archives/weblate/">{% trans "Blog" %}</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://docs.weblate.org/">{% trans "Docs" %}</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+        <li class="dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
         <span class="fas fa-language"></span>
         {% for lang in LANGUAGES %}{% if lang.0 == LANGUAGE_CODE %}{{ lang.1 }}{% endif %}{% endfor %}
         <b class="caret"></b>
