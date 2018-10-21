@@ -23,6 +23,8 @@
 #
 
 import os
+import sentry_sdk
+from sentry_sdk.integrations.django import DjangoIntegration
 
 DEBUG = True
 
@@ -182,13 +184,6 @@ MIDDLEWARE = [
     'rollbar.contrib.django.middleware.RollbarNotifierMiddleware',
 ]
 
-ROLLBAR = {
-    'access_token': '',
-    'environment': 'development' if DEBUG else 'production',
-    'branch': 'master',
-    'root': '/home/nijel/weblate-web/',
-}
-
 ROOT_URLCONF = 'weblate_web.urls'
 
 INSTALLED_APPS = (
@@ -249,3 +244,8 @@ SESSION_ENGINE = "django.contrib.sessions.backends.signed_cookies"
 
 # Force sane test runner
 TEST_RUNNER = 'django.test.runner.DiscoverRunner'
+
+sentry_sdk.init(
+    dsn="",
+    integrations=[DjangoIntegration()]
+)
