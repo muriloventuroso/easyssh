@@ -195,6 +195,7 @@ INSTALLED_APPS = (
     'weblate_web',
     'django.contrib.staticfiles',
     'django.contrib.sitemaps',
+    'wlhosted',
 )
 
 # Some security headers
