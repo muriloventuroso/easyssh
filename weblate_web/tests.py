@@ -36,6 +36,10 @@ class ViewTestCase(TestCase):
         response = self.client.get('/be@latin/')
         self.assertContains(response, u'Boĺš funkcyj')
 
+    def test_terms(self):
+        response = self.client.get('/en/terms/')
+        self.assertContains(response, u'04705904')
+
     def test_download_en(self):
         # create dummy files for testing
         filenames = [

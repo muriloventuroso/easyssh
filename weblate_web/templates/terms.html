@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}{% trans "Terms of Service" %}{% endblock %}
+{% block header %}{% trans "Terms of Service and Privacy Policy" %}{% endblock %}
+{% block description %}
+{% block headline %}{% trans "The legal documents necessary to operate this service." %}{% endblock %}
+{% endblock %}
+{% block content %}
+
+<div class="container-fluid">
+
+<div class="panel panel-primary">
+<div class="panel-heading"><h4 class="panel-title">{% trans "Terms of Service" %}</h4></div>
+<div class="panel-body tos">
+{% include "legal/documents/tos.html" %}
+</div>
+</div>
+
+<div class="panel panel-primary">
+<div class="panel-heading"><h4 class="panel-title">{% trans "Privacy Policy" %}</h4></div>
+<div class="panel-body tos">
+{% include "legal/documents/privacy.html" %}
+</div>
+</div>
+
+</div>
+{% endblock %}
+
