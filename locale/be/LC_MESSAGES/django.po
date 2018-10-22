@@ -1,14 +1,13 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Viktar Vauchkevich <victorenator@gmail.com>, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2018-10-22 17:10+0200\n"
-"PO-Revision-Date: 2018-06-28 16:05+0000\n"
+"PO-Revision-Date: 2018-10-23 12:02+0000\n"
 "Last-Translator: Viktar Vauchkevich <victorenator@gmail.com>\n"
 "Language-Team: Belarusian <https://hosted.weblate.org/projects/weblate/"
 "website/be/>\n"
@@ -16,9 +15,9 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.1-dev\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 3.3-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -221,7 +220,7 @@ msgstr "Сцягнуць"
 
 #: weblate_web/templates/base.html:61
 msgid "Pricing"
-msgstr ""
+msgstr "Кошты"
 
 #: weblate_web/templates/base.html:62
 msgid "Develop"
@@ -257,7 +256,7 @@ msgstr "Дапамажыце з перакладам!"
 
 #: weblate_web/templates/base.html:119 weblate_web/templates/terms.html:4
 msgid "Terms of Service and Privacy Policy"
-msgstr ""
+msgstr "Умовы прадастаўленьня паслуг і Палітыка прыватнасьці"
 
 #: weblate_web/templates/contribute.html:3
 #: weblate_web/templates/contribute.html:4
@@ -432,10 +431,8 @@ msgid "Currency"
 msgstr "Валюта"
 
 #: weblate_web/templates/donate.html:88
-#, fuzzy
-#| msgid "Payment address"
 msgid "Donate address"
-msgstr "Адрас аплаты"
+msgstr "Адрас ахвяраваньняў"
 
 #: weblate_web/templates/download.html:4 weblate_web/templates/download.html:5
 msgid "Download Weblate"
@@ -671,14 +668,14 @@ msgstr ""
 
 #: weblate_web/templates/hosting-free.html:3
 #: weblate_web/templates/hosting-free.html:4
-#, fuzzy
-#| msgid "Hosting Weblate"
 msgid "Free hosting on Weblate"
-msgstr "Хостынг для Weblate"
+msgstr "Дармовае размяшчэнне на Weblate"
 
 #: weblate_web/templates/hosting-free.html:6
 msgid "We love open source and we offer free plans for hosting translations."
 msgstr ""
+"Мы любім адкрытыя зыходнікі і прапануем дармовыя планы для размяшчэньня "
+"перакладаў."
 
 #: weblate_web/templates/hosting-free.html:11
 #: weblate_web/templates/hosting.html:11
@@ -1111,43 +1108,33 @@ msgstr ""
 "разгортвання Weblate у воблаку."
 
 #: weblate_web/templates/hosting.html:235
-#, fuzzy
-#| msgid ""
-#| "In case you need help with your self hosted solution, we're ready to help "
-#| "as well with consulting services tailored for your needs. Please contact "
-#| "<a href=\"%(contact_url)s\">Michal Čihař</a> for more details."
 msgid ""
 "In case you need help with your self hosted solution, we're ready to help as "
 "well with consulting services tailored for your needs."
 msgstr ""
 "У выпадку, калі вам неабходна дапамога з вашым уласным размяшчэннем, мы "
 "гатовыя дапамагчы, у тым ліку кансультацыйнымі паслугамі, з улікам вашых "
-"патрэб. Калі ласка, звяжыцеся з <a href=\"%(contact_url)s\">Michal Čihař</a> "
-"для падрабязнасцей."
+"патрэб."
 
 #: weblate_web/templates/index.html:3
 msgid "Weblate - web-based translation"
 msgstr "Weblate — вэб-інструмент для перакладаў"
 
 #: weblate_web/templates/index.html:7
-#, fuzzy
-#| msgid "Weblate is a free web-based translation management system."
 msgid ""
 "Weblate is an open source web-based translation management system supporting "
 "continuous translation."
-msgstr "Weblate — гэта свабодная вэб-сістэма кіравання перакладамі."
+msgstr ""
+"Weblate — гэта свабодная вэб-сістэма кіравання перакладамі з падтрымкай "
+"безперапыннага перакладу."
 
 #: weblate_web/templates/index.html:14
-#, fuzzy
-#| msgid "Hosting Weblate"
 msgid "Start using Weblate"
-msgstr "Хостынг для Weblate"
+msgstr "Пачаць выкарыстоўваць Weblate"
 
 #: weblate_web/templates/index.html:15
-#, fuzzy
-#| msgid "Try our demo"
 msgid "Try our demo server"
-msgstr "Выпрабуйце дэма"
+msgstr "Выпрабуйце дэма-сервер"
 
 #: weblate_web/templates/index.html:16
 msgid "Downloads"
@@ -1246,7 +1233,7 @@ msgstr "Аднаразовая ўсталёўка Weblate"
 
 #: weblate_web/templates/support.html:43
 msgid "Either installation directly on your system"
-msgstr ""
+msgstr "Альбо ўстаноўка непасрэдна на вашай сістэме"
 
 #: weblate_web/templates/support.html:45
 msgid "Installation using virtualenv, uwsgi and nginx"
@@ -1258,7 +1245,7 @@ msgstr "Выкарыстанне PostgreSQL, MySQL ці MariaDB як схові�
 
 #: weblate_web/templates/support.html:49
 msgid "Or installation using Docker"
-msgstr ""
+msgstr "Або ўстаноўка праз Docker"
 
 #: weblate_web/templates/support.html:50
 msgid "Requires root access or close cooperation of your admins"
@@ -1398,7 +1385,7 @@ msgstr "Умовы абслугоўвання"
 
 #: weblate_web/templates/terms.html:6
 msgid "The legal documents necessary to operate this service."
-msgstr ""
+msgstr "Прававыя дакументы, неабходныя для працы гэтай службы."
 
 #: weblate_web/templates/terms.html:20
 msgid "Privacy Policy"
