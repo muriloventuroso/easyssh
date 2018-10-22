@@ -80,6 +80,7 @@ LANGUAGES = (
     ('es', u'Español'),
     ('fi', u'Suomi'),
     ('fr', u'Français'),
+    ('gl', u'Galego'),
     ('he', u'עברית'),
     ('hu', u'Magyar'),
     ('id', u'Indonesia'),
