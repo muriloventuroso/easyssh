@@ -25,6 +25,68 @@
 {% blocktrans with '<a href="https://hackerone.com/weblate">HackerOne</a>' as contact and 'https://docs.weblate.org/en/latest/contributing.html#security' as docs %}Should you find security issue within our code base, please report it to {{ contact }}. More information on reporting security issues can be found in <a href="{{ docs }}">our documentation</a>.{% endblocktrans %}
 </p>
 
+<h2 id="self">{% trans "Support for self hosted environments" %}</h2>
+
+<p>{% blocktrans %}Worried of putting your translations into cloud? You can self host Weblate and we can still provide you premium support for your setup.{% endblocktrans %}</p>
+
+<div class="table-responsive">
+  <table class="table table-bordered table-striped">
+    <tbody>
+      <tr>
+        <th>{% trans "Installation on your Linux server" %}</th>
+        <td colspan="2" class="price">{% blocktrans with 300 as price %}{{ price }} EUR{% endblocktrans %}</td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          <ul>
+            <li>{% trans "One time installation of Weblate" %}</li>
+            <li>{% trans "Either installation directly on your system" %}
+            <ul>
+            <li>{% trans "Installation using virtualenv, uwsgi and nginx" %}</li>
+            <li>{% trans "Using PostgreSQL, MySQL or MariaDB as database backend" %}</li>
+            </ul>
+            </li>
+            <li>{% trans "Or installation using Docker" %}</li>
+            <li>{% trans "Requires root access or close cooperation of your admins" %}</li>
+            <li>{% trans "Configuration customization" %}</li>
+            <li>{% trans "Does not include custom code development" %}</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <th>{% trans "Basic support for self hosted Weblate" %}</th>
+        <td class="price">{% blocktrans with 50 as price %}{{ price }} EUR / month{% endblocktrans %}</td>
+        <td class="price">{% blocktrans with 500 as price %}{{ price }} EUR / year{% endblocktrans %}</td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          <ul>
+            <li>{% blocktrans %}Your Weblate will be upgraded to the latest version on every release.{% endblocktrans %}</li>
+            <li>{% trans "We will fix issues that occur in your environment." %}</li>
+            <li>{% trans "You will receive priority email support." %}</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <th>{% trans "Consulting services or custom development"  %}</th>
+        <td colspan="2" class="price">{% blocktrans with 35 as price %}{{ price }} EUR / hour{% endblocktrans %}</td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          <ul>
+            <li>{% trans "Custom features development" %}</li>
+            <li>{% trans "Integrating Weblate into your workflow" %}</li>
+            <li>{% trans "Suggestions on the internationalization or localization process" %}</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p><a class="btn btn-info btn-lg" href="mailto:michal@cihar.com?subject=Weblate self hosting ">{% blocktrans%}Ask us for details about self hosted Weblate{% endblocktrans %}</a></p>
+
+
 <h2>{% trans "Support for Hosted Weblate services" %}</h2>
 
 <p>
@@ -69,12 +131,6 @@
 
 <p>{% blocktrans with "https://stackoverflow.com/tags/weblate/info" as url %}You can also ask related questions on <a href="{{ url }}">Stack Overflow</a>.{% endblocktrans %}</p>
 
-<h2>{% trans "Consulting" %}</h2>
-
-<p><a href="{% url 'hosting' %}#self" class="btn btn-info btn-lg">{% trans "See our support offerings for self hosted Weblate instances" %}</a></p>
-
-<p>
-{% blocktrans with 'mailto:michal@cihar.com?subject=Weblate' as contact_link %}You can also contact <a href="{{ contact_link }}">Michal Čihař</a>, who is author of Weblate for consulting services.{% endblocktrans %}
-</p>
+{% include "vat.html" %}
 
 {% endblock %}

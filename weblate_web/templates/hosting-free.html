@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}{% trans "Free hosting on Weblate" %}{% endblock %}
+{% block header %}{% trans "Free hosting on Weblate" %}{% endblock %}
+{% block description %}
+{% block headline %}{% trans "We love open source and we offer free plans for hosting translations." %}{% endblock %}
+{% endblock %}
+
+{% block extrajumbo %}
+<p>
+<a class="btn btn-info btn-lg" href="https://hosted.weblate.org/hosting/" role="button"><i class="fas fa-comment"></i> {% trans "Ask for hosting" %}</a>
+</p>
+{% endblock %}
+
+{% block content %}
+
+
+<h2 id="free">{% trans "Hosting for free software" %}</h2>
+
+<p>
+{% blocktrans %}If you are interested in using Weblate for your free software, you can ask us for hosting of your translations on <a href="https://hosted.weblate.org/">hosted.weblate.org</a>. This will allow you to use Weblate without installing and maintaining it.{% endblocktrans %}
+</p>
+
+<h3>{% trans "Conditions for free hosting" %}</h3>
+
+<ul>
+<li>{% trans 'Translated content has to be released under <a href="https://en.wikipedia.org/wiki/Free_software_license">free license</a>.' %}</li>
+<li>{% trans "Source code has to be publicly available in a supported version control system." %}</li>
+<li>{% trans "There is no guarantee for service availability or quality." %}</li>
+</ul>
+
+<h3>{% trans "Asking for hosting" %}</h3>
+
+<p>
+{% blocktrans with "https://hosted.weblate.org/hosting/" as url %}Please use <a href="{{ url }}">contact form on Hosted Weblate</a> to request hosting. You will need following information:{% endblocktrans %}
+</p>
+
+<ul>
+<li>{% trans "Information about your project." %}</li>
+<li>{% trans "Project website." %}</li>
+<li>{% trans "URL of repository with translations." %}</li>
+<li>{% trans "Path to translations within the repository." %}</li>
+</ul>
+
+<h3 id="free-users">{% trans "User management" %}</h3>
+
+<p>
+{% blocktrans %}The free plan does not allow you to change project visibility or to limit users which can contribute to the translation.{% endblocktrans %}
+</p>
+<p>
+{% blocktrans %}This limitation can be lifted by purchasing the "Basic" hosting plan - you will still have free software limits, but you will get extended user management capabilities.{% endblocktrans %}
+</p>
+
+<h3>{% trans "Translation workflow" %}</h3>
+
+<p>
+{% blocktrans %}All translated repositories are available using https protocol with similar naming as on website - weblate/master translation is published as <code>https://hosted.weblate.org/git/weblate/master/</code>. You can figure out the URL on the component information tab.{% endblocktrans %}
+</p>
+
+<p>
+{% blocktrans with "https://docs.weblate.org/en/latest/admin/continuous.html#github-setup" as github and "https://docs.weblate.org/en/latest/admin/continuous.html#bitbucket-setup" as bitbucket and "https://docs.weblate.org/en/latest/admin/continuous.html#gitlab-setup" as gitlab %}Weblate can automatically receive changes from major code hosting services, see our documentation for setup on <a href="{{ github }}">GitHub</a>, <a href="{{ bitbucket }}">Bitbucket</a> or <a href="{{ gitlab }}">GitLab</a>.{% endblocktrans %}
+</p>
+
+<p>
+{% blocktrans with "https://docs.weblate.org/en/latest/admin/continuous.html#hosted-push" as docs %}If you want Weblate to automatically push changes as well, add Weblate push user to collaborators and let us know you want to use this option. See <a href="{{ docs }}">documentation</a> for more detailed instructions.{% endblocktrans %}
+</p>
+
+<h3>{% trans "Support free hosting" %}</h3>
+
+<p>
+{% url 'donate' as donate_url %}
+{% blocktrans with 'https://liberapay.com/Weblate/' as gittip_url %}The hosting is provided for free, but running the server and maintaining it costs some money, so you are welcome to use <a href="{{ gittip_url }}">Liberapay</a> or <a href="{{ donate_url }}">other ways to donate</a>.{% endblocktrans %}
+</p>
+
+{% include "vat.html" %}
+
+{% endblock %}

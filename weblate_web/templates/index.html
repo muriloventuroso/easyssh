@@ -1,18 +1,18 @@
 {% extends "base.html" %}
 {% load i18n %}
 {% block title %}{% trans "Weblate - web-based translation" %}{% endblock %}
-{% block header %}Weblate{% endblock %}
+{% block header %}Bring translators closer to your team{% endblock %}
 {% block description %}
 {% block headline %}
-{% trans "Weblate is a free web-based translation management system." %}
+{% trans "Weblate is an open source web-based translation management system supporting continuous translation." %}
 {% endblock %}
 {% endblock %}
 
 
 {% block extrajumbo %}
 <p>
-<a class="btn btn-info btn-lg" href="https://demo.weblate.org/" role="button"><i class="fas fa-search"></i> {% trans "Try our demo" %}</a>
-<a class="btn btn-info btn-lg" href="{% url 'hosting' %}" role="button"><i class="fas fa-server"></i> {% trans "View hosting plans" %}</a>
+<a class="btn btn-info btn-lg" href="{% url 'hosting' %}" role="button"><i class="fas fa-server"></i> {% trans "Start using Weblate" %}</a>
+<a class="btn btn-info btn-lg" href="https://demo.weblate.org/" role="button"><i class="fas fa-search"></i> {% trans "Try our demo server" %}</a>
 <a class="btn btn-info btn-lg" href="{% url 'download' %}" role="button"><i class="fas fa-download"></i> {% trans "Downloads" %}</a>
 </p>
 {% endblock %}
@@ -36,7 +36,6 @@
 </div>
 
 <p><a class="btn btn-info" href="{% url 'features' %}">{% trans "See more features…"%}</a></p>
-
 
 {% endblock %}
 
@@ -107,4 +106,48 @@
     </div>
   </div>
 </div>
+
+    <div class="container">
+      <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Hosted service</h4>
+          </div>
+          <div class="card-body">
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>From 19 EUR/month</li>
+              <li>Cloud service</li>
+              <li>Priority email support</li>
+            </ul>
+            <a href="{% url "hosting" %}" class="btn btn-lg btn-block btn-info">Choose plan</a>
+          </div>
+        </div>
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">On premise</h4>
+          </div>
+          <div class="card-body">
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>From 50 EUR/month</li>
+              <li>Your infrastructure</li>
+              <li>Priority email support</li>
+            </ul>
+            <a href="{% url "support" %}" class="btn btn-lg btn-block btn-info">Choose plan</a>
+          </div>
+        </div>
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Self supported</h4>
+          </div>
+          <div class="card-body">
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Weblate is free to use</li>
+              <li>Maintained by you</li>
+              <li>Community support</li>
+            </ul>
+            <a href="{% url "download" %}" class="btn btn-lg btn-block btn-info">Download</a>
+          </div>
+        </div>
+      </div>
+
 {% endblock %}

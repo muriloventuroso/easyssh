@@ -102,6 +102,11 @@ urlpatterns = i18n_patterns(
         name='hosting'
     ),
     url(
+        r'^hosting/free/$',
+        TemplateView.as_view(template_name="hosting-free.html"),
+        name='hosting-free'
+    ),
+    url(
         r'^hosting/ordered/$',
         TemplateView.as_view(template_name="hosting-ordered.html"),
         name='hosting-ordered'
