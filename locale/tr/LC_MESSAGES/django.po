@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2018-10-21 13:33+0200\n"
+"POT-Creation-Date: 2018-10-22 17:10+0200\n"
 "PO-Revision-Date: 2018-06-26 20:05+0000\n"
 "Last-Translator: monolifed <monolifed@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/weblate/website/"
@@ -57,7 +57,7 @@ msgstr ""
 "terimler sözlüğünü tanımlayabilir."
 
 #: weblate_web/data.py:58 weblate_web/templates/features.html:71
-#: weblate_web/templates/hosting.html:141
+#: weblate_web/templates/hosting.html:140
 msgid "Glossary"
 msgstr "Terim Sözlüğü"
 
@@ -70,7 +70,7 @@ msgstr ""
 "size yardımcı olacaktır."
 
 #: weblate_web/data.py:66 weblate_web/templates/base-features.html:14
-#: weblate_web/templates/hosting.html:123
+#: weblate_web/templates/hosting.html:122
 msgid "Quality checks"
 msgstr "Kalite denetimleri"
 
@@ -117,8 +117,8 @@ msgstr "Dışa ve içe aktarma"
 msgid "You can define access levels for every user."
 msgstr "Her kullanıcı için erişim düzeyini tanımlayabilirsiniz."
 
-#: weblate_web/data.py:102 weblate_web/templates/hosting.html:105
-#: weblate_web/templates/hosting.html:316
+#: weblate_web/data.py:102 weblate_web/templates/hosting-free.html:45
+#: weblate_web/templates/hosting.html:104
 msgid "User management"
 msgstr "Kullanıcı yönetimi"
 
@@ -127,7 +127,6 @@ msgid "Page not found"
 msgstr "Sayfa bulunamadı"
 
 #: weblate_web/templates/404.html:8 weblate_web/templates/500.html:8
-#: weblate_web/templates/index.html:7
 msgid "Weblate is a free web-based translation management system."
 msgstr "Weblate özgür bir web tabanlı çeviri yönetimi sistemidir."
 
@@ -148,7 +147,7 @@ msgstr ""
 "çözmesi için eğitimli afacanlarımızı şimdi gönderdik."
 
 #: weblate_web/templates/base-features.html:6
-#: weblate_web/templates/hosting.html:42
+#: weblate_web/templates/hosting.html:41
 msgid "Continuous translation"
 msgstr "Sürekli çeviri"
 
@@ -201,77 +200,61 @@ msgctxt "Keyword"
 msgid "translate"
 msgstr "çevir"
 
-#: weblate_web/templates/base.html:54
-msgid "Toggle navigation"
-msgstr "Gezinmeyi değiştirin"
-
-#: weblate_web/templates/base.html:60
+#: weblate_web/templates/base.html:50
 msgid "Weblate logo"
 msgstr "Weblate logosu"
 
-#: weblate_web/templates/base.html:66
-msgid "Blog"
-msgstr "Blog"
-
-#: weblate_web/templates/base.html:67
+#: weblate_web/templates/base.html:58
 msgid "Try"
 msgstr "Deneyin"
 
-#: weblate_web/templates/base.html:68
+#: weblate_web/templates/base.html:59
 msgid "Features"
 msgstr "Özellikler"
 
-#: weblate_web/templates/base.html:69
-msgid "Docs"
-msgstr "Belgeler"
-
-#: weblate_web/templates/base.html:70 weblate_web/templates/download.html:17
+#: weblate_web/templates/base.html:60 weblate_web/templates/download.html:17
 msgid "Download"
 msgstr "İndir"
 
-#: weblate_web/templates/base.html:71
-msgid "Hosting"
-msgstr "Barındırma"
+#: weblate_web/templates/base.html:61
+msgid "Pricing"
+msgstr ""
 
-#: weblate_web/templates/base.html:72
+#: weblate_web/templates/base.html:62
 msgid "Develop"
 msgstr "Geliştirme"
 
-#: weblate_web/templates/base.html:73 weblate_web/templates/donate.html:61
-#: weblate_web/templates/donate.html:91 weblate_web/templates/donate.html:92
-#: weblate_web/templates/donate.html:93 weblate_web/templates/donate.html:94
-#: weblate_web/templates/donate.html:95 weblate_web/templates/donate.html:96
+#: weblate_web/templates/base.html:63 weblate_web/templates/donate.html:61
 msgid "Donate"
 msgstr "Bağış"
 
-#: weblate_web/templates/base.html:74
+#: weblate_web/templates/base.html:64
 msgid "Support"
 msgstr "Destek"
 
-#: weblate_web/templates/base.html:75
+#: weblate_web/templates/base.html:65
 msgid "Tour"
 msgstr "Tur"
 
-#: weblate_web/templates/base.html:76
+#: weblate_web/templates/base.html:66
 msgid "Thanks"
 msgstr "Teşekkürler"
 
-#: weblate_web/templates/base.html:91
+#: weblate_web/templates/base.html:67
+msgid "Blog"
+msgstr "Blog"
+
+#: weblate_web/templates/base.html:68
+msgid "Docs"
+msgstr "Belgeler"
+
+#: weblate_web/templates/base.html:82
 msgid "Help with translations!"
 msgstr "Çevirilerle yardım edin!"
 
-#: weblate_web/templates/base.html:128 weblate_web/templates/terms.html:4
+#: weblate_web/templates/base.html:119 weblate_web/templates/terms.html:4
 msgid "Terms of Service and Privacy Policy"
 msgstr ""
-
-#: weblate_web/templates/base.html:129
-#, python-format
-msgid ""
-"Weblate is <a href=\"%(github_url)s\">free software</a> and welcomes <a href="
-"\"%(donate_url)s\">donations</a>."
-msgstr ""
-"Weblate <a href=\"%(github_url)s\">ücretsiz yazılımdır</a> ve <a href="
-"\"%(donate_url)s\">bağışlarınızı</a> bekliyoruz."
 
 #: weblate_web/templates/contribute.html:3
 #: weblate_web/templates/contribute.html:4
@@ -447,11 +430,9 @@ msgid "Currency"
 msgstr "Para birimi"
 
 #: weblate_web/templates/donate.html:88
-msgid "Payment link"
-msgstr "Ödeme bağlantısı"
-
-#: weblate_web/templates/donate.html:88
-msgid "Payment address"
+#, fuzzy
+#| msgid "Payment address"
+msgid "Donate address"
 msgstr "Ödeme adresi"
 
 #: weblate_web/templates/download.html:4 weblate_web/templates/download.html:5
@@ -690,6 +671,166 @@ msgstr ""
 "Weblate'in masaüstünüz, tabletiniz veya telefonunuzda güzelce çalışacak "
 "duyarlı kullanıcı arayüzü vardır."
 
+#: weblate_web/templates/hosting-free.html:3
+#: weblate_web/templates/hosting-free.html:4
+#, fuzzy
+#| msgid "Hosting Weblate"
+msgid "Free hosting on Weblate"
+msgstr "Weblate Barındırma"
+
+#: weblate_web/templates/hosting-free.html:6
+msgid "We love open source and we offer free plans for hosting translations."
+msgstr ""
+
+#: weblate_web/templates/hosting-free.html:11
+#: weblate_web/templates/hosting.html:11
+msgid "Ask for hosting"
+msgstr "Barındırma için sorun"
+
+#: weblate_web/templates/hosting-free.html:18
+msgid "Hosting for free software"
+msgstr "Özgür yazılım barındırma"
+
+#: weblate_web/templates/hosting-free.html:21
+msgid ""
+"If you are interested in using Weblate for your free software, you can ask "
+"us for hosting of your translations on <a href=\"https://hosted.weblate.org/"
+"\">hosted.weblate.org</a>. This will allow you to use Weblate without "
+"installing and maintaining it."
+msgstr ""
+"Özgür yazılımınız için Weblate'i kullanmak ilgilenizi çekiyorsa, bizden "
+"çevirilerinizin <a href=\"https://hosted.weblate.org/\">hosted.weblate.org</"
+"a> adresinde barındırılmasını isteyebilirsiniz. Bu, kurmadan ve bakımını "
+"yapmadan Weblate'i kullanmanıza izin verir."
+
+#: weblate_web/templates/hosting-free.html:24
+msgid "Conditions for free hosting"
+msgstr "Ücretsiz barındırma için koşullar"
+
+#: weblate_web/templates/hosting-free.html:27
+msgid ""
+"Translated content has to be released under <a href=\"https://en.wikipedia."
+"org/wiki/Free_software_license\">free license</a>."
+msgstr ""
+"Çevrilmiş içerik <a href=\"https://en.wikipedia.org/wiki/"
+"Free_software_license\">özgür lisans</a> altında dağıtılmak zorundadır."
+
+#: weblate_web/templates/hosting-free.html:28
+msgid ""
+"Source code has to be publicly available in a supported version control "
+"system."
+msgstr ""
+"Kaynak kodu, desteklenen sürüm kontrol sisteminde açıkça kullanılabilir "
+"olmak zorundadır."
+
+#: weblate_web/templates/hosting-free.html:29
+msgid "There is no guarantee for service availability or quality."
+msgstr "Hizmet kullanılabilirliği ya da kalitesi için güvence yoktur."
+
+#: weblate_web/templates/hosting-free.html:32
+msgid "Asking for hosting"
+msgstr "Barındırma için sorun"
+
+#: weblate_web/templates/hosting-free.html:35
+#, python-format
+msgid ""
+"Please use <a href=\"%(url)s\">contact form on Hosted Weblate</a> to request "
+"hosting. You will need following information:"
+msgstr ""
+"Lütfen barındırma isteği için <a href=\"%(url)s\">Hosted Weblate üzerindeki "
+"iletişim formunu</a> kullanın. Aşağıdaki bilgilere ihtiyacınız olacak:"
+
+#: weblate_web/templates/hosting-free.html:39
+msgid "Information about your project."
+msgstr "Projeniz hakkında bilgi."
+
+#: weblate_web/templates/hosting-free.html:40
+msgid "Project website."
+msgstr "Proje web sitesi."
+
+#: weblate_web/templates/hosting-free.html:41
+#: weblate_web/templates/hosting-ordered.html:18
+msgid "URL of repository with translations."
+msgstr "Çevirilerin olduğu repository'nin URL'si."
+
+#: weblate_web/templates/hosting-free.html:42
+#: weblate_web/templates/hosting-ordered.html:19
+msgid "Path to translations within the repository."
+msgstr "Havuzdaki çevirilerin yolu."
+
+#: weblate_web/templates/hosting-free.html:48
+msgid ""
+"The free plan does not allow you to change project visibility or to limit "
+"users which can contribute to the translation."
+msgstr ""
+"Ücretsiz plan, proje görünürlüğünü değiştirmenize veya çeviriye katkıda "
+"bulunabilecek kullanıcıları sınırlamanıza izin vermez."
+
+#: weblate_web/templates/hosting-free.html:51
+msgid ""
+"This limitation can be lifted by purchasing the \"Basic\" hosting plan - you "
+"will still have free software limits, but you will get extended user "
+"management capabilities."
+msgstr ""
+"Bu sınırlama, \"Temel\" barındırma planı satın alınarak kaldırılabilir - "
+"Yine özgür yazılım sınırlarınız olacak, ama genişletilmiş kullanıcı yönetimi "
+"özellikleri edineceksiniz."
+
+#: weblate_web/templates/hosting-free.html:54
+msgid "Translation workflow"
+msgstr "Çeviri iş akışı"
+
+#: weblate_web/templates/hosting-free.html:57
+msgid ""
+"All translated repositories are available using https protocol with similar "
+"naming as on website - weblate/master translation is published as "
+"<code>https://hosted.weblate.org/git/weblate/master/</code>. You can figure "
+"out the URL on the component information tab."
+msgstr ""
+"Tüm çevrilmiş havuzlar, web sitesindeki benzer isimlendirmeler ile https "
+"protokolü kullanılarak bulunabilir - weblate/asıl çevirisi <code>https://"
+"hosted.weblate.org/git/weblate/master/</code> olarak yayımlanır. URL'yi "
+"bileşen bilgileri sekmesinde çözebilirsiniz."
+
+#: weblate_web/templates/hosting-free.html:61
+#, python-format
+msgid ""
+"Weblate can automatically receive changes from major code hosting services, "
+"see our documentation for setup on <a href=\"%(github)s\">GitHub</a>, <a "
+"href=\"%(bitbucket)s\">Bitbucket</a> or <a href=\"%(gitlab)s\">GitLab</a>."
+msgstr ""
+"Weblate büyük kod barındırma hizmetlerinden değişiklikleri kendiliğinden "
+"alabilir, <a href=\"%(github)s\">GitHub</a>, <a href=\"%(bitbucket)s"
+"\">Bitbucket</a> ya da <a href=\"%(gitlab)s\">GitLab</a> üzerinde kurulum "
+"için belgelerimize bakın."
+
+#: weblate_web/templates/hosting-free.html:65
+#, python-format
+msgid ""
+"If you want Weblate to automatically push changes as well, add Weblate push "
+"user to collaborators and let us know you want to use this option. See <a "
+"href=\"%(docs)s\">documentation</a> for more detailed instructions."
+msgstr ""
+"Weblate'in değişiklikleri de kendiliğinden yollamasını istiyorsanız, "
+"ortaklaşa çalışanlara Weblate yollama kullanıcısını ekleyin ve bu seçeneği "
+"kullanmak istediğinizi bize bildirin. Daha fazla ayrıntılı talimatlar için "
+"<a href=\"%(docs)s\">belgelere</a> bakın."
+
+#: weblate_web/templates/hosting-free.html:68
+msgid "Support free hosting"
+msgstr "Ücretsiz barındırmayı destekleyin"
+
+#: weblate_web/templates/hosting-free.html:72
+#, python-format
+msgid ""
+"The hosting is provided for free, but running the server and maintaining it "
+"costs some money, so you are welcome to use <a href=\"%(gittip_url)s"
+"\">Liberapay</a> or <a href=\"%(donate_url)s\">other ways to donate</a>."
+msgstr ""
+"Barındırma ücretsiz sağlanır fakat sunucunun çalıştırılması ve bakımı biraz "
+"giderlidir, bu yüzden <a href=\"%(gittip_url)s\">Liberapay</a> ya da <a href="
+"\"%(donate_url)s\">bağış için diğer yolları</a> kullanmanızı bekliyoruz."
+
 #: weblate_web/templates/hosting-ordered.html:3
 #: weblate_web/templates/hosting-ordered.html:4
 #: weblate_web/templates/hosting.html:3 weblate_web/templates/hosting.html:4
@@ -717,16 +858,6 @@ msgstr ""
 msgid "Usually following information is needed:"
 msgstr "Genellikle aşağıdaki bilgiler gereklidir:"
 
-#: weblate_web/templates/hosting-ordered.html:18
-#: weblate_web/templates/hosting.html:312
-msgid "URL of repository with translations."
-msgstr "Çevirilerin olduğu repository'nin URL'si."
-
-#: weblate_web/templates/hosting-ordered.html:19
-#: weblate_web/templates/hosting.html:313
-msgid "Path to translations within the repository."
-msgstr "Havuzdaki çevirilerin yolu."
-
 #: weblate_web/templates/hosting-ordered.html:22
 msgid ""
 "You have to allow Weblate to access your repository. This can be done by "
@@ -742,10 +873,6 @@ msgid "Use Weblate as a service or get support for on-premises hosting."
 msgstr ""
 "Weblate'i bir hizmet olarak kullanın veya kurum içi barındırma için destek "
 "alın."
-
-#: weblate_web/templates/hosting.html:11
-msgid "Ask for hosting"
-msgstr "Barındırma için sorun"
 
 #: weblate_web/templates/hosting.html:20
 msgid ""
@@ -768,37 +895,37 @@ msgstr ""
 "sorunuz varsa veya daha büyük projeler için barındırma arıyorsanız, <a href="
 "\"%(contact)s\">bizimle temasa geçmekten</a> çekinmeyin."
 
-#: weblate_web/templates/hosting.html:32
+#: weblate_web/templates/hosting.html:31
 msgctxt "Hosting plan"
 msgid "Free software"
 msgstr "Özgür yazılım"
 
-#: weblate_web/templates/hosting.html:33
+#: weblate_web/templates/hosting.html:32
 msgctxt "Hosting plan"
 msgid "Basic"
 msgstr "Temel"
 
-#: weblate_web/templates/hosting.html:34
+#: weblate_web/templates/hosting.html:33
 msgctxt "Hosting plan"
 msgid "Medium"
 msgstr "Orta"
 
-#: weblate_web/templates/hosting.html:35
+#: weblate_web/templates/hosting.html:34
 msgctxt "Hosting plan"
 msgid "Advanced"
 msgstr "Gelişmiş"
 
-#: weblate_web/templates/hosting.html:36
+#: weblate_web/templates/hosting.html:35
 msgctxt "Hosting plan"
 msgid "Enterprise"
 msgstr "Kurumsal"
 
-#: weblate_web/templates/hosting.html:37
+#: weblate_web/templates/hosting.html:36
 msgctxt "Hosting plan"
 msgid "Self hosted"
 msgstr "Kendinizin barındırdığı"
 
-#: weblate_web/templates/hosting.html:51
+#: weblate_web/templates/hosting.html:50
 msgid ""
 "Text unit defined in a translation format, it can be word, sentence or a "
 "paragraph"
@@ -806,146 +933,143 @@ msgstr ""
 "Çeviri biçiminde tanımlanan metin birimidir, sözcük, tümce veya bir paragraf "
 "olabilir"
 
-#: weblate_web/templates/hosting.html:51
+#: weblate_web/templates/hosting.html:50
 msgid "Source strings"
 msgstr "Kaynak satırlar"
 
-#: weblate_web/templates/hosting.html:52 weblate_web/templates/hosting.html:61
-#: weblate_web/templates/hosting.html:70
+#: weblate_web/templates/hosting.html:51 weblate_web/templates/hosting.html:60
+#: weblate_web/templates/hosting.html:69
 msgid "Negotiable"
 msgstr "Müzakere edilebilir"
 
-#: weblate_web/templates/hosting.html:57 weblate_web/templates/hosting.html:66
-#: weblate_web/templates/hosting.html:75 weblate_web/templates/hosting.html:82
-#: weblate_web/templates/hosting.html:83 weblate_web/templates/hosting.html:84
-#: weblate_web/templates/hosting.html:89 weblate_web/templates/hosting.html:90
-#: weblate_web/templates/hosting.html:91 weblate_web/templates/hosting.html:92
-#: weblate_web/templates/hosting.html:93 weblate_web/templates/hosting.html:97
-#: weblate_web/templates/hosting.html:98 weblate_web/templates/hosting.html:99
-#: weblate_web/templates/hosting.html:100
+#: weblate_web/templates/hosting.html:56 weblate_web/templates/hosting.html:65
+#: weblate_web/templates/hosting.html:74 weblate_web/templates/hosting.html:81
+#: weblate_web/templates/hosting.html:82 weblate_web/templates/hosting.html:83
+#: weblate_web/templates/hosting.html:88 weblate_web/templates/hosting.html:89
+#: weblate_web/templates/hosting.html:90 weblate_web/templates/hosting.html:91
+#: weblate_web/templates/hosting.html:92 weblate_web/templates/hosting.html:96
+#: weblate_web/templates/hosting.html:97 weblate_web/templates/hosting.html:98
+#: weblate_web/templates/hosting.html:99 weblate_web/templates/hosting.html:100
 #: weblate_web/templates/hosting.html:101
-#: weblate_web/templates/hosting.html:102
 msgid "Unlimited"
 msgstr "Sınırsız"
 
-#: weblate_web/templates/hosting.html:60
+#: weblate_web/templates/hosting.html:59
 msgid "Target languages"
 msgstr "Hedef diller"
 
-#: weblate_web/templates/hosting.html:69
+#: weblate_web/templates/hosting.html:68
 msgid "VCS repositories"
 msgstr "VCS havuzları"
 
-#: weblate_web/templates/hosting.html:78
+#: weblate_web/templates/hosting.html:77
 msgid "Translation projects"
 msgstr "Çeviri projeleri"
 
-#: weblate_web/templates/hosting.html:87
+#: weblate_web/templates/hosting.html:86
 msgid "Translation components"
 msgstr "Çeviri bileşenleri"
 
-#: weblate_web/templates/hosting.html:96
+#: weblate_web/templates/hosting.html:95
 msgid "Number of translators"
 msgstr "Çevirmen sayısı"
 
-#: weblate_web/templates/hosting.html:114
+#: weblate_web/templates/hosting.html:113
 msgid "Supported file formats"
 msgstr "Desteklenen dosya biçimleri"
 
+#: weblate_web/templates/hosting.html:114
 #: weblate_web/templates/hosting.html:115
 #: weblate_web/templates/hosting.html:116
 #: weblate_web/templates/hosting.html:117
 #: weblate_web/templates/hosting.html:118
 #: weblate_web/templates/hosting.html:119
-#: weblate_web/templates/hosting.html:120
 msgid "All"
 msgstr "Tümü"
 
+#: weblate_web/templates/hosting.html:126
 #: weblate_web/templates/hosting.html:127
 #: weblate_web/templates/hosting.html:128
-#: weblate_web/templates/hosting.html:129
+#: weblate_web/templates/hosting.html:135
 #: weblate_web/templates/hosting.html:136
 #: weblate_web/templates/hosting.html:137
-#: weblate_web/templates/hosting.html:138
 msgid "Customizable"
 msgstr "Özelleştirilebilir"
 
-#: weblate_web/templates/hosting.html:132
+#: weblate_web/templates/hosting.html:131
 msgid "Translation addons"
 msgstr "Çeviri eklentileri"
 
-#: weblate_web/templates/hosting.html:150
+#: weblate_web/templates/hosting.html:149
 msgid "Translation memory"
 msgstr "Çeviri belleği"
 
-#: weblate_web/templates/hosting.html:159
+#: weblate_web/templates/hosting.html:158
 msgid "Priority email support"
 msgstr "Öncelikli eposta desteği"
 
-#: weblate_web/templates/hosting.html:165
-#: weblate_web/templates/hosting.html:173
+#: weblate_web/templates/hosting.html:164
+#: weblate_web/templates/hosting.html:172
 msgid "Available on request"
 msgstr "İstek üzerine kullanılabilir"
 
-#: weblate_web/templates/hosting.html:168
+#: weblate_web/templates/hosting.html:167
 msgid "Custom domain name with SSL"
 msgstr "SSL ile özel etki alanı adı"
 
-#: weblate_web/templates/hosting.html:168
+#: weblate_web/templates/hosting.html:167
 msgid "Own domain"
 msgstr "Kendi etki alanınız"
 
+#: weblate_web/templates/hosting.html:169
 #: weblate_web/templates/hosting.html:170
 #: weblate_web/templates/hosting.html:171
-#: weblate_web/templates/hosting.html:172
 #, python-format
 msgid ""
 "Additional charge %(price)s EUR/year, only available with yearly billing"
 msgstr "%(price)s EUR/yıl ek ücret, yalnızca yıllık fatura ile kullanılabilir"
 
-#: weblate_web/templates/hosting.html:179
+#: weblate_web/templates/hosting.html:178
 msgid "Monthly by PayPal"
 msgstr "PayPal ile aylık"
 
-#: weblate_web/templates/hosting.html:181
+#: weblate_web/templates/hosting.html:180
 msgid "Contact us"
 msgstr "Bizimle iletişime geçin"
 
-#: weblate_web/templates/hosting.html:184
-#: weblate_web/templates/hosting.html:187
-#: weblate_web/templates/hosting.html:190
-#: weblate_web/templates/hosting.html:193
-#: weblate_web/templates/hosting.html:258
+#: weblate_web/templates/hosting.html:183
+#: weblate_web/templates/hosting.html:186
+#: weblate_web/templates/hosting.html:189
+#: weblate_web/templates/hosting.html:192 weblate_web/templates/support.html:58
 #, python-format
 msgid "%(price)s EUR / month"
 msgstr "%(price)s AVRO / ay"
 
-#: weblate_web/templates/hosting.html:195
+#: weblate_web/templates/hosting.html:194
 msgid "See below for options"
 msgstr "Seçenekler için aşağıya bakın"
 
-#: weblate_web/templates/hosting.html:198
+#: weblate_web/templates/hosting.html:197
 #, python-format
 msgid "Yearly by invoice (save 15-20%%)"
 msgstr "Fatura ile yıllık (kazanç %%15-20)"
 
-#: weblate_web/templates/hosting.html:200
-#: weblate_web/templates/hosting.html:203
-#: weblate_web/templates/hosting.html:206
-#: weblate_web/templates/hosting.html:209
+#: weblate_web/templates/hosting.html:199
+#: weblate_web/templates/hosting.html:202
+#: weblate_web/templates/hosting.html:205
+#: weblate_web/templates/hosting.html:208
 msgid "Ask us for yearly invoicing with discount."
 msgstr "Bize yıllık indirim ile faturalama için sorun."
 
-#: weblate_web/templates/hosting.html:200
-#: weblate_web/templates/hosting.html:203
-#: weblate_web/templates/hosting.html:206
-#: weblate_web/templates/hosting.html:209
-#: weblate_web/templates/hosting.html:259
+#: weblate_web/templates/hosting.html:199
+#: weblate_web/templates/hosting.html:202
+#: weblate_web/templates/hosting.html:205
+#: weblate_web/templates/hosting.html:208 weblate_web/templates/support.html:59
 #, python-format
 msgid "%(price)s EUR / year"
 msgstr "%(price)s AVRO / yıl"
 
-#: weblate_web/templates/hosting.html:217
+#: weblate_web/templates/hosting.html:215
 msgid ""
 "The pricing is based on number of source strings and number of target "
 "languages. The source string is a text unit defined in a translation format, "
@@ -955,7 +1079,7 @@ msgstr ""
 "satır bir çeviri biçiminde tanımlanan bir metin birimidir, sözcük, tümce "
 "veya bir paragraf olabilir."
 
-#: weblate_web/templates/hosting.html:221
+#: weblate_web/templates/hosting.html:219
 msgid ""
 "The hosting setup is currently done manually, so you might want to get in "
 "touch with us prior to making subscription with your project details."
@@ -963,7 +1087,7 @@ msgstr ""
 "Barındırma kurulumu şu anda el ile yapıldı, bu yüzden proje ayrıntılarınız "
 "ile abone olmadan önce bizimle temasa geçmek isteyebilirsiniz."
 
-#: weblate_web/templates/hosting.html:225
+#: weblate_web/templates/hosting.html:223
 msgid ""
 "Alternatively we can accept payments by wire transfer (preferably IBAN) or "
 "Bitcoin. Please get in touch for more details."
@@ -971,240 +1095,11 @@ msgstr ""
 "Alternatif olarak banka havalesi (tercihen IBAN) veya Bitcoin ile ödeme "
 "kabul edebiliriz. Lütfen daha fazla ayrıntı için temasa geçin."
 
-#: weblate_web/templates/hosting.html:228
-msgid "Support for self hosted environments"
-msgstr "Kendinizin barındırdığı ortamlar için destek"
-
-#: weblate_web/templates/hosting.html:230
-msgid ""
-"Worried of putting your translations into cloud? You can self host Weblate "
-"and we can still provide you premium support for your setup."
-msgstr ""
-"Çevirilerinizi bulut içine koymaktan endişeleniyor musunuz? Weblate'i "
-"kendiniz barındırabilirsiniz ve kurulumunuz için premium desteği hala size "
-"sağlayabiliriz."
-
-#: weblate_web/templates/hosting.html:236
-msgid "Installation on your Linux server"
-msgstr "Kendi Linux sunucunuz üzerine kurulum"
-
-#: weblate_web/templates/hosting.html:237
-#, python-format
-msgid "%(price)s EUR"
-msgstr "%(price)s AVRO"
-
-#: weblate_web/templates/hosting.html:242
-msgid "One time installation of Weblate"
-msgstr "Bir kerelik Weblate kurulumu"
-
-#: weblate_web/templates/hosting.html:243
-msgid "Either installation directly on your system"
-msgstr ""
-
-#: weblate_web/templates/hosting.html:245
-msgid "Installation using virtualenv, uwsgi and nginx"
-msgstr "Virtualenv, uwsgi ve nginx kullanarak kurulum"
-
-#: weblate_web/templates/hosting.html:246
-msgid "Using PostgreSQL, MySQL or MariaDB as database backend"
-msgstr "Veritabanı arka ucu olarak PostgreSQL, MySQL ya da MariaDB kullanma"
-
-#: weblate_web/templates/hosting.html:249
-msgid "Or installation using Docker"
-msgstr ""
-
-#: weblate_web/templates/hosting.html:250
-msgid "Requires root access or close cooperation of your admins"
-msgstr "Kök erişim veya yöneticilerinizin yakın işbirliğini gerektirir"
-
-#: weblate_web/templates/hosting.html:251
-msgid "Configuration customization"
-msgstr "Yapılandırma özelleştirme"
-
-#: weblate_web/templates/hosting.html:252
-msgid "Does not include custom code development"
-msgstr "Özel kod geliştirme dahil değil"
-
-#: weblate_web/templates/hosting.html:257
-msgid "Basic support for self hosted Weblate"
-msgstr "Kendinizin barındırdığı Weblate için temel destek"
-
-#: weblate_web/templates/hosting.html:264
-msgid "Your Weblate will be upgraded to the latest version on every release."
-msgstr "Weblate'iniz her yayımda en son sürüme yükseltilecektir."
-
-#: weblate_web/templates/hosting.html:265
-msgid "We will fix issues that occur in your environment."
-msgstr "Ortamınızda meydana gelen sorunları düzelteceğiz."
-
-#: weblate_web/templates/hosting.html:266
-msgid "You will receive priority email support."
-msgstr "Öncelikli eposta desteği alacaksınız."
-
-#: weblate_web/templates/hosting.html:271
-msgid "Consulting services or custom development"
-msgstr "Danışmanlık hizmetleri veya özel geliştirme"
-
-#: weblate_web/templates/hosting.html:272
-#, python-format
-msgid "%(price)s EUR / hour"
-msgstr "%(price)s AVRO / saat"
-
-#: weblate_web/templates/hosting.html:277
-msgid "Custom features development"
-msgstr "Özel özellikler geliştirme"
-
-#: weblate_web/templates/hosting.html:278
-msgid "Integrating Weblate into your workflow"
-msgstr "İş akışınız içine Weblate'i tümleştirme"
-
-#: weblate_web/templates/hosting.html:279
-msgid "Suggestions on the internationalization or localization process"
-msgstr "Uluslararasılaştırma veya yerelleştirme sürecinde öneriler"
-
-#: weblate_web/templates/hosting.html:287
-msgid "Ask us for details about self hosted Weblate"
-msgstr "Kendinizin barındırdığı Weblate hakkında ayrıntılar için sorun"
-
-#: weblate_web/templates/hosting.html:289
-msgid "Hosting for free software"
-msgstr "Özgür yazılım barındırma"
-
-#: weblate_web/templates/hosting.html:292
-msgid ""
-"If you are interested in using Weblate for your free software, you can ask "
-"us for hosting of your translations on <a href=\"https://hosted.weblate.org/"
-"\">hosted.weblate.org</a>. This will allow you to use Weblate without "
-"installing and maintaining it."
-msgstr ""
-"Özgür yazılımınız için Weblate'i kullanmak ilgilenizi çekiyorsa, bizden "
-"çevirilerinizin <a href=\"https://hosted.weblate.org/\">hosted.weblate.org</"
-"a> adresinde barındırılmasını isteyebilirsiniz. Bu, kurmadan ve bakımını "
-"yapmadan Weblate'i kullanmanıza izin verir."
-
-#: weblate_web/templates/hosting.html:295
-msgid "Conditions for free hosting"
-msgstr "Ücretsiz barındırma için koşullar"
-
-#: weblate_web/templates/hosting.html:298
-msgid ""
-"Translated content has to be released under <a href=\"https://en.wikipedia."
-"org/wiki/Free_software_license\">free license</a>."
-msgstr ""
-"Çevrilmiş içerik <a href=\"https://en.wikipedia.org/wiki/"
-"Free_software_license\">özgür lisans</a> altında dağıtılmak zorundadır."
-
-#: weblate_web/templates/hosting.html:299
-msgid ""
-"Source code has to be publicly available in a supported version control "
-"system."
-msgstr ""
-"Kaynak kodu, desteklenen sürüm kontrol sisteminde açıkça kullanılabilir "
-"olmak zorundadır."
-
-#: weblate_web/templates/hosting.html:300
-msgid "There is no guarantee for service availability or quality."
-msgstr "Hizmet kullanılabilirliği ya da kalitesi için güvence yoktur."
-
-#: weblate_web/templates/hosting.html:303
-msgid "Asking for hosting"
-msgstr "Barındırma için sorun"
-
-#: weblate_web/templates/hosting.html:306
-#, python-format
-msgid ""
-"Please use <a href=\"%(url)s\">contact form on Hosted Weblate</a> to request "
-"hosting. You will need following information:"
-msgstr ""
-"Lütfen barındırma isteği için <a href=\"%(url)s\">Hosted Weblate üzerindeki "
-"iletişim formunu</a> kullanın. Aşağıdaki bilgilere ihtiyacınız olacak:"
-
-#: weblate_web/templates/hosting.html:310
-msgid "Information about your project."
-msgstr "Projeniz hakkında bilgi."
-
-#: weblate_web/templates/hosting.html:311
-msgid "Project website."
-msgstr "Proje web sitesi."
-
-#: weblate_web/templates/hosting.html:319
-msgid ""
-"The free plan does not allow you to change project visibility or to limit "
-"users which can contribute to the translation."
-msgstr ""
-"Ücretsiz plan, proje görünürlüğünü değiştirmenize veya çeviriye katkıda "
-"bulunabilecek kullanıcıları sınırlamanıza izin vermez."
-
-#: weblate_web/templates/hosting.html:322
-msgid ""
-"This limitation can be lifted by purchasing the \"Basic\" hosting plan - you "
-"will still have free software limits, but you will get extended user "
-"management capabilities."
-msgstr ""
-"Bu sınırlama, \"Temel\" barındırma planı satın alınarak kaldırılabilir - "
-"Yine özgür yazılım sınırlarınız olacak, ama genişletilmiş kullanıcı yönetimi "
-"özellikleri edineceksiniz."
-
-#: weblate_web/templates/hosting.html:325
-msgid "Translation workflow"
-msgstr "Çeviri iş akışı"
-
-#: weblate_web/templates/hosting.html:328
-msgid ""
-"All translated repositories are available using https protocol with similar "
-"naming as on website - weblate/master translation is published as "
-"<code>https://hosted.weblate.org/git/weblate/master/</code>. You can figure "
-"out the URL on the component information tab."
-msgstr ""
-"Tüm çevrilmiş havuzlar, web sitesindeki benzer isimlendirmeler ile https "
-"protokolü kullanılarak bulunabilir - weblate/asıl çevirisi <code>https://"
-"hosted.weblate.org/git/weblate/master/</code> olarak yayımlanır. URL'yi "
-"bileşen bilgileri sekmesinde çözebilirsiniz."
-
-#: weblate_web/templates/hosting.html:332
-#, python-format
-msgid ""
-"Weblate can automatically receive changes from major code hosting services, "
-"see our documentation for setup on <a href=\"%(github)s\">GitHub</a>, <a "
-"href=\"%(bitbucket)s\">Bitbucket</a> or <a href=\"%(gitlab)s\">GitLab</a>."
-msgstr ""
-"Weblate büyük kod barındırma hizmetlerinden değişiklikleri kendiliğinden "
-"alabilir, <a href=\"%(github)s\">GitHub</a>, <a href=\"%(bitbucket)s"
-"\">Bitbucket</a> ya da <a href=\"%(gitlab)s\">GitLab</a> üzerinde kurulum "
-"için belgelerimize bakın."
-
-#: weblate_web/templates/hosting.html:336
-#, python-format
-msgid ""
-"If you want Weblate to automatically push changes as well, add Weblate push "
-"user to collaborators and let us know you want to use this option. See <a "
-"href=\"%(docs)s\">documentation</a> for more detailed instructions."
-msgstr ""
-"Weblate'in değişiklikleri de kendiliğinden yollamasını istiyorsanız, "
-"ortaklaşa çalışanlara Weblate yollama kullanıcısını ekleyin ve bu seçeneği "
-"kullanmak istediğinizi bize bildirin. Daha fazla ayrıntılı talimatlar için "
-"<a href=\"%(docs)s\">belgelere</a> bakın."
-
-#: weblate_web/templates/hosting.html:339
-msgid "Support free hosting"
-msgstr "Ücretsiz barındırmayı destekleyin"
-
-#: weblate_web/templates/hosting.html:343
-#, python-format
-msgid ""
-"The hosting is provided for free, but running the server and maintaining it "
-"costs some money, so you are welcome to use <a href=\"%(gittip_url)s"
-"\">Liberapay</a> or <a href=\"%(donate_url)s\">other ways to donate</a>."
-msgstr ""
-"Barındırma ücretsiz sağlanır fakat sunucunun çalıştırılması ve bakımı biraz "
-"giderlidir, bu yüzden <a href=\"%(gittip_url)s\">Liberapay</a> ya da <a href="
-"\"%(donate_url)s\">bağış için diğer yolları</a> kullanmanızı bekliyoruz."
-
-#: weblate_web/templates/hosting.html:347
+#: weblate_web/templates/hosting.html:226
 msgid "Self hosting"
 msgstr "Kendinden barındırma"
 
-#: weblate_web/templates/hosting.html:351
+#: weblate_web/templates/hosting.html:230
 #, python-format
 msgid ""
 "You can also <a href=\"%(download_url)s\">download</a> Weblate sources and "
@@ -1215,38 +1110,44 @@ msgstr ""
 "sisteminiz üzerinde çalıştırabilirsiniz. Aynı zamanda Weblate'i bulutta "
 "dağıtmak için birkaç seçenek vardır."
 
-#: weblate_web/templates/hosting.html:355
-#, python-format
+#: weblate_web/templates/hosting.html:235
+#, fuzzy
+#| msgid ""
+#| "In case you need help with your self hosted solution, we're ready to help "
+#| "as well with consulting services tailored for your needs. Please contact "
+#| "<a href=\"%(contact_url)s\">Michal Čihař</a> for more details."
 msgid ""
 "In case you need help with your self hosted solution, we're ready to help as "
-"well with consulting services tailored for your needs. Please contact <a "
-"href=\"%(contact_url)s\">Michal Čihař</a> for more details."
+"well with consulting services tailored for your needs."
 msgstr ""
 "Kendinizin barındırdığı çözümünüzle ilgili yardıma ihtiyacınız olduğu "
 "durumda, biz de ihtiyaçlarınız için özel olarak hazırlanmış danışmanlık "
 "hizmetleri ile yardımcı olmaya hazırız. Daha fazla ayrıntı için lütfen <a "
 "href=\"%(contact_url)s\">Michal Čihař</a> ile iletişime geçin."
 
-#: weblate_web/templates/hosting.html:358
-msgid ""
-"All prices exclude VAT, invoices for EU countries are issued as a reverse "
-"charge, invoices for Czech Republic will include additional VAT."
-msgstr ""
-"Tüm fiyatlar KDV hariçtir, AB ülkeleri için faturalar ödemeli olarak "
-"verilir, Çek Cumhuriyeti için faturalar ek KDV içerir."
-
 #: weblate_web/templates/index.html:3
 msgid "Weblate - web-based translation"
 msgstr "Weblate - web tabanlı çeviri"
 
-#: weblate_web/templates/index.html:14 weblate_web/templates/tour.html:11
-#: weblate_web/templates/try.html:12
-msgid "Try our demo"
-msgstr "Demo tanıtımımızı deneyin"
+#: weblate_web/templates/index.html:7
+#, fuzzy
+#| msgid "Weblate is a free web-based translation management system."
+msgid ""
+"Weblate is an open source web-based translation management system supporting "
+"continuous translation."
+msgstr "Weblate özgür bir web tabanlı çeviri yönetimi sistemidir."
+
+#: weblate_web/templates/index.html:14
+#, fuzzy
+#| msgid "Hosting Weblate"
+msgid "Start using Weblate"
+msgstr "Weblate Barındırma"
 
 #: weblate_web/templates/index.html:15
-msgid "View hosting plans"
-msgstr "Barındırma planlarını göster"
+#, fuzzy
+#| msgid "Try our demo"
+msgid "Try our demo server"
+msgstr "Demo tanıtımımızı deneyin"
 
 #: weblate_web/templates/index.html:16
 msgid "Downloads"
@@ -1272,7 +1173,7 @@ msgstr "Weblate ekran görüntüsü"
 msgid "See more features…"
 msgstr "Daha fazla özellik görün…"
 
-#: weblate_web/templates/index.html:47
+#: weblate_web/templates/index.html:46
 msgid "See who is using Weblate and join them!"
 msgstr "Weblate'i kimlerin kullandığına bakın ve onlara katılın!"
 
@@ -1318,10 +1219,105 @@ msgstr ""
 "fazla bilgi <a href=\"%(docs)s\">belgelerimiz</a> içinde bulunabilir."
 
 #: weblate_web/templates/support.html:28
+msgid "Support for self hosted environments"
+msgstr "Kendinizin barındırdığı ortamlar için destek"
+
+#: weblate_web/templates/support.html:30
+msgid ""
+"Worried of putting your translations into cloud? You can self host Weblate "
+"and we can still provide you premium support for your setup."
+msgstr ""
+"Çevirilerinizi bulut içine koymaktan endişeleniyor musunuz? Weblate'i "
+"kendiniz barındırabilirsiniz ve kurulumunuz için premium desteği hala size "
+"sağlayabiliriz."
+
+#: weblate_web/templates/support.html:36
+msgid "Installation on your Linux server"
+msgstr "Kendi Linux sunucunuz üzerine kurulum"
+
+#: weblate_web/templates/support.html:37
+#, python-format
+msgid "%(price)s EUR"
+msgstr "%(price)s AVRO"
+
+#: weblate_web/templates/support.html:42
+msgid "One time installation of Weblate"
+msgstr "Bir kerelik Weblate kurulumu"
+
+#: weblate_web/templates/support.html:43
+msgid "Either installation directly on your system"
+msgstr ""
+
+#: weblate_web/templates/support.html:45
+msgid "Installation using virtualenv, uwsgi and nginx"
+msgstr "Virtualenv, uwsgi ve nginx kullanarak kurulum"
+
+#: weblate_web/templates/support.html:46
+msgid "Using PostgreSQL, MySQL or MariaDB as database backend"
+msgstr "Veritabanı arka ucu olarak PostgreSQL, MySQL ya da MariaDB kullanma"
+
+#: weblate_web/templates/support.html:49
+msgid "Or installation using Docker"
+msgstr ""
+
+#: weblate_web/templates/support.html:50
+msgid "Requires root access or close cooperation of your admins"
+msgstr "Kök erişim veya yöneticilerinizin yakın işbirliğini gerektirir"
+
+#: weblate_web/templates/support.html:51
+msgid "Configuration customization"
+msgstr "Yapılandırma özelleştirme"
+
+#: weblate_web/templates/support.html:52
+msgid "Does not include custom code development"
+msgstr "Özel kod geliştirme dahil değil"
+
+#: weblate_web/templates/support.html:57
+msgid "Basic support for self hosted Weblate"
+msgstr "Kendinizin barındırdığı Weblate için temel destek"
+
+#: weblate_web/templates/support.html:64
+msgid "Your Weblate will be upgraded to the latest version on every release."
+msgstr "Weblate'iniz her yayımda en son sürüme yükseltilecektir."
+
+#: weblate_web/templates/support.html:65
+msgid "We will fix issues that occur in your environment."
+msgstr "Ortamınızda meydana gelen sorunları düzelteceğiz."
+
+#: weblate_web/templates/support.html:66
+msgid "You will receive priority email support."
+msgstr "Öncelikli eposta desteği alacaksınız."
+
+#: weblate_web/templates/support.html:71
+msgid "Consulting services or custom development"
+msgstr "Danışmanlık hizmetleri veya özel geliştirme"
+
+#: weblate_web/templates/support.html:72
+#, python-format
+msgid "%(price)s EUR / hour"
+msgstr "%(price)s AVRO / saat"
+
+#: weblate_web/templates/support.html:77
+msgid "Custom features development"
+msgstr "Özel özellikler geliştirme"
+
+#: weblate_web/templates/support.html:78
+msgid "Integrating Weblate into your workflow"
+msgstr "İş akışınız içine Weblate'i tümleştirme"
+
+#: weblate_web/templates/support.html:79
+msgid "Suggestions on the internationalization or localization process"
+msgstr "Uluslararasılaştırma veya yerelleştirme sürecinde öneriler"
+
+#: weblate_web/templates/support.html:87
+msgid "Ask us for details about self hosted Weblate"
+msgstr "Kendinizin barındırdığı Weblate hakkında ayrıntılar için sorun"
+
+#: weblate_web/templates/support.html:90
 msgid "Support for Hosted Weblate services"
 msgstr "Barındırılan Weblate hizmetleri için destek"
 
-#: weblate_web/templates/support.html:31
+#: weblate_web/templates/support.html:93
 #, python-format
 msgid ""
 "If you are using our hosting services, you can ask for support at "
@@ -1330,15 +1326,15 @@ msgstr ""
 "Barındırma hizmetimizi kullanıyorsanız, %(contact)s adresinde destek "
 "isteyebilirsiniz."
 
-#: weblate_web/templates/support.html:34
+#: weblate_web/templates/support.html:96
 msgid "Mailing lists"
 msgstr "Postalama listeleri"
 
-#: weblate_web/templates/support.html:36
+#: weblate_web/templates/support.html:98
 msgid "Users and developers mailing list"
 msgstr "Kullanıcılar ve geliştiriciler postalama listesi"
 
-#: weblate_web/templates/support.html:38
+#: weblate_web/templates/support.html:100
 msgid ""
 "You can use mailing lists for discussions with other Weblate users and "
 "developers."
@@ -1346,7 +1342,7 @@ msgstr ""
 "Diğer Weblate kullanıcıları ve geliştiricileri ile görüşmek için postalama "
 "listelerini kullanabilirsiniz."
 
-#: weblate_web/templates/support.html:39
+#: weblate_web/templates/support.html:101
 msgid ""
 "You can post to it using <a href=\"mailto:weblate@lists.cihar.com"
 "\">weblate@lists.cihar.com</a> address."
@@ -1354,64 +1350,49 @@ msgstr ""
 "<a href=\"mailto:weblate@lists.cihar.com\">weblate@lists.cihar.com</a> "
 "adresini kullanarak postalayabilirsiniz."
 
-#: weblate_web/templates/support.html:40 weblate_web/templates/support.html:56
+#: weblate_web/templates/support.html:102
+#: weblate_web/templates/support.html:118
 msgid "You can browse mailing list archives"
 msgstr "Postalama listesi arşivlerine göz atabilirsiniz"
 
-#: weblate_web/templates/support.html:43 weblate_web/templates/support.html:59
+#: weblate_web/templates/support.html:105
+#: weblate_web/templates/support.html:121
 msgid "Enter your email"
 msgstr "Epostanızı girin"
 
-#: weblate_web/templates/support.html:45 weblate_web/templates/support.html:61
+#: weblate_web/templates/support.html:107
+#: weblate_web/templates/support.html:123
 msgid "Subscribe"
 msgstr "Abone ol"
 
-#: weblate_web/templates/support.html:52
+#: weblate_web/templates/support.html:114
 msgid "Hosted Weblate Announcements mailing list"
 msgstr "Barındırılan Weblate Duyuru postalama listesi"
 
-#: weblate_web/templates/support.html:54
+#: weblate_web/templates/support.html:116
 msgid ""
 "Low traffic mailing list with announcements about Hosted Weblate services."
 msgstr ""
 "Barındırılan Weblate hizmetleri hakkında duyurular için düşük trafikli "
 "postalama listesi."
 
-#: weblate_web/templates/support.html:55
+#: weblate_web/templates/support.html:117
 msgid "This list is moderated, only chosen users can post announcements."
 msgstr ""
 "Bu liste denetlenmektedir, yalnızca seçilmiş kullanıcılar duyuruları "
 "postalayabilir."
 
-#: weblate_web/templates/support.html:68
+#: weblate_web/templates/support.html:130
 msgid "Stack Overflow"
 msgstr "Stack Overflow Sitesi"
 
-#: weblate_web/templates/support.html:70
+#: weblate_web/templates/support.html:132
 #, python-format
 msgid ""
 "You can also ask related questions on <a href=\"%(url)s\">Stack Overflow</a>."
 msgstr ""
 "Ayrıca ilgili soruları <a href=\"%(url)s\">Stack Overflow Sitesinde</a> "
 "sorabilirsiniz."
-
-#: weblate_web/templates/support.html:72
-msgid "Consulting"
-msgstr "Danışmanlık"
-
-#: weblate_web/templates/support.html:74
-msgid "See our support offerings for self hosted Weblate instances"
-msgstr ""
-"Kendinizin barındırdığı Weblate benzerleri için sunulan desteğimize bakın"
-
-#: weblate_web/templates/support.html:77
-#, python-format
-msgid ""
-"You can also contact <a href=\"%(contact_link)s\">Michal Čihař</a>, who is "
-"author of Weblate for consulting services."
-msgstr ""
-"Ayrıca Weblate'in yazarı <a href=\"%(contact_link)s\">Michal Čihař</a> ile "
-"danışmanlık hizmeti için iletişime geçebilirsiniz."
 
 #: weblate_web/templates/terms.html:3 weblate_web/templates/terms.html:13
 msgid "Terms of Service"
@@ -1491,6 +1472,10 @@ msgid "Weblate has useful features for every crowdsourced translation."
 msgstr ""
 "Weblate'in her kitlesel kaynaklı çeviri için faydalı özellikleri vardır."
 
+#: weblate_web/templates/tour.html:11 weblate_web/templates/try.html:12
+msgid "Try our demo"
+msgstr "Demo tanıtımımızı deneyin"
+
 #: weblate_web/templates/try.html:3 weblate_web/templates/try.html:4
 msgid "Try Weblate"
 msgstr "Weblate'i deneyin"
@@ -1534,6 +1519,14 @@ msgstr ""
 "Weblate'i buluta yerleştirmenin en kolay yolunu sağlayan araçlar için <a "
 "href=\"%(download_url)s\">indirme sayfasına</a> bakın."
 
+#: weblate_web/templates/vat.html:3
+msgid ""
+"All prices exclude VAT, invoices for EU countries are issued as a reverse "
+"charge, invoices for Czech Republic will include additional VAT."
+msgstr ""
+"Tüm fiyatlar KDV hariçtir, AB ülkeleri için faturalar ödemeli olarak "
+"verilir, Çek Cumhuriyeti için faturalar ek KDV içerir."
+
 #: weblate_web/templatetags/downloads.py:40
 #, python-format
 msgid "%(size)d byte"
@@ -1571,6 +1564,39 @@ msgstr "Kaynaklar tarball, xz sıkıştırmalı"
 #: weblate_web/templatetags/downloads.py:61
 msgid "Sources, zip compressed"
 msgstr "Kaynaklar, zip sıkıştırmalı"
+
+#~ msgid "Toggle navigation"
+#~ msgstr "Gezinmeyi değiştirin"
+
+#~ msgid "Hosting"
+#~ msgstr "Barındırma"
+
+#~ msgid ""
+#~ "Weblate is <a href=\"%(github_url)s\">free software</a> and welcomes <a "
+#~ "href=\"%(donate_url)s\">donations</a>."
+#~ msgstr ""
+#~ "Weblate <a href=\"%(github_url)s\">ücretsiz yazılımdır</a> ve <a href="
+#~ "\"%(donate_url)s\">bağışlarınızı</a> bekliyoruz."
+
+#~ msgid "Payment link"
+#~ msgstr "Ödeme bağlantısı"
+
+#~ msgid "View hosting plans"
+#~ msgstr "Barındırma planlarını göster"
+
+#~ msgid "Consulting"
+#~ msgstr "Danışmanlık"
+
+#~ msgid "See our support offerings for self hosted Weblate instances"
+#~ msgstr ""
+#~ "Kendinizin barındırdığı Weblate benzerleri için sunulan desteğimize bakın"
+
+#~ msgid ""
+#~ "You can also contact <a href=\"%(contact_link)s\">Michal Čihař</a>, who "
+#~ "is author of Weblate for consulting services."
+#~ msgstr ""
+#~ "Ayrıca Weblate'in yazarı <a href=\"%(contact_link)s\">Michal Čihař</a> "
+#~ "ile danışmanlık hizmeti için iletişime geçebilirsiniz."
 
 #~ msgid ""
 #~ "Rollbar helps us to collect and fix errors happening on Hosted Weblate."
