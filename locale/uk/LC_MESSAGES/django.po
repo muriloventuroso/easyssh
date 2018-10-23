@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2018-10-22 17:10+0200\n"
-"PO-Revision-Date: 2018-10-21 17:01+0000\n"
+"PO-Revision-Date: 2018-10-23 12:02+0000\n"
 "Last-Translator: Андрій Бандура <andriykopanytsia@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/weblate/"
 "website/uk/>\n"
@@ -16,8 +16,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 3.3-dev\n"
 
 #: weblate_web/data.py:33
@@ -221,7 +221,7 @@ msgstr "Завантажити"
 
 #: weblate_web/templates/base.html:61
 msgid "Pricing"
-msgstr ""
+msgstr "Ціни"
 
 #: weblate_web/templates/base.html:62
 msgid "Develop"
@@ -431,10 +431,8 @@ msgid "Currency"
 msgstr "Валюта"
 
 #: weblate_web/templates/donate.html:88
-#, fuzzy
-#| msgid "Payment address"
 msgid "Donate address"
-msgstr "Адреса платежу"
+msgstr "Адреса для пожертви"
 
 #: weblate_web/templates/download.html:4 weblate_web/templates/download.html:5
 msgid "Download Weblate"
@@ -673,14 +671,14 @@ msgstr ""
 
 #: weblate_web/templates/hosting-free.html:3
 #: weblate_web/templates/hosting-free.html:4
-#, fuzzy
-#| msgid "Hosting Weblate"
 msgid "Free hosting on Weblate"
-msgstr "Хостинг Weblate"
+msgstr "Безкоштовний хостинг на Weblate"
 
 #: weblate_web/templates/hosting-free.html:6
 msgid "We love open source and we offer free plans for hosting translations."
 msgstr ""
+"Ми любимо відкритий код та пропунуємо безкоштовні плани для хостингу "
+"перекладів."
 
 #: weblate_web/templates/hosting-free.html:11
 #: weblate_web/templates/hosting.html:11
@@ -1111,43 +1109,32 @@ msgstr ""
 "забезпечують розгортання Weblate у хмарі."
 
 #: weblate_web/templates/hosting.html:235
-#, fuzzy
-#| msgid ""
-#| "In case you need help with your self hosted solution, we're ready to help "
-#| "as well with consulting services tailored for your needs. Please contact "
-#| "<a href=\"%(contact_url)s\">Michal Čihař</a> for more details."
 msgid ""
 "In case you need help with your self hosted solution, we're ready to help as "
 "well with consulting services tailored for your needs."
 msgstr ""
 "У випадку, якщо вам потрібна допомога з вашого самодостатнього рішення, ми "
-"готові надати консультаційні послуги з урахуванням ваших потреб. Будь ласка, "
-"зв'яжіться із <a href=\"%(contact_url)s\">Michal Čihař</a> за докладнішою "
-"інформацією."
+"готові надати консультаційні послуги з урахуванням ваших потреб."
 
 #: weblate_web/templates/index.html:3
 msgid "Weblate - web-based translation"
 msgstr "Weblate - система веб-перекладу"
 
 #: weblate_web/templates/index.html:7
-#, fuzzy
-#| msgid "Weblate is a free web-based translation management system."
 msgid ""
 "Weblate is an open source web-based translation management system supporting "
 "continuous translation."
-msgstr "Weblate - вільна веб-система керування перекладом."
+msgstr ""
+"Weblate - вільна веб-система керування перекладом з відкритим кодом, яка "
+"підтримує безперервний переклад."
 
 #: weblate_web/templates/index.html:14
-#, fuzzy
-#| msgid "Hosting Weblate"
 msgid "Start using Weblate"
-msgstr "Хостинг Weblate"
+msgstr "Розпочніть використання Weblate"
 
 #: weblate_web/templates/index.html:15
-#, fuzzy
-#| msgid "Try our demo"
 msgid "Try our demo server"
-msgstr "Спробуйте наші демо"
+msgstr "Спробуйте наш демо-сервер"
 
 #: weblate_web/templates/index.html:16
 msgid "Downloads"
