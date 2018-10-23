@@ -154,6 +154,12 @@ STATICFILES_FINDERS = (
 SECRET_KEY = 'qov6(*cp%)b*ot+8c%#4@4or(t@_$y5#d8k9u1^+pknz%lms0x'
 
 # Templates settings
+_TEMPLATE_LOADERS = [
+    'django.template.loaders.filesystem.Loader',
+    'django.template.loaders.app_directories.Loader',
+]
+if not DEBUG:
+    _TEMPLATE_LOADERS = [('django.template.loaders.cached.Loader', _TEMPLATE_LOADERS)]
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -163,12 +169,7 @@ TEMPLATES = [
                 'django.template.context_processors.i18n',
                 'weblate_web.context_processors.weblate_web',
             ],
-            'loaders': [
-                ('django.template.loaders.cached.Loader', [
-                    'django.template.loaders.filesystem.Loader',
-                    'django.template.loaders.app_directories.Loader',
-                ]),
-            ],
+            'loaders': _TEMPLATE_LOADERS,
         },
     },
 ]
