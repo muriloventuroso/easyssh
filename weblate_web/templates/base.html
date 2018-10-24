@@ -1,5 +1,4 @@
 {% load i18n %}
-{% get_available_languages as languages %}
 <!DOCTYPE html>
 <html lang="{{ LANGUAGE_CODE }}" dir="{% if LANGUAGE_BIDI %}rtl{% else %}ltr{% endif %}">
 <head>
@@ -22,15 +21,9 @@
   <link rel="alternate" type="application/rss+xml" href="https://blog.cihar.com/archives/weblate/index-atom.xml" title="Weblate blog (Atom 1.0)"/>
   <link rel="alternate" type="application/rss+xml" href="https://blog.cihar.com/archives/weblate/index-rss.xml" title="Weblate blog (RSS 2.0)"/>
   <link rel="alternate" type="application/rss+xml" href="https://blog.cihar.com/archives/weblate/index.xml" title="Weblate blog (RSS 1.0)"/>
-  {% language 'en' %}
-  <link rel="canonical" href="{% if url_name %}{% url url_name %}{% else %}{% url 'home' %}{% endif %}" />
-  {% endlanguage %}
-  {% for lang_code, lang_name in languages %}
-    {% if lang_code != LANGUAGE_CODE %}
-      {% language lang_code %}
-      <link rel="alternate" hreflang="{{ lang_code }}" href="{% if url_name %}{% url url_name %}{% else %}{% url 'home' %}{% endif %}" />
-      {% endlanguage %}
-    {% endif %}
+  <link rel="canonical" href="{{ canonical_url }}" />
+  {% for lang in language_urls %}
+    {% if lang.code != LANGUAGE_CODE %}<link rel="alternate" hreflang="{{ lang.code }}" href="{{ lang.url }}" />{% endif %}
   {% endfor %}
    <script src="/media/jquery-3.3.1.min.js"></script>
 
@@ -73,10 +66,8 @@
         {% for lang in LANGUAGES %}{% if lang.0 == LANGUAGE_CODE %}{{ lang.1 }}{% endif %}{% endfor %}
         </a>
         <div class="dropdown-menu{% if not LANGUAGE_BIDI %} dropdown-menu-right{% endif %}" aria-labelledby="dropdownMenuLink">
-          {% for lang_code, lang_name in languages %}
-          {% language lang_code %}
-          <a class="dropdown-item" href="{% if url_name %}{% url url_name %}{% else %}{% url 'home' %}{% endif %}">{{ lang_name }}</a>
-          {% endlanguage %}
+          {% for lang in language_urls %}
+          <a class="dropdown-item" href="{{ lang.url }}">{{ lang.name }}</a>
           {% endfor %}
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="{% url 'contribute' %}#translate">{% trans "Help with translations!" %}</a>
@@ -88,6 +79,7 @@
 </nav>
 <header>
 
+{% block jumbotron %}
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
     <h1>
@@ -103,6 +95,7 @@
     {% endblock %}
   </div>
 </div>
+{% endblock %}
 </header>
 <div class="container">
 

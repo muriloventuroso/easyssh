@@ -18,14 +18,33 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 #
 
+from django.conf import settings
+from django.urls import reverse
+from django.utils.translation import override
+
+
 from weblate_web.data import VERSION, EXTENSIONS, SCREENSHOTS
 
 
 def weblate_web(request):
     if request.resolver_match:
         url_name = request.resolver_match.url_name
+        url_kwargs = request.resolver_match.kwargs
     else:
         url_name = 'home'
+        url_kwargs = {}
+
+    with override('en'):
+        canonical_url = reverse(url_name, kwargs=url_kwargs)
+
+    language_urls = []
+    for code, name in settings.LANGUAGES:
+        with override(code):
+            language_urls.append({
+                'name': name,
+                'code': code,
+                'url': reverse(url_name, kwargs=url_kwargs),
+            })
 
     downloads = [
         'Weblate-{0}.{1}'.format(VERSION, ext) for ext in EXTENSIONS
@@ -33,5 +52,6 @@ def weblate_web(request):
     return {
         'downloads': downloads,
         'screenshots': SCREENSHOTS,
-        'url_name': url_name,
+        'canonical_url': canonical_url,
+        'language_urls': language_urls,
     }
