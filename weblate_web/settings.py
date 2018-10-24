@@ -245,9 +245,6 @@ ALLOWED_HOSTS = ('weblate.org', '127.0.0.1')
 
 SESSION_ENGINE = "django.contrib.sessions.backends.signed_cookies"
 
-# Force sane test runner
-TEST_RUNNER = 'django.test.runner.DiscoverRunner'
-
 sentry_sdk.init(
     dsn="",
     integrations=[DjangoIntegration()]
