@@ -192,6 +192,8 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.sitemaps',
     'wlhosted',
+    'wlhosted.models',
+    'wlhosted.legal',
 )
 
 # Some security headers
