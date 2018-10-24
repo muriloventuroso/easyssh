@@ -48,8 +48,23 @@ DATABASES = {
         'HOST': '',
         # Set to empty string for default. Not used with sqlite3.
         'PORT': '',
+    },
+    'payments_db': {
+        # Use 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+        'ENGINE': 'django.db.backends.sqlite3',
+        # Database name or path to database file if using sqlite3.
+        'NAME': 'payments.sqlite3',
+        # Database user, not used with sqlite3.
+        'USER': '',
+        # Database pasword, not used with sqlite3.
+        'PASSWORD': '',
+        # Set to empty string for localhost. Not used with sqlite3.
+        'HOST': '',
+        # Set to empty string for default. Not used with sqlite3.
+        'PORT': '',
     }
 }
+DATABASE_ROUTERS = ['wlhosted.dbrouter.HostedRouter']
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -194,7 +209,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.sitemaps',
     'wlhosted',
-    'wlhosted.models',
+    'wlhosted.payments',
     'wlhosted.legal',
 )
 
