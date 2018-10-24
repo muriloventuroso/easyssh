@@ -1,13 +1,13 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chang-Chia Tseng <pswo10680@gmail.com>, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2018-10-22 17:10+0200\n"
-"PO-Revision-Date: 2018-08-21 12:45+0000\n"
+"PO-Revision-Date: 2018-10-25 12:41+0000\n"
 "Last-Translator: Chang-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
 "weblate/website/zh_Hant/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.2-dev\n"
+"X-Generator: Weblate 3.3-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -202,7 +202,7 @@ msgstr "下載"
 
 #: weblate_web/templates/base.html:61
 msgid "Pricing"
-msgstr ""
+msgstr "價格"
 
 #: weblate_web/templates/base.html:62
 msgid "Develop"
@@ -238,7 +238,7 @@ msgstr "協助我們翻譯！"
 
 #: weblate_web/templates/base.html:119 weblate_web/templates/terms.html:4
 msgid "Terms of Service and Privacy Policy"
-msgstr ""
+msgstr "服務條款與隱私政策"
 
 #: weblate_web/templates/contribute.html:3
 #: weblate_web/templates/contribute.html:4
@@ -403,10 +403,8 @@ msgid "Currency"
 msgstr "貨幣"
 
 #: weblate_web/templates/donate.html:88
-#, fuzzy
-#| msgid "Payment address"
 msgid "Donate address"
-msgstr "付款地址"
+msgstr "捐款位址"
 
 #: weblate_web/templates/download.html:4 weblate_web/templates/download.html:5
 msgid "Download Weblate"
@@ -621,14 +619,12 @@ msgstr "Weblate 具備響應式 UI 設計，適合電腦、平板或手機使用
 
 #: weblate_web/templates/hosting-free.html:3
 #: weblate_web/templates/hosting-free.html:4
-#, fuzzy
-#| msgid "Hosting Weblate"
 msgid "Free hosting on Weblate"
-msgstr "Weblate 託管服務"
+msgstr "Weblate 上的免費託管服務"
 
 #: weblate_web/templates/hosting-free.html:6
 msgid "We love open source and we offer free plans for hosting translations."
-msgstr ""
+msgstr "我們熱愛開放源始碼，而且我們為開源專案提供免費的翻譯託管方案。"
 
 #: weblate_web/templates/hosting-free.html:11
 #: weblate_web/templates/hosting.html:11
@@ -1037,41 +1033,28 @@ msgstr ""
 "執行。也有許多將 Weblate 佈署到雲端環境的作法。"
 
 #: weblate_web/templates/hosting.html:235
-#, fuzzy
-#| msgid ""
-#| "In case you need help with your self hosted solution, we're ready to help "
-#| "as well with consulting services tailored for your needs. Please contact "
-#| "<a href=\"%(contact_url)s\">Michal Čihař</a> for more details."
 msgid ""
 "In case you need help with your self hosted solution, we're ready to help as "
 "well with consulting services tailored for your needs."
-msgstr ""
-"若您自行架設時遇到問題需要幫助，我們已準備好符合您需求的諮詢服務出手協助。歡"
-"迎聯繫 <a href=\"%(contact_url)s\">Michal Čihař</a> 瞭解更多資訊。"
+msgstr "若您自行架設時遇到問題需要幫助，我們已準備好符合您需求的諮詢服務出手協助。"
 
 #: weblate_web/templates/index.html:3
 msgid "Weblate - web-based translation"
 msgstr "Weblate - 網頁介面翻譯平台"
 
 #: weblate_web/templates/index.html:7
-#, fuzzy
-#| msgid "Weblate is a free web-based translation management system."
 msgid ""
 "Weblate is an open source web-based translation management system supporting "
 "continuous translation."
-msgstr "Weblate 是一款網頁介面的自由翻譯管理系統。"
+msgstr "Weblate 是一款採用網頁介面且支援持續翻譯的開源翻譯管理系統。"
 
 #: weblate_web/templates/index.html:14
-#, fuzzy
-#| msgid "Hosting Weblate"
 msgid "Start using Weblate"
-msgstr "Weblate 託管服務"
+msgstr "開始使用 Weblate"
 
 #: weblate_web/templates/index.html:15
-#, fuzzy
-#| msgid "Try our demo"
 msgid "Try our demo server"
-msgstr "試用我們的 Demo"
+msgstr "試用我們的 Demo 伺服器"
 
 #: weblate_web/templates/index.html:16
 msgid "Downloads"
@@ -1166,7 +1149,7 @@ msgstr "Weblate 的一次安裝"
 
 #: weblate_web/templates/support.html:43
 msgid "Either installation directly on your system"
-msgstr ""
+msgstr "可以直接安裝在您的系統上"
 
 #: weblate_web/templates/support.html:45
 msgid "Installation using virtualenv, uwsgi and nginx"
@@ -1178,7 +1161,7 @@ msgstr "使用 PostgreSQL、MySQL 或 MariaDB 當作資料庫後端"
 
 #: weblate_web/templates/support.html:49
 msgid "Or installation using Docker"
-msgstr ""
+msgstr "或是利用 Docker 安裝"
 
 #: weblate_web/templates/support.html:50
 msgid "Requires root access or close cooperation of your admins"
@@ -1310,7 +1293,7 @@ msgstr "服務條款"
 
 #: weblate_web/templates/terms.html:6
 msgid "The legal documents necessary to operate this service."
-msgstr ""
+msgstr "操作此項服務所必須的法律文件。"
 
 #: weblate_web/templates/terms.html:20
 msgid "Privacy Policy"
