@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load static %}
+{% block title %}{% trans "Weblate payment" %}{% endblock %}
+{% block jumbotron %}{% endblock %}
+
+{% block content %}
+
+<div class="card m-4">
+  <h5 class="card-header">
+    {% trans "Please choose your payment method" %}
+  </h5>
+    <table class="table">
+    <tr><th>{% trans "Payment amount" %}</th><td>{% blocktrans with object.amount as price %}{{ price }} EUR{% endblocktrans %}</td><tr>
+    <tr><th>{% trans "Payment description" %}</th><td>{{ object.description }}</td></tr>
+    {% if object.recurring %}
+    <tr><th>{% trans "Payment recurrence" %}</th><td>
+    {% if object.recurring == "y" %}
+    {% trans "Payment will repeat every year until you cancel the subscription." %}
+    {% elif object.recurring == "m" %}
+    {% trans "Payment will repeat every month until you cancel the subscription." %}
+    {% else %}
+    {{ object.recurring }}
+    {% endif %}
+    </td></tr>
+    {% if object.customer.vat_id %}
+    <tr>
+    <th>{% trans "VAT ID (EU bussiness only)" %}</th>
+    <td>{{ object.customer.vat_id }}</td>
+    </tr>
+    {% endif %}
+    <tr>
+    <th>{% trans "Billing information" %}</th>
+    <td>
+    {{ object.customer.name }}<br>
+    {{ object.customer.address }}<br>
+    {{ object.customer.city }}<br>
+    {{ object.customer.country }}<br>
+    </td>
+    </tr>
+    {% endif %}
+    </table>
+  <div class="card-footer text-muted">
+    <form method="POST">
+      {% csrf_token %}
+      <button class="btn btn-link" type="submit" name="method" value="card"><img src="/media/payment/card.png"><br>{% trans "Credit or debit card" %}</button>
+    </form>
+  </div>
+</div>
+
+{% endblock %}

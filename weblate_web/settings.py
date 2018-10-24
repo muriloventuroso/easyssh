@@ -53,7 +53,7 @@ DATABASES = {
         # Use 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
         'ENGINE': 'django.db.backends.sqlite3',
         # Database name or path to database file if using sqlite3.
-        'NAME': 'payments.sqlite3',
+        'NAME': '/home/nijel/weblate/hosted/payments.db',
         # Database user, not used with sqlite3.
         'USER': '',
         # Database pasword, not used with sqlite3.

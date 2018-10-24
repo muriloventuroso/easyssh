@@ -26,6 +26,8 @@ from django.contrib.sitemaps import Sitemap
 import django.contrib.sitemaps.views
 import django.views.static
 
+from weblate_web.views import PaymentView
+
 
 class PagesSitemap(Sitemap):
     '''
@@ -135,6 +137,11 @@ urlpatterns = i18n_patterns(
         r'^terms/$',
         TemplateView.as_view(template_name="terms.html"),
         name='terms'
+    ),
+    url(
+        r'^payment/(?P<pk>[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})/$',
+        PaymentView.as_view(),
+        name='payment'
     ),
 
     # Compatibility with disabled languages
