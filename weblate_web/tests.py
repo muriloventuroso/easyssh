@@ -8,6 +8,7 @@ from django.conf import settings
 from django.test.utils import override_settings
 from weblate_web.data import VERSION, EXTENSIONS
 from weblate_web.templatetags.downloads import filesizeformat, downloadlink
+from wlhosted.data import SUPPORTED_LANGUAGES
 
 TEST_DATA = os.path.join(os.path.dirname(__file__), 'test-data')
 
@@ -103,4 +104,12 @@ class UtilTestCase(TestCase):
         self.assertIn(
             '>text (0 bytes)',
             downloadlink('foo.pdf', 'text')
+        )
+
+
+class PaymentsTest(TestCase):
+    def test_languages(self):
+        self.assertEqual(
+            set(SUPPORTED_LANGUAGES),
+            set([x[0] for x in settings.LANGUAGES]),
         )
