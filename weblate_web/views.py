@@ -42,30 +42,25 @@ class PaymentView(FormView, SingleObjectMixin):
             )
         )
 
-    def get_queryset(self):
-        return Payment.objects.filter(handled=False)
-
     def dispatch(self, request, *args, **kwargs):
         self.object = self.get_object()
-        # Redirect already paid back to source in case
-        # the transaction was aborted
-        if self.object.paid:
+        # Redirect already processed payments to origin in case
+        # the web redirect was aborted
+        if self.object.state != Payment.NEW:
             return self.redirect_origin()
         return super(PaymentView, self).dispatch(request, *args, **kwargs)
 
     def form_valid(self, form):
         # Actualy call the payment backend
         method = form.cleaned_data['method']
-        if method == 'pay':
-            self.object.paid = True
+        statemap = {
+            'pay': Payment.ACCEPTED,
+            'reject': Payment.REJECTED,
+            'pending': Payment.PENDING,
+        }
+        if method in statemap:
+            self.object.state = statemap[method]
             self.object.save()
             return self.redirect_origin()
-        elif method == 'reject':
-            messages.error(self.request, _('Your payment was rejected, please try again.'))
-            return redirect('payment', pk=self.object.pk)
-        elif method == 'pending':
-            messages.info(self.request, _('Your payment is pending, it will be processed in background.'))
-            return redirect('payment', pk=self.object.pk)
-        else:
-            messages.error(self.request, _('Payment method is not yet supported!'))
-            return redirect('payment', pk=self.object.pk)
+        messages.error(self.request, _('Payment method is not yet supported!'))
+        return redirect('payment', pk=self.object.pk)
