@@ -44,6 +44,9 @@
     <form method="POST">
       {% csrf_token %}
       <button class="btn btn-link" type="submit" name="method" value="card"><img src="/media/payment/card.png"><br>{% trans "Credit or debit card" %}</button>
+      <button class="btn btn-link" type="submit" name="method" value="pay">Pay</button>
+      <button class="btn btn-link" type="submit" name="method" value="reject">Reject</button>
+      <button class="btn btn-link" type="submit" name="method" value="pending">Pending</button>
     </form>
   </div>
 </div>

@@ -18,7 +18,9 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 #
 
+from django.contrib import messages
 from django.shortcuts import redirect
+from django.utils.translation import ugettext as _
 from django.views.generic.edit import FormView
 from django.views.generic.detail import SingleObjectMixin
 
@@ -32,6 +34,14 @@ class PaymentView(FormView, SingleObjectMixin):
     form_class = MethodForm
     template_name = 'payment/payment.html'
 
+    def redirect_origin(self):
+        return redirect(
+            '{}?payment={}'.format(
+                self.object.customer.origin,
+                self.object.pk,
+            )
+        )
+
     def get_queryset(self):
         return Payment.objects.filter(handled=False)
 
@@ -40,5 +50,22 @@ class PaymentView(FormView, SingleObjectMixin):
         # Redirect already paid back to source in case
         # the transaction was aborted
         if self.object.paid:
-            return redirect(self.object.origin)
+            return self.redirect_origin()
         return super(PaymentView, self).dispatch(request, *args, **kwargs)
+
+    def form_valid(self, form):
+        # Actualy call the payment backend
+        method = form.cleaned_data['method']
+        if method == 'pay':
+            self.object.paid = True
+            self.object.save()
+            return self.redirect_origin()
+        elif method == 'reject':
+            messages.error(self.request, _('Your payment was rejected, please try again.'))
+            return redirect('payment', pk=self.object.pk)
+        elif method == 'pending':
+            messages.info(self.request, _('Your payment is pending, it will be processed in background.'))
+            return redirect('payment', pk=self.object.pk)
+        else:
+            messages.error(self.request, _('Payment method is not yet supported!'))
+            return redirect('payment', pk=self.object.pk)

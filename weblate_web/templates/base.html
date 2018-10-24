@@ -99,6 +99,12 @@
 </header>
 <div class="container">
 
+{% for message in messages %}
+<div class="m-4 alert alert-{% if "error" in message.tags %}danger{% else %}{{ message.tags }}{% endif %}" role="alert">
+  {{ message }}
+</div>
+{% endfor %}
+
 {% block content %}
 {% endblock %}
 </div>

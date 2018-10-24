@@ -184,6 +184,7 @@ TEMPLATES = [
             'context_processors': [
                 'django.template.context_processors.request',
                 'django.template.context_processors.i18n',
+                'django.contrib.messages.context_processors.messages',
                 'weblate_web.context_processors.weblate_web',
             ],
             'loaders': _TEMPLATE_LOADERS,
@@ -195,6 +196,7 @@ TEMPLATES = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.locale.LocaleMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -208,6 +210,7 @@ INSTALLED_APPS = (
     'weblate_web',
     'django.contrib.staticfiles',
     'django.contrib.sitemaps',
+    'django.contrib.messages',
     'wlhosted',
     'wlhosted.payments',
     'wlhosted.legal',

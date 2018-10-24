@@ -27,6 +27,9 @@ class MethodForm(forms.Form):
     method = forms.ChoiceField(
         choices=[
             ('card', 'card'),
+            ('pay', 'pay'),
+            ('reject', 'reject'),
+            ('pending', 'pending'),
         ],
         required=True,
     )
