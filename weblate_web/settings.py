@@ -159,7 +159,9 @@ _TEMPLATE_LOADERS = [
     'django.template.loaders.app_directories.Loader',
 ]
 if not DEBUG:
-    _TEMPLATE_LOADERS = [('django.template.loaders.cached.Loader', _TEMPLATE_LOADERS)]
+    _TEMPLATE_LOADERS = [
+        ('django.template.loaders.cached.Loader', _TEMPLATE_LOADERS)
+    ]
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
