@@ -3,12 +3,18 @@
 import os
 import shutil
 import tempfile
+
 from django.test import TestCase
 from django.conf import settings
 from django.test.utils import override_settings
+from django.urls import reverse
+from django.utils.translation import override
+
+from wlhosted.data import SUPPORTED_LANGUAGES
+from wlhosted.payments.models import Customer, Payment
+
 from weblate_web.data import VERSION, EXTENSIONS
 from weblate_web.templatetags.downloads import filesizeformat, downloadlink
-from wlhosted.data import SUPPORTED_LANGUAGES
 
 TEST_DATA = os.path.join(os.path.dirname(__file__), 'test-data')
 
@@ -113,3 +119,41 @@ class PaymentsTest(TestCase):
             set(SUPPORTED_LANGUAGES),
             set([x[0] for x in settings.LANGUAGES]),
         )
+
+    def create_payment(self):
+        customer = Customer.objects.create(
+            email='weblate@example.com',
+            user_id=1
+        )
+        payment = Payment.objects.create(
+            customer=customer,
+            amount=100,
+            description='Test payment',
+        )
+        return (
+            payment,
+            reverse('payment', kwargs={'pk': payment.pk}),
+            reverse('payment-customer', kwargs={'pk': payment.pk}),
+        )
+
+    def test_view(self):
+        with override('en'):
+            payment, url, customer_url = self.create_payment()
+            response = self.client.get(url, follow=True)
+            self.assertRedirects(response, customer_url)
+            self.assertContains(response, 'Please provide your billing')
+            response = self.client.post(
+                customer_url,
+                {
+                    'name': 'Michal Čihař',
+                    'address': 'Zdiměřická 1439',
+                    'city': '149 00 Praha 4',
+                    'country': 'CZ',
+                    'vat_0': 'CZ',
+                    'vat_1': '8003280318',
+                },
+                follow=True
+            )
+            self.assertRedirects(response, url)
+            self.assertContains(response, 'Test payment')
+            self.assertContains(response, '121.0 EUR')
