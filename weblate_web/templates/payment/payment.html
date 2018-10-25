@@ -25,6 +25,8 @@
     {% else %}
     {{ object.recurring }}
     {% endif %}
+    <br>
+    <span class="text-muted">{% trans "Note: This is not available for some payment methods, you will have to manually complete next payment in that case." %}</span>
     </td></tr>
     <tr>
     <th>{% trans "Billing information" %}</th>
