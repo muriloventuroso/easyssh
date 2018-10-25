@@ -2,13 +2,14 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # bovirus <roberto.boriotti@canon-europe.com>, 2018.
+# Piero <p.passerini@gmail.com>, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: Weblate v. 2017.09.28\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2018-10-22 17:10+0200\n"
-"PO-Revision-Date: 2018-10-10 08:39+0000\n"
-"Last-Translator: bovirus <roberto.boriotti@canon-europe.com>\n"
+"PO-Revision-Date: 2018-10-25 12:41+0000\n"
+"Last-Translator: Piero <p.passerini@gmail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/weblate/website/"
 "it/>\n"
 "Language: it\n"
@@ -16,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.2.1\n"
+"X-Generator: Weblate 3.3-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -224,7 +225,7 @@ msgstr "Download"
 
 #: weblate_web/templates/base.html:61
 msgid "Pricing"
-msgstr ""
+msgstr "Costi"
 
 #: weblate_web/templates/base.html:62
 msgid "Develop"
@@ -260,7 +261,7 @@ msgstr "Aiutaci con le traduzioni!"
 
 #: weblate_web/templates/base.html:119 weblate_web/templates/terms.html:4
 msgid "Terms of Service and Privacy Policy"
-msgstr ""
+msgstr "Condizioni del servizio ed informativa sulla privacy"
 
 #: weblate_web/templates/contribute.html:3
 #: weblate_web/templates/contribute.html:4
@@ -435,10 +436,8 @@ msgid "Currency"
 msgstr "Valuta"
 
 #: weblate_web/templates/donate.html:88
-#, fuzzy
-#| msgid "Payment address"
 msgid "Donate address"
-msgstr "Indirizzo pagamento"
+msgstr "Coordinate per le donazioni"
 
 #: weblate_web/templates/download.html:4 weblate_web/templates/download.html:5
 msgid "Download Weblate"
@@ -686,14 +685,13 @@ msgstr ""
 
 #: weblate_web/templates/hosting-free.html:3
 #: weblate_web/templates/hosting-free.html:4
-#, fuzzy
-#| msgid "Hosting Weblate"
 msgid "Free hosting on Weblate"
-msgstr "Hosting Weblate"
+msgstr "Ospitato gratuitamente su Weblate"
 
 #: weblate_web/templates/hosting-free.html:6
 msgid "We love open source and we offer free plans for hosting translations."
 msgstr ""
+"Amiamo l'open source ed offriamo piani gratuiti per ospitare le traduzioni."
 
 #: weblate_web/templates/hosting-free.html:11
 #: weblate_web/templates/hosting.html:11
@@ -1128,41 +1126,30 @@ msgstr ""
 "applicazioni per distribuire Weblate nel cloud."
 
 #: weblate_web/templates/hosting.html:235
-#, fuzzy
-#| msgid ""
-#| "In case you need help with your self hosted solution, we're ready to help "
-#| "as well with consulting services tailored for your needs. Please contact "
-#| "<a href=\"%(contact_url)s\">Michal Čihař</a> for more details."
 msgid ""
 "In case you need help with your self hosted solution, we're ready to help as "
 "well with consulting services tailored for your needs."
 msgstr ""
 "Nel caso tu abbia bisogno di aiuto con la tua soluzione self-hosted, siamo "
 "pronti ad aiutarti anche con i servizi di consulenza su misura per le tue "
-"esigenze. Per ulteriori informazioni, contatta <a href=\"%(contact_url)s"
-"\">Michal Čihař</a>."
+"esigenze."
 
 #: weblate_web/templates/index.html:3
 msgid "Weblate - web-based translation"
 msgstr "Weblate - traduzione web-based"
 
 #: weblate_web/templates/index.html:7
-#, fuzzy
-#| msgid "Weblate is a free web-based translation management system."
 msgid ""
 "Weblate is an open source web-based translation management system supporting "
 "continuous translation."
-msgstr "Weblate è un sistema web-based gratuito di gestione delle traduzioni."
+msgstr ""
+"Weblate è un sistema open source, web-based, di gestione delle traduzioni."
 
 #: weblate_web/templates/index.html:14
-#, fuzzy
-#| msgid "Hosting Weblate"
 msgid "Start using Weblate"
-msgstr "Hosting Weblate"
+msgstr "Inizia ad usare Weblate"
 
 #: weblate_web/templates/index.html:15
-#, fuzzy
-#| msgid "Try our demo"
 msgid "Try our demo server"
 msgstr "Prova la nostra demo"
 
@@ -1246,9 +1233,9 @@ msgid ""
 "Worried of putting your translations into cloud? You can self host Weblate "
 "and we can still provide you premium support for your setup."
 msgstr ""
-"Sei preoccupato di mettere le tue traduzioni nel cloud? Puoi hostare Weblate "
-"nel tuo PC e possiamo fornirti comunque assistenza premium per la tua "
-"installazione."
+"Sei preoccupato di mettere le tue traduzioni nel cloud? Puoi ospitare "
+"Weblate nel tuo PC e possiamo fornirti comunque assistenza premium per la "
+"tua installazione."
 
 #: weblate_web/templates/support.html:36
 msgid "Installation on your Linux server"
@@ -1265,7 +1252,7 @@ msgstr "Installazione singola di Weblate"
 
 #: weblate_web/templates/support.html:43
 msgid "Either installation directly on your system"
-msgstr ""
+msgstr "Sia l'installazione direttamente sul vostro sistema"
 
 #: weblate_web/templates/support.html:45
 msgid "Installation using virtualenv, uwsgi and nginx"
@@ -1277,7 +1264,7 @@ msgstr "Usando PostgreSQL, MySQL o MariaDB come backend database"
 
 #: weblate_web/templates/support.html:49
 msgid "Or installation using Docker"
-msgstr ""
+msgstr "Oppure l'installazione usando Docker"
 
 #: weblate_web/templates/support.html:50
 msgid "Requires root access or close cooperation of your admins"
@@ -1420,7 +1407,7 @@ msgstr "Termini del servizio"
 
 #: weblate_web/templates/terms.html:6
 msgid "The legal documents necessary to operate this service."
-msgstr ""
+msgstr "I documenti legali necessari al funzionamento del servizio."
 
 #: weblate_web/templates/terms.html:20
 msgid "Privacy Policy"
