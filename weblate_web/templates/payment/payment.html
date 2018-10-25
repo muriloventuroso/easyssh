@@ -11,7 +11,10 @@
     {% trans "Please choose your payment method" %}
   </h5>
     <table class="table">
-    <tr><th>{% trans "Payment amount" %}</th><td>{% blocktrans with object.amount as price %}{{ price }} EUR{% endblocktrans %}</td><tr>
+    <tr><th>{% trans "Payment amount" %}</th><td>
+    {% blocktrans with object.vat_amount as price %}{{ price }} EUR{% endblocktrans %}
+    {% if object.customer.needs_vat %}{% trans "(including VAT)" %}{% endif %}
+    </td><tr>
     <tr><th>{% trans "Payment description" %}</th><td>{{ object.description }}</td></tr>
     {% if object.recurring %}
     <tr><th>{% trans "Payment recurrence" %}</th><td>
@@ -36,6 +39,7 @@
     </tr>
     {% endif %}
     </table>
+  {% if can_pay %}
   <div class="card-footer text-muted">
     <form method="POST">
       {% csrf_token %}
@@ -45,6 +49,7 @@
       <button class="btn btn-link" type="submit" name="method" value="pending">Pending</button>
     </form>
   </div>
+  {% endif %}
 </div>
 
 {% endblock %}

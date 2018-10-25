@@ -29,7 +29,10 @@ $(function () {
     });
     $('[data-toggle="tooltip"]').tooltip()
     $('#id_vat_0').on('change', function() {
-        var country = $('#id_country option[value="' + $(this).val() + '"]');
-        country.prop('selected', true);
+        var value = $(this).val();
+        if (value != '') {
+            var country = $('#id_country option[value="' + value + '"]');
+            country.prop('selected', true);
+        }
     });
 });

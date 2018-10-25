@@ -42,9 +42,28 @@ class PaymentView(FormView, SingleObjectMixin):
                 self.object.pk,
             )
         )
+        kwargs['can_pay'] = self.object.customer.is_empty
+
+    def get_context_data(self, **kwargs):
+        kwargs = super(PaymentView, self).get_context_data(**kwargs)
+        kwargs['can_pay'] = self.can_pay
+        return kwargs
+
+    def get(self, request, *args, **kwargs):
+        if self.object.customer.is_eu_enduser:
+            messages.error(
+                request,
+                'Payments for EU endusers are currently not possible. '
+                'Please contact us at support@weblate.org.'
+            )
+        return super(PaymentView, self).get(request, *args, **kwargs)
 
     def dispatch(self, request, *args, **kwargs):
         self.object = self.get_object()
+        self.can_pay = (
+            not self.object.customer.is_empty and
+            not self.object.customer.is_eu_enduser
+        )
         # Redirect already processed payments to origin in case
         # the web redirect was aborted
         if self.object.state != Payment.NEW:
@@ -61,6 +80,8 @@ class PaymentView(FormView, SingleObjectMixin):
         return super(PaymentView, self).dispatch(request, *args, **kwargs)
 
     def form_valid(self, form):
+        if not self.can_pay:
+            return redirect('payment', pk=self.object.pk)
         # Actualy call the payment backend
         method = form.cleaned_data['method']
         statemap = {
