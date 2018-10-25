@@ -28,4 +28,8 @@ $(function () {
         current: '{current}/{total}'
     });
     $('[data-toggle="tooltip"]').tooltip()
+    $('#id_vat_0').on('change', function() {
+        var country = $('#id_country option[value="' + $(this).val() + '"]');
+        country.prop('selected', true);
+    });
 });

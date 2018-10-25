@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block title %}{% trans "Weblate payment" %}{% endblock %}
+{% block jumbotron %}{% endblock %}
+
+{% block content %}
+
+<form method="post">
+{% csrf_token %}
+<div class="card m-4">
+  <h5 class="card-header">
+    {% trans "Your billing information" %}
+  </h5>
+  <div class="card-body">
+    {{ form|crispy }}
+  </div>
+  <div class="card-footer">
+    <input type="submit" value="{% trans "Save" %}" class="btn btn-success">
+  </div>
+</div>
+</form>
+
+{% endblock %}
+

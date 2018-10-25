@@ -23,19 +23,15 @@
     {{ object.recurring }}
     {% endif %}
     </td></tr>
-    {% if object.customer.vat_id %}
-    <tr>
-    <th>{% trans "VAT ID (EU bussiness only)" %}</th>
-    <td>{{ object.customer.vat_id }}</td>
-    </tr>
-    {% endif %}
     <tr>
     <th>{% trans "Billing information" %}</th>
     <td>
+    <a href="{% url "payment-customer" pk=object.pk %}" class="btn btn-success float-right"><i class="fas fa-edit"></i> {% trans "Edit" %}</a>
     {{ object.customer.name }}<br>
     {{ object.customer.address }}<br>
     {{ object.customer.city }}<br>
-    {{ object.customer.country }}<br>
+    {{ object.customer.country.name }}<br>
+    {{ object.customer.vat }}
     </td>
     </tr>
     {% endif %}

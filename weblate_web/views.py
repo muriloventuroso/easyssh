@@ -26,13 +26,14 @@ from django.views.generic.detail import SingleObjectMixin
 
 from wlhosted.payments.models import Payment
 
-from weblate_web.forms import MethodForm
+from weblate_web.forms import MethodForm, CustomerForm
 
 
 class PaymentView(FormView, SingleObjectMixin):
     model = Payment
     form_class = MethodForm
     template_name = 'payment/payment.html'
+    check_customer = True
 
     def redirect_origin(self):
         return redirect(
@@ -48,6 +49,15 @@ class PaymentView(FormView, SingleObjectMixin):
         # the web redirect was aborted
         if self.object.state != Payment.NEW:
             return self.redirect_origin()
+        if self.check_customer and self.object.customer.is_empty:
+            messages.info(
+                self.request,
+                _(
+                    'Please provide your billing information to '
+                    'complete the payment.'
+                )
+            )
+            return redirect('payment-customer', pk=self.object.pk)
         return super(PaymentView, self).dispatch(request, *args, **kwargs)
 
     def form_valid(self, form):
@@ -64,3 +74,19 @@ class PaymentView(FormView, SingleObjectMixin):
             return self.redirect_origin()
         messages.error(self.request, _('Payment method is not yet supported!'))
         return redirect('payment', pk=self.object.pk)
+
+
+class CustomerView(PaymentView):
+    form_class = CustomerForm
+    template_name = 'payment/customer.html'
+    check_customer = False
+
+    def form_valid(self, form):
+        form.save()
+        return redirect('payment', pk=self.object.pk)
+
+    def get_form_kwargs(self):
+        """Return the keyword arguments for instantiating the form."""
+        kwargs = super(CustomerView, self).get_form_kwargs()
+        kwargs['instance'] = self.object.customer
+        return kwargs

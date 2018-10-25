@@ -22,6 +22,8 @@ from __future__ import unicode_literals
 
 from django import forms
 
+from wlhosted.payments.models import Customer
+
 
 class MethodForm(forms.Form):
     method = forms.ChoiceField(
@@ -33,3 +35,11 @@ class MethodForm(forms.Form):
         ],
         required=True,
     )
+
+
+class CustomerForm(forms.ModelForm):
+    class Meta:
+        model = Customer
+        fields = (
+            'vat', 'name', 'address', 'city', 'country',
+        )

@@ -214,6 +214,7 @@ INSTALLED_APPS = (
     'wlhosted',
     'wlhosted.payments',
     'wlhosted.legal',
+    'crispy_forms',
 )
 
 # Some security headers
@@ -261,7 +262,7 @@ LOCALE_PATHS = (
     os.path.join(BASE_DIR, '..', 'locale'),
 )
 
-ALLOWED_HOSTS = ('weblate.org', '127.0.0.1')
+ALLOWED_HOSTS = ('weblate.org', '127.0.0.1', 'localhost')
 
 SESSION_ENGINE = "django.contrib.sessions.backends.signed_cookies"
 
@@ -269,3 +270,5 @@ sentry_sdk.init(
     dsn="",
     integrations=[DjangoIntegration()]
 )
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
