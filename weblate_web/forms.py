@@ -22,19 +22,21 @@ from __future__ import unicode_literals
 
 from django import forms
 
+from wlhosted.payments.backends import list_backends
 from wlhosted.payments.models import Customer
 
 
 class MethodForm(forms.Form):
     method = forms.ChoiceField(
-        choices=[
-            ('card', 'card'),
-            ('pay', 'pay'),
-            ('reject', 'reject'),
-            ('pending', 'pending'),
-        ],
+        choices=[],
         required=True,
     )
+
+    def __init__(self, *args, **kwargs):
+        super(MethodForm, self).__init__(*args, **kwargs)
+        self.fields['method'].choices = [
+            (backend.name, backend.verbose) for backend in list_backends()
+        ]
 
 
 class CustomerForm(forms.ModelForm):

@@ -24,6 +24,8 @@ from django.utils.translation import ugettext as _
 from django.views.generic.edit import FormView
 from django.views.generic.detail import SingleObjectMixin
 
+from wlhosted.payments.backends import get_backend, list_backends
+
 from wlhosted.payments.models import Payment
 
 from weblate_web.forms import MethodForm, CustomerForm
@@ -47,6 +49,7 @@ class PaymentView(FormView, SingleObjectMixin):
     def get_context_data(self, **kwargs):
         kwargs = super(PaymentView, self).get_context_data(**kwargs)
         kwargs['can_pay'] = self.can_pay
+        kwargs['backends'] = [x(self.object) for x in list_backends()]
         return kwargs
 
     def get(self, request, *args, **kwargs):
@@ -84,17 +87,12 @@ class PaymentView(FormView, SingleObjectMixin):
             return redirect('payment', pk=self.object.pk)
         # Actualy call the payment backend
         method = form.cleaned_data['method']
-        statemap = {
-            'pay': Payment.ACCEPTED,
-            'reject': Payment.REJECTED,
-            'pending': Payment.PENDING,
-        }
-        if method in statemap:
-            self.object.state = statemap[method]
-            self.object.save()
-            return self.redirect_origin()
-        messages.error(self.request, _('Payment method is not yet supported!'))
-        return redirect('payment', pk=self.object.pk)
+        backend = get_backend(method)(self.object)
+        result = backend.initiate(self.request)
+        if result is not None:
+            return result
+        backend.complete(self.request)
+        return self.redirect_origin()
 
 
 class CustomerView(PaymentView):
