@@ -34,6 +34,7 @@ CSP_TEMPLATE = (
 class SecurityMiddleware(object):
     """Middleware that sets various security related headers.
 
+    - Disables CSRF when payment secret is provided
     - Content-Security-Policy
     - X-XSS-Protection
     """
@@ -41,6 +42,12 @@ class SecurityMiddleware(object):
         self.get_response = get_response
 
     def __call__(self, request):
+        # Skip CSRF validation for requests with valid secret
+        # This is used to process automatic payments
+        if ('secret' in request.POST and
+                request.POST['secret'] == settings.PAYMENT_SECRET):
+            setattr(request, '_dont_enforce_csrf_checks', True)
+
         response = self.get_response(request)
         # No CSP for debug mode (to allow djdt or error pages)
         if settings.DEBUG:
