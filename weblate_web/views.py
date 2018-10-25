@@ -20,6 +20,7 @@
 
 from django.contrib import messages
 from django.shortcuts import redirect
+from django.urls import reverse
 from django.utils.translation import ugettext as _
 from django.views.generic.edit import FormView
 from django.views.generic.detail import SingleObjectMixin
@@ -88,7 +89,15 @@ class PaymentView(FormView, SingleObjectMixin):
         # Actualy call the payment backend
         method = form.cleaned_data['method']
         backend = get_backend(method)(self.object)
-        result = backend.initiate(self.request)
+        result = backend.initiate(
+            self.request,
+            self.request.build_absolute_uri(
+                reverse('payment', kwargs={'pk': self.object.pk})
+            ),
+            self.request.build_absolute_uri(
+                reverse('payment-complete', kwargs={'pk': self.object.pk})
+            ),
+        )
         if result is not None:
             return result
         backend.complete(self.request)
@@ -109,3 +118,16 @@ class CustomerView(PaymentView):
         kwargs = super(CustomerView, self).get_form_kwargs()
         kwargs['instance'] = self.object.customer
         return kwargs
+
+
+class CompleteView(PaymentView):
+    def dispatch(self, request, *args, **kwargs):
+        self.object = self.get_object()
+        if self.object.state == Payment.NEW:
+            return redirect('payment', pk=self.object.pk)
+        elif self.object.state != Payment.PENDING:
+            return self.redirect_origin()
+
+        backend = get_backend(self.object.details['backend'])(self.object)
+        backend.complete(self.request)
+        return self.redirect_origin()

@@ -123,7 +123,8 @@ class PaymentsTest(TestCase):
     def create_payment(self):
         customer = Customer.objects.create(
             email='weblate@example.com',
-            user_id=1
+            user_id=1,
+            origin='/en/'
         )
         payment = Payment.objects.create(
             customer=customer,
@@ -157,3 +158,37 @@ class PaymentsTest(TestCase):
             self.assertRedirects(response, url)
             self.assertContains(response, 'Test payment')
             self.assertContains(response, '121.0 EUR')
+            return payment, url
+
+    def check_payment(self, payment, state):
+        fresh = Payment.objects.get(pk=payment.pk)
+        self.assertEqual(fresh.state, state)
+
+    @override_settings(PAYMENT_DEBUG=True)
+    def test_pay(self):
+        payment, url = self.test_view()
+        response = self.client.post(url, {'method': 'pay'})
+        self.assertRedirects(response, '/en/?payment={}'.format(payment.pk))
+        self.check_payment(payment, Payment.ACCEPTED)
+
+    @override_settings(PAYMENT_DEBUG=True)
+    def test_reject(self):
+        payment, url = self.test_view()
+        response = self.client.post(url, {'method': 'reject'})
+        self.assertRedirects(response, '/en/?payment={}'.format(payment.pk))
+        self.check_payment(payment, Payment.REJECTED)
+
+    @override_settings(PAYMENT_DEBUG=True)
+    def test_pending(self):
+        payment, url = self.test_view()
+        response = self.client.post(url, {'method': 'pending'})
+        complete_url = reverse('payment-complete', kwargs={'pk': payment.pk})
+        self.assertRedirects(
+            response,
+            'https://cihar.com/?url=http://testserver' + complete_url,
+            fetch_redirect_response=False
+        )
+        self.check_payment(payment, Payment.PENDING)
+        response = self.client.get(complete_url)
+        self.assertRedirects(response, '/en/?payment={}'.format(payment.pk))
+        self.check_payment(payment, Payment.ACCEPTED)
