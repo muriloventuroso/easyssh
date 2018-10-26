@@ -70,6 +70,7 @@ SITEMAPS = {
     lang[0]: PagesSitemap(lang[0])
     for lang in settings.LANGUAGES
 }
+UUID = r'(?P<pk>[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})'
 
 
 urlpatterns = i18n_patterns(
@@ -139,17 +140,17 @@ urlpatterns = i18n_patterns(
         name='terms'
     ),
     url(
-        r'^payment/(?P<pk>[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})/$',
+        r'^payment/' + UUID + '/$',
         PaymentView.as_view(),
         name='payment'
     ),
     url(
-        r'^payment/(?P<pk>[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})/edit/$',
+        r'^payment/' + UUID + '/edit/$',
         CustomerView.as_view(),
         name='payment-customer'
     ),
     url(
-        r'^payment/(?P<pk>[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})/complete/$',
+        r'^payment/' + UUID + '/complete/$',
         CompleteView.as_view(),
         name='payment-complete'
     ),
