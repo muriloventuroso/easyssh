@@ -45,7 +45,6 @@ class PaymentView(FormView, SingleObjectMixin):
                 self.object.pk,
             )
         )
-        kwargs['can_pay'] = self.object.customer.is_empty
 
     def get_context_data(self, **kwargs):
         kwargs = super(PaymentView, self).get_context_data(**kwargs)
@@ -65,8 +64,8 @@ class PaymentView(FormView, SingleObjectMixin):
     def dispatch(self, request, *args, **kwargs):
         self.object = self.get_object()
         self.can_pay = (
-            not self.object.customer.is_empty and
-            not self.object.customer.is_eu_enduser
+            not self.object.customer.is_empty
+            and not self.object.customer.is_eu_enduser
         )
         # Redirect already processed payments to origin in case
         # the web redirect was aborted
@@ -125,7 +124,7 @@ class CompleteView(PaymentView):
         self.object = self.get_object()
         if self.object.state == Payment.NEW:
             return redirect('payment', pk=self.object.pk)
-        elif self.object.state != Payment.PENDING:
+        if self.object.state != Payment.PENDING:
             return self.redirect_origin()
 
         backend = get_backend(self.object.details['backend'])(self.object)

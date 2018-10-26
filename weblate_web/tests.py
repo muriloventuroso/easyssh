@@ -117,10 +117,11 @@ class PaymentsTest(TestCase):
     def test_languages(self):
         self.assertEqual(
             set(SUPPORTED_LANGUAGES),
-            set([x[0] for x in settings.LANGUAGES]),
+            {x[0] for x in settings.LANGUAGES},
         )
 
-    def create_payment(self):
+    @staticmethod
+    def create_payment():
         customer = Customer.objects.create(
             email='weblate@example.com',
             user_id=1,
