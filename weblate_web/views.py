@@ -64,8 +64,8 @@ class PaymentView(FormView, SingleObjectMixin):
     def dispatch(self, request, *args, **kwargs):
         self.object = self.get_object()
         self.can_pay = (
-            not self.object.customer.is_empty
-            and not self.object.customer.is_eu_enduser
+            not self.object.customer.is_empty and
+            not self.object.customer.is_eu_enduser
         )
         # Redirect already processed payments to origin in case
         # the web redirect was aborted
