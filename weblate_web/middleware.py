@@ -44,8 +44,7 @@ class SecurityMiddleware:
     def __call__(self, request):
         # Skip CSRF validation for requests with valid secret
         # This is used to process automatic payments
-        if ('secret' in request.POST and
-                request.POST['secret'] == settings.PAYMENT_SECRET):
+        if request.POST.get('secret') == settings.PAYMENT_SECRET:
             setattr(request, '_dont_enforce_csrf_checks', True)
 
         response = self.get_response(request)
