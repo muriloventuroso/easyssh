@@ -4,6 +4,7 @@ python:
   - "3.4"
 # commands to install dependencies
 install: 
+  - pip install https://github.com/WeblateOrg/weblate/archive/master.zip
   - pip install https://github.com/WeblateOrg/hosted/archive/master.zip
   - pip install -r requirements.txt
   - pip install -r requirements-test.txt
