@@ -121,12 +121,13 @@ class CustomerView(PaymentView):
 
 class CompleteView(PaymentView):
     def dispatch(self, request, *args, **kwargs):
-        self.object = self.get_object()
-        if self.object.state == Payment.NEW:
-            return redirect('payment', pk=self.object.pk)
-        if self.object.state != Payment.PENDING:
-            return self.redirect_origin()
+        with transaction.atomic(using='payments_db'):
+            self.object = self.get_object()
+            if self.object.state == Payment.NEW:
+                return redirect('payment', pk=self.object.pk)
+            if self.object.state != Payment.PENDING:
+                return self.redirect_origin()
 
-        backend = get_backend(self.object.details['backend'])(self.object)
-        backend.complete(self.request)
-        return self.redirect_origin()
+            backend = get_backend(self.object.details['backend'])(self.object)
+            backend.complete(self.request)
+            return self.redirect_origin()
