@@ -19,6 +19,7 @@
 #
 
 from django.contrib import messages
+from django.db import transaction
 from django.shortcuts import redirect
 from django.urls import reverse
 from django.utils.translation import ugettext as _
@@ -62,23 +63,24 @@ class PaymentView(FormView, SingleObjectMixin):
         return super(PaymentView, self).get(request, *args, **kwargs)
 
     def dispatch(self, request, *args, **kwargs):
-        self.object = self.get_object()
-        customer = self.object.customer
-        self.can_pay = not customer.is_empty and not customer.is_eu_enduser
-        # Redirect already processed payments to origin in case
-        # the web redirect was aborted
-        if self.object.state != Payment.NEW:
-            return self.redirect_origin()
-        if self.check_customer and customer.is_empty:
-            messages.info(
-                self.request,
-                _(
-                    'Please provide your billing information to '
-                    'complete the payment.'
+        with transaction.atomic():
+            self.object = self.get_object()
+            customer = self.object.customer
+            self.can_pay = not customer.is_empty and not customer.is_eu_enduser
+            # Redirect already processed payments to origin in case
+            # the web redirect was aborted
+            if self.object.state != Payment.NEW:
+                return self.redirect_origin()
+            if self.check_customer and customer.is_empty:
+                messages.info(
+                    self.request,
+                    _(
+                        'Please provide your billing information to '
+                        'complete the payment.'
+                    )
                 )
-            )
-            return redirect('payment-customer', pk=self.object.pk)
-        return super(PaymentView, self).dispatch(request, *args, **kwargs)
+                return redirect('payment-customer', pk=self.object.pk)
+            return super(PaymentView, self).dispatch(request, *args, **kwargs)
 
     def form_valid(self, form):
         if not self.can_pay:
