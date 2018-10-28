@@ -63,7 +63,7 @@ class PaymentView(FormView, SingleObjectMixin):
         return super(PaymentView, self).get(request, *args, **kwargs)
 
     def dispatch(self, request, *args, **kwargs):
-        with transaction.atomic():
+        with transaction.atomic(using='payments_db'):
             self.object = self.get_object()
             customer = self.object.customer
             self.can_pay = not customer.is_empty and not customer.is_eu_enduser
