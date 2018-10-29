@@ -12,7 +12,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2018-10-22 17:10+0200\n"
 "PO-Revision-Date: 2018-10-29 15:37+0000\n"
-"Last-Translator: Michio Matsuyama <michio.matsuyama@gmail.com>\n"
+"Last-Translator: Kyotaro Iijima <kyotaro.eyes@gmail.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/weblate/website/"
 "ja/>\n"
 "Language: ja\n"
@@ -776,10 +776,9 @@ msgid ""
 "<code>https://hosted.weblate.org/git/weblate/master/</code>. You can figure "
 "out the URL on the component information tab."
 msgstr ""
-"翻訳されたリポジトリは全て https プロトコル経由で、ウェブサイト上と似たような"
-"名前で利用することができます。たとえば weblate/master に対する翻訳は、 "
-"<code>https://hosted.weblate.org/git/weblate/master/</code> で公開されます。"
-"この情報は、コンポーネントの情報タブで確認することができます。"
+"翻訳した全てのリポジトリは Web サイトと同じ命名で https プロトコルを使用できます。weblate/master の翻訳は、 "
+"<code>https://hosted.weblate.org/git/weblate/master/</code> と公開されます。URL "
+"は、コンポーネントの情報タブで確認できます。"
 
 #: weblate_web/templates/hosting-free.html:61
 #, python-format
@@ -1012,7 +1011,7 @@ msgstr "独自ドメイン"
 #, python-format
 msgid ""
 "Additional charge %(price)s EUR/year, only available with yearly billing"
-msgstr "追加費用 %(price)s ユーロ/年がかかります。また、年契約のみの対応です"
+msgstr "追加費用は %(price)s ユーロ/年、年払いのみ"
 
 #: weblate_web/templates/hosting.html:178
 msgid "Monthly by PayPal"
@@ -1037,14 +1036,14 @@ msgstr "オプションについては下記をお読みください"
 #: weblate_web/templates/hosting.html:197
 #, python-format
 msgid "Yearly by invoice (save 15-20%%)"
-msgstr "インボイスで年払い (15-20%% 節約)"
+msgstr "請求書で年払い (15-20%% 節約)"
 
 #: weblate_web/templates/hosting.html:199
 #: weblate_web/templates/hosting.html:202
 #: weblate_web/templates/hosting.html:205
 #: weblate_web/templates/hosting.html:208
 msgid "Ask us for yearly invoicing with discount."
-msgstr "インボイスによる年払いの割引額については、お尋ねください。"
+msgstr "請求書による年払いの割引額については、お尋ねください。"
 
 #: weblate_web/templates/hosting.html:199
 #: weblate_web/templates/hosting.html:202
@@ -1092,9 +1091,8 @@ msgid ""
 "run it on your systems. There are also several options for deploying Weblate "
 "to the cloud."
 msgstr ""
-"Weblate のソースを <a href=\"%(download_url)s\">ダウンロード</a> することで、"
-"お使いのシステムで動作させることもできます。また、クラウド内に Weblate を配置"
-"したい場合は、いくつかの選択肢があります。"
+"Weblate のソースを <a href=\"%(download_url)s\">ダウンロード</a> "
+"して、あなたのシステムで動作させることもできます。また、クラウドに Weblate を配置するための複数のオプションもあります。"
 
 #: weblate_web/templates/hosting.html:235
 msgid ""
@@ -1233,7 +1231,7 @@ msgstr "または、Docker を使用したインストール"
 
 #: weblate_web/templates/support.html:50
 msgid "Requires root access or close cooperation of your admins"
-msgstr "root 権限もしくは管理者の方との密接な連絡体制を必要とします"
+msgstr "root 権限または管理者と緊密な協力が必須"
 
 #: weblate_web/templates/support.html:51
 msgid "Configuration customization"
@@ -1241,7 +1239,7 @@ msgstr "設定のカスタマイズ"
 
 #: weblate_web/templates/support.html:52
 msgid "Does not include custom code development"
-msgstr "独自のコード開発に関しては、本件の対象外となります"
+msgstr "独自のコード開発は含みません"
 
 #: weblate_web/templates/support.html:57
 msgid "Basic support for self hosted Weblate"
@@ -1253,7 +1251,7 @@ msgstr "ご使用の Weblate はリリース毎に最新バージョンにアッ
 
 #: weblate_web/templates/support.html:65
 msgid "We will fix issues that occur in your environment."
-msgstr "ご利用の環境で発生した問題への修正作業を提供します。"
+msgstr "お客様の環境で発生する問題を解決します。"
 
 #: weblate_web/templates/support.html:66
 msgid "You will receive priority email support."
