@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2018-10-22 17:10+0200\n"
+"POT-Creation-Date: 2018-10-30 13:07+0000\n"
 "PO-Revision-Date: 2018-06-27 02:04+0000\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
@@ -179,64 +179,64 @@ msgstr "自由软件"
 msgid "Weblate is free software, you can run your own instance of it."
 msgstr "Weblate 是一款自由软件，您可以运行您自己的实例。"
 
-#: weblate_web/templates/base.html:12
+#: weblate_web/templates/base.html:11
 msgctxt "Keyword"
 msgid "translate"
 msgstr "翻译"
 
-#: weblate_web/templates/base.html:50
+#: weblate_web/templates/base.html:43
 msgid "Weblate logo"
 msgstr "Weblate 徽标"
 
-#: weblate_web/templates/base.html:58
+#: weblate_web/templates/base.html:51
 msgid "Try"
 msgstr "试用"
 
-#: weblate_web/templates/base.html:59
+#: weblate_web/templates/base.html:52
 msgid "Features"
 msgstr "功能"
 
-#: weblate_web/templates/base.html:60 weblate_web/templates/download.html:17
+#: weblate_web/templates/base.html:53 weblate_web/templates/download.html:17
 msgid "Download"
 msgstr "下载"
 
-#: weblate_web/templates/base.html:61
+#: weblate_web/templates/base.html:54
 msgid "Pricing"
 msgstr ""
 
-#: weblate_web/templates/base.html:62
+#: weblate_web/templates/base.html:55
 msgid "Develop"
 msgstr "开发"
 
-#: weblate_web/templates/base.html:63 weblate_web/templates/donate.html:61
+#: weblate_web/templates/base.html:56 weblate_web/templates/donate.html:61
 msgid "Donate"
 msgstr "捐助"
 
-#: weblate_web/templates/base.html:64
+#: weblate_web/templates/base.html:57
 msgid "Support"
 msgstr "支持"
 
-#: weblate_web/templates/base.html:65
+#: weblate_web/templates/base.html:58
 msgid "Tour"
 msgstr "简介"
 
-#: weblate_web/templates/base.html:66
+#: weblate_web/templates/base.html:59
 msgid "Thanks"
 msgstr "鸣谢"
 
-#: weblate_web/templates/base.html:67
+#: weblate_web/templates/base.html:60
 msgid "Blog"
 msgstr "博客"
 
-#: weblate_web/templates/base.html:68
+#: weblate_web/templates/base.html:61
 msgid "Docs"
 msgstr "文档"
 
-#: weblate_web/templates/base.html:82
+#: weblate_web/templates/base.html:73
 msgid "Help with translations!"
 msgstr "帮我们翻译！"
 
-#: weblate_web/templates/base.html:119 weblate_web/templates/terms.html:4
+#: weblate_web/templates/base.html:117 weblate_web/templates/terms.html:4
 msgid "Terms of Service and Privacy Policy"
 msgstr ""
 
@@ -968,7 +968,7 @@ msgstr "联系我们"
 #: weblate_web/templates/hosting.html:183
 #: weblate_web/templates/hosting.html:186
 #: weblate_web/templates/hosting.html:189
-#: weblate_web/templates/hosting.html:192 weblate_web/templates/support.html:58
+#: weblate_web/templates/hosting.html:192 weblate_web/templates/support.html:68
 #, python-format
 msgid "%(price)s EUR / month"
 msgstr "%(price)s 欧元 / 每月"
@@ -992,7 +992,7 @@ msgstr "咨询我们获取年订优惠。"
 #: weblate_web/templates/hosting.html:199
 #: weblate_web/templates/hosting.html:202
 #: weblate_web/templates/hosting.html:205
-#: weblate_web/templates/hosting.html:208 weblate_web/templates/support.html:59
+#: weblate_web/templates/hosting.html:208 weblate_web/templates/support.html:69
 #, python-format
 msgid "%(price)s EUR / year"
 msgstr "%(price)s 欧元 / 每年"
@@ -1099,6 +1099,75 @@ msgstr "查看更多功能…"
 msgid "See who is using Weblate and join them!"
 msgstr "查看谁在使用 Weblate 并加入行列！"
 
+#: weblate_web/templates/payment/customer.html:5
+#: weblate_web/templates/payment/payment.html:4
+#, fuzzy
+#| msgid "Weblate screenshot"
+msgid "Weblate payment"
+msgstr "Weblate 截图"
+
+#: weblate_web/templates/payment/customer.html:14
+msgid "Your billing information"
+msgstr ""
+
+#: weblate_web/templates/payment/customer.html:20
+msgid "Save"
+msgstr "保存"
+
+#: weblate_web/templates/payment/payment.html:11
+msgid "Please choose your payment method"
+msgstr ""
+
+#: weblate_web/templates/payment/payment.html:14
+#, fuzzy
+#| msgid "Payment link"
+msgid "Payment amount"
+msgstr "付款链接"
+
+#: weblate_web/templates/payment/payment.html:15
+#: weblate_web/templates/support.html:37 weblate_web/templates/support.html:53
+#, python-format
+msgid "%(price)s EUR"
+msgstr "%(price)s 欧元"
+
+#: weblate_web/templates/payment/payment.html:16
+msgid "(including VAT)"
+msgstr ""
+
+#: weblate_web/templates/payment/payment.html:18
+#, fuzzy
+#| msgid "Payment link"
+msgid "Payment description"
+msgstr "付款链接"
+
+#: weblate_web/templates/payment/payment.html:20
+#, fuzzy
+#| msgid "Payment link"
+msgid "Payment recurrence"
+msgstr "付款链接"
+
+#: weblate_web/templates/payment/payment.html:22
+msgid "Payment will repeat every year until you cancel the subscription."
+msgstr ""
+
+#: weblate_web/templates/payment/payment.html:24
+msgid "Payment will repeat every month until you cancel the subscription."
+msgstr ""
+
+#: weblate_web/templates/payment/payment.html:29
+msgid ""
+"Note: This is not available for some payment methods, you will have to "
+"manually complete next payment in that case."
+msgstr ""
+
+#: weblate_web/templates/payment/payment.html:32
+msgid "Billing information"
+msgstr ""
+
+#: weblate_web/templates/payment/payment.html:34
+msgid "Edit"
+msgstr "编辑"
+
 #: weblate_web/templates/support.html:3 weblate_web/templates/support.html:4
 msgid "Weblate support"
 msgstr "Weblate 支持"
@@ -1154,110 +1223,109 @@ msgstr ""
 msgid "Installation on your Linux server"
 msgstr "安装在你的 Linux 服务器上"
 
-#: weblate_web/templates/support.html:37
-#, python-format
-msgid "%(price)s EUR"
-msgstr "%(price)s 欧元"
-
-#: weblate_web/templates/support.html:42
+#: weblate_web/templates/support.html:42 weblate_web/templates/support.html:58
 msgid "One time installation of Weblate"
 msgstr "Weblate 一步安装"
 
 #: weblate_web/templates/support.html:43
-msgid "Either installation directly on your system"
-msgstr ""
-
-#: weblate_web/templates/support.html:45
 msgid "Installation using virtualenv, uwsgi and nginx"
 msgstr "使用 virtualenv, uwsgi,和 nginx"
 
-#: weblate_web/templates/support.html:46
+#: weblate_web/templates/support.html:44
 msgid "Using PostgreSQL, MySQL or MariaDB as database backend"
 msgstr "使用 PostgreSQL、MySQL 或 MariaDB 作为数据库后端"
 
-#: weblate_web/templates/support.html:49
-msgid "Or installation using Docker"
-msgstr ""
-
-#: weblate_web/templates/support.html:50
+#: weblate_web/templates/support.html:45 weblate_web/templates/support.html:60
 msgid "Requires root access or close cooperation of your admins"
 msgstr "需要 root 权限，或与您的管理员密切合作"
 
-#: weblate_web/templates/support.html:51
+#: weblate_web/templates/support.html:46 weblate_web/templates/support.html:61
 msgid "Configuration customization"
 msgstr "配置个性化"
 
-#: weblate_web/templates/support.html:52
+#: weblate_web/templates/support.html:47 weblate_web/templates/support.html:62
 msgid "Does not include custom code development"
 msgstr "不包括自定义代码开发"
 
-#: weblate_web/templates/support.html:57
+#: weblate_web/templates/support.html:52
+#, fuzzy
+#| msgid "Installation on your Linux server"
+msgid "Installation using Docker on your Linux server"
+msgstr "安装在你的 Linux 服务器上"
+
+#: weblate_web/templates/support.html:59
+#, fuzzy
+#| msgid "Installation on your Linux server"
+msgid "Installation using Docker"
+msgstr "安装在你的 Linux 服务器上"
+
+#: weblate_web/templates/support.html:67
 msgid "Basic support for self hosted Weblate"
 msgstr "对自主托管 Weblate 的基本支持"
 
-#: weblate_web/templates/support.html:64
+#: weblate_web/templates/support.html:74
 msgid "Your Weblate will be upgraded to the latest version on every release."
 msgstr "您的 Weblate 将在每次发布时自动升级到最新版本。"
 
-#: weblate_web/templates/support.html:65
+#: weblate_web/templates/support.html:75
 msgid "We will fix issues that occur in your environment."
 msgstr "我们将解决在您的系统环境中发生的问题。"
 
-#: weblate_web/templates/support.html:66
+#: weblate_web/templates/support.html:76
 msgid "You will receive priority email support."
 msgstr "您将得到优先的电子邮件支持。"
 
-#: weblate_web/templates/support.html:71
+#: weblate_web/templates/support.html:81
 msgid "Consulting services or custom development"
 msgstr "咨询服务或定制开发"
 
-#: weblate_web/templates/support.html:72
+#: weblate_web/templates/support.html:82
 #, python-format
 msgid "%(price)s EUR / hour"
 msgstr "%(price)s 欧元 / 小时"
 
-#: weblate_web/templates/support.html:77
+#: weblate_web/templates/support.html:87
 msgid "Custom features development"
 msgstr "定制功能开发"
 
-#: weblate_web/templates/support.html:78
+#: weblate_web/templates/support.html:88
 msgid "Integrating Weblate into your workflow"
 msgstr "将 Weblate 集成到您的工作流程"
 
-#: weblate_web/templates/support.html:79
+#: weblate_web/templates/support.html:89
 msgid "Suggestions on the internationalization or localization process"
 msgstr "关于国际化或本地化进程的建议"
 
-#: weblate_web/templates/support.html:87
+#: weblate_web/templates/support.html:97
 msgid "Ask us for details about self hosted Weblate"
 msgstr "咨询我们关于自主托管 Weblate 的详细资料"
 
-#: weblate_web/templates/support.html:90
+#: weblate_web/templates/support.html:100
 msgid "Support for Hosted Weblate services"
 msgstr "对自主托管 Weblate 服务的支持"
 
-#: weblate_web/templates/support.html:93
+#: weblate_web/templates/support.html:103
 #, python-format
 msgid ""
 "If you are using our hosting services, you can ask for support at "
 "%(contact)s."
 msgstr "如果您正在使用我们的托管服务，您可以在 %(contact)s 请求支持。"
 
-#: weblate_web/templates/support.html:96
+#: weblate_web/templates/support.html:106
 msgid "Mailing lists"
 msgstr "邮件列表"
 
-#: weblate_web/templates/support.html:98
+#: weblate_web/templates/support.html:108
 msgid "Users and developers mailing list"
 msgstr "用户和开发者邮件列表"
 
-#: weblate_web/templates/support.html:100
+#: weblate_web/templates/support.html:110
 msgid ""
 "You can use mailing lists for discussions with other Weblate users and "
 "developers."
 msgstr "您可以使用邮件列表与其他 Weblate 用户和开发者进行交流。"
 
-#: weblate_web/templates/support.html:101
+#: weblate_web/templates/support.html:111
 msgid ""
 "You can post to it using <a href=\"mailto:weblate@lists.cihar.com"
 "\">weblate@lists.cihar.com</a> address."
@@ -1265,39 +1333,39 @@ msgstr ""
 "您可以使用 <a href=\"mailto:weblate@lists.cihar.com\">weblate@lists.cihar."
 "com</a> 这个地址发布信息。"
 
-#: weblate_web/templates/support.html:102
-#: weblate_web/templates/support.html:118
+#: weblate_web/templates/support.html:112
+#: weblate_web/templates/support.html:128
 msgid "You can browse mailing list archives"
 msgstr "您可以浏览邮件列表存档"
 
-#: weblate_web/templates/support.html:105
-#: weblate_web/templates/support.html:121
+#: weblate_web/templates/support.html:115
+#: weblate_web/templates/support.html:131
 msgid "Enter your email"
 msgstr "输入您的电子邮件地址"
 
-#: weblate_web/templates/support.html:107
-#: weblate_web/templates/support.html:123
+#: weblate_web/templates/support.html:117
+#: weblate_web/templates/support.html:133
 msgid "Subscribe"
 msgstr "订阅"
 
-#: weblate_web/templates/support.html:114
+#: weblate_web/templates/support.html:124
 msgid "Hosted Weblate Announcements mailing list"
 msgstr "受托管 Weblate 平台公告邮件列表"
 
-#: weblate_web/templates/support.html:116
+#: weblate_web/templates/support.html:126
 msgid ""
 "Low traffic mailing list with announcements about Hosted Weblate services."
 msgstr "低流量邮件列表，提供与托管 Weblate（Hosted Weblate）服务相关的公告。"
 
-#: weblate_web/templates/support.html:117
+#: weblate_web/templates/support.html:127
 msgid "This list is moderated, only chosen users can post announcements."
 msgstr "该列表受审核，仅有指定的用户可以发布公告。"
 
-#: weblate_web/templates/support.html:130
+#: weblate_web/templates/support.html:140
 msgid "Stack Overflow"
 msgstr "Stack Overflow"
 
-#: weblate_web/templates/support.html:132
+#: weblate_web/templates/support.html:142
 #, python-format
 msgid ""
 "You can also ask related questions on <a href=\"%(url)s\">Stack Overflow</a>."
@@ -1467,6 +1535,10 @@ msgstr "源代码 tar 包，xz 压缩"
 msgid "Sources, zip compressed"
 msgstr "源代码，zip 压缩"
 
+#: weblate_web/views.py:78
+msgid "Please provide your billing information to complete the payment."
+msgstr ""
+
 #~ msgid "Toggle navigation"
 #~ msgstr "导航栏开关"
 
@@ -1479,9 +1551,6 @@ msgstr "源代码，zip 压缩"
 #~ msgstr ""
 #~ "Weblate 是<a href=\"%(github_url)s\">自由软件</a>，欢迎您的<a href="
 #~ "\"%(donate_url)s\">捐助</a>。"
-
-#~ msgid "Payment link"
-#~ msgstr "付款链接"
 
 #~ msgid "View hosting plans"
 #~ msgstr "查看托管套餐"
