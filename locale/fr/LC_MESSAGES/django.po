@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: French (Weblate)\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2018-10-30 13:07+0000\n"
-"PO-Revision-Date: 2018-10-23 12:02+0000\n"
+"PO-Revision-Date: 2018-10-30 14:16+0000\n"
 "Last-Translator: Ldm Public <ldmpub@gmail.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/weblate/website/"
 "fr/>\n"
@@ -1193,14 +1193,12 @@ msgstr "Découvrez qui utilise Weblate et rejoignez nous !"
 
 #: weblate_web/templates/payment/customer.html:5
 #: weblate_web/templates/payment/payment.html:4
-#, fuzzy
-#| msgid "Weblate screenshot"
 msgid "Weblate payment"
-msgstr "Capture d’écran de Weblate"
+msgstr "Paiement Weblate"
 
 #: weblate_web/templates/payment/customer.html:14
 msgid "Your billing information"
-msgstr ""
+msgstr "Vos informations de facturation"
 
 #: weblate_web/templates/payment/customer.html:20
 msgid "Save"
@@ -1208,13 +1206,11 @@ msgstr "Enregistrer"
 
 #: weblate_web/templates/payment/payment.html:11
 msgid "Please choose your payment method"
-msgstr ""
+msgstr "Merci d'indiquer votre mode de paiement"
 
 #: weblate_web/templates/payment/payment.html:14
-#, fuzzy
-#| msgid "Payment link"
 msgid "Payment amount"
-msgstr "Lien de paiement"
+msgstr "Montant du paiement"
 
 #: weblate_web/templates/payment/payment.html:15
 #: weblate_web/templates/support.html:37 weblate_web/templates/support.html:53
@@ -1224,37 +1220,35 @@ msgstr "%(price)s EUR"
 
 #: weblate_web/templates/payment/payment.html:16
 msgid "(including VAT)"
-msgstr ""
+msgstr "(TVA comprise)"
 
 #: weblate_web/templates/payment/payment.html:18
-#, fuzzy
-#| msgid "Payment link"
 msgid "Payment description"
-msgstr "Lien de paiement"
+msgstr "Description du paiement"
 
 #: weblate_web/templates/payment/payment.html:20
-#, fuzzy
-#| msgid "Payment link"
 msgid "Payment recurrence"
-msgstr "Lien de paiement"
+msgstr "Fréquence de règlement"
 
 #: weblate_web/templates/payment/payment.html:22
 msgid "Payment will repeat every year until you cancel the subscription."
-msgstr ""
+msgstr "Le paiement aura lieu chaque année jusqu'à arrêt de l'abonnement."
 
 #: weblate_web/templates/payment/payment.html:24
 msgid "Payment will repeat every month until you cancel the subscription."
-msgstr ""
+msgstr "Le paiement aura lieu chaque mois jusqu'à arrêt de l'abonnement."
 
 #: weblate_web/templates/payment/payment.html:29
 msgid ""
 "Note: This is not available for some payment methods, you will have to "
 "manually complete next payment in that case."
 msgstr ""
+"Note : Peut être indisponible pour certains modes de règlement, dans ce cas "
+"vous devrez réaliser le prochain paiement manuellement."
 
 #: weblate_web/templates/payment/payment.html:32
 msgid "Billing information"
-msgstr ""
+msgstr "Informations de facturation"
 
 #: weblate_web/templates/payment/payment.html:34
 msgid "Edit"
@@ -1343,16 +1337,12 @@ msgid "Does not include custom code development"
 msgstr "N'inclus pas de développement sur-mesure"
 
 #: weblate_web/templates/support.html:52
-#, fuzzy
-#| msgid "Installation on your Linux server"
 msgid "Installation using Docker on your Linux server"
-msgstr "Installation sur votre serveur Linux"
+msgstr "Installation sur votre serveur Linux en utilisant Docker"
 
 #: weblate_web/templates/support.html:59
-#, fuzzy
-#| msgid "Or installation using Docker"
 msgid "Installation using Docker"
-msgstr "soit installation via Docker"
+msgstr "Installation en utilisant Docker"
 
 #: weblate_web/templates/support.html:67
 msgid "Basic support for self hosted Weblate"
@@ -1651,6 +1641,7 @@ msgstr "Archive source, compressée zip"
 #: weblate_web/views.py:78
 msgid "Please provide your billing information to complete the payment."
 msgstr ""
+"Merci de fournir vos informations de facturation pour terminer le règlement."
 
 #~ msgid "Either installation directly on your system"
 #~ msgstr "soit installation directe sur votre système"
