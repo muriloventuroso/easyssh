@@ -58,7 +58,7 @@ class PaymentView(FormView, SingleObjectMixin):
             messages.error(
                 request,
                 'Payments for EU endusers are currently not possible. '
-                'Please contact us at support@weblate.org.'
+                'Please contact us at billing@weblate.org.'
             )
         return super().get(request, *args, **kwargs)
 
