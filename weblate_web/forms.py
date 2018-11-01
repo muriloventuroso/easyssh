@@ -43,5 +43,5 @@ class CustomerForm(forms.ModelForm):
     class Meta:
         model = Customer
         fields = (
-            'vat', 'name', 'address', 'city', 'country',
+            'vat', 'tax', 'name', 'address', 'city', 'country',
         )
