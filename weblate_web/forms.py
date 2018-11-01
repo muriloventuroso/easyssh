@@ -33,7 +33,7 @@ class MethodForm(forms.Form):
     )
 
     def __init__(self, *args, **kwargs):
-        super(MethodForm, self).__init__(*args, **kwargs)
+        super().__init__(*args, **kwargs)
         self.fields['method'].choices = [
             (backend.name, backend.verbose) for backend in list_backends()
         ]

@@ -34,7 +34,7 @@ class PagesSitemap(Sitemap):
     Sitemap of static pages for one language.
     '''
     def __init__(self, language):
-        super(PagesSitemap, self).__init__()
+        super().__init__()
         self.language = language
 
     def items(self):

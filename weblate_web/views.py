@@ -48,7 +48,7 @@ class PaymentView(FormView, SingleObjectMixin):
         )
 
     def get_context_data(self, **kwargs):
-        kwargs = super(PaymentView, self).get_context_data(**kwargs)
+        kwargs = super().get_context_data(**kwargs)
         kwargs['can_pay'] = self.can_pay
         kwargs['backends'] = [x(self.object) for x in list_backends()]
         return kwargs
@@ -60,7 +60,7 @@ class PaymentView(FormView, SingleObjectMixin):
                 'Payments for EU endusers are currently not possible. '
                 'Please contact us at support@weblate.org.'
             )
-        return super(PaymentView, self).get(request, *args, **kwargs)
+        return super().get(request, *args, **kwargs)
 
     def dispatch(self, request, *args, **kwargs):
         with transaction.atomic(using='payments_db'):
@@ -80,7 +80,7 @@ class PaymentView(FormView, SingleObjectMixin):
                     )
                 )
                 return redirect('payment-customer', pk=self.object.pk)
-            return super(PaymentView, self).dispatch(request, *args, **kwargs)
+            return super().dispatch(request, *args, **kwargs)
 
     def form_valid(self, form):
         if not self.can_pay:
@@ -114,7 +114,7 @@ class CustomerView(PaymentView):
 
     def get_form_kwargs(self):
         """Return the keyword arguments for instantiating the form."""
-        kwargs = super(CustomerView, self).get_form_kwargs()
+        kwargs = super().get_form_kwargs()
         kwargs['instance'] = self.object.customer
         return kwargs
 
