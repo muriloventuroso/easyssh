@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2018-10-30 13:07+0000\n"
-"PO-Revision-Date: 2018-10-23 12:02+0000\n"
+"PO-Revision-Date: 2018-11-01 08:47+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/weblate/website/"
 "he/>\n"
@@ -1115,14 +1115,12 @@ msgstr "רשימת הגופים שמשתמשים ב־Weblate, נשמח לראו�
 
 #: weblate_web/templates/payment/customer.html:5
 #: weblate_web/templates/payment/payment.html:4
-#, fuzzy
-#| msgid "Weblate screenshot"
 msgid "Weblate payment"
-msgstr "צילום מסך של Weblate"
+msgstr "תשלום ל־Weblate"
 
 #: weblate_web/templates/payment/customer.html:14
 msgid "Your billing information"
-msgstr ""
+msgstr "פרטי החיוב שלך"
 
 #: weblate_web/templates/payment/customer.html:20
 msgid "Save"
@@ -1130,13 +1128,11 @@ msgstr "שמירה"
 
 #: weblate_web/templates/payment/payment.html:11
 msgid "Please choose your payment method"
-msgstr ""
+msgstr "נא לבחור שיטת חיוב"
 
 #: weblate_web/templates/payment/payment.html:14
-#, fuzzy
-#| msgid "Payment link"
 msgid "Payment amount"
-msgstr "קישור לתשלום"
+msgstr "סכום לתשלום"
 
 #: weblate_web/templates/payment/payment.html:15
 #: weblate_web/templates/support.html:37 weblate_web/templates/support.html:53
@@ -1146,37 +1142,35 @@ msgstr "%(price)s אירו"
 
 #: weblate_web/templates/payment/payment.html:16
 msgid "(including VAT)"
-msgstr ""
+msgstr "(כולל מע״מ)"
 
 #: weblate_web/templates/payment/payment.html:18
-#, fuzzy
-#| msgid "Payment link"
 msgid "Payment description"
-msgstr "קישור לתשלום"
+msgstr "תיאור התשלום"
 
 #: weblate_web/templates/payment/payment.html:20
-#, fuzzy
-#| msgid "Payment link"
 msgid "Payment recurrence"
-msgstr "קישור לתשלום"
+msgstr "תשלום חוזר"
 
 #: weblate_web/templates/payment/payment.html:22
 msgid "Payment will repeat every year until you cancel the subscription."
-msgstr ""
+msgstr "התשלום ייגבה מחדש בכל שנה עד לביטול המינוי."
 
 #: weblate_web/templates/payment/payment.html:24
 msgid "Payment will repeat every month until you cancel the subscription."
-msgstr ""
+msgstr "התשלום ייגבה מחדש בכל חודש עד לביטול המינוי."
 
 #: weblate_web/templates/payment/payment.html:29
 msgid ""
 "Note: This is not available for some payment methods, you will have to "
 "manually complete next payment in that case."
 msgstr ""
+"לתשומת לבך: הגדרה זו אינה זמינה לחלק משיטות התשלום, יהיה עליך להשלים את "
+"התשלום הבא באופן ידני במקרה שכזה."
 
 #: weblate_web/templates/payment/payment.html:32
 msgid "Billing information"
-msgstr ""
+msgstr "פרטי חיוב"
 
 #: weblate_web/templates/payment/payment.html:34
 msgid "Edit"
@@ -1263,16 +1257,12 @@ msgid "Does not include custom code development"
 msgstr "לא כולל הטמעה של קוד בהתאמה אישית"
 
 #: weblate_web/templates/support.html:52
-#, fuzzy
-#| msgid "Installation on your Linux server"
 msgid "Installation using Docker on your Linux server"
-msgstr "התקנה על שרת לינוקס משלך"
+msgstr "התקנה באמצעות Docker על שרת לינוקס משלך"
 
 #: weblate_web/templates/support.html:59
-#, fuzzy
-#| msgid "Or installation using Docker"
 msgid "Installation using Docker"
-msgstr "או להתקין באמצעות Docker"
+msgstr "התקנה באמצעות Docker"
 
 #: weblate_web/templates/support.html:67
 msgid "Basic support for self hosted Weblate"
@@ -1558,7 +1548,7 @@ msgstr "קובצי המקור, מכווצים ב־zip"
 
 #: weblate_web/views.py:78
 msgid "Please provide your billing information to complete the payment."
-msgstr ""
+msgstr "נא לספק את פרטי החיוב שלך כדי להשלים את התשלום."
 
 #~ msgid "Either installation directly on your system"
 #~ msgstr "או להתקין ישירות במערכת"

@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2018-10-30 13:07+0000\n"
-"PO-Revision-Date: 2018-09-16 11:16+0000\n"
+"PO-Revision-Date: 2018-11-01 08:47+0000\n"
 "Last-Translator: 송태섭 <xotjq237@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/weblate/website/"
 "ko/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.2-dev\n"
+"X-Generator: Weblate 3.3-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -212,7 +212,7 @@ msgstr "다운로드"
 
 #: weblate_web/templates/base.html:54
 msgid "Pricing"
-msgstr ""
+msgstr "가격"
 
 #: weblate_web/templates/base.html:55
 msgid "Develop"
@@ -248,7 +248,7 @@ msgstr "번역을 도와주세요!"
 
 #: weblate_web/templates/base.html:117 weblate_web/templates/terms.html:4
 msgid "Terms of Service and Privacy Policy"
-msgstr ""
+msgstr "이용 약관 및 개인 정보 보호 정책"
 
 #: weblate_web/templates/contribute.html:3
 #: weblate_web/templates/contribute.html:4
@@ -416,10 +416,8 @@ msgid "Currency"
 msgstr "통화"
 
 #: weblate_web/templates/donate.html:88
-#, fuzzy
-#| msgid "Payment address"
 msgid "Donate address"
-msgstr "지불 주소"
+msgstr "기부 주소"
 
 #: weblate_web/templates/download.html:4 weblate_web/templates/download.html:5
 msgid "Download Weblate"
@@ -656,14 +654,12 @@ msgstr ""
 
 #: weblate_web/templates/hosting-free.html:3
 #: weblate_web/templates/hosting-free.html:4
-#, fuzzy
-#| msgid "Hosting Weblate"
 msgid "Free hosting on Weblate"
-msgstr "Weblate 호스팅"
+msgstr "Weblate 무료 호스팅"
 
 #: weblate_web/templates/hosting-free.html:6
 msgid "We love open source and we offer free plans for hosting translations."
-msgstr ""
+msgstr "우리는 오픈 소스를 좋아하며 번역 호스팅에 대한 무료 계획을 제공합니다."
 
 #: weblate_web/templates/hosting-free.html:11
 #: weblate_web/templates/hosting.html:11
@@ -1084,42 +1080,28 @@ msgstr ""
 "한 다양한 옵션도 있습니다."
 
 #: weblate_web/templates/hosting.html:235
-#, fuzzy
-#| msgid ""
-#| "In case you need help with your self hosted solution, we're ready to help "
-#| "as well with consulting services tailored for your needs. Please contact "
-#| "<a href=\"%(contact_url)s\">Michal Čihař</a> for more details."
 msgid ""
 "In case you need help with your self hosted solution, we're ready to help as "
 "well with consulting services tailored for your needs."
-msgstr ""
-"자체 호스팅 솔루션에 도움이 필요하시다면, 요구사항 맞춤형 컨설팅 서비스로 도"
-"와드릴 수 있습니다. <a href=\"%(contact_url)s\">Michal Čihař</a>에게 자세한 "
-"정보를 물어보세요."
+msgstr "자체 호스팅 솔루션에 도움이 필요하시다면, 요구 사항 맞춤형 컨설팅 서비스로 도와드릴 수 있습니다."
 
 #: weblate_web/templates/index.html:3
 msgid "Weblate - web-based translation"
 msgstr "Weblate - 웹기반 번역"
 
 #: weblate_web/templates/index.html:7
-#, fuzzy
-#| msgid "Weblate is a free web-based translation management system."
 msgid ""
 "Weblate is an open source web-based translation management system supporting "
 "continuous translation."
-msgstr "Weblate는 무료 웹 기반 번역 관리 시스템입니다."
+msgstr "Weblate는 지속적인 번역을 지원하는 오픈 소스 웹 기반 번역 관리 시스템입니다."
 
 #: weblate_web/templates/index.html:14
-#, fuzzy
-#| msgid "Hosting Weblate"
 msgid "Start using Weblate"
-msgstr "Weblate 호스팅"
+msgstr "Weblate 사용 시작하기"
 
 #: weblate_web/templates/index.html:15
-#, fuzzy
-#| msgid "Try our demo"
 msgid "Try our demo server"
-msgstr "데모 체험하기"
+msgstr "데모 서버 체험하기"
 
 #: weblate_web/templates/index.html:16
 msgid "Downloads"
@@ -1142,7 +1124,7 @@ msgstr "Weblate 스크린샷"
 
 #: weblate_web/templates/index.html:38
 msgid "See more features…"
-msgstr "더많은 특징들 보기…"
+msgstr "더 많은 특징들 보기…"
 
 #: weblate_web/templates/index.html:46
 msgid "See who is using Weblate and join them!"
@@ -1150,14 +1132,12 @@ msgstr "누가 Weblate를 사용하고 있는지 확인하고 동참하세요!"
 
 #: weblate_web/templates/payment/customer.html:5
 #: weblate_web/templates/payment/payment.html:4
-#, fuzzy
-#| msgid "Weblate screenshot"
 msgid "Weblate payment"
-msgstr "Weblate 스크린샷"
+msgstr "Weblate 지불"
 
 #: weblate_web/templates/payment/customer.html:14
 msgid "Your billing information"
-msgstr ""
+msgstr "결제 정보"
 
 #: weblate_web/templates/payment/customer.html:20
 msgid "Save"
@@ -1165,13 +1145,11 @@ msgstr "저장"
 
 #: weblate_web/templates/payment/payment.html:11
 msgid "Please choose your payment method"
-msgstr ""
+msgstr "당신의 지불 방법을 선택해주세요"
 
 #: weblate_web/templates/payment/payment.html:14
-#, fuzzy
-#| msgid "Payment link"
 msgid "Payment amount"
-msgstr "지불 링크"
+msgstr "결제 금액"
 
 #: weblate_web/templates/payment/payment.html:15
 #: weblate_web/templates/support.html:37 weblate_web/templates/support.html:53
@@ -1181,37 +1159,33 @@ msgstr "%(price)s 유로"
 
 #: weblate_web/templates/payment/payment.html:16
 msgid "(including VAT)"
-msgstr ""
+msgstr "(VAT 포함)"
 
 #: weblate_web/templates/payment/payment.html:18
-#, fuzzy
-#| msgid "Payment link"
 msgid "Payment description"
-msgstr "지불 링크"
+msgstr "지불 설명"
 
 #: weblate_web/templates/payment/payment.html:20
-#, fuzzy
-#| msgid "Payment link"
 msgid "Payment recurrence"
-msgstr "지불 링크"
+msgstr "지불 회기"
 
 #: weblate_web/templates/payment/payment.html:22
 msgid "Payment will repeat every year until you cancel the subscription."
-msgstr ""
+msgstr "구독을 취소할 때까지 매 년 결제가 진행됩니다."
 
 #: weblate_web/templates/payment/payment.html:24
 msgid "Payment will repeat every month until you cancel the subscription."
-msgstr ""
+msgstr "구독을 취소할 때까지 매 달 결제가 진행됩니다."
 
 #: weblate_web/templates/payment/payment.html:29
 msgid ""
 "Note: This is not available for some payment methods, you will have to "
 "manually complete next payment in that case."
-msgstr ""
+msgstr "참고: 일부 결제 수단에서는 사용할 수 없지만, 다음과 같은 경우에는 결제를 수동으로 마쳐야 합니다."
 
 #: weblate_web/templates/payment/payment.html:32
 msgid "Billing information"
-msgstr ""
+msgstr "결제 정보"
 
 #: weblate_web/templates/payment/payment.html:34
 msgid "Edit"
@@ -1299,16 +1273,12 @@ msgid "Does not include custom code development"
 msgstr "임의의 코드 개발을 포함하지 않음"
 
 #: weblate_web/templates/support.html:52
-#, fuzzy
-#| msgid "Installation on your Linux server"
 msgid "Installation using Docker on your Linux server"
-msgstr "보유중인 리눅스 서버에 설치"
+msgstr "리눅스 서버에 Docker를 사용하여 설치"
 
 #: weblate_web/templates/support.html:59
-#, fuzzy
-#| msgid "Installation on your Linux server"
 msgid "Installation using Docker"
-msgstr "보유중인 리눅스 서버에 설치"
+msgstr "Docker를 사용하여 설치"
 
 #: weblate_web/templates/support.html:67
 msgid "Basic support for self hosted Weblate"
@@ -1437,7 +1407,7 @@ msgstr "서비스 약관"
 
 #: weblate_web/templates/terms.html:6
 msgid "The legal documents necessary to operate this service."
-msgstr ""
+msgstr "이 서비스를 운영하는 데 필요한 법적 서류."
 
 #: weblate_web/templates/terms.html:20
 msgid "Privacy Policy"
@@ -1604,7 +1574,7 @@ msgstr "소스 코드는 zip으로 압축됨"
 
 #: weblate_web/views.py:78
 msgid "Please provide your billing information to complete the payment."
-msgstr ""
+msgstr "지불을 완료하려면 결제 정보를 입력하십시오."
 
 #~ msgid "Toggle navigation"
 #~ msgstr "네비게이션 토글"
