@@ -273,5 +273,6 @@ sentry_sdk.init(
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
-VAT_RATE = 1.21
 PAYMENT_DEBUG = True
+
+PAYMENT_FAKTURACE = "/home/nijel/weblate/tmp-fakturace"
