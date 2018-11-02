@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2018-10-30 13:07+0000\n"
-"PO-Revision-Date: 2018-09-17 12:22+0000\n"
+"PO-Revision-Date: 2018-11-02 14:29+0000\n"
 "Last-Translator: Joan Montané <joan@montane.cat>\n"
 "Language-Team: Catalan <https://hosted.weblate.org/projects/weblate/website/"
 "ca/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.2-dev\n"
+"X-Generator: Weblate 3.3-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -227,7 +227,7 @@ msgstr "Baixades"
 
 #: weblate_web/templates/base.html:54
 msgid "Pricing"
-msgstr ""
+msgstr "Tarifa"
 
 #: weblate_web/templates/base.html:55
 msgid "Develop"
@@ -263,7 +263,7 @@ msgstr "Ajudeu amb les traduccions!"
 
 #: weblate_web/templates/base.html:117 weblate_web/templates/terms.html:4
 msgid "Terms of Service and Privacy Policy"
-msgstr ""
+msgstr "Condicions del servei i política de privadesa"
 
 #: weblate_web/templates/contribute.html:3
 #: weblate_web/templates/contribute.html:4
@@ -437,10 +437,8 @@ msgid "Currency"
 msgstr "Divisa"
 
 #: weblate_web/templates/donate.html:88
-#, fuzzy
-#| msgid "Payment address"
 msgid "Donate address"
-msgstr "Adreça de pagament"
+msgstr "Adreça per a fer donatius"
 
 #: weblate_web/templates/download.html:4 weblate_web/templates/download.html:5
 msgid "Download Weblate"
@@ -686,14 +684,13 @@ msgstr ""
 
 #: weblate_web/templates/hosting-free.html:3
 #: weblate_web/templates/hosting-free.html:4
-#, fuzzy
-#| msgid "Hosting Weblate"
 msgid "Free hosting on Weblate"
-msgstr "Allotjament Weblate"
+msgstr "Allotjament gratuït a Weblate"
 
 #: weblate_web/templates/hosting-free.html:6
 msgid "We love open source and we offer free plans for hosting translations."
 msgstr ""
+"Ens agrada el codi obert i oferim plans gratuïts per a hostatjar traduccions."
 
 #: weblate_web/templates/hosting-free.html:11
 #: weblate_web/templates/hosting.html:11
@@ -1128,44 +1125,32 @@ msgstr ""
 "el Weblate al núvol."
 
 #: weblate_web/templates/hosting.html:235
-#, fuzzy
-#| msgid ""
-#| "In case you need help with your self hosted solution, we're ready to help "
-#| "as well with consulting services tailored for your needs. Please contact "
-#| "<a href=\"%(contact_url)s\">Michal Čihař</a> for more details."
 msgid ""
 "In case you need help with your self hosted solution, we're ready to help as "
 "well with consulting services tailored for your needs."
 msgstr ""
 "En cas que us calgui ajuda amb la vostra solució en allotjament propi, també "
-"oferim ajuda amb serveis de consultoria adaptats a les vostres necessitats. "
-"Contacteu amb el <a href=\"%(contact_url)s\">Michal Čihař</a> per a més "
-"detalls."
+"oferim ajuda amb serveis de consultoria adaptats a les vostres necessitats."
 
 #: weblate_web/templates/index.html:3
 msgid "Weblate - web-based translation"
 msgstr "Weblate - traducció basada en la xarxa"
 
 #: weblate_web/templates/index.html:7
-#, fuzzy
-#| msgid "Weblate is a free web-based translation management system."
 msgid ""
 "Weblate is an open source web-based translation management system supporting "
 "continuous translation."
 msgstr ""
-"Weblate és un sistema de gestió de traduccions lliure i basat en la xarxa."
+"Weblate és un sistema de gestió de traduccions lliure que permet traducció "
+"contínua."
 
 #: weblate_web/templates/index.html:14
-#, fuzzy
-#| msgid "Hosting Weblate"
 msgid "Start using Weblate"
-msgstr "Allotjament Weblate"
+msgstr "Comença a usar el Weblate"
 
 #: weblate_web/templates/index.html:15
-#, fuzzy
-#| msgid "Try our demo"
 msgid "Try our demo server"
-msgstr "Proveu la demostració"
+msgstr "Proveu el servidor de demostració"
 
 #: weblate_web/templates/index.html:16
 msgid "Downloads"
@@ -1197,14 +1182,12 @@ msgstr "Mireu qui està utilitzant el Weblate i uniu-vos-hi!"
 
 #: weblate_web/templates/payment/customer.html:5
 #: weblate_web/templates/payment/payment.html:4
-#, fuzzy
-#| msgid "Weblate screenshot"
 msgid "Weblate payment"
-msgstr "Captura del Weblate"
+msgstr "Pagament del Weblate"
 
 #: weblate_web/templates/payment/customer.html:14
 msgid "Your billing information"
-msgstr ""
+msgstr "Informació de la facturació"
 
 #: weblate_web/templates/payment/customer.html:20
 msgid "Save"
@@ -1212,13 +1195,11 @@ msgstr "Desa"
 
 #: weblate_web/templates/payment/payment.html:11
 msgid "Please choose your payment method"
-msgstr ""
+msgstr "Trieu el mètode de pagament"
 
 #: weblate_web/templates/payment/payment.html:14
-#, fuzzy
-#| msgid "Payment link"
 msgid "Payment amount"
-msgstr "Enllaç de pagament"
+msgstr "Quantitat de pagament"
 
 #: weblate_web/templates/payment/payment.html:15
 #: weblate_web/templates/support.html:37 weblate_web/templates/support.html:53
@@ -1228,37 +1209,35 @@ msgstr "%(price)s EUR"
 
 #: weblate_web/templates/payment/payment.html:16
 msgid "(including VAT)"
-msgstr ""
+msgstr "(inclòs IVA)"
 
 #: weblate_web/templates/payment/payment.html:18
-#, fuzzy
-#| msgid "Payment link"
 msgid "Payment description"
-msgstr "Enllaç de pagament"
+msgstr "Descripció del pagament"
 
 #: weblate_web/templates/payment/payment.html:20
-#, fuzzy
-#| msgid "Payment link"
 msgid "Payment recurrence"
-msgstr "Enllaç de pagament"
+msgstr "Periodicitat del pagament"
 
 #: weblate_web/templates/payment/payment.html:22
 msgid "Payment will repeat every year until you cancel the subscription."
-msgstr ""
+msgstr "El pagament es repetirà cada any fins que cancel·leu la subscripció."
 
 #: weblate_web/templates/payment/payment.html:24
 msgid "Payment will repeat every month until you cancel the subscription."
-msgstr ""
+msgstr "El pagament es repetirà cada mes fins que cancel·leu la subscripció."
 
 #: weblate_web/templates/payment/payment.html:29
 msgid ""
 "Note: This is not available for some payment methods, you will have to "
 "manually complete next payment in that case."
 msgstr ""
+"Nota: això no és disponible per a alguns mètodes de pagament, en aquest "
+"haureu de completar el següent pagament manualment."
 
 #: weblate_web/templates/payment/payment.html:32
 msgid "Billing information"
-msgstr ""
+msgstr "Informació de la facturació"
 
 #: weblate_web/templates/payment/payment.html:34
 msgid "Edit"
@@ -1348,16 +1327,12 @@ msgid "Does not include custom code development"
 msgstr "No inclou el desenvolupament de codi propi"
 
 #: weblate_web/templates/support.html:52
-#, fuzzy
-#| msgid "Installation on your Linux server"
 msgid "Installation using Docker on your Linux server"
-msgstr "Instal·lació al vostre servidor Linux"
+msgstr "Instal·lació mitjançant Docker en el vostre servidor Linux"
 
 #: weblate_web/templates/support.html:59
-#, fuzzy
-#| msgid "Installation on your Linux server"
 msgid "Installation using Docker"
-msgstr "Instal·lació al vostre servidor Linux"
+msgstr "Instal·lació mitjançant Docker"
 
 #: weblate_web/templates/support.html:67
 msgid "Basic support for self hosted Weblate"
@@ -1482,15 +1457,15 @@ msgstr ""
 
 #: weblate_web/templates/terms.html:3 weblate_web/templates/terms.html:13
 msgid "Terms of Service"
-msgstr ""
+msgstr "Condicions del servei"
 
 #: weblate_web/templates/terms.html:6
 msgid "The legal documents necessary to operate this service."
-msgstr ""
+msgstr "Els documents legals necessaris per a operar aquest servei."
 
 #: weblate_web/templates/terms.html:20
 msgid "Privacy Policy"
-msgstr ""
+msgstr "Política de privadesa"
 
 #: weblate_web/templates/thanks.html:3 weblate_web/templates/thanks.html:4
 msgid "Thanks from Weblate"
@@ -1660,7 +1635,7 @@ msgstr "Codi font tarball, comprimit com a zip"
 
 #: weblate_web/views.py:78
 msgid "Please provide your billing information to complete the payment."
-msgstr ""
+msgstr "Proporcioneu la informació de facturació per a completar el pagament."
 
 #~ msgid "Toggle navigation"
 #~ msgstr "Commuta la navegació"
