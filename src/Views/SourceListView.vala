@@ -497,7 +497,9 @@ namespace EasySSH {
         public void load_ssh_config() {
 
             var file = FileStream.open(Environment.get_home_dir () + "/.ssh/config", "r");
-            assert (file != null);
+            if (file != null){
+                return;
+            };
 
             string line = file.read_line();
             while (line != null){
