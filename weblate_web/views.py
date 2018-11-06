@@ -128,6 +128,6 @@ class CompleteView(PaymentView):
             if self.object.state != Payment.PENDING:
                 return self.redirect_origin()
 
-            backend = get_backend(self.object.details['backend'])(self.object)
+            backend = get_backend(self.object.backend)(self.object)
             backend.complete(self.request)
             return self.redirect_origin()
