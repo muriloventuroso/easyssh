@@ -9,6 +9,7 @@
 {% block extrajumbo %}
 <p>
 <a class="btn btn-info btn-lg" href="https://hosted.weblate.org/hosting/" role="button"><i class="fas fa-comment"></i> {% trans "Ask for hosting" %}</a>
+<a class="btn btn-info btn-lg" href="{% url 'support' %}"><i class="fas fa-life-ring"></i> {% trans "Get support for Weblate" %}</a>
 </p>
 {% endblock %}
 
@@ -226,14 +227,14 @@
 <h2>{% trans "Self hosting" %}</h2>
 
 <p>
-{% url 'download' as download_url %}
-{% blocktrans %}You can also <a href="{{ download_url }}">download</a> Weblate sources and run it on your systems. There are also several options for deploying Weblate to the cloud.{% endblocktrans %}
+{% trans "Weblate is free software and you can run it on your systems." %}
+See <a href="https://www.webhostingsecretrevealed.net/hosting-reviews/">hosting suggestions by WHSR.</a>
+{% trans "There are also several options for deploying Weblate to the cloud." %}
 </p>
 
 <p>
-<a href="{% url 'support' %}">
-{% blocktrans %}In case you need help with your self hosted solution, we're ready to help as well with consulting services tailored for your needs.{% endblocktrans %}
-</a>
+<a class="btn btn-info" title="{% trans "In case you need help with your self hosted solution, we're ready to help as well with consulting services tailored for your needs." %}" href="{% url 'support' %}"><i class="fas fa-life-ring"></i> {% trans "Get support for Weblate" %}</a>
+<a class="btn btn-info" href="{% url 'download' %}"><i class="fas fa-download"></i> {% trans "Download Weblate" %}</a>
 </p>
 
 {% include "vat.html" %}
