@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: weblate-web\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2018-11-07 15:10+0100\n"
+"POT-Creation-Date: 2018-11-07 15:21+0100\n"
 "PO-Revision-Date: 2018-11-01 08:47+0000\n"
 "Last-Translator: mesnevi <shams@airpost.net>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/weblate/website/"
@@ -194,6 +194,7 @@ msgid "Free software"
 msgstr "Свободное программное обеспечение"
 
 #: weblate_web/templates/base-features.html:47
+#: weblate_web/templates/hosting.html:230
 msgid "Weblate is free software, you can run your own instance of it."
 msgstr ""
 "Weblate — свободное программное обеспечение. Можно создать собственную копию "
@@ -1115,14 +1116,6 @@ msgstr ""
 msgid "Self hosting"
 msgstr "Собственный хостинг"
 
-#: weblate_web/templates/hosting.html:230
-#, fuzzy
-#| msgid "Weblate is free software, you can run your own instance of it."
-msgid "Weblate is free software and you can run it on your systems."
-msgstr ""
-"Weblate — свободное программное обеспечение. Можно создать собственную копию "
-"Weblate."
-
 #: weblate_web/templates/hosting.html:232
 msgid "There are also several options for deploying Weblate to the cloud."
 msgstr ""
@@ -1636,6 +1629,13 @@ msgstr "Исходники, сжатые zip"
 #: weblate_web/views.py:78
 msgid "Please provide your billing information to complete the payment."
 msgstr "Чтобы завершить платёж, предоставьте информацию о биллинге."
+
+#, fuzzy
+#~| msgid "Weblate is free software, you can run your own instance of it."
+#~ msgid "Weblate is free software and you can run it on your systems."
+#~ msgstr ""
+#~ "Weblate — свободное программное обеспечение. Можно создать собственную "
+#~ "копию Weblate."
 
 #~ msgid ""
 #~ "You can also <a href=\"%(download_url)s\">download</a> Weblate sources "

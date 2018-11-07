@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2018-11-07 15:10+0100\n"
+"POT-Creation-Date: 2018-11-07 15:21+0100\n"
 "PO-Revision-Date: 2018-11-01 08:47+0000\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
@@ -175,6 +175,7 @@ msgid "Free software"
 msgstr "自由软件"
 
 #: weblate_web/templates/base-features.html:47
+#: weblate_web/templates/hosting.html:230
 msgid "Weblate is free software, you can run your own instance of it."
 msgstr "Weblate 是一款自由软件，您可以运行您自己的实例。"
 
@@ -1031,12 +1032,6 @@ msgstr ""
 msgid "Self hosting"
 msgstr "自行托管"
 
-#: weblate_web/templates/hosting.html:230
-#, fuzzy
-#| msgid "Weblate is free software, you can run your own instance of it."
-msgid "Weblate is free software and you can run it on your systems."
-msgstr "Weblate 是一款自由软件，您可以运行您自己的实例。"
-
 #: weblate_web/templates/hosting.html:232
 msgid "There are also several options for deploying Weblate to the cloud."
 msgstr ""
@@ -1538,6 +1533,11 @@ msgstr "源代码，zip 压缩"
 #: weblate_web/views.py:78
 msgid "Please provide your billing information to complete the payment."
 msgstr ""
+
+#, fuzzy
+#~| msgid "Weblate is free software, you can run your own instance of it."
+#~ msgid "Weblate is free software and you can run it on your systems."
+#~ msgstr "Weblate 是一款自由软件，您可以运行您自己的实例。"
 
 #~ msgid ""
 #~ "You can also <a href=\"%(download_url)s\">download</a> Weblate sources "

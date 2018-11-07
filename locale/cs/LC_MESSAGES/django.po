@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2018-11-07 15:10+0100\n"
+"POT-Creation-Date: 2018-11-07 15:21+0100\n"
 "PO-Revision-Date: 2018-11-07 14:21+0000\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/weblate/website/cs/"
@@ -191,6 +191,7 @@ msgid "Free software"
 msgstr "Svobodný software"
 
 #: weblate_web/templates/base-features.html:47
+#: weblate_web/templates/hosting.html:230
 msgid "Weblate is free software, you can run your own instance of it."
 msgstr "Weblate je svobodný software, můžete si ho provozovat sami."
 
@@ -1096,12 +1097,6 @@ msgstr ""
 msgid "Self hosting"
 msgstr "Vlastní hostování"
 
-#: weblate_web/templates/hosting.html:230
-#, fuzzy
-#| msgid "Weblate is free software, you can run your own instance of it."
-msgid "Weblate is free software and you can run it on your systems."
-msgstr "Weblate je svobodný software, můžete si ho provozovat sami."
-
 #: weblate_web/templates/hosting.html:232
 msgid "There are also several options for deploying Weblate to the cloud."
 msgstr "Je také několik možností jak provozovat Weblate v cloudu."
@@ -1607,6 +1602,11 @@ msgstr "Zdrojové kódy, komprimované zipem"
 #: weblate_web/views.py:78
 msgid "Please provide your billing information to complete the payment."
 msgstr "Pro dokončení platby prosím zadejte vaše fakturační údaje."
+
+#, fuzzy
+#~| msgid "Weblate is free software, you can run your own instance of it."
+#~ msgid "Weblate is free software and you can run it on your systems."
+#~ msgstr "Weblate je svobodný software, můžete si ho provozovat sami."
 
 #~ msgid ""
 #~ "You can also <a href=\"%(download_url)s\">download</a> Weblate sources "
