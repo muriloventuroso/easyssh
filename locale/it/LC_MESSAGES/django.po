@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Weblate v. 2017.09.28\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2018-11-07 15:10+0100\n"
-"PO-Revision-Date: 2018-10-25 12:41+0000\n"
+"POT-Creation-Date: 2018-10-30 13:07+0000\n"
+"PO-Revision-Date: 2018-11-07 14:16+0000\n"
 "Last-Translator: Piero <p.passerini@gmail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/weblate/website/"
 "it/>\n"
@@ -32,8 +32,8 @@ msgid ""
 "Translator can always see important context information like comments or "
 "corresponding source code."
 msgstr ""
-"Il/la traduttore/trice può sempre vedere importanti informazioni di contesto "
-"come i commenti o il codice sorgente."
+"Chi traduce può sempre vedere le informazioni connesse, come i commenti od "
+"il codice sorgente."
 
 #: weblate_web/data.py:42 weblate_web/templates/features.html:63
 msgid "Translation context"
@@ -68,7 +68,7 @@ msgid ""
 "Customizable quality checks will help you in improving quality of "
 "translations."
 msgstr ""
-"I controlli di qualità personalizzabili vi aiuteranno a migliorare la "
+"I controlli di qualità, personalizzabili, vi aiuteranno a migliorare la "
 "qualità delle traduzioni."
 
 #: weblate_web/data.py:66 weblate_web/templates/base-features.html:14
@@ -110,7 +110,7 @@ msgstr "Traduzione automatica"
 msgid ""
 "Translations can be exported and imported in many widely used file formats."
 msgstr ""
-"La traduzione può essere esportata e importata in molti formati di file."
+"La traduzione può essere esportata ed importata in molti formati di file."
 
 #: weblate_web/data.py:97 weblate_web/templates/features.html:87
 msgid "Export and import"
@@ -131,7 +131,8 @@ msgstr "Pagina non trovata"
 
 #: weblate_web/templates/404.html:8 weblate_web/templates/500.html:8
 msgid "Weblate is a free web-based translation management system."
-msgstr "Weblate è un sistema web-based gratuito di gestione delle traduzioni."
+msgstr ""
+"Weblate è un sistema web-based, gratuito, per la gestione delle traduzioni."
 
 #: weblate_web/templates/404.html:15
 msgid "The page you are looking for was not found."
@@ -1189,18 +1190,16 @@ msgstr "Ulteriori funzionalità…"
 
 #: weblate_web/templates/index.html:46
 msgid "See who is using Weblate and join them!"
-msgstr "Scopri chi usa Weblate e unisciti a loro!"
+msgstr "Scopri chi usa Weblate ed unisciti a loro!"
 
 #: weblate_web/templates/payment/customer.html:5
 #: weblate_web/templates/payment/payment.html:4
-#, fuzzy
-#| msgid "Weblate screenshot"
 msgid "Weblate payment"
-msgstr "Screenshot di Weblate"
+msgstr "Pagamenti Weblate"
 
 #: weblate_web/templates/payment/customer.html:14
 msgid "Your billing information"
-msgstr ""
+msgstr "I tuoi dati per la fatturazione"
 
 #: weblate_web/templates/payment/customer.html:20
 msgid "Save"
@@ -1208,13 +1207,11 @@ msgstr "Salva"
 
 #: weblate_web/templates/payment/payment.html:11
 msgid "Please choose your payment method"
-msgstr ""
+msgstr "Per favore, scegli il metodo di pagamento"
 
 #: weblate_web/templates/payment/payment.html:14
-#, fuzzy
-#| msgid "Payment link"
 msgid "Payment amount"
-msgstr "Collegamento per pagamento"
+msgstr "Importo del pagamento"
 
 #: weblate_web/templates/payment/payment.html:15
 #: weblate_web/templates/support.html:37 weblate_web/templates/support.html:53
@@ -1224,37 +1221,37 @@ msgstr "%(price)s Euro"
 
 #: weblate_web/templates/payment/payment.html:16
 msgid "(including VAT)"
-msgstr ""
+msgstr "(IVA inclusa)"
 
 #: weblate_web/templates/payment/payment.html:18
-#, fuzzy
-#| msgid "Payment link"
 msgid "Payment description"
-msgstr "Collegamento per pagamento"
+msgstr "Descrizione del pagamento"
 
 #: weblate_web/templates/payment/payment.html:20
-#, fuzzy
-#| msgid "Payment link"
 msgid "Payment recurrence"
-msgstr "Collegamento per pagamento"
+msgstr "Pagamento ricorrente"
 
 #: weblate_web/templates/payment/payment.html:22
 msgid "Payment will repeat every year until you cancel the subscription."
 msgstr ""
+"Il pagamento verrà ripetuto ogni anno fino alla disdetta dell'abbonamento."
 
 #: weblate_web/templates/payment/payment.html:24
 msgid "Payment will repeat every month until you cancel the subscription."
 msgstr ""
+"Il pagamento verrà ripetuto ogni mese fino alla disdetta dell'abbonamento."
 
 #: weblate_web/templates/payment/payment.html:29
 msgid ""
 "Note: This is not available for some payment methods, you will have to "
 "manually complete next payment in that case."
 msgstr ""
+"Nota: non disponibile per alcuni metodi di pagamento: in tal caso dovrai "
+"completare manualmente il prossimo pagamento."
 
 #: weblate_web/templates/payment/payment.html:32
 msgid "Billing information"
-msgstr ""
+msgstr "Dati di fatturazione"
 
 #: weblate_web/templates/payment/payment.html:34
 msgid "Edit"
@@ -1330,7 +1327,7 @@ msgstr "Installazione usando virtualenv, uwsgi e nginx"
 
 #: weblate_web/templates/support.html:44
 msgid "Using PostgreSQL, MySQL or MariaDB as database backend"
-msgstr "Usando PostgreSQL, MySQL o MariaDB come backend database"
+msgstr "Usando PostgreSQL, MySQL o MariaDB come motore database"
 
 #: weblate_web/templates/support.html:45 weblate_web/templates/support.html:60
 msgid "Requires root access or close cooperation of your admins"
@@ -1346,20 +1343,16 @@ msgid "Does not include custom code development"
 msgstr "Non include sviluppo di codice personalizzato"
 
 #: weblate_web/templates/support.html:52
-#, fuzzy
-#| msgid "Installation on your Linux server"
 msgid "Installation using Docker on your Linux server"
-msgstr "Installazione nel tuo server Linux"
+msgstr "Installazione nel tuo server Linux usando Docker"
 
 #: weblate_web/templates/support.html:59
-#, fuzzy
-#| msgid "Or installation using Docker"
 msgid "Installation using Docker"
-msgstr "Oppure l'installazione usando Docker"
+msgstr "Installazione usando Docker"
 
 #: weblate_web/templates/support.html:67
 msgid "Basic support for self hosted Weblate"
-msgstr "Supporto base su Weblate installato localmente"
+msgstr "Supporto base sull'installazione locale di Weblate"
 
 #: weblate_web/templates/support.html:74
 msgid "Your Weblate will be upgraded to the latest version on every release."
@@ -1426,8 +1419,8 @@ msgid ""
 "You can use mailing lists for discussions with other Weblate users and "
 "developers."
 msgstr ""
-"Puoi usare le mailing list per discutere con altri utenti Weblate o "
-"sviluppatori."
+"Puoi usare le mailing list per discutere con altri utenti o sviluppatori di "
+"Weblate."
 
 #: weblate_web/templates/support.html:111
 msgid ""
@@ -1440,7 +1433,7 @@ msgstr ""
 #: weblate_web/templates/support.html:112
 #: weblate_web/templates/support.html:128
 msgid "You can browse mailing list archives"
-msgstr "Puoi scorrere l'archivio di mailing list"
+msgstr "Puoi consultare gli archivi della mailing list"
 
 #: weblate_web/templates/support.html:115
 #: weblate_web/templates/support.html:131
@@ -1454,18 +1447,18 @@ msgstr "Iscriviti"
 
 #: weblate_web/templates/support.html:124
 msgid "Hosted Weblate Announcements mailing list"
-msgstr "Mailing list degli annunci Weblate Hosted"
+msgstr "Mailing list degli annunci Weblate"
 
 #: weblate_web/templates/support.html:126
 msgid ""
 "Low traffic mailing list with announcements about Hosted Weblate services."
 msgstr ""
-"Mailing list a basso traffico con annunci riguardo ai servizi Hosted Weblate."
+"Mailing list, a basso traffico, con annunci riguardo i servizi Hosted "
+"Weblate."
 
 #: weblate_web/templates/support.html:127
 msgid "This list is moderated, only chosen users can post announcements."
-msgstr ""
-"L'elenco è moderato. Solo gli utenti selezionati possono postare annunci."
+msgstr "La lista è moderata. Solo gli utenti autorizzati possono pubblicare."
 
 #: weblate_web/templates/support.html:140
 msgid "Stack Overflow"
@@ -1481,7 +1474,7 @@ msgstr ""
 
 #: weblate_web/templates/terms.html:3 weblate_web/templates/terms.html:13
 msgid "Terms of Service"
-msgstr "Termini del servizio"
+msgstr "Termini del Servizio"
 
 #: weblate_web/templates/terms.html:6
 msgid "The legal documents necessary to operate this service."
@@ -1489,7 +1482,7 @@ msgstr "I documenti legali necessari al funzionamento del servizio."
 
 #: weblate_web/templates/terms.html:20
 msgid "Privacy Policy"
-msgstr "Policy privacy"
+msgstr "Informativa sulla privacy"
 
 #: weblate_web/templates/thanks.html:3 weblate_web/templates/thanks.html:4
 msgid "Thanks from Weblate"
@@ -1510,7 +1503,7 @@ msgstr "Lo sviluppo di Weblate è basato sulle seguenti tecnologie:"
 #: weblate_web/templates/thanks.html:26
 msgid "GitHub provides hosting for our source code and issue tracker."
 msgstr ""
-"GitHub fornisce il servizio di hosting per il nostro codice e il nostro "
+"GitHub fornisce il servizio di hosting per il nostro codice ed il nostro "
 "issue tracker."
 
 #: weblate_web/templates/thanks.html:30
@@ -1546,7 +1539,7 @@ msgid ""
 "Support our project on Bountysource Salt and get exclusive logo placement on "
 "this page."
 msgstr ""
-"Sostieni il nostro progetto su Bountysource Salt e ottieni una posizione "
+"Sostieni il nostro progetto su Bountysource Salt ed ottieni una posizione "
 "esclusiva del logo in questa pagina."
 
 #: weblate_web/templates/tour.html:3 weblate_web/templates/tour.html:4
@@ -1580,8 +1573,8 @@ msgid ""
 "<code>demo</code> with password: <code>demo</code>."
 msgstr ""
 "Prova Weblate sul <a href=\"https://demo.weblate.org\">server demo</a>. "
-"Registrati e utilizza il tuo nome utente, oppure utilizza in nome utente: "
-"<code>demo</code> e la password: <code>demo</code>."
+"Registrati ed utilizza il tuo nome utente, oppure utilizza l'utente: "
+"<code>demo</code> con password: <code>demo</code>."
 
 #: weblate_web/templates/try.html:25
 msgid ""
@@ -1589,7 +1582,7 @@ msgid ""
 "code>, and password: <code>review</code>."
 msgstr ""
 "Per testare l'analisi del flusso di lavoro, puoi anche effettuare l'accesso "
-"come utente <code>revisore</code> con password <code>revisore</code>."
+"come utente <code>review</code> con password <code>review</code>."
 
 #: weblate_web/templates/try.html:27
 msgid "Appliances"
@@ -1611,7 +1604,7 @@ msgid ""
 "charge, invoices for Czech Republic will include additional VAT."
 msgstr ""
 "Tutti i prezzi non includono l'IVA. Le fatture per i paesi dell'UE sono "
-"rilasciate come una tassa inversa. Le fatture per la Repubblica Ceca "
+"rilasciate come Reverse Charge. Le fatture per la Repubblica Ceca "
 "includeranno un'IVA aggiuntiva."
 
 #: weblate_web/templatetags/downloads.py:40
@@ -1655,6 +1648,7 @@ msgstr "Sorgenti, compressi zip"
 #: weblate_web/views.py:78
 msgid "Please provide your billing information to complete the payment."
 msgstr ""
+"Per favore, inserisci i dati di fatturazione per completare il pagamento."
 
 #~ msgid ""
 #~ "You can also <a href=\"%(download_url)s\">download</a> Weblate sources "
