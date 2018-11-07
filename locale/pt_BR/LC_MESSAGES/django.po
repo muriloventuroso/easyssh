@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Weblate 1.2\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2018-11-07 15:21+0100\n"
+"POT-Creation-Date: 2018-11-07 20:44+0100\n"
 "PO-Revision-Date: 2018-11-06 17:17+0000\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
@@ -1192,7 +1192,9 @@ msgid "Save"
 msgstr "Salvar"
 
 #: weblate_web/templates/payment/payment.html:11
-msgid "Please choose your payment method"
+#, fuzzy
+#| msgid "Please choose your payment method"
+msgid "Please choose your payment method."
 msgstr "Escolha seu método de pagamento"
 
 #: weblate_web/templates/payment/payment.html:14
@@ -1214,21 +1216,31 @@ msgid "Payment description"
 msgstr "Descrição do pagamento"
 
 #: weblate_web/templates/payment/payment.html:20
-msgid "Payment recurrence"
+#, fuzzy
+#| msgid "Payment recurrence"
+msgid "Payment frequence"
 msgstr "Recorrência do pagamento"
 
 #: weblate_web/templates/payment/payment.html:22
-msgid "Payment will repeat every year until you cancel the subscription."
+#, fuzzy
+#| msgid "Payment will repeat every year until you cancel the subscription."
+msgid "Payment will be issued yearly till you cancel the subscription."
 msgstr "O pagamento se repetirá a cada ano até você cancelar a inscrição."
 
 #: weblate_web/templates/payment/payment.html:24
-msgid "Payment will repeat every month until you cancel the subscription."
+#, fuzzy
+#| msgid "Payment will repeat every month until you cancel the subscription."
+msgid "Payment will be issued monthly till you cancel the subscription."
 msgstr "O pagamento se repetirá a cada mês até você cancelar a inscrição."
 
 #: weblate_web/templates/payment/payment.html:29
+#, fuzzy
+#| msgid ""
+#| "Note: This is not available for some payment methods, you will have to "
+#| "manually complete next payment in that case."
 msgid ""
-"Note: This is not available for some payment methods, you will have to "
-"manually complete next payment in that case."
+"Note: This is unavailable for some payment methods, you will have to "
+"manually complete the next payment in those cases."
 msgstr ""
 "Nota: isso não está disponível para alguns métodos de pagamento, você terá "
 "que completar manualmente o próximo pagamento nesse caso."

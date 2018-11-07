@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2018-11-07 15:21+0100\n"
+"POT-Creation-Date: 2018-11-07 20:44+0100\n"
 "PO-Revision-Date: 2018-11-07 14:21+0000\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/weblate/website/cs/"
@@ -1171,7 +1171,9 @@ msgid "Save"
 msgstr "Uložit"
 
 #: weblate_web/templates/payment/payment.html:11
-msgid "Please choose your payment method"
+#, fuzzy
+#| msgid "Please choose your payment method"
+msgid "Please choose your payment method."
 msgstr "Prosím, vyberte si způsob platby"
 
 #: weblate_web/templates/payment/payment.html:14
@@ -1193,21 +1195,31 @@ msgid "Payment description"
 msgstr "Popis platby"
 
 #: weblate_web/templates/payment/payment.html:20
-msgid "Payment recurrence"
+#, fuzzy
+#| msgid "Payment recurrence"
+msgid "Payment frequence"
 msgstr "Opakování platby"
 
 #: weblate_web/templates/payment/payment.html:22
-msgid "Payment will repeat every year until you cancel the subscription."
+#, fuzzy
+#| msgid "Payment will repeat every year until you cancel the subscription."
+msgid "Payment will be issued yearly till you cancel the subscription."
 msgstr "Platba se bude opakovat každý rok, dokud nezrušíte předplatné."
 
 #: weblate_web/templates/payment/payment.html:24
-msgid "Payment will repeat every month until you cancel the subscription."
+#, fuzzy
+#| msgid "Payment will repeat every month until you cancel the subscription."
+msgid "Payment will be issued monthly till you cancel the subscription."
 msgstr "Platba se bude opakovat každý měsíc, dokud nezrušíte předplatné."
 
 #: weblate_web/templates/payment/payment.html:29
+#, fuzzy
+#| msgid ""
+#| "Note: This is not available for some payment methods, you will have to "
+#| "manually complete next payment in that case."
 msgid ""
-"Note: This is not available for some payment methods, you will have to "
-"manually complete next payment in that case."
+"Note: This is unavailable for some payment methods, you will have to "
+"manually complete the next payment in those cases."
 msgstr ""
 "Poznámka: Tato možnost není k dispozici pro některé platební metody, v "
 "takovém případě budete muset dokončit další platby ručně."
