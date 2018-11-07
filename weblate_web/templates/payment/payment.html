@@ -8,7 +8,7 @@
 
 <div class="card m-4">
   <h5 class="card-header">
-    {% trans "Please choose your payment method" %}
+    {% trans "Please choose your payment method." %}
   </h5>
     <table class="table">
     <tr><th>{% trans "Payment amount" %}</th><td>
@@ -17,16 +17,16 @@
     </td><tr>
     <tr><th>{% trans "Payment description" %}</th><td>{{ object.description }}</td></tr>
     {% if object.recurring %}
-    <tr><th>{% trans "Payment recurrence" %}</th><td>
+    <tr><th>{% trans "Payment frequence" %}</th><td>
     {% if object.recurring == "y" %}
-    {% trans "Payment will repeat every year until you cancel the subscription." %}
+    {% trans "Payment will be issued yearly till you cancel the subscription." %}
     {% elif object.recurring == "m" %}
-    {% trans "Payment will repeat every month until you cancel the subscription." %}
+    {% trans "Payment will be issued monthly till you cancel the subscription." %}
     {% else %}
     {{ object.recurring }}
     {% endif %}
     <br>
-    <span class="text-muted">{% trans "Note: This is not available for some payment methods, you will have to manually complete next payment in that case." %}</span>
+    <span class="text-muted">{% trans "Note: This is unavailable for some payment methods, you will have to manually complete the next payment in those cases." %}</span>
     </td></tr>
     <tr>
     <th>{% trans "Billing information" %}</th>
