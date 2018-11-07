@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2018-11-07 20:44+0100\n"
-"PO-Revision-Date: 2018-11-07 19:40+0000\n"
+"PO-Revision-Date: 2018-11-08 08:25+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/weblate/"
 "website/nb_NO/>\n"
@@ -428,10 +428,8 @@ msgid "Currency"
 msgstr "Valuta"
 
 #: weblate_web/templates/donate.html:88
-#, fuzzy
-#| msgid "Payment address"
 msgid "Donate address"
-msgstr "Betalingsadresse"
+msgstr "Donasjonsadresse"
 
 #: weblate_web/templates/download.html:4 weblate_web/templates/download.html:5
 #: weblate_web/templates/hosting.html:237
@@ -444,10 +442,8 @@ msgstr "Weblate leveres med komplett kildekode."
 
 #: weblate_web/templates/download.html:13 weblate_web/templates/hosting.html:12
 #: weblate_web/templates/hosting.html:236
-#, fuzzy
-#| msgid "Basic support for self hosted Weblate"
 msgid "Get support for Weblate"
-msgstr "Grunnleggende støtte for selvtjent Weblate"
+msgstr "Få støtte for Weblate"
 
 #: weblate_web/templates/download.html:21
 msgid "You can download latest release here:"
@@ -676,10 +672,8 @@ msgstr ""
 
 #: weblate_web/templates/hosting-free.html:3
 #: weblate_web/templates/hosting-free.html:4
-#, fuzzy
-#| msgid "Hosting Weblate"
 msgid "Free hosting on Weblate"
-msgstr "Vertslager Weblate"
+msgstr "Gratis vertslager på Weblate"
 
 #: weblate_web/templates/hosting-free.html:6
 msgid "We love open source and we offer free plans for hosting translations."
@@ -1106,18 +1100,12 @@ msgid "There are also several options for deploying Weblate to the cloud."
 msgstr "Det finnes også flere valg for kjøring av Weblate i skyen."
 
 #: weblate_web/templates/hosting.html:236
-#, fuzzy
-#| msgid ""
-#| "In case you need help with your self hosted solution, we're ready to help "
-#| "as well with consulting services tailored for your needs. Please contact "
-#| "<a href=\"%(contact_url)s\">Michal Čihař</a> for more details."
 msgid ""
 "In case you need help with your self hosted solution, we're ready to help as "
 "well with consulting services tailored for your needs."
 msgstr ""
 "I fall du trenger hjelp med en løsning du er vertskap for selv, kan vi "
-"hjelpe deg med rådgivning skreddersydd dine behov. Kontakt <a href="
-"\"%(contact_url)s\"> Michal Čihař</a> for flere detaljer."
+"hjelpe deg med rådgivning skreddersydd dine behov."
 
 #: weblate_web/templates/index.html:3
 msgid "Weblate - web-based translation"
@@ -1133,16 +1121,12 @@ msgstr ""
 "Weblate er et gratis nettbasert system for håndtering av oversettelser."
 
 #: weblate_web/templates/index.html:14
-#, fuzzy
-#| msgid "Hosting Weblate"
 msgid "Start using Weblate"
-msgstr "Vertslager Weblate"
+msgstr "Kom i gang med Weblate"
 
 #: weblate_web/templates/index.html:15
-#, fuzzy
-#| msgid "Try our demo"
 msgid "Try our demo server"
-msgstr "Prøv vår demo"
+msgstr "Prøv vår demotjener"
 
 #: weblate_web/templates/index.html:16
 msgid "Downloads"
@@ -1174,10 +1158,8 @@ msgstr "Se hvem som bruker Weblate og bli med!"
 
 #: weblate_web/templates/payment/customer.html:5
 #: weblate_web/templates/payment/payment.html:4
-#, fuzzy
-#| msgid "Weblate screenshot"
 msgid "Weblate payment"
-msgstr "Weblate skjermbilder"
+msgstr "Weblate-betaling"
 
 #: weblate_web/templates/payment/customer.html:14
 msgid "Your billing information"
@@ -1193,10 +1175,8 @@ msgid "Please choose your payment method."
 msgstr "Velg din betalingsmetode"
 
 #: weblate_web/templates/payment/payment.html:14
-#, fuzzy
-#| msgid "Payment link"
 msgid "Payment amount"
-msgstr "Betalingslenke"
+msgstr "Betalingsbeløp"
 
 #: weblate_web/templates/payment/payment.html:15
 #: weblate_web/templates/support.html:37 weblate_web/templates/support.html:53
@@ -1209,21 +1189,16 @@ msgid "(including VAT)"
 msgstr "(med moms)"
 
 #: weblate_web/templates/payment/payment.html:18
-#, fuzzy
-#| msgid "Payment link"
 msgid "Payment description"
-msgstr "Betalingslenke"
+msgstr "Betalingsbeskrivelse"
 
 #: weblate_web/templates/payment/payment.html:20
-#, fuzzy
-#| msgid "Payment link"
 msgid "Payment frequence"
-msgstr "Betalingslenke"
+msgstr "Betalingsfrekvens"
 
 #: weblate_web/templates/payment/payment.html:22
-#, fuzzy
 msgid "Payment will be issued yearly till you cancel the subscription."
-msgstr "Betaling vil gjentas årlig til du avbryter abonnementet."
+msgstr "Betaling gjentas årlig til du avbryter abonnementet."
 
 #: weblate_web/templates/payment/payment.html:24
 #, fuzzy
@@ -1231,10 +1206,6 @@ msgid "Payment will be issued monthly till you cancel the subscription."
 msgstr "Betaling vil gjentas månedlig til du avbryter abonnementet."
 
 #: weblate_web/templates/payment/payment.html:29
-#, fuzzy
-#| msgid ""
-#| "Note: This is not available for some payment methods, you will have to "
-#| "manually complete next payment in that case."
 msgid ""
 "Note: This is unavailable for some payment methods, you will have to "
 "manually complete the next payment in those cases."
@@ -1332,16 +1303,12 @@ msgid "Does not include custom code development"
 msgstr "Inkluderer ikke tilpasset kodeutvikling"
 
 #: weblate_web/templates/support.html:52
-#, fuzzy
-#| msgid "Installation on your Linux server"
 msgid "Installation using Docker on your Linux server"
-msgstr "Installasjon på din Linux-tjener"
+msgstr "Installasjon ved bruk av Docker på din Linux-tjener"
 
 #: weblate_web/templates/support.html:59
-#, fuzzy
-#| msgid "Or installation using Docker"
 msgid "Installation using Docker"
-msgstr "Eller installasjon ved bruk av Docker"
+msgstr "Installasjon ved bruk av Docker"
 
 #: weblate_web/templates/support.html:67
 msgid "Basic support for self hosted Weblate"
@@ -1467,9 +1434,8 @@ msgid "Terms of Service"
 msgstr "Bruksvilkår"
 
 #: weblate_web/templates/terms.html:6
-#, fuzzy
 msgid "The legal documents necessary to operate this service."
-msgstr "Juridiske dokumenter som behøves for å kjøre denne tjenesten."
+msgstr "Juridiske dokumenter som behøves for å tilby denne tjenesten."
 
 #: weblate_web/templates/terms.html:20
 msgid "Privacy Policy"
