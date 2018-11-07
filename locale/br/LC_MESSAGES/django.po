@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2018-10-30 13:07+0000\n"
+"POT-Creation-Date: 2018-11-07 15:10+0100\n"
 "PO-Revision-Date: 2018-07-23 11:06+0000\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Breton <https://hosted.weblate.org/projects/weblate/website/"
@@ -59,7 +59,7 @@ msgstr ""
 "termenoù implijet ganto en droidigezh."
 
 #: weblate_web/data.py:58 weblate_web/templates/features.html:71
-#: weblate_web/templates/hosting.html:140
+#: weblate_web/templates/hosting.html:141
 msgid "Glossary"
 msgstr "Geriaoueg"
 
@@ -72,7 +72,7 @@ msgstr ""
 "troidigezhioù."
 
 #: weblate_web/data.py:66 weblate_web/templates/base-features.html:14
-#: weblate_web/templates/hosting.html:122
+#: weblate_web/templates/hosting.html:123
 msgid "Quality checks"
 msgstr "Gwririadennoù kalite"
 
@@ -118,7 +118,7 @@ msgid "You can define access levels for every user."
 msgstr ""
 
 #: weblate_web/data.py:102 weblate_web/templates/hosting-free.html:45
-#: weblate_web/templates/hosting.html:104
+#: weblate_web/templates/hosting.html:105
 msgid "User management"
 msgstr ""
 
@@ -148,7 +148,7 @@ msgstr ""
 "Emañ hor marmouzien ouiziek o klask renkañ an afer."
 
 #: weblate_web/templates/base-features.html:6
-#: weblate_web/templates/hosting.html:41
+#: weblate_web/templates/hosting.html:42
 msgid "Continuous translation"
 msgstr "Treiñ dibaouez"
 
@@ -168,7 +168,7 @@ msgid ""
 msgstr "Meneget mat e vo an holl droerien e reizhiad gwiriañ an troidigezhioù."
 
 #: weblate_web/templates/base-features.html:30
-#: weblate_web/templates/hosting.html:17
+#: weblate_web/templates/hosting.html:18
 #, fuzzy
 #| msgid "Hosting Weblate"
 msgid "Hosting plans"
@@ -220,7 +220,7 @@ msgstr "Klask"
 msgid "Features"
 msgstr "Perzhioù"
 
-#: weblate_web/templates/base.html:53 weblate_web/templates/download.html:17
+#: weblate_web/templates/base.html:53 weblate_web/templates/download.html:18
 msgid "Download"
 msgstr "Pellgargañ"
 
@@ -299,7 +299,7 @@ msgstr ""
 "perzh</a> hon teuliadur."
 
 #: weblate_web/templates/contribute.html:20
-#: weblate_web/templates/download.html:69
+#: weblate_web/templates/download.html:70
 msgid "Code"
 msgstr "Kod"
 
@@ -444,6 +444,7 @@ msgid "Donate address"
 msgstr "Ober un donezon"
 
 #: weblate_web/templates/download.html:4 weblate_web/templates/download.html:5
+#: weblate_web/templates/hosting.html:237
 msgid "Download Weblate"
 msgstr "Pellgargañ Weblate"
 
@@ -451,53 +452,60 @@ msgstr "Pellgargañ Weblate"
 msgid "Weblate comes with complete source code."
 msgstr "Dont a ra Weblate gant ar c'hod-tarzh klok."
 
-#: weblate_web/templates/download.html:20
+#: weblate_web/templates/download.html:13 weblate_web/templates/hosting.html:12
+#: weblate_web/templates/hosting.html:236
+#, fuzzy
+#| msgid "Support free hosting"
+msgid "Get support for Weblate"
+msgstr "Harpit an herberc'hiañ digoust"
+
+#: weblate_web/templates/download.html:21
 msgid "You can download latest release here:"
 msgstr "Gallout a rit pellgargañ ar stumm diwezhañ amañ :"
 
-#: weblate_web/templates/download.html:29
-#: weblate_web/templates/download.html:45
+#: weblate_web/templates/download.html:30
+#: weblate_web/templates/download.html:46
 msgid "You can also install using packages for following Linux distributions:"
 msgstr ""
 
-#: weblate_web/templates/download.html:35
+#: weblate_web/templates/download.html:36
 msgid "Weblate command line client"
 msgstr ""
 
-#: weblate_web/templates/download.html:38
+#: weblate_web/templates/download.html:39
 #, python-format
 msgid ""
 "You can control Weblate remotely using <a href=\"%(url)s\">wlc</a>, it can "
 "be installed by using Python PIP:"
 msgstr ""
 
-#: weblate_web/templates/download.html:53
+#: weblate_web/templates/download.html:54
 #, fuzzy
 #| msgid "Cloud or emulator images"
 msgid "Cloud or virtualization images"
 msgstr "Skeudennoù koumoul pe emulator"
 
-#: weblate_web/templates/download.html:55
+#: weblate_web/templates/download.html:56
 msgid ""
 "Weblate can be run in any cloud or virtualization environment. Following "
 "links will show you information about some of these:"
 msgstr ""
 
-#: weblate_web/templates/download.html:58
+#: weblate_web/templates/download.html:59
 msgid "Running Weblate in a Docker container"
 msgstr ""
 
-#: weblate_web/templates/download.html:59
+#: weblate_web/templates/download.html:60
 msgid "Running Weblate on OpenShift platform"
 msgstr ""
 
-#: weblate_web/templates/download.html:60
+#: weblate_web/templates/download.html:61
 msgid ""
 "BitNami Weblate stack providing native installation for most platforms as "
 "well as support for many public cloud providers"
 msgstr ""
 
-#: weblate_web/templates/download.html:72
+#: weblate_web/templates/download.html:73
 msgid ""
 "Weblate is being developed on <a href=\"https://github.com/WeblateOrg/weblate"
 "\">GitHub</a>, you can fork it there or just:"
@@ -874,13 +882,13 @@ msgstr ""
 msgid "Use Weblate as a service or get support for on-premises hosting."
 msgstr ""
 
-#: weblate_web/templates/hosting.html:20
+#: weblate_web/templates/hosting.html:21
 msgid ""
 "Hosted Weblate allows you to use Weblate without any effort and with premium "
 "support backed by it's core developers."
 msgstr ""
 
-#: weblate_web/templates/hosting.html:24
+#: weblate_web/templates/hosting.html:25
 #, python-format
 msgid ""
 "We can host translations for your commercial or free software projects. You "
@@ -889,240 +897,237 @@ msgid ""
 "\">get in touch with us</a>."
 msgstr ""
 
-#: weblate_web/templates/hosting.html:31
+#: weblate_web/templates/hosting.html:32
 #, fuzzy
 #| msgid "Hosting for free software"
 msgctxt "Hosting plan"
 msgid "Free software"
 msgstr "Herberc'hiañ evit meziantoù frank"
 
-#: weblate_web/templates/hosting.html:32
+#: weblate_web/templates/hosting.html:33
 msgctxt "Hosting plan"
 msgid "Basic"
 msgstr ""
 
-#: weblate_web/templates/hosting.html:33
+#: weblate_web/templates/hosting.html:34
 msgctxt "Hosting plan"
 msgid "Medium"
 msgstr ""
 
-#: weblate_web/templates/hosting.html:34
+#: weblate_web/templates/hosting.html:35
 msgctxt "Hosting plan"
 msgid "Advanced"
 msgstr ""
 
-#: weblate_web/templates/hosting.html:35
+#: weblate_web/templates/hosting.html:36
 msgctxt "Hosting plan"
 msgid "Enterprise"
 msgstr ""
 
-#: weblate_web/templates/hosting.html:36
+#: weblate_web/templates/hosting.html:37
 #, fuzzy
 #| msgid "Asking for hosting"
 msgctxt "Hosting plan"
 msgid "Self hosted"
 msgstr "Goulenn herberc'hiañ"
 
-#: weblate_web/templates/hosting.html:50
+#: weblate_web/templates/hosting.html:51
 msgid ""
 "Text unit defined in a translation format, it can be word, sentence or a "
 "paragraph"
 msgstr ""
 
-#: weblate_web/templates/hosting.html:50
+#: weblate_web/templates/hosting.html:51
 #, fuzzy
 #| msgid "Source strings review"
 msgid "Source strings"
 msgstr "Selladenn ouzh mammennoù an neudennadoù"
 
-#: weblate_web/templates/hosting.html:51 weblate_web/templates/hosting.html:60
-#: weblate_web/templates/hosting.html:69
+#: weblate_web/templates/hosting.html:52 weblate_web/templates/hosting.html:61
+#: weblate_web/templates/hosting.html:70
 msgid "Negotiable"
 msgstr ""
 
-#: weblate_web/templates/hosting.html:56 weblate_web/templates/hosting.html:65
-#: weblate_web/templates/hosting.html:74 weblate_web/templates/hosting.html:81
-#: weblate_web/templates/hosting.html:82 weblate_web/templates/hosting.html:83
-#: weblate_web/templates/hosting.html:88 weblate_web/templates/hosting.html:89
-#: weblate_web/templates/hosting.html:90 weblate_web/templates/hosting.html:91
-#: weblate_web/templates/hosting.html:92 weblate_web/templates/hosting.html:96
-#: weblate_web/templates/hosting.html:97 weblate_web/templates/hosting.html:98
-#: weblate_web/templates/hosting.html:99 weblate_web/templates/hosting.html:100
+#: weblate_web/templates/hosting.html:57 weblate_web/templates/hosting.html:66
+#: weblate_web/templates/hosting.html:75 weblate_web/templates/hosting.html:82
+#: weblate_web/templates/hosting.html:83 weblate_web/templates/hosting.html:84
+#: weblate_web/templates/hosting.html:89 weblate_web/templates/hosting.html:90
+#: weblate_web/templates/hosting.html:91 weblate_web/templates/hosting.html:92
+#: weblate_web/templates/hosting.html:93 weblate_web/templates/hosting.html:97
+#: weblate_web/templates/hosting.html:98 weblate_web/templates/hosting.html:99
+#: weblate_web/templates/hosting.html:100
 #: weblate_web/templates/hosting.html:101
+#: weblate_web/templates/hosting.html:102
 msgid "Unlimited"
 msgstr ""
 
-#: weblate_web/templates/hosting.html:59
+#: weblate_web/templates/hosting.html:60
 #, fuzzy
 #| msgid "Languages"
 msgid "Target languages"
 msgstr "Yezhoù"
 
-#: weblate_web/templates/hosting.html:68
+#: weblate_web/templates/hosting.html:69
 #, fuzzy
 #| msgid "Status of repositories"
 msgid "VCS repositories"
 msgstr "Stad ar c'havlec'hioù"
 
-#: weblate_web/templates/hosting.html:77
+#: weblate_web/templates/hosting.html:78
 #, fuzzy
 #| msgid "Own translations"
 msgid "Translation projects"
 msgstr "Ho troidigezhioù"
 
-#: weblate_web/templates/hosting.html:86
+#: weblate_web/templates/hosting.html:87
 #, fuzzy
 #| msgid "Translation context"
 msgid "Translation components"
 msgstr "Kendestenn ar meneg da dreiñ"
 
-#: weblate_web/templates/hosting.html:95
+#: weblate_web/templates/hosting.html:96
 msgid "Number of translators"
 msgstr ""
 
-#: weblate_web/templates/hosting.html:113
+#: weblate_web/templates/hosting.html:114
 #, fuzzy
 #| msgid "File formats"
 msgid "Supported file formats"
 msgstr "Furmadoù ar restr"
 
-#: weblate_web/templates/hosting.html:114
 #: weblate_web/templates/hosting.html:115
 #: weblate_web/templates/hosting.html:116
 #: weblate_web/templates/hosting.html:117
 #: weblate_web/templates/hosting.html:118
 #: weblate_web/templates/hosting.html:119
+#: weblate_web/templates/hosting.html:120
 msgid "All"
 msgstr ""
 
-#: weblate_web/templates/hosting.html:126
 #: weblate_web/templates/hosting.html:127
 #: weblate_web/templates/hosting.html:128
-#: weblate_web/templates/hosting.html:135
+#: weblate_web/templates/hosting.html:129
 #: weblate_web/templates/hosting.html:136
 #: weblate_web/templates/hosting.html:137
+#: weblate_web/templates/hosting.html:138
 msgid "Customizable"
 msgstr ""
 
-#: weblate_web/templates/hosting.html:131
+#: weblate_web/templates/hosting.html:132
 #, fuzzy
 #| msgid "Translation status"
 msgid "Translation addons"
 msgstr "Stad an treiñ"
 
-#: weblate_web/templates/hosting.html:149
+#: weblate_web/templates/hosting.html:150
 #, fuzzy
 #| msgid "Translation workflow"
 msgid "Translation memory"
 msgstr "Labour treiñ"
 
-#: weblate_web/templates/hosting.html:158
+#: weblate_web/templates/hosting.html:159
 msgid "Priority email support"
 msgstr ""
 
-#: weblate_web/templates/hosting.html:164
-#: weblate_web/templates/hosting.html:172
+#: weblate_web/templates/hosting.html:165
+#: weblate_web/templates/hosting.html:173
 msgid "Available on request"
 msgstr ""
 
-#: weblate_web/templates/hosting.html:167
+#: weblate_web/templates/hosting.html:168
 msgid "Custom domain name with SSL"
 msgstr ""
 
-#: weblate_web/templates/hosting.html:167
+#: weblate_web/templates/hosting.html:168
 msgid "Own domain"
 msgstr ""
 
-#: weblate_web/templates/hosting.html:169
 #: weblate_web/templates/hosting.html:170
 #: weblate_web/templates/hosting.html:171
+#: weblate_web/templates/hosting.html:172
 #, python-format
 msgid ""
 "Additional charge %(price)s EUR/year, only available with yearly billing"
 msgstr ""
 
-#: weblate_web/templates/hosting.html:178
+#: weblate_web/templates/hosting.html:179
 #, fuzzy
 #| msgid "Donate using PayPal"
 msgid "Monthly by PayPal"
 msgstr "Ober un donezon dre PayPal"
 
-#: weblate_web/templates/hosting.html:180
+#: weblate_web/templates/hosting.html:181
 msgid "Contact us"
 msgstr "Deuit e darempred ganeomp"
 
-#: weblate_web/templates/hosting.html:183
-#: weblate_web/templates/hosting.html:186
-#: weblate_web/templates/hosting.html:189
-#: weblate_web/templates/hosting.html:192 weblate_web/templates/support.html:68
+#: weblate_web/templates/hosting.html:184
+#: weblate_web/templates/hosting.html:187
+#: weblate_web/templates/hosting.html:190
+#: weblate_web/templates/hosting.html:193 weblate_web/templates/support.html:68
 #, python-format
 msgid "%(price)s EUR / month"
 msgstr ""
 
-#: weblate_web/templates/hosting.html:194
+#: weblate_web/templates/hosting.html:195
 msgid "See below for options"
 msgstr ""
 
-#: weblate_web/templates/hosting.html:197
+#: weblate_web/templates/hosting.html:198
 #, python-format
 msgid "Yearly by invoice (save 15-20%%)"
 msgstr ""
 
-#: weblate_web/templates/hosting.html:199
-#: weblate_web/templates/hosting.html:202
-#: weblate_web/templates/hosting.html:205
-#: weblate_web/templates/hosting.html:208
+#: weblate_web/templates/hosting.html:200
+#: weblate_web/templates/hosting.html:203
+#: weblate_web/templates/hosting.html:206
+#: weblate_web/templates/hosting.html:209
 msgid "Ask us for yearly invoicing with discount."
 msgstr ""
 
-#: weblate_web/templates/hosting.html:199
-#: weblate_web/templates/hosting.html:202
-#: weblate_web/templates/hosting.html:205
-#: weblate_web/templates/hosting.html:208 weblate_web/templates/support.html:69
+#: weblate_web/templates/hosting.html:200
+#: weblate_web/templates/hosting.html:203
+#: weblate_web/templates/hosting.html:206
+#: weblate_web/templates/hosting.html:209 weblate_web/templates/support.html:69
 #, python-format
 msgid "%(price)s EUR / year"
 msgstr ""
 
-#: weblate_web/templates/hosting.html:215
+#: weblate_web/templates/hosting.html:216
 msgid ""
 "The pricing is based on number of source strings and number of target "
 "languages. The source string is a text unit defined in a translation format, "
 "it can be word, sentence or a paragraph."
 msgstr ""
 
-#: weblate_web/templates/hosting.html:219
+#: weblate_web/templates/hosting.html:220
 msgid ""
 "The hosting setup is currently done manually, so you might want to get in "
 "touch with us prior to making subscription with your project details."
 msgstr ""
 
-#: weblate_web/templates/hosting.html:223
+#: weblate_web/templates/hosting.html:224
 msgid ""
 "Alternatively we can accept payments by wire transfer (preferably IBAN) or "
 "Bitcoin. Please get in touch for more details."
 msgstr ""
 
-#: weblate_web/templates/hosting.html:226
+#: weblate_web/templates/hosting.html:227
 #, fuzzy
 #| msgid "Asking for hosting"
 msgid "Self hosting"
 msgstr "Goulenn herberc'hiañ"
 
 #: weblate_web/templates/hosting.html:230
-#, fuzzy, python-format
-#| msgid ""
-#| "Check our <a href=\"%(download_url)s\">download page</a> for appliances, "
-#| "which provide an easy way to deploy Weblate in the cloud."
-msgid ""
-"You can also <a href=\"%(download_url)s\">download</a> Weblate sources and "
-"run it on your systems. There are also several options for deploying Weblate "
-"to the cloud."
-msgstr ""
-"Sellit ouzh hor <a href=\"%(download_url)s\">pajenn bellgargañ</a> evit an "
-"arloadegoù; ar re-mañ a bourchas un doare aes da zispakañ Weblate er "
-"goumoulenn."
+#, fuzzy
+#| msgid "Weblate is a free software with community support."
+msgid "Weblate is free software and you can run it on your systems."
+msgstr "Ur meziant frank harpet gant ar gumuniezh eo Weblate."
 
-#: weblate_web/templates/hosting.html:235
+#: weblate_web/templates/hosting.html:232
+msgid "There are also several options for deploying Weblate to the cloud."
+msgstr ""
+
+#: weblate_web/templates/hosting.html:236
 msgid ""
 "In case you need help with your self hosted solution, we're ready to help as "
 "well with consulting services tailored for your needs."
@@ -1637,6 +1642,19 @@ msgstr "Dielloù tarzh gwasket zip"
 #: weblate_web/views.py:78
 msgid "Please provide your billing information to complete the payment."
 msgstr ""
+
+#, fuzzy
+#~| msgid ""
+#~| "Check our <a href=\"%(download_url)s\">download page</a> for appliances, "
+#~| "which provide an easy way to deploy Weblate in the cloud."
+#~ msgid ""
+#~ "You can also <a href=\"%(download_url)s\">download</a> Weblate sources "
+#~ "and run it on your systems. There are also several options for deploying "
+#~ "Weblate to the cloud."
+#~ msgstr ""
+#~ "Sellit ouzh hor <a href=\"%(download_url)s\">pajenn bellgargañ</a> evit "
+#~ "an arloadegoù; ar re-mañ a bourchas un doare aes da zispakañ Weblate er "
+#~ "goumoulenn."
 
 #, fuzzy
 #~| msgid "Toggle text direction"
