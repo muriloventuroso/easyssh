@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2018-11-07 20:44+0100\n"
+"POT-Creation-Date: 2018-11-09 16:21+0100\n"
 "PO-Revision-Date: 2018-11-08 08:25+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/weblate/"
@@ -321,7 +321,9 @@ msgid "Donate to Weblate"
 msgstr "Doner til Weblate"
 
 #: weblate_web/templates/donate.html:6
-msgid "Weblate is free, but welcomes donations."
+#, fuzzy
+#| msgid "Weblate is free, but welcomes donations."
+msgid "Weblate is provided free of charge, and welcomes donations."
 msgstr "Weblate er gratis, men tar gjerne imot donasjoner."
 
 #: weblate_web/templates/donate.html:12 weblate_web/templates/donate.html:43
@@ -347,9 +349,14 @@ msgid "Regular donations"
 msgstr "Regelmessige donasjoner"
 
 #: weblate_web/templates/donate.html:28
+#, fuzzy
+#| msgid ""
+#| "Regular donations allow sustainability of Weblate development and help to "
+#| "fund free hosting for free software. You don't have to spend big money, "
+#| "every penny counts."
 msgid ""
 "Regular donations allow sustainability of Weblate development and help to "
-"fund free hosting for free software. You don't have to spend big money, "
+"fund free hosting for libre software. You don't have to spend big money, "
 "every penny counts."
 msgstr ""
 "Regelmessige donasjoner tillater Weblate en bærekraftig utvikling, og bidrar "
@@ -385,9 +392,13 @@ msgid "Fund features"
 msgstr "Finansieringsfunksjoner"
 
 #: weblate_web/templates/donate.html:58
+#, fuzzy
+#| msgid ""
+#| "Bountysource allows you to fund individual features which are reported on "
+#| "our issue tracker."
 msgid ""
-"Bountysource allows you to fund individual features which are reported on "
-"our issue tracker."
+"Bountysource allows you to fund individual features reported on our issue "
+"tracker."
 msgstr ""
 "Bountysource tillater deg å finansiere enkelte funksjoner som rapporteres på "
 "vår saksporer."
@@ -428,7 +439,9 @@ msgid "Currency"
 msgstr "Valuta"
 
 #: weblate_web/templates/donate.html:88
-msgid "Donate address"
+#, fuzzy
+#| msgid "Donate address"
+msgid "Donation address"
 msgstr "Donasjonsadresse"
 
 #: weblate_web/templates/download.html:4 weblate_web/templates/download.html:5
@@ -1161,18 +1174,19 @@ msgstr "Se hvem som bruker Weblate og bli med!"
 msgid "Weblate payment"
 msgstr "Weblate-betaling"
 
-#: weblate_web/templates/payment/customer.html:14
+#: weblate_web/templates/payment/customer.html:15
 msgid "Your billing information"
 msgstr "Din faktureringsinformasjon"
 
-#: weblate_web/templates/payment/customer.html:20
+#: weblate_web/templates/payment/customer.html:21
 msgid "Save"
 msgstr "Lagre"
 
 #: weblate_web/templates/payment/payment.html:11
 #, fuzzy
-msgid "Please choose your payment method."
-msgstr "Velg din betalingsmetode"
+#| msgid "Payment amount"
+msgid "Payment summary"
+msgstr "Betalingsbeløp"
 
 #: weblate_web/templates/payment/payment.html:14
 msgid "Payment amount"
@@ -1220,6 +1234,11 @@ msgstr "Faktureringsinformasjon"
 #: weblate_web/templates/payment/payment.html:34
 msgid "Edit"
 msgstr "Rediger"
+
+#: weblate_web/templates/payment/payment.html:47
+#, fuzzy
+msgid "Please choose payment method:"
+msgstr "Velg din betalingsmetode"
 
 #: weblate_web/templates/support.html:3 weblate_web/templates/support.html:4
 msgid "Weblate support"
@@ -1600,7 +1619,7 @@ msgstr "Kildekode i tarball, xz-komprimert"
 msgid "Sources, zip compressed"
 msgstr "Kildekode, zip-komprimert"
 
-#: weblate_web/views.py:78
+#: weblate_web/views.py:97
 msgid "Please provide your billing information to complete the payment."
 msgstr "Angi din faktureringsinformasjon for å fullføre betalingen."
 

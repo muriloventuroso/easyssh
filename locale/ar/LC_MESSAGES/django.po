@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2018-11-07 20:44+0100\n"
+"POT-Creation-Date: 2018-11-09 16:21+0100\n"
 "PO-Revision-Date: 2018-11-07 15:55+0000\n"
 "Last-Translator: ButterflyOfFire <ButterflyOfFire@protonmail.com>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/weblate/website/"
@@ -312,7 +312,9 @@ msgid "Donate to Weblate"
 msgstr "تبرع لمساعدة وِبليت"
 
 #: weblate_web/templates/donate.html:6
-msgid "Weblate is free, but welcomes donations."
+#, fuzzy
+#| msgid "Weblate is free, but welcomes donations."
+msgid "Weblate is provided free of charge, and welcomes donations."
 msgstr "Weblate متاح مجّاناً ، ولكن التبرعات مرحب بها."
 
 #: weblate_web/templates/donate.html:12 weblate_web/templates/donate.html:43
@@ -337,9 +339,14 @@ msgid "Regular donations"
 msgstr "التبرعات المنتظمة"
 
 #: weblate_web/templates/donate.html:28
+#, fuzzy
+#| msgid ""
+#| "Regular donations allow sustainability of Weblate development and help to "
+#| "fund free hosting for free software. You don't have to spend big money, "
+#| "every penny counts."
 msgid ""
 "Regular donations allow sustainability of Weblate development and help to "
-"fund free hosting for free software. You don't have to spend big money, "
+"fund free hosting for libre software. You don't have to spend big money, "
 "every penny counts."
 msgstr ""
 "التبرعات المنتظمة تسمح بإدامة العمل على تطوير Weblate  وتساعد في تمويل "
@@ -374,9 +381,13 @@ msgid "Fund features"
 msgstr "تمويل مميزات محددة"
 
 #: weblate_web/templates/donate.html:58
+#, fuzzy
+#| msgid ""
+#| "Bountysource allows you to fund individual features which are reported on "
+#| "our issue tracker."
 msgid ""
-"Bountysource allows you to fund individual features which are reported on "
-"our issue tracker."
+"Bountysource allows you to fund individual features reported on our issue "
+"tracker."
 msgstr ""
 "Bountysource يسمح لك بتمويل مميزات محددة تطلبها أنت أو ترغب بإعطائها المزيد "
 "من الأولوية في أولويات التطوير."
@@ -416,7 +427,9 @@ msgid "Currency"
 msgstr "العملة"
 
 #: weblate_web/templates/donate.html:88
-msgid "Donate address"
+#, fuzzy
+#| msgid "Donate address"
+msgid "Donation address"
 msgstr "عنوان التبرع"
 
 #: weblate_web/templates/download.html:4 weblate_web/templates/download.html:5
@@ -1134,19 +1147,19 @@ msgstr "شاهد من يستخدم Weblate وانضم إليهم!"
 msgid "Weblate payment"
 msgstr "لقطة شاشة لـWeblate"
 
-#: weblate_web/templates/payment/customer.html:14
+#: weblate_web/templates/payment/customer.html:15
 msgid "Your billing information"
 msgstr "معلومات الفوترة"
 
-#: weblate_web/templates/payment/customer.html:20
+#: weblate_web/templates/payment/customer.html:21
 msgid "Save"
 msgstr "احفظ"
 
 #: weblate_web/templates/payment/payment.html:11
 #, fuzzy
-#| msgid "Please choose your payment method"
-msgid "Please choose your payment method."
-msgstr "الرجاء اختيار طريقة الدفع أو السداد:"
+#| msgid "Payment link"
+msgid "Payment summary"
+msgstr "رابط الدفع"
 
 #: weblate_web/templates/payment/payment.html:14
 #, fuzzy
@@ -1201,6 +1214,12 @@ msgstr "معلومات الفوترة"
 #: weblate_web/templates/payment/payment.html:34
 msgid "Edit"
 msgstr "تحرير"
+
+#: weblate_web/templates/payment/payment.html:47
+#, fuzzy
+#| msgid "Please choose your payment method"
+msgid "Please choose payment method:"
+msgstr "الرجاء اختيار طريقة الدفع أو السداد:"
 
 #: weblate_web/templates/support.html:3 weblate_web/templates/support.html:4
 msgid "Weblate support"
@@ -1585,7 +1604,7 @@ msgstr "المصادر تار، مضغوطة بـ xz"
 msgid "Sources, zip compressed"
 msgstr "المصادر، مضغوطة بصيغة Zip"
 
-#: weblate_web/views.py:78
+#: weblate_web/views.py:97
 msgid "Please provide your billing information to complete the payment."
 msgstr "يرجى تقديم معلومات الفوترة الخاصة بك لإكمال الدفع."
 

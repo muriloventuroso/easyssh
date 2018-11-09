@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: weblate-website-ja\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2018-11-07 20:44+0100\n"
+"POT-Creation-Date: 2018-11-09 16:21+0100\n"
 "PO-Revision-Date: 2018-11-09 11:06+0000\n"
 "Last-Translator: Kyotaro Iijima <kyotaro.eyes@gmail.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/weblate/website/"
@@ -326,7 +326,9 @@ msgid "Donate to Weblate"
 msgstr "Weblate に寄付する"
 
 #: weblate_web/templates/donate.html:6
-msgid "Weblate is free, but welcomes donations."
+#, fuzzy
+#| msgid "Weblate is free, but welcomes donations."
+msgid "Weblate is provided free of charge, and welcomes donations."
 msgstr "Weblate は無料ですが、寄付を歓迎します。"
 
 #: weblate_web/templates/donate.html:12 weblate_web/templates/donate.html:43
@@ -351,9 +353,14 @@ msgid "Regular donations"
 msgstr "継続寄付"
 
 #: weblate_web/templates/donate.html:28
+#, fuzzy
+#| msgid ""
+#| "Regular donations allow sustainability of Weblate development and help to "
+#| "fund free hosting for free software. You don't have to spend big money, "
+#| "every penny counts."
 msgid ""
 "Regular donations allow sustainability of Weblate development and help to "
-"fund free hosting for free software. You don't have to spend big money, "
+"fund free hosting for libre software. You don't have to spend big money, "
 "every penny counts."
 msgstr ""
 "継続寄付によって、Weblate の開発を継続し、フリー ソフトウェア向けの無料ホス"
@@ -387,9 +394,13 @@ msgid "Fund features"
 msgstr "新機能に資金を出す"
 
 #: weblate_web/templates/donate.html:58
+#, fuzzy
+#| msgid ""
+#| "Bountysource allows you to fund individual features which are reported on "
+#| "our issue tracker."
 msgid ""
-"Bountysource allows you to fund individual features which are reported on "
-"our issue tracker."
+"Bountysource allows you to fund individual features reported on our issue "
+"tracker."
 msgstr ""
 "Bountysource を使用すると、問題追跡ツールに報告された個々の機能に資金を提供す"
 "ることができます。"
@@ -431,7 +442,9 @@ msgid "Currency"
 msgstr "通貨"
 
 #: weblate_web/templates/donate.html:88
-msgid "Donate address"
+#, fuzzy
+#| msgid "Donate address"
+msgid "Donation address"
 msgstr "寄付のアドレス"
 
 #: weblate_web/templates/download.html:4 weblate_web/templates/download.html:5
@@ -1174,19 +1187,19 @@ msgstr "Weblate を使用している人々を確認し、ご参加ください�
 msgid "Weblate payment"
 msgstr "Weblate のスクリーンショット"
 
-#: weblate_web/templates/payment/customer.html:14
+#: weblate_web/templates/payment/customer.html:15
 msgid "Your billing information"
 msgstr ""
 
-#: weblate_web/templates/payment/customer.html:20
+#: weblate_web/templates/payment/customer.html:21
 msgid "Save"
 msgstr "保存"
 
 #: weblate_web/templates/payment/payment.html:11
 #, fuzzy
-#| msgid "Please choose your payment method"
-msgid "Please choose your payment method."
-msgstr "支払い方法をお選びください"
+#| msgid "Payment amount"
+msgid "Payment summary"
+msgstr "支払い金額"
 
 #: weblate_web/templates/payment/payment.html:14
 msgid "Payment amount"
@@ -1233,6 +1246,12 @@ msgstr "課金情報"
 #: weblate_web/templates/payment/payment.html:34
 msgid "Edit"
 msgstr "編集"
+
+#: weblate_web/templates/payment/payment.html:47
+#, fuzzy
+#| msgid "Please choose your payment method"
+msgid "Please choose payment method:"
+msgstr "支払い方法をお選びください"
 
 #: weblate_web/templates/support.html:3 weblate_web/templates/support.html:4
 msgid "Weblate support"
@@ -1620,7 +1639,7 @@ msgstr "ソース tar 書庫、xz 圧縮"
 msgid "Sources, zip compressed"
 msgstr "ソース、zip 圧縮"
 
-#: weblate_web/views.py:78
+#: weblate_web/views.py:97
 msgid "Please provide your billing information to complete the payment."
 msgstr ""
 

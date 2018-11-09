@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2018-11-07 20:44+0100\n"
+"POT-Creation-Date: 2018-11-09 16:21+0100\n"
 "PO-Revision-Date: 2018-07-23 11:06+0000\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Bulgarian <https://hosted.weblate.org/projects/weblate/"
@@ -325,7 +325,9 @@ msgid "Donate to Weblate"
 msgstr "Дарете на Weblate"
 
 #: weblate_web/templates/donate.html:6
-msgid "Weblate is free, but welcomes donations."
+#, fuzzy
+#| msgid "Weblate is free, but welcomes donations."
+msgid "Weblate is provided free of charge, and welcomes donations."
 msgstr "Weblate е безплатна система, но приема дарения."
 
 #: weblate_web/templates/donate.html:12 weblate_web/templates/donate.html:43
@@ -351,9 +353,14 @@ msgid "Regular donations"
 msgstr "Периодични дарения"
 
 #: weblate_web/templates/donate.html:28
+#, fuzzy
+#| msgid ""
+#| "Regular donations allow sustainability of Weblate development and help to "
+#| "fund free hosting for free software. You don't have to spend big money, "
+#| "every penny counts."
 msgid ""
 "Regular donations allow sustainability of Weblate development and help to "
-"fund free hosting for free software. You don't have to spend big money, "
+"fund free hosting for libre software. You don't have to spend big money, "
 "every penny counts."
 msgstr ""
 "Периодичните дарения помагат за развитието на Weblate, както и за "
@@ -386,9 +393,13 @@ msgid "Fund features"
 msgstr "Финансирайте определени функционалности"
 
 #: weblate_web/templates/donate.html:58
+#, fuzzy
+#| msgid ""
+#| "Bountysource allows you to fund individual features which are reported on "
+#| "our issue tracker."
 msgid ""
-"Bountysource allows you to fund individual features which are reported on "
-"our issue tracker."
+"Bountysource allows you to fund individual features reported on our issue "
+"tracker."
 msgstr ""
 "Bountysource Ви позволява да финансирате определени функционалности, описани "
 "в системата ни за докладване на проблеми."
@@ -432,7 +443,7 @@ msgstr "Валута"
 #: weblate_web/templates/donate.html:88
 #, fuzzy
 #| msgid "Payment address"
-msgid "Donate address"
+msgid "Donation address"
 msgstr "Адрес за плащане"
 
 #: weblate_web/templates/download.html:4 weblate_web/templates/download.html:5
@@ -1198,17 +1209,19 @@ msgstr "Вижте кой използва Weblate и се присъедине�
 msgid "Weblate payment"
 msgstr "Екранна снимка на Weblate"
 
-#: weblate_web/templates/payment/customer.html:14
+#: weblate_web/templates/payment/customer.html:15
 msgid "Your billing information"
 msgstr ""
 
-#: weblate_web/templates/payment/customer.html:20
+#: weblate_web/templates/payment/customer.html:21
 msgid "Save"
 msgstr "Запазване"
 
 #: weblate_web/templates/payment/payment.html:11
-msgid "Please choose your payment method."
-msgstr ""
+#, fuzzy
+#| msgid "Payment link"
+msgid "Payment summary"
+msgstr "Връзка за плащане"
 
 #: weblate_web/templates/payment/payment.html:14
 #, fuzzy
@@ -1259,6 +1272,10 @@ msgstr ""
 #: weblate_web/templates/payment/payment.html:34
 msgid "Edit"
 msgstr "Редактиране"
+
+#: weblate_web/templates/payment/payment.html:47
+msgid "Please choose payment method:"
+msgstr ""
 
 #: weblate_web/templates/support.html:3 weblate_web/templates/support.html:4
 msgid "Weblate support"
@@ -1651,7 +1668,7 @@ msgstr "Архив с изходния код, компресиран чрез x
 msgid "Sources, zip compressed"
 msgstr "Файлове с изходния код, компресирани чрез zip"
 
-#: weblate_web/views.py:78
+#: weblate_web/views.py:97
 msgid "Please provide your billing information to complete the payment."
 msgstr ""
 

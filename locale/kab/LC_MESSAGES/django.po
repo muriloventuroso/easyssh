@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kabyle (Weblate)\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2018-11-07 20:44+0100\n"
+"POT-Creation-Date: 2018-11-09 16:21+0100\n"
 "PO-Revision-Date: 2018-07-23 11:06+0000\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Kabyle <https://hosted.weblate.org/projects/weblate/website/"
@@ -310,7 +310,9 @@ msgid "Donate to Weblate"
 msgstr "Mudd tawsa i Weblate"
 
 #: weblate_web/templates/donate.html:6
-msgid "Weblate is free, but welcomes donations."
+#, fuzzy
+#| msgid "Weblate is free, but welcomes donations."
+msgid "Weblate is provided free of charge, and welcomes donations."
 msgstr "Weblate baṭel acu kan nesra tawasa-nwen."
 
 #: weblate_web/templates/donate.html:12 weblate_web/templates/donate.html:43
@@ -336,9 +338,14 @@ msgid "Regular donations"
 msgstr "Tawsa n talugant"
 
 #: weblate_web/templates/donate.html:28
+#, fuzzy
+#| msgid ""
+#| "Regular donations allow sustainability of Weblate development and help to "
+#| "fund free hosting for free software. You don't have to spend big money, "
+#| "every penny counts."
 msgid ""
 "Regular donations allow sustainability of Weblate development and help to "
-"fund free hosting for free software. You don't have to spend big money, "
+"fund free hosting for libre software. You don't have to spend big money, "
 "every penny counts."
 msgstr ""
 "Tawsa n yal tikelt ad teḍmen tiddin i lebda n Weblate udiɣ ad teǧǧ tanezduɣt "
@@ -369,9 +376,13 @@ msgid "Fund features"
 msgstr "Mudd tadrimt i tmahilin"
 
 #: weblate_web/templates/donate.html:58
+#, fuzzy
+#| msgid ""
+#| "Bountysource allows you to fund individual features which are reported on "
+#| "our issue tracker."
 msgid ""
-"Bountysource allows you to fund individual features which are reported on "
-"our issue tracker."
+"Bountysource allows you to fund individual features reported on our issue "
+"tracker."
 msgstr ""
 "Bountysource ad k-yeǧǧ ad tesseftid timahilin i d-yettwammlen ɣef umsefrak-"
 "nneɣ n ibugen."
@@ -409,7 +420,7 @@ msgstr ""
 #: weblate_web/templates/donate.html:88
 #, fuzzy
 #| msgid "Donate"
-msgid "Donate address"
+msgid "Donation address"
 msgstr "Tawsa"
 
 #: weblate_web/templates/download.html:4 weblate_web/templates/download.html:5
@@ -1073,16 +1084,16 @@ msgstr ""
 msgid "Weblate payment"
 msgstr "Tuṭṭfa n ugdil n Weblate"
 
-#: weblate_web/templates/payment/customer.html:14
+#: weblate_web/templates/payment/customer.html:15
 msgid "Your billing information"
 msgstr ""
 
-#: weblate_web/templates/payment/customer.html:20
+#: weblate_web/templates/payment/customer.html:21
 msgid "Save"
 msgstr "Sekles"
 
 #: weblate_web/templates/payment/payment.html:11
-msgid "Please choose your payment method."
+msgid "Payment summary"
 msgstr ""
 
 #: weblate_web/templates/payment/payment.html:14
@@ -1128,6 +1139,10 @@ msgstr ""
 #: weblate_web/templates/payment/payment.html:34
 msgid "Edit"
 msgstr "Ẓreg"
+
+#: weblate_web/templates/payment/payment.html:47
+msgid "Please choose payment method:"
+msgstr ""
 
 #: weblate_web/templates/support.html:3 weblate_web/templates/support.html:4
 msgid "Weblate support"
@@ -1491,7 +1506,7 @@ msgstr "Iɣbula tarball, xz yettwaskussmen"
 msgid "Sources, zip compressed"
 msgstr "Iɣbula, zip yettwaskussmen"
 
-#: weblate_web/views.py:78
+#: weblate_web/views.py:97
 msgid "Please provide your billing information to complete the payment."
 msgstr ""
 

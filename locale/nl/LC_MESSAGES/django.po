@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2018-11-07 20:44+0100\n"
+"POT-Creation-Date: 2018-11-09 16:21+0100\n"
 "PO-Revision-Date: 2018-09-14 08:59+0000\n"
 "Last-Translator: Thomas De Rocker <thomasderocker@outlook.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/weblate/website/nl/"
@@ -321,7 +321,9 @@ msgid "Donate to Weblate"
 msgstr "Doneren aan Weblate"
 
 #: weblate_web/templates/donate.html:6
-msgid "Weblate is free, but welcomes donations."
+#, fuzzy
+#| msgid "Weblate is free, but welcomes donations."
+msgid "Weblate is provided free of charge, and welcomes donations."
 msgstr "Weblate is vrije software, maar donaties zijn altijd welkom."
 
 #: weblate_web/templates/donate.html:12 weblate_web/templates/donate.html:43
@@ -346,9 +348,14 @@ msgid "Regular donations"
 msgstr "Normale donaties"
 
 #: weblate_web/templates/donate.html:28
+#, fuzzy
+#| msgid ""
+#| "Regular donations allow sustainability of Weblate development and help to "
+#| "fund free hosting for free software. You don't have to spend big money, "
+#| "every penny counts."
 msgid ""
 "Regular donations allow sustainability of Weblate development and help to "
-"fund free hosting for free software. You don't have to spend big money, "
+"fund free hosting for libre software. You don't have to spend big money, "
 "every penny counts."
 msgstr ""
 "Regelmatige donaties zorgen voor duurzaamheid van de Weblate ontwikkeling en "
@@ -385,9 +392,13 @@ msgid "Fund features"
 msgstr "Sponsor functies"
 
 #: weblate_web/templates/donate.html:58
+#, fuzzy
+#| msgid ""
+#| "Bountysource allows you to fund individual features which are reported on "
+#| "our issue tracker."
 msgid ""
-"Bountysource allows you to fund individual features which are reported on "
-"our issue tracker."
+"Bountysource allows you to fund individual features reported on our issue "
+"tracker."
 msgstr ""
 "Met Bountysource kunt u individuele functies uit onze tracker bekostigen."
 
@@ -431,7 +442,7 @@ msgstr "Valuta"
 #: weblate_web/templates/donate.html:88
 #, fuzzy
 #| msgid "Payment address"
-msgid "Donate address"
+msgid "Donation address"
 msgstr "Betalingsadres"
 
 #: weblate_web/templates/download.html:4 weblate_web/templates/download.html:5
@@ -1188,17 +1199,19 @@ msgstr "Ontdek wie er reeds Weblate gebruikt en voeg u erbij!"
 msgid "Weblate payment"
 msgstr "Weblate-schermafdruk"
 
-#: weblate_web/templates/payment/customer.html:14
+#: weblate_web/templates/payment/customer.html:15
 msgid "Your billing information"
 msgstr ""
 
-#: weblate_web/templates/payment/customer.html:20
+#: weblate_web/templates/payment/customer.html:21
 msgid "Save"
 msgstr "Opslaan"
 
 #: weblate_web/templates/payment/payment.html:11
-msgid "Please choose your payment method."
-msgstr ""
+#, fuzzy
+#| msgid "Payment link"
+msgid "Payment summary"
+msgstr "Betalingslink"
 
 #: weblate_web/templates/payment/payment.html:14
 #, fuzzy
@@ -1249,6 +1262,10 @@ msgstr ""
 #: weblate_web/templates/payment/payment.html:34
 msgid "Edit"
 msgstr "Bewerken"
+
+#: weblate_web/templates/payment/payment.html:47
+msgid "Please choose payment method:"
+msgstr ""
 
 #: weblate_web/templates/support.html:3 weblate_web/templates/support.html:4
 msgid "Weblate support"
@@ -1639,7 +1656,7 @@ msgstr "Broncode-tarball, xz-gecomprimeerd"
 msgid "Sources, zip compressed"
 msgstr "Broncode, gezipt"
 
-#: weblate_web/views.py:78
+#: weblate_web/views.py:97
 msgid "Please provide your billing information to complete the payment."
 msgstr ""
 

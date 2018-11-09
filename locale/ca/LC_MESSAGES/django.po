@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2018-11-07 20:44+0100\n"
+"POT-Creation-Date: 2018-11-09 16:21+0100\n"
 "PO-Revision-Date: 2018-11-02 14:29+0000\n"
 "Last-Translator: Joan Montané <joan@montane.cat>\n"
 "Language-Team: Catalan <https://hosted.weblate.org/projects/weblate/website/"
@@ -331,7 +331,9 @@ msgid "Donate to Weblate"
 msgstr "Feu un donatiu al Weblate"
 
 #: weblate_web/templates/donate.html:6
-msgid "Weblate is free, but welcomes donations."
+#, fuzzy
+#| msgid "Weblate is free, but welcomes donations."
+msgid "Weblate is provided free of charge, and welcomes donations."
 msgstr "El Weblate és lliure,  però agraeix donatius."
 
 #: weblate_web/templates/donate.html:12 weblate_web/templates/donate.html:43
@@ -357,9 +359,14 @@ msgid "Regular donations"
 msgstr "Donacions periòdiques"
 
 #: weblate_web/templates/donate.html:28
+#, fuzzy
+#| msgid ""
+#| "Regular donations allow sustainability of Weblate development and help to "
+#| "fund free hosting for free software. You don't have to spend big money, "
+#| "every penny counts."
 msgid ""
 "Regular donations allow sustainability of Weblate development and help to "
-"fund free hosting for free software. You don't have to spend big money, "
+"fund free hosting for libre software. You don't have to spend big money, "
 "every penny counts."
 msgstr ""
 "Les donacions periòdiques permeten la sostenibilitat del desenvolupament del "
@@ -395,9 +402,13 @@ msgid "Fund features"
 msgstr "Financeu funcionalitats"
 
 #: weblate_web/templates/donate.html:58
+#, fuzzy
+#| msgid ""
+#| "Bountysource allows you to fund individual features which are reported on "
+#| "our issue tracker."
 msgid ""
-"Bountysource allows you to fund individual features which are reported on "
-"our issue tracker."
+"Bountysource allows you to fund individual features reported on our issue "
+"tracker."
 msgstr ""
 "Bountysource us permet finançar funcions concretes que han estat notificades "
 "al nostre registre d'incidències."
@@ -438,7 +449,9 @@ msgid "Currency"
 msgstr "Divisa"
 
 #: weblate_web/templates/donate.html:88
-msgid "Donate address"
+#, fuzzy
+#| msgid "Donate address"
+msgid "Donation address"
 msgstr "Adreça per a fer donatius"
 
 #: weblate_web/templates/download.html:4 weblate_web/templates/download.html:5
@@ -1188,19 +1201,19 @@ msgstr "Mireu qui està utilitzant el Weblate i uniu-vos-hi!"
 msgid "Weblate payment"
 msgstr "Pagament del Weblate"
 
-#: weblate_web/templates/payment/customer.html:14
+#: weblate_web/templates/payment/customer.html:15
 msgid "Your billing information"
 msgstr "Informació de la facturació"
 
-#: weblate_web/templates/payment/customer.html:20
+#: weblate_web/templates/payment/customer.html:21
 msgid "Save"
 msgstr "Desa"
 
 #: weblate_web/templates/payment/payment.html:11
 #, fuzzy
-#| msgid "Please choose your payment method"
-msgid "Please choose your payment method."
-msgstr "Trieu el mètode de pagament"
+#| msgid "Payment amount"
+msgid "Payment summary"
+msgstr "Quantitat de pagament"
 
 #: weblate_web/templates/payment/payment.html:14
 msgid "Payment amount"
@@ -1257,6 +1270,12 @@ msgstr "Informació de la facturació"
 #: weblate_web/templates/payment/payment.html:34
 msgid "Edit"
 msgstr "Edita"
+
+#: weblate_web/templates/payment/payment.html:47
+#, fuzzy
+#| msgid "Please choose your payment method"
+msgid "Please choose payment method:"
+msgstr "Trieu el mètode de pagament"
 
 #: weblate_web/templates/support.html:3 weblate_web/templates/support.html:4
 msgid "Weblate support"
@@ -1648,7 +1667,7 @@ msgstr "Codi font tarball, comprimit com a xz"
 msgid "Sources, zip compressed"
 msgstr "Codi font tarball, comprimit com a zip"
 
-#: weblate_web/views.py:78
+#: weblate_web/views.py:97
 msgid "Please provide your billing information to complete the payment."
 msgstr "Proporcioneu la informació de facturació per a completar el pagament."
 

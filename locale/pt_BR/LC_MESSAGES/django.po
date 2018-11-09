@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Weblate 1.2\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2018-11-07 20:44+0100\n"
+"POT-Creation-Date: 2018-11-09 16:21+0100\n"
 "PO-Revision-Date: 2018-11-08 08:25+0000\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
@@ -328,7 +328,9 @@ msgid "Donate to Weblate"
 msgstr "Doar para o Weblate"
 
 #: weblate_web/templates/donate.html:6
-msgid "Weblate is free, but welcomes donations."
+#, fuzzy
+#| msgid "Weblate is free, but welcomes donations."
+msgid "Weblate is provided free of charge, and welcomes donations."
 msgstr "O Weblate é gratuito, mas aceita doações."
 
 #: weblate_web/templates/donate.html:12 weblate_web/templates/donate.html:43
@@ -354,9 +356,14 @@ msgid "Regular donations"
 msgstr "Doações regulares"
 
 #: weblate_web/templates/donate.html:28
+#, fuzzy
+#| msgid ""
+#| "Regular donations allow sustainability of Weblate development and help to "
+#| "fund free hosting for free software. You don't have to spend big money, "
+#| "every penny counts."
 msgid ""
 "Regular donations allow sustainability of Weblate development and help to "
-"fund free hosting for free software. You don't have to spend big money, "
+"fund free hosting for libre software. You don't have to spend big money, "
 "every penny counts."
 msgstr ""
 "Doações regulares permitem a sustentabilidade do desenvolvimento do Weblate "
@@ -392,9 +399,13 @@ msgid "Fund features"
 msgstr "Doar recursos"
 
 #: weblate_web/templates/donate.html:58
+#, fuzzy
+#| msgid ""
+#| "Bountysource allows you to fund individual features which are reported on "
+#| "our issue tracker."
 msgid ""
-"Bountysource allows you to fund individual features which are reported on "
-"our issue tracker."
+"Bountysource allows you to fund individual features reported on our issue "
+"tracker."
 msgstr ""
 "O Bountysource permite que você doe recursos individuais que são relatadas "
 "no nosso rastreador de problemas."
@@ -436,7 +447,9 @@ msgid "Currency"
 msgstr "Moeda"
 
 #: weblate_web/templates/donate.html:88
-msgid "Donate address"
+#, fuzzy
+#| msgid "Donate address"
+msgid "Donation address"
 msgstr "Endereço de doação"
 
 #: weblate_web/templates/download.html:4 weblate_web/templates/download.html:5
@@ -1181,17 +1194,19 @@ msgstr "Veja quem está usando o Weblate e junte-se a eles!"
 msgid "Weblate payment"
 msgstr "Pagamento do Weblate"
 
-#: weblate_web/templates/payment/customer.html:14
+#: weblate_web/templates/payment/customer.html:15
 msgid "Your billing information"
 msgstr "Suas informações de faturamento"
 
-#: weblate_web/templates/payment/customer.html:20
+#: weblate_web/templates/payment/customer.html:21
 msgid "Save"
 msgstr "Salvar"
 
 #: weblate_web/templates/payment/payment.html:11
-msgid "Please choose your payment method."
-msgstr "Escolha seu método de pagamento."
+#, fuzzy
+#| msgid "Payment amount"
+msgid "Payment summary"
+msgstr "Quantia do pagamento"
 
 #: weblate_web/templates/payment/payment.html:14
 msgid "Payment amount"
@@ -1221,7 +1236,8 @@ msgstr "O pagamento será emitido anualmente até que você cancele a assinatura
 
 #: weblate_web/templates/payment/payment.html:24
 msgid "Payment will be issued monthly till you cancel the subscription."
-msgstr "O pagamento será emitido mensalmente até que você cancele a assinatura."
+msgstr ""
+"O pagamento será emitido mensalmente até que você cancele a assinatura."
 
 #: weblate_web/templates/payment/payment.html:29
 msgid ""
@@ -1238,6 +1254,12 @@ msgstr "Informações de faturamento"
 #: weblate_web/templates/payment/payment.html:34
 msgid "Edit"
 msgstr "Editar"
+
+#: weblate_web/templates/payment/payment.html:47
+#, fuzzy
+#| msgid "Please choose your payment method."
+msgid "Please choose payment method:"
+msgstr "Escolha seu método de pagamento."
 
 #: weblate_web/templates/support.html:3 weblate_web/templates/support.html:4
 msgid "Weblate support"
@@ -1628,7 +1650,7 @@ msgstr "Pacote tar de fontes, comprimido com xz"
 msgid "Sources, zip compressed"
 msgstr "Fontes, comprimidas com zip"
 
-#: weblate_web/views.py:78
+#: weblate_web/views.py:97
 msgid "Please provide your billing information to complete the payment."
 msgstr "Forneça suas informações de faturamento para completar o pagamento."
 
