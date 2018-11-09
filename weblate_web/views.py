@@ -19,19 +19,35 @@
 #
 
 from django.contrib import messages
+from django.core.exceptions import SuspiciousOperation
 from django.db import transaction
+from django.http import JsonResponse
 from django.shortcuts import redirect
 from django.urls import reverse
 from django.utils.translation import ugettext as _
 from django.views.generic.edit import FormView
+from django.views.decorators.http import require_POST
+
 from django.views.generic.detail import SingleObjectMixin
 
 from wlhosted.payments.backends import get_backend, list_backends
 
 from wlhosted.payments.models import Payment
 from wlhosted.payments.forms import CustomerForm
+from wlhosted.payments.validators import cache_vies_data
 
 from weblate_web.forms import MethodForm
+
+
+@require_POST
+def fetch_vat(request):
+    if 'payment' not in request.POST or 'vat' not in request.POST:
+        raise SuspiciousOperation('Missing needed parameters')
+    payment = Payment.objects.filter(pk=request.POST['payment'], state=Payment.NEW)
+    if not payment.exists():
+        raise SuspiciousOperation('Already processed payment')
+    vat = cache_vies_data(request.POST['vat'])
+    return JsonResponse(data=getattr(vat, 'vies_data', {'valid': False}))
 
 
 class PaymentView(FormView, SingleObjectMixin):

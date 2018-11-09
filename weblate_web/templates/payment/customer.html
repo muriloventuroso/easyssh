@@ -9,6 +9,7 @@
 
 <form method="post">
 {% csrf_token %}
+<input type="hidden" name="payment" value="{{ payment.pk }}">
 <div class="card m-4">
   <h5 class="card-header">
     {% trans "Your billing information" %}

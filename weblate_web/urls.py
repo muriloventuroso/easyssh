@@ -26,7 +26,7 @@ from django.contrib.sitemaps import Sitemap
 import django.contrib.sitemaps.views
 import django.views.static
 
-from weblate_web.views import PaymentView, CustomerView, CompleteView
+from weblate_web.views import PaymentView, CustomerView, CompleteView, fetch_vat
 
 
 class PagesSitemap(Sitemap):
@@ -190,6 +190,10 @@ urlpatterns = i18n_patterns(
         r'^sitemap\.xml$',
         django.contrib.sitemaps.views.sitemap,
         {'sitemaps': SITEMAPS}
+    ),
+    url(
+        r'^js/vat/$',
+        fetch_vat
     ),
 
     # Media files on devel server
