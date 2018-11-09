@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: weblate-web\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2018-11-09 16:21+0100\n"
-"PO-Revision-Date: 2018-11-08 15:07+0000\n"
+"PO-Revision-Date: 2018-11-09 16:21+0000\n"
 "Last-Translator: Igor <f2404@yandex.ru>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/weblate/website/"
 "ru/>\n"
@@ -16,8 +16,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 3.3-dev\n"
 "First-Translator: Dmitri GOULIAEV <dmitri+weblate@gouliaev.info>\n"
 
@@ -327,11 +327,8 @@ msgid "Donate to Weblate"
 msgstr "Помогите Weblate деньгами"
 
 #: weblate_web/templates/donate.html:6
-#, fuzzy
-#| msgid "Weblate is free, but welcomes donations."
 msgid "Weblate is provided free of charge, and welcomes donations."
-msgstr ""
-"Weblate — бесплатное программное обеспечение, но пожертвованиям мы рады."
+msgstr "Weblate предоставляется бесплатно, но пожертвованиям мы рады."
 
 #: weblate_web/templates/donate.html:12 weblate_web/templates/donate.html:43
 msgid "Donate using Liberapay"
@@ -355,11 +352,6 @@ msgid "Regular donations"
 msgstr "Регулярные пожертвования"
 
 #: weblate_web/templates/donate.html:28
-#, fuzzy
-#| msgid ""
-#| "Regular donations allow sustainability of Weblate development and help to "
-#| "fund free hosting for free software. You don't have to spend big money, "
-#| "every penny counts."
 msgid ""
 "Regular donations allow sustainability of Weblate development and help to "
 "fund free hosting for libre software. You don't have to spend big money, "
@@ -398,10 +390,6 @@ msgid "Fund features"
 msgstr "Финансируйте разработку"
 
 #: weblate_web/templates/donate.html:58
-#, fuzzy
-#| msgid ""
-#| "Bountysource allows you to fund individual features which are reported on "
-#| "our issue tracker."
 msgid ""
 "Bountysource allows you to fund individual features reported on our issue "
 "tracker."
@@ -446,8 +434,6 @@ msgid "Currency"
 msgstr "Валюта"
 
 #: weblate_web/templates/donate.html:88
-#, fuzzy
-#| msgid "Donate address"
 msgid "Donation address"
 msgstr "Адрес пожертвования"
 
@@ -1201,10 +1187,8 @@ msgid "Save"
 msgstr "Сохранить"
 
 #: weblate_web/templates/payment/payment.html:11
-#, fuzzy
-#| msgid "Payment amount"
 msgid "Payment summary"
-msgstr "Сумма платежа"
+msgstr "Сводка по платежам"
 
 #: weblate_web/templates/payment/payment.html:14
 msgid "Payment amount"
@@ -1253,10 +1237,8 @@ msgid "Edit"
 msgstr "Правка"
 
 #: weblate_web/templates/payment/payment.html:47
-#, fuzzy
-#| msgid "Please choose your payment method."
 msgid "Please choose payment method:"
-msgstr "Выберите метод платежа."
+msgstr "Выберите метод платежа:"
 
 #: weblate_web/templates/support.html:3 weblate_web/templates/support.html:4
 msgid "Weblate support"
