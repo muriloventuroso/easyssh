@@ -19,6 +19,7 @@ from weblate_web.templatetags.downloads import filesizeformat, downloadlink
 TEST_DATA = os.path.join(os.path.dirname(__file__), 'test-data')
 TEST_FAKTURACE = os.path.join(TEST_DATA, 'fakturace')
 
+
 class ViewTestCase(TestCase):
     '''
     Views testing.
