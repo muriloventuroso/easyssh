@@ -8,7 +8,7 @@
 
 <div class="card m-4">
   <h5 class="card-header">
-    {% trans "Please choose your payment method." %}
+    {% trans "Payment summary" %}
   </h5>
     <table class="table">
     <tr><th>{% trans "Payment amount" %}</th><td>
@@ -44,10 +44,11 @@
     </table>
   {% if can_pay %}
   <div class="card-footer text-muted">
+    {% trans "Please choose payment method:" %}
     <form method="POST">
       {% csrf_token %}
       {% for backend in backends %}
-      <button class="btn btn-link" type="submit" name="method" value="{{ backend.name }}"><img src="/media/payment/{{ backend.name }}.png"><br>{{ backend.verbose }}</button>
+      <button class="btn btn-default" type="submit" name="method" value="{{ backend.name }}"><img src="/media/payment/{{ backend.name }}.png"><br>{{ backend.verbose }}</button>
       {% endfor %}
     </form>
   </div>
