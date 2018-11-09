@@ -29,8 +29,9 @@ from django.views.generic.detail import SingleObjectMixin
 from wlhosted.payments.backends import get_backend, list_backends
 
 from wlhosted.payments.models import Payment
+from wlhosted.payments.forms import CustomerForm
 
-from weblate_web.forms import MethodForm, CustomerForm
+from weblate_web.forms import MethodForm
 
 
 class PaymentView(FormView, SingleObjectMixin):

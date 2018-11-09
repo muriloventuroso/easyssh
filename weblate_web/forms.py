@@ -22,8 +22,8 @@ from __future__ import unicode_literals
 
 from django import forms
 
+
 from wlhosted.payments.backends import list_backends
-from wlhosted.payments.models import Customer
 
 
 class MethodForm(forms.Form):
@@ -37,11 +37,3 @@ class MethodForm(forms.Form):
         self.fields['method'].choices = [
             (backend.name, backend.verbose) for backend in list_backends()
         ]
-
-
-class CustomerForm(forms.ModelForm):
-    class Meta:
-        model = Customer
-        fields = (
-            'vat', 'tax', 'name', 'address', 'city', 'country',
-        )
