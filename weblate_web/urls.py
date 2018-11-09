@@ -26,7 +26,9 @@ from django.contrib.sitemaps import Sitemap
 import django.contrib.sitemaps.views
 import django.views.static
 
-from weblate_web.views import PaymentView, CustomerView, CompleteView, fetch_vat
+from weblate_web.views import (
+    PaymentView, CustomerView, CompleteView, fetch_vat,
+)
 
 
 class PagesSitemap(Sitemap):

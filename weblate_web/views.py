@@ -43,7 +43,9 @@ from weblate_web.forms import MethodForm
 def fetch_vat(request):
     if 'payment' not in request.POST or 'vat' not in request.POST:
         raise SuspiciousOperation('Missing needed parameters')
-    payment = Payment.objects.filter(pk=request.POST['payment'], state=Payment.NEW)
+    payment = Payment.objects.filter(
+        pk=request.POST['payment'], state=Payment.NEW
+    )
     if not payment.exists():
         raise SuspiciousOperation('Already processed payment')
     vat = cache_vies_data(request.POST['vat'])
