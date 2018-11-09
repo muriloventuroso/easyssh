@@ -17,7 +17,7 @@ from weblate_web.data import VERSION, EXTENSIONS
 from weblate_web.templatetags.downloads import filesizeformat, downloadlink
 
 TEST_DATA = os.path.join(os.path.dirname(__file__), 'test-data')
-
+TEST_FAKTURACE = os.path.join(TEST_DATA, 'fakturace')
 
 class ViewTestCase(TestCase):
     '''
@@ -114,6 +114,14 @@ class UtilTestCase(TestCase):
 
 
 class PaymentsTest(TestCase):
+    def setUp(self):
+        super().setUp()
+        dirs = ('contacts', 'data', 'pdf', 'tex', 'config')
+        for name in dirs:
+            full = os.path.join(TEST_FAKTURACE, name)
+            if not os.path.exists(full):
+                os.makedirs(full)
+
     def test_languages(self):
         self.assertEqual(
             set(SUPPORTED_LANGUAGES),
@@ -165,7 +173,7 @@ class PaymentsTest(TestCase):
         fresh = Payment.objects.get(pk=payment.pk)
         self.assertEqual(fresh.state, state)
 
-    @override_settings(PAYMENT_DEBUG=True)
+    @override_settings(PAYMENT_DEBUG=True, PAYMENT_FAKTURACE=TEST_FAKTURACE)
     def test_pay(self):
         payment, url = self.test_view()
         response = self.client.post(url, {'method': 'pay'})
@@ -179,7 +187,7 @@ class PaymentsTest(TestCase):
         self.assertRedirects(response, '/en/?payment={}'.format(payment.pk))
         self.check_payment(payment, Payment.REJECTED)
 
-    @override_settings(PAYMENT_DEBUG=True)
+    @override_settings(PAYMENT_DEBUG=True, PAYMENT_FAKTURACE=TEST_FAKTURACE)
     def test_pending(self):
         payment, url = self.test_view()
         response = self.client.post(url, {'method': 'pending'})
