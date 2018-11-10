@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2018-11-09 17:22+0100\n"
-"PO-Revision-Date: 2018-11-01 08:47+0000\n"
+"PO-Revision-Date: 2018-11-11 12:14+0000\n"
 "Last-Translator: 송태섭 <xotjq237@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/weblate/website/"
 "ko/>\n"
@@ -315,10 +315,8 @@ msgid "Donate to Weblate"
 msgstr "Weblate에 기부하기"
 
 #: weblate_web/templates/donate.html:6
-#, fuzzy
-#| msgid "Weblate is free, but welcomes donations."
 msgid "Weblate is provided free of charge, and welcomes donations."
-msgstr "Weblate는 무료이지만, 기부금은 환영합니다."
+msgstr "Weblate는 무료로 제공되지만, 기부금은 환영합니다."
 
 #: weblate_web/templates/donate.html:12 weblate_web/templates/donate.html:43
 msgid "Donate using Liberapay"
@@ -342,18 +340,13 @@ msgid "Regular donations"
 msgstr "정기 기부"
 
 #: weblate_web/templates/donate.html:28
-#, fuzzy
-#| msgid ""
-#| "Regular donations allow sustainability of Weblate development and help to "
-#| "fund free hosting for free software. You don't have to spend big money, "
-#| "every penny counts."
 msgid ""
 "Regular donations allow sustainability of Weblate development and help to "
 "fund free hosting for libre software. You don't have to spend big money, "
 "every penny counts."
 msgstr ""
-"정기적으로 기부하시면 Weblate의 지속 가능한 개발과 자유 소프트웨어를 무료로 "
-"호스팅하는데 재정적 도움이 됩니다. 약간의 금액도 큰 도움이 됩니다."
+"정기적으로 기부하시면 Weblate의 지속 가능한 개발과 자유 소프트웨어를 무료로 호스팅하는데 재정적 도움이 됩니다. 약간의 금액도 큰 "
+"도움이 됩니다."
 
 #: weblate_web/templates/donate.html:33 weblate_web/templates/donate.html:54
 #: weblate_web/templates/thanks.html:12
@@ -382,15 +375,10 @@ msgid "Fund features"
 msgstr "재정 지원 기능"
 
 #: weblate_web/templates/donate.html:58
-#, fuzzy
-#| msgid ""
-#| "Bountysource allows you to fund individual features which are reported on "
-#| "our issue tracker."
 msgid ""
 "Bountysource allows you to fund individual features reported on our issue "
 "tracker."
-msgstr ""
-"Bountysource는 이슈 트래커에 보고된 개별 기능에 투자할 수 있도록 해줍니다."
+msgstr "Bountysource는 이슈 트래커에 보고된 개별 기능에 투자할 수 있도록 해줍니다."
 
 #: weblate_web/templates/donate.html:64
 msgid ""
@@ -428,8 +416,6 @@ msgid "Currency"
 msgstr "통화"
 
 #: weblate_web/templates/donate.html:88
-#, fuzzy
-#| msgid "Donate address"
 msgid "Donation address"
 msgstr "기부 주소"
 
@@ -444,10 +430,8 @@ msgstr "Weblate는 완전한 소스 코드와 함께 제공됩니다."
 
 #: weblate_web/templates/download.html:13 weblate_web/templates/hosting.html:12
 #: weblate_web/templates/hosting.html:236
-#, fuzzy
-#| msgid "Basic support for self hosted Weblate"
 msgid "Get support for Weblate"
-msgstr "자체 호스팅 Weblate를 위한 기본적인 지원"
+msgstr "Weblate에 대한 지원 받기"
 
 #: weblate_web/templates/download.html:21
 msgid "You can download latest release here:"
@@ -1024,7 +1008,7 @@ msgstr "추가 요금 %(price)s 1 1유로/1년, 연간 결제에서만 사용 �
 
 #: weblate_web/templates/hosting.html:179
 msgid "Monthly by PayPal"
-msgstr "PayPal을 사용하여 매월 지불"
+msgstr "PayPal을 사용하여 매월 결제"
 
 #: weblate_web/templates/hosting.html:181
 msgid "Contact us"
@@ -1093,7 +1077,7 @@ msgstr "자체 호스팅"
 
 #: weblate_web/templates/hosting.html:232
 msgid "There are also several options for deploying Weblate to the cloud."
-msgstr ""
+msgstr "Weblate를 클라우드에 배포하기 위한 몇 가지 옵션이 있습니다."
 
 #: weblate_web/templates/hosting.html:236
 msgid ""
@@ -1152,7 +1136,7 @@ msgstr "누가 Weblate를 사용하고 있는지 확인하고 동참하세요!"
 #: weblate_web/templates/payment/customer.html:5
 #: weblate_web/templates/payment/payment.html:4
 msgid "Weblate payment"
-msgstr "Weblate 지불"
+msgstr "Weblate 결제"
 
 #: weblate_web/templates/payment/customer.html:15
 msgid "Your billing information"
@@ -1163,10 +1147,8 @@ msgid "Save"
 msgstr "저장"
 
 #: weblate_web/templates/payment/payment.html:11
-#, fuzzy
-#| msgid "Payment amount"
 msgid "Payment summary"
-msgstr "결제 금액"
+msgstr "결제 개요"
 
 #: weblate_web/templates/payment/payment.html:14
 msgid "Payment amount"
@@ -1184,37 +1166,25 @@ msgstr "(VAT 포함)"
 
 #: weblate_web/templates/payment/payment.html:18
 msgid "Payment description"
-msgstr "지불 설명"
+msgstr "결제 설명"
 
 #: weblate_web/templates/payment/payment.html:20
-#, fuzzy
-#| msgid "Payment recurrence"
 msgid "Payment frequence"
-msgstr "지불 회기"
+msgstr "결제 빈도"
 
 #: weblate_web/templates/payment/payment.html:22
-#, fuzzy
-#| msgid "Payment will repeat every year until you cancel the subscription."
 msgid "Payment will be issued yearly till you cancel the subscription."
-msgstr "구독을 취소할 때까지 매 년 결제가 진행됩니다."
+msgstr "구독을 취소할 때까지 매 년 결제가 진행될 것입니다."
 
 #: weblate_web/templates/payment/payment.html:24
-#, fuzzy
-#| msgid "Payment will repeat every month until you cancel the subscription."
 msgid "Payment will be issued monthly till you cancel the subscription."
-msgstr "구독을 취소할 때까지 매 달 결제가 진행됩니다."
+msgstr "구독을 취소할 때까지 매 달 결제가 진행될 것입니다."
 
 #: weblate_web/templates/payment/payment.html:29
-#, fuzzy
-#| msgid ""
-#| "Note: This is not available for some payment methods, you will have to "
-#| "manually complete next payment in that case."
 msgid ""
 "Note: This is unavailable for some payment methods, you will have to "
 "manually complete the next payment in those cases."
-msgstr ""
-"참고: 일부 결제 수단에서는 사용할 수 없지만, 다음과 같은 경우에는 결제를 수동"
-"으로 마쳐야 합니다."
+msgstr "참고: 일부 결제 수단에서는 사용할 수 없지만, 다음과 같은 경우에는 결제를 수동으로 마쳐야 합니다."
 
 #: weblate_web/templates/payment/payment.html:32
 msgid "Billing information"
@@ -1225,10 +1195,8 @@ msgid "Edit"
 msgstr "편집"
 
 #: weblate_web/templates/payment/payment.html:47
-#, fuzzy
-#| msgid "Please choose your payment method"
 msgid "Please choose payment method:"
-msgstr "당신의 지불 방법을 선택해주세요"
+msgstr "결제 방법을 선택해주세요:"
 
 #: weblate_web/templates/support.html:3 weblate_web/templates/support.html:4
 msgid "Weblate support"
@@ -1445,10 +1413,8 @@ msgid "Terms of Service"
 msgstr "서비스 약관"
 
 #: weblate_web/templates/terms.html:6
-#, fuzzy
-#| msgid "The legal documents necessary to operate this service."
 msgid "The legal documents necessary to offer this service."
-msgstr "이 서비스를 운영하는 데 필요한 법적 서류."
+msgstr "이 서비스를 제공하는 데 필요한 법적 서류."
 
 #: weblate_web/templates/terms.html:20
 msgid "Privacy Policy"
@@ -1615,7 +1581,7 @@ msgstr "소스 코드는 zip으로 압축됨"
 
 #: weblate_web/views.py:97
 msgid "Please provide your billing information to complete the payment."
-msgstr "지불을 완료하려면 결제 정보를 입력하십시오."
+msgstr "결제을 완료하려면 결제 정보를 입력하십시오."
 
 #, fuzzy
 #~| msgid "Weblate is free software, you can run your own instance of it."
