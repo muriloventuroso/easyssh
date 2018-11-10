@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2018-11-09 17:22+0100\n"
-"PO-Revision-Date: 2018-11-01 08:47+0000\n"
+"PO-Revision-Date: 2018-11-11 12:14+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/weblate/website/"
 "he/>\n"
@@ -307,10 +307,8 @@ msgid "Donate to Weblate"
 msgstr "תרומה למיזם Weblate"
 
 #: weblate_web/templates/donate.html:6
-#, fuzzy
-#| msgid "Weblate is free, but welcomes donations."
 msgid "Weblate is provided free of charge, and welcomes donations."
-msgstr "Weblate מוגשת לציבור ללא תשלום אך שמחה לתרומות."
+msgstr "Weblate מוגשת לציבור בחינם ללא תשלום ושמחה לתרומות."
 
 #: weblate_web/templates/donate.html:12 weblate_web/templates/donate.html:43
 msgid "Donate using Liberapay"
@@ -334,18 +332,13 @@ msgid "Regular donations"
 msgstr "תרומות מחזוריות"
 
 #: weblate_web/templates/donate.html:28
-#, fuzzy
-#| msgid ""
-#| "Regular donations allow sustainability of Weblate development and help to "
-#| "fund free hosting for free software. You don't have to spend big money, "
-#| "every penny counts."
 msgid ""
 "Regular donations allow sustainability of Weblate development and help to "
 "fund free hosting for libre software. You don't have to spend big money, "
 "every penny counts."
 msgstr ""
-"תרומות רגילות מאפשרות תחזוקה ופיתוח של Weblate ועוזרות לממן אחסון חינמי עבור "
-"תכניות חינמיות. אין צורך לבזבז המון כסף, כל אגורה חשובה."
+"תרומות מתחדשות מאפשרות תחזוקה ופיתוח של Weblate ועוזרות לממן אחסון חינמי "
+"עבור תכניות חופשיות. אין צורך לבזבז המון כסף, כל אגורה חשובה."
 
 #: weblate_web/templates/donate.html:33 weblate_web/templates/donate.html:54
 #: weblate_web/templates/thanks.html:12
@@ -375,15 +368,10 @@ msgid "Fund features"
 msgstr "מימון תכונות"
 
 #: weblate_web/templates/donate.html:58
-#, fuzzy
-#| msgid ""
-#| "Bountysource allows you to fund individual features which are reported on "
-#| "our issue tracker."
 msgid ""
 "Bountysource allows you to fund individual features reported on our issue "
 "tracker."
-msgstr ""
-"עם Bountysource ניתן לממן תכונות בודדות המדווחות במערכת מעקב הנושאים שלנו."
+msgstr "עם Bountysource ניתן לממן תכונות בודדות ממערכת מעקב הנושאים שלנו."
 
 #: weblate_web/templates/donate.html:64
 msgid ""
@@ -419,8 +407,6 @@ msgid "Currency"
 msgstr "מטבע"
 
 #: weblate_web/templates/donate.html:88
-#, fuzzy
-#| msgid "Donate address"
 msgid "Donation address"
 msgstr "כתובת לתרומה"
 
@@ -435,10 +421,8 @@ msgstr "ל־Weblate מצורף קוד המקור המלא."
 
 #: weblate_web/templates/download.html:13 weblate_web/templates/hosting.html:12
 #: weblate_web/templates/hosting.html:236
-#, fuzzy
-#| msgid "Basic support for self hosted Weblate"
 msgid "Get support for Weblate"
-msgstr "תמיכה בסיסית ל־Weblate באירוח עצמי"
+msgstr "קבלת תמיכה ב־Weblate"
 
 #: weblate_web/templates/download.html:21
 msgid "You can download latest release here:"
@@ -1073,7 +1057,7 @@ msgstr "אירוח עצמי"
 
 #: weblate_web/templates/hosting.html:232
 msgid "There are also several options for deploying Weblate to the cloud."
-msgstr ""
+msgstr "ישנן מגוון אפשרויות להטמעת Weblate בענן."
 
 #: weblate_web/templates/hosting.html:236
 msgid ""
@@ -1144,10 +1128,8 @@ msgid "Save"
 msgstr "שמירה"
 
 #: weblate_web/templates/payment/payment.html:11
-#, fuzzy
-#| msgid "Payment amount"
 msgid "Payment summary"
-msgstr "סכום לתשלום"
+msgstr "סיכום התשלום"
 
 #: weblate_web/templates/payment/payment.html:14
 msgid "Payment amount"
@@ -1168,34 +1150,24 @@ msgid "Payment description"
 msgstr "תיאור התשלום"
 
 #: weblate_web/templates/payment/payment.html:20
-#, fuzzy
-#| msgid "Payment recurrence"
 msgid "Payment frequence"
-msgstr "תשלום חוזר"
+msgstr "תדירות תשלום"
 
 #: weblate_web/templates/payment/payment.html:22
-#, fuzzy
-#| msgid "Payment will repeat every year until you cancel the subscription."
 msgid "Payment will be issued yearly till you cancel the subscription."
 msgstr "התשלום ייגבה מחדש בכל שנה עד לביטול המינוי."
 
 #: weblate_web/templates/payment/payment.html:24
-#, fuzzy
-#| msgid "Payment will repeat every month until you cancel the subscription."
 msgid "Payment will be issued monthly till you cancel the subscription."
 msgstr "התשלום ייגבה מחדש בכל חודש עד לביטול המינוי."
 
 #: weblate_web/templates/payment/payment.html:29
-#, fuzzy
-#| msgid ""
-#| "Note: This is not available for some payment methods, you will have to "
-#| "manually complete next payment in that case."
 msgid ""
 "Note: This is unavailable for some payment methods, you will have to "
 "manually complete the next payment in those cases."
 msgstr ""
 "לתשומת לבך: הגדרה זו אינה זמינה לחלק משיטות התשלום, יהיה עליך להשלים את "
-"התשלום הבא באופן ידני במקרה שכזה."
+"התשלום הבא באופן ידני במקרים שכאלו."
 
 #: weblate_web/templates/payment/payment.html:32
 msgid "Billing information"
@@ -1206,10 +1178,8 @@ msgid "Edit"
 msgstr "עריכה"
 
 #: weblate_web/templates/payment/payment.html:47
-#, fuzzy
-#| msgid "Please choose your payment method"
 msgid "Please choose payment method:"
-msgstr "נא לבחור שיטת חיוב"
+msgstr "נא לבחור שיטת תשלום:"
 
 #: weblate_web/templates/support.html:3 weblate_web/templates/support.html:4
 msgid "Weblate support"
@@ -1419,10 +1389,8 @@ msgid "Terms of Service"
 msgstr "תנאי השירות"
 
 #: weblate_web/templates/terms.html:6
-#, fuzzy
-#| msgid "The legal documents necessary to operate this service."
 msgid "The legal documents necessary to offer this service."
-msgstr "המסמכים המשפטיים הנחוצים לתפעול שירות זה."
+msgstr "המסמכים המשפטיים הנחוצים להגשת שירות זה."
 
 #: weblate_web/templates/terms.html:20
 msgid "Privacy Policy"
