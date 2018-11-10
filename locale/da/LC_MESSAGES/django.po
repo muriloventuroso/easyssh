@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2018-11-09 17:22+0100\n"
-"PO-Revision-Date: 2018-11-01 08:47+0000\n"
+"PO-Revision-Date: 2018-11-11 12:14+0000\n"
 "Last-Translator: scootergrisen <scootergrisen@gmail.com>\n"
 "Language-Team: Danish <https://hosted.weblate.org/projects/weblate/website/"
 "da/>\n"
@@ -324,10 +324,8 @@ msgid "Donate to Weblate"
 msgstr "Donér til Weblate"
 
 #: weblate_web/templates/donate.html:6
-#, fuzzy
-#| msgid "Weblate is free, but welcomes donations."
 msgid "Weblate is provided free of charge, and welcomes donations."
-msgstr "Weblate er gratis, men donationer er altid velkomne."
+msgstr "Weblate leveres gratis, og donationer er altid velkomne."
 
 #: weblate_web/templates/donate.html:12 weblate_web/templates/donate.html:43
 msgid "Donate using Liberapay"
@@ -351,18 +349,13 @@ msgid "Regular donations"
 msgstr "Regelmæssig donationer"
 
 #: weblate_web/templates/donate.html:28
-#, fuzzy
-#| msgid ""
-#| "Regular donations allow sustainability of Weblate development and help to "
-#| "fund free hosting for free software. You don't have to spend big money, "
-#| "every penny counts."
 msgid ""
 "Regular donations allow sustainability of Weblate development and help to "
 "fund free hosting for libre software. You don't have to spend big money, "
 "every penny counts."
 msgstr ""
-"Regelmæssig donationer bidrager til udviklingen af Weblate og hjælper til at "
-"finansiere gratis hosting af fri software. Du behøver ikke at bruge store "
+"Regelmæssige donationer bidrager til udviklingen af Weblate og hjælper til "
+"at finansiere gratis hosting af fri software. Du behøver ikke at bruge store "
 "beløb, hver en krone tæller."
 
 #: weblate_web/templates/donate.html:33 weblate_web/templates/donate.html:54
@@ -393,16 +386,12 @@ msgid "Fund features"
 msgstr "Sponsor funktioner"
 
 #: weblate_web/templates/donate.html:58
-#, fuzzy
-#| msgid ""
-#| "Bountysource allows you to fund individual features which are reported on "
-#| "our issue tracker."
 msgid ""
 "Bountysource allows you to fund individual features reported on our issue "
 "tracker."
 msgstr ""
-"Med Bountysource kan du finansiere individuelle funktioner, der rapporteres "
-"i vores \"issue tracker\"."
+"Med Bountysource kan du finansiere individuelle funktioner, der er "
+"rapporteret i vores \"issue tracker\"."
 
 #: weblate_web/templates/donate.html:64
 msgid ""
@@ -440,8 +429,6 @@ msgid "Currency"
 msgstr "Valuta"
 
 #: weblate_web/templates/donate.html:88
-#, fuzzy
-#| msgid "Donate address"
 msgid "Donation address"
 msgstr "Donationsadresse"
 
@@ -456,10 +443,8 @@ msgstr "Weblate fås med komplet kildekode."
 
 #: weblate_web/templates/download.html:13 weblate_web/templates/hosting.html:12
 #: weblate_web/templates/hosting.html:236
-#, fuzzy
-#| msgid "Basic support for self hosted Weblate"
 msgid "Get support for Weblate"
-msgstr "Grundlæggende support til selvhostede Weblate"
+msgstr "Få support til Weblate"
 
 #: weblate_web/templates/download.html:21
 msgid "You can download latest release here:"
@@ -906,9 +891,9 @@ msgid ""
 "\">get in touch with us</a>."
 msgstr ""
 "Vi kan være vært for oversættelser af kommercielle eller fri software-"
-"projekter. Du kan se en oversigt over hostingplaner nedenfor. Hvis du har "
-"spørgsmål eller leder efter hosting af større projekter, så tøv ikke med at "
-"<a href=\"%(contact)s\">kontakte os</a>."
+"projekter. Du kan se et sammendrag over hostingplaner nedenfor. Hvis du har "
+"spørgsmål eller leder efter hosting af større projekter, så tøv ikke med at <"
+"a href=\"%(contact)s\">kontakte os</a>."
 
 #: weblate_web/templates/hosting.html:32
 msgctxt "Hosting plan"
@@ -1118,7 +1103,7 @@ msgstr "Egen hosting"
 
 #: weblate_web/templates/hosting.html:232
 msgid "There are also several options for deploying Weblate to the cloud."
-msgstr ""
+msgstr "Der er også flere valgmuligheder til at udsende Weblate i skyen."
 
 #: weblate_web/templates/hosting.html:236
 msgid ""
@@ -1190,10 +1175,8 @@ msgid "Save"
 msgstr "Gem"
 
 #: weblate_web/templates/payment/payment.html:11
-#, fuzzy
-#| msgid "Payment amount"
 msgid "Payment summary"
-msgstr "Betalingsbeløb"
+msgstr "Betalingssammendrag"
 
 #: weblate_web/templates/payment/payment.html:14
 msgid "Payment amount"
@@ -1214,10 +1197,8 @@ msgid "Payment description"
 msgstr "Betalingsbeskrivelse"
 
 #: weblate_web/templates/payment/payment.html:20
-#, fuzzy
-#| msgid "Payment recurrence"
 msgid "Payment frequence"
-msgstr "Betalingsgentagelse"
+msgstr "Betalingshyppighed"
 
 #: weblate_web/templates/payment/payment.html:22
 #, fuzzy
@@ -1252,10 +1233,8 @@ msgid "Edit"
 msgstr "Rediger"
 
 #: weblate_web/templates/payment/payment.html:47
-#, fuzzy
-#| msgid "Please choose your payment method"
 msgid "Please choose payment method:"
-msgstr "Vælg venligst din betalingsmetode"
+msgstr "Vælg venligst betalingsmetode:"
 
 #: weblate_web/templates/support.html:3 weblate_web/templates/support.html:4
 msgid "Weblate support"
@@ -1469,10 +1448,9 @@ msgid "Terms of Service"
 msgstr "Vilkår for tjeneste"
 
 #: weblate_web/templates/terms.html:6
-#, fuzzy
-#| msgid "The legal documents necessary to operate this service."
 msgid "The legal documents necessary to offer this service."
-msgstr "De juridiske dokumenter som er nødvendige for at køre tjenesten."
+msgstr ""
+"De juridiske dokumenter som er nødvendige for at kunne tilbyde tjenesten."
 
 #: weblate_web/templates/terms.html:20
 msgid "Privacy Policy"
