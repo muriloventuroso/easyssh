@@ -1,15 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# MESUT AKCAN <makcan@gmail.com>, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2018-11-09 17:22+0100\n"
-"PO-Revision-Date: 2018-06-26 20:05+0000\n"
-"Last-Translator: monolifed <monolifed@gmail.com>\n"
+"PO-Revision-Date: 2018-11-11 12:14+0000\n"
+"Last-Translator: MESUT AKCAN <makcan@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/weblate/website/"
 "tr/>\n"
 "Language: tr\n"
@@ -17,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.1-dev\n"
+"X-Generator: Weblate 3.3-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -219,7 +218,7 @@ msgstr "İndir"
 
 #: weblate_web/templates/base.html:54
 msgid "Pricing"
-msgstr ""
+msgstr "Fiyatlandırma"
 
 #: weblate_web/templates/base.html:55
 msgid "Develop"
@@ -255,7 +254,7 @@ msgstr "Çevirilerle yardım edin!"
 
 #: weblate_web/templates/base.html:117 weblate_web/templates/terms.html:4
 msgid "Terms of Service and Privacy Policy"
-msgstr ""
+msgstr "Hizmet şartları ve gizlilik politikası"
 
 #: weblate_web/templates/contribute.html:3
 #: weblate_web/templates/contribute.html:4
@@ -322,10 +321,8 @@ msgid "Donate to Weblate"
 msgstr "Weblate'e Bağış Yapın"
 
 #: weblate_web/templates/donate.html:6
-#, fuzzy
-#| msgid "Weblate is free, but welcomes donations."
 msgid "Weblate is provided free of charge, and welcomes donations."
-msgstr "Weblate ücretsizdir, fakat bağışlarınızı bekliyoruz."
+msgstr "Weblate ücretsiz olarak sağlanır ve bağışları kabul eder."
 
 #: weblate_web/templates/donate.html:12 weblate_web/templates/donate.html:43
 msgid "Donate using Liberapay"
@@ -350,19 +347,14 @@ msgid "Regular donations"
 msgstr "Düzenli bağışlar"
 
 #: weblate_web/templates/donate.html:28
-#, fuzzy
-#| msgid ""
-#| "Regular donations allow sustainability of Weblate development and help to "
-#| "fund free hosting for free software. You don't have to spend big money, "
-#| "every penny counts."
 msgid ""
 "Regular donations allow sustainability of Weblate development and help to "
 "fund free hosting for libre software. You don't have to spend big money, "
 "every penny counts."
 msgstr ""
-"Düzenli bağışlar Weblate geliştirilmesinin sürdürülebilirliğine olanak "
-"sağlar ve özgür yazılım için parasız barındırmaya yardımcı olur. Büyük para "
-"harcamak zorunda değilsiniz, her kuruş sayılır."
+"Düzenli bağışlar Weblate'i geliştirmenin devamını sağlar ve ücretsiz "
+"yazılımlar için bedava hosting hizmetine yardımcı olur. Çok para vermenize "
+"gerek yok, her kuruş kabul edilir."
 
 #: weblate_web/templates/donate.html:33 weblate_web/templates/donate.html:54
 #: weblate_web/templates/thanks.html:12
@@ -393,16 +385,12 @@ msgid "Fund features"
 msgstr "Fon özellikleri"
 
 #: weblate_web/templates/donate.html:58
-#, fuzzy
-#| msgid ""
-#| "Bountysource allows you to fund individual features which are reported on "
-#| "our issue tracker."
 msgid ""
 "Bountysource allows you to fund individual features reported on our issue "
 "tracker."
 msgstr ""
-"Bountysource, sorun izleyicimize bildirilen bireysel özelliklere yatırım "
-"yapmanıza izin verir."
+"Bountysource, sorun izleyicimizde bildirilen belirli özellikleri finanse "
+"etmenizi sağlar."
 
 #: weblate_web/templates/donate.html:64
 msgid ""
@@ -442,10 +430,8 @@ msgid "Currency"
 msgstr "Para birimi"
 
 #: weblate_web/templates/donate.html:88
-#, fuzzy
-#| msgid "Payment address"
 msgid "Donation address"
-msgstr "Ödeme adresi"
+msgstr "Bağış adresi"
 
 #: weblate_web/templates/download.html:4 weblate_web/templates/download.html:5
 #: weblate_web/templates/hosting.html:237
@@ -458,10 +444,8 @@ msgstr "Weblate tam kaynak kodu ile gelir."
 
 #: weblate_web/templates/download.html:13 weblate_web/templates/hosting.html:12
 #: weblate_web/templates/hosting.html:236
-#, fuzzy
-#| msgid "Basic support for self hosted Weblate"
 msgid "Get support for Weblate"
-msgstr "Kendinizin barındırdığı Weblate için temel destek"
+msgstr "Weblate için destek alın"
 
 #: weblate_web/templates/download.html:21
 msgid "You can download latest release here:"
@@ -693,14 +677,12 @@ msgstr ""
 
 #: weblate_web/templates/hosting-free.html:3
 #: weblate_web/templates/hosting-free.html:4
-#, fuzzy
-#| msgid "Hosting Weblate"
 msgid "Free hosting on Weblate"
-msgstr "Weblate Barındırma"
+msgstr "Weblate'de ücretsiz hosting"
 
 #: weblate_web/templates/hosting-free.html:6
 msgid "We love open source and we offer free plans for hosting translations."
-msgstr ""
+msgstr "Açık kaynağı seviyoruz ve çeviriler için ücretsiz planlar sunuyoruz."
 
 #: weblate_web/templates/hosting-free.html:11
 #: weblate_web/templates/hosting.html:11
@@ -1122,7 +1104,7 @@ msgstr "Kendinden barındırma"
 
 #: weblate_web/templates/hosting.html:232
 msgid "There are also several options for deploying Weblate to the cloud."
-msgstr ""
+msgstr "Weblate'i buluta dağıtmak için çeşitli seçenekler de vardır."
 
 #: weblate_web/templates/hosting.html:236
 #, fuzzy
