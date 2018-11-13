@@ -8,7 +8,7 @@
 
 {% block extrajumbo %}
 <p>
-<a class="btn btn-info btn-lg" href="https://hosted.weblate.org/hosting/" role="button"><i class="fas fa-comment"></i> {% trans "Ask for hosting" %}</a>
+<a class="btn btn-info btn-lg" href="https://hosted.weblate.org/create/billing/" role="button"><i class="fas fa-server"></i> {% trans "Order hosting" %}</a>
 <a class="btn btn-info btn-lg" href="{% url 'support' %}"><i class="fas fa-life-ring"></i> {% trans "Get support for Weblate" %}</a>
 </p>
 {% endblock %}
@@ -176,37 +176,37 @@
     </tbody>
     <tfoot>
       <tr>
-        <th>{% trans "Monthly by PayPal" %}</th>
+        <th>{% trans "Monthly" %}</th>
         <td class="price" rowspan="2">
         <a class="btn btn-info" href="{% url "hosting-free" %}">{% trans "Contact us" %}</a>
         </td>
         <td class="price">
-        <a class="btn btn-info" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MVE9238MMLK64">{% blocktrans with 19 as price %}{{ price }} EUR / month{% endblocktrans %}</a>
+        <a class="btn btn-info" href="https://hosted.weblate.org/create/billing/?plan=2">{% blocktrans with 19 as price %}{{ price }} EUR / month{% endblocktrans %}</a>
         </td>
         <td class="price">
-        <a class="btn btn-info" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WZSBJGCHMWMRJ">{% blocktrans with 49 as price %}{{ price }} EUR / month{% endblocktrans %}</a>
+        <a class="btn btn-info" href="https://hosted.weblate.org/create/billing/?plan=3">{% blocktrans with 49 as price %}{{ price }} EUR / month{% endblocktrans %}</a>
         </td>
         <td class="price">
-        <a class="btn btn-info" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=HBWC2UJ6URGWQ">{% blocktrans with 99 as price %}{{ price }} EUR / month{% endblocktrans %}</a>
+        <a class="btn btn-info" href="https://hosted.weblate.org/create/billing/?plan=4">{% blocktrans with 99 as price %}{{ price }} EUR / month{% endblocktrans %}</a>
         </td>
         <td class="price">
-        <a class="btn btn-info" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=S37AJJ4R2HRLN">{% blocktrans with 299 as price %}{{ price }} EUR / month{% endblocktrans %}</a>
+        <a class="btn btn-info" href="https://hosted.weblate.org/create/billing/?plan=5">{% blocktrans with 299 as price %}{{ price }} EUR / month{% endblocktrans %}</a>
         </td>
         <td rowspan="2"><a href="{% url "support" %}">{% trans "See below for options" %}</a></td>
       </tr>
       <tr>
-        <th>{% trans "Yearly by invoice (save 15-20%)" %}</th>
+        <th>{% trans "Yearly (save 15-20%)" %}</th>
         <td class="price">
-        <a class="btn btn-info" title="{% trans "Ask us for yearly invoicing with discount." %}" href="mailto:michal@cihar.com?subject=Weblate hosting invoice (Basic)">{% blocktrans with 199 as price %}{{ price }} EUR / year{% endblocktrans %}</a>
+        <a class="btn btn-info" href="https://hosted.weblate.org/create/billing/?plan=2">{% blocktrans with 199 as price %}{{ price }} EUR / year{% endblocktrans %}</a>
         </td>
         <td class="price">
-        <a class="btn btn-info" title="{% trans "Ask us for yearly invoicing with discount." %}" href="mailto:michal@cihar.com?subject=Weblate hosting invoice (Medium)">{% blocktrans with 499 as price %}{{ price }} EUR / year{% endblocktrans %}</a>
+        <a class="btn btn-info" href="https://hosted.weblate.org/create/billing/?plan=3">{% blocktrans with 499 as price %}{{ price }} EUR / year{% endblocktrans %}</a>
         </td>
         <td class="price">
-        <a class="btn btn-info" title="{% trans "Ask us for yearly invoicing with discount." %}" href="mailto:michal@cihar.com?subject=Weblate hosting invoice (Advanced)">{% blocktrans with 999 as price %}{{ price }} EUR / year{% endblocktrans %}</a>
+        <a class="btn btn-info" href="https://hosted.weblate.org/create/billing/?plan=4">{% blocktrans with 999 as price %}{{ price }} EUR / year{% endblocktrans %}</a>
         </td>
         <td class="price">
-        <a class="btn btn-info" title="{% trans "Ask us for yearly invoicing with discount." %}" href="mailto:michal@cihar.com?subject=Weblate hosting invoice (Enterprise)">{% blocktrans with 2999 as price %}{{ price }} EUR / year{% endblocktrans %}</a>
+        <a class="btn btn-info" href="https://hosted.weblate.org/create/billing/?plan=5">{% blocktrans with 2999 as price %}{{ price }} EUR / year{% endblocktrans %}</a>
         </td>
       </tr>
     </tfoot>
@@ -214,10 +214,6 @@
 
 <p>
 {% trans "The pricing is based on number of source strings and number of target languages. The source string is a text unit defined in a translation format, it can be word, sentence or a paragraph." %}
-</p>
-
-<p>
-{% trans "The hosting setup is currently done manually, so you might want to get in touch with us prior to making subscription with your project details." %}
 </p>
 
 <p>
