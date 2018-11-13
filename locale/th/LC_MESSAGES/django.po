@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2018-11-09 17:22+0100\n"
+"POT-Creation-Date: 2018-11-13 15:42+0100\n"
 "PO-Revision-Date: 2016-01-14 15:12+0000\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Thai <https://hosted.weblate.org/projects/weblate/website/th/"
@@ -175,7 +175,7 @@ msgid "Free software"
 msgstr ""
 
 #: weblate_web/templates/base-features.html:47
-#: weblate_web/templates/hosting.html:230
+#: weblate_web/templates/hosting.html:228
 msgid "Weblate is free software, you can run your own instance of it."
 msgstr ""
 
@@ -392,7 +392,7 @@ msgid "Donation address"
 msgstr "บริจาค"
 
 #: weblate_web/templates/download.html:4 weblate_web/templates/download.html:5
-#: weblate_web/templates/hosting.html:237
+#: weblate_web/templates/hosting.html:235
 msgid "Download Weblate"
 msgstr ""
 
@@ -401,7 +401,7 @@ msgid "Weblate comes with complete source code."
 msgstr ""
 
 #: weblate_web/templates/download.html:13 weblate_web/templates/hosting.html:12
-#: weblate_web/templates/hosting.html:236
+#: weblate_web/templates/hosting.html:234
 msgid "Get support for Weblate"
 msgstr ""
 
@@ -615,7 +615,6 @@ msgid "We love open source and we offer free plans for hosting translations."
 msgstr ""
 
 #: weblate_web/templates/hosting-free.html:11
-#: weblate_web/templates/hosting.html:11
 msgid "Ask for hosting"
 msgstr ""
 
@@ -766,6 +765,10 @@ msgstr ""
 
 #: weblate_web/templates/hosting.html:6
 msgid "Use Weblate as a service or get support for on-premises hosting."
+msgstr ""
+
+#: weblate_web/templates/hosting.html:11
+msgid "Order hosting"
 msgstr ""
 
 #: weblate_web/templates/hosting.html:21
@@ -919,7 +922,7 @@ msgid ""
 msgstr ""
 
 #: weblate_web/templates/hosting.html:179
-msgid "Monthly by PayPal"
+msgid "Monthly"
 msgstr ""
 
 #: weblate_web/templates/hosting.html:181
@@ -934,58 +937,45 @@ msgstr ""
 msgid "%(price)s EUR / month"
 msgstr ""
 
-#: weblate_web/templates/hosting.html:195
-msgid "See below for options"
+#: weblate_web/templates/hosting.html:196
+msgid "View support options"
 msgstr ""
 
-#: weblate_web/templates/hosting.html:198
+#: weblate_web/templates/hosting.html:200
 #, python-format
-msgid "Yearly by invoice (save 15-20%%)"
+msgid "Yearly (save 15-20%%)"
 msgstr ""
 
-#: weblate_web/templates/hosting.html:200
-#: weblate_web/templates/hosting.html:203
-#: weblate_web/templates/hosting.html:206
-#: weblate_web/templates/hosting.html:209
-msgid "Ask us for yearly invoicing with discount."
-msgstr ""
-
-#: weblate_web/templates/hosting.html:200
-#: weblate_web/templates/hosting.html:203
-#: weblate_web/templates/hosting.html:206
-#: weblate_web/templates/hosting.html:209 weblate_web/templates/support.html:69
+#: weblate_web/templates/hosting.html:202
+#: weblate_web/templates/hosting.html:205
+#: weblate_web/templates/hosting.html:208
+#: weblate_web/templates/hosting.html:211 weblate_web/templates/support.html:69
 #, python-format
 msgid "%(price)s EUR / year"
 msgstr ""
 
-#: weblate_web/templates/hosting.html:216
+#: weblate_web/templates/hosting.html:218
 msgid ""
 "The pricing is based on number of source strings and number of target "
 "languages. The source string is a text unit defined in a translation format, "
 "it can be word, sentence or a paragraph."
 msgstr ""
 
-#: weblate_web/templates/hosting.html:220
-msgid ""
-"The hosting setup is currently done manually, so you might want to get in "
-"touch with us prior to making subscription with your project details."
-msgstr ""
-
-#: weblate_web/templates/hosting.html:224
+#: weblate_web/templates/hosting.html:222
 msgid ""
 "Alternatively we can accept payments by wire transfer (preferably IBAN) or "
 "Bitcoin. Please get in touch for more details."
 msgstr ""
 
-#: weblate_web/templates/hosting.html:227
+#: weblate_web/templates/hosting.html:225
 msgid "Self hosting"
 msgstr ""
 
-#: weblate_web/templates/hosting.html:232
+#: weblate_web/templates/hosting.html:230
 msgid "There are also several options for deploying Weblate to the cloud."
 msgstr ""
 
-#: weblate_web/templates/hosting.html:236
+#: weblate_web/templates/hosting.html:234
 msgid ""
 "In case you need help with your self hosted solution, we're ready to help as "
 "well with consulting services tailored for your needs."

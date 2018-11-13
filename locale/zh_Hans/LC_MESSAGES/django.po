@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2018-11-09 17:22+0100\n"
+"POT-Creation-Date: 2018-11-13 15:42+0100\n"
 "PO-Revision-Date: 2018-11-01 08:47+0000\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
@@ -175,7 +175,7 @@ msgid "Free software"
 msgstr "自由软件"
 
 #: weblate_web/templates/base-features.html:47
-#: weblate_web/templates/hosting.html:230
+#: weblate_web/templates/hosting.html:228
 msgid "Weblate is free software, you can run your own instance of it."
 msgstr "Weblate 是一款自由软件，您可以运行您自己的实例。"
 
@@ -417,7 +417,7 @@ msgid "Donation address"
 msgstr "付款地址"
 
 #: weblate_web/templates/download.html:4 weblate_web/templates/download.html:5
-#: weblate_web/templates/hosting.html:237
+#: weblate_web/templates/hosting.html:235
 msgid "Download Weblate"
 msgstr "下载 Weblate"
 
@@ -426,7 +426,7 @@ msgid "Weblate comes with complete source code."
 msgstr "Weblate 提供完整的源代码。"
 
 #: weblate_web/templates/download.html:13 weblate_web/templates/hosting.html:12
-#: weblate_web/templates/hosting.html:236
+#: weblate_web/templates/hosting.html:234
 #, fuzzy
 #| msgid "Basic support for self hosted Weblate"
 msgid "Get support for Weblate"
@@ -645,7 +645,6 @@ msgid "We love open source and we offer free plans for hosting translations."
 msgstr "我们喜爱开源，我们也提供免费的翻译托管方案。"
 
 #: weblate_web/templates/hosting-free.html:11
-#: weblate_web/templates/hosting.html:11
 msgid "Ask for hosting"
 msgstr "申请托管"
 
@@ -823,6 +822,12 @@ msgstr ""
 msgid "Use Weblate as a service or get support for on-premises hosting."
 msgstr "以服务方式使用 Weblate，或获取有条件托管的服务支持。"
 
+#: weblate_web/templates/hosting.html:11
+#, fuzzy
+#| msgid "Self hosting"
+msgid "Order hosting"
+msgstr "自行托管"
+
 #: weblate_web/templates/hosting.html:21
 msgid ""
 "Hosted Weblate allows you to use Weblate without any effort and with premium "
@@ -976,8 +981,8 @@ msgid ""
 msgstr "附加费用 %(price)s 欧元/年，仅在年度账单中出现"
 
 #: weblate_web/templates/hosting.html:179
-msgid "Monthly by PayPal"
-msgstr "通过 PayPal 捐助"
+msgid "Monthly"
+msgstr ""
 
 #: weblate_web/templates/hosting.html:181
 msgid "Contact us"
@@ -991,31 +996,27 @@ msgstr "联系我们"
 msgid "%(price)s EUR / month"
 msgstr "%(price)s 欧元 / 每月"
 
-#: weblate_web/templates/hosting.html:195
-msgid "See below for options"
+#: weblate_web/templates/hosting.html:196
+#, fuzzy
+#| msgid "See below for options"
+msgid "View support options"
 msgstr "看下面的选项"
 
-#: weblate_web/templates/hosting.html:198
-#, python-format
-msgid "Yearly by invoice (save 15-20%%)"
+#: weblate_web/templates/hosting.html:200
+#, fuzzy, python-format
+#| msgid "Yearly by invoice (save 15-20%%)"
+msgid "Yearly (save 15-20%%)"
 msgstr "年订 (节省 15-20%%)"
 
-#: weblate_web/templates/hosting.html:200
-#: weblate_web/templates/hosting.html:203
-#: weblate_web/templates/hosting.html:206
-#: weblate_web/templates/hosting.html:209
-msgid "Ask us for yearly invoicing with discount."
-msgstr "咨询我们获取年订优惠。"
-
-#: weblate_web/templates/hosting.html:200
-#: weblate_web/templates/hosting.html:203
-#: weblate_web/templates/hosting.html:206
-#: weblate_web/templates/hosting.html:209 weblate_web/templates/support.html:69
+#: weblate_web/templates/hosting.html:202
+#: weblate_web/templates/hosting.html:205
+#: weblate_web/templates/hosting.html:208
+#: weblate_web/templates/hosting.html:211 weblate_web/templates/support.html:69
 #, python-format
 msgid "%(price)s EUR / year"
 msgstr "%(price)s 欧元 / 每年"
 
-#: weblate_web/templates/hosting.html:216
+#: weblate_web/templates/hosting.html:218
 msgid ""
 "The pricing is based on number of source strings and number of target "
 "languages. The source string is a text unit defined in a translation format, "
@@ -1024,30 +1025,22 @@ msgstr ""
 "定价基于源字符串和目标语言的数量。源字符串是定义在译文格式中的文本单元，它可"
 "以是单词、句子或段落。"
 
-#: weblate_web/templates/hosting.html:220
-msgid ""
-"The hosting setup is currently done manually, so you might want to get in "
-"touch with us prior to making subscription with your project details."
-msgstr ""
-"托管设置目前是手动完成，因此您可能需要与我们取得联系以提供您的项目的详细信"
-"息。"
-
-#: weblate_web/templates/hosting.html:224
+#: weblate_web/templates/hosting.html:222
 msgid ""
 "Alternatively we can accept payments by wire transfer (preferably IBAN) or "
 "Bitcoin. Please get in touch for more details."
 msgstr ""
 "我们也可以接受电汇（最好是 IBAN）或比特币付款。请与我们联系以获取更多信息。"
 
-#: weblate_web/templates/hosting.html:227
+#: weblate_web/templates/hosting.html:225
 msgid "Self hosting"
 msgstr "自行托管"
 
-#: weblate_web/templates/hosting.html:232
+#: weblate_web/templates/hosting.html:230
 msgid "There are also several options for deploying Weblate to the cloud."
 msgstr ""
 
-#: weblate_web/templates/hosting.html:236
+#: weblate_web/templates/hosting.html:234
 #, fuzzy
 #| msgid ""
 #| "In case you need help with your self hosted solution, we're ready to help "
@@ -1552,6 +1545,19 @@ msgstr "源代码，zip 压缩"
 #: weblate_web/views.py:97
 msgid "Please provide your billing information to complete the payment."
 msgstr ""
+
+#~ msgid "Monthly by PayPal"
+#~ msgstr "通过 PayPal 捐助"
+
+#~ msgid "Ask us for yearly invoicing with discount."
+#~ msgstr "咨询我们获取年订优惠。"
+
+#~ msgid ""
+#~ "The hosting setup is currently done manually, so you might want to get in "
+#~ "touch with us prior to making subscription with your project details."
+#~ msgstr ""
+#~ "托管设置目前是手动完成，因此您可能需要与我们取得联系以提供您的项目的详细信"
+#~ "息。"
 
 #, fuzzy
 #~| msgid "Weblate is free software, you can run your own instance of it."

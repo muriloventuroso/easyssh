@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: weblate-website-ja\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2018-11-09 17:22+0100\n"
+"POT-Creation-Date: 2018-11-13 15:42+0100\n"
 "PO-Revision-Date: 2018-11-13 11:31+0000\n"
 "Last-Translator: Tetsuro Shimazaki <shimazaki@shima-office.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/weblate/website/"
@@ -194,7 +194,7 @@ msgid "Free software"
 msgstr "フリー ソフトウェア"
 
 #: weblate_web/templates/base-features.html:47
-#: weblate_web/templates/hosting.html:230
+#: weblate_web/templates/hosting.html:228
 msgid "Weblate is free software, you can run your own instance of it."
 msgstr "Weblate はフリー ソフトウェアです。独自のインスタンスを実行できます。"
 
@@ -448,7 +448,7 @@ msgid "Donation address"
 msgstr "寄付のアドレス"
 
 #: weblate_web/templates/download.html:4 weblate_web/templates/download.html:5
-#: weblate_web/templates/hosting.html:237
+#: weblate_web/templates/hosting.html:235
 msgid "Download Weblate"
 msgstr "Weblate のダウンロード"
 
@@ -457,7 +457,7 @@ msgid "Weblate comes with complete source code."
 msgstr "Weblate には完全なソースコードが付属しています。"
 
 #: weblate_web/templates/download.html:13 weblate_web/templates/hosting.html:12
-#: weblate_web/templates/hosting.html:236
+#: weblate_web/templates/hosting.html:234
 #, fuzzy
 #| msgid "Basic support for self hosted Weblate"
 msgid "Get support for Weblate"
@@ -704,7 +704,6 @@ msgstr ""
 "います。"
 
 #: weblate_web/templates/hosting-free.html:11
-#: weblate_web/templates/hosting.html:11
 msgid "Ask for hosting"
 msgstr "ホスティングの依頼"
 
@@ -894,6 +893,12 @@ msgstr ""
 msgid "Use Weblate as a service or get support for on-premises hosting."
 msgstr "Weblate ホスティングの利用、または独自に設置したサーバーへのサポート。"
 
+#: weblate_web/templates/hosting.html:11
+#, fuzzy
+#| msgid "Self hosting"
+msgid "Order hosting"
+msgstr "独自ホスティング"
+
 #: weblate_web/templates/hosting.html:21
 msgid ""
 "Hosted Weblate allows you to use Weblate without any effort and with premium "
@@ -1050,8 +1055,8 @@ msgid ""
 msgstr "追加費用は %(price)s ユーロ/年、年払いのみ"
 
 #: weblate_web/templates/hosting.html:179
-msgid "Monthly by PayPal"
-msgstr "PayPal で月払い"
+msgid "Monthly"
+msgstr "月額"
 
 #: weblate_web/templates/hosting.html:181
 msgid "Contact us"
@@ -1065,31 +1070,27 @@ msgstr "連絡先"
 msgid "%(price)s EUR / month"
 msgstr "%(price)s ユーロ／月"
 
-#: weblate_web/templates/hosting.html:195
-msgid "See below for options"
+#: weblate_web/templates/hosting.html:196
+#, fuzzy
+#| msgid "See below for options"
+msgid "View support options"
 msgstr "オプションについては下記をお読みください"
 
-#: weblate_web/templates/hosting.html:198
-#, python-format
-msgid "Yearly by invoice (save 15-20%%)"
+#: weblate_web/templates/hosting.html:200
+#, fuzzy, python-format
+#| msgid "Yearly by invoice (save 15-20%%)"
+msgid "Yearly (save 15-20%%)"
 msgstr "請求書で年払い (15-20%% 節約)"
 
-#: weblate_web/templates/hosting.html:200
-#: weblate_web/templates/hosting.html:203
-#: weblate_web/templates/hosting.html:206
-#: weblate_web/templates/hosting.html:209
-msgid "Ask us for yearly invoicing with discount."
-msgstr "請求書による年払いの割引額については、お尋ねください。"
-
-#: weblate_web/templates/hosting.html:200
-#: weblate_web/templates/hosting.html:203
-#: weblate_web/templates/hosting.html:206
-#: weblate_web/templates/hosting.html:209 weblate_web/templates/support.html:69
+#: weblate_web/templates/hosting.html:202
+#: weblate_web/templates/hosting.html:205
+#: weblate_web/templates/hosting.html:208
+#: weblate_web/templates/hosting.html:211 weblate_web/templates/support.html:69
 #, python-format
 msgid "%(price)s EUR / year"
 msgstr "%(price)s ユーロ／年"
 
-#: weblate_web/templates/hosting.html:216
+#: weblate_web/templates/hosting.html:218
 msgid ""
 "The pricing is based on number of source strings and number of target "
 "languages. The source string is a text unit defined in a translation format, "
@@ -1099,16 +1100,7 @@ msgstr ""
 "に使用するファイル内で定義されるテキスト単位ごとに 1 つとなります。そのため、"
 "単語／文章／段落のいずれかを 1 つと数えることになります。"
 
-#: weblate_web/templates/hosting.html:220
-msgid ""
-"The hosting setup is currently done manually, so you might want to get in "
-"touch with us prior to making subscription with your project details."
-msgstr ""
-"現時点では、ホスティングのセットアップは手作業で実施する必要があります。その"
-"ため、プロジェクトの詳細をお尋ねして購読を開始する前に、まずはご連絡いただく"
-"ことをお勧めします。"
-
-#: weblate_web/templates/hosting.html:224
+#: weblate_web/templates/hosting.html:222
 msgid ""
 "Alternatively we can accept payments by wire transfer (preferably IBAN) or "
 "Bitcoin. Please get in touch for more details."
@@ -1116,16 +1108,16 @@ msgstr ""
 "また、直接送金 (IBAN 希望) やビットコインによる支払いも受け付けています。詳し"
 "くはお問い合わせください。"
 
-#: weblate_web/templates/hosting.html:227
+#: weblate_web/templates/hosting.html:225
 msgid "Self hosting"
 msgstr "独自ホスティング"
 
-#: weblate_web/templates/hosting.html:232
+#: weblate_web/templates/hosting.html:230
 #, fuzzy
 msgid "There are also several options for deploying Weblate to the cloud."
 msgstr "Weblate をクラウドに展開するためのオプションもいくつかあります。"
 
-#: weblate_web/templates/hosting.html:236
+#: weblate_web/templates/hosting.html:234
 msgid ""
 "In case you need help with your self hosted solution, we're ready to help as "
 "well with consulting services tailored for your needs."
@@ -1651,6 +1643,20 @@ msgstr "ソース、zip 圧縮"
 msgid "Please provide your billing information to complete the payment."
 msgstr "支払いを完了するには、請求情報を入力してください。"
 
+#~ msgid "Monthly by PayPal"
+#~ msgstr "PayPal で月払い"
+
+#~ msgid "Ask us for yearly invoicing with discount."
+#~ msgstr "請求書による年払いの割引額については、お尋ねください。"
+
+#~ msgid ""
+#~ "The hosting setup is currently done manually, so you might want to get in "
+#~ "touch with us prior to making subscription with your project details."
+#~ msgstr ""
+#~ "現時点では、ホスティングのセットアップは手作業で実施する必要があります。そ"
+#~ "のため、プロジェクトの詳細をお尋ねして購読を開始する前に、まずはご連絡いた"
+#~ "だくことをお勧めします。"
+
 #, fuzzy
 #~| msgid "Weblate is free software, you can run your own instance of it."
 #~ msgid "Weblate is free software and you can run it on your systems."
@@ -1811,9 +1817,6 @@ msgstr "支払いを完了するには、請求情報を入力してください
 
 #~ msgid "Sponsors"
 #~ msgstr "スポンサー"
-
-#~ msgid "Monthly"
-#~ msgstr "月額"
 
 #~ msgid "Contact"
 #~ msgstr "連絡"

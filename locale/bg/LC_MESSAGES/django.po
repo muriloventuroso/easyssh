@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2018-11-09 17:22+0100\n"
+"POT-Creation-Date: 2018-11-13 15:42+0100\n"
 "PO-Revision-Date: 2018-07-23 11:06+0000\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Bulgarian <https://hosted.weblate.org/projects/weblate/"
@@ -194,7 +194,7 @@ msgid "Free software"
 msgstr "Свободен софтуер"
 
 #: weblate_web/templates/base-features.html:47
-#: weblate_web/templates/hosting.html:230
+#: weblate_web/templates/hosting.html:228
 msgid "Weblate is free software, you can run your own instance of it."
 msgstr ""
 "Weblate е безплатен софтуер, който можете да използвате на собствен сървър."
@@ -447,7 +447,7 @@ msgid "Donation address"
 msgstr "Адрес за плащане"
 
 #: weblate_web/templates/download.html:4 weblate_web/templates/download.html:5
-#: weblate_web/templates/hosting.html:237
+#: weblate_web/templates/hosting.html:235
 msgid "Download Weblate"
 msgstr "Сваляне на Weblate"
 
@@ -456,7 +456,7 @@ msgid "Weblate comes with complete source code."
 msgstr "Weblate включва целия си изходен код."
 
 #: weblate_web/templates/download.html:13 weblate_web/templates/hosting.html:12
-#: weblate_web/templates/hosting.html:236
+#: weblate_web/templates/hosting.html:234
 #, fuzzy
 #| msgid "Basic support for self hosted Weblate"
 msgid "Get support for Weblate"
@@ -712,7 +712,6 @@ msgid "We love open source and we offer free plans for hosting translations."
 msgstr ""
 
 #: weblate_web/templates/hosting-free.html:11
-#: weblate_web/templates/hosting.html:11
 msgid "Ask for hosting"
 msgstr "Попитайте за хостинг"
 
@@ -902,6 +901,12 @@ msgstr ""
 msgid "Use Weblate as a service or get support for on-premises hosting."
 msgstr ""
 
+#: weblate_web/templates/hosting.html:11
+#, fuzzy
+#| msgid "Self hosting"
+msgid "Order hosting"
+msgstr "Собствен хостинг"
+
 #: weblate_web/templates/hosting.html:21
 msgid ""
 "Hosted Weblate allows you to use Weblate without any effort and with premium "
@@ -1061,8 +1066,8 @@ msgstr ""
 "годишно таксуване"
 
 #: weblate_web/templates/hosting.html:179
-msgid "Monthly by PayPal"
-msgstr "Ежемесечно чрез PayPal"
+msgid "Monthly"
+msgstr ""
 
 #: weblate_web/templates/hosting.html:181
 msgid "Contact us"
@@ -1076,31 +1081,27 @@ msgstr "Свържете се с нас"
 msgid "%(price)s EUR / month"
 msgstr "%(price)s € / месец"
 
-#: weblate_web/templates/hosting.html:195
-msgid "See below for options"
+#: weblate_web/templates/hosting.html:196
+#, fuzzy
+#| msgid "See below for options"
+msgid "View support options"
 msgstr "Вижте възможните варианти по-долу"
 
-#: weblate_web/templates/hosting.html:198
-#, python-format
-msgid "Yearly by invoice (save 15-20%%)"
+#: weblate_web/templates/hosting.html:200
+#, fuzzy, python-format
+#| msgid "Yearly by invoice (save 15-20%%)"
+msgid "Yearly (save 15-20%%)"
 msgstr "Ежегодно чрез фактура (спестявате 15-20%%)"
 
-#: weblate_web/templates/hosting.html:200
-#: weblate_web/templates/hosting.html:203
-#: weblate_web/templates/hosting.html:206
-#: weblate_web/templates/hosting.html:209
-msgid "Ask us for yearly invoicing with discount."
-msgstr "Попитайте ни за ежегодното фактуриране с отстъпка."
-
-#: weblate_web/templates/hosting.html:200
-#: weblate_web/templates/hosting.html:203
-#: weblate_web/templates/hosting.html:206
-#: weblate_web/templates/hosting.html:209 weblate_web/templates/support.html:69
+#: weblate_web/templates/hosting.html:202
+#: weblate_web/templates/hosting.html:205
+#: weblate_web/templates/hosting.html:208
+#: weblate_web/templates/hosting.html:211 weblate_web/templates/support.html:69
 #, python-format
 msgid "%(price)s EUR / year"
 msgstr "%(price)s € / година"
 
-#: weblate_web/templates/hosting.html:216
+#: weblate_web/templates/hosting.html:218
 msgid ""
 "The pricing is based on number of source strings and number of target "
 "languages. The source string is a text unit defined in a translation format, "
@@ -1110,16 +1111,7 @@ msgstr ""
 "езици. Един оригинален текст е една текстова единица, както е описана във "
 "формата за превод. Това може да бъде дума, изречение или цял абзац."
 
-#: weblate_web/templates/hosting.html:220
-msgid ""
-"The hosting setup is currently done manually, so you might want to get in "
-"touch with us prior to making subscription with your project details."
-msgstr ""
-"Установката на хостинга в момента се прави ръчно, така че преди да направите "
-"абонамента си, ще трябва да се свържете с нас, за да обсъдим подробностите "
-"за проекта Ви."
-
-#: weblate_web/templates/hosting.html:224
+#: weblate_web/templates/hosting.html:222
 msgid ""
 "Alternatively we can accept payments by wire transfer (preferably IBAN) or "
 "Bitcoin. Please get in touch for more details."
@@ -1127,15 +1119,15 @@ msgstr ""
 "При желание, можем да приемаме плащанията и по банков път (предпочитаме "
 "IBAN) или в биткойни. Моля, свържете се с нас за повече подробности."
 
-#: weblate_web/templates/hosting.html:227
+#: weblate_web/templates/hosting.html:225
 msgid "Self hosting"
 msgstr "Собствен хостинг"
 
-#: weblate_web/templates/hosting.html:232
+#: weblate_web/templates/hosting.html:230
 msgid "There are also several options for deploying Weblate to the cloud."
 msgstr ""
 
-#: weblate_web/templates/hosting.html:236
+#: weblate_web/templates/hosting.html:234
 #, fuzzy
 #| msgid ""
 #| "In case you need help with your self hosted solution, we're ready to help "
@@ -1671,6 +1663,20 @@ msgstr "Файлове с изходния код, компресирани чр
 #: weblate_web/views.py:97
 msgid "Please provide your billing information to complete the payment."
 msgstr ""
+
+#~ msgid "Monthly by PayPal"
+#~ msgstr "Ежемесечно чрез PayPal"
+
+#~ msgid "Ask us for yearly invoicing with discount."
+#~ msgstr "Попитайте ни за ежегодното фактуриране с отстъпка."
+
+#~ msgid ""
+#~ "The hosting setup is currently done manually, so you might want to get in "
+#~ "touch with us prior to making subscription with your project details."
+#~ msgstr ""
+#~ "Установката на хостинга в момента се прави ръчно, така че преди да "
+#~ "направите абонамента си, ще трябва да се свържете с нас, за да обсъдим "
+#~ "подробностите за проекта Ви."
 
 #, fuzzy
 #~| msgid "Weblate is free software, you can run your own instance of it."

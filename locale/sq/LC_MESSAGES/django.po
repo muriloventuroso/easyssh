@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2018-11-09 17:22+0100\n"
+"POT-Creation-Date: 2018-11-13 15:42+0100\n"
 "PO-Revision-Date: 2017-02-06 17:45+0000\n"
 "Last-Translator: Besnik Bleta <besnik@programeshqip.org>\n"
 "Language-Team: Albanian <https://hosted.weblate.org/projects/weblate/website/"
@@ -196,7 +196,7 @@ msgid "Free software"
 msgstr "Software i lirë"
 
 #: weblate_web/templates/base-features.html:47
-#: weblate_web/templates/hosting.html:230
+#: weblate_web/templates/hosting.html:228
 msgid "Weblate is free software, you can run your own instance of it."
 msgstr ""
 "Weblate është software i lirë, mund të xhironi një instancë tuajën për të."
@@ -454,7 +454,7 @@ msgid "Donation address"
 msgstr "Dhuro"
 
 #: weblate_web/templates/download.html:4 weblate_web/templates/download.html:5
-#: weblate_web/templates/hosting.html:237
+#: weblate_web/templates/hosting.html:235
 msgid "Download Weblate"
 msgstr "Shkarko Weblate"
 
@@ -463,7 +463,7 @@ msgid "Weblate comes with complete source code."
 msgstr "Weblate vjen me kodin e plotë të burimit."
 
 #: weblate_web/templates/download.html:13 weblate_web/templates/hosting.html:12
-#: weblate_web/templates/hosting.html:236
+#: weblate_web/templates/hosting.html:234
 #, fuzzy
 #| msgid "Support free hosting"
 msgid "Get support for Weblate"
@@ -714,7 +714,6 @@ msgid "We love open source and we offer free plans for hosting translations."
 msgstr ""
 
 #: weblate_web/templates/hosting-free.html:11
-#: weblate_web/templates/hosting.html:11
 msgid "Ask for hosting"
 msgstr "Pyet për pritës (hosting)"
 
@@ -906,6 +905,12 @@ msgstr ""
 msgid "Use Weblate as a service or get support for on-premises hosting."
 msgstr ""
 
+#: weblate_web/templates/hosting.html:11
+#, fuzzy
+#| msgid "Self hosting"
+msgid "Order hosting"
+msgstr "Vetë pritës (hosting)"
+
 #: weblate_web/templates/hosting.html:21
 msgid ""
 "Hosted Weblate allows you to use Weblate without any effort and with premium "
@@ -1067,8 +1072,8 @@ msgid ""
 msgstr ""
 
 #: weblate_web/templates/hosting.html:179
-msgid "Monthly by PayPal"
-msgstr "Dhuroni përmes PayPal-it"
+msgid "Monthly"
+msgstr ""
 
 #: weblate_web/templates/hosting.html:181
 msgid "Contact us"
@@ -1082,31 +1087,26 @@ msgstr "Na kontaktoni"
 msgid "%(price)s EUR / month"
 msgstr "%(price)s EUR / muaj"
 
-#: weblate_web/templates/hosting.html:195
-msgid "See below for options"
-msgstr ""
+#: weblate_web/templates/hosting.html:196
+#, fuzzy
+#| msgid "Other options"
+msgid "View support options"
+msgstr "Mundësi të tjera"
 
-#: weblate_web/templates/hosting.html:198
+#: weblate_web/templates/hosting.html:200
 #, python-format
-msgid "Yearly by invoice (save 15-20%%)"
+msgid "Yearly (save 15-20%%)"
 msgstr ""
 
-#: weblate_web/templates/hosting.html:200
-#: weblate_web/templates/hosting.html:203
-#: weblate_web/templates/hosting.html:206
-#: weblate_web/templates/hosting.html:209
-msgid "Ask us for yearly invoicing with discount."
-msgstr ""
-
-#: weblate_web/templates/hosting.html:200
-#: weblate_web/templates/hosting.html:203
-#: weblate_web/templates/hosting.html:206
-#: weblate_web/templates/hosting.html:209 weblate_web/templates/support.html:69
+#: weblate_web/templates/hosting.html:202
+#: weblate_web/templates/hosting.html:205
+#: weblate_web/templates/hosting.html:208
+#: weblate_web/templates/hosting.html:211 weblate_web/templates/support.html:69
 #, python-format
 msgid "%(price)s EUR / year"
 msgstr "%(price)s EUR / vit"
 
-#: weblate_web/templates/hosting.html:216
+#: weblate_web/templates/hosting.html:218
 msgid ""
 "The pricing is based on number of source strings and number of target "
 "languages. The source string is a text unit defined in a translation format, "
@@ -1116,30 +1116,21 @@ msgstr ""
 "objektivit. Vargu i burimit është një njësi teksti e përcaktuar në një "
 "format përkthimi, mund të jetë fjalë, fjali apo paragraf."
 
-#: weblate_web/templates/hosting.html:220
-msgid ""
-"The hosting setup is currently done manually, so you might want to get in "
-"touch with us prior to making subscription with your project details."
-msgstr ""
-"Instalimi i hosting (pritësit) bëhet aktualisht manualisht, kështu që mund "
-"të doni të kontaktoni me ne, para se të bëni abonimin me detajet e projektit "
-"tuaj."
-
-#: weblate_web/templates/hosting.html:224
+#: weblate_web/templates/hosting.html:222
 msgid ""
 "Alternatively we can accept payments by wire transfer (preferably IBAN) or "
 "Bitcoin. Please get in touch for more details."
 msgstr ""
 
-#: weblate_web/templates/hosting.html:227
+#: weblate_web/templates/hosting.html:225
 msgid "Self hosting"
 msgstr "Vetë pritës (hosting)"
 
-#: weblate_web/templates/hosting.html:232
+#: weblate_web/templates/hosting.html:230
 msgid "There are also several options for deploying Weblate to the cloud."
 msgstr ""
 
-#: weblate_web/templates/hosting.html:236
+#: weblate_web/templates/hosting.html:234
 msgid ""
 "In case you need help with your self hosted solution, we're ready to help as "
 "well with consulting services tailored for your needs."
@@ -1646,6 +1637,17 @@ msgstr "Burimet, kompresuar si zip"
 msgid "Please provide your billing information to complete the payment."
 msgstr ""
 
+#~ msgid "Monthly by PayPal"
+#~ msgstr "Dhuroni përmes PayPal-it"
+
+#~ msgid ""
+#~ "The hosting setup is currently done manually, so you might want to get in "
+#~ "touch with us prior to making subscription with your project details."
+#~ msgstr ""
+#~ "Instalimi i hosting (pritësit) bëhet aktualisht manualisht, kështu që "
+#~ "mund të doni të kontaktoni me ne, para se të bëni abonimin me detajet e "
+#~ "projektit tuaj."
+
 #, fuzzy
 #~| msgid "Weblate is free software, you can run your own instance of it."
 #~ msgid "Weblate is free software and you can run it on your systems."
@@ -1853,9 +1855,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Ju lutem, kontakto <a href=\"mailto:michal@cihar.com\">Michal Čihař</a> "
 #~ "për më shumë detaje."
-
-#~ msgid "Other options"
-#~ msgstr "Mundësi të tjera"
 
 #~ msgid ""
 #~ "Commercial hosting is possible as well, our price starts at 19 EUR per "

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Weblate v. 2017.09.28\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2018-11-09 17:22+0100\n"
+"POT-Creation-Date: 2018-11-13 15:42+0100\n"
 "PO-Revision-Date: 2018-11-11 12:14+0000\n"
 "Last-Translator: bovirus <roberto.boriotti@canon-europe.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/weblate/website/"
@@ -198,7 +198,7 @@ msgid "Free software"
 msgstr "Software libero"
 
 #: weblate_web/templates/base-features.html:47
-#: weblate_web/templates/hosting.html:230
+#: weblate_web/templates/hosting.html:228
 msgid "Weblate is free software, you can run your own instance of it."
 msgstr ""
 "Weblate è software gratuito, ne puoi utilizzare una tua istanza "
@@ -442,7 +442,7 @@ msgid "Donation address"
 msgstr "Coordinate per le donazioni"
 
 #: weblate_web/templates/download.html:4 weblate_web/templates/download.html:5
-#: weblate_web/templates/hosting.html:237
+#: weblate_web/templates/hosting.html:235
 msgid "Download Weblate"
 msgstr "Scarica Weblate"
 
@@ -451,7 +451,7 @@ msgid "Weblate comes with complete source code."
 msgstr "Weblate viene distribuito con i codici sorgenti completi."
 
 #: weblate_web/templates/download.html:13 weblate_web/templates/hosting.html:12
-#: weblate_web/templates/hosting.html:236
+#: weblate_web/templates/hosting.html:234
 msgid "Get support for Weblate"
 msgstr "Ottieni il supporto per Weblate"
 
@@ -702,7 +702,6 @@ msgstr ""
 "Amiamo l'open source ed offriamo piani gratuiti per ospitare le traduzioni."
 
 #: weblate_web/templates/hosting-free.html:11
-#: weblate_web/templates/hosting.html:11
 msgid "Ask for hosting"
 msgstr "Richiedi hosting"
 
@@ -893,6 +892,12 @@ msgstr ""
 msgid "Use Weblate as a service or get support for on-premises hosting."
 msgstr "Usa Weblate come servizio o ottieni supporto per siti locali."
 
+#: weblate_web/templates/hosting.html:11
+#, fuzzy
+#| msgid "Self hosting"
+msgid "Order hosting"
+msgstr "Hosting gestito autonomamente"
+
 #: weblate_web/templates/hosting.html:21
 msgid ""
 "Hosted Weblate allows you to use Weblate without any effort and with premium "
@@ -1052,8 +1057,8 @@ msgstr ""
 "fatturazione annuale"
 
 #: weblate_web/templates/hosting.html:179
-msgid "Monthly by PayPal"
-msgstr "Mensilmente via PayPal"
+msgid "Monthly"
+msgstr ""
 
 #: weblate_web/templates/hosting.html:181
 msgid "Contact us"
@@ -1067,32 +1072,27 @@ msgstr "Contattaci"
 msgid "%(price)s EUR / month"
 msgstr "%(price)s Euro / mese"
 
-#: weblate_web/templates/hosting.html:195
-msgid "See below for options"
+#: weblate_web/templates/hosting.html:196
+#, fuzzy
+#| msgid "See below for options"
+msgid "View support options"
 msgstr "Vedi sotto per le opzioni"
 
-#: weblate_web/templates/hosting.html:198
-#, python-format
-msgid "Yearly by invoice (save 15-20%%)"
+#: weblate_web/templates/hosting.html:200
+#, fuzzy, python-format
+#| msgid "Yearly by invoice (save 15-20%%)"
+msgid "Yearly (save 15-20%%)"
 msgstr "Annualmente con fattura (risparmi il 15-20%%)"
 
-#: weblate_web/templates/hosting.html:200
-#: weblate_web/templates/hosting.html:203
-#: weblate_web/templates/hosting.html:206
-#: weblate_web/templates/hosting.html:209
-msgid "Ask us for yearly invoicing with discount."
-msgstr ""
-"Chiedici maggiori dettagli sulla fatturazione annuale e relativi sconti."
-
-#: weblate_web/templates/hosting.html:200
-#: weblate_web/templates/hosting.html:203
-#: weblate_web/templates/hosting.html:206
-#: weblate_web/templates/hosting.html:209 weblate_web/templates/support.html:69
+#: weblate_web/templates/hosting.html:202
+#: weblate_web/templates/hosting.html:205
+#: weblate_web/templates/hosting.html:208
+#: weblate_web/templates/hosting.html:211 weblate_web/templates/support.html:69
 #, python-format
 msgid "%(price)s EUR / year"
 msgstr "%(price)s Euro / anno"
 
-#: weblate_web/templates/hosting.html:216
+#: weblate_web/templates/hosting.html:218
 msgid ""
 "The pricing is based on number of source strings and number of target "
 "languages. The source string is a text unit defined in a translation format, "
@@ -1102,16 +1102,7 @@ msgstr ""
 "destinazione. La stringa sorgente è un'unità di testo definita in un formato "
 "di traduzione, può essere parola, frase o un paragrafo."
 
-#: weblate_web/templates/hosting.html:220
-msgid ""
-"The hosting setup is currently done manually, so you might want to get in "
-"touch with us prior to making subscription with your project details."
-msgstr ""
-"L'installazione dell'hosting è attualmente eseguita manualmente, pertanto "
-"prima di effettuare l'abbonamento potresti voler contattarci con i dettagli "
-"del progetto."
-
-#: weblate_web/templates/hosting.html:224
+#: weblate_web/templates/hosting.html:222
 msgid ""
 "Alternatively we can accept payments by wire transfer (preferably IBAN) or "
 "Bitcoin. Please get in touch for more details."
@@ -1119,16 +1110,16 @@ msgstr ""
 "In alternativa possiamo accettare i pagamenti tramite bonifico bancario "
 "(preferibilmente IBAN) o Bitcoin. Contattaci per ulteriori dettagli."
 
-#: weblate_web/templates/hosting.html:227
+#: weblate_web/templates/hosting.html:225
 msgid "Self hosting"
 msgstr "Hosting gestito autonomamente"
 
-#: weblate_web/templates/hosting.html:232
+#: weblate_web/templates/hosting.html:230
 msgid "There are also several options for deploying Weblate to the cloud."
 msgstr ""
 "Ci sono anche diverse opzioni per la distribuzione di Weblate nel cloud."
 
-#: weblate_web/templates/hosting.html:236
+#: weblate_web/templates/hosting.html:234
 msgid ""
 "In case you need help with your self hosted solution, we're ready to help as "
 "well with consulting services tailored for your needs."
@@ -1645,6 +1636,21 @@ msgstr "Sorgenti, compressi zip"
 msgid "Please provide your billing information to complete the payment."
 msgstr ""
 "Per favore, inserisci i dati di fatturazione per completare il pagamento."
+
+#~ msgid "Monthly by PayPal"
+#~ msgstr "Mensilmente via PayPal"
+
+#~ msgid "Ask us for yearly invoicing with discount."
+#~ msgstr ""
+#~ "Chiedici maggiori dettagli sulla fatturazione annuale e relativi sconti."
+
+#~ msgid ""
+#~ "The hosting setup is currently done manually, so you might want to get in "
+#~ "touch with us prior to making subscription with your project details."
+#~ msgstr ""
+#~ "L'installazione dell'hosting è attualmente eseguita manualmente, pertanto "
+#~ "prima di effettuare l'abbonamento potresti voler contattarci con i "
+#~ "dettagli del progetto."
 
 #, fuzzy
 #~| msgid "Weblate is free software, you can run your own instance of it."
