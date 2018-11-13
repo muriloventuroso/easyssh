@@ -192,7 +192,9 @@
         <td class="price">
         <a class="btn btn-info" href="https://hosted.weblate.org/create/billing/?plan=5">{% blocktrans with 299 as price %}{{ price }} EUR / month{% endblocktrans %}</a>
         </td>
-        <td rowspan="2"><a href="{% url "support" %}">{% trans "See below for options" %}</a></td>
+        <td class="price" rowspan="2">
+        <a class="btn btn-info" href="{% url "support" %}">{% trans "View support options" %}</a>
+        </td>
       </tr>
       <tr>
         <th>{% trans "Yearly (save 15-20%)" %}</th>
