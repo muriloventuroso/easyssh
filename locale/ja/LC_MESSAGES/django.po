@@ -6,13 +6,14 @@
 # Tetsuro Shimazaki <shimazaki@shima-office.com>, 2018.
 # Ryo Nakano <ryonakaknock3@gmail.com>, 2018.
 # Michio Matsuyama <michio.matsuyama@gmail.com>, 2018.
+# 日本語翻訳貢献者 <vllgwvhm@zat.att.ne.jp>, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: weblate-website-ja\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2018-11-13 15:42+0100\n"
 "PO-Revision-Date: 2018-11-14 09:06+0000\n"
-"Last-Translator: Tetsuro Shimazaki <shimazaki@shima-office.com>\n"
+"Last-Translator: 日本語翻訳貢献者 <vllgwvhm@zat.att.ne.jp>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/weblate/website/"
 "ja/>\n"
 "Language: ja\n"
@@ -24,11 +25,11 @@ msgstr ""
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
-msgstr "メインページで、独自の翻訳についての概要。"
+msgstr "自分の翻訳の概要がメインページの。"
 
 #: weblate_web/data.py:34
 msgid "Own translations"
-msgstr "独自の翻訳"
+msgstr "自分の翻訳"
 
 #: weblate_web/data.py:39 weblate_web/templates/features.html:64
 msgid ""
@@ -98,9 +99,7 @@ msgstr "アドオン"
 msgid ""
 "Automatic translation can be used to bootstrap your translations using "
 "machine translation services or translation memory."
-msgstr ""
-"自動翻訳は、翻訳作業の自動化のために、機械翻訳サービスか翻訳メモリを使用しま"
-"す。"
+msgstr "翻訳作業の自動化のために、機械翻訳サービスか翻訳メモリを使った自動翻訳が利用できます。"
 
 #: weblate_web/data.py:89
 msgid "Automatic translation"
@@ -157,7 +156,7 @@ msgstr "継続的な翻訳"
 #: weblate_web/templates/base-features.html:7
 msgid ""
 "Automated translation process can closely follow development of your project."
-msgstr "自動翻訳の過程は、開発プロジェクトと密接にかかわります。"
+msgstr "自動化された翻訳プロセスにより、開発プロジェクトに密に追従することができます。"
 
 #: weblate_web/templates/base-features.html:22
 msgid "Attribution"
@@ -196,7 +195,7 @@ msgstr "フリー ソフトウェア"
 #: weblate_web/templates/base-features.html:47
 #: weblate_web/templates/hosting.html:228
 msgid "Weblate is free software, you can run your own instance of it."
-msgstr "Weblate はフリー ソフトウェアです。独自のインスタンスを実行できます。"
+msgstr "Weblate はフリー ソフトウェアです。あなた自身の Weblate を運営できます。"
 
 #: weblate_web/templates/base.html:11
 msgctxt "Keyword"
@@ -458,10 +457,8 @@ msgstr "Weblate には完全なソースコードが付属しています。"
 
 #: weblate_web/templates/download.html:13 weblate_web/templates/hosting.html:12
 #: weblate_web/templates/hosting.html:234
-#, fuzzy
-#| msgid "Basic support for self hosted Weblate"
 msgid "Get support for Weblate"
-msgstr "独自に設置した Weblate への基本サポート"
+msgstr "Weblate へのサポートを受ける"
 
 #: weblate_web/templates/download.html:21
 msgid "You can download latest release here:"
@@ -894,10 +891,8 @@ msgid "Use Weblate as a service or get support for on-premises hosting."
 msgstr "Weblate ホスティングの利用、または独自に設置したサーバーへのサポート。"
 
 #: weblate_web/templates/hosting.html:11
-#, fuzzy
-#| msgid "Self hosting"
 msgid "Order hosting"
-msgstr "独自ホスティング"
+msgstr "ホスティングを依頼する"
 
 #: weblate_web/templates/hosting.html:21
 msgid ""
@@ -1071,16 +1066,13 @@ msgid "%(price)s EUR / month"
 msgstr "%(price)s ユーロ／月"
 
 #: weblate_web/templates/hosting.html:196
-#, fuzzy
-#| msgid "See below for options"
 msgid "View support options"
-msgstr "オプションについては下記をお読みください"
+msgstr "サポートオプションを見る"
 
 #: weblate_web/templates/hosting.html:200
-#, fuzzy, python-format
-#| msgid "Yearly by invoice (save 15-20%%)"
+#, python-format
 msgid "Yearly (save 15-20%%)"
-msgstr "請求書で年払い (15-20%% 節約)"
+msgstr "年払い (15-20%% 節約)"
 
 #: weblate_web/templates/hosting.html:202
 #: weblate_web/templates/hosting.html:205
@@ -1175,10 +1167,8 @@ msgstr "Weblate を使用している人々を確認し、ご参加ください�
 
 #: weblate_web/templates/payment/customer.html:5
 #: weblate_web/templates/payment/payment.html:4
-#, fuzzy
-#| msgid "Weblate screenshot"
 msgid "Weblate payment"
-msgstr "Weblate のスクリーンショット"
+msgstr "Weblate の支払い"
 
 #: weblate_web/templates/payment/customer.html:15
 #, fuzzy
@@ -1190,10 +1180,8 @@ msgid "Save"
 msgstr "保存"
 
 #: weblate_web/templates/payment/payment.html:11
-#, fuzzy
-#| msgid "Payment amount"
 msgid "Payment summary"
-msgstr "支払い金額"
+msgstr "支払いの概要"
 
 #: weblate_web/templates/payment/payment.html:14
 msgid "Payment amount"
@@ -1215,10 +1203,8 @@ msgid "Payment description"
 msgstr "支払いの説明"
 
 #: weblate_web/templates/payment/payment.html:20
-#, fuzzy
-#| msgid "Payment link"
 msgid "Payment frequence"
-msgstr "支払いへのリンク"
+msgstr "支払い回数"
 
 #: weblate_web/templates/payment/payment.html:22
 msgid "Payment will be issued yearly till you cancel the subscription."
@@ -1232,7 +1218,7 @@ msgstr "定期購入を中止するまで、毎月、支払いが発生します
 msgid ""
 "Note: This is unavailable for some payment methods, you will have to "
 "manually complete the next payment in those cases."
-msgstr ""
+msgstr "注: 支払い方法によってはこれは利用できません。この場合、次回の支払いは手作業で行う必要があります。"
 
 #: weblate_web/templates/payment/payment.html:32
 msgid "Billing information"
@@ -1465,10 +1451,8 @@ msgid "Terms of Service"
 msgstr "サービス利用規約"
 
 #: weblate_web/templates/terms.html:6
-#, fuzzy
-#| msgid "The legal documents necessary to operate this service."
 msgid "The legal documents necessary to offer this service."
-msgstr "このサービスの運用に必要な法的文書。"
+msgstr "このサービスの提供に必要な法的文書。"
 
 #: weblate_web/templates/terms.html:20
 msgid "Privacy Policy"
