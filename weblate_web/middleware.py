@@ -57,20 +57,15 @@ class SecurityMiddleware:
         script = ["'self'"]
         image = ["'self'"]
 
-        # Rollbar
-        script.append("'unsafe-inline'")
-        script.append('cdnjs.cloudflare.com')
+        # Sentry/Raven
+        script.append('cdn.ravenjs.com')
 
         # Piwik
         script.append('stats.cihar.com')
         image.append('stats.cihar.com')
 
-        # Font Awesome + Bootstrap
-        script.append('maxcdn.bootstrapcdn.com')
-        style.append('maxcdn.bootstrapcdn.com')
-
-        # jQuery
-        script.append('code.jquery.com')
+        # The Pay
+        image.append('www.thepay.cz')
 
         response['Content-Security-Policy'] = CSP_TEMPLATE.format(
             ' '.join(style),
