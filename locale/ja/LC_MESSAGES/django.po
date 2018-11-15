@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: weblate-website-ja\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2018-11-13 15:42+0100\n"
-"PO-Revision-Date: 2018-11-14 09:06+0000\n"
+"PO-Revision-Date: 2018-11-15 14:40+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/weblate/website/"
 "ja/>\n"
@@ -325,10 +325,8 @@ msgid "Donate to Weblate"
 msgstr "Weblate に寄付する"
 
 #: weblate_web/templates/donate.html:6
-#, fuzzy
-#| msgid "Weblate is free, but welcomes donations."
 msgid "Weblate is provided free of charge, and welcomes donations."
-msgstr "Weblate は無料ですが、寄付を歓迎します。"
+msgstr "Weblate は無料で提供されており、寄付を歓迎しています。"
 
 #: weblate_web/templates/donate.html:12 weblate_web/templates/donate.html:43
 msgid "Donate using Liberapay"
@@ -352,18 +350,12 @@ msgid "Regular donations"
 msgstr "継続寄付"
 
 #: weblate_web/templates/donate.html:28
-#, fuzzy
-#| msgid ""
-#| "Regular donations allow sustainability of Weblate development and help to "
-#| "fund free hosting for free software. You don't have to spend big money, "
-#| "every penny counts."
 msgid ""
 "Regular donations allow sustainability of Weblate development and help to "
 "fund free hosting for libre software. You don't have to spend big money, "
 "every penny counts."
 msgstr ""
-"継続寄付によって、Weblate の開発を継続し、フリー ソフトウェア向けの無料ホス"
-"ティングに資金援助できます。大金でなくとも、少額でもありがたいです。"
+"継続寄付によって、Weblate の開発を継続し、フリー ソフトウェア向けの無料ホスティングに資金援助できます。大金でなくとも、少額でもありがたいです。"
 
 #: weblate_web/templates/donate.html:33 weblate_web/templates/donate.html:54
 #: weblate_web/templates/thanks.html:12
@@ -393,16 +385,10 @@ msgid "Fund features"
 msgstr "新機能に資金を出す"
 
 #: weblate_web/templates/donate.html:58
-#, fuzzy
-#| msgid ""
-#| "Bountysource allows you to fund individual features which are reported on "
-#| "our issue tracker."
 msgid ""
 "Bountysource allows you to fund individual features reported on our issue "
 "tracker."
-msgstr ""
-"Bountysource を使用すると、問題追跡ツールに報告された個々の機能に資金を提供す"
-"ることができます。"
+msgstr "Bountysource を使用すると、問題追跡ツールに報告された個々の機能に資金を提供することができます。"
 
 #: weblate_web/templates/donate.html:64
 msgid ""
@@ -441,8 +427,6 @@ msgid "Currency"
 msgstr "通貨"
 
 #: weblate_web/templates/donate.html:88
-#, fuzzy
-#| msgid "Donate address"
 msgid "Donation address"
 msgstr "寄付のアドレス"
 
@@ -781,9 +765,7 @@ msgstr "リポジトリ内の翻訳へのパス"
 msgid ""
 "The free plan does not allow you to change project visibility or to limit "
 "users which can contribute to the translation."
-msgstr ""
-"無料プランでは、プロジェクトの表示を設定したり、翻訳に貢献するユーザーを制限"
-"できません。"
+msgstr "無料プランでは、プロジェクトの表示を設定したり、翻訳に貢献できるユーザーを制限したりできません。"
 
 #: weblate_web/templates/hosting-free.html:51
 msgid ""
@@ -791,8 +773,8 @@ msgid ""
 "will still have free software limits, but you will get extended user "
 "management capabilities."
 msgstr ""
-"この制限は、\"ベーシック\" ホスティング プランを購入すると解除できます。無料"
-"ソフト プランの制限はありますが、拡張したユーザ管理機能を使用できます。"
+"この制限は、\"ベーシック\" ホスティング プランを購入すると解除できます。無料ソフトウェア "
+"プランの制限はありますが、拡張したユーザ管理機能を使用できます。"
 
 #: weblate_web/templates/hosting-free.html:54
 msgid "Translation workflow"
@@ -805,10 +787,9 @@ msgid ""
 "<code>https://hosted.weblate.org/git/weblate/master/</code>. You can figure "
 "out the URL on the component information tab."
 msgstr ""
-"翻訳した全てのリポジトリは Web サイトと同じ命名で https プロトコルを使用でき"
-"ます。weblate/master の翻訳は、 <code>https://hosted.weblate.org/git/weblate/"
-"master/</code> と公開されます。URL は、コンポーネントの情報タブで確認できま"
-"す。"
+"翻訳したすべてのリポジトリは Web サイトと同じ命名で https プロトコルを使用できます。weblate/master の翻訳は、 "
+"<code>https://hosted.weblate.org/git/weblate/master/</code> として公開されます。URL "
+"は、コンポーネントの情報タブで確認できます。"
 
 #: weblate_web/templates/hosting-free.html:61
 #, python-format
@@ -980,7 +961,7 @@ msgstr "ターゲットとなる言語数"
 
 #: weblate_web/templates/hosting.html:69
 msgid "VCS repositories"
-msgstr "VCS リポジトリ数"
+msgstr "バージョン管理システムのリポジトリ数"
 
 #: weblate_web/templates/hosting.html:78
 msgid "Translation projects"
@@ -1105,7 +1086,6 @@ msgid "Self hosting"
 msgstr "独自ホスティング"
 
 #: weblate_web/templates/hosting.html:230
-#, fuzzy
 msgid "There are also several options for deploying Weblate to the cloud."
 msgstr "Weblate をクラウドに展開するためのオプションもいくつかあります。"
 
@@ -1194,7 +1174,6 @@ msgid "%(price)s EUR"
 msgstr "%(price)s ユーロ"
 
 #: weblate_web/templates/payment/payment.html:16
-#, fuzzy
 msgid "(including VAT)"
 msgstr "（付加価値税を含む）"
 
@@ -1229,10 +1208,8 @@ msgid "Edit"
 msgstr "編集"
 
 #: weblate_web/templates/payment/payment.html:47
-#, fuzzy
-#| msgid "Please choose your payment method"
 msgid "Please choose payment method:"
-msgstr "支払い方法をお選びください"
+msgstr "支払い方法をお選びください。"
 
 #: weblate_web/templates/support.html:3 weblate_web/templates/support.html:4
 msgid "Weblate support"
@@ -1579,9 +1556,8 @@ msgid ""
 "All prices exclude VAT, invoices for EU countries are issued as a reverse "
 "charge, invoices for Czech Republic will include additional VAT."
 msgstr ""
-"全ての価格表示は消費税抜きの価格です。 EU 域内の場合、リバースチャージ方式で"
-"インボイスを発行します。また、チェコ共和国の場合は、消費税を含めてインボイス"
-"を発行します。"
+"すべての価格表示は消費税抜きの価格です。 EU "
+"域内の場合、リバースチャージ方式でインボイスを発行します。また、チェコ共和国の場合は、消費税を含めてインボイスを発行します。"
 
 #: weblate_web/templatetags/downloads.py:40
 #, python-format
