@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2018-11-15 15:44+0100\n"
+"POT-Creation-Date: 2018-11-17 13:40+0100\n"
 "PO-Revision-Date: 2018-11-14 09:06+0000\n"
 "Last-Translator: Iván Seoane <ivanrsm1997@gmail.com>\n"
 "Language-Team: Galician <https://hosted.weblate.org/projects/weblate/website/"
@@ -255,11 +255,15 @@ msgstr "Blogue"
 msgid "Docs"
 msgstr "Documentos"
 
-#: weblate_web/templates/base.html:73
+#: weblate_web/templates/base.html:62
+msgid "Hosting"
+msgstr "Aloxamento"
+
+#: weblate_web/templates/base.html:74
 msgid "Help with translations!"
 msgstr "Axude cas traducións!"
 
-#: weblate_web/templates/base.html:117 weblate_web/templates/terms.html:4
+#: weblate_web/templates/base.html:118 weblate_web/templates/terms.html:4
 msgid "Terms of Service and Privacy Policy"
 msgstr "Termos do Servizo e Política da Privacidade"
 
@@ -1157,9 +1161,13 @@ msgstr "Captura da pantalla do Weblate"
 msgid "See more features…"
 msgstr "Ollar máis funcionalidades…"
 
-#: weblate_web/templates/index.html:46
+#: weblate_web/templates/index.html:45
 msgid "See who is using Weblate and join them!"
 msgstr "Ollar quen está a emprega-lo Weblate e unirse a eles!"
+
+#: weblate_web/templates/index.html:106
+msgid "Browse hundredths of projects on Hosted Weblate"
+msgstr ""
 
 #: weblate_web/templates/payment/customer.html:5
 #: weblate_web/templates/payment/payment.html:4
@@ -1664,9 +1672,6 @@ msgstr ""
 
 #~ msgid "Toggle navigation"
 #~ msgstr "Mudar navigación"
-
-#~ msgid "Hosting"
-#~ msgstr "Aloxamento"
 
 #~ msgid ""
 #~ "Weblate is <a href=\"%(github_url)s\">free software</a> and welcomes <a "

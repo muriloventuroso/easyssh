@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2018-11-15 15:44+0100\n"
+"POT-Creation-Date: 2018-11-17 13:40+0100\n"
 "PO-Revision-Date: 2018-11-15 14:40+0000\n"
 "Last-Translator: 송태섭 <xotjq237@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/weblate/website/"
@@ -243,11 +243,15 @@ msgstr "블로그"
 msgid "Docs"
 msgstr "문서"
 
-#: weblate_web/templates/base.html:73
+#: weblate_web/templates/base.html:62
+msgid "Hosting"
+msgstr "호스팅"
+
+#: weblate_web/templates/base.html:74
 msgid "Help with translations!"
 msgstr "번역을 도와주세요!"
 
-#: weblate_web/templates/base.html:117 weblate_web/templates/terms.html:4
+#: weblate_web/templates/base.html:118 weblate_web/templates/terms.html:4
 msgid "Terms of Service and Privacy Policy"
 msgstr "이용 약관 및 개인 정보 보호 정책"
 
@@ -1118,9 +1122,13 @@ msgstr "Weblate 스크린샷"
 msgid "See more features…"
 msgstr "더 많은 특징들 보기…"
 
-#: weblate_web/templates/index.html:46
+#: weblate_web/templates/index.html:45
 msgid "See who is using Weblate and join them!"
 msgstr "누가 Weblate를 사용하고 있는지 확인하고 동참하세요!"
+
+#: weblate_web/templates/index.html:106
+msgid "Browse hundredths of projects on Hosted Weblate"
+msgstr ""
 
 #: weblate_web/templates/payment/customer.html:5
 #: weblate_web/templates/payment/payment.html:4
@@ -1610,9 +1618,6 @@ msgstr "결제을 완료하려면 결제 정보를 입력하십시오."
 
 #~ msgid "Toggle navigation"
 #~ msgstr "네비게이션 토글"
-
-#~ msgid "Hosting"
-#~ msgstr "호스팅"
 
 #~ msgid ""
 #~ "Weblate is <a href=\"%(github_url)s\">free software</a> and welcomes <a "

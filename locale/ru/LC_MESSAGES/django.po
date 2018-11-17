@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: weblate-web\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2018-11-15 15:44+0100\n"
+"POT-Creation-Date: 2018-11-17 13:40+0100\n"
 "PO-Revision-Date: 2018-11-13 22:15+0000\n"
 "Last-Translator: Igor <f2404@yandex.ru>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/weblate/website/"
@@ -253,11 +253,15 @@ msgstr "Блог"
 msgid "Docs"
 msgstr "Документация"
 
-#: weblate_web/templates/base.html:73
+#: weblate_web/templates/base.html:62
+msgid "Hosting"
+msgstr "Хостинг"
+
+#: weblate_web/templates/base.html:74
 msgid "Help with translations!"
 msgstr "Помогите с переводом!"
 
-#: weblate_web/templates/base.html:117 weblate_web/templates/terms.html:4
+#: weblate_web/templates/base.html:118 weblate_web/templates/terms.html:4
 msgid "Terms of Service and Privacy Policy"
 msgstr "Условия предоставления услуг и политика конфиденциальности"
 
@@ -1156,9 +1160,13 @@ msgstr "Снимки экрана Weblate"
 msgid "See more features…"
 msgstr "Узнать еще о возможностях…"
 
-#: weblate_web/templates/index.html:46
+#: weblate_web/templates/index.html:45
 msgid "See who is using Weblate and join them!"
 msgstr "Узнайте, кто пользуется Weblate, и присоединяйтесь!"
+
+#: weblate_web/templates/index.html:106
+msgid "Browse hundredths of projects on Hosted Weblate"
+msgstr ""
 
 #: weblate_web/templates/payment/customer.html:5
 #: weblate_web/templates/payment/payment.html:4
@@ -1657,9 +1665,6 @@ msgstr "Чтобы завершить платёж, предоставьте и�
 
 #~ msgid "Toggle navigation"
 #~ msgstr "Переключить навигацию"
-
-#~ msgid "Hosting"
-#~ msgstr "Хостинг"
 
 #~ msgid ""
 #~ "Weblate is <a href=\"%(github_url)s\">free software</a> and welcomes <a "

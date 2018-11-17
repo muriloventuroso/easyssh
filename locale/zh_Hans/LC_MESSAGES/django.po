@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2018-11-15 15:44+0100\n"
+"POT-Creation-Date: 2018-11-17 13:40+0100\n"
 "PO-Revision-Date: 2018-11-13 16:02+0000\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
@@ -232,11 +232,15 @@ msgstr "博客"
 msgid "Docs"
 msgstr "文档"
 
-#: weblate_web/templates/base.html:73
+#: weblate_web/templates/base.html:62
+msgid "Hosting"
+msgstr "托管"
+
+#: weblate_web/templates/base.html:74
 msgid "Help with translations!"
 msgstr "帮我们翻译！"
 
-#: weblate_web/templates/base.html:117 weblate_web/templates/terms.html:4
+#: weblate_web/templates/base.html:118 weblate_web/templates/terms.html:4
 msgid "Terms of Service and Privacy Policy"
 msgstr "服务条款和隐私政策"
 
@@ -1085,9 +1089,13 @@ msgstr "Weblate 截图"
 msgid "See more features…"
 msgstr "查看更多功能…"
 
-#: weblate_web/templates/index.html:46
+#: weblate_web/templates/index.html:45
 msgid "See who is using Weblate and join them!"
 msgstr "查看谁在使用 Weblate 并加入行列！"
+
+#: weblate_web/templates/index.html:106
+msgid "Browse hundredths of projects on Hosted Weblate"
+msgstr ""
 
 #: weblate_web/templates/payment/customer.html:5
 #: weblate_web/templates/payment/payment.html:4
@@ -1563,9 +1571,6 @@ msgstr ""
 
 #~ msgid "Toggle navigation"
 #~ msgstr "导航栏开关"
-
-#~ msgid "Hosting"
-#~ msgstr "托管"
 
 #~ msgid ""
 #~ "Weblate is <a href=\"%(github_url)s\">free software</a> and welcomes <a "

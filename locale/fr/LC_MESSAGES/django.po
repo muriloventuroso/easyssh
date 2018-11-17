@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: French (Weblate)\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2018-11-15 15:44+0100\n"
+"POT-Creation-Date: 2018-11-17 13:40+0100\n"
 "PO-Revision-Date: 2018-11-15 14:50+0000\n"
 "Last-Translator: Ldm Public <ldmpub@gmail.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/weblate/website/"
@@ -258,11 +258,15 @@ msgstr "Blogue"
 msgid "Docs"
 msgstr "Documentation"
 
-#: weblate_web/templates/base.html:73
+#: weblate_web/templates/base.html:62
+msgid "Hosting"
+msgstr "Hébergement"
+
+#: weblate_web/templates/base.html:74
 msgid "Help with translations!"
 msgstr "Offrez votre aide pour les traductions !"
 
-#: weblate_web/templates/base.html:117 weblate_web/templates/terms.html:4
+#: weblate_web/templates/base.html:118 weblate_web/templates/terms.html:4
 msgid "Terms of Service and Privacy Policy"
 msgstr "Conditions d’Utilisation du Service et Politique de Confidentialité"
 
@@ -1177,9 +1181,13 @@ msgstr "Capture d’écran de Weblate"
 msgid "See more features…"
 msgstr "Voir plus de fonctionnalités…"
 
-#: weblate_web/templates/index.html:46
+#: weblate_web/templates/index.html:45
 msgid "See who is using Weblate and join them!"
 msgstr "Découvrez qui utilise Weblate et rejoignez nous !"
+
+#: weblate_web/templates/index.html:106
+msgid "Browse hundredths of projects on Hosted Weblate"
+msgstr ""
 
 #: weblate_web/templates/payment/customer.html:5
 #: weblate_web/templates/payment/payment.html:4
@@ -1676,9 +1684,6 @@ msgstr ""
 
 #~ msgid "Toggle navigation"
 #~ msgstr "Basculer la navigation"
-
-#~ msgid "Hosting"
-#~ msgstr "Hébergement"
 
 #~ msgid ""
 #~ "Weblate is <a href=\"%(github_url)s\">free software</a> and welcomes <a "
