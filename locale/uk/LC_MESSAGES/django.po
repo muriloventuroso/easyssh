@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2018-11-17 13:40+0100\n"
-"PO-Revision-Date: 2018-11-11 12:14+0000\n"
+"PO-Revision-Date: 2018-11-17 13:15+0000\n"
 "Last-Translator: Андрій Бандура <andriykopanytsia@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/weblate/"
 "website/uk/>\n"
@@ -17,8 +17,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 3.3-dev\n"
 
 #: weblate_web/data.py:33
@@ -884,10 +884,8 @@ msgstr ""
 "Використовуйте Weblate як сервіс та отримуйте підтримку локального хостингу."
 
 #: weblate_web/templates/hosting.html:11
-#, fuzzy
-#| msgid "Self hosting"
 msgid "Order hosting"
-msgstr "Власний хостинг"
+msgstr "Замовити хостинг"
 
 #: weblate_web/templates/hosting.html:21
 msgid ""
@@ -1063,16 +1061,13 @@ msgid "%(price)s EUR / month"
 msgstr "%(price)s EUR / місяць"
 
 #: weblate_web/templates/hosting.html:196
-#, fuzzy
-#| msgid "See below for options"
 msgid "View support options"
-msgstr "Див. нижче за параметрами"
+msgstr "Переглянути варіанти підтримки"
 
 #: weblate_web/templates/hosting.html:200
-#, fuzzy, python-format
-#| msgid "Yearly by invoice (save 15-20%%)"
+#, python-format
 msgid "Yearly (save 15-20%%)"
-msgstr "Щомісячно за рахунком-фактурою (економія 15-20%%)"
+msgstr "Щорічно (знижка 15-20%%)"
 
 #: weblate_web/templates/hosting.html:202
 #: weblate_web/templates/hosting.html:205
@@ -1497,7 +1492,7 @@ msgstr "Наші переклади виконуються на Hosted Weblate."
 
 #: weblate_web/templates/thanks.html:46
 msgid "Payments are processed by The Pay service."
-msgstr ""
+msgstr "Платежі опрацьовуються сервісом The Pay."
 
 #: weblate_web/templates/thanks.html:50
 msgid "Supporters"
