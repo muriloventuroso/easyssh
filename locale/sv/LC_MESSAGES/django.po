@@ -1,10 +1,11 @@
+# Jonatan Nyberg <jonatan.nyberg.karl@gmail.com>, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: Swedish (Weblate)\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2018-11-17 17:10+0100\n"
-"PO-Revision-Date: 2018-07-23 11:06+0000\n"
-"Last-Translator: Michal Čihař <michal@cihar.com>\n"
+"PO-Revision-Date: 2018-11-21 07:40+0000\n"
+"Last-Translator: Jonatan Nyberg <jonatan.nyberg.karl@gmail.com>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/weblate/website/"
 "sv/>\n"
 "Language: sv\n"
@@ -12,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.1-dev\n"
+"X-Generator: Weblate 3.3-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -83,7 +84,7 @@ msgstr "Marknadsföring"
 
 #: weblate_web/data.py:79
 msgid "Translation workflow can be customized by using addons."
-msgstr ""
+msgstr "Översättning arbetsflöde kan anpassas med hjälp av tillägg."
 
 #: weblate_web/data.py:81
 msgid "Addons"
@@ -94,6 +95,8 @@ msgid ""
 "Automatic translation can be used to bootstrap your translations using "
 "machine translation services or translation memory."
 msgstr ""
+"Automatisk översättning kan användas för att starta upp dina översättningar "
+"med hjälp av maskinöversättningstjänster eller översättningsminne."
 
 #: weblate_web/data.py:89
 msgid "Automatic translation"
@@ -103,6 +106,8 @@ msgstr "Automatisk översättning"
 msgid ""
 "Translations can be exported and imported in many widely used file formats."
 msgstr ""
+"Översättningar kan exporteras och importeras i många allmänt använda "
+"filformat."
 
 #: weblate_web/data.py:97 weblate_web/templates/features.html:87
 msgid "Export and import"
@@ -110,7 +115,7 @@ msgstr "Export och import"
 
 #: weblate_web/data.py:101
 msgid "You can define access levels for every user."
-msgstr ""
+msgstr "Du kan definiera åtkomstnivåer för varje användare."
 
 #: weblate_web/data.py:102 weblate_web/templates/hosting-free.html:45
 #: weblate_web/templates/hosting.html:105
@@ -214,7 +219,7 @@ msgstr "Hämta"
 
 #: weblate_web/templates/base.html:54
 msgid "Pricing"
-msgstr ""
+msgstr "Prissättning"
 
 #: weblate_web/templates/base.html:55
 msgid "Develop"
@@ -254,7 +259,7 @@ msgstr "Hjälp med översättningar!"
 
 #: weblate_web/templates/base.html:118 weblate_web/templates/terms.html:4
 msgid "Terms of Service and Privacy Policy"
-msgstr ""
+msgstr "Användarvillkor och sekretesspolicy"
 
 #: weblate_web/templates/contribute.html:3
 #: weblate_web/templates/contribute.html:4
@@ -383,6 +388,9 @@ msgid ""
 "fund projects you use. You can use credit card, bank transfer or direct "
 "debit to top up the account."
 msgstr ""
+"Liberapay är en återkommande donationsplattform där du skickar veckobelopp "
+"för att finansiera projekt du använder. Du kan använda kreditkort, "
+"banköverföring eller autogiro för att fylla på kontot."
 
 #: weblate_web/templates/donate.html:50
 msgid "Fund features"
@@ -698,6 +706,8 @@ msgstr "Hosting för Weblate"
 #: weblate_web/templates/hosting-free.html:6
 msgid "We love open source and we offer free plans for hosting translations."
 msgstr ""
+"Vi älskar öppen källkod och vi erbjuder gratis planer för att vara värd för "
+"översättningar."
 
 #: weblate_web/templates/hosting-free.html:11
 msgid "Ask for hosting"
@@ -1052,7 +1062,7 @@ msgstr ""
 
 #: weblate_web/templates/hosting.html:179
 msgid "Monthly"
-msgstr ""
+msgstr "Månatlig"
 
 #: weblate_web/templates/hosting.html:181
 msgid "Contact us"
@@ -1111,6 +1121,7 @@ msgstr "Självhosting"
 #: weblate_web/templates/hosting.html:230
 msgid "There are also several options for deploying Weblate to the cloud."
 msgstr ""
+"Det finns också flera alternativ för att distribuera Weblate till molnet."
 
 #: weblate_web/templates/hosting.html:234
 #, fuzzy
@@ -1180,7 +1191,7 @@ msgstr "Se vem som använder Weblate och gör som de!"
 
 #: weblate_web/templates/index.html:106
 msgid "Browse hundreds of projects on Hosted Weblate"
-msgstr ""
+msgstr "Bläddra bland hundratals projekt på Weblate"
 
 #: weblate_web/templates/payment/customer.html:5
 #: weblate_web/templates/payment/payment.html:4
@@ -1191,7 +1202,7 @@ msgstr "Weblate-skärmdump"
 
 #: weblate_web/templates/payment/customer.html:15
 msgid "Your billing information"
-msgstr ""
+msgstr "Din faktureringsinformation"
 
 #: weblate_web/templates/payment/customer.html:21
 msgid "Save"
@@ -1217,7 +1228,7 @@ msgstr "%(price)s EUR"
 
 #: weblate_web/templates/payment/payment.html:16
 msgid "(including VAT)"
-msgstr ""
+msgstr "(inklusive moms)"
 
 #: weblate_web/templates/payment/payment.html:18
 #, fuzzy
@@ -1233,21 +1244,24 @@ msgstr "Betalningslänk"
 
 #: weblate_web/templates/payment/payment.html:22
 msgid "Payment will be issued yearly till you cancel the subscription."
-msgstr ""
+msgstr "Betalning kommer att utfärdas årligen tills du avbryter abonnemanget."
 
 #: weblate_web/templates/payment/payment.html:24
 msgid "Payment will be issued monthly till you cancel the subscription."
 msgstr ""
+"Betalning kommer att utfärdas varje månad tills du avbryter abonnemanget."
 
 #: weblate_web/templates/payment/payment.html:29
 msgid ""
 "Note: This is unavailable for some payment methods, you will have to "
 "manually complete the next payment in those cases."
 msgstr ""
+"Notera: Detta är inte tillgängligt för vissa betalningsmetoder, du måste "
+"manuellt slutföra nästa betalning i dessa fall."
 
 #: weblate_web/templates/payment/payment.html:32
 msgid "Billing information"
-msgstr ""
+msgstr "Faktureringsinformation"
 
 #: weblate_web/templates/payment/payment.html:34
 msgid "Edit"
@@ -1255,7 +1269,7 @@ msgstr "Redigera"
 
 #: weblate_web/templates/payment/payment.html:47
 msgid "Please choose payment method:"
-msgstr ""
+msgstr "Välj betalningsmetod:"
 
 #: weblate_web/templates/support.html:3 weblate_web/templates/support.html:4
 msgid "Weblate support"
@@ -1480,11 +1494,11 @@ msgstr "Tjänst"
 
 #: weblate_web/templates/terms.html:6
 msgid "The legal documents necessary to offer this service."
-msgstr ""
+msgstr "De juridiska handlingar som är nödvändiga för att erbjuda denna tjänst."
 
 #: weblate_web/templates/terms.html:20
 msgid "Privacy Policy"
-msgstr ""
+msgstr "Sekretesspolicy"
 
 #: weblate_web/templates/thanks.html:3 weblate_web/templates/thanks.html:4
 msgid "Thanks from Weblate"
@@ -1653,7 +1667,7 @@ msgstr "Källkod, zip-komprimerad"
 
 #: weblate_web/views.py:97
 msgid "Please provide your billing information to complete the payment."
-msgstr ""
+msgstr "Vänligen ange din faktureringsinformation för att slutföra betalningen."
 
 #~ msgid "Monthly by PayPal"
 #~ msgstr "Månatligen via PayPal"
