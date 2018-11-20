@@ -35,6 +35,7 @@ namespace EasySSH {
         public bool restore_hosts { get; set; }
         public bool use_dark_theme { get; set; }
         public bool sync_ssh_config {get; set; }
+        public bool encrypt_data {get; set; }
 
         public static Settings get_default () {
             if (settings == null) {

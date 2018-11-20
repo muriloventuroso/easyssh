@@ -60,6 +60,9 @@ namespace EasySSH {
         public Granite.Widgets.SourceList source_list;
         public MainWindow window { get; construct; }
         private EasySSH.Settings settings;
+        private string encrypt_password;
+        private bool should_encrypt_data;
+        private bool open_dialog;
         public signal void host_edit_clicked (string name);
         public signal void host_remove_clicked (string name);
 
@@ -70,6 +73,9 @@ namespace EasySSH {
         construct {
             settings = EasySSH.Settings.get_default ();
             hostmanager = new HostManager();
+            encrypt_password = "";
+            should_encrypt_data = settings.encrypt_data;
+            open_dialog = false;
 
             var paned = new Gtk.Paned (Gtk.Orientation.HORIZONTAL);
             box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 0);
@@ -154,6 +160,19 @@ namespace EasySSH {
 
                 show_all();
             });
+            settings.changed.connect(() => {
+                if(settings.encrypt_data == true && should_encrypt_data == false){
+                    get_password (false);
+                }
+                if(settings.encrypt_data == false && should_encrypt_data == true){
+                    encrypt_password = "";
+                }
+                if(should_encrypt_data != settings.encrypt_data){
+                    should_encrypt_data = settings.encrypt_data;
+                    save_hosts ();
+                }
+            });
+
             show_all();
         }
 
@@ -266,20 +285,100 @@ namespace EasySSH {
             return (TerminalWidget)((TerminalBox)tab.page).term;
         }
 
+        public string get_password(bool unlock) {
+            if(open_dialog == true){
+                return "";
+            }
+            open_dialog = true;
+            string password;
+            if(encrypt_password == ""){
+                var description = "";
+                if(unlock == true){
+                    description = _("Please enter the password to unlock the data file");
+                }else{
+                    description = _("Please enter the password to lock the data file");
+                }
+                var message_dialog = new Granite.MessageDialog.with_image_from_icon_name (_("Password"), description, "dialog-password", Gtk.ButtonsType.NONE);
+                var password_entry = new Gtk.Entry ();
+                password_entry.visibility = false;
+                password_entry.show ();
+                password_entry.set_activates_default(true);
+                message_dialog.custom_bin.add(password_entry);
+                var no_button = new Gtk.Button.with_label (_("Cancel"));
+                message_dialog.add_action_widget (no_button, Gtk.ResponseType.CANCEL);
+
+                var yes_button = new Gtk.Button.with_label (_("Send"));
+                yes_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+                yes_button.can_default = true;
+                message_dialog.add_action_widget (yes_button, Gtk.ResponseType.OK);
+                message_dialog.set_default_response(Gtk.ResponseType.OK);
+                message_dialog.set_type_hint(Gdk.WindowTypeHint.DIALOG);
+                message_dialog.show_all ();
+                if (message_dialog.run () == Gtk.ResponseType.OK) {
+                    password = password_entry.text;
+                } else {
+                    password = "";
+                }
+                message_dialog.destroy ();
+                encrypt_password = password;
+
+            } else {
+                password = encrypt_password;
+            }
+            open_dialog = false;
+            return password;
+        }
+
+        public string decrypt_data(string password, string path) {
+            string output, stderr  = "";
+            int exit_status = 0;
+            try {
+                var cmd = "gpg --batch --yes --quiet --passphrase " + password + " -d '" + path + "'";
+                Process.spawn_command_line_sync (cmd, out output, out stderr, out exit_status);
+            } catch (Error e) {
+                critical (e.message);
+            }
+            return output;
+        }
+
+        public string encrypt_data(string password, string content) {
+            string output, stderr  = "";
+            int exit_status = 0;
+            try {
+                var cmd = "sh -c 'echo \"" + content.replace("\"", "\\\"") + "\" | gpg --batch --symmetric --armor --passphrase " + password + "'";
+                Process.spawn_command_line_sync (cmd, out output, out stderr, out exit_status);
+            } catch (Error e) {
+                critical (e.message);
+            }
+            return output;
+        }
+
         public void load_hosts() {
             try {
                 string res = "";
                 string hosts_folder = EasySSH.settings.hosts_folder.replace ("%20", " ");
-                var file = File.new_for_path (hosts_folder + "/hosts.json");
-
+                string file_name = "";
+                if(EasySSH.settings.encrypt_data == true){
+                    file_name = "/hosts.json.gpg";
+                } else {
+                    file_name = "/hosts.json";
+                }
+                var file = File.new_for_path (hosts_folder + file_name);
                 if (!file.query_exists ()) {
                     file.make_directory();
                 } else {
-                    var dis = new DataInputStream (file.read ());
-                    string line;
-
-                    while ((line = dis.read_line (null)) != null) {
-                        res += line;
+                    if(EasySSH.settings.encrypt_data == true){
+                        var password = get_password (true);
+                        if(password == ""){
+                            return;
+                        }
+                        res = decrypt_data (password, hosts_folder + file_name);
+                    } else {
+                        string line;
+                        var dis = new DataInputStream (file.read ());
+                        while ((line = dis.read_line (null)) != null) {
+                            res += line;
+                        }
                     }
                     var parser = new Json.Parser ();
                     parser.load_from_data (res);
@@ -452,7 +551,8 @@ namespace EasySSH {
                             if(hosts[i].port != ""){
                                 data_ssh_config += "    Port " + hosts[i].port + "\n";
                             }
-                            if(hosts[i].identity_file != ""){
+                            print(hosts[i].identity_file);
+                            if(hosts[i].identity_file != "" && hosts[i].identity_file != null){
                                 data_ssh_config += "    IdentityFile " + hosts[i].identity_file + "\n";
                             }
                         }
@@ -466,9 +566,13 @@ namespace EasySSH {
             Json.Generator gen = new Json.Generator();
             gen.set_root(root);
             string data = gen.to_data(null);
-
-            var file = File.new_for_path (EasySSH.settings.hosts_folder.replace ("%20", " ") + "/hosts.json");
-
+            var filename = "/hosts.json";
+            if(EasySSH.settings.encrypt_data == true){
+                filename = filename + ".gpg";
+                var password = get_password (false);
+                data = encrypt_data (password, data);
+            }
+            var file = File.new_for_path (EasySSH.settings.hosts_folder.replace ("%20", " ") + filename);
             {
                 if (file.query_exists ()) {
                     file.delete ();

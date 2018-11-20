@@ -76,6 +76,14 @@ namespace EasySSH {
                 settings.sync_ssh_config = sync_ssh_switch.active;
             });
 
+            var encrypt_data_switch = new Gtk.Switch();
+            encrypt_data_switch.halign = Gtk.Align.START;
+            encrypt_data_switch.valign = Gtk.Align.CENTER;
+            encrypt_data_switch.set_active(settings.encrypt_data);
+            encrypt_data_switch.notify["active"].connect (() => {
+                settings.encrypt_data = encrypt_data_switch.active;
+            });
+
             var use_dark_theme = new Gtk.Switch ();
             use_dark_theme.halign = Gtk.Align.START;
             use_dark_theme.valign = Gtk.Align.CENTER;
@@ -93,6 +101,9 @@ namespace EasySSH {
 
             general_grid.attach (new Granite.HeaderLabel (_("Sync SSH Config:")), 0, 2, 1, 1);
             general_grid.attach (sync_ssh_switch, 1, 2, 1, 1);
+
+            general_grid.attach (new Granite.HeaderLabel (_("Encrypt Data:")), 0, 3, 1, 1);
+            general_grid.attach (encrypt_data_switch, 1, 3, 1, 1);
 
             var appearance_grid = new Gtk.Grid ();
 
