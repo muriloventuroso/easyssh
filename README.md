@@ -18,6 +18,7 @@ A complete, efficient and easy-to-use manager. Create and edit connections, grou
 * Multiple instances of same connection
 * Restore opened hosts
 * Sync `~/.ssh/config`
+* Protect data with password
 
 ### Donate
 <a href="https://www.paypal.me/muriloventuroso">PayPal</a> | <a href="https://www.patreon.com/muriloventuroso">Patreon</a>
@@ -42,6 +43,7 @@ If you want to hack on and build EasySSH yourself, you'll need the following dep
 * libunity-dev
 * meson
 * valac
+* gpg
 
 Run `meson build` to configure the build environment and run `ninja test` to build and run automated tests
 

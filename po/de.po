@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.muriloventuroso.easyssh\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-23 14:27-0300\n"
+"POT-Creation-Date: 2018-11-20 14:24-0200\n"
 "PO-Revision-Date: 2018-08-16 06:51+0000\n"
 "Last-Translator: Jürgen Hörmann <info@juergenhoermann.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/easyssh/"
@@ -43,16 +43,37 @@ msgstr "Im Datei-Browser anzeigen"
 msgid "Edit"
 msgstr "Bearbeiten"
 
-#: src/Views/SourceListView.vala:41 src/Views/SourceListView.vala:655
+#: src/Views/SourceListView.vala:41 src/Views/SourceListView.vala:761
 #: src/Widgets/ConnectionEditor.vala:318 src/Widgets/Connection.vala:64
 msgid "Remove"
 msgstr "Entfernen"
 
-#: src/Views/SourceListView.vala:653
+#: src/Views/SourceListView.vala:297
+msgid "Please enter the password to unlock the data file"
+msgstr ""
+
+#: src/Views/SourceListView.vala:299
+msgid "Please enter the password to lock the data file"
+msgstr ""
+
+#: src/Views/SourceListView.vala:301
+#, fuzzy
+msgid "Password"
+msgstr "Passwort:"
+
+#: src/Views/SourceListView.vala:307 src/Widgets/ConnectionEditor.vala:110
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: src/Views/SourceListView.vala:310
+msgid "Send"
+msgstr ""
+
+#: src/Views/SourceListView.vala:759
 msgid "Remove "
 msgstr "Entfernen "
 
-#: src/Views/SourceListView.vala:653
+#: src/Views/SourceListView.vala:759
 msgid ""
 "Are you sure you want to remove this connection and all data associated with "
 "it?"
@@ -108,10 +129,6 @@ msgstr "Menü"
 msgid "Save"
 msgstr "Speichern"
 
-#: src/Widgets/ConnectionEditor.vala:110
-msgid "Cancel"
-msgstr "Abbrechen"
-
 #: src/Widgets/ConnectionEditor.vala:112 src/Widgets/ConnectionEditor.vala:270
 msgid "Advanced"
 msgstr "Erweitert"
@@ -160,11 +177,11 @@ msgstr "Schlüsseldatei:"
 msgid "SSH Config:"
 msgstr "SSH Konfiguration:"
 
-#: src/Widgets/ConnectionEditor.vala:277 src/Widgets/Preferences.vala:99
+#: src/Widgets/ConnectionEditor.vala:277 src/Widgets/Preferences.vala:110
 msgid "Terminal Background Color:"
 msgstr "Terminal Hintergrundfarbe:"
 
-#: src/Widgets/ConnectionEditor.vala:286 src/Widgets/Preferences.vala:102
+#: src/Widgets/ConnectionEditor.vala:286 src/Widgets/Preferences.vala:113
 msgid "Terminal Font:"
 msgstr "Terminal Schriftart:"
 
@@ -196,7 +213,7 @@ msgstr "Entfernt"
 msgid "Add Tunnel"
 msgstr "Tunnel hinzufügen"
 
-#: src/Widgets/ConnectionEditor.vala:375 src/Widgets/Preferences.vala:113
+#: src/Widgets/ConnectionEditor.vala:375 src/Widgets/Preferences.vala:124
 msgid "Appearance"
 msgstr "Aussehen"
 
@@ -216,27 +233,31 @@ msgstr "Verbinden"
 msgid "Select Hosts Configuration Folder…"
 msgstr "Ordner für Host Konfigurationen wählen…"
 
-#: src/Widgets/Preferences.vala:88
+#: src/Widgets/Preferences.vala:96
 msgid "Hosts Configuration Folder:"
 msgstr "Ordner mit Host Konfigurationen:"
 
-#: src/Widgets/Preferences.vala:91
+#: src/Widgets/Preferences.vala:99
 msgid "Restore Opened Hosts:"
 msgstr "Geöffnete Hosts wiederherstellen:"
 
-#: src/Widgets/Preferences.vala:94
+#: src/Widgets/Preferences.vala:102
 msgid "Sync SSH Config:"
 msgstr "SSH Konfiguration synchronisieren:"
 
 #: src/Widgets/Preferences.vala:105
+msgid "Encrypt Data:"
+msgstr ""
+
+#: src/Widgets/Preferences.vala:116
 msgid "Use Dark Theme:"
 msgstr "Dunkles Thema verwenden:"
 
-#: src/Widgets/Preferences.vala:112
+#: src/Widgets/Preferences.vala:123
 msgid "General"
 msgstr "Allgemein"
 
-#: src/Widgets/Preferences.vala:125
+#: src/Widgets/Preferences.vala:136
 msgid "Close"
 msgstr "Schließen"
 

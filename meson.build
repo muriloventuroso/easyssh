@@ -14,6 +14,10 @@ asresources = gnome.compile_resources(
     source_dir: 'data',
     c_name: 'as'
 )
+if get_option('with-gpg')
+    add_project_arguments(['--define', 'WITH_GPG'], language : 'vala')
+    gpg_bin = find_program('gpg2', 'gpg')
+endif
 
 dependencies = [
     dependency('gee-0.8'),

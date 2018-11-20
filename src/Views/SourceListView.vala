@@ -160,6 +160,7 @@ namespace EasySSH {
 
                 show_all();
             });
+            #if WITH_GPG
             settings.changed.connect(() => {
                 if(settings.encrypt_data == true && should_encrypt_data == false){
                     get_password (false);
@@ -172,6 +173,7 @@ namespace EasySSH {
                     save_hosts ();
                 }
             });
+            #endif
 
             show_all();
         }
@@ -284,7 +286,7 @@ namespace EasySSH {
         private TerminalWidget get_term_widget (Granite.Widgets.Tab tab) {
             return (TerminalWidget)((TerminalBox)tab.page).term;
         }
-
+        #if WITH_GPG
         public string get_password(bool unlock) {
             if(open_dialog == true){
                 return "";
@@ -352,21 +354,22 @@ namespace EasySSH {
             }
             return output;
         }
-
+        #endif
         public void load_hosts() {
             try {
                 string res = "";
                 string hosts_folder = EasySSH.settings.hosts_folder.replace ("%20", " ");
-                string file_name = "";
+                string file_name = "/hosts.json";
+                #if WITH_GPG
                 if(EasySSH.settings.encrypt_data == true){
                     file_name = "/hosts.json.gpg";
-                } else {
-                    file_name = "/hosts.json";
                 }
+                #endif
                 var file = File.new_for_path (hosts_folder + file_name);
                 if (!file.query_exists ()) {
                     file.make_directory();
                 } else {
+                    #if WITH_GPG
                     if(EasySSH.settings.encrypt_data == true){
                         var password = get_password (true);
                         if(password == ""){
@@ -380,6 +383,13 @@ namespace EasySSH {
                             res += line;
                         }
                     }
+                    #else
+                    string line;
+                    var dis = new DataInputStream (file.read ());
+                    while ((line = dis.read_line (null)) != null) {
+                        res += line;
+                    }
+                    #endif
                     var parser = new Json.Parser ();
                     parser.load_from_data (res);
 
@@ -551,7 +561,6 @@ namespace EasySSH {
                             if(hosts[i].port != ""){
                                 data_ssh_config += "    Port " + hosts[i].port + "\n";
                             }
-                            print(hosts[i].identity_file);
                             if(hosts[i].identity_file != "" && hosts[i].identity_file != null){
                                 data_ssh_config += "    IdentityFile " + hosts[i].identity_file + "\n";
                             }
@@ -567,11 +576,13 @@ namespace EasySSH {
             gen.set_root(root);
             string data = gen.to_data(null);
             var filename = "/hosts.json";
+            #if WITH_GPG
             if(EasySSH.settings.encrypt_data == true){
                 filename = filename + ".gpg";
                 var password = get_password (false);
                 data = encrypt_data (password, data);
             }
+            #endif
             var file = File.new_for_path (EasySSH.settings.hosts_folder.replace ("%20", " ") + filename);
             {
                 if (file.query_exists ()) {
