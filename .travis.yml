@@ -9,14 +9,15 @@ sudo: required
 
 services:
   - docker
-
+before_install:
+  - sudo apt-get update
+  - sudo apt-get install -y gpg
 addons:
   apt:
     sources:
       - ubuntu-toolchain-r-test
     packages:
       - libstdc++-5-dev
-      - gpg
 
 install:
   - npm i -g @elementaryos/houston
