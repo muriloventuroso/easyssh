@@ -62,6 +62,7 @@ class SecurityMiddleware:
 
         # Piwik
         script.append('stats.cihar.com')
+        script.append("'unsafe-inline'")
         image.append('stats.cihar.com')
 
         # The Pay
