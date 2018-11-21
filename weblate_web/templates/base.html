@@ -122,24 +122,26 @@
 {% block extrafooter %}{% endblock %}
 </ul>
 </footer>
-<!-- Piwik Image Tracker -->
+
+<!-- Matomo Image Tracker-->
 <noscript><img src="https://stats.cihar.com/piwik.php?idsite=12&amp;rec=1" style="border:0" alt="" /></noscript>
-<!-- End Piwik -->
-<!-- Piwik -->
+<!-- End Matomo -->
+
+<!-- Matomo -->
 <script type="text/javascript">
   var _paq = _paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
   _paq.push(['trackPageView']);
   _paq.push(['enableLinkTracking']);
   (function() {
-    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://stats.cihar.com/";
+    var u="https://stats.cihar.com/";
     _paq.push(['setTrackerUrl', u+'piwik.php']);
-    _paq.push(['setSiteId', 12]);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
-    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+    _paq.push(['setSiteId', '12']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
   })();
 </script>
-<noscript><p><img src="https://stats.cihar.com/piwik.php?idsite=12" style="border:0;" alt="" /></p></noscript>
-<!-- End Piwik Code -->
+<!-- End Matomo Code -->
 
 </body>
 </html>
