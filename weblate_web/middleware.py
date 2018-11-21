@@ -27,7 +27,8 @@ CSP_TEMPLATE = (
     "default-src 'self'; style-src {0}; img-src {1}; script-src {2}; "
     "connect-src 'none'; object-src 'none'; "
     "font-src maxcdn.bootstrapcdn.com; "
-    "child-src 'none'; frame-ancestors 'none';"
+    "child-src 'none'; frame-ancestors 'none'; "
+    "report-uri https://sentry.io/api/1305560/security/?sentry_key=795461fdeabc4ff6a3b6a6dedc495b5f"
 )
 
 
