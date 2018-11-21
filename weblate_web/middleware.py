@@ -66,6 +66,9 @@ class SecurityMiddleware:
         script.append("'unsafe-inline'")
         image.append('stats.cihar.com')
 
+        # Hosted Weblate widget
+        image.append('hosted.weblate.org')
+
         # The Pay
         image.append('www.thepay.cz')
 
