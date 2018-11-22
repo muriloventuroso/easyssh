@@ -56,7 +56,7 @@ class SecurityMiddleware:
 
         style = ["'self'", "'unsafe-inline'"]
         script = ["'self'"]
-        image = ["'self'"]
+        image = ["'self'", "data:"]
 
         # Sentry/Raven
         script.append('cdn.ravenjs.com')
