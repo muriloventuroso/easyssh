@@ -33,11 +33,9 @@ if get_option('libunity')
 endif
 
 if with_gpg
+    gpg = find_program('gpg', 'gpg2', required: true)
+    add_project_arguments(['--define', 'WITH_GPG'], language : 'vala')
 
-    gpg = find_program('gpg', 'gpg2', required: false)
-    if gpg.found()
-        add_project_arguments(['--define', 'WITH_GPG'], language : 'vala')
-    endif
 endif
 
 
