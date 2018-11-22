@@ -22,13 +22,22 @@ from __future__ import unicode_literals
 
 from django.conf import settings
 
+URL = (
+    'https://sentry.io/api/1305560/security/'
+    '?sentry_key=795461fdeabc4ff6a3b6a6dedc495b5f'
+)
 
 CSP_TEMPLATE = (
-    "default-src 'self'; style-src {0}; img-src {1}; script-src {2}; "
-    "connect-src 'none'; object-src 'none'; "
-    "font-src data:; "
-    "frame-src 'none'; frame-ancestors 'none'; "
-    "report-uri https://sentry.io/api/1305560/security/?sentry_key=795461fdeabc4ff6a3b6a6dedc495b5f"
+    "default-src 'self'; "
+    "style-src {style}; "
+    "img-src {image}; "
+    "script-src {script}; "
+    "connect-src 'none'; "
+    "object-src 'none'; "
+    "font-src {font}; "
+    "frame-src 'none'; "
+    "frame-ancestors 'none'; "
+    "report-uri {report}"
 )
 
 
@@ -57,6 +66,7 @@ class SecurityMiddleware:
         style = ["'self'", "'unsafe-inline'"]
         script = ["'self'"]
         image = ["'self'", "data:"]
+        font = ["data:"]
 
         # Sentry/Raven
         script.append('cdn.ravenjs.com')
@@ -73,9 +83,11 @@ class SecurityMiddleware:
         image.append('www.thepay.cz')
 
         response['Content-Security-Policy'] = CSP_TEMPLATE.format(
-            ' '.join(style),
-            ' '.join(image),
-            ' '.join(script),
+            style=' '.join(style),
+            image=' '.join(image),
+            script=' '.join(script),
+            font=' '.join(font),
+            report=URL
         )
         response['X-XSS-Protection'] = '1; mode=block'
         return response
