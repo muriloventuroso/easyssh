@@ -20,6 +20,7 @@
 
 from django.conf.urls import url
 from django.conf.urls.i18n import i18n_patterns
+from django.contrib import admin
 from django.views.generic import TemplateView, RedirectView
 from django.conf import settings
 from django.contrib.sitemaps import Sitemap
@@ -197,6 +198,8 @@ urlpatterns = i18n_patterns(
         r'^js/vat/$',
         fetch_vat
     ),
+    # Admin
+    url(r'^admin/', admin.site.urls),
 
     # Media files on devel server
     url(

@@ -182,6 +182,7 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'OPTIONS': {
             'context_processors': [
+                'django.contrib.auth.context_processors.auth',
                 'django.template.context_processors.request',
                 'django.template.context_processors.i18n',
                 'django.contrib.messages.context_processors.messages',
@@ -200,6 +201,7 @@ MIDDLEWARE = [
     'django.middleware.common.CommonMiddleware',
     'django.middleware.locale.LocaleMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'weblate_web.middleware.SecurityMiddleware',
 ]
@@ -208,9 +210,12 @@ ROOT_URLCONF = 'weblate_web.urls'
 
 INSTALLED_APPS = (
     'weblate_web',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
     'django.contrib.staticfiles',
     'django.contrib.sitemaps',
     'django.contrib.messages',
+    'django.contrib.admin',
     'wlhosted',
     'wlhosted.payments',
     'wlhosted.legal',

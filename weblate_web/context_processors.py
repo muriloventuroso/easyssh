@@ -27,8 +27,12 @@ from weblate_web.data import VERSION, EXTENSIONS, SCREENSHOTS
 
 
 def weblate_web(request):
+    match = request.resolver_match
     if request.resolver_match and request.resolver_match.url_name:
-        url_name = request.resolver_match.url_name
+        url_name = ':'.join(
+            request.resolver_match.namespaces +
+            [request.resolver_match.url_name]
+        )
         url_kwargs = request.resolver_match.kwargs
     else:
         url_name = 'home'
