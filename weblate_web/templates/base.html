@@ -70,7 +70,7 @@
         <span class="fas fa-language"></span>
         {% for lang in LANGUAGES %}{% if lang.0 == LANGUAGE_CODE %}{{ lang.1 }}{% endif %}{% endfor %}
         </a>
-        <div class="dropdown-menu{% if not LANGUAGE_BIDI %} dropdown-menu-right{% endif %}" aria-labelledby="dropdownMenuLink">
+        <div class="dropdown-menu {% if LANGUAGE_BIDI %}dropdown-menu-left{% else %}dropdown-menu-right{% endif %}" aria-labelledby="dropdownMenuLink">
           {% for lang in language_urls %}
           <a class="dropdown-item" href="{{ lang.url }}">{{ lang.name }}</a>
           {% endfor %}
