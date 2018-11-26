@@ -128,13 +128,6 @@ namespace EasySSH {
                     return false;
                 });
 
-            key_press_event.connect ((e) => {
-                switch (e.keyval) {
-                    case Gdk.Key.Escape:
-                        return true;
-                }
-                return false;
-            });
             get_default_filemanager ();
 
             settings.notify["sync-ssh-config"].connect (

@@ -247,6 +247,7 @@ namespace EasySSH {
                     var n_connect = new Connection(n_host, n, window);
                     var n_tab = new Granite.Widgets.Tab (n_host.name, null, n_connect);
                     n.insert_tab(n_tab, 0);
+                    window.current_terminal = null;
                 }
             });
             n.tab_moved.connect(on_tab_moved);

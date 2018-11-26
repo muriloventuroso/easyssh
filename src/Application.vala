@@ -45,7 +45,6 @@ namespace EasySSH {
             var quit_action = new SimpleAction ("quit", null);
 
             add_action (quit_action);
-            set_accels_for_action ("app.quit", {"Escape"});
 
             var provider = new Gtk.CssProvider ();
             provider.load_from_resource ("/com/github/muriloventuroso/easyssh/Application.css");
