@@ -41,7 +41,6 @@ CSP_TEMPLATE = (
 )
 
 
-# pylint: disable=old-style-class
 class SecurityMiddleware:
     """Middleware that sets various security related headers.
 
