@@ -28,6 +28,7 @@
     <br>
     <span class="text-muted">{% trans "Note: This is unavailable for some payment methods, you will have to manually complete the next payment in those cases." %}</span>
     </td></tr>
+    {% endif %}
     <tr>
     <th>{% trans "Billing information" %}</th>
     <td>
@@ -40,7 +41,6 @@
     {{ object.customer.vat }}
     </td>
     </tr>
-    {% endif %}
     </table>
   {% if can_pay %}
   <div class="card-footer text-muted">
