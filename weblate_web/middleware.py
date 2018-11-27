@@ -63,7 +63,7 @@ class SecurityMiddleware:
         if settings.DEBUG:
             return response
 
-        style = ["'self'", "'unsafe-inline'"]
+        style = ["'self'"]
         script = ["'self'"]
         image = ["'self'", "data:"]
         font = ["data:"]
@@ -73,7 +73,6 @@ class SecurityMiddleware:
 
         # Piwik
         script.append('stats.cihar.com')
-        script.append("'unsafe-inline'")
         image.append('stats.cihar.com')
 
         # Hosted Weblate widget
