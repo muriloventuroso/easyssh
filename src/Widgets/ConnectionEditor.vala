@@ -249,14 +249,14 @@ namespace EasySSH {
                         var new_line = l + "\n";
                         if(l.length >= 12){
                             if(l.substring(0, 12) == "IdentityFile"){
-                                new_line = "IdentityFile " + identityfile_chooser.get_uri() + "\n";
+                                new_line = "IdentityFile " + identityfile_chooser.get_uri().replace("file://", "") + "\n";
                                 change = true;
                             }
                         }
                         new_config += new_line;
                     }
                     if(change == false){
-                        new_config += "IdentityFile " + identityfile_chooser.get_uri() + "\n";
+                        new_config += "IdentityFile " + identityfile_chooser.get_uri().replace("file://", "") + "\n";
                     }
                     ssh_config_entry.buffer.text = new_config;
                 });
@@ -427,7 +427,7 @@ namespace EasySSH {
             host.port = port_entry.text;
             host.username = username_entry.text;
             if(change_password.active){
-                host.identity_file = identityfile_chooser.get_uri();
+                host.identity_file = identityfile_chooser.get_uri().replace("file://", "");
                 host.password = "";
             }else{
                 host.identity_file = "";
