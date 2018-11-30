@@ -88,29 +88,33 @@ class UtilTestCase(TestCase):
 
     @override_settings(FILES_PATH=TEST_DATA)
     def test_downloadlink(self):
-        self.assertIn(
+        self.assertEqual(
             'Sources tarball, gzip compressed',
-            downloadlink('foo.tar.gz')
+            downloadlink('foo.tar.gz')['text']
         )
-        self.assertIn(
+        self.assertEqual(
             'Sources tarball, xz compressed',
-            downloadlink('foo.tar.xz')
+            downloadlink('foo.tar.xz')['text']
         )
-        self.assertIn(
+        self.assertEqual(
             'Sources tarball, bzip2 compressed',
-            downloadlink('foo.tar.bz2')
+            downloadlink('foo.tar.bz2')['text']
         )
-        self.assertIn(
+        self.assertEqual(
             'Sources, zip compressed',
-            downloadlink('foo.zip')
+            downloadlink('foo.zip')['text']
         )
-        self.assertIn(
-            '>foo.pdf (0 bytes)',
-            downloadlink('foo.pdf')
+        self.assertEqual(
+            '0 bytes',
+            downloadlink('foo.pdf')['size']
         )
-        self.assertIn(
-            '>text (0 bytes)',
-            downloadlink('foo.pdf', 'text')
+        self.assertEqual(
+            '0 bytes',
+            downloadlink('foo.pdf', 'text')['size']
+        )
+        self.assertEqual(
+            'text',
+            downloadlink('foo.pdf', 'text')['text']
         )
 
 
