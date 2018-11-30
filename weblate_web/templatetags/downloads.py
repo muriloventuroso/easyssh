@@ -22,7 +22,6 @@ from __future__ import unicode_literals
 import os
 from django.template import Library
 from django.utils.translation import ugettext as _, ungettext
-from django.utils.safestring import mark_safe
 from django.conf import settings
 
 register = Library()
@@ -48,7 +47,7 @@ def filesizeformat(num_bytes):
     return _("%.1f GiB") % (num_bytes / (1024 * 1024 * 1024))
 
 
-@register.simple_tag
+@register.inclusion_tag('download-link.html')
 def downloadlink(name, text=None):
     if text is None:
         if name[-8:] == '.tar.bz2':
@@ -66,9 +65,9 @@ def downloadlink(name, text=None):
 
     size = filesizeformat(filesize)
 
-    return mark_safe('<a href="{base}{name}">{text} ({size})</a>'.format(**{
+    return {
         'base': settings.FILES_URL,
         'name': name,
         'text': text,
         'size': size,
-    }))
+    }
