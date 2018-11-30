@@ -32,7 +32,7 @@ CSP_TEMPLATE = (
     "style-src {style}; "
     "img-src {image}; "
     "script-src {script}; "
-    "connect-src 'none'; "
+    "connect-src {connect}; "
     "object-src 'none'; "
     "font-src {font}; "
     "frame-src 'none'; "
@@ -64,6 +64,7 @@ class SecurityMiddleware:
 
         style = ["'self'"]
         script = ["'self'"]
+        connect = ["'self'"]
         image = ["'self'", "data:"]
         font = ["data:"]
 
@@ -85,6 +86,7 @@ class SecurityMiddleware:
             image=' '.join(image),
             script=' '.join(script),
             font=' '.join(font),
+            connect=' '.join(connect),
             report=URL
         )
         response['X-XSS-Protection'] = '1; mode=block'
