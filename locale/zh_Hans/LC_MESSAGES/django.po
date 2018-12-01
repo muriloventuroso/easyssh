@@ -2,13 +2,14 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Boyuan Yang <073plan@gmail.com>, 2018.
+# popcorner <memoword@163.com>, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2018-11-17 17:10+0100\n"
-"PO-Revision-Date: 2018-11-13 16:02+0000\n"
-"Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
+"PO-Revision-Date: 2018-12-03 11:15+0000\n"
+"Last-Translator: popcorner <memoword@163.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "weblate/website/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -16,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.3-dev\n"
+"X-Generator: Weblate 3.4-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -812,10 +813,8 @@ msgid "Use Weblate as a service or get support for on-premises hosting."
 msgstr "以服务方式使用 Weblate，或获取有条件托管的服务支持。"
 
 #: weblate_web/templates/hosting.html:11
-#, fuzzy
-#| msgid "Self hosting"
 msgid "Order hosting"
-msgstr "自行托管"
+msgstr "订单托管"
 
 #: weblate_web/templates/hosting.html:21
 msgid ""
@@ -942,7 +941,7 @@ msgstr "翻译插件"
 
 #: weblate_web/templates/hosting.html:150
 msgid "Translation memory"
-msgstr "翻译存储"
+msgstr "翻译记忆库"
 
 #: weblate_web/templates/hosting.html:159
 msgid "Priority email support"
@@ -971,7 +970,7 @@ msgstr "附加费用 %(price)s 欧元/年，仅在年度账单中出现"
 
 #: weblate_web/templates/hosting.html:179
 msgid "Monthly"
-msgstr ""
+msgstr "按月"
 
 #: weblate_web/templates/hosting.html:181
 msgid "Contact us"
@@ -986,16 +985,13 @@ msgid "%(price)s EUR / month"
 msgstr "%(price)s 欧元 / 每月"
 
 #: weblate_web/templates/hosting.html:196
-#, fuzzy
-#| msgid "See below for options"
 msgid "View support options"
-msgstr "看下面的选项"
+msgstr "查看支持选项"
 
 #: weblate_web/templates/hosting.html:200
-#, fuzzy, python-format
-#| msgid "Yearly by invoice (save 15-20%%)"
+#, python-format
 msgid "Yearly (save 15-20%%)"
-msgstr "年订 (节省 15-20%%)"
+msgstr "按年 (节省 15-20%%)"
 
 #: weblate_web/templates/hosting.html:202
 #: weblate_web/templates/hosting.html:205
@@ -1027,45 +1023,31 @@ msgstr "自行托管"
 
 #: weblate_web/templates/hosting.html:230
 msgid "There are also several options for deploying Weblate to the cloud."
-msgstr ""
+msgstr "将Weblate部署到云还有几种选择。"
 
 #: weblate_web/templates/hosting.html:234
-#, fuzzy
-#| msgid ""
-#| "In case you need help with your self hosted solution, we're ready to help "
-#| "as well with consulting services tailored for your needs. Please contact "
-#| "<a href=\"%(contact_url)s\">Michal Čihař</a> for more details."
 msgid ""
 "In case you need help with your self hosted solution, we're ready to help as "
 "well with consulting services tailored for your needs."
-msgstr ""
-"在您自行托管的情境中可能会时常需要帮助，我们已经准备好帮助您，并为您的需求量"
-"身定做了咨询服务。请联系 <a href=\"%(contact_url)s\">Michal Čihař</a> 了解更"
-"多细节。"
+msgstr "在您自行托管的情境中可能会时常需要帮助，我们已经准备好帮助您，并为您的需求量身定做了咨询服务。"
 
 #: weblate_web/templates/index.html:3
 msgid "Weblate - web-based translation"
 msgstr "Weblate - 基于网站的在线翻译平台"
 
 #: weblate_web/templates/index.html:7
-#, fuzzy
-#| msgid "Weblate is a free web-based translation management system."
 msgid ""
 "Weblate is an open source web-based translation management system supporting "
 "continuous translation."
-msgstr "Weblate 是一个自由的基于网页的翻译管理系统。"
+msgstr "Weblate 是一个自由的基于网页的支持连续翻译的开源翻译管理系统。"
 
 #: weblate_web/templates/index.html:14
-#, fuzzy
-#| msgid "Hosting Weblate"
 msgid "Start using Weblate"
-msgstr "Weblate 托管"
+msgstr "开始使用Weblate"
 
 #: weblate_web/templates/index.html:15
-#, fuzzy
-#| msgid "Try our demo"
 msgid "Try our demo server"
-msgstr "试用我们的范例"
+msgstr "试用我们的范例服务器"
 
 #: weblate_web/templates/index.html:16
 msgid "Downloads"
@@ -1095,7 +1077,7 @@ msgstr "查看谁在使用 Weblate 并加入行列！"
 
 #: weblate_web/templates/index.html:106
 msgid "Browse hundreds of projects on Hosted Weblate"
-msgstr ""
+msgstr "浏览Hosted Weblate上的数百个项目"
 
 #: weblate_web/templates/payment/customer.html:5
 #: weblate_web/templates/payment/payment.html:4
@@ -1111,10 +1093,8 @@ msgid "Save"
 msgstr "保存"
 
 #: weblate_web/templates/payment/payment.html:11
-#, fuzzy
-#| msgid "Payment amount"
 msgid "Payment summary"
-msgstr "付款金额"
+msgstr "付款摘要"
 
 #: weblate_web/templates/payment/payment.html:14
 msgid "Payment amount"
@@ -1135,24 +1115,22 @@ msgid "Payment description"
 msgstr "支付描述"
 
 #: weblate_web/templates/payment/payment.html:20
-#, fuzzy
-#| msgid "Payment link"
 msgid "Payment frequence"
-msgstr "付款链接"
+msgstr "付款频率"
 
 #: weblate_web/templates/payment/payment.html:22
 msgid "Payment will be issued yearly till you cancel the subscription."
-msgstr ""
+msgstr "付款将每年自动产生，直到您取消订阅。"
 
 #: weblate_web/templates/payment/payment.html:24
 msgid "Payment will be issued monthly till you cancel the subscription."
-msgstr ""
+msgstr "付款将每月自动产生，直到您取消订阅。"
 
 #: weblate_web/templates/payment/payment.html:29
 msgid ""
 "Note: This is unavailable for some payment methods, you will have to "
 "manually complete the next payment in those cases."
-msgstr ""
+msgstr "注意：某些付款方式无法使用此功能，您必须在这些情况下手动完成下一笔付款。"
 
 #: weblate_web/templates/payment/payment.html:32
 msgid "Billing information"
@@ -1163,10 +1141,8 @@ msgid "Edit"
 msgstr "编辑"
 
 #: weblate_web/templates/payment/payment.html:47
-#, fuzzy
-#| msgid "Please choose your payment method"
 msgid "Please choose payment method:"
-msgstr "请选择您的支付方式"
+msgstr "请选择支付方式："
 
 #: weblate_web/templates/support.html:3 weblate_web/templates/support.html:4
 msgid "Weblate support"
@@ -1248,16 +1224,12 @@ msgid "Does not include custom code development"
 msgstr "不包括自定义代码开发"
 
 #: weblate_web/templates/support.html:52
-#, fuzzy
-#| msgid "Installation on your Linux server"
 msgid "Installation using Docker on your Linux server"
-msgstr "安装在你的 Linux 服务器上"
+msgstr "在Linux服务器上使用Docker进行安装"
 
 #: weblate_web/templates/support.html:59
-#, fuzzy
-#| msgid "Installation on your Linux server"
 msgid "Installation using Docker"
-msgstr "安装在你的 Linux 服务器上"
+msgstr "使用Docker安装"
 
 #: weblate_web/templates/support.html:67
 msgid "Basic support for self hosted Weblate"
@@ -1377,7 +1349,7 @@ msgstr "服务条款"
 
 #: weblate_web/templates/terms.html:6
 msgid "The legal documents necessary to offer this service."
-msgstr ""
+msgstr "提供此服务所需的法律文件。"
 
 #: weblate_web/templates/terms.html:20
 msgid "Privacy Policy"
@@ -1421,7 +1393,7 @@ msgstr "我们的翻译在 Hosted 网站上托管。"
 
 #: weblate_web/templates/thanks.html:46
 msgid "Payments are processed by The Pay service."
-msgstr ""
+msgstr "付款由付费服务处理。"
 
 #: weblate_web/templates/thanks.html:50
 msgid "Supporters"
@@ -1541,7 +1513,7 @@ msgstr "源代码，zip 压缩"
 
 #: weblate_web/views.py:97
 msgid "Please provide your billing information to complete the payment."
-msgstr ""
+msgstr "请提供您的结算信息以完成付款。"
 
 #~ msgid "Monthly by PayPal"
 #~ msgstr "通过 PayPal 捐助"
