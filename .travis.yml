@@ -18,7 +18,6 @@ script:
   - pylint --reports=n --rcfile=pylint.rc weblate_web
 after_success:
   - codecov
-sudo: false
 cache: pip
 addons:
   apt:
