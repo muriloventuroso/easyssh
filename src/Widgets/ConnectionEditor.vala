@@ -42,13 +42,15 @@ namespace EasySSH {
         private Gtk.FileChooserButton identityfile_chooser;
         public SourceListView sourcelistview { get; construct; }
         public Host data_host { get; construct; }
+        public bool duplicate {get; construct; }
 
-        public ConnectionEditor (SourceListView sourcelistview, Host? data_host) {
+        public ConnectionEditor (SourceListView sourcelistview, Host? data_host, bool duplicate = false) {
             Object (
                 sourcelistview: sourcelistview,
                 data_host: data_host,
                 margin_start: 20,
-                margin_end: 20
+                margin_end: 20,
+                duplicate: duplicate
             );
         }
 
@@ -128,7 +130,11 @@ namespace EasySSH {
             if(data_host == null) {
                 label = new Gtk.Label(_("Add Connection"));
             } else {
-                label = new Gtk.Label(_("Edit Connection"));
+                if(duplicate == false){
+                    label = new Gtk.Label(_("Edit Connection"));
+                }else{
+                    label = new Gtk.Label(_("Duplicate Connection"));
+                }
             }
             label.get_style_context ().add_class("h2");
             grid.add (label);
@@ -396,6 +402,10 @@ namespace EasySSH {
             if(data_host != null) {
                 if(name_entry_text != data_host.name) {
                     name_is_taken = sourcelistview.hostmanager.exist_host_name (name_entry_text);
+                }else{
+                    if(duplicate == true){
+                        name_is_taken = sourcelistview.hostmanager.exist_host_name (name_entry_text);
+                    }
                 }
             } else {
                 name_is_taken = sourcelistview.hostmanager.exist_host_name (name_entry_text);
@@ -453,7 +463,11 @@ namespace EasySSH {
             if(data_host == null) {
                 host = sourcelistview.add_host(host);
             } else {
-                host = sourcelistview.edit_host(data_host.name, host);
+                if(duplicate == false){
+                    host = sourcelistview.edit_host(data_host.name, host);
+                }else{
+                    host = sourcelistview.add_host(host);
+                }
             }
             var item = sourcelistview.source_list.selected;
             sourcelistview.source_list.selected = null;

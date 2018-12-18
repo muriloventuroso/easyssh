@@ -141,6 +141,9 @@ namespace EasySSH {
             sourcelist.host_remove_clicked.connect ((name) => {
                 sourcelist.remove_conn(name);
             });
+            sourcelist.host_duplicate_clicked.connect ((name) => {
+                sourcelist.duplicate_conn(name);
+            });
         }
 
         private void get_default_filemanager () {

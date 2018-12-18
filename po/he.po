@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.muriloventuroso.easyssh\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 14:24-0200\n"
+"POT-Creation-Date: 2018-12-18 17:23-0200\n"
 "PO-Revision-Date: 2018-11-20 17:34+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/easyssh/"
@@ -23,59 +23,60 @@ msgstr ""
 msgid "EasySSH"
 msgstr "EasySSH"
 
-#: src/MainWindow.vala:338
+#: src/MainWindow.vala:334
 msgid "Copy"
 msgstr "העתקה"
 
-#: src/MainWindow.vala:339
+#: src/MainWindow.vala:335
 msgid "Paste"
 msgstr "הדבקה"
 
-#: src/MainWindow.vala:340
+#: src/MainWindow.vala:336
 msgid "Select All"
 msgstr "בחירת הכול"
 
-#: src/MainWindow.vala:341
+#: src/MainWindow.vala:337
 msgid "Show in File Browser"
 msgstr "הצגה בדפדפן הקבצים"
 
-#: src/Views/SourceListView.vala:35 src/Widgets/Connection.vala:60
+#: src/Views/SourceListView.vala:36 src/Widgets/Connection.vala:60
 msgid "Edit"
 msgstr "עריכה"
 
-#: src/Views/SourceListView.vala:41 src/Views/SourceListView.vala:761
-#: src/Widgets/ConnectionEditor.vala:318 src/Widgets/Connection.vala:64
+#: src/Views/SourceListView.vala:42
+msgid "Duplicate"
+msgstr ""
+
+#: src/Views/SourceListView.vala:48 src/Views/SourceListView.vala:787
+#: src/Views/SourceListView.vala:789 src/Widgets/ConnectionEditor.vala:325
+#: src/Widgets/Connection.vala:64
 msgid "Remove"
 msgstr "הסרה"
 
-#: src/Views/SourceListView.vala:297
+#: src/Views/SourceListView.vala:309
 msgid "Please enter the password to unlock the data file"
 msgstr "נא להקליד את הססמה כדי לשחרר את קובץ הנתונים"
 
-#: src/Views/SourceListView.vala:299
+#: src/Views/SourceListView.vala:311
 msgid "Please enter the password to lock the data file"
 msgstr "נא להקליד את הססמה כדי לנעול את קובץ הנתונים"
 
-#: src/Views/SourceListView.vala:301
+#: src/Views/SourceListView.vala:313
 msgid "Password"
 msgstr "ססמה"
 
-#: src/Views/SourceListView.vala:307 src/Widgets/ConnectionEditor.vala:110
+#: src/Views/SourceListView.vala:319 src/Widgets/ConnectionEditor.vala:113
 msgid "Cancel"
 msgstr "ביטול"
 
-#: src/Views/SourceListView.vala:310
+#: src/Views/SourceListView.vala:322
 msgid "Send"
 msgstr "שליחה"
 
-#: src/Views/SourceListView.vala:759
-msgid "Remove "
-msgstr "הסרה "
-
-#: src/Views/SourceListView.vala:759
+#: src/Views/SourceListView.vala:787
+#, fuzzy
 msgid ""
-"Are you sure you want to remove this connection and all data associated with "
-"it?"
+"Are you sure you want to remove this connection and all associated data?"
 msgstr "להסיר את החיבור ואת כל הנתונים שמשויכים אליו?"
 
 #: src/Widgets/TerminalBox.vala:205
@@ -102,7 +103,7 @@ msgstr "טביעת אצבע"
 msgid "SSH Connection Manager"
 msgstr "מנהל חיבורי SSH"
 
-#: src/Widgets/Welcome.vala:26 src/Widgets/ConnectionEditor.vala:128
+#: src/Widgets/Welcome.vala:26 src/Widgets/ConnectionEditor.vala:131
 msgid "Add Connection"
 msgstr "הוספת חיבור"
 
@@ -122,103 +123,108 @@ msgstr "העדפות"
 msgid "Menu"
 msgstr "תפריט"
 
-#: src/Widgets/ConnectionEditor.vala:106
+#: src/Widgets/ConnectionEditor.vala:109
 msgid "Save"
 msgstr "שמירה"
 
-#: src/Widgets/ConnectionEditor.vala:112 src/Widgets/ConnectionEditor.vala:270
+#: src/Widgets/ConnectionEditor.vala:115 src/Widgets/ConnectionEditor.vala:277
 msgid "Advanced"
 msgstr "מתקדם"
 
-#: src/Widgets/ConnectionEditor.vala:130
+#: src/Widgets/ConnectionEditor.vala:134
 msgid "Edit Connection"
 msgstr "עריכת חיבור"
 
-#: src/Widgets/ConnectionEditor.vala:134
+#: src/Widgets/ConnectionEditor.vala:136
+#, fuzzy
+msgid "Duplicate Connection"
+msgstr "עריכת חיבור"
+
+#: src/Widgets/ConnectionEditor.vala:141
 msgid "Name:"
 msgstr "שם:"
 
-#: src/Widgets/ConnectionEditor.vala:137
+#: src/Widgets/ConnectionEditor.vala:144
 msgid "Group:"
 msgstr "קבוצה:"
 
-#: src/Widgets/ConnectionEditor.vala:139
+#: src/Widgets/ConnectionEditor.vala:146
 msgid "Host:"
 msgstr "מארח:"
 
-#: src/Widgets/ConnectionEditor.vala:141
+#: src/Widgets/ConnectionEditor.vala:148
 msgid "Port:"
 msgstr "פתחה:"
 
-#: src/Widgets/ConnectionEditor.vala:143
+#: src/Widgets/ConnectionEditor.vala:150
 msgid "Username:"
 msgstr "שם משתמש:"
 
-#: src/Widgets/ConnectionEditor.vala:145 src/Widgets/ConnectionEditor.vala:160
+#: src/Widgets/ConnectionEditor.vala:152 src/Widgets/ConnectionEditor.vala:167
 msgid "Password:"
 msgstr "ססמה:"
 
-#: src/Widgets/ConnectionEditor.vala:149
+#: src/Widgets/ConnectionEditor.vala:156
 msgid "Change Password to Identity File"
 msgstr "שינוי ססמה לקובץ זהות"
 
-#: src/Widgets/ConnectionEditor.vala:150
+#: src/Widgets/ConnectionEditor.vala:157
 msgid "Select Identity File"
 msgstr "בחירת קובץ זהות"
 
-#: src/Widgets/ConnectionEditor.vala:156
+#: src/Widgets/ConnectionEditor.vala:163
 msgid "Identity File:"
 msgstr "קובץ זהות:"
 
-#: src/Widgets/ConnectionEditor.vala:169
+#: src/Widgets/ConnectionEditor.vala:176
 msgid "SSH Config:"
 msgstr "תצורת SSH:"
 
-#: src/Widgets/ConnectionEditor.vala:277 src/Widgets/Preferences.vala:110
+#: src/Widgets/ConnectionEditor.vala:284 src/Widgets/Preferences.vala:112
 msgid "Terminal Background Color:"
 msgstr "צבע רקע המסוף:"
 
-#: src/Widgets/ConnectionEditor.vala:286 src/Widgets/Preferences.vala:113
+#: src/Widgets/ConnectionEditor.vala:293 src/Widgets/Preferences.vala:115
 msgid "Terminal Font:"
 msgstr "גופן מסוף:"
 
-#: src/Widgets/ConnectionEditor.vala:328
+#: src/Widgets/ConnectionEditor.vala:335
 msgid "Forwarded Ports:"
 msgstr "פתחות שהועברו:"
 
-#: src/Widgets/ConnectionEditor.vala:331
+#: src/Widgets/ConnectionEditor.vala:338
 msgid "Add new forwarded port"
 msgstr "הוספת פתחות חדשות להעברה"
 
-#: src/Widgets/ConnectionEditor.vala:333
+#: src/Widgets/ConnectionEditor.vala:340
 msgid "Source Port:"
 msgstr "פתחת מקור:"
 
-#: src/Widgets/ConnectionEditor.vala:336
+#: src/Widgets/ConnectionEditor.vala:343
 msgid "Destination:"
 msgstr "יעד:"
 
-#: src/Widgets/ConnectionEditor.vala:341
+#: src/Widgets/ConnectionEditor.vala:348
 msgid "Local"
 msgstr "מקומי"
 
-#: src/Widgets/ConnectionEditor.vala:344
+#: src/Widgets/ConnectionEditor.vala:351
 msgid "Remote"
 msgstr "מרוחק"
 
-#: src/Widgets/ConnectionEditor.vala:350
+#: src/Widgets/ConnectionEditor.vala:357
 msgid "Add Tunnel"
 msgstr "הוספת מנהרה"
 
-#: src/Widgets/ConnectionEditor.vala:375 src/Widgets/Preferences.vala:124
+#: src/Widgets/ConnectionEditor.vala:382 src/Widgets/Preferences.vala:126
 msgid "Appearance"
 msgstr "מראה"
 
-#: src/Widgets/ConnectionEditor.vala:376
+#: src/Widgets/ConnectionEditor.vala:383
 msgid "Tunnels"
 msgstr "מנהרות"
 
-#: src/Widgets/ConnectionEditor.vala:412
+#: src/Widgets/ConnectionEditor.vala:423
 msgid "Name is already taken"
 msgstr "השם כבר תפוס"
 
@@ -230,34 +236,37 @@ msgstr "התחברות"
 msgid "Select Hosts Configuration Folder…"
 msgstr "בחירת תיקיית הגדרות מארחים…"
 
-#: src/Widgets/Preferences.vala:96
+#: src/Widgets/Preferences.vala:98
 msgid "Hosts Configuration Folder:"
 msgstr "תיקיית הגדרות מארחים:"
 
-#: src/Widgets/Preferences.vala:99
+#: src/Widgets/Preferences.vala:101
 msgid "Restore Opened Hosts:"
 msgstr "שחזור מארחים פתוחים:"
 
-#: src/Widgets/Preferences.vala:102
+#: src/Widgets/Preferences.vala:104
 msgid "Sync SSH Config:"
 msgstr "סנכרון הגדרות SSH:"
 
-#: src/Widgets/Preferences.vala:105
+#: src/Widgets/Preferences.vala:107
 msgid "Encrypt Data:"
 msgstr "הצפנת נתונים:"
 
-#: src/Widgets/Preferences.vala:116
+#: src/Widgets/Preferences.vala:118
 msgid "Use Dark Theme:"
 msgstr "שימוש בערכת נושא כהה:"
 
-#: src/Widgets/Preferences.vala:123
+#: src/Widgets/Preferences.vala:125
 msgid "General"
 msgstr "כללי"
 
-#: src/Widgets/Preferences.vala:136
+#: src/Widgets/Preferences.vala:138
 msgid "Close"
 msgstr "סגירה"
 
 #: src/Widgets/TerminalWidget.vala:31
 msgid "Terminal"
 msgstr "מסוף"
+
+#~ msgid "Remove "
+#~ msgstr "הסרה "

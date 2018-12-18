@@ -24,6 +24,7 @@ namespace EasySSH {
         private Gtk.Menu host_menu;
         public signal void host_edit_clicked (string name);
         public signal void host_remove_clicked (string name);
+        public signal void host_duplicate_clicked (string name);
         public Item (string name = "") {
             Object (
                 name: name
@@ -37,6 +38,12 @@ namespace EasySSH {
                 host_edit_clicked (name);
             });
             host_menu.append (host_edit);
+
+            var host_duplicate = new Gtk.MenuItem.with_label (_("Duplicate"));
+            host_duplicate.activate.connect (() => {
+                host_duplicate_clicked (name);
+            });
+            host_menu.append (host_duplicate);
 
             var host_remove = new Gtk.MenuItem.with_label (_("Remove"));
             host_remove.activate.connect (() => {
@@ -65,6 +72,7 @@ namespace EasySSH {
         private bool open_dialog;
         public signal void host_edit_clicked (string name);
         public signal void host_remove_clicked (string name);
+        public signal void host_duplicate_clicked (string name);
 
         public SourceListView (MainWindow window) {
             Object (window: window);
@@ -254,6 +262,7 @@ namespace EasySSH {
             n.tab_switched.connect(on_tab_switched);
             item.host_edit_clicked.connect ((name) => {host_edit_clicked (name);});
             item.host_remove_clicked.connect ((name) => {host_remove_clicked (name);});
+            item.host_duplicate_clicked.connect ((name) => {host_duplicate_clicked (name);});
 
         }
 
@@ -766,6 +775,13 @@ namespace EasySSH {
         public void remove_conn(string name) {
             var host = hostmanager.get_host_by_name(name);
             confirm_remove_dialog (host);
+        }
+        public void duplicate_conn(string name) {
+            clean_box();
+            var host = hostmanager.get_host_by_name(name);
+
+            box.add(new ConnectionEditor(this, host, true));
+            show_all();
         }
         private void confirm_remove_dialog (Host host) {
             var message_dialog = new Granite.MessageDialog.with_image_from_icon_name (_("Remove") + host.name, _("Are you sure you want to remove this connection and all associated data?"), "dialog-warning", Gtk.ButtonsType.CANCEL);
