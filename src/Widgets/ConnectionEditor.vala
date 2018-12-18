@@ -97,7 +97,8 @@ namespace EasySSH {
 
             terminal_background_color_button = new Gtk.ColorButton.with_rgba (color);
             terminal_font_button = new Gtk.FontButton.with_font(settings.terminal_font);
-
+            terminal_font_button.use_font = true;
+            terminal_font_button.use_size = true;
             name_entry.changed.connect (() => {
                 name_entry.is_valid = check_name ();
                 update_save_button ();

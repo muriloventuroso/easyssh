@@ -56,6 +56,8 @@ namespace EasySSH {
             });
 
             var terminal_font_button = new Gtk.FontButton.with_font(settings.terminal_font);
+            terminal_font_button.use_font = true;
+            terminal_font_button.use_size = true;
             terminal_font_button.font_set.connect(() => {
                 settings.terminal_font = terminal_font_button.get_font();
             });
