@@ -768,7 +768,7 @@ namespace EasySSH {
             confirm_remove_dialog (host);
         }
         private void confirm_remove_dialog (Host host) {
-            var message_dialog = new Granite.MessageDialog.with_image_from_icon_name (_("Remove ") + host.name, _("Are you sure you want to remove this connection and all data associated with it?"), "dialog-warning", Gtk.ButtonsType.CANCEL);
+            var message_dialog = new Granite.MessageDialog.with_image_from_icon_name (_("Remove") + host.name, _("Are you sure you want to remove this connection and all associated data?"), "dialog-warning", Gtk.ButtonsType.CANCEL);
             message_dialog.transient_for = window;
             var suggested_button = new Gtk.Button.with_label (_("Remove"));
             suggested_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
