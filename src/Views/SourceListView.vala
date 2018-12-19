@@ -114,6 +114,7 @@ namespace EasySSH {
                 window.current_terminal = term.term;
                 term.set_selected();
                 term.term.grab_focus();
+                set_badge_item (n_host.item, n_host.notebook);
             });
 
             paned.pack1 (source_list, false, false);
@@ -264,6 +265,7 @@ namespace EasySSH {
                     window.current_terminal = null;
                 }
             });
+            n.tab_added.connect(on_tab_added);
             n.tab_moved.connect(on_tab_moved);
             n.tab_switched.connect(on_tab_switched);
             n.tab_removed.connect(on_tab_removed);
@@ -274,11 +276,19 @@ namespace EasySSH {
         }
 
         private void on_tab_moved (Granite.Widgets.Tab tab, int x, int y) {
-            var t = get_term_widget (tab);
-            var box = (TerminalBox)tab.page;
-            window.current_terminal = t;
-            box.set_selected();
-            box.remove_badge ();
+            if(Type.from_instance(tab.page).name() == "EasySSHTerminalBox") {
+                var t = get_term_widget (tab);
+                var box = (TerminalBox)tab.page;
+                window.current_terminal = t;
+                box.set_selected();
+                box.remove_badge ();
+            }
+        }
+        private void on_tab_added (Granite.Widgets.Tab tab) {
+            if(Type.from_instance(tab.page).name() == "EasySSHTerminalBox") {
+                var box = (TerminalBox)tab.page;
+                set_badge_item (box.dataHost.item, box.dataHost.notebook);
+            }
         }
         private void on_tab_switched (Granite.Widgets.Tab? old_tab, Granite.Widgets.Tab new_tab) {
             if(Type.from_instance(new_tab.page).name() == "EasySSHTerminalBox") {
@@ -321,10 +331,27 @@ namespace EasySSH {
                 }else{
                     window.current_terminal = null;
                 }
+                set_badge_item (box.dataHost.item, box.dataHost.notebook);
             }
         }
         private TerminalWidget get_term_widget (Granite.Widgets.Tab tab) {
             return (TerminalWidget)((TerminalBox)tab.page).term;
+        }
+
+        private void set_badge_item (Granite.Widgets.SourceList.Item item, Granite.Widgets.DynamicNotebook notebook){
+            if(notebook.n_tabs == 0){
+                item.badge = null;
+            }else if(notebook.n_tabs == 1){
+                var tab = notebook.get_tab_by_index(0);
+                if(Type.from_instance(tab.page).name() == "EasySSHTerminalBox") {
+                    item.badge = notebook.n_tabs.to_string();
+                }else{
+                    item.badge = null;
+                }
+            }else{
+                item.badge = notebook.n_tabs.to_string();
+            }
+
         }
         #if WITH_GPG
         public string get_password(bool unlock) {
