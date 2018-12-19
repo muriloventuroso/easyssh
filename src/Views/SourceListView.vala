@@ -242,9 +242,15 @@ namespace EasySSH {
                 var n_host = hostmanager.get_host_by_name(source_list.selected.name);
                 var term = new TerminalBox(n_host, n, window);
                 var next_tab = n.n_tabs;
+                if(Type.from_instance(n.current.page).name() == "EasySSHConnection") {
+                    next_tab = 0;
+                }
                 var n_tab = new Granite.Widgets.Tab (n_host.name + " - " + (next_tab + 1).to_string(), null, term);
                 term.tab = n_tab;
-                n.insert_tab (n_tab, next_tab );
+                n.insert_tab (n_tab, next_tab);
+                if(next_tab == 0) {
+                    n.remove_tab(n.current);
+                }
                 n.current = n_tab;
                 window.current_terminal = term.term;
                 term.set_selected();
@@ -260,6 +266,7 @@ namespace EasySSH {
             });
             n.tab_moved.connect(on_tab_moved);
             n.tab_switched.connect(on_tab_switched);
+            n.tab_removed.connect(on_tab_removed);
             item.host_edit_clicked.connect ((name) => {host_edit_clicked (name);});
             item.host_remove_clicked.connect ((name) => {host_remove_clicked (name);});
             item.host_duplicate_clicked.connect ((name) => {host_duplicate_clicked (name);});
@@ -290,6 +297,29 @@ namespace EasySSH {
                 }
                 if(all_read == true) {
                     box.dataHost.item.icon = null;
+                }
+            }
+        }
+        private void on_tab_removed(Granite.Widgets.Tab new_tab) {
+            if(Type.from_instance(new_tab.page).name() == "EasySSHTerminalBox") {
+                var box = (TerminalBox)new_tab.page;
+                box.remove_badge ();
+                box.dataHost.item.icon = null;
+                var all_read = true;
+                foreach (var g_tab in box.dataHost.notebook.tabs) {
+                    if(g_tab.icon != null) {
+                        all_read = false;
+                    }
+                }
+                if(all_read == true) {
+                    box.dataHost.item.icon = null;
+                }
+                var current_tab = box.dataHost.notebook.current;
+                if(Type.from_instance(current_tab.page).name() == "EasySSHTerminalBox") {
+                    var t = get_term_widget (current_tab);
+                    window.current_terminal = t;
+                }else{
+                    window.current_terminal = null;
                 }
             }
         }
