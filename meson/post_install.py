@@ -5,9 +5,9 @@ import subprocess
 
 prefix = os.environ.get('MESON_INSTALL_PREFIX', '/usr/local')
 datadir = os.path.join(prefix, 'share')
+schemadir = os.path.join(os.environ['MESON_INSTALL_PREFIX'], 'share', 'glib-2.0', 'schemas')
 
-# Packaging tools define DESTDIR and this isn't needed for them
-if 'DESTDIR' not in os.environ:
+if not os.environ.get('DESTDIR'):
     print('Updating icon cache...')
     icon_cache_dir = os.path.join(datadir, 'icons', 'hicolor')
     if not os.path.exists(icon_cache_dir):
@@ -19,3 +19,6 @@ if 'DESTDIR' not in os.environ:
     if not os.path.exists(desktop_database_dir):
         os.makedirs(desktop_database_dir)
     subprocess.call(['update-desktop-database', '-q', desktop_database_dir])
+
+    print('Compiling gsettings schemas...')
+    subprocess.call(['glib-compile-schemas', schemadir])
