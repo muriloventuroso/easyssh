@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2018-11-17 17:10+0100\n"
-"PO-Revision-Date: 2018-10-25 12:41+0000\n"
+"PO-Revision-Date: 2018-12-31 13:32+0000\n"
 "Last-Translator: Chang-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
 "weblate/website/zh_Hant/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.3-dev\n"
+"X-Generator: Weblate 3.4-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -309,10 +309,8 @@ msgid "Donate to Weblate"
 msgstr "捐款給 Weblate"
 
 #: weblate_web/templates/donate.html:6
-#, fuzzy
-#| msgid "Weblate is free, but welcomes donations."
 msgid "Weblate is provided free of charge, and welcomes donations."
-msgstr "Weblate 是自由軟體，我們歡迎您的捐款贊助。"
+msgstr "Weblate 以免費方式提供，我們歡迎您的捐款贊助。"
 
 #: weblate_web/templates/donate.html:12 weblate_web/templates/donate.html:43
 msgid "Donate using Liberapay"
@@ -336,18 +334,11 @@ msgid "Regular donations"
 msgstr "定期贊助"
 
 #: weblate_web/templates/donate.html:28
-#, fuzzy
-#| msgid ""
-#| "Regular donations allow sustainability of Weblate development and help to "
-#| "fund free hosting for free software. You don't have to spend big money, "
-#| "every penny counts."
 msgid ""
 "Regular donations allow sustainability of Weblate development and help to "
 "fund free hosting for libre software. You don't have to spend big money, "
 "every penny counts."
-msgstr ""
-"定期贊助能支持 Weblate 繼續開發，並可協助自由軟體的免費託管服務。您不需要花大"
-"錢，只要小額捐款也可以幫到我們。"
+msgstr "定期贊助能支持 Weblate 繼續開發，並可協助自由軟體的免費託管服務。您不一定要花大錢，即便是小額捐款也可以幫到我們。"
 
 #: weblate_web/templates/donate.html:33 weblate_web/templates/donate.html:54
 #: weblate_web/templates/thanks.html:12
@@ -376,15 +367,10 @@ msgid "Fund features"
 msgstr "集資功能"
 
 #: weblate_web/templates/donate.html:58
-#, fuzzy
-#| msgid ""
-#| "Bountysource allows you to fund individual features which are reported on "
-#| "our issue tracker."
 msgid ""
 "Bountysource allows you to fund individual features reported on our issue "
 "tracker."
-msgstr ""
-"您可以利用 Boutysource 集資來促使 Issue 追蹤器上回報的某功能能如願開發。"
+msgstr "您可以利用 Boutysource 集資來促使 Issue 追蹤器上回報的某功能如願開發。"
 
 #: weblate_web/templates/donate.html:64
 msgid ""
@@ -419,8 +405,6 @@ msgid "Currency"
 msgstr "貨幣"
 
 #: weblate_web/templates/donate.html:88
-#, fuzzy
-#| msgid "Donate address"
 msgid "Donation address"
 msgstr "捐款位址"
 
@@ -435,10 +419,8 @@ msgstr "Weblate 提供完整的源始碼。"
 
 #: weblate_web/templates/download.html:13 weblate_web/templates/hosting.html:12
 #: weblate_web/templates/hosting.html:234
-#, fuzzy
-#| msgid "Basic support for self hosted Weblate"
 msgid "Get support for Weblate"
-msgstr "自行架設 Weblate 的基本支援"
+msgstr "取得 Weblate 的支援"
 
 #: weblate_web/templates/download.html:21
 msgid "You can download latest release here:"
@@ -831,10 +813,8 @@ msgid "Use Weblate as a service or get support for on-premises hosting."
 msgstr "採用 Weblate 作為服務，或取得自行架設的支援。"
 
 #: weblate_web/templates/hosting.html:11
-#, fuzzy
-#| msgid "Self hosting"
 msgid "Order hosting"
-msgstr "自行架設"
+msgstr "訂購託管服務"
 
 #: weblate_web/templates/hosting.html:21
 msgid ""
@@ -989,7 +969,7 @@ msgstr "額外收費 %(price)s 歐元/年，僅能以年為單位計算收費"
 
 #: weblate_web/templates/hosting.html:179
 msgid "Monthly"
-msgstr "每月"
+msgstr "月繳"
 
 #: weblate_web/templates/hosting.html:181
 msgid "Contact us"
@@ -1004,14 +984,11 @@ msgid "%(price)s EUR / month"
 msgstr "%(price)s 歐元 / 月"
 
 #: weblate_web/templates/hosting.html:196
-#, fuzzy
-#| msgid "See below for options"
 msgid "View support options"
-msgstr "請見下方選項"
+msgstr "檢視支援選項"
 
 #: weblate_web/templates/hosting.html:200
-#, fuzzy, python-format
-#| msgid "Yearly by invoice (save 15-20%%)"
+#, python-format
 msgid "Yearly (save 15-20%%)"
 msgstr "年繳（省 15-20%%）"
 
@@ -1044,7 +1021,7 @@ msgstr "自行架設"
 
 #: weblate_web/templates/hosting.html:230
 msgid "There are also several options for deploying Weblate to the cloud."
-msgstr ""
+msgstr "也有許多種將 Weblate 布署至雲端的選項。"
 
 #: weblate_web/templates/hosting.html:234
 msgid ""
@@ -1099,34 +1076,28 @@ msgstr "他們都用 Weblate，加入他們的行列吧！"
 
 #: weblate_web/templates/index.html:106
 msgid "Browse hundreds of projects on Hosted Weblate"
-msgstr ""
+msgstr "瀏覽 Hosted Weblate 中的上百個專案"
 
 #: weblate_web/templates/payment/customer.html:5
 #: weblate_web/templates/payment/payment.html:4
-#, fuzzy
-#| msgid "Weblate screenshot"
 msgid "Weblate payment"
-msgstr "Weblate 畫面快照"
+msgstr "Weblate 支付"
 
 #: weblate_web/templates/payment/customer.html:15
 msgid "Your billing information"
-msgstr ""
+msgstr "您的付費資訊"
 
 #: weblate_web/templates/payment/customer.html:21
 msgid "Save"
 msgstr "儲存"
 
 #: weblate_web/templates/payment/payment.html:11
-#, fuzzy
-#| msgid "Payment link"
 msgid "Payment summary"
-msgstr "付款連結"
+msgstr "支付摘要"
 
 #: weblate_web/templates/payment/payment.html:14
-#, fuzzy
-#| msgid "Payment link"
 msgid "Payment amount"
-msgstr "付款連結"
+msgstr "付款額"
 
 #: weblate_web/templates/payment/payment.html:15
 #: weblate_web/templates/support.html:37 weblate_web/templates/support.html:53
@@ -1136,37 +1107,33 @@ msgstr "%(price)s 歐元"
 
 #: weblate_web/templates/payment/payment.html:16
 msgid "(including VAT)"
-msgstr ""
+msgstr "(含營業稅 VAT)"
 
 #: weblate_web/templates/payment/payment.html:18
-#, fuzzy
-#| msgid "Payment link"
 msgid "Payment description"
-msgstr "付款連結"
+msgstr "支付描述說明"
 
 #: weblate_web/templates/payment/payment.html:20
-#, fuzzy
-#| msgid "Payment link"
 msgid "Payment frequence"
-msgstr "付款連結"
+msgstr "支付頻率"
 
 #: weblate_web/templates/payment/payment.html:22
 msgid "Payment will be issued yearly till you cancel the subscription."
-msgstr ""
+msgstr "將每年支付，直到您取消訂購為止。"
 
 #: weblate_web/templates/payment/payment.html:24
 msgid "Payment will be issued monthly till you cancel the subscription."
-msgstr ""
+msgstr "將每月支付，直到您取消訂購為止。"
 
 #: weblate_web/templates/payment/payment.html:29
 msgid ""
 "Note: This is unavailable for some payment methods, you will have to "
 "manually complete the next payment in those cases."
-msgstr ""
+msgstr "註：有些支付方式無法適用此選項，在這種情況下，您必須手動完成下次支付。"
 
 #: weblate_web/templates/payment/payment.html:32
 msgid "Billing information"
-msgstr ""
+msgstr "付費資訊"
 
 #: weblate_web/templates/payment/payment.html:34
 msgid "Edit"
@@ -1174,7 +1141,7 @@ msgstr "編輯"
 
 #: weblate_web/templates/payment/payment.html:47
 msgid "Please choose payment method:"
-msgstr ""
+msgstr "請選擇支付方式："
 
 #: weblate_web/templates/support.html:3 weblate_web/templates/support.html:4
 msgid "Weblate support"
@@ -1257,16 +1224,12 @@ msgid "Does not include custom code development"
 msgstr "不包含客製的程式碼開發"
 
 #: weblate_web/templates/support.html:52
-#, fuzzy
-#| msgid "Installation on your Linux server"
 msgid "Installation using Docker on your Linux server"
-msgstr "安裝於自己的 Linux 伺服器"
+msgstr "利用 Docker 安裝到自己的 Linux 伺服器上"
 
 #: weblate_web/templates/support.html:59
-#, fuzzy
-#| msgid "Or installation using Docker"
 msgid "Installation using Docker"
-msgstr "或是利用 Docker 安裝"
+msgstr "利用 Docker 安裝"
 
 #: weblate_web/templates/support.html:67
 msgid "Basic support for self hosted Weblate"
@@ -1385,10 +1348,8 @@ msgid "Terms of Service"
 msgstr "服務條款"
 
 #: weblate_web/templates/terms.html:6
-#, fuzzy
-#| msgid "The legal documents necessary to operate this service."
 msgid "The legal documents necessary to offer this service."
-msgstr "操作此項服務所必須的法律文件。"
+msgstr "此項服務所必須提供的法律文件。"
 
 #: weblate_web/templates/terms.html:20
 msgid "Privacy Policy"
@@ -1432,7 +1393,7 @@ msgstr "我們的翻譯則是在 Hosted Weblate 上處理。"
 
 #: weblate_web/templates/thanks.html:46
 msgid "Payments are processed by The Pay service."
-msgstr ""
+msgstr "支付金流由 The Pay 服務處理。"
 
 #: weblate_web/templates/thanks.html:50
 msgid "Supporters"
@@ -1553,7 +1514,7 @@ msgstr "源始碼，以 zip 壓縮"
 
 #: weblate_web/views.py:97
 msgid "Please provide your billing information to complete the payment."
-msgstr ""
+msgstr "請提供您的付費資訊完成支付。"
 
 #~ msgid "Monthly by PayPal"
 #~ msgstr "以 PayPal 月繳"
