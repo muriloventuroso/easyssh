@@ -18,7 +18,7 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 #
 
-from django.conf.urls import url
+from django.conf.urls import url, include
 from django.conf.urls.i18n import i18n_patterns
 from django.contrib import admin
 from django.views.generic import TemplateView, RedirectView
@@ -26,6 +26,8 @@ from django.conf import settings
 from django.contrib.sitemaps import Sitemap
 import django.contrib.sitemaps.views
 import django.views.static
+
+from simple_sso.sso_client.client import Client
 
 from weblate_web.views import (
     PaymentView, CustomerView, CompleteView, fetch_vat,
@@ -74,6 +76,11 @@ SITEMAPS = {
     for lang in settings.LANGUAGES
 }
 UUID = r'(?P<pk>[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})'
+
+
+SSO_CLIENT = Client(
+    settings.SSO_SERVER, settings.SSO_PUBLIC_KEY, settings.SSO_PRIVATE_KEY
+)
 
 
 urlpatterns = i18n_patterns(
@@ -198,6 +205,7 @@ urlpatterns = i18n_patterns(
         r'^js/vat/$',
         fetch_vat
     ),
+    url(r'^sso/$', include(SSO_CLIENT.get_urls())),
     # Admin
     url(r'^admin/', admin.site.urls),
 

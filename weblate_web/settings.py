@@ -281,3 +281,7 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 PAYMENT_DEBUG = True
 
 PAYMENT_FAKTURACE = "/home/nijel/weblate/tmp-fakturace"
+
+SIMPLE_SSO_SERVER = 'https://hosted.weblate.org/accounts/sso/'
+SIMPLE_SSO_SECRET = None
+SIMPLE_SSO_KEY = None
