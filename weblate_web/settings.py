@@ -282,6 +282,6 @@ PAYMENT_DEBUG = True
 
 PAYMENT_FAKTURACE = "/home/nijel/weblate/tmp-fakturace"
 
-SIMPLE_SSO_SERVER = 'https://hosted.weblate.org/accounts/sso/'
-SIMPLE_SSO_SECRET = None
-SIMPLE_SSO_KEY = None
+SSO_SERVER = 'https://hosted.weblate.org/accounts/sso/'
+SSO_PRIVATE_KEY = None
+SSO_PUBLIC_KEY = None
