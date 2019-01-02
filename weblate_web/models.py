@@ -26,7 +26,9 @@ from django.urls import reverse
 from django.utils import timezone
 from django.utils.translation import ugettext_lazy
 
-from wlhosted.payments.models import Payment, RECURRENCE_CHOICES
+from wlhosted.payments.models import (
+    Payment, RECURRENCE_CHOICES, get_period_delta,
+)
 
 PAYMENTS_ORIGIN = 'https://weblate.org/donate/process/'
 
@@ -84,19 +86,25 @@ def process_payment(payment):
     if payment.repeat:
         # Update existing
         donation = Donation.objects.get(payment=payment.repeat.pk)
-        # TODO: actually update (expiry)
+        donation.expires += get_period_delta(payment.repeat.recurring)
+        donation.save()
     else:
         user = User.objects.get(pk=payment.customer.user_id)
         reward = None
         if 'reward' in payment.extra:
             reward = Reward.objects.get(pk=payment.extra['reward'])
+        # Calculate expiry
+        expires = timezone.now()
+        if payment.recurring:
+            expires += get_period_delta(payment.recurring)
         # Create new
-        # TODO: calculate expiry
         donation = Donation.objects.create(
             user=user,
             payment=payment.pk,
             reward=reward,
-            expires=timezone.now(),
+            expires=expires,
             active=True,
         )
+    payment.state = Payment.PROCESSED
+    payment.save()
     return donation
