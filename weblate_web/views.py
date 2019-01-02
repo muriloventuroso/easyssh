@@ -22,7 +22,7 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.core.exceptions import SuspiciousOperation
 from django.db import transaction
-from django.http import JsonResponse
+from django.http import JsonResponse, Http404
 from django.shortcuts import redirect
 from django.urls import reverse
 from django.utils.decorators import method_decorator
@@ -39,6 +39,7 @@ from wlhosted.payments.forms import CustomerForm
 from wlhosted.payments.validators import cache_vies_data
 
 from weblate_web.forms import MethodForm, DonateForm
+from weblate_web.models import Reward
 
 
 @require_POST
@@ -158,9 +159,29 @@ class CompleteView(PaymentView):
 class DonateView(FormView):
     form_class = DonateForm
     template_name = 'donate/form.html'
+    show_form = True
 
     def get_form_kwargs(self):
         result = super().get_form_kwargs()
         if 'recurrence' in self.request.GET:
             result['initial'] = {'recurrence': self.request.GET['recurrence']}
         return result
+
+    def get_rewards(self):
+        return Reward.objects.filter(third_party=False, active=True)
+
+    def get_context_data(self, **kwargs):
+        kwargs = super().get_context_data(**kwargs)
+        kwargs['rewards'] = self.get_rewards()
+        kwargs['show_form'] = self.show_form
+        return kwargs
+
+
+class DonateRewardView(DonateView):
+    show_form = False
+
+    def get_rewards(self):
+        rewards = Reward.objects.filter(pk=self.kwargs['pk'], active=True)
+        if not rewards:
+            raise Http404('Reward not found')
+        return rewards

@@ -37,7 +37,7 @@
             <p>{% trans "Please consider this if you are using Weblate on premise without support contract." %}</p>
           </div>
           <div class="card-footer">
-            <a href="{% url "donate-new" %}?recurrence=monthly" class="btn btn-lg btn-block btn-info"><i class="fas fa-donate"></i> {% trans "Donate" %}</a>
+            <a href="{% url "donate-new" %}?recurrence=m" class="btn btn-lg btn-block btn-info"><i class="fas fa-donate"></i> {% trans "Donate" %}</a>
           </div>
         </div>
 
@@ -49,7 +49,7 @@
             <p>{% trans "One time donations are great for appreciating our work on single issue or support." %}</p>
           </div>
           <div class="card-footer">
-            <a href="{% url "donate-new" %}?recurrence=onetime" class="btn btn-lg btn-block btn-info"><i class="fas fa-donate"></i> {% trans "Donate" %}</a>
+            <a href="{% url "donate-new" %}?recurrence=" class="btn btn-lg btn-block btn-info"><i class="fas fa-donate"></i> {% trans "Donate" %}</a>
           </div>
         </div>
 

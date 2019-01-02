@@ -18,18 +18,49 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 #
 
+import uuid
+
 from django.db import models
 from django.contrib.auth.models import User
+from django.urls import reverse
 from django.utils.functional import cached_property
 from django.utils.translation import ugettext_lazy
 
-from wlhosted.payments.models import Payment
+from wlhosted.payments.models import Payment, RECURRENCE_CHOICES
+
+
+class Reward(models.Model):
+    uuid = models.UUIDField(
+        primary_key=True, default=uuid.uuid4, editable=False
+    )
+    recurring = models.CharField(
+        choices=RECURRENCE_CHOICES,
+        default='',
+        blank=True,
+        max_length=10,
+    )
+    amount = models.PositiveIntegerField()
+    has_link = models.BooleanField(blank=True)
+    third_party = models.BooleanField(blank=True)
+    active = models.BooleanField(blank=True)
+    name = models.CharField(max_length=200)
+
+    class Meta:
+        index_together = [
+            ('active', 'third_party'),
+            ('has_link', 'third_party'),
+        ]
+
+    def get_absolute_url(self):
+        return reverse('donate-reward', kwargs={'pk': self.pk})
 
 
 class Donation(models.Model):
     user = models.ForeignKey(User, on_delete=models.deletion.CASCADE)
     payment = models.ForeignKey(Payment, on_delete=models.deletion.CASCADE)
-    amount = models.PositiveIntegerField()
+    reward = models.ForeignKey(
+        Reward, on_delete=models.deletion.CASCADE, null=True, blank=True
+    )
     link_text = models.CharField(
         verbose_name=ugettext_lazy('Link text'),
         max_length=200, blank=True
@@ -40,14 +71,4 @@ class Donation(models.Model):
     )
     created = models.DateTimeField(auto_now_add=True)
     expires = models.DateTimeField()
-    third_party = models.BooleanField(blank=True)
-
-    @cached_property
-    def has_thanks_link(self):
-        amount = self.amount
-
-        # For yearly payment the threshold is 10 * monthly
-        if self.payment.recurring == 'y':
-            amount = amount / 10
-
-        return amount >= 100
+    active = models.BooleanField(blank=True, db_index=True)

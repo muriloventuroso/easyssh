@@ -1,22 +1,3 @@
-function update_rewards()
-{
-    var amount = $('#id_amount').val();
-    var recurrence = $('input[name=recurrence]:checked').val();
-    if (recurrence == 'yearly') {
-        amount = amount / 10;
-    }
-    var matched = false;
-    $('#rewards-table tr').each(function () {
-        var $this = $(this);
-        if (($this.data('amount') <= amount) && !matched) {
-            $this.addClass('table-success');
-            matched = true;
-        } else {
-            $this.removeClass('table-success');
-        }
-    });
-}
-
 $(function () {
     $('.language').click(function () {
         var $language = $('.language');
@@ -73,19 +54,4 @@ $(function () {
             });
         }
     });
-    if ($('#rewards-table').length > 0) {
-        $('#id_amount').on('change', update_rewards);
-        $('input[name=recurrence]').on('change', update_rewards);
-        update_rewards();
-        $('#rewards-table a').on('click', function() {
-            var recurrence = $('input[name=recurrence]:checked').val();
-            var amount = $(this).parent().parent().data('amount');
-            if (recurrence == 'yearly') {
-                amount = 10 * amount;
-            }
-            $('#id_amount').val(amount);
-            update_rewards();
-            return false;
-        });
-    }
 });

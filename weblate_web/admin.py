@@ -18,37 +18,21 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 #
 
-from __future__ import unicode_literals
-
-from django import forms
+from django.contrib import admin
 from django.utils.translation import ugettext_lazy as _
 
-from wlhosted.payments.backends import list_backends
-from wlhosted.payments.models import RECURRENCE_CHOICES
+from weblate_web.models import Reward, Donation
 
 
-class MethodForm(forms.Form):
-    method = forms.ChoiceField(
-        choices=[],
-        required=True,
-    )
-
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        self.fields['method'].choices = [
-            (backend.name, backend.verbose) for backend in list_backends()
-        ]
+class RewardAdmin(admin.ModelAdmin):
+    list_display = ('name', 'amount', 'recurring')
+    list_filter = ('has_link', 'active', 'third_party')
+    search_fields = ('name',)
 
 
-class DonateForm(forms.Form):
-    recurrence = forms.ChoiceField(
-        label=_('Donation recurrence'),
-        choices=RECURRENCE_CHOICES,
-        initial='m',
-        widget=forms.RadioSelect,
-    )
-    amount = forms.IntegerField(
-        label=_('Amount in EUR'),
-        min_value=2,
-        initial=10,
-    )
+class DonationAdmin(admin.ModelAdmin):
+    list_display = ('user', 'reward', 'created', 'expires')
+
+
+admin.site.register(Reward, RewardAdmin)
+admin.site.register(Donation, DonationAdmin)
