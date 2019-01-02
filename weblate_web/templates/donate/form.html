@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load crispy_forms_tags %}
+{% block title %}{% trans "Donate to Weblate" %}{% endblock %}
+{% block header %}{% trans "Donate to Weblate" %}{% endblock %}
+{% block description %}
+{% block headline %}{% trans "Weblate is provided free of charge, and welcomes donations." %}{% endblock %}
+{% endblock %}
+{% block content %}
+
+<form method="post">
+{% csrf_token %}
+<div class="card m-4">
+  <h5 class="card-header">
+    {% trans "Please choose your donation level" %}
+  </h5>
+  <div class="card-body">
+    {{ form|crispy }}
+      <table class="table table-sm">
+      <thead class="thead-light">
+      <tr><th>{% trans "Reward" %}</th><th colspan="2">{% trans "Required amount" %}</th></tr>
+      </thead>
+      <tbody id="rewards-table">
+      <tr data-amount="100"><td>{% trans "Link placement on our thanks page" %}</td><td>{% blocktrans with monthly=100 yearly=1000 %}{{ monthly }} EUR monthly / {{ yearly }} EUR yearly{% endblocktrans %}</td><td><a href="#" class="btn btn-sm btn-success">{% trans "Choose" %}</a></td></tr>
+      </tbody>
+      </table>
+  </div>
+  <div class="card-footer">
+    <input type="submit" value="{% trans "Continue" %}" class="btn btn-success">
+  </div>
+</div>
+</form>
+
+{% endblock %}

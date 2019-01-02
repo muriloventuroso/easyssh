@@ -31,6 +31,7 @@ from simple_sso.sso_client.client import Client
 
 from weblate_web.views import (
     PaymentView, CustomerView, CompleteView, fetch_vat,
+    DonateView,
 )
 
 
@@ -133,6 +134,11 @@ urlpatterns = i18n_patterns(
         r'^donate/$',
         TemplateView.as_view(template_name="donate.html"),
         name='donate'
+    ),
+    url(
+        r'^donate/new/$',
+        DonateView.as_view(),
+        name='donate-new'
     ),
     url(
         r'^support/$',

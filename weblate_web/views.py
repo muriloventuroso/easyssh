@@ -19,11 +19,13 @@
 #
 
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from django.core.exceptions import SuspiciousOperation
 from django.db import transaction
 from django.http import JsonResponse
 from django.shortcuts import redirect
 from django.urls import reverse
+from django.utils.decorators import method_decorator
 from django.utils.translation import ugettext as _
 from django.views.generic.edit import FormView
 from django.views.decorators.http import require_POST
@@ -36,7 +38,7 @@ from wlhosted.payments.models import Payment
 from wlhosted.payments.forms import CustomerForm
 from wlhosted.payments.validators import cache_vies_data
 
-from weblate_web.forms import MethodForm
+from weblate_web.forms import MethodForm, DonateForm
 
 
 @require_POST
@@ -150,3 +152,15 @@ class CompleteView(PaymentView):
             backend = get_backend(self.object.backend)(self.object)
             backend.complete(self.request)
             return self.redirect_origin()
+
+
+@method_decorator(login_required, name='dispatch')
+class DonateView(FormView):
+    form_class = DonateForm
+    template_name = 'donate/form.html'
+
+    def get_form_kwargs(self):
+        result = super().get_form_kwargs()
+        if 'recurrence' in self.request.GET:
+            result['initial'] = {'recurrence': self.request.GET['recurrence']}
+        return result

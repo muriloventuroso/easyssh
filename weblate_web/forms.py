@@ -21,7 +21,7 @@
 from __future__ import unicode_literals
 
 from django import forms
-
+from django.utils.translation import ugettext_lazy as _
 
 from wlhosted.payments.backends import list_backends
 
@@ -37,3 +37,21 @@ class MethodForm(forms.Form):
         self.fields['method'].choices = [
             (backend.name, backend.verbose) for backend in list_backends()
         ]
+
+
+class DonateForm(forms.Form):
+    recurrence = forms.ChoiceField(
+        label=_('Donation recurrence'),
+        choices=[
+            ('onetime', _('One time donation')),
+            ('monthly', _('Monthly donation')),
+            ('yearly', _('Yearly donation')),
+        ],
+        initial='monthly',
+        widget=forms.RadioSelect,
+    )
+    amount = forms.IntegerField(
+        label=_('Amount in EUR'),
+        min_value=2,
+        initial=10,
+    )
