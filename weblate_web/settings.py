@@ -285,3 +285,5 @@ PAYMENT_FAKTURACE = "/home/nijel/weblate/tmp-fakturace"
 SSO_SERVER = 'https://hosted.weblate.org/accounts/sso/'
 SSO_PRIVATE_KEY = None
 SSO_PUBLIC_KEY = None
+
+LOGIN_URL = '/sso-login/'

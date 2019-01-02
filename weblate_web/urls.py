@@ -205,7 +205,7 @@ urlpatterns = i18n_patterns(
         r'^js/vat/$',
         fetch_vat
     ),
-    url(r'^sso/', include(SSO_CLIENT.get_urls())),
+    url(r'^sso-login/', include(SSO_CLIENT.get_urls())),
     # Admin
     url(r'^admin/', admin.site.urls),
 
