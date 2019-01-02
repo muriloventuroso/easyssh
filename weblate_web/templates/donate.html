@@ -15,74 +15,60 @@
 {% endblock %}
 {% block content %}
 
-<h2>{% trans "Donations" %}</h2>
-
-{% if user.is_authenticated %}
-{% else %}
-<p><a class="btn btn-info" href="{% url 'simple-sso-login' %}">{% trans "Log in to manage your donations" %}</a></p>
+{% if not user.is_authenticated %}
+<a class="btn btn-info float-right" href="{% url 'simple-sso-login' %}"><i class="fas fa-sign-in-alt"></i> {% trans "Log in to manage your donations" %}</a>
 {% endif %}
 
-<h2>{% trans "Use our hosting" %}</h2>
+<h2>{% trans "Donations" %}</h2>
 
 <p>
-{% url 'hosting' as hosting_url %}
-{% blocktrans %}Host your commercial translations on <a href="{{ hosting_url }}">Hosted Weblate</a> and you will be supporting Weblate development automatically.{% endblocktrans %}
+{% blocktrans %}Recurring donations allow sustainability of Weblate development and help to fund free hosting for libre software. You don't have to spend big money, every penny counts.{% endblocktrans %}
 </p>
 
-<h2>{% trans "Regular donations" %}</h2>
+    <div class="container">
+      <div class="card-deck mb-3 text-center">
 
-<p>
-{% blocktrans %}Regular donations allow sustainability of Weblate development and help to fund free hosting for libre software. You don't have to spend big money, every penny counts.{% endblocktrans %}
-</p>
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">{% trans "Recurring donation" %}</h4>
+          </div>
+          <div class="card-body">
+            <p>{% trans "Repeated appreciation of the Weblate project helps in keeping the project sustainable in the long term." %}</p>
+            <p>{% trans "Please consider this if you are using Weblate on premise without support contract." %}</p>
+          </div>
+          <div class="card-footer">
+            <a href="{% url "hosting" %}" class="btn btn-lg btn-block btn-info"><i class="fas fa-donate"></i> Choose plan</a>
+          </div>
+        </div>
 
-<a href="https://salt.bountysource.com/teams/weblate" class="btn btn-info">
-<i class="fas fa-money-bill"></i>
-{% trans "Fund on Bountysource" %}
-</a>
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">{% trans "One time donation" %}</h4>
+          </div>
+          <div class="card-body">
+            <p>{% trans "One time donations are great for appreciating our work on single issue or support." %}</p>
+          </div>
+          <div class="card-footer">
+            <a href="{% url "hosting" %}" class="btn btn-lg btn-block btn-info"><i class="fas fa-donate"></i> Choose plan</a>
+          </div>
+        </div>
 
-<p>
-{% trans "You can send a monthly donation using a credit card. You can also get rewards for higher donations, for example a logo placement on our website." %}
-</p>
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">{% trans "Use our services" %}</h4>
+          </div>
+          <div class="card-body">
+            <p>{% trans "Commercial services like hosting or support for on premise installation help funding Weblate development." %}</p>
+          </div>
+          <div class="card-footer">
+            <a class="btn btn-info btn-lg btn-block" href="{% url 'hosting' %}" role="button"><i class="fas fa-server"></i> {% trans "Purchase hosting package" %}</a>
+            <a class="btn btn-info btn-lg btn-block" href="{% url 'support' %}"><i class="fas fa-life-ring"></i> {% trans "Get support for Weblate" %}</a>
+          </div>
+        </div>
 
+      </div>
+    </div>
 
-<a href="https://liberapay.com/Weblate/" class="btn btn-info">
-<i class="fas fa-money-bill"></i>
-{% trans "Donate using Liberapay" %}
-</a>
-
-<p>
-{% blocktrans %}Liberapay is a recurrent donations platform where you send weekly amount to fund projects you use. You can use credit card, bank transfer or direct debit to top up the account.{% endblocktrans %}
-</p>
-
-<h2>{% trans "Fund features" %}</h2>
-
-<a href="https://www.bountysource.com/teams/weblate/issues" class="btn btn-info">
-<i class="fas fa-money-bill"></i>
-{% trans "Fund on Bountysource" %}
-</a>
-
-<p>
-{% trans "Bountysource allows you to fund individual features reported on our issue tracker." %}
-</p>
-
-<h2>{% trans "Donate" %}</h2>
-
-<p>
-{% blocktrans %}If you like Weblate you can support its further development by donating.{% endblocktrans %}
-</p>
-
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
-<input type="hidden" name="cmd" value="_s-xclick" />
-<input type="hidden" name="hosted_button_id" value="AXN88S8GX5MQ4" />
-<button class="btn btn-info" type="submit">
-<i class="fab fa-paypal"></i>
-{% trans "Donate using PayPal" %}
-</button>
-</form>
-
-<p>
-{% trans "PayPal allows you to send money from credit card, PayPal balance or a bank account." %}
-</p>
 
 <h2 id="crypto">{% trans "Cryptocurrencies" %}</h2>
 
