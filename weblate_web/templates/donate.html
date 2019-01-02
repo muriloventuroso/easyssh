@@ -16,24 +16,35 @@
 {% block content %}
 
 {% if not user.is_authenticated %}
-<a class="btn btn-info float-right" href="{% url 'simple-sso-login' %}"><i class="fas fa-sign-in-alt"></i> {% trans "Log in to manage your donations" %}</a>
+<a class="btn btn-info float-right" href="{% url 'simple-sso-login' %}?next={% url 'donate' %}"><i class="fas fa-sign-in-alt"></i> {% trans "Log in to manage your donations" %}</a>
 {% else %}
 {% with donations=user.donation_set.all %}
 {% if donations %}
 <h2>{% trans "Your donations" %}</h2>
 
 <table class="table">
+<thead>
+<tr>
+<th>{% trans "Creation date" %}</th>
+<th>{% trans "Expiration date" %}</th>
+<th>{% trans "Payments" %}</th>
+</tr>
+</thead>
+<tbody>
 {% for donation in donations %}
 <tr>
 <td>{{ donation.created }}</td>
 <td>{{ donation.expires }}</td>
 <td>
+<ul class="list-unstyled">
 {% for payment in donation.list_payments %}
-{{ payment }}
+<li>{{ payment.amount }} EUR ({{ payment.invoice }})</li>
 {% endfor %}
+</ul>
 </td>
 </tr>
 {% endfor %}
+</tbody>
 </table>
 {% endif %}
 {% endwith %}
