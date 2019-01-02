@@ -111,43 +111,43 @@
 
         <div class="card mb-4 shadow-sm">
           <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Hosted service</h4>
+            <h4 class="my-0 font-weight-normal">{% trans "Hosted service" %}</h4>
           </div>
           <div class="card-body">
             <ul class="list-unstyled mt-3 mb-4">
-              <li>From 19 EUR/month</li>
-              <li>Cloud service</li>
-              <li>Priority email support</li>
+              <li>{% blocktrans with amount=19 %}From {{ amount }}EUR/month{% endblocktrans %}</li>
+              <li>{% trans "Cloud service" %}</li>
+              <li>{% trans "Priority email support" %}</li>
             </ul>
-            <a href="{% url "hosting" %}" class="btn btn-lg btn-block btn-info">Choose plan</a>
+            <a href="{% url "hosting" %}" class="btn btn-lg btn-block btn-info">{% trans "Choose hosting plan" %}</a>
           </div>
         </div>
 
         <div class="card mb-4 shadow-sm">
           <div class="card-header">
-            <h4 class="my-0 font-weight-normal">On premise</h4>
+            <h4 class="my-0 font-weight-normal">{% trans "On premise" %}</h4>
           </div>
           <div class="card-body">
             <ul class="list-unstyled mt-3 mb-4">
-              <li>From 50 EUR/month</li>
-              <li>Your infrastructure</li>
-              <li>Priority email support</li>
+              <li>{% blocktrans with amount=50 %}From {{ amount }}EUR/month{% endblocktrans %}</li>
+              <li>{% trans "Your infrastructure" %}</li>
+              <li>{% trans "Priority email support" %}</li>
             </ul>
-            <a href="{% url "support" %}" class="btn btn-lg btn-block btn-info">Choose plan</a>
+            <a href="{% url "support" %}" class="btn btn-lg btn-block btn-info">{% trans "Choose hosting plan" %}</a>
           </div>
         </div>
 
         <div class="card mb-4 shadow-sm">
           <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Self supported</h4>
+            <h4 class="my-0 font-weight-normal">{% trans "Self supported" %}</h4>
           </div>
           <div class="card-body">
             <ul class="list-unstyled mt-3 mb-4">
-              <li>Weblate is free to use</li>
-              <li>Maintained by you</li>
-              <li>Community support</li>
+              <li>{% trans "Weblate is free to use" %}</li>
+              <li>{% trans "Maintained by you" %}</li>
+              <li>{% trans "Community support" %}</li>
             </ul>
-            <a href="{% url "download" %}" class="btn btn-lg btn-block btn-info">Download</a>
+            <a href="{% url "download" %}" class="btn btn-lg btn-block btn-info">{% trans "Download" %}</a>
           </div>
         </div>
 
