@@ -243,8 +243,21 @@ def process_donation(request):
         return redirect(reverse('donate-new'))
 
     # Create donation
-    process_payment(payment)
-
-    # TODO: Edit link if applicable?
+    if payment.state in (Payment.NEW, Payment.PENDING):
+        messages.error(
+            request,
+            _('Payment not yet processed, please retry.')
+        )
+    elif payment.state == Payment.REJECTED:
+        messages.error(
+            request,
+            _('The payment was rejected: {}').format(
+                payment.details.get('reject_reason', _('Unknown reason'))
+            )
+        )
+    elif payment.state == Payment.ACCEPTED:
+        messages.success(request, _('Thank you for your donation.'))
+        process_payment(payment)
+        # TODO: Edit link if applicable?
 
     return redirect(reverse('donate'))
