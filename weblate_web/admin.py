@@ -19,7 +19,6 @@
 #
 
 from django.contrib import admin
-from django.utils.translation import ugettext_lazy as _
 
 from weblate_web.models import Reward, Donation
 

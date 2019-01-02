@@ -23,7 +23,6 @@ import uuid
 from django.db import models
 from django.contrib.auth.models import User
 from django.urls import reverse
-from django.utils.functional import cached_property
 from django.utils.translation import ugettext_lazy
 
 from wlhosted.payments.models import Payment, RECURRENCE_CHOICES

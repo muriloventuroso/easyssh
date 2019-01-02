@@ -167,7 +167,8 @@ class DonateView(FormView):
             result['initial'] = {'recurrence': self.request.GET['recurrence']}
         return result
 
-    def get_rewards(self):
+    @staticmethod
+    def get_rewards():
         return Reward.objects.filter(
             third_party=False, active=True
         ).order_by('amount')
