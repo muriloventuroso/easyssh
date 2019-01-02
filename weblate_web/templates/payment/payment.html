@@ -20,6 +20,8 @@
     <tr><th>{% trans "Payment frequence" %}</th><td>
     {% if object.recurring == "y" %}
     {% trans "Payment will be issued yearly till you cancel the subscription." %}
+    {% elif object.recurring == "b" %}
+    {% trans "Payment will be issued every six months till you cancel the subscription." %}
     {% elif object.recurring == "m" %}
     {% trans "Payment will be issued monthly till you cancel the subscription." %}
     {% else %}
