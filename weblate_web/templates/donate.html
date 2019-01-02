@@ -7,7 +7,6 @@
 {% endblock %}
 {% block extrajumbo %}
 <p>
-<a href="https://liberapay.com/Weblate/" class="btn btn-info btn-lg"><i class="fas fa-donate"></i> {% trans "Donate using Liberapay" %}</a>
 
 <a class="btn btn-info btn-lg" href="{% url 'hosting' %}" role="button"><i class="fas fa-server"></i> {% trans "Purchase hosting package" %}</a>
 <a class="btn btn-info btn-lg" href="{% url 'support' %}"><i class="fas fa-life-ring"></i> {% trans "Get support for Weblate" %}</a>
@@ -15,6 +14,13 @@
 </p>
 {% endblock %}
 {% block content %}
+
+<h2>{% trans "Donations" %}</h2>
+
+{% if user.is_authenticated %}
+{% else %}
+<p><a class="btn btn-info" href="{% url 'simple-sso-login' %}">{% trans "Log in to manage your donations" %}</a></p>
+{% endif %}
 
 <h2>{% trans "Use our hosting" %}</h2>
 
