@@ -287,3 +287,5 @@ SSO_PRIVATE_KEY = None
 SSO_PUBLIC_KEY = None
 
 LOGIN_URL = '/sso-login/'
+
+PAYMENT_REDIRECT_URL = 'http://localhost:1234/{language}/payment/{uuid}/'

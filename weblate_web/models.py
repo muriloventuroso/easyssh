@@ -23,9 +23,12 @@ import uuid
 from django.db import models
 from django.contrib.auth.models import User
 from django.urls import reverse
+from django.utils import timezone
 from django.utils.translation import ugettext_lazy
 
 from wlhosted.payments.models import Payment, RECURRENCE_CHOICES
+
+PAYMENTS_ORIGIN = 'https://weblate.org/donate/process/'
 
 
 class Reward(models.Model):
@@ -56,7 +59,7 @@ class Reward(models.Model):
 
 class Donation(models.Model):
     user = models.ForeignKey(User, on_delete=models.deletion.CASCADE)
-    payment = models.ForeignKey(Payment, on_delete=models.deletion.CASCADE)
+    payment = models.UUIDField()
     reward = models.ForeignKey(
         Reward, on_delete=models.deletion.CASCADE, null=True, blank=True
     )
@@ -71,3 +74,29 @@ class Donation(models.Model):
     created = models.DateTimeField(auto_now_add=True)
     expires = models.DateTimeField()
     active = models.BooleanField(blank=True, db_index=True)
+
+    def list_payments(self):
+        initial = Payment.objects.filter(pk=self.payment)
+        return initial | initial[0].payment_set.all()
+
+
+def process_payment(payment):
+    if payment.repeat:
+        # Update existing
+        donation = Donation.objects.get(payment=payment.repeat.pk)
+        # TODO: actually update (expiry)
+    else:
+        user = User.objects.get(pk=payment.customer.user_id)
+        reward = None
+        if 'reward' in payment.extra:
+            reward = Reward.objects.get(pk=payment.extra['reward'])
+        # Create new
+        # TODO: calculate expiry
+        donation = Donation.objects.create(
+            user=user,
+            payment=payment.pk,
+            reward=reward,
+            expires=timezone.now(),
+            active=True,
+        )
+    return donation

@@ -34,12 +34,14 @@ from django.views.generic.detail import SingleObjectMixin
 
 from wlhosted.payments.backends import get_backend, list_backends
 
-from wlhosted.payments.models import Payment
+from wlhosted.payments.models import Payment, Customer
 from wlhosted.payments.forms import CustomerForm
 from wlhosted.payments.validators import cache_vies_data
 
 from weblate_web.forms import MethodForm, DonateForm
-from weblate_web.models import Reward
+from weblate_web.models import Reward, PAYMENTS_ORIGIN, process_payment
+
+
 
 
 @require_POST
@@ -179,6 +181,45 @@ class DonateView(FormView):
         kwargs['show_form'] = self.show_form
         return kwargs
 
+    def redirect_payment(self, **kwargs):
+        kwargs['customer'] = Customer.objects.get_or_create(
+            origin=PAYMENTS_ORIGIN,
+            user_id=self.request.user.id,
+            defaults={
+                'email': self.request.user.email,
+            }
+        )[0]
+        payment = Payment.objects.create(**kwargs)
+        return redirect(payment.get_payment_url())
+
+    def handle_reward(self, reward):
+        return self.redirect_payment(
+            amount=reward.amount,
+            amount_fixed=True,
+            description='Weblate donation: {}'.format(reward.name),
+            recurring=reward.recurring,
+            extra={
+                'reward': str(reward.pk),
+            }
+        )
+
+    def form_valid(self, form):
+        return self.redirect_payment(
+            amount=form.clened_data['amount'],
+            amount_fixed=True,
+            description='Weblate donation',
+            recurring=form.cleaned_data['recurring'],
+        )
+
+    def post(self, request, *args, **kwargs):
+        if 'reward' in request.POST:
+            try:
+                reward = self.get_rewards().get(pk=request.POST['reward'])
+                return self.handle_reward(reward)
+            except Reward.DoesNotExist:
+                pass
+        return super().post(request, *args, **kwargs)
+
 
 class DonateRewardView(DonateView):
     show_form = False
@@ -188,3 +229,22 @@ class DonateRewardView(DonateView):
         if not rewards:
             raise Http404('Reward not found')
         return rewards
+
+
+@login_required
+def process_donation(request):
+    try:
+        payment = Payment.objects.get(
+            pk=request.GET['payment'],
+            customer__origin=PAYMENTS_ORIGIN,
+            customer__user_id=request.user.id
+        )
+    except (KeyError, Payment.DoesNotExist):
+        return redirect(reverse('donate-new'))
+
+    # Create donation
+    process_payment(payment)
+
+    # TODO: Edit link if applicable?
+
+    return redirect(reverse('donate'))
