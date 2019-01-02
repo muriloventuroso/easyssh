@@ -18,7 +18,7 @@
 {% for reward in rewards %}
         <div class="card mb-4 shadow-sm">
           <h5 class="card-header">
-            {{ reward.name }}
+            {{ reward.get_display_name }}
           </h5>
           <div class="card-body">
             <table>

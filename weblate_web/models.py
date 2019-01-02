@@ -24,7 +24,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.urls import reverse
 from django.utils import timezone
-from django.utils.translation import ugettext_lazy
+from django.utils.translation import ugettext_lazy, ugettext
 
 from wlhosted.payments.models import (
     Payment, RECURRENCE_CHOICES, get_period_delta,
@@ -57,6 +57,9 @@ class Reward(models.Model):
 
     def get_absolute_url(self):
         return reverse('donate-reward', kwargs={'pk': self.pk})
+
+    def get_display_name(self):
+        return ugettext(self.name)
 
 
 class Donation(models.Model):

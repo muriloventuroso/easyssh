@@ -26,6 +26,7 @@
 <thead>
 <tr>
 <th>{% trans "Creation date" %}</th>
+<th>{% trans "Reward" %}</th>
 <th>{% trans "Renewal date" %}</th>
 <th>{% trans "Payments" %}</th>
 </tr>
@@ -34,6 +35,7 @@
 {% for donation in donations %}
 <tr>
 <td>{{ donation.created }}</td>
+<td>{% if donation.reward %}{{ donation.reward.get_display_name }}{% else %}{% trans "No reward" %}{% endif %}</td>
 <td>
 {% if donation.active and donation.get_payment.recurring %}
 {{ donation.expires }}
