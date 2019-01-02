@@ -77,6 +77,9 @@ class Donation(models.Model):
     expires = models.DateTimeField()
     active = models.BooleanField(blank=True, db_index=True)
 
+    def get_payment(self):
+        return Payment.objects.get(pk=self.payment)
+
     def list_payments(self):
         initial = Payment.objects.filter(pk=self.payment)
         return initial | initial[0].payment_set.all()

@@ -26,7 +26,7 @@
 <thead>
 <tr>
 <th>{% trans "Creation date" %}</th>
-<th>{% trans "Expiration date" %}</th>
+<th>{% trans "Renewal date" %}</th>
 <th>{% trans "Payments" %}</th>
 </tr>
 </thead>
@@ -34,7 +34,13 @@
 {% for donation in donations %}
 <tr>
 <td>{{ donation.created }}</td>
-<td>{{ donation.expires }}</td>
+<td>
+{% if donation.active and donation.get_payment.recurring %}
+{{ donation.expires }}
+{% else %}
+{% trans "Does not renew" %}
+{% endif %}
+</td>
 <td>
 <ul class="list-unstyled">
 {% for payment in donation.list_payments %}
