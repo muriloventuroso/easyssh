@@ -168,7 +168,9 @@ class DonateView(FormView):
         return result
 
     def get_rewards(self):
-        return Reward.objects.filter(third_party=False, active=True)
+        return Reward.objects.filter(
+            third_party=False, active=True
+        ).order_by('amount')
 
     def get_context_data(self, **kwargs):
         kwargs = super().get_context_data(**kwargs)
