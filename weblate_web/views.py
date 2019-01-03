@@ -22,8 +22,8 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.core.exceptions import SuspiciousOperation
 from django.db import transaction
-from django.http import JsonResponse, Http404
-from django.shortcuts import redirect
+from django.http import JsonResponse, HttpResponse, Http404
+from django.shortcuts import redirect, get_object_or_404
 from django.urls import reverse
 from django.utils.decorators import method_decorator
 from django.utils.translation import ugettext as _
@@ -262,6 +262,33 @@ def process_donation(request):
             return redirect(donation)
 
     return redirect(reverse('donate'))
+
+
+@login_required
+def download_invoice(request, pk):
+    payment = get_object_or_404(
+        Payment,
+        pk=pk,
+        customer__origin=PAYMENTS_ORIGIN,
+        customer__user_id=request.user.id
+    )
+
+    if not payment.invoice_filename_valid:
+        raise Http404('File {0} does not exist!'.format(payment.invoice_filename))
+
+    with open(payment.invoice_full_filename, 'rb') as handle:
+        data = handle.read()
+
+    response = HttpResponse(
+        data,
+        content_type='application/pdf'
+    )
+    response['Content-Disposition'] = 'attachment; filename={0}'.format(
+        payment.invoice_filename
+    )
+    response['Content-Length'] = len(data)
+
+    return response
 
 
 @method_decorator(login_required, name='dispatch')

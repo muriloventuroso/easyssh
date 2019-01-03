@@ -32,7 +32,7 @@ from simple_sso.sso_client.client import Client
 from weblate_web.views import (
     PaymentView, CustomerView, CompleteView, fetch_vat,
     DonateView, DonateRewardView, process_donation,
-    EditLinkView,
+    EditLinkView, download_invoice,
 )
 
 
@@ -155,6 +155,11 @@ urlpatterns = i18n_patterns(
         r'^donate/edit/(?P<pk>[0-9]+)/$',
         EditLinkView.as_view(),
         name='donate-edit'
+    ),
+    url(
+        r'^donate/invoice/' + UUID + '/$',
+        download_invoice,
+        name='donate-invoice'
     ),
     url(
         r'^support/$',

@@ -55,7 +55,14 @@
 <td>
 <ul class="list-unstyled">
 {% for payment in donation.list_payments %}
-<li>{{ payment.amount }} EUR ({{ payment.invoice }})</li>
+<li>
+{{ payment.amount }} EUR 
+{% if payment.invoice_filename_valid %}
+(<a href="{% url 'donate-invoice' pk=payment.pk %}">{{ payment.invoice_filename }}</a>)
+{% else %}
+({{ payment.invoice_filename }})
+{% endif %}
+</li>
 {% endfor %}
 </ul>
 </td>
