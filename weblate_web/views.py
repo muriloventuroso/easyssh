@@ -274,7 +274,9 @@ def download_invoice(request, pk):
     )
 
     if not payment.invoice_filename_valid:
-        raise Http404('File {0} does not exist!'.format(payment.invoice_filename))
+        raise Http404(
+            'File {0} does not exist!'.format(payment.invoice_filename)
+        )
 
     with open(payment.invoice_full_filename, 'rb') as handle:
         data = handle.read()
