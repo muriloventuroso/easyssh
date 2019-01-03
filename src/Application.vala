@@ -41,7 +41,7 @@ namespace EasySSH {
             settings = new Settings ();
             var app_window = new MainWindow (this);
             app_window.show_all ();
-
+            app_window.finish_construction();
             var quit_action = new SimpleAction ("quit", null);
 
             add_action (quit_action);

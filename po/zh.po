@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.muriloventuroso.easyssh\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-18 17:23-0200\n"
+"POT-Creation-Date: 2019-01-03 14:53-0200\n"
 "PO-Revision-Date: 2018-11-17 14:07+0000\n"
 "Last-Translator: Sak94664 <hdudhhhdh@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
@@ -19,84 +19,100 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 3.3-dev\n"
 
-#: src/MainWindow.vala:62
+#: src/MainWindow.vala:64
 msgid "EasySSH"
 msgstr "EasySSH"
 
-#: src/MainWindow.vala:334
+#: src/MainWindow.vala:359
 msgid "Copy"
 msgstr "复制"
 
-#: src/MainWindow.vala:335
+#: src/MainWindow.vala:360
 msgid "Paste"
 msgstr "粘贴"
 
-#: src/MainWindow.vala:336
+#: src/MainWindow.vala:361
 msgid "Select All"
 msgstr "全选"
 
-#: src/MainWindow.vala:337
+#: src/MainWindow.vala:362
 msgid "Show in File Browser"
 msgstr "在文件管理器中显示"
 
-#: src/Views/SourceListView.vala:36 src/Widgets/Connection.vala:60
+#: src/Views/SourceListView.vala:36 src/Views/SourceListView.vala:75
+#: src/Widgets/Connection.vala:60
 msgid "Edit"
 msgstr "编辑"
 
-#: src/Views/SourceListView.vala:42
+#: src/Views/SourceListView.vala:42 src/Views/SourceListView.vala:81
 msgid "Duplicate"
 msgstr ""
 
-#: src/Views/SourceListView.vala:48 src/Views/SourceListView.vala:787
-#: src/Views/SourceListView.vala:789 src/Widgets/ConnectionEditor.vala:325
-#: src/Widgets/Connection.vala:64
+#: src/Views/SourceListView.vala:48 src/Views/SourceListView.vala:87
+#: src/Views/SourceListView.vala:1148 src/Views/SourceListView.vala:1150
+#: src/Views/SourceListView.vala:1167 src/Views/SourceListView.vala:1169
+#: src/Widgets/ConnectionEditor.vala:376 src/Widgets/Connection.vala:64
 msgid "Remove"
 msgstr "移除"
 
-#: src/Views/SourceListView.vala:309
+#: src/Views/SourceListView.vala:149
+#, fuzzy
+msgid "Hosts"
+msgstr "主机："
+
+#: src/Views/SourceListView.vala:151
+msgid "Accounts"
+msgstr ""
+
+#: src/Views/SourceListView.vala:495
 msgid "Please enter the password to unlock the data file"
 msgstr ""
 
-#: src/Views/SourceListView.vala:311
+#: src/Views/SourceListView.vala:497
 msgid "Please enter the password to lock the data file"
 msgstr ""
 
-#: src/Views/SourceListView.vala:313
+#: src/Views/SourceListView.vala:499
 #, fuzzy
 msgid "Password"
 msgstr "密码："
 
-#: src/Views/SourceListView.vala:319 src/Widgets/ConnectionEditor.vala:113
+#: src/Views/SourceListView.vala:505 src/Widgets/ConnectionEditor.vala:155
 msgid "Cancel"
 msgstr "取消"
 
-#: src/Views/SourceListView.vala:322
+#: src/Views/SourceListView.vala:508
 msgid "Send"
 msgstr ""
 
-#: src/Views/SourceListView.vala:787
+#: src/Views/SourceListView.vala:1148
 #, fuzzy
 msgid ""
 "Are you sure you want to remove this connection and all associated data?"
 msgstr "您确定要删除此连接以及与其相关的所有数据吗？"
 
-#: src/Widgets/TerminalBox.vala:205
+#: src/Views/SourceListView.vala:1167
+#, fuzzy
+msgid "Are you sure you want to remove this account and all associated data?"
+msgstr "您确定要删除此连接以及与其相关的所有数据吗？"
+
+#: src/Widgets/TerminalBox.vala:202
 msgid "Connection Error. Retry?"
 msgstr "连接错误。重试？"
 
-#: src/Widgets/TerminalBox.vala:207 src/Widgets/TerminalBox.vala:240
+#: src/Widgets/TerminalBox.vala:204 src/Widgets/TerminalBox.vala:237
 msgid "No"
 msgstr "否"
 
-#: src/Widgets/TerminalBox.vala:210 src/Widgets/TerminalBox.vala:243
+#: src/Widgets/TerminalBox.vala:207 src/Widgets/TerminalBox.vala:240
 msgid "Yes"
 msgstr "是"
 
-#: src/Widgets/TerminalBox.vala:226
+#: src/Widgets/TerminalBox.vala:223
 msgid "Connection Error."
 msgstr "连接错误。"
 
-#: src/Widgets/TerminalBox.vala:238
+#: src/Widgets/TerminalBox.vala:235
 msgid "Fingerprint"
 msgstr "指纹"
 
@@ -104,7 +120,7 @@ msgstr "指纹"
 msgid "SSH Connection Manager"
 msgstr "SSH连接管理器"
 
-#: src/Widgets/Welcome.vala:26 src/Widgets/ConnectionEditor.vala:131
+#: src/Widgets/Welcome.vala:26 src/Widgets/ConnectionEditor.vala:188
 msgid "Add Connection"
 msgstr "添加连接"
 
@@ -124,108 +140,116 @@ msgstr "偏好设置"
 msgid "Menu"
 msgstr "菜单"
 
-#: src/Widgets/ConnectionEditor.vala:109
+#: src/Widgets/ConnectionEditor.vala:79
+msgid "Set Credentials"
+msgstr ""
+
+#: src/Widgets/ConnectionEditor.vala:83
+msgid "Choose Account"
+msgstr ""
+
+#: src/Widgets/ConnectionEditor.vala:105 src/Widgets/ConnectionEditor.vala:218
+msgid "Password:"
+msgstr "密码："
+
+#: src/Widgets/ConnectionEditor.vala:148
+msgid "Select Identity File"
+msgstr ""
+
+#: src/Widgets/ConnectionEditor.vala:149
+msgid "Change Password to Identity File"
+msgstr ""
+
+#: src/Widgets/ConnectionEditor.vala:151
 msgid "Save"
 msgstr "保存"
 
-#: src/Widgets/ConnectionEditor.vala:115 src/Widgets/ConnectionEditor.vala:277
+#: src/Widgets/ConnectionEditor.vala:157 src/Widgets/ConnectionEditor.vala:328
 msgid "Advanced"
 msgstr "高级"
 
-#: src/Widgets/ConnectionEditor.vala:134
+#: src/Widgets/ConnectionEditor.vala:173
+msgid "Username:"
+msgstr "用户名："
+
+#: src/Widgets/ConnectionEditor.vala:191
 msgid "Edit Connection"
 msgstr "编辑连接"
 
-#: src/Widgets/ConnectionEditor.vala:136
+#: src/Widgets/ConnectionEditor.vala:193
 #, fuzzy
 msgid "Duplicate Connection"
 msgstr "编辑连接"
 
-#: src/Widgets/ConnectionEditor.vala:141
+#: src/Widgets/ConnectionEditor.vala:198
 msgid "Name:"
 msgstr "名称："
 
-#: src/Widgets/ConnectionEditor.vala:144
+#: src/Widgets/ConnectionEditor.vala:201
 msgid "Group:"
 msgstr "组："
 
-#: src/Widgets/ConnectionEditor.vala:146
+#: src/Widgets/ConnectionEditor.vala:203
 msgid "Host:"
 msgstr "主机："
 
-#: src/Widgets/ConnectionEditor.vala:148
+#: src/Widgets/ConnectionEditor.vala:205
 msgid "Port:"
 msgstr "端口："
 
-#: src/Widgets/ConnectionEditor.vala:150
-msgid "Username:"
-msgstr "用户名："
-
-#: src/Widgets/ConnectionEditor.vala:152 src/Widgets/ConnectionEditor.vala:167
-msgid "Password:"
-msgstr "密码："
-
-#: src/Widgets/ConnectionEditor.vala:156
-msgid "Change Password to Identity File"
-msgstr ""
-
-#: src/Widgets/ConnectionEditor.vala:157
-msgid "Select Identity File"
-msgstr ""
-
-#: src/Widgets/ConnectionEditor.vala:163
+#: src/Widgets/ConnectionEditor.vala:214
 msgid "Identity File:"
 msgstr ""
 
-#: src/Widgets/ConnectionEditor.vala:176
+#: src/Widgets/ConnectionEditor.vala:227
 msgid "SSH Config:"
 msgstr ""
 
-#: src/Widgets/ConnectionEditor.vala:284 src/Widgets/Preferences.vala:112
+#: src/Widgets/ConnectionEditor.vala:335 src/Widgets/Preferences.vala:112
 msgid "Terminal Background Color:"
 msgstr "终端背景颜色："
 
-#: src/Widgets/ConnectionEditor.vala:293 src/Widgets/Preferences.vala:115
+#: src/Widgets/ConnectionEditor.vala:344 src/Widgets/Preferences.vala:115
 msgid "Terminal Font:"
 msgstr "终端字体："
 
-#: src/Widgets/ConnectionEditor.vala:335
+#: src/Widgets/ConnectionEditor.vala:386
 msgid "Forwarded Ports:"
 msgstr "转发端口："
 
-#: src/Widgets/ConnectionEditor.vala:338
+#: src/Widgets/ConnectionEditor.vala:389
 msgid "Add new forwarded port"
 msgstr "添加新转发端口"
 
-#: src/Widgets/ConnectionEditor.vala:340
+#: src/Widgets/ConnectionEditor.vala:391
 msgid "Source Port:"
 msgstr "源端口："
 
-#: src/Widgets/ConnectionEditor.vala:343
+#: src/Widgets/ConnectionEditor.vala:394
 msgid "Destination:"
 msgstr "目标："
 
-#: src/Widgets/ConnectionEditor.vala:348
+#: src/Widgets/ConnectionEditor.vala:399
 msgid "Local"
 msgstr "本地"
 
-#: src/Widgets/ConnectionEditor.vala:351
+#: src/Widgets/ConnectionEditor.vala:402
 msgid "Remote"
 msgstr "远程"
 
-#: src/Widgets/ConnectionEditor.vala:357
+#: src/Widgets/ConnectionEditor.vala:408
 msgid "Add Tunnel"
 msgstr "添加隧道"
 
-#: src/Widgets/ConnectionEditor.vala:382 src/Widgets/Preferences.vala:126
+#: src/Widgets/ConnectionEditor.vala:433 src/Widgets/Preferences.vala:126
 msgid "Appearance"
 msgstr "外观"
 
-#: src/Widgets/ConnectionEditor.vala:383
+#: src/Widgets/ConnectionEditor.vala:434
 msgid "Tunnels"
 msgstr "隧道"
 
-#: src/Widgets/ConnectionEditor.vala:423
+#: src/Widgets/ConnectionEditor.vala:494
 msgid "Name is already taken"
 msgstr "名称已被占用"
 

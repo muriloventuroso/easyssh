@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.muriloventuroso.easyssh\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-18 17:23-0200\n"
+"POT-Creation-Date: 2019-01-03 14:53-0200\n"
 "PO-Revision-Date: 2018-12-31 04:08+0000\n"
 "Last-Translator: Alex <tminei@ukr.net>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/easyssh/"
@@ -16,92 +16,109 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
-"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 3.4-dev\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-Basepath: ../src\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: src/MainWindow.vala:62
+#: src/MainWindow.vala:64
 msgid "EasySSH"
 msgstr "EasySSH"
 
-#: src/MainWindow.vala:334
+#: src/MainWindow.vala:359
 msgid "Copy"
 msgstr "Копировать"
 
-#: src/MainWindow.vala:335
+#: src/MainWindow.vala:360
 msgid "Paste"
 msgstr "Вставить"
 
-#: src/MainWindow.vala:336
+#: src/MainWindow.vala:361
 msgid "Select All"
 msgstr "Выделить всё"
 
-#: src/MainWindow.vala:337
+#: src/MainWindow.vala:362
 msgid "Show in File Browser"
 msgstr "Показать в файловом браузере"
 
-#: src/Views/SourceListView.vala:36 src/Widgets/Connection.vala:60
+#: src/Views/SourceListView.vala:36 src/Views/SourceListView.vala:75
+#: src/Widgets/Connection.vala:60
 msgid "Edit"
 msgstr "Изменить"
 
-#: src/Views/SourceListView.vala:42
+#: src/Views/SourceListView.vala:42 src/Views/SourceListView.vala:81
 msgid "Duplicate"
 msgstr "Дублировать"
 
-#: src/Views/SourceListView.vala:48 src/Views/SourceListView.vala:787
-#: src/Views/SourceListView.vala:789 src/Widgets/ConnectionEditor.vala:325
-#: src/Widgets/Connection.vala:64
+#: src/Views/SourceListView.vala:48 src/Views/SourceListView.vala:87
+#: src/Views/SourceListView.vala:1148 src/Views/SourceListView.vala:1150
+#: src/Views/SourceListView.vala:1167 src/Views/SourceListView.vala:1169
+#: src/Widgets/ConnectionEditor.vala:376 src/Widgets/Connection.vala:64
 msgid "Remove"
 msgstr "Удалить"
 
-#: src/Views/SourceListView.vala:309
+#: src/Views/SourceListView.vala:149
+#, fuzzy
+msgid "Hosts"
+msgstr "Хост:"
+
+#: src/Views/SourceListView.vala:151
+msgid "Accounts"
+msgstr ""
+
+#: src/Views/SourceListView.vala:495
 #, fuzzy
 msgid "Please enter the password to unlock the data file"
 msgstr "Пожалуйста, введите пароль, чтобы разблокировать данные"
 
-#: src/Views/SourceListView.vala:311
+#: src/Views/SourceListView.vala:497
 #, fuzzy
 msgid "Please enter the password to lock the data file"
 msgstr "Пожалуйста, введите пароль для блокировки данных"
 
-#: src/Views/SourceListView.vala:313
+#: src/Views/SourceListView.vala:499
 msgid "Password"
 msgstr "Пароль"
 
-#: src/Views/SourceListView.vala:319 src/Widgets/ConnectionEditor.vala:113
+#: src/Views/SourceListView.vala:505 src/Widgets/ConnectionEditor.vala:155
 msgid "Cancel"
 msgstr "Отмена"
 
-#: src/Views/SourceListView.vala:322
+#: src/Views/SourceListView.vala:508
 msgid "Send"
 msgstr "Отправить"
 
-#: src/Views/SourceListView.vala:787
+#: src/Views/SourceListView.vala:1148
 msgid ""
 "Are you sure you want to remove this connection and all associated data?"
 msgstr ""
 "Вы уверены, что хотите удалить это соединение и все данные, связанные с ним?"
 
-#: src/Widgets/TerminalBox.vala:205
+#: src/Views/SourceListView.vala:1167
+#, fuzzy
+msgid "Are you sure you want to remove this account and all associated data?"
+msgstr ""
+"Вы уверены, что хотите удалить это соединение и все данные, связанные с ним?"
+
+#: src/Widgets/TerminalBox.vala:202
 msgid "Connection Error. Retry?"
 msgstr "Ошибка подключения. Повторить?"
 
-#: src/Widgets/TerminalBox.vala:207 src/Widgets/TerminalBox.vala:240
+#: src/Widgets/TerminalBox.vala:204 src/Widgets/TerminalBox.vala:237
 msgid "No"
 msgstr "Нет"
 
-#: src/Widgets/TerminalBox.vala:210 src/Widgets/TerminalBox.vala:243
+#: src/Widgets/TerminalBox.vala:207 src/Widgets/TerminalBox.vala:240
 msgid "Yes"
 msgstr "Да"
 
-#: src/Widgets/TerminalBox.vala:226
+#: src/Widgets/TerminalBox.vala:223
 msgid "Connection Error."
 msgstr "Ошибка подключения."
 
-#: src/Widgets/TerminalBox.vala:238
+#: src/Widgets/TerminalBox.vala:235
 msgid "Fingerprint"
 msgstr "Отпечаток ключа"
 
@@ -109,7 +126,7 @@ msgstr "Отпечаток ключа"
 msgid "SSH Connection Manager"
 msgstr "Менеджер SSH-подключений"
 
-#: src/Widgets/Welcome.vala:26 src/Widgets/ConnectionEditor.vala:131
+#: src/Widgets/Welcome.vala:26 src/Widgets/ConnectionEditor.vala:188
 msgid "Add Connection"
 msgstr "Добавить подключение"
 
@@ -129,109 +146,117 @@ msgstr "Настройки"
 msgid "Menu"
 msgstr "Меню"
 
-#: src/Widgets/ConnectionEditor.vala:109
+#: src/Widgets/ConnectionEditor.vala:79
+msgid "Set Credentials"
+msgstr ""
+
+#: src/Widgets/ConnectionEditor.vala:83
+msgid "Choose Account"
+msgstr ""
+
+#: src/Widgets/ConnectionEditor.vala:105 src/Widgets/ConnectionEditor.vala:218
+msgid "Password:"
+msgstr "Пароль:"
+
+#: src/Widgets/ConnectionEditor.vala:148
+msgid "Select Identity File"
+msgstr "Выберите файл идентификации"
+
+#: src/Widgets/ConnectionEditor.vala:149
+msgid "Change Password to Identity File"
+msgstr "Изменить пароль для идентификации файлов"
+
+#: src/Widgets/ConnectionEditor.vala:151
 msgid "Save"
 msgstr "Сохранить"
 
-#: src/Widgets/ConnectionEditor.vala:115 src/Widgets/ConnectionEditor.vala:277
+#: src/Widgets/ConnectionEditor.vala:157 src/Widgets/ConnectionEditor.vala:328
 msgid "Advanced"
 msgstr "Дополнительно"
 
-#: src/Widgets/ConnectionEditor.vala:134
+#: src/Widgets/ConnectionEditor.vala:173
+msgid "Username:"
+msgstr "Логин:"
+
+#: src/Widgets/ConnectionEditor.vala:191
 msgid "Edit Connection"
 msgstr "Редактировать подключение"
 
-#: src/Widgets/ConnectionEditor.vala:136
+#: src/Widgets/ConnectionEditor.vala:193
 #, fuzzy
 msgid "Duplicate Connection"
 msgstr "Редактировать подключение"
 
-#: src/Widgets/ConnectionEditor.vala:141
+#: src/Widgets/ConnectionEditor.vala:198
 msgid "Name:"
 msgstr "Имя:"
 
-#: src/Widgets/ConnectionEditor.vala:144
+#: src/Widgets/ConnectionEditor.vala:201
 msgid "Group:"
 msgstr "Группа:"
 
-#: src/Widgets/ConnectionEditor.vala:146
+#: src/Widgets/ConnectionEditor.vala:203
 msgid "Host:"
 msgstr "Хост:"
 
-#: src/Widgets/ConnectionEditor.vala:148
+#: src/Widgets/ConnectionEditor.vala:205
 msgid "Port:"
 msgstr "Порт:"
 
-#: src/Widgets/ConnectionEditor.vala:150
-msgid "Username:"
-msgstr "Логин:"
-
-#: src/Widgets/ConnectionEditor.vala:152 src/Widgets/ConnectionEditor.vala:167
-msgid "Password:"
-msgstr "Пароль:"
-
-#: src/Widgets/ConnectionEditor.vala:156
-msgid "Change Password to Identity File"
-msgstr "Изменить пароль для идентификации файлов"
-
-#: src/Widgets/ConnectionEditor.vala:157
-msgid "Select Identity File"
-msgstr "Выберите файл идентификации"
-
-#: src/Widgets/ConnectionEditor.vala:163
+#: src/Widgets/ConnectionEditor.vala:214
 msgid "Identity File:"
 msgstr "Файл идентификации:"
 
-#: src/Widgets/ConnectionEditor.vala:176
+#: src/Widgets/ConnectionEditor.vala:227
 msgid "SSH Config:"
 msgstr "Конфигурация SSH:"
 
-#: src/Widgets/ConnectionEditor.vala:284 src/Widgets/Preferences.vala:112
+#: src/Widgets/ConnectionEditor.vala:335 src/Widgets/Preferences.vala:112
 msgid "Terminal Background Color:"
 msgstr "Цвет фона терминала:"
 
-#: src/Widgets/ConnectionEditor.vala:293 src/Widgets/Preferences.vala:115
+#: src/Widgets/ConnectionEditor.vala:344 src/Widgets/Preferences.vala:115
 msgid "Terminal Font:"
 msgstr "Шрифт терминала:"
 
-#: src/Widgets/ConnectionEditor.vala:335
+#: src/Widgets/ConnectionEditor.vala:386
 msgid "Forwarded Ports:"
 msgstr "Перенаправленные порты:"
 
-#: src/Widgets/ConnectionEditor.vala:338
+#: src/Widgets/ConnectionEditor.vala:389
 msgid "Add new forwarded port"
 msgstr "Добавить новый переадресованный порт"
 
-#: src/Widgets/ConnectionEditor.vala:340
+#: src/Widgets/ConnectionEditor.vala:391
 msgid "Source Port:"
 msgstr "Порт источника:"
 
-#: src/Widgets/ConnectionEditor.vala:343
+#: src/Widgets/ConnectionEditor.vala:394
 msgid "Destination:"
 msgstr "Назначение:"
 
-#: src/Widgets/ConnectionEditor.vala:348
+#: src/Widgets/ConnectionEditor.vala:399
 msgid "Local"
 msgstr "Локальный"
 
-#: src/Widgets/ConnectionEditor.vala:351
+#: src/Widgets/ConnectionEditor.vala:402
 #, fuzzy
 msgid "Remote"
 msgstr "Удалить"
 
-#: src/Widgets/ConnectionEditor.vala:357
+#: src/Widgets/ConnectionEditor.vala:408
 msgid "Add Tunnel"
 msgstr "Добавить туннель"
 
-#: src/Widgets/ConnectionEditor.vala:382 src/Widgets/Preferences.vala:126
+#: src/Widgets/ConnectionEditor.vala:433 src/Widgets/Preferences.vala:126
 msgid "Appearance"
 msgstr "Внешний вид"
 
-#: src/Widgets/ConnectionEditor.vala:383
+#: src/Widgets/ConnectionEditor.vala:434
 msgid "Tunnels"
 msgstr "Туннели"
 
-#: src/Widgets/ConnectionEditor.vala:423
+#: src/Widgets/ConnectionEditor.vala:494
 msgid "Name is already taken"
 msgstr "Имя уже занято"
 

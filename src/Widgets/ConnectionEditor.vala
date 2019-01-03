@@ -40,6 +40,11 @@ namespace EasySSH {
         private Gee.ArrayList<string> array_tunnels;
         private Gtk.CheckButton change_password;
         private Gtk.FileChooserButton identityfile_chooser;
+        private Gtk.RadioButton set_credentials;
+        private Gtk.RadioButton set_account;
+        private Gtk.Revealer revealer_credentials;
+        private Gtk.Revealer revealer_accounts;
+        private Gtk.ComboBoxText accounts_box;
         public SourceListView sourcelistview { get; construct; }
         public Host data_host { get; construct; }
         public bool duplicate {get; construct; }
@@ -67,6 +72,23 @@ namespace EasySSH {
             name_error_revealer = new ErrorRevealer (".");
             name_error_revealer.label_widget.get_style_context ().add_class (Gtk.STYLE_CLASS_ERROR);
 
+            Gtk.Box box_btn_credentials = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 0);
+            box_btn_credentials.margin_top = 6;
+            box_btn_credentials.margin_bottom = 6;
+            box_btn_credentials.set_spacing(6);
+            set_credentials = new Gtk.RadioButton.with_label_from_widget (null, _("Set Credentials"));
+            box_btn_credentials.pack_start (set_credentials, false, false, 0);
+            set_credentials.toggled.connect (toggled_btn_credentials);
+
+            set_account = new Gtk.RadioButton.with_label_from_widget (set_credentials, _("Choose Account"));
+            box_btn_credentials.pack_start (set_account, false, false, 0);
+            set_account.toggled.connect (toggled_btn_credentials);
+
+            revealer_credentials = new Gtk.Revealer();
+            revealer_credentials.set_reveal_child(true);
+            revealer_accounts = new Gtk.Revealer();
+            revealer_accounts.set_reveal_child(false);
+
             group_entry = new Gtk.Entry ();
             host_entry = new Gtk.Entry ();
             port_entry = new Gtk.Entry ();
@@ -80,6 +102,18 @@ namespace EasySSH {
             ssh_config_entry.left_margin = 10;
             ssh_config_entry.top_margin = 10;
             ssh_config_scroll.add (ssh_config_entry);
+            var label_password = new Granite.HeaderLabel (_("Password:"));
+
+            accounts_box = new Gtk.ComboBoxText ();
+            var count = 0;
+            foreach(var account in sourcelistview.accountmanager.get_accounts()){
+                accounts_box.append_text(account.name);
+                if(data_host != null && data_host.account == account.name) {
+                    accounts_box.active = count;
+                }
+                count += 1;
+            }
+
 
             var color = Gdk.RGBA ();
             if(data_host != null) {
@@ -92,6 +126,11 @@ namespace EasySSH {
                 password_entry.text = data_host.password;
                 color.parse(data_host.color);
                 var terminal_font = data_host.font;
+                if(data_host.account != ""){
+                    set_account.set_active (true);
+                    revealer_credentials.set_reveal_child(false);
+                    revealer_accounts.set_reveal_child(true);
+                }
             } else {
                 color.parse(settings.terminal_background_color);
                 var terminal_font = settings.terminal_font;
@@ -105,6 +144,9 @@ namespace EasySSH {
                 name_entry.is_valid = check_name ();
                 update_save_button ();
             });
+
+            identityfile_chooser = new Gtk.FileChooserButton (_("Select Identity File"), Gtk.FileChooserAction.OPEN);
+            change_password = new Gtk.CheckButton.with_label (_("Change Password to Identity File"));
 
             save_button = new Gtk.Button.with_label (_("Save"));
             save_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
@@ -127,6 +169,21 @@ namespace EasySSH {
             buttons.add(cancel_button);
             buttons.pack_end(save_button, false, false, 0);
 
+            var box_credentials = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
+            box_credentials.pack_start(new Granite.HeaderLabel (_("Username:")), true, true, 0);
+            box_credentials.pack_start(username_entry, true, true, 0);
+            box_credentials.pack_start(label_password, true, true, 0);
+            box_credentials.pack_end(change_password, true, true, 0);
+            box_credentials.pack_start(password_entry, true, true, 0);
+            box_credentials.pack_start(identityfile_chooser, true, true, 0);
+
+            revealer_credentials.add(box_credentials);
+
+            var box_accounts = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
+            box_accounts.pack_start(accounts_box, true, true, 0);
+            revealer_accounts.add(box_accounts);
+
+
             if(data_host == null) {
                 label = new Gtk.Label(_("Add Connection"));
             } else {
@@ -147,16 +204,10 @@ namespace EasySSH {
             grid.attach (host_entry, 0, 7, 1, 1);
             grid.attach (new Granite.HeaderLabel (_("Port:")), 0, 8, 1, 1);
             grid.attach (port_entry, 0, 9, 1, 1);
-            grid.attach (new Granite.HeaderLabel (_("Username:")), 0, 10, 1, 1);
-            grid.attach (username_entry, 0, 11, 1, 1);
-            var label_password = new Granite.HeaderLabel (_("Password:"));
+            grid.attach (box_btn_credentials, 0, 10, 1, 1);
+            grid.attach (revealer_credentials, 0, 11, 1, 1);
+            grid.attach (revealer_accounts, 0, 12, 1, 1);
 
-            grid.attach (label_password, 0, 12, 1, 1);
-            grid.attach (password_entry, 0, 13, 1, 1);
-            change_password = new Gtk.CheckButton.with_label (_("Change Password to Identity File"));
-            identityfile_chooser = new Gtk.FileChooserButton (_("Select Identity File"), Gtk.FileChooserAction.OPEN);
-            grid.attach (identityfile_chooser, 0, 13, 1, 1);
-            identityfile_chooser.hide();
             change_password.toggled.connect (() => {
                 if (change_password.active) {
                     password_entry.hide();
@@ -394,6 +445,26 @@ namespace EasySSH {
             grid.attach (buttons, 0, 18, 1, 1);
             update_save_button();
             show_all ();
+            if(data_host == null) {
+                identityfile_chooser.hide();
+            }else{
+                if(data_host.identity_file != ""){
+                    identityfile_chooser.set_uri(data_host.identity_file);
+                    password_entry.hide();
+                }else{
+                    identityfile_chooser.hide();
+                }
+            }
+        }
+
+        private void toggled_btn_credentials (Gtk.ToggleButton button) {
+            if(set_credentials.get_active() == true){
+                revealer_accounts.set_reveal_child(false);
+                revealer_credentials.set_reveal_child(true);
+            }else{
+                revealer_credentials.set_reveal_child(false);
+                revealer_accounts.set_reveal_child(true);
+            }
         }
 
         private bool check_name () {
@@ -436,13 +507,24 @@ namespace EasySSH {
             host.group = group_entry.text;
             host.host = host_entry.text;
             host.port = port_entry.text;
-            host.username = username_entry.text;
-            if(change_password.active){
-                host.identity_file = identityfile_chooser.get_uri().replace("file://", "");
-                host.password = "";
+
+            if(set_credentials.get_active() == false){
+                var account_name = accounts_box.get_active_text ();
+                host.account = account_name;
+                var account = sourcelistview.accountmanager.get_account_by_name(host.account);
+                host.username = account.username;
+                host.password = account.password;
+                host.identity_file = account.identity_file;
             }else{
-                host.identity_file = "";
-                host.password = password_entry.text;
+                host.account = "";
+                host.username = username_entry.text;
+                if(change_password.active){
+                    host.identity_file = identityfile_chooser.get_uri().replace("file://", "");
+                    host.password = "";
+                }else{
+                    host.identity_file = "";
+                    host.password = password_entry.text;
+                }
             }
             host.color = terminal_background_color_button.rgba.to_string();
             host.font = terminal_font_button.get_font();

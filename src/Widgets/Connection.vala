@@ -39,11 +39,11 @@ namespace EasySSH {
         }
 
         construct {
-
+            settings = Settings.get_default ();
             title = new Gtk.Label(host.name);
             title.get_style_context ().add_class("h2");
             var text_description = "";
-            if(host.ssh_config != ""){
+            if(host.ssh_config != "" && settings.sync_ssh_config){
                 text_description = "ssh " + host.name;
             } else {
                 text_description = "ssh " + host.username + "@" + host.host + " -p " + host.port;

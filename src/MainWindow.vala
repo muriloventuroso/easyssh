@@ -30,6 +30,7 @@ namespace EasySSH {
 
         public const string ACTION_PREFIX = "win.";
         public const string ACTION_NEW_CONN = "action_new_conn";
+        public const string ACTION_NEW_ACCOUNT = "action_new_account";
         public const string ACTION_PREFERENCES = "action_preferences";
 
         public SimpleActionGroup actions { get; construct; }
@@ -38,6 +39,7 @@ namespace EasySSH {
 
         private const ActionEntry[] action_entries = {
             { ACTION_NEW_CONN, action_new_conn },
+            { ACTION_NEW_ACCOUNT, action_new_account },
             { ACTION_PREFERENCES, action_preferences },
         };
 
@@ -144,6 +146,20 @@ namespace EasySSH {
             sourcelist.host_duplicate_clicked.connect ((name) => {
                 sourcelist.duplicate_conn(name);
             });
+            sourcelist.account_edit_clicked.connect ((name) => {
+                sourcelist.edit_acc(name);
+            });
+            sourcelist.account_remove_clicked.connect ((name) => {
+                sourcelist.remove_acc(name);
+            });
+            sourcelist.account_duplicate_clicked.connect ((name) => {
+                sourcelist.duplicate_acc(name);
+            });
+        }
+
+        public void finish_construction () {
+            sourcelist.source_list_accounts.hide();
+            sourcelist.welcome_accounts.hide();
         }
 
         private void get_default_filemanager () {
@@ -293,6 +309,15 @@ namespace EasySSH {
         }
         private void action_new_conn () {
             sourcelist.new_conn();
+        }
+        private void action_new_account () {
+            sourcelist.new_acc();
+        }
+        public void action_edit_account (string name) {
+            sourcelist.edit_acc(name);
+        }
+        public void action_remove_account (string name) {
+            sourcelist.remove_acc(name);
         }
         private void action_preferences () {
             if (preferences_dialog == null) {

@@ -36,6 +36,7 @@ namespace EasySSH {
         public string tunnels {get; set;}
         public string identity_file {get; set;}
         public string ssh_config {get; set;}
+        public string account {get; set;}
         public Granite.Widgets.DynamicNotebook notebook {get; set;}
         public Granite.Widgets.SourceList.Item? item {get; set;}
 
@@ -123,10 +124,8 @@ namespace EasySSH {
 
         public Host? get_host(Host host) {
             Host? get_host = null;
-            print("get host\n");
             for(int a = 0; a < get_length(); a++) {
                 if(hosts[a] == host) {
-                    print("achei!\n");
                     get_host = hosts[a];
                     break;
                 }
