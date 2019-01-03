@@ -4,16 +4,21 @@ import os
 import shutil
 import tempfile
 
+from dateutil.relativedelta import relativedelta
+
 from django.test import TestCase
 from django.conf import settings
+from django.contrib.auth.models import User
 from django.test.utils import override_settings
 from django.urls import reverse
+from django.utils import timezone
 from django.utils.translation import override
 
 from wlhosted.data import SUPPORTED_LANGUAGES
 from wlhosted.payments.models import Customer, Payment
 
 from weblate_web.data import VERSION, EXTENSIONS
+from weblate_web.models import Donation, Reward, PAYMENTS_ORIGIN
 from weblate_web.templatetags.downloads import filesizeformat, downloadlink
 
 TEST_DATA = os.path.join(os.path.dirname(__file__), 'test-data')
@@ -118,7 +123,7 @@ class UtilTestCase(TestCase):
         )
 
 
-class PaymentsTest(TestCase):
+class FakuraceTestCase(TestCase):
     def setUp(self):
         super().setUp()
         dirs = ('contacts', 'data', 'pdf', 'tex', 'config')
@@ -126,12 +131,6 @@ class PaymentsTest(TestCase):
             full = os.path.join(TEST_FAKTURACE, name)
             if not os.path.exists(full):
                 os.makedirs(full)
-
-    def test_languages(self):
-        self.assertEqual(
-            set(SUPPORTED_LANGUAGES),
-            {x[0] for x in settings.LANGUAGES},
-        )
 
     @staticmethod
     def create_payment():
@@ -149,6 +148,14 @@ class PaymentsTest(TestCase):
             payment,
             reverse('payment', kwargs={'pk': payment.pk}),
             reverse('payment-customer', kwargs={'pk': payment.pk}),
+        )
+
+
+class PaymentsTest(FakuraceTestCase):
+    def test_languages(self):
+        self.assertEqual(
+            set(SUPPORTED_LANGUAGES),
+            {x[0] for x in settings.LANGUAGES},
         )
 
     def test_view(self):
@@ -206,3 +213,102 @@ class PaymentsTest(TestCase):
         response = self.client.get(complete_url)
         self.assertRedirects(response, '/en/?payment={}'.format(payment.pk))
         self.check_payment(payment, Payment.ACCEPTED)
+
+
+class DonationTest(FakuraceTestCase):
+    credentials = {'username': 'testuser', 'password': 'testpassword'}
+    def setUp(self):
+        super().setUp()
+        self.reward_link = Reward.objects.create(
+            name='Link on thanks page', amount=666, recurring='y',
+            has_link=True, third_party=False, thanks_link=True, active=True
+        )
+        self.reward = Reward.objects.create(
+            name='Link in file', amount=66, recurring='y',
+            has_link=True, third_party=False, thanks_link=False, active=True
+        )
+        self.secret_reward = Reward.objects.create(
+            name='Secret link in file', amount=6666, recurring='y',
+            has_link=True, third_party=True, thanks_link=False, active=True
+        )
+
+    def create_user(self):
+        return User.objects.create_user(**self.credentials)
+
+    def login(self):
+        user = self.create_user()
+        self.client.login(**self.credentials)
+        return user
+
+    def test_donate_page(self):
+        response = self.client.get('/en/donate/')
+        self.assertContains(response, '/donate/new/')
+        self.login()
+
+        # Check rewards on page
+        response = self.client.get('/en/donate/new/')
+        self.assertContains(response, self.reward.name)
+        self.assertNotContains(response, self.secret_reward.name)
+
+        # Check direct link to reward
+        response = self.client.get(
+            '/en/donate/new/{}/'.format(self.secret_reward.pk)
+        )
+        self.assertNotContains(response, self.reward.name)
+        self.assertContains(response, self.secret_reward.name)
+
+    def test_donation_process(self):
+        user = self.login()
+        # Create payment
+        payment = self.create_payment()[0]
+        payment.state = Payment.ACCEPTED
+        payment.extra = {'reward': self.reward.pk}
+        payment.save()
+        payment.customer.origin = PAYMENTS_ORIGIN
+        payment.customer.user_id = user.pk
+        payment.customer.save()
+
+        # Process it
+        response = self.client.get(
+            '/donate/process/',
+            {'payment': payment.pk},
+            follow=True
+        )
+        self.assertContains(response, 'Thank you for your donation.')
+
+    def test_your_donations(self):
+        # Check login link
+        self.assertContains(
+            self.client.get(reverse('donate')),
+            '/sso-login/'
+        )
+        user = self.login()
+
+        # No login/donations
+        response = self.client.get(reverse('donate'))
+        self.assertNotContains(response, '/sso-login/')
+        self.assertNotContains(response, 'Your donations')
+
+        # Donation show show up
+        Donation.objects.create(
+            reward=self.reward, user=user, active=True,
+            expires=timezone.now() + relativedelta(years=1),
+            payment=self.create_payment()[0].pk
+        )
+        self.assertContains(
+            self.client.get(reverse('donate')),
+            'Your donations'
+        )
+
+    def test_link(self):
+        Donation.objects.create(
+            reward=self.reward_link, user=self.create_user(),
+            active=True,
+            expires=timezone.now() + relativedelta(years=1),
+            payment=self.create_payment()[0].pk,
+            link_url='https://example.com/weblate',
+            link_text='Weblate donation test',
+        )
+        response = self.client.get('/en/thanks/')
+        self.assertContains(response, 'https://example.com/weblate')
+        self.assertContains(response, 'Weblate donation test')
