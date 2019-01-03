@@ -20,6 +20,7 @@
 
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
+from django.core.mail import mail_admins
 from django.core.exceptions import SuspiciousOperation
 from django.db import transaction
 from django.http import JsonResponse, HttpResponse, Http404
@@ -304,3 +305,13 @@ class EditLinkView(UpdateView):
             user=self.request.user,
             reward__has_link=True
         )
+
+    def form_valid(self, form):
+        """If the form is valid, save the associated model."""
+        mail_admins(
+            'Weblate: link changed',
+            'New link: {link_url}\nNew text: {link_text}\n'.format(
+                **form.cleaned_data
+            )
+        )
+        return super().form_valid(form)
