@@ -497,6 +497,7 @@ namespace EasySSH {
                     description = _("Please enter the password to lock the data file");
                 }
                 var message_dialog = new Granite.MessageDialog.with_image_from_icon_name (_("Password"), description, "dialog-password", Gtk.ButtonsType.NONE);
+                message_dialog.transient_for = window;
                 var password_entry = new Gtk.Entry ();
                 password_entry.visibility = false;
                 password_entry.show ();
