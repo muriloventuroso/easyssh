@@ -46,6 +46,7 @@ class Reward(models.Model):
     )
     amount = models.PositiveIntegerField()
     has_link = models.BooleanField(blank=True)
+    thanks_link = models.BooleanField(blank=True, db_index=True)
     third_party = models.BooleanField(blank=True)
     active = models.BooleanField(blank=True)
     name = models.CharField(max_length=200)
@@ -53,7 +54,6 @@ class Reward(models.Model):
     class Meta:
         index_together = [
             ('active', 'third_party'),
-            ('has_link', 'third_party'),
         ]
 
     def get_absolute_url(self):

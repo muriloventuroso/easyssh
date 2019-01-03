@@ -24,6 +24,7 @@ from django.utils.translation import override
 
 
 from weblate_web.data import VERSION, EXTENSIONS, SCREENSHOTS
+from weblate_web.models import Donation
 
 
 def weblate_web(request):
@@ -55,4 +56,7 @@ def weblate_web(request):
         'screenshots': SCREENSHOTS,
         'canonical_url': canonical_url,
         'language_urls': language_urls,
+        'donate_links': Donation.objects.filter(
+            active=True, reward__thanks_link=True
+        ),
     }
