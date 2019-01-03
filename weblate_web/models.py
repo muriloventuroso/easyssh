@@ -87,6 +87,9 @@ class Donation(models.Model):
         initial = Payment.objects.filter(pk=self.payment)
         return initial | initial[0].payment_set.all()
 
+    def get_absolute_url(self):
+        return reverse('donate-edit', kwargs={'pk': self.pk})
+
 
 def process_payment(payment):
     if payment.repeat:

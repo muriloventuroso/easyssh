@@ -27,7 +27,7 @@ from django.shortcuts import redirect
 from django.urls import reverse
 from django.utils.decorators import method_decorator
 from django.utils.translation import ugettext as _
-from django.views.generic.edit import FormView
+from django.views.generic.edit import FormView, UpdateView
 from django.views.decorators.http import require_POST
 
 from django.views.generic.detail import SingleObjectMixin
@@ -38,10 +38,10 @@ from wlhosted.payments.models import Payment, Customer
 from wlhosted.payments.forms import CustomerForm
 from wlhosted.payments.validators import cache_vies_data
 
-from weblate_web.forms import MethodForm, DonateForm
-from weblate_web.models import Reward, PAYMENTS_ORIGIN, process_payment
-
-
+from weblate_web.forms import MethodForm, DonateForm, EditLinkForm
+from weblate_web.models import (
+    Donation, Reward, PAYMENTS_ORIGIN, process_payment,
+)
 
 
 @require_POST
@@ -257,7 +257,21 @@ def process_donation(request):
         )
     elif payment.state == Payment.ACCEPTED:
         messages.success(request, _('Thank you for your donation.'))
-        process_payment(payment)
-        # TODO: Edit link if applicable?
+        donation = process_payment(payment)
+        if donation.reward and donation.reward.has_link:
+            return redirect(donation)
 
     return redirect(reverse('donate'))
+
+
+@method_decorator(login_required, name='dispatch')
+class EditLinkView(UpdateView):
+    form_class = EditLinkForm
+    template_name = 'donate/edit.html'
+    success_url = '/donate/'
+
+    def get_queryset(self):
+        return Donation.objects.filter(
+            user=self.request.user,
+            reward__has_link=True
+        )

@@ -26,6 +26,8 @@ from django.utils.translation import ugettext_lazy as _
 from wlhosted.payments.backends import list_backends
 from wlhosted.payments.models import RECURRENCE_CHOICES
 
+from weblate_web.models import Donation
+
 
 class MethodForm(forms.Form):
     method = forms.ChoiceField(
@@ -52,3 +54,9 @@ class DonateForm(forms.Form):
         min_value=2,
         initial=10,
     )
+
+
+class EditLinkForm(forms.ModelForm):
+    class Meta:
+        model = Donation
+        fields = ('link_text', 'link_url')

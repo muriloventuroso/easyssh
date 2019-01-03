@@ -35,9 +35,18 @@
 {% for donation in donations %}
 <tr>
 <td>{{ donation.created }}</td>
-<td>{% if donation.reward %}{{ donation.reward.get_display_name }}{% else %}{% trans "No reward" %}{% endif %}</td>
 <td>
-{% if donation.active and donation.get_payment.recurring %}
+{% if donation.reward %}
+{{ donation.reward.get_display_name }}
+<a class="btn btn-info btn-sm" href="{% url "donate-edit" pk=donation.pk %}">{% trans "Edit" %}</a>
+{% else %}
+{% trans "No reward" %}
+{% endif %}
+</td>
+<td>
+{% if not donation.active %}
+{% trans "No longer active" %}
+{% elif donation.get_payment.recurring %}
 {{ donation.expires }}
 {% else %}
 {% trans "Does not renew" %}
