@@ -5,13 +5,13 @@
 # Piero <p.passerini@gmail.com>, 2018.
 # Manuel Tassi <manueltassi91@gmail.com>, 2018.
 # Pierfrancesco P. <p.passerini@gmail.com>, 2018.
-# Pierfrancesco Passerini <p.passerini@gmail.com>, 2018.
+# Pierfrancesco Passerini <p.passerini@gmail.com>, 2018, 2019.
 msgid ""
 msgstr ""
 "Project-Id-Version: Weblate v. 2017.09.28\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2018-11-17 17:10+0100\n"
-"PO-Revision-Date: 2018-12-12 13:09+0000\n"
+"PO-Revision-Date: 2019-01-03 12:16+0000\n"
 "Last-Translator: Pierfrancesco Passerini <p.passerini@gmail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/weblate/website/"
 "it/>\n"
@@ -193,7 +193,7 @@ msgstr "Pronto per il cloud"
 #: weblate_web/templates/base-features.html:39
 msgid "Weblate comes with appliances, which are ready to deploy in your cloud."
 msgstr ""
-"Weblate è distribuito sotto forma di appliance pronte da installare nel "
+"Weblate è distribuito sotto forma di appliance pronte da distribuire nel "
 "vostro cloud."
 
 #: weblate_web/templates/base-features.html:46
@@ -313,12 +313,12 @@ msgid ""
 "it there or just:"
 msgstr ""
 "Weblate è stato sviluppato su <a href=\"%(url)s\">GitHub</a>, potete creare "
-"un fork direttamente li, oppure:"
+"un fork lì, oppure:"
 
 #: weblate_web/templates/contribute.html:31
 #, python-format
 msgid "This website is stored on <a href=\"%(url)s\">GitHub</a> as well:"
-msgstr "Questo sito web è memorizzato anche su <a href=\"%(url)s\">GitHub</a>:"
+msgstr "Questo sito web è accessibile anche su <a href=\"%(url)s\">GitHub</a>:"
 
 #: weblate_web/templates/contribute.html:41
 msgid ""
@@ -334,11 +334,11 @@ msgstr "Stato traduzione"
 
 #: weblate_web/templates/donate.html:3 weblate_web/templates/donate.html:4
 msgid "Donate to Weblate"
-msgstr "Dona a Weblate"
+msgstr "Fai una donazione a Weblate"
 
 #: weblate_web/templates/donate.html:6
 msgid "Weblate is provided free of charge, and welcomes donations."
-msgstr "Weblate è gratis, ma le donazioni sono bene accette."
+msgstr "Weblate è gratuito e le donazioni sono bene accette."
 
 #: weblate_web/templates/donate.html:12 weblate_web/templates/donate.html:43
 msgid "Donate using Liberapay"
@@ -368,8 +368,8 @@ msgid ""
 "every penny counts."
 msgstr ""
 "Donazioni regolari rendono sostenibile lo sviluppo di Weblate e aiutano a "
-"coprire i costi di hosting gratuito per il software libero. Non sono "
-"necessarie grosse cifre, ogni centesimo conta."
+"coprire i costi di hosting gratuito del software libero. Non sono necessarie "
+"grosse cifre, ogni centesimo conta."
 
 #: weblate_web/templates/donate.html:33 weblate_web/templates/donate.html:54
 #: weblate_web/templates/thanks.html:12
@@ -411,8 +411,7 @@ msgstr ""
 #: weblate_web/templates/donate.html:64
 msgid ""
 "If you like Weblate you can support its further development by donating."
-msgstr ""
-"Se ti piace Weblate puoi sostenere il suo sviluppo futuro con una donazione."
+msgstr "Se ti piace Weblate puoi sostenere il suo sviluppo con una donazione."
 
 #: weblate_web/templates/donate.html:72
 msgid "Donate using PayPal"
@@ -455,7 +454,7 @@ msgstr "Scarica Weblate"
 
 #: weblate_web/templates/download.html:7
 msgid "Weblate comes with complete source code."
-msgstr "Weblate viene distribuito con i codici sorgenti completi."
+msgstr "Weblate viene distribuito completo di codice sorgente."
 
 #: weblate_web/templates/download.html:13 weblate_web/templates/hosting.html:12
 #: weblate_web/templates/hosting.html:234
@@ -482,8 +481,8 @@ msgid ""
 "You can control Weblate remotely using <a href=\"%(url)s\">wlc</a>, it can "
 "be installed by using Python PIP:"
 msgstr ""
-"Puoi controllare remotamente Weblate usando <a href=\"%(url)s\">wlc</a>, che "
-"può essere installato usando Python PIP:"
+"Puoi controllare Weblate da remoto usando <a href=\"%(url)s\">wlc</a>, che "
+"può essere installato con Python PIP:"
 
 #: weblate_web/templates/download.html:54
 msgid "Cloud or virtualization images"
@@ -495,7 +494,7 @@ msgid ""
 "links will show you information about some of these:"
 msgstr ""
 "Weblate può essere eseguito in qualsiasi ambiente cloud o virtualizzato. I "
-"seguenti collegamenti visualizzeranno informazioni sul alcuni di essi:"
+"seguenti collegamenti forniranno informazioni sul alcuni di essi:"
 
 #: weblate_web/templates/download.html:59
 msgid "Running Weblate in a Docker container"
@@ -503,7 +502,7 @@ msgstr "Esecuzione di Weblate in un contenitore Docker"
 
 #: weblate_web/templates/download.html:60
 msgid "Running Weblate on OpenShift platform"
-msgstr "Eseguire Weblate su piattaforma OpenShift"
+msgstr "Esecuzione di Weblate su piattaforma OpenShift"
 
 #: weblate_web/templates/download.html:61
 msgid ""
@@ -518,17 +517,17 @@ msgid ""
 "Weblate is being developed on <a href=\"https://github.com/WeblateOrg/weblate"
 "\">GitHub</a>, you can fork it there or just:"
 msgstr ""
-"Weblate è stato sviluppato su <a href=\"https://github.com/WeblateOrg/weblate"
-"\">GitHub</a>, potete creare un fork direttamente li, oppure:"
+"Weblate è stato sviluppato su <a href=\"https://github.com/WeblateOrg/"
+"weblate\">GitHub</a>, potete creare un fork lì, oppure:"
 
 #: weblate_web/templates/features.html:3 weblate_web/templates/features.html:4
 msgid "Weblate features"
-msgstr "Funzionalità di Weblate"
+msgstr "Caratteristiche di Weblate"
 
 #: weblate_web/templates/features.html:6
 msgid "Weblate is a feature rich computer aided translation tool."
 msgstr ""
-"Weblate è uno strumento di traduzione assistita da computer ricco di "
+"Weblate è uno strumento di traduzione assistita dal computer ricco di "
 "funzionalità."
 
 #: weblate_web/templates/features.html:11
@@ -575,7 +574,7 @@ msgid ""
 "gettext, JSON, XLIFF or resource strings."
 msgstr ""
 "Weblate supporta tutti i più diffusi formati di file per la localizzazione "
-"come gettext, JSON, XLIFF o stringhe risorse."
+"come gettext, JSON, XLIFF o stringhe di risorse."
 
 #: weblate_web/templates/features.html:55
 msgid "Branches support"
@@ -625,8 +624,8 @@ msgstr "Documentazione"
 msgid ""
 "Weblate comes with comprehensive documentation covering both setup and usage."
 msgstr ""
-"Weblate è fornito con una completa documentazione riguardante sia "
-"l'installazione che l'uso."
+"Weblate è fornito con una completa documentazione relativa sia "
+"all'installazione che all'uso."
 
 #: weblate_web/templates/features.html:111
 msgid "Review"
@@ -647,7 +646,7 @@ msgid ""
 "Weblate supports over 150 languages out of the box, others can be defined by "
 "administrator."
 msgstr ""
-"Weblate supporta oltre 150 lingue nativamente, altre posso essere definite "
+"Weblate supporta nativamente oltre 150 lingue, altre posso essere definite "
 "dall'amministratore."
 
 #: weblate_web/templates/features.html:135
@@ -695,13 +694,13 @@ msgid ""
 "Weblate has responsive UI which will work nicely on your desktop, tablet or "
 "phone."
 msgstr ""
-"Weblate ha un'interfaccia intuitiva che si adatta al tuo desktop, tablet o "
+"Weblate ha un'interfaccia adattiva che funziona sul tuo desktop, tablet o "
 "telefono."
 
 #: weblate_web/templates/hosting-free.html:3
 #: weblate_web/templates/hosting-free.html:4
 msgid "Free hosting on Weblate"
-msgstr "Ospitato gratuitamente su Weblate"
+msgstr "Hosting gratuito su Weblate"
 
 #: weblate_web/templates/hosting-free.html:6
 msgid "We love open source and we offer free plans for hosting translations."
