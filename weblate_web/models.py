@@ -92,6 +92,8 @@ class Donation(models.Model):
 
 
 def process_payment(payment):
+    if payment.state != Payment.ACCEPTED:
+        raise ValueError('Can not process not accepted payment')
     if payment.repeat:
         # Update existing
         donation = Donation.objects.get(payment=payment.repeat.pk)
@@ -114,6 +116,7 @@ def process_payment(payment):
             expires=expires,
             active=True,
         )
+    # Flag payment as processed
     payment.state = Payment.PROCESSED
     payment.save()
     return donation
