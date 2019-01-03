@@ -30,7 +30,7 @@ class RewardAdmin(admin.ModelAdmin):
 
 
 class DonationAdmin(admin.ModelAdmin):
-    list_display = ('user', 'reward', 'created', 'expires')
+    list_display = ('user', 'reward', 'created', 'expires', 'get_amount')
 
 
 admin.site.register(Reward, RewardAdmin)

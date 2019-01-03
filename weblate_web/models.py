@@ -61,6 +61,9 @@ class Reward(models.Model):
     def get_display_name(self):
         return ugettext(self.name)
 
+    def __str__(self):
+        return self.name
+
 
 class Donation(models.Model):
     user = models.ForeignKey(User, on_delete=models.deletion.CASCADE)
@@ -89,6 +92,9 @@ class Donation(models.Model):
 
     def get_absolute_url(self):
         return reverse('donate-edit', kwargs={'pk': self.pk})
+
+    def get_amount(self):
+        return self.get_payment().amount
 
 
 def process_payment(payment):
