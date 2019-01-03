@@ -269,6 +269,8 @@ LOCALE_PATHS = (
 
 ALLOWED_HOSTS = ('weblate.org', '127.0.0.1', 'localhost')
 
+EMAIL_SUBJECT_PREFIX = '[weblate.org] '
+
 SESSION_ENGINE = "django.contrib.sessions.backends.signed_cookies"
 
 sentry_sdk.init(
