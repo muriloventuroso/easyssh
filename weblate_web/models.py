@@ -112,7 +112,9 @@ def process_payment(payment):
             reward = Reward.objects.get(pk=payment.extra['reward'])
         # Calculate expiry
         expires = timezone.now()
-        if payment.recurring:
+        if reward:
+            expires += get_period_delta(reward.recurring)
+        elif payment.recurring:
             expires += get_period_delta(payment.recurring)
         # Create new
         donation = Donation.objects.create(
