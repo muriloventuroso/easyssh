@@ -27,7 +27,8 @@
 <tr>
 <th>{% trans "Creation date" %}</th>
 <th>{% trans "Reward" %}</th>
-<th>{% trans "Renewal date" %}</th>
+<th>{% trans "Expiry date" %}</th>
+<th>{% trans "Renewal" %}</th>
 <th>{% trans "Payments" %}</th>
 </tr>
 </thead>
@@ -44,10 +45,16 @@
 {% endif %}
 </td>
 <td>
-{% if not donation.active %}
-{% trans "No longer active" %}
-{% elif donation.get_payment.recurring %}
 {{ donation.expires }}
+</td>
+<td>
+{% if not donation.active %}
+{% trans "Expired" %}
+{% elif donation.payment_obj.recurring %}
+<form class="form-inline" method="post" action="{% url "donate-disable" pk=donation.pk %}">
+{% csrf_token %}
+<input type="submit" class="btn btn-warning btn-sm" value="{% trans "Disable renewal" %}">
+</form>
 {% else %}
 {% trans "Does not renew" %}
 {% endif %}

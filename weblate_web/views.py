@@ -294,6 +294,16 @@ def download_invoice(request, pk):
     return response
 
 
+@require_POST
+@login_required
+def disable_repeat(request, pk):
+    donation = get_object_or_404(Donation, pk=pk, user=request.user)
+    payment = donation.payment_obj
+    payment.recurring = ''
+    payment.save()
+    return redirect(reverse('donate'))
+
+
 @method_decorator(login_required, name='dispatch')
 class EditLinkView(UpdateView):
     form_class = EditLinkForm

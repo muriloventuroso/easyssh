@@ -24,6 +24,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.urls import reverse
 from django.utils import timezone
+from django.utils.functional import cached_property
 from django.utils.translation import ugettext_lazy, ugettext
 
 from wlhosted.payments.models import (
@@ -83,7 +84,8 @@ class Donation(models.Model):
     expires = models.DateTimeField()
     active = models.BooleanField(blank=True, db_index=True)
 
-    def get_payment(self):
+    @cached_property
+    def payment_obj(self):
         return Payment.objects.get(pk=self.payment)
 
     def list_payments(self):
@@ -94,7 +96,7 @@ class Donation(models.Model):
         return reverse('donate-edit', kwargs={'pk': self.pk})
 
     def get_amount(self):
-        return self.get_payment().amount
+        return self.payment_obj.amount
 
 
 def process_payment(payment):
