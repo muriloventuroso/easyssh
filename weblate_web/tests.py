@@ -15,6 +15,8 @@ from django.urls import reverse
 from django.utils import timezone
 from django.utils.translation import override
 
+import httpretty
+
 from wlhosted.data import SUPPORTED_LANGUAGES
 from wlhosted.payments.models import Customer, Payment
 
@@ -332,8 +334,16 @@ class DonationTest(FakuraceTestCase):
         self.assertContains(response, 'https://example.com/weblate')
         self.assertContains(response, 'Weblate donation test')
 
-    @override_settings(PAYMENT_DEBUG=True, PAYMENT_FAKTURACE=TEST_FAKTURACE)
+    @override_settings(
+        PAYMENT_DEBUG=True,
+        PAYMENT_REDIRECT_URL='http://example.com/payment',
+    )
     def test_recurring(self):
+        httpretty.register_uri(
+            httpretty.POST,
+            'http://example.com/payment',
+            body='',
+        )
         donation = self.create_donation(-1)
         self.assertEqual(donation.payment_obj.payment_set.count(), 0)
         # The processing fails here, but new payment is created
