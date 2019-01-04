@@ -166,8 +166,8 @@ class DonateView(FormView):
 
     def get_form_kwargs(self):
         result = super().get_form_kwargs()
-        if 'recurrence' in self.request.GET:
-            result['initial'] = {'recurrence': self.request.GET['recurrence']}
+        if 'recurring' in self.request.GET:
+            result['initial'] = {'recurring': self.request.GET['recurring']}
         return result
 
     @staticmethod
@@ -205,11 +205,12 @@ class DonateView(FormView):
         )
 
     def form_valid(self, form):
+        data = form.cleaned_data
         return self.redirect_payment(
-            amount=form.cleaned_data['amount'],
+            amount=data['amount'],
             amount_fixed=True,
             description='Weblate donation',
-            recurring=form.cleaned_data['recurring'],
+            recurring=data['recurring'],
         )
 
     def post(self, request, *args, **kwargs):

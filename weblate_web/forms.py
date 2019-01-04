@@ -43,7 +43,7 @@ class MethodForm(forms.Form):
 
 
 class DonateForm(forms.Form):
-    recurrence = forms.ChoiceField(
+    recurring = forms.ChoiceField(
         label=_('Donation recurrence'),
         choices=RECURRENCE_CHOICES,
         initial='m',
