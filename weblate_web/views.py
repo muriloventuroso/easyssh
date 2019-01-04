@@ -206,7 +206,7 @@ class DonateView(FormView):
 
     def form_valid(self, form):
         return self.redirect_payment(
-            amount=form.clened_data['amount'],
+            amount=form.cleaned_data['amount'],
             amount_fixed=True,
             description='Weblate donation',
             recurring=form.cleaned_data['recurring'],
