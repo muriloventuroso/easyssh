@@ -27,20 +27,55 @@ namespace EasySSH {
         private Gtk.Clipboard primary_selection;
         private EasySSH.Settings settings;
         private string default_filemanager = "";
+        private SearchToolbar search_toolbar;
+        private Gtk.Revealer search_revealer;
+        private HeaderBar header;
+        private bool is_fullscreen = false;
+        public Gtk.Application application { get; construct; }
 
         public const string ACTION_PREFIX = "win.";
+        public const string ACTION_CLOSE_TAB = "action-close-tab";
+        public const string ACTION_FULLSCREEN = "action-fullscreen";
+        public const string ACTION_NEW_TAB = "action-new-tab";
+        public const string ACTION_NEXT_TAB = "action-next-tab";
+        public const string ACTION_PREVIOUS_TAB = "action-previous-tab";
+        public const string ACTION_COPY = "action-copy";
+        public const string ACTION_COPY_LAST_OUTPUT = "action-copy-last-output";
         public const string ACTION_NEW_CONN = "action_new_conn";
         public const string ACTION_NEW_ACCOUNT = "action_new_account";
         public const string ACTION_PREFERENCES = "action_preferences";
+        public const string ACTION_PASTE = "action-paste";
+        public const string ACTION_SEARCH = "action-search";
+        public const string ACTION_SEARCH_NEXT = "action-search-next";
+        public const string ACTION_SEARCH_PREVIOUS = "action-search-previous";
+        public const string ACTION_SELECT_ALL = "action-select-all";
+        public const string ACTION_OPEN_IN_FILES = "action-open-in-files";
+        public const string ACTION_SCROLL_TO_LAST_COMMAND = "action-scroll-to-las-command";
 
         public SimpleActionGroup actions { get; construct; }
         public Gtk.ActionGroup main_actions;
         public TerminalWidget current_terminal { get; set; default = null; }
 
+        private static Gee.MultiMap<string, string> action_accelerators = new Gee.HashMultiMap<string, string> ();
+
         private const ActionEntry[] action_entries = {
+            { ACTION_CLOSE_TAB, action_close_tab },
+            { ACTION_FULLSCREEN, action_fullscreen },
+            { ACTION_NEW_TAB, action_new_tab },
+            { ACTION_NEXT_TAB, action_next_tab },
+            { ACTION_PREVIOUS_TAB, action_previous_tab },
+            { ACTION_COPY, action_copy },
+            { ACTION_COPY_LAST_OUTPUT, action_copy_last_output },
             { ACTION_NEW_CONN, action_new_conn },
             { ACTION_NEW_ACCOUNT, action_new_account },
             { ACTION_PREFERENCES, action_preferences },
+            { ACTION_PASTE, action_paste },
+            { ACTION_SEARCH, action_search, null, "false" },
+            { ACTION_SEARCH_NEXT, action_search_next },
+            { ACTION_SEARCH_PREVIOUS, action_search_previous },
+            { ACTION_SELECT_ALL, action_select_all },
+            { ACTION_OPEN_IN_FILES, action_open_in_files },
+            { ACTION_SCROLL_TO_LAST_COMMAND, action_scroll_to_last_command }
         };
 
         private const string ui_string = """
@@ -66,6 +101,21 @@ namespace EasySSH {
             );
         }
 
+        static construct {
+            action_accelerators[ACTION_CLOSE_TAB] = "<Control><Shift>w";
+            action_accelerators[ACTION_FULLSCREEN] = "F11";
+            action_accelerators[ACTION_NEW_TAB] = "<Control><Shift>t";
+            action_accelerators[ACTION_NEXT_TAB] = "<Control><Shift>Right";
+            action_accelerators[ACTION_PREVIOUS_TAB] = "<Control><Shift>Left";
+            action_accelerators[ACTION_COPY] = "<Control><Shift>c";
+            action_accelerators[ACTION_COPY_LAST_OUTPUT] = "<Alt>c";
+            action_accelerators[ACTION_PASTE] = "<Control><Shift>v";
+            action_accelerators[ACTION_SEARCH] = "<Control><Shift>f";
+            action_accelerators[ACTION_SELECT_ALL] = "<Control><Shift>a";
+            action_accelerators[ACTION_OPEN_IN_FILES] = "<Control><Shift>e";
+            action_accelerators[ACTION_SCROLL_TO_LAST_COMMAND] = "<Alt>Up";
+        }
+
         construct {
             settings = EasySSH.Settings.get_default();
             Gtk.Settings.get_default ().gtk_application_prefer_dark_theme = settings.use_dark_theme;
@@ -89,6 +139,11 @@ namespace EasySSH {
 
             primary_selection = Gtk.Clipboard.get (Gdk.Atom.intern ("PRIMARY", false));
 
+            set_application(application);
+            foreach (var action in action_accelerators.get_keys ()) {
+                application.set_accels_for_action (ACTION_PREFIX + action, action_accelerators[action].to_array ());
+            }
+
             ui = new Gtk.UIManager ();
 
             try {
@@ -106,7 +161,7 @@ namespace EasySSH {
             weak Gtk.IconTheme default_theme = Gtk.IconTheme.get_default ();
             default_theme.add_resource_path ("/com/github/muriloventuroso/easyssh");
 
-            var header = new HeaderBar ();
+            header = new HeaderBar ();
             var header_context = header.get_style_context ();
             header_context.add_class ("titlebar");
             header_context.add_class ("default-decoration");
@@ -117,10 +172,20 @@ namespace EasySSH {
             context.add_class ("rounded");
             context.add_class ("flat");
 
-            set_titlebar (header);
+            search_toolbar = new SearchToolbar (this);
+
+            search_revealer = new Gtk.Revealer ();
+            search_revealer.set_transition_type (Gtk.RevealerTransitionType.SLIDE_DOWN);
+            search_revealer.add (search_toolbar);
+            search_revealer.set_reveal_child (false);
 
             sourcelist = new SourceListView(this);
-            add (sourcelist);
+            var grid = new Gtk.Grid ();
+            grid.attach (search_revealer, 0, 0, 1, 1);
+            grid.attach (sourcelist, 0, 1, 1, 1);
+            add (grid);
+
+            set_titlebar (header);
 
             load_settings();
 
@@ -354,6 +419,108 @@ namespace EasySSH {
             var command = "sftp://" + current_terminal.host.username + "@" + current_terminal.host.host + ":" + current_terminal.host.port;
             Process.spawn_command_line_async (default_filemanager + " " + command);
         }
+        void action_search () {
+            var search_action = (SimpleAction) actions.lookup_action (ACTION_SEARCH);
+            var search_state = search_action.get_state ().get_boolean ();
+
+            search_action.set_state (!search_state);
+            search_revealer.set_reveal_child (header.search_button.active);
+
+            if (header.search_button.active) {
+                action_accelerators[ACTION_SEARCH_NEXT] = "<Control>g";
+                action_accelerators[ACTION_SEARCH_NEXT] = "<Control>Down";
+                action_accelerators[ACTION_SEARCH_PREVIOUS] = "<Control><Shift>g";
+                action_accelerators[ACTION_SEARCH_PREVIOUS] = "<Control>Up";
+                header.search_button.tooltip_markup = Granite.markup_accel_tooltip (
+                    {"Escape", "<Ctrl><Shift>f"},
+                    _("Hide find bar")
+                );
+                search_toolbar.grab_focus ();
+            } else {
+                action_accelerators.remove_all(ACTION_SEARCH_NEXT);
+                action_accelerators.remove_all(ACTION_SEARCH_PREVIOUS);
+                header.search_button.tooltip_markup = Granite.markup_accel_tooltip (
+                    {"<Ctrl><Shift>f"},
+                    _("Find…")
+                );
+                search_toolbar.clear ();
+                current_terminal.grab_focus ();
+            }
+
+            string [] next_accels = new string [] {};
+            if (!action_accelerators[ACTION_SEARCH_NEXT].is_empty) {
+                next_accels = action_accelerators[ACTION_SEARCH_NEXT].to_array ();
+            }
+
+            string [] prev_accels = new string [] {};
+            if (!action_accelerators[ACTION_SEARCH_NEXT].is_empty) {
+                prev_accels = action_accelerators[ACTION_SEARCH_PREVIOUS].to_array ();
+            }
+
+            application.set_accels_for_action (
+                ACTION_PREFIX + ACTION_SEARCH_NEXT,
+                next_accels
+            );
+            application.set_accels_for_action (
+                ACTION_PREFIX + ACTION_SEARCH_PREVIOUS,
+                prev_accels
+            );
+        }
+
+        void action_search_next () {
+            if (header.search_button.active) {
+                search_toolbar.next_search ();
+            }
+        }
+
+        void action_search_previous () {
+            if (header.search_button.active) {
+                search_toolbar.previous_search ();
+            }
+        }
+
+        void action_copy_last_output () {
+            string output = current_terminal.get_last_output ();
+            Gtk.Clipboard.get_default (Gdk.Display.get_default ()).set_text (output, output.length);
+        }
+
+        void action_scroll_to_last_command () {
+            current_terminal.scroll_to_last_command ();
+            /* Repeated presses are ignored */
+            get_simple_action (ACTION_SCROLL_TO_LAST_COMMAND).set_enabled (false);
+        }
+
+        void action_close_tab () {
+            if(current_terminal != null){
+                current_terminal.tab.close ();
+            }
+        }
+
+        void action_new_tab () {
+            sourcelist.new_tab_request();
+        }
+
+        void action_next_tab () {
+            if(current_terminal != null){
+                current_terminal.host.notebook.next_page ();
+            }
+        }
+
+        void action_previous_tab () {
+            if(current_terminal != null){
+                current_terminal.host.notebook.previous_page ();
+            }
+        }
+
+        void action_fullscreen () {
+            if (is_fullscreen) {
+                unfullscreen ();
+                is_fullscreen = false;
+            } else {
+                fullscreen ();
+                is_fullscreen = true;
+            }
+        }
 
         const Gtk.ActionEntry[] main_entries = {
             { "Copy", null, N_("Copy"), "<Control><Shift>c", null, action_copy },
@@ -361,6 +528,10 @@ namespace EasySSH {
             { "Select All", null, N_("Select All"), "<Control><Shift>a", null, action_select_all },
             { "Show in File Browser", null, N_("Show in File Browser"), "<Control><Shift>e", null, action_open_in_files }
         };
+
+        public GLib.SimpleAction? get_simple_action (string action) {
+            return actions.lookup_action (action) as GLib.SimpleAction;
+        }
     }
 
 }

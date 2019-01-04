@@ -59,6 +59,7 @@ executable(
     'src/Widgets/ErrorRevealer.vala',
     'src/Widgets/Preferences.vala',
     'src/Widgets/TerminalWidget.vala',
+    'src/Widgets/SearchToolbar.vala',
     dependencies: dependencies,
     install: true
 )

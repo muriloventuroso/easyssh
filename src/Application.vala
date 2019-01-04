@@ -23,7 +23,7 @@ namespace EasySSH {
 
     public Settings settings;
 
-    public class Application : Granite.Application {
+    public class Application : Gtk.Application {
         public Application () {
             Object (application_id: "com.github.muriloventuroso.easyssh",
             flags: ApplicationFlags.FLAGS_NONE);
@@ -58,7 +58,6 @@ namespace EasySSH {
         }
 
         private static int main (string[] args) {
-            Gtk.init (ref args);
 
             var app = new Application ();
             return app.run (args);

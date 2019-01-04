@@ -173,6 +173,7 @@ namespace EasySSH {
                 }
                 n.current = n_tab;
                 window.current_terminal = term.term;
+                window.current_terminal.tab = n_tab;
                 term.set_selected();
                 term.term.grab_focus();
                 set_badge_item (n_host.item, n_host.notebook);
@@ -309,6 +310,7 @@ namespace EasySSH {
                 n.insert_tab (n_tab, next_tab);
                 n.current = n_tab;
                 window.current_terminal = term.term;
+                window.current_terminal.tab = n_tab;
                 term.set_selected();
                 term.term.grab_focus();
             }
@@ -356,23 +358,7 @@ namespace EasySSH {
                 var r_tab = n.get_tab_by_index(0);
                 n.remove_tab(r_tab);
             }
-            n.new_tab_requested.connect (() => {
-                var n_host = hostmanager.get_host_by_name(source_list.selected.name);
-                var term = new TerminalBox(n_host, n, window);
-                var next_tab = n.n_tabs;
-                if(Type.from_instance(n.current.page).name() == "EasySSHConnection") {
-                    next_tab = 0;
-                }
-                var n_tab = new Granite.Widgets.Tab (n_host.name + " - " + (next_tab + 1).to_string(), null, term);
-                term.tab = n_tab;
-                n.insert_tab (n_tab, next_tab);
-                if(next_tab == 0) {
-                    n.remove_tab(n.current);
-                }
-                n.current = n_tab;
-                window.current_terminal = term.term;
-                term.set_selected();
-            });
+            n.new_tab_requested.connect (new_tab_request);
             n.tab_removed.connect(() => {
                 if(n.n_tabs == 0) {
                     var n_host = hostmanager.get_host_by_name(host.name);
@@ -390,6 +376,28 @@ namespace EasySSH {
             item.host_remove_clicked.connect ((name) => {host_remove_clicked (name);});
             item.host_duplicate_clicked.connect ((name) => {host_duplicate_clicked (name);});
 
+        }
+
+        public void new_tab_request(){
+            if(source_list.selected != null){
+                var n_host = hostmanager.get_host_by_name(source_list.selected.name);
+                var n = n_host.notebook;
+                var term = new TerminalBox(n_host, n, window);
+                var next_tab = n.n_tabs;
+                if(Type.from_instance(n.current.page).name() == "EasySSHConnection") {
+                    next_tab = 0;
+                }
+                var n_tab = new Granite.Widgets.Tab (n_host.name + " - " + (next_tab + 1).to_string(), null, term);
+                term.tab = n_tab;
+                n.insert_tab (n_tab, next_tab);
+                if(next_tab == 0) {
+                    n.remove_tab(n.current);
+                }
+                n.current = n_tab;
+                window.current_terminal = term.term;
+                window.current_terminal.tab = n_tab;
+                term.set_selected();
+            }
         }
 
         private void insert_account(Account account) {

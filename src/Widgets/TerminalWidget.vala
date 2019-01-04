@@ -66,6 +66,10 @@ namespace EasySSH {
         }
 
         public int default_size;
+        private long remembered_position; /* Only need to remember row at the moment */
+        private long remembered_command_start_row = 0; /* Only need to remember row at the moment */
+        private long remembered_command_end_row = 0; /* Only need to remember row at the moment */
+        public bool last_key_was_return = true;
 
         /* Following strings are used to build RegEx for matching URIs */
         const string USERCHARS = "-[:alnum:]";
@@ -198,6 +202,63 @@ namespace EasySSH {
             #else
                 this.feed_child(cmd.to_utf8 ());
             #endif
+        }
+
+        public void remember_position () {
+            long col, row;
+            get_cursor_position (out col, out row);
+            remembered_position = row;
+        }
+
+        public void remember_command_start_position () {
+            if (!last_key_was_return) {
+                return;
+            }
+
+            long col, row;
+            get_cursor_position (out col, out row);
+            remembered_command_start_row = row;
+            last_key_was_return = false;
+        }
+
+        public void remember_command_end_position () {
+            if (last_key_was_return) {
+                return;
+            }
+
+            long col, row;
+            get_cursor_position (out col, out row);
+            remembered_command_end_row = row;
+            last_key_was_return = true;
+        }
+
+        public string get_last_output (bool include_command = true) {
+            long output_end_col, output_end_row, start_row;
+            get_cursor_position (out output_end_col, out output_end_row);
+
+            var command_lines = remembered_command_end_row - remembered_command_start_row;
+
+            if (!include_command) {
+                start_row = remembered_command_end_row + 1;
+            } else {
+                start_row = remembered_command_start_row;
+            }
+
+            if (output_end_row - start_row < (include_command ? command_lines + 1 : 1)) {
+                return "";
+            }
+            /* get text to the beginning of current line (to omit last prompt)
+             * Note that using end_row, 0 for the end parameters results in the first
+             * character of the prompt being selected for some reason. We assume a nominal
+             * maximum line length rather than determine the actual length.  */
+            return get_text_range (start_row, 0, output_end_row - 1, 1000, null, null) + "\n";
+        }
+
+        public void scroll_to_last_command () {
+            long col, row;
+            get_cursor_position (out col, out row);
+            int delta = (int)(remembered_position - row);
+            vadjustment.set_value (vadjustment.get_value () + delta + get_window ().get_height () / get_char_height () - 1);
         }
 
     }

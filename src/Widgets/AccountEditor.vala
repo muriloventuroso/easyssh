@@ -76,7 +76,7 @@ namespace EasySSH {
 
             save_button.clicked.connect (save_and_exit);
             cancel_button.clicked.connect (exit);
-            remove_button.clicked.connect (remove);
+            remove_button.clicked.connect (remove_account);
 
             var buttons = new Gtk.ButtonBox (Gtk.Orientation.HORIZONTAL);
             buttons.layout_style = Gtk.ButtonBoxStyle.END;
@@ -203,7 +203,7 @@ namespace EasySSH {
             sourcelistview.restore_accounts();
         }
 
-        private void remove() {
+        private void remove_account() {
             if(data_account != null){
                 sourcelistview.remove_acc(data_account.name);
                 sourcelistview.clean_box();
