@@ -6,9 +6,10 @@ import tempfile
 
 from dateutil.relativedelta import relativedelta
 
-from django.test import TestCase
 from django.conf import settings
 from django.contrib.auth.models import User
+from django.core.management import call_command
+from django.test import TestCase
 from django.test.utils import override_settings
 from django.urls import reverse
 from django.utils import timezone
@@ -137,12 +138,14 @@ class FakuraceTestCase(TestCase):
         customer = Customer.objects.create(
             email='weblate@example.com',
             user_id=1,
-            origin='/en/'
+            origin=PAYMENTS_ORIGIN,
         )
         payment = Payment.objects.create(
             customer=customer,
             amount=100,
             description='Test payment',
+            backend='pay',
+            recurring='y',
         )
         return (
             payment,
@@ -189,14 +192,22 @@ class PaymentsTest(FakuraceTestCase):
     def test_pay(self):
         payment, url = self.test_view()
         response = self.client.post(url, {'method': 'pay'})
-        self.assertRedirects(response, '/en/?payment={}'.format(payment.pk))
+        self.assertRedirects(
+            response,
+            '{}?payment={}'.format(PAYMENTS_ORIGIN, payment.pk),
+            fetch_redirect_response=False
+        )
         self.check_payment(payment, Payment.ACCEPTED)
 
     @override_settings(PAYMENT_DEBUG=True)
     def test_reject(self):
         payment, url = self.test_view()
         response = self.client.post(url, {'method': 'reject'})
-        self.assertRedirects(response, '/en/?payment={}'.format(payment.pk))
+        self.assertRedirects(
+            response,
+            '{}?payment={}'.format(PAYMENTS_ORIGIN, payment.pk),
+            fetch_redirect_response=False
+        )
         self.check_payment(payment, Payment.REJECTED)
 
     @override_settings(PAYMENT_DEBUG=True, PAYMENT_FAKTURACE=TEST_FAKTURACE)
@@ -211,12 +222,17 @@ class PaymentsTest(FakuraceTestCase):
         )
         self.check_payment(payment, Payment.PENDING)
         response = self.client.get(complete_url)
-        self.assertRedirects(response, '/en/?payment={}'.format(payment.pk))
+        self.assertRedirects(
+            response,
+            '{}?payment={}'.format(PAYMENTS_ORIGIN, payment.pk),
+            fetch_redirect_response=False
+        )
         self.check_payment(payment, Payment.ACCEPTED)
 
 
 class DonationTest(FakuraceTestCase):
     credentials = {'username': 'testuser', 'password': 'testpassword'}
+
     def setUp(self):
         super().setUp()
         self.reward_link = Reward.objects.create(
@@ -300,15 +316,34 @@ class DonationTest(FakuraceTestCase):
             'Your donations'
         )
 
-    def test_link(self):
-        Donation.objects.create(
+    def create_donation(self, years=1):
+        return Donation.objects.create(
             reward=self.reward_link, user=self.create_user(),
             active=True,
-            expires=timezone.now() + relativedelta(years=1),
+            expires=timezone.now() + relativedelta(years=years),
             payment=self.create_payment()[0].pk,
             link_url='https://example.com/weblate',
             link_text='Weblate donation test',
         )
+
+    def test_link(self):
+        self.create_donation()
         response = self.client.get('/en/thanks/')
         self.assertContains(response, 'https://example.com/weblate')
         self.assertContains(response, 'Weblate donation test')
+
+    @override_settings(PAYMENT_DEBUG=True, PAYMENT_FAKTURACE=TEST_FAKTURACE)
+    def test_recurring(self):
+        donation = self.create_donation(-1)
+        self.assertEqual(donation.payment_obj.payment_set.count(), 0)
+        # The processing fails here, but new payment is created
+        call_command('process_donations')
+        self.assertEqual(donation.payment_obj.payment_set.count(), 1)
+        # Flag it as paid
+        donation.payment_obj.payment_set.update(state=Payment.ACCEPTED)
+
+        # Process pending payments
+        call_command('process_donations')
+        old = donation.expires
+        donation.refresh_from_db()
+        self.assertGreater(donation.expires, old)
