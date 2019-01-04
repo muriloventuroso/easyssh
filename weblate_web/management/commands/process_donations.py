@@ -22,13 +22,11 @@ from datetime import timedelta
 
 from django.core.management.base import BaseCommand
 from django.db import transaction
-from django.http import HttpRequest
 from django.utils import timezone
 
 from wlhosted.payments.models import Payment
 
 from weblate_web.models import Donation, PAYMENTS_ORIGIN, process_payment
-from weblate_web.views import PaymentView
 
 
 class Command(BaseCommand):
@@ -53,7 +51,10 @@ class Command(BaseCommand):
                 continue
 
             # Alllow at most three failures
-            if donation.list_payments().filter(state=Payment.REJECTED).count() > 3:
+            rejected_payments = donation.list_payments().filter(
+                state=Payment.REJECTED
+            )
+            if rejected_payments.count() > 3:
                 payment.recurring = ''
                 payment.save()
                 continue
