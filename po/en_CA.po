@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.muriloventuroso.easyssh\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-03 14:53-0200\n"
+"POT-Creation-Date: 2019-01-04 18:01-0200\n"
 "PO-Revision-Date: 2018-04-23 15:43-0300\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -17,23 +17,31 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: src/MainWindow.vala:64
+#: src/MainWindow.vala:99
 msgid "EasySSH"
 msgstr "EasySSH"
 
-#: src/MainWindow.vala:359
+#: src/MainWindow.vala:436
+msgid "Hide find bar"
+msgstr ""
+
+#: src/MainWindow.vala:444 src/Widgets/HeaderBar.vala:44
+msgid "Find…"
+msgstr ""
+
+#: src/MainWindow.vala:526
 msgid "Copy"
 msgstr "Copy"
 
-#: src/MainWindow.vala:360
+#: src/MainWindow.vala:527
 msgid "Paste"
 msgstr "Paste"
 
-#: src/MainWindow.vala:361
+#: src/MainWindow.vala:528
 msgid "Select All"
 msgstr "Select All"
 
-#: src/MainWindow.vala:362
+#: src/MainWindow.vala:529
 msgid "Show in File Browser"
 msgstr ""
 
@@ -47,8 +55,8 @@ msgid "Duplicate"
 msgstr ""
 
 #: src/Views/SourceListView.vala:48 src/Views/SourceListView.vala:87
-#: src/Views/SourceListView.vala:1148 src/Views/SourceListView.vala:1150
-#: src/Views/SourceListView.vala:1167 src/Views/SourceListView.vala:1169
+#: src/Views/SourceListView.vala:1157 src/Views/SourceListView.vala:1159
+#: src/Views/SourceListView.vala:1176 src/Views/SourceListView.vala:1178
 #: src/Widgets/ConnectionEditor.vala:376 src/Widgets/Connection.vala:64
 msgid "Remove"
 msgstr "Remove"
@@ -62,28 +70,28 @@ msgstr "Host:"
 msgid "Accounts"
 msgstr ""
 
-#: src/Views/SourceListView.vala:495
+#: src/Views/SourceListView.vala:503
 msgid "Please enter the password to unlock the data file"
 msgstr ""
 
-#: src/Views/SourceListView.vala:497
+#: src/Views/SourceListView.vala:505
 msgid "Please enter the password to lock the data file"
 msgstr ""
 
-#: src/Views/SourceListView.vala:499
+#: src/Views/SourceListView.vala:507
 #, fuzzy
 msgid "Password"
 msgstr "Password:"
 
-#: src/Views/SourceListView.vala:505 src/Widgets/ConnectionEditor.vala:155
+#: src/Views/SourceListView.vala:514 src/Widgets/ConnectionEditor.vala:155
 msgid "Cancel"
 msgstr "Cancel"
 
-#: src/Views/SourceListView.vala:508
+#: src/Views/SourceListView.vala:517
 msgid "Send"
 msgstr ""
 
-#: src/Views/SourceListView.vala:1148
+#: src/Views/SourceListView.vala:1157
 #, fuzzy
 msgid ""
 "Are you sure you want to remove this connection and all associated data?"
@@ -91,7 +99,7 @@ msgstr ""
 "Are you sure you want to remove this connection and all data associated with "
 "it?"
 
-#: src/Views/SourceListView.vala:1167
+#: src/Views/SourceListView.vala:1176
 #, fuzzy
 msgid "Are you sure you want to remove this account and all associated data?"
 msgstr ""
@@ -135,11 +143,11 @@ msgstr "Start by adding an SSH connection to EasySSH"
 msgid "Create a new connection"
 msgstr "Create a new connection"
 
-#: src/Widgets/HeaderBar.vala:39 src/Widgets/Preferences.vala:35
+#: src/Widgets/HeaderBar.vala:46 src/Widgets/Preferences.vala:35
 msgid "Preferences"
 msgstr "Preferences"
 
-#: src/Widgets/HeaderBar.vala:48
+#: src/Widgets/HeaderBar.vala:55
 msgid "Menu"
 msgstr ""
 
