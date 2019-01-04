@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2018-11-17 17:10+0100\n"
+"POT-Creation-Date: 2019-01-04 16:32+0100\n"
 "PO-Revision-Date: 2018-11-26 14:09+0000\n"
 "Last-Translator: Iván Seoane <ivanrsm1997@gmail.com>\n"
 "Language-Team: Galician <https://hosted.weblate.org/projects/weblate/website/"
@@ -126,6 +126,24 @@ msgstr "Pode estabeleceres niveis do acceso para cada usuario."
 msgid "User management"
 msgstr "Xestión dos usuarios"
 
+#: weblate_web/forms.py:47 weblate_web/templates/donate/form.html:25
+#, fuzzy
+#| msgid "Donation address"
+msgid "Donation recurrence"
+msgstr "Enderezo das doazóns"
+
+#: weblate_web/forms.py:53 weblate_web/templates/donate/form.html:26
+msgid "Amount in EUR"
+msgstr ""
+
+#: weblate_web/models.py:76
+msgid "Link text"
+msgstr ""
+
+#: weblate_web/models.py:80
+msgid "Link URL"
+msgstr ""
+
 #: weblate_web/templates/404.html:4
 msgid "Page not found"
 msgstr "Páxina non atopada"
@@ -207,63 +225,65 @@ msgctxt "Keyword"
 msgid "translate"
 msgstr "traducir"
 
-#: weblate_web/templates/base.html:43
+#: weblate_web/templates/base.html:49
 msgid "Weblate logo"
 msgstr "Logotipo do Weblate"
 
-#: weblate_web/templates/base.html:51
+#: weblate_web/templates/base.html:57
 msgid "Try"
 msgstr "Proba"
 
-#: weblate_web/templates/base.html:52
+#: weblate_web/templates/base.html:58
 msgid "Features"
 msgstr "Funcións"
 
-#: weblate_web/templates/base.html:53 weblate_web/templates/download.html:18
+#: weblate_web/templates/base.html:59 weblate_web/templates/download.html:18
+#: weblate_web/templates/index.html:150
 msgid "Download"
 msgstr "Descarregar"
 
-#: weblate_web/templates/base.html:54
+#: weblate_web/templates/base.html:60
 msgid "Pricing"
 msgstr "Prezos"
 
-#: weblate_web/templates/base.html:55
+#: weblate_web/templates/base.html:61
 msgid "Develop"
 msgstr "Desenvolvemento"
 
-#: weblate_web/templates/base.html:56 weblate_web/templates/donate.html:61
+#: weblate_web/templates/base.html:62 weblate_web/templates/donate.html:110
+#: weblate_web/templates/donate.html:122
 msgid "Donate"
 msgstr "Facer doazón"
 
-#: weblate_web/templates/base.html:57
+#: weblate_web/templates/base.html:63
 msgid "Support"
 msgstr "Apoio"
 
-#: weblate_web/templates/base.html:58
+#: weblate_web/templates/base.html:64
 msgid "Tour"
 msgstr "Visita guiada"
 
-#: weblate_web/templates/base.html:59
+#: weblate_web/templates/base.html:65
 msgid "Thanks"
 msgstr "Grazas"
 
-#: weblate_web/templates/base.html:60
+#: weblate_web/templates/base.html:66
 msgid "Blog"
 msgstr "Blogue"
 
-#: weblate_web/templates/base.html:61
+#: weblate_web/templates/base.html:67
 msgid "Docs"
 msgstr "Documentos"
 
-#: weblate_web/templates/base.html:62
+#: weblate_web/templates/base.html:68
 msgid "Hosting"
 msgstr "Aloxamento"
 
-#: weblate_web/templates/base.html:74
+#: weblate_web/templates/base.html:80
 msgid "Help with translations!"
 msgstr "Axude cas traducións!"
 
-#: weblate_web/templates/base.html:118 weblate_web/templates/terms.html:4
+#: weblate_web/templates/base.html:124 weblate_web/templates/terms.html:4
 msgid "Terms of Service and Privacy Policy"
 msgstr "Termos do Servizo e Política da Privacidade"
 
@@ -282,7 +302,7 @@ msgid "View sources"
 msgstr "Ollar fontes"
 
 #: weblate_web/templates/contribute.html:11
-#: weblate_web/templates/contribute.html:38
+#: weblate_web/templates/contribute.html:34
 msgid "Translate"
 msgstr "Traducir"
 
@@ -297,7 +317,7 @@ msgstr ""
 "contribucións</a> da documentación."
 
 #: weblate_web/templates/contribute.html:20
-#: weblate_web/templates/download.html:70
+#: weblate_web/templates/download.html:63
 msgid "Code"
 msgstr "Código"
 
@@ -311,11 +331,18 @@ msgstr ""
 "derivados alí mesmo ou só:"
 
 #: weblate_web/templates/contribute.html:31
-#, python-format
-msgid "This website is stored on <a href=\"%(url)s\">GitHub</a> as well:"
-msgstr "Este sitio web está almacenado en <a href=\"%(url)s\"></a> tamén:"
+#, fuzzy, python-format
+#| msgid ""
+#| "You can also ask related questions on <a href=\"%(url)s\">Stack Overflow</"
+#| "a>."
+msgid ""
+"You can find more repositories related to Weblate on <a href=\"%(url)s"
+"\">GitHub</a>"
+msgstr ""
+"Tamén podes facer cuestións relacionadas sobre o <a href=\"%(url)s\">Stack "
+"Overflow</a>."
 
-#: weblate_web/templates/contribute.html:41
+#: weblate_web/templates/contribute.html:37
 msgid ""
 "You can translate Weblate at <a href=\"https://hosted.weblate.org/engage/"
 "weblate/\">hosted.weblate.org</a>."
@@ -323,43 +350,107 @@ msgstr ""
 "Pode traduci-lo Weblate en <a href=\"https://hosted.weblate.org/engage/"
 "weblate/\">hosted.weblate.org</a>."
 
-#: weblate_web/templates/contribute.html:46
+#: weblate_web/templates/contribute.html:42
 msgid "Translation status"
 msgstr "Estado da tradución"
 
 #: weblate_web/templates/donate.html:3 weblate_web/templates/donate.html:4
+#: weblate_web/templates/donate/edit.html:4
+#: weblate_web/templates/donate/edit.html:5
+#: weblate_web/templates/donate/form.html:4
+#: weblate_web/templates/donate/form.html:5
+#: weblate_web/templates/thanks.html:10
 msgid "Donate to Weblate"
 msgstr "Doar ó Weblate"
 
-#: weblate_web/templates/donate.html:6
+#: weblate_web/templates/donate.html:6 weblate_web/templates/donate/edit.html:7
+#: weblate_web/templates/donate/form.html:7
 msgid "Weblate is provided free of charge, and welcomes donations."
 msgstr "O Weblate é fornecido de balde, mais agradécense doazóns."
 
-#: weblate_web/templates/donate.html:12 weblate_web/templates/donate.html:43
-msgid "Donate using Liberapay"
-msgstr "Doar empregando Liberapay"
-
-#: weblate_web/templates/donate.html:18
-msgid "Use our hosting"
-msgstr "Emprega o noso aloxamento"
-
-#: weblate_web/templates/donate.html:22
-#, python-format
-msgid ""
-"Host your commercial translations on <a href=\"%(hosting_url)s\">Hosted "
-"Weblate</a> and you will be supporting Weblate development automatically."
+#: weblate_web/templates/donate.html:11 weblate_web/templates/donate.html:134
+msgid "Purchase hosting package"
 msgstr ""
-"Aloxa as súas traducións comerciais no <a href=\"%(hosting_url)s\">\"Hosted "
-"Weblate\"</a> e estarás a apoiar de xeito automático no desenvolvemento do "
-"Weblate."
 
-#: weblate_web/templates/donate.html:25
-msgid "Regular donations"
+#: weblate_web/templates/donate.html:12 weblate_web/templates/donate.html:135
+#: weblate_web/templates/download.html:13 weblate_web/templates/hosting.html:12
+#: weblate_web/templates/hosting.html:234
+msgid "Get support for Weblate"
+msgstr "Obteña apoio para o Weblate"
+
+#: weblate_web/templates/donate.html:19
+msgid "Sign in to manage your donations"
+msgstr ""
+
+#: weblate_web/templates/donate.html:21
+msgid "Sign out"
+msgstr ""
+
+#: weblate_web/templates/donate.html:24
+#, fuzzy
+#| msgid "Regular donations"
+msgid "Your donations"
 msgstr "Doazóns periódicas"
 
-#: weblate_web/templates/donate.html:28
+#: weblate_web/templates/donate.html:29
+#, fuzzy
+#| msgid "Collaboration sites"
+msgid "Creation date"
+msgstr "Colaboracións con outros sitios"
+
+#: weblate_web/templates/donate.html:30
+msgid "Reward"
+msgstr ""
+
+#: weblate_web/templates/donate.html:31
+msgid "Expiry date"
+msgstr ""
+
+#: weblate_web/templates/donate.html:32
+msgid "Renewal"
+msgstr ""
+
+#: weblate_web/templates/donate.html:33
+#, fuzzy
+#| msgid "Payment summary"
+msgid "Payments"
+msgstr "Resumo do pagamento"
+
+#: weblate_web/templates/donate.html:43
+#: weblate_web/templates/payment/payment.html:37
+msgid "Edit"
+msgstr "Editar"
+
+#: weblate_web/templates/donate.html:45
+msgid "No reward"
+msgstr ""
+
+#: weblate_web/templates/donate.html:53
+msgid "Expired"
+msgstr ""
+
+#: weblate_web/templates/donate.html:57
+msgid "Disable renewal"
+msgstr ""
+
+#: weblate_web/templates/donate.html:60
+msgid "Does not renew"
+msgstr ""
+
+#: weblate_web/templates/donate.html:92
+#, fuzzy
+#| msgid "Documentation"
+msgid "Donations"
+msgstr "Documentación"
+
+#: weblate_web/templates/donate.html:95
+#, fuzzy
+#| msgid ""
+#| "Regular donations allow sustainability of Weblate development and help to "
+#| "fund free hosting for libre software. You don't have to spend big money, "
+#| "every penny counts."
 msgid ""
-"Regular donations allow sustainability of Weblate development and help to "
+"Recurring donations allow sustainability of Weblate development and help to "
 "fund free hosting for libre software. You don't have to spend big money, "
 "every penny counts."
 msgstr ""
@@ -367,67 +458,53 @@ msgstr ""
 "axudan a financia-lo aloxamiento de balde para proxectos de software ceibe "
 "ou libre. Non precisa gastar moitos cartos, cada céntimo axuda."
 
-#: weblate_web/templates/donate.html:33 weblate_web/templates/donate.html:54
-#: weblate_web/templates/thanks.html:12
-msgid "Fund on Bountysource"
-msgstr "Doar no Bountysource"
+#: weblate_web/templates/donate.html:103
+#, fuzzy
+#| msgid "Regular donations"
+msgid "Recurring donation"
+msgstr "Doazóns periódicas"
 
-#: weblate_web/templates/donate.html:37
+#: weblate_web/templates/donate.html:106
 msgid ""
-"You can send a monthly donation using a credit card. You can also get "
-"rewards for higher donations, for example a logo placement on our website."
+"Repeated appreciation of the Weblate project helps in keeping the project "
+"sustainable in the long term."
 msgstr ""
-"Pode enviar unha doazón mensual empregando unha tarxeta de crédito. Tamén "
-"pode conseguer apoiar con maiores doazóns, por exemplo a colocación do "
-"logotipo no seu sitio web."
 
-#: weblate_web/templates/donate.html:47
+#: weblate_web/templates/donate.html:107
 msgid ""
-"Liberapay is a recurrent donations platform where you send weekly amount to "
-"fund projects you use. You can use credit card, bank transfer or direct "
-"debit to top up the account."
+"Please consider this if you are using Weblate on premise without support "
+"contract."
 msgstr ""
-"O Liberapay é unha plataforma de doazóns recorrentes onde envía de xeito "
-"semanal unha cantidade para financia-los proxectos que emprega. Pode "
-"empregar tarxeta de crédito, transferenza bancaria ou débito directo para "
-"recarga-la conta."
 
-#: weblate_web/templates/donate.html:50
-msgid "Fund features"
-msgstr "Apoia as funcionalidades"
+#: weblate_web/templates/donate.html:116
+#, fuzzy
+#| msgid "View documentation"
+msgid "One time donation"
+msgstr "Ollar documentación"
 
-#: weblate_web/templates/donate.html:58
+#: weblate_web/templates/donate.html:119
 msgid ""
-"Bountysource allows you to fund individual features reported on our issue "
-"tracker."
+"One time donations are great for appreciating our work on single issue or "
+"support."
 msgstr ""
-"O Bountysource permítelle financiar funcións específicas que están a ser "
-"reportadas no noso sistema de seguemento dos erros."
 
-#: weblate_web/templates/donate.html:64
+#: weblate_web/templates/donate.html:128
+#, fuzzy
+#| msgid "Use our hosting"
+msgid "Use our services"
+msgstr "Emprega o noso aloxamento"
+
+#: weblate_web/templates/donate.html:131
 msgid ""
-"If you like Weblate you can support its further development by donating."
+"Commercial services like hosting or support for on premise installation help "
+"funding Weblate development."
 msgstr ""
-"Se lle gosta o Weblate, pode axudar ó seu futuro desenvolvemento mediante "
-"doazóns."
 
-#: weblate_web/templates/donate.html:72
-msgid "Donate using PayPal"
-msgstr "Doar empregando PayPal"
-
-#: weblate_web/templates/donate.html:77
-msgid ""
-"PayPal allows you to send money from credit card, PayPal balance or a bank "
-"account."
-msgstr ""
-"PayPal permitelle enviar cartos dende unha tarxeta de crédito, saldo do "
-"PayPal ou conta bancaria."
-
-#: weblate_web/templates/donate.html:80
+#: weblate_web/templates/donate.html:143
 msgid "Cryptocurrencies"
 msgstr "Criptomoedas"
 
-#: weblate_web/templates/donate.html:83
+#: weblate_web/templates/donate.html:146
 #, python-format
 msgid ""
 "Thanks to <a href=\"%(url)s\">Trezor</a>, we will gladly accept donations in "
@@ -436,13 +513,64 @@ msgstr ""
 "Grazas a <a href=\"%(url)s\">Trezor</a>, aceptaremos gostosamente doazóns en "
 "varias criptomoedas. Pode emprega-los enderezos da seguinte táboa."
 
-#: weblate_web/templates/donate.html:88
+#: weblate_web/templates/donate.html:151
 msgid "Currency"
 msgstr "Moeda"
 
-#: weblate_web/templates/donate.html:88
+#: weblate_web/templates/donate.html:151
 msgid "Donation address"
 msgstr "Enderezo das doazóns"
+
+#: weblate_web/templates/donate/edit.html:12
+msgid "Please select choose wanted reward or enter custom donation amount."
+msgstr ""
+
+#: weblate_web/templates/donate/edit.html:20
+msgid "Edit your reward link"
+msgstr ""
+
+#: weblate_web/templates/donate/edit.html:26
+#: weblate_web/templates/payment/customer.html:21
+msgid "Save"
+msgstr "Gardar"
+
+#: weblate_web/templates/donate/form.html:13
+msgid "Please choose wanted reward or enter custom donation amount."
+msgstr ""
+
+#: weblate_web/templates/donate/form.html:33
+msgid "Select"
+msgstr ""
+
+#: weblate_web/templates/donate/form.html:41
+msgid ""
+"We might refuse to place your link, especially if the site contains adult or "
+"illegal content. Please consult us in advance if unsure."
+msgstr ""
+
+#: weblate_web/templates/donate/form.html:50
+msgid "Choose your own donation amount"
+msgstr ""
+
+#: weblate_web/templates/donate/form.html:56
+msgid "Continue"
+msgstr ""
+
+#: weblate_web/templates/donate/rewards.html:2
+msgid "Link placement on the weblate.org thanks page"
+msgstr ""
+
+#: weblate_web/templates/donate/rewards.html:3
+msgid "Link placement in the list of supporters"
+msgstr ""
+
+#: weblate_web/templates/donate/rewards.html:4
+msgid "Name placement in the list of supporters"
+msgstr ""
+
+#: weblate_web/templates/download-link.html:4
+msgid "PGP signature"
+msgstr ""
 
 #: weblate_web/templates/download.html:4 weblate_web/templates/download.html:5
 #: weblate_web/templates/hosting.html:235
@@ -453,26 +581,16 @@ msgstr "Descarrega-lo Weblate"
 msgid "Weblate comes with complete source code."
 msgstr "O Weblate inclúe todo o seu código fonte completo."
 
-#: weblate_web/templates/download.html:13 weblate_web/templates/hosting.html:12
-#: weblate_web/templates/hosting.html:234
-msgid "Get support for Weblate"
-msgstr "Obteña apoio para o Weblate"
-
 #: weblate_web/templates/download.html:21
 msgid "You can download latest release here:"
 msgstr "Velaquí pode descarregar a última versión:"
 
 #: weblate_web/templates/download.html:30
-#: weblate_web/templates/download.html:46
-msgid "You can also install using packages for following Linux distributions:"
-msgstr ""
-"Tamén podes instalalo cos paquetes para as seguintes distribucións do Linux:"
-
-#: weblate_web/templates/download.html:36
+#: weblate_web/templates/download.html:73
 msgid "Weblate command line client"
 msgstr "Liña de comandos cliente do Weblate"
 
-#: weblate_web/templates/download.html:39
+#: weblate_web/templates/download.html:33
 #, python-format
 msgid ""
 "You can control Weblate remotely using <a href=\"%(url)s\">wlc</a>, it can "
@@ -481,11 +599,16 @@ msgstr ""
 "Podes controlar de xeito remoto o Weblate empregando <a href=\"%(url)s"
 "\">wlc</a>, isto pode instalarse co Python PIP:"
 
-#: weblate_web/templates/download.html:54
+#: weblate_web/templates/download.html:40
+msgid "You can also install using packages for following Linux distributions:"
+msgstr ""
+"Tamén podes instalalo cos paquetes para as seguintes distribucións do Linux:"
+
+#: weblate_web/templates/download.html:47
 msgid "Cloud or virtualization images"
 msgstr "A nube ou virtualizacións das imaxes"
 
-#: weblate_web/templates/download.html:56
+#: weblate_web/templates/download.html:49
 msgid ""
 "Weblate can be run in any cloud or virtualization environment. Following "
 "links will show you information about some of these:"
@@ -493,15 +616,15 @@ msgstr ""
 "O Weblate pode iniciarse en calquera nube ou máquina virtual. As seguintes "
 "ligazóns amosaranlle información sobre algúns deles:"
 
-#: weblate_web/templates/download.html:59
+#: weblate_web/templates/download.html:52
 msgid "Running Weblate in a Docker container"
 msgstr "Estase a inicia-lo Weblate nun contedor Docker"
 
-#: weblate_web/templates/download.html:60
+#: weblate_web/templates/download.html:53
 msgid "Running Weblate on OpenShift platform"
 msgstr "Estase a inicia-lo Weblate nunha plataforma OpenShift"
 
-#: weblate_web/templates/download.html:61
+#: weblate_web/templates/download.html:54
 msgid ""
 "BitNami Weblate stack providing native installation for most platforms as "
 "well as support for many public cloud providers"
@@ -510,7 +633,7 @@ msgstr ""
 "meirande parte das plataformas e suportes para varios fornecedores de nubes "
 "públicas"
 
-#: weblate_web/templates/download.html:73
+#: weblate_web/templates/download.html:66
 msgid ""
 "Weblate is being developed on <a href=\"https://github.com/WeblateOrg/weblate"
 "\">GitHub</a>, you can fork it there or just:"
@@ -845,8 +968,8 @@ msgid ""
 "\">Liberapay</a> or <a href=\"%(donate_url)s\">other ways to donate</a>."
 msgstr ""
 "Fornécese aloxamento de balde, pero ter e mante-lo servidor custa algo de "
-"cartos polo que o convidamos a empregar <a href=\"%(gittip_url)s\""
-">Liberapay</a> ou <a href=\"%(donate_url)s\">outros xeitos de doar</a>."
+"cartos polo que o convidamos a empregar <a href=\"%(gittip_url)s"
+"\">Liberapay</a> ou <a href=\"%(donate_url)s\">outros xeitos de doar</a>."
 
 #: weblate_web/templates/hosting-ordered.html:3
 #: weblate_web/templates/hosting-ordered.html:4
@@ -882,8 +1005,8 @@ msgid ""
 "adding SSH key we will provide you."
 msgstr ""
 "Ten que permitir ó Weblate o acceso ó seu repositorio. Isto pode facerse "
-"engadindo usuarios do Weblate ó seu proxecto (no GitHub, Bitbucket ou GitLab)"
-" ou engadindo unha clave SSH que lle fornecemos."
+"engadindo usuarios do Weblate ó seu proxecto (no GitHub, Bitbucket ou "
+"GitLab) ou engadindo unha clave SSH que lle fornecemos."
 
 #: weblate_web/templates/hosting.html:6
 msgid "Use Weblate as a service or get support for on-premises hosting."
@@ -1025,7 +1148,8 @@ msgstr "Extensións da tradución"
 msgid "Translation memory"
 msgstr "Memoria da tradución"
 
-#: weblate_web/templates/hosting.html:159
+#: weblate_web/templates/hosting.html:159 weblate_web/templates/index.html:120
+#: weblate_web/templates/index.html:134
 msgid "Priority email support"
 msgstr "Prioridade do suporte do correo electrónico"
 
@@ -1062,7 +1186,7 @@ msgstr "Contacte connosco"
 #: weblate_web/templates/hosting.html:184
 #: weblate_web/templates/hosting.html:187
 #: weblate_web/templates/hosting.html:190
-#: weblate_web/templates/hosting.html:193 weblate_web/templates/support.html:68
+#: weblate_web/templates/hosting.html:193
 #, python-format
 msgid "%(price)s EUR / month"
 msgstr "%(price)s EUR / mes"
@@ -1079,7 +1203,7 @@ msgstr "De xeito anual (aforre un 15-20%%)"
 #: weblate_web/templates/hosting.html:202
 #: weblate_web/templates/hosting.html:205
 #: weblate_web/templates/hosting.html:208
-#: weblate_web/templates/hosting.html:211 weblate_web/templates/support.html:69
+#: weblate_web/templates/hosting.html:211 weblate_web/templates/support.html:68
 #, python-format
 msgid "%(price)s EUR / year"
 msgstr "%(price)s EUR / ano"
@@ -1171,6 +1295,56 @@ msgstr "Ollar quen está a emprega-lo Weblate e unirse a eles!"
 msgid "Browse hundreds of projects on Hosted Weblate"
 msgstr "Procure por centenares de proxectos no aloxamento do Weblate"
 
+#: weblate_web/templates/index.html:114
+msgid "Hosted service"
+msgstr ""
+
+#: weblate_web/templates/index.html:118 weblate_web/templates/index.html:132
+#, python-format
+msgid "From %(amount)sEUR/month"
+msgstr ""
+
+#: weblate_web/templates/index.html:119
+msgid "Cloud service"
+msgstr ""
+
+#: weblate_web/templates/index.html:122 weblate_web/templates/index.html:136
+#, fuzzy
+#| msgid "View hosting plans"
+msgid "Choose hosting plan"
+msgstr "Ollar plans de aloxamento"
+
+#: weblate_web/templates/index.html:128
+msgid "On premise"
+msgstr ""
+
+#: weblate_web/templates/index.html:133
+msgid "Your infrastructure"
+msgstr ""
+
+#: weblate_web/templates/index.html:142
+#, fuzzy
+#| msgctxt "Hosting plan"
+#| msgid "Self hosted"
+msgid "Self supported"
+msgstr "Auto aloxado"
+
+#: weblate_web/templates/index.html:146
+#, fuzzy
+#| msgid "Weblate features"
+msgid "Weblate is free to use"
+msgstr "Funcións do Weblate"
+
+#: weblate_web/templates/index.html:147
+msgid "Maintained by you"
+msgstr ""
+
+#: weblate_web/templates/index.html:148
+#, fuzzy
+#| msgid "Priority email support"
+msgid "Community support"
+msgstr "Prioridade do suporte do correo electrónico"
+
 #: weblate_web/templates/payment/customer.html:5
 #: weblate_web/templates/payment/payment.html:4
 msgid "Weblate payment"
@@ -1179,10 +1353,6 @@ msgstr "Pagamento do Weblate"
 #: weblate_web/templates/payment/customer.html:15
 msgid "Your billing information"
 msgstr "A súa información de facturamento"
-
-#: weblate_web/templates/payment/customer.html:21
-msgid "Save"
-msgstr "Gardar"
 
 #: weblate_web/templates/payment/payment.html:11
 msgid "Payment summary"
@@ -1217,12 +1387,21 @@ msgstr ""
 "subscrición."
 
 #: weblate_web/templates/payment/payment.html:24
+#, fuzzy
+#| msgid "Payment will be issued monthly till you cancel the subscription."
+msgid ""
+"Payment will be issued every six months till you cancel the subscription."
+msgstr ""
+"O pagamento será emitido de xeito mensual até que vostede desbote a "
+"subscrición."
+
+#: weblate_web/templates/payment/payment.html:26
 msgid "Payment will be issued monthly till you cancel the subscription."
 msgstr ""
 "O pagamento será emitido de xeito mensual até que vostede desbote a "
 "subscrición."
 
-#: weblate_web/templates/payment/payment.html:29
+#: weblate_web/templates/payment/payment.html:31
 msgid ""
 "Note: This is unavailable for some payment methods, you will have to "
 "manually complete the next payment in those cases."
@@ -1230,15 +1409,11 @@ msgstr ""
 "Nota: iso non está dispoñíbel para algúns xeitos de pagamento, terá que "
 "completa-lo seguinte paganento de xeito manual neses casos."
 
-#: weblate_web/templates/payment/payment.html:32
+#: weblate_web/templates/payment/payment.html:35
 msgid "Billing information"
 msgstr "Informacións do facturamento"
 
-#: weblate_web/templates/payment/payment.html:34
-msgid "Edit"
-msgstr "Editar"
-
-#: weblate_web/templates/payment/payment.html:47
+#: weblate_web/templates/payment/payment.html:49
 msgid "Please choose payment method:"
 msgstr "Escolla o xeito do pagamento:"
 
@@ -1335,49 +1510,49 @@ msgstr "Instalación empregando o Docker"
 msgid "Basic support for self hosted Weblate"
 msgstr "Apoio sinxelo para o Weblate aloxado por conta propia"
 
-#: weblate_web/templates/support.html:74
+#: weblate_web/templates/support.html:73
 msgid "Your Weblate will be upgraded to the latest version on every release."
 msgstr ""
 "En canto saia unha nova versión dispoñíbel, o teu Weblate actualizarase."
 
-#: weblate_web/templates/support.html:75
+#: weblate_web/templates/support.html:74
 msgid "We will fix issues that occur in your environment."
 msgstr "Arranxaremos os erros que ocorran na túa contorna."
 
-#: weblate_web/templates/support.html:76
+#: weblate_web/templates/support.html:75
 msgid "You will receive priority email support."
 msgstr "Recibirás apoio prioritario vía correo electrónico."
 
-#: weblate_web/templates/support.html:81
+#: weblate_web/templates/support.html:80
 msgid "Consulting services or custom development"
 msgstr "Servizos de consulta ou desenvolvemento a medida"
 
-#: weblate_web/templates/support.html:82
+#: weblate_web/templates/support.html:81
 #, python-format
 msgid "%(price)s EUR / hour"
 msgstr "%(price)s EUR / hora"
 
-#: weblate_web/templates/support.html:87
+#: weblate_web/templates/support.html:86
 msgid "Custom features development"
 msgstr "Desenvolvemento de funcionalidades persoalizadas"
 
-#: weblate_web/templates/support.html:88
+#: weblate_web/templates/support.html:87
 msgid "Integrating Weblate into your workflow"
 msgstr "A integra-lo Weblate no teu fluxo de traballo"
 
-#: weblate_web/templates/support.html:89
+#: weblate_web/templates/support.html:88
 msgid "Suggestions on the internationalization or localization process"
 msgstr "Suxestións no proceso da internacionalización ou localización"
 
-#: weblate_web/templates/support.html:97
+#: weblate_web/templates/support.html:96
 msgid "Ask us for details about self hosted Weblate"
 msgstr "Préganos por detalles sobre o aloxamento do Weblate por conta propia"
 
-#: weblate_web/templates/support.html:100
+#: weblate_web/templates/support.html:99
 msgid "Support for Hosted Weblate services"
 msgstr "Suporte para servizos de aloxamento do Weblate"
 
-#: weblate_web/templates/support.html:103
+#: weblate_web/templates/support.html:102
 #, python-format
 msgid ""
 "If you are using our hosting services, you can ask for support at "
@@ -1386,15 +1561,15 @@ msgstr ""
 "Se empregas os nosos servizos de aloxamento,  podes pedir suporte en "
 "%(contact)s."
 
-#: weblate_web/templates/support.html:106
+#: weblate_web/templates/support.html:105
 msgid "Mailing lists"
 msgstr "Listaxes de correo"
 
-#: weblate_web/templates/support.html:108
+#: weblate_web/templates/support.html:107
 msgid "Users and developers mailing list"
 msgstr "Listaxes de correo dos usuarios e desenvolvedores"
 
-#: weblate_web/templates/support.html:110
+#: weblate_web/templates/support.html:109
 msgid ""
 "You can use mailing lists for discussions with other Weblate users and "
 "developers."
@@ -1402,7 +1577,7 @@ msgstr ""
 "Podes empregar listaxes de correo das parolas con outros usuarios e "
 "desenvolvementos do Weblate."
 
-#: weblate_web/templates/support.html:111
+#: weblate_web/templates/support.html:110
 msgid ""
 "You can post to it using <a href=\"mailto:weblate@lists.cihar.com"
 "\">weblate@lists.cihar.com</a> address."
@@ -1410,42 +1585,42 @@ msgstr ""
 "Podes publicar isto, empregando o enderezo <a href=\"mailto:weblate@lists."
 "cihar.com\">weblate@lists.cihar.com</a>."
 
-#: weblate_web/templates/support.html:112
-#: weblate_web/templates/support.html:128
+#: weblate_web/templates/support.html:111
+#: weblate_web/templates/support.html:127
 msgid "You can browse mailing list archives"
 msgstr "Podes procurar ficheiros das listaxes de correo"
 
-#: weblate_web/templates/support.html:115
-#: weblate_web/templates/support.html:131
+#: weblate_web/templates/support.html:114
+#: weblate_web/templates/support.html:130
 msgid "Enter your email"
 msgstr "Insira o seu enderezo de correo electrónico"
 
-#: weblate_web/templates/support.html:117
-#: weblate_web/templates/support.html:133
+#: weblate_web/templates/support.html:116
+#: weblate_web/templates/support.html:132
 msgid "Subscribe"
 msgstr "Subscribirse"
 
-#: weblate_web/templates/support.html:124
+#: weblate_web/templates/support.html:123
 msgid "Hosted Weblate Announcements mailing list"
 msgstr "Listaxe de correo con anuncios do aloxamento do Weblate"
 
-#: weblate_web/templates/support.html:126
+#: weblate_web/templates/support.html:125
 msgid ""
 "Low traffic mailing list with announcements about Hosted Weblate services."
 msgstr ""
 "Listaxe de correo de baixo tráfico con anuncios sobre os servizos de "
 "aloxamento do Weblate."
 
-#: weblate_web/templates/support.html:127
+#: weblate_web/templates/support.html:126
 msgid "This list is moderated, only chosen users can post announcements."
 msgstr ""
 "Esta listaxe é moderada, só os usuarios elixidos poden publicar anuncios."
 
-#: weblate_web/templates/support.html:140
+#: weblate_web/templates/support.html:139
 msgid "Stack Overflow"
 msgstr "Stack Overflow"
 
-#: weblate_web/templates/support.html:142
+#: weblate_web/templates/support.html:141
 #, python-format
 msgid ""
 "You can also ask related questions on <a href=\"%(url)s\">Stack Overflow</a>."
@@ -1473,47 +1648,47 @@ msgstr "O Weblate dálle as grazas"
 msgid "Weblate is thankful for help from others."
 msgstr "O Weblate está moi agradecido pola axuda dos demais."
 
-#: weblate_web/templates/thanks.html:20
+#: weblate_web/templates/thanks.html:16
 msgid "Technology"
 msgstr "Tecnoloxía"
 
-#: weblate_web/templates/thanks.html:22
+#: weblate_web/templates/thanks.html:18
 msgid "The development of Weblate is based on the following technologies:"
 msgstr "O desenvolvemento do Weblate está baseado nas seguintes tecnoloxías:"
 
-#: weblate_web/templates/thanks.html:26
+#: weblate_web/templates/thanks.html:22
 msgid "GitHub provides hosting for our source code and issue tracker."
 msgstr ""
 "O GitHub fornece almacenaxe para o noso código fonte e sistema de seguemento "
 "dos erros."
 
-#: weblate_web/templates/thanks.html:30
+#: weblate_web/templates/thanks.html:26
 msgid "Travis CI is our continuous integration platform."
 msgstr "O Travis CI é a nosa plataforma de integración continua."
 
-#: weblate_web/templates/thanks.html:34
+#: weblate_web/templates/thanks.html:30
 msgid "Codecov helps us to monitor code coverage of our test suite."
 msgstr ""
 "O Codecov permítenos monitoriza-la cobertura do código de todo o noso "
 "conxunto de probas."
 
-#: weblate_web/templates/thanks.html:38
+#: weblate_web/templates/thanks.html:34
 msgid "Sauce Labs is running our Selenium tests in real browsers."
 msgstr "O Sauce Labs executa as nosas probas Selenium en navigadores reais."
 
-#: weblate_web/templates/thanks.html:42
+#: weblate_web/templates/thanks.html:38
 msgid "Our translations are being done on Hosted Weblate."
 msgstr "As nosas traducións fanse no Hosted Weblate."
 
-#: weblate_web/templates/thanks.html:46
+#: weblate_web/templates/thanks.html:42
 msgid "Payments are processed by The Pay service."
 msgstr "Os pagamentos son procesados polo servizo The Pay."
 
-#: weblate_web/templates/thanks.html:50
+#: weblate_web/templates/thanks.html:46
 msgid "Supporters"
 msgstr "Apoio"
 
-#: weblate_web/templates/thanks.html:52
+#: weblate_web/templates/thanks.html:48
 msgid ""
 "Free hosting for free software projects would be impossible without our "
 "sponsors."
@@ -1521,10 +1696,12 @@ msgstr ""
 "O aloxamento de balde para proxectos de software ceibe ou libre non sería "
 "posíbel sen os nosos patrocinadores."
 
-#: weblate_web/templates/thanks.html:54
-msgid ""
-"Support our project on Bountysource Salt and get exclusive logo placement on "
-"this page."
+#: weblate_web/templates/thanks.html:50
+#, fuzzy
+#| msgid ""
+#| "Support our project on Bountysource Salt and get exclusive logo placement "
+#| "on this page."
+msgid "Support our project and get link placement on this page."
 msgstr ""
 "Apoia o noso proxecto no Bountysource Salt e obteña unha exclusiva ubicación "
 "do logotipo nesta páxina."
@@ -1594,47 +1771,128 @@ msgstr ""
 "unha inversión do suxeito pasivo, os pagamentos para a República Checa "
 "inclúen un IVE engadido."
 
-#: weblate_web/templatetags/downloads.py:40
+#: weblate_web/templatetags/downloads.py:39
 #, python-format
 msgid "%(size)d byte"
 msgid_plural "%(size)d bytes"
 msgstr[0] ""
 msgstr[1] ""
 
-#: weblate_web/templatetags/downloads.py:45
+#: weblate_web/templatetags/downloads.py:44
 #, python-format
 msgid "%.1f KiB"
 msgstr "%.1f KiB"
 
-#: weblate_web/templatetags/downloads.py:47
+#: weblate_web/templatetags/downloads.py:46
 #, python-format
 msgid "%.1f MiB"
 msgstr "%.1f MiB"
 
-#: weblate_web/templatetags/downloads.py:48
+#: weblate_web/templatetags/downloads.py:47
 #, python-format
 msgid "%.1f GiB"
 msgstr "%.1f GiB"
 
-#: weblate_web/templatetags/downloads.py:55
+#: weblate_web/templatetags/downloads.py:54
 msgid "Sources tarball, bzip2 compressed"
 msgstr "Compilación tar do código fonte, comprimido co bzip2"
 
-#: weblate_web/templatetags/downloads.py:57
+#: weblate_web/templatetags/downloads.py:56
 msgid "Sources tarball, gzip compressed"
 msgstr "Compilación tar do código fonte, comprimido co gzip"
 
-#: weblate_web/templatetags/downloads.py:59
+#: weblate_web/templatetags/downloads.py:58
 msgid "Sources tarball, xz compressed"
 msgstr "Compilación tar do código fonte, comprimido co xz"
 
-#: weblate_web/templatetags/downloads.py:61
+#: weblate_web/templatetags/downloads.py:60
 msgid "Sources, zip compressed"
 msgstr "Compilación tar do código fonte, comprimido co zip"
 
-#: weblate_web/views.py:97
+#: weblate_web/views.py:103
 msgid "Please provide your billing information to complete the payment."
 msgstr "Forneza a información de faturamento para remata-lo pagamento."
+
+#: weblate_web/views.py:251
+#, fuzzy
+#| msgid "Payments are processed by The Pay service."
+msgid "Payment not yet processed, please retry."
+msgstr "Os pagamentos son procesados polo servizo The Pay."
+
+#: weblate_web/views.py:256
+msgid "The payment was rejected: {}"
+msgstr ""
+
+#: weblate_web/views.py:257
+msgid "Unknown reason"
+msgstr ""
+
+#: weblate_web/views.py:261
+#, fuzzy
+#| msgid "Thank you for ordering hosting!"
+msgid "Thank you for your donation."
+msgstr "Grazas polo seu pedido de aloxamento!"
+
+#~ msgid "This website is stored on <a href=\"%(url)s\">GitHub</a> as well:"
+#~ msgstr "Este sitio web está almacenado en <a href=\"%(url)s\"></a> tamén:"
+
+#~ msgid "Donate using Liberapay"
+#~ msgstr "Doar empregando Liberapay"
+
+#~ msgid ""
+#~ "Host your commercial translations on <a href=\"%(hosting_url)s\">Hosted "
+#~ "Weblate</a> and you will be supporting Weblate development automatically."
+#~ msgstr ""
+#~ "Aloxa as súas traducións comerciais no <a href=\"%(hosting_url)s\">"
+#~ "\"Hosted Weblate\"</a> e estarás a apoiar de xeito automático no "
+#~ "desenvolvemento do Weblate."
+
+#~ msgid "Fund on Bountysource"
+#~ msgstr "Doar no Bountysource"
+
+#~ msgid ""
+#~ "You can send a monthly donation using a credit card. You can also get "
+#~ "rewards for higher donations, for example a logo placement on our website."
+#~ msgstr ""
+#~ "Pode enviar unha doazón mensual empregando unha tarxeta de crédito. Tamén "
+#~ "pode conseguer apoiar con maiores doazóns, por exemplo a colocación do "
+#~ "logotipo no seu sitio web."
+
+#~ msgid ""
+#~ "Liberapay is a recurrent donations platform where you send weekly amount "
+#~ "to fund projects you use. You can use credit card, bank transfer or "
+#~ "direct debit to top up the account."
+#~ msgstr ""
+#~ "O Liberapay é unha plataforma de doazóns recorrentes onde envía de xeito "
+#~ "semanal unha cantidade para financia-los proxectos que emprega. Pode "
+#~ "empregar tarxeta de crédito, transferenza bancaria ou débito directo para "
+#~ "recarga-la conta."
+
+#~ msgid "Fund features"
+#~ msgstr "Apoia as funcionalidades"
+
+#~ msgid ""
+#~ "Bountysource allows you to fund individual features reported on our issue "
+#~ "tracker."
+#~ msgstr ""
+#~ "O Bountysource permítelle financiar funcións específicas que están a ser "
+#~ "reportadas no noso sistema de seguemento dos erros."
+
+#~ msgid ""
+#~ "If you like Weblate you can support its further development by donating."
+#~ msgstr ""
+#~ "Se lle gosta o Weblate, pode axudar ó seu futuro desenvolvemento mediante "
+#~ "doazóns."
+
+#~ msgid "Donate using PayPal"
+#~ msgstr "Doar empregando PayPal"
+
+#~ msgid ""
+#~ "PayPal allows you to send money from credit card, PayPal balance or a "
+#~ "bank account."
+#~ msgstr ""
+#~ "PayPal permitelle enviar cartos dende unha tarxeta de crédito, saldo do "
+#~ "PayPal ou conta bancaria."
 
 #~ msgid "Monthly by PayPal"
 #~ msgstr "De xeito mensual co PayPal"
@@ -1675,9 +1933,6 @@ msgstr "Forneza a información de faturamento para remata-lo pagamento."
 #~ msgstr ""
 #~ "Weblate é <a href=\"%(github_url)s\">software ceibe ou libre</a> e son "
 #~ "benvidas <a href=\"%(donate_url)s\">as doazóns</a>."
-
-#~ msgid "View hosting plans"
-#~ msgstr "Ollar plans de aloxamento"
 
 #, fuzzy
 #~| msgid "Hosting"

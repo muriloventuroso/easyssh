@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
-"POT-Creation-Date: 2018-11-17 17:10+0100\n"
+"POT-Creation-Date: 2019-01-04 16:32+0100\n"
 "PO-Revision-Date: 2018-07-23 11:06+0000\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Greek <https://hosted.weblate.org/projects/weblate/website/el/"
@@ -122,6 +122,24 @@ msgstr ""
 msgid "User management"
 msgstr "Διαχείριση χρήστη"
 
+#: weblate_web/forms.py:47 weblate_web/templates/donate/form.html:25
+#, fuzzy
+#| msgid "Payment address"
+msgid "Donation recurrence"
+msgstr "Διεύθυνση πληρωμής"
+
+#: weblate_web/forms.py:53 weblate_web/templates/donate/form.html:26
+msgid "Amount in EUR"
+msgstr ""
+
+#: weblate_web/models.py:76
+msgid "Link text"
+msgstr ""
+
+#: weblate_web/models.py:80
+msgid "Link URL"
+msgstr ""
+
 #: weblate_web/templates/404.html:4
 msgid "Page not found"
 msgstr "Η σελίδα δεν βρέθηκε"
@@ -205,63 +223,65 @@ msgctxt "Keyword"
 msgid "translate"
 msgstr "μεταφράζω"
 
-#: weblate_web/templates/base.html:43
+#: weblate_web/templates/base.html:49
 msgid "Weblate logo"
 msgstr "Λογότυπο του Weblate"
 
-#: weblate_web/templates/base.html:51
+#: weblate_web/templates/base.html:57
 msgid "Try"
 msgstr "Δοκιμή"
 
-#: weblate_web/templates/base.html:52
+#: weblate_web/templates/base.html:58
 msgid "Features"
 msgstr "Χαρακτηριστικά"
 
-#: weblate_web/templates/base.html:53 weblate_web/templates/download.html:18
+#: weblate_web/templates/base.html:59 weblate_web/templates/download.html:18
+#: weblate_web/templates/index.html:150
 msgid "Download"
 msgstr "Λήψη"
 
-#: weblate_web/templates/base.html:54
+#: weblate_web/templates/base.html:60
 msgid "Pricing"
 msgstr ""
 
-#: weblate_web/templates/base.html:55
+#: weblate_web/templates/base.html:61
 msgid "Develop"
 msgstr "Δημιουργία"
 
-#: weblate_web/templates/base.html:56 weblate_web/templates/donate.html:61
+#: weblate_web/templates/base.html:62 weblate_web/templates/donate.html:110
+#: weblate_web/templates/donate.html:122
 msgid "Donate"
 msgstr "Δωρεά"
 
-#: weblate_web/templates/base.html:57
+#: weblate_web/templates/base.html:63
 msgid "Support"
 msgstr "Υποστήριξη"
 
-#: weblate_web/templates/base.html:58
+#: weblate_web/templates/base.html:64
 msgid "Tour"
 msgstr "Περιοδεία"
 
-#: weblate_web/templates/base.html:59
+#: weblate_web/templates/base.html:65
 msgid "Thanks"
 msgstr "Ευχαριστίες"
 
-#: weblate_web/templates/base.html:60
+#: weblate_web/templates/base.html:66
 msgid "Blog"
 msgstr "Ιστολόγιο"
 
-#: weblate_web/templates/base.html:61
+#: weblate_web/templates/base.html:67
 msgid "Docs"
 msgstr "Έγγραφα"
 
-#: weblate_web/templates/base.html:62
+#: weblate_web/templates/base.html:68
 msgid "Hosting"
 msgstr "Φιλοξενία"
 
-#: weblate_web/templates/base.html:74
+#: weblate_web/templates/base.html:80
 msgid "Help with translations!"
 msgstr "Βοήθεια με μεταφράσεις!"
 
-#: weblate_web/templates/base.html:118 weblate_web/templates/terms.html:4
+#: weblate_web/templates/base.html:124 weblate_web/templates/terms.html:4
 msgid "Terms of Service and Privacy Policy"
 msgstr ""
 
@@ -280,7 +300,7 @@ msgid "View sources"
 msgstr "Προβολή προελεύσεων"
 
 #: weblate_web/templates/contribute.html:11
-#: weblate_web/templates/contribute.html:38
+#: weblate_web/templates/contribute.html:34
 msgid "Translate"
 msgstr "Μετάφραση"
 
@@ -295,7 +315,7 @@ msgstr ""
 "Συνεισφορά</a> της τεκμηρίωσης."
 
 #: weblate_web/templates/contribute.html:20
-#: weblate_web/templates/download.html:70
+#: weblate_web/templates/download.html:63
 msgid "Code"
 msgstr "Κώδικας"
 
@@ -309,13 +329,18 @@ msgstr ""
 "δημιουργήσετε διακλάδωση ή απλά:"
 
 #: weblate_web/templates/contribute.html:31
-#, python-format
-msgid "This website is stored on <a href=\"%(url)s\">GitHub</a> as well:"
+#, fuzzy, python-format
+#| msgid ""
+#| "You can also ask related questions on <a href=\"%(url)s\">Stack Overflow</"
+#| "a>."
+msgid ""
+"You can find more repositories related to Weblate on <a href=\"%(url)s"
+"\">GitHub</a>"
 msgstr ""
-"Αυτή η ιστοσελίδα είναι αποθυκευμένη στο <a href=\"%(url)s\">GitHub</a> "
-"καθώς και στο:"
+"Μπορείτε, επίσης, να ρωτήσετε σχετικές ερωτήσεις για την <a href=\"%(url)s"
+"\">Υπερχείλιση Στοίβας</a>."
 
-#: weblate_web/templates/contribute.html:41
+#: weblate_web/templates/contribute.html:37
 msgid ""
 "You can translate Weblate at <a href=\"https://hosted.weblate.org/engage/"
 "weblate/\">hosted.weblate.org</a>."
@@ -323,50 +348,111 @@ msgstr ""
 "Μπορείτε να μεταφράσετε το Weblate στο <a href=\"https://hosted.weblate.org/"
 "engage/weblate/\">hosted.weblate.org</a>."
 
-#: weblate_web/templates/contribute.html:46
+#: weblate_web/templates/contribute.html:42
 msgid "Translation status"
 msgstr "Kaτάσταση μετάφρασης"
 
 #: weblate_web/templates/donate.html:3 weblate_web/templates/donate.html:4
+#: weblate_web/templates/donate/edit.html:4
+#: weblate_web/templates/donate/edit.html:5
+#: weblate_web/templates/donate/form.html:4
+#: weblate_web/templates/donate/form.html:5
+#: weblate_web/templates/thanks.html:10
 msgid "Donate to Weblate"
 msgstr "Δωρεά στο Weblate"
 
-#: weblate_web/templates/donate.html:6
+#: weblate_web/templates/donate.html:6 weblate_web/templates/donate/edit.html:7
+#: weblate_web/templates/donate/form.html:7
 #, fuzzy
 #| msgid "Weblate is free, but welcomes donations."
 msgid "Weblate is provided free of charge, and welcomes donations."
 msgstr "Το Weblate είναι δωρεάν οι δωρεές είναι καλοδεχούμενες."
 
-#: weblate_web/templates/donate.html:12 weblate_web/templates/donate.html:43
-msgid "Donate using Liberapay"
-msgstr "Δωρεάν με χρήση Liberapay"
-
-#: weblate_web/templates/donate.html:18
-msgid "Use our hosting"
-msgstr "Χρήση της φιλοξενίας σας"
-
-#: weblate_web/templates/donate.html:22
-#, python-format
-msgid ""
-"Host your commercial translations on <a href=\"%(hosting_url)s\">Hosted "
-"Weblate</a> and you will be supporting Weblate development automatically."
+#: weblate_web/templates/donate.html:11 weblate_web/templates/donate.html:134
+msgid "Purchase hosting package"
 msgstr ""
-"Φιλοξενήστε τις εμπορικές μεταφράσεις σας στο <a href=\"%(hosting_url)s"
-"\">Φιλόξενο Weblate</a> και θα υποστηρίζεται την ανάπτυξη του Weblate "
-"αυτόματα."
 
-#: weblate_web/templates/donate.html:25
-msgid "Regular donations"
+#: weblate_web/templates/donate.html:12 weblate_web/templates/donate.html:135
+#: weblate_web/templates/download.html:13 weblate_web/templates/hosting.html:12
+#: weblate_web/templates/hosting.html:234
+#, fuzzy
+#| msgid "Basic support for self hosted Weblate"
+msgid "Get support for Weblate"
+msgstr "Βασική υποστήριξη αυτοφιλοξενούμενου Weblate"
+
+#: weblate_web/templates/donate.html:19
+msgid "Sign in to manage your donations"
+msgstr ""
+
+#: weblate_web/templates/donate.html:21
+msgid "Sign out"
+msgstr ""
+
+#: weblate_web/templates/donate.html:24
+#, fuzzy
+#| msgid "Regular donations"
+msgid "Your donations"
 msgstr "Τακτικές δωρεές"
 
-#: weblate_web/templates/donate.html:28
+#: weblate_web/templates/donate.html:29
+#, fuzzy
+#| msgid "Collaboration sites"
+msgid "Creation date"
+msgstr "Συνεργαζόμενες ιστοσελίδες"
+
+#: weblate_web/templates/donate.html:30
+msgid "Reward"
+msgstr ""
+
+#: weblate_web/templates/donate.html:31
+msgid "Expiry date"
+msgstr ""
+
+#: weblate_web/templates/donate.html:32
+msgid "Renewal"
+msgstr ""
+
+#: weblate_web/templates/donate.html:33
+#, fuzzy
+#| msgid "Payment link"
+msgid "Payments"
+msgstr "Σύνδεσμος πληρωμής"
+
+#: weblate_web/templates/donate.html:43
+#: weblate_web/templates/payment/payment.html:37
+msgid "Edit"
+msgstr "Επεξεργασία"
+
+#: weblate_web/templates/donate.html:45
+msgid "No reward"
+msgstr ""
+
+#: weblate_web/templates/donate.html:53
+msgid "Expired"
+msgstr ""
+
+#: weblate_web/templates/donate.html:57
+msgid "Disable renewal"
+msgstr ""
+
+#: weblate_web/templates/donate.html:60
+msgid "Does not renew"
+msgstr ""
+
+#: weblate_web/templates/donate.html:92
+#, fuzzy
+#| msgid "Documentation"
+msgid "Donations"
+msgstr "Τεκμηρίωση"
+
+#: weblate_web/templates/donate.html:95
 #, fuzzy
 #| msgid ""
 #| "Regular donations allow sustainability of Weblate development and help to "
 #| "fund free hosting for free software. You don't have to spend big money, "
 #| "every penny counts."
 msgid ""
-"Regular donations allow sustainability of Weblate development and help to "
+"Recurring donations allow sustainability of Weblate development and help to "
 "fund free hosting for libre software. You don't have to spend big money, "
 "every penny counts."
 msgstr ""
@@ -374,67 +460,53 @@ msgstr ""
 "βοηθούν τη χρηματοδότηση της δωρεάν φιλοξενίας για δωρεάν λογισμικό. Δεν "
 "χρειάζονται πολλά χρήματα, κάθε συνεισφορά μετράει."
 
-#: weblate_web/templates/donate.html:33 weblate_web/templates/donate.html:54
-#: weblate_web/templates/thanks.html:12
-msgid "Fund on Bountysource"
-msgstr "Ταμείο στο Bountysource"
-
-#: weblate_web/templates/donate.html:37
-msgid ""
-"You can send a monthly donation using a credit card. You can also get "
-"rewards for higher donations, for example a logo placement on our website."
-msgstr ""
-"Μπορείτε να στέλνετε μια μηνιαία δωρεά με πιστωτική κάρτα. Μπορείτε, επίσης, "
-"να λάβετε βραβεία για υψηλότερες δωρεές, για παράδειγμα μια τοποθέτηση "
-"λογοτύπου στην ιστοσελίδα μας."
-
-#: weblate_web/templates/donate.html:47
-msgid ""
-"Liberapay is a recurrent donations platform where you send weekly amount to "
-"fund projects you use. You can use credit card, bank transfer or direct "
-"debit to top up the account."
-msgstr ""
-
-#: weblate_web/templates/donate.html:50
-msgid "Fund features"
-msgstr "Χαρακτηριστικά χρηματοδότησης"
-
-#: weblate_web/templates/donate.html:58
+#: weblate_web/templates/donate.html:103
 #, fuzzy
-#| msgid ""
-#| "Bountysource allows you to fund individual features which are reported on "
-#| "our issue tracker."
+#| msgid "Regular donations"
+msgid "Recurring donation"
+msgstr "Τακτικές δωρεές"
+
+#: weblate_web/templates/donate.html:106
 msgid ""
-"Bountysource allows you to fund individual features reported on our issue "
-"tracker."
+"Repeated appreciation of the Weblate project helps in keeping the project "
+"sustainable in the long term."
 msgstr ""
-"Το Bountysource σας επιτρέπει να χρηματοδοτήσετε μεμονομένα χαρακτηριστικά, "
-"τα οποία αναφέρονται στον ιχνηλάτη θεμάτων."
 
-#: weblate_web/templates/donate.html:64
+#: weblate_web/templates/donate.html:107
 msgid ""
-"If you like Weblate you can support its further development by donating."
+"Please consider this if you are using Weblate on premise without support "
+"contract."
 msgstr ""
-"Αν σας αρέσει το Weblate μπορείτε να υποστηρίξετε την περαιτέρω ανάπτυξη "
-"κάνοντας μια δωρεά."
 
-#: weblate_web/templates/donate.html:72
-msgid "Donate using PayPal"
-msgstr "Δωρεά με χρήση PayPal"
+#: weblate_web/templates/donate.html:116
+#, fuzzy
+#| msgid "View documentation"
+msgid "One time donation"
+msgstr "Προβολή τεκμηρίωσης"
 
-#: weblate_web/templates/donate.html:77
+#: weblate_web/templates/donate.html:119
 msgid ""
-"PayPal allows you to send money from credit card, PayPal balance or a bank "
-"account."
+"One time donations are great for appreciating our work on single issue or "
+"support."
 msgstr ""
-"Το PayPal σας επιτρέπει να στείλετε χρήματα από πιστωτική κάρτα, από PayPal "
-"balance ή τραπεζικό λογαριασμό."
 
-#: weblate_web/templates/donate.html:80
+#: weblate_web/templates/donate.html:128
+#, fuzzy
+#| msgid "Use our hosting"
+msgid "Use our services"
+msgstr "Χρήση της φιλοξενίας σας"
+
+#: weblate_web/templates/donate.html:131
+msgid ""
+"Commercial services like hosting or support for on premise installation help "
+"funding Weblate development."
+msgstr ""
+
+#: weblate_web/templates/donate.html:143
 msgid "Cryptocurrencies"
 msgstr "Κρυπτονομίσματα"
 
-#: weblate_web/templates/donate.html:83
+#: weblate_web/templates/donate.html:146
 #, python-format
 msgid ""
 "Thanks to <a href=\"%(url)s\">Trezor</a>, we will gladly accept donations in "
@@ -444,15 +516,68 @@ msgstr ""
 "σε διάφορα κρυπτονομίσματα. Μπορείτε να χρησιμοποιήσετε τις διευθύνσεις στον "
 "παρακάτω πίνακα."
 
-#: weblate_web/templates/donate.html:88
+#: weblate_web/templates/donate.html:151
 msgid "Currency"
 msgstr "Νόμισμα"
 
-#: weblate_web/templates/donate.html:88
+#: weblate_web/templates/donate.html:151
 #, fuzzy
 #| msgid "Payment address"
 msgid "Donation address"
 msgstr "Διεύθυνση πληρωμής"
+
+#: weblate_web/templates/donate/edit.html:12
+msgid "Please select choose wanted reward or enter custom donation amount."
+msgstr ""
+
+#: weblate_web/templates/donate/edit.html:20
+msgid "Edit your reward link"
+msgstr ""
+
+#: weblate_web/templates/donate/edit.html:26
+#: weblate_web/templates/payment/customer.html:21
+msgid "Save"
+msgstr "Αποθήκευση"
+
+#: weblate_web/templates/donate/form.html:13
+msgid "Please choose wanted reward or enter custom donation amount."
+msgstr ""
+
+#: weblate_web/templates/donate/form.html:33
+msgid "Select"
+msgstr ""
+
+#: weblate_web/templates/donate/form.html:41
+msgid ""
+"We might refuse to place your link, especially if the site contains adult or "
+"illegal content. Please consult us in advance if unsure."
+msgstr ""
+
+#: weblate_web/templates/donate/form.html:50
+msgid "Choose your own donation amount"
+msgstr ""
+
+#: weblate_web/templates/donate/form.html:56
+#, fuzzy
+#| msgid "Contribute"
+msgid "Continue"
+msgstr "Συνεισφορά"
+
+#: weblate_web/templates/donate/rewards.html:2
+msgid "Link placement on the weblate.org thanks page"
+msgstr ""
+
+#: weblate_web/templates/donate/rewards.html:3
+msgid "Link placement in the list of supporters"
+msgstr ""
+
+#: weblate_web/templates/donate/rewards.html:4
+msgid "Name placement in the list of supporters"
+msgstr ""
+
+#: weblate_web/templates/download-link.html:4
+msgid "PGP signature"
+msgstr ""
 
 #: weblate_web/templates/download.html:4 weblate_web/templates/download.html:5
 #: weblate_web/templates/hosting.html:235
@@ -463,29 +588,16 @@ msgstr "Λήψη του Weblate"
 msgid "Weblate comes with complete source code."
 msgstr "Το Weblate έρχεται με πλήρη πηγαίο κώδικα."
 
-#: weblate_web/templates/download.html:13 weblate_web/templates/hosting.html:12
-#: weblate_web/templates/hosting.html:234
-#, fuzzy
-#| msgid "Basic support for self hosted Weblate"
-msgid "Get support for Weblate"
-msgstr "Βασική υποστήριξη αυτοφιλοξενούμενου Weblate"
-
 #: weblate_web/templates/download.html:21
 msgid "You can download latest release here:"
 msgstr "Μπορείτε να κατεβάσετε την τελευταία έκδοση εδώ:"
 
 #: weblate_web/templates/download.html:30
-#: weblate_web/templates/download.html:46
-msgid "You can also install using packages for following Linux distributions:"
-msgstr ""
-"Μπορείτε να κάνετε εγκατάσταση με χρήση πακέτων από τις ακόλουθες διανομές "
-"Linux:"
-
-#: weblate_web/templates/download.html:36
+#: weblate_web/templates/download.html:73
 msgid "Weblate command line client"
 msgstr "Πελάτης γραμμής εντολών του Weblate"
 
-#: weblate_web/templates/download.html:39
+#: weblate_web/templates/download.html:33
 #, python-format
 msgid ""
 "You can control Weblate remotely using <a href=\"%(url)s\">wlc</a>, it can "
@@ -494,11 +606,17 @@ msgstr ""
 "Μπορείτε να ελέγχετε το Weblate από μακριά χρησιμοποιώντας το <a href="
 "\"%(url)s\">wic</a>. Μπορεί να εγκατασταθεί χρησιμοποιώντας το Python PIP:"
 
-#: weblate_web/templates/download.html:54
+#: weblate_web/templates/download.html:40
+msgid "You can also install using packages for following Linux distributions:"
+msgstr ""
+"Μπορείτε να κάνετε εγκατάσταση με χρήση πακέτων από τις ακόλουθες διανομές "
+"Linux:"
+
+#: weblate_web/templates/download.html:47
 msgid "Cloud or virtualization images"
 msgstr "Εικόνες σύννεφου ή εξομοίωσης"
 
-#: weblate_web/templates/download.html:56
+#: weblate_web/templates/download.html:49
 msgid ""
 "Weblate can be run in any cloud or virtualization environment. Following "
 "links will show you information about some of these:"
@@ -507,15 +625,15 @@ msgstr ""
 "εξομοίωσης. Οι ακόλουθοι σύνδεσμοι θα σας δώσουν πληροφορίες για ορισμένα "
 "από αυτά:"
 
-#: weblate_web/templates/download.html:59
+#: weblate_web/templates/download.html:52
 msgid "Running Weblate in a Docker container"
 msgstr "Εκτέλεση του Weblate σε έναν περιέκτη Docker"
 
-#: weblate_web/templates/download.html:60
+#: weblate_web/templates/download.html:53
 msgid "Running Weblate on OpenShift platform"
 msgstr "Εκτέλεση του Weblate σε μια πλατφόρμα OpenShift"
 
-#: weblate_web/templates/download.html:61
+#: weblate_web/templates/download.html:54
 msgid ""
 "BitNami Weblate stack providing native installation for most platforms as "
 "well as support for many public cloud providers"
@@ -523,7 +641,7 @@ msgstr ""
 "Η δέσμη BitNami Weblate που παρέχει γνήσια εγκατάσταση για τις περισσότερες "
 "πλατφόρμες καθώς και υποστήριξη για πολλούς δημόσιους παρόχους σύννεφου"
 
-#: weblate_web/templates/download.html:73
+#: weblate_web/templates/download.html:66
 msgid ""
 "Weblate is being developed on <a href=\"https://github.com/WeblateOrg/weblate"
 "\">GitHub</a>, you can fork it there or just:"
@@ -1054,7 +1172,8 @@ msgstr "Kaτάσταση μετάφρασης"
 msgid "Translation memory"
 msgstr "Ροή εργασιών μετάφρασης"
 
-#: weblate_web/templates/hosting.html:159
+#: weblate_web/templates/hosting.html:159 weblate_web/templates/index.html:120
+#: weblate_web/templates/index.html:134
 msgid "Priority email support"
 msgstr "Υποστήριξη ηλεκτρονικής αλληλογραφίας προτεραιότητας"
 
@@ -1090,7 +1209,7 @@ msgstr "Επικοινωνήστε μαζί μας"
 #: weblate_web/templates/hosting.html:184
 #: weblate_web/templates/hosting.html:187
 #: weblate_web/templates/hosting.html:190
-#: weblate_web/templates/hosting.html:193 weblate_web/templates/support.html:68
+#: weblate_web/templates/hosting.html:193
 #, python-format
 msgid "%(price)s EUR / month"
 msgstr "%(price)s Ευρώ / μήνα"
@@ -1110,7 +1229,7 @@ msgstr "Ετησίως με πάγια εντολή (εξοικονόμηση 20
 #: weblate_web/templates/hosting.html:202
 #: weblate_web/templates/hosting.html:205
 #: weblate_web/templates/hosting.html:208
-#: weblate_web/templates/hosting.html:211 weblate_web/templates/support.html:69
+#: weblate_web/templates/hosting.html:211 weblate_web/templates/support.html:68
 #, python-format
 msgid "%(price)s EUR / year"
 msgstr "%(price)s Ευρώ / έτος"
@@ -1213,6 +1332,56 @@ msgstr "Δείτε πως χρησιμοποιούν το Weblate και μπε�
 msgid "Browse hundreds of projects on Hosted Weblate"
 msgstr ""
 
+#: weblate_web/templates/index.html:114
+msgid "Hosted service"
+msgstr ""
+
+#: weblate_web/templates/index.html:118 weblate_web/templates/index.html:132
+#, python-format
+msgid "From %(amount)sEUR/month"
+msgstr ""
+
+#: weblate_web/templates/index.html:119
+msgid "Cloud service"
+msgstr ""
+
+#: weblate_web/templates/index.html:122 weblate_web/templates/index.html:136
+#, fuzzy
+#| msgid "View hosting plans"
+msgid "Choose hosting plan"
+msgstr "Προβολή σχεδίων φιλοξενίας"
+
+#: weblate_web/templates/index.html:128
+msgid "On premise"
+msgstr ""
+
+#: weblate_web/templates/index.html:133
+msgid "Your infrastructure"
+msgstr ""
+
+#: weblate_web/templates/index.html:142
+#, fuzzy
+#| msgctxt "Hosting plan"
+#| msgid "Self hosted"
+msgid "Self supported"
+msgstr "Αυτοφιλοξενούμενο"
+
+#: weblate_web/templates/index.html:146
+#, fuzzy
+#| msgid "Weblate features"
+msgid "Weblate is free to use"
+msgstr "Χαρακτηριστικά του Weblate"
+
+#: weblate_web/templates/index.html:147
+msgid "Maintained by you"
+msgstr ""
+
+#: weblate_web/templates/index.html:148
+#, fuzzy
+#| msgid "Phone support"
+msgid "Community support"
+msgstr "Υποστήριξη τηλεφώνου"
+
 #: weblate_web/templates/payment/customer.html:5
 #: weblate_web/templates/payment/payment.html:4
 #, fuzzy
@@ -1223,10 +1392,6 @@ msgstr "Στιγμιότυπο του Weblate"
 #: weblate_web/templates/payment/customer.html:15
 msgid "Your billing information"
 msgstr ""
-
-#: weblate_web/templates/payment/customer.html:21
-msgid "Save"
-msgstr "Αποθήκευση"
 
 #: weblate_web/templates/payment/payment.html:11
 #, fuzzy
@@ -1267,24 +1432,25 @@ msgid "Payment will be issued yearly till you cancel the subscription."
 msgstr ""
 
 #: weblate_web/templates/payment/payment.html:24
+msgid ""
+"Payment will be issued every six months till you cancel the subscription."
+msgstr ""
+
+#: weblate_web/templates/payment/payment.html:26
 msgid "Payment will be issued monthly till you cancel the subscription."
 msgstr ""
 
-#: weblate_web/templates/payment/payment.html:29
+#: weblate_web/templates/payment/payment.html:31
 msgid ""
 "Note: This is unavailable for some payment methods, you will have to "
 "manually complete the next payment in those cases."
 msgstr ""
 
-#: weblate_web/templates/payment/payment.html:32
+#: weblate_web/templates/payment/payment.html:35
 msgid "Billing information"
 msgstr ""
 
-#: weblate_web/templates/payment/payment.html:34
-msgid "Edit"
-msgstr "Επεξεργασία"
-
-#: weblate_web/templates/payment/payment.html:47
+#: weblate_web/templates/payment/payment.html:49
 msgid "Please choose payment method:"
 msgstr ""
 
@@ -1385,48 +1551,48 @@ msgstr "Εγκατάσταση στον Linux διακομιστή σας"
 msgid "Basic support for self hosted Weblate"
 msgstr "Βασική υποστήριξη αυτοφιλοξενούμενου Weblate"
 
-#: weblate_web/templates/support.html:74
+#: weblate_web/templates/support.html:73
 msgid "Your Weblate will be upgraded to the latest version on every release."
 msgstr "To Weblate θα αναβαθμίζεται στην τελευταία έκδοση με κάθε δημοσίευση."
 
-#: weblate_web/templates/support.html:75
+#: weblate_web/templates/support.html:74
 msgid "We will fix issues that occur in your environment."
 msgstr "Θα διορθώσουμε θέματα που έλαβαν χώρα στον περιβάλλον σας."
 
-#: weblate_web/templates/support.html:76
+#: weblate_web/templates/support.html:75
 msgid "You will receive priority email support."
 msgstr "Θα λάβετε υποστήριξη ηλεκτρονικής αλληλογραφίας προτεραιότητας."
 
-#: weblate_web/templates/support.html:81
+#: weblate_web/templates/support.html:80
 msgid "Consulting services or custom development"
 msgstr "Υπηρεσίες συμβουλευτικής ή προσαρμοσμένη ανάπτυξη"
 
-#: weblate_web/templates/support.html:82
+#: weblate_web/templates/support.html:81
 #, python-format
 msgid "%(price)s EUR / hour"
 msgstr "%(price)s Ευρώ"
 
-#: weblate_web/templates/support.html:87
+#: weblate_web/templates/support.html:86
 msgid "Custom features development"
 msgstr "Ανάπτυξη προσαρμοσμένων χαρακτηριστικών"
 
-#: weblate_web/templates/support.html:88
+#: weblate_web/templates/support.html:87
 msgid "Integrating Weblate into your workflow"
 msgstr "Ενσωμάτωση του Weblate στη ροή εργασιών σας"
 
-#: weblate_web/templates/support.html:89
+#: weblate_web/templates/support.html:88
 msgid "Suggestions on the internationalization or localization process"
 msgstr "Προτάσεις για τη διαδικασία διεθνοποίησης ή τοπικοποίησης"
 
-#: weblate_web/templates/support.html:97
+#: weblate_web/templates/support.html:96
 msgid "Ask us for details about self hosted Weblate"
 msgstr "Ρωτήστε μας για λεπτομέρειες σχετικά με το αυτοφιλοξενούμενο Weblate"
 
-#: weblate_web/templates/support.html:100
+#: weblate_web/templates/support.html:99
 msgid "Support for Hosted Weblate services"
 msgstr "Υποστήριξη για φιλοξενούμενες υπηρεσίες Weblate"
 
-#: weblate_web/templates/support.html:103
+#: weblate_web/templates/support.html:102
 #, python-format
 msgid ""
 "If you are using our hosting services, you can ask for support at "
@@ -1435,15 +1601,15 @@ msgstr ""
 "Αν χρησιμοποιείτε τις υπηρεσίας φιλοξενίας μας, μπορείτε να ζητήσετε "
 "υποστήριξη στο %(contact)s."
 
-#: weblate_web/templates/support.html:106
+#: weblate_web/templates/support.html:105
 msgid "Mailing lists"
 msgstr "Λίστες αλληλογραφίας"
 
-#: weblate_web/templates/support.html:108
+#: weblate_web/templates/support.html:107
 msgid "Users and developers mailing list"
 msgstr "Λίστα αλληλογραφίας για χρήστες και προγραμματιστές"
 
-#: weblate_web/templates/support.html:110
+#: weblate_web/templates/support.html:109
 msgid ""
 "You can use mailing lists for discussions with other Weblate users and "
 "developers."
@@ -1451,7 +1617,7 @@ msgstr ""
 "Μπορείτε να χρησιμοποιήσετε τις λίστες αλληλογραφίας για συζητήσεις με "
 "άλλους χρήστες και προγραμματιστές του Weblate."
 
-#: weblate_web/templates/support.html:111
+#: weblate_web/templates/support.html:110
 #, fuzzy
 msgid ""
 "You can post to it using <a href=\"mailto:weblate@lists.cihar.com"
@@ -1460,33 +1626,33 @@ msgstr ""
 "Μπορείτε να αναρτήσετε μηνύματα σε αυτή, χρησιμοποιόντας την διεύθυνση <a "
 "href=\"mailto:weblate@lists.cihar.com\">weblate@lists.cihar.com</a>."
 
-#: weblate_web/templates/support.html:112
-#: weblate_web/templates/support.html:128
+#: weblate_web/templates/support.html:111
+#: weblate_web/templates/support.html:127
 msgid "You can browse mailing list archives"
 msgstr "Μπιρείτε να πλοηγηθείτε στα αρχεία της λίστας αλληλογραφίας"
 
-#: weblate_web/templates/support.html:115
-#: weblate_web/templates/support.html:131
+#: weblate_web/templates/support.html:114
+#: weblate_web/templates/support.html:130
 msgid "Enter your email"
 msgstr "Εισάγετε το email σας"
 
-#: weblate_web/templates/support.html:117
-#: weblate_web/templates/support.html:133
+#: weblate_web/templates/support.html:116
+#: weblate_web/templates/support.html:132
 msgid "Subscribe"
 msgstr "Εγγραφείτε"
 
-#: weblate_web/templates/support.html:124
+#: weblate_web/templates/support.html:123
 msgid "Hosted Weblate Announcements mailing list"
 msgstr "Λίστα αλληλογραφίας Ανακοινώσεις Hosted Weblate"
 
-#: weblate_web/templates/support.html:126
+#: weblate_web/templates/support.html:125
 msgid ""
 "Low traffic mailing list with announcements about Hosted Weblate services."
 msgstr ""
 "Λίστα αλληλογραφίας μικρής κίνησης με ανακοινώσεις σχετικά με τις υπηρεσίες "
 "Hosted Weblate."
 
-#: weblate_web/templates/support.html:127
+#: weblate_web/templates/support.html:126
 #, fuzzy
 #| msgid "This list is moderated, only selected users can post announcements."
 msgid "This list is moderated, only chosen users can post announcements."
@@ -1494,11 +1660,11 @@ msgstr ""
 "Αυτή η λίστα είναι συντονιζόμενη, μόνο επιλεγμένοι χρήστες μπορούν να "
 "αναρτήσουν ανακοινώσεις."
 
-#: weblate_web/templates/support.html:140
+#: weblate_web/templates/support.html:139
 msgid "Stack Overflow"
 msgstr "Υπερχείλιση στοίβας"
 
-#: weblate_web/templates/support.html:142
+#: weblate_web/templates/support.html:141
 #, python-format
 msgid ""
 "You can also ask related questions on <a href=\"%(url)s\">Stack Overflow</a>."
@@ -1528,59 +1694,61 @@ msgstr "Ευχαριστούμε για το Weblate"
 msgid "Weblate is thankful for help from others."
 msgstr "Το Weblate είναι ευγνώμον για τη βοήθεια από άλλους."
 
-#: weblate_web/templates/thanks.html:20
+#: weblate_web/templates/thanks.html:16
 msgid "Technology"
 msgstr "Τεχνολογία"
 
-#: weblate_web/templates/thanks.html:22
+#: weblate_web/templates/thanks.html:18
 msgid "The development of Weblate is based on the following technologies:"
 msgstr "Η ανάπτυξη του Weblate βασίστηκε στις ακόλουθες τεχνολογίες:"
 
-#: weblate_web/templates/thanks.html:26
+#: weblate_web/templates/thanks.html:22
 msgid "GitHub provides hosting for our source code and issue tracker."
 msgstr ""
 "Το GitHub παρέχει φιλοξενία για τον πηγαίο μας κώδικα και τον ιχνηλάτη "
 "θεμάτων."
 
-#: weblate_web/templates/thanks.html:30
+#: weblate_web/templates/thanks.html:26
 msgid "Travis CI is our continuous integration platform."
 msgstr "Το Travis CI είναι η πλατφόρμα συνεχούς ενσωμάτωσης."
 
-#: weblate_web/templates/thanks.html:34
+#: weblate_web/templates/thanks.html:30
 msgid "Codecov helps us to monitor code coverage of our test suite."
 msgstr ""
 "Το Codecov μας βοηθάει να εποπτεύουμε την κάλυψη του κώδικα στη σουίτα "
 "ελέγχου μας."
 
-#: weblate_web/templates/thanks.html:38
+#: weblate_web/templates/thanks.html:34
 msgid "Sauce Labs is running our Selenium tests in real browsers."
 msgstr ""
 "Τα εργαστήρια Σάλτσα εκτελούν τις δοκιμές Σεληνίου μας σε πραγματικούς "
 "φυλλομετρητές."
 
-#: weblate_web/templates/thanks.html:42
+#: weblate_web/templates/thanks.html:38
 msgid "Our translations are being done on Hosted Weblate."
 msgstr "Οι μεταφράσεις μας γίνονται στο Hosted Weblate."
 
-#: weblate_web/templates/thanks.html:46
+#: weblate_web/templates/thanks.html:42
 msgid "Payments are processed by The Pay service."
 msgstr ""
 
-#: weblate_web/templates/thanks.html:50
+#: weblate_web/templates/thanks.html:46
 msgid "Supporters"
 msgstr "Υποστηρικτές"
 
-#: weblate_web/templates/thanks.html:52
+#: weblate_web/templates/thanks.html:48
 msgid ""
 "Free hosting for free software projects would be impossible without our "
 "sponsors."
 msgstr ""
 "Δωρεάν φιλοξενία για δωρεάν έργα λογισμικού θα ήταν αδύνατη χωρίς χορηγούς."
 
-#: weblate_web/templates/thanks.html:54
-msgid ""
-"Support our project on Bountysource Salt and get exclusive logo placement on "
-"this page."
+#: weblate_web/templates/thanks.html:50
+#, fuzzy
+#| msgid ""
+#| "Support our project on Bountysource Salt and get exclusive logo placement "
+#| "on this page."
+msgid "Support our project and get link placement on this page."
 msgstr ""
 "Υποστηρίξτε το έργο μας στο Bountysource Salt και λάβετε αποκλειστική θέση "
 "λογοτύπου σε αυτή τη σελίδα."
@@ -1650,47 +1818,122 @@ msgstr ""
 "αντίστροφης χρέωσης, τα τιμολόγια για την Δημοκρατία της Τσεχίας θα "
 "περιλαμβάνουν πρόσθετο ΦΠΑ."
 
-#: weblate_web/templatetags/downloads.py:40
+#: weblate_web/templatetags/downloads.py:39
 #, python-format
 msgid "%(size)d byte"
 msgid_plural "%(size)d bytes"
 msgstr[0] "%(size)d byte"
 msgstr[1] "%(size)d bytes"
 
-#: weblate_web/templatetags/downloads.py:45
+#: weblate_web/templatetags/downloads.py:44
 #, python-format
 msgid "%.1f KiB"
 msgstr "%.1f KB"
 
-#: weblate_web/templatetags/downloads.py:47
+#: weblate_web/templatetags/downloads.py:46
 #, python-format
 msgid "%.1f MiB"
 msgstr "%.1f MB"
 
-#: weblate_web/templatetags/downloads.py:48
+#: weblate_web/templatetags/downloads.py:47
 #, python-format
 msgid "%.1f GiB"
 msgstr "%.1f GB"
 
-#: weblate_web/templatetags/downloads.py:55
+#: weblate_web/templatetags/downloads.py:54
 msgid "Sources tarball, bzip2 compressed"
 msgstr "Προελεύσεις tarball, συμπιεσμένο bzip2"
 
-#: weblate_web/templatetags/downloads.py:57
+#: weblate_web/templatetags/downloads.py:56
 msgid "Sources tarball, gzip compressed"
 msgstr "Προελεύσεις tarball, συμπιεσμένο gzip"
 
-#: weblate_web/templatetags/downloads.py:59
+#: weblate_web/templatetags/downloads.py:58
 msgid "Sources tarball, xz compressed"
 msgstr "Προελεύσεις tarball, συμπιεσμένο xz"
 
-#: weblate_web/templatetags/downloads.py:61
+#: weblate_web/templatetags/downloads.py:60
 msgid "Sources, zip compressed"
 msgstr "Προελεύσεις, συμπιεσμένο zip"
 
-#: weblate_web/views.py:97
+#: weblate_web/views.py:103
 msgid "Please provide your billing information to complete the payment."
 msgstr ""
+
+#: weblate_web/views.py:251
+msgid "Payment not yet processed, please retry."
+msgstr ""
+
+#: weblate_web/views.py:256
+msgid "The payment was rejected: {}"
+msgstr ""
+
+#: weblate_web/views.py:257
+msgid "Unknown reason"
+msgstr ""
+
+#: weblate_web/views.py:261
+#, fuzzy
+#| msgid "Thank you for ordering hosting!"
+msgid "Thank you for your donation."
+msgstr "Ευχαριστούμε που παραγγειλατε φιλοξενία!"
+
+#~ msgid "This website is stored on <a href=\"%(url)s\">GitHub</a> as well:"
+#~ msgstr ""
+#~ "Αυτή η ιστοσελίδα είναι αποθυκευμένη στο <a href=\"%(url)s\">GitHub</a> "
+#~ "καθώς και στο:"
+
+#~ msgid "Donate using Liberapay"
+#~ msgstr "Δωρεάν με χρήση Liberapay"
+
+#~ msgid ""
+#~ "Host your commercial translations on <a href=\"%(hosting_url)s\">Hosted "
+#~ "Weblate</a> and you will be supporting Weblate development automatically."
+#~ msgstr ""
+#~ "Φιλοξενήστε τις εμπορικές μεταφράσεις σας στο <a href=\"%(hosting_url)s"
+#~ "\">Φιλόξενο Weblate</a> και θα υποστηρίζεται την ανάπτυξη του Weblate "
+#~ "αυτόματα."
+
+#~ msgid "Fund on Bountysource"
+#~ msgstr "Ταμείο στο Bountysource"
+
+#~ msgid ""
+#~ "You can send a monthly donation using a credit card. You can also get "
+#~ "rewards for higher donations, for example a logo placement on our website."
+#~ msgstr ""
+#~ "Μπορείτε να στέλνετε μια μηνιαία δωρεά με πιστωτική κάρτα. Μπορείτε, "
+#~ "επίσης, να λάβετε βραβεία για υψηλότερες δωρεές, για παράδειγμα μια "
+#~ "τοποθέτηση λογοτύπου στην ιστοσελίδα μας."
+
+#~ msgid "Fund features"
+#~ msgstr "Χαρακτηριστικά χρηματοδότησης"
+
+#, fuzzy
+#~| msgid ""
+#~| "Bountysource allows you to fund individual features which are reported "
+#~| "on our issue tracker."
+#~ msgid ""
+#~ "Bountysource allows you to fund individual features reported on our issue "
+#~ "tracker."
+#~ msgstr ""
+#~ "Το Bountysource σας επιτρέπει να χρηματοδοτήσετε μεμονομένα "
+#~ "χαρακτηριστικά, τα οποία αναφέρονται στον ιχνηλάτη θεμάτων."
+
+#~ msgid ""
+#~ "If you like Weblate you can support its further development by donating."
+#~ msgstr ""
+#~ "Αν σας αρέσει το Weblate μπορείτε να υποστηρίξετε την περαιτέρω ανάπτυξη "
+#~ "κάνοντας μια δωρεά."
+
+#~ msgid "Donate using PayPal"
+#~ msgstr "Δωρεά με χρήση PayPal"
+
+#~ msgid ""
+#~ "PayPal allows you to send money from credit card, PayPal balance or a "
+#~ "bank account."
+#~ msgstr ""
+#~ "Το PayPal σας επιτρέπει να στείλετε χρήματα από πιστωτική κάρτα, από "
+#~ "PayPal balance ή τραπεζικό λογαριασμό."
 
 #~ msgid "Monthly by PayPal"
 #~ msgstr "Μηνιαίως από το PayPal"
@@ -1730,9 +1973,6 @@ msgstr ""
 #~ "Το Weblate είναι <a href=\"%(github_url)s\">δωρεάν λογισμικό</a> και <a "
 #~ "href=\"%(donate_url)s\">δωρεές</a> είναι καλοδεχούμενες."
 
-#~ msgid "View hosting plans"
-#~ msgstr "Προβολή σχεδίων φιλοξενίας"
-
 #~ msgid "Consulting"
 #~ msgstr "Συμβουλευτική"
 
@@ -1764,9 +2004,6 @@ msgstr ""
 
 #~ msgid "Translation processing"
 #~ msgstr "Εξέλιξη μετάφρασης"
-
-#~ msgid "Phone support"
-#~ msgstr "Υποστήριξη τηλεφώνου"
 
 #~ msgid "Minimal support for self hosted Weblate"
 #~ msgstr "Ελάχιστη υποστήριξη για αυτοφιλοξενούμενο Weblate"
@@ -2042,9 +2279,6 @@ msgstr ""
 #~ "Τακτικές δωρεές, που θα υποστηρίζουν το Weblate και τη δωρεάν φιλοξενία "
 #~ "του μακροπρόσθεσμα, μπορούν να γίνουν στο <a href=\"https://www.gittip."
 #~ "com/nijel/\">Liberapay</a>."
-
-#~ msgid "Contribute"
-#~ msgstr "Συνεισφορά"
 
 #~ msgid "0 bytes"
 #~ msgstr "0 bytes"
