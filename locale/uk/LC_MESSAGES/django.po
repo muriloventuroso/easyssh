@@ -2,14 +2,14 @@
 # Copyright (C) 2013 THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Automatically generated, 2013.
-# Андрій Бандура <andriykopanytsia@gmail.com>, 2018.
+# Андрій Бандура <andriykopanytsia@gmail.com>, 2018, 2019.
 # Taras <oster.ok@gmail.com>, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2019-01-04 16:32+0100\n"
-"PO-Revision-Date: 2018-11-18 07:14+0000\n"
+"PO-Revision-Date: 2019-01-05 10:11+0000\n"
 "Last-Translator: Андрій Бандура <andriykopanytsia@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/weblate/"
 "website/uk/>\n"
@@ -17,9 +17,9 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.3-dev\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 3.4-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -127,22 +127,20 @@ msgid "User management"
 msgstr "Керування користувачами"
 
 #: weblate_web/forms.py:47 weblate_web/templates/donate/form.html:25
-#, fuzzy
-#| msgid "Donation address"
 msgid "Donation recurrence"
-msgstr "Адреса пожертвування"
+msgstr "Частота пожертвування"
 
 #: weblate_web/forms.py:53 weblate_web/templates/donate/form.html:26
 msgid "Amount in EUR"
-msgstr ""
+msgstr "Сума в євро"
 
 #: weblate_web/models.py:76
 msgid "Link text"
-msgstr ""
+msgstr "Текст посилання"
 
 #: weblate_web/models.py:80
 msgid "Link URL"
-msgstr ""
+msgstr "Посилання"
 
 #: weblate_web/templates/404.html:4
 msgid "Page not found"
@@ -331,15 +329,13 @@ msgstr ""
 "відгалузитися:"
 
 #: weblate_web/templates/contribute.html:31
-#, fuzzy, python-format
-#| msgid ""
-#| "You can also ask related questions on <a href=\"%(url)s\">Stack Overflow</"
-#| "a>."
+#, python-format
 msgid ""
 "You can find more repositories related to Weblate on <a href=\"%(url)s"
 "\">GitHub</a>"
 msgstr ""
-"Додаткові питання по посиланню <a href=\"%(url)s\">Переповнення стеку</a>."
+"Ви можете знайти більше сховищ, пов'язаних з Weblate на <a href=\"%(url)s\""
+">GitHub</a>"
 
 #: weblate_web/templates/contribute.html:37
 msgid ""
@@ -369,7 +365,7 @@ msgstr "Weblate є безкоштовним, але ми вітаємо поже
 
 #: weblate_web/templates/donate.html:11 weblate_web/templates/donate.html:134
 msgid "Purchase hosting package"
-msgstr ""
+msgstr "Купити пакет хостингу"
 
 #: weblate_web/templates/donate.html:12 weblate_web/templates/donate.html:135
 #: weblate_web/templates/download.html:13 weblate_web/templates/hosting.html:12
@@ -379,23 +375,19 @@ msgstr "Отримати підтримку для Weblate"
 
 #: weblate_web/templates/donate.html:19
 msgid "Sign in to manage your donations"
-msgstr ""
+msgstr "Увійти для управління пожертвами"
 
 #: weblate_web/templates/donate.html:21
 msgid "Sign out"
-msgstr ""
+msgstr "Вийти"
 
 #: weblate_web/templates/donate.html:24
-#, fuzzy
-#| msgid "Regular donations"
 msgid "Your donations"
-msgstr "Регулярні пожертви"
+msgstr "Ваші пожертви"
 
 #: weblate_web/templates/donate.html:29
-#, fuzzy
-#| msgid "Collaboration sites"
 msgid "Creation date"
-msgstr "Сайти для сумісної роботи"
+msgstr "Дата створення"
 
 #: weblate_web/templates/donate.html:30
 msgid "Reward"
@@ -410,10 +402,8 @@ msgid "Renewal"
 msgstr ""
 
 #: weblate_web/templates/donate.html:33
-#, fuzzy
-#| msgid "Payment summary"
 msgid "Payments"
-msgstr "Підсумок платежу"
+msgstr "Платежі"
 
 #: weblate_web/templates/donate.html:43
 #: weblate_web/templates/payment/payment.html:37
