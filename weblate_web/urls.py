@@ -21,6 +21,7 @@
 from django.conf.urls import url, include
 from django.conf.urls.i18n import i18n_patterns
 from django.contrib import admin
+from django.contrib.auth.views import LogoutView
 from django.views.generic import TemplateView, RedirectView
 from django.conf import settings
 from django.contrib.sitemaps import Sitemap
@@ -238,6 +239,7 @@ urlpatterns = i18n_patterns(
         fetch_vat
     ),
     url(r'^sso-login/', include(SSO_CLIENT.get_urls())),
+    url(r'^logout/$', LogoutView.as_view(next_page='/'), name='logout'),
     # Admin
     url(r'^admin/', admin.site.urls),
 

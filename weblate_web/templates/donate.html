@@ -16,8 +16,9 @@
 {% block content %}
 
 {% if not user.is_authenticated %}
-<a class="btn btn-info float-right" href="{% url 'simple-sso-login' %}?next={% url 'donate' %}"><i class="fas fa-sign-in-alt"></i> {% trans "Log in to manage your donations" %}</a>
+<a class="btn btn-info float-right" href="{% url 'simple-sso-login' %}?next={% url 'donate' %}"><i class="fas fa-sign-in-alt"></i> {% trans "Sign in to manage your donations" %}</a>
 {% else %}
+<a class="btn btn-info float-right" href="{% url 'logout' %}?next={% url 'donate' %}"><i class="fas fa-sign-out-alt"></i> {% trans "Sign out" %}</a>
 {% with donations=user.donation_set.all %}
 {% if donations %}
 <h2>{% trans "Your donations" %}</h2>
