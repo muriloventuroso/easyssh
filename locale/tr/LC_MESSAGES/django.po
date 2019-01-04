@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2019-01-04 16:32+0100\n"
-"PO-Revision-Date: 2019-01-04 08:12+0000\n"
+"PO-Revision-Date: 2019-01-05 10:11+0000\n"
 "Last-Translator: Mesut Akcan <makcan@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/weblate/website/"
 "tr/>\n"
@@ -123,22 +123,20 @@ msgid "User management"
 msgstr "Kullanıcı yönetimi"
 
 #: weblate_web/forms.py:47 weblate_web/templates/donate/form.html:25
-#, fuzzy
-#| msgid "Donation address"
 msgid "Donation recurrence"
-msgstr "Bağış adresi"
+msgstr "Bağış tekrarı"
 
 #: weblate_web/forms.py:53 weblate_web/templates/donate/form.html:26
 msgid "Amount in EUR"
-msgstr ""
+msgstr "EUR cinsinden miktar"
 
 #: weblate_web/models.py:76
 msgid "Link text"
-msgstr ""
+msgstr "Bağlantı metni"
 
 #: weblate_web/models.py:80
 msgid "Link URL"
-msgstr ""
+msgstr "URL Link"
 
 #: weblate_web/templates/404.html:4
 msgid "Page not found"
@@ -324,16 +322,13 @@ msgstr ""
 "atabilirsiniz ya da yalnızca:"
 
 #: weblate_web/templates/contribute.html:31
-#, fuzzy, python-format
-#| msgid ""
-#| "You can also ask related questions on <a href=\"%(url)s\">Stack Overflow</"
-#| "a>."
+#, python-format
 msgid ""
 "You can find more repositories related to Weblate on <a href=\"%(url)s"
 "\">GitHub</a>"
 msgstr ""
-"Ayrıca ilgili soruları <a href=\"%(url)s\">Stack Overflow Sitesinde</a> "
-"sorabilirsiniz."
+"Weblate ile ilgili daha fazla depoyu <a href=\"%(url)s\">GitHub</a> "
+"adresinde bulabilirsiniz"
 
 #: weblate_web/templates/contribute.html:37
 msgid ""
@@ -363,7 +358,7 @@ msgstr "Weblate ücretsiz olarak sağlanır ve bağışları kabul eder."
 
 #: weblate_web/templates/donate.html:11 weblate_web/templates/donate.html:134
 msgid "Purchase hosting package"
-msgstr ""
+msgstr "Barındırma paketi satın al"
 
 #: weblate_web/templates/donate.html:12 weblate_web/templates/donate.html:135
 #: weblate_web/templates/download.html:13 weblate_web/templates/hosting.html:12
@@ -373,41 +368,35 @@ msgstr "Weblate için destek alın"
 
 #: weblate_web/templates/donate.html:19
 msgid "Sign in to manage your donations"
-msgstr ""
+msgstr "Bağışlarınızı yönetmek için oturum açın"
 
 #: weblate_web/templates/donate.html:21
 msgid "Sign out"
-msgstr ""
+msgstr "Oturumu kapat"
 
 #: weblate_web/templates/donate.html:24
-#, fuzzy
-#| msgid "Regular donations"
 msgid "Your donations"
-msgstr "Düzenli bağışlar"
+msgstr "Bağışlarınız"
 
 #: weblate_web/templates/donate.html:29
-#, fuzzy
-#| msgid "Collaboration sites"
 msgid "Creation date"
-msgstr "İşbirliği siteleri"
+msgstr "Oluşturulma tarihi"
 
 #: weblate_web/templates/donate.html:30
 msgid "Reward"
-msgstr ""
+msgstr "Ödül"
 
 #: weblate_web/templates/donate.html:31
 msgid "Expiry date"
-msgstr ""
+msgstr "Son kullanma tarihi"
 
 #: weblate_web/templates/donate.html:32
 msgid "Renewal"
-msgstr ""
+msgstr "Yenileme"
 
 #: weblate_web/templates/donate.html:33
-#, fuzzy
-#| msgid "Payment summary"
 msgid "Payments"
-msgstr "Ödeme özeti"
+msgstr "Ödemeler"
 
 #: weblate_web/templates/donate.html:43
 #: weblate_web/templates/payment/payment.html:37
@@ -416,82 +405,77 @@ msgstr "Düzenle"
 
 #: weblate_web/templates/donate.html:45
 msgid "No reward"
-msgstr ""
+msgstr "Ödül yok"
 
 #: weblate_web/templates/donate.html:53
 msgid "Expired"
-msgstr ""
+msgstr "Süresi dolmuş"
 
 #: weblate_web/templates/donate.html:57
 msgid "Disable renewal"
-msgstr ""
+msgstr "Yenilemeyi devre dışı bırak"
 
 #: weblate_web/templates/donate.html:60
 msgid "Does not renew"
-msgstr ""
+msgstr "Yenilenemez"
 
 #: weblate_web/templates/donate.html:92
-#, fuzzy
-#| msgid "Documentation"
 msgid "Donations"
-msgstr "Belgeler"
+msgstr "Bağışlar"
 
 #: weblate_web/templates/donate.html:95
-#, fuzzy
-#| msgid ""
-#| "Regular donations allow sustainability of Weblate development and help to "
-#| "fund free hosting for libre software. You don't have to spend big money, "
-#| "every penny counts."
 msgid ""
 "Recurring donations allow sustainability of Weblate development and help to "
 "fund free hosting for libre software. You don't have to spend big money, "
 "every penny counts."
 msgstr ""
-"Düzenli bağışlar Weblate'i geliştirmenin devamını sağlar ve ücretsiz "
-"yazılımlar için bedava hosting hizmetine yardımcı olur. Çok para vermenize "
-"gerek yok, her kuruş kabul edilir."
+"Düzenli ödenen bağışlar Weblate geliştirmelerinin devamlılığını sağlar ve "
+"özgür yazılım için ücretsiz barındırma fonuna yardım eder. Büyük para "
+"harcamak zorunda değilsin, her kuruş kabul edilir."
 
 #: weblate_web/templates/donate.html:103
-#, fuzzy
-#| msgid "Regular donations"
 msgid "Recurring donation"
-msgstr "Düzenli bağışlar"
+msgstr "Düzenli ödenen bağışlar"
 
 #: weblate_web/templates/donate.html:106
 msgid ""
 "Repeated appreciation of the Weblate project helps in keeping the project "
 "sustainable in the long term."
 msgstr ""
+"Weblate projesinin tekrar tekrar takdir edilmesi, projenin uzun vadede "
+"devamlılığına yardımcı olur."
 
 #: weblate_web/templates/donate.html:107
 msgid ""
 "Please consider this if you are using Weblate on premise without support "
 "contract."
 msgstr ""
+"Lütfen, Weblate'i destek sözleşmesi olmadan şirket içi kullanıyorsanız "
+"düşünün."
 
 #: weblate_web/templates/donate.html:116
-#, fuzzy
-#| msgid "View documentation"
 msgid "One time donation"
-msgstr "Belgeleri görüntüleyin"
+msgstr "Tek seferlik bağış"
 
 #: weblate_web/templates/donate.html:119
 msgid ""
 "One time donations are great for appreciating our work on single issue or "
 "support."
 msgstr ""
+"Bir kerelik bağışlar, tek sorun veya destek konusundaki çalışmalarımızı "
+"takdir ettiğiniz için mükemmeldir."
 
 #: weblate_web/templates/donate.html:128
-#, fuzzy
-#| msgid "Use our hosting"
 msgid "Use our services"
-msgstr "Barındırma hizmetimizi kullanın"
+msgstr "Hizmetlerimizi kullanın"
 
 #: weblate_web/templates/donate.html:131
 msgid ""
 "Commercial services like hosting or support for on premise installation help "
 "funding Weblate development."
 msgstr ""
+"Yerinde kurulum için barındırma veya destek gibi ticari hizmetler Weblate "
+"geliştirmesinin finanse edilmesine yardımcı olur."
 
 #: weblate_web/templates/donate.html:143
 msgid "Cryptocurrencies"
@@ -517,11 +501,11 @@ msgstr "Bağış adresi"
 
 #: weblate_web/templates/donate/edit.html:12
 msgid "Please select choose wanted reward or enter custom donation amount."
-msgstr ""
+msgstr "Lütfen istediğin ödülü seç ya da özel bağış tutarı gir."
 
 #: weblate_web/templates/donate/edit.html:20
 msgid "Edit your reward link"
-msgstr ""
+msgstr "Ödül bağlantınızı düzenleyin"
 
 #: weblate_web/templates/donate/edit.html:26
 #: weblate_web/templates/payment/customer.html:21
@@ -530,43 +514,43 @@ msgstr "Kaydet"
 
 #: weblate_web/templates/donate/form.html:13
 msgid "Please choose wanted reward or enter custom donation amount."
-msgstr ""
+msgstr "Lütfen istediğiniz ödülü seçin veya özel bağış tutarını girin."
 
 #: weblate_web/templates/donate/form.html:33
 msgid "Select"
-msgstr ""
+msgstr "Seç"
 
 #: weblate_web/templates/donate/form.html:41
 msgid ""
 "We might refuse to place your link, especially if the site contains adult or "
 "illegal content. Please consult us in advance if unsure."
 msgstr ""
+"Bağlantınızı yerleştirmeyi reddedebiliriz, özellikle site yetişkinlere "
+"yönelik veya yasadışı içerik içeriyorsa. Emin değilseniz lütfen bize danışın."
 
 #: weblate_web/templates/donate/form.html:50
 msgid "Choose your own donation amount"
-msgstr ""
+msgstr "Kendi bağış miktarınızı seçin"
 
 #: weblate_web/templates/donate/form.html:56
-#, fuzzy
-#| msgid "Contribute"
 msgid "Continue"
-msgstr "Katkı"
+msgstr "Devam et"
 
 #: weblate_web/templates/donate/rewards.html:2
 msgid "Link placement on the weblate.org thanks page"
-msgstr ""
+msgstr "Weblate.org teşekkürler sayfasında link yerleştirme"
 
 #: weblate_web/templates/donate/rewards.html:3
 msgid "Link placement in the list of supporters"
-msgstr ""
+msgstr "Destekleyenler listesinde link yerleştirme"
 
 #: weblate_web/templates/donate/rewards.html:4
 msgid "Name placement in the list of supporters"
-msgstr ""
+msgstr "Destekleyenler listesinde ad yerleştirme"
 
 #: weblate_web/templates/download-link.html:4
 msgid "PGP signature"
-msgstr ""
+msgstr "PGP İmzası"
 
 #: weblate_web/templates/download.html:4 weblate_web/templates/download.html:5
 #: weblate_web/templates/hosting.html:235
@@ -1288,53 +1272,44 @@ msgstr "Weblate'de barındırılan yüzlerce projeye göz atın"
 
 #: weblate_web/templates/index.html:114
 msgid "Hosted service"
-msgstr ""
+msgstr "Barındırılan hizmet"
 
 #: weblate_web/templates/index.html:118 weblate_web/templates/index.html:132
 #, python-format
 msgid "From %(amount)sEUR/month"
-msgstr ""
+msgstr "%(amount)sEUR/ayda"
 
 #: weblate_web/templates/index.html:119
 msgid "Cloud service"
-msgstr ""
+msgstr "Bulut hizmeti"
 
 #: weblate_web/templates/index.html:122 weblate_web/templates/index.html:136
-#, fuzzy
-#| msgid "View hosting plans"
 msgid "Choose hosting plan"
-msgstr "Barındırma planlarını göster"
+msgstr "Barındırma planı seç"
 
 #: weblate_web/templates/index.html:128
 msgid "On premise"
-msgstr ""
+msgstr "Öncül"
 
 #: weblate_web/templates/index.html:133
 msgid "Your infrastructure"
-msgstr ""
+msgstr "Sizin altyapınız"
 
 #: weblate_web/templates/index.html:142
-#, fuzzy
-#| msgctxt "Hosting plan"
-#| msgid "Self hosted"
 msgid "Self supported"
-msgstr "Kendinizin barındırdığı"
+msgstr "Kendinizden destekli"
 
 #: weblate_web/templates/index.html:146
-#, fuzzy
-#| msgid "Weblate features"
 msgid "Weblate is free to use"
-msgstr "Weblate özellikleri"
+msgstr "Weblate kullanımı ücretsizdir"
 
 #: weblate_web/templates/index.html:147
 msgid "Maintained by you"
-msgstr ""
+msgstr "Siz tarafından güvenceli"
 
 #: weblate_web/templates/index.html:148
-#, fuzzy
-#| msgid "Phone support"
 msgid "Community support"
-msgstr "Telefon desteği"
+msgstr "Topluluk desteği"
 
 #: weblate_web/templates/payment/customer.html:5
 #: weblate_web/templates/payment/payment.html:4
@@ -1376,11 +1351,9 @@ msgid "Payment will be issued yearly till you cancel the subscription."
 msgstr "Aboneliği iptal edene kadar yıllık olarak ödeme yapılacaktır."
 
 #: weblate_web/templates/payment/payment.html:24
-#, fuzzy
-#| msgid "Payment will be issued monthly till you cancel the subscription."
 msgid ""
 "Payment will be issued every six months till you cancel the subscription."
-msgstr "Aboneliği iptal edene kadar aylık olarak ödeme yapılacaktır."
+msgstr "Aboneliği iptal edene kadar her altı ayda bir ödeme yapılacaktır."
 
 #: weblate_web/templates/payment/payment.html:26
 msgid "Payment will be issued monthly till you cancel the subscription."
@@ -1680,14 +1653,8 @@ msgstr ""
 "imkansız olurdu."
 
 #: weblate_web/templates/thanks.html:50
-#, fuzzy
-#| msgid ""
-#| "Support our project on Bountysource Salt and get exclusive logo placement "
-#| "on this page."
 msgid "Support our project and get link placement on this page."
-msgstr ""
-"Bountysource Salt üzerindeki projemizi destekleyin ve bu sayfada özel logolu "
-"yerinizi alın."
+msgstr "Projemizi destekleyin ve bu sayfada bağlantı yerleşimi edinin."
 
 #: weblate_web/templates/tour.html:3 weblate_web/templates/tour.html:4
 msgid "Weblate tour"
@@ -1796,24 +1763,20 @@ msgid "Please provide your billing information to complete the payment."
 msgstr "Ödemeyi tamamlamak için lütfen fatura bilgilerinizi sağlayın."
 
 #: weblate_web/views.py:251
-#, fuzzy
-#| msgid "Payments are processed by The Pay service."
 msgid "Payment not yet processed, please retry."
-msgstr "Ödemeler, The Pay hizmeti tarafından işlenir."
+msgstr "Ödeme henüz işleme koyulmadı, lütfen tekrar deneyin."
 
 #: weblate_web/views.py:256
 msgid "The payment was rejected: {}"
-msgstr ""
+msgstr "Ödeme reddedildi: {}"
 
 #: weblate_web/views.py:257
 msgid "Unknown reason"
-msgstr ""
+msgstr "Bilinmeyen sebep"
 
 #: weblate_web/views.py:261
-#, fuzzy
-#| msgid "Thank you for ordering hosting!"
 msgid "Thank you for your donation."
-msgstr "Barındırma siparişi için teşekkür ederiz!"
+msgstr "Bağışınız için teşekkürler."
 
 #~ msgid "This website is stored on <a href=\"%(url)s\">GitHub</a> as well:"
 #~ msgstr "Bu web sitesi <a href=\"%(url)s\">GitHub</a>'da da depolanır:"
