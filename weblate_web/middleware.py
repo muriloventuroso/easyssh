@@ -71,7 +71,7 @@ class SecurityMiddleware:
         # Sentry/Raven
         script.append('cdn.ravenjs.com')
 
-        # Piwik
+        # Matomo/Piwik
         script.append('stats.cihar.com')
         image.append('stats.cihar.com')
         connect.append('stats.cihar.com')
