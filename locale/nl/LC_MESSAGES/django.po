@@ -1,13 +1,13 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Thomas De Rocker <thomasderocker@outlook.com>, 2018.
+# Thomas De Rocker <thomasderocker@outlook.com>, 2018, 2019.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2019-01-04 16:32+0100\n"
-"PO-Revision-Date: 2018-12-24 00:09+0000\n"
+"PO-Revision-Date: 2019-01-05 10:10+0000\n"
 "Last-Translator: Thomas De Rocker <thomasderocker@outlook.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/weblate/website/nl/"
 ">\n"
@@ -124,22 +124,20 @@ msgid "User management"
 msgstr "Gebruikersbeheer"
 
 #: weblate_web/forms.py:47 weblate_web/templates/donate/form.html:25
-#, fuzzy
-#| msgid "Donation address"
 msgid "Donation recurrence"
-msgstr "Donatie-adres"
+msgstr "Donatie-herhaling"
 
 #: weblate_web/forms.py:53 weblate_web/templates/donate/form.html:26
 msgid "Amount in EUR"
-msgstr ""
+msgstr "Bedrag in EUR"
 
 #: weblate_web/models.py:76
 msgid "Link text"
-msgstr ""
+msgstr "Tekst van link"
 
 #: weblate_web/models.py:80
 msgid "Link URL"
-msgstr ""
+msgstr "URL van link"
 
 #: weblate_web/templates/404.html:4
 msgid "Page not found"
@@ -324,16 +322,13 @@ msgstr ""
 "fork aanmaken of gewoon:"
 
 #: weblate_web/templates/contribute.html:31
-#, fuzzy, python-format
-#| msgid ""
-#| "You can also ask related questions on <a href=\"%(url)s\">Stack Overflow</"
-#| "a>."
+#, python-format
 msgid ""
 "You can find more repositories related to Weblate on <a href=\"%(url)s"
 "\">GitHub</a>"
 msgstr ""
-"U kunt ook gerelateerde vragen stellen op <a href=\"%(url)s\">Stack "
-"Overflow</a>."
+"U kunt meer opslagruimten gerelateerd aan Weblate terugvinden op <a href=\""
+"%(url)s\">GitHub</a>"
 
 #: weblate_web/templates/contribute.html:37
 msgid ""
@@ -363,7 +358,7 @@ msgstr "Weblate is gratis software maar donaties zijn altijd welkom."
 
 #: weblate_web/templates/donate.html:11 weblate_web/templates/donate.html:134
 msgid "Purchase hosting package"
-msgstr ""
+msgstr "Hosting-pakket aankopen"
 
 #: weblate_web/templates/donate.html:12 weblate_web/templates/donate.html:135
 #: weblate_web/templates/download.html:13 weblate_web/templates/hosting.html:12
@@ -373,41 +368,39 @@ msgstr "Ondersteuning krijgen voor Weblate"
 
 #: weblate_web/templates/donate.html:19
 msgid "Sign in to manage your donations"
-msgstr ""
+msgstr "Aanmelden om uw donaties te beheren"
 
 #: weblate_web/templates/donate.html:21
 msgid "Sign out"
-msgstr ""
+msgstr "Afmelden"
 
 #: weblate_web/templates/donate.html:24
 #, fuzzy
 #| msgid "Regular donations"
 msgid "Your donations"
-msgstr "Regelmatige donaties"
+msgstr "Uw donaties"
 
 #: weblate_web/templates/donate.html:29
-#, fuzzy
-#| msgid "Collaboration sites"
 msgid "Creation date"
-msgstr "Samenwerkingssites"
+msgstr "Aanmaakdatum"
 
 #: weblate_web/templates/donate.html:30
 msgid "Reward"
-msgstr ""
+msgstr "Beloning"
 
 #: weblate_web/templates/donate.html:31
 msgid "Expiry date"
-msgstr ""
+msgstr "Vervaldatum"
 
 #: weblate_web/templates/donate.html:32
 msgid "Renewal"
-msgstr ""
+msgstr "Vernieuwing"
 
 #: weblate_web/templates/donate.html:33
 #, fuzzy
 #| msgid "Payment summary"
 msgid "Payments"
-msgstr "Samenvatting van betaling"
+msgstr "Betalingen"
 
 #: weblate_web/templates/donate.html:43
 #: weblate_web/templates/payment/payment.html:37
@@ -416,82 +409,83 @@ msgstr "Bewerken"
 
 #: weblate_web/templates/donate.html:45
 msgid "No reward"
-msgstr ""
+msgstr "Geen beloning"
 
 #: weblate_web/templates/donate.html:53
 msgid "Expired"
-msgstr ""
+msgstr "Vervallen"
 
 #: weblate_web/templates/donate.html:57
 msgid "Disable renewal"
-msgstr ""
+msgstr "Verlenging uitschakelen"
 
 #: weblate_web/templates/donate.html:60
 msgid "Does not renew"
-msgstr ""
+msgstr "Verlengt niet"
 
 #: weblate_web/templates/donate.html:92
 #, fuzzy
 #| msgid "Documentation"
 msgid "Donations"
-msgstr "Documentatie"
+msgstr "Donaties"
 
 #: weblate_web/templates/donate.html:95
-#, fuzzy
-#| msgid ""
-#| "Regular donations allow sustainability of Weblate development and help to "
-#| "fund free hosting for libre software. You don't have to spend big money, "
-#| "every penny counts."
 msgid ""
 "Recurring donations allow sustainability of Weblate development and help to "
 "fund free hosting for libre software. You don't have to spend big money, "
 "every penny counts."
 msgstr ""
-"Regelmatige donaties zorgen voor duurzaamheid van de Weblate-ontwikkeling en "
-"helpen bij de financiering van gratis hosting voor vrije software. U hoeft "
-"geen grote bedragen uit te geven, elke cent telt."
+"Terugkerende donaties zorgen voor duurzaamheid van de Weblate-ontwikkeling "
+"en helpen bij de financiering van gratis hosting voor vrije software. U "
+"hoeft geen grote bedragen uit te geven, elke cent telt."
 
 #: weblate_web/templates/donate.html:103
 #, fuzzy
 #| msgid "Regular donations"
 msgid "Recurring donation"
-msgstr "Regelmatige donaties"
+msgstr "Terugkerende donatie"
 
 #: weblate_web/templates/donate.html:106
 msgid ""
 "Repeated appreciation of the Weblate project helps in keeping the project "
 "sustainable in the long term."
 msgstr ""
+"Herhaalde waardering van het Weblate project helpt om het project duurzaam "
+"te houden op de lange termijn."
 
 #: weblate_web/templates/donate.html:107
 msgid ""
 "Please consider this if you are using Weblate on premise without support "
 "contract."
 msgstr ""
+"Houd hier rekening mee als u Weblate op locatie gebruikt zonder "
+"ondersteuningscontract."
 
 #: weblate_web/templates/donate.html:116
 #, fuzzy
 #| msgid "View documentation"
 msgid "One time donation"
-msgstr "Documentatie weergeven"
+msgstr "Eenmalige donatie"
 
 #: weblate_web/templates/donate.html:119
 msgid ""
 "One time donations are great for appreciating our work on single issue or "
 "support."
 msgstr ""
+"Eenmalige donaties zijn geweldig voor het waarderen van ons werk op het "
+"gebied van single issue of ondersteuning."
 
 #: weblate_web/templates/donate.html:128
-#, fuzzy
-#| msgid "Use our hosting"
 msgid "Use our services"
-msgstr "Onze hosting gebruiken"
+msgstr "Onze services gebruiken"
 
 #: weblate_web/templates/donate.html:131
 msgid ""
 "Commercial services like hosting or support for on premise installation help "
 "funding Weblate development."
 msgstr ""
+"Commerciële diensten zoals hosting of ondersteuning voor installatie op "
+"locatie helpen bij de financiering van Weblate-ontwikkeling."
 
 #: weblate_web/templates/donate.html:143
 msgid "Cryptocurrencies"
@@ -517,11 +511,11 @@ msgstr "Donatie-adres"
 
 #: weblate_web/templates/donate/edit.html:12
 msgid "Please select choose wanted reward or enter custom donation amount."
-msgstr ""
+msgstr "Selecteer de gewenste beloning of vul een aangepast donatiebedrag in."
 
 #: weblate_web/templates/donate/edit.html:20
 msgid "Edit your reward link"
-msgstr ""
+msgstr "Uw beloningslink bewerken"
 
 #: weblate_web/templates/donate/edit.html:26
 #: weblate_web/templates/payment/customer.html:21
@@ -530,43 +524,43 @@ msgstr "Opslaan"
 
 #: weblate_web/templates/donate/form.html:13
 msgid "Please choose wanted reward or enter custom donation amount."
-msgstr ""
+msgstr "Selecteer de gewenste beloning of vul een aangepast donatiebedrag in."
 
 #: weblate_web/templates/donate/form.html:33
 msgid "Select"
-msgstr ""
+msgstr "Selecteren"
 
 #: weblate_web/templates/donate/form.html:41
 msgid ""
 "We might refuse to place your link, especially if the site contains adult or "
 "illegal content. Please consult us in advance if unsure."
 msgstr ""
+"We kunnen weigeren uw link te plaatsen, vooral als de site volwassen of "
+"illegale inhoud bevat. Gelieve ons vooraf te raadplegen indien u twijfelt."
 
 #: weblate_web/templates/donate/form.html:50
 msgid "Choose your own donation amount"
-msgstr ""
+msgstr "Uw eigen donatiebedrag kiezen"
 
 #: weblate_web/templates/donate/form.html:56
-#, fuzzy
-#| msgid "Contribute"
 msgid "Continue"
-msgstr "Bijdragen"
+msgstr "Doorgaan"
 
 #: weblate_web/templates/donate/rewards.html:2
 msgid "Link placement on the weblate.org thanks page"
-msgstr ""
+msgstr "Link-plaatsing op de weblate.org bedankingspagina"
 
 #: weblate_web/templates/donate/rewards.html:3
 msgid "Link placement in the list of supporters"
-msgstr ""
+msgstr "Link plaatsing in de lijst van supporters"
 
 #: weblate_web/templates/donate/rewards.html:4
 msgid "Name placement in the list of supporters"
-msgstr ""
+msgstr "Naam plaatsing in de lijst van supporters"
 
 #: weblate_web/templates/download-link.html:4
 msgid "PGP signature"
-msgstr ""
+msgstr "PGP-handtekening"
 
 #: weblate_web/templates/download.html:4 weblate_web/templates/download.html:5
 #: weblate_web/templates/hosting.html:235
@@ -1297,7 +1291,7 @@ msgstr "Blader door honderden projecten op Hosted Weblate"
 
 #: weblate_web/templates/index.html:114
 msgid "Hosted service"
-msgstr ""
+msgstr "Gehoste service"
 
 #: weblate_web/templates/index.html:118 weblate_web/templates/index.html:132
 #, python-format
