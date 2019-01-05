@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2019-01-04 16:32+0100\n"
-"PO-Revision-Date: 2019-01-05 10:12+0000\n"
+"PO-Revision-Date: 2019-01-05 15:28+0000\n"
 "Last-Translator: Thomas De Rocker <thomasderocker@outlook.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/weblate/website/nl/"
 ">\n"
@@ -375,8 +375,6 @@ msgid "Sign out"
 msgstr "Afmelden"
 
 #: weblate_web/templates/donate.html:24
-#, fuzzy
-#| msgid "Regular donations"
 msgid "Your donations"
 msgstr "Uw donaties"
 
@@ -397,8 +395,6 @@ msgid "Renewal"
 msgstr "Vernieuwing"
 
 #: weblate_web/templates/donate.html:33
-#, fuzzy
-#| msgid "Payment summary"
 msgid "Payments"
 msgstr "Betalingen"
 
@@ -424,8 +420,6 @@ msgid "Does not renew"
 msgstr "Verlengt niet"
 
 #: weblate_web/templates/donate.html:92
-#, fuzzy
-#| msgid "Documentation"
 msgid "Donations"
 msgstr "Donaties"
 
@@ -440,8 +434,6 @@ msgstr ""
 "hoeft geen grote bedragen uit te geven, elke cent telt."
 
 #: weblate_web/templates/donate.html:103
-#, fuzzy
-#| msgid "Regular donations"
 msgid "Recurring donation"
 msgstr "Terugkerende donatie"
 
@@ -462,8 +454,6 @@ msgstr ""
 "ondersteuningscontract."
 
 #: weblate_web/templates/donate.html:116
-#, fuzzy
-#| msgid "View documentation"
 msgid "One time donation"
 msgstr "Eenmalige donatie"
 
@@ -1315,15 +1305,10 @@ msgid "Your infrastructure"
 msgstr "Uw infrastructuur"
 
 #: weblate_web/templates/index.html:142
-#, fuzzy
-#| msgctxt "Hosting plan"
-#| msgid "Self hosted"
 msgid "Self supported"
 msgstr "Zelf ondersteund"
 
 #: weblate_web/templates/index.html:146
-#, fuzzy
-#| msgid "Weblate features"
 msgid "Weblate is free to use"
 msgstr "Weblate is gratis te gebruiken"
 
@@ -1332,8 +1317,6 @@ msgid "Maintained by you"
 msgstr "Door u onderhouden"
 
 #: weblate_web/templates/index.html:148
-#, fuzzy
-#| msgid "Phone support"
 msgid "Community support"
 msgstr "Steun van de gemeenschap"
 
@@ -1377,11 +1360,10 @@ msgid "Payment will be issued yearly till you cancel the subscription."
 msgstr "Betaling zal jaarlijks plaatsvinden tot u het abonnement opzegt."
 
 #: weblate_web/templates/payment/payment.html:24
-#, fuzzy
-#| msgid "Payment will be issued monthly till you cancel the subscription."
 msgid ""
 "Payment will be issued every six months till you cancel the subscription."
-msgstr "Betaling zal maandelijks plaatsvinden tot u het abonnement opzegt."
+msgstr ""
+"Betaling zal elke zes maand uitgevoerd worden tot u het abonnement opzegt."
 
 #: weblate_web/templates/payment/payment.html:26
 msgid "Payment will be issued monthly till you cancel the subscription."
@@ -1684,14 +1666,8 @@ msgstr ""
 "sponsors."
 
 #: weblate_web/templates/thanks.html:50
-#, fuzzy
-#| msgid ""
-#| "Support our project on Bountysource Salt and get exclusive logo placement "
-#| "on this page."
 msgid "Support our project and get link placement on this page."
-msgstr ""
-"Steun ons project op Bountysource Salt en uw logo wordt exclusief getoond op "
-"deze pagina."
+msgstr "Steun ons project en krijg link-plaatsing op deze pagina."
 
 #: weblate_web/templates/tour.html:3 weblate_web/templates/tour.html:4
 msgid "Weblate tour"
@@ -1800,24 +1776,20 @@ msgid "Please provide your billing information to complete the payment."
 msgstr "Geef uw facturatiegegevens op om de betaling af te ronden."
 
 #: weblate_web/views.py:251
-#, fuzzy
-#| msgid "Payments are processed by The Pay service."
 msgid "Payment not yet processed, please retry."
-msgstr "Betalingen worden verwerkt door The Pay service."
+msgstr "Betaling nog niet verwerkt, gelieve opnieuw te proberen."
 
 #: weblate_web/views.py:256
 msgid "The payment was rejected: {}"
-msgstr ""
+msgstr "De betaling werd geweigerd: {}"
 
 #: weblate_web/views.py:257
 msgid "Unknown reason"
-msgstr ""
+msgstr "Onbekende reden"
 
 #: weblate_web/views.py:261
-#, fuzzy
-#| msgid "Thank you for ordering hosting!"
 msgid "Thank you for your donation."
-msgstr "Dank u voor het bestellen van hosting!"
+msgstr "Bedankt voor uw donatie."
 
 #~ msgid "This website is stored on <a href=\"%(url)s\">GitHub</a> as well:"
 #~ msgstr "Deze website wordt ook op <a href=\"%(url)s\">GitHub</a> bewaard:"
