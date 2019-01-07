@@ -1,13 +1,13 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# scootergrisen <scootergrisen@gmail.com>, 2018.
+# scootergrisen <scootergrisen@gmail.com>, 2018, 2019.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2019-01-04 16:32+0100\n"
-"PO-Revision-Date: 2018-11-21 07:40+0000\n"
+"PO-Revision-Date: 2019-01-07 08:25+0000\n"
 "Last-Translator: scootergrisen <scootergrisen@gmail.com>\n"
 "Language-Team: Danish <https://hosted.weblate.org/projects/weblate/website/"
 "da/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.3-dev\n"
+"X-Generator: Weblate 3.4-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -130,7 +130,7 @@ msgstr "Donationsadresse"
 
 #: weblate_web/forms.py:53 weblate_web/templates/donate/form.html:26
 msgid "Amount in EUR"
-msgstr ""
+msgstr "Beløb i EUR"
 
 #: weblate_web/models.py:76
 msgid "Link text"
@@ -383,34 +383,28 @@ msgid "Sign out"
 msgstr ""
 
 #: weblate_web/templates/donate.html:24
-#, fuzzy
-#| msgid "Regular donations"
 msgid "Your donations"
-msgstr "Regelmæssig donationer"
+msgstr "Dine donationer"
 
 #: weblate_web/templates/donate.html:29
-#, fuzzy
-#| msgid "Collaboration sites"
 msgid "Creation date"
-msgstr "Samarbejdende websteder"
+msgstr "Oprettelsesdato"
 
 #: weblate_web/templates/donate.html:30
 msgid "Reward"
-msgstr ""
+msgstr "Dusør"
 
 #: weblate_web/templates/donate.html:31
 msgid "Expiry date"
-msgstr ""
+msgstr "Udløbsdato"
 
 #: weblate_web/templates/donate.html:32
 msgid "Renewal"
-msgstr ""
+msgstr "Fornyelse"
 
 #: weblate_web/templates/donate.html:33
-#, fuzzy
-#| msgid "Payment summary"
 msgid "Payments"
-msgstr "Betalingssammendrag"
+msgstr "Betalinger"
 
 #: weblate_web/templates/donate.html:43
 #: weblate_web/templates/payment/payment.html:37
@@ -419,25 +413,23 @@ msgstr "Rediger"
 
 #: weblate_web/templates/donate.html:45
 msgid "No reward"
-msgstr ""
+msgstr "Ingen dusør"
 
 #: weblate_web/templates/donate.html:53
 msgid "Expired"
-msgstr ""
+msgstr "Udløbet"
 
 #: weblate_web/templates/donate.html:57
 msgid "Disable renewal"
-msgstr ""
+msgstr "Deaktivér fornyelse"
 
 #: weblate_web/templates/donate.html:60
 msgid "Does not renew"
-msgstr ""
+msgstr "Fornyes ikke"
 
 #: weblate_web/templates/donate.html:92
-#, fuzzy
-#| msgid "Documentation"
 msgid "Donations"
-msgstr "Dokumentation"
+msgstr "Donationer"
 
 #: weblate_web/templates/donate.html:95
 #, fuzzy
@@ -485,10 +477,8 @@ msgid ""
 msgstr ""
 
 #: weblate_web/templates/donate.html:128
-#, fuzzy
-#| msgid "Use our hosting"
 msgid "Use our services"
-msgstr "Brug vores hosting"
+msgstr "Brug vores tjenester"
 
 #: weblate_web/templates/donate.html:131
 msgid ""
@@ -523,7 +513,7 @@ msgstr ""
 
 #: weblate_web/templates/donate/edit.html:20
 msgid "Edit your reward link"
-msgstr ""
+msgstr "Rediger dit dusør-link"
 
 #: weblate_web/templates/donate/edit.html:26
 #: weblate_web/templates/payment/customer.html:21
@@ -1377,11 +1367,10 @@ msgid "Payment will be issued yearly till you cancel the subscription."
 msgstr "Betalingen udstedes årligt indtil du annullerer abonnementet."
 
 #: weblate_web/templates/payment/payment.html:24
-#, fuzzy
-#| msgid "Payment will be issued monthly till you cancel the subscription."
 msgid ""
 "Payment will be issued every six months till you cancel the subscription."
-msgstr "Betalingen udstedes månedligt indtil du annullerer abonnementet."
+msgstr ""
+"Betalingen udstedes hver sjette måned indtil du annullerer abonnementet."
 
 #: weblate_web/templates/payment/payment.html:26
 msgid "Payment will be issued monthly till you cancel the subscription."
@@ -1805,10 +1794,8 @@ msgid "Unknown reason"
 msgstr ""
 
 #: weblate_web/views.py:261
-#, fuzzy
-#| msgid "Thank you for ordering hosting!"
 msgid "Thank you for your donation."
-msgstr "Tak for din bestilling af hosting!"
+msgstr "Tak for din donation."
 
 #~ msgid "This website is stored on <a href=\"%(url)s\">GitHub</a> as well:"
 #~ msgstr "Webstedet opbevares også på <a href=\"%(url)s\">GitHub</a>:"

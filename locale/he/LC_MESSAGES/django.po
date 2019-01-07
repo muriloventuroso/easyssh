@@ -1,13 +1,13 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Yaron Shahrabani <sh.yaron@gmail.com>, 2018.
+# Yaron Shahrabani <sh.yaron@gmail.com>, 2018, 2019.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
 "POT-Creation-Date: 2019-01-04 16:32+0100\n"
-"PO-Revision-Date: 2018-11-21 11:49+0000\n"
+"PO-Revision-Date: 2019-01-07 08:25+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/weblate/website/"
 "he/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 3.3-dev\n"
+"X-Generator: Weblate 3.4-dev\n"
 
 #: weblate_web/data.py:33
 msgid "Overview of own translations at main page."
@@ -114,22 +114,20 @@ msgid "User management"
 msgstr "ניהול משתמשים"
 
 #: weblate_web/forms.py:47 weblate_web/templates/donate/form.html:25
-#, fuzzy
-#| msgid "Donation address"
 msgid "Donation recurrence"
-msgstr "כתובת לתרומה"
+msgstr "חזרה על תרומה"
 
 #: weblate_web/forms.py:53 weblate_web/templates/donate/form.html:26
 msgid "Amount in EUR"
-msgstr ""
+msgstr "סכום באירו"
 
 #: weblate_web/models.py:76
 msgid "Link text"
-msgstr ""
+msgstr "טקסט הקישור"
 
 #: weblate_web/models.py:80
 msgid "Link URL"
-msgstr ""
+msgstr "כתובת הקישור"
 
 #: weblate_web/templates/404.html:4
 msgid "Page not found"
@@ -310,14 +308,12 @@ msgstr ""
 "עותק משם או פשוט:"
 
 #: weblate_web/templates/contribute.html:31
-#, fuzzy, python-format
-#| msgid ""
-#| "You can also ask related questions on <a href=\"%(url)s\">Stack Overflow</"
-#| "a>."
+#, python-format
 msgid ""
 "You can find more repositories related to Weblate on <a href=\"%(url)s"
 "\">GitHub</a>"
-msgstr "ניתן גם לשאול שאלות בנושא ב־<a href=\"%(url)s\">Stack Overflow</a>."
+msgstr ""
+"ניתן למצוא מאגרים נוספים שקשורים ל־Weblate ב־<a href=\"%(url)s\">GitHub</a>"
 
 #: weblate_web/templates/contribute.html:37
 msgid ""
@@ -347,7 +343,7 @@ msgstr "Weblate מוגשת לציבור בחינם ללא תשלום ושמחה 
 
 #: weblate_web/templates/donate.html:11 weblate_web/templates/donate.html:134
 msgid "Purchase hosting package"
-msgstr ""
+msgstr "רכישת חבילת אירוח"
 
 #: weblate_web/templates/donate.html:12 weblate_web/templates/donate.html:135
 #: weblate_web/templates/download.html:13 weblate_web/templates/hosting.html:12
@@ -357,41 +353,35 @@ msgstr "קבלת תמיכה ב־Weblate"
 
 #: weblate_web/templates/donate.html:19
 msgid "Sign in to manage your donations"
-msgstr ""
+msgstr "יש להיכנס כדי לנהל את התרומה שלך"
 
 #: weblate_web/templates/donate.html:21
 msgid "Sign out"
-msgstr ""
+msgstr "יציאה"
 
 #: weblate_web/templates/donate.html:24
-#, fuzzy
-#| msgid "Regular donations"
 msgid "Your donations"
-msgstr "תרומות מחזוריות"
+msgstr "התרומות שלך"
 
 #: weblate_web/templates/donate.html:29
-#, fuzzy
-#| msgid "Collaboration sites"
 msgid "Creation date"
-msgstr "אתרי שיתוף פעולה"
+msgstr "מועד היצירה"
 
 #: weblate_web/templates/donate.html:30
 msgid "Reward"
-msgstr ""
+msgstr "פרס"
 
 #: weblate_web/templates/donate.html:31
 msgid "Expiry date"
-msgstr ""
+msgstr "תאריך תפוגה"
 
 #: weblate_web/templates/donate.html:32
 msgid "Renewal"
-msgstr ""
+msgstr "חידוש"
 
 #: weblate_web/templates/donate.html:33
-#, fuzzy
-#| msgid "Payment summary"
 msgid "Payments"
-msgstr "סיכום התשלום"
+msgstr "תשלומים"
 
 #: weblate_web/templates/donate.html:43
 #: weblate_web/templates/payment/payment.html:37
@@ -400,32 +390,25 @@ msgstr "עריכה"
 
 #: weblate_web/templates/donate.html:45
 msgid "No reward"
-msgstr ""
+msgstr "אין פרס"
 
 #: weblate_web/templates/donate.html:53
 msgid "Expired"
-msgstr ""
+msgstr "פג תוקף"
 
 #: weblate_web/templates/donate.html:57
 msgid "Disable renewal"
-msgstr ""
+msgstr "השבתת חידוש"
 
 #: weblate_web/templates/donate.html:60
 msgid "Does not renew"
-msgstr ""
+msgstr "לא מתחדשת"
 
 #: weblate_web/templates/donate.html:92
-#, fuzzy
-#| msgid "Documentation"
 msgid "Donations"
-msgstr "תיעוד"
+msgstr "תרומות"
 
 #: weblate_web/templates/donate.html:95
-#, fuzzy
-#| msgid ""
-#| "Regular donations allow sustainability of Weblate development and help to "
-#| "fund free hosting for libre software. You don't have to spend big money, "
-#| "every penny counts."
 msgid ""
 "Recurring donations allow sustainability of Weblate development and help to "
 "fund free hosting for libre software. You don't have to spend big money, "
@@ -435,46 +418,44 @@ msgstr ""
 "עבור תכניות חופשיות. אין צורך לבזבז המון כסף, כל אגורה חשובה."
 
 #: weblate_web/templates/donate.html:103
-#, fuzzy
-#| msgid "Regular donations"
 msgid "Recurring donation"
-msgstr "תרומות מחזוריות"
+msgstr "תרומה מתחדשת"
 
 #: weblate_web/templates/donate.html:106
 msgid ""
 "Repeated appreciation of the Weblate project helps in keeping the project "
 "sustainable in the long term."
-msgstr ""
+msgstr "הערכה מתחדשת כלפי מיזם Weblate מסייעת בחיזוק המיזם לטווח ארוך."
 
 #: weblate_web/templates/donate.html:107
 msgid ""
 "Please consider this if you are using Weblate on premise without support "
 "contract."
-msgstr ""
+msgstr "מוטב לשקול אם Weblate משמש אותך על גבי שרתים משלך ללא חוזה תמיכה."
 
 #: weblate_web/templates/donate.html:116
-#, fuzzy
-#| msgid "View documentation"
 msgid "One time donation"
-msgstr "צפייה בתיעוד"
+msgstr "תרומה חד־פעמית"
 
 #: weblate_web/templates/donate.html:119
 msgid ""
 "One time donations are great for appreciating our work on single issue or "
 "support."
 msgstr ""
+"תרומות חד־פעמיות הן דרך נפלאה להביע הערכה לעבודתנו על נושא מסוים או על מתן "
+"תמיכה."
 
 #: weblate_web/templates/donate.html:128
-#, fuzzy
-#| msgid "Use our hosting"
 msgid "Use our services"
-msgstr "להשתמש באירוח שלנו"
+msgstr "שימוש בשירותים שלנו"
 
 #: weblate_web/templates/donate.html:131
 msgid ""
 "Commercial services like hosting or support for on premise installation help "
 "funding Weblate development."
 msgstr ""
+"שירותים מסחריים כמו אירוח או תמיכה בהתקנה בשרתים משלך מסייעים במימון הפיתוח "
+"של Weblate."
 
 #: weblate_web/templates/donate.html:143
 msgid "Cryptocurrencies"
@@ -499,11 +480,11 @@ msgstr "כתובת לתרומה"
 
 #: weblate_web/templates/donate/edit.html:12
 msgid "Please select choose wanted reward or enter custom donation amount."
-msgstr ""
+msgstr "נא לבחור את הפרס המבוקש או להקליד סכום תרומה כראות עיניך."
 
 #: weblate_web/templates/donate/edit.html:20
 msgid "Edit your reward link"
-msgstr ""
+msgstr "עריכת קישור הפרס שלך"
 
 #: weblate_web/templates/donate/edit.html:26
 #: weblate_web/templates/payment/customer.html:21
@@ -512,11 +493,11 @@ msgstr "שמירה"
 
 #: weblate_web/templates/donate/form.html:13
 msgid "Please choose wanted reward or enter custom donation amount."
-msgstr ""
+msgstr "נא לבחור את הפרס הרצוי או להקליד סכום תרומה כראות עיניך."
 
 #: weblate_web/templates/donate/form.html:33
 msgid "Select"
-msgstr ""
+msgstr "בחירה"
 
 #: weblate_web/templates/donate/form.html:41
 msgid ""
@@ -1254,10 +1235,8 @@ msgid "Cloud service"
 msgstr ""
 
 #: weblate_web/templates/index.html:122 weblate_web/templates/index.html:136
-#, fuzzy
-#| msgid "View hosting plans"
 msgid "Choose hosting plan"
-msgstr "הצגת תכניות אירוח"
+msgstr "בחירת תכנית אירוח"
 
 #: weblate_web/templates/index.html:128
 msgid "On premise"
@@ -1268,27 +1247,20 @@ msgid "Your infrastructure"
 msgstr ""
 
 #: weblate_web/templates/index.html:142
-#, fuzzy
-#| msgctxt "Hosting plan"
-#| msgid "Self hosted"
 msgid "Self supported"
-msgstr "באירוח עצמי"
+msgstr "בתמיכה עצמית"
 
 #: weblate_web/templates/index.html:146
-#, fuzzy
-#| msgid "Weblate features"
 msgid "Weblate is free to use"
-msgstr "תכונות Weblate"
+msgstr "Weblate חופשי לשימוש"
 
 #: weblate_web/templates/index.html:147
 msgid "Maintained by you"
 msgstr ""
 
 #: weblate_web/templates/index.html:148
-#, fuzzy
-#| msgid "Phone support"
 msgid "Community support"
-msgstr "תמיכה טלפונית"
+msgstr "תמיכה קהילתית"
 
 #: weblate_web/templates/payment/customer.html:5
 #: weblate_web/templates/payment/payment.html:4
@@ -1330,11 +1302,9 @@ msgid "Payment will be issued yearly till you cancel the subscription."
 msgstr "התשלום ייגבה מחדש בכל שנה עד לביטול המינוי."
 
 #: weblate_web/templates/payment/payment.html:24
-#, fuzzy
-#| msgid "Payment will be issued monthly till you cancel the subscription."
 msgid ""
 "Payment will be issued every six months till you cancel the subscription."
-msgstr "התשלום ייגבה מחדש בכל חודש עד לביטול המינוי."
+msgstr "התשלום ייגבה מחדש בכל חצי שנה עד לביטול המינוי."
 
 #: weblate_web/templates/payment/payment.html:26
 msgid "Payment will be issued monthly till you cancel the subscription."
@@ -1622,14 +1592,8 @@ msgid ""
 msgstr "אירוח בחינם למיזמי תכנה חופשית היה בלתי אפשרי ללא המממנים שלנו."
 
 #: weblate_web/templates/thanks.html:50
-#, fuzzy
-#| msgid ""
-#| "Support our project on Bountysource Salt and get exclusive logo placement "
-#| "on this page."
 msgid "Support our project and get link placement on this page."
-msgstr ""
-"ניתן לתמוך במיזם שלנו ב־Bountysource Salt ולקבל הצבה ייחודית של הלוגו שלכם "
-"בעמוד זה."
+msgstr "ניתן לתמוך במיזם שלנו ולקבל מקום להצבת קישור אליכם בעמוד זה."
 
 #: weblate_web/templates/tour.html:3 weblate_web/templates/tour.html:4
 msgid "Weblate tour"
@@ -1737,10 +1701,8 @@ msgid "Please provide your billing information to complete the payment."
 msgstr "נא לספק את פרטי החיוב שלך כדי להשלים את התשלום."
 
 #: weblate_web/views.py:251
-#, fuzzy
-#| msgid "Payments are processed by The Pay service."
 msgid "Payment not yet processed, please retry."
-msgstr "התשלומים מטופלים על ידי שירות The Pay."
+msgstr "התשלומים עדיין לא טופלו, נא לנסות שוב."
 
 #: weblate_web/views.py:256
 msgid "The payment was rejected: {}"
@@ -1751,10 +1713,8 @@ msgid "Unknown reason"
 msgstr ""
 
 #: weblate_web/views.py:261
-#, fuzzy
-#| msgid "Thank you for ordering hosting!"
 msgid "Thank you for your donation."
-msgstr "תודה לך על הזמנת אירוח!"
+msgstr "תודה לך על תרומתך."
 
 #~ msgid "This website is stored on <a href=\"%(url)s\">GitHub</a> as well:"
 #~ msgstr "אתר זה מאוחסן ב־<a href=\"%(url)s\">GitHub</a> גם כן:"
