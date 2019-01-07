@@ -287,9 +287,12 @@ PAYMENT_FAKTURACE = "/home/nijel/weblate/tmp-fakturace"
 SSO_SERVER = 'https://hosted.weblate.org/accounts/sso/'
 SSO_PRIVATE_KEY = None
 SSO_PUBLIC_KEY = None
-SSO_PRIVATE_KEY = 'iO4sLg4eRJRz0LbjOJebVYGKyich4jvmtc8xrACJT7lcfSaJibOFwYfuPeXRnalJ'
-SSO_PUBLIC_KEY = 'mxH8jVEgzAqC4ncvtHQOW0CilYQma96j2y7cYiEv0lKNAxVXT1k992pvNGheNjnk'
 
 LOGIN_URL = '/sso-login/'
 
 PAYMENT_REDIRECT_URL = 'http://localhost:1234/{language}/payment/{uuid}/'
+
+try:
+    from .settings_local import *
+except ImportError:
+    pass
