@@ -120,7 +120,7 @@ class PaymentView(FormView, SingleObjectMixin):
             # the web redirect was aborted
             if self.object.state != Payment.NEW:
                 return self.redirect_origin()
-            result = self.check_customer()
+            result = self.check_customer(customer)
             if result is not None:
                 return result
             return super().dispatch(request, *args, **kwargs)
