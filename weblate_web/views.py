@@ -88,6 +88,29 @@ class PaymentView(FormView, SingleObjectMixin):
             )
         return super().get(request, *args, **kwargs)
 
+    def check_customer(self, customer):
+        if not self.check_customer:
+            return None
+        if customer.is_empty:
+            messages.info(
+                self.request,
+                _(
+                    'Please provide your billing information to '
+                    'complete the payment.'
+                )
+            )
+            return redirect('payment-customer', pk=self.object.pk)
+        if customer.vat:
+            try:
+                validate_vatin(customer.vat)
+            except ValidationError:
+                messages.warning(
+                    self.request,
+                    _('The VAT ID is no longer valid, please update it.')
+                )
+                return redirect('payment-customer', pk=self.object.pk)
+        return None
+
     def dispatch(self, request, *args, **kwargs):
         with transaction.atomic(using='payments_db'):
             self.object = self.get_object()
@@ -97,25 +120,9 @@ class PaymentView(FormView, SingleObjectMixin):
             # the web redirect was aborted
             if self.object.state != Payment.NEW:
                 return self.redirect_origin()
-            if self.check_customer:
-                if customer.is_empty:
-                    messages.info(
-                        self.request,
-                        _(
-                            'Please provide your billing information to '
-                            'complete the payment.'
-                        )
-                    )
-                    return redirect('payment-customer', pk=self.object.pk)
-                if customer.vat:
-                    try:
-                        validate_vatin(customer.vat)
-                    except ValidationError:
-                        messages.warning(
-                            self.request,
-                            _('The VAT ID is no longer valid, please update it.')
-                        )
-                        return redirect('payment-customer', pk=self.object.pk)
+            result = self.check_customer()
+            if result is not None:
+                return result
             return super().dispatch(request, *args, **kwargs)
 
     def form_valid(self, form):
