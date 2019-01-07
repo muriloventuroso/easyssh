@@ -184,7 +184,7 @@ class PaymentsTest(FakuraceTestCase):
             self.assertRedirects(response, url)
             self.assertContains(response, 'Test payment')
             self.assertContains(response, '121.0 EUR')
-            return payment, url
+            return payment, url, customer_url
 
     def check_payment(self, payment, state):
         fresh = Payment.objects.get(pk=payment.pk)
@@ -192,7 +192,7 @@ class PaymentsTest(FakuraceTestCase):
 
     @override_settings(PAYMENT_DEBUG=True, PAYMENT_FAKTURACE=TEST_FAKTURACE)
     def test_pay(self):
-        payment, url = self.test_view()
+        payment, url, customer_url = self.test_view()
         response = self.client.post(url, {'method': 'pay'})
         self.assertRedirects(
             response,
@@ -201,9 +201,21 @@ class PaymentsTest(FakuraceTestCase):
         )
         self.check_payment(payment, Payment.ACCEPTED)
 
+    @override_settings(PAYMENT_DEBUG=True, PAYMENT_FAKTURACE=TEST_FAKTURACE)
+    def test_invalid_vat(self):
+        payment, url, customer_url = self.test_view()
+        # Inject invalid VAT
+        customer = Customer.objects.get(pk=payment.customer.pk)
+        customer.vat = 'CZ8003280317'
+        customer.save()
+
+        response = self.client.get(url, follow=True)
+        self.assertRedirects(response, customer_url)
+        self.assertContains(response, 'The VAT ID is no longer valid')
+
     @override_settings(PAYMENT_DEBUG=True)
     def test_reject(self):
-        payment, url = self.test_view()
+        payment, url, customer_url = self.test_view()
         response = self.client.post(url, {'method': 'reject'})
         self.assertRedirects(
             response,
@@ -214,7 +226,7 @@ class PaymentsTest(FakuraceTestCase):
 
     @override_settings(PAYMENT_DEBUG=True, PAYMENT_FAKTURACE=TEST_FAKTURACE)
     def test_pending(self):
-        payment, url = self.test_view()
+        payment, url, customer_url = self.test_view()
         response = self.client.post(url, {'method': 'pending'})
         complete_url = reverse('payment-complete', kwargs={'pk': payment.pk})
         self.assertRedirects(
