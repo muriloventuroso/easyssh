@@ -20,8 +20,8 @@
 
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
+from django.core.exceptions import ValidationError, SuspiciousOperation
 from django.core.mail import mail_admins
-from django.core.exceptions import SuspiciousOperation
 from django.db import transaction
 from django.http import JsonResponse, HttpResponse, Http404
 from django.shortcuts import redirect, get_object_or_404
@@ -34,6 +34,7 @@ from django.views.decorators.http import require_POST
 from django.views.generic.detail import SingleObjectMixin
 
 from wlhosted.payments.backends import get_backend, list_backends
+from wlhosted.payments.validators import validate_vatin
 
 from wlhosted.payments.models import Payment, Customer
 from wlhosted.payments.forms import CustomerForm
@@ -96,15 +97,25 @@ class PaymentView(FormView, SingleObjectMixin):
             # the web redirect was aborted
             if self.object.state != Payment.NEW:
                 return self.redirect_origin()
-            if self.check_customer and customer.is_empty:
-                messages.info(
-                    self.request,
-                    _(
-                        'Please provide your billing information to '
-                        'complete the payment.'
+            if self.check_customer:
+                if customer.is_empty:
+                    messages.info(
+                        self.request,
+                        _(
+                            'Please provide your billing information to '
+                            'complete the payment.'
+                        )
                     )
-                )
-                return redirect('payment-customer', pk=self.object.pk)
+                    return redirect('payment-customer', pk=self.object.pk)
+                if customer.vat:
+                    try:
+                        validate_vatin(customer.vat)
+                    except ValidationError:
+                        messages.warning(
+                            self.request,
+                            _('The VAT ID is no longer valid, please update it.')
+                        )
+                        return redirect('payment-customer', pk=self.object.pk)
             return super().dispatch(request, *args, **kwargs)
 
     def form_valid(self, form):
