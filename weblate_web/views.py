@@ -88,7 +88,7 @@ class PaymentView(FormView, SingleObjectMixin):
             )
         return super().get(request, *args, **kwargs)
 
-    def check_customer(self, customer):
+    def validate_customer(self, customer):
         if not self.check_customer:
             return None
         if customer.is_empty:
@@ -120,7 +120,7 @@ class PaymentView(FormView, SingleObjectMixin):
             # the web redirect was aborted
             if self.object.state != Payment.NEW:
                 return self.redirect_origin()
-            result = self.check_customer(customer)
+            result = self.validate_customer(customer)
             if result is not None:
                 return result
             return super().dispatch(request, *args, **kwargs)
