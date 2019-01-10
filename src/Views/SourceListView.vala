@@ -206,7 +206,7 @@ namespace EasySSH {
                 var notebook = select_host.notebook;
                 notebook.hexpand = true;
                 if(notebook.n_tabs == 0) {
-                    var connect = new Connection(select_host, notebook, window);
+                    var connect = new Connection(select_host, notebook, window, this);
                     var tab = new Granite.Widgets.Tab (select_host.name, null, connect);
                     notebook.insert_tab(tab, 0);
                 }else if(notebook.n_tabs > 0) {
@@ -362,7 +362,7 @@ namespace EasySSH {
             n.tab_removed.connect(() => {
                 if(n.n_tabs == 0) {
                     var n_host = hostmanager.get_host_by_name(host.name);
-                    var n_connect = new Connection(n_host, n, window);
+                    var n_connect = new Connection(n_host, n, window, this);
                     var n_tab = new Granite.Widgets.Tab (n_host.name, null, n_connect);
                     n.insert_tab(n_tab, 0);
                     window.current_terminal = null;
@@ -475,7 +475,7 @@ namespace EasySSH {
             return (TerminalWidget)((TerminalBox)tab.page).term;
         }
 
-        private void set_badge_item (Granite.Widgets.SourceList.Item item, Granite.Widgets.DynamicNotebook notebook){
+        public void set_badge_item (Granite.Widgets.SourceList.Item item, Granite.Widgets.DynamicNotebook notebook){
             if(notebook.n_tabs == 0){
                 item.badge = null;
             }else if(notebook.n_tabs == 1){

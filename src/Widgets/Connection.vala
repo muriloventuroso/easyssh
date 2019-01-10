@@ -27,14 +27,16 @@ namespace EasySSH {
         private Gtk.Label title;
         private Gtk.Label description;
         public MainWindow window {get; construct;}
+        public SourceListView sourcelist {get; construct;}
 
-        public Connection (Host host, Granite.Widgets.DynamicNotebook notebook, MainWindow window) {
+        public Connection (Host host, Granite.Widgets.DynamicNotebook notebook, MainWindow window, SourceListView sourcelist) {
             Object (
                 orientation: Gtk.Orientation.VERTICAL,
                 valign: Gtk.Align.CENTER,
                 host: host,
                 notebook: notebook,
-                window: window
+                window: window,
+                sourcelist: sourcelist
             );
         }
 
@@ -86,6 +88,7 @@ namespace EasySSH {
             notebook.insert_tab (tab, next_tab);
             notebook.remove_tab(notebook.current);
             notebook.current = tab;
+            sourcelist.set_badge_item (host.item, notebook);
             destroy();
         }
 
