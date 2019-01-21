@@ -51,6 +51,7 @@ namespace EasySSH {
         public const string ACTION_SELECT_ALL = "action-select-all";
         public const string ACTION_OPEN_IN_FILES = "action-open-in-files";
         public const string ACTION_SCROLL_TO_LAST_COMMAND = "action-scroll-to-las-command";
+        public const string ACTION_CLOSE_TABS = "action-scroll-to-las-command";
 
         public SimpleActionGroup actions { get; construct; }
         public Gtk.ActionGroup main_actions;
@@ -75,7 +76,8 @@ namespace EasySSH {
             { ACTION_SEARCH_PREVIOUS, action_search_previous },
             { ACTION_SELECT_ALL, action_select_all },
             { ACTION_OPEN_IN_FILES, action_open_in_files },
-            { ACTION_SCROLL_TO_LAST_COMMAND, action_scroll_to_last_command }
+            { ACTION_SCROLL_TO_LAST_COMMAND, action_scroll_to_last_command },
+            { ACTION_CLOSE_TABS, action_close_tabs }
         };
 
         private const string ui_string = """
@@ -519,6 +521,18 @@ namespace EasySSH {
             } else {
                 fullscreen ();
                 is_fullscreen = true;
+            }
+        }
+
+        void action_close_tabs() {
+            foreach(var notebook in sourcelist.hostmanager.get_notebooks()){
+                notebook.tabs.foreach((tab) => {
+                    Idle.add(()=> {
+                        tab.close();
+                        return false;
+                    });
+                });
+
             }
         }
 

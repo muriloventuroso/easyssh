@@ -45,8 +45,11 @@ namespace EasySSH {
             );
             var preferences_menuitem = new Gtk.MenuItem.with_label (_("Preferences"));
             preferences_menuitem.action_name = MainWindow.ACTION_PREFIX + MainWindow.ACTION_PREFERENCES;
+            var close_tabs_menuitem = new Gtk.MenuItem.with_label (_("Close All Connections"));
+            close_tabs_menuitem.action_name = MainWindow.ACTION_PREFIX + MainWindow.ACTION_CLOSE_TABS;
             var menu = new Gtk.Menu ();
             menu.append (preferences_menuitem);
+            menu.append (close_tabs_menuitem);
             menu.show_all ();
 
             Gtk.MenuButton settings_button = new Gtk.MenuButton ();
