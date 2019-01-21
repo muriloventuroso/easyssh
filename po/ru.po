@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.muriloventuroso.easyssh\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-07 09:23-0200\n"
+"POT-Creation-Date: 2019-01-21 16:10-0200\n"
 "PO-Revision-Date: 2018-12-31 04:08+0000\n"
 "Last-Translator: Alex <tminei@ukr.net>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/easyssh/"
@@ -23,36 +23,36 @@ msgstr ""
 "X-Poedit-Basepath: ../src\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: src/MainWindow.vala:99
+#: src/MainWindow.vala:101
 msgid "EasySSH"
 msgstr "EasySSH"
 
-#: src/MainWindow.vala:436
+#: src/MainWindow.vala:438
 msgid "Hide find bar"
 msgstr ""
 
-#: src/MainWindow.vala:444 src/Widgets/HeaderBar.vala:44
+#: src/MainWindow.vala:446 src/Widgets/HeaderBar.vala:44
 msgid "Find…"
 msgstr ""
 
-#: src/MainWindow.vala:526
+#: src/MainWindow.vala:540
 msgid "Copy"
 msgstr "Копировать"
 
-#: src/MainWindow.vala:527
+#: src/MainWindow.vala:541
 msgid "Paste"
 msgstr "Вставить"
 
-#: src/MainWindow.vala:528
+#: src/MainWindow.vala:542
 msgid "Select All"
 msgstr "Выделить всё"
 
-#: src/MainWindow.vala:529
+#: src/MainWindow.vala:543
 msgid "Show in File Browser"
 msgstr "Показать в файловом браузере"
 
 #: src/Views/SourceListView.vala:36 src/Views/SourceListView.vala:75
-#: src/Widgets/Connection.vala:60
+#: src/Widgets/Connection.vala:62
 msgid "Edit"
 msgstr "Изменить"
 
@@ -63,7 +63,7 @@ msgstr "Дублировать"
 #: src/Views/SourceListView.vala:48 src/Views/SourceListView.vala:87
 #: src/Views/SourceListView.vala:1157 src/Views/SourceListView.vala:1159
 #: src/Views/SourceListView.vala:1176 src/Views/SourceListView.vala:1178
-#: src/Widgets/ConnectionEditor.vala:376 src/Widgets/Connection.vala:64
+#: src/Widgets/ConnectionEditor.vala:376 src/Widgets/Connection.vala:66
 msgid "Remove"
 msgstr "Удалить"
 
@@ -150,7 +150,12 @@ msgstr "Создание нового подключения"
 msgid "Preferences"
 msgstr "Настройки"
 
-#: src/Widgets/HeaderBar.vala:55
+#: src/Widgets/HeaderBar.vala:48
+#, fuzzy
+msgid "Close All Connections"
+msgstr "Добавить подключение"
+
+#: src/Widgets/HeaderBar.vala:58
 msgid "Menu"
 msgstr "Меню"
 
@@ -219,11 +224,11 @@ msgstr "Файл идентификации:"
 msgid "SSH Config:"
 msgstr "Конфигурация SSH:"
 
-#: src/Widgets/ConnectionEditor.vala:335 src/Widgets/Preferences.vala:112
+#: src/Widgets/ConnectionEditor.vala:335 src/Widgets/Preferences.vala:114
 msgid "Terminal Background Color:"
 msgstr "Цвет фона терминала:"
 
-#: src/Widgets/ConnectionEditor.vala:344 src/Widgets/Preferences.vala:115
+#: src/Widgets/ConnectionEditor.vala:344 src/Widgets/Preferences.vala:117
 msgid "Terminal Font:"
 msgstr "Шрифт терминала:"
 
@@ -256,7 +261,7 @@ msgstr "Удалить"
 msgid "Add Tunnel"
 msgstr "Добавить туннель"
 
-#: src/Widgets/ConnectionEditor.vala:433 src/Widgets/Preferences.vala:126
+#: src/Widgets/ConnectionEditor.vala:433 src/Widgets/Preferences.vala:128
 msgid "Appearance"
 msgstr "Внешний вид"
 
@@ -268,7 +273,7 @@ msgstr "Туннели"
 msgid "Name is already taken"
 msgstr "Имя уже занято"
 
-#: src/Widgets/Connection.vala:57
+#: src/Widgets/Connection.vala:59
 msgid "Connect"
 msgstr "Подключиться"
 
@@ -276,31 +281,31 @@ msgstr "Подключиться"
 msgid "Select Hosts Configuration Folder…"
 msgstr "Выбрать каталог сохранения настроек…"
 
-#: src/Widgets/Preferences.vala:98
+#: src/Widgets/Preferences.vala:99
 msgid "Hosts Configuration Folder:"
 msgstr "Каталог сохранения настроек:"
 
-#: src/Widgets/Preferences.vala:101
+#: src/Widgets/Preferences.vala:102
 msgid "Restore Opened Hosts:"
 msgstr "Восстанавливать открытые подключения:"
 
-#: src/Widgets/Preferences.vala:104
+#: src/Widgets/Preferences.vala:105
 msgid "Sync SSH Config:"
 msgstr "Синхронизация конфигурации SSH:"
 
-#: src/Widgets/Preferences.vala:107
+#: src/Widgets/Preferences.vala:109
 msgid "Encrypt Data:"
 msgstr "Шифрование данных:"
 
-#: src/Widgets/Preferences.vala:118
+#: src/Widgets/Preferences.vala:120
 msgid "Use Dark Theme:"
 msgstr "Использовать темную тему:"
 
-#: src/Widgets/Preferences.vala:125
+#: src/Widgets/Preferences.vala:127
 msgid "General"
 msgstr "Основные"
 
-#: src/Widgets/Preferences.vala:138
+#: src/Widgets/Preferences.vala:140
 msgid "Close"
 msgstr "Закрыть"
 
