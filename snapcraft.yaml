@@ -4,8 +4,8 @@ summary: SSH Connection Manager
 description: A complete, efficient and easy-to-use manager. Create and edit connections, groups, customize the terminal, with multiple instances of the same connection.
 
 icon: data/icons/24/com.github.muriloventuroso.easyssh.svg
-grade: stable
-confinement: strict
+grade: devel
+confinement: devmode
 
 slots:
   dbus-easyssh:
@@ -17,7 +17,7 @@ apps:
   easyssh:
     command: com.github.muriloventuroso.easyssh
     desktop: usr/share/applications/com.github.muriloventuroso.easyssh.desktop
-    plugs: [network, home, x11, unity7, gsettings]
+    plugs: [network, home, x11, unity7, gsetting,s, locale-control]
     slots: [ dbus-easyssh ]
 
 parts:
@@ -25,7 +25,6 @@ parts:
         plugin: cmake
         source: https://github.com/elementary/granite/archive/0.5.tar.gz
         source-type: tar
-        after: [valac]
         configflags: [-DCMAKE_BUILD_TYPE=Release, -DCMAKE_INSTALL_PREFIX=/usr, -DCMAKE_INSTALL_LIBDIR=/usr/lib]
         build-packages:
             - build-essential
@@ -34,37 +33,28 @@ parts:
             - libgtk-3-dev
             - cmake
             - gobject-introspection
-
-    openssh:
-      plugin: autotools
-      source: https://github.com/mariogrip/openssh-portable.git
-      build-packages:
-        - libssl-dev
+        stage-packages:
+            - valac
     easyssh:
         plugin: meson
         meson-parameters:
           - --prefix=/usr
-        source: https://github.com/muriloventuroso/easyssh/archive/1.2.7.tar.gz
+        source: https://github.com/muriloventuroso/easyssh/archive/1.5.3.tar.gz
         source-type: tar
-        after: [granite, desktop-gtk3, openssh]
+        after: [granite, desktop-gtk3]
         build-packages:
             - build-essential
+            - valac
             - intltool
             - libgee-0.8-dev
             - debhelper
             - libgtk-3-dev
             - libvte-2.91-dev
             - libjson-glib-dev
+            - openssh-client
+            - gpg
         stage-packages:
             - gobject-introspection
             - libgee-0.8-2
             - libgtk-3-0
-    valac:
-      plugin: autotools
-      source: http://download.gnome.org/sources/vala/0.38/vala-0.38.8.tar.xz
-      build-packages:
-         - flex    
-         - bison
-         - build-essential
-         - libglib2.0-dev
-         - libgraphviz-dev
+            - locales-all
