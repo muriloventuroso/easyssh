@@ -55,6 +55,7 @@ parts:
         plugin: meson
         meson-parameters:
           - --prefix=/usr
+          - --with-gpg=false
         source: https://github.com/muriloventuroso/easyssh/archive/1.5.3.tar.gz
         source-type: tar
         after: [granite, desktop-gnome-platform]
