@@ -38,24 +38,11 @@ plugs:
         default-provider: gtk-common-themes
 
 parts:
-    granite:
-        plugin: cmake
-        source: https://github.com/elementary/granite/archive/5.2.2.tar.gz
-        source-type: tar
-        configflags: [-DCMAKE_BUILD_TYPE=Release, -DCMAKE_INSTALL_PREFIX=/usr, -DCMAKE_INSTALL_LIBDIR=/usr/lib]
-        build-packages:
-            - build-essential
-            - libgee-0.8-dev
-            - libgirepository1.0-dev
-            - libgtk-3-dev
-            - cmake
-            - gobject-introspection
 
     easyssh:
         plugin: meson
         meson-parameters:
           - --prefix=/usr
-          - --with-gpg=false
         source: https://github.com/muriloventuroso/easyssh/archive/1.5.3.tar.gz
         source-type: tar
         after: [granite, desktop-gnome-platform]
@@ -68,12 +55,25 @@ parts:
             - libgtk-3-dev
             - libvte-2.91-dev
             - libjson-glib-dev
-            - openssh-client
         stage-packages:
             - gobject-introspection
             - libgee-0.8-2
             - libgtk-3-0
             - locales-all
+            - gpg
+            - openssh-client
+    granite:
+        plugin: cmake
+        source: https://github.com/elementary/granite/archive/5.2.2.tar.gz
+        source-type: tar
+        build-packages:
+            - build-essential
+            - libgee-0.8-dev
+            - libgirepository1.0-dev
+            - libgtk-3-dev
+            - cmake
+            - gobject-introspection
+            - valac
     desktop-gnome-platform:
         source: https://github.com/ubuntu/snapcraft-desktop-helpers.git
         source-subdir: gtk
