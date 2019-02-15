@@ -43,8 +43,8 @@ parts:
         plugin: meson
         meson-parameters:
           - --prefix=/usr
-        source: https://github.com/muriloventuroso/easyssh/archive/1.5.3.tar.gz
-        source-type: tar
+        source: https://github.com/muriloventuroso/easyssh.git
+        source-type: git
         after: [granite, desktop-gnome-platform]
         build-packages:
             - build-essential
@@ -55,6 +55,7 @@ parts:
             - libgtk-3-dev
             - libvte-2.91-dev
             - libjson-glib-dev
+            - libunity-dev
         stage-packages:
             - gobject-introspection
             - libgee-0.8-2
