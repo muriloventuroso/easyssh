@@ -48,7 +48,6 @@ parts:
         after: [granite, desktop-gnome-platform]
         build-packages:
             - build-essential
-            - valac
             - intltool
             - libgee-0.8-dev
             - debhelper
@@ -86,3 +85,13 @@ parts:
         override-build: |
           snapcraftctl build
           mkdir -pv $SNAPCRAFT_PART_INSTALL/gnome-platform
+
+    valac:
+      plugin: autotools
+      source: https://download.gnome.org/sources/vala/0.40/vala-0.40.13.tar.xz
+      build-packages:
+         - flex
+         - bison
+         - build-essential
+         - libglib2.0-dev
+         - libgraphviz-dev
