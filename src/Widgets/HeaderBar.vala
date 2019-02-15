@@ -39,10 +39,7 @@ namespace EasySSH {
             search_button.action_name = MainWindow.ACTION_PREFIX + MainWindow.ACTION_SEARCH;
             search_button.image = new Gtk.Image.from_icon_name ("edit-find-symbolic", Gtk.IconSize.SMALL_TOOLBAR);
             search_button.valign = Gtk.Align.CENTER;
-            search_button.tooltip_markup = Granite.markup_accel_tooltip (
-                {"<Ctrl><Shift>f"},
-                _("Find…")
-            );
+
             var preferences_menuitem = new Gtk.MenuItem.with_label (_("Preferences"));
             preferences_menuitem.action_name = MainWindow.ACTION_PREFIX + MainWindow.ACTION_PREFERENCES;
             var close_tabs_menuitem = new Gtk.MenuItem.with_label (_("Close All Connections"));
