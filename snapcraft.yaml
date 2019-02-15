@@ -66,6 +66,7 @@ parts:
         plugin: cmake
         source: https://github.com/elementary/granite/archive/5.2.2.tar.gz
         source-type: tar
+        after: [valac]
         configflags: [-DCMAKE_BUILD_TYPE=Release, -DCMAKE_INSTALL_PREFIX=/usr, -DCMAKE_INSTALL_LIBDIR=/usr/lib]
         build-packages:
             - build-essential
