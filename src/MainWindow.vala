@@ -433,18 +433,10 @@ namespace EasySSH {
                 action_accelerators[ACTION_SEARCH_NEXT] = "<Control>Down";
                 action_accelerators[ACTION_SEARCH_PREVIOUS] = "<Control><Shift>g";
                 action_accelerators[ACTION_SEARCH_PREVIOUS] = "<Control>Up";
-                header.search_button.tooltip_markup = Granite.markup_accel_tooltip (
-                    {"Escape", "<Ctrl><Shift>f"},
-                    _("Hide find bar")
-                );
                 search_toolbar.grab_focus ();
             } else {
                 action_accelerators.remove_all(ACTION_SEARCH_NEXT);
                 action_accelerators.remove_all(ACTION_SEARCH_PREVIOUS);
-                header.search_button.tooltip_markup = Granite.markup_accel_tooltip (
-                    {"<Ctrl><Shift>f"},
-                    _("Find…")
-                );
                 search_toolbar.clear ();
                 current_terminal.grab_focus ();
             }
