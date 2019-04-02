@@ -60,7 +60,8 @@ To install, use `ninja install`, then execute with `com.github.muriloventuroso.e
 ## Install with Flatpak
 
 Install:
-
+    
+    flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
     flatpak install flathub com.github.muriloventuroso.easyssh
 
 Run:
