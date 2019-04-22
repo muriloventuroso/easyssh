@@ -45,7 +45,7 @@ parts:
           - --prefix=/usr
         source: https://github.com/muriloventuroso/easyssh.git
         source-type: git
-        after: [granite, desktop-gnome-platform]
+        after: [valac, granite, desktop-gnome-platform]
         build-packages:
             - build-essential
             - intltool

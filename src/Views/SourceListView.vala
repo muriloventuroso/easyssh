@@ -784,7 +784,7 @@ namespace EasySSH {
                     host.item = source_list.selected;
                     source_list.selected = null;
                     clean_box ();
-                    box.add (welcome);
+                    welcome.show ();
                 } else {
                     for(int i = 0; i < e_host.notebook.n_tabs; i++) {
                         var l_tab = e_host.notebook.get_tab_by_index(i);
@@ -795,7 +795,7 @@ namespace EasySSH {
                 }
             } else {
                 clean_box ();
-                box.add (welcome);
+                welcome.show ();
             }
 
             save_hosts();
