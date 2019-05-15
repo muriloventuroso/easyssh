@@ -28,8 +28,9 @@ namespace EasySSH {
         private EasySSH.Settings settings;
         private string default_filemanager = "";
         private SearchToolbar search_toolbar;
+        private Gtk.Grid grid;
         private Gtk.Revealer search_revealer;
-        private HeaderBar header;
+        public HeaderBar header;
         private bool is_fullscreen = false;
         public Gtk.Application application { get; construct; }
 
@@ -91,7 +92,7 @@ namespace EasySSH {
             </ui>
         """;
 
-        private SourceListView sourcelist;
+        public SourceListView sourcelist;
 
         public MainWindow (Gtk.Application application) {
             Object (
@@ -163,7 +164,7 @@ namespace EasySSH {
             weak Gtk.IconTheme default_theme = Gtk.IconTheme.get_default ();
             default_theme.add_resource_path ("/com/github/muriloventuroso/easyssh");
 
-            header = new HeaderBar ();
+            header = new HeaderBar (this);
             var header_context = header.get_style_context ();
             header_context.add_class ("titlebar");
             header_context.add_class ("default-decoration");
@@ -182,9 +183,10 @@ namespace EasySSH {
             search_revealer.set_reveal_child (false);
 
             sourcelist = new SourceListView(this);
-            var grid = new Gtk.Grid ();
+            grid = new Gtk.Grid ();
             grid.attach (search_revealer, 0, 0, 1, 1);
             grid.attach (sourcelist, 0, 1, 1, 1);
+
             add (grid);
 
             set_titlebar (header);
@@ -421,6 +423,7 @@ namespace EasySSH {
             var command = "sftp://" + current_terminal.host.username + "@" + current_terminal.host.host + ":" + current_terminal.host.port;
             Process.spawn_command_line_async (default_filemanager + " " + command);
         }
+
         void action_search () {
             var search_action = (SimpleAction) actions.lookup_action (ACTION_SEARCH);
             var search_state = search_action.get_state ().get_boolean ();

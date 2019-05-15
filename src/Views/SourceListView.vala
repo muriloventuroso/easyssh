@@ -102,6 +102,7 @@ namespace EasySSH {
 
         public HostManager hostmanager;
         public AccountManager accountmanager;
+        public BookmarkManager bookmarkmanager;
         private Welcome welcome;
         public WelcomeAccounts welcome_accounts;
         private Gtk.Box box;
@@ -127,6 +128,7 @@ namespace EasySSH {
             settings = EasySSH.Settings.get_default ();
             hostmanager = new HostManager();
             accountmanager = new AccountManager();
+            bookmarkmanager = new BookmarkManager();
             encrypt_password = "";
             should_encrypt_data = settings.encrypt_data;
             open_dialog = false;
@@ -192,6 +194,7 @@ namespace EasySSH {
             });
             load_accounts();
             load_hosts();
+            load_bookmarks();
             if(settings.sync_ssh_config == true){
                 load_ssh_config ();
             }
@@ -258,6 +261,7 @@ namespace EasySSH {
                     should_encrypt_data = settings.encrypt_data;
                     save_accounts ();
                     save_hosts ();
+                    save_bookmarks ();
                 }
             });
             #endif
@@ -409,6 +413,10 @@ namespace EasySSH {
             item.account_remove_clicked.connect ((name) => {account_remove_clicked (name);});
             item.account_duplicate_clicked.connect ((name) => {account_duplicate_clicked (name);});
 
+        }
+
+        public void insert_bookmark() {
+            window.header.bookmarks_popover.load_list_store(bookmarkmanager.get_bookmarks());
         }
 
         private void on_tab_moved (Granite.Widgets.Tab tab, int x, int y) {
@@ -571,9 +579,7 @@ namespace EasySSH {
                 }
                 #endif
                 var file = File.new_for_path (hosts_folder + file_name);
-                if (!file.query_exists ()) {
-                    file.make_directory();
-                } else {
+                if (file.query_exists ()) {
                     #if WITH_GPG
                     if(EasySSH.settings.encrypt_data == true){
                         var password = get_password (true);
@@ -676,9 +682,7 @@ namespace EasySSH {
                 }
                 #endif
                 var file = File.new_for_path (accounts_folder + file_name);
-                if (!file.query_exists ()) {
-                    file.make_directory();
-                } else {
+                if (file.query_exists ()) {
                     #if WITH_GPG
                     if(EasySSH.settings.encrypt_data == true){
                         var password = get_password (true);
@@ -732,6 +736,61 @@ namespace EasySSH {
             }
         }
 
+        public void load_bookmarks() {
+            try {
+                string res = "";
+                string bookmarks_folder = EasySSH.settings.hosts_folder.replace ("%20", " ");
+                string file_name = "/bookmarks.json";
+                #if WITH_GPG
+                if(EasySSH.settings.encrypt_data == true){
+                    file_name = "/bookmarks.json.gpg";
+                }
+                #endif
+                var file = File.new_for_path (bookmarks_folder + file_name);
+                if (file.query_exists ()) {
+                    #if WITH_GPG
+                    if(EasySSH.settings.encrypt_data == true){
+                        var password = get_password (true);
+                        if(password == ""){
+                            return;
+                        }
+                        res = decrypt_data (password, bookmarks_folder + file_name);
+                    } else {
+                        string line;
+                        var dis = new DataInputStream (file.read ());
+                        while ((line = dis.read_line (null)) != null) {
+                            res += line;
+                        }
+                    }
+                    #else
+                    string line;
+                    var dis = new DataInputStream (file.read ());
+                    while ((line = dis.read_line (null)) != null) {
+                        res += line;
+                    }
+                    #endif
+                    var parser = new Json.Parser ();
+                    parser.load_from_data (res);
+
+                    var root_object = parser.get_root ();
+                    var json_bookmarks = root_object.get_array();
+                    foreach (var bookmarknode in json_bookmarks.get_elements ()) {
+                        var item = bookmarknode.get_object ();
+                        var bookmark = new Bookmark();
+                        bookmark.name = item.get_string_member("name");
+                        bookmark.command = item.get_string_member("command");
+
+                        bookmarkmanager.add_bookmark(bookmark);
+                    }
+
+                    insert_bookmark();
+
+                }
+            } catch (Error e) {
+                stderr.printf ("%s\n", e.message);
+            }
+        }
+
         public Host add_host(Host host) {
             var group = hostmanager.get_group_by_name(host.group);
             if(group == null) {
@@ -748,6 +807,13 @@ namespace EasySSH {
             accountmanager.add_account(account);
             save_accounts();
             return account;
+        }
+
+        public Bookmark add_bookmark(Bookmark bookmark) {
+            bookmarkmanager.add_bookmark(bookmark);
+            insert_bookmark();
+            save_bookmarks();
+            return bookmark;
         }
 
         public Group add_group(string name) {
@@ -894,8 +960,6 @@ namespace EasySSH {
             {
                 if (file.query_exists ()) {
                     file.delete ();
-                } else {
-                    file.make_directory();
                 }
                 var dos = new DataOutputStream (file.create (FileCreateFlags.REPLACE_DESTINATION));
 
@@ -907,8 +971,6 @@ namespace EasySSH {
                 {
                     if (file_ssh.query_exists ()) {
                         file_ssh.delete ();
-                    } else {
-                        file_ssh.make_directory();
                     }
                     var dos_ssh = new DataOutputStream (file_ssh.create (FileCreateFlags.REPLACE_DESTINATION));
                     dos_ssh.put_string (data_ssh_config);
@@ -951,8 +1013,47 @@ namespace EasySSH {
             {
                 if (file.query_exists ()) {
                     file.delete ();
-                } else {
-                    file.make_directory();
+                }
+                var dos = new DataOutputStream (file.create (FileCreateFlags.REPLACE_DESTINATION));
+
+                dos.put_string (data);
+            }
+
+        }
+
+        public void save_bookmarks() {
+            Json.Array array_bookmarks = new Json.Array();
+            var bookmarks = bookmarkmanager.get_bookmarks();
+            var length_bookmarks = bookmarkmanager.get_length();
+            for(int i = 0; i < length_bookmarks; i++) {
+                if(bookmarks[i] == null) {
+                    continue;
+                }
+                var s_bookmark = new Bookmark();
+                s_bookmark.name = bookmarks[i].name;
+                s_bookmark.command = bookmarks[i].command;
+
+                Json.Node root = Json.gobject_serialize(s_bookmark);
+                array_bookmarks.add_element(root);
+            }
+
+            Json.Node root = new Json.Node.alloc();
+            root.init_array(array_bookmarks);
+            Json.Generator gen = new Json.Generator();
+            gen.set_root(root);
+            string data = gen.to_data(null);
+            var filename = "/bookmarks.json";
+            #if WITH_GPG
+            if(EasySSH.settings.encrypt_data == true){
+                filename = filename + ".gpg";
+                var password = get_password (false);
+                data = encrypt_data (password, data);
+            }
+            #endif
+            var file = File.new_for_path (EasySSH.settings.hosts_folder.replace ("%20", " ") + filename);
+            {
+                if (file.query_exists ()) {
+                    file.delete ();
                 }
                 var dos = new DataOutputStream (file.create (FileCreateFlags.REPLACE_DESTINATION));
 
@@ -1146,6 +1247,10 @@ namespace EasySSH {
             var account = accountmanager.get_account_by_name(name);
             confirm_remove_account_dialog (account);
         }
+        public void remove_bookmark(string name){
+            var bookmark = bookmarkmanager.get_bookmark_by_name(name);
+            confirm_remove_bookmark_dialog (bookmark);
+        }
         public void duplicate_acc(string name) {
             clean_box();
             var account = accountmanager.get_account_by_name(name);
@@ -1154,7 +1259,7 @@ namespace EasySSH {
             account_editor.show();
         }
         private void confirm_remove_dialog (Host host) {
-            var message_dialog = new Granite.MessageDialog.with_image_from_icon_name (_("Remove") + host.name, _("Are you sure you want to remove this connection and all associated data?"), "dialog-warning", Gtk.ButtonsType.CANCEL);
+            var message_dialog = new Granite.MessageDialog.with_image_from_icon_name (_("Remove") + " " + host.name, _("Are you sure you want to remove this connection and all associated data?"), "dialog-warning", Gtk.ButtonsType.CANCEL);
             message_dialog.transient_for = window;
             var suggested_button = new Gtk.Button.with_label (_("Remove"));
             suggested_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
@@ -1173,7 +1278,7 @@ namespace EasySSH {
         }
 
         private void confirm_remove_account_dialog (Account account) {
-            var message_dialog = new Granite.MessageDialog.with_image_from_icon_name (_("Remove") + account.name, _("Are you sure you want to remove this account and all associated data?"), "dialog-warning", Gtk.ButtonsType.CANCEL);
+            var message_dialog = new Granite.MessageDialog.with_image_from_icon_name (_("Remove") + " " + account.name, _("Are you sure you want to remove this account and all associated data?"), "dialog-warning", Gtk.ButtonsType.CANCEL);
             message_dialog.transient_for = window;
             var suggested_button = new Gtk.Button.with_label (_("Remove"));
             suggested_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
@@ -1185,6 +1290,22 @@ namespace EasySSH {
                 accountmanager.remove_account(account.name);
                 save_accounts();
                 restore_accounts();
+            }
+            message_dialog.destroy ();
+        }
+
+        private void confirm_remove_bookmark_dialog (Bookmark bookmark) {
+            var message_dialog = new Granite.MessageDialog.with_image_from_icon_name (_("Remove") + " " + bookmark.name, _("Are you sure you want to remove this bookmark?"), "dialog-warning", Gtk.ButtonsType.CANCEL);
+            message_dialog.transient_for = window;
+            var suggested_button = new Gtk.Button.with_label (_("Remove"));
+            suggested_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+            message_dialog.add_action_widget (suggested_button, Gtk.ResponseType.ACCEPT);
+
+            message_dialog.show_all ();
+            if (message_dialog.run () == Gtk.ResponseType.ACCEPT) {
+                bookmarkmanager.remove_bookmark(bookmark.name);
+                save_bookmarks();
+                insert_bookmark();
             }
             message_dialog.destroy ();
         }

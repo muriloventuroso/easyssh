@@ -22,9 +22,13 @@
 namespace EasySSH {
     public class HeaderBar : Gtk.HeaderBar {
         public Gtk.ToggleButton search_button;
+        public Gtk.MenuButton bookmarks_button;
+        public BookmarksPopover bookmarks_popover;
+        public MainWindow window { get; construct; }
 
-        public HeaderBar () {
+        public HeaderBar (MainWindow window) {
                 Object (
+                    window: window,
                     has_subtitle: false,
                     show_close_button: true
                 );
@@ -39,6 +43,15 @@ namespace EasySSH {
             search_button.action_name = MainWindow.ACTION_PREFIX + MainWindow.ACTION_SEARCH;
             search_button.image = new Gtk.Image.from_icon_name ("edit-find-symbolic", Gtk.IconSize.SMALL_TOOLBAR);
             search_button.valign = Gtk.Align.CENTER;
+
+            bookmarks_popover = new BookmarksPopover (window);
+
+            bookmarks_button = new Gtk.MenuButton ();
+            bookmarks_button.set_can_focus (false);
+            bookmarks_button.image = new Gtk.Image.from_icon_name ("user-bookmarks-symbolic", Gtk.IconSize.SMALL_TOOLBAR);
+            bookmarks_button.valign = Gtk.Align.CENTER;
+            bookmarks_button.popover = bookmarks_popover;
+            bookmarks_button.tooltip_text = _("Bookmarks");
 
             var preferences_menuitem = new Gtk.MenuItem.with_label (_("Preferences"));
             preferences_menuitem.action_name = MainWindow.ACTION_PREFIX + MainWindow.ACTION_PREFERENCES;
@@ -58,6 +71,7 @@ namespace EasySSH {
             pack_start(new_conn);
             pack_end(settings_button);
             pack_end(search_button);
+            pack_end(bookmarks_button);
 
         }
 

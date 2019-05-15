@@ -46,6 +46,7 @@ executable(
     'src/Application.vala',
     'src/Host.vala',
     'src/Account.vala',
+    'src/Bookmark.vala',
     'src/MainWindow.vala',
     'src/Services/Settings.vala',
     'src/Views/SourceListView.vala',
@@ -60,6 +61,7 @@ executable(
     'src/Widgets/Preferences.vala',
     'src/Widgets/TerminalWidget.vala',
     'src/Widgets/SearchToolbar.vala',
+    'src/Widgets/BookmarksPopover.vala',
     dependencies: dependencies,
     install: true
 )

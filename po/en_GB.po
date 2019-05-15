@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.muriloventuroso.easyssh\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-21 16:10-0200\n"
+"POT-Creation-Date: 2019-05-15 17:41-0300\n"
 "PO-Revision-Date: 2018-09-13 01:16+0000\n"
 "Last-Translator: Robert Readman <robert_readman@hotmail.com>\n"
 "Language-Team: English (United Kingdom) <https://hosted.weblate.org/projects/"
@@ -19,31 +19,23 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 3.2-dev\n"
 
-#: src/MainWindow.vala:101
+#: src/MainWindow.vala:102
 msgid "EasySSH"
 msgstr "EasySSH"
 
-#: src/MainWindow.vala:438
-msgid "Hide find bar"
-msgstr ""
-
-#: src/MainWindow.vala:446 src/Widgets/HeaderBar.vala:44
-msgid "Find…"
-msgstr ""
-
-#: src/MainWindow.vala:540
+#: src/MainWindow.vala:535
 msgid "Copy"
 msgstr "Copy"
 
-#: src/MainWindow.vala:541
+#: src/MainWindow.vala:536
 msgid "Paste"
 msgstr "Paste"
 
-#: src/MainWindow.vala:542
+#: src/MainWindow.vala:537
 msgid "Select All"
 msgstr "Select All"
 
-#: src/MainWindow.vala:543
+#: src/MainWindow.vala:538
 msgid "Show in File Browser"
 msgstr "Show in File Browser"
 
@@ -57,43 +49,44 @@ msgid "Duplicate"
 msgstr ""
 
 #: src/Views/SourceListView.vala:48 src/Views/SourceListView.vala:87
-#: src/Views/SourceListView.vala:1157 src/Views/SourceListView.vala:1159
-#: src/Views/SourceListView.vala:1176 src/Views/SourceListView.vala:1178
+#: src/Views/SourceListView.vala:1262 src/Views/SourceListView.vala:1264
+#: src/Views/SourceListView.vala:1281 src/Views/SourceListView.vala:1283
+#: src/Views/SourceListView.vala:1298 src/Views/SourceListView.vala:1300
 #: src/Widgets/ConnectionEditor.vala:376 src/Widgets/Connection.vala:66
 msgid "Remove"
 msgstr "Remove"
 
-#: src/Views/SourceListView.vala:149
+#: src/Views/SourceListView.vala:151
 #, fuzzy
 msgid "Hosts"
 msgstr "Host:"
 
-#: src/Views/SourceListView.vala:151
+#: src/Views/SourceListView.vala:153
 msgid "Accounts"
 msgstr ""
 
-#: src/Views/SourceListView.vala:503
+#: src/Views/SourceListView.vala:511
 msgid "Please enter the password to unlock the data file"
 msgstr ""
 
-#: src/Views/SourceListView.vala:505
+#: src/Views/SourceListView.vala:513
 msgid "Please enter the password to lock the data file"
 msgstr ""
 
-#: src/Views/SourceListView.vala:507
+#: src/Views/SourceListView.vala:515
 #, fuzzy
 msgid "Password"
 msgstr "Password:"
 
-#: src/Views/SourceListView.vala:514 src/Widgets/ConnectionEditor.vala:155
+#: src/Views/SourceListView.vala:522 src/Widgets/ConnectionEditor.vala:155
 msgid "Cancel"
 msgstr "Cancel"
 
-#: src/Views/SourceListView.vala:517
+#: src/Views/SourceListView.vala:525
 msgid "Send"
 msgstr ""
 
-#: src/Views/SourceListView.vala:1157
+#: src/Views/SourceListView.vala:1262
 #, fuzzy
 msgid ""
 "Are you sure you want to remove this connection and all associated data?"
@@ -101,9 +94,16 @@ msgstr ""
 "Are you sure you want to remove this connection and all data associated with "
 "it?"
 
-#: src/Views/SourceListView.vala:1176
+#: src/Views/SourceListView.vala:1281
 #, fuzzy
 msgid "Are you sure you want to remove this account and all associated data?"
+msgstr ""
+"Are you sure you want to remove this connection and all data associated with "
+"it?"
+
+#: src/Views/SourceListView.vala:1298
+#, fuzzy
+msgid "Are you sure you want to remove this bookmark?"
 msgstr ""
 "Are you sure you want to remove this connection and all data associated with "
 "it?"
@@ -140,20 +140,24 @@ msgstr "Add Connection"
 msgid "Start by adding an SSH connection to EasySSH"
 msgstr "Start by adding an SSH connection to EasySSH"
 
-#: src/Widgets/HeaderBar.vala:37
+#: src/Widgets/HeaderBar.vala:41
 msgid "Create a new connection"
 msgstr "Create a new connection"
 
-#: src/Widgets/HeaderBar.vala:46 src/Widgets/Preferences.vala:35
+#: src/Widgets/HeaderBar.vala:54
+msgid "Bookmarks"
+msgstr ""
+
+#: src/Widgets/HeaderBar.vala:56 src/Widgets/Preferences.vala:35
 msgid "Preferences"
 msgstr "Preferences"
 
-#: src/Widgets/HeaderBar.vala:48
+#: src/Widgets/HeaderBar.vala:58
 #, fuzzy
 msgid "Close All Connections"
 msgstr "Add Connection"
 
-#: src/Widgets/HeaderBar.vala:58
+#: src/Widgets/HeaderBar.vala:68
 msgid "Menu"
 msgstr "Menu"
 
