@@ -22,7 +22,7 @@
 namespace EasySSH {
     public class WelcomeAccounts : Gtk.Grid {
         construct {
-            var welcome = new Granite.Widgets.Welcome ("EasySSH Account Manager", _("Create accounts to simplify management of your connections"));
+            var welcome = new Granite.Widgets.Welcome (_("EasySSH Account Manager"), _("Create accounts to simplify management of your connections"));
             welcome.append ("document-new", _("Add Accounts"), _("Start by adding an Account to EasySSH"));
 
             add (welcome);
