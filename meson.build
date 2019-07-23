@@ -62,6 +62,7 @@ executable(
     'src/Widgets/TerminalWidget.vala',
     'src/Widgets/SearchToolbar.vala',
     'src/Widgets/BookmarksPopover.vala',
+    'src/Widgets/Tab.vala',
     dependencies: dependencies,
     install: true
 )

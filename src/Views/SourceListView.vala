@@ -166,7 +166,7 @@ namespace EasySSH {
                 if(Type.from_instance(n.current.page).name() == "EasySSHConnection") {
                     next_tab = 0;
                 }
-                var n_tab = new Granite.Widgets.Tab (n_host.name + " - " + (next_tab + 1).to_string(), null, term);
+                var n_tab = new Tab (n_host.name + " - " + (next_tab + 1).to_string(), null, term);
                 term.tab = n_tab;
 
                 n.insert_tab (n_tab, next_tab);
@@ -210,7 +210,7 @@ namespace EasySSH {
                 notebook.hexpand = true;
                 if(notebook.n_tabs == 0) {
                     var connect = new Connection(select_host, notebook, window, this);
-                    var tab = new Granite.Widgets.Tab (select_host.name, null, connect);
+                    var tab = new Tab (select_host.name, null, connect);
                     notebook.insert_tab(tab, 0);
                 }else if(notebook.n_tabs > 0) {
                     if(Type.from_instance(notebook.current.page).name() == "EasySSHTerminalBox") {
@@ -308,7 +308,7 @@ namespace EasySSH {
                 var term = new TerminalBox(host, n, window);
                 var next_tab = n.n_tabs;
 
-                var n_tab = new Granite.Widgets.Tab (host.name + " - " + (next_tab + 1).to_string(), null, term);
+                var n_tab = new Tab (host.name + " - " + (next_tab + 1).to_string(), null, term);
                 term.tab = n_tab;
 
                 n.insert_tab (n_tab, next_tab);
@@ -367,7 +367,7 @@ namespace EasySSH {
                 if(n.n_tabs == 0) {
                     var n_host = hostmanager.get_host_by_name(host.name);
                     var n_connect = new Connection(n_host, n, window, this);
-                    var n_tab = new Granite.Widgets.Tab (n_host.name, null, n_connect);
+                    var n_tab = new Tab (n_host.name, null, n_connect);
                     n.insert_tab(n_tab, 0);
                     window.current_terminal = null;
                 }
@@ -391,7 +391,7 @@ namespace EasySSH {
                 if(Type.from_instance(n.current.page).name() == "EasySSHConnection") {
                     next_tab = 0;
                 }
-                var n_tab = new Granite.Widgets.Tab (n_host.name + " - " + (next_tab + 1).to_string(), null, term);
+                var n_tab = new Tab (n_host.name + " - " + (next_tab + 1).to_string(), null, term);
                 term.tab = n_tab;
                 n.insert_tab (n_tab, next_tab);
                 if(next_tab == 0) {
