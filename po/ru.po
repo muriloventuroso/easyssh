@@ -16,8 +16,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 3.7-dev\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-Basepath: ../src\n"
@@ -41,7 +41,7 @@ msgstr "Выделить всё"
 
 #: src/MainWindow.vala:538
 msgid "Show in File Browser"
-msgstr "Показать в файловом браузере"
+msgstr "Показать в файловом менеджере"
 
 #: src/Views/SourceListView.vala:36 src/Views/SourceListView.vala:75
 #: src/Widgets/Connection.vala:62
@@ -61,23 +61,20 @@ msgid "Remove"
 msgstr "Удалить"
 
 #: src/Views/SourceListView.vala:151
-#, fuzzy
 msgid "Hosts"
-msgstr "Хост:"
+msgstr "Хосты"
 
 #: src/Views/SourceListView.vala:153
 msgid "Accounts"
-msgstr ""
+msgstr "Учётные записи"
 
 #: src/Views/SourceListView.vala:511
-#, fuzzy
 msgid "Please enter the password to unlock the data file"
-msgstr "Пожалуйста, введите пароль, чтобы разблокировать данные"
+msgstr "Пожалуйста, введите пароль для разблокировки файла данных"
 
 #: src/Views/SourceListView.vala:513
-#, fuzzy
 msgid "Please enter the password to lock the data file"
-msgstr "Пожалуйста, введите пароль для блокировки данных"
+msgstr "Пожалуйста, введите пароль для блокировки файла данных"
 
 #: src/Views/SourceListView.vala:515
 msgid "Password"
@@ -101,13 +98,13 @@ msgstr ""
 #, fuzzy
 msgid "Are you sure you want to remove this account and all associated data?"
 msgstr ""
-"Вы уверены, что хотите удалить это соединение и все данные, связанные с ним?"
+"Вы уверены, что хотите удалить эту учётную запись и все данные, связанные с "
+"ней?"
 
 #: src/Views/SourceListView.vala:1301
 #, fuzzy
 msgid "Are you sure you want to remove this bookmark?"
-msgstr ""
-"Вы уверены, что хотите удалить это соединение и все данные, связанные с ним?"
+msgstr "Вы уверены, что хотите удалить эту закладку?"
 
 #: src/Widgets/TerminalBox.vala:205
 msgid "Connection Error. Retry?"
@@ -127,36 +124,35 @@ msgstr "Ошибка подключения."
 
 #: src/Widgets/TerminalBox.vala:238
 msgid "Fingerprint"
-msgstr "Отпечаток ключа"
+msgstr "Отпечаток"
 
 #: src/Widgets/Welcome.vala:25
 msgid "SSH Connection Manager"
-msgstr "Менеджер SSH-подключений"
+msgstr "Менеджер SSH-соединений"
 
 #: src/Widgets/Welcome.vala:26 src/Widgets/ConnectionEditor.vala:190
 msgid "Add Connection"
-msgstr "Добавить подключение"
+msgstr "Добавить соединение"
 
 #: src/Widgets/Welcome.vala:26
 msgid "Start by adding an SSH connection to EasySSH"
-msgstr "Начните с добавления SSH-подключения в EasySSH"
+msgstr "Начните с добавления SSH-соединения в EasySSH"
 
 #: src/Widgets/HeaderBar.vala:41
 msgid "Create a new connection"
-msgstr "Создание нового подключения"
+msgstr "Создание нового соединения"
 
 #: src/Widgets/HeaderBar.vala:54 src/Widgets/BookmarksPopover.vala:103
 msgid "Bookmarks"
-msgstr ""
+msgstr "Закладки"
 
 #: src/Widgets/HeaderBar.vala:56 src/Widgets/Preferences.vala:35
 msgid "Preferences"
 msgstr "Настройки"
 
 #: src/Widgets/HeaderBar.vala:58
-#, fuzzy
 msgid "Close All Connections"
-msgstr "Добавить подключение"
+msgstr "Закрыть все соединения"
 
 #: src/Widgets/HeaderBar.vala:68
 msgid "Menu"
@@ -164,11 +160,11 @@ msgstr "Меню"
 
 #: src/Widgets/ConnectionEditor.vala:80
 msgid "Set Credentials"
-msgstr ""
+msgstr "Ввести данные"
 
 #: src/Widgets/ConnectionEditor.vala:84
 msgid "Choose Account"
-msgstr ""
+msgstr "Выбрать учётную запись"
 
 #: src/Widgets/ConnectionEditor.vala:106 src/Widgets/ConnectionEditor.vala:220
 msgid "Password:"
@@ -196,12 +192,13 @@ msgstr "Логин:"
 
 #: src/Widgets/ConnectionEditor.vala:193
 msgid "Edit Connection"
-msgstr "Редактировать подключение"
+msgstr "Редактировать соединение"
+
 
 #: src/Widgets/ConnectionEditor.vala:195
 #, fuzzy
 msgid "Duplicate Connection"
-msgstr "Редактировать подключение"
+msgstr "Дублировать соединение"
 
 #: src/Widgets/ConnectionEditor.vala:200 src/Widgets/BookmarksPopover.vala:123
 msgid "Name:"
@@ -245,7 +242,7 @@ msgstr "Перенаправленные порты:"
 
 #: src/Widgets/ConnectionEditor.vala:396
 msgid "Add new forwarded port"
-msgstr "Добавить новый переадресованный порт"
+msgstr "Добавить новый перенаправленный порт"
 
 #: src/Widgets/ConnectionEditor.vala:398
 msgid "Source Port:"
@@ -262,7 +259,7 @@ msgstr "Локальный"
 #: src/Widgets/ConnectionEditor.vala:409
 #, fuzzy
 msgid "Remote"
-msgstr "Удалить"
+msgstr "Удалённый"
 
 #: src/Widgets/ConnectionEditor.vala:415
 msgid "Add Tunnel"
@@ -298,7 +295,7 @@ msgstr "Каталог сохранения настроек:"
 
 #: src/Widgets/Preferences.vala:102
 msgid "Restore Opened Hosts:"
-msgstr "Восстанавливать открытые подключения:"
+msgstr "Восстанавливать открытые соединения:"
 
 #: src/Widgets/Preferences.vala:105
 msgid "Sync SSH Config:"
@@ -330,29 +327,28 @@ msgid "Search for bookmarks"
 msgstr ""
 
 #: src/Widgets/BookmarksPopover.vala:55
-#, fuzzy
 msgid "Create a new bookmark"
-msgstr "Создание нового подключения"
+msgstr "Создать новую закладку"
 
 #: src/Widgets/BookmarksPopover.vala:68
 msgid "Run"
-msgstr ""
+msgstr "Запустить"
 
 #: src/Widgets/BookmarksPopover.vala:72
 msgid "Delete"
-msgstr ""
+msgstr "Удалить"
 
 #: src/Widgets/BookmarksPopover.vala:92 src/Widgets/BookmarksPopover.vala:110
 msgid "Add Bookmark"
-msgstr ""
+msgstr "Добавить закладку"
 
 #: src/Widgets/BookmarksPopover.vala:125
 msgid "Command:"
-msgstr ""
+msgstr "Команда:"
 
 #: src/Widgets/BookmarksPopover.vala:237 src/Widgets/BookmarksPopover.vala:241
 msgid "Default"
-msgstr ""
+msgstr "По умолчанию"
 
 #~ msgid "Hide find bar"
 #~ msgstr "Скрыть строку поиска"
