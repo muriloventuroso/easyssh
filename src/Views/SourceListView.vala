@@ -499,12 +499,12 @@ namespace EasySSH {
 
         }
         #if WITH_GPG
-        public string get_password(bool unlock) {
+        public string? get_password(bool unlock) {
             if(open_dialog == true){
                 return "";
             }
             open_dialog = true;
-            string password;
+            string password = "";
             if(encrypt_password == ""){
                 var description = "";
                 if(unlock == true){
@@ -532,7 +532,8 @@ namespace EasySSH {
                 if (message_dialog.run () == Gtk.ResponseType.OK) {
                     password = password_entry.text;
                 } else {
-                    password = "";
+                    window.destroy();
+                    return null;
                 }
                 message_dialog.destroy ();
                 encrypt_password = password;
