@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.muriloventuroso.easyssh\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-15 17:54-0300\n"
+"POT-Creation-Date: 2019-07-23 08:51-0300\n"
 "PO-Revision-Date: 2019-02-28 21:17+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Catalan <https://hosted.weblate.org/projects/easyssh/"
@@ -49,10 +49,10 @@ msgid "Duplicate"
 msgstr "Duplica"
 
 #: src/Views/SourceListView.vala:48 src/Views/SourceListView.vala:87
-#: src/Views/SourceListView.vala:1262 src/Views/SourceListView.vala:1264
-#: src/Views/SourceListView.vala:1281 src/Views/SourceListView.vala:1283
-#: src/Views/SourceListView.vala:1298 src/Views/SourceListView.vala:1300
-#: src/Widgets/ConnectionEditor.vala:376 src/Widgets/Connection.vala:66
+#: src/Views/SourceListView.vala:1265 src/Views/SourceListView.vala:1267
+#: src/Views/SourceListView.vala:1284 src/Views/SourceListView.vala:1286
+#: src/Views/SourceListView.vala:1301 src/Views/SourceListView.vala:1303
+#: src/Widgets/ConnectionEditor.vala:383 src/Widgets/Connection.vala:66
 msgid "Remove"
 msgstr "Suprimeix"
 
@@ -76,7 +76,7 @@ msgstr "Introduïu la contrasenya per a blocar el fitxer de dades"
 msgid "Password"
 msgstr "Contrasenya"
 
-#: src/Views/SourceListView.vala:522 src/Widgets/ConnectionEditor.vala:155
+#: src/Views/SourceListView.vala:522 src/Widgets/ConnectionEditor.vala:157
 msgid "Cancel"
 msgstr "Cancel·la"
 
@@ -84,40 +84,40 @@ msgstr "Cancel·la"
 msgid "Send"
 msgstr "Envia"
 
-#: src/Views/SourceListView.vala:1262
+#: src/Views/SourceListView.vala:1265
 msgid ""
 "Are you sure you want to remove this connection and all associated data?"
 msgstr ""
 "Esteu segur que voleu suprimir aquesta connexió i totes les dades associades?"
 
-#: src/Views/SourceListView.vala:1281
+#: src/Views/SourceListView.vala:1284
 msgid "Are you sure you want to remove this account and all associated data?"
 msgstr ""
 "Esteu segur que voleu suprimir aquest compte i totes les dades associades?"
 
-#: src/Views/SourceListView.vala:1298
+#: src/Views/SourceListView.vala:1301
 #, fuzzy
 msgid "Are you sure you want to remove this bookmark?"
 msgstr ""
 "Esteu segur que voleu suprimir aquest compte i totes les dades associades?"
 
-#: src/Widgets/TerminalBox.vala:202
+#: src/Widgets/TerminalBox.vala:205
 msgid "Connection Error. Retry?"
 msgstr "S’ha produït un error de connexió. Voleu tornar-ho a provar?"
 
-#: src/Widgets/TerminalBox.vala:204 src/Widgets/TerminalBox.vala:237
+#: src/Widgets/TerminalBox.vala:207 src/Widgets/TerminalBox.vala:240
 msgid "No"
 msgstr "No"
 
-#: src/Widgets/TerminalBox.vala:207 src/Widgets/TerminalBox.vala:240
+#: src/Widgets/TerminalBox.vala:210 src/Widgets/TerminalBox.vala:243
 msgid "Yes"
 msgstr "Sí"
 
-#: src/Widgets/TerminalBox.vala:223
+#: src/Widgets/TerminalBox.vala:226
 msgid "Connection Error."
 msgstr "S’ha produït un error de connexió."
 
-#: src/Widgets/TerminalBox.vala:235
+#: src/Widgets/TerminalBox.vala:238
 msgid "Fingerprint"
 msgstr "Empremta"
 
@@ -125,7 +125,7 @@ msgstr "Empremta"
 msgid "SSH Connection Manager"
 msgstr "Gestor de connexions SSH"
 
-#: src/Widgets/Welcome.vala:26 src/Widgets/ConnectionEditor.vala:188
+#: src/Widgets/Welcome.vala:26 src/Widgets/ConnectionEditor.vala:190
 msgid "Add Connection"
 msgstr "Afegeix una connexió"
 
@@ -153,115 +153,123 @@ msgstr "Tanca totes les connexions"
 msgid "Menu"
 msgstr "Menú"
 
-#: src/Widgets/ConnectionEditor.vala:79
+#: src/Widgets/ConnectionEditor.vala:80
 msgid "Set Credentials"
 msgstr "Estableix les credencials"
 
-#: src/Widgets/ConnectionEditor.vala:83
+#: src/Widgets/ConnectionEditor.vala:84
 msgid "Choose Account"
 msgstr "Trieu un compte"
 
-#: src/Widgets/ConnectionEditor.vala:105 src/Widgets/ConnectionEditor.vala:218
+#: src/Widgets/ConnectionEditor.vala:106 src/Widgets/ConnectionEditor.vala:220
 msgid "Password:"
 msgstr "Contrasenya:"
 
-#: src/Widgets/ConnectionEditor.vala:148
+#: src/Widgets/ConnectionEditor.vala:150
 msgid "Select Identity File"
 msgstr "Seleccioneu un fitxer d’identitat"
 
-#: src/Widgets/ConnectionEditor.vala:149
+#: src/Widgets/ConnectionEditor.vala:151
 msgid "Change Password to Identity File"
 msgstr "Canvia de contrasenya a fitxer d’identitat"
 
-#: src/Widgets/ConnectionEditor.vala:151
+#: src/Widgets/ConnectionEditor.vala:153
 msgid "Save"
 msgstr "Desa"
 
-#: src/Widgets/ConnectionEditor.vala:157 src/Widgets/ConnectionEditor.vala:328
+#: src/Widgets/ConnectionEditor.vala:159 src/Widgets/ConnectionEditor.vala:330
 msgid "Advanced"
 msgstr "Avançat"
 
-#: src/Widgets/ConnectionEditor.vala:173
+#: src/Widgets/ConnectionEditor.vala:175
 msgid "Username:"
 msgstr "Nom d’usuari:"
 
-#: src/Widgets/ConnectionEditor.vala:191
+#: src/Widgets/ConnectionEditor.vala:193
 msgid "Edit Connection"
 msgstr "Edita la connexió"
 
-#: src/Widgets/ConnectionEditor.vala:193
+#: src/Widgets/ConnectionEditor.vala:195
 msgid "Duplicate Connection"
 msgstr "Duplica la connexió"
 
-#: src/Widgets/ConnectionEditor.vala:198 src/Widgets/BookmarksPopover.vala:123
+#: src/Widgets/ConnectionEditor.vala:200 src/Widgets/BookmarksPopover.vala:123
 msgid "Name:"
 msgstr "Nom:"
 
-#: src/Widgets/ConnectionEditor.vala:201
+#: src/Widgets/ConnectionEditor.vala:203
 msgid "Group:"
 msgstr "Grup:"
 
-#: src/Widgets/ConnectionEditor.vala:203
+#: src/Widgets/ConnectionEditor.vala:205
 msgid "Host:"
 msgstr "Amfitrió:"
 
-#: src/Widgets/ConnectionEditor.vala:205
+#: src/Widgets/ConnectionEditor.vala:207
 msgid "Port:"
 msgstr "Port:"
 
-#: src/Widgets/ConnectionEditor.vala:214
+#: src/Widgets/ConnectionEditor.vala:216
 msgid "Identity File:"
 msgstr "Fitxer d’identitat:"
 
-#: src/Widgets/ConnectionEditor.vala:227
+#: src/Widgets/ConnectionEditor.vala:229
 msgid "SSH Config:"
 msgstr "Configuració SSH:"
 
-#: src/Widgets/ConnectionEditor.vala:335 src/Widgets/Preferences.vala:114
+#: src/Widgets/ConnectionEditor.vala:337 src/Widgets/Preferences.vala:114
 msgid "Terminal Background Color:"
 msgstr "Color de fons del terminal:"
 
-#: src/Widgets/ConnectionEditor.vala:344 src/Widgets/Preferences.vala:117
+#: src/Widgets/ConnectionEditor.vala:346 src/Widgets/Preferences.vala:117
 msgid "Terminal Font:"
 msgstr "Tipus de lletra del terminal:"
 
-#: src/Widgets/ConnectionEditor.vala:386
+#: src/Widgets/ConnectionEditor.vala:372
+msgid "Extra Arguments:"
+msgstr ""
+
+#: src/Widgets/ConnectionEditor.vala:393
 msgid "Forwarded Ports:"
 msgstr "Ports redirigits:"
 
-#: src/Widgets/ConnectionEditor.vala:389
+#: src/Widgets/ConnectionEditor.vala:396
 msgid "Add new forwarded port"
 msgstr "Afegeix un port redirigit nou"
 
-#: src/Widgets/ConnectionEditor.vala:391
+#: src/Widgets/ConnectionEditor.vala:398
 msgid "Source Port:"
 msgstr "Port d’origen:"
 
-#: src/Widgets/ConnectionEditor.vala:394
+#: src/Widgets/ConnectionEditor.vala:401
 msgid "Destination:"
 msgstr "Destinació:"
 
-#: src/Widgets/ConnectionEditor.vala:399
+#: src/Widgets/ConnectionEditor.vala:406
 msgid "Local"
 msgstr "Local"
 
-#: src/Widgets/ConnectionEditor.vala:402
+#: src/Widgets/ConnectionEditor.vala:409
 msgid "Remote"
 msgstr "Remota"
 
-#: src/Widgets/ConnectionEditor.vala:408
+#: src/Widgets/ConnectionEditor.vala:415
 msgid "Add Tunnel"
 msgstr "Afegeix un túnel"
 
-#: src/Widgets/ConnectionEditor.vala:433 src/Widgets/Preferences.vala:128
+#: src/Widgets/ConnectionEditor.vala:437 src/Widgets/Preferences.vala:128
 msgid "Appearance"
 msgstr "Aparença"
 
-#: src/Widgets/ConnectionEditor.vala:434
+#: src/Widgets/ConnectionEditor.vala:438
 msgid "Tunnels"
 msgstr "Túnels"
 
-#: src/Widgets/ConnectionEditor.vala:494
+#: src/Widgets/ConnectionEditor.vala:439
+msgid "Other"
+msgstr ""
+
+#: src/Widgets/ConnectionEditor.vala:499
 msgid "Name is already taken"
 msgstr "Ja s’ha utilitzat el nom"
 
@@ -286,7 +294,8 @@ msgid "Sync SSH Config:"
 msgstr "Sincronitza la configuració de l’SSH:"
 
 #: src/Widgets/Preferences.vala:109
-msgid "Encrypt Data:"
+#, fuzzy
+msgid "Encrypt data:"
 msgstr "Xifra les dades:"
 
 #: src/Widgets/Preferences.vala:120
@@ -306,7 +315,7 @@ msgid "Terminal"
 msgstr "Terminal"
 
 #: src/Widgets/BookmarksPopover.vala:51
-msgid "Search bookmark"
+msgid "Search for bookmarks"
 msgstr ""
 
 #: src/Widgets/BookmarksPopover.vala:55

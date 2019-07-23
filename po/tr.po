@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.muriloventuroso.easyssh\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-15 17:54-0300\n"
+"POT-Creation-Date: 2019-07-23 08:51-0300\n"
 "PO-Revision-Date: 2019-05-17 15:48+0000\n"
 "Last-Translator: Mesut Akcan <makcan@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/easyssh/"
@@ -49,10 +49,10 @@ msgid "Duplicate"
 msgstr "Çoğalt"
 
 #: src/Views/SourceListView.vala:48 src/Views/SourceListView.vala:87
-#: src/Views/SourceListView.vala:1262 src/Views/SourceListView.vala:1264
-#: src/Views/SourceListView.vala:1281 src/Views/SourceListView.vala:1283
-#: src/Views/SourceListView.vala:1298 src/Views/SourceListView.vala:1300
-#: src/Widgets/ConnectionEditor.vala:376 src/Widgets/Connection.vala:66
+#: src/Views/SourceListView.vala:1265 src/Views/SourceListView.vala:1267
+#: src/Views/SourceListView.vala:1284 src/Views/SourceListView.vala:1286
+#: src/Views/SourceListView.vala:1301 src/Views/SourceListView.vala:1303
+#: src/Widgets/ConnectionEditor.vala:383 src/Widgets/Connection.vala:66
 msgid "Remove"
 msgstr "Kaldır"
 
@@ -76,7 +76,7 @@ msgstr "Veri dosyasını kilitlemek için lütfen şifreyi girin"
 msgid "Password"
 msgstr "Parola"
 
-#: src/Views/SourceListView.vala:522 src/Widgets/ConnectionEditor.vala:155
+#: src/Views/SourceListView.vala:522 src/Widgets/ConnectionEditor.vala:157
 msgid "Cancel"
 msgstr "İptal"
 
@@ -84,38 +84,38 @@ msgstr "İptal"
 msgid "Send"
 msgstr "Gönder"
 
-#: src/Views/SourceListView.vala:1262
+#: src/Views/SourceListView.vala:1265
 msgid ""
 "Are you sure you want to remove this connection and all associated data?"
 msgstr ""
 "Bu bağlantıyı ve ilişkili tüm verileri kaldırmak istediğinizden emin misiniz?"
 
-#: src/Views/SourceListView.vala:1281
+#: src/Views/SourceListView.vala:1284
 msgid "Are you sure you want to remove this account and all associated data?"
 msgstr ""
 "Bu hesabı ve ilişkili tüm verileri kaldırmak istediğinizden emin misiniz?"
 
-#: src/Views/SourceListView.vala:1298
+#: src/Views/SourceListView.vala:1301
 msgid "Are you sure you want to remove this bookmark?"
 msgstr "Bu yer imini kaldırmak istediğinize emin misiniz?"
 
-#: src/Widgets/TerminalBox.vala:202
+#: src/Widgets/TerminalBox.vala:205
 msgid "Connection Error. Retry?"
 msgstr "Bağlantı hatası. Tekrar dene?"
 
-#: src/Widgets/TerminalBox.vala:204 src/Widgets/TerminalBox.vala:237
+#: src/Widgets/TerminalBox.vala:207 src/Widgets/TerminalBox.vala:240
 msgid "No"
 msgstr "Hayır"
 
-#: src/Widgets/TerminalBox.vala:207 src/Widgets/TerminalBox.vala:240
+#: src/Widgets/TerminalBox.vala:210 src/Widgets/TerminalBox.vala:243
 msgid "Yes"
 msgstr "Evet"
 
-#: src/Widgets/TerminalBox.vala:223
+#: src/Widgets/TerminalBox.vala:226
 msgid "Connection Error."
 msgstr "Bağlantı Hatası."
 
-#: src/Widgets/TerminalBox.vala:235
+#: src/Widgets/TerminalBox.vala:238
 msgid "Fingerprint"
 msgstr "Parmak izi"
 
@@ -123,7 +123,7 @@ msgstr "Parmak izi"
 msgid "SSH Connection Manager"
 msgstr "SSH Bağlantı Yöneticisi"
 
-#: src/Widgets/Welcome.vala:26 src/Widgets/ConnectionEditor.vala:188
+#: src/Widgets/Welcome.vala:26 src/Widgets/ConnectionEditor.vala:190
 msgid "Add Connection"
 msgstr "Bağlantı Ekle"
 
@@ -151,115 +151,123 @@ msgstr "Tüm Bağlantıları Kapatın"
 msgid "Menu"
 msgstr "Menü"
 
-#: src/Widgets/ConnectionEditor.vala:79
+#: src/Widgets/ConnectionEditor.vala:80
 msgid "Set Credentials"
 msgstr "Kimlik Bilgilerini Ayarla"
 
-#: src/Widgets/ConnectionEditor.vala:83
+#: src/Widgets/ConnectionEditor.vala:84
 msgid "Choose Account"
 msgstr "Hesap Seç"
 
-#: src/Widgets/ConnectionEditor.vala:105 src/Widgets/ConnectionEditor.vala:218
+#: src/Widgets/ConnectionEditor.vala:106 src/Widgets/ConnectionEditor.vala:220
 msgid "Password:"
 msgstr "Parola:"
 
-#: src/Widgets/ConnectionEditor.vala:148
+#: src/Widgets/ConnectionEditor.vala:150
 msgid "Select Identity File"
 msgstr "Kimlik Dosyası Seç"
 
-#: src/Widgets/ConnectionEditor.vala:149
+#: src/Widgets/ConnectionEditor.vala:151
 msgid "Change Password to Identity File"
 msgstr "Kimlik dosyası için parola değiştir"
 
-#: src/Widgets/ConnectionEditor.vala:151
+#: src/Widgets/ConnectionEditor.vala:153
 msgid "Save"
 msgstr "Kaydet"
 
-#: src/Widgets/ConnectionEditor.vala:157 src/Widgets/ConnectionEditor.vala:328
+#: src/Widgets/ConnectionEditor.vala:159 src/Widgets/ConnectionEditor.vala:330
 msgid "Advanced"
 msgstr "Gelişmiş"
 
-#: src/Widgets/ConnectionEditor.vala:173
+#: src/Widgets/ConnectionEditor.vala:175
 msgid "Username:"
 msgstr "Kullanıcı adı:"
 
-#: src/Widgets/ConnectionEditor.vala:191
+#: src/Widgets/ConnectionEditor.vala:193
 msgid "Edit Connection"
 msgstr "Bağlantıyı düzenle"
 
-#: src/Widgets/ConnectionEditor.vala:193
+#: src/Widgets/ConnectionEditor.vala:195
 msgid "Duplicate Connection"
 msgstr "Çift bağlantı"
 
-#: src/Widgets/ConnectionEditor.vala:198 src/Widgets/BookmarksPopover.vala:123
+#: src/Widgets/ConnectionEditor.vala:200 src/Widgets/BookmarksPopover.vala:123
 msgid "Name:"
 msgstr "Adı:"
 
-#: src/Widgets/ConnectionEditor.vala:201
+#: src/Widgets/ConnectionEditor.vala:203
 msgid "Group:"
 msgstr "Grup:"
 
-#: src/Widgets/ConnectionEditor.vala:203
+#: src/Widgets/ConnectionEditor.vala:205
 msgid "Host:"
 msgstr "Ana Makine:"
 
-#: src/Widgets/ConnectionEditor.vala:205
+#: src/Widgets/ConnectionEditor.vala:207
 msgid "Port:"
 msgstr "Bağlantı noktası:"
 
-#: src/Widgets/ConnectionEditor.vala:214
+#: src/Widgets/ConnectionEditor.vala:216
 msgid "Identity File:"
 msgstr "Kimlik Dosyası:"
 
-#: src/Widgets/ConnectionEditor.vala:227
+#: src/Widgets/ConnectionEditor.vala:229
 msgid "SSH Config:"
 msgstr "SSH Yapılandırması:"
 
-#: src/Widgets/ConnectionEditor.vala:335 src/Widgets/Preferences.vala:114
+#: src/Widgets/ConnectionEditor.vala:337 src/Widgets/Preferences.vala:114
 msgid "Terminal Background Color:"
 msgstr "Terminal Arka Plan Rengi:"
 
-#: src/Widgets/ConnectionEditor.vala:344 src/Widgets/Preferences.vala:117
+#: src/Widgets/ConnectionEditor.vala:346 src/Widgets/Preferences.vala:117
 msgid "Terminal Font:"
 msgstr "Terminal Yazı Tipi:"
 
-#: src/Widgets/ConnectionEditor.vala:386
+#: src/Widgets/ConnectionEditor.vala:372
+msgid "Extra Arguments:"
+msgstr ""
+
+#: src/Widgets/ConnectionEditor.vala:393
 msgid "Forwarded Ports:"
 msgstr "İletilen Bağlantı Noktaları:"
 
-#: src/Widgets/ConnectionEditor.vala:389
+#: src/Widgets/ConnectionEditor.vala:396
 msgid "Add new forwarded port"
 msgstr "Yeni iletilen bağlantı noktası ekle"
 
-#: src/Widgets/ConnectionEditor.vala:391
+#: src/Widgets/ConnectionEditor.vala:398
 msgid "Source Port:"
 msgstr "Kaynak Bağlantı Noktası:"
 
-#: src/Widgets/ConnectionEditor.vala:394
+#: src/Widgets/ConnectionEditor.vala:401
 msgid "Destination:"
 msgstr "Hedef:"
 
-#: src/Widgets/ConnectionEditor.vala:399
+#: src/Widgets/ConnectionEditor.vala:406
 msgid "Local"
 msgstr "Yerel"
 
-#: src/Widgets/ConnectionEditor.vala:402
+#: src/Widgets/ConnectionEditor.vala:409
 msgid "Remote"
 msgstr "Uzaktan"
 
-#: src/Widgets/ConnectionEditor.vala:408
+#: src/Widgets/ConnectionEditor.vala:415
 msgid "Add Tunnel"
 msgstr "Tünel Ekle"
 
-#: src/Widgets/ConnectionEditor.vala:433 src/Widgets/Preferences.vala:128
+#: src/Widgets/ConnectionEditor.vala:437 src/Widgets/Preferences.vala:128
 msgid "Appearance"
 msgstr "Görünüm"
 
-#: src/Widgets/ConnectionEditor.vala:434
+#: src/Widgets/ConnectionEditor.vala:438
 msgid "Tunnels"
 msgstr "Tüneller"
 
-#: src/Widgets/ConnectionEditor.vala:494
+#: src/Widgets/ConnectionEditor.vala:439
+msgid "Other"
+msgstr ""
+
+#: src/Widgets/ConnectionEditor.vala:499
 msgid "Name is already taken"
 msgstr "Adı zaten alınmış"
 
@@ -284,7 +292,8 @@ msgid "Sync SSH Config:"
 msgstr "SSH Yapılandırmasını Senkronize Et:"
 
 #: src/Widgets/Preferences.vala:109
-msgid "Encrypt Data:"
+#, fuzzy
+msgid "Encrypt data:"
 msgstr "Verileri Şifrele:"
 
 #: src/Widgets/Preferences.vala:120
@@ -304,7 +313,8 @@ msgid "Terminal"
 msgstr "Uçbirim"
 
 #: src/Widgets/BookmarksPopover.vala:51
-msgid "Search bookmark"
+#, fuzzy
+msgid "Search for bookmarks"
 msgstr "Yer imini ara"
 
 #: src/Widgets/BookmarksPopover.vala:55

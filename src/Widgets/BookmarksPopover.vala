@@ -48,7 +48,7 @@ namespace EasySSH {
             var search_entry = new Gtk.SearchEntry ();
             search_entry.margin = 12;
             search_entry.margin_bottom = 6;
-            search_entry.placeholder_text = _("Search bookmark");
+            search_entry.placeholder_text = _("Search for bookmarks");
             search_entry.hexpand = true;
 
             Gtk.ToolButton new_bookmark = new Gtk.ToolButton (new Gtk.Image.from_icon_name ("list-add-symbolic", Gtk.IconSize.SMALL_TOOLBAR), null);

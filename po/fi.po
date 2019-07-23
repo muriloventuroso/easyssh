@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.muriloventuroso.easyssh\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-15 17:54-0300\n"
+"POT-Creation-Date: 2019-07-23 08:51-0300\n"
 "PO-Revision-Date: 2018-08-20 11:37+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/easyssh/"
@@ -49,10 +49,10 @@ msgid "Duplicate"
 msgstr ""
 
 #: src/Views/SourceListView.vala:48 src/Views/SourceListView.vala:87
-#: src/Views/SourceListView.vala:1262 src/Views/SourceListView.vala:1264
-#: src/Views/SourceListView.vala:1281 src/Views/SourceListView.vala:1283
-#: src/Views/SourceListView.vala:1298 src/Views/SourceListView.vala:1300
-#: src/Widgets/ConnectionEditor.vala:376 src/Widgets/Connection.vala:66
+#: src/Views/SourceListView.vala:1265 src/Views/SourceListView.vala:1267
+#: src/Views/SourceListView.vala:1284 src/Views/SourceListView.vala:1286
+#: src/Views/SourceListView.vala:1301 src/Views/SourceListView.vala:1303
+#: src/Widgets/ConnectionEditor.vala:383 src/Widgets/Connection.vala:66
 msgid "Remove"
 msgstr "Poista"
 
@@ -78,7 +78,7 @@ msgstr ""
 msgid "Password"
 msgstr "Salasana:"
 
-#: src/Views/SourceListView.vala:522 src/Widgets/ConnectionEditor.vala:155
+#: src/Views/SourceListView.vala:522 src/Widgets/ConnectionEditor.vala:157
 msgid "Cancel"
 msgstr "Peru"
 
@@ -86,42 +86,42 @@ msgstr "Peru"
 msgid "Send"
 msgstr ""
 
-#: src/Views/SourceListView.vala:1262
+#: src/Views/SourceListView.vala:1265
 #, fuzzy
 msgid ""
 "Are you sure you want to remove this connection and all associated data?"
 msgstr ""
 "Haluatko varmasti poistaa tämän yhteyden ja kaiken siihen liittyvän tiedon?"
 
-#: src/Views/SourceListView.vala:1281
+#: src/Views/SourceListView.vala:1284
 #, fuzzy
 msgid "Are you sure you want to remove this account and all associated data?"
 msgstr ""
 "Haluatko varmasti poistaa tämän yhteyden ja kaiken siihen liittyvän tiedon?"
 
-#: src/Views/SourceListView.vala:1298
+#: src/Views/SourceListView.vala:1301
 #, fuzzy
 msgid "Are you sure you want to remove this bookmark?"
 msgstr ""
 "Haluatko varmasti poistaa tämän yhteyden ja kaiken siihen liittyvän tiedon?"
 
-#: src/Widgets/TerminalBox.vala:202
+#: src/Widgets/TerminalBox.vala:205
 msgid "Connection Error. Retry?"
 msgstr "Yhteysvirhe. Yritetäänkö uudelleen?"
 
-#: src/Widgets/TerminalBox.vala:204 src/Widgets/TerminalBox.vala:237
+#: src/Widgets/TerminalBox.vala:207 src/Widgets/TerminalBox.vala:240
 msgid "No"
 msgstr "Ei"
 
-#: src/Widgets/TerminalBox.vala:207 src/Widgets/TerminalBox.vala:240
+#: src/Widgets/TerminalBox.vala:210 src/Widgets/TerminalBox.vala:243
 msgid "Yes"
 msgstr "Kyllä"
 
-#: src/Widgets/TerminalBox.vala:223
+#: src/Widgets/TerminalBox.vala:226
 msgid "Connection Error."
 msgstr "Yhteysvirhe."
 
-#: src/Widgets/TerminalBox.vala:235
+#: src/Widgets/TerminalBox.vala:238
 msgid "Fingerprint"
 msgstr "Sormenjälki"
 
@@ -129,7 +129,7 @@ msgstr "Sormenjälki"
 msgid "SSH Connection Manager"
 msgstr "SSH-yhteyksien hallinta"
 
-#: src/Widgets/Welcome.vala:26 src/Widgets/ConnectionEditor.vala:188
+#: src/Widgets/Welcome.vala:26 src/Widgets/ConnectionEditor.vala:190
 msgid "Add Connection"
 msgstr "Lisää yhteys"
 
@@ -158,116 +158,124 @@ msgstr "Lisää yhteys"
 msgid "Menu"
 msgstr "Valikko"
 
-#: src/Widgets/ConnectionEditor.vala:79
+#: src/Widgets/ConnectionEditor.vala:80
 msgid "Set Credentials"
 msgstr ""
 
-#: src/Widgets/ConnectionEditor.vala:83
+#: src/Widgets/ConnectionEditor.vala:84
 msgid "Choose Account"
 msgstr ""
 
-#: src/Widgets/ConnectionEditor.vala:105 src/Widgets/ConnectionEditor.vala:218
+#: src/Widgets/ConnectionEditor.vala:106 src/Widgets/ConnectionEditor.vala:220
 msgid "Password:"
 msgstr "Salasana:"
 
-#: src/Widgets/ConnectionEditor.vala:148
+#: src/Widgets/ConnectionEditor.vala:150
 msgid "Select Identity File"
 msgstr "Valitse identiteettitiedosto"
 
-#: src/Widgets/ConnectionEditor.vala:149
+#: src/Widgets/ConnectionEditor.vala:151
 msgid "Change Password to Identity File"
 msgstr "Vaihda salasana identiteettitiedostoon"
 
-#: src/Widgets/ConnectionEditor.vala:151
+#: src/Widgets/ConnectionEditor.vala:153
 msgid "Save"
 msgstr "Tallenna"
 
-#: src/Widgets/ConnectionEditor.vala:157 src/Widgets/ConnectionEditor.vala:328
+#: src/Widgets/ConnectionEditor.vala:159 src/Widgets/ConnectionEditor.vala:330
 msgid "Advanced"
 msgstr "Lisäasetukset"
 
-#: src/Widgets/ConnectionEditor.vala:173
+#: src/Widgets/ConnectionEditor.vala:175
 msgid "Username:"
 msgstr "Käyttäjätunnus:"
 
-#: src/Widgets/ConnectionEditor.vala:191
+#: src/Widgets/ConnectionEditor.vala:193
 msgid "Edit Connection"
 msgstr "Muokkaa yhteyttä"
 
-#: src/Widgets/ConnectionEditor.vala:193
+#: src/Widgets/ConnectionEditor.vala:195
 #, fuzzy
 msgid "Duplicate Connection"
 msgstr "Muokkaa yhteyttä"
 
-#: src/Widgets/ConnectionEditor.vala:198 src/Widgets/BookmarksPopover.vala:123
+#: src/Widgets/ConnectionEditor.vala:200 src/Widgets/BookmarksPopover.vala:123
 msgid "Name:"
 msgstr "Nimi:"
 
-#: src/Widgets/ConnectionEditor.vala:201
+#: src/Widgets/ConnectionEditor.vala:203
 msgid "Group:"
 msgstr "Ryhmä:"
 
-#: src/Widgets/ConnectionEditor.vala:203
+#: src/Widgets/ConnectionEditor.vala:205
 msgid "Host:"
 msgstr "Isäntä:"
 
-#: src/Widgets/ConnectionEditor.vala:205
+#: src/Widgets/ConnectionEditor.vala:207
 msgid "Port:"
 msgstr "Portti:"
 
-#: src/Widgets/ConnectionEditor.vala:214
+#: src/Widgets/ConnectionEditor.vala:216
 msgid "Identity File:"
 msgstr "Identiteettitiedosto:"
 
-#: src/Widgets/ConnectionEditor.vala:227
+#: src/Widgets/ConnectionEditor.vala:229
 msgid "SSH Config:"
 msgstr "SSH-asetus:"
 
-#: src/Widgets/ConnectionEditor.vala:335 src/Widgets/Preferences.vala:114
+#: src/Widgets/ConnectionEditor.vala:337 src/Widgets/Preferences.vala:114
 msgid "Terminal Background Color:"
 msgstr "Päätteen taustaväri:"
 
-#: src/Widgets/ConnectionEditor.vala:344 src/Widgets/Preferences.vala:117
+#: src/Widgets/ConnectionEditor.vala:346 src/Widgets/Preferences.vala:117
 msgid "Terminal Font:"
 msgstr "Päätteen fontti:"
 
-#: src/Widgets/ConnectionEditor.vala:386
+#: src/Widgets/ConnectionEditor.vala:372
+msgid "Extra Arguments:"
+msgstr ""
+
+#: src/Widgets/ConnectionEditor.vala:393
 msgid "Forwarded Ports:"
 msgstr "Uudelleenohjatut portit:"
 
-#: src/Widgets/ConnectionEditor.vala:389
+#: src/Widgets/ConnectionEditor.vala:396
 msgid "Add new forwarded port"
 msgstr "Lisää uusi uudelleenohjattu portti"
 
-#: src/Widgets/ConnectionEditor.vala:391
+#: src/Widgets/ConnectionEditor.vala:398
 msgid "Source Port:"
 msgstr "Lähdeportti:"
 
-#: src/Widgets/ConnectionEditor.vala:394
+#: src/Widgets/ConnectionEditor.vala:401
 msgid "Destination:"
 msgstr "Kohde:"
 
-#: src/Widgets/ConnectionEditor.vala:399
+#: src/Widgets/ConnectionEditor.vala:406
 msgid "Local"
 msgstr "Paikallinen"
 
-#: src/Widgets/ConnectionEditor.vala:402
+#: src/Widgets/ConnectionEditor.vala:409
 msgid "Remote"
 msgstr "Etä"
 
-#: src/Widgets/ConnectionEditor.vala:408
+#: src/Widgets/ConnectionEditor.vala:415
 msgid "Add Tunnel"
 msgstr "Lisää tunneli"
 
-#: src/Widgets/ConnectionEditor.vala:433 src/Widgets/Preferences.vala:128
+#: src/Widgets/ConnectionEditor.vala:437 src/Widgets/Preferences.vala:128
 msgid "Appearance"
 msgstr "Ulkoasu"
 
-#: src/Widgets/ConnectionEditor.vala:434
+#: src/Widgets/ConnectionEditor.vala:438
 msgid "Tunnels"
 msgstr "Tunnelit"
 
-#: src/Widgets/ConnectionEditor.vala:494
+#: src/Widgets/ConnectionEditor.vala:439
+msgid "Other"
+msgstr ""
+
+#: src/Widgets/ConnectionEditor.vala:499
 msgid "Name is already taken"
 msgstr "Nimi on jo käytössä"
 
@@ -292,7 +300,7 @@ msgid "Sync SSH Config:"
 msgstr "Synkronoi SSH-määritykset:"
 
 #: src/Widgets/Preferences.vala:109
-msgid "Encrypt Data:"
+msgid "Encrypt data:"
 msgstr ""
 
 #: src/Widgets/Preferences.vala:120
@@ -312,7 +320,7 @@ msgid "Terminal"
 msgstr "Pääte"
 
 #: src/Widgets/BookmarksPopover.vala:51
-msgid "Search bookmark"
+msgid "Search for bookmarks"
 msgstr ""
 
 #: src/Widgets/BookmarksPopover.vala:55

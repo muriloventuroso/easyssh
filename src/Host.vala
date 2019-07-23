@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2018 Murilo Venturoso
+* Copyright (c) 2019 Murilo Venturoso
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -36,6 +36,7 @@ namespace EasySSH {
         public string tunnels {get; set;}
         public string identity_file {get; set;}
         public string ssh_config {get; set;}
+        public string extra_arguments {get; set;}
         public string account {get; set;}
         public Granite.Widgets.DynamicNotebook notebook {get; set;}
         public Granite.Widgets.SourceList.Item? item {get; set;}

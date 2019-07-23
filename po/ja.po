@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.muriloventuroso.easyssh\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-15 17:54-0300\n"
+"POT-Creation-Date: 2019-07-23 08:51-0300\n"
 "PO-Revision-Date: 2019-05-17 15:48+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/easyssh/"
@@ -49,10 +49,10 @@ msgid "Duplicate"
 msgstr "複製"
 
 #: src/Views/SourceListView.vala:48 src/Views/SourceListView.vala:87
-#: src/Views/SourceListView.vala:1262 src/Views/SourceListView.vala:1264
-#: src/Views/SourceListView.vala:1281 src/Views/SourceListView.vala:1283
-#: src/Views/SourceListView.vala:1298 src/Views/SourceListView.vala:1300
-#: src/Widgets/ConnectionEditor.vala:376 src/Widgets/Connection.vala:66
+#: src/Views/SourceListView.vala:1265 src/Views/SourceListView.vala:1267
+#: src/Views/SourceListView.vala:1284 src/Views/SourceListView.vala:1286
+#: src/Views/SourceListView.vala:1301 src/Views/SourceListView.vala:1303
+#: src/Widgets/ConnectionEditor.vala:383 src/Widgets/Connection.vala:66
 msgid "Remove"
 msgstr "削除"
 
@@ -76,7 +76,7 @@ msgstr "データファイルをロックするにはパスワードを入力し
 msgid "Password"
 msgstr "パスワード"
 
-#: src/Views/SourceListView.vala:522 src/Widgets/ConnectionEditor.vala:155
+#: src/Views/SourceListView.vala:522 src/Widgets/ConnectionEditor.vala:157
 msgid "Cancel"
 msgstr "キャンセル"
 
@@ -84,37 +84,37 @@ msgstr "キャンセル"
 msgid "Send"
 msgstr "送信"
 
-#: src/Views/SourceListView.vala:1262
+#: src/Views/SourceListView.vala:1265
 msgid ""
 "Are you sure you want to remove this connection and all associated data?"
 msgstr "この接続と、それに関連するすべてのデータを削除してもよろしいですか？"
 
-#: src/Views/SourceListView.vala:1281
+#: src/Views/SourceListView.vala:1284
 msgid "Are you sure you want to remove this account and all associated data?"
 msgstr ""
 "このアカウントと、それに関連するすべてのデータを削除してもよろしいですか？"
 
-#: src/Views/SourceListView.vala:1298
+#: src/Views/SourceListView.vala:1301
 msgid "Are you sure you want to remove this bookmark?"
 msgstr "このブックマークを削除してもよろしいですか？"
 
-#: src/Widgets/TerminalBox.vala:202
+#: src/Widgets/TerminalBox.vala:205
 msgid "Connection Error. Retry?"
 msgstr "接続エラーです。再試行しますか？"
 
-#: src/Widgets/TerminalBox.vala:204 src/Widgets/TerminalBox.vala:237
+#: src/Widgets/TerminalBox.vala:207 src/Widgets/TerminalBox.vala:240
 msgid "No"
 msgstr "いいえ"
 
-#: src/Widgets/TerminalBox.vala:207 src/Widgets/TerminalBox.vala:240
+#: src/Widgets/TerminalBox.vala:210 src/Widgets/TerminalBox.vala:243
 msgid "Yes"
 msgstr "はい"
 
-#: src/Widgets/TerminalBox.vala:223
+#: src/Widgets/TerminalBox.vala:226
 msgid "Connection Error."
 msgstr "接続エラーです。"
 
-#: src/Widgets/TerminalBox.vala:235
+#: src/Widgets/TerminalBox.vala:238
 msgid "Fingerprint"
 msgstr "フィンガープリント"
 
@@ -122,7 +122,7 @@ msgstr "フィンガープリント"
 msgid "SSH Connection Manager"
 msgstr "SSH 接続マネージャー"
 
-#: src/Widgets/Welcome.vala:26 src/Widgets/ConnectionEditor.vala:188
+#: src/Widgets/Welcome.vala:26 src/Widgets/ConnectionEditor.vala:190
 msgid "Add Connection"
 msgstr "接続を追加"
 
@@ -150,115 +150,123 @@ msgstr "すべての接続を閉じる"
 msgid "Menu"
 msgstr "メニュー"
 
-#: src/Widgets/ConnectionEditor.vala:79
+#: src/Widgets/ConnectionEditor.vala:80
 msgid "Set Credentials"
 msgstr "資格情報を設定"
 
-#: src/Widgets/ConnectionEditor.vala:83
+#: src/Widgets/ConnectionEditor.vala:84
 msgid "Choose Account"
 msgstr "アカウントを選択"
 
-#: src/Widgets/ConnectionEditor.vala:105 src/Widgets/ConnectionEditor.vala:218
+#: src/Widgets/ConnectionEditor.vala:106 src/Widgets/ConnectionEditor.vala:220
 msgid "Password:"
 msgstr "パスワード:"
 
-#: src/Widgets/ConnectionEditor.vala:148
+#: src/Widgets/ConnectionEditor.vala:150
 msgid "Select Identity File"
 msgstr "鍵ファイルを選択"
 
-#: src/Widgets/ConnectionEditor.vala:149
+#: src/Widgets/ConnectionEditor.vala:151
 msgid "Change Password to Identity File"
 msgstr "パスワードを鍵ファイルに変更"
 
-#: src/Widgets/ConnectionEditor.vala:151
+#: src/Widgets/ConnectionEditor.vala:153
 msgid "Save"
 msgstr "保存"
 
-#: src/Widgets/ConnectionEditor.vala:157 src/Widgets/ConnectionEditor.vala:328
+#: src/Widgets/ConnectionEditor.vala:159 src/Widgets/ConnectionEditor.vala:330
 msgid "Advanced"
 msgstr "高度な設定"
 
-#: src/Widgets/ConnectionEditor.vala:173
+#: src/Widgets/ConnectionEditor.vala:175
 msgid "Username:"
 msgstr "ユーザー名:"
 
-#: src/Widgets/ConnectionEditor.vala:191
+#: src/Widgets/ConnectionEditor.vala:193
 msgid "Edit Connection"
 msgstr "接続を編集"
 
-#: src/Widgets/ConnectionEditor.vala:193
+#: src/Widgets/ConnectionEditor.vala:195
 msgid "Duplicate Connection"
 msgstr "接続を複製"
 
-#: src/Widgets/ConnectionEditor.vala:198 src/Widgets/BookmarksPopover.vala:123
+#: src/Widgets/ConnectionEditor.vala:200 src/Widgets/BookmarksPopover.vala:123
 msgid "Name:"
 msgstr "名前:"
 
-#: src/Widgets/ConnectionEditor.vala:201
+#: src/Widgets/ConnectionEditor.vala:203
 msgid "Group:"
 msgstr "グループ:"
 
-#: src/Widgets/ConnectionEditor.vala:203
+#: src/Widgets/ConnectionEditor.vala:205
 msgid "Host:"
 msgstr "ホスト:"
 
-#: src/Widgets/ConnectionEditor.vala:205
+#: src/Widgets/ConnectionEditor.vala:207
 msgid "Port:"
 msgstr "ポート:"
 
-#: src/Widgets/ConnectionEditor.vala:214
+#: src/Widgets/ConnectionEditor.vala:216
 msgid "Identity File:"
 msgstr "鍵ファイル:"
 
-#: src/Widgets/ConnectionEditor.vala:227
+#: src/Widgets/ConnectionEditor.vala:229
 msgid "SSH Config:"
 msgstr "SSH 設定:"
 
-#: src/Widgets/ConnectionEditor.vala:335 src/Widgets/Preferences.vala:114
+#: src/Widgets/ConnectionEditor.vala:337 src/Widgets/Preferences.vala:114
 msgid "Terminal Background Color:"
 msgstr "ターミナルの背景色:"
 
-#: src/Widgets/ConnectionEditor.vala:344 src/Widgets/Preferences.vala:117
+#: src/Widgets/ConnectionEditor.vala:346 src/Widgets/Preferences.vala:117
 msgid "Terminal Font:"
 msgstr "ターミナルのフォント:"
 
-#: src/Widgets/ConnectionEditor.vala:386
+#: src/Widgets/ConnectionEditor.vala:372
+msgid "Extra Arguments:"
+msgstr ""
+
+#: src/Widgets/ConnectionEditor.vala:393
 msgid "Forwarded Ports:"
 msgstr "ポート転送:"
 
-#: src/Widgets/ConnectionEditor.vala:389
+#: src/Widgets/ConnectionEditor.vala:396
 msgid "Add new forwarded port"
 msgstr "新しいポート転送を追加"
 
-#: src/Widgets/ConnectionEditor.vala:391
+#: src/Widgets/ConnectionEditor.vala:398
 msgid "Source Port:"
 msgstr "元のポート:"
 
-#: src/Widgets/ConnectionEditor.vala:394
+#: src/Widgets/ConnectionEditor.vala:401
 msgid "Destination:"
 msgstr "宛先:"
 
-#: src/Widgets/ConnectionEditor.vala:399
+#: src/Widgets/ConnectionEditor.vala:406
 msgid "Local"
 msgstr "ローカル"
 
-#: src/Widgets/ConnectionEditor.vala:402
+#: src/Widgets/ConnectionEditor.vala:409
 msgid "Remote"
 msgstr "リモート"
 
-#: src/Widgets/ConnectionEditor.vala:408
+#: src/Widgets/ConnectionEditor.vala:415
 msgid "Add Tunnel"
 msgstr "トンネルを追加"
 
-#: src/Widgets/ConnectionEditor.vala:433 src/Widgets/Preferences.vala:128
+#: src/Widgets/ConnectionEditor.vala:437 src/Widgets/Preferences.vala:128
 msgid "Appearance"
 msgstr "外観"
 
-#: src/Widgets/ConnectionEditor.vala:434
+#: src/Widgets/ConnectionEditor.vala:438
 msgid "Tunnels"
 msgstr "トンネル"
 
-#: src/Widgets/ConnectionEditor.vala:494
+#: src/Widgets/ConnectionEditor.vala:439
+msgid "Other"
+msgstr ""
+
+#: src/Widgets/ConnectionEditor.vala:499
 msgid "Name is already taken"
 msgstr "名前はすでに使われています"
 
@@ -283,7 +291,8 @@ msgid "Sync SSH Config:"
 msgstr "SSH 設定を同期:"
 
 #: src/Widgets/Preferences.vala:109
-msgid "Encrypt Data:"
+#, fuzzy
+msgid "Encrypt data:"
 msgstr "データを暗号化:"
 
 #: src/Widgets/Preferences.vala:120
@@ -303,7 +312,8 @@ msgid "Terminal"
 msgstr "ターミナル"
 
 #: src/Widgets/BookmarksPopover.vala:51
-msgid "Search bookmark"
+#, fuzzy
+msgid "Search for bookmarks"
 msgstr "ブックマークを検索"
 
 #: src/Widgets/BookmarksPopover.vala:55

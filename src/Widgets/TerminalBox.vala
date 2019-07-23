@@ -78,6 +78,9 @@ namespace EasySSH {
                         builder.append(" " + str);
                     }
                 }
+                if(dataHost.extra_arguments != null && dataHost.extra_arguments != ""){
+                    builder.append(" " + dataHost.extra_arguments);
+                }
                 builder.append("\n");
             } else {
                 builder.append("ssh ");

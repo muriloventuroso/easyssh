@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2018 Murilo Venturoso
+* Copyright (c) 2019 Murilo Venturoso
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -29,6 +29,7 @@ namespace EasySSH {
         private Gtk.Entry port_entry;
         private Gtk.Entry username_entry;
         private Gtk.Entry password_entry;
+        private Gtk.Entry extra_arguments;
         private Gtk.TextView ssh_config_entry;
         private Gtk.ColorButton terminal_background_color_button;
         private Gtk.FontButton terminal_font_button;
@@ -103,7 +104,7 @@ namespace EasySSH {
             ssh_config_entry.top_margin = 10;
             ssh_config_scroll.add (ssh_config_entry);
             var label_password = new Granite.HeaderLabel (_("Password:"));
-
+            extra_arguments = new Gtk.Entry ();
             accounts_box = new Gtk.ComboBoxText ();
             var count = 0;
             foreach(var account in sourcelistview.accountmanager.get_accounts()){
@@ -124,6 +125,7 @@ namespace EasySSH {
                 port_entry.text = data_host.port;
                 username_entry.text = data_host.username;
                 password_entry.text = data_host.password;
+                extra_arguments.text = data_host.extra_arguments;
                 color.parse(data_host.color);
                 var terminal_font = data_host.font;
                 if(data_host.account != ""){
@@ -365,6 +367,11 @@ namespace EasySSH {
                 }
             }
 
+            var other_box = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
+
+            other_box.pack_start (new Granite.HeaderLabel (_("Extra Arguments:")), false, false, 0);
+            other_box.pack_start (extra_arguments, false, false, 0);
+
             var scroll_tunnels = new Gtk.ScrolledWindow(null, null);
             scroll_tunnels.set_min_content_height(80);
 
@@ -427,11 +434,9 @@ namespace EasySSH {
             add_tunnel_grid.attach (button_add_tunnel, 6, 0, 1, 1);
 
             var main_stack = new Gtk.Stack ();
-            main_stack.margin = 6;
-            main_stack.margin_bottom = 18;
-            main_stack.margin_top = 24;
             main_stack.add_titled (appearance_grid, "appearance", _("Appearance"));
             main_stack.add_titled (tunnels_box, "tunnels", _("Tunnels"));
+            main_stack.add_titled (other_box, "other", _("Other"));
 
             var main_stackswitcher = new Gtk.StackSwitcher ();
             main_stackswitcher.set_stack (main_stack);
@@ -528,6 +533,7 @@ namespace EasySSH {
             }
             host.color = terminal_background_color_button.rgba.to_string();
             host.font = terminal_font_button.get_font();
+            host.extra_arguments = extra_arguments.text;
             if(settings.sync_ssh_config){
                 host.ssh_config = ssh_config_entry.buffer.text;
             }

@@ -649,6 +649,9 @@ namespace EasySSH {
                         }else {
                             host.font = EasySSH.settings.terminal_font;
                         }
+                        if(item.has_member("extra-arguments")){
+                            host.extra_arguments = item.get_string_member("extra-arguments");
+                        }
                         var group_exist = hostmanager.exist_group(host.group);
                         if(group_exist == false) {
                             var group = add_group(host.group);
@@ -916,7 +919,7 @@ namespace EasySSH {
                     s_host.font = hosts[i].font;
                     s_host.tunnels = hosts[i].tunnels;
                     s_host.account = hosts[i].account;
-
+                    s_host.extra_arguments = hosts[i].extra_arguments;
                     Json.Node root = Json.gobject_serialize(s_host);
                     array_hosts.add_element(root);
 
