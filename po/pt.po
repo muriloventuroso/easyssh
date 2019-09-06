@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: com.github.muriloventuroso.easyssh\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-08-06 17:48-0300\n"
-"PO-Revision-Date: 2019-08-16 16:23+0000\n"
+"PO-Revision-Date: 2019-09-07 10:25+0000\n"
 "Last-Translator: Manuela Silva <mmsrs@sky.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/easyssh/"
 "translations/pt/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.8\n"
+"X-Generator: Weblate 3.9-dev\n"
 
 #: src/MainWindow.vala:102
 msgid "EasySSH"
@@ -58,7 +58,7 @@ msgstr "Eliminar"
 
 #: src/Views/SourceListView.vala:151
 msgid "Hosts"
-msgstr "Hosts"
+msgstr "Hospedeiros"
 
 #: src/Views/SourceListView.vala:153
 msgid "Accounts"
@@ -88,19 +88,23 @@ msgstr "Enviar"
 #: src/Views/SourceListView.vala:1266
 msgid ""
 "Are you sure you want to remove this connection and all associated data?"
-msgstr "Quer mesmo eliminar esta conexão e todos os dados associados a ela?"
+msgstr ""
+"Tem a certeza que deseja remover esta ligação e todos os dados associados à "
+"mesma?"
 
 #: src/Views/SourceListView.vala:1285
 msgid "Are you sure you want to remove this account and all associated data?"
-msgstr "Quer mesmo eliminar esta conta e todos os dados associados a ela?"
+msgstr ""
+"Tem a certeza que deseja remover esta conta e todos os dados associados à "
+"mesma?"
 
 #: src/Views/SourceListView.vala:1302
 msgid "Are you sure you want to remove this bookmark?"
-msgstr "Quer mesmo eliminar este favorito?"
+msgstr "Tem a certeza que deseja remover este favorito?"
 
 #: src/Widgets/TerminalBox.vala:205
 msgid "Connection Error. Retry?"
-msgstr "Erro de conexão. Tentar novamente?"
+msgstr "Erro de ligação. Tentar novamente?"
 
 #: src/Widgets/TerminalBox.vala:207 src/Widgets/TerminalBox.vala:240
 msgid "No"
@@ -120,19 +124,19 @@ msgstr "Impressão digital"
 
 #: src/Widgets/Welcome.vala:25
 msgid "SSH Connection Manager"
-msgstr "Gestor de conexões SSH"
+msgstr "Gestor de Ligações SSH"
 
 #: src/Widgets/Welcome.vala:26 src/Widgets/ConnectionEditor.vala:190
 msgid "Add Connection"
-msgstr "Adicionar conexão"
+msgstr "Adicionar ligação"
 
 #: src/Widgets/Welcome.vala:26
 msgid "Start by adding an SSH connection to EasySSH"
-msgstr "Comece adicionando uma conexão SSH ao EasySSH"
+msgstr "Comece adicionando uma ligação SSH ao EasySSH"
 
 #: src/Widgets/HeaderBar.vala:41
 msgid "Create a new connection"
-msgstr "Criar uma nova conexão"
+msgstr "Criar uma nova ligação"
 
 #: src/Widgets/HeaderBar.vala:54 src/Widgets/BookmarksPopover.vala:103
 msgid "Bookmarks"
@@ -144,7 +148,7 @@ msgstr "Preferências"
 
 #: src/Widgets/HeaderBar.vala:58
 msgid "Close All Connections"
-msgstr "Fechar todas as conexões"
+msgstr "Fechar todas as ligações"
 
 #: src/Widgets/HeaderBar.vala:68
 msgid "Menu"
@@ -168,7 +172,7 @@ msgstr "Selecione o ficheiro de identidade"
 
 #: src/Widgets/ConnectionEditor.vala:151
 msgid "Change Password to Identity File"
-msgstr "Alterar palavra-passe para ficheiro de identidade"
+msgstr "Alterar palavra-passe para o ficheiro de identidade"
 
 #: src/Widgets/ConnectionEditor.vala:153
 msgid "Save"
@@ -184,11 +188,11 @@ msgstr "Utilizador:"
 
 #: src/Widgets/ConnectionEditor.vala:193
 msgid "Edit Connection"
-msgstr "Editar conexão"
+msgstr "Editar ligação"
 
 #: src/Widgets/ConnectionEditor.vala:195
 msgid "Duplicate Connection"
-msgstr "Duplicar conexão"
+msgstr "Duplicar ligação"
 
 #: src/Widgets/ConnectionEditor.vala:200 src/Widgets/BookmarksPopover.vala:123
 msgid "Name:"
@@ -272,7 +276,7 @@ msgstr "Este nome já está a ser usado"
 
 #: src/Widgets/Connection.vala:59
 msgid "Connect"
-msgstr "Conectar"
+msgstr "Ligar"
 
 #: src/Widgets/Preferences.vala:44
 msgid "Select Hosts Configuration Folder…"
