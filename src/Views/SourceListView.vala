@@ -135,6 +135,7 @@ namespace EasySSH {
 
             var paned = new Gtk.Paned (Gtk.Orientation.HORIZONTAL);
             box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 0);
+            box.margin_left = 5;
             welcome = new Welcome();
             welcome_accounts = new WelcomeAccounts();
             box.add(welcome);

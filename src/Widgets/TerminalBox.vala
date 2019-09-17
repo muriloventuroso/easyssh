@@ -44,7 +44,6 @@ namespace EasySSH {
             settings = EasySSH.Settings.get_default();
             open_dialog = false;
             unread_changes = false;
-            var scroller = new Gtk.ScrolledWindow(null, null);
             term = new TerminalWidget(window, dataHost);
             term.set_scrollback_lines(-1);
 
