@@ -25,6 +25,7 @@ namespace EasySSH {
         public Host dataHost { get; construct; }
         private bool send_password;
         private bool open_dialog;
+        private bool logged;
         public Granite.Widgets.DynamicNotebook notebook { get; construct; }
         public TerminalWidget term;
         public MainWindow window { get; construct; }
@@ -44,6 +45,8 @@ namespace EasySSH {
             settings = EasySSH.Settings.get_default();
             open_dialog = false;
             unread_changes = false;
+            send_password = false;
+            logged = false;
             term = new TerminalWidget(window, dataHost);
             term.set_scrollback_lines(-1);
 
@@ -134,12 +137,10 @@ namespace EasySSH {
 
                 }
                 if (ret.length > 2 && "closed." in ret[ret.length - 2] && "$" in ret[ret.length - 1]) {
-                    var tab = notebook.get_tab_by_widget(this);
-                    remove_tab (tab);
-                }else if (ret.length > 2 && "Broken pipe" in ret[ret.length - 2] && "$" in ret[ret.length - 1]) {
-                    var tab = notebook.get_tab_by_widget(this);
-                    if(open_dialog == false) {
-                        alert_error(ret[ret.length - 2], tab);
+                    if(":~$" in ret[ret.length - 1]){
+                    }else{
+                        var tab = notebook.get_tab_by_widget(this);
+                        remove_tab (tab);
                     }
                 }else if (ret.length > 2 && "Connection timed out" in ret[ret.length - 2] && "$" in ret[ret.length - 1]) {
                     var tab = notebook.get_tab_by_widget(this);
@@ -151,12 +152,19 @@ namespace EasySSH {
                     if(open_dialog == false) {
                         alert_error_retry(ret[ret.length - 2], tab);
                     }
+                }else if (ret.length > 2 && "Broken pipe" in ret[ret.length - 2] && "$" in ret[ret.length - 1]) {
+                    var tab = notebook.get_tab_by_widget(this);
+                    if(open_dialog == false) {
+                        alert_error(ret[ret.length - 2], tab);
+                    }
                 }else if (ret.length > 2 && "No route to host" in ret[ret.length - 2] && "$" in ret[ret.length - 1]) {
                     var tab = notebook.get_tab_by_widget(this);
                     if(open_dialog == false) {
                         alert_error_retry(ret[ret.length - 2], tab);
                     }
-                }else if (ret.length > 2 && "Permission denied, please try again." in ret[ret.length - 2]) {
+                }else if (ret.length > 2 && ":~$" in ret[ret.length - 2]) {
+                    logged = true;
+                }else if (ret.length > 2 && "Permission denied, please try again." in ret[ret.length - 2] && logged == false) {
                     var tab = notebook.get_tab_by_widget(this);
                     if(open_dialog == false) {
                         alert_error(ret[ret.length - 2], tab);
@@ -167,7 +175,7 @@ namespace EasySSH {
                         var message = string.joinv("\n", ret[ret.length - 3:ret.length]);
                         alert_figerprint(message, tab);
                     }
-                }else if(ret.length > 0 && "password" in ret[ret.length - 1]) {
+                }else if(ret.length > 0 && "password:" in ret[ret.length - 1]) {
                     if(send_password == false) {
                         term_send_password();
                         send_password = true;
@@ -245,10 +253,9 @@ namespace EasySSH {
 
             message_dialog.show_all ();
             if (message_dialog.run () == Gtk.ResponseType.ACCEPT) {
-                term_send("yes");
-                term_send_password();
+                term_send("yes\n");
             } else {
-                term_send("no");
+                term_send("no\n");
                 remove_tab(tab);
             }
 
