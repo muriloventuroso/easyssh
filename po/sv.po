@@ -8,9 +8,8 @@ msgstr ""
 "Project-Id-Version: com.github.muriloventuroso.easyssh\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-08-06 17:48-0300\n"
-"PO-Revision-Date: 2018-07-05 02:42+0000\n"
-"Last-Translator: Kristoffer Grundström <kristoffer.grundstrom1983@gmail."
-"com>\n"
+"PO-Revision-Date: 2019-10-18 11:52+0000\n"
+"Last-Translator: Mattias Münster <mattiasmun@gmail.com>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/easyssh/"
 "translations/sv/>\n"
 "Language: sv\n"
@@ -18,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.1-dev\n"
+"X-Generator: Weblate 3.9.1-dev\n"
 
 #: src/MainWindow.vala:102
 msgid "EasySSH"
@@ -47,7 +46,7 @@ msgstr "Redigera"
 
 #: src/Views/SourceListView.vala:42 src/Views/SourceListView.vala:81
 msgid "Duplicate"
-msgstr ""
+msgstr "Duplicera"
 
 #: src/Views/SourceListView.vala:48 src/Views/SourceListView.vala:87
 #: src/Views/SourceListView.vala:1266 src/Views/SourceListView.vala:1268
@@ -58,26 +57,24 @@ msgid "Remove"
 msgstr "Ta bort"
 
 #: src/Views/SourceListView.vala:151
-#, fuzzy
 msgid "Hosts"
-msgstr "Värd:"
+msgstr "Värdar"
 
 #: src/Views/SourceListView.vala:153
 msgid "Accounts"
-msgstr ""
+msgstr "Konton"
 
 #: src/Views/SourceListView.vala:511
 msgid "Please enter the password to unlock the data file"
-msgstr ""
+msgstr "Ange lösenordet för att låsa upp datafilen"
 
 #: src/Views/SourceListView.vala:513
 msgid "Please enter the password to lock the data file"
-msgstr ""
+msgstr "Ange lösenordet för att låsa datafilen"
 
 #: src/Views/SourceListView.vala:515
-#, fuzzy
 msgid "Password"
-msgstr "Lösenord:"
+msgstr "Lösenord"
 
 #: src/Views/SourceListView.vala:522 src/Widgets/ConnectionEditor.vala:157
 msgid "Cancel"
@@ -85,10 +82,9 @@ msgstr "Avbryt"
 
 #: src/Views/SourceListView.vala:525
 msgid "Send"
-msgstr ""
+msgstr "Skicka"
 
 #: src/Views/SourceListView.vala:1266
-#, fuzzy
 msgid ""
 "Are you sure you want to remove this connection and all associated data?"
 msgstr ""
@@ -96,18 +92,14 @@ msgstr ""
 "associeras med den?"
 
 #: src/Views/SourceListView.vala:1285
-#, fuzzy
 msgid "Are you sure you want to remove this account and all associated data?"
 msgstr ""
-"Är du säker på att du vill ta bort den här anslutningen och all data som "
+"Är du säker på att du vill ta bort det här kontot och all data som "
 "associeras med den?"
 
 #: src/Views/SourceListView.vala:1302
-#, fuzzy
 msgid "Are you sure you want to remove this bookmark?"
-msgstr ""
-"Är du säker på att du vill ta bort den här anslutningen och all data som "
-"associeras med den?"
+msgstr "Är du säker på att du vill ta bort det här bokmärket?"
 
 #: src/Widgets/TerminalBox.vala:205
 msgid "Connection Error. Retry?"
@@ -127,11 +119,11 @@ msgstr "Anslutningsfel."
 
 #: src/Widgets/TerminalBox.vala:238
 msgid "Fingerprint"
-msgstr "Fingeravtryck."
+msgstr "Fingeravtryck"
 
 #: src/Widgets/Welcome.vala:25
 msgid "SSH Connection Manager"
-msgstr ""
+msgstr "SSH anslutningshanterare"
 
 #: src/Widgets/Welcome.vala:26 src/Widgets/ConnectionEditor.vala:190
 msgid "Add Connection"
@@ -147,28 +139,27 @@ msgstr "Skapa en ny anslutning"
 
 #: src/Widgets/HeaderBar.vala:54 src/Widgets/BookmarksPopover.vala:103
 msgid "Bookmarks"
-msgstr ""
+msgstr "Bokmärken"
 
 #: src/Widgets/HeaderBar.vala:56 src/Widgets/Preferences.vala:35
 msgid "Preferences"
 msgstr "Egenskaper"
 
 #: src/Widgets/HeaderBar.vala:58
-#, fuzzy
 msgid "Close All Connections"
-msgstr "Lägg till anslutning"
+msgstr "Stäng alla anslutningar"
 
 #: src/Widgets/HeaderBar.vala:68
 msgid "Menu"
-msgstr ""
+msgstr "Meny"
 
 #: src/Widgets/ConnectionEditor.vala:80
 msgid "Set Credentials"
-msgstr ""
+msgstr "Ange autentiseringsuppgifter"
 
 #: src/Widgets/ConnectionEditor.vala:84
 msgid "Choose Account"
-msgstr ""
+msgstr "Välj konto"
 
 #: src/Widgets/ConnectionEditor.vala:106 src/Widgets/ConnectionEditor.vala:220
 msgid "Password:"
@@ -176,11 +167,11 @@ msgstr "Lösenord:"
 
 #: src/Widgets/ConnectionEditor.vala:150
 msgid "Select Identity File"
-msgstr ""
+msgstr "Välj identitetsfil"
 
 #: src/Widgets/ConnectionEditor.vala:151
 msgid "Change Password to Identity File"
-msgstr ""
+msgstr "Ändra lösenord till identitetsfil"
 
 #: src/Widgets/ConnectionEditor.vala:153
 msgid "Save"
@@ -199,9 +190,8 @@ msgid "Edit Connection"
 msgstr "Redigera anslutning"
 
 #: src/Widgets/ConnectionEditor.vala:195
-#, fuzzy
 msgid "Duplicate Connection"
-msgstr "Redigera anslutning"
+msgstr "Duplicera anslutning"
 
 #: src/Widgets/ConnectionEditor.vala:200 src/Widgets/BookmarksPopover.vala:123
 msgid "Name:"
@@ -221,11 +211,11 @@ msgstr "Port:"
 
 #: src/Widgets/ConnectionEditor.vala:216
 msgid "Identity File:"
-msgstr ""
+msgstr "Identitetsfil:"
 
 #: src/Widgets/ConnectionEditor.vala:229
 msgid "SSH Config:"
-msgstr ""
+msgstr "SSH-konfiguration:"
 
 #: src/Widgets/ConnectionEditor.vala:337 src/Widgets/Preferences.vala:114
 msgid "Terminal Background Color:"
@@ -237,7 +227,7 @@ msgstr "Typsnittet för terminalen:"
 
 #: src/Widgets/ConnectionEditor.vala:372
 msgid "Extra Arguments:"
-msgstr ""
+msgstr "Extra argument:"
 
 #: src/Widgets/ConnectionEditor.vala:393
 msgid "Forwarded Ports:"
@@ -277,7 +267,7 @@ msgstr "Tunnlar"
 
 #: src/Widgets/ConnectionEditor.vala:439
 msgid "Other"
-msgstr ""
+msgstr "Annat"
 
 #: src/Widgets/ConnectionEditor.vala:499
 msgid "Name is already taken"
@@ -289,11 +279,11 @@ msgstr "Anslut"
 
 #: src/Widgets/Preferences.vala:44
 msgid "Select Hosts Configuration Folder…"
-msgstr ""
+msgstr "Välj värdkonfigurationsmapp…"
 
 #: src/Widgets/Preferences.vala:99
 msgid "Hosts Configuration Folder:"
-msgstr ""
+msgstr "Värdar konfigurationsmapp:"
 
 #: src/Widgets/Preferences.vala:102
 msgid "Restore Opened Hosts:"
@@ -301,11 +291,11 @@ msgstr "Återställ öppnade värdar:"
 
 #: src/Widgets/Preferences.vala:105
 msgid "Sync SSH Config:"
-msgstr ""
+msgstr "Synkronisera SSH-konfiguration:"
 
 #: src/Widgets/Preferences.vala:109
 msgid "Encrypt data:"
-msgstr ""
+msgstr "Kryptera data:"
 
 #: src/Widgets/Preferences.vala:120
 msgid "Use Dark Theme:"
@@ -325,32 +315,31 @@ msgstr "Terminal"
 
 #: src/Widgets/BookmarksPopover.vala:51
 msgid "Search for bookmarks"
-msgstr ""
+msgstr "Sök efter bokmärken"
 
 #: src/Widgets/BookmarksPopover.vala:55
-#, fuzzy
 msgid "Create a new bookmark"
-msgstr "Skapa en ny anslutning"
+msgstr "Skapa ett nytt bokmärke"
 
 #: src/Widgets/BookmarksPopover.vala:68
 msgid "Run"
-msgstr ""
+msgstr "Kör"
 
 #: src/Widgets/BookmarksPopover.vala:72
 msgid "Delete"
-msgstr ""
+msgstr "Radera"
 
 #: src/Widgets/BookmarksPopover.vala:92 src/Widgets/BookmarksPopover.vala:110
 msgid "Add Bookmark"
-msgstr ""
+msgstr "Lägg till bokmärke"
 
 #: src/Widgets/BookmarksPopover.vala:125
 msgid "Command:"
-msgstr ""
+msgstr "Kommando:"
 
 #: src/Widgets/BookmarksPopover.vala:237 src/Widgets/BookmarksPopover.vala:241
 msgid "Default"
-msgstr ""
+msgstr "Standard"
 
 #~ msgid "Remove "
 #~ msgstr "Ta bort "
