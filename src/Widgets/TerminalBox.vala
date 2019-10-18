@@ -139,8 +139,9 @@ namespace EasySSH {
                 if (ret.length > 2 && "closed." in ret[ret.length - 2] && "$" in ret[ret.length - 1]) {
                     if(":~$" in ret[ret.length - 1]){
                     }else{
-                        var tab = notebook.get_tab_by_widget(this);
-                        remove_tab (tab);
+                        if(open_dialog == false) {
+                            alert_error("closed", tab);
+                        }
                     }
                 }else if (ret.length > 2 && "Connection timed out" in ret[ret.length - 2] && "$" in ret[ret.length - 1]) {
                     var tab = notebook.get_tab_by_widget(this);
@@ -230,10 +231,23 @@ namespace EasySSH {
         }
         private void alert_error (string error, Granite.Widgets.Tab? tab) {
             open_dialog = true;
-            var message_dialog = new Granite.MessageDialog.with_image_from_icon_name (_("Connection Error."), error, "dialog-warning", Gtk.ButtonsType.CLOSE);
+            var message_dialog = new Granite.MessageDialog.with_image_from_icon_name (_("Connection Error."), error, "dialog-warning", Gtk.ButtonsType.NONE);
+
+            var close_button = new Gtk.Button.with_label (_("Close"));
+            message_dialog.add_action_widget (close_button, Gtk.ResponseType.CLOSE);
+
+            var ok_button = new Gtk.Button.with_label (_("Ok"));
+            message_dialog.add_action_widget (ok_button, Gtk.ResponseType.OK);
+
+            var retry_button = new Gtk.Button.with_label (_("Retry"));
+            retry_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+            message_dialog.add_action_widget (retry_button, Gtk.ResponseType.ACCEPT);
 
             message_dialog.show_all ();
-            if (message_dialog.run () == Gtk.ResponseType.CLOSE) {
+            var response = message_dialog.run ();
+            if (response == Gtk.ResponseType.ACCEPT) {
+                start_connection();
+            }else if(response == Gtk.ResponseType.CLOSE){
                 remove_tab(tab);
             }
             open_dialog = false;
