@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.muriloventuroso.easyssh\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-06 17:48-0300\n"
+"POT-Creation-Date: 2019-10-18 10:16-0300\n"
 "PO-Revision-Date: 2019-08-25 05:24+0000\n"
 "Last-Translator: Kristjan Räts <kristjanrats@gmail.com>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/easyssh/"
@@ -19,23 +19,23 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 3.9-dev\n"
 
-#: src/MainWindow.vala:102
+#: src/MainWindow.vala:104
 msgid "EasySSH"
 msgstr "EasySSH"
 
-#: src/MainWindow.vala:535
+#: src/MainWindow.vala:540
 msgid "Copy"
 msgstr "Kopeeri"
 
-#: src/MainWindow.vala:536
+#: src/MainWindow.vala:541
 msgid "Paste"
 msgstr "Aseta"
 
-#: src/MainWindow.vala:537
+#: src/MainWindow.vala:542
 msgid "Select All"
 msgstr "Vali kõik"
 
-#: src/MainWindow.vala:538
+#: src/MainWindow.vala:543
 msgid "Show in File Browser"
 msgstr "Kuva failihalduris"
 
@@ -49,72 +49,84 @@ msgid "Duplicate"
 msgstr "Dubleeri"
 
 #: src/Views/SourceListView.vala:48 src/Views/SourceListView.vala:87
-#: src/Views/SourceListView.vala:1266 src/Views/SourceListView.vala:1268
-#: src/Views/SourceListView.vala:1285 src/Views/SourceListView.vala:1287
-#: src/Views/SourceListView.vala:1302 src/Views/SourceListView.vala:1304
+#: src/Views/SourceListView.vala:1334 src/Views/SourceListView.vala:1336
+#: src/Views/SourceListView.vala:1353 src/Views/SourceListView.vala:1355
+#: src/Views/SourceListView.vala:1370 src/Views/SourceListView.vala:1372
 #: src/Widgets/ConnectionEditor.vala:383 src/Widgets/Connection.vala:66
 msgid "Remove"
 msgstr "Eemalda"
 
-#: src/Views/SourceListView.vala:151
+#: src/Views/SourceListView.vala:152
 msgid "Hosts"
 msgstr "Hostid"
 
-#: src/Views/SourceListView.vala:153
+#: src/Views/SourceListView.vala:154
 msgid "Accounts"
 msgstr "Kontod"
 
-#: src/Views/SourceListView.vala:511
+#: src/Views/SourceListView.vala:556
 msgid "Please enter the password to unlock the data file"
 msgstr "Palun sisesta salasõna andmefaili lahti lukustamiseks"
 
-#: src/Views/SourceListView.vala:513
+#: src/Views/SourceListView.vala:558
 msgid "Please enter the password to lock the data file"
 msgstr "Palun sisesta salasõna andmefaili lukustamiseks"
 
-#: src/Views/SourceListView.vala:515
+#: src/Views/SourceListView.vala:560
 msgid "Password"
 msgstr "Salasõna"
 
-#: src/Views/SourceListView.vala:522 src/Widgets/ConnectionEditor.vala:157
+#: src/Views/SourceListView.vala:567 src/Widgets/ConnectionEditor.vala:157
 msgid "Cancel"
 msgstr "Tühista"
 
-#: src/Views/SourceListView.vala:525
+#: src/Views/SourceListView.vala:570
 msgid "Send"
 msgstr "Saada"
 
-#: src/Views/SourceListView.vala:1266
+#: src/Views/SourceListView.vala:1334
 msgid ""
 "Are you sure you want to remove this connection and all associated data?"
 msgstr "Oled kindel, et soovid selle ühenduse ning kõik ta andmed kustutada?"
 
-#: src/Views/SourceListView.vala:1285
+#: src/Views/SourceListView.vala:1353
 msgid "Are you sure you want to remove this account and all associated data?"
 msgstr "Oled kindel, et soovid selle ühenduse ning kõik ta andmed kustutada?"
 
-#: src/Views/SourceListView.vala:1302
+#: src/Views/SourceListView.vala:1370
 #, fuzzy
 msgid "Are you sure you want to remove this bookmark?"
 msgstr "Oled kindel, et soovid selle ühenduse ning kõik ta andmed kustutada?"
 
-#: src/Widgets/TerminalBox.vala:205
+#: src/Widgets/TerminalBox.vala:216
 msgid "Connection Error. Retry?"
 msgstr "Ühenduse tõrge. Proovi uuesti?"
 
-#: src/Widgets/TerminalBox.vala:207 src/Widgets/TerminalBox.vala:240
+#: src/Widgets/TerminalBox.vala:218 src/Widgets/TerminalBox.vala:264
 msgid "No"
 msgstr "Ei"
 
-#: src/Widgets/TerminalBox.vala:210 src/Widgets/TerminalBox.vala:243
+#: src/Widgets/TerminalBox.vala:221 src/Widgets/TerminalBox.vala:267
 msgid "Yes"
 msgstr "Jah"
 
-#: src/Widgets/TerminalBox.vala:226
+#: src/Widgets/TerminalBox.vala:237
 msgid "Connection Error."
 msgstr "Ühenduse tõrge."
 
-#: src/Widgets/TerminalBox.vala:238
+#: src/Widgets/TerminalBox.vala:239 src/Widgets/Preferences.vala:140
+msgid "Close"
+msgstr "Sulge"
+
+#: src/Widgets/TerminalBox.vala:242
+msgid "Ok"
+msgstr ""
+
+#: src/Widgets/TerminalBox.vala:245
+msgid "Retry"
+msgstr ""
+
+#: src/Widgets/TerminalBox.vala:262
 msgid "Fingerprint"
 msgstr "Sõrmejälg"
 
@@ -134,19 +146,24 @@ msgstr "EasySSH kasutamise alustamiseks lisage SSH-ühendus"
 msgid "Create a new connection"
 msgstr "Loo uus ühendus"
 
-#: src/Widgets/HeaderBar.vala:54 src/Widgets/BookmarksPopover.vala:103
+#: src/Widgets/HeaderBar.vala:46
+#, fuzzy
+msgid "Local connection"
+msgstr "Lisa ühendus"
+
+#: src/Widgets/HeaderBar.vala:59 src/Widgets/BookmarksPopover.vala:103
 msgid "Bookmarks"
 msgstr ""
 
-#: src/Widgets/HeaderBar.vala:56 src/Widgets/Preferences.vala:35
+#: src/Widgets/HeaderBar.vala:61 src/Widgets/Preferences.vala:35
 msgid "Preferences"
 msgstr "Eelistused"
 
-#: src/Widgets/HeaderBar.vala:58
+#: src/Widgets/HeaderBar.vala:63
 msgid "Close All Connections"
 msgstr "Sulge kõik ühendused"
 
-#: src/Widgets/HeaderBar.vala:68
+#: src/Widgets/HeaderBar.vala:73
 msgid "Menu"
 msgstr "Menüü"
 
@@ -302,10 +319,6 @@ msgstr "Kasuta tumedat teemat:"
 #: src/Widgets/Preferences.vala:127
 msgid "General"
 msgstr "Üldine"
-
-#: src/Widgets/Preferences.vala:140
-msgid "Close"
-msgstr "Sulge"
 
 #: src/Widgets/TerminalWidget.vala:31
 msgid "Terminal"

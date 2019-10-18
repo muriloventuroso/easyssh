@@ -39,6 +39,11 @@ namespace EasySSH {
 
             new_conn.action_name = MainWindow.ACTION_PREFIX + MainWindow.ACTION_NEW_CONN;
             new_conn.tooltip_text = _("Create a new connection");
+
+            Gtk.ToolButton local_conn = new Gtk.ToolButton (new Gtk.Image.from_icon_name ("go-home-symbolic", Gtk.IconSize.SMALL_TOOLBAR), null);
+
+            local_conn.action_name = MainWindow.ACTION_PREFIX + MainWindow.ACTION_LOCAL_CONN;
+            local_conn.tooltip_text = _("Local connection");
             search_button = new Gtk.ToggleButton ();
             search_button.action_name = MainWindow.ACTION_PREFIX + MainWindow.ACTION_SEARCH;
             search_button.image = new Gtk.Image.from_icon_name ("edit-find-symbolic", Gtk.IconSize.SMALL_TOOLBAR);
@@ -69,6 +74,7 @@ namespace EasySSH {
             settings_button.valign = Gtk.Align.CENTER;
 
             pack_start(new_conn);
+            pack_start(local_conn);
             pack_end(settings_button);
             pack_end(search_button);
             pack_end(bookmarks_button);

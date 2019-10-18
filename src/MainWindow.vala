@@ -42,6 +42,7 @@ namespace EasySSH {
         public const string ACTION_PREVIOUS_TAB = "action-previous-tab";
         public const string ACTION_COPY = "action-copy";
         public const string ACTION_COPY_LAST_OUTPUT = "action-copy-last-output";
+        public const string ACTION_LOCAL_CONN = "action_local_conn";
         public const string ACTION_NEW_CONN = "action_new_conn";
         public const string ACTION_NEW_ACCOUNT = "action_new_account";
         public const string ACTION_PREFERENCES = "action_preferences";
@@ -68,6 +69,7 @@ namespace EasySSH {
             { ACTION_PREVIOUS_TAB, action_previous_tab },
             { ACTION_COPY, action_copy },
             { ACTION_COPY_LAST_OUTPUT, action_copy_last_output },
+            { ACTION_LOCAL_CONN, action_local_conn },
             { ACTION_NEW_CONN, action_new_conn },
             { ACTION_NEW_ACCOUNT, action_new_account },
             { ACTION_PREFERENCES, action_preferences },
@@ -375,6 +377,9 @@ namespace EasySSH {
         }
         public void action_remove_conn (string name) {
             sourcelist.remove_conn(name);
+        }
+        private void action_local_conn () {
+            sourcelist.local_conn();
         }
         private void action_new_conn () {
             sourcelist.new_conn();

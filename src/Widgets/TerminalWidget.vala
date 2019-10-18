@@ -49,6 +49,7 @@ namespace EasySSH {
         public Granite.Widgets.Tab tab;
         public string? uri;
         public Host host { get; construct; }
+        public bool ssh { get; construct; }
         GLib.Pid child_pid;
 
         private string _tab_label;
@@ -97,9 +98,10 @@ namespace EasySSH {
             private set;
         }
 
-        public TerminalWidget (MainWindow parent_window, Host host) {
+        public TerminalWidget (MainWindow parent_window, Host host, bool ssh) {
             Object (
-                host: host
+                host: host,
+                ssh: ssh
             );
 
             init_complete = false;
@@ -169,8 +171,30 @@ namespace EasySSH {
         }
 
         public void active_shell() {
-            this.spawn_sync(Vte.PtyFlags.DEFAULT, null, {"/bin/sh"},
+            if(ssh){
+                Idle.add_full (GLib.Priority.LOW, () => {
+                    try {
+                        this.spawn_sync(Vte.PtyFlags.DEFAULT, null, {"/bin/sh"},
                                         null, SpawnFlags.SEARCH_PATH, null, out this.child_pid, null);
+                    } catch (Error e) {
+                        warning (e.message);
+                    }
+                    return false;
+                });
+            }else{
+                string dir = GLib.Environment.get_current_dir ();
+                var shell = Vte.get_user_shell ();
+                Idle.add_full (GLib.Priority.LOW, () => {
+                    try {
+                        this.spawn_sync (Vte.PtyFlags.DEFAULT, dir, { shell },
+                                                null, SpawnFlags.SEARCH_PATH, null, out this.child_pid, null);
+                    } catch (Error e) {
+                        warning (e.message);
+                    }
+                    return false;
+                });
+            }
+
         }
 
 

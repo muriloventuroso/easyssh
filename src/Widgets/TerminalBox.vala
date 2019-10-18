@@ -32,12 +32,14 @@ namespace EasySSH {
         public Granite.Widgets.Tab tab {get; set;}
         private bool unread_changes;
         private EasySSH.Settings settings;
+        public bool ssh { get; construct; }
 
-        public TerminalBox (Host host, Granite.Widgets.DynamicNotebook notebook, MainWindow window) {
+        public TerminalBox (Host host, Granite.Widgets.DynamicNotebook notebook, MainWindow window, bool ssh) {
             Object (
                 dataHost: host,
                 notebook: notebook,
-                window: window
+                window: window,
+                ssh: ssh
             );
         }
 
@@ -47,13 +49,14 @@ namespace EasySSH {
             unread_changes = false;
             send_password = false;
             logged = false;
-            term = new TerminalWidget(window, dataHost);
+            term = new TerminalWidget(window, dataHost, ssh);
             term.set_scrollback_lines(-1);
 
             term.active_shell ();
-
-            term.contents_changed.connect(on_change_terminal);
-            start_connection();
+            if(ssh){
+                term.contents_changed.connect(on_change_terminal);
+                start_connection();
+            }
 
             add(term);
 

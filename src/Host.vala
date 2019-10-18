@@ -40,9 +40,12 @@ namespace EasySSH {
         public string account {get; set;}
         public Granite.Widgets.DynamicNotebook notebook {get; set;}
         public Granite.Widgets.SourceList.Item? item {get; set;}
+        public bool local {get; set;}
 
         construct {
             notebook = new Granite.Widgets.DynamicNotebook();
+            notebook.hexpand = true;
+            local = false;
         }
     }
 

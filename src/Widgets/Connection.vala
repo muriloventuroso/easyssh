@@ -81,7 +81,7 @@ namespace EasySSH {
         }
 
         public void add_tab() {
-            var term = new TerminalBox(host, notebook, window);
+            var term = new TerminalBox(host, notebook, window, true);
             term.set_can_focus(false);
             var next_tab = notebook.n_tabs;
             var tab = new Granite.Widgets.Tab (host.name + " - " + next_tab.to_string(), null, term);

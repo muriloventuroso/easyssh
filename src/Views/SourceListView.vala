@@ -162,7 +162,7 @@ namespace EasySSH {
 
                 var n_host = hostmanager.get_host_by_name(source_list.selected.name);
                 var n = n_host.notebook;
-                var term = new TerminalBox(n_host, n, window);
+                var term = new TerminalBox(n_host, n, window, true);
                 var next_tab = n.n_tabs;
                 if(Type.from_instance(n.current.page).name() == "EasySSHConnection") {
                     next_tab = 0;
@@ -295,6 +295,42 @@ namespace EasySSH {
                     restore();
                 }
             });
+
+            /* Local connection */
+            var host = new Host();
+            host.name = "Localhost";
+            host.local = true;
+            host.group = "Localhost";
+
+            var group = hostmanager.get_group_by_name(host.group);
+            if(group == null) {
+                group = add_group(host.group);
+            }
+            group.add_host(host);
+
+            var n = host.notebook;
+
+            n.new_tab_requested.connect (new_tab_request);
+            n.tab_removed.connect(() => {
+                if(n.n_tabs == 0) {
+                    var n_host = hostmanager.get_host_by_name(host.name);
+                    Tab n_tab;
+                    if(n_host.local){
+                        var term = new TerminalBox(n_host, n, window, false);
+                        n_tab = new Tab (n_host.name + " - 1", null, term);
+                    }else{
+                        var n_connect = new Connection(n_host, n, window, this);
+                        n_tab = new Tab (n_host.name, null, n_connect);
+                    }
+                    n.insert_tab(n_tab, 0);
+                    window.current_terminal = null;
+                }
+            });
+            n.tab_added.connect(on_tab_added);
+            n.tab_moved.connect(on_tab_moved);
+            n.tab_switched.connect(on_tab_switched);
+            n.tab_removed.connect(on_tab_removed);
+
             show_all();
             welcome_accounts.hide();
         }
@@ -306,7 +342,7 @@ namespace EasySSH {
             }
             var n = host.notebook;
             for (int i = 0; i < qtd; i++) {
-                var term = new TerminalBox(host, n, window);
+                var term = new TerminalBox(host, n, window, true);
                 var next_tab = n.n_tabs;
 
                 var n_tab = new Tab (host.name + " - " + (next_tab + 1).to_string(), null, term);
@@ -384,25 +420,33 @@ namespace EasySSH {
         }
 
         public void new_tab_request(){
+            Host n_host;
             if(source_list.selected != null){
-                var n_host = hostmanager.get_host_by_name(source_list.selected.name);
-                var n = n_host.notebook;
-                var term = new TerminalBox(n_host, n, window);
-                var next_tab = n.n_tabs;
-                if(Type.from_instance(n.current.page).name() == "EasySSHConnection") {
-                    next_tab = 0;
-                }
-                var n_tab = new Tab (n_host.name + " - " + (next_tab + 1).to_string(), null, term);
-                term.tab = n_tab;
-                n.insert_tab (n_tab, next_tab);
-                if(next_tab == 0) {
-                    n.remove_tab(n.current);
-                }
-                n.current = n_tab;
-                window.current_terminal = term.term;
-                window.current_terminal.tab = n_tab;
-                term.set_selected();
+                n_host = hostmanager.get_host_by_name(source_list.selected.name);
+            }else{
+                n_host = hostmanager.get_host_by_name("Localhost");
             }
+            var n = n_host.notebook;
+            var ssh = true;
+            if(n_host.local){
+                ssh = false;
+            }
+            var term = new TerminalBox(n_host, n, window, ssh);
+            var next_tab = n.n_tabs;
+            if(Type.from_instance(n.current.page).name() == "EasySSHConnection") {
+                next_tab = 0;
+            }
+            var n_tab = new Tab (n_host.name + " - " + (next_tab + 1).to_string(), null, term);
+            term.tab = n_tab;
+            n.insert_tab (n_tab, next_tab);
+            if(next_tab == 0) {
+                n.remove_tab(n.current);
+            }
+            n.current = n_tab;
+            window.current_terminal = term.term;
+            window.current_terminal.tab = n_tab;
+            term.set_selected();
+
         }
 
         private void insert_account(Account account) {
@@ -1204,6 +1248,29 @@ namespace EasySSH {
                 line = file.read_line();
             }
             return result;
+        }
+
+        public void local_conn() {
+            clean_box();
+            source_list.selected = null;
+            var n_host = hostmanager.get_host_by_name("Localhost");
+            var n = n_host.notebook;
+            var term = new TerminalBox(n_host, n, window, false);
+            var next_tab = n.n_tabs;
+            if(next_tab == 0){
+                var n_tab = new Tab (n_host.name + " - " + (next_tab + 1).to_string(), null, term);
+                term.tab = n_tab;
+                n.insert_tab (n_tab, next_tab);
+                n.current = n_tab;
+                window.current_terminal.tab = n_tab;
+            }
+
+            window.current_terminal = term.term;
+            term.set_selected();
+            term.term.grab_focus();
+            set_badge_item (n_host.item, n_host.notebook);
+            box.add(n);
+            n.show();
         }
 
         public void new_conn() {

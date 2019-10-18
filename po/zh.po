@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.muriloventuroso.easyssh\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-06 17:48-0300\n"
+"POT-Creation-Date: 2019-10-18 10:16-0300\n"
 "PO-Revision-Date: 2019-08-16 16:23+0000\n"
 "Last-Translator: Elizabeth Sherrock <lizzyd710@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
@@ -19,23 +19,23 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 3.8\n"
 
-#: src/MainWindow.vala:102
+#: src/MainWindow.vala:104
 msgid "EasySSH"
 msgstr "EasySSH"
 
-#: src/MainWindow.vala:535
+#: src/MainWindow.vala:540
 msgid "Copy"
 msgstr "复制"
 
-#: src/MainWindow.vala:536
+#: src/MainWindow.vala:541
 msgid "Paste"
 msgstr "粘贴"
 
-#: src/MainWindow.vala:537
+#: src/MainWindow.vala:542
 msgid "Select All"
 msgstr "全选"
 
-#: src/MainWindow.vala:538
+#: src/MainWindow.vala:543
 msgid "Show in File Browser"
 msgstr "在文件管理器中显示"
 
@@ -49,72 +49,84 @@ msgid "Duplicate"
 msgstr "重复"
 
 #: src/Views/SourceListView.vala:48 src/Views/SourceListView.vala:87
-#: src/Views/SourceListView.vala:1266 src/Views/SourceListView.vala:1268
-#: src/Views/SourceListView.vala:1285 src/Views/SourceListView.vala:1287
-#: src/Views/SourceListView.vala:1302 src/Views/SourceListView.vala:1304
+#: src/Views/SourceListView.vala:1334 src/Views/SourceListView.vala:1336
+#: src/Views/SourceListView.vala:1353 src/Views/SourceListView.vala:1355
+#: src/Views/SourceListView.vala:1370 src/Views/SourceListView.vala:1372
 #: src/Widgets/ConnectionEditor.vala:383 src/Widgets/Connection.vala:66
 msgid "Remove"
 msgstr "移除"
 
-#: src/Views/SourceListView.vala:151
+#: src/Views/SourceListView.vala:152
 msgid "Hosts"
 msgstr "主机"
 
-#: src/Views/SourceListView.vala:153
+#: src/Views/SourceListView.vala:154
 msgid "Accounts"
 msgstr "帐户"
 
-#: src/Views/SourceListView.vala:511
+#: src/Views/SourceListView.vala:556
 msgid "Please enter the password to unlock the data file"
 msgstr "请输入密码以解锁数据文件"
 
-#: src/Views/SourceListView.vala:513
+#: src/Views/SourceListView.vala:558
 msgid "Please enter the password to lock the data file"
 msgstr "请输入密码以锁定数据文件"
 
-#: src/Views/SourceListView.vala:515
+#: src/Views/SourceListView.vala:560
 msgid "Password"
 msgstr "密码"
 
-#: src/Views/SourceListView.vala:522 src/Widgets/ConnectionEditor.vala:157
+#: src/Views/SourceListView.vala:567 src/Widgets/ConnectionEditor.vala:157
 msgid "Cancel"
 msgstr "取消"
 
-#: src/Views/SourceListView.vala:525
+#: src/Views/SourceListView.vala:570
 msgid "Send"
 msgstr "发送"
 
-#: src/Views/SourceListView.vala:1266
+#: src/Views/SourceListView.vala:1334
 msgid ""
 "Are you sure you want to remove this connection and all associated data?"
 msgstr "您确定要移除此连接与所有关联的信息吗？"
 
-#: src/Views/SourceListView.vala:1285
+#: src/Views/SourceListView.vala:1353
 msgid "Are you sure you want to remove this account and all associated data?"
 msgstr "您确定要移除此帐户与所有关联的信息吗？"
 
-#: src/Views/SourceListView.vala:1302
+#: src/Views/SourceListView.vala:1370
 #, fuzzy
 msgid "Are you sure you want to remove this bookmark?"
 msgstr "您确定要移除此帐户与所有关联的信息吗？"
 
-#: src/Widgets/TerminalBox.vala:205
+#: src/Widgets/TerminalBox.vala:216
 msgid "Connection Error. Retry?"
 msgstr "连接错误。重试？"
 
-#: src/Widgets/TerminalBox.vala:207 src/Widgets/TerminalBox.vala:240
+#: src/Widgets/TerminalBox.vala:218 src/Widgets/TerminalBox.vala:264
 msgid "No"
 msgstr "否"
 
-#: src/Widgets/TerminalBox.vala:210 src/Widgets/TerminalBox.vala:243
+#: src/Widgets/TerminalBox.vala:221 src/Widgets/TerminalBox.vala:267
 msgid "Yes"
 msgstr "是"
 
-#: src/Widgets/TerminalBox.vala:226
+#: src/Widgets/TerminalBox.vala:237
 msgid "Connection Error."
 msgstr "连接错误。"
 
-#: src/Widgets/TerminalBox.vala:238
+#: src/Widgets/TerminalBox.vala:239 src/Widgets/Preferences.vala:140
+msgid "Close"
+msgstr "关闭"
+
+#: src/Widgets/TerminalBox.vala:242
+msgid "Ok"
+msgstr ""
+
+#: src/Widgets/TerminalBox.vala:245
+msgid "Retry"
+msgstr ""
+
+#: src/Widgets/TerminalBox.vala:262
 msgid "Fingerprint"
 msgstr "指纹"
 
@@ -134,19 +146,24 @@ msgstr "增加一个SSH连接至EasySSH以开始"
 msgid "Create a new connection"
 msgstr "创建一个新的连接"
 
-#: src/Widgets/HeaderBar.vala:54 src/Widgets/BookmarksPopover.vala:103
+#: src/Widgets/HeaderBar.vala:46
+#, fuzzy
+msgid "Local connection"
+msgstr "添加连接"
+
+#: src/Widgets/HeaderBar.vala:59 src/Widgets/BookmarksPopover.vala:103
 msgid "Bookmarks"
 msgstr ""
 
-#: src/Widgets/HeaderBar.vala:56 src/Widgets/Preferences.vala:35
+#: src/Widgets/HeaderBar.vala:61 src/Widgets/Preferences.vala:35
 msgid "Preferences"
 msgstr "偏好设置"
 
-#: src/Widgets/HeaderBar.vala:58
+#: src/Widgets/HeaderBar.vala:63
 msgid "Close All Connections"
 msgstr "关闭所有连接"
 
-#: src/Widgets/HeaderBar.vala:68
+#: src/Widgets/HeaderBar.vala:73
 msgid "Menu"
 msgstr "菜单"
 
@@ -301,10 +318,6 @@ msgstr "使用黑色主题："
 #: src/Widgets/Preferences.vala:127
 msgid "General"
 msgstr "通用"
-
-#: src/Widgets/Preferences.vala:140
-msgid "Close"
-msgstr "关闭"
 
 #: src/Widgets/TerminalWidget.vala:31
 msgid "Terminal"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.muriloventuroso.easyssh\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-06 17:48-0300\n"
+"POT-Creation-Date: 2019-10-18 10:16-0300\n"
 "PO-Revision-Date: 2018-04-23 15:43-0300\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -16,23 +16,23 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/MainWindow.vala:102
+#: src/MainWindow.vala:104
 msgid "EasySSH"
 msgstr ""
 
-#: src/MainWindow.vala:535
+#: src/MainWindow.vala:540
 msgid "Copy"
 msgstr ""
 
-#: src/MainWindow.vala:536
+#: src/MainWindow.vala:541
 msgid "Paste"
 msgstr ""
 
-#: src/MainWindow.vala:537
+#: src/MainWindow.vala:542
 msgid "Select All"
 msgstr ""
 
-#: src/MainWindow.vala:538
+#: src/MainWindow.vala:543
 msgid "Show in File Browser"
 msgstr ""
 
@@ -46,71 +46,83 @@ msgid "Duplicate"
 msgstr ""
 
 #: src/Views/SourceListView.vala:48 src/Views/SourceListView.vala:87
-#: src/Views/SourceListView.vala:1266 src/Views/SourceListView.vala:1268
-#: src/Views/SourceListView.vala:1285 src/Views/SourceListView.vala:1287
-#: src/Views/SourceListView.vala:1302 src/Views/SourceListView.vala:1304
+#: src/Views/SourceListView.vala:1334 src/Views/SourceListView.vala:1336
+#: src/Views/SourceListView.vala:1353 src/Views/SourceListView.vala:1355
+#: src/Views/SourceListView.vala:1370 src/Views/SourceListView.vala:1372
 #: src/Widgets/ConnectionEditor.vala:383 src/Widgets/Connection.vala:66
 msgid "Remove"
 msgstr ""
 
-#: src/Views/SourceListView.vala:151
+#: src/Views/SourceListView.vala:152
 msgid "Hosts"
 msgstr ""
 
-#: src/Views/SourceListView.vala:153
+#: src/Views/SourceListView.vala:154
 msgid "Accounts"
 msgstr ""
 
-#: src/Views/SourceListView.vala:511
+#: src/Views/SourceListView.vala:556
 msgid "Please enter the password to unlock the data file"
 msgstr ""
 
-#: src/Views/SourceListView.vala:513
+#: src/Views/SourceListView.vala:558
 msgid "Please enter the password to lock the data file"
 msgstr ""
 
-#: src/Views/SourceListView.vala:515
+#: src/Views/SourceListView.vala:560
 msgid "Password"
 msgstr ""
 
-#: src/Views/SourceListView.vala:522 src/Widgets/ConnectionEditor.vala:157
+#: src/Views/SourceListView.vala:567 src/Widgets/ConnectionEditor.vala:157
 msgid "Cancel"
 msgstr ""
 
-#: src/Views/SourceListView.vala:525
+#: src/Views/SourceListView.vala:570
 msgid "Send"
 msgstr ""
 
-#: src/Views/SourceListView.vala:1266
+#: src/Views/SourceListView.vala:1334
 msgid ""
 "Are you sure you want to remove this connection and all associated data?"
 msgstr ""
 
-#: src/Views/SourceListView.vala:1285
+#: src/Views/SourceListView.vala:1353
 msgid "Are you sure you want to remove this account and all associated data?"
 msgstr ""
 
-#: src/Views/SourceListView.vala:1302
+#: src/Views/SourceListView.vala:1370
 msgid "Are you sure you want to remove this bookmark?"
 msgstr ""
 
-#: src/Widgets/TerminalBox.vala:205
+#: src/Widgets/TerminalBox.vala:216
 msgid "Connection Error. Retry?"
 msgstr ""
 
-#: src/Widgets/TerminalBox.vala:207 src/Widgets/TerminalBox.vala:240
+#: src/Widgets/TerminalBox.vala:218 src/Widgets/TerminalBox.vala:264
 msgid "No"
 msgstr ""
 
-#: src/Widgets/TerminalBox.vala:210 src/Widgets/TerminalBox.vala:243
+#: src/Widgets/TerminalBox.vala:221 src/Widgets/TerminalBox.vala:267
 msgid "Yes"
 msgstr ""
 
-#: src/Widgets/TerminalBox.vala:226
+#: src/Widgets/TerminalBox.vala:237
 msgid "Connection Error."
 msgstr ""
 
-#: src/Widgets/TerminalBox.vala:238
+#: src/Widgets/TerminalBox.vala:239 src/Widgets/Preferences.vala:140
+msgid "Close"
+msgstr ""
+
+#: src/Widgets/TerminalBox.vala:242
+msgid "Ok"
+msgstr ""
+
+#: src/Widgets/TerminalBox.vala:245
+msgid "Retry"
+msgstr ""
+
+#: src/Widgets/TerminalBox.vala:262
 msgid "Fingerprint"
 msgstr ""
 
@@ -130,19 +142,23 @@ msgstr ""
 msgid "Create a new connection"
 msgstr ""
 
-#: src/Widgets/HeaderBar.vala:54 src/Widgets/BookmarksPopover.vala:103
+#: src/Widgets/HeaderBar.vala:46
+msgid "Local connection"
+msgstr ""
+
+#: src/Widgets/HeaderBar.vala:59 src/Widgets/BookmarksPopover.vala:103
 msgid "Bookmarks"
 msgstr ""
 
-#: src/Widgets/HeaderBar.vala:56 src/Widgets/Preferences.vala:35
+#: src/Widgets/HeaderBar.vala:61 src/Widgets/Preferences.vala:35
 msgid "Preferences"
 msgstr ""
 
-#: src/Widgets/HeaderBar.vala:58
+#: src/Widgets/HeaderBar.vala:63
 msgid "Close All Connections"
 msgstr ""
 
-#: src/Widgets/HeaderBar.vala:68
+#: src/Widgets/HeaderBar.vala:73
 msgid "Menu"
 msgstr ""
 
@@ -296,10 +312,6 @@ msgstr ""
 
 #: src/Widgets/Preferences.vala:127
 msgid "General"
-msgstr ""
-
-#: src/Widgets/Preferences.vala:140
-msgid "Close"
 msgstr ""
 
 #: src/Widgets/TerminalWidget.vala:31
