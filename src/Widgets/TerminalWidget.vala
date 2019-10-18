@@ -172,15 +172,8 @@ namespace EasySSH {
 
         public void active_shell() {
             if(ssh){
-                Idle.add_full (GLib.Priority.LOW, () => {
-                    try {
-                        this.spawn_sync(Vte.PtyFlags.DEFAULT, null, {"/bin/sh"},
+                this.spawn_sync(Vte.PtyFlags.DEFAULT, null, {"/bin/sh"},
                                         null, SpawnFlags.SEARCH_PATH, null, out this.child_pid, null);
-                    } catch (Error e) {
-                        warning (e.message);
-                    }
-                    return false;
-                });
             }else{
                 string dir = GLib.Environment.get_current_dir ();
                 var shell = Vte.get_user_shell ();

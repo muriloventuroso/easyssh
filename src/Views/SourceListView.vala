@@ -655,6 +655,7 @@ namespace EasySSH {
                     foreach (var hostnode in json_hosts.get_elements ()) {
                         var item = hostnode.get_object ();
                         var host = new Host();
+                        host.local = false;
                         host.name = item.get_string_member("name");
                         if(item.has_member("host")){
                             host.host = item.get_string_member("host");
