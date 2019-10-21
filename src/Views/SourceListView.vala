@@ -113,6 +113,7 @@ namespace EasySSH {
         private string encrypt_password;
         private bool should_encrypt_data;
         private bool should_sync_ssh_config;
+        private string hosts_folder;
         private bool open_dialog;
         public signal void host_edit_clicked (string name);
         public signal void host_remove_clicked (string name);
@@ -201,6 +202,7 @@ namespace EasySSH {
             if(settings.sync_ssh_config == true){
                 load_ssh_config ();
             }
+            hosts_folder = settings.hosts_folder;
 
             source_list.item_selected.connect ((item) => {
                 if(item == null) {
@@ -275,6 +277,14 @@ namespace EasySSH {
                     load_ssh_config ();
                 }
                 should_sync_ssh_config = settings.sync_ssh_config;
+
+                if(settings.hosts_folder != hosts_folder){
+                    hosts_folder = settings.hosts_folder;
+                    clean_data ();
+                    load_accounts();
+                    load_hosts();
+                    load_bookmarks();
+                }
             });
 
             btn_hosts.toggled.connect(() => {
@@ -624,6 +634,25 @@ namespace EasySSH {
             return output;
         }
         #endif
+
+        private void clean_data() {
+            foreach(var group in hostmanager.get_groups()){
+                foreach (var host in group.get_hosts()) {
+                    group.category.remove(host.item);
+                    host.notebook.destroy();
+                    group.remove_host(host.name);
+                }
+            }
+
+            foreach(var account in accountmanager.get_accounts()){
+                source_list_accounts.root.remove(account.item);
+                accountmanager.remove_account(account.name);
+            }
+
+            foreach(var bookmark in bookmarkmanager.get_bookmarks()){
+                bookmarkmanager.remove_bookmark(bookmark.name);
+            }
+        }
         public void load_hosts() {
             try {
                 string res = "";
@@ -961,6 +990,9 @@ namespace EasySSH {
                 var length_hosts = groups[a].get_length();
                 for(int i = 0; i < length_hosts; i++) {
                     if(hosts[i] == null) {
+                        continue;
+                    }
+                    if(hosts[i].local == true){
                         continue;
                     }
                     var s_host = new Host();

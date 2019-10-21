@@ -110,7 +110,8 @@ namespace EasySSH {
                     break;
                 }
             }
-            if(i != -1) {
+            print(i.to_string());
+            if(i != -1 && i >= get_length() - 1) {
                 hosts.remove_at(i);
             }
         }
