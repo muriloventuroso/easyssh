@@ -112,6 +112,7 @@ namespace EasySSH {
         private EasySSH.Settings settings;
         private string encrypt_password;
         private bool should_encrypt_data;
+        private bool should_sync_ssh_config;
         private bool open_dialog;
         public signal void host_edit_clicked (string name);
         public signal void host_remove_clicked (string name);
@@ -196,6 +197,7 @@ namespace EasySSH {
             load_accounts();
             load_hosts();
             load_bookmarks();
+            should_sync_ssh_config = settings.sync_ssh_config;
             if(settings.sync_ssh_config == true){
                 load_ssh_config ();
             }
@@ -266,6 +268,14 @@ namespace EasySSH {
                 }
             });
             #endif
+
+            settings.changed.connect(() => {
+                if(settings.sync_ssh_config == true && should_sync_ssh_config == false){
+                    backup_ssh_config ();
+                    load_ssh_config ();
+                }
+                should_sync_ssh_config = settings.sync_ssh_config;
+            });
 
             btn_hosts.toggled.connect(() => {
                 clean_box();
@@ -1108,6 +1118,28 @@ namespace EasySSH {
                 var dos = new DataOutputStream (file.create (FileCreateFlags.REPLACE_DESTINATION));
 
                 dos.put_string (data);
+            }
+
+        }
+
+        public void backup_ssh_config() {
+            File file1 = File.new_for_path (Environment.get_home_dir () + "/.ssh/config");
+            if (!file1.query_exists ()) {
+                return;
+            };
+            File file2 = File.new_for_path (Environment.get_home_dir () + "/.ssh/config.backup");
+            if (file2.query_exists ()) {
+                try {
+                    file2.delete ();
+                } catch (Error e) {
+                    print ("Error: %s\n", e.message);
+                }
+            };
+            try {
+                file1.copy (file2, 0, null, (current_num_bytes, total_num_bytes) => {
+                });
+            } catch (Error e) {
+                print ("Error: %s\n", e.message);
             }
 
         }
