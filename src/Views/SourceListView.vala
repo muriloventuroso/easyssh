@@ -386,6 +386,7 @@ namespace EasySSH {
                     source_list.selected = null;
                     welcome.show();
                 } else {
+                    clean_box();
                     box.add(host.notebook);
                     host.notebook.show();
                 }
