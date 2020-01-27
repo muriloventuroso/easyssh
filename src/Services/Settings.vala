@@ -36,6 +36,7 @@ namespace EasySSH {
         public bool use_dark_theme { get; set; }
         public bool sync_ssh_config {get; set; }
         public bool encrypt_data {get; set; }
+        public string scrollback_lines {get; set;}
 
         public static Settings get_default () {
             if (settings == null) {
@@ -51,6 +52,7 @@ namespace EasySSH {
                 var file = File.new_for_path(hosts_folder);
                 file.make_directory();
             }
+
         }
 
     }

@@ -66,7 +66,6 @@ namespace EasySSH {
             }
         }
 
-        public int default_size;
         private long remembered_position; /* Only need to remember row at the moment */
         private long remembered_command_start_row = 0; /* Only need to remember row at the moment */
         private long remembered_command_end_row = 0; /* Only need to remember row at the moment */

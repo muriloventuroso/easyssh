@@ -80,6 +80,11 @@
             <summary>Encrypt Data</summary>
             <description>Protect data with password</description>
         </key>
+        <key name="scrollback-lines" type="s">
+            <default>'-1'</default>
+            <summary>Scrollback Lines</summary>
+            <description>Sets the length of the scrollback buffer used by the terminal. 0 can safely be used to disable scrollback. A negative value means "infinite scrollback".</description>
+        </key>
 
     </schema>
 

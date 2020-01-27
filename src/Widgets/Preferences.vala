@@ -70,6 +70,14 @@ namespace EasySSH {
                 settings.restore_hosts = restore_hosts_switch.active;
             });
 
+            var scrollback_lines_input = new Gtk.Entry();
+            scrollback_lines_input.text = settings.scrollback_lines;
+            scrollback_lines_input.changed.connect (() => {
+                settings.scrollback_lines = scrollback_lines_input.text;
+            });
+            var scrollback_help = new Gtk.Label(_("0 to disable. -1 to unlimited"));
+            scrollback_help.halign = Gtk.Align.START;
+
             var sync_ssh_switch = new Gtk.Switch();
             sync_ssh_switch.halign = Gtk.Align.START;
             sync_ssh_switch.valign = Gtk.Align.CENTER;
@@ -99,16 +107,22 @@ namespace EasySSH {
             general_grid.attach (new Granite.HeaderLabel (_("Hosts Configuration Folder:")), 0, 0, 1, 1);
             general_grid.attach (hosts_filechooser, 1, 0, 1, 1);
 
-            general_grid.attach (new Granite.HeaderLabel (_("Restore Opened Hosts:")), 0, 1, 1, 1);
-            general_grid.attach (restore_hosts_switch, 1, 1, 1, 1);
+            general_grid.attach (new Granite.HeaderLabel (_("Scrollback lines:")), 0, 1, 1, 1);
+            general_grid.attach (scrollback_lines_input, 1, 1, 1, 1);
+            general_grid.attach (scrollback_help, 1, 2, 1, 1);
 
-            general_grid.attach (new Granite.HeaderLabel (_("Sync SSH Config:")), 0, 2, 1, 1);
-            general_grid.attach (sync_ssh_switch, 1, 2, 1, 1);
+            general_grid.attach (new Granite.HeaderLabel (_("Restore Opened Hosts:")), 0, 3, 1, 1);
+            general_grid.attach (restore_hosts_switch, 1, 3, 1, 1);
+
+            general_grid.attach (new Granite.HeaderLabel (_("Sync SSH Config:")), 0, 4, 1, 1);
+            general_grid.attach (sync_ssh_switch, 1, 4, 1, 1);
 
             #if WITH_GPG
-            general_grid.attach (new Granite.HeaderLabel (_("Encrypt data:")), 0, 4, 1, 1);
-            general_grid.attach (encrypt_data_switch, 1, 4, 1, 1);
+            general_grid.attach (new Granite.HeaderLabel (_("Encrypt data:")), 0, 5, 1, 1);
+            general_grid.attach (encrypt_data_switch, 1, 5, 1, 1);
             #endif
+
+
             var appearance_grid = new Gtk.Grid ();
 
             appearance_grid.attach (new Granite.HeaderLabel (_("Terminal Background Color:")), 0, 0, 1, 1);

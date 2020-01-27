@@ -50,7 +50,11 @@ namespace EasySSH {
             send_password = false;
             logged = false;
             term = new TerminalWidget(window, dataHost, ssh);
-            term.set_scrollback_lines(-1);
+            try{
+                term.set_scrollback_lines(long.parse(settings.scrollback_lines));
+            }catch(Error e){
+                term.set_scrollback_lines(-1);
+            }
 
             term.active_shell ();
             if(ssh){
