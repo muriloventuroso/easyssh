@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: com.github.muriloventuroso.easyssh\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-27 09:25-0300\n"
-"PO-Revision-Date: 2019-12-11 16:51+0000\n"
+"PO-Revision-Date: 2020-03-24 08:46+0000\n"
 "Last-Translator: Tuomas Lähteenmäki <lahtis@gmail.com>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/easyssh/"
 "translations/fi/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.10-dev\n"
+"X-Generator: Weblate 4.0-dev\n"
 
 #: src/MainWindow.vala:104
 msgid "EasySSH"
@@ -46,7 +46,7 @@ msgstr "Muokkaa"
 
 #: src/Views/SourceListView.vala:42 src/Views/SourceListView.vala:81
 msgid "Duplicate"
-msgstr ""
+msgstr "kaksoiskappale"
 
 #: src/Views/SourceListView.vala:48 src/Views/SourceListView.vala:87
 #: src/Views/SourceListView.vala:1400 src/Views/SourceListView.vala:1402
@@ -57,26 +57,24 @@ msgid "Remove"
 msgstr "Poista"
 
 #: src/Views/SourceListView.vala:154
-#, fuzzy
 msgid "Hosts"
-msgstr "Isäntä:"
+msgstr "Isännät"
 
 #: src/Views/SourceListView.vala:156
 msgid "Accounts"
-msgstr ""
+msgstr "Tilit"
 
 #: src/Views/SourceListView.vala:577
 msgid "Please enter the password to unlock the data file"
-msgstr ""
+msgstr "Anna salasana datatiedoston lukituksen avaamiseksi"
 
 #: src/Views/SourceListView.vala:579
 msgid "Please enter the password to lock the data file"
-msgstr ""
+msgstr "Anna salasana datatiedoston lukitsemiseksi"
 
 #: src/Views/SourceListView.vala:581
-#, fuzzy
 msgid "Password"
-msgstr "Salasana:"
+msgstr "Salasana"
 
 #: src/Views/SourceListView.vala:588 src/Widgets/ConnectionEditor.vala:157
 msgid "Cancel"
@@ -84,26 +82,22 @@ msgstr "Peru"
 
 #: src/Views/SourceListView.vala:591
 msgid "Send"
-msgstr ""
+msgstr "Lähetä"
 
 #: src/Views/SourceListView.vala:1400
-#, fuzzy
 msgid ""
 "Are you sure you want to remove this connection and all associated data?"
 msgstr ""
-"Haluatko varmasti poistaa tämän yhteyden ja kaiken siihen liittyvän tiedon?"
+"Haluatko varmasti poistaa tämän yhteyden ja kaikki siihen liittyvät tiedot?"
 
 #: src/Views/SourceListView.vala:1419
-#, fuzzy
 msgid "Are you sure you want to remove this account and all associated data?"
 msgstr ""
-"Haluatko varmasti poistaa tämän yhteyden ja kaiken siihen liittyvän tiedon?"
+"Haluatko varmasti poistaa tämän tilin ja kaikki siihen liittyvät tiedot?"
 
 #: src/Views/SourceListView.vala:1436
-#, fuzzy
 msgid "Are you sure you want to remove this bookmark?"
-msgstr ""
-"Haluatko varmasti poistaa tämän yhteyden ja kaiken siihen liittyvän tiedon?"
+msgstr "Haluatko varmasti poistaa tämän kirjanmerkin?"
 
 #: src/Widgets/TerminalBox.vala:220
 msgid "Connection Error. Retry?"
@@ -127,11 +121,11 @@ msgstr "Sulje"
 
 #: src/Widgets/TerminalBox.vala:246
 msgid "Ok"
-msgstr ""
+msgstr "Ok"
 
 #: src/Widgets/TerminalBox.vala:249
 msgid "Retry"
-msgstr ""
+msgstr "Yritä uudelleen"
 
 #: src/Widgets/TerminalBox.vala:266
 msgid "Fingerprint"
@@ -154,22 +148,20 @@ msgid "Create a new connection"
 msgstr "Luo uusi yhteys"
 
 #: src/Widgets/HeaderBar.vala:46
-#, fuzzy
 msgid "Local connection"
-msgstr "Lisää yhteys"
+msgstr "Paikallinen yhteys"
 
 #: src/Widgets/HeaderBar.vala:59 src/Widgets/BookmarksPopover.vala:103
 msgid "Bookmarks"
-msgstr ""
+msgstr "Kirjanmerkit"
 
 #: src/Widgets/HeaderBar.vala:61 src/Widgets/Preferences.vala:35
 msgid "Preferences"
 msgstr "Asetukset"
 
 #: src/Widgets/HeaderBar.vala:63
-#, fuzzy
 msgid "Close All Connections"
-msgstr "Lisää yhteys"
+msgstr "Sulje kaikki yhteydet"
 
 #: src/Widgets/HeaderBar.vala:73
 msgid "Menu"
@@ -177,11 +169,11 @@ msgstr "Valikko"
 
 #: src/Widgets/ConnectionEditor.vala:80
 msgid "Set Credentials"
-msgstr ""
+msgstr "Aseta käyttöoikeustiedot"
 
 #: src/Widgets/ConnectionEditor.vala:84
 msgid "Choose Account"
-msgstr ""
+msgstr "Valitse tili"
 
 #: src/Widgets/ConnectionEditor.vala:106 src/Widgets/ConnectionEditor.vala:220
 msgid "Password:"
@@ -212,9 +204,8 @@ msgid "Edit Connection"
 msgstr "Muokkaa yhteyttä"
 
 #: src/Widgets/ConnectionEditor.vala:195
-#, fuzzy
 msgid "Duplicate Connection"
-msgstr "Muokkaa yhteyttä"
+msgstr "Kahdenna yhteys"
 
 #: src/Widgets/ConnectionEditor.vala:200 src/Widgets/BookmarksPopover.vala:123
 msgid "Name:"
@@ -250,7 +241,7 @@ msgstr "Päätteen fontti:"
 
 #: src/Widgets/ConnectionEditor.vala:372
 msgid "Extra Arguments:"
-msgstr ""
+msgstr "Lisäargumentit:"
 
 #: src/Widgets/ConnectionEditor.vala:393
 msgid "Forwarded Ports:"
@@ -290,7 +281,7 @@ msgstr "Tunnelit"
 
 #: src/Widgets/ConnectionEditor.vala:439
 msgid "Other"
-msgstr ""
+msgstr "Muut"
 
 #: src/Widgets/ConnectionEditor.vala:499
 msgid "Name is already taken"
@@ -302,23 +293,23 @@ msgstr "Yhdistä"
 
 #: src/Widgets/Preferences.vala:44
 msgid "Select Hosts Configuration Folder…"
-msgstr ""
+msgstr "Valitse palvelinten asetustiedosto…"
 
 #: src/Widgets/Preferences.vala:78
 msgid "0 to disable. -1 to unlimited"
-msgstr ""
+msgstr "0 poistaa. -1 rajoittamaton"
 
 #: src/Widgets/Preferences.vala:107
 msgid "Hosts Configuration Folder:"
-msgstr ""
+msgstr "Palvelimien asetuskansio:"
 
 #: src/Widgets/Preferences.vala:110
 msgid "Scrollback lines:"
-msgstr ""
+msgstr "Vierittävät rivit:"
 
 #: src/Widgets/Preferences.vala:114
 msgid "Restore Opened Hosts:"
-msgstr ""
+msgstr "Palauta avatut isännät:"
 
 #: src/Widgets/Preferences.vala:117
 msgid "Sync SSH Config:"
@@ -326,7 +317,7 @@ msgstr "Synkronoi SSH-määritykset:"
 
 #: src/Widgets/Preferences.vala:121
 msgid "Encrypt data:"
-msgstr ""
+msgstr "Salaa tiedot:"
 
 #: src/Widgets/Preferences.vala:134
 msgid "Use Dark Theme:"
@@ -342,32 +333,31 @@ msgstr "Pääte"
 
 #: src/Widgets/BookmarksPopover.vala:51
 msgid "Search for bookmarks"
-msgstr ""
+msgstr "Etsi kirjanmerkkejä"
 
 #: src/Widgets/BookmarksPopover.vala:55
-#, fuzzy
 msgid "Create a new bookmark"
-msgstr "Luo uusi yhteys"
+msgstr "Luo uusi kirjanmerkki"
 
 #: src/Widgets/BookmarksPopover.vala:68
 msgid "Run"
-msgstr ""
+msgstr "Suorita"
 
 #: src/Widgets/BookmarksPopover.vala:72
 msgid "Delete"
-msgstr ""
+msgstr "Poista"
 
 #: src/Widgets/BookmarksPopover.vala:92 src/Widgets/BookmarksPopover.vala:110
 msgid "Add Bookmark"
-msgstr ""
+msgstr "Lisää kirjanmerkki"
 
 #: src/Widgets/BookmarksPopover.vala:125
 msgid "Command:"
-msgstr ""
+msgstr "Komento:"
 
 #: src/Widgets/BookmarksPopover.vala:237 src/Widgets/BookmarksPopover.vala:241
 msgid "Default"
-msgstr ""
+msgstr "Oletus"
 
 #~ msgid "Remove "
 #~ msgstr "Poista "
