@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: com.github.muriloventuroso.easyssh\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-27 09:25-0300\n"
-"PO-Revision-Date: 2019-08-25 05:24+0000\n"
+"PO-Revision-Date: 2020-04-04 08:52+0000\n"
 "Last-Translator: Kristjan Räts <kristjanrats@gmail.com>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/easyssh/"
 "translations/et/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9-dev\n"
+"X-Generator: Weblate 4.0-dev\n"
 
 #: src/MainWindow.vala:104
 msgid "EasySSH"
@@ -94,9 +94,8 @@ msgid "Are you sure you want to remove this account and all associated data?"
 msgstr "Oled kindel, et soovid selle ühenduse ning kõik ta andmed kustutada?"
 
 #: src/Views/SourceListView.vala:1436
-#, fuzzy
 msgid "Are you sure you want to remove this bookmark?"
-msgstr "Oled kindel, et soovid selle ühenduse ning kõik ta andmed kustutada?"
+msgstr "Oled kindel, et soovid selle järjehoidja kustutada?"
 
 #: src/Widgets/TerminalBox.vala:220
 msgid "Connection Error. Retry?"
@@ -120,11 +119,11 @@ msgstr "Sulge"
 
 #: src/Widgets/TerminalBox.vala:246
 msgid "Ok"
-msgstr ""
+msgstr "Olgu"
 
 #: src/Widgets/TerminalBox.vala:249
 msgid "Retry"
-msgstr ""
+msgstr "Proovi uuesti"
 
 #: src/Widgets/TerminalBox.vala:266
 msgid "Fingerprint"
@@ -147,13 +146,12 @@ msgid "Create a new connection"
 msgstr "Loo uus ühendus"
 
 #: src/Widgets/HeaderBar.vala:46
-#, fuzzy
 msgid "Local connection"
-msgstr "Lisa ühendus"
+msgstr "Kohalik ühendus"
 
 #: src/Widgets/HeaderBar.vala:59 src/Widgets/BookmarksPopover.vala:103
 msgid "Bookmarks"
-msgstr ""
+msgstr "Järjehoidjad"
 
 #: src/Widgets/HeaderBar.vala:61 src/Widgets/Preferences.vala:35
 msgid "Preferences"
@@ -241,7 +239,7 @@ msgstr "Terminali font:"
 
 #: src/Widgets/ConnectionEditor.vala:372
 msgid "Extra Arguments:"
-msgstr ""
+msgstr "Täiendavad argumendid:"
 
 #: src/Widgets/ConnectionEditor.vala:393
 msgid "Forwarded Ports:"
@@ -281,7 +279,7 @@ msgstr "Tunnelid"
 
 #: src/Widgets/ConnectionEditor.vala:439
 msgid "Other"
-msgstr ""
+msgstr "Muud"
 
 #: src/Widgets/ConnectionEditor.vala:499
 msgid "Name is already taken"
@@ -297,7 +295,7 @@ msgstr "Valige hostide konfiguratsioonikaust…"
 
 #: src/Widgets/Preferences.vala:78
 msgid "0 to disable. -1 to unlimited"
-msgstr ""
+msgstr "0 keelab, -1 piiramatu"
 
 #: src/Widgets/Preferences.vala:107
 msgid "Hosts Configuration Folder:"
@@ -305,7 +303,7 @@ msgstr "Hostide konfiguratsioonikaust:"
 
 #: src/Widgets/Preferences.vala:110
 msgid "Scrollback lines:"
-msgstr ""
+msgstr "Tagasikerimisridu:"
 
 #: src/Widgets/Preferences.vala:114
 msgid "Restore Opened Hosts:"
@@ -316,7 +314,6 @@ msgid "Sync SSH Config:"
 msgstr "SSH konfiguratsiooni sünkroonimine:"
 
 #: src/Widgets/Preferences.vala:121
-#, fuzzy
 msgid "Encrypt data:"
 msgstr "Krüpteeri andmed:"
 
@@ -334,32 +331,31 @@ msgstr "Terminal"
 
 #: src/Widgets/BookmarksPopover.vala:51
 msgid "Search for bookmarks"
-msgstr ""
+msgstr "Otsi järjehoidjad"
 
 #: src/Widgets/BookmarksPopover.vala:55
-#, fuzzy
 msgid "Create a new bookmark"
-msgstr "Loo uus ühendus"
+msgstr "Loo uus järjehoidja"
 
 #: src/Widgets/BookmarksPopover.vala:68
 msgid "Run"
-msgstr ""
+msgstr "Käivita"
 
 #: src/Widgets/BookmarksPopover.vala:72
 msgid "Delete"
-msgstr ""
+msgstr "Kustuta"
 
 #: src/Widgets/BookmarksPopover.vala:92 src/Widgets/BookmarksPopover.vala:110
 msgid "Add Bookmark"
-msgstr ""
+msgstr "Lisa järjehoidja"
 
 #: src/Widgets/BookmarksPopover.vala:125
 msgid "Command:"
-msgstr ""
+msgstr "Käsk:"
 
 #: src/Widgets/BookmarksPopover.vala:237 src/Widgets/BookmarksPopover.vala:241
 msgid "Default"
-msgstr ""
+msgstr "Vaikimisi"
 
 #~ msgid "Hide find bar"
 #~ msgstr "Peida otsinguriba"

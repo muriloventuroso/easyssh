@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: com.github.muriloventuroso.easyssh\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-27 09:25-0300\n"
-"PO-Revision-Date: 2018-09-01 11:29+0000\n"
-"Last-Translator: WaldiS <admin@sto.ugu.pl>\n"
+"PO-Revision-Date: 2020-05-13 02:48+0000\n"
+"Last-Translator: Szylu <chipolade@gmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/easyssh/"
 "translations/pl/>\n"
 "Language: pl\n"
@@ -18,11 +18,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.2-dev\n"
+"X-Generator: Weblate 4.1-dev\n"
 
 #: src/MainWindow.vala:104
 msgid "EasySSH"
-msgstr "Łatwy SSH"
+msgstr "EasySSH"
 
 #: src/MainWindow.vala:540
 msgid "Copy"
@@ -47,7 +47,7 @@ msgstr "Edytuj"
 
 #: src/Views/SourceListView.vala:42 src/Views/SourceListView.vala:81
 msgid "Duplicate"
-msgstr ""
+msgstr "Duplikuj"
 
 #: src/Views/SourceListView.vala:48 src/Views/SourceListView.vala:87
 #: src/Views/SourceListView.vala:1400 src/Views/SourceListView.vala:1402
@@ -58,26 +58,24 @@ msgid "Remove"
 msgstr "Usuń"
 
 #: src/Views/SourceListView.vala:154
-#, fuzzy
 msgid "Hosts"
-msgstr "Host:"
+msgstr "Hosty"
 
 #: src/Views/SourceListView.vala:156
 msgid "Accounts"
-msgstr ""
+msgstr "Konta"
 
 #: src/Views/SourceListView.vala:577
 msgid "Please enter the password to unlock the data file"
-msgstr ""
+msgstr "Proszę wprowadzić hasło aby odblokować plik danych"
 
 #: src/Views/SourceListView.vala:579
 msgid "Please enter the password to lock the data file"
-msgstr ""
+msgstr "Wprowadź hasło, aby zablokować plik danych"
 
 #: src/Views/SourceListView.vala:581
-#, fuzzy
 msgid "Password"
-msgstr "Hasło:"
+msgstr "Hasło"
 
 #: src/Views/SourceListView.vala:588 src/Widgets/ConnectionEditor.vala:157
 msgid "Cancel"
@@ -85,23 +83,20 @@ msgstr "Anuluj"
 
 #: src/Views/SourceListView.vala:591
 msgid "Send"
-msgstr ""
+msgstr "Wyślij"
 
 #: src/Views/SourceListView.vala:1400
-#, fuzzy
 msgid ""
 "Are you sure you want to remove this connection and all associated data?"
 msgstr "Czy na pewno chcesz usunąć to połączenie i wszystkie powiązane dane?"
 
 #: src/Views/SourceListView.vala:1419
-#, fuzzy
 msgid "Are you sure you want to remove this account and all associated data?"
-msgstr "Czy na pewno chcesz usunąć to połączenie i wszystkie powiązane dane?"
+msgstr "Czy na pewno chcesz usunąć to konto i wszystkie powiązane dane?"
 
 #: src/Views/SourceListView.vala:1436
-#, fuzzy
 msgid "Are you sure you want to remove this bookmark?"
-msgstr "Czy na pewno chcesz usunąć to połączenie i wszystkie powiązane dane?"
+msgstr "Czy na pewno chcesz usunąć tę zakładkę?"
 
 #: src/Widgets/TerminalBox.vala:220
 msgid "Connection Error. Retry?"
@@ -125,11 +120,11 @@ msgstr "Zamknij"
 
 #: src/Widgets/TerminalBox.vala:246
 msgid "Ok"
-msgstr ""
+msgstr "Ok"
 
 #: src/Widgets/TerminalBox.vala:249
 msgid "Retry"
-msgstr ""
+msgstr "Spróbuj ponownie"
 
 #: src/Widgets/TerminalBox.vala:266
 msgid "Fingerprint"
@@ -152,22 +147,20 @@ msgid "Create a new connection"
 msgstr "Utwórz nowe połączenie"
 
 #: src/Widgets/HeaderBar.vala:46
-#, fuzzy
 msgid "Local connection"
-msgstr "Dodaj połączenie"
+msgstr "Połączenie lokalne"
 
 #: src/Widgets/HeaderBar.vala:59 src/Widgets/BookmarksPopover.vala:103
 msgid "Bookmarks"
-msgstr ""
+msgstr "Zakładki"
 
 #: src/Widgets/HeaderBar.vala:61 src/Widgets/Preferences.vala:35
 msgid "Preferences"
 msgstr "Preferencje"
 
 #: src/Widgets/HeaderBar.vala:63
-#, fuzzy
 msgid "Close All Connections"
-msgstr "Dodaj połączenie"
+msgstr "Zamknij wszystkie połączenia"
 
 #: src/Widgets/HeaderBar.vala:73
 msgid "Menu"
@@ -175,11 +168,11 @@ msgstr "Menu"
 
 #: src/Widgets/ConnectionEditor.vala:80
 msgid "Set Credentials"
-msgstr ""
+msgstr "Ustaw dane dostępowe"
 
 #: src/Widgets/ConnectionEditor.vala:84
 msgid "Choose Account"
-msgstr ""
+msgstr "Wybierz konto"
 
 #: src/Widgets/ConnectionEditor.vala:106 src/Widgets/ConnectionEditor.vala:220
 msgid "Password:"
@@ -210,9 +203,8 @@ msgid "Edit Connection"
 msgstr "Edytuj połączenie"
 
 #: src/Widgets/ConnectionEditor.vala:195
-#, fuzzy
 msgid "Duplicate Connection"
-msgstr "Edytuj połączenie"
+msgstr "Duplikuj połączenie"
 
 #: src/Widgets/ConnectionEditor.vala:200 src/Widgets/BookmarksPopover.vala:123
 msgid "Name:"
@@ -248,7 +240,7 @@ msgstr "Czcionka terminalu:"
 
 #: src/Widgets/ConnectionEditor.vala:372
 msgid "Extra Arguments:"
-msgstr ""
+msgstr "Dodatkowe argumenty:"
 
 #: src/Widgets/ConnectionEditor.vala:393
 msgid "Forwarded Ports:"
@@ -288,7 +280,7 @@ msgstr "Tunele"
 
 #: src/Widgets/ConnectionEditor.vala:439
 msgid "Other"
-msgstr ""
+msgstr "Inne"
 
 #: src/Widgets/ConnectionEditor.vala:499
 msgid "Name is already taken"
@@ -304,7 +296,7 @@ msgstr "Wybierz folder konfiguracji hosta…"
 
 #: src/Widgets/Preferences.vala:78
 msgid "0 to disable. -1 to unlimited"
-msgstr ""
+msgstr "0 aby wyłączyć. -1 do nielimitowanych"
 
 #: src/Widgets/Preferences.vala:107
 msgid "Hosts Configuration Folder:"
@@ -312,7 +304,7 @@ msgstr "Folder konfiguracji hosta:"
 
 #: src/Widgets/Preferences.vala:110
 msgid "Scrollback lines:"
-msgstr ""
+msgstr "Linie przewijania:"
 
 #: src/Widgets/Preferences.vala:114
 msgid "Restore Opened Hosts:"
@@ -324,7 +316,7 @@ msgstr "Synchronizuj ustawienia SSH:"
 
 #: src/Widgets/Preferences.vala:121
 msgid "Encrypt data:"
-msgstr ""
+msgstr "Szyfruj dane:"
 
 #: src/Widgets/Preferences.vala:134
 msgid "Use Dark Theme:"
@@ -340,32 +332,31 @@ msgstr "Terminal"
 
 #: src/Widgets/BookmarksPopover.vala:51
 msgid "Search for bookmarks"
-msgstr ""
+msgstr "Wyszukaj zakładki"
 
 #: src/Widgets/BookmarksPopover.vala:55
-#, fuzzy
 msgid "Create a new bookmark"
-msgstr "Utwórz nowe połączenie"
+msgstr "Utwórz nową zakładkę"
 
 #: src/Widgets/BookmarksPopover.vala:68
 msgid "Run"
-msgstr ""
+msgstr "Wywołaj"
 
 #: src/Widgets/BookmarksPopover.vala:72
 msgid "Delete"
-msgstr ""
+msgstr "Usuń"
 
 #: src/Widgets/BookmarksPopover.vala:92 src/Widgets/BookmarksPopover.vala:110
 msgid "Add Bookmark"
-msgstr ""
+msgstr "Dodaj zakładkę"
 
 #: src/Widgets/BookmarksPopover.vala:125
 msgid "Command:"
-msgstr ""
+msgstr "Polecenie:"
 
 #: src/Widgets/BookmarksPopover.vala:237 src/Widgets/BookmarksPopover.vala:241
 msgid "Default"
-msgstr ""
+msgstr "Domyślne"
 
 #~ msgid "Remove "
 #~ msgstr "Usuń "
