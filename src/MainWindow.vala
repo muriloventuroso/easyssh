@@ -37,7 +37,6 @@ namespace EasySSH {
         public const string ACTION_PREFIX = "win.";
         public const string ACTION_CLOSE_TAB = "action-close-tab";
         public const string ACTION_FULLSCREEN = "action-fullscreen";
-        public const string ACTION_F10 = "action-f10";
         public const string ACTION_NEW_TAB = "action-new-tab";
         public const string ACTION_NEXT_TAB = "action-next-tab";
         public const string ACTION_PREVIOUS_TAB = "action-previous-tab";
@@ -65,7 +64,6 @@ namespace EasySSH {
         private const ActionEntry[] action_entries = {
             { ACTION_CLOSE_TAB, action_close_tab },
             { ACTION_FULLSCREEN, action_fullscreen },
-            { ACTION_F10, action_f10 },
             { ACTION_NEW_TAB, action_new_tab },
             { ACTION_NEXT_TAB, action_next_tab },
             { ACTION_PREVIOUS_TAB, action_previous_tab },
@@ -528,9 +526,7 @@ namespace EasySSH {
                 is_fullscreen = true;
             }
         }
-        void action_f10 () {
-            print("f9");
-        }
+
         void action_close_tabs() {
             foreach(var notebook in sourcelist.hostmanager.get_notebooks()){
                 notebook.tabs.foreach((tab) => {
