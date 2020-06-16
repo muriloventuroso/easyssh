@@ -118,7 +118,7 @@ namespace EasySSH {
                     }
 
                     menu.select_first (false);
-                    menu.popup (null, null, null, event.button, event.time);
+                    menu.popup_at_pointer (event);
 
                     return true;
                 } else if (event.button == Gdk.BUTTON_MIDDLE) {

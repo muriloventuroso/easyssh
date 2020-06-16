@@ -321,6 +321,7 @@ namespace EasySSH {
             host.name = "Localhost";
             host.local = true;
             host.group = "Localhost";
+            host.item = new Item ("Localhost");
 
             var group = hostmanager.get_group_by_name(host.group);
             if(group == null) {
