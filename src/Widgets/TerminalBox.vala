@@ -56,6 +56,10 @@ namespace EasySSH {
                 term.set_scrollback_lines(-1);
             }
 
+
+                term.set_audible_bell(settings.audible_bell);
+
+
             term.active_shell ();
             if(ssh){
                 term.contents_changed.connect(on_change_terminal);

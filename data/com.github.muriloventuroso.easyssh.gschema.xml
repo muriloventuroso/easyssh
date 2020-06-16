@@ -85,7 +85,11 @@
             <summary>Scrollback Lines</summary>
             <description>Sets the length of the scrollback buffer used by the terminal. 0 can safely be used to disable scrollback. A negative value means "infinite scrollback".</description>
         </key>
-
+        <key name="audible-bell" type="b">
+            <default>true</default>
+            <summary>Audible Bell</summary>
+            <description>Controls whether or not the terminal will beep when the child outputs the "bl" sequence.</description>
+        </key>
     </schema>
 
 </schemalist>

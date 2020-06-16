@@ -37,6 +37,7 @@ namespace EasySSH {
         public bool sync_ssh_config {get; set; }
         public bool encrypt_data {get; set; }
         public string scrollback_lines {get; set;}
+        public bool audible_bell {get; set;}
 
         public static Settings get_default () {
             if (settings == null) {

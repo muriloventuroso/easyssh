@@ -39,7 +39,11 @@ namespace EasySSH {
         }
 
         construct {
-
+            var restart_label = new Gtk.Label(_("Restart to apply changes"));
+            var restart_revealer = new Gtk.Revealer ();
+            restart_revealer.set_transition_type (Gtk.RevealerTransitionType.CROSSFADE);
+            restart_revealer.add (restart_label);
+            restart_revealer.set_reveal_child (false);
             settings = Settings.get_default ();
             var hosts_filechooser = new Gtk.FileChooserButton (_("Select Hosts Configuration Folder…"), Gtk.FileChooserAction.SELECT_FOLDER);
             hosts_filechooser.hexpand = true;
@@ -74,6 +78,7 @@ namespace EasySSH {
             scrollback_lines_input.text = settings.scrollback_lines;
             scrollback_lines_input.changed.connect (() => {
                 settings.scrollback_lines = scrollback_lines_input.text;
+                restart_revealer.set_reveal_child(true);
             });
             var scrollback_help = new Gtk.Label(_("0 to disable. -1 to unlimited"));
             scrollback_help.halign = Gtk.Align.START;
@@ -84,6 +89,15 @@ namespace EasySSH {
             sync_ssh_switch.set_active(settings.sync_ssh_config);
             sync_ssh_switch.notify["active"].connect (() => {
                 settings.sync_ssh_config = sync_ssh_switch.active;
+            });
+
+            var audible_bell_switch = new Gtk.Switch();
+            audible_bell_switch.halign = Gtk.Align.START;
+            audible_bell_switch.valign = Gtk.Align.CENTER;
+            audible_bell_switch.set_active(settings.audible_bell);
+            audible_bell_switch.notify["active"].connect (() => {
+                settings.audible_bell = audible_bell_switch.active;
+                restart_revealer.set_reveal_child(true);
             });
             #if WITH_GPG
             var encrypt_data_switch = new Gtk.Switch();
@@ -117,9 +131,12 @@ namespace EasySSH {
             general_grid.attach (new Granite.HeaderLabel (_("Sync SSH Config:")), 0, 4, 1, 1);
             general_grid.attach (sync_ssh_switch, 1, 4, 1, 1);
 
+            general_grid.attach (new Granite.HeaderLabel (_("Audible Bell:")), 0, 5, 1, 1);
+            general_grid.attach (audible_bell_switch, 1, 5, 1, 1);
+
             #if WITH_GPG
-            general_grid.attach (new Granite.HeaderLabel (_("Encrypt data:")), 0, 5, 1, 1);
-            general_grid.attach (encrypt_data_switch, 1, 5, 1, 1);
+            general_grid.attach (new Granite.HeaderLabel (_("Encrypt data:")), 0, 6, 1, 1);
+            general_grid.attach (encrypt_data_switch, 1, 6, 1, 1);
             #endif
 
 
@@ -148,6 +165,8 @@ namespace EasySSH {
             var main_grid = new Gtk.Grid ();
             main_grid.attach (main_stackswitcher, 0, 0, 1, 1);
             main_grid.attach (main_stack, 0, 1, 1, 1);
+            
+            main_grid.attach (restart_revealer, 0, 2, 1, 1);
 
             get_content_area ().add (main_grid);
 
