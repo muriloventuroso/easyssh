@@ -148,7 +148,8 @@ namespace EasySSH {
 
                 }
                 if (ret.length > 2 && "closed." in ret[ret.length - 2] && "$" in ret[ret.length - 1]) {
-                    if(":~$" in ret[ret.length - 1]){
+                    if("logout" in ret[ret.length - 3]){
+                        remove_tab(tab);
                     }else{
                         if(open_dialog == false) {
                             alert_error("closed", tab);
