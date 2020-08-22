@@ -138,7 +138,7 @@ namespace EasySSH {
                     }
 
                 }
-                if (ret.length > 2 && "closed." in ret[ret.length - 2] && "$" in ret[ret.length - 1]) {
+                if (ret.length > 2 && "closed." in ret[ret.length - 2] && "$" in ret[ret.length - 1] && !("~" in ret[ret.length - 1]) && logged == true) {
                     if("logout" in ret[ret.length - 3]){
                         remove_tab(tab);
                     }else{
@@ -153,7 +153,7 @@ namespace EasySSH {
                     }
                 }else if (ret.length > 2 && "refused" in ret[ret.length - 2] && "$" in ret[ret.length - 1]) {
                     var tab = notebook.get_tab_by_widget(this);
-                    if(open_dialog == false) {
+                    if(open_dialog == false && logged == false) {
                         alert_error_retry(ret[ret.length - 2], tab);
                     }
                 }else if (ret.length > 2 && "Broken pipe" in ret[ret.length - 2] && "$" in ret[ret.length - 1]) {
@@ -167,6 +167,8 @@ namespace EasySSH {
                         alert_error_retry(ret[ret.length - 2], tab);
                     }
                 }else if (ret.length > 2 && ":~$" in ret[ret.length - 2]) {
+                    logged = true;
+                }else if (ret.length > 2 && ":~ $" in ret[ret.length - 2]) {
                     logged = true;
                 }else if (ret.length > 2 && "Permission denied, please try again." in ret[ret.length - 2] && logged == false) {
                     var tab = notebook.get_tab_by_widget(this);
