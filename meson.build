@@ -26,11 +26,7 @@ dependencies = [
     dependency('gee-0.8'),
     meson.get_compiler('c').find_library('m', required : false)
 ]
-if get_option('libunity')
-    unity_dep = dependency('unity')
-    add_project_arguments('--define=UNITY_SUPPORT=1', language : 'vala')
-    dependencies += unity_dep
-endif
+
 
 if with_gpg
     gpg = find_program('gpg', 'gpg2', required: true)

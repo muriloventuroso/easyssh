@@ -109,25 +109,16 @@ namespace EasySSH {
         }
 
         public void add_badge (){
-            #if UNITY_SUPPORT
-            var entry = Unity.LauncherEntry.get_for_desktop_id ("com.github.muriloventuroso.easyssh.desktop");
-            entry.count_visible = true;
-            entry.count = entry.count + 1;
-            #endif
+            window.add_badge();
             unread_changes = true;
             dataHost.item.icon = new GLib.ThemedIcon ("mail-mark-important");
             tab.icon = new GLib.ThemedIcon ("mail-mark-important");
         }
         public void remove_badge (){
-            #if UNITY_SUPPORT
-            var entry = Unity.LauncherEntry.get_for_desktop_id ("com.github.muriloventuroso.easyssh.desktop");
-            if(entry.count_visible == true){
-                entry.count = entry.count - 1;
-                if(entry.count == 0){
-                    entry.count_visible = false;
-                }
+            if(unread_changes){
+                window.remove_badge();
             }
-            #endif
+            
             unread_changes = false;
             dataHost.item.icon = null;
             tab.icon = null;

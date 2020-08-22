@@ -33,6 +33,7 @@ namespace EasySSH {
         public HeaderBar header;
         private bool is_fullscreen = false;
         public Gtk.Application application { get; construct; }
+        public int64 count_badge = 0;
 
         public const string ACTION_PREFIX = "win.";
         public const string ACTION_CLOSE_TAB = "action-close-tab";
@@ -374,6 +375,48 @@ namespace EasySSH {
                 can_paste = Gtk.targets_include_text (atoms) || Gtk.targets_include_uri (atoms);
 
             main_actions.get_action ("Paste").set_sensitive (can_paste);
+        }
+
+        public void add_badge(){
+            count_badge += 1;
+            Granite.Services.Application.set_badge_visible.begin (true, (obj, res) => {
+                try {
+                    Granite.Services.Application.set_badge_visible.end (res);
+                } catch (GLib.Error e) {
+                    critical (e.message);
+                }
+            });
+            Granite.Services.Application.set_badge.begin (count_badge, (obj, res) => {
+                try {
+                    Granite.Services.Application.set_badge.end (res);
+                } catch (GLib.Error e) {
+                    critical (e.message);
+                }
+            });
+        }
+        public void remove_badge(){
+            if(count_badge <= 0){
+                return;
+            }
+            count_badge -= 1;
+            Granite.Services.Application.set_badge.begin (count_badge, (obj, res) => {
+                try {
+                    Granite.Services.Application.set_badge.end (res);
+                } catch (GLib.Error e) {
+                    critical (e.message);
+                }
+            });
+            
+            if(count_badge == 0){
+                Granite.Services.Application.set_badge_visible.begin (false, (obj, res) => {
+                    try {
+                        Granite.Services.Application.set_badge_visible.end (res);
+                    } catch (GLib.Error e) {
+                        critical (e.message);
+                    }
+                });
+            }
+            
         }
         public void action_edit_conn (string name) {
             sourcelist.edit_conn(name);
