@@ -72,7 +72,7 @@ namespace EasySSH {
         }
 
         public void set_selected (){
-            unread_changes = false;
+            remove_badge();
         }
 
         public void start_connection() {
