@@ -183,8 +183,16 @@ namespace EasySSH {
                     }
                 }else if(ret.length > 0 && "password:" in ret[ret.length - 1]) {
                     if(send_password == false) {
-                        term_send_password();
-                        send_password = true;
+                        if(settings.sync_ssh_config == false){
+                            if(dataHost.username + "@" + dataHost.host in ret[ret.length - 1]){
+                                term_send_password();
+                                send_password = true;
+                            }
+                        }else{
+                            term_send_password();
+                            send_password = true;
+                        }
+                        
                     }
                 }
 
