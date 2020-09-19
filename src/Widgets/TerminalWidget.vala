@@ -215,8 +215,12 @@ namespace EasySSH {
         public void send_cmd (string cmd) {
             #if UBUNTU_BIONIC_PATCHED_VTE
                 this.feed_child(cmd, cmd.length);
-            #else
-                this.feed_child(cmd.to_utf8 ());
+            #else 
+                #if PATCHED_VTE
+                    this.feed_child((uint8[]) cmd.to_utf8 ());
+                #else
+                    this.feed_child(cmd.to_utf8 ());
+                #endif
             #endif
         }
 

@@ -103,8 +103,12 @@ namespace EasySSH {
             var cmd = builder.str;
             #if UBUNTU_BIONIC_PATCHED_VTE
                 term.feed_child(cmd, cmd.length);
-            #else
-                term.feed_child(cmd.to_utf8 ());
+            #else 
+                #if PATCHED_VTE
+                    term.feed_child((uint8[]) cmd.to_utf8 ());
+                #else
+                    term.feed_child(cmd.to_utf8 ());
+                #endif
             #endif
         }
 
@@ -203,17 +207,25 @@ namespace EasySSH {
             var cmd = dataHost.password + "\n";
             #if UBUNTU_BIONIC_PATCHED_VTE
                 term.feed_child(cmd, cmd.length);
-            #else
-                term.feed_child(cmd.to_utf8 ());
+            #else 
+                #if PATCHED_VTE
+                    term.feed_child((uint8[]) cmd.to_utf8 ());
+                #else
+                    term.feed_child(cmd.to_utf8 ());
+                #endif
             #endif
         }
 
         private void term_send(string cmd) {
             var n_cmd = cmd + "\n";
             #if UBUNTU_BIONIC_PATCHED_VTE
-                term.feed_child(n_cmd, cmd.length);
-            #else
-                term.feed_child(n_cmd.to_utf8 ());
+                term.feed_child(cmd, cmd.length);
+            #else 
+                #if PATCHED_VTE
+                    term.feed_child((uint8[]) cmd.to_utf8 ());
+                #else
+                    term.feed_child(cmd.to_utf8 ());
+                #endif
             #endif
         }
 

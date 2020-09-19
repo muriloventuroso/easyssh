@@ -9,6 +9,10 @@ if get_option('ubuntu-bionic-patched-vte')
     add_project_arguments(['--define', 'UBUNTU_BIONIC_PATCHED_VTE'], language : 'vala')
 endif
 
+if get_option('patched-vte')
+    add_project_arguments(['--define', 'PATCHED_VTE'], language : 'vala')
+endif
+
 asresources = gnome.compile_resources(
     'as-resources', 'data/' + meson.project_name() + '.gresource.xml',
     source_dir: 'data',
