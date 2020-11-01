@@ -454,8 +454,11 @@ namespace EasySSH {
                 identityfile_chooser.hide();
             }else{
                 if(data_host.identity_file != ""){
-                    identityfile_chooser.set_uri(data_host.identity_file);
+                    var file_uri = "file://" + data_host.identity_file.replace("%20", " ");
+                    identityfile_chooser.set_uri(file_uri);
                     password_entry.hide();
+                    change_password.active = true;
+                    label_password.label = _("Identity File:");
                 }else{
                     identityfile_chooser.hide();
                 }

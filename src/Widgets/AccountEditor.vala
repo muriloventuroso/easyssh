@@ -65,6 +65,8 @@ namespace EasySSH {
             username_entry = new Gtk.Entry ();
             password_entry = new Gtk.Entry ();
             password_entry.visibility = false;
+            var label_password = new Granite.HeaderLabel (_("Password:"));
+            change_password = new Gtk.CheckButton.with_label (_("Change Password to Identity File"));
 
             save_button = new Gtk.Button.with_label (_("Save"));
             save_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
@@ -92,19 +94,7 @@ namespace EasySSH {
             }
             buttons.pack_end(save_button, false, false, 0);
 
-            if(data_account == null) {
-                label = new Gtk.Label(_("Add Account"));
-            } else {
-                if(duplicate == false){
-                    label = new Gtk.Label(_("Edit Account"));
-                }else{
-                    label = new Gtk.Label(_("Duplicate Account"));
-                }
-                name_entry.text = data_account.name;
-                name_entry.is_valid = check_name();
-                password_entry.text = data_account.password;
-                username_entry.text = data_account.username;
-            }
+            
             label.get_style_context ().add_class("h2");
             grid.add (label);
             grid.attach (new Granite.HeaderLabel (_("Name:")), 0, 1, 1, 1);
@@ -112,11 +102,10 @@ namespace EasySSH {
             grid.attach (name_error_revealer, 0, 3, 1, 1);
             grid.attach (new Granite.HeaderLabel (_("Username:")), 0, 10, 1, 1);
             grid.attach (username_entry, 0, 11, 1, 1);
-            var label_password = new Granite.HeaderLabel (_("Password:"));
 
             grid.attach (label_password, 0, 12, 1, 1);
             grid.attach (password_entry, 0, 13, 1, 1);
-            change_password = new Gtk.CheckButton.with_label (_("Change Password to Identity File"));
+            
             identityfile_chooser = new Gtk.FileChooserButton (_("Select Identity File"), Gtk.FileChooserAction.OPEN);
             grid.attach (identityfile_chooser, 0, 13, 1, 1);
             identityfile_chooser.hide();
@@ -137,6 +126,30 @@ namespace EasySSH {
             grid.attach (buttons, 0, 18, 1, 1);
             update_save_button();
             show_all ();
+            if(data_account == null) {
+                label = new Gtk.Label(_("Add Account"));
+            } else {
+                if(duplicate == false){
+                    label = new Gtk.Label(_("Edit Account"));
+                }else{
+                    label = new Gtk.Label(_("Duplicate Account"));
+                }
+                name_entry.text = data_account.name;
+                name_entry.is_valid = check_name();
+                password_entry.text = data_account.password;
+                username_entry.text = data_account.username;
+                if(data_account.identity_file != ""){
+                    var file_uri = "file://" + data_account.identity_file.replace("%20", " ");
+                    print(file_uri);
+                    identityfile_chooser.set_uri(file_uri);
+                    password_entry.hide();
+                    change_password.active = true;
+                    label_password.label = _("Identity File:");
+                    identityfile_chooser.show();
+                }else{
+                    identityfile_chooser.hide();
+                }
+            }
         }
 
         private bool check_name () {
