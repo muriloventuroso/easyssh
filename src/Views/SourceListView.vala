@@ -161,8 +161,10 @@ namespace EasySSH {
 
             /* Double click add connection */
             source_list.button_press_event.connect(() => {
-
                 var n_host = hostmanager.get_host_by_name(source_list.selected.name);
+                if(n_host == null){
+                    return false;
+                }
                 var n = n_host.notebook;
                 var term = new TerminalBox(n_host, n, window, true);
                 var next_tab = n.n_tabs;
@@ -211,6 +213,9 @@ namespace EasySSH {
                 window.current_terminal = null;
 
                 var select_host = hostmanager.get_host_by_name(item.name);
+                if(select_host == null){
+                    return;
+                }
                 var notebook = select_host.notebook;
                 notebook.hexpand = true;
                 if(notebook.n_tabs == 0) {
@@ -335,6 +340,9 @@ namespace EasySSH {
             n.tab_removed.connect(() => {
                 if(n.n_tabs == 0) {
                     var n_host = hostmanager.get_host_by_name(host.name);
+                    if(n_host == null){
+                        return;
+                    }
                     Tab n_tab;
                     if(n_host.local){
                         var term = new TerminalBox(n_host, n, window, false);
@@ -425,6 +433,9 @@ namespace EasySSH {
             n.tab_removed.connect(() => {
                 if(n.n_tabs == 0) {
                     var n_host = hostmanager.get_host_by_name(host.name);
+                    if(n_host == null){
+                        return;
+                    }
                     var n_connect = new Connection(n_host, n, window, this);
                     var n_tab = new Tab (n_host.name, null, n_connect);
                     n.insert_tab(n_tab, 0);
@@ -447,6 +458,9 @@ namespace EasySSH {
                 n_host = hostmanager.get_host_by_name(source_list.selected.name);
             }else{
                 n_host = hostmanager.get_host_by_name("Localhost");
+            }
+            if(n_host == null){
+                return;
             }
             var n = n_host.notebook;
             var ssh = true;
@@ -919,6 +933,9 @@ namespace EasySSH {
 
         public Host edit_host(string old_name, Host e_host) {
             var host = hostmanager.get_host_by_name(old_name);
+            if(host == null){
+                return null;
+            }
             var group = hostmanager.get_group_by_name(host.group);
             e_host.notebook = host.notebook;
             if(host.group == e_host.group) {
@@ -1321,6 +1338,9 @@ namespace EasySSH {
             clean_box();
             source_list.selected = null;
             var n_host = hostmanager.get_host_by_name("Localhost");
+            if(n_host == null){
+                return;
+            }
             var n = n_host.notebook;
             var term = new TerminalBox(n_host, n, window, false);
             var next_tab = n.n_tabs;
@@ -1351,17 +1371,26 @@ namespace EasySSH {
         public void edit_conn(string name) {
             clean_box();
             var host = hostmanager.get_host_by_name(name);
+            if(host == null){
+                return;
+            }
             var connection_editor = new ConnectionEditor(this, host);
             box.add(connection_editor);
             connection_editor.show();
         }
         public void remove_conn(string name) {
             var host = hostmanager.get_host_by_name(name);
+            if(host == null){
+                return;
+            }
             confirm_remove_dialog (host);
         }
         public void duplicate_conn(string name) {
             clean_box();
             var host = hostmanager.get_host_by_name(name);
+            if(host == null){
+                return;
+            }
             var connection_editor = new ConnectionEditor(this, host, true);
             box.add(connection_editor);
             connection_editor.show();
