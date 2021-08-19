@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: com.github.muriloventuroso.easyssh\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-06-16 11:01-0300\n"
-"PO-Revision-Date: 2019-02-28 21:17+0000\n"
-"Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
+"PO-Revision-Date: 2021-08-13 10:35+0000\n"
+"Last-Translator: Sergi Font <sfont@tuta.io>\n"
 "Language-Team: Catalan <https://hosted.weblate.org/projects/easyssh/"
 "translations/ca/>\n"
 "Language: ca\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.5-dev\n"
+"X-Generator: Weblate 4.8-dev\n"
 
 #: src/MainWindow.vala:104
 msgid "EasySSH"
@@ -96,10 +96,8 @@ msgstr ""
 "Esteu segur que voleu suprimir aquest compte i totes les dades associades?"
 
 #: src/Views/SourceListView.vala:1437
-#, fuzzy
 msgid "Are you sure you want to remove this bookmark?"
-msgstr ""
-"Esteu segur que voleu suprimir aquest compte i totes les dades associades?"
+msgstr "Esteu segur que voleu suprimir aquest marcador?"
 
 #: src/Widgets/TerminalBox.vala:224
 msgid "Connection Error. Retry?"
@@ -123,11 +121,11 @@ msgstr "Tanca"
 
 #: src/Widgets/TerminalBox.vala:250
 msgid "Ok"
-msgstr ""
+msgstr "Acceptar"
 
 #: src/Widgets/TerminalBox.vala:253
 msgid "Retry"
-msgstr ""
+msgstr "Intentar de nou"
 
 #: src/Widgets/TerminalBox.vala:270
 msgid "Fingerprint"
@@ -150,13 +148,12 @@ msgid "Create a new connection"
 msgstr "Crea una connexió nova"
 
 #: src/Widgets/HeaderBar.vala:46
-#, fuzzy
 msgid "Local connection"
-msgstr "Afegeix una connexió"
+msgstr "Connexió local"
 
 #: src/Widgets/HeaderBar.vala:59 src/Widgets/BookmarksPopover.vala:103
 msgid "Bookmarks"
-msgstr ""
+msgstr "Marcadors"
 
 #: src/Widgets/HeaderBar.vala:61 src/Widgets/Preferences.vala:35
 msgid "Preferences"
@@ -244,7 +241,7 @@ msgstr "Tipus de lletra del terminal:"
 
 #: src/Widgets/ConnectionEditor.vala:372
 msgid "Extra Arguments:"
-msgstr ""
+msgstr "Arguments adicionals:"
 
 #: src/Widgets/ConnectionEditor.vala:393
 msgid "Forwarded Ports:"
@@ -284,7 +281,7 @@ msgstr "Túnels"
 
 #: src/Widgets/ConnectionEditor.vala:439
 msgid "Other"
-msgstr ""
+msgstr "Altres"
 
 #: src/Widgets/ConnectionEditor.vala:499
 msgid "Name is already taken"
@@ -296,7 +293,7 @@ msgstr "Connecta"
 
 #: src/Widgets/Preferences.vala:42
 msgid "Restart to apply changes"
-msgstr ""
+msgstr "Reiniciar per aplicar els canvis"
 
 #: src/Widgets/Preferences.vala:48
 msgid "Select Hosts Configuration Folder…"
@@ -304,7 +301,7 @@ msgstr "Selecciona la carpeta de configuració d’amfitrions…"
 
 #: src/Widgets/Preferences.vala:83
 msgid "0 to disable. -1 to unlimited"
-msgstr ""
+msgstr "0 per desactivar. -1 per il·limitats"
 
 #: src/Widgets/Preferences.vala:121
 msgid "Hosts Configuration Folder:"
@@ -312,7 +309,7 @@ msgstr "Carpeta de configuració d’amfitrions:"
 
 #: src/Widgets/Preferences.vala:124
 msgid "Scrollback lines:"
-msgstr ""
+msgstr "Línies de desplaçament:"
 
 #: src/Widgets/Preferences.vala:128
 msgid "Restore Opened Hosts:"
@@ -324,10 +321,9 @@ msgstr "Sincronitza la configuració de l’SSH:"
 
 #: src/Widgets/Preferences.vala:134
 msgid "Audible Bell:"
-msgstr ""
+msgstr "So de notificació:"
 
 #: src/Widgets/Preferences.vala:138
-#, fuzzy
 msgid "Encrypt data:"
 msgstr "Xifra les dades:"
 
@@ -345,32 +341,31 @@ msgstr "Terminal"
 
 #: src/Widgets/BookmarksPopover.vala:51
 msgid "Search for bookmarks"
-msgstr ""
+msgstr "Buscar marcadors"
 
 #: src/Widgets/BookmarksPopover.vala:55
-#, fuzzy
 msgid "Create a new bookmark"
-msgstr "Crea una connexió nova"
+msgstr "Crear un marcador"
 
 #: src/Widgets/BookmarksPopover.vala:68
 msgid "Run"
-msgstr ""
+msgstr "Executar"
 
 #: src/Widgets/BookmarksPopover.vala:72
 msgid "Delete"
-msgstr ""
+msgstr "Esborrar"
 
 #: src/Widgets/BookmarksPopover.vala:92 src/Widgets/BookmarksPopover.vala:110
 msgid "Add Bookmark"
-msgstr ""
+msgstr "Afegir marcador"
 
 #: src/Widgets/BookmarksPopover.vala:125
 msgid "Command:"
-msgstr ""
+msgstr "Ordre:"
 
 #: src/Widgets/BookmarksPopover.vala:237 src/Widgets/BookmarksPopover.vala:241
 msgid "Default"
-msgstr ""
+msgstr "Predeterminada"
 
 #~ msgid "Hide find bar"
 #~ msgstr "Amaga la barra de cerca"
