@@ -204,16 +204,18 @@ namespace EasySSH {
         }
 
         private void term_send_password() {
-            var cmd = dataHost.password + "\n";
-            #if UBUNTU_BIONIC_PATCHED_VTE
-                term.feed_child(cmd, cmd.length);
-            #else 
-                #if PATCHED_VTE
-                    term.feed_child((uint8[]) cmd.to_utf8 ());
-                #else
-                    term.feed_child(cmd.to_utf8 ());
+            if(dataHost.password.length > 0) {
+                var cmd = dataHost.password + "\n";
+                #if UBUNTU_BIONIC_PATCHED_VTE
+                    term.feed_child(cmd, cmd.length);
+                #else 
+                    #if PATCHED_VTE
+                        term.feed_child((uint8[]) cmd.to_utf8 ());
+                    #else
+                        term.feed_child(cmd.to_utf8 ());
+                    #endif
                 #endif
-            #endif
+            }
         }
 
         private void term_send(string cmd) {
