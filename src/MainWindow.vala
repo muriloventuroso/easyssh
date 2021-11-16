@@ -26,7 +26,6 @@ namespace EasySSH {
         private Gtk.Clipboard clipboard;
         private Gtk.Clipboard primary_selection;
         private EasySSH.Settings settings;
-        private string default_filemanager = "";
         private SearchToolbar search_toolbar;
         private Gtk.Grid grid;
         private Gtk.Revealer search_revealer;
@@ -203,9 +202,8 @@ namespace EasySSH {
                 () => {
                     save_settings ();
                     return false;
-                });
-
-            get_default_filemanager ();
+                }
+            );
 
             settings.notify["sync-ssh-config"].connect (
                 () => {
@@ -235,41 +233,6 @@ namespace EasySSH {
         public void finish_construction () {
             sourcelist.source_list_accounts.hide();
             sourcelist.welcome_accounts.hide();
-        }
-
-        private void get_default_filemanager () {
-            var stdout = "";
-            var stderr = "";
-            var result = Process.spawn_command_line_sync ("xdg-mime query default inode/directory",
-                                    out stdout,
-                                    out stderr,
-                                    null);
-            if(result==false) {
-                print(stderr + "\n");
-                return;
-            }
-            var filename = stdout;
-
-            var res = Process.spawn_command_line_sync ("cat /usr/share/applications/" + filename,
-                                    out stdout,
-                                    out stderr,
-                                    null);
-            if(res==false) {
-                print(stderr + "\n");
-                return;
-            }
-            var lines = stdout.split("\n");
-            var filemanager = "";
-            foreach (string line in lines) {
-                var split_line = line.split("=");
-                if(split_line[0] == "Exec") {
-                    filemanager = split_line[1].replace("%U", "");
-                    break;
-                }
-            }
-            if(filemanager != "") {
-                default_filemanager = filemanager;
-            }
         }
 
         private TerminalBox? get_term_widget (Granite.Widgets.Tab tab) {
@@ -468,11 +431,20 @@ namespace EasySSH {
             current_terminal.select_all ();
         }
         void action_open_in_files () {
-            if(default_filemanager == "") {
+            var default_filemanager = AppInfo.get_default_for_type ("inode/directory", true);
+            if (default_filemanager == null) {
                 return;
             }
-            var command = "sftp://" + current_terminal.host.username + "@" + current_terminal.host.host + ":" + current_terminal.host.port;
-            Process.spawn_command_line_async (default_filemanager + " " + command);
+
+            var uris = new List<File>();
+            uris.append (File.new_for_uri ("sftp://%s@%s:%s".printf (
+                current_terminal.host.username, current_terminal.host.host, current_terminal.host.port
+            )));
+            try {
+                default_filemanager.launch (uris, null);
+            } catch (Error e) {
+                warning (e.message);
+            }
         }
 
         void action_search () {
