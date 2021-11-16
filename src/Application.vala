@@ -45,19 +45,19 @@ namespace EasySSH {
             var app_window = new MainWindow (this);
             app_window.show_all ();
             app_window.finish_construction();
+
             var quit_action = new SimpleAction ("quit", null);
-
             add_action (quit_action);
-
-            var provider = new Gtk.CssProvider ();
-            provider.load_from_resource ("/com/github/muriloventuroso/easyssh/Application.css");
-            Gtk.StyleContext.add_provider_for_screen (Gdk.Screen.get_default (), provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
-
+            set_accels_for_action ("app.quit", {"<Control>q"});
             quit_action.activate.connect (() => {
                 if (app_window != null) {
                     app_window.destroy ();
                 }
             });
+
+            var provider = new Gtk.CssProvider ();
+            provider.load_from_resource ("/com/github/muriloventuroso/easyssh/Application.css");
+            Gtk.StyleContext.add_provider_for_screen (Gdk.Screen.get_default (), provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
         }
 
         private static int main (string[] args) {
