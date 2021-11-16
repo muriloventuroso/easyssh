@@ -4,30 +4,29 @@ runtime-version: '6'
 sdk: io.elementary.Sdk
 command: com.github.muriloventuroso.easyssh
 finish-args:
-  - "--share=ipc"
-  - "--share=network"
-  - "--socket=x11"
-  - "--device=dri"
-  - "--socket=wayland"
-  - "--socket=ssh-auth"
-  - "--filesystem=home"
-  - "--metadata=X-DConf=migrate-path=/com/github/muriloventuroso/easyssh/"
+  - '--share=ipc'
+  - '--share=network'
+  - '--socket=x11'
+  - '--device=dri'
+  - '--socket=wayland'
+  - '--socket=ssh-auth'
+  - '--filesystem=home'
+  - '--metadata=X-DConf=migrate-path=/com/github/muriloventuroso/easyssh/'
 modules:
   - name: vte
     buildsystem: meson
     config-opts:
-    - "-Ddocs=false"
-    - "-Dvapi=false"
+    - '-Ddocs=false'
     sources:
     - type: archive
-      url: https://download.gnome.org/sources/vte/0.62/vte-0.62.3.tar.xz
-      sha256: f5770285a52cc23a3c0428a43d492b7c0ba458ce7b8a73768a7d4f1e8a7db3b4
+      url: https://download.gnome.org/sources/vte/0.66/vte-0.66.0.tar.xz
+      sha256: d0813ac00fb1d74d88851e765f755d496c83e097097358ea1baadb38b37b7b33
   - name: easyssh
     buildsystem: meson
     config-opts:
-    - "-Dlibunity=false"
-    - "-Dubuntu-bionic-patched-vte=false"
-    - "-Dpatched-vte=true"
+    - '-Dlibunity=false'
+    - '-Dubuntu-bionic-patched-vte=false'
+    - '-Dpatched-vte=true'
     sources:
     - type: dir
       path: .
