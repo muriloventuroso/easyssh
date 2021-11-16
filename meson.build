@@ -19,6 +19,14 @@ asresources = gnome.compile_resources(
     c_name: 'as'
 )
 
+config_data = configuration_data()
+config_data.set_quoted('LOCALEDIR', get_option('prefix') / get_option('localedir'))
+config_data.set_quoted('GETTEXT_PACKAGE', meson.project_name())
+config_file = configure_file(
+    input: 'src' / 'Config.vala.in',
+    output: '@BASENAME@',
+    configuration: config_data
+)
 
 dependencies = [
     dependency('gee-0.8'),
@@ -31,18 +39,15 @@ dependencies = [
     meson.get_compiler('c').find_library('m', required : false)
 ]
 
-
 if with_gpg
     gpg = find_program('gpg', 'gpg2', required: true)
     add_project_arguments(['--define', 'WITH_GPG'], language : 'vala')
-
 endif
-
-
 
 executable(
     meson.project_name(),
     asresources,
+    config_file,
     'src/Application.vala',
     'src/Host.vala',
     'src/Account.vala',
