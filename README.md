@@ -37,7 +37,7 @@ If you want to hack on and build EasySSH yourself, you'll need the following dep
 
 * libgee-0.8-dev
 * libgtk-3-dev
-* libgranite-dev
+* libgranite-dev (>= 6.0.0)
 * libvte-2.91-dev
 * libjson-glib-dev
 * meson
