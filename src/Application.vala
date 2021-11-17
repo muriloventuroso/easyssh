@@ -21,9 +21,9 @@
 
 namespace EasySSH {
 
-    public Settings settings;
-
     public class Application : Gtk.Application {
+        public static Settings settings;
+
         public Application () {
             Object (application_id: "com.github.muriloventuroso.easyssh",
             flags: ApplicationFlags.FLAGS_NONE);
@@ -36,12 +36,16 @@ namespace EasySSH {
             Intl.textdomain (GETTEXT_PACKAGE);
         }
 
+        static construct {
+            settings = new Settings ("com.github.muriloventuroso.easyssh");
+        }
+
         protected override void activate () {
             if (get_windows ().length () > 0) {
                 get_windows ().data.present ();
                 return;
             }
-            settings = new Settings ();
+
             var app_window = new MainWindow (this);
             app_window.show_all ();
             app_window.finish_construction();

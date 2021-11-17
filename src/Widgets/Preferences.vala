@@ -22,7 +22,7 @@
 
 namespace EasySSH {
     public class Preferences : Granite.Dialog {
-        private Settings settings;
+        public signal void sync_settings_changed ();
 
         public Preferences (Gtk.Window parent) {
             Object (
@@ -48,40 +48,39 @@ namespace EasySSH {
             restart_revealer.set_transition_type (Gtk.RevealerTransitionType.SLIDE_DOWN);
             restart_revealer.add (infobar);
             restart_revealer.set_reveal_child (false);
-            settings = Settings.get_default ();
             var hosts_filechooser = new Gtk.FileChooserButton (_("Select Hosts Configuration Folder…"), Gtk.FileChooserAction.SELECT_FOLDER);
             hosts_filechooser.hexpand = true;
-            hosts_filechooser.set_current_folder (settings.hosts_folder.replace ("%20", " "));
+            hosts_filechooser.set_current_folder (Application.settings.get_string ("hosts-folder").replace ("%20", " "));
             hosts_filechooser.file_set.connect (() => {
-                settings.hosts_folder = hosts_filechooser.get_uri().split(":")[1].replace ("%20", " ");
+                Application.settings.set_string ("hosts-folder", hosts_filechooser.get_uri().split(":")[1].replace ("%20", " "));
             });
             var color = Gdk.RGBA();
-            color.parse(settings.terminal_background_color);
+            color.parse(Application.settings.get_string ("terminal-background-color"));
             var terminal_background_color_button = new Gtk.ColorButton.with_rgba (color);
 
             terminal_background_color_button.color_set.connect (() => {
-                settings.terminal_background_color = terminal_background_color_button.rgba.to_string();
+                Application.settings.set_string ("terminal-background-color", terminal_background_color_button.rgba.to_string());
             });
 
-            var terminal_font_button = new Gtk.FontButton.with_font(settings.terminal_font);
+            var terminal_font_button = new Gtk.FontButton.with_font(Application.settings.get_string ("terminal-font"));
             terminal_font_button.use_font = true;
             terminal_font_button.use_size = true;
             terminal_font_button.font_set.connect(() => {
-                settings.terminal_font = terminal_font_button.get_font();
+                Application.settings.set_string ("terminal-font", terminal_font_button.get_font());
             });
 
             var restore_hosts_switch = new Gtk.Switch();
             restore_hosts_switch.halign = Gtk.Align.START;
             restore_hosts_switch.valign = Gtk.Align.CENTER;
-            restore_hosts_switch.set_active(settings.restore_hosts);
+            restore_hosts_switch.set_active(Application.settings.get_boolean ("restore-hosts"));
             restore_hosts_switch.notify["active"].connect (() => {
-                settings.restore_hosts = restore_hosts_switch.active;
+                Application.settings.set_boolean ("restore-hosts", restore_hosts_switch.active);
             });
 
             var scrollback_lines_input = new Gtk.Entry();
-            scrollback_lines_input.text = settings.scrollback_lines;
+            scrollback_lines_input.text = Application.settings.get_string ("scrollback-lines");
             scrollback_lines_input.changed.connect (() => {
-                settings.scrollback_lines = scrollback_lines_input.text;
+                Application.settings.set_string ("scrollback-lines", scrollback_lines_input.text);
                 restart_revealer.set_reveal_child(true);
             });
             var scrollback_help = new Gtk.Label(_("0 to disable. -1 to unlimited"));
@@ -91,34 +90,38 @@ namespace EasySSH {
             var sync_ssh_switch = new Gtk.Switch();
             sync_ssh_switch.halign = Gtk.Align.START;
             sync_ssh_switch.valign = Gtk.Align.CENTER;
-            sync_ssh_switch.set_active(settings.sync_ssh_config);
+            sync_ssh_switch.set_active(Application.settings.get_boolean ("sync-ssh-config"));
             sync_ssh_switch.notify["active"].connect (() => {
-                settings.sync_ssh_config = sync_ssh_switch.active;
+                Application.settings.set_boolean ("sync-ssh-config", sync_ssh_switch.active);
+                sync_settings_changed ();
             });
 
             var audible_bell_switch = new Gtk.Switch();
             audible_bell_switch.halign = Gtk.Align.START;
             audible_bell_switch.valign = Gtk.Align.CENTER;
-            audible_bell_switch.set_active(settings.audible_bell);
+            audible_bell_switch.set_active(Application.settings.get_boolean ("audible-bell"));
             audible_bell_switch.notify["active"].connect (() => {
-                settings.audible_bell = audible_bell_switch.active;
+                Application.settings.set_boolean ("audible-bell", audible_bell_switch.active);
                 restart_revealer.set_reveal_child(true);
             });
             #if WITH_GPG
             var encrypt_data_switch = new Gtk.Switch();
             encrypt_data_switch.halign = Gtk.Align.START;
             encrypt_data_switch.valign = Gtk.Align.CENTER;
-            encrypt_data_switch.set_active(settings.encrypt_data);
+            encrypt_data_switch.set_active(Application.settings.get_boolean ("encrypt-data"));
             encrypt_data_switch.notify["active"].connect (() => {
-                settings.encrypt_data = encrypt_data_switch.active;
+                Application.settings.set_boolean ("encrypt-data", encrypt_data_switch.active);
             });
             #endif
 
             var use_dark_theme = new Gtk.Switch ();
             use_dark_theme.halign = Gtk.Align.START;
             use_dark_theme.valign = Gtk.Align.CENTER;
-            use_dark_theme.active = settings.use_dark_theme;
-            use_dark_theme.notify["active"].connect (() => { settings.use_dark_theme = use_dark_theme.active; });
+            use_dark_theme.active = Application.settings.get_boolean ("use-dark-theme");
+            use_dark_theme.notify["active"].connect (() => {
+                Application.settings.set_boolean ("use-dark-theme", use_dark_theme.active);
+                Gtk.Settings.get_default ().gtk_application_prefer_dark_theme = use_dark_theme.active;
+            });
 
             var hosts_label = new Gtk.Label (_("Hosts Configuration Folder:")) {
                 halign = Gtk.Align.END
