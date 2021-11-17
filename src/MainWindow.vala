@@ -432,7 +432,7 @@ namespace EasySSH {
         }
         void action_open_in_files () {
             var default_filemanager = AppInfo.get_default_for_type ("inode/directory", true);
-            if (default_filemanager == null) {
+            if (default_filemanager == null || current_terminal == null) {
                 return;
             }
 
