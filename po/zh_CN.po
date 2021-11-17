@@ -7,258 +7,434 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.muriloventuroso.easyssh\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-18 17:23-0200\n"
-"PO-Revision-Date: 2018-04-23 15:43-0300\n"
+"POT-Creation-Date: 2021-11-18 08:23+0900\n"
+"PO-Revision-Date: 2020-11-05 06:26+0000\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.3.2-dev\n"
 
-#: src/MainWindow.vala:62
+#: src/MainWindow.vala:104
 msgid "EasySSH"
-msgstr ""
+msgstr "EasySSH"
 
-#: src/MainWindow.vala:334
+#: src/MainWindow.vala:581
 msgid "Copy"
-msgstr ""
+msgstr "复制"
 
-#: src/MainWindow.vala:335
+#: src/MainWindow.vala:582
 msgid "Paste"
-msgstr ""
+msgstr "粘贴"
 
-#: src/MainWindow.vala:336
+#: src/MainWindow.vala:583
 msgid "Select All"
-msgstr ""
+msgstr "全选"
 
-#: src/MainWindow.vala:337
+#: src/MainWindow.vala:584
 msgid "Show in File Browser"
-msgstr ""
+msgstr "在文件管理器中显示"
 
-#: src/Views/SourceListView.vala:36 src/Widgets/Connection.vala:60
+#: src/Views/SourceListView.vala:36 src/Views/SourceListView.vala:75
+#: src/Widgets/Connection.vala:61
 msgid "Edit"
-msgstr ""
+msgstr "编辑"
 
-#: src/Views/SourceListView.vala:42
+#: src/Views/SourceListView.vala:42 src/Views/SourceListView.vala:81
 msgid "Duplicate"
-msgstr ""
+msgstr "重复"
 
-#: src/Views/SourceListView.vala:48 src/Views/SourceListView.vala:787
-#: src/Views/SourceListView.vala:789 src/Widgets/ConnectionEditor.vala:325
-#: src/Widgets/Connection.vala:64
+#: src/Views/SourceListView.vala:48 src/Views/SourceListView.vala:87
+#: src/Views/SourceListView.vala:1430 src/Views/SourceListView.vala:1449
+#: src/Views/SourceListView.vala:1466 src/Widgets/AccountEditor.vala:75
+#: src/Widgets/Connection.vala:65 src/Widgets/ConnectionEditor.vala:383
 msgid "Remove"
-msgstr ""
+msgstr "移除"
 
-#: src/Views/SourceListView.vala:309
+#: src/Views/SourceListView.vala:152
+msgid "Hosts"
+msgstr "主机"
+
+#: src/Views/SourceListView.vala:154
+msgid "Accounts"
+msgstr "帐户"
+
+#: src/Views/SourceListView.vala:590
 msgid "Please enter the password to unlock the data file"
-msgstr ""
+msgstr "请输入密码以解锁数据文件"
 
-#: src/Views/SourceListView.vala:311
+#: src/Views/SourceListView.vala:592
 msgid "Please enter the password to lock the data file"
-msgstr ""
+msgstr "请输入密码以锁定数据文件"
 
-#: src/Views/SourceListView.vala:313
+#: src/Views/SourceListView.vala:594
 msgid "Password"
-msgstr ""
+msgstr "密码"
 
-#: src/Views/SourceListView.vala:319 src/Widgets/ConnectionEditor.vala:113
+#: src/Views/SourceListView.vala:601 src/Widgets/AccountEditor.vala:74
+#: src/Widgets/ConnectionEditor.vala:157 src/Widgets/Tab.vala:43
 msgid "Cancel"
-msgstr ""
+msgstr "取消"
 
-#: src/Views/SourceListView.vala:322
+#: src/Views/SourceListView.vala:604 src/Widgets/Tab.vala:46
 msgid "Send"
-msgstr ""
+msgstr "发送"
 
-#: src/Views/SourceListView.vala:787
+#: src/Views/SourceListView.vala:1428 src/Views/SourceListView.vala:1447
+#: src/Views/SourceListView.vala:1464
+#, fuzzy, c-format
+msgid "Remove %s?"
+msgstr "移除 "
+
+#: src/Views/SourceListView.vala:1428
 msgid ""
 "Are you sure you want to remove this connection and all associated data?"
-msgstr ""
+msgstr "您确定要移除此连接与所有关联的信息吗？"
 
-#: src/Widgets/TerminalBox.vala:205
-msgid "Connection Error. Retry?"
-msgstr ""
+#: src/Views/SourceListView.vala:1447
+msgid "Are you sure you want to remove this account and all associated data?"
+msgstr "您确定要移除此帐户与所有关联的信息吗？"
 
-#: src/Widgets/TerminalBox.vala:207 src/Widgets/TerminalBox.vala:240
-msgid "No"
-msgstr ""
-
-#: src/Widgets/TerminalBox.vala:210 src/Widgets/TerminalBox.vala:243
-msgid "Yes"
-msgstr ""
-
-#: src/Widgets/TerminalBox.vala:226
-msgid "Connection Error."
-msgstr ""
+#: src/Views/SourceListView.vala:1464
+msgid "Are you sure you want to remove this bookmark?"
+msgstr "您确定要移除此帐户与所有关联的信息吗？"
 
 #: src/Widgets/TerminalBox.vala:238
+msgid "Connection Error. Retry?"
+msgstr "连接错误。重试？"
+
+#: src/Widgets/TerminalBox.vala:240 src/Widgets/TerminalBox.vala:286
+msgid "No"
+msgstr "否"
+
+#: src/Widgets/TerminalBox.vala:243 src/Widgets/TerminalBox.vala:289
+msgid "Yes"
+msgstr "是"
+
+#: src/Widgets/TerminalBox.vala:259
+msgid "Connection Error."
+msgstr "连接错误。"
+
+#: src/Widgets/TerminalBox.vala:261 src/Widgets/Preferences.vala:217
+msgid "Close"
+msgstr "关闭"
+
+#: src/Widgets/TerminalBox.vala:264
+msgid "Ok"
+msgstr "是"
+
+#: src/Widgets/TerminalBox.vala:267
+msgid "Retry"
+msgstr "重试"
+
+#: src/Widgets/TerminalBox.vala:284
 msgid "Fingerprint"
-msgstr ""
+msgstr "指纹"
 
-#: src/Widgets/Welcome.vala:25
-msgid "SSH Connection Manager"
-msgstr ""
-
-#: src/Widgets/Welcome.vala:26 src/Widgets/ConnectionEditor.vala:131
-msgid "Add Connection"
-msgstr ""
-
-#: src/Widgets/Welcome.vala:26
-msgid "Start by adding an SSH connection to EasySSH"
-msgstr ""
-
-#: src/Widgets/HeaderBar.vala:37
-msgid "Create a new connection"
-msgstr ""
-
-#: src/Widgets/HeaderBar.vala:39 src/Widgets/Preferences.vala:35
-msgid "Preferences"
-msgstr ""
-
-#: src/Widgets/HeaderBar.vala:48
-msgid "Menu"
-msgstr ""
-
-#: src/Widgets/ConnectionEditor.vala:109
-msgid "Save"
-msgstr ""
-
-#: src/Widgets/ConnectionEditor.vala:115 src/Widgets/ConnectionEditor.vala:277
-msgid "Advanced"
-msgstr ""
-
-#: src/Widgets/ConnectionEditor.vala:134
-msgid "Edit Connection"
-msgstr ""
-
-#: src/Widgets/ConnectionEditor.vala:136
-msgid "Duplicate Connection"
-msgstr ""
-
-#: src/Widgets/ConnectionEditor.vala:141
-msgid "Name:"
-msgstr ""
-
-#: src/Widgets/ConnectionEditor.vala:144
-msgid "Group:"
-msgstr ""
-
-#: src/Widgets/ConnectionEditor.vala:146
-msgid "Host:"
-msgstr ""
-
-#: src/Widgets/ConnectionEditor.vala:148
-msgid "Port:"
-msgstr ""
-
-#: src/Widgets/ConnectionEditor.vala:150
-msgid "Username:"
-msgstr ""
-
-#: src/Widgets/ConnectionEditor.vala:152 src/Widgets/ConnectionEditor.vala:167
+#: src/Widgets/AccountEditor.vala:67 src/Widgets/AccountEditor.vala:118
+#: src/Widgets/ConnectionEditor.vala:105 src/Widgets/ConnectionEditor.vala:220
 msgid "Password:"
-msgstr ""
+msgstr "密码："
 
-#: src/Widgets/ConnectionEditor.vala:156
+#: src/Widgets/AccountEditor.vala:68 src/Widgets/ConnectionEditor.vala:151
 msgid "Change Password to Identity File"
-msgstr ""
+msgstr "将密码更改为身份文件档案"
 
-#: src/Widgets/ConnectionEditor.vala:157
+#: src/Widgets/AccountEditor.vala:70 src/Widgets/ConnectionEditor.vala:153
+msgid "Save"
+msgstr "保存"
+
+#: src/Widgets/AccountEditor.vala:99 src/Widgets/BookmarksPopover.vala:123
+#: src/Widgets/ConnectionEditor.vala:200
+msgid "Name:"
+msgstr "名称："
+
+#: src/Widgets/AccountEditor.vala:102 src/Widgets/ConnectionEditor.vala:175
+msgid "Username:"
+msgstr "用户名："
+
+#: src/Widgets/AccountEditor.vala:108 src/Widgets/ConnectionEditor.vala:150
 msgid "Select Identity File"
-msgstr ""
+msgstr "选择身份档案"
 
-#: src/Widgets/ConnectionEditor.vala:163
+#: src/Widgets/AccountEditor.vala:114 src/Widgets/AccountEditor.vala:146
+#: src/Widgets/ConnectionEditor.vala:216 src/Widgets/ConnectionEditor.vala:461
 msgid "Identity File:"
-msgstr ""
+msgstr "身份档案："
 
-#: src/Widgets/ConnectionEditor.vala:176
-msgid "SSH Config:"
-msgstr ""
+#: src/Widgets/AccountEditor.vala:129
+#, fuzzy
+msgid "Add Account"
+msgstr "帐户"
 
-#: src/Widgets/ConnectionEditor.vala:284 src/Widgets/Preferences.vala:112
-msgid "Terminal Background Color:"
-msgstr ""
+#: src/Widgets/AccountEditor.vala:132
+#, fuzzy
+msgid "Edit Account"
+msgstr "帐户"
 
-#: src/Widgets/ConnectionEditor.vala:293 src/Widgets/Preferences.vala:115
-msgid "Terminal Font:"
-msgstr ""
+#: src/Widgets/AccountEditor.vala:134
+#, fuzzy
+msgid "Duplicate Account"
+msgstr "重复连接"
 
-#: src/Widgets/ConnectionEditor.vala:335
-msgid "Forwarded Ports:"
-msgstr ""
-
-#: src/Widgets/ConnectionEditor.vala:338
-msgid "Add new forwarded port"
-msgstr ""
-
-#: src/Widgets/ConnectionEditor.vala:340
-msgid "Source Port:"
-msgstr ""
-
-#: src/Widgets/ConnectionEditor.vala:343
-msgid "Destination:"
-msgstr ""
-
-#: src/Widgets/ConnectionEditor.vala:348
-msgid "Local"
-msgstr ""
-
-#: src/Widgets/ConnectionEditor.vala:351
-msgid "Remote"
-msgstr ""
-
-#: src/Widgets/ConnectionEditor.vala:357
-msgid "Add Tunnel"
-msgstr ""
-
-#: src/Widgets/ConnectionEditor.vala:382 src/Widgets/Preferences.vala:126
-msgid "Appearance"
-msgstr ""
-
-#: src/Widgets/ConnectionEditor.vala:383
-msgid "Tunnels"
-msgstr ""
-
-#: src/Widgets/ConnectionEditor.vala:423
+#: src/Widgets/AccountEditor.vala:178 src/Widgets/ConnectionEditor.vala:502
 msgid "Name is already taken"
-msgstr ""
+msgstr "名称已被占用"
 
-#: src/Widgets/Connection.vala:57
+#: src/Widgets/BookmarksPopover.vala:51
+msgid "Search for bookmarks"
+msgstr "搜索书签"
+
+#: src/Widgets/BookmarksPopover.vala:55
+msgid "Create a new bookmark"
+msgstr "创建一个新书签"
+
+#: src/Widgets/BookmarksPopover.vala:68
+msgid "Run"
+msgstr "运行"
+
+#: src/Widgets/BookmarksPopover.vala:72
+msgid "Delete"
+msgstr "删除"
+
+#: src/Widgets/BookmarksPopover.vala:92 src/Widgets/BookmarksPopover.vala:110
+msgid "Add Bookmark"
+msgstr "添加书签"
+
+#: src/Widgets/BookmarksPopover.vala:103 src/Widgets/HeaderBar.vala:59
+msgid "Bookmarks"
+msgstr "书签"
+
+#: src/Widgets/BookmarksPopover.vala:125
+msgid "Command:"
+msgstr "命令："
+
+#: src/Widgets/BookmarksPopover.vala:237 src/Widgets/BookmarksPopover.vala:241
+msgid "Default"
+msgstr "默认"
+
+#: src/Widgets/Connection.vala:58
 msgid "Connect"
+msgstr "连接"
+
+#: src/Widgets/ConnectionEditor.vala:79
+msgid "Set Credentials"
+msgstr "设置凭证"
+
+#: src/Widgets/ConnectionEditor.vala:83
+msgid "Choose Account"
+msgstr "选择帐户"
+
+#: src/Widgets/ConnectionEditor.vala:159 src/Widgets/ConnectionEditor.vala:330
+msgid "Advanced"
+msgstr "高级"
+
+#: src/Widgets/ConnectionEditor.vala:190 src/Widgets/Welcome.vala:26
+msgid "Add Connection"
+msgstr "添加连接"
+
+#: src/Widgets/ConnectionEditor.vala:193
+msgid "Edit Connection"
+msgstr "编辑连接"
+
+#: src/Widgets/ConnectionEditor.vala:195
+msgid "Duplicate Connection"
+msgstr "重复连接"
+
+#: src/Widgets/ConnectionEditor.vala:203
+msgid "Group:"
+msgstr "组："
+
+#: src/Widgets/ConnectionEditor.vala:205
+msgid "Host:"
+msgstr "主机："
+
+#: src/Widgets/ConnectionEditor.vala:207
+msgid "Port:"
+msgstr "端口："
+
+#: src/Widgets/ConnectionEditor.vala:229
+msgid "SSH Config:"
+msgstr "SSH 配置："
+
+#: src/Widgets/ConnectionEditor.vala:337 src/Widgets/Preferences.vala:176
+msgid "Terminal Background Color:"
+msgstr "终端背景颜色："
+
+#: src/Widgets/ConnectionEditor.vala:346 src/Widgets/Preferences.vala:180
+msgid "Terminal Font:"
+msgstr "终端字体："
+
+#: src/Widgets/ConnectionEditor.vala:372
+msgid "Extra Arguments:"
+msgstr "额外参数："
+
+#: src/Widgets/ConnectionEditor.vala:393
+msgid "Forwarded Ports:"
+msgstr "转发端口："
+
+#: src/Widgets/ConnectionEditor.vala:396
+msgid "Add new forwarded port"
+msgstr "添加新转发端口"
+
+#: src/Widgets/ConnectionEditor.vala:398
+msgid "Source Port:"
+msgstr "源端口："
+
+#: src/Widgets/ConnectionEditor.vala:401
+msgid "Destination:"
+msgstr "目标："
+
+#: src/Widgets/ConnectionEditor.vala:406
+msgid "Local"
+msgstr "本地"
+
+#: src/Widgets/ConnectionEditor.vala:409
+msgid "Remote"
+msgstr "远程"
+
+#: src/Widgets/ConnectionEditor.vala:415
+msgid "Add Tunnel"
+msgstr "添加隧道"
+
+#: src/Widgets/ConnectionEditor.vala:437 src/Widgets/Preferences.vala:204
+msgid "Appearance"
+msgstr "外观"
+
+#: src/Widgets/ConnectionEditor.vala:438
+msgid "Tunnels"
+msgstr "隧道"
+
+#: src/Widgets/ConnectionEditor.vala:439
+msgid "Other"
+msgstr "其他"
+
+#: src/Widgets/HeaderBar.vala:41
+msgid "Create a new connection"
+msgstr "创建一个新的连接"
+
+#: src/Widgets/HeaderBar.vala:46
+msgid "Local connection"
+msgstr "本地连接"
+
+#: src/Widgets/HeaderBar.vala:61 src/Widgets/Preferences.vala:30
+msgid "Preferences"
+msgstr "偏好设置"
+
+#: src/Widgets/HeaderBar.vala:63
+msgid "Close All Connections"
+msgstr "关闭所有连接"
+
+#: src/Widgets/HeaderBar.vala:73
+msgid "Menu"
+msgstr "菜单"
+
+#: src/Widgets/Preferences.vala:40
+msgid "Restart to apply changes"
+msgstr "重新启动以应用更改"
+
+#: src/Widgets/Preferences.vala:42
+msgid "Quit App"
 msgstr ""
 
-#: src/Widgets/Preferences.vala:44
+#: src/Widgets/Preferences.vala:51
 msgid "Select Hosts Configuration Folder…"
-msgstr ""
+msgstr "选择 Hosts 配置文件夹…"
 
-#: src/Widgets/Preferences.vala:98
+#: src/Widgets/Preferences.vala:86
+msgid "0 to disable. -1 to unlimited"
+msgstr "0 表示禁用。 -1 表示无限制"
+
+#: src/Widgets/Preferences.vala:126
 msgid "Hosts Configuration Folder:"
-msgstr ""
+msgstr "Hosts 配置文件夹："
 
-#: src/Widgets/Preferences.vala:101
+#: src/Widgets/Preferences.vala:130
+msgid "Scrollback lines:"
+msgstr "回滚行："
+
+#: src/Widgets/Preferences.vala:134
 msgid "Restore Opened Hosts:"
-msgstr ""
-
-#: src/Widgets/Preferences.vala:104
-msgid "Sync SSH Config:"
-msgstr ""
-
-#: src/Widgets/Preferences.vala:107
-msgid "Encrypt Data:"
-msgstr ""
-
-#: src/Widgets/Preferences.vala:118
-msgid "Use Dark Theme:"
-msgstr ""
-
-#: src/Widgets/Preferences.vala:125
-msgid "General"
-msgstr ""
+msgstr "重置已打开的 Hosts："
 
 #: src/Widgets/Preferences.vala:138
-msgid "Close"
+msgid "Sync SSH Config:"
+msgstr "同步 SSH 配置："
+
+#: src/Widgets/Preferences.vala:142
+msgid "Audible Bell:"
+msgstr "响铃："
+
+#: src/Widgets/Preferences.vala:167
+msgid "Encrypt data:"
+msgstr "加密数据："
+
+#: src/Widgets/Preferences.vala:184
+msgid "Use Dark Theme:"
+msgstr "使用黑色主题："
+
+#: src/Widgets/Preferences.vala:203
+msgid "General"
+msgstr "通用"
+
+#: src/Widgets/SearchToolbar.vala:38
+#, fuzzy
+msgid "Find"
+msgstr "找到…"
+
+#: src/Widgets/SearchToolbar.vala:49
+msgid "Cyclic search"
+msgstr ""
+
+#: src/Widgets/Tab.vala:29
+#, fuzzy
+msgid "Rename"
+msgstr "用户名："
+
+#: src/Widgets/Tab.vala:37
+msgid "Set new tab name"
+msgstr ""
+
+#: src/Widgets/Tab.vala:38
+msgid "Rename Tab"
 msgstr ""
 
 #: src/Widgets/TerminalWidget.vala:31
 msgid "Terminal"
+msgstr "终端"
+
+#: src/Widgets/Welcome.vala:25
+msgid "SSH Connection Manager"
+msgstr "SSH 连接管理器"
+
+#: src/Widgets/Welcome.vala:26
+msgid "Start by adding an SSH connection to EasySSH"
+msgstr "增加一个SSH连接至EasySSH以开始"
+
+#: src/Widgets/WelcomeAccounts.vala:25
+#, fuzzy
+msgid "EasySSH Account Manager"
+msgstr "SSH 连接管理器"
+
+#: src/Widgets/WelcomeAccounts.vala:25
+msgid "Create accounts to simplify management of your connections"
 msgstr ""
+
+#: src/Widgets/WelcomeAccounts.vala:26
+#, fuzzy
+msgid "Add Accounts"
+msgstr "帐户"
+
+#: src/Widgets/WelcomeAccounts.vala:26
+#, fuzzy
+msgid "Start by adding an Account to EasySSH"
+msgstr "增加一个SSH连接至EasySSH以开始"
+
+#~ msgid "Hide find bar"
+#~ msgstr "隐藏查找栏"
+
+#~ msgid "Could not connect. Please check the connection settings."
+#~ msgstr "无法连接。请检查连接设置。"
