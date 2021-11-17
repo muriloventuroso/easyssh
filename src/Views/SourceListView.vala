@@ -1427,7 +1427,7 @@ namespace EasySSH {
             account_editor.show();
         }
         private void confirm_remove_dialog (Host host) {
-            var message_dialog = new Granite.MessageDialog.with_image_from_icon_name (_("Remove") + " " + host.name, _("Are you sure you want to remove this connection and all associated data?"), "dialog-warning", Gtk.ButtonsType.CANCEL);
+            var message_dialog = new Granite.MessageDialog.with_image_from_icon_name (_("Remove %s?").printf (host.name), _("Are you sure you want to remove this connection and all associated data?"), "dialog-warning", Gtk.ButtonsType.CANCEL);
             message_dialog.transient_for = window;
             var suggested_button = new Gtk.Button.with_label (_("Remove"));
             suggested_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
@@ -1446,7 +1446,7 @@ namespace EasySSH {
         }
 
         private void confirm_remove_account_dialog (Account account) {
-            var message_dialog = new Granite.MessageDialog.with_image_from_icon_name (_("Remove") + " " + account.name, _("Are you sure you want to remove this account and all associated data?"), "dialog-warning", Gtk.ButtonsType.CANCEL);
+            var message_dialog = new Granite.MessageDialog.with_image_from_icon_name (_("Remove %s?").printf (account.name), _("Are you sure you want to remove this account and all associated data?"), "dialog-warning", Gtk.ButtonsType.CANCEL);
             message_dialog.transient_for = window;
             var suggested_button = new Gtk.Button.with_label (_("Remove"));
             suggested_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
@@ -1463,7 +1463,7 @@ namespace EasySSH {
         }
 
         private void confirm_remove_bookmark_dialog (Bookmark bookmark) {
-            var message_dialog = new Granite.MessageDialog.with_image_from_icon_name (_("Remove") + " " + bookmark.name, _("Are you sure you want to remove this bookmark?"), "dialog-warning", Gtk.ButtonsType.CANCEL);
+            var message_dialog = new Granite.MessageDialog.with_image_from_icon_name (_("Remove %s?").printf (bookmark.name), _("Are you sure you want to remove this bookmark?"), "dialog-warning", Gtk.ButtonsType.CANCEL);
             message_dialog.transient_for = window;
             var suggested_button = new Gtk.Button.with_label (_("Remove"));
             suggested_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
