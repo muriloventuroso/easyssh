@@ -53,7 +53,6 @@ executable(
     'src/Account.vala',
     'src/Bookmark.vala',
     'src/MainWindow.vala',
-    'src/Services/Settings.vala',
     'src/Views/SourceListView.vala',
     'src/Widgets/TerminalBox.vala',
     'src/Widgets/Welcome.vala',

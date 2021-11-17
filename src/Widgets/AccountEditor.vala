@@ -47,7 +47,6 @@ namespace EasySSH {
         }
 
         construct {
-            settings = Settings.get_default ();
             var grid = new Gtk.Grid ();
             grid.column_spacing = 22;
             grid.orientation = Gtk.Orientation.VERTICAL;

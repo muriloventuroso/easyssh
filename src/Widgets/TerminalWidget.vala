@@ -30,7 +30,6 @@ namespace EasySSH {
 
         internal const string DEFAULT_LABEL = _("Terminal");
         private bool init_complete;
-        private EasySSH.Settings settings;
 
         private MainWindow _window;
 
@@ -150,21 +149,20 @@ namespace EasySSH {
         }
 
         construct {
-            settings = EasySSH.Settings.get_default();
             if(host.color != "" && host.color != null) {
                 var color = Gdk.RGBA();
                 color.parse(host.color);
                 set_color_background(color);
 
-            } else if (settings.terminal_background_color != "") {
+            } else if (Application.settings.get_string ("terminal-background-color") != "") {
                 var color = Gdk.RGBA();
-                color.parse(settings.terminal_background_color);
+                color.parse(Application.settings.get_string ("terminal-background-color"));
                 set_color_background(color);
             }
             if(host.font != "" && host.font != null) {
                 set_font(new Pango.FontDescription().from_string(host.font));
-            } else if (settings.terminal_font != "") {
-                set_font(new Pango.FontDescription().from_string(settings.terminal_font));
+            } else if (Application.settings.get_string ("terminal-font") != "") {
+                set_font(new Pango.FontDescription().from_string(Application.settings.get_string ("terminal-font")));
             }
 
         }

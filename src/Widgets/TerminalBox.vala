@@ -31,7 +31,6 @@ namespace EasySSH {
         public MainWindow window { get; construct; }
         public Granite.Widgets.Tab tab {get; set;}
         private bool unread_changes;
-        private EasySSH.Settings settings;
         public bool ssh { get; construct; }
 
         public TerminalBox (Host host, Granite.Widgets.DynamicNotebook notebook, MainWindow window, bool ssh) {
@@ -44,20 +43,19 @@ namespace EasySSH {
         }
 
         construct {
-            settings = EasySSH.Settings.get_default();
             open_dialog = false;
             unread_changes = false;
             send_password = false;
             logged = false;
             term = new TerminalWidget(window, dataHost, ssh);
             try{
-                term.set_scrollback_lines(long.parse(settings.scrollback_lines));
+                term.set_scrollback_lines(long.parse(Application.settings.get_string ("scrollback-lines")));
             }catch(Error e){
                 term.set_scrollback_lines(-1);
             }
 
 
-                term.set_audible_bell(settings.audible_bell);
+                term.set_audible_bell(Application.settings.get_boolean ("audible-bell"));
 
 
             term.active_shell ();
@@ -77,7 +75,7 @@ namespace EasySSH {
 
         public void start_connection() {
             var builder = new StringBuilder ();
-            if(settings.sync_ssh_config == false){
+            if(!Application.settings.get_boolean ("sync-ssh-config")){
                 builder.append("ssh " + dataHost.username + "@" + dataHost.host);
                 if(dataHost.port != ""){
                     builder.append(" -p " + dataHost.port);
@@ -187,7 +185,7 @@ namespace EasySSH {
                     }
                 }else if(ret.length > 0 && "password:" in ret[ret.length - 1]) {
                     if(send_password == false) {
-                        if(settings.sync_ssh_config == false){
+                        if(!Application.settings.get_boolean ("sync-ssh-config")){
                             if(dataHost.username + "@" + dataHost.host in ret[ret.length - 1]){
                                 term_send_password();
                                 send_password = true;

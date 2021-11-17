@@ -21,11 +21,10 @@
 namespace EasySSH {
     public class MainWindow : Gtk.Window {
 
-        private Gtk.Dialog? preferences_dialog = null;
+        private Preferences preferences_dialog = null;
         public Gtk.UIManager ui { get; private set; }
         private Gtk.Clipboard clipboard;
         private Gtk.Clipboard primary_selection;
-        private EasySSH.Settings settings;
         private string default_filemanager = "";
         private SearchToolbar search_toolbar;
         private Gtk.Grid grid;
@@ -123,12 +122,7 @@ namespace EasySSH {
         }
 
         construct {
-            settings = EasySSH.Settings.get_default();
-            Gtk.Settings.get_default ().gtk_application_prefer_dark_theme = settings.use_dark_theme;
-            settings.notify["use-dark-theme"].connect (
-                () => {
-                    Gtk.Settings.get_default ().gtk_application_prefer_dark_theme = settings.use_dark_theme;
-            });
+            Gtk.Settings.get_default ().gtk_application_prefer_dark_theme = Application.settings.get_boolean ("use-dark-theme");
 
             var gtk_settings = Gtk.Settings.get_default ();
             gtk_settings.gtk_menu_bar_accel = null;
@@ -207,11 +201,6 @@ namespace EasySSH {
 
             get_default_filemanager ();
 
-            settings.notify["sync-ssh-config"].connect (
-                () => {
-                    sourcelist.load_ssh_config ();
-                    sourcelist.save_hosts ();
-            });
             sourcelist.host_edit_clicked.connect ((name) => {
                 sourcelist.edit_conn(name);
             });
@@ -301,13 +290,14 @@ namespace EasySSH {
                 }
             }
 
-            settings.hosts = opened_hosts;
+            Application.settings.set_strv ("hosts", opened_hosts);
 
         }
 
         private void restore_hosts() {
-            for (int i = 0; i < settings.hosts.length; i++) {
-                var entry = settings.hosts[i];
+            var hosts = Application.settings.get_strv ("hosts");
+            for (int i = 0; i < hosts.length; i++) {
+                var entry = hosts[i];
                 var host_split = entry.split(",");
                 var qtd_hosts = host_split[host_split.length - 1];
                 var name_host = string.joinv(",", host_split[0:host_split.length - 1]);
@@ -316,33 +306,33 @@ namespace EasySSH {
         }
 
         private void load_settings () {
-            if (settings.window_maximized) {
+            if (Application.settings.get_boolean ("window-maximized")) {
                 this.maximize ();
                 this.set_default_size (1024, 720);
             } else {
-                this.set_default_size (settings.window_width, settings.window_height);
+                this.set_default_size (Application.settings.get_int ("window-width"), Application.settings.get_int ("window-height"));
             }
-            this.move (settings.pos_x, settings.pos_y);
-            if(settings.restore_hosts == true) {
+            this.move (Application.settings.get_int ("pos-x"), Application.settings.get_int ("pos-y"));
+            if(Application.settings.get_boolean ("restore-hosts")) {
                 restore_hosts();
             }
 
         }
 
         private void save_settings () {
-            if(settings.restore_hosts == true) {
+            if(Application.settings.get_boolean ("restore-hosts")) {
                 save_opened_hosts();
             }
-            settings.window_maximized = this.is_maximized;
+            Application.settings.set_boolean ("window-maximized", this.is_maximized);
 
-            if (!settings.window_maximized) {
+            if (!this.is_maximized) {
                 int x, y, width, height;
                 this.get_position (out x, out y);
                 this.get_size (out width, out height);
-                settings.pos_x = x;
-                settings.pos_y = y;
-                settings.window_height = height;
-                settings.window_width = width;
+                Application.settings.set_int ("pos-x", x);
+                Application.settings.set_int ("pos-y", y);
+                Application.settings.set_int ("window-height", height);
+                Application.settings.set_int ("window-width", width);
             }
         }
 
@@ -443,6 +433,11 @@ namespace EasySSH {
             if (preferences_dialog == null) {
                 preferences_dialog = new Preferences (this);
                 preferences_dialog.show_all ();
+
+                preferences_dialog.sync_settings_changed.connect (() => {
+                    sourcelist.load_ssh_config ();
+                    sourcelist.save_hosts ();
+                });
 
                 preferences_dialog.destroy.connect (() => {
                     preferences_dialog = null;
