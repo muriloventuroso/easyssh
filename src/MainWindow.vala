@@ -431,17 +431,10 @@ namespace EasySSH {
             current_terminal.select_all ();
         }
         void action_open_in_files () {
-            var default_filemanager = AppInfo.get_default_for_type ("inode/directory", true);
-            if (default_filemanager == null || current_terminal == null) {
-                return;
-            }
-
-            var uris = new List<File>();
-            uris.append (File.new_for_uri ("sftp://%s@%s:%s".printf (
-                current_terminal.host.username, current_terminal.host.host, current_terminal.host.port
-            )));
             try {
-                default_filemanager.launch (uris, null);
+                Gtk.show_uri_on_window (this, "sftp://%s@%s:%s".printf (
+                    current_terminal.host.username, current_terminal.host.host, current_terminal.host.port
+                ), 0);
             } catch (Error e) {
                 warning (e.message);
             }
