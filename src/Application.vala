@@ -38,6 +38,17 @@ namespace EasySSH {
 
         static construct {
             settings = new Settings ("com.github.muriloventuroso.easyssh");
+            if (settings.get_string ("hosts-folder") == "") {
+                string hosts_folder = GLib.Environment.get_user_config_dir() + "/easyssh";
+                settings.set_string ("hosts-folder", hosts_folder);
+
+                try {
+                    var file = File.new_for_path(hosts_folder);
+                    file.make_directory();
+                } catch (Error e) {
+                    warning (e.message);
+                }
+            }
         }
 
         protected override void activate () {
