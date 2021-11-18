@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: com.github.muriloventuroso.easyssh\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-18 08:23+0900\n"
-"PO-Revision-Date: 2020-06-18 18:41+0000\n"
+"PO-Revision-Date: 2021-11-19 22:51+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/easyssh/"
 "translations/ja/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.1.1-dev\n"
+"X-Generator: Weblate 4.9.1\n"
 
 #: src/MainWindow.vala:104
 msgid "EasySSH"
@@ -86,9 +86,9 @@ msgstr "送信"
 
 #: src/Views/SourceListView.vala:1428 src/Views/SourceListView.vala:1447
 #: src/Views/SourceListView.vala:1464
-#, fuzzy, c-format
+#, c-format
 msgid "Remove %s?"
-msgstr "削除 "
+msgstr "%s を削除しますか？"
 
 #: src/Views/SourceListView.vala:1428
 msgid ""
@@ -168,19 +168,16 @@ msgid "Identity File:"
 msgstr "鍵ファイル:"
 
 #: src/Widgets/AccountEditor.vala:129
-#, fuzzy
 msgid "Add Account"
-msgstr "アカウント"
+msgstr "アカウントを追加"
 
 #: src/Widgets/AccountEditor.vala:132
-#, fuzzy
 msgid "Edit Account"
-msgstr "アカウント"
+msgstr "アカウントを編集"
 
 #: src/Widgets/AccountEditor.vala:134
-#, fuzzy
 msgid "Duplicate Account"
-msgstr "接続を複製"
+msgstr "アカウントを複製"
 
 #: src/Widgets/AccountEditor.vala:178 src/Widgets/ConnectionEditor.vala:502
 msgid "Name is already taken"
@@ -340,7 +337,7 @@ msgstr "変更を適用するには、再起動してください"
 
 #: src/Widgets/Preferences.vala:42
 msgid "Quit App"
-msgstr ""
+msgstr "アプリを終了"
 
 #: src/Widgets/Preferences.vala:51
 msgid "Select Hosts Configuration Folder…"
@@ -383,26 +380,24 @@ msgid "General"
 msgstr "一般"
 
 #: src/Widgets/SearchToolbar.vala:38
-#, fuzzy
 msgid "Find"
-msgstr "検索…"
+msgstr "検索"
 
 #: src/Widgets/SearchToolbar.vala:49
 msgid "Cyclic search"
-msgstr ""
+msgstr "循環検索"
 
 #: src/Widgets/Tab.vala:29
-#, fuzzy
 msgid "Rename"
-msgstr "ユーザー名:"
+msgstr "名称変更"
 
 #: src/Widgets/Tab.vala:37
 msgid "Set new tab name"
-msgstr ""
+msgstr "新しいタブ名を設定してください"
 
 #: src/Widgets/Tab.vala:38
 msgid "Rename Tab"
-msgstr ""
+msgstr "タブ名を変更"
 
 #: src/Widgets/TerminalWidget.vala:31
 msgid "Terminal"
@@ -417,23 +412,20 @@ msgid "Start by adding an SSH connection to EasySSH"
 msgstr "SSH 接続を EasySSH に接続して開始します"
 
 #: src/Widgets/WelcomeAccounts.vala:25
-#, fuzzy
 msgid "EasySSH Account Manager"
-msgstr "SSH 接続マネージャー"
+msgstr "EasySSH アカウントマネージャー"
 
 #: src/Widgets/WelcomeAccounts.vala:25
 msgid "Create accounts to simplify management of your connections"
-msgstr ""
+msgstr "アカウントを作成して接続管理を簡易化しましょう"
 
 #: src/Widgets/WelcomeAccounts.vala:26
-#, fuzzy
 msgid "Add Accounts"
-msgstr "アカウント"
+msgstr "アカウントを追加"
 
 #: src/Widgets/WelcomeAccounts.vala:26
-#, fuzzy
 msgid "Start by adding an Account to EasySSH"
-msgstr "SSH 接続を EasySSH に接続して開始します"
+msgstr "アカウントを EasySSH に接続して開始します"
 
 #~ msgid "Hide find bar"
 #~ msgstr "検索バーを非表示"
