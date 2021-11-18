@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.muriloventuroso.easyssh\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-16 11:01-0300\n"
+"POT-Creation-Date: 2021-11-18 08:23+0900\n"
 "PO-Revision-Date: 2020-06-25 14:41+0000\n"
 "Last-Translator: Milo Ivir <mail@milotype.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/easyssh/"
@@ -23,24 +23,24 @@ msgstr ""
 msgid "EasySSH"
 msgstr "EasySSH"
 
-#: src/MainWindow.vala:543
+#: src/MainWindow.vala:581
 msgid "Copy"
 msgstr "Kopieren"
 
-#: src/MainWindow.vala:544
+#: src/MainWindow.vala:582
 msgid "Paste"
 msgstr "Einfügen"
 
-#: src/MainWindow.vala:545
+#: src/MainWindow.vala:583
 msgid "Select All"
 msgstr "Alles auswählen"
 
-#: src/MainWindow.vala:546
+#: src/MainWindow.vala:584
 msgid "Show in File Browser"
 msgstr "Im Datei-Browser anzeigen"
 
 #: src/Views/SourceListView.vala:36 src/Views/SourceListView.vala:75
-#: src/Widgets/Connection.vala:62
+#: src/Widgets/Connection.vala:61
 msgid "Edit"
 msgstr "Bearbeiten"
 
@@ -49,157 +49,197 @@ msgid "Duplicate"
 msgstr "Duplikat"
 
 #: src/Views/SourceListView.vala:48 src/Views/SourceListView.vala:87
-#: src/Views/SourceListView.vala:1401 src/Views/SourceListView.vala:1403
-#: src/Views/SourceListView.vala:1420 src/Views/SourceListView.vala:1422
-#: src/Views/SourceListView.vala:1437 src/Views/SourceListView.vala:1439
-#: src/Widgets/ConnectionEditor.vala:383 src/Widgets/Connection.vala:66
+#: src/Views/SourceListView.vala:1430 src/Views/SourceListView.vala:1449
+#: src/Views/SourceListView.vala:1466 src/Widgets/AccountEditor.vala:75
+#: src/Widgets/Connection.vala:65 src/Widgets/ConnectionEditor.vala:383
 msgid "Remove"
 msgstr "Entfernen"
 
-#: src/Views/SourceListView.vala:154
+#: src/Views/SourceListView.vala:152
 msgid "Hosts"
 msgstr "Host"
 
-#: src/Views/SourceListView.vala:156
+#: src/Views/SourceListView.vala:154
 msgid "Accounts"
 msgstr "Konten"
 
-#: src/Views/SourceListView.vala:578
+#: src/Views/SourceListView.vala:590
 msgid "Please enter the password to unlock the data file"
 msgstr "Bitte geben Sie das Passwort ein, um die Datendatei zu entsperren"
 
-#: src/Views/SourceListView.vala:580
+#: src/Views/SourceListView.vala:592
 msgid "Please enter the password to lock the data file"
 msgstr "Bitte geben Sie das Passwort ein, um die Datendatei zu sperren"
 
-#: src/Views/SourceListView.vala:582
+#: src/Views/SourceListView.vala:594
 msgid "Password"
 msgstr "Passwort"
 
-#: src/Views/SourceListView.vala:589 src/Widgets/ConnectionEditor.vala:157
+#: src/Views/SourceListView.vala:601 src/Widgets/AccountEditor.vala:74
+#: src/Widgets/ConnectionEditor.vala:157 src/Widgets/Tab.vala:43
 msgid "Cancel"
 msgstr "Abbrechen"
 
-#: src/Views/SourceListView.vala:592
+#: src/Views/SourceListView.vala:604 src/Widgets/Tab.vala:46
 msgid "Send"
 msgstr "Senden"
 
-#: src/Views/SourceListView.vala:1401
+#: src/Views/SourceListView.vala:1428 src/Views/SourceListView.vala:1447
+#: src/Views/SourceListView.vala:1464
+#, fuzzy, c-format
+msgid "Remove %s?"
+msgstr "Entfernen "
+
+#: src/Views/SourceListView.vala:1428
 msgid ""
 "Are you sure you want to remove this connection and all associated data?"
 msgstr ""
 "Sind Sie sicher, dass Sie diese Verbindung und alle damit verbundenen Daten "
 "entfernen möchten?"
 
-#: src/Views/SourceListView.vala:1420
+#: src/Views/SourceListView.vala:1447
 msgid "Are you sure you want to remove this account and all associated data?"
 msgstr ""
 "Sind Sie sicher, dass Sie dieses Konto und alle damit verbundenen Daten "
 "entfernen möchten?"
 
-#: src/Views/SourceListView.vala:1437
+#: src/Views/SourceListView.vala:1464
 msgid "Are you sure you want to remove this bookmark?"
 msgstr "Sind Sie sicher, dass Sie dieses Lesezeichen entfernen möchten?"
 
-#: src/Widgets/TerminalBox.vala:224
+#: src/Widgets/TerminalBox.vala:238
 msgid "Connection Error. Retry?"
 msgstr "Verbindungsfehler. Wiederholen?"
 
-#: src/Widgets/TerminalBox.vala:226 src/Widgets/TerminalBox.vala:272
+#: src/Widgets/TerminalBox.vala:240 src/Widgets/TerminalBox.vala:286
 msgid "No"
 msgstr "Nein"
 
-#: src/Widgets/TerminalBox.vala:229 src/Widgets/TerminalBox.vala:275
+#: src/Widgets/TerminalBox.vala:243 src/Widgets/TerminalBox.vala:289
 msgid "Yes"
 msgstr "Ja"
 
-#: src/Widgets/TerminalBox.vala:245
+#: src/Widgets/TerminalBox.vala:259
 msgid "Connection Error."
 msgstr "Verbindungsfehler."
 
-#: src/Widgets/TerminalBox.vala:247 src/Widgets/Preferences.vala:173
+#: src/Widgets/TerminalBox.vala:261 src/Widgets/Preferences.vala:217
 msgid "Close"
 msgstr "Schließen"
 
-#: src/Widgets/TerminalBox.vala:250
+#: src/Widgets/TerminalBox.vala:264
 msgid "Ok"
 msgstr "Ok"
 
-#: src/Widgets/TerminalBox.vala:253
+#: src/Widgets/TerminalBox.vala:267
 msgid "Retry"
 msgstr "Wiederholen"
 
-#: src/Widgets/TerminalBox.vala:270
+#: src/Widgets/TerminalBox.vala:284
 msgid "Fingerprint"
 msgstr "Fingerabdruck"
 
-#: src/Widgets/Welcome.vala:25
-msgid "SSH Connection Manager"
-msgstr "SSH-Verbindungsmanager"
-
-#: src/Widgets/Welcome.vala:26 src/Widgets/ConnectionEditor.vala:190
-msgid "Add Connection"
-msgstr "Verbindung hinzufügen"
-
-#: src/Widgets/Welcome.vala:26
-msgid "Start by adding an SSH connection to EasySSH"
-msgstr "Starten Sie, indem Sie eine SSH-Verbindung zu EasySSH hinzufügen"
-
-#: src/Widgets/HeaderBar.vala:41
-msgid "Create a new connection"
-msgstr "Neue Verbindung erstellen"
-
-#: src/Widgets/HeaderBar.vala:46
-msgid "Local connection"
-msgstr "Lokale Verbindung"
-
-#: src/Widgets/HeaderBar.vala:59 src/Widgets/BookmarksPopover.vala:103
-msgid "Bookmarks"
-msgstr "Lesezeichen"
-
-#: src/Widgets/HeaderBar.vala:61 src/Widgets/Preferences.vala:35
-msgid "Preferences"
-msgstr "Einstellungen"
-
-#: src/Widgets/HeaderBar.vala:63
-msgid "Close All Connections"
-msgstr "Alle Verbindungen schließen"
-
-#: src/Widgets/HeaderBar.vala:73
-msgid "Menu"
-msgstr "Menü"
-
-#: src/Widgets/ConnectionEditor.vala:80
-msgid "Set Credentials"
-msgstr "Legen Sie die Anmeldeinformationen fest"
-
-#: src/Widgets/ConnectionEditor.vala:84
-msgid "Choose Account"
-msgstr "Konto wählen"
-
-#: src/Widgets/ConnectionEditor.vala:106 src/Widgets/ConnectionEditor.vala:220
+#: src/Widgets/AccountEditor.vala:67 src/Widgets/AccountEditor.vala:118
+#: src/Widgets/ConnectionEditor.vala:105 src/Widgets/ConnectionEditor.vala:220
 msgid "Password:"
 msgstr "Passwort:"
 
-#: src/Widgets/ConnectionEditor.vala:150
-msgid "Select Identity File"
-msgstr "Schlüsseldatei wählen"
-
-#: src/Widgets/ConnectionEditor.vala:151
+#: src/Widgets/AccountEditor.vala:68 src/Widgets/ConnectionEditor.vala:151
 msgid "Change Password to Identity File"
 msgstr "Passwort in Schlüsseldatei ändern"
 
-#: src/Widgets/ConnectionEditor.vala:153
+#: src/Widgets/AccountEditor.vala:70 src/Widgets/ConnectionEditor.vala:153
 msgid "Save"
 msgstr "Speichern"
+
+#: src/Widgets/AccountEditor.vala:99 src/Widgets/BookmarksPopover.vala:123
+#: src/Widgets/ConnectionEditor.vala:200
+msgid "Name:"
+msgstr "Name:"
+
+#: src/Widgets/AccountEditor.vala:102 src/Widgets/ConnectionEditor.vala:175
+msgid "Username:"
+msgstr "Benutzername:"
+
+#: src/Widgets/AccountEditor.vala:108 src/Widgets/ConnectionEditor.vala:150
+msgid "Select Identity File"
+msgstr "Schlüsseldatei wählen"
+
+#: src/Widgets/AccountEditor.vala:114 src/Widgets/AccountEditor.vala:146
+#: src/Widgets/ConnectionEditor.vala:216 src/Widgets/ConnectionEditor.vala:461
+msgid "Identity File:"
+msgstr "Schlüsseldatei:"
+
+#: src/Widgets/AccountEditor.vala:129
+#, fuzzy
+msgid "Add Account"
+msgstr "Konten"
+
+#: src/Widgets/AccountEditor.vala:132
+#, fuzzy
+msgid "Edit Account"
+msgstr "Konten"
+
+#: src/Widgets/AccountEditor.vala:134
+#, fuzzy
+msgid "Duplicate Account"
+msgstr "Verbindung kopieren"
+
+#: src/Widgets/AccountEditor.vala:178 src/Widgets/ConnectionEditor.vala:502
+msgid "Name is already taken"
+msgstr "Name ist bereits vergeben"
+
+#: src/Widgets/BookmarksPopover.vala:51
+msgid "Search for bookmarks"
+msgstr "Lesezeichen suchen"
+
+#: src/Widgets/BookmarksPopover.vala:55
+msgid "Create a new bookmark"
+msgstr "Ein neues Lesezeichen erstellen"
+
+#: src/Widgets/BookmarksPopover.vala:68
+msgid "Run"
+msgstr "Ausführen"
+
+#: src/Widgets/BookmarksPopover.vala:72
+msgid "Delete"
+msgstr "Löschen"
+
+#: src/Widgets/BookmarksPopover.vala:92 src/Widgets/BookmarksPopover.vala:110
+msgid "Add Bookmark"
+msgstr "Lesezeichen hinzufügen"
+
+#: src/Widgets/BookmarksPopover.vala:103 src/Widgets/HeaderBar.vala:59
+msgid "Bookmarks"
+msgstr "Lesezeichen"
+
+#: src/Widgets/BookmarksPopover.vala:125
+msgid "Command:"
+msgstr "Befehl:"
+
+#: src/Widgets/BookmarksPopover.vala:237 src/Widgets/BookmarksPopover.vala:241
+msgid "Default"
+msgstr "Standard"
+
+#: src/Widgets/Connection.vala:58
+msgid "Connect"
+msgstr "Verbinden"
+
+#: src/Widgets/ConnectionEditor.vala:79
+msgid "Set Credentials"
+msgstr "Legen Sie die Anmeldeinformationen fest"
+
+#: src/Widgets/ConnectionEditor.vala:83
+msgid "Choose Account"
+msgstr "Konto wählen"
 
 #: src/Widgets/ConnectionEditor.vala:159 src/Widgets/ConnectionEditor.vala:330
 msgid "Advanced"
 msgstr "Erweitert"
 
-#: src/Widgets/ConnectionEditor.vala:175
-msgid "Username:"
-msgstr "Benutzername:"
+#: src/Widgets/ConnectionEditor.vala:190 src/Widgets/Welcome.vala:26
+msgid "Add Connection"
+msgstr "Verbindung hinzufügen"
 
 #: src/Widgets/ConnectionEditor.vala:193
 msgid "Edit Connection"
@@ -208,10 +248,6 @@ msgstr "Verbindung bearbeiten"
 #: src/Widgets/ConnectionEditor.vala:195
 msgid "Duplicate Connection"
 msgstr "Verbindung kopieren"
-
-#: src/Widgets/ConnectionEditor.vala:200 src/Widgets/BookmarksPopover.vala:123
-msgid "Name:"
-msgstr "Name:"
 
 #: src/Widgets/ConnectionEditor.vala:203
 msgid "Group:"
@@ -225,19 +261,15 @@ msgstr "Host:"
 msgid "Port:"
 msgstr "Port:"
 
-#: src/Widgets/ConnectionEditor.vala:216
-msgid "Identity File:"
-msgstr "Schlüsseldatei:"
-
 #: src/Widgets/ConnectionEditor.vala:229
 msgid "SSH Config:"
 msgstr "SSH Konfiguration:"
 
-#: src/Widgets/ConnectionEditor.vala:337 src/Widgets/Preferences.vala:145
+#: src/Widgets/ConnectionEditor.vala:337 src/Widgets/Preferences.vala:176
 msgid "Terminal Background Color:"
 msgstr "Terminal Hintergrundfarbe:"
 
-#: src/Widgets/ConnectionEditor.vala:346 src/Widgets/Preferences.vala:148
+#: src/Widgets/ConnectionEditor.vala:346 src/Widgets/Preferences.vala:180
 msgid "Terminal Font:"
 msgstr "Terminal Schriftart:"
 
@@ -273,7 +305,7 @@ msgstr "Entfernt"
 msgid "Add Tunnel"
 msgstr "Tunnel hinzufügen"
 
-#: src/Widgets/ConnectionEditor.vala:437 src/Widgets/Preferences.vala:159
+#: src/Widgets/ConnectionEditor.vala:437 src/Widgets/Preferences.vala:204
 msgid "Appearance"
 msgstr "Aussehen"
 
@@ -285,95 +317,126 @@ msgstr "Tunnel"
 msgid "Other"
 msgstr "Andere"
 
-#: src/Widgets/ConnectionEditor.vala:499
-msgid "Name is already taken"
-msgstr "Name ist bereits vergeben"
+#: src/Widgets/HeaderBar.vala:41
+msgid "Create a new connection"
+msgstr "Neue Verbindung erstellen"
 
-#: src/Widgets/Connection.vala:59
-msgid "Connect"
-msgstr "Verbinden"
+#: src/Widgets/HeaderBar.vala:46
+msgid "Local connection"
+msgstr "Lokale Verbindung"
 
-#: src/Widgets/Preferences.vala:42
+#: src/Widgets/HeaderBar.vala:61 src/Widgets/Preferences.vala:30
+msgid "Preferences"
+msgstr "Einstellungen"
+
+#: src/Widgets/HeaderBar.vala:63
+msgid "Close All Connections"
+msgstr "Alle Verbindungen schließen"
+
+#: src/Widgets/HeaderBar.vala:73
+msgid "Menu"
+msgstr "Menü"
+
+#: src/Widgets/Preferences.vala:40
 msgid "Restart to apply changes"
 msgstr "Neu starten, um Änderungen zu übernehmen"
 
-#: src/Widgets/Preferences.vala:48
+#: src/Widgets/Preferences.vala:42
+msgid "Quit App"
+msgstr ""
+
+#: src/Widgets/Preferences.vala:51
 msgid "Select Hosts Configuration Folder…"
 msgstr "Ordner für Host Konfigurationen wählen…"
 
-#: src/Widgets/Preferences.vala:83
+#: src/Widgets/Preferences.vala:86
 msgid "0 to disable. -1 to unlimited"
 msgstr "0 für deaktiviert. -1 für unbegrenzt"
 
-#: src/Widgets/Preferences.vala:121
+#: src/Widgets/Preferences.vala:126
 msgid "Hosts Configuration Folder:"
 msgstr "Ordner mit Host Konfigurationen:"
 
-#: src/Widgets/Preferences.vala:124
+#: src/Widgets/Preferences.vala:130
 msgid "Scrollback lines:"
 msgstr "Zeilen zum Zurückblättern:"
 
-#: src/Widgets/Preferences.vala:128
+#: src/Widgets/Preferences.vala:134
 msgid "Restore Opened Hosts:"
 msgstr "Geöffnete Hosts wiederherstellen:"
 
-#: src/Widgets/Preferences.vala:131
+#: src/Widgets/Preferences.vala:138
 msgid "Sync SSH Config:"
 msgstr "SSH Konfiguration synchronisieren:"
 
-#: src/Widgets/Preferences.vala:134
+#: src/Widgets/Preferences.vala:142
 msgid "Audible Bell:"
 msgstr "Akustische Klingel:"
 
-#: src/Widgets/Preferences.vala:138
+#: src/Widgets/Preferences.vala:167
 msgid "Encrypt data:"
 msgstr "Daten verschlüsseln:"
 
-#: src/Widgets/Preferences.vala:151
+#: src/Widgets/Preferences.vala:184
 msgid "Use Dark Theme:"
 msgstr "Dunkles Thema verwenden:"
 
-#: src/Widgets/Preferences.vala:158
+#: src/Widgets/Preferences.vala:203
 msgid "General"
 msgstr "Allgemein"
+
+#: src/Widgets/SearchToolbar.vala:38
+#, fuzzy
+msgid "Find"
+msgstr "Suchen…"
+
+#: src/Widgets/SearchToolbar.vala:49
+msgid "Cyclic search"
+msgstr ""
+
+#: src/Widgets/Tab.vala:29
+#, fuzzy
+msgid "Rename"
+msgstr "Benutzername:"
+
+#: src/Widgets/Tab.vala:37
+msgid "Set new tab name"
+msgstr ""
+
+#: src/Widgets/Tab.vala:38
+msgid "Rename Tab"
+msgstr ""
 
 #: src/Widgets/TerminalWidget.vala:31
 msgid "Terminal"
 msgstr "Terminal"
 
-#: src/Widgets/BookmarksPopover.vala:51
-msgid "Search for bookmarks"
-msgstr "Lesezeichen suchen"
+#: src/Widgets/Welcome.vala:25
+msgid "SSH Connection Manager"
+msgstr "SSH-Verbindungsmanager"
 
-#: src/Widgets/BookmarksPopover.vala:55
-msgid "Create a new bookmark"
-msgstr "Ein neues Lesezeichen erstellen"
+#: src/Widgets/Welcome.vala:26
+msgid "Start by adding an SSH connection to EasySSH"
+msgstr "Starten Sie, indem Sie eine SSH-Verbindung zu EasySSH hinzufügen"
 
-#: src/Widgets/BookmarksPopover.vala:68
-msgid "Run"
-msgstr "Ausführen"
+#: src/Widgets/WelcomeAccounts.vala:25
+#, fuzzy
+msgid "EasySSH Account Manager"
+msgstr "SSH-Verbindungsmanager"
 
-#: src/Widgets/BookmarksPopover.vala:72
-msgid "Delete"
-msgstr "Löschen"
+#: src/Widgets/WelcomeAccounts.vala:25
+msgid "Create accounts to simplify management of your connections"
+msgstr ""
 
-#: src/Widgets/BookmarksPopover.vala:92 src/Widgets/BookmarksPopover.vala:110
-msgid "Add Bookmark"
-msgstr "Lesezeichen hinzufügen"
+#: src/Widgets/WelcomeAccounts.vala:26
+#, fuzzy
+msgid "Add Accounts"
+msgstr "Konten"
 
-#: src/Widgets/BookmarksPopover.vala:125
-msgid "Command:"
-msgstr "Befehl:"
-
-#: src/Widgets/BookmarksPopover.vala:237 src/Widgets/BookmarksPopover.vala:241
-msgid "Default"
-msgstr "Standard"
+#: src/Widgets/WelcomeAccounts.vala:26
+#, fuzzy
+msgid "Start by adding an Account to EasySSH"
+msgstr "Starten Sie, indem Sie eine SSH-Verbindung zu EasySSH hinzufügen"
 
 #~ msgid "Hide find bar"
 #~ msgstr "Suchleiste ausblenden"
-
-#~ msgid "Find…"
-#~ msgstr "Suchen…"
-
-#~ msgid "Remove "
-#~ msgstr "Entfernen "
