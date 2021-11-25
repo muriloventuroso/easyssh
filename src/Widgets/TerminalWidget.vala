@@ -28,7 +28,6 @@ namespace EasySSH {
             TEXT
         }
 
-        internal const string DEFAULT_LABEL = _("Terminal");
         private bool init_complete;
 
         private MainWindow _window;
@@ -40,7 +39,8 @@ namespace EasySSH {
 
             set {
                 this._window = value;
-                this.menu = value.ui.get_widget ("ui/AppMenu") as Gtk.Menu;
+                this.menu = value.menu;
+                this.menu.show_all ();
             }
         }
 
@@ -113,9 +113,10 @@ namespace EasySSH {
                     uri = get_link (event);
 
                     if (uri != null) {
-                        window.main_actions.get_action ("Copy").set_sensitive (true);
+                        window.get_simple_action (MainWindow.ACTION_COPY).set_enabled (true);
                     }
 
+                    window.update_context_menu ();
                     menu.select_first (false);
                     menu.popup_at_pointer (event);
 
@@ -144,7 +145,8 @@ namespace EasySSH {
             });
 
             selection_changed.connect (() => {
-                window.main_actions.get_action ("Copy").set_sensitive (get_has_selection ());
+                window.get_simple_action (MainWindow.ACTION_COPY).set_enabled (get_has_selection ());
+                window.update_context_menu ();
             });
         }
 
