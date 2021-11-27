@@ -24,7 +24,6 @@ modules:
   - name: easyssh
     buildsystem: meson
     config-opts:
-    - '-Dlibunity=false'
     - '-Dubuntu-bionic-patched-vte=false'
     - '-Dpatched-vte=true'
     sources:

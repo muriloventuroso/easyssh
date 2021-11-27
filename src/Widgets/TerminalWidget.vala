@@ -134,7 +134,7 @@ namespace EasySSH {
 
                     if (uri != null && ! get_has_selection ()) {
                         try {
-                            Gtk.show_uri (null, uri, Gtk.get_current_event_time ());
+                            Gtk.show_uri_on_window (window, uri, Gtk.get_current_event_time ());
                         } catch (GLib.Error error) {
                             warning ("Could Not Open link");
                         }
@@ -171,8 +171,12 @@ namespace EasySSH {
 
         public void active_shell() {
             if(ssh){
-                this.spawn_sync(Vte.PtyFlags.DEFAULT, null, {"/bin/sh"},
-                                        null, SpawnFlags.SEARCH_PATH, null, out this.child_pid, null);
+                try {
+                    this.spawn_sync(Vte.PtyFlags.DEFAULT, null, {"/bin/sh"},
+                                                null, SpawnFlags.SEARCH_PATH, null, out this.child_pid, null);
+                } catch (Error e) {
+                    warning (e.message);
+                }
             }else{
                 string dir = GLib.Environment.get_current_dir ();
                 var shell = Vte.get_user_shell ();
