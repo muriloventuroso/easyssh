@@ -30,8 +30,8 @@ jobs:
         uses: bilelmoussaoui/flatpak-github-actions/flatpak-builder@v4
         with:
           bundle: easyssh.flatpak
-          manifest-path: com.github.muriloventuroso.easyssh.yml.yml
-          run-tests: true
+          manifest-path: com.github.muriloventuroso.easyssh.yml
+          run-tests: false
           repository-name: appcenter
           repository-url: https://flatpak.elementary.io/repo.flatpakrepo
           cache-key: "flatpak-builder-${{ github.sha }}"
