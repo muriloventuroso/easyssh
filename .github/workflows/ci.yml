@@ -30,7 +30,7 @@ jobs:
         uses: bilelmoussaoui/flatpak-github-actions/flatpak-builder@v4
         with:
           bundle: easyssh.flatpak
-          manifest-path: com.github.muriloventuroso.easyssh.yml.yml
+          manifest-path: com.github.muriloventuroso.easyssh.yml
           run-tests: true
           repository-name: appcenter
           repository-url: https://flatpak.elementary.io/repo.flatpakrepo
