@@ -135,7 +135,7 @@ namespace EasySSH {
 
             var paned = new Gtk.Paned (Gtk.Orientation.HORIZONTAL);
             box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 0);
-            box.margin_left = 5;
+            box.margin_start = 5;
             welcome = new Welcome();
             welcome_accounts = new WelcomeAccounts();
             box.add(welcome);
@@ -931,9 +931,6 @@ namespace EasySSH {
 
         public Host edit_host(string old_name, Host e_host) {
             var host = hostmanager.get_host_by_name(old_name);
-            if(host == null){
-                return null;
-            }
             var group = hostmanager.get_group_by_name(host.group);
             e_host.notebook = host.notebook;
             if(host.group == e_host.group) {
@@ -1066,24 +1063,11 @@ namespace EasySSH {
             }
             #endif
             var file = File.new_for_path (Application.settings.get_string ("hosts-folder").replace ("%20", " ") + filename);
-            {
-                if (file.query_exists ()) {
-                    file.delete ();
-                }
-                var dos = new DataOutputStream (file.create (FileCreateFlags.REPLACE_DESTINATION));
-
-                dos.put_string (data);
-            }
+            write_data_to_file (file, data);
 
             if(Application.settings.get_boolean ("sync-ssh-config")){
                 var file_ssh = File.new_for_path (Environment.get_home_dir () + "/.ssh/config");
-                {
-                    if (file_ssh.query_exists ()) {
-                        file_ssh.delete ();
-                    }
-                    var dos_ssh = new DataOutputStream (file_ssh.create (FileCreateFlags.REPLACE_DESTINATION));
-                    dos_ssh.put_string (data_ssh_config);
-                }
+                write_data_to_file (file_ssh, data_ssh_config);
             }
         }
 
@@ -1119,15 +1103,7 @@ namespace EasySSH {
             }
             #endif
             var file = File.new_for_path (Application.settings.get_string ("hosts-folder").replace ("%20", " ") + filename);
-            {
-                if (file.query_exists ()) {
-                    file.delete ();
-                }
-                var dos = new DataOutputStream (file.create (FileCreateFlags.REPLACE_DESTINATION));
-
-                dos.put_string (data);
-            }
-
+            write_data_to_file (file, data);
         }
 
         public void save_bookmarks() {
@@ -1160,15 +1136,7 @@ namespace EasySSH {
             }
             #endif
             var file = File.new_for_path (Application.settings.get_string ("hosts-folder").replace ("%20", " ") + filename);
-            {
-                if (file.query_exists ()) {
-                    file.delete ();
-                }
-                var dos = new DataOutputStream (file.create (FileCreateFlags.REPLACE_DESTINATION));
-
-                dos.put_string (data);
-            }
-
+            write_data_to_file (file, data);
         }
 
         public void backup_ssh_config() {
@@ -1474,6 +1442,23 @@ namespace EasySSH {
                 insert_bookmark();
             }
             message_dialog.destroy ();
+        }
+
+        private void write_data_to_file (File file, string data) {
+            if (file.query_exists ()) {
+                try {
+                    file.delete ();
+                } catch (Error e) {
+                    warning (e.message);
+                }
+            }
+
+            try {
+                var dos = new DataOutputStream (file.create (FileCreateFlags.REPLACE_DESTINATION));
+                dos.put_string (data);
+            } catch (Error e) {
+                warning (e.message);
+            }
         }
     }
 }
