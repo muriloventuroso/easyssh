@@ -61,7 +61,6 @@ namespace EasySSH {
         }
 
         construct {
-            settings = Settings.get_default ();
             var grid = new Gtk.Grid ();
             grid.column_spacing = 22;
             grid.orientation = Gtk.Orientation.VERTICAL;
@@ -117,6 +116,7 @@ namespace EasySSH {
 
 
             var color = Gdk.RGBA ();
+            string terminal_font;
             if(data_host != null) {
                 name_entry.text = data_host.name;
                 name_entry.is_valid = check_name();
@@ -127,19 +127,19 @@ namespace EasySSH {
                 password_entry.text = data_host.password;
                 extra_arguments.text = data_host.extra_arguments;
                 color.parse(data_host.color);
-                var terminal_font = data_host.font;
+                terminal_font = data_host.font;
                 if(data_host.account != ""){
                     set_account.set_active (true);
                     revealer_credentials.set_reveal_child(false);
                     revealer_accounts.set_reveal_child(true);
                 }
             } else {
-                color.parse(settings.terminal_background_color);
-                var terminal_font = settings.terminal_font;
+                color.parse(Application.settings.get_string ("terminal-background-color"));
+                terminal_font = Application.settings.get_string ("terminal-font");
             }
 
             terminal_background_color_button = new Gtk.ColorButton.with_rgba (color);
-            terminal_font_button = new Gtk.FontButton.with_font(settings.terminal_font);
+            terminal_font_button = new Gtk.FontButton.with_font(terminal_font);
             terminal_font_button.use_font = true;
             terminal_font_button.use_size = true;
             name_entry.changed.connect (() => {
@@ -223,7 +223,7 @@ namespace EasySSH {
 
             });
             grid.attach (change_password, 0, 14, 1, 1);
-            if(settings.sync_ssh_config == true){
+            if(Application.settings.get_boolean ("sync-ssh-config")){
                 ssh_config_entry.set_vexpand(true);
                 ssh_config_entry.buffer.text = sourcelistview.get_host_ssh_config (data_host.name);
                 grid.attach (new Granite.HeaderLabel (_("SSH Config:")), 0, 15, 2, 1);
@@ -339,7 +339,7 @@ namespace EasySSH {
             var clean_color  = new Gtk.Button.from_icon_name ("edit-clear");
             clean_color.clicked.connect(() => {
                 var n_color = Gdk.RGBA ();
-                n_color.parse(settings.terminal_background_color);
+                n_color.parse(Application.settings.get_string ("terminal-background-color"));
                 terminal_background_color_button.set_rgba(n_color);
             });
             appearance_grid.attach_next_to (clean_color, terminal_background_color_button, Gtk.PositionType.RIGHT, 1, 1);
@@ -347,7 +347,7 @@ namespace EasySSH {
             appearance_grid.attach (terminal_font_button, 0, 4, 1, 1);
             var clean_font  = new Gtk.Button.from_icon_name ("edit-clear");
             clean_font.clicked.connect(() => {
-                terminal_font_button.set_font(settings.terminal_font);
+                terminal_font_button.set_font(Application.settings.get_string ("terminal-font"));
             });
             appearance_grid.attach_next_to (clean_font, terminal_font_button, Gtk.PositionType.RIGHT, 1, 1);
             var tunnels_box = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
@@ -537,7 +537,7 @@ namespace EasySSH {
             host.color = terminal_background_color_button.rgba.to_string();
             host.font = terminal_font_button.get_font();
             host.extra_arguments = extra_arguments.text;
-            if(settings.sync_ssh_config){
+            if(Application.settings.get_boolean ("sync-ssh-config")){
                 host.ssh_config = ssh_config_entry.buffer.text;
             }
             var count = 0;

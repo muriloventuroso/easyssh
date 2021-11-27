@@ -21,9 +21,9 @@
 
 namespace EasySSH {
 
-    public Settings settings;
-
     public class Application : Gtk.Application {
+        public static Settings settings;
+
         public Application () {
             Object (application_id: "com.github.muriloventuroso.easyssh",
             flags: ApplicationFlags.FLAGS_NONE);
@@ -36,28 +36,43 @@ namespace EasySSH {
             Intl.textdomain (GETTEXT_PACKAGE);
         }
 
+        static construct {
+            settings = new Settings ("com.github.muriloventuroso.easyssh");
+            if (settings.get_string ("hosts-folder") == "") {
+                string hosts_folder = GLib.Environment.get_user_config_dir() + "/easyssh";
+                settings.set_string ("hosts-folder", hosts_folder);
+
+                try {
+                    var file = File.new_for_path(hosts_folder);
+                    file.make_directory();
+                } catch (Error e) {
+                    warning (e.message);
+                }
+            }
+        }
+
         protected override void activate () {
             if (get_windows ().length () > 0) {
                 get_windows ().data.present ();
                 return;
             }
-            settings = new Settings ();
+
             var app_window = new MainWindow (this);
             app_window.show_all ();
             app_window.finish_construction();
+
             var quit_action = new SimpleAction ("quit", null);
-
             add_action (quit_action);
-
-            var provider = new Gtk.CssProvider ();
-            provider.load_from_resource ("/com/github/muriloventuroso/easyssh/Application.css");
-            Gtk.StyleContext.add_provider_for_screen (Gdk.Screen.get_default (), provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
-
+            set_accels_for_action ("app.quit", {"<Control>q"});
             quit_action.activate.connect (() => {
                 if (app_window != null) {
                     app_window.destroy ();
                 }
             });
+
+            var provider = new Gtk.CssProvider ();
+            provider.load_from_resource ("/com/github/muriloventuroso/easyssh/Application.css");
+            Gtk.StyleContext.add_provider_for_screen (Gdk.Screen.get_default (), provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
         }
 
         private static int main (string[] args) {

@@ -21,17 +21,16 @@
 namespace EasySSH {
     public class MainWindow : Gtk.Window {
 
-        private Gtk.Dialog? preferences_dialog = null;
-        public Gtk.UIManager ui { get; private set; }
+        private Preferences preferences_dialog = null;
+        public Gtk.Menu menu { get; private set; }
         private Gtk.Clipboard clipboard;
         private Gtk.Clipboard primary_selection;
-        private EasySSH.Settings settings;
         private SearchToolbar search_toolbar;
         private Gtk.Grid grid;
         private Gtk.Revealer search_revealer;
         public HeaderBar header;
         private bool is_fullscreen = false;
-        public Gtk.Application application { get; construct; }
+        public Gtk.Application app { get; construct; }
         public int64 count_badge = 0;
 
         public const string ACTION_PREFIX = "win.";
@@ -56,7 +55,6 @@ namespace EasySSH {
         public const string ACTION_CLOSE_TABS = "action-scroll-to-las-command";
 
         public SimpleActionGroup actions { get; construct; }
-        public Gtk.ActionGroup main_actions;
         public TerminalWidget current_terminal { get; set; default = null; }
 
         private static Gee.MultiMap<string, string> action_accelerators = new Gee.HashMultiMap<string, string> ();
@@ -83,22 +81,11 @@ namespace EasySSH {
             { ACTION_CLOSE_TABS, action_close_tabs }
         };
 
-        private const string ui_string = """
-            <ui>
-            <popup name="AppMenu">
-                <menuitem name="Copy" action="Copy"/>
-                <menuitem name="Paste" action="Paste"/>
-                <menuitem name="Select All" action="Select All"/>
-                <menuitem name="Show in File Browser" action="Show in File Browser"/>
-            </popup>
-            </ui>
-        """;
-
         public SourceListView sourcelist;
 
         public MainWindow (Gtk.Application application) {
             Object (
-                application: application,
+                app: application,
                 icon_name: "com.github.muriloventuroso.easyssh",
                 resizable: true,
                 title: _("EasySSH"),
@@ -122,49 +109,56 @@ namespace EasySSH {
         }
 
         construct {
-            settings = EasySSH.Settings.get_default();
-            Gtk.Settings.get_default ().gtk_application_prefer_dark_theme = settings.use_dark_theme;
-            settings.notify["use-dark-theme"].connect (
-                () => {
-                    Gtk.Settings.get_default ().gtk_application_prefer_dark_theme = settings.use_dark_theme;
-            });
-
-            var gtk_settings = Gtk.Settings.get_default ();
-            gtk_settings.gtk_menu_bar_accel = null;
+            Gtk.Settings.get_default ().gtk_application_prefer_dark_theme = Application.settings.get_boolean ("use-dark-theme");
 
             actions = new SimpleActionGroup ();
             actions.add_action_entries (action_entries, this);
             insert_action_group ("win", actions);
 
-            /* Actions and UIManager */
-            main_actions = new Gtk.ActionGroup ("MainActionGroup");
-            main_actions.set_translation_domain ("com.github.muriloventuroso.easyssh");
-            main_actions.add_actions (main_entries, this);
-
             clipboard = Gtk.Clipboard.get (Gdk.Atom.intern ("CLIPBOARD", false));
-            update_context_menu ();
             clipboard.owner_change.connect (update_context_menu);
 
             primary_selection = Gtk.Clipboard.get (Gdk.Atom.intern ("PRIMARY", false));
 
-            set_application(application);
+            set_application (app);
+
             foreach (var action in action_accelerators.get_keys ()) {
-                application.set_accels_for_action (ACTION_PREFIX + action, action_accelerators[action].to_array ());
+                app.set_accels_for_action (ACTION_PREFIX + action, action_accelerators[action].to_array ());
             }
 
-            ui = new Gtk.UIManager ();
+            var open_in_file_manager_menuitem = new Gtk.MenuItem () {
+                action_name = ACTION_PREFIX + ACTION_OPEN_IN_FILES
+            };
+            var open_in_file_manager_menuitem_label = new Granite.AccelLabel.from_action_name (
+                _("Show in File Browser"), open_in_file_manager_menuitem.action_name
+            );
+            open_in_file_manager_menuitem.add (open_in_file_manager_menuitem_label);
 
-            try {
-                ui.add_ui_from_string (ui_string, -1);
-            } catch (Error e) {
-                error ("Couldn't load the UI: %s", e.message);
-            }
+            var copy_menuitem = new Gtk.MenuItem () {
+                action_name = ACTION_PREFIX + ACTION_COPY
+            };
+            var copy_menuitem_label = new Granite.AccelLabel.from_action_name (_("Copy"), copy_menuitem.action_name);
+            copy_menuitem.add (copy_menuitem_label);
 
-            Gtk.AccelGroup accel_group = ui.get_accel_group ();
-            add_accel_group (accel_group);
+            var paste_menuitem = new Gtk.MenuItem () {
+                action_name = ACTION_PREFIX + ACTION_PASTE
+            };
+            var paste_menuitem_label = new Granite.AccelLabel.from_action_name (_("Paste"), paste_menuitem.action_name);
+            paste_menuitem.add (paste_menuitem_label);
 
-            ui.insert_action_group (main_actions, 0);
-            ui.ensure_update ();
+            var select_all_menuitem = new Gtk.MenuItem () {
+                action_name = ACTION_PREFIX + ACTION_SELECT_ALL
+            };
+            var select_all_menuitem_label = new Granite.AccelLabel.from_action_name (_("Select All"), select_all_menuitem.action_name);
+            select_all_menuitem.add (select_all_menuitem_label);
+
+            menu = new Gtk.Menu ();
+            menu.append (open_in_file_manager_menuitem);
+            menu.append (new Gtk.SeparatorMenuItem ());
+            menu.append (copy_menuitem);
+            menu.append (paste_menuitem);
+            menu.append (select_all_menuitem);
+            menu.insert_action_group ("win", actions);
 
             weak Gtk.IconTheme default_theme = Gtk.IconTheme.get_default ();
             default_theme.add_resource_path ("/com/github/muriloventuroso/easyssh");
@@ -197,6 +191,7 @@ namespace EasySSH {
             set_titlebar (header);
 
             load_settings();
+            get_simple_action (ACTION_COPY).set_enabled (false);
 
             this.delete_event.connect (
                 () => {
@@ -205,11 +200,6 @@ namespace EasySSH {
                 }
             );
 
-            settings.notify["sync-ssh-config"].connect (
-                () => {
-                    sourcelist.load_ssh_config ();
-                    sourcelist.save_hosts ();
-            });
             sourcelist.host_edit_clicked.connect ((name) => {
                 sourcelist.edit_conn(name);
             });
@@ -264,13 +254,14 @@ namespace EasySSH {
                 }
             }
 
-            settings.hosts = opened_hosts;
+            Application.settings.set_strv ("hosts", opened_hosts);
 
         }
 
         private void restore_hosts() {
-            for (int i = 0; i < settings.hosts.length; i++) {
-                var entry = settings.hosts[i];
+            var hosts = Application.settings.get_strv ("hosts");
+            for (int i = 0; i < hosts.length; i++) {
+                var entry = hosts[i];
                 var host_split = entry.split(",");
                 var qtd_hosts = host_split[host_split.length - 1];
                 var name_host = string.joinv(",", host_split[0:host_split.length - 1]);
@@ -279,33 +270,33 @@ namespace EasySSH {
         }
 
         private void load_settings () {
-            if (settings.window_maximized) {
+            if (Application.settings.get_boolean ("window-maximized")) {
                 this.maximize ();
                 this.set_default_size (1024, 720);
             } else {
-                this.set_default_size (settings.window_width, settings.window_height);
+                this.set_default_size (Application.settings.get_int ("window-width"), Application.settings.get_int ("window-height"));
             }
-            this.move (settings.pos_x, settings.pos_y);
-            if(settings.restore_hosts == true) {
+            this.move (Application.settings.get_int ("pos-x"), Application.settings.get_int ("pos-y"));
+            if(Application.settings.get_boolean ("restore-hosts")) {
                 restore_hosts();
             }
 
         }
 
         private void save_settings () {
-            if(settings.restore_hosts == true) {
+            if(Application.settings.get_boolean ("restore-hosts")) {
                 save_opened_hosts();
             }
-            settings.window_maximized = this.is_maximized;
+            Application.settings.set_boolean ("window-maximized", this.is_maximized);
 
-            if (!settings.window_maximized) {
+            if (!this.is_maximized) {
                 int x, y, width, height;
                 this.get_position (out x, out y);
                 this.get_size (out width, out height);
-                settings.pos_x = x;
-                settings.pos_y = y;
-                settings.window_height = height;
-                settings.window_width = width;
+                Application.settings.set_int ("pos-x", x);
+                Application.settings.set_int ("pos-y", y);
+                Application.settings.set_int ("window-height", height);
+                Application.settings.set_int ("window-width", width);
             }
         }
 
@@ -327,17 +318,18 @@ namespace EasySSH {
             return false;
         }
 
-        private void update_context_menu () {
+        public void update_context_menu () {
             clipboard.request_targets (update_context_menu_cb);
         }
 
         private void update_context_menu_cb (Gtk.Clipboard clipboard_, Gdk.Atom[]? atoms) {
             bool can_paste = false;
 
-            if (atoms != null && atoms.length > 0)
+            if (atoms != null && atoms.length > 0) {
                 can_paste = Gtk.targets_include_text (atoms) || Gtk.targets_include_uri (atoms);
+            }
 
-            main_actions.get_action ("Paste").set_sensitive (can_paste);
+            get_simple_action (ACTION_PASTE).set_enabled (can_paste);
         }
 
         public void add_badge(){
@@ -406,6 +398,11 @@ namespace EasySSH {
             if (preferences_dialog == null) {
                 preferences_dialog = new Preferences (this);
                 preferences_dialog.show_all ();
+
+                preferences_dialog.sync_settings_changed.connect (() => {
+                    sourcelist.load_ssh_config ();
+                    sourcelist.save_hosts ();
+                });
 
                 preferences_dialog.destroy.connect (() => {
                     preferences_dialog = null;
@@ -546,13 +543,6 @@ namespace EasySSH {
 
             }
         }
-
-        const Gtk.ActionEntry[] main_entries = {
-            { "Copy", null, N_("Copy"), "<Control><Shift>c", null, action_copy },
-            { "Paste", null, N_("Paste"), "<Control><Shift>v", null, action_paste },
-            { "Select All", null, N_("Select All"), "<Control><Shift>a", null, action_select_all },
-            { "Show in File Browser", null, N_("Show in File Browser"), "<Control><Shift>e", null, action_open_in_files }
-        };
 
         public GLib.SimpleAction? get_simple_action (string action) {
             return actions.lookup_action (action) as GLib.SimpleAction;

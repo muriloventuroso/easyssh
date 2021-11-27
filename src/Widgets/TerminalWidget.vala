@@ -28,9 +28,7 @@ namespace EasySSH {
             TEXT
         }
 
-        internal const string DEFAULT_LABEL = _("Terminal");
         private bool init_complete;
-        private EasySSH.Settings settings;
 
         private MainWindow _window;
 
@@ -41,7 +39,8 @@ namespace EasySSH {
 
             set {
                 this._window = value;
-                this.menu = value.ui.get_widget ("ui/AppMenu") as Gtk.Menu;
+                this.menu = value.menu;
+                this.menu.show_all ();
             }
         }
 
@@ -114,9 +113,10 @@ namespace EasySSH {
                     uri = get_link (event);
 
                     if (uri != null) {
-                        window.main_actions.get_action ("Copy").set_sensitive (true);
+                        window.get_simple_action (MainWindow.ACTION_COPY).set_enabled (true);
                     }
 
+                    window.update_context_menu ();
                     menu.select_first (false);
                     menu.popup_at_pointer (event);
 
@@ -145,26 +145,26 @@ namespace EasySSH {
             });
 
             selection_changed.connect (() => {
-                window.main_actions.get_action ("Copy").set_sensitive (get_has_selection ());
+                window.get_simple_action (MainWindow.ACTION_COPY).set_enabled (get_has_selection ());
+                window.update_context_menu ();
             });
         }
 
         construct {
-            settings = EasySSH.Settings.get_default();
             if(host.color != "" && host.color != null) {
                 var color = Gdk.RGBA();
                 color.parse(host.color);
                 set_color_background(color);
 
-            } else if (settings.terminal_background_color != "") {
+            } else if (Application.settings.get_string ("terminal-background-color") != "") {
                 var color = Gdk.RGBA();
-                color.parse(settings.terminal_background_color);
+                color.parse(Application.settings.get_string ("terminal-background-color"));
                 set_color_background(color);
             }
             if(host.font != "" && host.font != null) {
                 set_font(new Pango.FontDescription().from_string(host.font));
-            } else if (settings.terminal_font != "") {
-                set_font(new Pango.FontDescription().from_string(settings.terminal_font));
+            } else if (Application.settings.get_string ("terminal-font") != "") {
+                set_font(new Pango.FontDescription().from_string(Application.settings.get_string ("terminal-font")));
             }
 
         }

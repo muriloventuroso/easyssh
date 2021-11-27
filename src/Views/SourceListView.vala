@@ -109,7 +109,6 @@ namespace EasySSH {
         public Granite.Widgets.SourceList source_list;
         public Granite.Widgets.SourceList source_list_accounts;
         public MainWindow window { get; construct; }
-        private EasySSH.Settings settings;
         private string encrypt_password;
         private bool should_encrypt_data;
         private bool should_sync_ssh_config;
@@ -127,12 +126,11 @@ namespace EasySSH {
         }
 
         construct {
-            settings = EasySSH.Settings.get_default ();
             hostmanager = new HostManager();
             accountmanager = new AccountManager();
             bookmarkmanager = new BookmarkManager();
             encrypt_password = "";
-            should_encrypt_data = settings.encrypt_data;
+            should_encrypt_data = Application.settings.get_boolean ("encrypt-data");
             open_dialog = false;
 
             var paned = new Gtk.Paned (Gtk.Orientation.HORIZONTAL);
@@ -188,23 +186,23 @@ namespace EasySSH {
 
             paned.pack1 (box_panel, false, false);
             paned.pack2 (box, true, false);
-            paned.set_position(settings.panel_size);
+            paned.set_position (Application.settings.get_int ("panel-size"));
             add (paned);
 
             /* Size of panel */
             paned.size_allocate.connect(() => {
-                if(paned.get_position() != settings.panel_size) {
-                    settings.panel_size = paned.get_position();
+                if(paned.get_position() != Application.settings.get_int ("panel-size")) {
+                    Application.settings.set_int ("panel-size", paned.get_position());
                 }
             });
             load_accounts();
             load_hosts();
             load_bookmarks();
-            should_sync_ssh_config = settings.sync_ssh_config;
-            if(settings.sync_ssh_config == true){
+            should_sync_ssh_config = Application.settings.get_boolean ("sync-ssh-config");
+            if(should_sync_ssh_config){
                 load_ssh_config ();
             }
-            hosts_folder = settings.hosts_folder;
+            hosts_folder = Application.settings.get_string ("hosts-folder");
 
             source_list.item_selected.connect ((item) => {
                 if(item == null) {
@@ -260,15 +258,15 @@ namespace EasySSH {
             });
 
             #if WITH_GPG
-            settings.changed.connect(() => {
-                if(settings.encrypt_data == true && should_encrypt_data == false){
+            Application.settings.changed["encrypt-data"].connect(() => {
+                if(Application.settings.get_boolean ("encrypt-data") && !should_encrypt_data){
                     get_password (false);
                 }
-                if(settings.encrypt_data == false && should_encrypt_data == true){
+                if(!Application.settings.get_boolean ("encrypt-data") && should_encrypt_data){
                     encrypt_password = "";
                 }
-                if(should_encrypt_data != settings.encrypt_data){
-                    should_encrypt_data = settings.encrypt_data;
+                if(should_encrypt_data != Application.settings.get_boolean ("encrypt-data")){
+                    should_encrypt_data = Application.settings.get_boolean ("encrypt-data");
                     save_accounts ();
                     save_hosts ();
                     save_bookmarks ();
@@ -276,15 +274,15 @@ namespace EasySSH {
             });
             #endif
 
-            settings.changed.connect(() => {
-                if(settings.sync_ssh_config == true && should_sync_ssh_config == false){
+            Application.settings.changed["sync-ssh-config"].connect(() => {
+                if(Application.settings.get_boolean ("sync-ssh-config") && !should_sync_ssh_config){
                     backup_ssh_config ();
                     load_ssh_config ();
                 }
-                should_sync_ssh_config = settings.sync_ssh_config;
+                should_sync_ssh_config = Application.settings.get_boolean ("sync-ssh-config");
 
-                if(settings.hosts_folder != hosts_folder){
-                    hosts_folder = settings.hosts_folder;
+                if(Application.settings.get_string ("hosts-folder") != hosts_folder){
+                    hosts_folder = Application.settings.get_string ("hosts-folder");
                     clean_data ();
                     load_accounts();
                     load_hosts();
@@ -672,17 +670,17 @@ namespace EasySSH {
         public void load_hosts() {
             try {
                 string res = "";
-                string hosts_folder = EasySSH.settings.hosts_folder.replace ("%20", " ");
+                string hosts_folder = Application.settings.get_string ("hosts-folder").replace ("%20", " ");
                 string file_name = "/hosts.json";
                 #if WITH_GPG
-                if(EasySSH.settings.encrypt_data == true){
+                if(Application.settings.get_boolean ("encrypt-data")){
                     file_name = "/hosts.json.gpg";
                 }
                 #endif
                 var file = File.new_for_path (hosts_folder + file_name);
                 if (file.query_exists ()) {
                     #if WITH_GPG
-                    if(EasySSH.settings.encrypt_data == true){
+                    if(Application.settings.get_boolean ("encrypt-data")){
                         var password = get_password (true);
                         if(password == ""){
                             return;
@@ -739,7 +737,7 @@ namespace EasySSH {
                         if(item.has_member("color")){
                             host.color = item.get_string_member("color");
                         }else {
-                            host.color = EasySSH.settings.terminal_background_color;
+                            host.color = Application.settings.get_string ("terminal-background-color");
                         }
                         if(item.has_member("tunnels")){
                             host.tunnels = item.get_string_member("tunnels");
@@ -749,7 +747,7 @@ namespace EasySSH {
                         if(item.has_member("font")){
                             host.font = item.get_string_member("font");
                         }else {
-                            host.font = EasySSH.settings.terminal_font;
+                            host.font = Application.settings.get_string ("terminal-font");
                         }
                         if(item.has_member("extra-arguments")){
                             host.extra_arguments = item.get_string_member("extra-arguments");
@@ -779,17 +777,17 @@ namespace EasySSH {
         public void load_accounts() {
             try {
                 string res = "";
-                string accounts_folder = EasySSH.settings.hosts_folder.replace ("%20", " ");
+                string accounts_folder = Application.settings.get_string ("hosts-folder").replace ("%20", " ");
                 string file_name = "/accounts.json";
                 #if WITH_GPG
-                if(EasySSH.settings.encrypt_data == true){
+                if(Application.settings.get_boolean ("encrypt-data")){
                     file_name = "/accounts.json.gpg";
                 }
                 #endif
                 var file = File.new_for_path (accounts_folder + file_name);
                 if (file.query_exists ()) {
                     #if WITH_GPG
-                    if(EasySSH.settings.encrypt_data == true){
+                    if(Application.settings.get_boolean ("encrypt-data")){
                         var password = get_password (true);
                         if(password == ""){
                             return;
@@ -844,17 +842,17 @@ namespace EasySSH {
         public void load_bookmarks() {
             try {
                 string res = "";
-                string bookmarks_folder = EasySSH.settings.hosts_folder.replace ("%20", " ");
+                string bookmarks_folder = Application.settings.get_string ("hosts-folder").replace ("%20", " ");
                 string file_name = "/bookmarks.json";
                 #if WITH_GPG
-                if(EasySSH.settings.encrypt_data == true){
+                if(Application.settings.get_boolean ("encrypt-data")){
                     file_name = "/bookmarks.json.gpg";
                 }
                 #endif
                 var file = File.new_for_path (bookmarks_folder + file_name);
                 if (file.query_exists ()) {
                     #if WITH_GPG
-                    if(EasySSH.settings.encrypt_data == true){
+                    if(Application.settings.get_boolean ("encrypt-data")){
                         var password = get_password (true);
                         if(password == ""){
                             return;
@@ -1031,7 +1029,7 @@ namespace EasySSH {
                     Json.Node root = Json.gobject_serialize(s_host);
                     array_hosts.add_element(root);
 
-                    if(settings.sync_ssh_config){
+                    if(Application.settings.get_boolean ("sync-ssh-config")){
                         data_ssh_config += "Host " + hosts[i].name.replace(",", " ") + "\n    ";
                         if(hosts[i].ssh_config != ""){
                             data_ssh_config += hosts[i].ssh_config.replace("\n", "\n    ");
@@ -1061,13 +1059,13 @@ namespace EasySSH {
             string data = gen.to_data(null);
             var filename = "/hosts.json";
             #if WITH_GPG
-            if(EasySSH.settings.encrypt_data == true){
+            if(Application.settings.get_boolean ("encrypt-data")){
                 filename = filename + ".gpg";
                 var password = get_password (false);
                 data = encrypt_data (password, data);
             }
             #endif
-            var file = File.new_for_path (EasySSH.settings.hosts_folder.replace ("%20", " ") + filename);
+            var file = File.new_for_path (Application.settings.get_string ("hosts-folder").replace ("%20", " ") + filename);
             {
                 if (file.query_exists ()) {
                     file.delete ();
@@ -1077,7 +1075,7 @@ namespace EasySSH {
                 dos.put_string (data);
             }
 
-            if(settings.sync_ssh_config){
+            if(Application.settings.get_boolean ("sync-ssh-config")){
                 var file_ssh = File.new_for_path (Environment.get_home_dir () + "/.ssh/config");
                 {
                     if (file_ssh.query_exists ()) {
@@ -1114,13 +1112,13 @@ namespace EasySSH {
             string data = gen.to_data(null);
             var filename = "/accounts.json";
             #if WITH_GPG
-            if(EasySSH.settings.encrypt_data == true){
+            if(Application.settings.get_boolean ("encrypt-data")){
                 filename = filename + ".gpg";
                 var password = get_password (false);
                 data = encrypt_data (password, data);
             }
             #endif
-            var file = File.new_for_path (EasySSH.settings.hosts_folder.replace ("%20", " ") + filename);
+            var file = File.new_for_path (Application.settings.get_string ("hosts-folder").replace ("%20", " ") + filename);
             {
                 if (file.query_exists ()) {
                     file.delete ();
@@ -1155,13 +1153,13 @@ namespace EasySSH {
             string data = gen.to_data(null);
             var filename = "/bookmarks.json";
             #if WITH_GPG
-            if(EasySSH.settings.encrypt_data == true){
+            if(Application.settings.get_boolean ("encrypt-data")){
                 filename = filename + ".gpg";
                 var password = get_password (false);
                 data = encrypt_data (password, data);
             }
             #endif
-            var file = File.new_for_path (EasySSH.settings.hosts_folder.replace ("%20", " ") + filename);
+            var file = File.new_for_path (Application.settings.get_string ("hosts-folder").replace ("%20", " ") + filename);
             {
                 if (file.query_exists ()) {
                     file.delete ();
@@ -1427,7 +1425,7 @@ namespace EasySSH {
             account_editor.show();
         }
         private void confirm_remove_dialog (Host host) {
-            var message_dialog = new Granite.MessageDialog.with_image_from_icon_name (_("Remove") + " " + host.name, _("Are you sure you want to remove this connection and all associated data?"), "dialog-warning", Gtk.ButtonsType.CANCEL);
+            var message_dialog = new Granite.MessageDialog.with_image_from_icon_name (_("Remove %s?").printf (host.name), _("Are you sure you want to remove this connection and all associated data?"), "dialog-warning", Gtk.ButtonsType.CANCEL);
             message_dialog.transient_for = window;
             var suggested_button = new Gtk.Button.with_label (_("Remove"));
             suggested_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
@@ -1446,7 +1444,7 @@ namespace EasySSH {
         }
 
         private void confirm_remove_account_dialog (Account account) {
-            var message_dialog = new Granite.MessageDialog.with_image_from_icon_name (_("Remove") + " " + account.name, _("Are you sure you want to remove this account and all associated data?"), "dialog-warning", Gtk.ButtonsType.CANCEL);
+            var message_dialog = new Granite.MessageDialog.with_image_from_icon_name (_("Remove %s?").printf (account.name), _("Are you sure you want to remove this account and all associated data?"), "dialog-warning", Gtk.ButtonsType.CANCEL);
             message_dialog.transient_for = window;
             var suggested_button = new Gtk.Button.with_label (_("Remove"));
             suggested_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
@@ -1463,7 +1461,7 @@ namespace EasySSH {
         }
 
         private void confirm_remove_bookmark_dialog (Bookmark bookmark) {
-            var message_dialog = new Granite.MessageDialog.with_image_from_icon_name (_("Remove") + " " + bookmark.name, _("Are you sure you want to remove this bookmark?"), "dialog-warning", Gtk.ButtonsType.CANCEL);
+            var message_dialog = new Granite.MessageDialog.with_image_from_icon_name (_("Remove %s?").printf (bookmark.name), _("Are you sure you want to remove this bookmark?"), "dialog-warning", Gtk.ButtonsType.CANCEL);
             message_dialog.transient_for = window;
             var suggested_button = new Gtk.Button.with_label (_("Remove"));
             suggested_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
