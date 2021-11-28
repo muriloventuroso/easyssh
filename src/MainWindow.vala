@@ -427,13 +427,16 @@ namespace EasySSH {
         void action_select_all () {
             current_terminal.select_all ();
         }
+
         void action_open_in_files () {
-            try {
-                Gtk.show_uri_on_window (this, "sftp://%s@%s:%s".printf (
-                    current_terminal.host.username, current_terminal.host.host, current_terminal.host.port
-                ), 0);
-            } catch (Error e) {
-                warning (e.message);
+            if (current_terminal != null) {
+                try {
+                    Gtk.show_uri_on_window (this, "sftp://%s@%s:%s".printf (
+                        current_terminal.host.username, current_terminal.host.host, current_terminal.host.port
+                    ), 0);
+                } catch (Error e) {
+                    warning (e.message);
+                }
             }
         }
 
