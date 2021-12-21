@@ -1,4 +1,4 @@
-project('com.github.muriloventuroso.easyssh', 'vala', 'c', version: '1.7.0')
+project('com.github.muriloventuroso.easyssh', 'vala', 'c', version: '1.7.8')
 
 gnome = import('gnome')
 i18n = import('i18n')
