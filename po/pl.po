@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: com.github.muriloventuroso.easyssh\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-18 08:23+0900\n"
-"PO-Revision-Date: 2020-06-24 01:41+0000\n"
-"Last-Translator: Szylu <chipolade@gmail.com>\n"
+"PO-Revision-Date: 2021-12-30 13:50+0000\n"
+"Last-Translator: Matthaiks <kitynska@gmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/easyssh/"
 "translations/pl/>\n"
 "Language: pl\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.2-dev\n"
+"X-Generator: Weblate 4.10.1\n"
 
 #: src/MainWindow.vala:104
 msgid "EasySSH"
@@ -66,7 +66,7 @@ msgstr "Konta"
 
 #: src/Views/SourceListView.vala:590
 msgid "Please enter the password to unlock the data file"
-msgstr "Proszę wprowadzić hasło aby odblokować plik danych"
+msgstr "Proszę wprowadzić hasło, aby odblokować plik danych"
 
 #: src/Views/SourceListView.vala:592
 msgid "Please enter the password to lock the data file"
@@ -87,9 +87,9 @@ msgstr "Wyślij"
 
 #: src/Views/SourceListView.vala:1428 src/Views/SourceListView.vala:1447
 #: src/Views/SourceListView.vala:1464
-#, fuzzy, c-format
+#, c-format
 msgid "Remove %s?"
-msgstr "Usuń "
+msgstr "Usunąć %s?"
 
 #: src/Views/SourceListView.vala:1428
 msgid ""
@@ -126,7 +126,7 @@ msgstr "Zamknij"
 
 #: src/Widgets/TerminalBox.vala:264
 msgid "Ok"
-msgstr "Ok"
+msgstr "OK"
 
 #: src/Widgets/TerminalBox.vala:267
 msgid "Retry"
@@ -168,19 +168,16 @@ msgid "Identity File:"
 msgstr "Plik tożsamości:"
 
 #: src/Widgets/AccountEditor.vala:129
-#, fuzzy
 msgid "Add Account"
-msgstr "Konta"
+msgstr "Dodaj konto"
 
 #: src/Widgets/AccountEditor.vala:132
-#, fuzzy
 msgid "Edit Account"
-msgstr "Konta"
+msgstr "Edytuj konto"
 
 #: src/Widgets/AccountEditor.vala:134
-#, fuzzy
 msgid "Duplicate Account"
-msgstr "Duplikuj połączenie"
+msgstr "Duplikuj konto"
 
 #: src/Widgets/AccountEditor.vala:178 src/Widgets/ConnectionEditor.vala:502
 msgid "Name is already taken"
@@ -192,7 +189,7 @@ msgstr "Wyszukaj zakładki"
 
 #: src/Widgets/BookmarksPopover.vala:55
 msgid "Create a new bookmark"
-msgstr "Utwórz nową zakładkę"
+msgstr "Utwórz nową zakładkę"
 
 #: src/Widgets/BookmarksPopover.vala:68
 msgid "Run"
@@ -340,7 +337,7 @@ msgstr "Uruchom ponownie, aby zastosować zmiany"
 
 #: src/Widgets/Preferences.vala:42
 msgid "Quit App"
-msgstr ""
+msgstr "Zamknij aplikację"
 
 #: src/Widgets/Preferences.vala:51
 msgid "Select Hosts Configuration Folder…"
@@ -348,7 +345,7 @@ msgstr "Wybierz folder konfiguracji hosta…"
 
 #: src/Widgets/Preferences.vala:86
 msgid "0 to disable. -1 to unlimited"
-msgstr "0 aby wyłączyć. -1 do nielimitowanych"
+msgstr "0 do wyłączenia. -1 do nielimitowanych"
 
 #: src/Widgets/Preferences.vala:126
 msgid "Hosts Configuration Folder:"
@@ -384,24 +381,23 @@ msgstr "Ogólne"
 
 #: src/Widgets/SearchToolbar.vala:38
 msgid "Find"
-msgstr ""
+msgstr "Znajdź"
 
 #: src/Widgets/SearchToolbar.vala:49
 msgid "Cyclic search"
-msgstr ""
+msgstr "Wyszukiwanie cykliczne"
 
 #: src/Widgets/Tab.vala:29
-#, fuzzy
 msgid "Rename"
-msgstr "Nazwa użytkownika:"
+msgstr "Zmień nazwę"
 
 #: src/Widgets/Tab.vala:37
 msgid "Set new tab name"
-msgstr ""
+msgstr "Ustaw nową nazwę karty"
 
 #: src/Widgets/Tab.vala:38
 msgid "Rename Tab"
-msgstr ""
+msgstr "Zmień nazwę karty"
 
 #: src/Widgets/TerminalWidget.vala:31
 msgid "Terminal"
@@ -416,20 +412,17 @@ msgid "Start by adding an SSH connection to EasySSH"
 msgstr "Zacznij od dodania połączenia SSH do EasySSH"
 
 #: src/Widgets/WelcomeAccounts.vala:25
-#, fuzzy
 msgid "EasySSH Account Manager"
-msgstr "Menedżer połączeń SSH"
+msgstr "Menedżer kont EasySSH"
 
 #: src/Widgets/WelcomeAccounts.vala:25
 msgid "Create accounts to simplify management of your connections"
-msgstr ""
+msgstr "Twórz konta, aby ułatwić zarządzanie połączeniami"
 
 #: src/Widgets/WelcomeAccounts.vala:26
-#, fuzzy
 msgid "Add Accounts"
-msgstr "Konta"
+msgstr "Dodaj konta"
 
 #: src/Widgets/WelcomeAccounts.vala:26
-#, fuzzy
 msgid "Start by adding an Account to EasySSH"
-msgstr "Zacznij od dodania połączenia SSH do EasySSH"
+msgstr "Rozpocznij od dodania konta do EasySSH"
