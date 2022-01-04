@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: com.github.muriloventuroso.easyssh\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-18 08:23+0900\n"
-"PO-Revision-Date: 2020-06-24 01:41+0000\n"
-"Last-Translator: Éfrit <efrit@posteo.net>\n"
+"PO-Revision-Date: 2021-12-18 06:52+0000\n"
+"Last-Translator: Maxime Leroy <lisacintosh@gmail.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/easyssh/"
 "translations/fr/>\n"
 "Language: fr\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.2-dev\n"
+"X-Generator: Weblate 4.10\n"
 
 #: src/MainWindow.vala:104
 msgid "EasySSH"
@@ -86,9 +86,9 @@ msgstr "Envoyer"
 
 #: src/Views/SourceListView.vala:1428 src/Views/SourceListView.vala:1447
 #: src/Views/SourceListView.vala:1464
-#, fuzzy, c-format
+#, c-format
 msgid "Remove %s?"
-msgstr "Supprimer "
+msgstr "Supprimer %s ?"
 
 #: src/Views/SourceListView.vala:1428
 msgid ""
@@ -171,19 +171,16 @@ msgid "Identity File:"
 msgstr "Fichier d’identité :"
 
 #: src/Widgets/AccountEditor.vala:129
-#, fuzzy
 msgid "Add Account"
-msgstr "Comptes"
+msgstr "Ajouter un compte"
 
 #: src/Widgets/AccountEditor.vala:132
-#, fuzzy
 msgid "Edit Account"
-msgstr "Comptes"
+msgstr "Modifier le compte"
 
 #: src/Widgets/AccountEditor.vala:134
-#, fuzzy
 msgid "Duplicate Account"
-msgstr "Dupliquer la connexion"
+msgstr "Dupliquer le compte"
 
 #: src/Widgets/AccountEditor.vala:178 src/Widgets/ConnectionEditor.vala:502
 msgid "Name is already taken"
@@ -343,7 +340,7 @@ msgstr "Redémarrez pour appliquer les modifications"
 
 #: src/Widgets/Preferences.vala:42
 msgid "Quit App"
-msgstr ""
+msgstr "Quitter l'app"
 
 #: src/Widgets/Preferences.vala:51
 msgid "Select Hosts Configuration Folder…"
@@ -386,26 +383,24 @@ msgid "General"
 msgstr "Général"
 
 #: src/Widgets/SearchToolbar.vala:38
-#, fuzzy
 msgid "Find"
-msgstr "Rechercher…"
+msgstr "Rechercher"
 
 #: src/Widgets/SearchToolbar.vala:49
 msgid "Cyclic search"
-msgstr ""
+msgstr "Recherche cyclique"
 
 #: src/Widgets/Tab.vala:29
-#, fuzzy
 msgid "Rename"
-msgstr "Nom d’utilisateur :"
+msgstr "Renommer"
 
 #: src/Widgets/Tab.vala:37
 msgid "Set new tab name"
-msgstr ""
+msgstr "Définir le nom du nouvel onglet"
 
 #: src/Widgets/Tab.vala:38
 msgid "Rename Tab"
-msgstr ""
+msgstr "Renommer l'onglet"
 
 #: src/Widgets/TerminalWidget.vala:31
 msgid "Terminal"
@@ -420,23 +415,20 @@ msgid "Start by adding an SSH connection to EasySSH"
 msgstr "Commencez par ajouter une connexion SSH à EasySSH"
 
 #: src/Widgets/WelcomeAccounts.vala:25
-#, fuzzy
 msgid "EasySSH Account Manager"
-msgstr "Gestionnaire de connexions SSH"
+msgstr "Gestionnaire de comptes EasySSH"
 
 #: src/Widgets/WelcomeAccounts.vala:25
 msgid "Create accounts to simplify management of your connections"
-msgstr ""
+msgstr "Créez des comptes pour simplifier la gestion de vos connexions"
 
 #: src/Widgets/WelcomeAccounts.vala:26
-#, fuzzy
 msgid "Add Accounts"
-msgstr "Comptes"
+msgstr "Ajouter des comptes"
 
 #: src/Widgets/WelcomeAccounts.vala:26
-#, fuzzy
 msgid "Start by adding an Account to EasySSH"
-msgstr "Commencez par ajouter une connexion SSH à EasySSH"
+msgstr "Commencez par ajouter un compte à EasySSH"
 
 #~ msgid "Hide find bar"
 #~ msgstr "Masquer la barre de recherche"

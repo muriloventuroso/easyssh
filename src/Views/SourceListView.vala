@@ -261,6 +261,10 @@ namespace EasySSH {
             Application.settings.changed["encrypt-data"].connect(() => {
                 if(Application.settings.get_boolean ("encrypt-data") && !should_encrypt_data){
                     get_password (false);
+                    if(encrypt_password == ""){
+                        Application.settings.set_boolean ("encrypt-data", false);
+                        return;
+                    }
                 }
                 if(!Application.settings.get_boolean ("encrypt-data") && should_encrypt_data){
                     encrypt_password = "";
