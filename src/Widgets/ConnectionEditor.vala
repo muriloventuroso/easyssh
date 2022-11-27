@@ -383,9 +383,14 @@ namespace EasySSH {
             var button_remove_tunnel = new Gtk.Button.with_label (_("Remove"));
             button_remove_tunnel.clicked.connect(() => {
                 var row = list_tunnels.get_selected_row();
+                if (row == null) {
+                    return;
+                }
+
                 var index_row = row.get_index();
                 array_tunnels.remove_at(index_row);
                 list_tunnels.remove(row);
+                button_remove_tunnel.sensitive = (array_tunnels.size != 0);
             });
             grid_tunnels.attach(scroll_tunnels, 0, 0, 1, 4);
             grid_tunnels.attach_next_to(button_remove_tunnel, scroll_tunnels, Gtk.PositionType.RIGHT, 1, 1);
@@ -429,6 +434,17 @@ namespace EasySSH {
                 source_port_entry.text = "";
                 destination_entry.text = "";
                 list_tunnels.show_all ();
+                button_remove_tunnel.sensitive = (array_tunnels.size != 0);
+            });
+            source_port_entry.notify["text"].connect (() => {
+                button_add_tunnel.sensitive = (
+                        (source_port_entry.text_length > 0) && (destination_entry.text_length > 0)
+                );
+            });
+            destination_entry.notify["text"].connect (() => {
+                button_add_tunnel.sensitive = (
+                        (source_port_entry.text_length > 0) && (destination_entry.text_length > 0)
+                );
             });
 
             add_tunnel_grid.attach (button_add_tunnel, 6, 0, 1, 1);
@@ -449,6 +465,7 @@ namespace EasySSH {
 
             grid.attach (buttons, 0, 18, 1, 1);
             update_save_button();
+            button_remove_tunnel.sensitive = (array_tunnels.size != 0);
             show_all ();
             if(data_host == null) {
                 identityfile_chooser.hide();
