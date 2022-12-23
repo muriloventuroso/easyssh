@@ -23,9 +23,6 @@ modules:
       sha256: 1f4601cbfea5302b96902208c8f185e5b18b259b5358bc93cf392bf59871c5b6
   - name: easyssh
     buildsystem: meson
-    config-opts:
-    - '-Dubuntu-bionic-patched-vte=false'
-    - '-Dpatched-vte=true'
     sources:
     - type: dir
       path: .
