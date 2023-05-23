@@ -489,7 +489,10 @@ namespace EasySSH {
                 action_accelerators.remove_all(ACTION_SEARCH_NEXT);
                 action_accelerators.remove_all(ACTION_SEARCH_PREVIOUS);
                 search_toolbar.clear ();
-                current_terminal.grab_focus ();
+
+                if (current_terminal != null) {
+                    current_terminal.grab_focus ();
+                }
             }
 
             string [] next_accels = new string [] {};
