@@ -1083,7 +1083,7 @@ namespace EasySSH {
                 if(accounts[i] == null) {
                     continue;
                 }
-                var s_account = new Host();
+                var s_account = new Account();
                 s_account.name = accounts[i].name;
                 s_account.username = accounts[i].username;
                 s_account.password = accounts[i].password;
