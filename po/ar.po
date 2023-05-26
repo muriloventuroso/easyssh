@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: com.github.muriloventuroso.easyssh\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-18 08:23+0900\n"
-"PO-Revision-Date: 2021-04-12 22:26+0000\n"
-"Last-Translator: sary nasser <sarynasser1@gmail.com>\n"
+"PO-Revision-Date: 2022-01-11 10:54+0000\n"
+"Last-Translator: * <th1s.1s.r3dm2cs@gmail.com>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/easyssh/"
 "translations/ar/>\n"
 "Language: ar\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 4.6-dev\n"
+"X-Generator: Weblate 4.10.1\n"
 
 #: src/MainWindow.vala:104
 msgid "EasySSH"
@@ -30,7 +30,7 @@ msgstr "نسخ"
 
 #: src/MainWindow.vala:582
 msgid "Paste"
-msgstr "مَعْجون ؛ مَعْجُونَة"
+msgstr "لصق"
 
 #: src/MainWindow.vala:583
 msgid "Select All"
@@ -38,7 +38,7 @@ msgstr "إختيار الكل"
 
 #: src/MainWindow.vala:584
 msgid "Show in File Browser"
-msgstr "أظهر في ملف المتصفح"
+msgstr "أظهر في متصفح الملفات"
 
 #: src/Views/SourceListView.vala:36 src/Views/SourceListView.vala:75
 #: src/Widgets/Connection.vala:61
@@ -54,11 +54,11 @@ msgstr "مضاعفة"
 #: src/Views/SourceListView.vala:1466 src/Widgets/AccountEditor.vala:75
 #: src/Widgets/Connection.vala:65 src/Widgets/ConnectionEditor.vala:383
 msgid "Remove"
-msgstr "شطب"
+msgstr "إزالة"
 
 #: src/Views/SourceListView.vala:152
 msgid "Hosts"
-msgstr ""
+msgstr "المستضيفين"
 
 #: src/Views/SourceListView.vala:154
 msgid "Accounts"
@@ -73,7 +73,6 @@ msgid "Please enter the password to lock the data file"
 msgstr "من فضلك ادخل كلمة المرور حتى يتم غلق ملف البيانات"
 
 #: src/Views/SourceListView.vala:594
-#, fuzzy
 msgid "Password"
 msgstr "كلمة السر"
 
@@ -88,9 +87,9 @@ msgstr "إرسال"
 
 #: src/Views/SourceListView.vala:1428 src/Views/SourceListView.vala:1447
 #: src/Views/SourceListView.vala:1464
-#, fuzzy, c-format
+#, c-format
 msgid "Remove %s?"
-msgstr "حذف "
+msgstr "حذف %s؟"
 
 #: src/Views/SourceListView.vala:1428
 msgid ""
@@ -102,13 +101,12 @@ msgid "Are you sure you want to remove this account and all associated data?"
 msgstr "هل أنت متأكد من إلغاء هذا الحساب وجميع البيانات المرتبطة به؟"
 
 #: src/Views/SourceListView.vala:1464
-#, fuzzy
 msgid "Are you sure you want to remove this bookmark?"
 msgstr "هل أنت متأكد من إلغاء هذا الحساب وجميع البيانات المرتبطة به؟"
 
 #: src/Widgets/TerminalBox.vala:238
 msgid "Connection Error. Retry?"
-msgstr "خطأ في الإتصال,هل تريد المحاولة مرة أخرى؟"
+msgstr "خطأ في الإتصال, هل تريد المحاولة مرة أخرى؟"
 
 #: src/Widgets/TerminalBox.vala:240 src/Widgets/TerminalBox.vala:286
 msgid "No"
@@ -120,7 +118,7 @@ msgstr "نعم"
 
 #: src/Widgets/TerminalBox.vala:259
 msgid "Connection Error."
-msgstr "خطأ في الإتصال"
+msgstr "خطأ في الإتصال."
 
 #: src/Widgets/TerminalBox.vala:261 src/Widgets/Preferences.vala:217
 msgid "Close"
@@ -145,7 +143,7 @@ msgstr "كلمة السر:"
 
 #: src/Widgets/AccountEditor.vala:68 src/Widgets/ConnectionEditor.vala:151
 msgid "Change Password to Identity File"
-msgstr ""
+msgstr "تغيير كلمة السر للملف المحدد"
 
 #: src/Widgets/AccountEditor.vala:70 src/Widgets/ConnectionEditor.vala:153
 msgid "Save"
@@ -154,11 +152,11 @@ msgstr "حفظ"
 #: src/Widgets/AccountEditor.vala:99 src/Widgets/BookmarksPopover.vala:123
 #: src/Widgets/ConnectionEditor.vala:200
 msgid "Name:"
-msgstr "الإسم"
+msgstr "الإسم:"
 
 #: src/Widgets/AccountEditor.vala:102 src/Widgets/ConnectionEditor.vala:175
 msgid "Username:"
-msgstr "إسم المستخدم"
+msgstr "إسم المستخدم:"
 
 #: src/Widgets/AccountEditor.vala:108 src/Widgets/ConnectionEditor.vala:150
 msgid "Select Identity File"
@@ -170,56 +168,52 @@ msgid "Identity File:"
 msgstr "تحديد ملف:"
 
 #: src/Widgets/AccountEditor.vala:129
-#, fuzzy
 msgid "Add Account"
-msgstr "حسابات"
+msgstr "إضافة حساب"
 
 #: src/Widgets/AccountEditor.vala:132
-#, fuzzy
 msgid "Edit Account"
-msgstr "حسابات"
+msgstr "تعديل حساب"
 
 #: src/Widgets/AccountEditor.vala:134
-#, fuzzy
 msgid "Duplicate Account"
-msgstr "اعدادت الإتصال"
+msgstr "تكرار الحساب"
 
 #: src/Widgets/AccountEditor.vala:178 src/Widgets/ConnectionEditor.vala:502
 msgid "Name is already taken"
-msgstr "الإسم تم اخذه من قبل"
+msgstr "الاسم تم اخذه من قبل"
 
 #: src/Widgets/BookmarksPopover.vala:51
 msgid "Search for bookmarks"
-msgstr ""
+msgstr "البحث عن الإشارات"
 
 #: src/Widgets/BookmarksPopover.vala:55
-#, fuzzy
 msgid "Create a new bookmark"
-msgstr "انشئ إتصال جديد"
+msgstr "انشئ إشعار جديد"
 
 #: src/Widgets/BookmarksPopover.vala:68
 msgid "Run"
-msgstr ""
+msgstr "شغل"
 
 #: src/Widgets/BookmarksPopover.vala:72
 msgid "Delete"
-msgstr ""
+msgstr "حذف"
 
 #: src/Widgets/BookmarksPopover.vala:92 src/Widgets/BookmarksPopover.vala:110
 msgid "Add Bookmark"
-msgstr ""
+msgstr "إضافة إشارة"
 
 #: src/Widgets/BookmarksPopover.vala:103 src/Widgets/HeaderBar.vala:59
 msgid "Bookmarks"
-msgstr ""
+msgstr "الإشارات"
 
 #: src/Widgets/BookmarksPopover.vala:125
 msgid "Command:"
-msgstr ""
+msgstr "أمر:"
 
 #: src/Widgets/BookmarksPopover.vala:237 src/Widgets/BookmarksPopover.vala:241
 msgid "Default"
-msgstr ""
+msgstr "افتراضي"
 
 #: src/Widgets/Connection.vala:58
 msgid "Connect"
@@ -239,28 +233,27 @@ msgstr "إعدادات متقدمة"
 
 #: src/Widgets/ConnectionEditor.vala:190 src/Widgets/Welcome.vala:26
 msgid "Add Connection"
-msgstr "اضف إتصال"
+msgstr "إضافة اتصال"
 
 #: src/Widgets/ConnectionEditor.vala:193
 msgid "Edit Connection"
-msgstr "اعدادت الإتصال"
+msgstr "تعديل الإتصال"
 
 #: src/Widgets/ConnectionEditor.vala:195
-#, fuzzy
 msgid "Duplicate Connection"
-msgstr "اعدادت الإتصال"
+msgstr "تكرار الإتصال"
 
 #: src/Widgets/ConnectionEditor.vala:203
 msgid "Group:"
-msgstr "مجموعة"
+msgstr "مجموعة:"
 
 #: src/Widgets/ConnectionEditor.vala:205
 msgid "Host:"
-msgstr ""
+msgstr "استضافة:"
 
 #: src/Widgets/ConnectionEditor.vala:207
 msgid "Port:"
-msgstr ""
+msgstr "المنفذ:"
 
 #: src/Widgets/ConnectionEditor.vala:229
 msgid "SSH Config:"
@@ -268,7 +261,7 @@ msgstr "إعدادات SSH:"
 
 #: src/Widgets/ConnectionEditor.vala:337 src/Widgets/Preferences.vala:176
 msgid "Terminal Background Color:"
-msgstr "لون خلفية سطر الأوامر"
+msgstr "لون خلفية سطر الأوامر:"
 
 #: src/Widgets/ConnectionEditor.vala:346 src/Widgets/Preferences.vala:180
 msgid "Terminal Font:"
@@ -276,23 +269,23 @@ msgstr "خط سطر الأوامر:"
 
 #: src/Widgets/ConnectionEditor.vala:372
 msgid "Extra Arguments:"
-msgstr ""
+msgstr "وسائط إضافية:"
 
 #: src/Widgets/ConnectionEditor.vala:393
 msgid "Forwarded Ports:"
-msgstr ""
+msgstr "النوافذ الموجهة:"
 
 #: src/Widgets/ConnectionEditor.vala:396
 msgid "Add new forwarded port"
-msgstr ""
+msgstr "إضافة نافذة موجهة"
 
 #: src/Widgets/ConnectionEditor.vala:398
 msgid "Source Port:"
-msgstr ""
+msgstr "منفذ المصدر:"
 
 #: src/Widgets/ConnectionEditor.vala:401
 msgid "Destination:"
-msgstr "الهدف"
+msgstr "الهدف:"
 
 #: src/Widgets/ConnectionEditor.vala:406
 msgid "Local"
@@ -316,16 +309,15 @@ msgstr "القنوات"
 
 #: src/Widgets/ConnectionEditor.vala:439
 msgid "Other"
-msgstr ""
+msgstr "اخرى"
 
 #: src/Widgets/HeaderBar.vala:41
 msgid "Create a new connection"
 msgstr "انشئ إتصال جديد"
 
 #: src/Widgets/HeaderBar.vala:46
-#, fuzzy
 msgid "Local connection"
-msgstr "اضف إتصال"
+msgstr "إتصال محلي"
 
 #: src/Widgets/HeaderBar.vala:61 src/Widgets/Preferences.vala:30
 msgid "Preferences"
@@ -341,72 +333,71 @@ msgstr "القائمة"
 
 #: src/Widgets/Preferences.vala:40
 msgid "Restart to apply changes"
-msgstr ""
+msgstr "إعد التشغيل لتطبيق التغيرات"
 
 #: src/Widgets/Preferences.vala:42
 msgid "Quit App"
-msgstr ""
+msgstr "خروج من التطبيق"
 
 #: src/Widgets/Preferences.vala:51
 msgid "Select Hosts Configuration Folder…"
-msgstr ""
+msgstr "أختيار ملف التكوينات للمستضيفين…"
 
 #: src/Widgets/Preferences.vala:86
 msgid "0 to disable. -1 to unlimited"
-msgstr ""
+msgstr "0 للإيقاف. -1 لغير محدد"
 
 #: src/Widgets/Preferences.vala:126
 msgid "Hosts Configuration Folder:"
-msgstr ""
+msgstr "ملف تكوينات المستضيفين:"
 
 #: src/Widgets/Preferences.vala:130
 msgid "Scrollback lines:"
-msgstr ""
+msgstr "خطوط شريط التمرير:"
 
 #: src/Widgets/Preferences.vala:134
 msgid "Restore Opened Hosts:"
-msgstr ""
+msgstr "إسترجاع المستضيفين:"
 
 #: src/Widgets/Preferences.vala:138
 msgid "Sync SSH Config:"
-msgstr ""
+msgstr "مزامنة تكوينات SSH:"
 
 #: src/Widgets/Preferences.vala:142
 msgid "Audible Bell:"
-msgstr ""
+msgstr "جرس مسموع:"
 
 #: src/Widgets/Preferences.vala:167
 msgid "Encrypt data:"
-msgstr ""
+msgstr "تفشير البيانات:"
 
 #: src/Widgets/Preferences.vala:184
 msgid "Use Dark Theme:"
-msgstr "استخدم ثيم مظلم"
+msgstr "استخدام الوضع المظلم:"
 
 #: src/Widgets/Preferences.vala:203
 msgid "General"
-msgstr "عامة"
+msgstr "عام"
 
 #: src/Widgets/SearchToolbar.vala:38
 msgid "Find"
-msgstr ""
+msgstr "إيجاد"
 
 #: src/Widgets/SearchToolbar.vala:49
 msgid "Cyclic search"
-msgstr ""
+msgstr "البحث الدوري"
 
 #: src/Widgets/Tab.vala:29
-#, fuzzy
 msgid "Rename"
-msgstr "إسم المستخدم"
+msgstr "إعادة التسمية"
 
 #: src/Widgets/Tab.vala:37
 msgid "Set new tab name"
-msgstr ""
+msgstr "تعيين اسم علامة تبويب جديدة"
 
 #: src/Widgets/Tab.vala:38
 msgid "Rename Tab"
-msgstr ""
+msgstr "إعادة تسمية علامة التبويب"
 
 #: src/Widgets/TerminalWidget.vala:31
 msgid "Terminal"
@@ -418,23 +409,20 @@ msgstr "مدير إتصال SSH"
 
 #: src/Widgets/Welcome.vala:26
 msgid "Start by adding an SSH connection to EasySSH"
-msgstr "البدء من خلال إضافة إتصال SSH إلى EasySSH"
+msgstr "إبدا من خلال إضافة إتصال SSH إلى EasySSH"
 
 #: src/Widgets/WelcomeAccounts.vala:25
-#, fuzzy
 msgid "EasySSH Account Manager"
-msgstr "مدير إتصال SSH"
+msgstr "مدير حسابات SSH"
 
 #: src/Widgets/WelcomeAccounts.vala:25
 msgid "Create accounts to simplify management of your connections"
-msgstr ""
+msgstr "أنشئ حسابات لتبسيط إدارة الاتصالات"
 
 #: src/Widgets/WelcomeAccounts.vala:26
-#, fuzzy
 msgid "Add Accounts"
-msgstr "حسابات"
+msgstr "إضافة حسابات"
 
 #: src/Widgets/WelcomeAccounts.vala:26
-#, fuzzy
 msgid "Start by adding an Account to EasySSH"
-msgstr "البدء من خلال إضافة إتصال SSH إلى EasySSH"
+msgstr "البدء من خلال إضافة حساب SSH إلى EasySSH"

@@ -1,6 +1,6 @@
 app-id: com.github.muriloventuroso.easyssh
 runtime: io.elementary.Platform
-runtime-version: '6.1'
+runtime-version: '7.2'
 sdk: io.elementary.Sdk
 command: com.github.muriloventuroso.easyssh
 finish-args:
@@ -19,13 +19,10 @@ modules:
     - '-Ddocs=false'
     sources:
     - type: archive
-      url: https://download.gnome.org/sources/vte/0.66/vte-0.66.2.tar.xz
-      sha256: e89974673a72a0a06edac6d17830b82bb124decf0cb3b52cebc92ec3ff04d976
+      url: https://download.gnome.org/sources/vte/0.70/vte-0.70.1.tar.xz
+      sha256: 1f4601cbfea5302b96902208c8f185e5b18b259b5358bc93cf392bf59871c5b6
   - name: easyssh
     buildsystem: meson
-    config-opts:
-    - '-Dubuntu-bionic-patched-vte=false'
-    - '-Dpatched-vte=true'
     sources:
     - type: dir
       path: .
