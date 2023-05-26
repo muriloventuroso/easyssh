@@ -94,6 +94,7 @@ namespace EasySSH {
             buttons.pack_end(save_button, false, false, 0);
 
             
+            label = new Gtk.Label(null);
             label.get_style_context ().add_class("h2");
             grid.add (label);
             grid.attach (new Granite.HeaderLabel (_("Name:")), 0, 1, 1, 1);
@@ -126,12 +127,12 @@ namespace EasySSH {
             update_save_button();
             show_all ();
             if(data_account == null) {
-                label = new Gtk.Label(_("Add Account"));
+                label.label = _("Add Account");
             } else {
                 if(duplicate == false){
-                    label = new Gtk.Label(_("Edit Account"));
+                    label.label = _("Edit Account");
                 }else{
-                    label = new Gtk.Label(_("Duplicate Account"));
+                    label.label = _("Duplicate Account");
                 }
                 name_entry.text = data_account.name;
                 name_entry.is_valid = check_name();
