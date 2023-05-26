@@ -520,6 +520,7 @@ namespace EasySSH {
                 var t = get_term_widget (new_tab);
                 window.current_terminal = t;
                 var box = (TerminalBox)new_tab.page;
+                box.tab = new_tab;
                 box.set_selected();
                 new_tab.icon = null;
                 var all_read = true;
