@@ -226,7 +226,6 @@ namespace EasySSH {
                         window.current_terminal = (TerminalWidget)box.term;
                         window.current_terminal.grab_focus();
                         box.set_selected();
-                        box.remove_badge ();
                     }
                 }
                 var all_read = true;
@@ -508,7 +507,6 @@ namespace EasySSH {
                 var box = (TerminalBox)tab.page;
                 window.current_terminal = t;
                 box.set_selected();
-                box.remove_badge ();
             }
         }
         private void on_tab_added (Granite.Widgets.Tab tab) {
@@ -523,8 +521,6 @@ namespace EasySSH {
                 window.current_terminal = t;
                 var box = (TerminalBox)new_tab.page;
                 box.set_selected();
-                box.remove_badge ();
-                box.dataHost.item.icon = null;
                 new_tab.icon = null;
                 var all_read = true;
                 foreach (var g_tab in box.dataHost.notebook.tabs) {
@@ -541,7 +537,6 @@ namespace EasySSH {
             if(Type.from_instance(new_tab.page).name() == "EasySSHTerminalBox") {
                 var box = (TerminalBox)new_tab.page;
                 box.remove_badge ();
-                box.dataHost.item.icon = null;
                 var all_read = true;
                 foreach (var g_tab in box.dataHost.notebook.tabs) {
                     if(g_tab.icon != null) {
