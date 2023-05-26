@@ -222,12 +222,11 @@ namespace EasySSH {
                 }
 
             });
-            grid.attach (change_password, 0, 14, 1, 1);
             if(Application.settings.get_boolean ("sync-ssh-config")){
                 ssh_config_entry.set_vexpand(true);
                 ssh_config_entry.buffer.text = sourcelistview.get_host_ssh_config (data_host.name);
-                grid.attach (new Granite.HeaderLabel (_("SSH Config:")), 0, 15, 2, 1);
-                grid.attach (ssh_config_scroll, 0, 16, 1, 1);
+                grid.attach (new Granite.HeaderLabel (_("SSH Config:")), 0, 13, 2, 1);
+                grid.attach (ssh_config_scroll, 0, 14, 1, 1);
 
                 host_entry.key_release_event.connect (() => {
                     var text_config = ssh_config_entry.buffer.text.split("\n");
@@ -463,10 +462,10 @@ namespace EasySSH {
             box_advanced.pack_start(main_stackswitcher, false, false, 0);
             box_advanced.pack_start(main_stack, false, false, 0);
             revealer.add(box_advanced);
-            grid.attach (revealer, 0, 17, 1, 1);
+            grid.attach (revealer, 0, 15, 1, 1);
             advanced_button.bind_property ("active", revealer, "reveal-child");
 
-            grid.attach (buttons, 0, 18, 1, 1);
+            grid.attach (buttons, 0, 16, 1, 1);
             update_save_button();
             show_all ();
             if(data_host == null) {
