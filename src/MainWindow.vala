@@ -433,22 +433,22 @@ namespace EasySSH {
 
         void action_open_in_files () {
             // FIXME: Getting the file manager is not working if sandboxed so disabling at the moment
-            if (!Xdp.Portal.running_under_sandbox ()) {
+            if (Xdp.Portal.running_under_sandbox ()) {
                 return;
             }
 
             if (current_terminal != null) {
                 // FIXME: Looks like we don't have data internally where is current working directory...
-                string dir;
+                string path;
                 if (current_terminal.host.local) {
-                    dir = GLib.Environment.get_current_dir ();
+                    path = "file://%s".printf (GLib.Environment.get_current_path ());
                 } else {
-                    dir = "sftp://%s@%s:%s".printf (
+                    path = "sftp://%s@%s:%s".printf (
                         current_terminal.host.username, current_terminal.host.host, current_terminal.host.port
                     );
                 }
                 try {
-                    Gtk.show_uri_on_window (this, dir, 0);
+                    Gtk.show_uri_on_window (this, path, 0);
                 } catch (Error e) {
                     warning (e.message);
                 }
