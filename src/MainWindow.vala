@@ -441,7 +441,7 @@ namespace EasySSH {
                 // FIXME: Looks like we don't have data internally where is current working directory...
                 string path;
                 if (current_terminal.host.local) {
-                    path = "file://%s".printf (GLib.Environment.get_current_path ());
+                    path = "file://%s".printf (GLib.Environment.get_current_dir ());
                 } else {
                     path = "sftp://%s@%s:%s".printf (
                         current_terminal.host.username, current_terminal.host.host, current_terminal.host.port
