@@ -34,6 +34,7 @@ dependencies = [
     dependency('gtk+-3.0'),
     dependency('granite', version: '>=6.0.0'),
     dependency('json-glib-1.0'),
+    dependency('libportal'),
     dependency('vte-2.91', version: '>0.52'),
     dependency('gee-0.8'),
     meson.get_compiler('c').find_library('m', required : false)

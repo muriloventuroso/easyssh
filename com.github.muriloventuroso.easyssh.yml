@@ -21,6 +21,16 @@ modules:
     - type: archive
       url: https://download.gnome.org/sources/vte/0.70/vte-0.70.1.tar.xz
       sha256: 1f4601cbfea5302b96902208c8f185e5b18b259b5358bc93cf392bf59871c5b6
+  - name: libportal
+    buildsystem: meson
+    config-opts:
+      - '-Dbackends=gtk3'
+      - '-Ddocs=false'
+      - '-Dtests=false'
+    sources:
+      - type: archive
+        url: https://github.com/flatpak/libportal/releases/download/0.6/libportal-0.6.tar.xz
+        sha256: 88a12c3ba71bc31acff7238c280de697d609cebc50830c3766776ec35abc6566
   - name: easyssh
     buildsystem: meson
     sources:

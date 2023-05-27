@@ -126,14 +126,6 @@ namespace EasySSH {
                 app.set_accels_for_action (ACTION_PREFIX + action, action_accelerators[action].to_array ());
             }
 
-            var open_in_file_manager_menuitem = new Gtk.MenuItem () {
-                action_name = ACTION_PREFIX + ACTION_OPEN_IN_FILES
-            };
-            var open_in_file_manager_menuitem_label = new Granite.AccelLabel.from_action_name (
-                _("Show in File Browser"), open_in_file_manager_menuitem.action_name
-            );
-            open_in_file_manager_menuitem.add (open_in_file_manager_menuitem_label);
-
             var copy_menuitem = new Gtk.MenuItem () {
                 action_name = ACTION_PREFIX + ACTION_COPY
             };
@@ -153,12 +145,23 @@ namespace EasySSH {
             select_all_menuitem.add (select_all_menuitem_label);
 
             menu = new Gtk.Menu ();
-            menu.append (open_in_file_manager_menuitem);
-            menu.append (new Gtk.SeparatorMenuItem ());
             menu.append (copy_menuitem);
             menu.append (paste_menuitem);
             menu.append (select_all_menuitem);
             menu.insert_action_group ("win", actions);
+
+            // Getting the file manager is not working if sandboxed so don't expose that menu
+            if (!Xdp.Portal.running_under_sandbox ()) {
+                var open_in_file_manager_menuitem = new Gtk.MenuItem () {
+                    action_name = ACTION_PREFIX + ACTION_OPEN_IN_FILES
+                };
+                var open_in_file_manager_menuitem_label = new Granite.AccelLabel.from_action_name (
+                    _("Show in File Browser"), open_in_file_manager_menuitem.action_name
+                );
+                open_in_file_manager_menuitem.add (open_in_file_manager_menuitem_label);
+                menu.prepend (new Gtk.SeparatorMenuItem ());
+                menu.prepend (open_in_file_manager_menuitem);
+            }
 
             weak Gtk.IconTheme default_theme = Gtk.IconTheme.get_default ();
             default_theme.add_resource_path ("/com/github/muriloventuroso/easyssh");
@@ -429,6 +432,11 @@ namespace EasySSH {
         }
 
         void action_open_in_files () {
+            // FIXME: Getting the file manager is not working if sandboxed so disabling at the moment
+            if (!Xdp.Portal.running_under_sandbox ()) {
+                return;
+            }
+
             if (current_terminal != null) {
                 try {
                     Gtk.show_uri_on_window (this, "sftp://%s@%s:%s".printf (
