@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: com.github.muriloventuroso.easyssh\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-18 08:23+0900\n"
-"PO-Revision-Date: 2021-06-11 04:32+0000\n"
-"Last-Translator: RickRolled <onlyforgamerb@gmail.com>\n"
+"PO-Revision-Date: 2023-07-25 18:06+0000\n"
+"Last-Translator: tictactoe <phandinhminh@protonmail.ch>\n"
 "Language-Team: Vietnamese <https://hosted.weblate.org/projects/easyssh/"
 "translations/vi/>\n"
 "Language: vi\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.7-dev\n"
+"X-Generator: Weblate 5.0-dev\n"
 
 #: src/MainWindow.vala:104
 msgid "EasySSH"
@@ -57,7 +57,7 @@ msgstr "Xóa"
 
 #: src/Views/SourceListView.vala:152
 msgid "Hosts"
-msgstr "Máy chủ"
+msgstr "Các Host"
 
 #: src/Views/SourceListView.vala:154
 msgid "Accounts"
@@ -65,11 +65,11 @@ msgstr "Tài khoản"
 
 #: src/Views/SourceListView.vala:590
 msgid "Please enter the password to unlock the data file"
-msgstr "Xin hãy nhập mật khẩu để mở khóa dữ liệu"
+msgstr "Xin hãy nhập mật khẩu để mở khóa tập tin dữ liệu"
 
 #: src/Views/SourceListView.vala:592
 msgid "Please enter the password to lock the data file"
-msgstr "Hãy nhập mật khẩu để khóa kho dữ liệu"
+msgstr "Hãy nhập mật khẩu để khóa tập tin dữ liệu"
 
 #: src/Views/SourceListView.vala:594
 msgid "Password"
@@ -86,9 +86,9 @@ msgstr "Gửi"
 
 #: src/Views/SourceListView.vala:1428 src/Views/SourceListView.vala:1447
 #: src/Views/SourceListView.vala:1464
-#, fuzzy, c-format
+#, c-format
 msgid "Remove %s?"
-msgstr "Xóa"
+msgstr "Xóa bỏ %s đi chứ?"
 
 #: src/Views/SourceListView.vala:1428
 msgid ""
@@ -144,11 +144,11 @@ msgstr "Mật khẩu:"
 
 #: src/Widgets/AccountEditor.vala:68 src/Widgets/ConnectionEditor.vala:151
 msgid "Change Password to Identity File"
-msgstr "Đổi mật khẩu tới tệp danh tính"
+msgstr "Đổi mật khẩu tới Tập tin Danh tính"
 
 #: src/Widgets/AccountEditor.vala:70 src/Widgets/ConnectionEditor.vala:153
 msgid "Save"
-msgstr "Lưu"
+msgstr "Sao lưu"
 
 #: src/Widgets/AccountEditor.vala:99 src/Widgets/BookmarksPopover.vala:123
 #: src/Widgets/ConnectionEditor.vala:200
@@ -157,31 +157,28 @@ msgstr "Tên:"
 
 #: src/Widgets/AccountEditor.vala:102 src/Widgets/ConnectionEditor.vala:175
 msgid "Username:"
-msgstr "Tên đăng nhập:"
+msgstr "Tên người dùng:"
 
 #: src/Widgets/AccountEditor.vala:108 src/Widgets/ConnectionEditor.vala:150
 msgid "Select Identity File"
-msgstr "Chọn tệp danh tính"
+msgstr "Chọn Tập tin Danh tính"
 
 #: src/Widgets/AccountEditor.vala:114 src/Widgets/AccountEditor.vala:146
 #: src/Widgets/ConnectionEditor.vala:216 src/Widgets/ConnectionEditor.vala:461
 msgid "Identity File:"
-msgstr "Tệp danh tính:"
+msgstr "Tập tin Danh tính:"
 
 #: src/Widgets/AccountEditor.vala:129
-#, fuzzy
 msgid "Add Account"
-msgstr "Tài khoản"
+msgstr "Thêm Tài khoản"
 
 #: src/Widgets/AccountEditor.vala:132
-#, fuzzy
 msgid "Edit Account"
-msgstr "Tài khoản"
+msgstr "Chỉnh sửa Tài khoản"
 
 #: src/Widgets/AccountEditor.vala:134
-#, fuzzy
 msgid "Duplicate Account"
-msgstr "Kết nối bản sao"
+msgstr "Nhân đôi bản sao Tài khoản"
 
 #: src/Widgets/AccountEditor.vala:178 src/Widgets/ConnectionEditor.vala:502
 msgid "Name is already taken"
@@ -213,7 +210,7 @@ msgstr "Dấu trang"
 
 #: src/Widgets/BookmarksPopover.vala:125
 msgid "Command:"
-msgstr "Lệnh:"
+msgstr "Lệnh Command:"
 
 #: src/Widgets/BookmarksPopover.vala:237 src/Widgets/BookmarksPopover.vala:241
 msgid "Default"
@@ -229,7 +226,7 @@ msgstr "Đặt thông tin xác thực"
 
 #: src/Widgets/ConnectionEditor.vala:83
 msgid "Choose Account"
-msgstr "Chon tài khoản"
+msgstr "Chọn Tài khoản"
 
 #: src/Widgets/ConnectionEditor.vala:159 src/Widgets/ConnectionEditor.vala:330
 msgid "Advanced"
@@ -245,7 +242,7 @@ msgstr "Chỉnh sửa kết nối"
 
 #: src/Widgets/ConnectionEditor.vala:195
 msgid "Duplicate Connection"
-msgstr "Kết nối bản sao"
+msgstr "Nhân bản Kết nối"
 
 #: src/Widgets/ConnectionEditor.vala:203
 msgid "Group:"
@@ -253,11 +250,11 @@ msgstr "Nhóm:"
 
 #: src/Widgets/ConnectionEditor.vala:205
 msgid "Host:"
-msgstr "Máy chủ:"
+msgstr "Máy chủ Host:"
 
 #: src/Widgets/ConnectionEditor.vala:207
 msgid "Port:"
-msgstr "Cổng:"
+msgstr "Cổng Port:"
 
 #: src/Widgets/ConnectionEditor.vala:229
 msgid "SSH Config:"
@@ -265,27 +262,27 @@ msgstr "Cấu hình SSH:"
 
 #: src/Widgets/ConnectionEditor.vala:337 src/Widgets/Preferences.vala:176
 msgid "Terminal Background Color:"
-msgstr "Màu nền của thiết bị đầu cuối:"
+msgstr "Màu nền của Terminal:"
 
 #: src/Widgets/ConnectionEditor.vala:346 src/Widgets/Preferences.vala:180
 msgid "Terminal Font:"
-msgstr "Phông chữ đầu cuối:"
+msgstr "Phông chữ Terminal:"
 
 #: src/Widgets/ConnectionEditor.vala:372
 msgid "Extra Arguments:"
-msgstr "Lập luận bổ sung:"
+msgstr "Các đối số Argument bổ sung:"
 
 #: src/Widgets/ConnectionEditor.vala:393
 msgid "Forwarded Ports:"
-msgstr "Cổng chuyển tiếp:"
+msgstr "Các cổng Port chuyển tiếp Forward:"
 
 #: src/Widgets/ConnectionEditor.vala:396
 msgid "Add new forwarded port"
-msgstr "Thêm một cổng chuyển tiếp"
+msgstr "Thêm một Cổng chuyển tiếp forward mới"
 
 #: src/Widgets/ConnectionEditor.vala:398
 msgid "Source Port:"
-msgstr "Cổng nguồn:"
+msgstr "Cổng Port nguồn:"
 
 #: src/Widgets/ConnectionEditor.vala:401
 msgid "Destination:"
@@ -293,11 +290,11 @@ msgstr "Điểm đến:"
 
 #: src/Widgets/ConnectionEditor.vala:406
 msgid "Local"
-msgstr "Nội bộ"
+msgstr "Cục bộ"
 
 #: src/Widgets/ConnectionEditor.vala:409
 msgid "Remote"
-msgstr "Điều khiển"
+msgstr "Remote từ xa"
 
 #: src/Widgets/ConnectionEditor.vala:415
 msgid "Add Tunnel"
@@ -325,7 +322,7 @@ msgstr "Kết nối cục bộ"
 
 #: src/Widgets/HeaderBar.vala:61 src/Widgets/Preferences.vala:30
 msgid "Preferences"
-msgstr "Sở thích"
+msgstr "Tuỳ thích"
 
 #: src/Widgets/HeaderBar.vala:63
 msgid "Close All Connections"
@@ -337,15 +334,15 @@ msgstr "Menu"
 
 #: src/Widgets/Preferences.vala:40
 msgid "Restart to apply changes"
-msgstr "Khởi động lại để thay đổi"
+msgstr "Khởi động lại để áp dụng các thay đổi"
 
 #: src/Widgets/Preferences.vala:42
 msgid "Quit App"
-msgstr ""
+msgstr "Thoát ra khỏi App ứng dụng"
 
 #: src/Widgets/Preferences.vala:51
 msgid "Select Hosts Configuration Folder…"
-msgstr "Chọn thư mục cấu hình máy chủ…"
+msgstr "Chọn thư mục cấu hình máy chủ Host…"
 
 #: src/Widgets/Preferences.vala:86
 msgid "0 to disable. -1 to unlimited"
@@ -353,15 +350,15 @@ msgstr "0 để vô hiệu hóa. -1 để vô thời hạn"
 
 #: src/Widgets/Preferences.vala:126
 msgid "Hosts Configuration Folder:"
-msgstr "Thư mục cấu hình máy chủ:"
+msgstr "Thư mục cấu hình máy chủ Host:"
 
 #: src/Widgets/Preferences.vala:130
 msgid "Scrollback lines:"
-msgstr "Dòng cuộn lại:"
+msgstr "Các dòng line để cuộn lại scrollback:"
 
 #: src/Widgets/Preferences.vala:134
 msgid "Restore Opened Hosts:"
-msgstr "Khôi phục máy chủ đã mở:"
+msgstr "Khôi phục các máy chủ Host đã được mở:"
 
 #: src/Widgets/Preferences.vala:138
 msgid "Sync SSH Config:"
@@ -381,56 +378,52 @@ msgstr "Dùng chủ đề tối:"
 
 #: src/Widgets/Preferences.vala:203
 msgid "General"
-msgstr "Chung"
+msgstr "Tổng quát"
 
 #: src/Widgets/SearchToolbar.vala:38
 msgid "Find"
-msgstr ""
+msgstr "Tìm kiếm"
 
 #: src/Widgets/SearchToolbar.vala:49
 msgid "Cyclic search"
-msgstr ""
+msgstr "Tìm kiếm theo chu kỳ"
 
 #: src/Widgets/Tab.vala:29
-#, fuzzy
 msgid "Rename"
-msgstr "Tên đăng nhập:"
+msgstr "Đổi lại tên"
 
 #: src/Widgets/Tab.vala:37
 msgid "Set new tab name"
-msgstr ""
+msgstr "Đặt tên cho Tab mới"
 
 #: src/Widgets/Tab.vala:38
 msgid "Rename Tab"
-msgstr ""
+msgstr "Đặt lại tên Tab"
 
 #: src/Widgets/TerminalWidget.vala:31
 msgid "Terminal"
-msgstr "Trạm"
+msgstr "Cửa sổ Terminal"
 
 #: src/Widgets/Welcome.vala:25
 msgid "SSH Connection Manager"
-msgstr "Trình quản lí kết nối SSH"
+msgstr "Trình quản lý Kết nối SSH"
 
 #: src/Widgets/Welcome.vala:26
 msgid "Start by adding an SSH connection to EasySSH"
-msgstr "Bắt đầu bằng cách thêm kết nối SSH vào EasySSH"
+msgstr "Bắt đầu bằng cách thêm một kết nối SSH vào EasySSH"
 
 #: src/Widgets/WelcomeAccounts.vala:25
-#, fuzzy
 msgid "EasySSH Account Manager"
-msgstr "Trình quản lí kết nối SSH"
+msgstr "Trình quản lý Tài khoản EasySSH"
 
 #: src/Widgets/WelcomeAccounts.vala:25
 msgid "Create accounts to simplify management of your connections"
-msgstr ""
+msgstr "Khởi tạo các tài khoản để đơn giản hoá việc quản lý các kết nối của bạn"
 
 #: src/Widgets/WelcomeAccounts.vala:26
-#, fuzzy
 msgid "Add Accounts"
-msgstr "Tài khoản"
+msgstr "Thêm Tài khoản"
 
 #: src/Widgets/WelcomeAccounts.vala:26
-#, fuzzy
 msgid "Start by adding an Account to EasySSH"
-msgstr "Bắt đầu bằng cách thêm kết nối SSH vào EasySSH"
+msgstr "Bắt đầu bằng cách bổ sung thêm một Tài khoản vào EasySSH"
