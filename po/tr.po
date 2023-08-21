@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: com.github.muriloventuroso.easyssh\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-18 08:23+0900\n"
-"PO-Revision-Date: 2021-11-19 22:51+0000\n"
-"Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
+"PO-Revision-Date: 2023-08-22 01:53+0000\n"
+"Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/easyssh/"
 "translations/tr/>\n"
 "Language: tr\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.9.1\n"
+"X-Generator: Weblate 5.0-dev\n"
 
 #: src/MainWindow.vala:104
 msgid "EasySSH"
@@ -65,11 +65,11 @@ msgstr "Hesaplar"
 
 #: src/Views/SourceListView.vala:590
 msgid "Please enter the password to unlock the data file"
-msgstr "Veri dosyasının kilidini açmak için lütfen şifreyi girin"
+msgstr "Veri dosyasının kilidini açmak için lütfen parolayı girin"
 
 #: src/Views/SourceListView.vala:592
 msgid "Please enter the password to lock the data file"
-msgstr "Veri dosyasını kilitlemek için lütfen şifreyi girin"
+msgstr "Veri dosyasını kilitlemek için lütfen parolayı girin"
 
 #: src/Views/SourceListView.vala:594
 msgid "Password"
@@ -107,7 +107,7 @@ msgstr "Bu yer imini kaldırmak istediğinize emin misiniz?"
 
 #: src/Widgets/TerminalBox.vala:238
 msgid "Connection Error. Retry?"
-msgstr "Bağlantı hatası. Tekrar dene?"
+msgstr "Bağlantı hatası. Tekrar denensin mi?"
 
 #: src/Widgets/TerminalBox.vala:240 src/Widgets/TerminalBox.vala:286
 msgid "No"
@@ -144,7 +144,7 @@ msgstr "Parola:"
 
 #: src/Widgets/AccountEditor.vala:68 src/Widgets/ConnectionEditor.vala:151
 msgid "Change Password to Identity File"
-msgstr "Kimlik dosyası için parola değiştir"
+msgstr "Kimlik Dosyasının Parolasını Değiştir"
 
 #: src/Widgets/AccountEditor.vala:70 src/Widgets/ConnectionEditor.vala:153
 msgid "Save"
@@ -153,7 +153,7 @@ msgstr "Kaydet"
 #: src/Widgets/AccountEditor.vala:99 src/Widgets/BookmarksPopover.vala:123
 #: src/Widgets/ConnectionEditor.vala:200
 msgid "Name:"
-msgstr "Adı:"
+msgstr "Ad:"
 
 #: src/Widgets/AccountEditor.vala:102 src/Widgets/ConnectionEditor.vala:175
 msgid "Username:"
@@ -182,7 +182,7 @@ msgstr "Hesabı Çoğalt"
 
 #: src/Widgets/AccountEditor.vala:178 src/Widgets/ConnectionEditor.vala:502
 msgid "Name is already taken"
-msgstr "Adı zaten alınmış"
+msgstr "Ad zaten alınmış"
 
 #: src/Widgets/BookmarksPopover.vala:51
 msgid "Search for bookmarks"
@@ -202,7 +202,7 @@ msgstr "Sil"
 
 #: src/Widgets/BookmarksPopover.vala:92 src/Widgets/BookmarksPopover.vala:110
 msgid "Add Bookmark"
-msgstr "Yer imi ekle"
+msgstr "Yer İmi Ekle"
 
 #: src/Widgets/BookmarksPopover.vala:103 src/Widgets/HeaderBar.vala:59
 msgid "Bookmarks"
@@ -238,11 +238,11 @@ msgstr "Bağlantı Ekle"
 
 #: src/Widgets/ConnectionEditor.vala:193
 msgid "Edit Connection"
-msgstr "Bağlantıyı düzenle"
+msgstr "Bağlantıyı Düzenle"
 
 #: src/Widgets/ConnectionEditor.vala:195
 msgid "Duplicate Connection"
-msgstr "Çift bağlantı"
+msgstr "Bağlantıyı Çoğalt"
 
 #: src/Widgets/ConnectionEditor.vala:203
 msgid "Group:"
@@ -270,7 +270,7 @@ msgstr "Terminal Yazı Tipi:"
 
 #: src/Widgets/ConnectionEditor.vala:372
 msgid "Extra Arguments:"
-msgstr "Ekstra Argümanlar:"
+msgstr "Ek Argümanlar:"
 
 #: src/Widgets/ConnectionEditor.vala:393
 msgid "Forwarded Ports:"
@@ -294,7 +294,7 @@ msgstr "Yerel"
 
 #: src/Widgets/ConnectionEditor.vala:409
 msgid "Remote"
-msgstr "Uzaktan"
+msgstr "Uzak"
 
 #: src/Widgets/ConnectionEditor.vala:415
 msgid "Add Tunnel"
@@ -326,7 +326,7 @@ msgstr "Tercihler"
 
 #: src/Widgets/HeaderBar.vala:63
 msgid "Close All Connections"
-msgstr "Tüm Bağlantıları Kapatın"
+msgstr "Tüm Bağlantıları Kapat"
 
 #: src/Widgets/HeaderBar.vala:73
 msgid "Menu"
@@ -350,7 +350,7 @@ msgstr "0 devre dışı. -1 sınırsız"
 
 #: src/Widgets/Preferences.vala:126
 msgid "Hosts Configuration Folder:"
-msgstr "Ana Makine Yapılandırma Klasör:"
+msgstr "Ana Makine Yapılandırma Klasörü:"
 
 #: src/Widgets/Preferences.vala:130
 msgid "Scrollback lines:"
@@ -358,7 +358,7 @@ msgstr "Satırları geri kaydır:"
 
 #: src/Widgets/Preferences.vala:134
 msgid "Restore Opened Hosts:"
-msgstr "Açılan Ana Makineyi Geri Yükle:"
+msgstr "Açılan Ana Makineleri Geri Yükle:"
 
 #: src/Widgets/Preferences.vala:138
 msgid "Sync SSH Config:"
@@ -370,11 +370,11 @@ msgstr "Duyulabilir Zil:"
 
 #: src/Widgets/Preferences.vala:167
 msgid "Encrypt data:"
-msgstr "Verileri Şifrele:"
+msgstr "Verileri şifrele:"
 
 #: src/Widgets/Preferences.vala:184
 msgid "Use Dark Theme:"
-msgstr "Karanlık Tema Kullan:"
+msgstr "Koyu Tema Kullan:"
 
 #: src/Widgets/Preferences.vala:203
 msgid "General"
