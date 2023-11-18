@@ -8,17 +8,17 @@ msgstr ""
 "Project-Id-Version: com.github.muriloventuroso.easyssh\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-18 08:23+0900\n"
-"PO-Revision-Date: 2019-05-21 12:41+0000\n"
-"Last-Translator: Viktar Vauchkevich <victorenator@gmail.com>\n"
+"PO-Revision-Date: 2023-11-20 05:00+0000\n"
+"Last-Translator: Yahor <k1llo2810@protonmail.com>\n"
 "Language-Team: Belarusian <https://hosted.weblate.org/projects/easyssh/"
 "translations/be/>\n"
 "Language: be\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.7-dev\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.2\n"
 
 #: src/MainWindow.vala:104
 msgid "EasySSH"
@@ -87,9 +87,9 @@ msgstr "Адправіць"
 
 #: src/Views/SourceListView.vala:1428 src/Views/SourceListView.vala:1447
 #: src/Views/SourceListView.vala:1464
-#, fuzzy, c-format
+#, c-format
 msgid "Remove %s?"
-msgstr "Выдаліць "
+msgstr "Выдаліць %s?"
 
 #: src/Views/SourceListView.vala:1428
 msgid ""
@@ -126,11 +126,11 @@ msgstr "Закрыць"
 
 #: src/Widgets/TerminalBox.vala:264
 msgid "Ok"
-msgstr ""
+msgstr "Ок"
 
 #: src/Widgets/TerminalBox.vala:267
 msgid "Retry"
-msgstr ""
+msgstr "Паўтарыць"
 
 #: src/Widgets/TerminalBox.vala:284
 msgid "Fingerprint"
@@ -168,17 +168,14 @@ msgid "Identity File:"
 msgstr "Файл ідэнтычнасці:"
 
 #: src/Widgets/AccountEditor.vala:129
-#, fuzzy
 msgid "Add Account"
-msgstr "Конты"
+msgstr "Дадаць злучэнне"
 
 #: src/Widgets/AccountEditor.vala:132
-#, fuzzy
 msgid "Edit Account"
-msgstr "Конты"
+msgstr "Рэдагаваць злучэнне"
 
 #: src/Widgets/AccountEditor.vala:134
-#, fuzzy
 msgid "Duplicate Account"
 msgstr "Дубляваць злучэнне"
 
@@ -187,7 +184,6 @@ msgid "Name is already taken"
 msgstr "Назва ўжо выкарыстоўваецца"
 
 #: src/Widgets/BookmarksPopover.vala:51
-#, fuzzy
 msgid "Search for bookmarks"
 msgstr "Шукаць закладку"
 
@@ -273,7 +269,7 @@ msgstr "Шрыфт тэрмінілу:"
 
 #: src/Widgets/ConnectionEditor.vala:372
 msgid "Extra Arguments:"
-msgstr ""
+msgstr "Дадатковыя аргументы:"
 
 #: src/Widgets/ConnectionEditor.vala:393
 msgid "Forwarded Ports:"
@@ -313,16 +309,15 @@ msgstr "Тунэлі"
 
 #: src/Widgets/ConnectionEditor.vala:439
 msgid "Other"
-msgstr ""
+msgstr "Іншае"
 
 #: src/Widgets/HeaderBar.vala:41
 msgid "Create a new connection"
 msgstr "Стварыць новае злучэнне"
 
 #: src/Widgets/HeaderBar.vala:46
-#, fuzzy
 msgid "Local connection"
-msgstr "Дадаць злучэнне"
+msgstr "Лакальнае злучэнне"
 
 #: src/Widgets/HeaderBar.vala:61 src/Widgets/Preferences.vala:30
 msgid "Preferences"
@@ -338,11 +333,11 @@ msgstr "Меню"
 
 #: src/Widgets/Preferences.vala:40
 msgid "Restart to apply changes"
-msgstr ""
+msgstr "Перазагрузіце, каб ужыць змены"
 
 #: src/Widgets/Preferences.vala:42
 msgid "Quit App"
-msgstr ""
+msgstr "Выйсці з праграмы"
 
 #: src/Widgets/Preferences.vala:51
 msgid "Select Hosts Configuration Folder…"
@@ -350,7 +345,7 @@ msgstr "Абраць тэчку налад вузлоў…"
 
 #: src/Widgets/Preferences.vala:86
 msgid "0 to disable. -1 to unlimited"
-msgstr ""
+msgstr "0 - адключана; -1 - не абмежавана"
 
 #: src/Widgets/Preferences.vala:126
 msgid "Hosts Configuration Folder:"
@@ -358,7 +353,7 @@ msgstr "Тэчка налад вузлоў:"
 
 #: src/Widgets/Preferences.vala:130
 msgid "Scrollback lines:"
-msgstr ""
+msgstr "Радкі пракруткі:"
 
 #: src/Widgets/Preferences.vala:134
 msgid "Restore Opened Hosts:"
@@ -370,12 +365,11 @@ msgstr "Сінхранізаваць SSH-канфігурацыю:"
 
 #: src/Widgets/Preferences.vala:142
 msgid "Audible Bell:"
-msgstr ""
+msgstr "Гукавы званок:"
 
 #: src/Widgets/Preferences.vala:167
-#, fuzzy
 msgid "Encrypt data:"
-msgstr "Зашыфрованыя даныя:"
+msgstr "Шыфраваць даныя:"
 
 #: src/Widgets/Preferences.vala:184
 msgid "Use Dark Theme:"
@@ -386,26 +380,24 @@ msgid "General"
 msgstr "Асноўныя"
 
 #: src/Widgets/SearchToolbar.vala:38
-#, fuzzy
 msgid "Find"
-msgstr "Знайсці…"
+msgstr "Пошук"
 
 #: src/Widgets/SearchToolbar.vala:49
 msgid "Cyclic search"
-msgstr ""
+msgstr "Цыклічны пошук"
 
 #: src/Widgets/Tab.vala:29
-#, fuzzy
 msgid "Rename"
-msgstr "Імя карыстальніка:"
+msgstr "Перайменаваць"
 
 #: src/Widgets/Tab.vala:37
 msgid "Set new tab name"
-msgstr ""
+msgstr "Задаць новую назву ўкладкі"
 
 #: src/Widgets/Tab.vala:38
 msgid "Rename Tab"
-msgstr ""
+msgstr "Перайменаваць укладку"
 
 #: src/Widgets/TerminalWidget.vala:31
 msgid "Terminal"
@@ -420,21 +412,18 @@ msgid "Start by adding an SSH connection to EasySSH"
 msgstr "Пачніце з дадання SSH-злучэння ў EasySSH"
 
 #: src/Widgets/WelcomeAccounts.vala:25
-#, fuzzy
 msgid "EasySSH Account Manager"
 msgstr "Менеджар SSH-злучэнняў"
 
 #: src/Widgets/WelcomeAccounts.vala:25
 msgid "Create accounts to simplify management of your connections"
-msgstr ""
+msgstr "Стварыце ўліковыя запісы, каб спрасціць кіраванне вашымі падключэннямі"
 
 #: src/Widgets/WelcomeAccounts.vala:26
-#, fuzzy
 msgid "Add Accounts"
-msgstr "Конты"
+msgstr "Дадаць злучэнні"
 
 #: src/Widgets/WelcomeAccounts.vala:26
-#, fuzzy
 msgid "Start by adding an Account to EasySSH"
 msgstr "Пачніце з дадання SSH-злучэння ў EasySSH"
 
